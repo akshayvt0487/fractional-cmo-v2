@@ -7,7 +7,6 @@ import About from "../../src/components/sections/About";
 
 import BlogSection from "../../src/components/sections/BlogSection";
 import CTA from "../../src/components/sections/CTA";
-import Footer from "../../src/components/sections/Footer";
 import FractionalCMO from "../../src/components/sections/FractionalCMO";
 //import { usePublishIndexing } from "@/hooks/useAutoIndexing";
 
@@ -31,7 +30,7 @@ const Index = () => {
         <BlogSection />
         <CTA />
       </main>
-      <Footer />
+     
     </>
   );
 };
