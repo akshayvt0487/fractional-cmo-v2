@@ -1,41 +1,23 @@
+import { Providers } from './providers'; // 1. Import your new client wrapper
+import './globals.css'; // Your global styles
 
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Footer from "@/src/components/sections/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Basheer Padanna",
-  description: "Fractional CMO for predictable growth",
+export const metadata = {
+  title: 'Your Site Title',
+  description: 'Your site description',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}  antialiased flex flex-col items-center mx-auto`}
-      >
-         <div className="w-full ">
+      <body>
+        <Providers> {/* 2. Use the wrapper component */}
           {children}
-        </div>
-         <Footer/>
+        </Providers>
       </body>
-     
     </html>
   );
 }
-
