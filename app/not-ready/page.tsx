@@ -1,19 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Book } from "lucide-react";
-import { Link } from "react-router-dom";
-import SEO from "@/components/SEO";
+import  Link  from "next/link";
 import Header from "@/components/ui/header";
 import Footer from "@/components/sections/Footer";
 
 const NotReady = () => {
   return (
     <>
-      <SEO 
-        title="Fractional CMO Services - Revenue Readiness | Basheer Padanna"
-        description="Learn when your business is ready for fractional CMO services and discover alternative growth strategies for businesses under $1M revenue."
-        canonical="/not-ready"
-      />
+      
       <Header />
       
       <main className="min-h-screen pt-32">
@@ -135,12 +130,12 @@ const NotReady = () => {
               
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button asChild size="lg">
-                  <Link to="/blog">
+                  <Link href="/blog">
                     Read Growth Strategies <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button variant="secondary" size="lg" asChild>
-                  <Link to="/">
+                  <Link href="/">
                     Back to Homepage
                   </Link>
                 </Button>

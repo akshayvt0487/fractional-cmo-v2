@@ -77,7 +77,7 @@ const MobileNav = () => {
               return (
                 <Link
                   key={item.href}
-                  to={item.href!}
+                  href={item.href!}
                   onClick={() => setIsOpen(false)}
                   className="text-white/80 hover:text-white py-3 px-2 text-lg font-medium border-b border-white/10 hover:border-white/30 transition-colors"
                 >

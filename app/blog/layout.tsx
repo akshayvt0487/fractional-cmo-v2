@@ -15,7 +15,10 @@ import { Button } from '@/components/ui/button';
  * - accounting-growth-strategy-guide/
  * - page.tsx  (Your individual blog post)
  */
-export default function BlogLayout({
+
+
+
+export default  function BlogLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -29,7 +32,7 @@ export default function BlogLayout({
       {/* We add a main container here to ensure all blog pages 
         (the listing and individual posts) have the same max-width and padding.
       */}
-      <div className="container mx-auto max-w-4xl px-4 py-8 md:py-12">
+      <div className="container mx-auto max-w-[1400px] px-4 py-8 md:py-12">
         
         {/* Optional: You could add a shared "Back to All Articles" link here.
           We can use a simple <Button> for consistent styling.

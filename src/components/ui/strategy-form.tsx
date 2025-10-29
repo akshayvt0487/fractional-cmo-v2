@@ -9,13 +9,27 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { createClientBrowser } from "@/integrations/supabase/client";
-// 🟢 CORRECTED: Use named import for useRouter from 'next/navigation'
+// 🟢 APPWRITE IMPORT: Import Appwrite client and IDs
+import { databases, APPWRITE_DATABASE_ID, APPWRITE_COLLECTION_STRATEGY_FORM_ID } from "@/integrations/appwrite/client";
+// 🟢 APPWRITE IMPORT: Import ID for creating unique documents
+import { ID } from "appwrite";
 import { useRouter } from "next/navigation";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 // Using the uploaded professional photo directly
 const basheerImage = "/lovable-uploads/2975c655-d01c-4894-8737-276899af3f17.png";
+
+// 🟢 REVISION: Moved serviceMapping outside the component
+// This prevents an infinite re-render loop by creating a stable constant.
+const serviceMapping: Record<string, string> = {
+  'google-ads': 'performance-ads',
+  'seo': 'seo-content', 
+  'strategy': 'growth-strategy',
+  'fractional-cmo': 'fractional-cmo',
+  'conversion': 'conversion-optimization',
+  'automation': 'marketing-automation',
+  'consultation': 'consultation'
+};
 
 interface StrategyFormProps {
   preSelectedService?: string;
@@ -37,40 +51,43 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  const supabase = createClientBrowser();
   
-  // 🟢 CORRECTED: Initialize the hook
   const router = useRouter(); 
-
-  // Service mapping for pre-selected services
-  const serviceMapping: Record<string, string> = {
-    'google-ads': 'performance-ads',
-    'seo': 'seo-content', 
-    'strategy': 'growth-strategy',
-    'fractional-cmo': 'fractional-cmo',
-    'conversion': 'conversion-optimization',
-    'automation': 'marketing-automation',
-    'consultation': 'consultation'
-  };
 
   useEffect(() => {
     if (preSelectedService && serviceMapping[preSelectedService]) {
       setFormData(prev => ({ ...prev, service: serviceMapping[preSelectedService] }));
     }
-  }, [preSelectedService]);
+  // 🟢 REVISION: serviceMapping can be removed from dependencies
+  // as it's now a stable constant defined outside
+  }, [preSelectedService]); 
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      const { data, error } = await supabase.functions.invoke('submit-strategy-form', {
-        body: formData
+    // 🟢 VALIDATION: Ensure required IDs are present
+    if (!APPWRITE_DATABASE_ID || !APPWRITE_COLLECTION_STRATEGY_FORM_ID) {
+      console.error("Appwrite Database ID or Collection ID is not set.");
+      toast({
+        title: "Configuration Error",
+        description: "The form is not configured correctly. Please contact support.",
+        variant: "destructive",
       });
+      setIsSubmitting(false);
+      return;
+    }
 
-      if (error) {
-        throw error;
-      }
+    try {
+      // 🟢 APPWRITE: Create a new document in the specified collection
+      await databases.createDocument(
+        APPWRITE_DATABASE_ID,
+       APPWRITE_COLLECTION_STRATEGY_FORM_ID, // This ID must be for your "form submissions" collection
+        ID.unique(), // Creates a new unique ID for the document
+        formData      // The form data object is saved as the document
+      );
+      
+      // 🟢 Appwrite throws an error on failure, so if we get here, it succeeded.
 
       toast({
         title: "Request submitted!",
@@ -79,6 +96,10 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
       
       setIsOpen(false);
       
+      // Store form data for redirect logic *before* clearing state
+      const submittedRevenue = formData.revenue;
+      const submittedBudget = formData.budget;
+
       // Clear form data after successful submission
       setFormData({
         name: "",
@@ -93,12 +114,9 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
       });
       
       // Check revenue and budget - redirect based on lead quality
-      if (formData.revenue === "under-500k" || formData.revenue === "500k-1m" || formData.budget === "under-5k") {
-        // Redirect to a local Next.js page
+      if (submittedRevenue === "under-500k" || submittedRevenue === "500k-1m" || submittedBudget === "under-5k") {
         router.push('/not-ready'); 
       } else {
-        // Good lead - redirect to external booking page
-        // Use window.location.href for external, non-Next.js navigation
         window.location.href = 'https://link.dsigns.com.au/widget/bookings/fractional-cmo-basheer';
       }
     } catch (error: any) {
@@ -217,7 +235,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="space-y-2">
               <Label htmlFor="revenue">Current Annual Revenue or Targeted Annual Revenue</Label>
-              <Select onValueChange={(value) => handleInputChange("revenue", value)}>
+              <Select value={formData.revenue} onValueChange={(value) => handleInputChange("revenue", value)}>
                 <SelectTrigger className="h-12 text-base">
                   <SelectValue placeholder="Select revenue range" />
                 </SelectTrigger>
@@ -233,7 +251,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
             </div>
             <div className="space-y-2">
               <Label htmlFor="budget">Marketing Budget Range</Label>
-              <Select onValueChange={(value) => handleInputChange("budget", value)}>
+              <Select value={formData.budget} onValueChange={(value) => handleInputChange("budget", value)}>
                 <SelectTrigger className="h-12 text-base">
                   <SelectValue placeholder="Monthly marketing spend" />
                 </SelectTrigger>
@@ -258,7 +276,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
               onChange={(e) => handleInputChange("challenge", e.target.value)}
               placeholder="Please share:
 • What industry/niche you're in
-• Your biggest growth challenge right now  
+• Your biggest growth challenge right now  
 • Current marketing efforts (if any)
 • What success looks like for your business"
               rows={5}
@@ -268,13 +286,14 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
 
           <div className="space-y-2">
             <Label htmlFor="timeline">Project Timeline</Label>
-            <Select onValueChange={(value) => handleInputChange("timeline", value)}>
+            <Select value={formData.timeline} onValueChange={(value) => handleInputChange("timeline", value)}>
               <SelectTrigger className="h-12 text-base">
                 <SelectValue placeholder="When would you like to begin?" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="asap">Ready to start ASAP</SelectItem>
                 <SelectItem value="1-month">Within the next month</SelectItem>
+                {/* 🟢 REVISION: Fixed typo here (removed stray '.') */}
                 <SelectItem value="2-3-months">2-3 months out</SelectItem>
                 <SelectItem value="planning">Still in planning phase</SelectItem>
                 <SelectItem value="2025">Sometime in 2025</SelectItem>
@@ -292,3 +311,4 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
 };
 
 export default StrategyForm;
+

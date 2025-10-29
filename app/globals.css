@@ -1,5 +1,4 @@
-/* ----------------------------------------------------------------- */
-/* FIX: Replace V3 directives with the single V4 import for stability */
+
 @import "tailwindcss";
 
 
@@ -260,3 +259,4 @@
 .read-the-docs {
   color: #888;
 }
+

@@ -26,7 +26,7 @@ const BlogSection = () => {
                 <Image 
                   src={post.image} 
                   alt={`${post.title} - Digital Marketing Guide by ${post.author}`}
-                  className="hover:scale-105 transition-transform duration-300"
+                  className="hover:scale-105 transition-transform duration-300 w-full"
                   loading="lazy"
                   width={400}
                   height={225}

@@ -1,7 +1,29 @@
+'use client';
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { supabase } from '@/integrations/supabase/client';
 import { Users, FileText, Settings, BarChart3 } from 'lucide-react';
+// Import Appwrite SDK from a CDN to resolve the build error
+import { Client, Databases, Query } from 'https://cdn.jsdelivr.net/npm/appwrite@15.0.0/dist/esm/appwrite.js';
+
+// --- Appwrite Client Setup ---
+// The build environment can't access your .env.local file or local modules.
+// Please enter your Appwrite credentials here for the dashboard to work in this preview.
+const APPWRITE_ENDPOINT = process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT || 'YOUR_APPWRITE_ENDPOINT';
+const APPWRITE_PROJECT_ID = process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID || 'YOUR_PROJECT_ID';
+const APPWRITE_DATABASE_ID = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID || 'YOUR_DATABASE_ID';
+const APPWRITE_COLLECTION_SUBMISSIONS = process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_SUBMISSIONS || 'YOUR_FORM_SUBMISSIONS_COLLECTION_ID';
+const APPWRITE_COLLECTION_BLOGS = process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_BLOGS || 'YOUR_BLOG_POSTS_COLLECTION_ID';
+
+// Initialize the Appwrite Client
+const client = new Client();
+client
+    .setEndpoint(APPWRITE_ENDPOINT)
+    .setProject(APPWRITE_PROJECT_ID);
+
+// Initialize Databases
+const databases = new Databases(client);
+// --- End Appwrite Client Setup ---
+
 
 export const Dashboard = () => {
   const [stats, setStats] = useState({
@@ -11,31 +33,61 @@ export const Dashboard = () => {
   });
 
   useEffect(() => {
+    // Ensure we don't run this if credentials are just placeholders
+    if (APPWRITE_PROJECT_ID === 'YOUR_PROJECT_ID') {
+      console.warn("Appwrite credentials are not set. Please update the constants in Dashboard.jsx");
+      return;
+    }
     fetchStats();
   }, []);
 
   const fetchStats = async () => {
     try {
       // Fetch form submissions count
-      const { count: submissionsCount } = await supabase
-        .from('form_submissions')
-        .select('*', { count: 'exact', head: true });
+      // We use Query.limit(0) to only fetch the 'total' count, not the documents
+      const submissionsPromise = databases.listDocuments(
+        APPWRITE_DATABASE_ID,
+        APPWRITE_COLLECTION_SUBMISSIONS,
+        [Query.limit(0)]
+      );
 
-      // Fetch blog posts stats
-      const { data: blogPosts } = await supabase
-        .from('blog_posts')
-        .select('published');
+      // Fetch total blog posts count
+      const totalBlogsPromise = databases.listDocuments(
+        APPWRITE_DATABASE_ID,
+        APPWRITE_COLLECTION_BLOGS,
+        [Query.limit(0)]
+      );
 
-      const totalBlogPosts = blogPosts?.length || 0;
-      const publishedPosts = blogPosts?.filter(post => post.published).length || 0;
+      // Fetch published blog posts count
+      // We query for posts where 'published' is true and get the total
+      const publishedBlogsPromise = databases.listDocuments(
+        APPWRITE_DATABASE_ID,
+        APPWRITE_COLLECTION_BLOGS,
+        [
+          Query.equal('published', true),
+          Query.limit(0)
+        ]
+      );
+
+      // Wait for all promises to resolve
+      const [
+        submissionsResponse,
+        totalBlogsResponse,
+        publishedBlogsResponse
+      ] = await Promise.all([
+        submissionsPromise,
+        totalBlogsPromise,
+        publishedBlogsPromise
+      ]);
 
       setStats({
-        totalSubmissions: submissionsCount || 0,
-        totalBlogPosts,
-        publishedPosts,
+        totalSubmissions: submissionsResponse.total || 0,
+        totalBlogPosts: totalBlogsResponse.total || 0,
+        publishedPosts: publishedBlogsResponse.total || 0,
       });
+
     } catch (error) {
-      console.error('Error fetching stats:', error);
+      console.error('Error fetching stats from Appwrite:', error);
     }
   };
 
@@ -105,3 +157,4 @@ export const Dashboard = () => {
     </div>
   );
 };
+

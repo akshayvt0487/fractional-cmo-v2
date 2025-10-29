@@ -1,16 +1,23 @@
+'use client';
+
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { User, Session } from "@supabase/supabase-js";
-import { supabase } from "@/integrations/supabase/client";
+import { Models, AppwriteException } from "appwrite";
+import { account } from "@/integrations/appwrite/client";
+import { useRouter } from "next/navigation";
+
+// Define the shape of the user and session from Appwrite
+type AppwriteUser = Models.User<Models.Preferences>;
+type AppwriteSession = Models.Session;
 
 interface AuthContextType {
-  user: User | null;
-  session: Session | null;
+  user: AppwriteUser | null;
+  session: AppwriteSession | null;
   isAdmin: boolean;
   isLoading: boolean;
-  signIn: (email: string, password: string) => Promise<{ error: any }>;
-  signUp: (email: string, password: string) => Promise<{ error: any }>;
+  signIn: (email: string, password: string) => Promise<{ error: AppwriteException | null }>;
+  signUp: (email: string, password: string) => Promise<{ error: AppwriteException | null }>;
   signOut: () => Promise<void>;
-  resetPassword: (email: string) => Promise<{ error: any }>;
+  resetPassword: (email: string) => Promise<{ error: AppwriteException | null }>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -24,87 +31,101 @@ export const useAuth = () => {
 };
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<User | null>(null);
-  const [session, setSession] = useState<Session | null>(null);
+  const [user, setUser] = useState<AppwriteUser | null>(null);
+  const [session, setSession] = useState<AppwriteSession | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter();
 
-  useEffect(() => {
-    // Set up auth state listener
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (event, session) => {
-      setSession(session);
-      setUser(session?.user ?? null);
+  // Reusable function to check auth state and admin status
+  const checkAuthState = async () => {
+    try {
+      const currentUser = await account.get();
+      const currentSession = await account.getSession("current");
+      
+      setUser(currentUser);
+      setSession(currentSession);
 
-      if (session?.user?.email) {
-        // Check if user is admin
-        setTimeout(async () => {
-          try {
-            const { data, error } = await supabase.rpc("is_admin_user", {
-              user_email: session.user.email,
-            });
-            if (!error) {
-              setIsAdmin(data || false);
-            }
-          } catch (err) {
-            console.error("Error checking admin status:", err);
-            setIsAdmin(false);
-          }
-        }, 0);
-      } else {
+      // Check for admin status by looking for 'admin' team
+      try {
+        const teamList = await account.listTeams();
+        const adminTeam = teamList.teams.find(team => team.name === 'admin');
+        setIsAdmin(!!adminTeam);
+      } catch (adminError) {
+        console.error("Error checking admin status:", adminError);
         setIsAdmin(false);
       }
 
+    } catch (error) {
+      // Not logged in
+      setUser(null);
+      setSession(null);
+      setIsAdmin(false);
+    } finally {
       setIsLoading(false);
-    });
+    }
+  };
 
-    // Check for existing session
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
-      setUser(session?.user ?? null);
-      setIsLoading(false);
-    });
-
-    return () => subscription.unsubscribe();
+  // Check session on initial load
+  useEffect(() => {
+    checkAuthState();
   }, []);
 
   const signIn = async (email: string, password: string) => {
-    const { error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
-
-    return { error };
+    try {
+      await account.createEmailPasswordSession(email, password);
+      await checkAuthState(); // Update context state
+      return { error: null };
+    } catch (error) {
+      return { error: error as AppwriteException };
+    }
   };
 
   const signUp = async (email: string, password: string) => {
     const redirectUrl = `${window.location.origin}/admin`;
 
-    const { error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: {
-        emailRedirectTo: redirectUrl,
-      },
-    });
+    try {
+      // 1. Create the user
+      // We use the email prefix as their name, as Appwrite's 'create' can take a name
+      const name = email.split('@')[0];
+      await account.create('unique()', email, password, name);
 
-    return { error };
+      // 2. Log the new user in
+      await account.createEmailPasswordSession(email, password);
+
+      // 3. Send a verification email
+      await account.createVerification(redirectUrl);
+      
+      await checkAuthState(); // Update context state
+      return { error: null };
+    } catch (error) {
+      return { error: error as AppwriteException };
+    }
   };
 
   const signOut = async () => {
-    await supabase.auth.signOut();
-    setIsAdmin(false);
+    try {
+      await account.deleteSession('current');
+    } catch (error) {
+      console.error("Error signing out:", error);
+    } finally {
+      // Clear state regardless of error
+      setUser(null);
+      setSession(null);
+      setIsAdmin(false);
+      // Optional: Redirect to home page after sign out
+      // router.push('/');
+    }
   };
 
   const resetPassword = async (email: string) => {
     const redirectUrl = `${window.location.origin}/admin/reset-password`;
-
-    const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: redirectUrl,
-    });
-
-    return { error };
+    try {
+      await account.createRecovery(email, redirectUrl);
+      return { error: null };
+    } catch (error) {
+      return { error: error as AppwriteException };
+    }
   };
 
   const value = {
