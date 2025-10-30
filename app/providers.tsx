@@ -1,7 +1,6 @@
 'use client';
 
 import { SessionProvider } from 'next-auth/react';
-import { AuthProvider } from '@/src/contexts/AuthContext';
 // Import any other providers you have, like Toaster, ThemeProvider, etc.
 // import { Toaster } from "@/components/ui/toaster";
 
@@ -12,10 +11,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
         you can remove the <AuthProvider> wrapper. 
         But if you still use <AuthProvider> for other things, keep it.
       */}
-      <AuthProvider>
+     
         {children}
         {/* <Toaster /> */}
-      </AuthProvider>
+     
     </SessionProvider>
   );
 }

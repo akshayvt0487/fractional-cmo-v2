@@ -1,13 +1,17 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
-import { supabase } from '@/integrations/supabase/client';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Badge } from "@/components/ui/badge";
+import { databases } from '@/lib/appwrite'; // ✅ central Appwrite client
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { Loader2, Mail, Phone, Building2, Calendar } from 'lucide-react';
 import { format } from 'date-fns';
+import { Models } from 'appwrite';
 
-interface FormSubmission {
-  id: string;
+// --------------------------
+// 🧩 INTERFACE
+// --------------------------
+interface FormSubmission extends Models.Document {
   name: string;
   email: string;
   company: string;
@@ -17,41 +21,50 @@ interface FormSubmission {
   budget?: string;
   timeline?: string;
   challenge: string;
-  created_at: string;
 }
 
+// --------------------------
+// ⚙️ COMPONENT
+// --------------------------
 const FormSubmissionsViewer = () => {
   const [submissions, setSubmissions] = useState<FormSubmission[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+
+  const DATABASE_ID = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!;
+  const COLLECTION_ID = process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_STRATEGY_FORM_ID!;
 
   useEffect(() => {
     fetchSubmissions();
   }, []);
 
+  // --------------------------
+  // 📦 Fetch form submissions
+  // --------------------------
   const fetchSubmissions = async () => {
     try {
-      const { data, error } = await supabase
-        .from('form_submissions')
-        .select('*')
-        .order('created_at', { ascending: false });
-
-      if (error) throw error;
-      setSubmissions(data || []);
+      const response = await databases.listDocuments<FormSubmission>(DATABASE_ID, COLLECTION_ID, []);
+      setSubmissions(response.documents);
     } catch (error) {
-      console.error('Error fetching submissions:', error);
+      console.error('❌ Error fetching submissions:', error);
     } finally {
       setIsLoading(false);
     }
   };
 
+  // --------------------------
+  // 🎨 Badge color helper
+  // --------------------------
   const getServiceBadgeColor = (service?: string) => {
     if (!service) return 'default';
-    if (service.includes('cmo')) return 'default';
-    if (service.includes('google-ads')) return 'secondary';
-    if (service.includes('content')) return 'outline';
+    if (service.toLowerCase().includes('cmo')) return 'default';
+    if (service.toLowerCase().includes('google')) return 'secondary';
+    if (service.toLowerCase().includes('content')) return 'outline';
     return 'default';
   };
 
+  // --------------------------
+  // ⏳ Loading State
+  // --------------------------
   if (isLoading) {
     return (
       <Card>
@@ -62,6 +75,9 @@ const FormSubmissionsViewer = () => {
     );
   }
 
+  // --------------------------
+  // 🖥️ Render Submissions
+  // --------------------------
   return (
     <Card>
       <CardHeader>
@@ -70,6 +86,7 @@ const FormSubmissionsViewer = () => {
           All strategy call requests and contact form submissions
         </CardDescription>
       </CardHeader>
+
       <CardContent>
         {submissions.length === 0 ? (
           <div className="text-center py-8 text-muted-foreground">
@@ -78,7 +95,7 @@ const FormSubmissionsViewer = () => {
         ) : (
           <div className="space-y-4">
             {submissions.map((submission) => (
-              <Card key={submission.id} className="hover:bg-accent/50 transition-colors">
+              <Card key={submission.$id} className="hover:bg-accent/50 transition-colors">
                 <CardContent className="pt-6">
                   <div className="grid gap-4 md:grid-cols-2">
                     {/* Left Column */}
@@ -90,7 +107,7 @@ const FormSubmissionsViewer = () => {
                           {submission.company}
                         </div>
                       </div>
-                      
+
                       <div className="space-y-1">
                         <div className="flex items-center gap-2 text-sm">
                           <Mail className="h-4 w-4 text-muted-foreground" />
@@ -110,7 +127,7 @@ const FormSubmissionsViewer = () => {
 
                       <div className="flex items-center gap-2 text-xs text-muted-foreground">
                         <Calendar className="h-3 w-3" />
-                        {format(new Date(submission.created_at), 'PPp')}
+                        {format(new Date(submission.$createdAt), 'PPp')}
                       </div>
                     </div>
 
@@ -124,7 +141,7 @@ const FormSubmissionsViewer = () => {
                           </Badge>
                         </div>
                       )}
-                      
+
                       <div className="grid grid-cols-2 gap-2 text-sm">
                         {submission.revenue && (
                           <div>

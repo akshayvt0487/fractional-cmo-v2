@@ -1,11 +1,11 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
-// 🟢 CORRECTED IMPORTS:
-// 'account' comes from the client-safe file
-import { account } from "@/integrations/appwrite/client";
-// 'adminTeams' comes from the new server-only file
-import { adminTeams } from "@/integrations/appwrite/server";
-import { AppwriteException } from "appwrite";
+import { getAdminTeams, verifyUserCredentials } from "@/integrations/appwrite/server"; // Assuming these imports are correct for your project
+import type { User } from "next-auth";
+
+interface ExtendedUser extends User {
+  isAdmin: boolean;
+}
 
 const handler = NextAuth({
   session: {
@@ -19,62 +19,72 @@ const handler = NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        if (!credentials) return null;
 
-        let user; // To store user data
+        // --- DEVELOPMENT BYPASS ---
+        // Checks if the process is in 'development' mode
+        // if (process.env.NODE_ENV === 'development') {
+        //   console.warn("--- DEV MODE: AUTHENTICATION BYPASSED ---");
+        //   // Return a mock admin user to bypass login
+        //   return {
+        //     id: "dev-admin-user-id",
+        //     email: "dev@admin.com",
+        //     name: "Dev Admin",
+        //     isAdmin: true,
+        //   } as ExtendedUser;
+        // }
+        // // --- END DEVELOPMENT BYPASS ---
+
+
+        // --- PRODUCTION AUTH LOGIC ---
+        // This code will run if NODE_ENV is not 'development'
+        if (!credentials?.email || !credentials?.password) {
+          throw new Error("Email and password are required.");
+        }
 
         try {
-          // ---
-          // STEP 1: Validate the user's password.
-          // ---
-          await account.createEmailPasswordSession(
+          // STEP 1: Verify credentials using JWT-based authentication
+          const { userId, userEmail, userName } = await verifyUserCredentials(
             credentials.email,
             credentials.password
           );
+
+          // STEP 2: Check admin status using the server-side API key
+          const adminTeams = await getAdminTeams();
+          const teamId = process.env.APPWRITE_ADMIN_TEAM_ID;
           
-          user = await account.get();
-
-          // Log out the temporary session
-          await account.deleteSession('current');
-
-        } catch (error) {
-          if (error instanceof AppwriteException) {
-            console.error("Appwrite login failed:", error.message);
+          if (!teamId) {
+            throw new Error("APPWRITE_ADMIN_TEAM_ID is not configured in environment variables.");
           }
-          throw new Error("Invalid email or password.");
-        }
 
-        // ---
-        // 🟢 STEP 2: Securely check admin status using the API Key.
-        // ---
-        if (!user) {
-          throw new Error("User data not found after login.");
-        }
-
-        try {
-          // Use the secure 'adminTeams' client (from server.ts)
-          const memberships = await adminTeams.listMemberships(user.$id);
-
+          const memberships = await adminTeams.listMemberships(teamId);
+          
           const isAdmin = memberships.memberships.some(
-            (membership) => membership.teamName === 'admin'
+            membership => membership.userId === userId
           );
 
           if (!isAdmin) {
-            console.warn(`Login successful, but user ${user.email} is not an admin.`);
+            console.warn(`User ${userEmail} is not in the admin team.`);
             throw new Error("Access Denied: You are not an admin.");
           }
 
-          // 4. Return the user object to NextAuth
+          // Return authenticated admin user
           return {
-            id: user.$id,
-            email: user.email,
-            name: user.name,
+            id: userId,
+            email: userEmail,
+            name: userName,
             isAdmin: true,
-          };
+          } as ExtendedUser;
 
-        } catch (error) {
-          console.error("Failed to check admin status:", error);
-          throw new Error("Server error: Could not verify admin status.");
+        } catch (error: any) {
+          // Pass through specific error messages
+          if (error.message?.includes("Access Denied") || 
+              error.message?.includes("Invalid email") ||
+              error.message?.includes("not configured")) {
+            throw error;
+          }
+          
+          console.error("Authentication error:", error);
+          throw new Error("Authentication failed. Please try again.");
         }
       },
     }),
@@ -82,8 +92,9 @@ const handler = NextAuth({
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
-        token.id = user.id;
-        token.isAdmin = (user as any).isAdmin;
+        const extendedUser = user as ExtendedUser;
+        token.id = extendedUser.id;
+        token.isAdmin = extendedUser.isAdmin;
       }
       return token;
     },
@@ -101,4 +112,7 @@ const handler = NextAuth({
 });
 
 export { handler as GET, handler as POST };
+
+
+
 
