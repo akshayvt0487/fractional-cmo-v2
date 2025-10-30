@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/sections/Footer";
 import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
-import SEO from "@/components/SEO";
 
 
 import InternalLinks from "@/components/InternalLinks";

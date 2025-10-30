@@ -1,3 +1,4 @@
+'use client'
 import { useState, useEffect } from "react";
 import { blogPosts } from "@/data/blogPosts";
 //import { supabase } from "@/integrations/supabase/client";
