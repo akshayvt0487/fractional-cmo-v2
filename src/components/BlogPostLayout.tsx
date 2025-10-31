@@ -2,11 +2,10 @@
 
 import React from 'react';
 import { Calendar, Clock, User, Bookmark } from 'lucide-react';
+import type { StaticImageData } from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Separator } from '@/components/ui/separator';
 import SocialShareButton from '@/components/SocialShareButton';
-import BlogCTA from '@/components/BlogCTA';
 import Image from 'next/image';
 
 interface BlogPostLayoutProps {
@@ -15,7 +14,7 @@ interface BlogPostLayoutProps {
   date: string;
   readTime: string;
   category: string;
-  heroImage: string;
+  heroImage?: string | StaticImageData;
   heroAlt: string;
   articleUrl: string;
   children: React.ReactNode;
@@ -74,15 +73,17 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = ({
           </Button>
         </div>
         
-        {/* Hero Image */}
-        <div className="relative overflow-hidden rounded-xl mb-8 shadow-lg">
-          <Image 
-            src={heroImage} 
-            alt={heroAlt}
-            className="w-full h-auto object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
-        </div>
+        {/* Hero Image (render only if provided) */}
+        {heroImage && (
+          <div className="relative overflow-hidden rounded-xl mb-8 shadow-lg">
+            <Image 
+              src={heroImage} 
+              alt={heroAlt}
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+          </div>
+        )}
       </header>
 
       {/* Content */}

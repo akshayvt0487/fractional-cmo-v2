@@ -9,6 +9,7 @@ import InternalLinks from "@/components/InternalLinks";
 import Citation from "@/components/Citation";
 import { generateArticleSchema } from "@/utils/seoUtils";
 import ContentGate from "@/components/ContentGate";
+import SEO from "@/components/SEO";
 import { useContentGate } from "@/hooks/useContentGate";
 import ndisRegistrationImage from "@/assets/blog/ndis-provider-registration-new.jpg";
 import ndisComplianceImage from "@/assets/blog/ndis-compliance-quality-new.jpg";
@@ -92,7 +93,7 @@ const NDISSoftwareSaaSMarketing = () => {
           <article className="prose prose-lg max-w-none">
             {/* Hero Section */}
             <div className="mb-12">
-              <img src={ndisRegistrationImage} alt="NDIS software marketing strategy planning" className="w-full h-96 object-cover rounded-lg mb-8" />
+              <img src={String(ndisRegistrationImage.src)} alt="NDIS software marketing strategy planning" className="w-full h-96 object-cover rounded-lg mb-8" />
               <h1 className="text-4xl font-bold mb-4 text-foreground">
                 NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies
               </h1>

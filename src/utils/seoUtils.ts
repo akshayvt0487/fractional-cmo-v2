@@ -1,5 +1,7 @@
 // Enhanced SEO utility functions for comprehensive optimization
 
+import type { StaticImageData } from 'next/image';
+
 export interface ArticleData {
   headline: string;
   description: string;
@@ -7,7 +9,7 @@ export interface ArticleData {
   publishedDate: string;
   modifiedDate?: string;
   url: string;
-  imageUrl?: string;
+  imageUrl?: string | StaticImageData;
   category?: string;
   readTime?: string;
   tags?: string[];

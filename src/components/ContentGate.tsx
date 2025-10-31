@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Lock, Unlock } from "lucide-react";
 import StrategyForm from "@/components/ui/strategy-form";
-//import { supabase } from "@/integrations/supabase/client";
+import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { usePathname } from "next/navigation";
 
@@ -24,7 +24,7 @@ const ContentGate = ({ isUnlocked, onUnlock, blogTitle, blogSlug }: ContentGateP
   const [error, setError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  const location = usePathname();
+  const pathname = usePathname();
 
   const handleCodeSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ const ContentGate = ({ isUnlocked, onUnlock, blogTitle, blogSlug }: ContentGateP
     setIsSubmitting(true);
     try {
       // Send notification email
-      const currentBlogSlug = blogSlug || location.pathname.replace('/blog/', '');
+      const currentBlogSlug = blogSlug || pathname.replace('/blog/', '');
       console.log('Sending notification for:', { email, blogSlug: currentBlogSlug, blogTitle, unlockMethod: 'code' });
       
       const response = await supabase.functions.invoke('send-content-unlock-notification', {

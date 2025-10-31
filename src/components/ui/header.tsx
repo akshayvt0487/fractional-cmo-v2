@@ -54,7 +54,7 @@ const getDailyFeaturedArticles = () => {
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = usePathname();
+  const pathname = usePathname();
 
   const blogCategories = [
   {
@@ -152,7 +152,7 @@ const Header = () => {
   }, []);
 
   const handleSectionClick = (sectionId: string) => {
-    if (location.pathname === '/') {
+    if (pathname === '/') {
       // If on homepage, scroll to section
       const element = document.getElementById(sectionId);
       if (element) {

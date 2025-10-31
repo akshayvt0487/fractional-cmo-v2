@@ -5,7 +5,7 @@ import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
 import SEO from "@/components/SEO";
 import { useState, useMemo, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from 'next/navigation';
 import StrategyForm from "@/components/ui/strategy-form";
 import VirtualizedBlogGrid from "@/components/VirtualizedBlogGrid";
 import { Search, X } from "lucide-react";
@@ -14,7 +14,7 @@ import BlogMegaMenu from "@/components/BlogMegaMenu";
 import { blogPosts } from "@/data/blogPosts";
 
 const Blog = () => {
-  const [searchParams] = useSearchParams();
+  const searchParams = useSearchParams();
   const categoryFromURL = decodeURIComponent(searchParams.get('category') || "All");
   const [selectedCategory, setSelectedCategory] = useState(categoryFromURL);
   const [sortOrder, setSortOrder] = useState<"latest" | "oldest">("latest");

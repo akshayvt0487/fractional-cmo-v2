@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -14,22 +14,24 @@ const AdminResetPassword = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const navigate = useNavigate();
+  const router = useRouter();
   const { toast } = useToast();
 
   useEffect(() => {
     // Check if user has a valid session from the reset link
-    supabase.auth.getSession().then(({ data: { session } }) => {
+    (async () => {
+      const { data } = await supabase.auth.getSession();
+      const session = data?.session;
       if (!session) {
         toast({
           variant: "destructive",
           title: "Invalid or expired link",
           description: "Please request a new password reset link.",
         });
-        navigate('/admin/login');
+        router.push('/admin/login');
       }
-    });
-  }, [navigate, toast]);
+    })();
+  }, [router, toast]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -64,7 +66,7 @@ const AdminResetPassword = () => {
         description: "Your password has been successfully updated. Please sign in.",
       });
 
-      navigate('/admin/login');
+      router.push('/admin/login');
     } catch (error: any) {
       setError(error.message || 'Failed to update password');
       toast({

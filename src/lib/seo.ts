@@ -51,6 +51,9 @@ export type PageMetadataInput = {
   path?: string;
   image?: string;
   keywords?: string[];
+  // allow pages to pass full openGraph / twitter objects if needed
+  openGraph?: any;
+  twitter?: any;
 };
 
 export function createMetadata(input: PageMetadataInput = {}): Metadata {

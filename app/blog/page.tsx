@@ -15,7 +15,7 @@ import BlogMegaMenu from "@/components/BlogMegaMenu";
 import { blogPosts, categories } from "@/data/blogPosts";
 
 const Blog = () => {
-  const [searchParams] = useSearchParams();
+  const searchParams = useSearchParams();
   const categoryFromURL = decodeURIComponent(searchParams?.get('category') || "All");
   const [selectedCategory, setSelectedCategory] = useState(categoryFromURL);
   const [sortOrder, setSortOrder] = useState<"latest" | "oldest">("latest");

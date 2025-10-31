@@ -10,6 +10,7 @@ import ContentGate from '@/components/ContentGate';
 import SocialSharePreview from '@/components/SocialSharePreview';
 import { useContentGate } from '@/hooks/useContentGate';
 import { generateArticleSchema, generateBreadcrumbSchema, generatePersonSchema, getRelatedArticles, ArticleData } from '@/utils/seoUtils';
+import type { StaticImageData } from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Eye, EyeOff } from 'lucide-react';
 
@@ -27,7 +28,7 @@ interface OptimizedBlogLayoutProps {
     question: string;
     answer: string;
   }>;
-  heroImage?: string;
+  heroImage?: string | StaticImageData;
   heroAlt?: string;
 }
 
@@ -81,6 +82,12 @@ const OptimizedBlogLayout = ({
   const previewContent = childrenArray.slice(0, 8); // Show first 8 elements (about 30% of content)
   const gatedContent = childrenArray.slice(8); // Gate the rest
 
+  // Normalize possible StaticImageData to a string src for places that need a string
+  const normalizeImageToString = (img?: string | StaticImageData) => {
+    if (!img) return undefined;
+    return typeof img === 'string' ? img : (img as StaticImageData).src;
+  };
+
   return (
     <>
   
@@ -113,7 +120,7 @@ const OptimizedBlogLayout = ({
               <SocialSharePreview
                 title={articleData.headline}
                 description={articleData.description}
-                imageUrl={heroImage || articleData.imageUrl || ''}
+                imageUrl={normalizeImageToString(heroImage ?? articleData.imageUrl) ?? ''}
                 url={articleData.url}
               />
             )}

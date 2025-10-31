@@ -238,7 +238,7 @@ const NDISParticipantEngagement = () => {
       </div>
 
       <div className="my-8">
-        <img src={ndisQualityImage} alt="NDIS quality standards documentation and review process with support workers" className="w-full rounded-lg shadow-lg" />
+        <img src={ndisQualityImage.src} alt="NDIS quality standards documentation and review process with support workers" className="w-full rounded-lg shadow-lg" />
       </div>
 
       <h2>Cultural Competency and Inclusion</h2>

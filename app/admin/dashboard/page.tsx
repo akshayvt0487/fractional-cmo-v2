@@ -19,9 +19,14 @@ export const Dashboard = () => {
     try {
       const dbId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID;
       const submissionsCol = process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_STRATEGY_FORM_ID;
+      // If env vars are missing, avoid calling Appwrite and return 0
+      if (!dbId || !submissionsCol) {
+        setStats({ totalSubmissions: 0 });
+        return;
+      }
 
       // Fetch form submissions count
-      const submissions = await databases.listDocuments(dbId, submissionsCol);
+      const submissions = await databases.listDocuments(String(dbId), String(submissionsCol));
       const totalSubmissions = submissions?.total || submissions?.documents?.length || 0;
 
 
@@ -63,3 +68,5 @@ export const Dashboard = () => {
     </div>);
 
 };
+
+export default Dashboard;

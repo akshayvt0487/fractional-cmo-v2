@@ -10,6 +10,7 @@ import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
 import ndisComplianceImage from "@/assets/ndis-compliance-audit.jpg";
 import { useContentGate } from "@/hooks/useContentGate";
 import ContentGate from "@/components/ContentGate";
+import SEO from "@/components/SEO";
 export const metadata = createMetadata({
   title: "Ndis Software Saas Positioning Strategy",
   description: "Expert guidance on ndis software saas positioning strategy. Learn proven strategies and best practices for business growth.",
@@ -85,7 +86,7 @@ const NDISSoftwareSaaSPositioning = () => {
           <article className="prose prose-lg max-w-none">
             {/* Hero Section */}
             <div className="mb-12">
-              <img src={ndisQualityImage} alt="NDIS software positioning strategy planning session" className="w-full h-96 object-cover rounded-lg mb-8" />
+              <img src={String(ndisQualityImage.src)} alt="NDIS software positioning strategy planning session" className="w-full h-96 object-cover rounded-lg mb-8" />
               <h1 className="text-4xl font-bold mb-4 text-foreground">
                 NDIS Software SaaS Positioning: Stand Out in a Competitive Market
               </h1>

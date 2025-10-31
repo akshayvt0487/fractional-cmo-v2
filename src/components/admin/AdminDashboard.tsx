@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -14,7 +14,7 @@ import { AdminSidebar } from './AdminSidebar';
 
 const AdminDashboard = () => {
   const { user, isAdmin, isLoading } = useAuth();
-  const navigate = useNavigate();
+  const router = useRouter();
   const [stats, setStats] = useState({
     totalSubmissions: 0,
     totalBlogPosts: 0,
@@ -23,9 +23,9 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     if (!isLoading && (!user || !isAdmin)) {
-      navigate('/admin/login');
+      router.push('/admin/login');
     }
-  }, [user, isAdmin, isLoading, navigate]);
+  }, [user, isAdmin, isLoading, router]);
 
   useEffect(() => {
     if (user && isAdmin) {
@@ -46,7 +46,7 @@ const AdminDashboard = () => {
         .select('published');
 
       const totalBlogPosts = blogPosts?.length || 0;
-      const publishedPosts = blogPosts?.filter(post => post.published).length || 0;
+      const publishedPosts = blogPosts ? blogPosts.filter((post: any) => post.published).length : 0;
 
       setStats({
         totalSubmissions: submissionsCount || 0,

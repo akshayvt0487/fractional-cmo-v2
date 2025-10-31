@@ -1,5 +1,3 @@
-'use client';
-
 import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, Target, Globe, Monitor, MapPin, PenTool, Building, Users, TrendingUp, CheckCircle, Search, BookOpen, BarChart, Lightbulb, Calendar, Mail, Smartphone, Award, Gift, Handshake, Star, MessageCircle } from "lucide-react";

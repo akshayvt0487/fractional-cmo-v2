@@ -191,7 +191,7 @@ const NDISWebDesign = () => {
       </div>
 
       <div className="my-8">
-        <img src={ndisQualityImage} alt="NDIS website quality standards and user experience design examples" className="w-full rounded-lg shadow-lg" />
+  <img src={String(ndisQualityImage.src)} alt="NDIS website quality standards and user experience design examples" className="w-full rounded-lg shadow-lg" />
       </div>
 
       <h2>Service Pages That Convert Inquiries</h2>

@@ -3,7 +3,7 @@ import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import StrategyForm from "@/components/ui/strategy-form";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 
 interface ScrollBottomPopupProps {
   onClose?: () => void;
@@ -62,7 +62,7 @@ const ScrollBottomPopup = ({ onClose }: ScrollBottomPopupProps) => {
           <div className="space-y-3">
             <StrategyForm preSelectedService="strategy" />
             <Button variant="outline" asChild className="w-full">
-              <Link to="/blog">Read More Articles</Link>
+              <Link href="/blog">Read More Articles</Link>
             </Button>
           </div>
         </CardContent>

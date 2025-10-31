@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -16,12 +16,13 @@ const AdminLogin = () => {
   const [error, setError] = useState('');
   
   const { user, isAdmin, signIn } = useAuth();
-  const navigate = useNavigate();
+  const router = useRouter();
   const { toast } = useToast();
 
   // Redirect if already logged in as admin
   if (user && isAdmin) {
-    return <Navigate to="/admin" replace />;
+    router.replace('/admin');
+    return null;
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -51,7 +52,7 @@ const AdminLogin = () => {
           title: "Login Successful",
           description: "Welcome to the admin dashboard.",
         });
-        navigate('/admin');
+  router.push('/admin');
       }
     } catch (err) {
       console.error('Unexpected error during login:', err);
