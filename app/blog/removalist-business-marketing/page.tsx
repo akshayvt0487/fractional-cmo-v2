@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent } from "@/components/ui/card";
 import removalistBusinessMarketingHero from '@/assets/blog/removalist-business-marketing.jpg';
 import Link from 'next/link';
-
+export const metadata = createMetadata({
+  title: "Removalist Business Marketing",
+  description: "Expert guidance on removalist business marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/removalist-business-marketing",
+  keywords: ["removalist", "business", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Removalist Business Marketing",
+    description: "Expert guidance on removalist business marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/removalist-business-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Removalist Business Marketing"
+    }],
+    publishedTime: "2023-08-14",
+    modifiedTime: "2025-10-31T11:10:05.138Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Removalist Business Marketing",
+    description: "Expert guidance on removalist business marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const RemovalistBusinessMarketing = () => {
   const articleData = {
     headline: "Removalist Business Marketing: How to Build Trust and Win More Moves",
@@ -18,34 +47,20 @@ const RemovalistBusinessMarketing = () => {
     readTime: "24 min read",
     tags: ["removalist business", "marketing strategies", "trust building", "local SEO"]
   };
-
-  const faqs = [
-    {
-      question: "How can removalist businesses build trust with potential customers?",
-      answer: "Build trust through professional website design, verified customer reviews, clear pricing, comprehensive insurance coverage display, AFRA membership, and transparent communication about services and policies."
-    },
-    {
-      question: "What are the most effective marketing channels for removalist businesses?",
-      answer: "Local SEO and Google My Business optimization, social media showcasing successful moves, referral programs, partnerships with real estate agents, and targeted Google Ads for emergency moving services."
-    },
-    {
-      question: "How should removalist businesses handle negative reviews?",
-      answer: "Respond professionally within 24 hours, acknowledge concerns, offer solutions, and demonstrate commitment to customer satisfaction. Use feedback to improve services and prevent similar issues."
-    },
-    {
-      question: "What's the best way to price removalist services competitively?",
-      answer: "Offer transparent hourly rates ($80-150 for 2-person teams), fixed quotes based on home size, volume-based pricing, and distance factors. Always provide written estimates and avoid hidden fees."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout 
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage="/assets/blog/removalist-business-marketing.jpg"
-      heroAlt="Removalist business marketing strategies and customer trust building"
-    >
+  const faqs = [{
+    question: "How can removalist businesses build trust with potential customers?",
+    answer: "Build trust through professional website design, verified customer reviews, clear pricing, comprehensive insurance coverage display, AFRA membership, and transparent communication about services and policies."
+  }, {
+    question: "What are the most effective marketing channels for removalist businesses?",
+    answer: "Local SEO and Google My Business optimization, social media showcasing successful moves, referral programs, partnerships with real estate agents, and targeted Google Ads for emergency moving services."
+  }, {
+    question: "How should removalist businesses handle negative reviews?",
+    answer: "Respond professionally within 24 hours, acknowledge concerns, offer solutions, and demonstrate commitment to customer satisfaction. Use feedback to improve services and prevent similar issues."
+  }, {
+    question: "What's the best way to price removalist services competitively?",
+    answer: "Offer transparent hourly rates ($80-150 for 2-person teams), fixed quotes based on home size, volume-based pricing, and distance factors. Always provide written estimates and avoid hidden fees."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage="/assets/blog/removalist-business-marketing.jpg" heroAlt="Removalist business marketing strategies and customer trust building">
       <Card className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
@@ -654,10 +669,7 @@ const RemovalistBusinessMarketing = () => {
                             for your removalist business and start attracting more quality customers.
                           </p>
                           <div className="space-y-4">
-                            <Link 
-                              href="/contact" 
-                              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
-                            >
+                            <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
                               Get Marketing Strategy
                             </Link>
                             <div className="text-xs text-muted-foreground">
@@ -752,8 +764,6 @@ const RemovalistBusinessMarketing = () => {
                       </Card>
                     </div>
       </section>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default RemovalistBusinessMarketing;

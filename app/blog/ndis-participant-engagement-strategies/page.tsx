@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,7 +6,35 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import ndisProviderImage from "@/assets/blog/ndis-participant-engagement-new.jpg";
 import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
-
+export const metadata = createMetadata({
+  title: "Ndis Participant Engagement Strategies",
+  description: "Expert guidance on ndis participant engagement strategies. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-participant-engagement-strategies",
+  keywords: ["ndis", "participant", "engagement", "strategies", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Participant Engagement Strategies",
+    description: "Expert guidance on ndis participant engagement strategies. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-participant-engagement-strategies",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Participant Engagement Strategies"
+    }],
+    publishedTime: "2024-01-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:05.004Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Participant Engagement Strategies",
+    description: "Expert guidance on ndis participant engagement strategies. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISParticipantEngagement = () => {
   const articleData = {
     headline: "NDIS Participant Engagement Strategies: Building Meaningful Relationships",
@@ -19,30 +48,17 @@ const NDISParticipantEngagement = () => {
     readTime: "24 min read",
     tags: ["NDIS", "Participant Engagement", "Disability Services", "Communication", "Cultural Competency"]
   };
-
-  const faqs = [
-    {
-      question: "What are the key principles of effective NDIS participant engagement?",
-      answer: "Effective engagement is based on person-centered approaches, choice and control, cultural competency, and strength-based planning. It involves recognizing each participant as unique, supporting their decision-making, and building on their existing capabilities."
-    },
-    {
-      question: "How can NDIS providers ensure culturally competent engagement?",
-      answer: "Cultural competency involves understanding diversity, avoiding assumptions, using inclusive language, respecting traditional practices, and creating safe spaces for all participants. Providers should receive ongoing cultural awareness training and seek feedback from diverse communities."
-    },
-    {
-      question: "What communication strategies work best for participants with different disabilities?",
-      answer: "Use visual supports, technology aids, interpreters, and easy-read materials as needed. Adapt communication pace, offer multiple channels, confirm understanding through repetition, and provide choices rather than open-ended questions."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.ndis}
-      faqs={faqs}
-      heroImage={ndisProviderImage}
-      heroAlt="NDIS support worker engaging with participant in meaningful conversation in community setting"
-    >
+  const faqs = [{
+    question: "What are the key principles of effective NDIS participant engagement?",
+    answer: "Effective engagement is based on person-centered approaches, choice and control, cultural competency, and strength-based planning. It involves recognizing each participant as unique, supporting their decision-making, and building on their existing capabilities."
+  }, {
+    question: "How can NDIS providers ensure culturally competent engagement?",
+    answer: "Cultural competency involves understanding diversity, avoiding assumptions, using inclusive language, respecting traditional practices, and creating safe spaces for all participants. Providers should receive ongoing cultural awareness training and seek feedback from diverse communities."
+  }, {
+    question: "What communication strategies work best for participants with different disabilities?",
+    answer: "Use visual supports, technology aids, interpreters, and easy-read materials as needed. Adapt communication pace, offer multiple channels, confirm understanding through repetition, and provide choices rather than open-ended questions."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisProviderImage} heroAlt="NDIS support worker engaging with participant in meaningful conversation in community setting">
       <h2>Participant Engagement Landscape</h2>
       
       <div className="grid md:grid-cols-4 gap-6 mb-8">
@@ -135,8 +151,8 @@ const NDISParticipantEngagement = () => {
       </div>
 
       <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-        "The best engagement happens when participants feel heard, respected, and empowered 
-        to shape their own support journey. It's about walking alongside them, not leading them."
+        &quot;The best engagement happens when participants feel heard, respected, and empowered 
+        to shape their own support journey. It&apos;s about walking alongside them, not leading them.&quot;
         <footer className="text-sm mt-2">— Participant Advisory Council</footer>
       </blockquote>
 
@@ -222,11 +238,7 @@ const NDISParticipantEngagement = () => {
       </div>
 
       <div className="my-8">
-        <img 
-          src={ndisQualityImage} 
-          alt="NDIS quality standards documentation and review process with support workers"
-          className="w-full rounded-lg shadow-lg"
-        />
+        <img src={ndisQualityImage} alt="NDIS quality standards documentation and review process with support workers" className="w-full rounded-lg shadow-lg" />
       </div>
 
       <h2>Cultural Competency and Inclusion</h2>
@@ -299,7 +311,7 @@ const NDISParticipantEngagement = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-primary">A - Achievable</h4>
-                  <p className="text-sm text-muted-foreground">Realistic goals within participant's capabilities and resources</p>
+                  <p className="text-sm text-muted-foreground">Realistic goals within participant&apos;s capabilities and resources</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-primary">R - Relevant</h4>
@@ -357,8 +369,6 @@ const NDISParticipantEngagement = () => {
         </Card>
       </div>
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default NDISParticipantEngagement;

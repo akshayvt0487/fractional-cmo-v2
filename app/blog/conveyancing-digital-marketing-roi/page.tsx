@@ -1,10 +1,38 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import conveyancingDigitalMarketingRoiHero from '@/assets/blog/conveyancing-digital-marketing-roi-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Conveyancing Digital Marketing Roi",
+  description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
+  path: "/blog/conveyancing-digital-marketing-roi",
+  keywords: ["conveyancing", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Conveyancing Digital Marketing Roi",
+    description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/conveyancing-digital-marketing-roi",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Conveyancing Digital Marketing Roi"
+    }],
+    publishedTime: "2025-09-01T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.486Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Conveyancing Digital Marketing Roi",
+    description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ConveyancingDigitalMarketingROI = () => {
   const articleData = {
     headline: "Digital Marketing ROI for Conveyancing Firms: Measuring Success and Growth",
@@ -18,33 +46,20 @@ const ConveyancingDigitalMarketingROI = () => {
     readTime: "24 min read",
     tags: ["ROI", "Digital Marketing", "Conveyancing", "Analytics", "Legal Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What's a good ROI for conveyancing digital marketing?",
-      answer: "A healthy digital marketing ROI for conveyancing firms is 3:1 to 5:1, meaning $3-5 in revenue for every $1 spent. Top performing firms achieve 6:1 or higher through optimized campaigns and strong conversion rates."
-    },
-    {
-      question: "How long does it take to see ROI from digital marketing?",
-      answer: "SEO typically shows results in 3-6 months, Google Ads can generate leads immediately, and social media builds momentum over 2-4 months. Full ROI assessment requires 6-12 months of consistent marketing efforts."
-    },
-    {
-      question: "What metrics should conveyancing firms track?",
-      answer: "Key metrics include cost per lead, lead-to-client conversion rate, customer acquisition cost, customer lifetime value, organic traffic growth, and local search rankings. Track both quantity and quality of leads."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.legal}
-        faqs={faqs}
-        heroImage={conveyancingDigitalMarketingRoiHero}
-        heroAlt="Digital marketing ROI measurement for conveyancing firms"
-      >
+  const faqs = [{
+    question: "What's a good ROI for conveyancing digital marketing?",
+    answer: "A healthy digital marketing ROI for conveyancing firms is 3:1 to 5:1, meaning $3-5 in revenue for every $1 spent. Top performing firms achieve 6:1 or higher through optimized campaigns and strong conversion rates."
+  }, {
+    question: "How long does it take to see ROI from digital marketing?",
+    answer: "SEO typically shows results in 3-6 months, Google Ads can generate leads immediately, and social media builds momentum over 2-4 months. Full ROI assessment requires 6-12 months of consistent marketing efforts."
+  }, {
+    question: "What metrics should conveyancing firms track?",
+    answer: "Key metrics include cost per lead, lead-to-client conversion rate, customer acquisition cost, customer lifetime value, organic traffic growth, and local search rankings. Track both quantity and quality of leads."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={conveyancingDigitalMarketingRoiHero} heroAlt="Digital marketing ROI measurement for conveyancing firms">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Measuring digital marketing ROI is crucial for conveyancing firms investing in online growth strategies. 
-          Without clear metrics and data-driven insights, it's impossible to know which marketing efforts drive real 
+          Without clear metrics and data-driven insights, it&apos;s impossible to know which marketing efforts drive real 
           business results and which drain resources without delivering value.
         </p>
         
@@ -488,7 +503,7 @@ const ConveyancingDigitalMarketingROI = () => {
                   <li>• Clear privacy statements and data usage</li>
                   <li>• Inline validation to prevent errors</li>
                   <li>• Smart defaults and auto-completion</li>
-                  <li>• Compelling submit button copy ("Get Your Quote")</li>
+                  <li>• Compelling submit button copy (&quot;Get Your Quote&quot;)</li>
                 </ul>
               </div>
             </div>
@@ -520,7 +535,7 @@ const ConveyancingDigitalMarketingROI = () => {
                   <div className="bg-muted p-3 rounded">
                     <strong className="text-sm block mb-2">Call-to-Actions</strong>
                     <ul className="text-xs space-y-1">
-                      <li>- "Get Quote" vs. "Free Consultation"</li>
+                      <li>- &quot;Get Quote&quot; vs. &quot;Free Consultation&quot;</li>
                       <li>- Button color and size variations</li>
                       <li>- Urgency vs. non-urgency language</li>
                     </ul>
@@ -702,9 +717,9 @@ const ConveyancingDigitalMarketingROI = () => {
         <h2 className="text-3xl font-bold mb-6">Maximizing Your Marketing Investment</h2>
         
         <p className="text-lg mb-6">
-          Measuring and optimizing digital marketing ROI transforms your conveyancing firm's growth from guesswork into 
+          Measuring and optimizing digital marketing ROI transforms your conveyancing firm&apos;s growth from guesswork into 
           a predictable, scalable system. By implementing comprehensive tracking, testing systematically, and making 
-          data-driven decisions, you'll maximize every marketing dollar while building sustainable competitive advantages.
+          data-driven decisions, you&apos;ll maximize every marketing dollar while building sustainable competitive advantages.
         </p>
 
         <Card className="mb-8 border-primary">
@@ -716,7 +731,7 @@ const ConveyancingDigitalMarketingROI = () => {
                 <ul className="space-y-1 text-sm">
                   <li>✓ Audit your current tracking setup and identify gaps</li>
                   <li>✓ Calculate your current CAC and CLV if not already known</li>
-                  <li>✓ Review last month's marketing spend by channel</li>
+                  <li>✓ Review last month&apos;s marketing spend by channel</li>
                   <li>✓ Schedule regular ROI review meetings</li>
                 </ul>
               </div>
@@ -737,14 +752,12 @@ const ConveyancingDigitalMarketingROI = () => {
           <h3 className="text-xl font-semibold mb-3">Need Expert Help with ROI Optimization?</h3>
           <p className="mb-4">
             As a Fractional CMO specializing in legal services marketing, I help conveyancing firms implement 
-            comprehensive ROI tracking systems, optimize underperforming campaigns, and scale what works. Let's 
+            comprehensive ROI tracking systems, optimize underperforming campaigns, and scale what works. Let&apos;s 
             discuss how to maximize your marketing investment.
           </p>
           <StrategyForm />
         </div>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default ConveyancingDigitalMarketingROI;

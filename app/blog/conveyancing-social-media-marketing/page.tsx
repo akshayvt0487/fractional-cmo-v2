@@ -1,12 +1,40 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Share2, Building, MessageSquare } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import conveyancingSocialMediaHero from '@/assets/blog/conveyancing-social-media-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Conveyancing Social Media Marketing",
+  description: "Expert guidance on conveyancing social media marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/conveyancing-social-media-marketing",
+  keywords: ["conveyancing", "social", "media", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Conveyancing Social Media Marketing",
+    description: "Expert guidance on conveyancing social media marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/conveyancing-social-media-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Conveyancing Social Media Marketing"
+    }],
+    publishedTime: "2025-09-02T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.529Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Conveyancing Social Media Marketing",
+    description: "Expert guidance on conveyancing social media marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ConveyancingSocialMedia = () => {
   const articleData = {
     headline: "Social Media Marketing for Conveyancers: Building Trust in the Digital Age",
@@ -20,32 +48,19 @@ const ConveyancingSocialMedia = () => {
     readTime: "24 min read",
     tags: ["Conveyancing Marketing", "Social Media", "Legal Marketing", "Property Law", "Digital Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "Which social media platforms work best for conveyancing firms?",
-      answer: "LinkedIn is most effective for professional networking and referrals, Facebook for local community engagement, and Instagram for showcasing office culture and educational content. Focus on 2-3 platforms rather than spreading efforts thin."
-    },
-    {
-      question: "What type of content should conveyancers share on social media?",
-      answer: "Share educational property law content, market updates, client success stories (with permission), behind-the-scenes office content, and community involvement. Avoid overly promotional content."
-    },
-    {
-      question: "How often should conveyancing firms post on social media?",
-      answer: "Aim for 3-5 posts per week on Facebook, 2-3 posts per week on LinkedIn, and 4-6 posts per week on Instagram. Consistency is more important than frequency - maintain a regular schedule."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.legal}
-        faqs={faqs}
-        heroImage={conveyancingSocialMediaHero}
-        heroAlt="Social media marketing strategies for conveyancing firms"
-      >
+  const faqs = [{
+    question: "Which social media platforms work best for conveyancing firms?",
+    answer: "LinkedIn is most effective for professional networking and referrals, Facebook for local community engagement, and Instagram for showcasing office culture and educational content. Focus on 2-3 platforms rather than spreading efforts thin."
+  }, {
+    question: "What type of content should conveyancers share on social media?",
+    answer: "Share educational property law content, market updates, client success stories (with permission), behind-the-scenes office content, and community involvement. Avoid overly promotional content."
+  }, {
+    question: "How often should conveyancing firms post on social media?",
+    answer: "Aim for 3-5 posts per week on Facebook, 2-3 posts per week on LinkedIn, and 4-6 posts per week on Instagram. Consistency is more important than frequency - maintain a regular schedule."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={conveyancingSocialMediaHero} heroAlt="Social media marketing strategies for conveyancing firms">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-          🏠 In today's digital landscape, conveyancing firms must establish trust and credibility before clients even walk through their doors. This comprehensive guide reveals how successful property lawyers use social media to build relationships, showcase expertise, and attract quality clients who value professional conveyancing services.
+          🏠 In today&apos;s digital landscape, conveyancing firms must establish trust and credibility before clients even walk through their doors. This comprehensive guide reveals how successful property lawyers use social media to build relationships, showcase expertise, and attract quality clients who value professional conveyancing services.
         </p>
 
         <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
@@ -358,21 +373,15 @@ const ConveyancingSocialMedia = () => {
         </p>
         
         <p>
-          Success on social media requires patience and consistency. Focus on building genuine relationships with your audience by sharing helpful insights about the property transaction process, celebrating client milestones, and positioning yourself as a knowledgeable guide through one of life's most significant purchases.
+          Success on social media requires patience and consistency. Focus on building genuine relationships with your audience by sharing helpful insights about the property transaction process, celebrating client milestones, and positioning yourself as a knowledgeable guide through one of life&apos;s most significant purchases.
         </p>
 
         <p>
-          Remember that social media is about social connection first and business development second. By prioritizing value creation and authentic engagement, you'll naturally attract the right clients who appreciate your expertise and approach to conveyancing services.
+          Remember that social media is about social connection first and business development second. By prioritizing value creation and authentic engagement, you&apos;ll naturally attract the right clients who appreciate your expertise and approach to conveyancing services.
         </p>
 
-        <Citation
-          source="Social Media Examiner Legal Industry Report 2024"
-          url="https://www.socialmediaexaminer.com"
-          title="Legal professionals using social media report 45% higher client satisfaction rates and 38% more referral business compared to those without social media presence."
-        />
+        <Citation source="Social Media Examiner Legal Industry Report 2024" url="https://www.socialmediaexaminer.com" title="Legal professionals using social media report 45% higher client satisfaction rates and 38% more referral business compared to those without social media presence." />
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default ConveyancingSocialMedia;

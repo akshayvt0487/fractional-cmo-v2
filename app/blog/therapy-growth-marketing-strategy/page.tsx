@@ -1,10 +1,38 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import StrategyForm from "@/components/ui/strategy-form";
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import therapyGrowthMarketingStrategyHero from "@/assets/blog/therapy-growth-marketing-strategy-hero.jpg";
-
+export const metadata = createMetadata({
+  title: "Therapy Growth Marketing Strategy",
+  description: "Expert guidance on therapy growth marketing strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/therapy-growth-marketing-strategy",
+  keywords: ["therapy", "growth", "marketing", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Therapy Growth Marketing Strategy",
+    description: "Expert guidance on therapy growth marketing strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/therapy-growth-marketing-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Therapy Growth Marketing Strategy"
+    }],
+    publishedTime: "2025-01-12T09:00:00+10:00",
+    modifiedTime: "2025-10-31T11:10:05.295Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Therapy Growth Marketing Strategy",
+    description: "Expert guidance on therapy growth marketing strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const TherapyGrowthMarketingStrategy = () => {
   const articleData = {
     headline: "Growth Marketing for Therapy Clinics: Scaling NDIS Provider Services in 2025",
@@ -18,30 +46,17 @@ const TherapyGrowthMarketingStrategy = () => {
     readTime: "26 min read",
     tags: ["Growth Marketing", "Therapy Services", "NDIS", "Marketing Automation", "Business Scaling"]
   };
-
-  const faqs = [
-    {
-      question: "What is growth marketing for therapy clinics?",
-      answer: "Growth marketing for therapy clinics focuses on data-driven, systematic approaches to scale client acquisition and retention. It combines marketing automation, multi-channel lead generation, and continuous optimization to create sustainable growth systems."
-    },
-    {
-      question: "How long does it take to see results from growth marketing?",
-      answer: "Initial results typically appear within 30-45 days for paid advertising and content marketing. However, comprehensive growth marketing systems that include SEO, automation, and relationship building show significant results within 3-6 months."
-    },
-    {
-      question: "What's the difference between traditional marketing and growth marketing for therapy services?",
-      answer: "Traditional marketing focuses on brand awareness and individual campaigns. Growth marketing takes a systematic approach, using data to optimize every stage of the client journey, from initial awareness to long-term retention and referrals."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.ndis}
-        faqs={faqs}
-        heroImage={therapyGrowthMarketingStrategyHero}
-        heroAlt="Growth marketing strategies for therapy clinics including automation, SEO, and lead generation systems"
-      >
+  const faqs = [{
+    question: "What is growth marketing for therapy clinics?",
+    answer: "Growth marketing for therapy clinics focuses on data-driven, systematic approaches to scale client acquisition and retention. It combines marketing automation, multi-channel lead generation, and continuous optimization to create sustainable growth systems."
+  }, {
+    question: "How long does it take to see results from growth marketing?",
+    answer: "Initial results typically appear within 30-45 days for paid advertising and content marketing. However, comprehensive growth marketing systems that include SEO, automation, and relationship building show significant results within 3-6 months."
+  }, {
+    question: "What's the difference between traditional marketing and growth marketing for therapy services?",
+    answer: "Traditional marketing focuses on brand awareness and individual campaigns. Growth marketing takes a systematic approach, using data to optimize every stage of the client journey, from initial awareness to long-term retention and referrals."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyGrowthMarketingStrategyHero} heroAlt="Growth marketing strategies for therapy clinics including automation, SEO, and lead generation systems">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           The therapy services industry is experiencing unprecedented growth, with NDIS participants requiring more specialized care than ever before. However, traditional marketing approaches often fall short when trying to scale therapy clinics efficiently. Growth marketing offers a data-driven, systematic approach to scaling speech therapy, occupational therapy, ABA therapy, and psychology practices while maintaining quality care delivery.
         </p>
@@ -315,7 +330,7 @@ const TherapyGrowthMarketingStrategy = () => {
         <h3 className="text-2xl font-semibold mt-8 mb-4">Geographic Expansion Framework</h3>
         
         <p className="mb-6">
-          Once you've mastered growth marketing in your primary location, systematic expansion to new markets can accelerate growth while leveraging proven systems and processes.
+          Once you&apos;ve mastered growth marketing in your primary location, systematic expansion to new markets can accelerate growth while leveraging proven systems and processes.
         </p>
 
         <div className="space-y-6 mb-8">
@@ -417,8 +432,6 @@ const TherapyGrowthMarketingStrategy = () => {
           Growth marketing for therapy clinics requires a systematic, data-driven approach that balances professional healthcare standards with aggressive growth tactics. Focus on building sustainable systems that can scale while maintaining the personal touch that families expect from therapy services.
         </p>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default TherapyGrowthMarketingStrategy;

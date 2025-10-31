@@ -33,9 +33,9 @@ const serviceMapping: Record<string, string> = {
   'consultation': 'consultation'
 };
 
-const ContactClient = ({ initialService }: { initialService?: string }) => {
-  const router = useRouter(); 
-  
+const ContactClient = ({ initialService }: {initialService?: string;}) => {
+  const router = useRouter();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,12 +51,12 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
   const { toast } = useToast();
 
   useEffect(() => {
-   if (initialService && serviceMapping[initialService]) {
-      setFormData(prev => ({ ...prev, service: serviceMapping[initialService] }));
+    if (initialService && serviceMapping[initialService]) {
+      setFormData((prev) => ({ ...prev, service: serviceMapping[initialService] }));
     }
-  // 🟢 CORRECTED: Removed 'serviceMapping' from dependency array
-  // It is now a stable constant and doesn't need to be a dependency.
-  }, [initialService]); 
+    // 🟢 CORRECTED: Removed 'serviceMapping' from dependency array
+    // It is now a stable constant and doesn't need to be a dependency.
+  }, [initialService]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -68,7 +68,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
       toast({
         title: "Configuration Error",
         description: "The form is not configured correctly. Please contact support.",
-        variant: "destructive",
+        variant: "destructive"
       });
       setIsSubmitting(false);
       return;
@@ -90,7 +90,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
       toast({
         title: "Error sending message",
         description: "Please try again or email me directly at basheer@dsigns.com.au",
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
@@ -98,7 +98,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
   };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -108,16 +108,16 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
         <div className="container max-w-6xl py-8">
           <BreadcrumbNavigation
             items={[
-              { label: "Contact", href: "/contact" }
-            ]}
-          />
+            { label: "Contact", href: "/contact" }]
+            } />
+          
         </div>
 
         <main className="container mx-auto px-6 py-12">
           <div className="max-w-6xl mx-auto">
             {/* Page Header */}
             <div className="text-center mb-8">
-              <h1 className="text-3xl md:text-4xl font-semibold mb-4">Let's Grow Your Business Together</h1>
+              <h1 className="text-3xl md:text-4xl font-semibold mb-4">Let&apos;s Grow Your Business Together</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Ready to accelerate your growth? I help businesses build predictable, scalable marketing systems that drive real results.
               </p>
@@ -129,7 +129,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Send a Message</CardTitle>
                   <CardDescription>
-                    Share your business details and I'll get back to you within 24 hours to schedule a strategy call
+                    Share your business details and I&apos;ll get back to you within 24 hours to schedule a strategy call
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -142,8 +142,8 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                           required
                           value={formData.name}
                           onChange={(e) => handleInputChange("name", e.target.value)}
-                          placeholder="Your full name"
-                        />
+                          placeholder="Your full name" />
+                        
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="email">Business Email *</Label>
@@ -153,8 +153,8 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                           required
                           value={formData.email}
                           onChange={(e) => handleInputChange("email", e.target.value)}
-                          placeholder="your@company.com"
-                        />
+                          placeholder="your@company.com" />
+                        
                       </div>
                     </div>
 
@@ -166,8 +166,8 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                           required
                           value={formData.company}
                           onChange={(e) => handleInputChange("company", e.target.value)}
-                          placeholder="Your company name"
-                        />
+                          placeholder="Your company name" />
+                        
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="phone">Phone Number *</Label>
@@ -177,8 +177,8 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                           value={formData.phone}
                           required
                           onChange={(e) => handleInputChange("phone", e.target.value)}
-                          placeholder="+61 4XX XXX XXX"
-                        />
+                          placeholder="+61 4XX XXX XXX" />
+                        
                       </div>
                     </div>
 
@@ -259,14 +259,14 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                         required
                         value={formData.message}
                         onChange={(e) => handleInputChange("message", e.target.value)}
-                        placeholder="Please share:
-• What industry/niche you're in
-• Your biggest growth challenge right now  
-• Current marketing efforts (if any)
-• What success looks like for your business
-• Any specific goals or targets you're aiming for"
-                        rows={6}
-                      />
+                        placeholder='Please share:\r\n\u2022 What industry/niche you&apos;re in\r\n\u2022 Your biggest growth challenge right now  \r\n\u2022 Current marketing efforts (if any)\r\n\u2022 What success looks like for your business\r\n\u2022 Any specific goals or targets you&apos;re aiming for'
+
+
+
+
+
+                        rows={6} />
+                      
                     </div>
 
                     <div className="bg-accent/10 rounded-lg p-4 text-sm text-muted-foreground">
@@ -274,7 +274,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                         <Shield className="h-4 w-4 mt-0.5 text-primary" />
                         <p>
                           <strong>Privacy:</strong> Your information is confidential and will never be shared. 
-                          I'll use it only to understand your business and provide relevant recommendations.
+                          I&apos;ll use it only to understand your business and provide relevant recommendations.
                         </p>
                       </div>
                     </div>
@@ -283,15 +283,15 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                       type="submit"
                       className="w-full"
                       disabled={isSubmitting}
-                      size="lg"
-                    >
-                      {isSubmitting ? (
-                        "Sending Your Message..."
-                      ) : (
-                        <>
+                      size="lg">
+                      
+                      {isSubmitting ?
+                      "Sending Your Message..." :
+
+                      <>
                           Send Message & Get Free Insights <Send className="ml-2 h-4 w-4" />
                         </>
-                      )}
+                      }
                     </Button>
                   </form>
                 </CardContent>
@@ -345,7 +345,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                 <CheckCircle className="h-8 w-8 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">No-Obligation Consultation</h3>
                 <p className="text-sm text-muted-foreground">
-                  Get valuable insights during our initial call, even if we don't work together. No pressure, just value.
+                  Get valuable insights during our initial call, even if we don&apos;t work together. No pressure, just value.
                 </p>
               </Card>
 
@@ -364,7 +364,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                 <div className="text-center mb-8">
                   <h2 className="text-2xl font-semibold mb-4">What Happens After You Send Your Message?</h2>
                   <p className="text-muted-foreground max-w-2xl mx-auto">
-                    Here's exactly what you can expect from our communication process
+                    Here&apos;s exactly what you can expect from our communication process
                   </p>
                 </div>
 
@@ -375,7 +375,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                     </div>
                     <h3 className="font-semibold mb-2">Quick Response</h3>
                     <p className="text-sm text-muted-foreground">
-                      I'll personally review your message and respond within 24 hours with initial thoughts and next steps.
+                      I&apos;ll personally review your message and respond within 24 hours with initial thoughts and next steps.
                     </p>
                   </div>
 
@@ -385,7 +385,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                     </div>
                     <h3 className="font-semibold mb-2">Free Strategy Session</h3>
                     <p className="text-sm text-muted-foreground">
-                      We'll schedule a 20-30 minute call to dive deeper into your business and discuss opportunities.
+                      We&apos;ll schedule a 20-30 minute call to dive deeper into your business and discuss opportunities.
                     </p>
                   </div>
 
@@ -395,7 +395,7 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
                     </div>
                     <h3 className="font-semibold mb-2">Growth Strategy Deep Dive</h3>
                     <p className="text-sm text-muted-foreground">
-                      If we're a good fit, we'll dive deep into the details before setting up your custom growth map.
+                      If we&apos;re a good fit, we&apos;ll dive deep into the details before setting up your custom growth map.
                     </p>
                   </div>
                 </div>
@@ -405,8 +405,8 @@ const ContactClient = ({ initialService }: { initialService?: string }) => {
           </div>
         </main>
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default ContactClient;

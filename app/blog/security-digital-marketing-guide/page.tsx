@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Shield, Users, Building, Zap, CheckCircle, TrendingUp, Search, Target, Video, Play } from 'lucide-react';
 import securityDigitalMarketingHero from '@/assets/blog/security-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Security Digital Marketing Guide",
+  description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/security-digital-marketing-guide",
+  keywords: ["security", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Security Digital Marketing Guide",
+    description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/security-digital-marketing-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Security Digital Marketing Guide"
+    }],
+    publishedTime: "2025-01-05",
+    modifiedTime: "2025-10-31T11:10:05.228Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Security Digital Marketing Guide",
+    description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const SecurityDigitalMarketing = () => {
   const articleData = {
     headline: "Digital Marketing for Security Services: Complete Client Acquisition Guide 2025",
@@ -18,34 +47,20 @@ const SecurityDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["security services", "digital marketing", "B2B marketing", "client acquisition"]
   };
-
-  const faqs = [
-    {
-      question: "How can digital marketing help my security service business?",
-      answer: "Digital marketing helps security companies build trust, attract high-value commercial clients, showcase expertise, and compete effectively against larger companies through targeted online strategies and professional online presence."
-    },
-    {
-      question: "What's the most effective marketing channel for security services?",
-      answer: "LinkedIn is particularly effective for B2B clients, while Google My Business and local SEO are crucial for local visibility. A multi-channel approach including content marketing and video testimonials works best."
-    },
-    {
-      question: "How important is online reputation for security companies?",
-      answer: "Online reputation is critical for security services as trust is paramount. Reviews, certifications, and professional testimonials displayed prominently online are essential for attracting and retaining clients."
-    },
-    {
-      question: "Should security companies use Google Ads?",
-      answer: "Yes, Google Ads can be effective for security services. Target high-intent keywords like 'commercial security services' and emergency terms like '24 hour security' to capture immediate needs."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout 
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={securityDigitalMarketingHero}
-      heroAlt="Professional security services digital marketing and client acquisition"
-    >
+  const faqs = [{
+    question: "How can digital marketing help my security service business?",
+    answer: "Digital marketing helps security companies build trust, attract high-value commercial clients, showcase expertise, and compete effectively against larger companies through targeted online strategies and professional online presence."
+  }, {
+    question: "What's the most effective marketing channel for security services?",
+    answer: "LinkedIn is particularly effective for B2B clients, while Google My Business and local SEO are crucial for local visibility. A multi-channel approach including content marketing and video testimonials works best."
+  }, {
+    question: "How important is online reputation for security companies?",
+    answer: "Online reputation is critical for security services as trust is paramount. Reviews, certifications, and professional testimonials displayed prominently online are essential for attracting and retaining clients."
+  }, {
+    question: "Should security companies use Google Ads?",
+    answer: "Yes, Google Ads can be effective for security services. Target high-intent keywords like 'commercial security services' and emergency terms like '24 hour security' to capture immediate needs."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={securityDigitalMarketingHero} heroAlt="Professional security services digital marketing and client acquisition">
       <p className="text-xl text-muted-foreground mb-8">
         In today&apos;s competitive security services market, traditional word-of-mouth marketing isn&apos;t enough. Digital marketing has become essential for security companies to attract high-value commercial clients, build trust, and scale their operations. This comprehensive guide reveals proven strategies that successful security businesses use to dominate their markets.
       </p>
@@ -377,8 +392,6 @@ const SecurityDigitalMarketing = () => {
           </CardContent>
         </Card>
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default SecurityDigitalMarketing;

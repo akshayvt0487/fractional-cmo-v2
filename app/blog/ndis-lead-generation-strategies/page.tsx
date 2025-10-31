@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
@@ -5,7 +6,35 @@ import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
 import heroImage from '@/assets/blog/ndis-lead-generation-strategies-hero.jpg';
 import { relatedArticles } from '@/utils/seoUtils';
-
+export const metadata = createMetadata({
+  title: "Ndis Lead Generation Strategies",
+  description: "Expert guidance on ndis lead generation strategies. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-lead-generation-strategies",
+  keywords: ["ndis", "lead", "generation", "strategies", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Lead Generation Strategies",
+    description: "Expert guidance on ndis lead generation strategies. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-lead-generation-strategies",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Lead Generation Strategies"
+    }],
+    publishedTime: "2025-01-18",
+    modifiedTime: "2025-10-31T11:10:04.986Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Lead Generation Strategies",
+    description: "Expert guidance on ndis lead generation strategies. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISLeadGenerationStrategies = () => {
   const articleData = {
     headline: "NDIS Lead Generation Strategies: A Complete Guide for Providers",
@@ -19,34 +48,20 @@ const NDISLeadGenerationStrategies = () => {
     readTime: "26 min read",
     tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Provider Growth"]
   };
-
-  const faqs = [
-    {
-      question: "What are the most effective lead generation strategies for NDIS providers?",
-      answer: "The most effective strategies include local SEO optimization, Google Ads targeting NDIS keywords, content marketing about disability services, referral programs, and community engagement. Focus on building trust through testimonials and compliance certifications."
-    },
-    {
-      question: "How much should I budget for NDIS lead generation?",
-      answer: "Allocate 10-15% of your revenue to marketing. For new providers, budget $2,000-5,000 monthly for digital marketing including Google Ads, SEO, and content creation. ROI typically shows within 3-6 months with proper strategy."
-    },
-    {
-      question: "Can NDIS providers advertise directly to participants?",
-      answer: "Yes, but with strict compliance requirements. All marketing must be truthful, not misleading, and respect participant dignity. Avoid pressure tactics and ensure all claims about services are accurate and verifiable."
-    },
-    {
-      question: "What digital marketing channels work best for NDIS providers?",
-      answer: "Google search ads, local SEO, Facebook for community building, LinkedIn for professional networks, and email marketing for existing participants. Video content showcasing your team and services performs particularly well."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.ndis}
-      faqs={faqs}
-      heroImage={heroImage}
-      heroAlt="NDIS provider implementing digital lead generation strategies with participant-focused approach"
-    >
+  const faqs = [{
+    question: "What are the most effective lead generation strategies for NDIS providers?",
+    answer: "The most effective strategies include local SEO optimization, Google Ads targeting NDIS keywords, content marketing about disability services, referral programs, and community engagement. Focus on building trust through testimonials and compliance certifications."
+  }, {
+    question: "How much should I budget for NDIS lead generation?",
+    answer: "Allocate 10-15% of your revenue to marketing. For new providers, budget $2,000-5,000 monthly for digital marketing including Google Ads, SEO, and content creation. ROI typically shows within 3-6 months with proper strategy."
+  }, {
+    question: "Can NDIS providers advertise directly to participants?",
+    answer: "Yes, but with strict compliance requirements. All marketing must be truthful, not misleading, and respect participant dignity. Avoid pressure tactics and ensure all claims about services are accurate and verifiable."
+  }, {
+    question: "What digital marketing channels work best for NDIS providers?",
+    answer: "Google search ads, local SEO, Facebook for community building, LinkedIn for professional networks, and email marketing for existing participants. Video content showcasing your team and services performs particularly well."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={heroImage} heroAlt="NDIS provider implementing digital lead generation strategies with participant-focused approach">
       <section className="mb-12">
         <Card className="border-l-4 border-l-primary bg-primary/5 mb-8">
           <CardContent className="p-6">
@@ -75,7 +90,7 @@ const NDISLeadGenerationStrategies = () => {
         </Card>
 
         <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-          The NDIS represents one of Australia's largest service markets, but finding quality participants requires strategic lead generation. This comprehensive guide reveals proven strategies that successful NDIS providers use to attract participants while maintaining full compliance.
+          The NDIS represents one of Australia&apos;s largest service markets, but finding quality participants requires strategic lead generation. This comprehensive guide reveals proven strategies that successful NDIS providers use to attract participants while maintaining full compliance.
         </p>
       </section>
 
@@ -165,28 +180,28 @@ const NDISLeadGenerationStrategies = () => {
               <div>
                 <h5 className="font-medium mb-2">Core Services</h5>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "NDIS support worker [location]"</li>
-                  <li>• "NDIS day programs [suburb]"</li>
-                  <li>• "NDIS respite care [area]"</li>
-                  <li>• "NDIS community access"</li>
+                  <li>• &quot;NDIS support worker [location]&quot;</li>
+                  <li>• &quot;NDIS day programs [suburb]&quot;</li>
+                  <li>• &quot;NDIS respite care [area]&quot;</li>
+                  <li>• &quot;NDIS community access&quot;</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Long-tail Keywords</h5>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "NDIS provider near me"</li>
-                  <li>• "best NDIS services [location]"</li>
-                  <li>• "NDIS disability support"</li>
-                  <li>• "NDIS plan management"</li>
+                  <li>• &quot;NDIS provider near me&quot;</li>
+                  <li>• &quot;best NDIS services [location]&quot;</li>
+                  <li>• &quot;NDIS disability support&quot;</li>
+                  <li>• &quot;NDIS plan management&quot;</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Local Variations</h5>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "[Service] + [suburb]"</li>
-                  <li>• "[Service] + [postcode]"</li>
-                  <li>• "[Service] + [region]"</li>
-                  <li>• "NDIS [city/area] provider"</li>
+                  <li>• &quot;[Service] + [suburb]&quot;</li>
+                  <li>• &quot;[Service] + [postcode]&quot;</li>
+                  <li>• &quot;[Service] + [region]&quot;</li>
+                  <li>• &quot;NDIS [city/area] provider&quot;</li>
                 </ul>
               </div>
             </div>
@@ -234,8 +249,8 @@ const NDISLeadGenerationStrategies = () => {
                 <p className="text-sm text-muted-foreground mb-2">Target high-intent keywords with location modifiers</p>
                 <div className="bg-background p-3 rounded border">
                   <code className="text-sm">
-                    Keywords: "NDIS support worker Sydney", "NDIS day programs Melbourne"<br/>
-                    Budget: $30-50/day<br/>
+                    Keywords: &quot;NDIS support worker Sydney&quot;, &quot;NDIS day programs Melbourne&quot;<br />
+                    Budget: $30-50/day<br />
                     Match Type: Exact + Phrase
                   </code>
                 </div>
@@ -245,8 +260,8 @@ const NDISLeadGenerationStrategies = () => {
                 <p className="text-sm text-muted-foreground mb-2">Target participants with specific conditions</p>
                 <div className="bg-background p-3 rounded border">
                   <code className="text-sm">
-                    Keywords: "autism support services", "intellectual disability support"<br/>
-                    Budget: $20-40/day<br/>
+                    Keywords: &quot;autism support services&quot;, &quot;intellectual disability support&quot;<br />
+                    Budget: $20-40/day<br />
                     Match Type: Phrase + Modified Broad
                   </code>
                 </div>
@@ -371,11 +386,11 @@ const NDISLeadGenerationStrategies = () => {
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">Blog Content Ideas</h4>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• "Understanding Your NDIS Plan"</li>
-                  <li>• "How to Choose the Right Provider"</li>
-                  <li>• "NDIS Rights and Responsibilities"</li>
-                  <li>• "Support Worker Safety Tips"</li>
-                  <li>• "Community Access Ideas"</li>
+                  <li>• &quot;Understanding Your NDIS Plan&quot;</li>
+                  <li>• &quot;How to Choose the Right Provider&quot;</li>
+                  <li>• &quot;NDIS Rights and Responsibilities&quot;</li>
+                  <li>• &quot;Support Worker Safety Tips&quot;</li>
+                  <li>• &quot;Community Access Ideas&quot;</li>
                 </ul>
               </CardContent>
             </Card>
@@ -438,8 +453,6 @@ const NDISLeadGenerationStrategies = () => {
         </div>
       </section>
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default NDISLeadGenerationStrategies;

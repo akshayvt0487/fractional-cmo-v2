@@ -1,10 +1,8 @@
 import { Providers } from './providers'; // 1. Import your new client wrapper
 import './globals.css'; // Your global styles
+import { defaultMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Your Site Title',
-  description: 'Your site description',
-};
+export const metadata = defaultMetadata;
 
 export default function RootLayout({
   children,

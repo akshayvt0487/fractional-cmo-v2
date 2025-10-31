@@ -1,12 +1,40 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
-
 import constructionImage from "@/assets/construction-team-site.jpg";
 import constructionLeadGenerationHero from '@/assets/blog/construction-lead-generation.jpg';
 import StrategyForm from "@/components/ui/strategy-form";
 import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
+export const metadata = createMetadata({
+  title: "Construction Lead Generation Strategies",
+  description: "Expert guidance on construction lead generation strategies. Learn proven strategies and best practices for business growth.",
+  path: "/blog/construction-lead-generation-strategies",
+  keywords: ["construction", "lead", "generation", "strategies", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Construction Lead Generation Strategies",
+    description: "Expert guidance on construction lead generation strategies. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/construction-lead-generation-strategies",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Construction Lead Generation Strategies"
+    }],
+    publishedTime: "2024-02-15T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.443Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Construction Lead Generation Strategies",
+    description: "Expert guidance on construction lead generation strategies. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ConstructionLeadGeneration = () => {
   const articleData = {
     headline: "Construction Lead Generation: 7 Digital Marketing Strategies That Work",
@@ -20,32 +48,19 @@ const ConstructionLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["Construction Marketing", "Lead Generation", "Digital Marketing", "Google Ads", "SEO"]
   };
-
-  const faqs = [
-    {
-      question: "What's the best way to generate leads for a construction business?",
-      answer: "The most effective approach combines Google Ads for immediate results, local SEO for long-term visibility, and content marketing to build trust. Focus on high-intent keywords and showcase completed projects."
-    },
-    {
-      question: "How much should construction companies spend on digital marketing?",
-      answer: "Construction businesses should allocate 3-5% of revenue to marketing, with 60-70% going to digital channels. Start with $2,000-5,000 monthly for Google Ads and SEO, scaling based on results."
-    },
-    {
-      question: "How long does it take to see results from construction marketing?",
-      answer: "Google Ads can generate leads within 1-2 weeks, while SEO typically takes 3-6 months for significant results. Content marketing and reputation building are ongoing processes that compound over time."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage={constructionLeadGenerationHero}
-        heroAlt="Construction Lead Generation Strategies - Professional Construction Team Working on Building Site Project Management"
-      >
+  const faqs = [{
+    question: "What's the best way to generate leads for a construction business?",
+    answer: "The most effective approach combines Google Ads for immediate results, local SEO for long-term visibility, and content marketing to build trust. Focus on high-intent keywords and showcase completed projects."
+  }, {
+    question: "How much should construction companies spend on digital marketing?",
+    answer: "Construction businesses should allocate 3-5% of revenue to marketing, with 60-70% going to digital channels. Start with $2,000-5,000 monthly for Google Ads and SEO, scaling based on results."
+  }, {
+    question: "How long does it take to see results from construction marketing?",
+    answer: "Google Ads can generate leads within 1-2 weeks, while SEO typically takes 3-6 months for significant results. Content marketing and reputation building are ongoing processes that compound over time."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={constructionLeadGenerationHero} heroAlt="Construction Lead Generation Strategies - Professional Construction Team Working on Building Site Project Management">
         <blockquote className="border-l-4 border-primary pl-6 my-8 italic text-lg text-muted-foreground not-prose">
-          "In construction, relationships build businesses. But in today's digital world, those relationships start online."
+          &quot;In construction, relationships build businesses. But in today&apos;s digital world, those relationships start online.&quot;
           <footer className="text-sm mt-2 not-italic">— John Holland, CEO, John Holland Group</footer>
         </blockquote>
 
@@ -93,7 +108,7 @@ const ConstructionLeadGeneration = () => {
             <div>
               <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">💡 Expert Insight</h3>
               <p className="text-blue-800 dark:text-blue-200 mb-3">
-                Here's the reality: while your competitors are waiting for referrals, Google Ads puts you in front of customers actively searching for construction services. We're talking about people who have their wallets out, ready to hire.
+                Here&apos;s the reality: while your competitors are waiting for referrals, Google Ads puts you in front of customers actively searching for construction services. We&apos;re talking about people who have their wallets out, ready to hire.
               </p>
               <p className="text-blue-700 dark:text-blue-300 text-sm">
                 Research by <Citation source="Google Economic Impact Report" url="https://economicimpact.google.com/methodology/" title="Google Economic Impact Study" inline /> shows $2 return for every $1 spent on Google Ads. But construction services? You can often see 3-5x returns due to high project values.
@@ -133,7 +148,7 @@ const ConstructionLeadGeneration = () => {
                 <h4 className="font-semibold text-orange-800 dark:text-orange-200">Common Mistake</h4>
               </div>
               <p className="text-sm text-orange-700 dark:text-orange-300">
-                Most construction companies waste budget on generic keywords like "construction company." Instead, target specific services like "commercial renovation contractor [city]."
+                Most construction companies waste budget on generic keywords like &quot;construction company.&quot; Instead, target specific services like &quot;commercial renovation contractor [city].&quot;
               </p>
             </CardContent>
           </Card>
@@ -144,23 +159,23 @@ const ConstructionLeadGeneration = () => {
             <h3 className="font-semibold mb-3 text-green-900">High-Converting Construction Keywords & Performance:</h3>
             <div className="space-y-3 text-sm">
               <div className="flex justify-between text-green-800">
-                <span>• "Commercial construction [city]"</span>
+                <span>• &quot;Commercial construction [city]&quot;</span>
                 <span className="font-medium">Avg CPC: $12.50</span>
               </div>
               <div className="flex justify-between text-green-800">
-                <span>• "Home renovation contractors near me"</span>
+                <span>• &quot;Home renovation contractors near me&quot;</span>
                 <span className="font-medium">Avg CPC: $8.90</span>
               </div>
               <div className="flex justify-between text-green-800">
-                <span>• "Industrial building construction"</span>
+                <span>• &quot;Industrial building construction&quot;</span>
                 <span className="font-medium">Avg CPC: $15.20</span>
               </div>
               <div className="flex justify-between text-green-800">
-                <span>• "Construction company [suburb]"</span>
+                <span>• &quot;Construction company [suburb]&quot;</span>
                 <span className="font-medium">Avg CPC: $9.40</span>
               </div>
               <div className="flex justify-between text-green-800">
-                <span>• "Building contractors [service area]"</span>
+                <span>• &quot;Building contractors [service area]&quot;</span>
                 <span className="font-medium">Avg CPC: $7.80</span>
               </div>
             </div>
@@ -182,7 +197,7 @@ const ConstructionLeadGeneration = () => {
             <div>
               <h3 className="text-lg font-semibold text-purple-900 dark:text-purple-100 mb-2">🎯 Local SEO Reality Check</h3>
               <p className="text-purple-800 dark:text-purple-200 mb-3">
-                Think about it: when was the last time you hired a construction company from another city? Exactly. 87% of construction projects are location-dependent, which means local SEO isn't optional—it's survival.
+                Think about it: when was the last time you hired a construction company from another city? Exactly. 87% of construction projects are location-dependent, which means local SEO isn&apos;t optional—it&apos;s survival.
               </p>
               <p className="text-purple-700 dark:text-purple-300 text-sm">
                 <Citation source="BrightLocal Consumer Review Survey" url="https://www.brightlocal.com/research/local-consumer-review-survey/" title="Local Consumer Review Survey" inline /> shows 93% of consumers use online search to find local businesses, with construction services having the highest local search volumes.
@@ -192,7 +207,7 @@ const ConstructionLeadGeneration = () => {
         </div>
 
         <p>
-          Construction businesses that appear in the local "3-pack" (top 3 Google Maps results) receive 44% more clicks than those ranking 4th or lower.
+          Construction businesses that appear in the local &quot;3-pack&quot; (top 3 Google Maps results) receive 44% more clicks than those ranking 4th or lower.
         </p>
 
         <Card className="my-8 not-prose">
@@ -200,7 +215,7 @@ const ConstructionLeadGeneration = () => {
             <h3 className="font-semibold mb-3">Local SEO Action Plan for Construction:</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>• <strong>Optimise Google Business Profile:</strong> Complete profile with photos, reviews, and project galleries</li>
-              <li>• <strong>Create location-specific service pages:</strong> Target "construction [suburb]" for each service area</li>
+              <li>• <strong>Create location-specific service pages:</strong> Target &quot;construction [suburb]&quot; for each service area</li>
               <li>• <strong>Build local citations:</strong> List on construction directories and local business platforms</li>
               <li>• <strong>Generate authentic reviews:</strong> Systematic approach to collecting client testimonials</li>
               <li>• <strong>Local content marketing:</strong> Blog about local projects and building regulations</li>
@@ -388,9 +403,9 @@ const ConstructionLeadGeneration = () => {
             <CardContent className="p-6">
               <h4 className="font-semibold mb-3 text-green-800">Positive Review Response Template</h4>
               <div className="bg-white p-4 rounded border text-sm">
-                <p className="mb-2">"Thank you, [Client Name], for taking the time to share your experience!</p>
-                <p className="mb-2">We're thrilled that you're happy with your [specific project type]. Our team takes great pride in [specific detail they mentioned].</p>
-                <p>We appreciate your trust in [Company Name] and look forward to helping with any future projects."</p>
+                <p className="mb-2">&quot;Thank you, [Client Name], for taking the time to share your experience!</p>
+                <p className="mb-2">We&apos;re thrilled that you&apos;re happy with your [specific project type]. Our team takes great pride in [specific detail they mentioned].</p>
+                <p>We appreciate your trust in [Company Name] and look forward to helping with any future projects.&quot;</p>
               </div>
             </CardContent>
           </Card>
@@ -399,9 +414,9 @@ const ConstructionLeadGeneration = () => {
             <CardContent className="p-6">
               <h4 className="font-semibold mb-3 text-orange-800">Negative Review Response Template</h4>
               <div className="bg-white p-4 rounded border text-sm">
-                <p className="mb-2">"Thank you for your feedback, [Client Name]. We take all concerns seriously.</p>
-                <p className="mb-2">We'd like to discuss this matter further to understand how we can improve. Please contact us at [phone/email].</p>
-                <p>We're committed to making this right and learning from this experience."</p>
+                <p className="mb-2">&quot;Thank you for your feedback, [Client Name]. We take all concerns seriously.</p>
+                <p className="mb-2">We&apos;d like to discuss this matter further to understand how we can improve. Please contact us at [phone/email].</p>
+                <p>We&apos;re committed to making this right and learning from this experience.&quot;</p>
               </div>
             </CardContent>
           </Card>
@@ -421,21 +436,21 @@ const ConstructionLeadGeneration = () => {
                 <div>
                   <h5 className="font-semibold mb-2">For Homeowners</h5>
                   <ul className="space-y-1 text-sm">
-                    <li>• "Home Renovation Budget Calculator"</li>
-                    <li>• "Pre-Construction Checklist"</li>
-                    <li>• "Contractor Selection Guide"</li>
-                    <li>• "Permit Process Handbook"</li>
-                    <li>• "Seasonal Maintenance Calendar"</li>
+                    <li>• &quot;Home Renovation Budget Calculator&quot;</li>
+                    <li>• &quot;Pre-Construction Checklist&quot;</li>
+                    <li>• &quot;Contractor Selection Guide&quot;</li>
+                    <li>• &quot;Permit Process Handbook&quot;</li>
+                    <li>• &quot;Seasonal Maintenance Calendar&quot;</li>
                   </ul>
                 </div>
                 <div>
                   <h5 className="font-semibold mb-2">For Commercial Clients</h5>
                   <ul className="space-y-1 text-sm">
-                    <li>• "Commercial Construction Timeline Template"</li>
-                    <li>• "ROI Calculator for Building Improvements"</li>
-                    <li>• "Compliance Requirements Checklist"</li>
-                    <li>• "Sustainable Building Options Guide"</li>
-                    <li>• "Project Management Best Practices"</li>
+                    <li>• &quot;Commercial Construction Timeline Template&quot;</li>
+                    <li>• &quot;ROI Calculator for Building Improvements&quot;</li>
+                    <li>• &quot;Compliance Requirements Checklist&quot;</li>
+                    <li>• &quot;Sustainable Building Options Guide&quot;</li>
+                    <li>• &quot;Project Management Best Practices&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -486,7 +501,7 @@ const ConstructionLeadGeneration = () => {
 
         <h2>Measuring and Optimizing Lead Generation Results</h2>
         <p>
-          Successful construction marketing requires continuous measurement and optimization. Track these key metrics to understand what's driving the best results for your business.
+          Successful construction marketing requires continuous measurement and optimization. Track these key metrics to understand what&apos;s driving the best results for your business.
         </p>
 
         <h3>Essential Construction Marketing Metrics</h3>
@@ -536,7 +551,7 @@ const ConstructionLeadGeneration = () => {
 
         <h2>Building a Sustainable Lead Generation System</h2>
         <p>
-          The most successful construction companies don't rely on a single marketing channel. They build comprehensive, integrated systems that generate consistent leads while building long-term brand value.
+          The most successful construction companies don&apos;t rely on a single marketing channel. They build comprehensive, integrated systems that generate consistent leads while building long-term brand value.
         </p>
 
         <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg p-6 mb-8 not-prose">
@@ -578,21 +593,15 @@ const ConstructionLeadGeneration = () => {
         </div>
 
         <p>
-          Construction lead generation in today's digital landscape requires a strategic, multi-channel approach that builds trust, demonstrates expertise, and provides value to potential clients. By implementing these proven strategies and consistently measuring results, you can build a sustainable lead generation system that drives business growth for years to come.
+          Construction lead generation in today&apos;s digital landscape requires a strategic, multi-channel approach that builds trust, demonstrates expertise, and provides value to potential clients. By implementing these proven strategies and consistently measuring results, you can build a sustainable lead generation system that drives business growth for years to come.
         </p>
 
         <p>
           Remember that construction marketing is ultimately about building relationships and trust. Focus on providing genuine value, showcasing your expertise, and maintaining the highest standards of professionalism in all your marketing efforts. The investment you make in digital marketing today will pay dividends through increased visibility, more qualified leads, and stronger client relationships.
         </p>
 
-        <Citation 
-          source="Australian Bureau of Statistics - Construction Industry Statistics" 
-          url="https://www.abs.gov.au/"
-          title="Construction Work Done Survey"
-        />
+        <Citation source="Australian Bureau of Statistics - Construction Industry Statistics" url="https://www.abs.gov.au/" title="Construction Work Done Survey" />
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default ConstructionLeadGeneration;

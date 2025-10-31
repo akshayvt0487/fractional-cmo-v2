@@ -1,13 +1,41 @@
+import { createMetadata } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
-
 import marketingROIImage from "@/assets/marketing-roi-dashboard.jpg";
 import digitalMarketingROIHero from '@/assets/blog/digital-marketing-roi.jpg';
 import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
+export const metadata = createMetadata({
+  title: "Digital Marketing Roi Service Businesses",
+  description: "Expert guidance on digital marketing roi service businesses. Learn proven strategies and best practices for business growth.",
+  path: "/blog/digital-marketing-roi-service-businesses",
+  keywords: ["digital", "marketing", "service", "businesses", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Digital Marketing Roi Service Businesses",
+    description: "Expert guidance on digital marketing roi service businesses. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/digital-marketing-roi-service-businesses",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Digital Marketing Roi Service Businesses"
+    }],
+    publishedTime: "2024-12-15T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.619Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Marketing Roi Service Businesses",
+    description: "Expert guidance on digital marketing roi service businesses. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const DigitalMarketingROI = () => {
   const articleData = {
     headline: "Digital Marketing ROI: How Service Businesses Measure Success",
@@ -21,30 +49,17 @@ const DigitalMarketingROI = () => {
     readTime: "26 min read",
     tags: ["Digital Marketing ROI", "Analytics", "Service Businesses", "Marketing Metrics", "Performance Measurement"]
   };
-
-  const faqs = [
-    {
-      question: "What's a good ROI benchmark for service business digital marketing?",
-      answer: "Service businesses should target a 300-500% ROI from digital marketing efforts. This means for every $1 spent, you should generate $3-5 in revenue. Professional services often achieve higher ROI due to higher transaction values."
-    },
-    {
-      question: "How long does it take to see measurable ROI from digital marketing?",
-      answer: "Initial results typically appear within 2-3 months, but significant ROI improvements usually take 6-12 months. SEO and content marketing have longer timelines, while paid advertising can show results within 30-60 days."
-    },
-    {
-      question: "Which digital marketing channels provide the highest ROI for service businesses?",
-      answer: "Email marketing typically delivers the highest ROI (4200% average), followed by SEO and content marketing. Paid search and social media can also be highly effective when properly optimized and targeted."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage={digitalMarketingROIHero}
-        heroAlt="Digital Marketing ROI Dashboard - Measuring success for service businesses"
-      >
+  const faqs = [{
+    question: "What's a good ROI benchmark for service business digital marketing?",
+    answer: "Service businesses should target a 300-500% ROI from digital marketing efforts. This means for every $1 spent, you should generate $3-5 in revenue. Professional services often achieve higher ROI due to higher transaction values."
+  }, {
+    question: "How long does it take to see measurable ROI from digital marketing?",
+    answer: "Initial results typically appear within 2-3 months, but significant ROI improvements usually take 6-12 months. SEO and content marketing have longer timelines, while paid advertising can show results within 30-60 days."
+  }, {
+    question: "Which digital marketing channels provide the highest ROI for service businesses?",
+    answer: "Email marketing typically delivers the highest ROI (4200% average), followed by SEO and content marketing. Paid search and social media can also be highly effective when properly optimized and targeted."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={digitalMarketingROIHero} heroAlt="Digital Marketing ROI Dashboard - Measuring success for service businesses">
         <h2>Understanding Digital Marketing ROI for Service Businesses</h2>
         <p>
           Measuring return on investment in digital marketing is crucial for service businesses to understand which strategies deliver the best results and optimize their marketing spend for maximum growth. Unlike product-based businesses, service companies face unique challenges in ROI measurement due to longer sales cycles and complex customer journeys.
@@ -715,7 +730,7 @@ const DigitalMarketingROI = () => {
 
         <h2>Maximize Your Marketing Investment</h2>
         <p>
-          Measuring digital marketing ROI isn't just about calculating numbers—it's about building a data-driven foundation that transforms your marketing from a cost center into a profit driver. The businesses that master ROI measurement consistently outperform competitors and achieve sustainable growth.
+          Measuring digital marketing ROI isn&apos;t just about calculating numbers—it&apos;s about building a data-driven foundation that transforms your marketing from a cost center into a profit driver. The businesses that master ROI measurement consistently outperform competitors and achieve sustainable growth.
         </p>
         
         <p>
@@ -730,14 +745,8 @@ const DigitalMarketingROI = () => {
           Success in digital marketing ROI optimization requires patience, consistency, and a willingness to adapt based on data insights. The service businesses that commit to this disciplined approach will build sustainable competitive advantages and achieve remarkable growth in the years ahead.
         </p>
 
-        <Citation
-          source="Marketing Accountability Standards Board 2024"
-          url="https://themasb.org"
-          title="Companies with advanced marketing measurement capabilities achieve 15-20% higher marketing ROI than those without formal measurement systems."
-        />
+        <Citation source="Marketing Accountability Standards Board 2024" url="https://themasb.org" title="Companies with advanced marketing measurement capabilities achieve 15-20% higher marketing ROI than those without formal measurement systems." />
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default DigitalMarketingROI;

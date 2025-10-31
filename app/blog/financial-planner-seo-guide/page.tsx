@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, Target, Users, BarChart, Zap, CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import financialPlannerSEOHero from '@/assets/blog/financial-planner-seo-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Financial Planner Seo Guide",
+  description: "Expert guidance on financial planner seo guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/financial-planner-seo-guide",
+  keywords: ["financial", "planner", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Financial Planner Seo Guide",
+    description: "Expert guidance on financial planner seo guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/financial-planner-seo-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Financial Planner Seo Guide"
+    }],
+    publishedTime: "2024-12-31T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.673Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Financial Planner Seo Guide",
+    description: "Expert guidance on financial planner seo guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const FinancialPlannerSEO = () => {
   const articleData = {
     headline: "SEO for Financial Planners: Complete Local Search Domination Guide 2025",
@@ -18,30 +47,17 @@ const FinancialPlannerSEO = () => {
     readTime: "28 min read",
     tags: ["Financial Planner SEO", "Local Search", "Financial Services Marketing", "Search Optimization", "Digital Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "How important is local SEO for financial planners?",
-      answer: "Local SEO is critical as most clients prefer working with local financial planners. Optimizing for local search helps establish trust and captures high-intent prospects in your service area."
-    },
-    {
-      question: "What keywords should financial planners target?",
-      answer: "Focus on local financial planner keywords, service-specific terms like 'retirement planning,' and educational content keywords that demonstrate expertise and attract prospects throughout their research journey."
-    },
-    {
-      question: "How long does SEO take to work for financial planners?",
-      answer: "Initial SEO improvements typically appear within 3-6 months, with significant organic traffic growth usually visible after 6-12 months of consistent optimization and content creation efforts."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={financialPlannerSEOHero}
-      heroAlt="Financial planner optimizing SEO strategy for client acquisition"
-    >
+  const faqs = [{
+    question: "How important is local SEO for financial planners?",
+    answer: "Local SEO is critical as most clients prefer working with local financial planners. Optimizing for local search helps establish trust and captures high-intent prospects in your service area."
+  }, {
+    question: "What keywords should financial planners target?",
+    answer: "Focus on local financial planner keywords, service-specific terms like 'retirement planning,' and educational content keywords that demonstrate expertise and attract prospects throughout their research journey."
+  }, {
+    question: "How long does SEO take to work for financial planners?",
+    answer: "Initial SEO improvements typically appear within 3-6 months, with significant organic traffic growth usually visible after 6-12 months of consistent optimization and content creation efforts."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={financialPlannerSEOHero} heroAlt="Financial planner optimizing SEO strategy for client acquisition">
       <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg">
         <p className="text-lg leading-relaxed text-gray-700">
           In the competitive financial services landscape, organic search visibility is critical for attracting affluent clients who research financial planners online before making decisions. SEO provides a sustainable, cost-effective way to establish authority and capture high-intent prospects searching for financial guidance.
@@ -51,7 +67,7 @@ const FinancialPlannerSEO = () => {
       <h2 className="text-2xl font-bold mt-8 mb-4">The Financial Planner SEO Landscape in 2025</h2>
       
       <p className="mb-6">
-        The financial planning industry has undergone significant digital transformation. Today's affluent clients expect financial advisors to have a strong online presence that demonstrates expertise and trustworthiness. With over 87% of financial services clients researching advisors online before making contact, SEO has become essential for practice growth.
+        The financial planning industry has undergone significant digital transformation. Today&apos;s affluent clients expect financial advisors to have a strong online presence that demonstrates expertise and trustworthiness. With over 87% of financial services clients researching advisors online before making contact, SEO has become essential for practice growth.
       </p>
 
       <Card className="mb-8">
@@ -85,7 +101,7 @@ const FinancialPlannerSEO = () => {
         </CardContent>
       </Card>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Understanding Your Target Client's Search Journey</h2>
+      <h2 className="text-2xl font-bold mt-8 mb-4">Understanding Your Target Client&apos;s Search Journey</h2>
 
       <p className="mb-6">
         Successful financial planner SEO begins with understanding how your ideal clients search for financial services. The client journey typically involves multiple touchpoints and search queries that evolve based on their financial situation and needs.
@@ -104,10 +120,10 @@ const FinancialPlannerSEO = () => {
               </h4>
               <p className="text-sm mb-2">Target keywords focus on educational content:</p>
               <div className="bg-gray-50 p-3 rounded text-sm">
-                <p>• "How to plan for retirement"</p>
-                <p>• "Investment strategies for beginners"</p>
-                <p>• "Financial planning tips"</p>
-                <p>• "When to hire a financial advisor"</p>
+                <p>• &quot;How to plan for retirement&quot;</p>
+                <p>• &quot;Investment strategies for beginners&quot;</p>
+                <p>• &quot;Financial planning tips&quot;</p>
+                <p>• &quot;When to hire a financial advisor&quot;</p>
               </div>
             </div>
             <div>
@@ -117,10 +133,10 @@ const FinancialPlannerSEO = () => {
               </h4>
               <p className="text-sm mb-2">Target keywords show intent to compare options:</p>
               <div className="bg-gray-50 p-3 rounded text-sm">
-                <p>• "Best financial planners near me"</p>
-                <p>• "Fee-only vs commission financial advisors"</p>
-                <p>• "Financial planner reviews [city]"</p>
-                <p>• "How to choose a financial advisor"</p>
+                <p>• &quot;Best financial planners near me&quot;</p>
+                <p>• &quot;Fee-only vs commission financial advisors&quot;</p>
+                <p>• &quot;Financial planner reviews [city]&quot;</p>
+                <p>• &quot;How to choose a financial advisor&quot;</p>
               </div>
             </div>
             <div>
@@ -130,10 +146,10 @@ const FinancialPlannerSEO = () => {
               </h4>
               <p className="text-sm mb-2">High-intent keywords indicating readiness to engage:</p>
               <div className="bg-gray-50 p-3 rounded text-sm">
-                <p>• "Financial planner [city name]"</p>
-                <p>• "[City] retirement planning services"</p>
-                <p>• "Investment advisor consultation"</p>
-                <p>• "Financial planning fees [location]"</p>
+                <p>• &quot;Financial planner [city name]&quot;</p>
+                <p>• &quot;[City] retirement planning services&quot;</p>
+                <p>• &quot;Investment advisor consultation&quot;</p>
+                <p>• &quot;Financial planning fees [location]&quot;</p>
               </div>
             </div>
           </div>
@@ -177,7 +193,7 @@ const FinancialPlannerSEO = () => {
           <div>
             <h4 className="font-semibold mb-2">Profile Description Best Practices</h4>
             <p className="text-sm">
-              "Helping [City] families achieve financial security through personalized retirement planning, investment management, and comprehensive financial strategies. Serving clients throughout [Region] with fee-transparent advisory services since [Year]."
+              &quot;Helping [City] families achieve financial security through personalized retirement planning, investment management, and comprehensive financial strategies. Serving clients throughout [Region] with fee-transparent advisory services since [Year].&quot;
             </p>
           </div>
         </CardContent>
@@ -262,7 +278,7 @@ const FinancialPlannerSEO = () => {
       
       <h3>Building Authority Through Educational Content</h3>
       <p className="mb-6">
-        Content marketing establishes you as a trusted financial expert while improving search rankings. Create comprehensive resources that address your prospects' financial planning questions and concerns.
+        Content marketing establishes you as a trusted financial expert while improving search rankings. Create comprehensive resources that address your prospects&apos; financial planning questions and concerns.
       </p>
 
       <Card className="mb-8 bg-gradient-to-r from-indigo-50 to-purple-50 border-indigo-200">
@@ -441,7 +457,7 @@ const FinancialPlannerSEO = () => {
           <CardContent>
             <ul className="space-y-2 text-sm">
               <li>• Organic search rankings for target keywords</li>
-              <li>• Local pack appearances for "near me" searches</li>
+              <li>• Local pack appearances for &quot;near me&quot; searches</li>
               <li>• Search impression volumes and growth</li>
               <li>• Featured snippet captures</li>
             </ul>
@@ -502,8 +518,6 @@ const FinancialPlannerSEO = () => {
       <p>
         Remember that SEO is a marathon, not a sprint. The financial planning practices that consistently invest in quality content creation and technical optimization will dominate local search results and attract high-value clients for years to come.
       </p>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default FinancialPlannerSEO;

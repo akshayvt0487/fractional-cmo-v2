@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Clock, Users, TrendingUp, CheckCircle } from "lucide-react";
@@ -5,7 +6,35 @@ import whatIsFractionalCMOImage from "@/assets/blog/what-is-fractional-cmo.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles, ArticleData } from "@/utils/seoUtils";
 import StrategyForm from "@/components/ui/strategy-form";
-
+export const metadata = createMetadata({
+  title: "What Is Fractional Cmo",
+  description: "Expert guidance on what is fractional cmo. Learn proven strategies and best practices for business growth.",
+  path: "/blog/what-is-fractional-cmo",
+  keywords: ["what", "fractional", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "What Is Fractional Cmo",
+    description: "Expert guidance on what is fractional cmo. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/what-is-fractional-cmo",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "What Is Fractional Cmo"
+    }],
+    publishedTime: "2024-08-23T00:00:00Z",
+    modifiedTime: "2025-10-31T11:10:05.346Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "What Is Fractional Cmo",
+    description: "Expert guidance on what is fractional cmo. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const WhatIsFractionalCMO = () => {
   const articleData: ArticleData = {
     headline: "What is a Fractional CMO? Complete Guide for Business Owners",
@@ -19,46 +48,24 @@ const WhatIsFractionalCMO = () => {
     readTime: "24 min read",
     tags: ["fractional cmo", "marketing leadership", "business growth", "marketing strategy", "cmo services"]
   };
-
-  const faqs = [
-    {
-      question: "How much does a Fractional CMO cost?",
-      answer: "Fractional CMO services typically cost $5,000-$15,000 per month depending on scope and time commitment, which is significantly less than a full-time CMO salary of $200K-$400K+ annually including benefits."
-    },
-    {
-      question: "What's the difference between a Fractional CMO and marketing consultant?",
-      answer: "A Fractional CMO takes on strategic leadership responsibilities and works as an integrated team member, while consultants typically provide project-based advice. Fractional CMOs are accountable for results and long-term growth."
-    },
-    {
-      question: "How long do Fractional CMO engagements typically last?",
-      answer: "Most successful Fractional CMO engagements run 12-24 months, starting with an intensive 90-day strategy development phase followed by ongoing implementation and optimization support."
-    },
-    {
-      question: "What size business needs a Fractional CMO?",
-      answer: "Businesses with $1M-$50M revenue who need strategic marketing leadership but can't justify a full-time CMO. Ideal for companies ready to scale their marketing efforts systematically."
-    }
-  ];
-
-  const benefits = [
-    "Access to senior-level marketing expertise without full-time costs",
-    "Immediate strategic impact and implementation",
-    "Flexible engagement model that scales with your business", 
-    "Cross-industry experience and proven methodologies",
-    "No long-term employment commitments or overhead",
-    "Objective outside perspective on your marketing challenges"
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.fractionalCMO}
-      faqs={faqs}
-      heroImage={whatIsFractionalCMOImage}
-      heroAlt="Fractional CMO strategic planning and business growth consultation"
-    >
+  const faqs = [{
+    question: "How much does a Fractional CMO cost?",
+    answer: "Fractional CMO services typically cost $5,000-$15,000 per month depending on scope and time commitment, which is significantly less than a full-time CMO salary of $200K-$400K+ annually including benefits."
+  }, {
+    question: "What's the difference between a Fractional CMO and marketing consultant?",
+    answer: "A Fractional CMO takes on strategic leadership responsibilities and works as an integrated team member, while consultants typically provide project-based advice. Fractional CMOs are accountable for results and long-term growth."
+  }, {
+    question: "How long do Fractional CMO engagements typically last?",
+    answer: "Most successful Fractional CMO engagements run 12-24 months, starting with an intensive 90-day strategy development phase followed by ongoing implementation and optimization support."
+  }, {
+    question: "What size business needs a Fractional CMO?",
+    answer: "Businesses with $1M-$50M revenue who need strategic marketing leadership but can't justify a full-time CMO. Ideal for companies ready to scale their marketing efforts systematically."
+  }];
+  const benefits = ["Access to senior-level marketing expertise without full-time costs", "Immediate strategic impact and implementation", "Flexible engagement model that scales with your business", "Cross-industry experience and proven methodologies", "No long-term employment commitments or overhead", "Objective outside perspective on your marketing challenges"];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.fractionalCMO} faqs={faqs} heroImage={whatIsFractionalCMOImage} heroAlt="Fractional CMO strategic planning and business growth consultation">
       <h2>Understanding the Fractional CMO Model</h2>
       <p>
-        In today's competitive business landscape, many companies need senior-level marketing expertise but can't justify the cost of a full-time Chief Marketing Officer. This is where a <strong>Fractional CMO</strong> becomes invaluable.
+        In today&apos;s competitive business landscape, many companies need senior-level marketing expertise but can&apos;t justify the cost of a full-time Chief Marketing Officer. This is where a <strong>Fractional CMO</strong> becomes invaluable.
       </p>
       
       <p>
@@ -111,12 +118,10 @@ const WhatIsFractionalCMO = () => {
       <h2>Key Benefits of Hiring a Fractional CMO</h2>
       <div className="bg-primary/5 rounded-lg p-6 my-8">
         <ul className="space-y-3">
-          {benefits.map((benefit, index) => (
-            <li key={index} className="flex items-start gap-3">
+          {benefits.map((benefit, index) => <li key={index} className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
               <span>{benefit}</span>
-            </li>
-          ))}
+            </li>)}
         </ul>
       </div>
 
@@ -127,7 +132,7 @@ const WhatIsFractionalCMO = () => {
       
       <h3>Startups and Growing Companies ($1M+ Targeted Annual Revenue)</h3>
       <p>
-        Startups and companies with targeted annual revenue of $1M and above often need sophisticated marketing strategies but can't justify a $150K-$250K full-time CMO salary. A Fractional CMO provides the expertise starting from just $30K-$60K annually for 10-20 hours of engagement per month.
+        Startups and companies with targeted annual revenue of $1M and above often need sophisticated marketing strategies but can&apos;t justify a $150K-$250K full-time CMO salary. A Fractional CMO provides the expertise starting from just $30K-$60K annually for 10-20 hours of engagement per month.
       </p>
 
       <h3>Marketing Transformation</h3>
@@ -197,7 +202,7 @@ const WhatIsFractionalCMO = () => {
 
       <h2>Common Misconceptions About Fractional CMOs</h2>
       
-      <h3>Myth: They're Just Expensive Consultants</h3>
+      <h3>Myth: They&apos;re Just Expensive Consultants</h3>
       <p>
         <strong>Reality:</strong> Fractional CMOs take ownership of results and work as integrated team members, not external advisors.
       </p>
@@ -410,8 +415,6 @@ const WhatIsFractionalCMO = () => {
         </p>
         <StrategyForm preSelectedService="strategy" />
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default WhatIsFractionalCMO;

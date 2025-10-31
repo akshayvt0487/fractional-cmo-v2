@@ -1,8 +1,37 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import securityGoogleAdsStrategyHero from '@/assets/blog/security-google-ads-strategy-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Security Google Ads Strategy",
+  description: "Expert guidance on security google ads strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/security-google-ads-strategy",
+  keywords: ["security", "google", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Security Google Ads Strategy",
+    description: "Expert guidance on security google ads strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/security-google-ads-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Security Google Ads Strategy"
+    }],
+    publishedTime: "2025-01-04",
+    modifiedTime: "2025-10-31T11:10:05.237Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Security Google Ads Strategy",
+    description: "Expert guidance on security google ads strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const SecurityGoogleAdsStrategy = () => {
   const articleData = {
     headline: "Google Ads for Security Companies: Generate Quality Commercial Leads 2025",
@@ -16,34 +45,20 @@ const SecurityGoogleAdsStrategy = () => {
     readTime: "26 min read",
     tags: ["security companies", "google ads", "commercial leads", "security marketing"]
   };
-
-  const faqs = [
-    {
-      question: "How much should security companies spend on Google Ads?",
-      answer: "Start with $1,000-3,000 monthly budget depending on market size. Security services typically see good ROI with cost-per-lead ranging from $50-200 for commercial clients, with average contract values of $2,000-10,000+ annually."
-    },
-    {
-      question: "What are the best keywords for security company Google Ads?",
-      answer: "Target local commercial keywords like 'commercial security services [city]', 'business security company', 'security guards [area]', and emergency terms like '24/7 security services' and 'emergency security response'."
-    },
-    {
-      question: "How can security companies improve their Google Ads conversion rates?",
-      answer: "Focus on trust-building elements: display licensing prominently, include client testimonials, offer free security assessments, emphasize 24/7 availability, and create mobile-optimized landing pages with clear contact forms."
-    },
-    {
-      question: "Should security companies use Google Ads year-round?",
-      answer: "Yes, security needs are consistent year-round, but adjust bidding for seasonal patterns. Increase budgets during holiday seasons for retail clients, summer for events, and during local crime upticks that drive security awareness."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout 
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={securityGoogleAdsStrategyHero}
-      heroAlt="Security companies Google Ads campaigns and lead generation strategies"
-    >
+  const faqs = [{
+    question: "How much should security companies spend on Google Ads?",
+    answer: "Start with $1,000-3,000 monthly budget depending on market size. Security services typically see good ROI with cost-per-lead ranging from $50-200 for commercial clients, with average contract values of $2,000-10,000+ annually."
+  }, {
+    question: "What are the best keywords for security company Google Ads?",
+    answer: "Target local commercial keywords like 'commercial security services [city]', 'business security company', 'security guards [area]', and emergency terms like '24/7 security services' and 'emergency security response'."
+  }, {
+    question: "How can security companies improve their Google Ads conversion rates?",
+    answer: "Focus on trust-building elements: display licensing prominently, include client testimonials, offer free security assessments, emphasize 24/7 availability, and create mobile-optimized landing pages with clear contact forms."
+  }, {
+    question: "Should security companies use Google Ads year-round?",
+    answer: "Yes, security needs are consistent year-round, but adjust bidding for seasonal patterns. Increase budgets during holiday seasons for retail clients, summer for events, and during local crime upticks that drive security awareness."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={securityGoogleAdsStrategyHero} heroAlt="Security companies Google Ads campaigns and lead generation strategies">
       <p className="text-xl text-muted-foreground mb-8">
         Google Ads can be a game-changer for security companies, connecting you with businesses and property owners actively seeking professional security services. This comprehensive guide reveals proven Google Ads strategies that successful security companies use to generate high-value commercial leads and dominate their local markets.
       </p>
@@ -207,8 +222,6 @@ const SecurityGoogleAdsStrategy = () => {
               <p>
                 Google Ads success for security companies requires strategic targeting, trust-building messaging, and conversion-optimized landing pages. Focus on demonstrating professionalism, reliability, and rapid response capabilities to attract businesses and property owners who value quality security services. Start with well-structured campaigns targeting your most profitable client types, then scale based on performance data and market feedback.
               </p>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default SecurityGoogleAdsStrategy;

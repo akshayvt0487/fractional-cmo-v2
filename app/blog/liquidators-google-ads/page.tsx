@@ -1,63 +1,77 @@
+import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/liquidators-google-ads-hero.jpg";
-
+export const metadata = createMetadata({
+  title: "Liquidators Google Ads",
+  description: "Expert guidance on liquidators google ads. Learn proven strategies and best practices for business growth.",
+  path: "/blog/liquidators-google-ads",
+  keywords: ["liquidators", "google", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Liquidators Google Ads",
+    description: "Expert guidance on liquidators google ads. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/liquidators-google-ads",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Liquidators Google Ads"
+    }],
+    publishedTime: "2025-01-15",
+    modifiedTime: "2025-10-31T11:10:04.837Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Liquidators Google Ads",
+    description: "Expert guidance on liquidators google ads. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const LiquidatorsGoogleAds = () => {
-  const citations = [
-    {
-      source: "Google Ads",
-      title: "Google Ads Best Practices",
-      url: "https://support.google.com/google-ads/",
-      date: "2025"
-    },
-    {
-      source: "ARITA",
-      title: "ARITA - Professional Standards",
-      url: "https://www.arita.com.au/",
-      date: "2025"
-    }
-  ];
-
-  const relatedArticles = [
-    {
-      title: "Google Ads for Service Businesses",
-      description: "Master Google Ads strategies tailored for professional service providers.",
-      url: "/blog/google-ads-service-businesses",
-      category: "Google Ads"
-    },
-    {
-      title: "Growth Marketing for Liquidators",
-      description: "Comprehensive growth marketing strategies for liquidation practices.",
-      url: "/blog/liquidators-growth-marketing",
-      category: "Legal"
-    },
-    {
-      title: "Lead Generation for Legal Services",
-      description: "Proven lead generation strategies for lawyers and legal professionals.",
-      url: "/blog/lawyers-lead-generation",
-      category: "Legal"
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={{
-        headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2025",
-        description: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimize conversion rates, and maximize ROI for insolvency practitioners.",
-        publishedDate: "2025-01-15",
-        url: "/blog/liquidators-google-ads",
-        readTime: "13 min read",
-        category: "Legal",
-        author: "Basheer Padanna"
-      }}
-      heroImage={heroImage}
-      heroAlt="Google Ads for Liquidators"
-      relatedArticles={relatedArticles}
-    >
+  const citations = [{
+    source: "Google Ads",
+    title: "Google Ads Best Practices",
+    url: "https://support.google.com/google-ads/",
+    date: "2025"
+  }, {
+    source: "ARITA",
+    title: "ARITA - Professional Standards",
+    url: "https://www.arita.com.au/",
+    date: "2025"
+  }];
+  const relatedArticles = [{
+    title: "Google Ads for Service Businesses",
+    description: "Master Google Ads strategies tailored for professional service providers.",
+    url: "/blog/google-ads-service-businesses",
+    category: "Google Ads"
+  }, {
+    title: "Growth Marketing for Liquidators",
+    description: "Comprehensive growth marketing strategies for liquidation practices.",
+    url: "/blog/liquidators-growth-marketing",
+    category: "Legal"
+  }, {
+    title: "Lead Generation for Legal Services",
+    description: "Proven lead generation strategies for lawyers and legal professionals.",
+    url: "/blog/lawyers-lead-generation",
+    category: "Legal"
+  }];
+  return <OptimizedBlogLayout articleData={{
+    headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2025",
+    description: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimize conversion rates, and maximize ROI for insolvency practitioners.",
+    publishedDate: "2025-01-15",
+    url: "/blog/liquidators-google-ads",
+    readTime: "13 min read",
+    category: "Legal",
+    author: "Basheer Padanna"
+  }} heroImage={heroImage} heroAlt="Google Ads for Liquidators" relatedArticles={relatedArticles}>
       <p className="lead text-xl text-muted-foreground mb-8">
-        When a director searches "liquidator near me urgent" or "company liquidation Sydney", you need to be the first name they see. Google Ads delivers immediate visibility for high-value liquidation appointments—when properly executed. This guide reveals the exact strategies that drive results for liquidators.
+        When a director searches &quot;liquidator near me urgent&quot; or &quot;company liquidation Sydney&quot;, you need to be the first name they see. Google Ads delivers immediate visibility for high-value liquidation appointments—when properly executed. This guide reveals the exact strategies that drive results for liquidators.
       </p>
 
       <section className="mb-12">
@@ -88,7 +102,7 @@ const LiquidatorsGoogleAds = () => {
         </div>
 
         <p className="mb-6">
-          The liquidation services market is unique in Google Ads. Unlike most professional services, you're often competing for prospects in genuine crisis—making decisions quickly under extreme pressure. Your ad copy, landing pages, and bidding strategy must reflect this urgency while maintaining professional standards.
+          The liquidation services market is unique in Google Ads. Unlike most professional services, you&apos;re often competing for prospects in genuine crisis—making decisions quickly under extreme pressure. Your ad copy, landing pages, and bidding strategy must reflect this urgency while maintaining professional standards.
         </p>
       </section>
 
@@ -121,10 +135,10 @@ const LiquidatorsGoogleAds = () => {
                 Separate campaigns for each primary service with crisis intent:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li><strong>Liquidation Campaign:</strong> "company liquidation", "liquidator appointment", "wind up company"</li>
-                <li><strong>Voluntary Administration Campaign:</strong> "voluntary administration", "VA appointment", "save business from liquidation"</li>
-                <li><strong>Urgent Campaigns:</strong> "liquidator urgent", "insolvency today", "emergency liquidation"</li>
-                <li><strong>Geographic Variations:</strong> "[service] Sydney", "[service] Melbourne", "[service] Brisbane"</li>
+                <li><strong>Liquidation Campaign:</strong> &quot;company liquidation&quot;, &quot;liquidator appointment&quot;, &quot;wind up company&quot;</li>
+                <li><strong>Voluntary Administration Campaign:</strong> &quot;voluntary administration&quot;, &quot;VA appointment&quot;, &quot;save business from liquidation&quot;</li>
+                <li><strong>Urgent Campaigns:</strong> &quot;liquidator urgent&quot;, &quot;insolvency today&quot;, &quot;emergency liquidation&quot;</li>
+                <li><strong>Geographic Variations:</strong> &quot;[service] Sydney&quot;, &quot;[service] Melbourne&quot;, &quot;[service] Brisbane&quot;</li>
               </ul>
             </div>
 
@@ -134,10 +148,10 @@ const LiquidatorsGoogleAds = () => {
                 If you specialize in particular industries:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>"construction company liquidation"</li>
-                <li>"retail liquidation specialist"</li>
-                <li>"hospitality business insolvency"</li>
-                <li>"manufacturing liquidator"</li>
+                <li>&quot;construction company liquidation&quot;</li>
+                <li>&quot;retail liquidation specialist&quot;</li>
+                <li>&quot;hospitality business insolvency&quot;</li>
+                <li>&quot;manufacturing liquidator&quot;</li>
               </ul>
             </div>
 
@@ -147,10 +161,10 @@ const LiquidatorsGoogleAds = () => {
                 Educational searches from prospects researching options:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>"liquidation vs voluntary administration"</li>
-                <li>"liquidation process Australia"</li>
-                <li>"how much does liquidation cost"</li>
-                <li>"director duties insolvent company"</li>
+                <li>&quot;liquidation vs voluntary administration&quot;</li>
+                <li>&quot;liquidation process Australia&quot;</li>
+                <li>&quot;how much does liquidation cost&quot;</li>
+                <li>&quot;director duties insolvent company&quot;</li>
               </ul>
             </div>
 
@@ -242,7 +256,7 @@ const LiquidatorsGoogleAds = () => {
               <div className="bg-muted/30 p-4 rounded">
                 <ul className="grid md:grid-cols-2 gap-2 text-sm text-muted-foreground">
                   <li>• company in financial trouble</li>
-                  <li>• can't pay creditors</li>
+                  <li>• can&apos;t pay creditors</li>
                   <li>• business failing help</li>
                   <li>• company insolvent what to do</li>
                   <li>• ATO debt help</li>
@@ -261,13 +275,13 @@ const LiquidatorsGoogleAds = () => {
             <div>
               <h4 className="font-semibold mb-2">Exact Match</h4>
               <p className="text-muted-foreground">
-                Use for branded terms and highest-intent keywords. Provides maximum control and ensures you're only paying for precisely relevant searches.
+                Use for branded terms and highest-intent keywords. Provides maximum control and ensures you&apos;re only paying for precisely relevant searches.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-2">Phrase Match</h4>
               <p className="text-muted-foreground">
-                Primary match type for most liquidation keywords. Captures variations while maintaining relevance. Example: [liquidation Sydney] captures "company liquidation Sydney", "urgent liquidation Sydney", etc.
+                Primary match type for most liquidation keywords. Captures variations while maintaining relevance. Example: [liquidation Sydney] captures &quot;company liquidation Sydney&quot;, &quot;urgent liquidation Sydney&quot;, etc.
               </p>
             </div>
             <div>
@@ -315,27 +329,27 @@ const LiquidatorsGoogleAds = () => {
                 <div className="bg-muted/30 p-4 rounded space-y-2 text-sm">
                   <p><strong>Urgency/Availability:</strong></p>
                   <ul className="list-disc pl-6 text-muted-foreground">
-                    <li>"Same Day Liquidation Appointments"</li>
-                    <li>"24/7 Emergency Insolvency Help"</li>
-                    <li>"Urgent Liquidator | Call Now"</li>
+                    <li>&quot;Same Day Liquidation Appointments&quot;</li>
+                    <li>&quot;24/7 Emergency Insolvency Help&quot;</li>
+                    <li>&quot;Urgent Liquidator | Call Now&quot;</li>
                   </ul>
                   <p className="mt-3"><strong>Credentials:</strong></p>
                   <ul className="list-disc pl-6 text-muted-foreground">
-                    <li>"ASIC Registered Liquidator"</li>
-                    <li>"25+ Years Liquidation Experience"</li>
-                    <li>"ARITA Member | Licensed Practitioner"</li>
+                    <li>&quot;ASIC Registered Liquidator&quot;</li>
+                    <li>&quot;25+ Years Liquidation Experience&quot;</li>
+                    <li>&quot;ARITA Member | Licensed Practitioner&quot;</li>
                   </ul>
                   <p className="mt-3"><strong>Specialization:</strong></p>
                   <ul className="list-disc pl-6 text-muted-foreground">
-                    <li>"Construction Liquidation Specialist"</li>
-                    <li>"Sydney's Trusted Liquidator"</li>
-                    <li>"Expert Voluntary Administration"</li>
+                    <li>&quot;Construction Liquidation Specialist&quot;</li>
+                    <li>&quot;Sydney&apos;s Trusted Liquidator&quot;</li>
+                    <li>&quot;Expert Voluntary Administration&quot;</li>
                   </ul>
                   <p className="mt-3"><strong>Value Proposition:</strong></p>
                   <ul className="list-disc pl-6 text-muted-foreground">
-                    <li>"Free Initial Consultation"</li>
-                    <li>"Transparent Fee Structure"</li>
-                    <li>"Maximize Creditor Returns"</li>
+                    <li>&quot;Free Initial Consultation&quot;</li>
+                    <li>&quot;Transparent Fee Structure&quot;</li>
+                    <li>&quot;Maximize Creditor Returns&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -346,19 +360,19 @@ const LiquidatorsGoogleAds = () => {
                   <div>
                     <strong>Description 1:</strong>
                     <p className="text-muted-foreground mt-1">
-                      "Expert liquidation services for Australian businesses. ASIC registered practitioners with proven track record. Free consultation to discuss your options. Call now."
+                      &quot;Expert liquidation services for Australian businesses. ASIC registered practitioners with proven track record. Free consultation to discuss your options. Call now.&quot;
                     </p>
                   </div>
                   <div>
                     <strong>Description 2:</strong>
                     <p className="text-muted-foreground mt-1">
-                      "Helping directors navigate company liquidation with confidence. Transparent process, clear fees, professional guidance. Available 24/7 for urgent appointments."
+                      &quot;Helping directors navigate company liquidation with confidence. Transparent process, clear fees, professional guidance. Available 24/7 for urgent appointments.&quot;
                     </p>
                   </div>
                   <div>
                     <strong>Description 3:</strong>
                     <p className="text-muted-foreground mt-1">
-                      "Industry-leading liquidation expertise since 1995. We handle creditors voluntary liquidation, voluntary administration, and receivership. Book same-day consultation."
+                      &quot;Industry-leading liquidation expertise since 1995. We handle creditors voluntary liquidation, voluntary administration, and receivership. Book same-day consultation.&quot;
                     </p>
                   </div>
                 </div>
@@ -375,10 +389,10 @@ const LiquidatorsGoogleAds = () => {
                   Drive traffic to key pages:
                 </p>
                 <ul className="list-disc pl-6 space-y-1 text-muted-foreground text-sm">
-                  <li>"Book Consultation" → Direct to booking page</li>
-                  <li>"Liquidation Process" → Educational page on CVL</li>
-                  <li>"Our Track Record" → Case studies page</li>
-                  <li>"Fees & Costs" → Transparent pricing page</li>
+                  <li>&quot;Book Consultation&quot; → Direct to booking page</li>
+                  <li>&quot;Liquidation Process&quot; → Educational page on CVL</li>
+                  <li>&quot;Our Track Record&quot; → Case studies page</li>
+                  <li>&quot;Fees & Costs&quot; → Transparent pricing page</li>
                 </ul>
               </div>
 
@@ -439,9 +453,9 @@ const LiquidatorsGoogleAds = () => {
             <div>
               <h4 className="font-semibold mb-2">Above the Fold</h4>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li><strong>Headline:</strong> Match ad message exactly. If ad says "Sydney Liquidation Expert", headline should echo this.</li>
-                <li><strong>Sub-headline:</strong> Expand on value proposition (e.g., "Same-day appointments | ASIC registered | 25+ years experience")</li>
-                <li><strong>Primary CTA Button:</strong> "Book Free Consultation" or "Call Now" with phone number</li>
+                <li><strong>Headline:</strong> Match ad message exactly. If ad says &quot;Sydney Liquidation Expert&quot;, headline should echo this.</li>
+                <li><strong>Sub-headline:</strong> Expand on value proposition (e.g., &quot;Same-day appointments | ASIC registered | 25+ years experience&quot;)</li>
+                <li><strong>Primary CTA Button:</strong> &quot;Book Free Consultation&quot; or &quot;Call Now&quot; with phone number</li>
                 <li><strong>Trust Indicators:</strong> ARITA logo, ASIC registration number, years in practice</li>
                 <li><strong>Hero Image:</strong> Professional photo of practitioner or team (builds trust)</li>
               </ul>
@@ -451,9 +465,9 @@ const LiquidatorsGoogleAds = () => {
               <h4 className="font-semibold mb-2">Conversion Form</h4>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>Maximum 4 fields: Name, Phone, Email, Brief description</li>
-                <li>Clear headline: "Book Your Free Consultation"</li>
-                <li>Privacy assurance: "Your information is confidential"</li>
-                <li>Response time promise: "We'll contact you within 2 hours"</li>
+                <li>Clear headline: &quot;Book Your Free Consultation&quot;</li>
+                <li>Privacy assurance: &quot;Your information is confidential&quot;</li>
+                <li>Response time promise: &quot;We&apos;ll contact you within 2 hours&quot;</li>
                 <li>Multiple placement: Top of page and after key sections</li>
               </ul>
             </div>
@@ -527,7 +541,7 @@ const LiquidatorsGoogleAds = () => {
                 Once you have 15+ conversions per month:
               </p>
               <ul className="list-disc pl-6 space-y-1 text-muted-foreground text-sm">
-                <li>Google's AI optimizes bids for maximum conversion volume</li>
+                <li>Google&apos;s AI optimizes bids for maximum conversion volume</li>
                 <li>Works within your daily budget constraints</li>
                 <li>Requires accurate conversion tracking setup</li>
                 <li>Continuously learns and improves</li>
@@ -632,7 +646,7 @@ const LiquidatorsGoogleAds = () => {
                 <li><strong>Cost Per Click (CPC):</strong> Industry benchmark $15-$50 for liquidation keywords</li>
                 <li><strong>Click-Through Rate (CTR):</strong> Target 5-10% for branded, 2-4% for service terms</li>
                 <li><strong>Quality Score:</strong> Aim for 7+ (improves ad rank and reduces CPC)</li>
-                <li><strong>Impression Share:</strong> Track % of available impressions you're capturing</li>
+                <li><strong>Impression Share:</strong> Track % of available impressions you&apos;re capturing</li>
               </ul>
             </div>
             <div>
@@ -655,7 +669,7 @@ const LiquidatorsGoogleAds = () => {
           <Card className="p-6">
             <h3 className="text-xl font-semibold mb-4">Remarketing Campaigns</h3>
             <p className="text-muted-foreground mb-4">
-              Capture prospects who visited but didn't convert:
+              Capture prospects who visited but didn&apos;t convert:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li>Build audiences of visitors to key pages (service pages, pricing, process)</li>
@@ -714,14 +728,14 @@ const LiquidatorsGoogleAds = () => {
           <Card className="p-6">
             <h3 className="text-lg font-semibold mb-2 text-destructive">❌ Sending Traffic to Homepage</h3>
             <p className="text-muted-foreground">
-              Homepage isn't optimized for specific keywords or intent. Create dedicated landing pages matching ad message for better Quality Score and conversion rates.
+              Homepage isn&apos;t optimized for specific keywords or intent. Create dedicated landing pages matching ad message for better Quality Score and conversion rates.
             </p>
           </Card>
 
           <Card className="p-6">
             <h3 className="text-lg font-semibold mb-2 text-destructive">❌ Ignoring Negative Keywords</h3>
             <p className="text-muted-foreground">
-              Without extensive negative keyword lists, you'll waste budget on irrelevant searches (job seekers, retail liquidation sales, educational queries).
+              Without extensive negative keyword lists, you&apos;ll waste budget on irrelevant searches (job seekers, retail liquidation sales, educational queries).
             </p>
           </Card>
 
@@ -735,7 +749,7 @@ const LiquidatorsGoogleAds = () => {
           <Card className="p-6">
             <h3 className="text-lg font-semibold mb-2 text-destructive">❌ No Phone Call Tracking</h3>
             <p className="text-muted-foreground">
-              Many liquidation inquiries come via phone. Without call tracking, you're blind to a major conversion source and can't optimize effectively.
+              Many liquidation inquiries come via phone. Without call tracking, you&apos;re blind to a major conversion source and can&apos;t optimize effectively.
             </p>
           </Card>
 
@@ -799,12 +813,8 @@ const LiquidatorsGoogleAds = () => {
 
       <div className="mt-12">
         <h3 className="text-xl font-semibold mb-4">Citations & Resources</h3>
-        {citations.map((citation, index) => (
-          <Citation key={index} {...citation} />
-        ))}
+        {citations.map((citation, index) => <Citation key={index} {...citation} />)}
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default LiquidatorsGoogleAds;

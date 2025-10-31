@@ -1,12 +1,40 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, TrendingDown, CheckCircle, X } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import conveyancingLeadGenerationHero from '@/assets/blog/conveyancing-lead-generation-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Conveyancing Lead Generation Strategies",
+  description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
+  path: "/blog/conveyancing-lead-generation-strategies",
+  keywords: ["conveyancing", "lead", "generation", "strategies", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Conveyancing Lead Generation Strategies",
+    description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/conveyancing-lead-generation-strategies",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Conveyancing Lead Generation Strategies"
+    }],
+    publishedTime: "2025-09-05T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.505Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Conveyancing Lead Generation Strategies",
+    description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ConveyancingLeadGeneration = () => {
   const articleData = {
     headline: "Conveyancing Lead Generation: Digital Marketing Strategies for Property Law Firms",
@@ -20,32 +48,19 @@ const ConveyancingLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["Conveyancing", "Lead Generation", "Digital Marketing", "Property Law", "Legal Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What's the best lead generation strategy for conveyancing firms?",
-      answer: "A multi-channel approach works best: local SEO (40%), Google Ads (30%), referral partnerships (20%), and content marketing (10%). Focus on high-intent keywords and local market dominance."
-    },
-    {
-      question: "How much should conveyancing firms spend on lead generation?",
-      answer: "Successful firms spend 5-10% of revenue on marketing, with 60-70% allocated to digital channels. Start with $3,000-5,000 monthly and scale based on lead quality and conversion rates."
-    },
-    {
-      question: "What's the average cost per lead for conveyancing services?",
-      answer: "Cost per lead varies by location and competition: $50-150 for residential conveyancing, $200-500 for commercial property. Focus on lead quality and conversion rates rather than just cost."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.legal}
-        faqs={faqs}
-        heroImage={conveyancingLeadGenerationHero}
-        heroAlt="Digital marketing strategies for conveyancing lead generation"
-      >
+  const faqs = [{
+    question: "What's the best lead generation strategy for conveyancing firms?",
+    answer: "A multi-channel approach works best: local SEO (40%), Google Ads (30%), referral partnerships (20%), and content marketing (10%). Focus on high-intent keywords and local market dominance."
+  }, {
+    question: "How much should conveyancing firms spend on lead generation?",
+    answer: "Successful firms spend 5-10% of revenue on marketing, with 60-70% allocated to digital channels. Start with $3,000-5,000 monthly and scale based on lead quality and conversion rates."
+  }, {
+    question: "What's the average cost per lead for conveyancing services?",
+    answer: "Cost per lead varies by location and competition: $50-150 for residential conveyancing, $200-500 for commercial property. Focus on lead quality and conversion rates rather than just cost."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={conveyancingLeadGenerationHero} heroAlt="Digital marketing strategies for conveyancing lead generation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-          In today's competitive property market, conveyancing firms need more than traditional referral networks to thrive. 
+          In today&apos;s competitive property market, conveyancing firms need more than traditional referral networks to thrive. 
           With property transactions increasingly starting online, successful conveyancers are those who master digital lead generation.
         </p>
         
@@ -121,7 +136,7 @@ const ConveyancingLeadGeneration = () => {
         <p className="mb-6">
           Local SEO is crucial for conveyancing firms as most clients search for services in their area. 
           Optimizing for local search ensures your firm appears when potential clients search for 
-          "conveyancer near me" or "property lawyer [location]".
+          &quot;conveyancer near me&quot; or &quot;property lawyer [location]&quot;.
         </p>
 
         <Card className="mb-8">
@@ -161,7 +176,7 @@ const ConveyancingLeadGeneration = () => {
         
         <p className="mb-6">
           Google Ads provides immediate visibility when potential clients search for conveyancing services, allowing you 
-          to capture high-intent prospects at the exact moment they're ready to engage a solicitor.
+          to capture high-intent prospects at the exact moment they&apos;re ready to engage a solicitor.
         </p>
 
         <Card className="mb-8">
@@ -181,9 +196,9 @@ const ConveyancingLeadGeneration = () => {
               <div>
                 <h4 className="font-semibold mb-3 text-foreground">Generic Services Campaign</h4>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>• "conveyancing [location]"</li>
-                  <li>• "property lawyer near me"</li>
-                  <li>• "conveyancer fees [area]"</li>
+                  <li>• &quot;conveyancing [location]&quot;</li>
+                  <li>• &quot;property lawyer near me&quot;</li>
+                  <li>• &quot;conveyancer fees [area]&quot;</li>
                   <li>• Moderate CPC ($8-18)</li>
                   <li>• Strong commercial intent</li>
                 </ul>
@@ -202,10 +217,10 @@ const ConveyancingLeadGeneration = () => {
                   These prospects need education and reassurance throughout the conveyancing process.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "first time buyer conveyancing"</li>
-                  <li>• "conveyancing process explained"</li>
-                  <li>• "how much does conveyancing cost"</li>
-                  <li>• "what does a conveyancer do"</li>
+                  <li>• &quot;first time buyer conveyancing&quot;</li>
+                  <li>• &quot;conveyancing process explained&quot;</li>
+                  <li>• &quot;how much does conveyancing cost&quot;</li>
+                  <li>• &quot;what does a conveyancer do&quot;</li>
                 </ul>
               </div>
               <div className="p-4 bg-muted/50 rounded-lg">
@@ -214,10 +229,10 @@ const ConveyancingLeadGeneration = () => {
                   Investors prioritize speed, efficiency, and experience with investment properties.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "investment property conveyancing"</li>
-                  <li>• "fast settlement conveyancing"</li>
-                  <li>• "commercial conveyancing services"</li>
-                  <li>• "multiple property conveyancer"</li>
+                  <li>• &quot;investment property conveyancing&quot;</li>
+                  <li>• &quot;fast settlement conveyancing&quot;</li>
+                  <li>• &quot;commercial conveyancing services&quot;</li>
+                  <li>• &quot;multiple property conveyancer&quot;</li>
                 </ul>
               </div>
               <div className="p-4 bg-muted/50 rounded-lg">
@@ -226,10 +241,10 @@ const ConveyancingLeadGeneration = () => {
                   Time-sensitive situations require immediate response and rapid service delivery.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "same day conveyancing"</li>
-                  <li>• "urgent property settlement"</li>
-                  <li>• "quick conveyancing service"</li>
-                  <li>• "express property transfer"</li>
+                  <li>• &quot;same day conveyancing&quot;</li>
+                  <li>• &quot;urgent property settlement&quot;</li>
+                  <li>• &quot;quick conveyancing service&quot;</li>
+                  <li>• &quot;express property transfer&quot;</li>
                 </ul>
               </div>
             </div>
@@ -334,7 +349,7 @@ const ConveyancingLeadGeneration = () => {
         
         <p className="mb-6">
           Not every prospect is ready to engage immediately. Automated nurture sequences keep your firm top-of-mind while 
-          providing value throughout their property journey until they're ready to proceed.
+          providing value throughout their property journey until they&apos;re ready to proceed.
         </p>
 
         <Card className="mb-8">
@@ -579,17 +594,11 @@ const ConveyancingLeadGeneration = () => {
         </p>
 
         <p>
-          Remember that every property transaction represents a significant life event for your clients. By positioning your firm as a trusted advisor who simplifies the conveyancing process, you'll not only generate more leads but also build a reputation that drives referrals and repeat business for years to come.
+          Remember that every property transaction represents a significant life event for your clients. By positioning your firm as a trusted advisor who simplifies the conveyancing process, you&apos;ll not only generate more leads but also build a reputation that drives referrals and repeat business for years to come.
         </p>
 
-        <Citation
-          source="Australian Property Council Market Report 2024"
-          url="https://www.propertycouncil.com.au"
-          title="Property transactions in Australia reached 1.2 million in 2024, with 73% of buyers using online channels to research conveyancing services."
-        />
+        <Citation source="Australian Property Council Market Report 2024" url="https://www.propertycouncil.com.au" title="Property transactions in Australia reached 1.2 million in 2024, with 73% of buyers using online channels to research conveyancing services." />
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default ConveyancingLeadGeneration;

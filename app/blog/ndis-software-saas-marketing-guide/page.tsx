@@ -1,10 +1,9 @@
+import { createMetadata } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/sections/Footer";
 import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
-
-
 import StrategyForm from "@/components/ui/strategy-form";
 import InternalLinks from "@/components/InternalLinks";
 import Citation from "@/components/Citation";
@@ -13,10 +12,40 @@ import ContentGate from "@/components/ContentGate";
 import { useContentGate } from "@/hooks/useContentGate";
 import ndisRegistrationImage from "@/assets/blog/ndis-provider-registration-new.jpg";
 import ndisComplianceImage from "@/assets/blog/ndis-compliance-quality-new.jpg";
-
+export const metadata = createMetadata({
+  title: "Ndis Software Saas Marketing Guide",
+  description: "Expert guidance on ndis software saas marketing guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-software-saas-marketing-guide",
+  keywords: ["ndis", "software", "saas", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Software Saas Marketing Guide",
+    description: "Expert guidance on ndis software saas marketing guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-software-saas-marketing-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Software Saas Marketing Guide"
+    }],
+    publishedTime: "2024-01-20",
+    modifiedTime: "2025-10-31T11:10:05.041Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Software Saas Marketing Guide",
+    description: "Expert guidance on ndis software saas marketing guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISSoftwareSaaSMarketing = () => {
-  const { isUnlocked, unlock } = useContentGate("ndis-software-saas-marketing");
-  
+  const {
+    isUnlocked,
+    unlock
+  } = useContentGate("ndis-software-saas-marketing");
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies",
     description: "Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively.",
@@ -26,64 +55,44 @@ const NDISSoftwareSaaSMarketing = () => {
     url: "/blog/ndis-software-saas-marketing-guide",
     imageUrl: ndisRegistrationImage
   });
-
-  const relatedArticles = [
-    {
-      title: "NDIS Software SaaS Positioning Strategy",
-      description: "Learn how to position your NDIS software effectively in a competitive market.",
-      url: "/blog/ndis-software-saas-positioning-strategy",
-      category: "SaaS Marketing"
-    },
-    {
-      title: "NDIS Software SaaS Lead Generation",
-      description: "Proven techniques to generate qualified leads for your NDIS software platform.",
-      url: "/blog/ndis-software-saas-lead-generation",
-      category: "Lead Generation"
-    },
-    {
-      title: "NDIS Digital Marketing Strategies",
-      description: "Comprehensive digital marketing tactics for NDIS providers.",
-      url: "/blog/ndis-digital-marketing-strategies",
-      category: "NDIS"
-    },
-    {
-      title: "Digital Marketing ROI for Service Businesses",
-      description: "How to measure and improve your digital marketing return on investment.",
-      url: "/blog/digital-marketing-roi-service-businesses",
-      category: "Digital Marketing"
-    }
-  ];
-
-  return (
-    <>
-      <SEO
-        title="NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies"
-        description="Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively."
-        canonical="/blog/ndis-software-saas-marketing-guide"
-        ogType="article"
-        articlePublishedTime="2024-01-20T00:00:00Z"
-        articleModifiedTime="2024-01-20T00:00:00Z"
-        articleTags={["NDIS", "SaaS Marketing", "B2B Software", "Digital Marketing", "Growth Strategy"]}
-        structuredData={articleSchema}
-      />
+  const relatedArticles = [{
+    title: "NDIS Software SaaS Positioning Strategy",
+    description: "Learn how to position your NDIS software effectively in a competitive market.",
+    url: "/blog/ndis-software-saas-positioning-strategy",
+    category: "SaaS Marketing"
+  }, {
+    title: "NDIS Software SaaS Lead Generation",
+    description: "Proven techniques to generate qualified leads for your NDIS software platform.",
+    url: "/blog/ndis-software-saas-lead-generation",
+    category: "Lead Generation"
+  }, {
+    title: "NDIS Digital Marketing Strategies",
+    description: "Comprehensive digital marketing tactics for NDIS providers.",
+    url: "/blog/ndis-digital-marketing-strategies",
+    category: "NDIS"
+  }, {
+    title: "Digital Marketing ROI for Service Businesses",
+    description: "How to measure and improve your digital marketing return on investment.",
+    url: "/blog/digital-marketing-roi-service-businesses",
+    category: "Digital Marketing"
+  }];
+  return <>
+      <SEO title="NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies" description="Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively." canonical="/blog/ndis-software-saas-marketing-guide" ogType="article" articlePublishedTime="2024-01-20T00:00:00Z" articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Marketing", "B2B Software", "Digital Marketing", "Growth Strategy"]} structuredData={articleSchema} />
       <Header />
       <div className="min-h-screen bg-background pt-24">
         <div className="container max-w-4xl py-8">
-          <BreadcrumbNavigation 
-            items={[
-              { label: "Blog", href: "/blog" },
-              { label: "NDIS Software SaaS Marketing", href: "/blog/ndis-software-saas-marketing-guide" }
-            ]} 
-          />
+          <BreadcrumbNavigation items={[{
+          label: "Blog",
+          href: "/blog"
+        }, {
+          label: "NDIS Software SaaS Marketing",
+          href: "/blog/ndis-software-saas-marketing-guide"
+        }]} />
           
           <article className="prose prose-lg max-w-none">
             {/* Hero Section */}
             <div className="mb-12">
-              <img 
-                src={ndisRegistrationImage} 
-                alt="NDIS software marketing strategy planning" 
-                className="w-full h-96 object-cover rounded-lg mb-8"
-              />
+              <img src={ndisRegistrationImage} alt="NDIS software marketing strategy planning" className="w-full h-96 object-cover rounded-lg mb-8" />
               <h1 className="text-4xl font-bold mb-4 text-foreground">
                 NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies
               </h1>
@@ -200,8 +209,7 @@ const NDISSoftwareSaaSMarketing = () => {
 
             <ContentGate isUnlocked={isUnlocked} onUnlock={unlock} blogTitle="NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies" />
 
-            {isUnlocked && (
-              <>
+            {isUnlocked && <>
                 {/* Marketing Strategies */}
                 <section className="mb-12">
                   <h2 className="text-3xl font-semibold mb-6 text-foreground">7 Core NDIS SaaS Marketing Strategies</h2>
@@ -332,28 +340,28 @@ const NDISSoftwareSaaSMarketing = () => {
                           <div className="bg-background/50 border rounded-lg p-4">
                             <h5 className="font-medium mb-2 text-foreground">Solution-Focused (High Intent)</h5>
                             <ul className="text-sm text-muted-foreground space-y-1">
-                              <li>• "NDIS practice management software"</li>
-                              <li>• "NDIS participant management system"</li>
-                              <li>• "NDIS rostering software"</li>
-                              <li>• "NDIS billing software"</li>
+                              <li>• &quot;NDIS practice management software&quot;</li>
+                              <li>• &quot;NDIS participant management system&quot;</li>
+                              <li>• &quot;NDIS rostering software&quot;</li>
+                              <li>• &quot;NDIS billing software&quot;</li>
                             </ul>
                           </div>
                           <div className="bg-background/50 border rounded-lg p-4">
                             <h5 className="font-medium mb-2 text-foreground">Problem-Focused (Medium Intent)</h5>
                             <ul className="text-sm text-muted-foreground space-y-1">
-                              <li>• "NDIS compliance management"</li>
-                              <li>• "NDIS reporting requirements"</li>
-                              <li>• "NDIS provider efficiency"</li>
-                              <li>• "NDIS documentation system"</li>
+                              <li>• &quot;NDIS compliance management&quot;</li>
+                              <li>• &quot;NDIS reporting requirements&quot;</li>
+                              <li>• &quot;NDIS provider efficiency&quot;</li>
+                              <li>• &quot;NDIS documentation system&quot;</li>
                             </ul>
                           </div>
                           <div className="bg-background/50 border rounded-lg p-4">
                             <h5 className="font-medium mb-2 text-foreground">Educational (Low Intent)</h5>
                             <ul className="text-sm text-muted-foreground space-y-1">
-                              <li>• "What is NDIS practice management"</li>
-                              <li>• "NDIS provider requirements"</li>
-                              <li>• "How to choose NDIS software"</li>
-                              <li>• "NDIS technology trends"</li>
+                              <li>• &quot;What is NDIS practice management&quot;</li>
+                              <li>• &quot;NDIS provider requirements&quot;</li>
+                              <li>• &quot;How to choose NDIS software&quot;</li>
+                              <li>• &quot;NDIS technology trends&quot;</li>
                             </ul>
                           </div>
                         </div>
@@ -374,7 +382,7 @@ const NDISSoftwareSaaSMarketing = () => {
                     <CardContent className="p-8">
                       <h3 className="text-2xl font-semibold mb-4 text-foreground">5. LinkedIn & Social Selling</h3>
                       <p className="text-muted-foreground mb-6">
-                        Leverage LinkedIn's professional network to build relationships with NDIS decision-makers and influencers.
+                        Leverage LinkedIn&apos;s professional network to build relationships with NDIS decision-makers and influencers.
                       </p>
                       
                       <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -554,7 +562,7 @@ const NDISSoftwareSaaSMarketing = () => {
                           <li>• Increase budget for high-ROI campaigns</li>
                           <li>• Expand content production</li>
                           <li>• Launch account-based marketing</li>
-                          <li>• Plan next quarter's strategy</li>
+                          <li>• Plan next quarter&apos;s strategy</li>
                         </ul>
                       </div>
                     </div>
@@ -610,15 +618,12 @@ const NDISSoftwareSaaSMarketing = () => {
             </section>
 
             <InternalLinks articles={relatedArticles} title="Continue Your NDIS SaaS Journey" />
-              </>
-            )}
+              </>}
           </article>
         </div>
       </div>
       <Footer />
       
-    </>
-  );
+    </>;
 };
-
 export default NDISSoftwareSaaSMarketing;

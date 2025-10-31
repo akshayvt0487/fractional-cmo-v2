@@ -1,12 +1,40 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Target, Settings, Layers, Search, Zap } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import buyersAgentsGoogleAdsHero from '@/assets/blog/buyers-agents-google-ads-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Buyers Agents Google Ads Strategy",
+  description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/buyers-agents-google-ads-strategy",
+  keywords: ["buyers", "agents", "google", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Buyers Agents Google Ads Strategy",
+    description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/buyers-agents-google-ads-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Buyers Agents Google Ads Strategy"
+    }],
+    publishedTime: "2025-01-13T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.375Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Buyers Agents Google Ads Strategy",
+    description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const BuyersAgentsGoogleAds = () => {
   const articleData = {
     headline: "Google Ads for Buyers Agents: Complete Strategy Guide 2025",
@@ -20,30 +48,17 @@ const BuyersAgentsGoogleAds = () => {
     readTime: "28 min read",
     tags: ["Buyers Agents", "Google Ads", "Real Estate Marketing", "Property Marketing", "Lead Generation"]
   };
-
-  const faqs = [
-    {
-      question: "What's the average cost per click for buyers agent Google Ads?",
-      answer: "CPC for buyers agent keywords typically ranges from $5-25, with competitive markets like Sydney and Melbourne at the higher end. Focus on long-tail keywords and local targeting to reduce costs."
-    },
-    {
-      question: "How much should buyers agents spend on Google Ads monthly?",
-      answer: "Start with $3,000-5,000 monthly budget for comprehensive campaigns covering branded, service, and competitor keywords. Scale based on lead quality and conversion rates."
-    },
-    {
-      question: "What's the best landing page strategy for buyers agent ads?",
-      answer: "Create service-specific landing pages for first home buyers, investors, and luxury markets. Include clear value propositions, client testimonials, and simple consultation booking forms."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage={buyersAgentsGoogleAdsHero}
-        heroAlt="Buyers agents Google Ads strategies and campaign optimization"
-      >
+  const faqs = [{
+    question: "What's the average cost per click for buyers agent Google Ads?",
+    answer: "CPC for buyers agent keywords typically ranges from $5-25, with competitive markets like Sydney and Melbourne at the higher end. Focus on long-tail keywords and local targeting to reduce costs."
+  }, {
+    question: "How much should buyers agents spend on Google Ads monthly?",
+    answer: "Start with $3,000-5,000 monthly budget for comprehensive campaigns covering branded, service, and competitor keywords. Scale based on lead quality and conversion rates."
+  }, {
+    question: "What's the best landing page strategy for buyers agent ads?",
+    answer: "Create service-specific landing pages for first home buyers, investors, and luxury markets. Include clear value propositions, client testimonials, and simple consultation booking forms."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={buyersAgentsGoogleAdsHero} heroAlt="Buyers agents Google Ads strategies and campaign optimization">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏠 Google Ads can be a game-changer for buyers agents, connecting you with property buyers and investors actively searching for professional representation. This comprehensive guide reveals proven Google Ads strategies that successful buyers agents use to generate qualified leads, outrank competitors, and grow their client base consistently in competitive property markets.
         </p>
@@ -152,25 +167,25 @@ const BuyersAgentsGoogleAds = () => {
               <div>
                 <h4 className="font-semibold mb-2 text-purple-700">Core Service Terms</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "buyers agent", "property buyer advocate"</li>
-                  <li>• "buyers advocate", "property search service"</li>
+                  <li>• &quot;buyers agent&quot;, &quot;property buyer advocate&quot;</li>
+                  <li>• &quot;buyers advocate&quot;, &quot;property search service&quot;</li>
                 </ul>
                 <h4 className="font-semibold mb-2 mt-4 text-purple-700">Location-Based Searches</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "buyers agent [suburb]", "property search [area]"</li>
-                  <li>• "property purchase assistance [location]"</li>
+                  <li>• &quot;buyers agent [suburb]&quot;, &quot;property search [area]&quot;</li>
+                  <li>• &quot;property purchase assistance [location]&quot;</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold mb-2 text-pink-700">Client-Specific Terms</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "first home buyer agent"</li>
-                  <li>• "investment property finder"</li>
+                  <li>• &quot;first home buyer agent&quot;</li>
+                  <li>• &quot;investment property finder&quot;</li>
                 </ul>
                 <h4 className="font-semibold mb-2 mt-4 text-pink-700">Problem-Solving Keywords</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "help buying property"</li>
-                  <li>• "home buying help"</li>
+                  <li>• &quot;help buying property&quot;</li>
+                  <li>• &quot;home buying help&quot;</li>
                 </ul>
               </div>
             </div>
@@ -187,11 +202,11 @@ const BuyersAgentsGoogleAds = () => {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
-              <li>🔍 "best buyers agent for first home buyers [city]"</li>
-              <li>🏢 "property investment buyer advocate [suburb]"</li>
-              <li>❓ "how to find good buyers agent [area]"</li>
-              <li>💰 "buyers agent fees and services [location]"</li>
-              <li>⭐ "recommended buyers agent [suburb] reviews"</li>
+              <li>🔍 &quot;best buyers agent for first home buyers [city]&quot;</li>
+              <li>🏢 &quot;property investment buyer advocate [suburb]&quot;</li>
+              <li>❓ &quot;how to find good buyers agent [area]&quot;</li>
+              <li>💰 &quot;buyers agent fees and services [location]&quot;</li>
+              <li>⭐ &quot;recommended buyers agent [suburb] reviews&quot;</li>
             </ul>
           </CardContent>
         </Card>
@@ -269,10 +284,10 @@ const BuyersAgentsGoogleAds = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Headlines That Hook</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• "Save $50K+ On Your Next Property"</li>
-                    <li>• "Buy Off-Market Properties Others Miss"</li>
-                    <li>• "Property Experts Who Negotiate Better"</li>
-                    <li>• "Skip The Stress, We Find Your Home"</li>
+                    <li>• &quot;Save $50K+ On Your Next Property&quot;</li>
+                    <li>• &quot;Buy Off-Market Properties Others Miss&quot;</li>
+                    <li>• &quot;Property Experts Who Negotiate Better&quot;</li>
+                    <li>• &quot;Skip The Stress, We Find Your Home&quot;</li>
                   </ul>
                 </div>
                 <div>
@@ -288,11 +303,11 @@ const BuyersAgentsGoogleAds = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Trust Signals</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• "500+ Properties Purchased"</li>
-                    <li>• "Licensed Real Estate Professional"</li>
-                    <li>• "5-Star Google Reviews"</li>
-                    <li>• "REBAA Certified Buyers Agent"</li>
-                    <li>• "Free Initial Consultation"</li>
+                    <li>• &quot;500+ Properties Purchased&quot;</li>
+                    <li>• &quot;Licensed Real Estate Professional&quot;</li>
+                    <li>• &quot;5-Star Google Reviews&quot;</li>
+                    <li>• &quot;REBAA Certified Buyers Agent&quot;</li>
+                    <li>• &quot;Free Initial Consultation&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -830,8 +845,6 @@ const BuyersAgentsGoogleAds = () => {
           </div>
         </section>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default BuyersAgentsGoogleAds;

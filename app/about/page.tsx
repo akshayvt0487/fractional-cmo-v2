@@ -1,8 +1,22 @@
+import { createMetadata } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Footer from "@/components/sections/Footer";
 import Header from "@/components/ui/header";
+
+export const metadata = createMetadata({
+  title: 'About Basheer Padanna - Fractional CMO',
+  description: 'Learn about Basheer Padanna, a Fractional CMO helping ambitious service businesses build scalable growth systems through strategic thinking and hands-on execution.',
+  path: '/about',
+  keywords: [
+  'fractional cmo',
+  'basheer padanna',
+  'marketing leadership',
+  'growth strategy',
+  'digital marketing expert']
+
+});
 
 const About = () => {
   return (
@@ -35,17 +49,17 @@ const About = () => {
                   <div className="prose prose-gray max-w-none space-y-4 text-muted-foreground">
                     <p>
                       With over 15 years of experience in growth marketing and strategic leadership, 
-                      I've helped companies from early-stage startups to established brands build 
+                      I&apos;ve helped companies from early-stage startups to established brands build 
                       and scale their acquisition engines.
                     </p>
                     <p>
-                      My approach combines strategic thinking with hands-on execution—I don't just 
-                      create plans, I roll up my sleeves to implement them. Whether it's optimising 
-                      a $100K/month ad spend or rebuilding a company's entire conversion funnel, 
+                      My approach combines strategic thinking with hands-on execution—I don&apos;t just 
+                      create plans, I roll up my sleeves to implement them. Whether it&apos;s optimising 
+                      a $100K/month ad spend or rebuilding a company&apos;s entire conversion funnel, 
                       I focus on systems that drive measurable, scalable growth.
                     </p>
                     <p>
-                      I've managed over $2M+ in annual ad spend, built 50+ high-converting landing 
+                      I&apos;ve managed over $2M+ in annual ad spend, built 50+ high-converting landing 
                       page systems, and led growth initiatives for NDIS providers, construction 
                       companies, and service-based businesses across Australia.
                     </p>
@@ -61,9 +75,9 @@ const About = () => {
                       and measured against clear KPIs.
                     </p>
                     <p>
-                      My engagements are designed for velocity and clarity—whether it's a 
-                      sprint-style audit or ongoing fractional leadership, you'll know exactly 
-                      what we're building and why it matters.
+                      My engagements are designed for velocity and clarity—whether it&apos;s a 
+                      sprint-style audit or ongoing fractional leadership, you&apos;ll know exactly 
+                      what we&apos;re building and why it matters.
                     </p>
                   </div>
                 </div>
@@ -183,8 +197,8 @@ const About = () => {
         </section>
       </div>
       <Footer />
-    </>
-  );
+    </>);
+
 };
 
 export default About;

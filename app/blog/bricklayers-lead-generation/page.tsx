@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
@@ -5,7 +6,35 @@ import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
 import heroImage from '@/assets/blog/bricklayers-lead-generation-hero.jpg';
 import { relatedArticles } from '@/utils/seoUtils';
-
+export const metadata = createMetadata({
+  title: "Bricklayers Lead Generation",
+  description: "Expert guidance on bricklayers lead generation. Learn proven strategies and best practices for business growth.",
+  path: "/blog/bricklayers-lead-generation",
+  keywords: ["bricklayers", "lead", "generation", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Bricklayers Lead Generation",
+    description: "Expert guidance on bricklayers lead generation. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/bricklayers-lead-generation",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Bricklayers Lead Generation"
+    }],
+    publishedTime: "2025-01-18",
+    modifiedTime: "2025-10-31T11:10:04.357Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bricklayers Lead Generation",
+    description: "Expert guidance on bricklayers lead generation. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const BricklayersLeadGeneration = () => {
   const articleData = {
     headline: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
@@ -19,34 +48,20 @@ const BricklayersLeadGeneration = () => {
     readTime: "24 min read",
     tags: ["Bricklaying", "Lead Generation", "Trade Marketing", "Construction", "Local SEO"]
   };
-
-  const faqs = [
-    {
-      question: "What's the best way for bricklayers to find new jobs?",
-      answer: "The most effective methods combine online presence (Google My Business, website with photos) with traditional networking (building relationships with builders, architects, and past clients). Word-of-mouth referrals remain the strongest source for quality jobs."
-    },
-    {
-      question: "Should bricklayers invest in online advertising?",
-      answer: "Yes, especially Google Ads for local searches like 'bricklayer near me'. Start with a small budget ($300-500/month) and focus on residential projects or your specialty area like restoration or feature walls."
-    },
-    {
-      question: "How important is having a website for bricklayers?",
-      answer: "Very important. Even a simple website with photos of your work, contact details, and customer reviews significantly increases your credibility. Many clients won't hire tradespeople without seeing examples of their work online."
-    },
-    {
-      question: "What types of projects should bricklayers target for lead generation?",
-      answer: "Focus on your strengths - whether that's new home construction, restoration work, commercial projects, or decorative brickwork. Specializing in specific project types often leads to higher-paying jobs and better client relationships."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={heroImage}
-      heroAlt="Professional bricklayer working on construction project with digital marketing elements showcasing lead generation strategies"
-    >
+  const faqs = [{
+    question: "What's the best way for bricklayers to find new jobs?",
+    answer: "The most effective methods combine online presence (Google My Business, website with photos) with traditional networking (building relationships with builders, architects, and past clients). Word-of-mouth referrals remain the strongest source for quality jobs."
+  }, {
+    question: "Should bricklayers invest in online advertising?",
+    answer: "Yes, especially Google Ads for local searches like 'bricklayer near me'. Start with a small budget ($300-500/month) and focus on residential projects or your specialty area like restoration or feature walls."
+  }, {
+    question: "How important is having a website for bricklayers?",
+    answer: "Very important. Even a simple website with photos of your work, contact details, and customer reviews significantly increases your credibility. Many clients won't hire tradespeople without seeing examples of their work online."
+  }, {
+    question: "What types of projects should bricklayers target for lead generation?",
+    answer: "Focus on your strengths - whether that's new home construction, restoration work, commercial projects, or decorative brickwork. Specializing in specific project types often leads to higher-paying jobs and better client relationships."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={heroImage} heroAlt="Professional bricklayer working on construction project with digital marketing elements showcasing lead generation strategies">
       <section className="mb-12">
         <Card className="border-l-4 border-l-primary bg-primary/5 mb-8">
           <CardContent className="p-6">
@@ -176,7 +191,7 @@ const BricklayersLeadGeneration = () => {
                   <li>• Accurate address and phone number</li>
                   <li>• Business hours and service areas</li>
                   <li>• Professional logo and cover photo</li>
-                  <li>• Categories: "Bricklayer" and "Masonry"</li>
+                  <li>• Categories: &quot;Bricklayer&quot; and &quot;Masonry&quot;</li>
                 </ul>
               </div>
               <div>
@@ -232,28 +247,28 @@ const BricklayersLeadGeneration = () => {
               <div>
                 <h5 className="font-medium mb-2">Core Services</h5>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "bricklayer [your city]"</li>
-                  <li>• "brick restoration [area]"</li>
-                  <li>• "garden wall builder"</li>
-                  <li>• "fireplace construction"</li>
+                  <li>• &quot;bricklayer [your city]&quot;</li>
+                  <li>• &quot;brick restoration [area]&quot;</li>
+                  <li>• &quot;garden wall builder&quot;</li>
+                  <li>• &quot;fireplace construction&quot;</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Long-tail Keywords</h5>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "bricklayer near me"</li>
-                  <li>• "best bricklayer [suburb]"</li>
-                  <li>• "brick wall repair"</li>
-                  <li>• "heritage brick restoration"</li>
+                  <li>• &quot;bricklayer near me&quot;</li>
+                  <li>• &quot;best bricklayer [suburb]&quot;</li>
+                  <li>• &quot;brick wall repair&quot;</li>
+                  <li>• &quot;heritage brick restoration&quot;</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Project-Specific</h5>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "house extension bricklayer"</li>
-                  <li>• "commercial bricklaying"</li>
-                  <li>• "retaining wall builder"</li>
-                  <li>• "chimney repair specialist"</li>
+                  <li>• &quot;house extension bricklayer&quot;</li>
+                  <li>• &quot;commercial bricklaying&quot;</li>
+                  <li>• &quot;retaining wall builder&quot;</li>
+                  <li>• &quot;chimney repair specialist&quot;</li>
                 </ul>
               </div>
             </div>
@@ -277,7 +292,7 @@ const BricklayersLeadGeneration = () => {
                 <h4 className="font-semibold mb-3">Content Ideas</h4>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Project case studies with photos</li>
-                  <li>• "Types of brick" educational content</li>
+                  <li>• &quot;Types of brick&quot; educational content</li>
                   <li>• Maintenance tips for brick structures</li>
                   <li>• Cost guides for common projects</li>
                   <li>• Seasonal maintenance advice</li>
@@ -299,9 +314,9 @@ const BricklayersLeadGeneration = () => {
               <div>
                 <h5 className="font-medium mb-2">Campaign: Local Bricklaying Services</h5>
                 <div className="bg-background p-4 rounded border">
-                  <p className="text-sm mb-2"><strong>Keywords:</strong> "bricklayer Sydney", "brick repair", "garden wall builder"</p>
+                  <p className="text-sm mb-2"><strong>Keywords:</strong> &quot;bricklayer Sydney&quot;, &quot;brick repair&quot;, &quot;garden wall builder&quot;</p>
                   <p className="text-sm mb-2"><strong>Budget:</strong> $20-40/day</p>
-                  <p className="text-sm mb-2"><strong>Ad Copy:</strong> "Professional Bricklayer in Sydney | Free Quotes | 15+ Years Experience | Call Now"</p>
+                  <p className="text-sm mb-2"><strong>Ad Copy:</strong> &quot;Professional Bricklayer in Sydney | Free Quotes | 15+ Years Experience | Call Now&quot;</p>
                   <p className="text-sm"><strong>Landing Page:</strong> Service area page with contact form and photo gallery</p>
                 </div>
               </div>
@@ -364,7 +379,7 @@ const BricklayersLeadGeneration = () => {
               <div>
                 <h5 className="font-medium mb-3">Monthly Actions</h5>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Visit 3-5 local builders' offices</li>
+                  <li>• Visit 3-5 local builders&apos; offices</li>
                   <li>• Attend construction industry events</li>
                   <li>• Join local trade associations</li>
                   <li>• Follow up on completed projects</li>
@@ -423,7 +438,7 @@ const BricklayersLeadGeneration = () => {
           <div className="bg-primary/5 border border-primary/20 p-6 rounded-lg">
             <h4 className="font-semibold mb-4 text-primary">Facebook for Local Reach</h4>
             <p className="text-muted-foreground mb-4">
-              Facebook's local community groups and marketplace can be excellent for finding residential projects.
+              Facebook&apos;s local community groups and marketplace can be excellent for finding residential projects.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
@@ -530,8 +545,6 @@ const BricklayersLeadGeneration = () => {
         </div>
       </section>
 
-     </OptimizedBlogLayout>
-  );
+     </OptimizedBlogLayout>;
 };
-
 export default BricklayersLeadGeneration;

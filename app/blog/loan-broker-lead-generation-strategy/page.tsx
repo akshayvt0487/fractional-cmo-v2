@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import StrategyForm from '@/components/ui/strategy-form';
 import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
 import loanBrokerLeadGenerationHero from '@/assets/blog/loan-broker-lead-generation-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Loan Broker Lead Generation Strategy",
+  description: "Expert guidance on loan broker lead generation strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/loan-broker-lead-generation-strategy",
+  keywords: ["loan", "broker", "lead", "generation", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Loan Broker Lead Generation Strategy",
+    description: "Expert guidance on loan broker lead generation strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/loan-broker-lead-generation-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Loan Broker Lead Generation Strategy"
+    }],
+    publishedTime: "2025-01-03T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.869Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Loan Broker Lead Generation Strategy",
+    description: "Expert guidance on loan broker lead generation strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const LoanBrokerLeadGeneration = () => {
   const articleData = {
     headline: "Lead Generation for Loan Brokers: High-Converting Client Acquisition Strategies 2025",
@@ -18,30 +47,17 @@ const LoanBrokerLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["Lead Generation", "Loan Brokers", "Mortgage Marketing", "Client Acquisition", "Digital Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What's the best lead generation strategy for loan brokers?",
-      answer: "The most effective approach combines SEO-optimized content marketing, targeted Google Ads, educational lead magnets, and strategic partnerships with real estate agents. Focus on quality over quantity to attract pre-qualified borrowers."
-    },
-    {
-      question: "How much should loan brokers spend on lead generation?",
-      answer: "Most successful loan brokers invest 15-25% of their revenue in marketing and lead generation. For new brokers, budget $3,000-$8,000 monthly across digital channels to establish consistent lead flow."
-    },
-    {
-      question: "How do I qualify mortgage leads effectively?",
-      answer: "Ask key qualifying questions about timeline, pre-approval status, price range, deposit readiness, and current agent relationships. Use lead scoring based on demographics, behavior, and engagement to prioritize follow-up efforts."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={loanBrokerLeadGenerationHero}
-      heroAlt="Loan broker generating leads through digital marketing with analytics dashboard"
-    >
+  const faqs = [{
+    question: "What's the best lead generation strategy for loan brokers?",
+    answer: "The most effective approach combines SEO-optimized content marketing, targeted Google Ads, educational lead magnets, and strategic partnerships with real estate agents. Focus on quality over quantity to attract pre-qualified borrowers."
+  }, {
+    question: "How much should loan brokers spend on lead generation?",
+    answer: "Most successful loan brokers invest 15-25% of their revenue in marketing and lead generation. For new brokers, budget $3,000-$8,000 monthly across digital channels to establish consistent lead flow."
+  }, {
+    question: "How do I qualify mortgage leads effectively?",
+    answer: "Ask key qualifying questions about timeline, pre-approval status, price range, deposit readiness, and current agent relationships. Use lead scoring based on demographics, behavior, and engagement to prioritize follow-up efforts."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={loanBrokerLeadGenerationHero} heroAlt="Loan broker generating leads through digital marketing with analytics dashboard">
       <p className="text-xl text-muted-foreground mb-8">
         Consistent lead generation is the lifeblood of any successful loan brokerage. This comprehensive guide reveals the exact strategies top-performing mortgage brokers use to attract qualified borrowers, nurture prospects, and convert leads into profitable loan settlements.
       </p>
@@ -64,7 +80,7 @@ const LoanBrokerLeadGeneration = () => {
                 Capture borrowers actively searching for loan information:
               </p>
               <ul>
-                <li><strong>Target keywords:</strong> "home loans [location]", "mortgage broker near me"</li>
+                <li><strong>Target keywords:</strong> &quot;home loans [location]&quot;, &quot;mortgage broker near me&quot;</li>
                 <li><strong>Content strategy:</strong> Answer common borrower questions</li>
                 <li><strong>Local SEO:</strong> Dominate local search results</li>
                 <li><strong>Technical SEO:</strong> Fast, mobile-friendly website</li>
@@ -110,7 +126,7 @@ const LoanBrokerLeadGeneration = () => {
                 Create content that attracts and converts borrowers:
               </p>
               <ul>
-                <li><strong>Educational posts:</strong> "How to get approved for a home loan"</li>
+                <li><strong>Educational posts:</strong> &quot;How to get approved for a home loan&quot;</li>
                 <li><strong>Market updates:</strong> Interest rate trends and forecasts</li>
                 <li><strong>Case studies:</strong> Successful loan approvals</li>
                 <li><strong>Comparison articles:</strong> Loan types and lender options</li>
@@ -130,7 +146,7 @@ const LoanBrokerLeadGeneration = () => {
               <h2>Social Media Lead Generation</h2>
               <h3>Facebook Marketing</h3>
               <p>
-                Leverage Facebook's massive user base:
+                Leverage Facebook&apos;s massive user base:
               </p>
               <ul>
                 <li><strong>Targeted ads:</strong> Reach homebuyers by demographics</li>
@@ -213,9 +229,9 @@ const LoanBrokerLeadGeneration = () => {
                 Ask the right questions to assess lead quality:
               </p>
               <ul>
-                <li>What's your timeline for purchasing?</li>
+                <li>What&apos;s your timeline for purchasing?</li>
                 <li>Have you been pre-approved elsewhere?</li>
-                <li>What's your price range?</li>
+                <li>What&apos;s your price range?</li>
                 <li>Do you have your deposit ready?</li>
                 <li>Are you working with a real estate agent?</li>
               </ul>
@@ -515,11 +531,9 @@ const LoanBrokerLeadGeneration = () => {
 
               <h2>Ready to Generate More Quality Leads?</h2>
               <p>
-                Successful lead generation for loan brokers requires a systematic approach, consistent execution, and continuous optimization. By implementing these proven strategies and leveraging advanced automation, you'll build a predictable pipeline of qualified borrowers and achieve sustainable growth in a competitive market.
+                Successful lead generation for loan brokers requires a systematic approach, consistent execution, and continuous optimization. By implementing these proven strategies and leveraging advanced automation, you&apos;ll build a predictable pipeline of qualified borrowers and achieve sustainable growth in a competitive market.
               </p>
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default LoanBrokerLeadGeneration;

@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import conveyancingGoogleAdsHero from '@/assets/blog/conveyancing-google-ads-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Google Ads Conveyancing Guide",
+  description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/google-ads-conveyancing-guide",
+  keywords: ["google", "conveyancing", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Google Ads Conveyancing Guide",
+    description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/google-ads-conveyancing-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Google Ads Conveyancing Guide"
+    }],
+    publishedTime: "2025-09-04T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.705Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Google Ads Conveyancing Guide",
+    description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ConveyancingGoogleAds = () => {
   const articleData = {
     headline: "Google Ads for Conveyancers: How to Dominate Local Property Market",
@@ -19,33 +47,20 @@ const ConveyancingGoogleAds = () => {
     readTime: "24 min read",
     tags: ["Google Ads", "Conveyancing", "PPC", "Property Law", "Legal Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What's the average cost per click for conveyancing Google Ads?",
-      answer: "CPC for conveyancing keywords typically ranges from $8-25, with competitive markets like Sydney and Melbourne at the higher end. Focus on long-tail keywords and local targeting to reduce costs."
-    },
-    {
-      question: "How much should conveyancing firms spend on Google Ads?",
-      answer: "Start with $3,000-5,000 monthly budget for comprehensive campaigns. Scale based on lead quality and conversion rates. Successful firms typically spend 5-10% of revenue on Google Ads."
-    },
-    {
-      question: "What's the best landing page strategy for conveyancing ads?",
-      answer: "Create service-specific landing pages for residential, commercial, and first-time buyers. Include clear value propositions, fee transparency, client testimonials, and simple contact forms."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.legal}
-        faqs={faqs}
-        heroImage={conveyancingGoogleAdsHero}
-        heroAlt="Google Ads strategies for conveyancing firms"
-      >
+  const faqs = [{
+    question: "What's the average cost per click for conveyancing Google Ads?",
+    answer: "CPC for conveyancing keywords typically ranges from $8-25, with competitive markets like Sydney and Melbourne at the higher end. Focus on long-tail keywords and local targeting to reduce costs."
+  }, {
+    question: "How much should conveyancing firms spend on Google Ads?",
+    answer: "Start with $3,000-5,000 monthly budget for comprehensive campaigns. Scale based on lead quality and conversion rates. Successful firms typically spend 5-10% of revenue on Google Ads."
+  }, {
+    question: "What's the best landing page strategy for conveyancing ads?",
+    answer: "Create service-specific landing pages for residential, commercial, and first-time buyers. Include clear value propositions, fee transparency, client testimonials, and simple contact forms."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={conveyancingGoogleAdsHero} heroAlt="Google Ads strategies for conveyancing firms">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           When property buyers and sellers need a conveyancer, they turn to Google first. With the right Google Ads strategy, 
-          your conveyancing firm can capture these high-intent prospects at the exact moment they're ready to engage a solicitor.
+          your conveyancing firm can capture these high-intent prospects at the exact moment they&apos;re ready to engage a solicitor.
         </p>
         
         <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -67,7 +82,7 @@ const ConveyancingGoogleAds = () => {
           <li>• Local focus with geographic targeting opportunities</li>
           <li>• Time-sensitive nature of property transactions</li>
           <li>• Competitive landscape requiring strategic positioning</li>
-          <li>• Multiple touchpoints in the buyer's journey</li>
+          <li>• Multiple touchpoints in the buyer&apos;s journey</li>
         </ul>
 
         <h3 className="text-2xl font-semibold mb-4">Google Ads Advantages for Legal Services</h3>
@@ -94,7 +109,7 @@ const ConveyancingGoogleAds = () => {
               Target high-intent keywords when prospects actively search for conveyancing services.
             </p>
             <ul className="space-y-2">
-              <li><strong>Branded Campaign:</strong> Protect your firm's brand searches</li>
+              <li><strong>Branded Campaign:</strong> Protect your firm&apos;s brand searches</li>
               <li><strong>Generic Services:</strong> Target general conveyancing keywords</li>
               <li><strong>Local Services:</strong> Focus on location-based searches</li>
               <li><strong>Competitive:</strong> Target competitor brand terms (where legally appropriate)</li>
@@ -106,7 +121,7 @@ const ConveyancingGoogleAds = () => {
           <CardContent className="p-6">
             <h4 className="text-lg font-semibold mb-4">2. Local Campaigns</h4>
             <p className="mb-4">
-              Promote your physical location to nearby prospects using Google's location extensions and local inventory.
+              Promote your physical location to nearby prospects using Google&apos;s location extensions and local inventory.
             </p>
             <ul className="space-y-2">
               <li>• Automatic optimization for local relevance</li>
@@ -128,11 +143,11 @@ const ConveyancingGoogleAds = () => {
           <CardContent className="p-6">
             <h4 className="text-lg font-semibold mb-4">High-Intent Keywords (Primary Focus)</h4>
             <ul className="space-y-2">
-              <li>• "conveyancer [location]" - Local, high commercial intent</li>
-              <li>• "property settlement lawyer" - Professional service focus</li>
-              <li>• "conveyancing quote" - Ready-to-purchase signals</li>
-              <li>• "solicitor property purchase" - Specific service need</li>
-              <li>• "conveyancing fees [location]" - Price comparison intent</li>
+              <li>• &quot;conveyancer [location]&quot; - Local, high commercial intent</li>
+              <li>• &quot;property settlement lawyer&quot; - Professional service focus</li>
+              <li>• &quot;conveyancing quote&quot; - Ready-to-purchase signals</li>
+              <li>• &quot;solicitor property purchase&quot; - Specific service need</li>
+              <li>• &quot;conveyancing fees [location]&quot; - Price comparison intent</li>
             </ul>
           </CardContent>
         </Card>
@@ -141,11 +156,11 @@ const ConveyancingGoogleAds = () => {
           <CardContent className="p-6">
             <h4 className="text-lg font-semibold mb-4">Medium-Intent Keywords (Secondary Focus)</h4>
             <ul className="space-y-2">
-              <li>• "property lawyer [location]" - Legal service intent</li>
-              <li>• "settlement services" - Transaction focus</li>
-              <li>• "conveyancing comparison" - Service evaluation</li>
-              <li>• "property transfer process" - Educational intent</li>
-              <li>• "first home buyer conveyancer" - Specific demographic</li>
+              <li>• &quot;property lawyer [location]&quot; - Legal service intent</li>
+              <li>• &quot;settlement services&quot; - Transaction focus</li>
+              <li>• &quot;conveyancing comparison&quot; - Service evaluation</li>
+              <li>• &quot;property transfer process&quot; - Educational intent</li>
+              <li>• &quot;first home buyer conveyancer&quot; - Specific demographic</li>
             </ul>
           </CardContent>
         </Card>
@@ -154,11 +169,11 @@ const ConveyancingGoogleAds = () => {
           <CardContent className="p-6">
             <h4 className="text-lg font-semibold mb-4">Long-Tail Opportunity Keywords</h4>
             <ul className="space-y-2">
-              <li>• "how much does conveyancing cost in [location]" - Price research</li>
-              <li>• "what does a conveyancer do for property purchase" - Educational</li>
-              <li>• "conveyancer vs solicitor difference" - Comparison research</li>
-              <li>• "conveyancing checklist first home buyer" - Process guidance</li>
-              <li>• "property settlement delays conveyancer help" - Problem-solving</li>
+              <li>• &quot;how much does conveyancing cost in [location]&quot; - Price research</li>
+              <li>• &quot;what does a conveyancer do for property purchase&quot; - Educational</li>
+              <li>• &quot;conveyancer vs solicitor difference&quot; - Comparison research</li>
+              <li>• &quot;conveyancing checklist first home buyer&quot; - Process guidance</li>
+              <li>• &quot;property settlement delays conveyancer help&quot; - Problem-solving</li>
             </ul>
           </CardContent>
         </Card>
@@ -220,27 +235,27 @@ const ConveyancingGoogleAds = () => {
               <div className="p-4 bg-green-50 rounded-lg border border-green-200">
                 <h5 className="font-medium text-green-800 mb-2">Trust & Credibility Headlines</h5>
                 <ul className="text-sm text-green-700 space-y-1">
-                  <li>• "[City]'s Most Trusted Conveyancer - 20+ Years Experience"</li>
-                  <li>• "Award-Winning Conveyancing Services - 5-Star Reviews"</li>
-                  <li>• "Licensed Conveyancer - Professional Indemnity Insured"</li>
+                  <li>• &quot;[City]&apos;s Most Trusted Conveyancer - 20+ Years Experience&quot;</li>
+                  <li>• &quot;Award-Winning Conveyancing Services - 5-Star Reviews&quot;</li>
+                  <li>• &quot;Licensed Conveyancer - Professional Indemnity Insured&quot;</li>
                 </ul>
               </div>
               
               <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
                 <h5 className="font-medium text-blue-800 mb-2">Speed & Efficiency Headlines</h5>
                 <ul className="text-sm text-blue-700 space-y-1">
-                  <li>• "Fast Track Conveyancing - Complete in 28 Days"</li>
-                  <li>• "Express Property Settlement Services"</li>
-                  <li>• "Urgent Conveyancing - Same Day Service Available"</li>
+                  <li>• &quot;Fast Track Conveyancing - Complete in 28 Days&quot;</li>
+                  <li>• &quot;Express Property Settlement Services&quot;</li>
+                  <li>• &quot;Urgent Conveyancing - Same Day Service Available&quot;</li>
                 </ul>
               </div>
               
               <div className="p-4 bg-orange-50 rounded-lg border border-orange-200">
                 <h5 className="font-medium text-orange-800 mb-2">Value & Transparency Headlines</h5>
                 <ul className="text-sm text-orange-700 space-y-1">
-                  <li>• "Fixed Fee Conveyancing - No Hidden Costs"</li>
-                  <li>• "Compare Our Fees - Transparent Pricing"</li>
-                  <li>• "All-Inclusive Conveyancing from $899"</li>
+                  <li>• &quot;Fixed Fee Conveyancing - No Hidden Costs&quot;</li>
+                  <li>• &quot;Compare Our Fees - Transparent Pricing&quot;</li>
+                  <li>• &quot;All-Inclusive Conveyancing from $899&quot;</li>
                 </ul>
               </div>
             </div>
@@ -259,19 +274,19 @@ const ConveyancingGoogleAds = () => {
               <div>
                 <h5 className="font-medium mb-3">Pain Point Solutions</h5>
                 <ul className="space-y-2 text-sm">
-                  <li>• "Avoid costly settlement delays with expert guidance"</li>
-                  <li>• "Navigate complex contracts with confidence"</li>
-                  <li>• "Protect your investment with thorough due diligence"</li>
-                  <li>• "Stress-free property transactions guaranteed"</li>
+                  <li>• &quot;Avoid costly settlement delays with expert guidance&quot;</li>
+                  <li>• &quot;Navigate complex contracts with confidence&quot;</li>
+                  <li>• &quot;Protect your investment with thorough due diligence&quot;</li>
+                  <li>• &quot;Stress-free property transactions guaranteed&quot;</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-3">Service Differentiators</h5>
                 <ul className="space-y-2 text-sm">
-                  <li>• "Direct solicitor contact - no junior staff"</li>
-                  <li>• "Evening and weekend appointments available"</li>
-                  <li>• "Electronic settlement capability"</li>
-                  <li>• "Comprehensive insurance protection"</li>
+                  <li>• &quot;Direct solicitor contact - no junior staff&quot;</li>
+                  <li>• &quot;Evening and weekend appointments available&quot;</li>
+                  <li>• &quot;Electronic settlement capability&quot;</li>
+                  <li>• &quot;Comprehensive insurance protection&quot;</li>
                 </ul>
               </div>
             </div>
@@ -502,7 +517,7 @@ const ConveyancingGoogleAds = () => {
 
         <h2>Your Path to Google Ads Success</h2>
         <p>
-          Google Ads represents one of the most effective ways for conveyancing firms to attract qualified leads and grow their practice. By implementing strategic keyword targeting, compelling ad copy, and optimized landing pages, you can position your firm in front of potential clients at the exact moment they're searching for conveyancing services.
+          Google Ads represents one of the most effective ways for conveyancing firms to attract qualified leads and grow their practice. By implementing strategic keyword targeting, compelling ad copy, and optimized landing pages, you can position your firm in front of potential clients at the exact moment they&apos;re searching for conveyancing services.
         </p>
         
         <p>
@@ -513,14 +528,8 @@ const ConveyancingGoogleAds = () => {
           The conveyancing market is competitive, but with the right Google Ads strategy, you can achieve sustainable growth and build a thriving practice that serves clients throughout their property journey.
         </p>
 
-        <Citation
-          source="Google Ads Benchmark Report 2024"
-          url="https://www.google.com/ads/resources/"
-          title="Legal services average a 4.8% click-through rate on Google Ads, with conversion rates averaging 3.2% across the industry."
-        />
+        <Citation source="Google Ads Benchmark Report 2024" url="https://www.google.com/ads/resources/" title="Legal services average a 4.8% click-through rate on Google Ads, with conversion rates averaging 3.2% across the industry." />
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default ConveyancingGoogleAds;

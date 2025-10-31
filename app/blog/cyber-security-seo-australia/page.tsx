@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import cyberSecuritySEOAustraliaHero from '@/assets/blog/cyber-security-seo-australia.jpg';
-
+export const metadata = createMetadata({
+  title: "Cyber Security Seo Australia",
+  description: "Expert guidance on cyber security seo australia. Learn proven strategies and best practices for business growth.",
+  path: "/blog/cyber-security-seo-australia",
+  keywords: ["cyber", "security", "australia", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Cyber Security Seo Australia",
+    description: "Expert guidance on cyber security seo australia. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/cyber-security-seo-australia",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Cyber Security Seo Australia"
+    }],
+    publishedTime: "2024-01-25T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.601Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cyber Security Seo Australia",
+    description: "Expert guidance on cyber security seo australia. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const CyberSecuritySEOAustralia = () => {
   const articleData = {
     headline: "Cyber Security SEO Australia: Complete Guide to Ranking #1 for Security Services",
@@ -19,30 +47,17 @@ const CyberSecuritySEOAustralia = () => {
     readTime: "28 min read",
     tags: ["Cyber Security", "SEO", "Australia", "Local Search", "Digital Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What are the best keywords for cyber security SEO in Australia?",
-      answer: "Focus on 'cyber security Australia', 'penetration testing Melbourne/Sydney', 'GDPR compliance consulting', 'managed security services', and industry-specific terms like 'healthcare cyber security' or 'financial services security audit'."
-    },
-    {
-      question: "How long does cyber security SEO take to show results in Australia?",
-      answer: "Typically 4-8 months for competitive keywords, with local search improvements visible in 2-3 months. Technical content and compliance-focused pages often rank faster due to lower competition and high authority signals."
-    },
-    {
-      question: "Should cyber security companies target national or local SEO in Australia?",
-      answer: "Use a hybrid approach: target major cities (Sydney, Melbourne, Brisbane) for local presence while competing nationally for specialized services like penetration testing and compliance consulting. Enterprise clients often search nationally."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage="/images/cyber-security-seo-australia.jpg"
-        heroAlt="Cyber security SEO strategies for Australian market"
-      >
+  const faqs = [{
+    question: "What are the best keywords for cyber security SEO in Australia?",
+    answer: "Focus on 'cyber security Australia', 'penetration testing Melbourne/Sydney', 'GDPR compliance consulting', 'managed security services', and industry-specific terms like 'healthcare cyber security' or 'financial services security audit'."
+  }, {
+    question: "How long does cyber security SEO take to show results in Australia?",
+    answer: "Typically 4-8 months for competitive keywords, with local search improvements visible in 2-3 months. Technical content and compliance-focused pages often rank faster due to lower competition and high authority signals."
+  }, {
+    question: "Should cyber security companies target national or local SEO in Australia?",
+    answer: "Use a hybrid approach: target major cities (Sydney, Melbourne, Brisbane) for local presence while competing nationally for specialized services like penetration testing and compliance consulting. Enterprise clients often search nationally."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/cyber-security-seo-australia.jpg" heroAlt="Cyber security SEO strategies for Australian market">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🇦🇺 Australian cyber security companies implementing strategic SEO achieve 350% higher organic visibility and capture 65% more qualified leads compared to companies relying solely on paid advertising. This comprehensive guide reveals the specific tactics, keyword strategies, and content approaches that help security firms dominate Australian search results and build sustainable lead generation.
         </p>
@@ -52,7 +67,7 @@ const CyberSecuritySEOAustralia = () => {
           <div className="grid md:grid-cols-3 gap-4">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-600">12,000+</div>
-              <div className="text-sm text-blue-700">monthly searches for "cyber security Australia"</div>
+              <div className="text-sm text-blue-700">monthly searches for &quot;cyber security Australia&quot;</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-green-600">78%</div>
@@ -76,11 +91,11 @@ const CyberSecuritySEOAustralia = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4 text-red-700">High-Competition Keywords</h3>
               <ul className="space-y-2 text-sm">
-                <li>🔍 <strong>"cyber security Australia"</strong> - 12,100 searches/month</li>
-                <li>🔍 <strong>"penetration testing"</strong> - 8,900 searches/month</li>
-                <li>🔍 <strong>"cyber security consulting"</strong> - 6,400 searches/month</li>
-                <li>🔍 <strong>"managed security services"</strong> - 4,200 searches/month</li>
-                <li>🔍 <strong>"cyber security audit"</strong> - 3,800 searches/month</li>
+                <li>🔍 <strong>&quot;cyber security Australia&quot;</strong> - 12,100 searches/month</li>
+                <li>🔍 <strong>&quot;penetration testing&quot;</strong> - 8,900 searches/month</li>
+                <li>🔍 <strong>&quot;cyber security consulting&quot;</strong> - 6,400 searches/month</li>
+                <li>🔍 <strong>&quot;managed security services&quot;</strong> - 4,200 searches/month</li>
+                <li>🔍 <strong>&quot;cyber security audit&quot;</strong> - 3,800 searches/month</li>
               </ul>
             </CardContent>
           </Card>
@@ -89,11 +104,11 @@ const CyberSecuritySEOAustralia = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4 text-green-700">Opportunity Keywords</h3>
               <ul className="space-y-2 text-sm">
-                <li>💎 <strong>"cyber security Melbourne"</strong> - 2,100 searches/month</li>
-                <li>💎 <strong>"GDPR compliance Australia"</strong> - 1,800 searches/month</li>
-                <li>💎 <strong>"cyber security training Sydney"</strong> - 1,200 searches/month</li>
-                <li>💎 <strong>"incident response Australia"</strong> - 900 searches/month</li>
-                <li>💎 <strong>"security risk assessment"</strong> - 800 searches/month</li>
+                <li>💎 <strong>&quot;cyber security Melbourne&quot;</strong> - 2,100 searches/month</li>
+                <li>💎 <strong>&quot;GDPR compliance Australia&quot;</strong> - 1,800 searches/month</li>
+                <li>💎 <strong>&quot;cyber security training Sydney&quot;</strong> - 1,200 searches/month</li>
+                <li>💎 <strong>&quot;incident response Australia&quot;</strong> - 900 searches/month</li>
+                <li>💎 <strong>&quot;security risk assessment&quot;</strong> - 800 searches/month</li>
               </ul>
             </CardContent>
           </Card>
@@ -215,8 +230,8 @@ const CyberSecuritySEOAustralia = () => {
         </div>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "Australian cyber security SEO success requires deep understanding of local compliance requirements, industry-specific challenges, 
-          and the unique threat landscape facing Australian businesses across different sectors and regions."
+          &quot;Australian cyber security SEO success requires deep understanding of local compliance requirements, industry-specific challenges, 
+          and the unique threat landscape facing Australian businesses across different sectors and regions.&quot;
           <footer className="text-sm mt-2">— Australian Cyber Security SEO Strategy</footer>
         </blockquote>
 
@@ -301,7 +316,7 @@ const CyberSecuritySEOAustralia = () => {
             <CardContent className="p-6">
               <h3 className="text-lg font-semibold mb-3 text-green-700">Visibility Metrics</h3>
               <ul className="text-sm space-y-2 text-green-600">
-                <li>• Rankings for "cyber security [city]"</li>
+                <li>• Rankings for &quot;cyber security [city]&quot;</li>
                 <li>• Compliance keyword positions</li>
                 <li>• Industry-specific term rankings</li>
                 <li>• Local pack appearances</li>
@@ -337,8 +352,6 @@ const CyberSecuritySEOAustralia = () => {
           </Card>
         </div>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default CyberSecuritySEOAustralia;

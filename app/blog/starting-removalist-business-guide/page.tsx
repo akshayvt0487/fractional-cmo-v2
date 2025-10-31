@@ -1,9 +1,38 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent } from "@/components/ui/card";
 import startingRemovalistBusinessImage from "@/assets/blog/starting-removalist-business-new.jpg";
-
+export const metadata = createMetadata({
+  title: "Starting Removalist Business Guide",
+  description: "Expert guidance on starting removalist business guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/starting-removalist-business-guide",
+  keywords: ["starting", "removalist", "business", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Starting Removalist Business Guide",
+    description: "Expert guidance on starting removalist business guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/starting-removalist-business-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Starting Removalist Business Guide"
+    }],
+    publishedTime: "2021-07-14",
+    modifiedTime: "2025-10-31T11:10:05.265Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Starting Removalist Business Guide",
+    description: "Expert guidance on starting removalist business guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const StartingRemovalistBusiness = () => {
   const articleData = {
     headline: "Starting a Removalist Business: Complete Setup Guide for Success",
@@ -17,34 +46,20 @@ const StartingRemovalistBusiness = () => {
     readTime: "24 min read",
     tags: ["removalist business", "startup guide", "business licensing", "moving company"]
   };
-
-  const faqs = [
-    {
-      question: "What licenses do I need to start a removalist business?",
-      answer: "You'll need business registration with local council, ABN, vehicle registration for commercial use, heavy vehicle licenses for trucks over 4.5 tonnes, and workplace health and safety compliance. Requirements vary by state."
-    },
-    {
-      question: "How much does it cost to start a removalist business?",
-      answer: "Initial investment ranges from $50,000-120,000 including vehicle ($30,000-80,000), equipment ($5,000-10,000), insurance ($3,000-8,000 annually), licensing ($500-2,000), and working capital ($10,000-20,000)."
-    },
-    {
-      question: "What insurance coverage is essential for removalist businesses?",
-      answer: "Essential coverage includes public liability insurance ($10 million minimum), goods in transit insurance, professional indemnity insurance, and comprehensive motor vehicle insurance for your fleet."
-    },
-    {
-      question: "How should I price my removalist services?",
-      answer: "Common pricing models include hourly rates ($80-150 for 2-person team), fixed quotes based on home size and distance, volume-based pricing per cubic meter, plus distance factors for long-distance moves."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout 
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={startingRemovalistBusinessImage}
-      heroAlt="Starting a removalist business - professional moving truck and equipment"
-    >
+  const faqs = [{
+    question: "What licenses do I need to start a removalist business?",
+    answer: "You'll need business registration with local council, ABN, vehicle registration for commercial use, heavy vehicle licenses for trucks over 4.5 tonnes, and workplace health and safety compliance. Requirements vary by state."
+  }, {
+    question: "How much does it cost to start a removalist business?",
+    answer: "Initial investment ranges from $50,000-120,000 including vehicle ($30,000-80,000), equipment ($5,000-10,000), insurance ($3,000-8,000 annually), licensing ($500-2,000), and working capital ($10,000-20,000)."
+  }, {
+    question: "What insurance coverage is essential for removalist businesses?",
+    answer: "Essential coverage includes public liability insurance ($10 million minimum), goods in transit insurance, professional indemnity insurance, and comprehensive motor vehicle insurance for your fleet."
+  }, {
+    question: "How should I price my removalist services?",
+    answer: "Common pricing models include hourly rates ($80-150 for 2-person team), fixed quotes based on home size and distance, volume-based pricing per cubic meter, plus distance factors for long-distance moves."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={startingRemovalistBusinessImage} heroAlt="Starting a removalist business - professional moving truck and equipment">
             <Card className="mb-8 bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
               <CardContent className="p-8">
                 <h2 className="text-2xl font-semibold mb-4">Essential Steps to Start Your Removalist Business</h2>
@@ -258,8 +273,6 @@ const StartingRemovalistBusiness = () => {
                   it can be a rewarding and profitable venture. Take it step by step, focus on quality service, 
                   and always prioritize customer satisfaction.
                 </p>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default StartingRemovalistBusiness;

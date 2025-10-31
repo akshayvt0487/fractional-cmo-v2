@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Target, TrendingUp, Shield, MessageCircle, CheckCircle, Heart, Star, Globe, Phone } from 'lucide-react';
@@ -6,7 +7,35 @@ import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import StrategyForm from '@/components/ui/strategy-form';
 import ndisDisabilityServiceMarketingHero from '@/assets/blog/ndis-disability-service-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Ndis Disability Service Marketing",
+  description: "Expert guidance on ndis disability service marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-disability-service-marketing",
+  keywords: ["ndis", "disability", "service", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Disability Service Marketing",
+    description: "Expert guidance on ndis disability service marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-disability-service-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Disability Service Marketing"
+    }],
+    publishedTime: "2024-12-15T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.947Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Disability Service Marketing",
+    description: "Expert guidance on ndis disability service marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISDisabilityServiceMarketing = () => {
   const articleData = {
     headline: "NDIS Disability Service Digital Marketing: Complete Growth Strategy 2025",
@@ -20,42 +49,26 @@ const NDISDisabilityServiceMarketing = () => {
     readTime: "28 min read",
     tags: ["NDIS Marketing", "Disability Services", "Participant Engagement", "NDIS Compliance", "Service Provider Growth", "Digital Strategy"]
   };
-
-  const faqs = [
-    {
-      question: "How do NDIS providers market their services compliantly?",
-      answer: "Focus on educational content, participant testimonials (with consent), and clear service descriptions. Avoid making medical claims, ensure all marketing materials are accessible, and maintain transparency about costs and service delivery approaches."
-    },
-    {
-      question: "What's the best way to attract NDIS participants?",
-      answer: "Community engagement, referral partnerships with allied health professionals, and digital presence optimization work best. Participants often research providers online and rely on recommendations from healthcare professionals and other participants."
-    },
-    {
-      question: "How important is accessibility in NDIS marketing?",
-      answer: "Accessibility is crucial and legally required. Ensure websites meet WCAG guidelines, provide content in multiple formats, use clear language, and offer various communication channels to accommodate different disability types and preferences."
-    },
-    {
-      question: "What budget should NDIS disability service providers allocate for marketing?",
-      answer: "NDIS providers should typically allocate 3-5% of revenue to marketing activities. Start with $1,500-3,000 monthly for local digital marketing and scale based on participant acquisition results and service capacity."
-    },
-    {
-      question: "How long does it take to see results from NDIS marketing campaigns?",
-      answer: "Digital marketing campaigns typically show initial results within 6-8 weeks, with significant improvements after 3-6 months of consistent effort. Relationship building and community engagement can take longer but provide more sustainable results."
-    },
-    {
-      question: "What are the most effective marketing channels for NDIS disability services?",
-      answer: "The most effective channels include local SEO, Google My Business optimization, community engagement, referral programs with healthcare professionals, and targeted social media marketing. Focus on quality over quantity in your channel selection."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.ndis}
-      faqs={faqs}
-      heroImage={ndisDisabilityServiceMarketingHero}
-      heroAlt="NDIS disability service provider digital marketing"
-    >
+  const faqs = [{
+    question: "How do NDIS providers market their services compliantly?",
+    answer: "Focus on educational content, participant testimonials (with consent), and clear service descriptions. Avoid making medical claims, ensure all marketing materials are accessible, and maintain transparency about costs and service delivery approaches."
+  }, {
+    question: "What's the best way to attract NDIS participants?",
+    answer: "Community engagement, referral partnerships with allied health professionals, and digital presence optimization work best. Participants often research providers online and rely on recommendations from healthcare professionals and other participants."
+  }, {
+    question: "How important is accessibility in NDIS marketing?",
+    answer: "Accessibility is crucial and legally required. Ensure websites meet WCAG guidelines, provide content in multiple formats, use clear language, and offer various communication channels to accommodate different disability types and preferences."
+  }, {
+    question: "What budget should NDIS disability service providers allocate for marketing?",
+    answer: "NDIS providers should typically allocate 3-5% of revenue to marketing activities. Start with $1,500-3,000 monthly for local digital marketing and scale based on participant acquisition results and service capacity."
+  }, {
+    question: "How long does it take to see results from NDIS marketing campaigns?",
+    answer: "Digital marketing campaigns typically show initial results within 6-8 weeks, with significant improvements after 3-6 months of consistent effort. Relationship building and community engagement can take longer but provide more sustainable results."
+  }, {
+    question: "What are the most effective marketing channels for NDIS disability services?",
+    answer: "The most effective channels include local SEO, Google My Business optimization, community engagement, referral programs with healthcare professionals, and targeted social media marketing. Focus on quality over quantity in your channel selection."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisDisabilityServiceMarketingHero} heroAlt="NDIS disability service provider digital marketing">
       <Card className="bg-gradient-to-r from-purple-50 to-indigo-50 border-l-4 border-l-purple-500 p-8 mb-8 not-prose">
         <div className="flex items-start space-x-4">
           <div className="bg-purple-100 p-3 rounded-full">
@@ -189,10 +202,10 @@ const NDISDisabilityServiceMarketing = () => {
 
       <h4>Keyword Strategy</h4>
       <ul>
-        <li><strong>Location-Based:</strong> "disability services [suburb/city]", "NDIS provider [area]"</li>
-        <li><strong>Service-Specific:</strong> "community participation programs", "supported independent living"</li>
-        <li><strong>Condition-Specific:</strong> "autism support services", "mental health disability support"</li>
-        <li><strong>Long-Tail:</strong> "how to choose NDIS disability service provider"</li>
+        <li><strong>Location-Based:</strong> &quot;disability services [suburb/city]&quot;, &quot;NDIS provider [area]&quot;</li>
+        <li><strong>Service-Specific:</strong> &quot;community participation programs&quot;, &quot;supported independent living&quot;</li>
+        <li><strong>Condition-Specific:</strong> &quot;autism support services&quot;, &quot;mental health disability support&quot;</li>
+        <li><strong>Long-Tail:</strong> &quot;how to choose NDIS disability service provider&quot;</li>
       </ul>
 
       <h4>Content Marketing Strategy</h4>
@@ -675,7 +688,7 @@ const NDISDisabilityServiceMarketing = () => {
         <div className="space-y-4">
           <div>
             <h4 className="font-semibold text-red-700 mb-2">❌ Non-Accessible Website</h4>
-            <p className="text-sm text-red-600 mb-1"><strong>The Problem:</strong> Websites that don't meet WCAG standards exclude potential participants and create compliance risks.</p>
+            <p className="text-sm text-red-600 mb-1"><strong>The Problem:</strong> Websites that don&apos;t meet WCAG standards exclude potential participants and create compliance risks.</p>
             <p className="text-sm text-green-700"><strong>✓ The Solution:</strong> Conduct regular accessibility audits, use accessible design principles, provide multiple content formats.</p>
           </div>
           <div>
@@ -792,8 +805,6 @@ const NDISDisabilityServiceMarketing = () => {
         </p>
       </div>
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default NDISDisabilityServiceMarketing;

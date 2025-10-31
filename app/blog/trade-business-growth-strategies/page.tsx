@@ -1,10 +1,38 @@
+import { createMetadata } from "@/lib/seo";
 import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
-
 import localSEOImage from "@/assets/local-seo-search.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
+export const metadata = createMetadata({
+  title: "Trade Business Growth Strategies",
+  description: "Expert guidance on trade business growth strategies. Learn proven strategies and best practices for business growth.",
+  path: "/blog/trade-business-growth-strategies",
+  keywords: ["trade", "business", "growth", "strategies", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Trade Business Growth Strategies",
+    description: "Expert guidance on trade business growth strategies. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/trade-business-growth-strategies",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Trade Business Growth Strategies"
+    }],
+    publishedTime: "2024-03-05T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:05.316Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trade Business Growth Strategies",
+    description: "Expert guidance on trade business growth strategies. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const TradeBusinessGrowth = () => {
   const articleData = {
     headline: "Trade Business Growth Strategies: Scale Your Service Business in 2025",
@@ -18,30 +46,17 @@ const TradeBusinessGrowth = () => {
     readTime: "24 min read",
     tags: ["Trade Business", "Business Growth", "Scaling", "Operations", "Digital Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What are the biggest challenges trade businesses face when scaling?",
-      answer: "The main challenges include maintaining quality while growing, managing cash flow during expansion, finding and training skilled workers, implementing scalable systems, and transitioning from working in the business to working on the business."
-    },
-    {
-      question: "How much should trade businesses invest in digital marketing?",
-      answer: "Trade businesses should allocate 3-5% of revenue to marketing, with 60-70% focused on digital channels. Start with $1,500-3,000 monthly for local SEO and Google Ads, scaling based on lead quality and conversion rates."
-    },
-    {
-      question: "When should a trade business consider hiring additional management?",
-      answer: "Consider hiring management when you're consistently working 60+ hours per week, revenue exceeds $500K annually, or you have 5+ employees. This allows you to focus on strategy and growth rather than day-to-day operations."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.tradies}
-        faqs={faqs}
-        heroImage={localSEOImage}
-        heroAlt="Trade business owner reviewing growth strategies and expansion plans"
-      >
+  const faqs = [{
+    question: "What are the biggest challenges trade businesses face when scaling?",
+    answer: "The main challenges include maintaining quality while growing, managing cash flow during expansion, finding and training skilled workers, implementing scalable systems, and transitioning from working in the business to working on the business."
+  }, {
+    question: "How much should trade businesses invest in digital marketing?",
+    answer: "Trade businesses should allocate 3-5% of revenue to marketing, with 60-70% focused on digital channels. Start with $1,500-3,000 monthly for local SEO and Google Ads, scaling based on lead quality and conversion rates."
+  }, {
+    question: "When should a trade business consider hiring additional management?",
+    answer: "Consider hiring management when you're consistently working 60+ hours per week, revenue exceeds $500K annually, or you have 5+ employees. This allows you to focus on strategy and growth rather than day-to-day operations."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={localSEOImage} heroAlt="Trade business owner reviewing growth strategies and expansion plans">
         <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-xl p-6 mb-8 border-l-4 border-blue-500 not-prose">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -52,7 +67,7 @@ const TradeBusinessGrowth = () => {
             <div>
               <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">💡 Why This Matters for Your Business</h3>
               <p className="text-blue-800 dark:text-blue-200 mb-3">
-                The trade industry isn't just big—it's growing fast. But here's the catch: while there's massive opportunity, most trade businesses plateau because they treat growth as an accident rather than a system.
+                The trade industry isn&apos;t just big—it&apos;s growing fast. But here&apos;s the catch: while there&apos;s massive opportunity, most trade businesses plateau because they treat growth as an accident rather than a system.
               </p>
               <p className="text-blue-700 dark:text-blue-300 text-sm">
                 Smart trade business owners focus on building scalable systems rather than just working harder. The numbers below show why strategic growth planning is essential.
@@ -175,8 +190,8 @@ const TradeBusinessGrowth = () => {
         </Card>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "Successful trade businesses don't just grow larger—they grow stronger. Focus on building 
-          systems and processes that can scale without compromising quality or customer satisfaction."
+          &quot;Successful trade businesses don&apos;t just grow larger—they grow stronger. Focus on building 
+          systems and processes that can scale without compromising quality or customer satisfaction.&quot;
           <footer className="text-sm mt-2">— Small Business Administration</footer>
         </blockquote>
 
@@ -256,8 +271,6 @@ const TradeBusinessGrowth = () => {
           Invest in trade-specific software for scheduling, invoicing, inventory management, and customer relationship management. The right technology stack can dramatically improve efficiency and scalability.
         </p>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default TradeBusinessGrowth;

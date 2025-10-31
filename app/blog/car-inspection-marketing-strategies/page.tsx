@@ -1,13 +1,41 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Car, Users, Target, AlertTriangle } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import carInspectionMarketingHero from '@/assets/blog/car-inspection-marketing.jpg';
-
+export const metadata = createMetadata({
+  title: "Car Inspection Marketing Strategies",
+  description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
+  path: "/blog/car-inspection-marketing-strategies",
+  keywords: ["inspection", "marketing", "strategies", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Car Inspection Marketing Strategies",
+    description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/car-inspection-marketing-strategies",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Car Inspection Marketing Strategies"
+    }],
+    publishedTime: "2024-02-15T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.391Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Car Inspection Marketing Strategies",
+    description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const CarInspectionMarketing = () => {
   const articleData = {
     headline: "Car Inspection Marketing: Digital Strategies to Attract Car Buyers",
@@ -21,30 +49,17 @@ const CarInspectionMarketing = () => {
     readTime: "24 min read",
     tags: ["Car Inspection", "Trade Marketing", "Digital Marketing", "Local SEO", "Lead Generation"]
   };
-
-  const faqs = [
-    {
-      question: "How much should car inspection businesses spend on digital marketing?",
-      answer: "Start with 5-10% of revenue on digital marketing. For new businesses, allocate $1,500-3,000 monthly across Google Ads, SEO, and social media for effective market penetration."
-    },
-    {
-      question: "What's the best way to build credibility for a car inspection service?",
-      answer: "Focus on certification displays, detailed inspection reports, customer testimonials, professional photography, and educational content that demonstrates expertise in automotive assessment."
-    },
-    {
-      question: "Which marketing channels work best for car inspection services?",
-      answer: "Google Ads and local SEO are most effective, followed by partnerships with car dealers, social media presence, and referral programs from satisfied customers."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.tradies}
-        faqs={faqs}
-        heroImage={carInspectionMarketingHero}
-        heroAlt="Car inspection marketing strategies and business growth"
-      >
+  const faqs = [{
+    question: "How much should car inspection businesses spend on digital marketing?",
+    answer: "Start with 5-10% of revenue on digital marketing. For new businesses, allocate $1,500-3,000 monthly across Google Ads, SEO, and social media for effective market penetration."
+  }, {
+    question: "What's the best way to build credibility for a car inspection service?",
+    answer: "Focus on certification displays, detailed inspection reports, customer testimonials, professional photography, and educational content that demonstrates expertise in automotive assessment."
+  }, {
+    question: "Which marketing channels work best for car inspection services?",
+    answer: "Google Ads and local SEO are most effective, followed by partnerships with car dealers, social media presence, and referral programs from satisfied customers."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={carInspectionMarketingHero} heroAlt="Car inspection marketing strategies and business growth">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🚗 The car inspection industry offers tremendous growth opportunities, but success depends on effective marketing to reach car buyers when they need professional assessment services. This comprehensive guide reveals proven strategies that successful car inspection businesses use to build credibility, attract clients, and generate consistent bookings in competitive automotive markets.
         </p>
@@ -155,7 +170,7 @@ const CarInspectionMarketing = () => {
               <div>
                 <h4 className="font-semibold text-primary mb-3">Local Content Strategy</h4>
                 <ul className="space-y-2 text-sm">
-                  <li>• "Car Inspection [City Name]" landing pages</li>
+                  <li>• &quot;Car Inspection [City Name]&quot; landing pages</li>
                   <li>• Local car market insights and buying guides</li>
                   <li>• Partnership content with local dealers</li>
                   <li>• Regional vehicle condition trend reports</li>
@@ -206,8 +221,8 @@ const CarInspectionMarketing = () => {
         </div>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "A comprehensive car inspection can save buyers thousands of dollars in unexpected repairs. 
-          Our marketing should emphasize the value of professional assessment in major purchase decisions."
+          &quot;A comprehensive car inspection can save buyers thousands of dollars in unexpected repairs. 
+          Our marketing should emphasize the value of professional assessment in major purchase decisions.&quot;
           <footer className="text-sm mt-2">— Industry Best Practice</footer>
         </blockquote>
 
@@ -220,10 +235,10 @@ const CarInspectionMarketing = () => {
               <div>
                 <h4 className="font-semibold text-primary mb-3">Buyer Education</h4>
                 <ul className="text-sm space-y-2">
-                  <li>• "What to Look for When Buying a Used Car"</li>
-                  <li>• "Red Flags in Vehicle History Reports"</li>
-                  <li>• "Understanding Car Inspection Checklists"</li>
-                  <li>• "When to Walk Away from a Car Purchase"</li>
+                  <li>• &quot;What to Look for When Buying a Used Car&quot;</li>
+                  <li>• &quot;Red Flags in Vehicle History Reports&quot;</li>
+                  <li>• &quot;Understanding Car Inspection Checklists&quot;</li>
+                  <li>• &quot;When to Walk Away from a Car Purchase&quot;</li>
                 </ul>
               </div>
               <div>
@@ -248,15 +263,8 @@ const CarInspectionMarketing = () => {
           </CardContent>
         </Card>
 
-        <Citation 
-          source="ACCC"
-          url="https://www.accc.gov.au/consumers/cars/buying-a-car" 
-          title="Buying a Car: Consumer Guide" 
-          date="2024"
-        />
+        <Citation source="ACCC" url="https://www.accc.gov.au/consumers/cars/buying-a-car" title="Buying a Car: Consumer Guide" date="2024" />
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default CarInspectionMarketing;

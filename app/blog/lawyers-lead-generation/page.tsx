@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
@@ -5,7 +6,35 @@ import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
 import heroImage from '@/assets/blog/lawyers-lead-generation-hero.jpg';
 import { relatedArticles } from '@/utils/seoUtils';
-
+export const metadata = createMetadata({
+  title: "Lawyers Lead Generation",
+  description: "Expert guidance on lawyers lead generation. Learn proven strategies and best practices for business growth.",
+  path: "/blog/lawyers-lead-generation",
+  keywords: ["lawyers", "lead", "generation", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Lawyers Lead Generation",
+    description: "Expert guidance on lawyers lead generation. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/lawyers-lead-generation",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Lawyers Lead Generation"
+    }],
+    publishedTime: "2025-01-18",
+    modifiedTime: "2025-10-31T11:10:04.826Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lawyers Lead Generation",
+    description: "Expert guidance on lawyers lead generation. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const LawyersLeadGeneration = () => {
   const articleData = {
     headline: "Lawyer Lead Generation: Proven Strategies to Attract Quality Clients",
@@ -19,34 +48,20 @@ const LawyersLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["Legal Marketing", "Lead Generation", "Law Firm Growth", "Digital Marketing", "Client Acquisition"]
   };
-
-  const faqs = [
-    {
-      question: "What are the most effective lead generation strategies for lawyers?",
-      answer: "The most effective strategies include content marketing (legal guides, blog posts), SEO optimization for legal keywords, Google Ads for high-intent searches, networking events, referral programs, and thought leadership through speaking engagements and media appearances."
-    },
-    {
-      question: "Are there ethical restrictions on lawyer advertising?",
-      answer: "Yes, lawyers must comply with professional conduct rules that vary by jurisdiction. Generally, advertising must be truthful, not misleading, not create unrealistic expectations, and maintain client confidentiality. Always check your local bar association guidelines."
-    },
-    {
-      question: "What's a reasonable marketing budget for a law firm?",
-      answer: "Most successful law firms invest 7-12% of gross revenue in marketing. Solo practitioners might start with $2,000-5,000 monthly, while larger firms often invest $10,000+ monthly. Focus on ROI rather than just budget size."
-    },
-    {
-      question: "How long does it take to see results from legal marketing?",
-      answer: "SEO and content marketing typically show results in 6-12 months. Google Ads can generate leads immediately. Networking and referral building take 3-6 months to establish momentum. Consistent effort across multiple channels yields the best long-term results."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.legal}
-      faqs={faqs}
-      heroImage={heroImage}
-      heroAlt="Professional lawyer implementing digital lead generation strategies in modern law firm office"
-    >
+  const faqs = [{
+    question: "What are the most effective lead generation strategies for lawyers?",
+    answer: "The most effective strategies include content marketing (legal guides, blog posts), SEO optimization for legal keywords, Google Ads for high-intent searches, networking events, referral programs, and thought leadership through speaking engagements and media appearances."
+  }, {
+    question: "Are there ethical restrictions on lawyer advertising?",
+    answer: "Yes, lawyers must comply with professional conduct rules that vary by jurisdiction. Generally, advertising must be truthful, not misleading, not create unrealistic expectations, and maintain client confidentiality. Always check your local bar association guidelines."
+  }, {
+    question: "What's a reasonable marketing budget for a law firm?",
+    answer: "Most successful law firms invest 7-12% of gross revenue in marketing. Solo practitioners might start with $2,000-5,000 monthly, while larger firms often invest $10,000+ monthly. Focus on ROI rather than just budget size."
+  }, {
+    question: "How long does it take to see results from legal marketing?",
+    answer: "SEO and content marketing typically show results in 6-12 months. Google Ads can generate leads immediately. Networking and referral building take 3-6 months to establish momentum. Consistent effort across multiple channels yields the best long-term results."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={heroImage} heroAlt="Professional lawyer implementing digital lead generation strategies in modern law firm office">
       <section className="mb-12">
         <Card className="border-l-4 border-l-primary bg-primary/5 mb-8">
           <CardContent className="p-6">
@@ -177,19 +192,19 @@ const LawyersLeadGeneration = () => {
               <div>
                 <h5 className="font-medium mb-2">Core Practice Keywords</h5>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "[practice area] lawyer [city]"</li>
-                  <li>• "[practice area] attorney near me"</li>
-                  <li>• "best [practice area] lawyer"</li>
-                  <li>• "[city] law firm"</li>
+                  <li>• &quot;[practice area] lawyer [city]&quot;</li>
+                  <li>• &quot;[practice area] attorney near me&quot;</li>
+                  <li>• &quot;best [practice area] lawyer&quot;</li>
+                  <li>• &quot;[city] law firm&quot;</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Problem-Based Keywords</h5>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• "what to do after [legal issue]"</li>
-                  <li>• "how to [legal action]"</li>
-                  <li>• "[legal issue] help [location]"</li>
-                  <li>• "need lawyer for [problem]"</li>
+                  <li>• &quot;what to do after [legal issue]&quot;</li>
+                  <li>• &quot;how to [legal action]&quot;</li>
+                  <li>• &quot;[legal issue] help [location]&quot;</li>
+                  <li>• &quot;need lawyer for [problem]&quot;</li>
                 </ul>
               </div>
               <div>
@@ -246,8 +261,8 @@ const LawyersLeadGeneration = () => {
                 <p className="text-sm text-muted-foreground mb-2">Target people actively seeking legal representation</p>
                 <div className="bg-background p-3 rounded border">
                   <code className="text-sm">
-                    Keywords: "personal injury lawyer", "divorce attorney", "DUI lawyer"<br/>
-                    Budget: $100-300/day depending on market<br/>
+                    Keywords: &quot;personal injury lawyer&quot;, &quot;divorce attorney&quot;, &quot;DUI lawyer&quot;<br />
+                    Budget: $100-300/day depending on market<br />
                     Match Type: Exact + Phrase
                   </code>
                 </div>
@@ -257,8 +272,8 @@ const LawyersLeadGeneration = () => {
                 <p className="text-sm text-muted-foreground mb-2">Target searches for competing law firms</p>
                 <div className="bg-background p-3 rounded border">
                   <code className="text-sm">
-                    Keywords: Competitor firm names + "alternative"<br/>
-                    Budget: $50-150/day<br/>
+                    Keywords: Competitor firm names + &quot;alternative&quot;<br />
+                    Budget: $50-150/day<br />
                     Match Type: Exact only
                   </code>
                 </div>
@@ -273,7 +288,7 @@ const LawyersLeadGeneration = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Highlight years of experience</li>
                   <li>• Mention specializations clearly</li>
-                  <li>• Include "Free Consultation" offers</li>
+                  <li>• Include &quot;Free Consultation&quot; offers</li>
                   <li>• Use location-specific language</li>
                   <li>• Comply with ethical advertising rules</li>
                 </ul>
@@ -336,7 +351,7 @@ const LawyersLeadGeneration = () => {
             <div className="grid md:grid-cols-4 gap-4">
               <div>
                 <h5 className="font-medium mb-2">Week 1</h5>
-                <p className="text-sm text-muted-foreground">Legal guide: "Understanding [Process]"</p>
+                <p className="text-sm text-muted-foreground">Legal guide: &quot;Understanding [Process]&quot;</p>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Week 2</h5>
@@ -443,7 +458,7 @@ const LawyersLeadGeneration = () => {
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">Consultation Preparation</h4>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Review client's case details beforehand</li>
+                  <li>• Review client&apos;s case details beforehand</li>
                   <li>• Prepare relevant questions and documents</li>
                   <li>• Research applicable laws and precedents</li>
                   <li>• Set clear agenda and expectations</li>
@@ -483,7 +498,7 @@ const LawyersLeadGeneration = () => {
                 </div>
                 <div>
                   <h5 className="font-medium">Day 3-5</h5>
-                  <p className="text-sm text-muted-foreground">Follow up if engagement agreement hasn't been returned</p>
+                  <p className="text-sm text-muted-foreground">Follow up if engagement agreement hasn&apos;t been returned</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -543,8 +558,6 @@ const LawyersLeadGeneration = () => {
         </div>
       </section>
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default LawyersLeadGeneration;

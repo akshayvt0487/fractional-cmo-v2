@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import cyberSecurityGrowthHackingHero from '@/assets/blog/cyber-security-growth-hacking.jpg';
-
+export const metadata = createMetadata({
+  title: "Cyber Security Growth Hacking",
+  description: "Expert guidance on cyber security growth hacking. Learn proven strategies and best practices for business growth.",
+  path: "/blog/cyber-security-growth-hacking",
+  keywords: ["cyber", "security", "growth", "hacking", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Cyber Security Growth Hacking",
+    description: "Expert guidance on cyber security growth hacking. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/cyber-security-growth-hacking",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Cyber Security Growth Hacking"
+    }],
+    publishedTime: "2024-01-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.588Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cyber Security Growth Hacking",
+    description: "Expert guidance on cyber security growth hacking. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const CyberSecurityGrowthHacking = () => {
   const articleData = {
     headline: "Cyber Security Growth Hacking: Innovative Lead Generation Strategies for Security Companies",
@@ -19,30 +47,17 @@ const CyberSecurityGrowthHacking = () => {
     readTime: "26 min read",
     tags: ["Cyber Security", "Growth Hacking", "Lead Generation", "Digital Marketing", "Innovation"]
   };
-
-  const faqs = [
-    {
-      question: "What are the most effective growth hacking tactics for cyber security companies?",
-      answer: "The most effective tactics include threat intelligence content marketing, security assessment tools, breach simulation demos, compliance checklists, and leveraging security news cycles for thought leadership positioning."
-    },
-    {
-      question: "How can cyber security firms use automation for growth hacking?",
-      answer: "Automation can power security assessment tools, automated threat alerts, personalized security scorecards, drip campaigns based on security maturity, and intelligent lead scoring based on risk profiles."
-    },
-    {
-      question: "What metrics should cyber security companies track for growth hacking success?",
-      answer: "Key metrics include security assessment completion rates, threat alert engagement, compliance checklist downloads, demo-to-consultation conversion rates, and customer lifetime value based on security service tiers."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage="/images/cyber-security-growth-hacking.jpg"
-        heroAlt="Cyber security growth hacking strategies and innovative lead generation"
-      >
+  const faqs = [{
+    question: "What are the most effective growth hacking tactics for cyber security companies?",
+    answer: "The most effective tactics include threat intelligence content marketing, security assessment tools, breach simulation demos, compliance checklists, and leveraging security news cycles for thought leadership positioning."
+  }, {
+    question: "How can cyber security firms use automation for growth hacking?",
+    answer: "Automation can power security assessment tools, automated threat alerts, personalized security scorecards, drip campaigns based on security maturity, and intelligent lead scoring based on risk profiles."
+  }, {
+    question: "What metrics should cyber security companies track for growth hacking success?",
+    answer: "Key metrics include security assessment completion rates, threat alert engagement, compliance checklist downloads, demo-to-consultation conversion rates, and customer lifetime value based on security service tiers."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/cyber-security-growth-hacking.jpg" heroAlt="Cyber security growth hacking strategies and innovative lead generation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🚀 Forward-thinking cyber security companies using growth hacking strategies achieve 250% faster client acquisition and 60% higher customer lifetime value compared to traditional marketing approaches. This guide reveals innovative tactics that security firms use to leverage technology, automation, and data-driven insights for explosive business growth.
         </p>
@@ -218,8 +233,8 @@ const CyberSecurityGrowthHacking = () => {
         </div>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "Growth hacking in cyber security isn't about gaming the system—it's about creating genuine value through innovative tools 
-          and insights that help prospects understand and address their security challenges while naturally demonstrating your expertise."
+          &quot;Growth hacking in cyber security isn&apos;t about gaming the system—it&apos;s about creating genuine value through innovative tools 
+          and insights that help prospects understand and address their security challenges while naturally demonstrating your expertise.&quot;
           <footer className="text-sm mt-2">— Cyber Security Growth Strategy</footer>
         </blockquote>
 
@@ -911,8 +926,8 @@ const CyberSecurityGrowthHacking = () => {
         </Card>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "The most successful cyber security growth hacks are those that provide immediate value while naturally demonstrating your expertise. 
-          When prospects experience your knowledge and capabilities before they buy, conversion becomes a natural progression rather than a hard sell."
+          &quot;The most successful cyber security growth hacks are those that provide immediate value while naturally demonstrating your expertise. 
+          When prospects experience your knowledge and capabilities before they buy, conversion becomes a natural progression rather than a hard sell.&quot;
           <footer className="text-sm mt-2">— Cyber Security Marketing Expert</footer>
         </blockquote>
 
@@ -972,8 +987,6 @@ const CyberSecurityGrowthHacking = () => {
           </CardContent>
         </Card>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default CyberSecurityGrowthHacking;

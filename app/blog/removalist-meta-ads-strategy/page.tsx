@@ -1,8 +1,37 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
-
+export const metadata = createMetadata({
+  title: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
+  description: "Expert guidance on meta ads for removalists: complete facebook marketing guide for moving companies. Learn proven strategies and best practices for business growth.",
+  path: "/blog/removalist-meta-ads-strategy",
+  keywords: ["removalist", "meta", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
+    description: "Expert guidance on meta ads for removalists: complete facebook marketing guide for moving companies. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/removalist-meta-ads-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies"
+    }],
+    publishedTime: "2024-12-18",
+    modifiedTime: "2025-10-31T11:10:05.169Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
+    description: "Expert guidance on meta ads for removalists: complete facebook marketing guide for moving companies. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const articleData = {
   headline: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
   description: "Master Facebook and Instagram advertising for your removalist business. Learn audience targeting, campaign optimization, conversion tracking, and retargeting strategies to generate quality moving leads.",
@@ -15,37 +44,24 @@ const articleData = {
   readTime: "24 min read",
   tags: ["Meta Ads", "Facebook Marketing", "Removalist Marketing", "Moving Company Ads", "Lead Generation", "Audience Targeting"]
 };
-
-const faqs = [
-  {
-    question: "What's the minimum budget needed for Meta Ads for removalists?",
-    answer: "Start with $30-50 per day for testing. Once you find winning campaigns, scale to $100-300 daily depending on your service area and business capacity."
-  },
-  {
-    question: "How do I track phone calls from Facebook ads?",
-    answer: "Use Facebook's call tracking with unique phone numbers, or integrate with call tracking software like CallRail. Set up offline conversions to track phone leads back to specific campaigns."
-  },
-  {
-    question: "Should removalists use Facebook or Instagram ads?",
-    answer: "Use both through automatic placements. Facebook performs better for lead generation, while Instagram works well for brand awareness and visual content showcasing your moving services."
-  },
-  {
-    question: "How long before seeing results from Meta ads?",
-    answer: "Initial data within 3-7 days, meaningful optimization after 2-3 weeks, and stable performance after 4-6 weeks of consistent running and optimization."
-  },
-  {
-    question: "What's the best campaign objective for removalist leads?",
-    answer: "Use 'Lead Generation' for form fills, 'Conversions' for website bookings, and 'Traffic' for awareness campaigns. Lead Generation typically performs best for service businesses."
-  }
-];
-
+const faqs = [{
+  question: "What's the minimum budget needed for Meta Ads for removalists?",
+  answer: "Start with $30-50 per day for testing. Once you find winning campaigns, scale to $100-300 daily depending on your service area and business capacity."
+}, {
+  question: "How do I track phone calls from Facebook ads?",
+  answer: "Use Facebook's call tracking with unique phone numbers, or integrate with call tracking software like CallRail. Set up offline conversions to track phone leads back to specific campaigns."
+}, {
+  question: "Should removalists use Facebook or Instagram ads?",
+  answer: "Use both through automatic placements. Facebook performs better for lead generation, while Instagram works well for brand awareness and visual content showcasing your moving services."
+}, {
+  question: "How long before seeing results from Meta ads?",
+  answer: "Initial data within 3-7 days, meaningful optimization after 2-3 weeks, and stable performance after 4-6 weeks of consistent running and optimization."
+}, {
+  question: "What's the best campaign objective for removalist leads?",
+  answer: "Use 'Lead Generation' for form fills, 'Conversions' for website bookings, and 'Traffic' for awareness campaigns. Lead Generation typically performs best for service businesses."
+}];
 const RemovalistMetaAdsStrategy = () => {
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-    >
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs}>
       <Card className="mb-8">
         <CardContent className="pt-6">
           <p className="text-lg leading-relaxed mb-4">
@@ -108,7 +124,7 @@ const RemovalistMetaAdsStrategy = () => {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Who Should You Target With Your Ads?</h2>
         
-        <h3 className="text-2xl font-semibold mb-4">1. People Who Don't Know Your Business Yet</h3>
+        <h3 className="text-2xl font-semibold mb-4">1. People Who Don&apos;t Know Your Business Yet</h3>
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h4 className="text-lg font-semibold mb-3">Targeting Parameters:</h4>
@@ -124,7 +140,7 @@ const RemovalistMetaAdsStrategy = () => {
             <div className="bg-muted/30 p-4 rounded-lg">
               <p><strong>Video Content:</strong> Before/after moving scenarios, packing tips, stress-free moving testimonials</p>
               <p><strong>Image Ads:</strong> Professional moving crews, branded trucks, happy families</p>
-              <p><strong>Copy Focus:</strong> Problem awareness ("Moving doesn't have to be stressful"), social proof, free quotes</p>
+              <p><strong>Copy Focus:</strong> Problem awareness (&quot;Moving doesn&apos;t have to be stressful&quot;), social proof, free quotes</p>
             </div>
           </CardContent>
         </Card>
@@ -159,7 +175,7 @@ const RemovalistMetaAdsStrategy = () => {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h4 className="text-lg font-semibold mb-3">Cross-Platform Strategy:</h4>
-            <p className="mb-4">Target users who clicked your Google Ads but didn't convert. These are high-intent prospects familiar with your brand.</p>
+            <p className="mb-4">Target users who clicked your Google Ads but didn&apos;t convert. These are high-intent prospects familiar with your brand.</p>
             
             <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg">
               <h4 className="font-semibold mb-2">Campaign Approach:</h4>
@@ -404,7 +420,7 @@ fbq('track', 'PageView');
             <h4 className="font-semibold mb-3">In Meta Ads Manager:</h4>
             <ol className="space-y-2 text-sm">
               <li>1. Navigate to Events Manager → Custom Conversions</li>
-              <li>2. Click "Create Custom Conversion"</li>
+              <li>2. Click &quot;Create Custom Conversion&quot;</li>
               <li>3. Define conversion rules based on URL or events</li>
               <li>4. Set conversion values for ROI tracking</li>
               <li>5. Choose attribution windows (7-day click, 1-day view)</li>
@@ -801,8 +817,6 @@ fbq('track', 'PageView');
           </CardContent>
         </Card>
       </section>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default RemovalistMetaAdsStrategy;

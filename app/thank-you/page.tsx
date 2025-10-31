@@ -26,7 +26,7 @@ const ThankYou = () => {
       const conversionId = 'AW-CONVERSION_ID'; // Example: AW-123456789
       const conversionLabel = 'CONVERSION_LABEL'; // Example: AbCdEfGhIjKlMnOpQrS
       // -----------------------------------------------------------------
-      
+
       if (conversionId !== 'AW-CONVERSION_ID' && conversionLabel !== 'CONVERSION_LABEL') {
         (window as any).gtag('event', 'conversion', {
           send_to: `${conversionId}/${conversionLabel}`,
@@ -38,7 +38,7 @@ const ThankYou = () => {
         console.warn('Google Ads Conversion ID/Label not set. Tracking skipped.');
       }
     } else {
-        console.log('gtag not found. Skipping Google Ads conversion tracking.');
+      console.log('gtag not found. Skipping Google Ads conversion tracking.');
     }
 
     // You can also track with Facebook Pixel, other analytics tools here
@@ -77,15 +77,15 @@ const ThankYou = () => {
                 <div className="space-y-3 text-sm text-muted-foreground text-left"> {/* Aligned text left */}
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-1.5 flex-shrink-0"></div> {/* Adjusted alignment */}
-                    <p>I'll personally review your submission and get back to you within <strong>24 business hours</strong>.</p>
+                    <p>I&apos;ll personally review your submission and get back to you within <strong>24 business hours</strong>.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-1.5 flex-shrink-0"></div>
-                    <p>We'll schedule a convenient time for your free <strong>45-minute strategy call</strong> via email.</p>
+                    <p>We&apos;ll schedule a convenient time for your free <strong>45-minute strategy call</strong> via email.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-1.5 flex-shrink-0"></div>
-                    <p>I'll prepare some initial thoughts based on your submission for our call.</p>
+                    <p>I&apos;ll prepare some initial thoughts based on your submission for our call.</p>
                   </div>
                 </div>
               </div>
@@ -113,25 +113,25 @@ const ThankYou = () => {
       </span>
     </Link>
   </Button>
-</div>
+                </div>
 
-<Button variant="ghost" asChild className="w-full sm:w-auto text-muted-foreground hover:text-foreground">
+                <Button variant="ghost" asChild className="w-full sm:w-auto text-muted-foreground hover:text-foreground">
    <Link href="/">
      
       <span> 
          ← Back to Home
       </span>
    </Link>
-</Button>
-</div>
+                </Button>
+              </div>
 
               <div className="pt-6 border-t border-border/50"> 
                 <p className="text-xs text-muted-foreground">
                   If you have any urgent questions, feel free to email me directly at{" "}
-                  <a 
-                    href="mailto:basheer@dsigns.com.au" 
-                    className="text-primary hover:underline font-medium" 
-                  >
+                  <a
+                    href="mailto:basheer@dsigns.com.au"
+                    className="text-primary hover:underline font-medium">
+                    
                     basheer@dsigns.com.au
                   </a>
                 </p>
@@ -142,8 +142,8 @@ const ThankYou = () => {
       </main>
 
       <Footer />
-    </>
-  );
+    </>);
+
 };
 
 export default ThankYou;

@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { AlertTriangle, Calculator } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import constructionCostEstimationHero from '@/assets/blog/construction-cost-estimation.jpg';
-
+export const metadata = createMetadata({
+  title: "Construction Cost Estimation Guide",
+  description: "Expert guidance on construction cost estimation guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/construction-cost-estimation-guide",
+  keywords: ["construction", "cost", "estimation", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Construction Cost Estimation Guide",
+    description: "Expert guidance on construction cost estimation guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/construction-cost-estimation-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Construction Cost Estimation Guide"
+    }],
+    publishedTime: "2024-03-01T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.408Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Construction Cost Estimation Guide",
+    description: "Expert guidance on construction cost estimation guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ConstructionCostEstimation = () => {
   const articleData = {
     headline: "Construction Cost Estimation: Advanced Strategies for Accurate Project Pricing",
@@ -19,30 +47,17 @@ const ConstructionCostEstimation = () => {
     readTime: "24 min read",
     tags: ["Construction", "Cost Estimation", "Project Management", "Budget Planning"]
   };
-
-  const faqs = [
-    {
-      question: "What factors most commonly cause cost estimation errors?",
-      answer: "The biggest factors are incomplete project information (40%), material price volatility (25%), scope changes (20%), and unrealistic timelines (15%). Systematic estimation processes and contingency planning help mitigate these risks."
-    },
-    {
-      question: "How accurate should construction cost estimates be?",
-      answer: "Target accuracy varies by project phase: Conceptual estimates ±25-75%, Budget estimates ±15-30%, Definitive estimates ±10-15%, and Control estimates ±5-10%. Higher accuracy requires more detailed project information."
-    },
-    {
-      question: "What's the best software for construction cost estimation?",
-      answer: "Popular options include PlanSwift, Bluebeam, CostX, and BuildingConnected. Choose based on project size, complexity, and integration needs with existing project management systems."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.construction}
-        faqs={faqs}
-        heroImage={constructionCostEstimationHero}
-        heroAlt="Construction cost estimation and project management strategies"
-      >
+  const faqs = [{
+    question: "What factors most commonly cause cost estimation errors?",
+    answer: "The biggest factors are incomplete project information (40%), material price volatility (25%), scope changes (20%), and unrealistic timelines (15%). Systematic estimation processes and contingency planning help mitigate these risks."
+  }, {
+    question: "How accurate should construction cost estimates be?",
+    answer: "Target accuracy varies by project phase: Conceptual estimates ±25-75%, Budget estimates ±15-30%, Definitive estimates ±10-15%, and Control estimates ±5-10%. Higher accuracy requires more detailed project information."
+  }, {
+    question: "What's the best software for construction cost estimation?",
+    answer: "Popular options include PlanSwift, Bluebeam, CostX, and BuildingConnected. Choose based on project size, complexity, and integration needs with existing project management systems."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={constructionCostEstimationHero} heroAlt="Construction cost estimation and project management strategies">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Accurate cost estimation is crucial for construction project success and profitability. This comprehensive guide covers proven methodologies and advanced strategies that help construction professionals deliver precise project pricing and avoid costly overruns.
         </p>
@@ -139,8 +154,8 @@ const ConstructionCostEstimation = () => {
         </Card>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "The quality of an estimate depends entirely on the quality of information available. 
-          Good estimators know when they don't have enough information to be accurate."
+          &quot;The quality of an estimate depends entirely on the quality of information available. 
+          Good estimators know when they don&apos;t have enough information to be accurate.&quot;
           <footer className="text-sm mt-2">— American Society of Professional Estimators</footer>
         </blockquote>
 
@@ -544,8 +559,8 @@ const ConstructionCostEstimation = () => {
         </Card>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "Accurate cost estimation is both an art and a science. It requires technical expertise, 
-          industry experience, and the wisdom to know when additional information is needed to make informed decisions."
+          &quot;Accurate cost estimation is both an art and a science. It requires technical expertise, 
+          industry experience, and the wisdom to know when additional information is needed to make informed decisions.&quot;
           <footer className="text-sm mt-2">— Construction Industry Institute</footer>
         </blockquote>
 
@@ -593,10 +608,8 @@ const ConstructionCostEstimation = () => {
         </p>
         
         <p className="mb-8">
-          Remember that accurate estimation is not just about calculations—it's about understanding the entire construction process, from design intent to project delivery. Continuous learning, technology adoption, and feedback incorporation are essential for maintaining competitive advantage in today's dynamic construction marketplace.
+          Remember that accurate estimation is not just about calculations—it&apos;s about understanding the entire construction process, from design intent to project delivery. Continuous learning, technology adoption, and feedback incorporation are essential for maintaining competitive advantage in today&apos;s dynamic construction marketplace.
         </p>
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default ConstructionCostEstimation;

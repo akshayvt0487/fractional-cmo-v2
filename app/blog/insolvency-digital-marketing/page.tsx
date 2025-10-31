@@ -1,61 +1,75 @@
+import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/insolvency-digital-marketing-hero.jpg";
-
+export const metadata = createMetadata({
+  title: "Insolvency Digital Marketing",
+  description: "Expert guidance on insolvency digital marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/insolvency-digital-marketing",
+  keywords: ["insolvency", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Insolvency Digital Marketing",
+    description: "Expert guidance on insolvency digital marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/insolvency-digital-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Insolvency Digital Marketing"
+    }],
+    publishedTime: "2025-01-15",
+    modifiedTime: "2025-10-31T11:10:04.761Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Insolvency Digital Marketing",
+    description: "Expert guidance on insolvency digital marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const InsolvencyDigitalMarketing = () => {
-  const citations = [
-    {
-      source: "ARITA",
-      title: "ARITA - Code of Professional Practice",
-      url: "https://www.arita.com.au/",
-      date: "2025"
-    },
-    {
-      source: "ASIC",
-      title: "ASIC - Insolvency Practitioners",
-      url: "https://asic.gov.au/regulatory-resources/insolvency/",
-      date: "2025"
-    }
-  ];
-
-  const relatedArticles = [
-    {
-      title: "Lead Generation for Legal Services",
-      description: "Proven lead generation strategies for lawyers and legal service providers.",
-      url: "/blog/lawyers-lead-generation",
-      category: "Legal"
-    },
-    {
-      title: "B2B Lead Generation Guide",
-      description: "Master B2B lead generation with comprehensive strategies for professional services.",
-      url: "/blog/b2b-lead-generation",
-      category: "Lead Generation"
-    },
-    {
-      title: "Digital Strategy Framework",
-      description: "Build a comprehensive digital strategy that drives sustainable business growth.",
-      url: "/blog/digital-strategy-modern-business",
-      category: "Strategy"
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={{
-        headline: "Digital Marketing Strategy for Insolvency Practitioners: Complete 2025 Guide",
-        description: "Master digital marketing for insolvency practices. Proven strategies to attract corporate clients, build authority, and grow your insolvency practice in competitive markets.",
-        publishedDate: "2025-01-15",
-        url: "/blog/insolvency-digital-marketing",
-        readTime: "14 min read",
-        category: "Legal",
-        author: "Basheer Padanna"
-      }}
-      heroImage={heroImage}
-      heroAlt="Digital Marketing for Insolvency Practitioners"
-      relatedArticles={relatedArticles}
-    >
+  const citations = [{
+    source: "ARITA",
+    title: "ARITA - Code of Professional Practice",
+    url: "https://www.arita.com.au/",
+    date: "2025"
+  }, {
+    source: "ASIC",
+    title: "ASIC - Insolvency Practitioners",
+    url: "https://asic.gov.au/regulatory-resources/insolvency/",
+    date: "2025"
+  }];
+  const relatedArticles = [{
+    title: "Lead Generation for Legal Services",
+    description: "Proven lead generation strategies for lawyers and legal service providers.",
+    url: "/blog/lawyers-lead-generation",
+    category: "Legal"
+  }, {
+    title: "B2B Lead Generation Guide",
+    description: "Master B2B lead generation with comprehensive strategies for professional services.",
+    url: "/blog/b2b-lead-generation",
+    category: "Lead Generation"
+  }, {
+    title: "Digital Strategy Framework",
+    description: "Build a comprehensive digital strategy that drives sustainable business growth.",
+    url: "/blog/digital-strategy-modern-business",
+    category: "Strategy"
+  }];
+  return <OptimizedBlogLayout articleData={{
+    headline: "Digital Marketing Strategy for Insolvency Practitioners: Complete 2025 Guide",
+    description: "Master digital marketing for insolvency practices. Proven strategies to attract corporate clients, build authority, and grow your insolvency practice in competitive markets.",
+    publishedDate: "2025-01-15",
+    url: "/blog/insolvency-digital-marketing",
+    readTime: "14 min read",
+    category: "Legal",
+    author: "Basheer Padanna"
+  }} heroImage={heroImage} heroAlt="Digital Marketing for Insolvency Practitioners" relatedArticles={relatedArticles}>
       <p className="lead text-xl text-muted-foreground mb-8">
         Insolvency practitioners face unique marketing challenges—highly regulated services, crisis-driven demand, and sophisticated B2B clients. This guide reveals the digital marketing strategies that drive sustainable growth for insolvency practices in 2025.
       </p>
@@ -97,7 +111,7 @@ const InsolvencyDigitalMarketing = () => {
         
         <h3 className="text-2xl font-semibold mb-4 mt-8">Defining Your Market Position</h3>
         <p className="mb-6">
-          Successful insolvency marketing begins with clear positioning. Generic "we do everything" messaging fails to resonate with sophisticated clients making high-stakes decisions.
+          Successful insolvency marketing begins with clear positioning. Generic &quot;we do everything&quot; messaging fails to resonate with sophisticated clients making high-stakes decisions.
         </p>
 
         <div className="bg-muted/50 p-6 rounded-lg mb-6">
@@ -154,24 +168,24 @@ const InsolvencyDigitalMarketing = () => {
           <Card className="p-6">
             <h4 className="font-semibold mb-3">Crisis Keywords (High Intent)</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
-              <li>• "insolvency practitioner [city]"</li>
-              <li>• "liquidator urgent appointment"</li>
-              <li>• "voluntary administration today"</li>
-              <li>• "company in financial trouble"</li>
-              <li>• "can't pay creditors help"</li>
-              <li>• "wind up company urgent"</li>
+              <li>• &quot;insolvency practitioner [city]&quot;</li>
+              <li>• &quot;liquidator urgent appointment&quot;</li>
+              <li>• &quot;voluntary administration today&quot;</li>
+              <li>• &quot;company in financial trouble&quot;</li>
+              <li>• &quot;can&apos;t pay creditors help&quot;</li>
+              <li>• &quot;wind up company urgent&quot;</li>
             </ul>
           </Card>
 
           <Card className="p-6">
             <h4 className="font-semibold mb-3">Research Keywords (Educational)</h4>
             <ul className="space-y-2 text-muted-foreground text-sm">
-              <li>• "voluntary administration process Australia"</li>
-              <li>• "liquidation vs voluntary administration"</li>
-              <li>• "insolvency practitioner fees"</li>
-              <li>• "director duties insolvent company"</li>
-              <li>• "creditor voluntary liquidation steps"</li>
-              <li>• "small business restructuring"</li>
+              <li>• &quot;voluntary administration process Australia&quot;</li>
+              <li>• &quot;liquidation vs voluntary administration&quot;</li>
+              <li>• &quot;insolvency practitioner fees&quot;</li>
+              <li>• &quot;director duties insolvent company&quot;</li>
+              <li>• &quot;creditor voluntary liquidation steps&quot;</li>
+              <li>• &quot;small business restructuring&quot;</li>
             </ul>
           </Card>
         </div>
@@ -208,10 +222,10 @@ const InsolvencyDigitalMarketing = () => {
             <div>
               <h5 className="font-semibold mb-2">Cornerstone Guides</h5>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>"Complete Guide to Voluntary Administration in Australia"</li>
-                <li>"Director's Guide to Company Liquidation"</li>
-                <li>"Understanding Creditor Rights in Insolvency"</li>
-                <li>"Small Business Restructuring: Everything You Need to Know"</li>
+                <li>&quot;Complete Guide to Voluntary Administration in Australia&quot;</li>
+                <li>&quot;Director&apos;s Guide to Company Liquidation&quot;</li>
+                <li>&quot;Understanding Creditor Rights in Insolvency&quot;</li>
+                <li>&quot;Small Business Restructuring: Everything You Need to Know&quot;</li>
               </ul>
             </div>
 
@@ -292,23 +306,23 @@ const InsolvencyDigitalMarketing = () => {
               <ul className="space-y-3">
                 <li>
                   <strong>Headline 1:</strong> Include primary keyword and immediate availability
-                  <br/>
-                  <span className="text-sm text-muted-foreground">Example: "Voluntary Administration Expert | Same Day Appointments"</span>
+                  <br />
+                  <span className="text-sm text-muted-foreground">Example: &quot;Voluntary Administration Expert | Same Day Appointments&quot;</span>
                 </li>
                 <li>
                   <strong>Headline 2:</strong> Emphasize credentials and specialization
-                  <br/>
-                  <span className="text-sm text-muted-foreground">Example: "Registered Liquidator | Construction Insolvency Specialist"</span>
+                  <br />
+                  <span className="text-sm text-muted-foreground">Example: &quot;Registered Liquidator | Construction Insolvency Specialist&quot;</span>
                 </li>
                 <li>
                   <strong>Headline 3:</strong> Add social proof or location
-                  <br/>
-                  <span className="text-sm text-muted-foreground">Example: "25+ Years Experience | Sydney & NSW"</span>
+                  <br />
+                  <span className="text-sm text-muted-foreground">Example: &quot;25+ Years Experience | Sydney & NSW&quot;</span>
                 </li>
                 <li>
                   <strong>Description:</strong> Clear process overview and call-to-action
-                  <br/>
-                  <span className="text-sm text-muted-foreground">Example: "Experienced insolvency practitioners helping directors navigate voluntary administration and liquidation. Free initial consultation. Call now for immediate assistance."</span>
+                  <br />
+                  <span className="text-sm text-muted-foreground">Example: &quot;Experienced insolvency practitioners helping directors navigate voluntary administration and liquidation. Free initial consultation. Call now for immediate assistance.&quot;</span>
                 </li>
               </ul>
             </div>
@@ -318,7 +332,7 @@ const InsolvencyDigitalMarketing = () => {
             <h3 className="text-xl font-semibold mb-4">Landing Page Optimization</h3>
             <Card className="p-6">
               <p className="text-muted-foreground mb-4">
-                Don't send paid traffic to your homepage. Create dedicated landing pages for each campaign:
+                Don&apos;t send paid traffic to your homepage. Create dedicated landing pages for each campaign:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>Headline matches ad message for consistency</li>
@@ -348,7 +362,7 @@ const InsolvencyDigitalMarketing = () => {
               <h4 className="font-semibold mb-2">Profile Optimization</h4>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>Professional headshot and cover image reflecting insolvency expertise</li>
-                <li>Headline emphasizing specialization ("Registered Liquidator | Construction Insolvency Specialist")</li>
+                <li>Headline emphasizing specialization (&quot;Registered Liquidator | Construction Insolvency Specialist&quot;)</li>
                 <li>About section telling your professional story and philosophy</li>
                 <li>Featured section showcasing key content and case studies</li>
                 <li>Regular activity demonstrating ongoing market engagement</li>
@@ -385,7 +399,7 @@ const InsolvencyDigitalMarketing = () => {
         <h3 className="text-2xl font-semibold mb-4 mt-8">LinkedIn Ads for Referrer Targeting</h3>
         <Card className="p-6 mb-6">
           <p className="text-muted-foreground mb-4">
-            LinkedIn's precise B2B targeting allows you to reach potential referrers:
+            LinkedIn&apos;s precise B2B targeting allows you to reach potential referrers:
           </p>
           <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
             <li><strong>Target Audience:</strong> Partners and directors in accounting firms, business advisory, and commercial law</li>
@@ -411,7 +425,7 @@ const InsolvencyDigitalMarketing = () => {
             <div>
               <h4 className="font-semibold mb-2">Above the Fold</h4>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>Clear value proposition in headline ("Expert Insolvency Solutions for Australian Businesses")</li>
+                <li>Clear value proposition in headline (&quot;Expert Insolvency Solutions for Australian Businesses&quot;)</li>
                 <li>Primary CTA button (Book Consultation / Call Now)</li>
                 <li>24/7 emergency phone number with click-to-call</li>
                 <li>Trust indicators (ARITA registered, years in practice, appointments completed)</li>
@@ -450,7 +464,7 @@ const InsolvencyDigitalMarketing = () => {
               <strong>Fee Structure:</strong> Transparent explanation of costs (ranges if specific pricing not possible)
             </li>
             <li>
-              <strong>Relevant Case Studies:</strong> Similar situations you've successfully managed
+              <strong>Relevant Case Studies:</strong> Similar situations you&apos;ve successfully managed
             </li>
             <li>
               <strong>Next Steps:</strong> Clear CTA for consultation booking
@@ -670,12 +684,8 @@ const InsolvencyDigitalMarketing = () => {
 
       <div className="mt-12">
         <h3 className="text-xl font-semibold mb-4">Citations & Resources</h3>
-        {citations.map((citation, index) => (
-          <Citation key={index} {...citation} />
-        ))}
+        {citations.map((citation, index) => <Citation key={index} {...citation} />)}
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default InsolvencyDigitalMarketing;

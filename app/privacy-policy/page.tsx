@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import  Link  from "next/link";
+import Link from "next/link";
 
 const PrivacyPolicy = () => {
   return (
@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
 
           <h2>Introduction</h2>
           <p>
-            Basheer Padanna ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+            Basheer Padanna (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
           </p>
 
           <h2>Information We Collect</h2>
@@ -107,13 +107,13 @@ const PrivacyPolicy = () => {
 
           <h2>Changes to This Policy</h2>
           <p>
-            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
+            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date.
           </p>
         </div>
       </main>
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default PrivacyPolicy;

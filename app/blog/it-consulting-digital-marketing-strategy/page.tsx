@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Cloud, Shield, Zap, Building, Users, Target, TrendingUp, CheckCircle } from 'lucide-react';
@@ -5,7 +6,35 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import itConsultingDigitalMarketingHero from '@/assets/blog/it-consulting-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "It Consulting Digital Marketing Strategy",
+  description: "Expert guidance on it consulting digital marketing strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/it-consulting-digital-marketing-strategy",
+  keywords: ["consulting", "digital", "marketing", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "It Consulting Digital Marketing Strategy",
+    description: "Expert guidance on it consulting digital marketing strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/it-consulting-digital-marketing-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "It Consulting Digital Marketing Strategy"
+    }],
+    publishedTime: "2024-12-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.795Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "It Consulting Digital Marketing Strategy",
+    description: "Expert guidance on it consulting digital marketing strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ITConsultingDigitalMarketing = () => {
   const articleData = {
     headline: "IT Consulting Digital Marketing: Complete Client Acquisition Strategy 2025",
@@ -19,30 +48,17 @@ const ITConsultingDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["IT Consulting", "Digital Marketing", "Client Acquisition", "Technology Marketing", "B2B Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What's the best marketing strategy for IT consulting firms?",
-      answer: "Thought leadership content combined with LinkedIn marketing and SEO works best. IT clients research extensively before buying, so educational content that demonstrates expertise and builds trust is crucial for long-term success."
-    },
-    {
-      question: "How long does it take to see results from IT consulting marketing?",
-      answer: "Initial engagement typically appears within 2-3 months, with significant lead generation improvements usually visible after 6-12 months. IT consulting has longer sales cycles, requiring consistent nurturing and relationship building."
-    },
-    {
-      question: "Should IT consultants focus on general or specialized services?",
-      answer: "Specialization delivers much higher ROI. Focus on specific technology areas like cloud migration, cybersecurity, or digital transformation rather than being a generalist. Specialists command premium pricing and attract better clients."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={itConsultingDigitalMarketingHero}
-      heroAlt="IT Consulting Digital Marketing Strategy"
-    >
+  const faqs = [{
+    question: "What's the best marketing strategy for IT consulting firms?",
+    answer: "Thought leadership content combined with LinkedIn marketing and SEO works best. IT clients research extensively before buying, so educational content that demonstrates expertise and builds trust is crucial for long-term success."
+  }, {
+    question: "How long does it take to see results from IT consulting marketing?",
+    answer: "Initial engagement typically appears within 2-3 months, with significant lead generation improvements usually visible after 6-12 months. IT consulting has longer sales cycles, requiring consistent nurturing and relationship building."
+  }, {
+    question: "Should IT consultants focus on general or specialized services?",
+    answer: "Specialization delivers much higher ROI. Focus on specific technology areas like cloud migration, cybersecurity, or digital transformation rather than being a generalist. Specialists command premium pricing and attract better clients."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={itConsultingDigitalMarketingHero} heroAlt="IT Consulting Digital Marketing Strategy">
       <h2>The IT Consulting Marketing Challenge</h2>
       <p>
         IT consulting firms face unique marketing challenges in 2025. With 78% of businesses increasing their technology budgets, the demand for expert IT guidance has never been higher. Yet many consultants struggle to differentiate themselves in a crowded marketplace.
@@ -52,7 +68,7 @@ const ITConsultingDigitalMarketing = () => {
       
       <h3>Define Your Specialty and Value Proposition</h3>
       <p>
-        Generic IT consulting doesn't sell in 2025. The most successful firms position themselves as deep specialists rather than "we do everything" generalists.
+        Generic IT consulting doesn&apos;t sell in 2025. The most successful firms position themselves as deep specialists rather than &quot;we do everything&quot; generalists.
       </p>
       
       <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -99,10 +115,10 @@ const ITConsultingDigitalMarketing = () => {
       
       <h4>Technical Guides and Whitepapers</h4>
       <ul>
-        <li>"Complete Guide to Cloud Migration Planning"</li>
-        <li>"Cybersecurity Framework Implementation Roadmap"</li>
-        <li>"Digital Transformation ROI Measurement"</li>
-        <li>"IT Infrastructure Modernization Strategies"</li>
+        <li>&quot;Complete Guide to Cloud Migration Planning&quot;</li>
+        <li>&quot;Cybersecurity Framework Implementation Roadmap&quot;</li>
+        <li>&quot;Digital Transformation ROI Measurement&quot;</li>
+        <li>&quot;IT Infrastructure Modernization Strategies&quot;</li>
       </ul>
 
       <h2>LinkedIn Marketing for IT Consultants</h2>
@@ -121,7 +137,7 @@ const ITConsultingDigitalMarketing = () => {
       <ul>
         <li><strong>Industry Analysis Posts:</strong> Share insights on technology trends and their business impact</li>
         <li><strong>Problem-Solution Content:</strong> Address common IT challenges with actionable solutions</li>
-        <li><strong>Behind-the-Scenes Content:</strong> Show your team's expertise and project methodologies</li>
+        <li><strong>Behind-the-Scenes Content:</strong> Show your team&apos;s expertise and project methodologies</li>
         <li><strong>Client Success Stories:</strong> Share anonymized case studies and results</li>
       </ul>
 
@@ -140,11 +156,11 @@ const ITConsultingDigitalMarketing = () => {
           </CardHeader>
           <CardContent>
             <ul className="text-sm space-y-1">
-              <li>• "IT consulting [city name]"</li>
-              <li>• "Cloud migration consultant"</li>
-              <li>• "Cybersecurity consultant"</li>
-              <li>• "Digital transformation advisor"</li>
-              <li>• "IT infrastructure consultant"</li>
+              <li>• &quot;IT consulting [city name]&quot;</li>
+              <li>• &quot;Cloud migration consultant&quot;</li>
+              <li>• &quot;Cybersecurity consultant&quot;</li>
+              <li>• &quot;Digital transformation advisor&quot;</li>
+              <li>• &quot;IT infrastructure consultant&quot;</li>
             </ul>
           </CardContent>
         </Card>
@@ -158,11 +174,11 @@ const ITConsultingDigitalMarketing = () => {
           </CardHeader>
           <CardContent>
             <ul className="text-sm space-y-1">
-              <li>• "How to choose an IT consultant"</li>
-              <li>• "Cloud migration best practices"</li>
-              <li>• "IT security assessment checklist"</li>
-              <li>• "Digital transformation roadmap"</li>
-              <li>• "IT consulting pricing guide"</li>
+              <li>• &quot;How to choose an IT consultant&quot;</li>
+              <li>• &quot;Cloud migration best practices&quot;</li>
+              <li>• &quot;IT security assessment checklist&quot;</li>
+              <li>• &quot;Digital transformation roadmap&quot;</li>
+              <li>• &quot;IT consulting pricing guide&quot;</li>
             </ul>
           </CardContent>
         </Card>
@@ -176,11 +192,11 @@ const ITConsultingDigitalMarketing = () => {
           <CardContent className="p-6">
             <h4 className="font-semibold mb-3 text-blue-700">Cloud Migration Cluster</h4>
             <ul className="space-y-1 text-sm">
-              <li>• Pillar Page: "Complete Guide to Cloud Migration"</li>
-              <li>• Supporting Content: "AWS vs Azure vs Google Cloud Comparison"</li>
-              <li>• Supporting Content: "Cloud Migration Cost Calculator"</li>
-              <li>• Supporting Content: "Common Cloud Migration Mistakes"</li>
-              <li>• Supporting Content: "Cloud Security Best Practices"</li>
+              <li>• Pillar Page: &quot;Complete Guide to Cloud Migration&quot;</li>
+              <li>• Supporting Content: &quot;AWS vs Azure vs Google Cloud Comparison&quot;</li>
+              <li>• Supporting Content: &quot;Cloud Migration Cost Calculator&quot;</li>
+              <li>• Supporting Content: &quot;Common Cloud Migration Mistakes&quot;</li>
+              <li>• Supporting Content: &quot;Cloud Security Best Practices&quot;</li>
             </ul>
           </CardContent>
         </Card>
@@ -189,11 +205,11 @@ const ITConsultingDigitalMarketing = () => {
           <CardContent className="p-6">
             <h4 className="font-semibold mb-3 text-red-700">Cybersecurity Cluster</h4>
             <ul className="space-y-1 text-sm">
-              <li>• Pillar Page: "Enterprise Cybersecurity Framework"</li>
-              <li>• Supporting Content: "Security Audit Checklist"</li>
-              <li>• Supporting Content: "Incident Response Planning"</li>
-              <li>• Supporting Content: "Compliance Requirements Guide"</li>
-              <li>• Supporting Content: "Employee Security Training"</li>
+              <li>• Pillar Page: &quot;Enterprise Cybersecurity Framework&quot;</li>
+              <li>• Supporting Content: &quot;Security Audit Checklist&quot;</li>
+              <li>• Supporting Content: &quot;Incident Response Planning&quot;</li>
+              <li>• Supporting Content: &quot;Compliance Requirements Guide&quot;</li>
+              <li>• Supporting Content: &quot;Employee Security Training&quot;</li>
             </ul>
           </CardContent>
         </Card>
@@ -217,11 +233,11 @@ const ITConsultingDigitalMarketing = () => {
         <div className="space-y-4">
           <div>
             <h5 className="font-semibold text-green-700">Cloud Migration Ad:</h5>
-            <p className="text-sm italic">"Seamless Cloud Migration | Zero Downtime Guaranteed | Free Assessment | [City] IT Consultants | 15+ Years Experience"</p>
+            <p className="text-sm italic">&quot;Seamless Cloud Migration | Zero Downtime Guaranteed | Free Assessment | [City] IT Consultants | 15+ Years Experience&quot;</p>
           </div>
           <div>
             <h5 className="font-semibold text-blue-700">Cybersecurity Ad:</h5>
-            <p className="text-sm italic">"Cybersecurity Assessment | Protect Your Business | Compliance Experts | Free Security Audit | Call Today"</p>
+            <p className="text-sm italic">&quot;Cybersecurity Assessment | Protect Your Business | Compliance Experts | Free Security Audit | Call Today&quot;</p>
           </div>
         </div>
       </div>
@@ -451,13 +467,7 @@ const ITConsultingDigitalMarketing = () => {
         Success in IT consulting marketing requires patience, expertise demonstration, and relationship building. Focus on delivering value, building trust, and positioning yourself as a strategic technology advisor rather than just another vendor.
       </p>
 
-      <Citation 
-        source="Gartner IT Services Market Research" 
-        url="https://www.gartner.com/"
-        title="Global IT Services Market Analysis"
-      />
-    </OptimizedBlogLayout>
-  );
+      <Citation source="Gartner IT Services Market Research" url="https://www.gartner.com/" title="Global IT Services Market Analysis" />
+    </OptimizedBlogLayout>;
 };
-
 export default ITConsultingDigitalMarketing;

@@ -1,13 +1,41 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Users, TrendingUp, Target, Shield, Calendar, DollarSign, BarChart3 } from "lucide-react";
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import ndisBusinessGrowthStrategyHero from '@/assets/blog/ndis-business-growth-strategy-new.jpg';
-
+export const metadata = createMetadata({
+  title: "Ndis Business Growth Strategy",
+  description: "Expert guidance on ndis business growth strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-business-growth-strategy",
+  keywords: ["ndis", "business", "growth", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Business Growth Strategy",
+    description: "Expert guidance on ndis business growth strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-business-growth-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Business Growth Strategy"
+    }],
+    publishedTime: "2024-12-15T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.911Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Business Growth Strategy",
+    description: "Expert guidance on ndis business growth strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISBusinessGrowthStrategy = () => {
   const articleData = {
     headline: "NDIS Business Growth Strategy: Scale Your Disability Services Sustainably",
@@ -21,30 +49,17 @@ const NDISBusinessGrowthStrategy = () => {
     readTime: "26 min read",
     tags: ["NDIS", "Business Growth", "Disability Services", "Scaling Strategy", "Participant Acquisition"]
   };
-
-  const faqs = [
-    {
-      question: "What's the most effective way to scale an NDIS business sustainably?",
-      answer: "Focus on compliance-first growth with systematic participant acquisition, staff development programs, and technology integration. Prioritize quality service delivery over rapid expansion to maintain NDIS standards and participant satisfaction."
-    },
-    {
-      question: "How long does it typically take to see growth results for NDIS providers?",
-      answer: "Initial growth appears within 3-6 months with proper strategy implementation. Sustainable scaling typically takes 12-18 months as you build reputation, systems, and participant base while maintaining compliance standards."
-    },
-    {
-      question: "What are the biggest challenges when scaling NDIS disability services?",
-      answer: "Key challenges include maintaining compliance standards during growth, recruiting qualified staff, managing increased operational complexity, and ensuring consistent service quality across expanded operations while meeting participant outcomes."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.ndis}
-        faqs={faqs}
-        heroImage={ndisBusinessGrowthStrategyHero}
-        heroAlt="NDIS Business Growth Strategy - Sustainable scaling for disability service providers"
-      >
+  const faqs = [{
+    question: "What's the most effective way to scale an NDIS business sustainably?",
+    answer: "Focus on compliance-first growth with systematic participant acquisition, staff development programs, and technology integration. Prioritize quality service delivery over rapid expansion to maintain NDIS standards and participant satisfaction."
+  }, {
+    question: "How long does it typically take to see growth results for NDIS providers?",
+    answer: "Initial growth appears within 3-6 months with proper strategy implementation. Sustainable scaling typically takes 12-18 months as you build reputation, systems, and participant base while maintaining compliance standards."
+  }, {
+    question: "What are the biggest challenges when scaling NDIS disability services?",
+    answer: "Key challenges include maintaining compliance standards during growth, recruiting qualified staff, managing increased operational complexity, and ensuring consistent service quality across expanded operations while meeting participant outcomes."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisBusinessGrowthStrategyHero} heroAlt="NDIS Business Growth Strategy - Sustainable scaling for disability service providers">
         {/* Key Statistics */}
         <Card className="mb-12 bg-primary/5 border-primary/20">
           <CardHeader>
@@ -254,8 +269,6 @@ const NDISBusinessGrowthStrategy = () => {
           </p>
         </div>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default NDISBusinessGrowthStrategy;

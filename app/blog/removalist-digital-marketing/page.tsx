@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
@@ -5,10 +6,40 @@ import { Card, CardContent } from "@/components/ui/card";
 import ContentGate from '@/components/ContentGate';
 import { useContentGate } from '@/hooks/useContentGate';
 import removalistDigitalMarketingHero from '@/assets/blog/removalist-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Removalist Digital Marketing",
+  description: "Expert guidance on removalist digital marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/removalist-digital-marketing",
+  keywords: ["removalist", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Removalist Digital Marketing",
+    description: "Expert guidance on removalist digital marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/removalist-digital-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Removalist Digital Marketing"
+    }],
+    publishedTime: "2024-12-31",
+    modifiedTime: "2025-10-31T11:10:05.154Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Removalist Digital Marketing",
+    description: "Expert guidance on removalist digital marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const RemovalistDigitalMarketing = () => {
-  const { isUnlocked, unlock } = useContentGate('removalist-digital-marketing');
-  
+  const {
+    isUnlocked,
+    unlock
+  } = useContentGate('removalist-digital-marketing');
   const articleData = {
     headline: "Digital Marketing for Removalist Business: Complete Growth Guide 2024",
     description: "Transform your removalist business with proven digital marketing strategies. Attract more customers, increase bookings, and grow revenue online.",
@@ -21,34 +52,20 @@ const RemovalistDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["removalist marketing", "digital marketing", "moving business", "customer acquisition"]
   };
-
-  const faqs = [
-    {
-      question: "How can digital marketing help my removalist business?",
-      answer: "Digital marketing helps removalist businesses reach customers exactly when they're planning a move, build trust through online reviews, showcase services effectively, and compete with larger moving companies through targeted online strategies."
-    },
-    {
-      question: "What's the most important digital marketing channel for removalists?",
-      answer: "Google My Business and local SEO are crucial as most people search for 'removalists near me'. However, a multi-channel approach including Google Ads, social media, and review management works best."
-    },
-    {
-      question: "How do I get more online reviews for my removalist business?",
-      answer: "Follow up with customers within 24 hours of job completion, send personalized review requests via email/SMS, make the review process easy, and consider small incentives for honest reviews."
-    },
-    {
-      question: "Should I use Google Ads for my removalist business?",
-      answer: "Yes, Google Ads can be highly effective for removalists. Target emergency keywords like 'urgent movers' and local terms like 'removalists [city]' to capture high-intent customers actively searching for moving services."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout 
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={removalistDigitalMarketingHero}
-      heroAlt="Digital marketing strategies for removalist and moving businesses"
-    >
+  const faqs = [{
+    question: "How can digital marketing help my removalist business?",
+    answer: "Digital marketing helps removalist businesses reach customers exactly when they're planning a move, build trust through online reviews, showcase services effectively, and compete with larger moving companies through targeted online strategies."
+  }, {
+    question: "What's the most important digital marketing channel for removalists?",
+    answer: "Google My Business and local SEO are crucial as most people search for 'removalists near me'. However, a multi-channel approach including Google Ads, social media, and review management works best."
+  }, {
+    question: "How do I get more online reviews for my removalist business?",
+    answer: "Follow up with customers within 24 hours of job completion, send personalized review requests via email/SMS, make the review process easy, and consider small incentives for honest reviews."
+  }, {
+    question: "Should I use Google Ads for my removalist business?",
+    answer: "Yes, Google Ads can be highly effective for removalists. Target emergency keywords like 'urgent movers' and local terms like 'removalists [city]' to capture high-intent customers actively searching for moving services."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={removalistDigitalMarketingHero} heroAlt="Digital marketing strategies for removalist and moving businesses">
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <h3 className="text-xl font-semibold mb-4">Removalist Industry Digital Stats</h3>
@@ -118,7 +135,7 @@ const RemovalistDigitalMarketing = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Google My Business Optimization</h3>
               <p className="mb-4">
-                GMB is crucial for local visibility when people search for "removalists near me."
+                GMB is crucial for local visibility when people search for &quot;removalists near me.&quot;
               </p>
               <ul className="space-y-2 text-sm">
                 <li>• Complete all business information fields</li>
@@ -133,15 +150,9 @@ const RemovalistDigitalMarketing = () => {
         </div>
       </section>
 
-      <ContentGate 
-        isUnlocked={isUnlocked} 
-        onUnlock={unlock}
-        blogTitle="Digital Marketing for Removalist Business: Complete Growth Guide 2024"
-        blogSlug="removalist-digital-marketing"
-      />
+      <ContentGate isUnlocked={isUnlocked} onUnlock={unlock} blogTitle="Digital Marketing for Removalist Business: Complete Growth Guide 2024" blogSlug="removalist-digital-marketing" />
 
-      {isUnlocked && (
-        <>
+      {isUnlocked && <>
           <section className="mb-12">
             <h2 className="text-3xl font-bold mb-6">Search Engine Optimization (SEO) for Removalists</h2>
         
@@ -156,11 +167,11 @@ const RemovalistDigitalMarketing = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Target Keywords</h4>
                   <ul className="space-y-1 text-sm">
-                    <li>• "removalists [city name]"</li>
-                    <li>• "moving company near me"</li>
-                    <li>• "interstate removalists"</li>
-                    <li>• "office movers [location]"</li>
-                    <li>• "furniture removalists"</li>
+                    <li>• &quot;removalists [city name]&quot;</li>
+                    <li>• &quot;moving company near me&quot;</li>
+                    <li>• &quot;interstate removalists&quot;</li>
+                    <li>• &quot;office movers [location]&quot;</li>
+                    <li>• &quot;furniture removalists&quot;</li>
                   </ul>
                 </div>
                 <div>
@@ -220,7 +231,7 @@ const RemovalistDigitalMarketing = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Campaign Types</h4>
                   <ul className="space-y-2 text-sm">
-                    <li><strong>Search Campaigns:</strong> Target "removalists near me" keywords</li>
+                    <li><strong>Search Campaigns:</strong> Target &quot;removalists near me&quot; keywords</li>
                     <li><strong>Local Campaigns:</strong> Promote business location and services</li>
                     <li><strong>Performance Max:</strong> Automated campaigns across all Google properties</li>
                     <li><strong>YouTube Ads:</strong> Video testimonials and service demonstrations</li>
@@ -537,10 +548,7 @@ const RemovalistDigitalMarketing = () => {
           </CardContent>
         </Card>
       </section>
-        </>
-      )}
-    </OptimizedBlogLayout>
-  );
+        </>}
+    </OptimizedBlogLayout>;
 };
-
 export default RemovalistDigitalMarketing;

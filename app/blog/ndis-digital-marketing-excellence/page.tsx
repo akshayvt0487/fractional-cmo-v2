@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -6,7 +7,35 @@ import { CheckCircle, Smartphone, Monitor, Search, Share2, BarChart, Shield, Zap
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import ndisDigitalMarketingExcellenceHero from '@/assets/blog/ndis-digital-marketing-excellence.jpg';
-
+export const metadata = createMetadata({
+  title: "Ndis Digital Marketing Excellence",
+  description: "Expert guidance on ndis digital marketing excellence. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-digital-marketing-excellence",
+  keywords: ["ndis", "digital", "marketing", "excellence", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Digital Marketing Excellence",
+    description: "Expert guidance on ndis digital marketing excellence. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-digital-marketing-excellence",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Digital Marketing Excellence"
+    }],
+    publishedTime: "2024-12-17T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.923Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Digital Marketing Excellence",
+    description: "Expert guidance on ndis digital marketing excellence. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISDigitalMarketingExcellence = () => {
   const articleData = {
     headline: "NDIS Digital Marketing Excellence: Advanced Tactics for 2025",
@@ -20,30 +49,17 @@ const NDISDigitalMarketingExcellence = () => {
     readTime: "24 min read",
     tags: ["NDIS", "Digital Marketing", "Advanced Tactics", "Disability Services", "Marketing Excellence", "Compliance", "Automation"]
   };
-
-  const faqs = [
-    {
-      question: "What makes NDIS digital marketing different from traditional healthcare marketing?",
-      answer: "NDIS digital marketing requires specialized compliance knowledge, participant-centered messaging, outcome-focused content, and understanding of NDIS funding structures. It emphasizes accessibility, dignity, and choice while meeting strict regulatory requirements."
-    },
-    {
-      question: "How can NDIS providers measure digital marketing ROI effectively?",
-      answer: "Track participant acquisition costs, service plan activation rates, compliance scores, participant satisfaction metrics, and long-term value. Focus on quality metrics like goal achievement rates rather than just volume metrics."
-    },
-    {
-      question: "What automation tools work best for NDIS digital marketing?",
-      answer: "Use CRM systems with NDIS compliance features, automated email nurture sequences, lead scoring models, participant journey mapping, and integrated reporting dashboards. Ensure all tools maintain data privacy and accessibility standards."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.ndis}
-        faqs={faqs}
-        heroImage={ndisDigitalMarketingExcellenceHero}
-        heroAlt="Advanced NDIS digital marketing strategies and materials for excellence in 2025"
-      >
+  const faqs = [{
+    question: "What makes NDIS digital marketing different from traditional healthcare marketing?",
+    answer: "NDIS digital marketing requires specialized compliance knowledge, participant-centered messaging, outcome-focused content, and understanding of NDIS funding structures. It emphasizes accessibility, dignity, and choice while meeting strict regulatory requirements."
+  }, {
+    question: "How can NDIS providers measure digital marketing ROI effectively?",
+    answer: "Track participant acquisition costs, service plan activation rates, compliance scores, participant satisfaction metrics, and long-term value. Focus on quality metrics like goal achievement rates rather than just volume metrics."
+  }, {
+    question: "What automation tools work best for NDIS digital marketing?",
+    answer: "Use CRM systems with NDIS compliance features, automated email nurture sequences, lead scoring models, participant journey mapping, and integrated reporting dashboards. Ensure all tools maintain data privacy and accessibility standards."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisDigitalMarketingExcellenceHero} heroAlt="Advanced NDIS digital marketing strategies and materials for excellence in 2025">
         {/* Digital Marketing Excellence Metrics */}
         <Card className="mb-12 bg-primary/5 border-primary/20">
           <CardHeader>
@@ -702,8 +718,6 @@ const NDISDigitalMarketingExcellence = () => {
         </CardContent>
       </Card>
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default NDISDigitalMarketingExcellence;

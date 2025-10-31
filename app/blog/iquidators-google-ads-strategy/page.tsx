@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Target, Settings, Layers, Search, Zap } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import Citation from '@/components/Citation';
 import liquidatorsGoogleAdsHero from '@/assets/blog/liquidators-google-ads-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Iquidators Google Ads Strategy",
+  description: "Expert guidance on iquidators google ads strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/iquidators-google-ads-strategy",
+  keywords: ["iquidators", "google", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Iquidators Google Ads Strategy",
+    description: "Expert guidance on iquidators google ads strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/iquidators-google-ads-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Iquidators Google Ads Strategy"
+    }],
+    publishedTime: "2025-01-30T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.783Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Iquidators Google Ads Strategy",
+    description: "Expert guidance on iquidators google ads strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const LiquidatorsGoogleAdsStrategy = () => {
   const articleData = {
     headline: "Google Ads for Liquidators: Complete Strategy Guide 2025",
@@ -19,29 +47,17 @@ const LiquidatorsGoogleAdsStrategy = () => {
     readTime: "28 min read",
     tags: ["Liquidators", "Google Ads", "Insolvency Marketing", "Business Recovery", "Lead Generation"]
   };
-
-  const faqs = [
-    {
-      question: "What's the average cost per click for liquidator Google Ads?",
-      answer: "CPC for liquidator keywords typically ranges from $8-35, with competitive terms like 'company liquidation' and 'business liquidator' at the higher end. Focus on long-tail keywords and urgent-intent queries to reduce costs while capturing high-value leads."
-    },
-    {
-      question: "How much should liquidators spend on Google Ads monthly?",
-      answer: "Start with $4,000-8,000 monthly budget for comprehensive campaigns covering branded, service, and urgent help keywords. Scale based on lead quality and case conversion rates. Liquidation services typically have higher CLV justifying premium ad spend."
-    },
-    {
-      question: "What's the best landing page strategy for liquidator ads?",
-      answer: "Create service-specific landing pages for voluntary liquidation, creditor pressure scenarios, and director liability concerns. Include trust signals, ASIC registration details, confidential consultation offers, and clear next steps."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        faqs={faqs}
-        heroImage={liquidatorsGoogleAdsHero}
-        heroAlt="Liquidators Google Ads strategies and campaign optimization"
-      >
+  const faqs = [{
+    question: "What's the average cost per click for liquidator Google Ads?",
+    answer: "CPC for liquidator keywords typically ranges from $8-35, with competitive terms like 'company liquidation' and 'business liquidator' at the higher end. Focus on long-tail keywords and urgent-intent queries to reduce costs while capturing high-value leads."
+  }, {
+    question: "How much should liquidators spend on Google Ads monthly?",
+    answer: "Start with $4,000-8,000 monthly budget for comprehensive campaigns covering branded, service, and urgent help keywords. Scale based on lead quality and case conversion rates. Liquidation services typically have higher CLV justifying premium ad spend."
+  }, {
+    question: "What's the best landing page strategy for liquidator ads?",
+    answer: "Create service-specific landing pages for voluntary liquidation, creditor pressure scenarios, and director liability concerns. Include trust signals, ASIC registration details, confidential consultation offers, and clear next steps."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} faqs={faqs} heroImage={liquidatorsGoogleAdsHero} heroAlt="Liquidators Google Ads strategies and campaign optimization">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           ⚖️ Google Ads can be a powerful channel for liquidators, connecting you with directors and business owners facing financial distress who need immediate professional guidance. This comprehensive guide reveals proven Google Ads strategies that successful liquidation firms use to generate qualified leads, establish market authority, and grow their practice consistently in the competitive insolvency sector.
         </p>
@@ -150,29 +166,29 @@ const LiquidatorsGoogleAdsStrategy = () => {
               <div>
                 <h4 className="font-semibold mb-2 text-purple-700">Core Service Terms</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "liquidator", "company liquidation"</li>
-                  <li>• "business liquidator", "corporate liquidation"</li>
-                  <li>• "registered liquidator", "insolvency practitioner"</li>
+                  <li>• &quot;liquidator&quot;, &quot;company liquidation&quot;</li>
+                  <li>• &quot;business liquidator&quot;, &quot;corporate liquidation&quot;</li>
+                  <li>• &quot;registered liquidator&quot;, &quot;insolvency practitioner&quot;</li>
                 </ul>
                 <h4 className="font-semibold mb-2 mt-4 text-purple-700">Location-Based Searches</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "liquidator [city]", "company liquidation [state]"</li>
-                  <li>• "business liquidator near me"</li>
-                  <li>• "liquidation services [suburb]"</li>
+                  <li>• &quot;liquidator [city]&quot;, &quot;company liquidation [state]&quot;</li>
+                  <li>• &quot;business liquidator near me&quot;</li>
+                  <li>• &quot;liquidation services [suburb]&quot;</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold mb-2 text-pink-700">Urgent Intent Keywords</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "need liquidator urgently"</li>
-                  <li>• "emergency business liquidation"</li>
-                  <li>• "liquidator help now"</li>
+                  <li>• &quot;need liquidator urgently&quot;</li>
+                  <li>• &quot;emergency business liquidation&quot;</li>
+                  <li>• &quot;liquidator help now&quot;</li>
                 </ul>
                 <h4 className="font-semibold mb-2 mt-4 text-pink-700">Problem-Solving Keywords</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "can't pay creditors"</li>
-                  <li>• "ATO debt help"</li>
-                  <li>• "statutory demand help"</li>
+                  <li>• &quot;can&apos;t pay creditors&quot;</li>
+                  <li>• &quot;ATO debt help&quot;</li>
+                  <li>• &quot;statutory demand help&quot;</li>
                 </ul>
               </div>
             </div>
@@ -189,11 +205,11 @@ const LiquidatorsGoogleAdsStrategy = () => {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
-              <li>🔍 "best liquidator for small business [city]"</li>
-              <li>⚖️ "company liquidation process australia"</li>
-              <li>❓ "how much does liquidation cost"</li>
-              <li>💰 "voluntary liquidation vs administration"</li>
-              <li>⭐ "experienced liquidator [city] reviews"</li>
+              <li>🔍 &quot;best liquidator for small business [city]&quot;</li>
+              <li>⚖️ &quot;company liquidation process australia&quot;</li>
+              <li>❓ &quot;how much does liquidation cost&quot;</li>
+              <li>💰 &quot;voluntary liquidation vs administration&quot;</li>
+              <li>⭐ &quot;experienced liquidator [city] reviews&quot;</li>
             </ul>
           </CardContent>
         </Card>
@@ -271,10 +287,10 @@ const LiquidatorsGoogleAdsStrategy = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Headlines That Hook</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• "Facing Statutory Demand? Act Now"</li>
-                    <li>• "Registered Liquidator - 24hr Response"</li>
-                    <li>• "Protect Yourself From Director Penalties"</li>
-                    <li>• "Company Liquidation Experts"</li>
+                    <li>• &quot;Facing Statutory Demand? Act Now&quot;</li>
+                    <li>• &quot;Registered Liquidator - 24hr Response&quot;</li>
+                    <li>• &quot;Protect Yourself From Director Penalties&quot;</li>
+                    <li>• &quot;Company Liquidation Experts&quot;</li>
                   </ul>
                 </div>
                 <div>
@@ -290,11 +306,11 @@ const LiquidatorsGoogleAdsStrategy = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Trust Signals</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• "ASIC Registered Liquidator"</li>
-                    <li>• "500+ Successful Liquidations"</li>
-                    <li>• "15+ Years Experience"</li>
-                    <li>• "ARITA Member"</li>
-                    <li>• "Free Confidential Consultation"</li>
+                    <li>• &quot;ASIC Registered Liquidator&quot;</li>
+                    <li>• &quot;500+ Successful Liquidations&quot;</li>
+                    <li>• &quot;15+ Years Experience&quot;</li>
+                    <li>• &quot;ARITA Member&quot;</li>
+                    <li>• &quot;Free Confidential Consultation&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -366,7 +382,9 @@ const LiquidatorsGoogleAdsStrategy = () => {
                           <span className="font-semibold">40%</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div className="bg-red-500 h-2 rounded-full" style={{width: '40%'}}></div>
+                          <div className="bg-red-500 h-2 rounded-full" style={{
+                        width: '40%'
+                      }}></div>
                         </div>
                       </li>
                       <li>
@@ -375,7 +393,9 @@ const LiquidatorsGoogleAdsStrategy = () => {
                           <span className="font-semibold">30%</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div className="bg-blue-500 h-2 rounded-full" style={{width: '30%'}}></div>
+                          <div className="bg-blue-500 h-2 rounded-full" style={{
+                        width: '30%'
+                      }}></div>
                         </div>
                       </li>
                       <li>
@@ -384,7 +404,9 @@ const LiquidatorsGoogleAdsStrategy = () => {
                           <span className="font-semibold">20%</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div className="bg-green-500 h-2 rounded-full" style={{width: '20%'}}></div>
+                          <div className="bg-green-500 h-2 rounded-full" style={{
+                        width: '20%'
+                      }}></div>
                         </div>
                       </li>
                       <li>
@@ -393,13 +415,15 @@ const LiquidatorsGoogleAdsStrategy = () => {
                           <span className="font-semibold">10%</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div className="bg-purple-500 h-2 rounded-full" style={{width: '10%'}}></div>
+                          <div className="bg-purple-500 h-2 rounded-full" style={{
+                        width: '10%'
+                      }}></div>
                         </div>
                       </li>
                     </ul>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Adjust based on your firm's positioning and market competition
+                    Adjust based on your firm&apos;s positioning and market competition
                   </p>
                 </div>
               </CardContent>
@@ -458,7 +482,7 @@ const LiquidatorsGoogleAdsStrategy = () => {
                     <li>✓ <strong>Clear headline:</strong> Address the specific problem</li>
                     <li>✓ <strong>ASIC registration:</strong> Display credentials prominently</li>
                     <li>✓ <strong>Phone number:</strong> Large, clickable for mobile</li>
-                    <li>✓ <strong>CTA button:</strong> "Free Confidential Consultation"</li>
+                    <li>✓ <strong>CTA button:</strong> &quot;Free Confidential Consultation&quot;</li>
                     <li>✓ <strong>Trust badge:</strong> ARITA member, years of experience</li>
                   </ul>
                 </div>
@@ -483,7 +507,7 @@ const LiquidatorsGoogleAdsStrategy = () => {
               </CardHeader>
               <CardContent>
                 <ul className="text-sm space-y-2">
-                  <li>• Headline: "Statutory Demand Received?"</li>
+                  <li>• Headline: &quot;Statutory Demand Received?&quot;</li>
                   <li>• Urgent response time highlighted</li>
                   <li>• Director penalty warnings</li>
                   <li>• Immediate action steps</li>
@@ -498,7 +522,7 @@ const LiquidatorsGoogleAdsStrategy = () => {
               </CardHeader>
               <CardContent>
                 <ul className="text-sm space-y-2">
-                  <li>• Headline: "Orderly Business Closure"</li>
+                  <li>• Headline: &quot;Orderly Business Closure&quot;</li>
                   <li>• Process timeline visualization</li>
                   <li>• Cost transparency</li>
                   <li>• Compliance assurance</li>
@@ -633,7 +657,7 @@ const LiquidatorsGoogleAdsStrategy = () => {
                   <h4 className="font-semibold mb-2">❌ Prohibited Claims</h4>
                   <ul className="text-sm space-y-1">
                     <li>• Guarantees of specific creditor payment outcomes</li>
-                    <li>• Claims of "best" or "cheapest" without substantiation</li>
+                    <li>• Claims of &quot;best&quot; or &quot;cheapest&quot; without substantiation</li>
                     <li>• Promises to eliminate director liability completely</li>
                     <li>• Misrepresentation of success rates or experience</li>
                   </ul>
@@ -835,39 +859,23 @@ const LiquidatorsGoogleAdsStrategy = () => {
             <CardHeader>
               <CardTitle className="text-2xl">Ready to Transform Your Liquidator Marketing?</CardTitle>
               <CardDescription className="text-base">
-                Let's develop a Google Ads strategy that generates qualified leads and grows your practice
+                Let&apos;s develop a Google Ads strategy that generates qualified leads and grows your practice
               </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="mb-6">
                 Implementing an effective Google Ads strategy requires expertise in both digital marketing and the insolvency sector. Book a free strategy consultation to discover how we can help you capture more high-quality leads and establish your firm as the trusted choice for directors and businesses in distress.
               </p>
-              <StrategyForm 
-                preSelectedService="google-ads"
-              />
+              <StrategyForm preSelectedService="google-ads" />
             </CardContent>
           </Card>
         </section>
 
         <div className="space-y-4">
-          <Citation 
-            source="Official Google guidelines for professional services advertising"
-            url="https://support.google.com/google-ads/answer/6167118"
-            title="Google Ads Help - Best Practices for Professional Services"
-          />
-          <Citation 
-            source="Regulatory requirements for registered liquidators in Australia"
-            url="https://asic.gov.au/regulatory-resources/insolvency/registered-liquidators/"
-            title="ASIC - Registered Liquidators"
-          />
-          <Citation 
-            source="Professional standards and ethical guidelines for insolvency practitioners"
-            url="https://www.arita.com.au/"
-            title="ARITA - Code of Professional Practice"
-          />
+          <Citation source="Official Google guidelines for professional services advertising" url="https://support.google.com/google-ads/answer/6167118" title="Google Ads Help - Best Practices for Professional Services" />
+          <Citation source="Regulatory requirements for registered liquidators in Australia" url="https://asic.gov.au/regulatory-resources/insolvency/registered-liquidators/" title="ASIC - Registered Liquidators" />
+          <Citation source="Professional standards and ethical guidelines for insolvency practitioners" url="https://www.arita.com.au/" title="ARITA - Code of Professional Practice" />
         </div>
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default LiquidatorsGoogleAdsStrategy;

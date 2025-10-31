@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building, Users, Target, TrendingUp } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import constructionProjectManagementHero from '@/assets/blog/construction-project-management.jpg';
-
+export const metadata = createMetadata({
+  title: "Construction Marketing Best Practices",
+  description: "Expert guidance on construction marketing best practices. Learn proven strategies and best practices for business growth.",
+  path: "/blog/construction-marketing-best-practices",
+  keywords: ["construction", "marketing", "best", "practices", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Construction Marketing Best Practices",
+    description: "Expert guidance on construction marketing best practices. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/construction-marketing-best-practices",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Construction Marketing Best Practices"
+    }],
+    publishedTime: "2024-02-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.463Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Construction Marketing Best Practices",
+    description: "Expert guidance on construction marketing best practices. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ConstructionMarketingBestPractices = () => {
   const articleData = {
     headline: "Construction Marketing Best Practices: Digital Growth Strategies",
@@ -19,30 +47,17 @@ const ConstructionMarketingBestPractices = () => {
     readTime: "26 min read",
     tags: ["Construction Marketing", "Digital Strategy", "Lead Generation", "Brand Building", "Project Management"]
   };
-
-  const faqs = [
-    {
-      question: "What's the most effective marketing channel for construction companies?",
-      answer: "Google Ads and local SEO are typically most effective, generating 60-70% of quality leads. Combine with social media showcasing project portfolios and referral programs for comprehensive reach."
-    },
-    {
-      question: "How much should construction companies invest in marketing?",
-      answer: "Allocate 3-7% of revenue to marketing, with new companies investing up to 10%. Focus budget on digital channels that provide measurable ROI and lead tracking capabilities."
-    },
-    {
-      question: "How can construction companies build trust online?",
-      answer: "Showcase completed projects with before/after photos, display certifications and licenses, collect video testimonials, maintain active social media presence, and ensure consistent positive reviews."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.construction}
-        faqs={faqs}
-        heroImage={constructionProjectManagementHero}
-        heroAlt="Construction marketing best practices and digital growth strategies"
-      >
+  const faqs = [{
+    question: "What's the most effective marketing channel for construction companies?",
+    answer: "Google Ads and local SEO are typically most effective, generating 60-70% of quality leads. Combine with social media showcasing project portfolios and referral programs for comprehensive reach."
+  }, {
+    question: "How much should construction companies invest in marketing?",
+    answer: "Allocate 3-7% of revenue to marketing, with new companies investing up to 10%. Focus budget on digital channels that provide measurable ROI and lead tracking capabilities."
+  }, {
+    question: "How can construction companies build trust online?",
+    answer: "Showcase completed projects with before/after photos, display certifications and licenses, collect video testimonials, maintain active social media presence, and ensure consistent positive reviews."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={constructionProjectManagementHero} heroAlt="Construction marketing best practices and digital growth strategies">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏗️ Construction companies face unique marketing challenges in a highly competitive industry where trust, expertise, and local reputation are crucial for success. This comprehensive guide reveals proven digital marketing strategies that successful construction businesses use to generate quality leads, build strong brand presence, and achieve sustainable growth in their local markets.
         </p>
@@ -177,7 +192,7 @@ const ConstructionMarketingBestPractices = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
-                <li>📝 <strong>Project guides:</strong> "How to Plan a Kitchen Renovation"</li>
+                <li>📝 <strong>Project guides:</strong> &quot;How to Plan a Kitchen Renovation&quot;</li>
                 <li>💰 <strong>Cost breakdowns:</strong> Transparent pricing insights</li>
                 <li>🔧 <strong>Process explanations:</strong> Step-by-step construction guides</li>
                 <li>⚠️ <strong>Common mistakes:</strong> What homeowners should avoid</li>
@@ -189,7 +204,7 @@ const ConstructionMarketingBestPractices = () => {
           <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
             <CardHeader>
               <CardTitle>Visual Content Power</CardTitle>
-              <CardDescription>Show don't tell - visual proof of quality work</CardDescription>
+              <CardDescription>Show don&apos;t tell - visual proof of quality work</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
@@ -204,8 +219,8 @@ const ConstructionMarketingBestPractices = () => {
         </div>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "Construction marketing is about building trust before building structures. 
-          Show your expertise, document your process, and let your work speak for itself."
+          &quot;Construction marketing is about building trust before building structures. 
+          Show your expertise, document your process, and let your work speak for itself.&quot;
           <footer className="text-sm mt-2">— Construction Marketing Best Practice</footer>
         </blockquote>
 
@@ -279,8 +294,6 @@ const ConstructionMarketingBestPractices = () => {
           </CardContent>
         </Card>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default ConstructionMarketingBestPractices;

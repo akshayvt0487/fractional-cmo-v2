@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Wrench, AlertTriangle, Building, Zap, Search, Users, Video, Play, MessageCircle, Star, CheckCircle } from 'lucide-react';
 import mechanicDigitalMarketingHero from '@/assets/blog/mechanic-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Mechanic Digital Marketing Guide",
+  description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/mechanic-digital-marketing-guide",
+  keywords: ["mechanic", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Mechanic Digital Marketing Guide",
+    description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/mechanic-digital-marketing-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Mechanic Digital Marketing Guide"
+    }],
+    publishedTime: "2025-01-09",
+    modifiedTime: "2025-10-31T11:10:04.904Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mechanic Digital Marketing Guide",
+    description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const MechanicDigitalMarketing = () => {
   const articleData = {
     headline: "Digital Marketing for Mechanics: Complete Automotive Service Growth Guide 2025",
@@ -18,36 +47,22 @@ const MechanicDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["automotive marketing", "mechanic business", "digital marketing", "customer acquisition"]
   };
-
-  const faqs = [
-    {
-      question: "How can digital marketing help my auto repair shop?",
-      answer: "Digital marketing helps mechanics build trust with potential customers, showcase expertise through educational content, attract customers actively searching for auto repair services, and maintain relationships that lead to repeat business and referrals."
-    },
-    {
-      question: "What's the most important online platform for auto shops?",
-      answer: "Google My Business is crucial as most people search for 'auto repair near me'. Combined with a professional website showcasing your services and customer reviews, these form the foundation of your digital presence."
-    },
-    {
-      question: "How do I get more online reviews for my auto shop?",
-      answer: "Follow up with customers after service completion, make the review process easy by sending direct links, provide excellent service worth reviewing, and consider small incentives for honest feedback. Always respond professionally to all reviews."
-    },
-    {
-      question: "Should mechanics use social media marketing?",
-      answer: "Yes, social media is excellent for showing your work, building community trust, and educational content. Facebook is great for local engagement, Instagram for showing repairs, and YouTube for detailed automotive tutorials."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout 
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={mechanicDigitalMarketingHero}
-      heroAlt="Professional automotive service digital marketing and customer acquisition"
-    >
+  const faqs = [{
+    question: "How can digital marketing help my auto repair shop?",
+    answer: "Digital marketing helps mechanics build trust with potential customers, showcase expertise through educational content, attract customers actively searching for auto repair services, and maintain relationships that lead to repeat business and referrals."
+  }, {
+    question: "What's the most important online platform for auto shops?",
+    answer: "Google My Business is crucial as most people search for 'auto repair near me'. Combined with a professional website showcasing your services and customer reviews, these form the foundation of your digital presence."
+  }, {
+    question: "How do I get more online reviews for my auto shop?",
+    answer: "Follow up with customers after service completion, make the review process easy by sending direct links, provide excellent service worth reviewing, and consider small incentives for honest feedback. Always respond professionally to all reviews."
+  }, {
+    question: "Should mechanics use social media marketing?",
+    answer: "Yes, social media is excellent for showing your work, building community trust, and educational content. Facebook is great for local engagement, Instagram for showing repairs, and YouTube for detailed automotive tutorials."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={mechanicDigitalMarketingHero} heroAlt="Professional automotive service digital marketing and customer acquisition">
       <p className="text-xl text-muted-foreground mb-8">
-        The automotive service industry is built on trust and expertise, but in today's digital world, even the best mechanics need strong online marketing to attract and retain customers. This comprehensive guide reveals proven digital marketing strategies that successful automotive service businesses use to build their reputation, attract loyal customers, and grow sustainably.
+        The automotive service industry is built on trust and expertise, but in today&apos;s digital world, even the best mechanics need strong online marketing to attract and retain customers. This comprehensive guide reveals proven digital marketing strategies that successful automotive service businesses use to build their reputation, attract loyal customers, and grow sustainably.
       </p>
 
       <h2>Understanding Your Automotive Service Market</h2>
@@ -130,7 +145,7 @@ const MechanicDigitalMarketing = () => {
       <ul>
         <li>Google My Business optimization with service photos</li>
         <li>Location-specific landing pages</li>
-        <li>Local keyword optimization (e.g., "auto repair [city]")</li>
+        <li>Local keyword optimization (e.g., &quot;auto repair [city]&quot;)</li>
         <li>Citations in automotive and local directories</li>
         <li>Reviews management and response strategy</li>
       </ul>
@@ -148,15 +163,15 @@ const MechanicDigitalMarketing = () => {
           <CardContent>
             <h4 className="font-semibold mb-3">Local SEO Strategy</h4>
             <ul className="space-y-2 text-sm mb-4">
-              <li>• Target "auto repair near me" (27,000 monthly searches)</li>
-              <li>• Optimize for "car mechanic [city]" variations</li>
+              <li>• Target &quot;auto repair near me&quot; (27,000 monthly searches)</li>
+              <li>• Optimize for &quot;car mechanic [city]&quot; variations</li>
               <li>• Create service-specific pages (brake repair, oil change)</li>
               <li>• Build citations in automotive directories</li>
             </ul>
             
             <h4 className="font-semibold mb-3">Google Ads for Immediate Results</h4>
             <ul className="space-y-2 text-sm">
-              <li>• Emergency repair keywords ("car won't start")</li>
+              <li>• Emergency repair keywords (&quot;car won&apos;t start&quot;)</li>
               <li>• Maintenance service campaigns</li>
               <li>• Local service ads for map visibility</li>
               <li>• Remarketing to website visitors</li>
@@ -256,7 +271,7 @@ const MechanicDigitalMarketing = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Play className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-                <span><strong>Problem explanations:</strong> What's wrong and why it happened</span>
+                <span><strong>Problem explanations:</strong> What&apos;s wrong and why it happened</span>
               </li>
               <li className="flex items-start gap-3">
                 <Play className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
@@ -285,7 +300,7 @@ const MechanicDigitalMarketing = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Star className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-                <span><strong>Long-term relationships:</strong> Customers who've trusted you for years</span>
+                <span><strong>Long-term relationships:</strong> Customers who&apos;ve trusted you for years</span>
               </li>
               <li className="flex items-start gap-3">
                 <Star className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
@@ -394,8 +409,6 @@ const MechanicDigitalMarketing = () => {
           </CardContent>
         </Card>
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default MechanicDigitalMarketing;

@@ -1,12 +1,40 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Shield, Target, Users, Building, Zap, BookOpen, Lightbulb, Search, Award, TrendingUp } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import cyberSecurityDigitalMarketingHero from '@/assets/blog/cyber-security-digital-marketing.jpg';
-
+export const metadata = createMetadata({
+  title: "Cyber Security Digital Marketing Strategies",
+  description: "Expert guidance on cyber security digital marketing strategies. Learn proven strategies and best practices for business growth.",
+  path: "/blog/cyber-security-digital-marketing-strategies",
+  keywords: ["cyber", "security", "digital", "marketing", "strategies", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Cyber Security Digital Marketing Strategies",
+    description: "Expert guidance on cyber security digital marketing strategies. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/cyber-security-digital-marketing-strategies",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Cyber Security Digital Marketing Strategies"
+    }],
+    publishedTime: "2024-01-30T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.558Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cyber Security Digital Marketing Strategies",
+    description: "Expert guidance on cyber security digital marketing strategies. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const CyberSecurityDigitalMarketing = () => {
   const articleData = {
     headline: "Digital Marketing Strategies for New Cyber Security Firms: Complete Startup Growth Guide",
@@ -20,30 +48,17 @@ const CyberSecurityDigitalMarketing = () => {
     readTime: "26 min read",
     tags: ["Cyber Security Marketing", "Startup Marketing", "Digital Marketing", "Business Growth"]
   };
-
-  const faqs = [
-    {
-      question: "How much should cyber security startups spend on marketing?",
-      answer: "Successful cyber security firms invest 15-25% of revenue in marketing. Startups should allocate $10,000-25,000 monthly for comprehensive digital marketing, focusing 60% on digital channels."
-    },
-    {
-      question: "What's the biggest challenge for cyber security startup marketing?",
-      answer: "Building trust and credibility is the biggest challenge. 87% of cyber security startups fail within 3 years, often due to inadequate marketing and client acquisition strategies."
-    },
-    {
-      question: "How long does cyber security lead generation take?",
-      answer: "B2B cyber security sales cycles average 6-18 months. Content marketing and SEO show results in 3-6 months, while paid advertising can generate immediate leads."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage={cyberSecurityDigitalMarketingHero}
-        heroAlt="Cyber security startup team developing digital marketing strategies for business growth"
-      >
+  const faqs = [{
+    question: "How much should cyber security startups spend on marketing?",
+    answer: "Successful cyber security firms invest 15-25% of revenue in marketing. Startups should allocate $10,000-25,000 monthly for comprehensive digital marketing, focusing 60% on digital channels."
+  }, {
+    question: "What's the biggest challenge for cyber security startup marketing?",
+    answer: "Building trust and credibility is the biggest challenge. 87% of cyber security startups fail within 3 years, often due to inadequate marketing and client acquisition strategies."
+  }, {
+    question: "How long does cyber security lead generation take?",
+    answer: "B2B cyber security sales cycles average 6-18 months. Content marketing and SEO show results in 3-6 months, while paid advertising can generate immediate leads."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={cyberSecurityDigitalMarketingHero} heroAlt="Cyber security startup team developing digital marketing strategies for business growth">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Complete digital marketing playbook for startup cyber security companies. Learn how to establish 
           market presence, attract your first clients, build credibility, and create sustainable growth 
@@ -57,65 +72,29 @@ const CyberSecurityDigitalMarketing = () => {
             <h3 className="text-xl font-semibold mb-4">Cyber Security Startup Statistics</h3>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
               <div>• 87% of cyber security startups fail within first 3 years
-                <Citation 
-                  inline 
-                  source="CB Insights" 
-                  url="https://www.cbinsights.com/research/cybersecurity-startup-market-map/" 
-                  title="The Cybersecurity Startup Market Map" 
-                  date="2023"
-                />
+                <Citation inline source="CB Insights" url="https://www.cbinsights.com/research/cybersecurity-startup-market-map/" title="The Cybersecurity Startup Market Map" date="2023" />
               </div>
               <div>• Average customer acquisition cost: $15,000-$50,000
-                <Citation 
-                  inline 
-                  source="SaaS Capital" 
-                  url="https://www.saas-capital.com/blog-posts/what-does-it-cost-to-acquire-a-customer/" 
-                  title="B2B SaaS Customer Acquisition Cost Benchmarks" 
-                  date="2023"
-                />
+                <Citation inline source="SaaS Capital" url="https://www.saas-capital.com/blog-posts/what-does-it-cost-to-acquire-a-customer/" title="B2B SaaS Customer Acquisition Cost Benchmarks" date="2023" />
               </div>
               <div>• 73% struggle with lead generation in first year
-                <Citation 
-                  inline 
-                  source="Cybersecurity Ventures" 
-                  url="https://cybersecurityventures.com/cybersecurity-market-report/" 
-                  title="Global Cybersecurity Market Report" 
-                  date="2023"
-                />
+                <Citation inline source="Cybersecurity Ventures" url="https://cybersecurityventures.com/cybersecurity-market-report/" title="Global Cybersecurity Market Report" date="2023" />
               </div>
               <div>• Successful firms invest 15-25% of revenue in marketing
-                <Citation 
-                  inline 
-                  source="HubSpot Research" 
-                  url="https://blog.hubspot.com/marketing/how-much-budget-for-marketing" 
-                  title="How Much Should Companies Spend on Marketing?" 
-                  date="2023"
-                />
+                <Citation inline source="HubSpot Research" url="https://blog.hubspot.com/marketing/how-much-budget-for-marketing" title="How Much Should Companies Spend on Marketing?" date="2023" />
               </div>
               <div>• Digital channels drive 68% of new security leads
-                <Citation 
-                  inline 
-                  source="Demand Gen Report" 
-                  url="https://www.demandgenreport.com/features/industry-insights/b2b-buyers-survey-report" 
-                  title="B2B Buyers Survey Report" 
-                  date="2023"
-                />
+                <Citation inline source="Demand Gen Report" url="https://www.demandgenreport.com/features/industry-insights/b2b-buyers-survey-report" title="B2B Buyers Survey Report" date="2023" />
               </div>
               <div>• B2B sales cycles average 6-18 months
-                <Citation 
-                  inline 
-                  source="Salesforce Research" 
-                  url="https://www.salesforce.com/resources/articles/b2b-sales-cycle/" 
-                  title="State of Sales Report" 
-                  date="2023"
-                />
+                <Citation inline source="Salesforce Research" url="https://www.salesforce.com/resources/articles/b2b-sales-cycle/" title="State of Sales Report" date="2023" />
               </div>
             </div>
           </CardContent>
         </Card>
 
         <p className="mb-8">
-          Starting a cyber security company requires navigating unique challenges that don't exist in other industries. 
+          Starting a cyber security company requires navigating unique challenges that don&apos;t exist in other industries. 
           Trust, credibility, and technical expertise must be established before prospects will even consider your solutions. 
           Traditional marketing approaches often fail because decision-makers require extensive education and proof before 
           making security investments.
@@ -233,7 +212,7 @@ const CyberSecurityDigitalMarketing = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <Shield className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
-                    <span><strong>Quantified case studies:</strong> "Reduced security incidents by 85%" with specific metrics</span>
+                    <span><strong>Quantified case studies:</strong> &quot;Reduced security incidents by 85%&quot; with specific metrics</span>
                   </li>
                 </ul>
               </div>
@@ -331,11 +310,11 @@ const CyberSecurityDigitalMarketing = () => {
             <CardContent>
               <h4 className="font-semibold mb-3">High-Intent Security Keywords</h4>
               <ul className="space-y-2 text-sm mb-4">
-                <li>• "cyber security audit [industry]" - 2,400 monthly searches</li>
-                <li>• "penetration testing services" - 1,900 monthly searches</li>
-                <li>• "security compliance consulting" - 1,600 monthly searches</li>
-                <li>• "incident response services" - 1,200 monthly searches</li>
-                <li>• "GDPR compliance consultant" - 3,200 monthly searches</li>
+                <li>• &quot;cyber security audit [industry]&quot; - 2,400 monthly searches</li>
+                <li>• &quot;penetration testing services&quot; - 1,900 monthly searches</li>
+                <li>• &quot;security compliance consulting&quot; - 1,600 monthly searches</li>
+                <li>• &quot;incident response services&quot; - 1,200 monthly searches</li>
+                <li>• &quot;GDPR compliance consultant&quot; - 3,200 monthly searches</li>
               </ul>
               
               <h4 className="font-semibold mb-3">Content Optimization Strategy</h4>
@@ -476,8 +455,6 @@ const CyberSecurityDigitalMarketing = () => {
           </Card>
         </div>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default CyberSecurityDigitalMarketing;

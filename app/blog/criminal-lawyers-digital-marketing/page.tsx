@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -6,7 +7,35 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import criminalLawyersDigitalMarketingHero from '@/assets/blog/criminal-lawyers-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Criminal Lawyers Digital Marketing",
+  description: "Expert guidance on criminal lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/criminal-lawyers-digital-marketing",
+  keywords: ["criminal", "lawyers", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Criminal Lawyers Digital Marketing",
+    description: "Expert guidance on criminal lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/criminal-lawyers-digital-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Criminal Lawyers Digital Marketing"
+    }],
+    publishedTime: "2024-02-05T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.542Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Criminal Lawyers Digital Marketing",
+    description: "Expert guidance on criminal lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const CriminalLawyersDigitalMarketing = () => {
   const articleData = {
     headline: "Criminal Lawyers Digital Marketing: Defense Attorney Growth Strategies & Client Acquisition Guide 2025",
@@ -20,30 +49,17 @@ const CriminalLawyersDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["Criminal Lawyers", "Legal Marketing", "Digital Strategy", "Client Acquisition", "Legal Ethics"]
   };
-
-  const faqs = [
-    {
-      question: "What are the ethical considerations for criminal lawyer digital marketing?",
-      answer: "Criminal lawyers must follow strict advertising rules, including attorney privilege protection, avoiding solicitation, ensuring accurate representations, complying with state bar regulations, and maintaining client confidentiality in all marketing efforts."
-    },
-    {
-      question: "How can criminal defense attorneys build trust online?",
-      answer: "Build trust through transparent communication, showcasing credentials and experience, publishing educational content, collecting authentic client testimonials (with permission), and maintaining professional online presence across all platforms."
-    },
-    {
-      question: "What's the most effective marketing channel for criminal lawyers?",
-      answer: "Local SEO and Google My Business optimization are most effective, combined with targeted Google Ads for urgent legal needs, referral programs, and content marketing that demonstrates legal expertise and understanding of criminal law."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.legal}
-      faqs={faqs}
-      heroImage={criminalLawyersDigitalMarketingHero}
-      heroAlt="Criminal lawyers digital marketing strategies for defense attorneys"
-    >
+  const faqs = [{
+    question: "What are the ethical considerations for criminal lawyer digital marketing?",
+    answer: "Criminal lawyers must follow strict advertising rules, including attorney privilege protection, avoiding solicitation, ensuring accurate representations, complying with state bar regulations, and maintaining client confidentiality in all marketing efforts."
+  }, {
+    question: "How can criminal defense attorneys build trust online?",
+    answer: "Build trust through transparent communication, showcasing credentials and experience, publishing educational content, collecting authentic client testimonials (with permission), and maintaining professional online presence across all platforms."
+  }, {
+    question: "What's the most effective marketing channel for criminal lawyers?",
+    answer: "Local SEO and Google My Business optimization are most effective, combined with targeted Google Ads for urgent legal needs, referral programs, and content marketing that demonstrates legal expertise and understanding of criminal law."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={criminalLawyersDigitalMarketingHero} heroAlt="Criminal lawyers digital marketing strategies for defense attorneys">
       <Card className="p-8 mb-8">
         <p className="text-lg font-semibold text-primary mb-4">
           Criminal defense attorneys using strategic digital marketing see 400% higher quality client acquisition while maintaining ethical standards and professional reputation.
@@ -236,10 +252,10 @@ const CriminalLawyersDigitalMarketing = () => {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li>⚖️ <strong>Rights education:</strong> "What to Do When Arrested"</li>
-              <li>🚗 <strong>DUI guides:</strong> "Understanding DUI Penalties"</li>
-              <li>📋 <strong>Process explanations:</strong> "Criminal Court Procedures"</li>
-              <li>💰 <strong>Legal costs:</strong> "Public Defender vs Private Attorney"</li>
+              <li>⚖️ <strong>Rights education:</strong> &quot;What to Do When Arrested&quot;</li>
+              <li>🚗 <strong>DUI guides:</strong> &quot;Understanding DUI Penalties&quot;</li>
+              <li>📋 <strong>Process explanations:</strong> &quot;Criminal Court Procedures&quot;</li>
+              <li>💰 <strong>Legal costs:</strong> &quot;Public Defender vs Private Attorney&quot;</li>
               <li>🔍 <strong>Case studies:</strong> Anonymous successful defenses</li>
             </ul>
           </CardContent>
@@ -262,8 +278,8 @@ const CriminalLawyersDigitalMarketing = () => {
       </div>
 
       <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground my-8">
-        "Criminal defense marketing must balance aggressive client acquisition with the highest ethical standards. 
-        Success comes from building trust through education, not promises of outcomes."
+        &quot;Criminal defense marketing must balance aggressive client acquisition with the highest ethical standards. 
+        Success comes from building trust through education, not promises of outcomes.&quot;
         <footer className="text-sm mt-2">— Criminal Defense Marketing Ethics</footer>
       </blockquote>
 
@@ -357,21 +373,21 @@ const CriminalLawyersDigitalMarketing = () => {
           <div>
             <h5 className="font-medium mb-3">Practice Area Keywords</h5>
             <ul className="space-y-2 text-sm">
-              <li>• "DUI lawyer [city]" - Average CPC: $47.50</li>
-              <li>• "Criminal defense attorney near me" - High intent</li>
-              <li>• "Drug possession lawyer" - Specialized defense</li>
-              <li>• "Domestic violence attorney" - Complex cases</li>
-              <li>• "Expungement lawyer [state]" - Post-conviction relief</li>
+              <li>• &quot;DUI lawyer [city]&quot; - Average CPC: $47.50</li>
+              <li>• &quot;Criminal defense attorney near me&quot; - High intent</li>
+              <li>• &quot;Drug possession lawyer&quot; - Specialized defense</li>
+              <li>• &quot;Domestic violence attorney&quot; - Complex cases</li>
+              <li>• &quot;Expungement lawyer [state]&quot; - Post-conviction relief</li>
             </ul>
           </div>
           <div>
             <h5 className="font-medium mb-3">Long-tail Opportunities</h5>
             <ul className="space-y-2 text-sm">
-              <li>• "What to do if arrested for [charge]"</li>
-              <li>• "How to beat a DUI charge in [state]"</li>
-              <li>• "First time [offense] lawyer"</li>
-              <li>• "[City] criminal court procedures"</li>
-              <li>• "Rights after arrest [location]"</li>
+              <li>• &quot;What to do if arrested for [charge]&quot;</li>
+              <li>• &quot;How to beat a DUI charge in [state]&quot;</li>
+              <li>• &quot;First time [offense] lawyer&quot;</li>
+              <li>• &quot;[City] criminal court procedures&quot;</li>
+              <li>• &quot;Rights after arrest [location]&quot;</li>
             </ul>
           </div>
         </div>
@@ -389,10 +405,10 @@ const CriminalLawyersDigitalMarketing = () => {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
-              <li>• <strong>Emergency Legal Help:</strong> "Arrested", "Need lawyer now"</li>
+              <li>• <strong>Emergency Legal Help:</strong> &quot;Arrested&quot;, &quot;Need lawyer now&quot;</li>
               <li>• <strong>DUI/DWI Defense:</strong> Highest value, competitive keywords</li>
               <li>• <strong>Serious Felonies:</strong> Complex cases requiring expertise</li>
-              <li>• <strong>Local Court Terms:</strong> "[City] criminal court", "courthouse"</li>
+              <li>• <strong>Local Court Terms:</strong> &quot;[City] criminal court&quot;, &quot;courthouse&quot;</li>
             </ul>
             <div className="mt-3 p-3 bg-red-50 dark:bg-red-950/30 rounded">
               <p className="text-xs text-red-700 dark:text-red-300">Budget: $150-500/day depending on market size</p>
@@ -406,7 +422,7 @@ const CriminalLawyersDigitalMarketing = () => {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
-              <li>• <strong>Educational Searches:</strong> "How to", "What happens if"</li>
+              <li>• <strong>Educational Searches:</strong> &quot;How to&quot;, &quot;What happens if&quot;</li>
               <li>• <strong>Competitor Terms:</strong> Ethical competitor targeting</li>
               <li>• <strong>Branded Searches:</strong> Firm name protection</li>
               <li>• <strong>Retargeting:</strong> Website visitors and consultation schedulers</li>
@@ -479,7 +495,7 @@ const CriminalLawyersDigitalMarketing = () => {
             <strong>4. Outcome Emphasis:</strong> Demonstrate successful defense results
           </div>
           <div>
-            <strong>5. Disclaimer Required:</strong> "Results may vary" and case-specific nature
+            <strong>5. Disclaimer Required:</strong> &quot;Results may vary&quot; and case-specific nature
           </div>
         </div>
       </div>
@@ -666,15 +682,13 @@ const CriminalLawyersDigitalMarketing = () => {
 
       <div className="bg-muted p-4 rounded-lg border-l-4 border-primary my-8">
         <p className="text-sm text-muted-foreground italic">
-          "Effective criminal defense marketing balances aggressive client acquisition with the highest ethical standards. 
-          Success comes from building trust through education, demonstrating expertise, and maintaining professional integrity while helping clients navigate their most challenging legal situations."
+          &quot;Effective criminal defense marketing balances aggressive client acquisition with the highest ethical standards. 
+          Success comes from building trust through education, demonstrating expertise, and maintaining professional integrity while helping clients navigate their most challenging legal situations.&quot;
         </p>
         <cite className="text-xs text-muted-foreground block mt-2">
           — Criminal Defense Marketing Excellence, 2025
         </cite>
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default CriminalLawyersDigitalMarketing;

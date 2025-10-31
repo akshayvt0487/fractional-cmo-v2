@@ -1,12 +1,40 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
-
 import { Palette, Target, Star, Phone, MapPin, Camera, FileText, Users } from 'lucide-react';
 import paintersLeadGenerationHero from '@/assets/blog/painters-lead-generation-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
+  description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
+  path: "/blog/painters-lead-generation-guide",
+  keywords: ["painters", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
+    description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/painters-lead-generation-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025"
+    }],
+    publishedTime: "2024-11-28",
+    modifiedTime: "2025-10-31T11:10:05.096Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
+    description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const articleData = {
   headline: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
   description: "Master lead generation for painting businesses. Learn proven strategies to attract residential and commercial clients, build a strong brand presence, and grow your painting company through digital marketing.",
@@ -19,60 +47,41 @@ const articleData = {
   readTime: "26 min read",
   tags: ["Painters Lead Generation", "Painting Business Marketing", "Home Improvement Marketing", "Trade Business Growth", "Digital Marketing for Painters"]
 };
-
-const faqs = [
-  {
-    question: "How much should painters spend on lead generation?",
-    answer: "Most successful painting businesses allocate 5-10% of their revenue to marketing and lead generation. Start with a smaller budget and scale up as you see returns."
-  },
-  {
-    question: "What's the best lead generation method for painters?",
-    answer: "A combination of local SEO, Google Ads, referral programs, and social media marketing typically works best. The optimal mix depends on your local market and target customers."
-  },
-  {
-    question: "How long does it take to see results from painter marketing?",
-    answer: "Google Ads can generate leads within days, while SEO and content marketing typically take 3-6 months to show significant results. Referral programs can be effective immediately."
-  },
-  {
-    question: "Should painters focus on residential or commercial clients?",
-    answer: "Both have advantages. Residential provides steady volume and referrals, while commercial offers larger projects and higher margins. Many successful painters pursue both markets with targeted strategies."
-  }
-];
-
-const relatedArticles = [
-  {
-    title: "Digital Marketing for Painters: Complete Growth Strategy 2025",
-    description: "Comprehensive digital marketing guide for painting businesses",
-    url: "/blog/painters-digital-marketing-guide",
-    category: "Tradies - Painters",
-    readTime: "25 min read"
-  },
-  {
-    title: "Local SEO for Trade Businesses: Dominate Your Service Area",
-    description: "Master local search optimization for trade businesses",
-    url: "/blog/local-seo-trade-businesses",
-    category: "Digital Marketing - SEO",
-    readTime: "18 min read"
-  },
-  {
-    title: "Home Builders Lead Generation Guide",
-    description: "Proven strategies to attract quality construction clients",
-    url: "/blog/home-builders-lead-generation-guide",
-    category: "Construction",
-    readTime: "20 min read"
-  }
-];
-
+const faqs = [{
+  question: "How much should painters spend on lead generation?",
+  answer: "Most successful painting businesses allocate 5-10% of their revenue to marketing and lead generation. Start with a smaller budget and scale up as you see returns."
+}, {
+  question: "What's the best lead generation method for painters?",
+  answer: "A combination of local SEO, Google Ads, referral programs, and social media marketing typically works best. The optimal mix depends on your local market and target customers."
+}, {
+  question: "How long does it take to see results from painter marketing?",
+  answer: "Google Ads can generate leads within days, while SEO and content marketing typically take 3-6 months to show significant results. Referral programs can be effective immediately."
+}, {
+  question: "Should painters focus on residential or commercial clients?",
+  answer: "Both have advantages. Residential provides steady volume and referrals, while commercial offers larger projects and higher margins. Many successful painters pursue both markets with targeted strategies."
+}];
+const relatedArticles = [{
+  title: "Digital Marketing for Painters: Complete Growth Strategy 2025",
+  description: "Comprehensive digital marketing guide for painting businesses",
+  url: "/blog/painters-digital-marketing-guide",
+  category: "Tradies - Painters",
+  readTime: "25 min read"
+}, {
+  title: "Local SEO for Trade Businesses: Dominate Your Service Area",
+  description: "Master local search optimization for trade businesses",
+  url: "/blog/local-seo-trade-businesses",
+  category: "Digital Marketing - SEO",
+  readTime: "18 min read"
+}, {
+  title: "Home Builders Lead Generation Guide",
+  description: "Proven strategies to attract quality construction clients",
+  url: "/blog/home-builders-lead-generation-guide",
+  category: "Construction",
+  readTime: "20 min read"
+}];
 const PaintersLeadGeneration = () => {
-  return (
-      <>
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles}
-        faqs={faqs}
-        heroImage={paintersLeadGenerationHero}
-        heroAlt="Professional painters working on home exterior - lead generation guide"
-      >
+  return <>
+      <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={paintersLeadGenerationHero} heroAlt="Professional painters working on home exterior - lead generation guide">
         <p className="text-lg text-muted-foreground mb-6">
           The painting industry is highly competitive, with over 400,000 painting contractors operating across Australia and the US. Success in this market requires more than just quality workmanship—it demands a strategic approach to lead generation that consistently attracts the right clients to your painting business.
         </p>
@@ -203,28 +212,28 @@ const PaintersLeadGeneration = () => {
               <div>
                 <Badge variant="secondary" className="mb-2">Service + Location</Badge>
                 <ul className="space-y-1">
-                  <li>• "painters near me"</li>
-                  <li>• "house painters [city]"</li>
-                  <li>• "interior painters [area]"</li>
-                  <li>• "exterior painting [suburb]"</li>
+                  <li>• &quot;painters near me&quot;</li>
+                  <li>• &quot;house painters [city]&quot;</li>
+                  <li>• &quot;interior painters [area]&quot;</li>
+                  <li>• &quot;exterior painting [suburb]&quot;</li>
                 </ul>
               </div>
               <div>
                 <Badge variant="secondary" className="mb-2">Urgent Intent</Badge>
                 <ul className="space-y-1">
-                  <li>• "emergency painter"</li>
-                  <li>• "same day painting"</li>
-                  <li>• "weekend painters"</li>
-                  <li>• "fast painting service"</li>
+                  <li>• &quot;emergency painter&quot;</li>
+                  <li>• &quot;same day painting&quot;</li>
+                  <li>• &quot;weekend painters&quot;</li>
+                  <li>• &quot;fast painting service&quot;</li>
                 </ul>
               </div>
               <div>
                 <Badge variant="secondary" className="mb-2">Specialty Services</Badge>
                 <ul className="space-y-1">
-                  <li>• "commercial painters"</li>
-                  <li>• "cabinet painters"</li>
-                  <li>• "texture painting"</li>
-                  <li>• "eco-friendly painters"</li>
+                  <li>• &quot;commercial painters&quot;</li>
+                  <li>• &quot;cabinet painters&quot;</li>
+                  <li>• &quot;texture painting&quot;</li>
+                  <li>• &quot;eco-friendly painters&quot;</li>
                 </ul>
               </div>
             </div>
@@ -315,19 +324,19 @@ const PaintersLeadGeneration = () => {
                   <div>
                     <h4 className="font-semibold mb-2">How-To Guides:</h4>
                     <ul className="text-sm space-y-1">
-                      <li>• "How to Choose the Right Paint Color"</li>
-                      <li>• "Preparing Your Home for Painting"</li>
-                      <li>• "Understanding Paint Types and Finishes"</li>
-                      <li>• "Seasonal Painting Considerations"</li>
+                      <li>• &quot;How to Choose the Right Paint Color&quot;</li>
+                      <li>• &quot;Preparing Your Home for Painting&quot;</li>
+                      <li>• &quot;Understanding Paint Types and Finishes&quot;</li>
+                      <li>• &quot;Seasonal Painting Considerations&quot;</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Problem-Solution Content:</h4>
                     <ul className="text-sm space-y-1">
-                      <li>• "Fixing Paint Peeling and Bubbling"</li>
-                      <li>• "Dealing with Moisture Issues"</li>
-                      <li>• "Color Matching Challenges"</li>
-                      <li>• "Paint Failure Prevention"</li>
+                      <li>• &quot;Fixing Paint Peeling and Bubbling&quot;</li>
+                      <li>• &quot;Dealing with Moisture Issues&quot;</li>
+                      <li>• &quot;Color Matching Challenges&quot;</li>
+                      <li>• &quot;Paint Failure Prevention&quot;</li>
                     </ul>
                   </div>
                 </div>
@@ -429,8 +438,6 @@ const PaintersLeadGeneration = () => {
         </section>
 
       </OptimizedBlogLayout>
-    </>
-  );
+    </>;
 };
-
 export default PaintersLeadGeneration;

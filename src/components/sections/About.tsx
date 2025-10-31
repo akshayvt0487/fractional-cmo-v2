@@ -11,7 +11,7 @@ const About = () => {
           <div className="space-y-6">
             <div>
               <h2 className="text-3xl font-semibold md:text-4xl">
-                Hello, I'm <em className="text-primary">Basheer Padanna</em>
+                Hello, I&apos;m <em className="text-primary">Basheer Padanna</em>
               </h2>
               <p className="mt-2 text-xl text-muted-foreground">
                 Fractional CMO, Growth Strategist & Performance Marketing Leader
@@ -25,7 +25,7 @@ const About = () => {
               </p>
               
               <p className="text-muted-foreground">
-                I've worked with founder-led startups, scaling companies, and established brands across service based businesses, NDIS providers, construction companies, and tradies.
+                I&apos;ve worked with founder-led startups, scaling companies, and established brands across service based businesses, NDIS providers, construction companies, and tradies.
               </p>
               
               <div className="mt-6">
@@ -50,8 +50,8 @@ const About = () => {
               src={basheerPhoto}
               alt="Basheer Padanna - Experienced Fractional CMO and Digital Marketing Strategist"
               className="rounded-lg shadow-lg"
-              loading="eager"
-            />
+              loading="eager" />
+            
           </div>
         </div>
         
@@ -82,8 +82,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default About;

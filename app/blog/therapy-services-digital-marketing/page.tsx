@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Activity, Brain, Users, CheckCircle, TrendingUp, Target } from "lucide-react";
 import StrategyForm from "@/components/ui/strategy-form";
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import therapyServicesDigitalMarketingHero from "@/assets/blog/therapy-services-digital-marketing-hero.jpg";
-
+export const metadata = createMetadata({
+  title: "Therapy Services Digital Marketing",
+  description: "Expert guidance on therapy services digital marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/therapy-services-digital-marketing",
+  keywords: ["therapy", "services", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Therapy Services Digital Marketing",
+    description: "Expert guidance on therapy services digital marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/therapy-services-digital-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Therapy Services Digital Marketing"
+    }],
+    publishedTime: "2024-11-15T09:00:00+10:00",
+    modifiedTime: "2025-10-31T11:10:05.307Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Therapy Services Digital Marketing",
+    description: "Expert guidance on therapy services digital marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const TherapyServicesDigitalMarketing = () => {
   const articleData = {
     headline: "Digital Marketing for Therapy Services: Complete NDIS Provider Growth Guide",
@@ -19,36 +47,23 @@ const TherapyServicesDigitalMarketing = () => {
     readTime: "25 min read",
     tags: ["Digital Marketing", "Therapy Services", "NDIS", "Healthcare Marketing", "Client Acquisition"]
   };
-
-  const faqs = [
-    {
-      question: "How do therapy services market ethically while staying compliant?",
-      answer: "Focus on educational content that helps families understand therapy benefits, share success stories with consent, maintain professional boundaries, and ensure all marketing claims are evidence-based and truthful."
-    },
-    {
-      question: "What digital marketing channels work best for therapy services?",
-      answer: "Local SEO, Google Ads, educational content marketing, and social media (especially Facebook and Instagram) are most effective. Email marketing and referral programs also drive significant results for therapy practices."
-    },
-    {
-      question: "How much should therapy practices spend on digital marketing?",
-      answer: "Therapy practices should allocate 5-8% of revenue to marketing, with 70% focused on digital channels. Start with $2,500-4,000 monthly for local SEO, Google Ads, and content marketing to see meaningful results."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.ndis}
-        faqs={faqs}
-        heroImage={therapyServicesDigitalMarketingHero}
-        heroAlt="Digital marketing strategies for therapy services including speech therapy, occupational therapy, and psychology practices"
-      >
+  const faqs = [{
+    question: "How do therapy services market ethically while staying compliant?",
+    answer: "Focus on educational content that helps families understand therapy benefits, share success stories with consent, maintain professional boundaries, and ensure all marketing claims are evidence-based and truthful."
+  }, {
+    question: "What digital marketing channels work best for therapy services?",
+    answer: "Local SEO, Google Ads, educational content marketing, and social media (especially Facebook and Instagram) are most effective. Email marketing and referral programs also drive significant results for therapy practices."
+  }, {
+    question: "How much should therapy practices spend on digital marketing?",
+    answer: "Therapy practices should allocate 5-8% of revenue to marketing, with 70% focused on digital channels. Start with $2,500-4,000 monthly for local SEO, Google Ads, and content marketing to see meaningful results."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyServicesDigitalMarketingHero} heroAlt="Digital marketing strategies for therapy services including speech therapy, occupational therapy, and psychology practices">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           The therapy services sector under NDIS is experiencing unprecedented growth, with over 580,000 NDIS participants requiring speech therapy, occupational therapy, ABA therapy, and psychology services. However, with increased competition and evolving digital landscapes, therapy providers need sophisticated marketing strategies to attract and retain clients while maintaining their professional reputation.
         </p>
 
         <p className="mb-6">
-          This comprehensive guide reveals proven digital marketing strategies specifically designed for therapy services providers. Whether you're running a speech therapy clinic, occupational therapy practice, ABA therapy center, or psychology practice, these strategies will help you build a sustainable client acquisition system while staying compliant with NDIS guidelines.
+          This comprehensive guide reveals proven digital marketing strategies specifically designed for therapy services providers. Whether you&apos;re running a speech therapy clinic, occupational therapy practice, ABA therapy center, or psychology practice, these strategies will help you build a sustainable client acquisition system while staying compliant with NDIS guidelines.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 my-12">
@@ -127,7 +142,7 @@ const TherapyServicesDigitalMarketing = () => {
         <h2 className="text-3xl font-bold mt-12 mb-6">Foundation Strategy 1: Comprehensive SEO for Therapy Services</h2>
         
         <p className="mb-6">
-          Search Engine Optimization for therapy services requires a multi-layered approach targeting various therapy modalities, local areas, and specific client needs. Here's our proven framework:
+          Search Engine Optimization for therapy services requires a multi-layered approach targeting various therapy modalities, local areas, and specific client needs. Here&apos;s our proven framework:
         </p>
 
         <h3 className="text-2xl font-semibold mt-8 mb-4">Service-Specific Keyword Optimization</h3>
@@ -135,10 +150,10 @@ const TherapyServicesDigitalMarketing = () => {
         <div className="bg-muted/50 p-6 rounded-lg mb-6">
           <h4 className="font-semibold mb-3">Primary Keywords by Service Type:</h4>
           <ul className="space-y-2 text-sm">
-            <li><strong>Speech Therapy:</strong> "speech therapy [location]", "speech pathologist near me", "child speech therapy NDIS"</li>
-            <li><strong>Occupational Therapy:</strong> "occupational therapy clinic", "OT services NDIS", "pediatric occupational therapy"</li>
-            <li><strong>ABA Therapy:</strong> "ABA therapy provider", "applied behavior analysis", "autism therapy services"</li>
-            <li><strong>Psychology:</strong> "child psychologist NDIS", "developmental psychology", "therapy psychology services"</li>
+            <li><strong>Speech Therapy:</strong> &quot;speech therapy [location]&quot;, &quot;speech pathologist near me&quot;, &quot;child speech therapy NDIS&quot;</li>
+            <li><strong>Occupational Therapy:</strong> &quot;occupational therapy clinic&quot;, &quot;OT services NDIS&quot;, &quot;pediatric occupational therapy&quot;</li>
+            <li><strong>ABA Therapy:</strong> &quot;ABA therapy provider&quot;, &quot;applied behavior analysis&quot;, &quot;autism therapy services&quot;</li>
+            <li><strong>Psychology:</strong> &quot;child psychologist NDIS&quot;, &quot;developmental psychology&quot;, &quot;therapy psychology services&quot;</li>
           </ul>
         </div>
 
@@ -151,10 +166,10 @@ const TherapyServicesDigitalMarketing = () => {
         <div className="bg-muted/50 p-6 rounded-lg mb-8">
           <h4 className="font-semibold mb-3">High-Converting Long-Tail Keywords:</h4>
           <ul className="space-y-2 text-sm">
-            <li><strong>Speech Therapy:</strong> "speech therapy for toddlers who won't talk", "stuttering therapy techniques for children", "speech delay assessment NDIS funding"</li>
-            <li><strong>Occupational Therapy:</strong> "sensory integration therapy for autism", "fine motor skills activities occupational therapy", "school readiness occupational therapy"</li>
-            <li><strong>ABA Therapy:</strong> "early intensive behavioral intervention", "ABA therapy for aggressive behavior", "positive behavior support plans"</li>
-            <li><strong>Psychology:</strong> "child anxiety therapy techniques", "ADHD behavioral therapy strategies", "trauma informed therapy for children"</li>
+            <li><strong>Speech Therapy:</strong> &quot;speech therapy for toddlers who won&apos;t talk&quot;, &quot;stuttering therapy techniques for children&quot;, &quot;speech delay assessment NDIS funding&quot;</li>
+            <li><strong>Occupational Therapy:</strong> &quot;sensory integration therapy for autism&quot;, &quot;fine motor skills activities occupational therapy&quot;, &quot;school readiness occupational therapy&quot;</li>
+            <li><strong>ABA Therapy:</strong> &quot;early intensive behavioral intervention&quot;, &quot;ABA therapy for aggressive behavior&quot;, &quot;positive behavior support plans&quot;</li>
+            <li><strong>Psychology:</strong> &quot;child anxiety therapy techniques&quot;, &quot;ADHD behavioral therapy strategies&quot;, &quot;trauma informed therapy for children&quot;</li>
           </ul>
         </div>
 
@@ -407,8 +422,6 @@ const TherapyServicesDigitalMarketing = () => {
           Digital marketing for therapy services requires a balanced approach of professional expertise, genuine care, and strategic growth tactics. Focus on providing value to families while building sustainable marketing systems that grow your practice.
         </p>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default TherapyServicesDigitalMarketing;

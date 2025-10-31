@@ -1,11 +1,40 @@
-'use client'
+'use client';
+
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, Target, Globe, Monitor, MapPin, PenTool, Building, Users, TrendingUp, CheckCircle, Search, BookOpen, BarChart, Lightbulb, Calendar, Mail, Smartphone, Award, Gift, Handshake, Star, MessageCircle } from "lucide-react";
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import accountingDigitalMarketingHero from '@/assets/blog/accounting-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Accounting Digital Marketing Guide",
+  description: "Expert guidance on accounting digital marketing guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/accounting-digital-marketing-guide",
+  keywords: ["accounting", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Accounting Digital Marketing Guide",
+    description: "Expert guidance on accounting digital marketing guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/accounting-digital-marketing-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Accounting Digital Marketing Guide"
+    }],
+    publishedTime: "2024-12-28T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.167Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Accounting Digital Marketing Guide",
+    description: "Expert guidance on accounting digital marketing guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const AccountingDigitalMarketing = () => {
   const articleData = {
     headline: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2025",
@@ -19,30 +48,17 @@ const AccountingDigitalMarketing = () => {
     readTime: "25 min read",
     tags: ["Accounting Marketing", "Digital Marketing", "Client Acquisition", "Professional Services"]
   };
-
-  const faqs = [
-    {
-      question: "How much should accounting firms spend on digital marketing?",
-      answer: "Accounting firms should allocate 7-12% of revenue to marketing, with 60-70% focused on digital channels. Start with $2,000-5,000 monthly for a comprehensive digital strategy."
-    },
-    {
-      question: "What's the best digital marketing strategy for accounting firms?",
-      answer: "A combination of local SEO, content marketing, Google Ads, and LinkedIn marketing works best. Focus on building trust through testimonials, case studies, and educational content."
-    },
-    {
-      question: "How long does it take to see results from accounting firm digital marketing?",
-      answer: "SEO and content marketing typically show results in 3-6 months, while Google Ads can generate leads immediately. Consistent effort over 12+ months delivers the best long-term growth."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage={accountingDigitalMarketingHero}
-        heroAlt="Professional accounting firm implementing digital marketing strategies"
-      >
+  const faqs = [{
+    question: "How much should accounting firms spend on digital marketing?",
+    answer: "Accounting firms should allocate 7-12% of revenue to marketing, with 60-70% focused on digital channels. Start with $2,000-5,000 monthly for a comprehensive digital strategy."
+  }, {
+    question: "What's the best digital marketing strategy for accounting firms?",
+    answer: "A combination of local SEO, content marketing, Google Ads, and LinkedIn marketing works best. Focus on building trust through testimonials, case studies, and educational content."
+  }, {
+    question: "How long does it take to see results from accounting firm digital marketing?",
+    answer: "SEO and content marketing typically show results in 3-6 months, while Google Ads can generate leads immediately. Consistent effort over 12+ months delivers the best long-term growth."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={accountingDigitalMarketingHero} heroAlt="Professional accounting firm implementing digital marketing strategies">
               <Card className="mb-8 bg-primary/5 border-primary/20">
                 <CardContent className="p-6">
                   <p className="text-lg leading-relaxed">
@@ -524,8 +540,6 @@ const AccountingDigitalMarketing = () => {
           </CardContent>
         </Card>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default AccountingDigitalMarketing;

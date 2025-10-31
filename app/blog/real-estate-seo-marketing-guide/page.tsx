@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Search, MapPin, TrendingUp, Users, Globe, Target, CheckCircle } from 'lucide-react';
 import realEstateSEOMarketingHero from '@/assets/blog/real-estate-seo-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Real Estate Seo Marketing Guide",
+  description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/real-estate-seo-marketing-guide",
+  keywords: ["real", "estate", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Real Estate Seo Marketing Guide",
+    description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/real-estate-seo-marketing-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Real Estate Seo Marketing Guide"
+    }],
+    publishedTime: "2025-01-12T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:05.117Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Real Estate Seo Marketing Guide",
+    description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const RealEstateSEOMarketing = () => {
   const articleData = {
     headline: "SEO for Real Estate Agents: Dominate Local Property Search Rankings 2025",
@@ -18,30 +47,17 @@ const RealEstateSEOMarketing = () => {
     readTime: "24 min read",
     tags: ["Real Estate SEO", "Local SEO", "Property Marketing", "Digital Marketing", "Search Optimization"]
   };
-
-  const faqs = [
-    {
-      question: "How long does it take to see SEO results for real estate websites?",
-      answer: "Real estate SEO typically shows initial improvements within 3-6 months, with significant results after 6-12 months of consistent optimization. Local SEO can show faster results, often within 1-3 months for Google My Business optimization."
-    },
-    {
-      question: "What are the most important SEO factors for real estate agents?",
-      answer: "The most critical factors include Google My Business optimization, local keyword targeting, property listing optimization with schema markup, high-quality local content creation, and managing online reviews from clients."
-    },
-    {
-      question: "Should real estate agents focus on national or local SEO?",
-      answer: "Real estate agents should focus primarily on local SEO since most property searches are location-specific. Target keywords like 'real estate agent [city]', 'homes for sale [suburb]', and create location-specific content for your service areas."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={realEstateSEOMarketingHero}
-      heroAlt="Real estate SEO and local search optimization strategies"
-    >
+  const faqs = [{
+    question: "How long does it take to see SEO results for real estate websites?",
+    answer: "Real estate SEO typically shows initial improvements within 3-6 months, with significant results after 6-12 months of consistent optimization. Local SEO can show faster results, often within 1-3 months for Google My Business optimization."
+  }, {
+    question: "What are the most important SEO factors for real estate agents?",
+    answer: "The most critical factors include Google My Business optimization, local keyword targeting, property listing optimization with schema markup, high-quality local content creation, and managing online reviews from clients."
+  }, {
+    question: "Should real estate agents focus on national or local SEO?",
+    answer: "Real estate agents should focus primarily on local SEO since most property searches are location-specific. Target keywords like 'real estate agent [city]', 'homes for sale [suburb]', and create location-specific content for your service areas."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={realEstateSEOMarketingHero} heroAlt="Real estate SEO and local search optimization strategies">
       <Card className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
         <CardContent className="p-6">
           <div className="flex items-start space-x-4">
@@ -637,8 +653,6 @@ const RealEstateSEOMarketing = () => {
         SEO success for real estate agents requires consistent local optimization, valuable content creation, and technical excellence. Implement these strategies to attract more qualified buyers and sellers in your target market areas.
       </p>
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default RealEstateSEOMarketing;

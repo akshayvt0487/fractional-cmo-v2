@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Book } from "lucide-react";
-import  Link  from "next/link";
+import Link from "next/link";
 import Header from "@/components/ui/header";
 import Footer from "@/components/sections/Footer";
 
@@ -16,10 +16,10 @@ const NotReady = () => {
           <div className="container px-4 max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                You're Building Something Great
+                You&apos;re Building Something Great
               </h1>
               <p className="text-muted-foreground">
-                Based on your current revenue stage or marketing budget, a fractional CMO might not be the right fit just yet. But that doesn't mean we can't help you grow.
+                Based on your current revenue stage or marketing budget, a fractional CMO might not be the right fit just yet. But that doesn&apos;t mean we can&apos;t help you grow.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ const NotReady = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  Fractional CMO services are designed for businesses with established or targeted revenue streams ($1M+) and marketing budgets ($5,000+ monthly) that can support strategic initiatives. Here's why:
+                  Fractional CMO services are designed for businesses with established or targeted revenue streams ($1M+) and marketing budgets ($5,000+ monthly) that can support strategic initiatives. Here&apos;s why:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
@@ -45,7 +45,7 @@ const NotReady = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span><strong>Team Management:</strong> CMOs work best when there's a marketing team or vendors to coordinate</span>
+                    <span><strong>Team Management:</strong> CMOs work best when there&apos;s a marketing team or vendors to coordinate</span>
                   </li>
                 </ul>
               </CardContent>
@@ -85,7 +85,7 @@ const NotReady = () => {
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold">Need Help Getting There?</h2>
               <p className="text-muted-foreground">
-                While you're building towards fractional CMO readiness, our marketing agency can help you establish the foundation with professional branding, web design, and digital marketing services.
+                While you&apos;re building towards fractional CMO readiness, our marketing agency can help you establish the foundation with professional branding, web design, and digital marketing services.
               </p>
               
               <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -125,7 +125,7 @@ const NotReady = () => {
               <h2 className="text-2xl font-semibold">Ready to Take the Next Step?</h2>
               <p className="text-muted-foreground">
                 When you reach $1M+ in revenue and have a marketing budget of $5,000+ per month, 
-                that's when fractional CMO services can truly accelerate your growth.
+                that&apos;s when fractional CMO services can truly accelerate your growth.
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -144,8 +144,8 @@ const NotReady = () => {
               <div className="mt-8 p-6 bg-primary/5 rounded-lg border border-primary/20">
                 <p className="text-sm text-muted-foreground">
                   <strong>Want to stay connected?</strong> Follow my content for actionable growth strategies 
-                  that work for businesses at every stage. When you're ready for fractional CMO services, 
-                  I'll be here to help scale your success.
+                  that work for businesses at every stage. When you&apos;re ready for fractional CMO services, 
+                  I&apos;ll be here to help scale your success.
                 </p>
               </div>
             </div>
@@ -154,8 +154,8 @@ const NotReady = () => {
       </main>
       
       <Footer />
-    </>
-  );
+    </>);
+
 };
 
 export default NotReady;

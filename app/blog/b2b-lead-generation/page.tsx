@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, Target, Users, User } from "lucide-react";
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import b2bLeadGenerationHero from '@/assets/blog/b2b-lead-generation-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "B2b Lead Generation",
+  description: "Expert guidance on b2b lead generation. Learn proven strategies and best practices for business growth.",
+  path: "/blog/b2b-lead-generation",
+  keywords: ["lead", "generation", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "B2b Lead Generation",
+    description: "Expert guidance on b2b lead generation. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/b2b-lead-generation",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "B2b Lead Generation"
+    }],
+    publishedTime: "2024-12-31T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.304Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "B2b Lead Generation",
+    description: "Expert guidance on b2b lead generation. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const B2BLeadGeneration = () => {
   const articleData = {
     headline: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
@@ -19,30 +47,17 @@ const B2BLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["B2B Marketing", "Lead Generation", "Business Growth", "Sales Strategy"]
   };
-
-  const faqs = [
-    {
-      question: "What's the average cost per lead in B2B marketing?",
-      answer: "B2B lead costs vary by industry: Technology ($208), Healthcare ($162), Financial Services ($160). Focus on lead quality and lifetime value rather than just acquisition cost."
-    },
-    {
-      question: "How long does B2B lead generation take to show results?",
-      answer: "Content marketing and SEO typically show results in 3-6 months, while paid advertising can generate leads immediately. Most B2B sales cycles take 6-18 months from initial contact to close."
-    },
-    {
-      question: "What's the best B2B lead generation channel?",
-      answer: "LinkedIn is the top B2B lead generation platform, generating 80% of B2B leads. Content marketing, email marketing, and Google Ads are also highly effective when properly executed."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage={b2bLeadGenerationHero}
-        heroAlt="B2B lead generation strategies and funnel optimization"
-      >
+  const faqs = [{
+    question: "What's the average cost per lead in B2B marketing?",
+    answer: "B2B lead costs vary by industry: Technology ($208), Healthcare ($162), Financial Services ($160). Focus on lead quality and lifetime value rather than just acquisition cost."
+  }, {
+    question: "How long does B2B lead generation take to show results?",
+    answer: "Content marketing and SEO typically show results in 3-6 months, while paid advertising can generate leads immediately. Most B2B sales cycles take 6-18 months from initial contact to close."
+  }, {
+    question: "What's the best B2B lead generation channel?",
+    answer: "LinkedIn is the top B2B lead generation platform, generating 80% of B2B leads. Content marketing, email marketing, and Google Ads are also highly effective when properly executed."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={b2bLeadGenerationHero} heroAlt="B2B lead generation strategies and funnel optimization">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Transform your business growth with proven B2B lead generation strategies. Learn how to attract, nurture, 
           and convert high-value business clients through strategic marketing and sales alignment.
@@ -58,49 +73,25 @@ const B2BLeadGeneration = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold text-red-600">61%</div>
                 <div className="text-sm text-muted-foreground">Say lead generation is biggest challenge
-                  <Citation 
-                    inline 
-                    source="HubSpot Research" 
-                    url="https://blog.hubspot.com/marketing/state-of-inbound-2023" 
-                    title="State of Inbound Marketing Report" 
-                    date="2023"
-                  />
+                  <Citation inline source="HubSpot Research" url="https://blog.hubspot.com/marketing/state-of-inbound-2023" title="State of Inbound Marketing Report" date="2023" />
                 </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-600">192%</div>
                 <div className="text-sm text-muted-foreground">Higher qualification rates with mature lead scoring
-                  <Citation 
-                    inline 
-                    source="Marketo" 
-                    url="https://www.marketo.com/definitive-guides/lead-scoring/" 
-                    title="The Definitive Guide to Lead Scoring" 
-                    date="2023"
-                  />
+                  <Citation inline source="Marketo" url="https://www.marketo.com/definitive-guides/lead-scoring/" title="The Definitive Guide to Lead Scoring" date="2023" />
                 </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600">3x</div>
                 <div className="text-sm text-muted-foreground">More leads from content vs traditional marketing
-                  <Citation 
-                    inline 
-                    source="Content Marketing Institute" 
-                    url="https://contentmarketinginstitute.com/research/" 
-                    title="B2B Content Marketing Benchmarks Report" 
-                    date="2023"
-                  />
+                  <Citation inline source="Content Marketing Institute" url="https://contentmarketinginstitute.com/research/" title="B2B Content Marketing Benchmarks Report" date="2023" />
                 </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">80%</div>
                 <div className="text-sm text-muted-foreground">Of B2B leads come from LinkedIn
-                  <Citation 
-                    inline 
-                    source="LinkedIn Marketing Solutions" 
-                    url="https://business.linkedin.com/marketing-solutions/b2b-marketing" 
-                    title="B2B Marketing on LinkedIn: Statistics and Insights" 
-                    date="2023"
-                  />
+                  <Citation inline source="LinkedIn Marketing Solutions" url="https://business.linkedin.com/marketing-solutions/b2b-marketing" title="B2B Marketing on LinkedIn: Statistics and Insights" date="2023" />
                 </div>
               </div>
             </div>
@@ -670,14 +661,8 @@ const B2BLeadGeneration = () => {
           The strategies outlined in this guide provide a comprehensive roadmap for B2B lead generation success. Implement them systematically, measure your results, and continuously optimize based on data. Your investment in strategic lead generation will compound over time, creating a sustainable competitive advantage.
         </p>
 
-        <Citation
-          source="B2B Marketing Association Study 2024"
-          url="https://www.b2bmarketing.net/research"
-          title="B2B companies with strong lead generation processes achieve 133% greater revenue growth than those without systematic approaches."
-        />
+        <Citation source="B2B Marketing Association Study 2024" url="https://www.b2bmarketing.net/research" title="B2B companies with strong lead generation processes achieve 133% greater revenue growth than those without systematic approaches." />
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default B2BLeadGeneration;

@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import growthMarketingStrategyHero from '@/assets/blog/growth-marketing-strategy-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Growth Marketing Strategy",
+  description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/growth-marketing-strategy",
+  keywords: ["growth", "marketing", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Growth Marketing Strategy",
+    description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/growth-marketing-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Growth Marketing Strategy"
+    }],
+    publishedTime: "2024-12-18T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.731Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Growth Marketing Strategy",
+    description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const GrowthMarketingStrategy = () => {
   const articleData = {
     headline: "Growth Marketing Strategies for Professional Services: Data-Driven Scaling Guide 2025",
@@ -18,33 +47,20 @@ const GrowthMarketingStrategy = () => {
     readTime: "28 min read",
     tags: ["Growth Marketing", "Digital Marketing", "Professional Services", "Business Growth", "Data-Driven Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What's the difference between growth marketing and traditional marketing?",
-      answer: "Growth marketing is a systematic, data-driven approach that optimizes every stage of the customer lifecycle, focusing on revenue and retention metrics rather than vanity metrics like impressions. It involves continuous testing and iteration across the entire customer journey."
-    },
-    {
-      question: "How long does it take to see results from growth marketing?",
-      answer: "Initial improvements typically appear within 30-90 days, with significant growth acceleration visible after 6-12 months of consistent optimization. Growth marketing compounds over time as you build better systems and data insights."
-    },
-    {
-      question: "What budget should I allocate for growth marketing?",
-      answer: "Most successful professional service businesses allocate 10-20% of revenue to growth marketing, with at least 30% dedicated to testing and experimentation. The key is starting with proven tactics and scaling what works."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={growthMarketingStrategyHero}
-      heroAlt="Growth marketing dashboard showing conversion metrics and analytics"
-    >
+  const faqs = [{
+    question: "What's the difference between growth marketing and traditional marketing?",
+    answer: "Growth marketing is a systematic, data-driven approach that optimizes every stage of the customer lifecycle, focusing on revenue and retention metrics rather than vanity metrics like impressions. It involves continuous testing and iteration across the entire customer journey."
+  }, {
+    question: "How long does it take to see results from growth marketing?",
+    answer: "Initial improvements typically appear within 30-90 days, with significant growth acceleration visible after 6-12 months of consistent optimization. Growth marketing compounds over time as you build better systems and data insights."
+  }, {
+    question: "What budget should I allocate for growth marketing?",
+    answer: "Most successful professional service businesses allocate 10-20% of revenue to growth marketing, with at least 30% dedicated to testing and experimentation. The key is starting with proven tactics and scaling what works."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={growthMarketingStrategyHero} heroAlt="Growth marketing dashboard showing conversion metrics and analytics">
       <Card className="p-8 mb-8">
         <p className="text-lg leading-relaxed text-muted-foreground">
-          Growth marketing has evolved far beyond traditional marketing tactics. <strong>Companies that implement systematic growth marketing see 20x higher revenue growth rates</strong> compared to those using conventional approaches, according to HubSpot's Growth Marketing Report 2024.
+          Growth marketing has evolved far beyond traditional marketing tactics. <strong>Companies that implement systematic growth marketing see 20x higher revenue growth rates</strong> compared to those using conventional approaches, according to HubSpot&apos;s Growth Marketing Report 2024.
         </p>
         
         <p className="text-lg leading-relaxed text-muted-foreground">
@@ -83,7 +99,7 @@ const GrowthMarketingStrategy = () => {
       </div>
 
       <blockquote className="border-l-4 border-primary pl-6 italic text-lg mb-6">
-        "Growth marketing is not about finding one silver bullet. It's about building a system of interconnected experiments that compound over time to create sustainable competitive advantages." 
+        &quot;Growth marketing is not about finding one silver bullet. It&apos;s about building a system of interconnected experiments that compound over time to create sustainable competitive advantages.&quot; 
         <cite className="block mt-2 text-sm text-muted-foreground">— Sean Ellis, Founder of GrowthHackers</cite>
       </blockquote>
 
@@ -180,7 +196,7 @@ const GrowthMarketingStrategy = () => {
 
       <h3>Conversion Rate Optimization (CRO) Best Practices</h3>
       <p>
-        According to HubSpot's CRO research, the average landing page conversion rate across industries is 2.35%, but the top 25% convert at 5.31% or higher.
+        According to HubSpot&apos;s CRO research, the average landing page conversion rate across industries is 2.35%, but the top 25% convert at 5.31% or higher.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -208,7 +224,7 @@ const GrowthMarketingStrategy = () => {
 
       <h3>Trust Signal Integration</h3>
       <p>
-        Professional service businesses must overcome the <strong>"risk perception barrier"</strong> that comes with high-value, intangible service purchases.
+        Professional service businesses must overcome the <strong>&quot;risk perception barrier&quot;</strong> that comes with high-value, intangible service purchases.
       </p>
 
       <div className="space-y-4 mb-6">
@@ -339,7 +355,7 @@ const GrowthMarketingStrategy = () => {
       
       <h3>Growth Metrics That Matter</h3>
       <p>
-        Focus on metrics that directly correlate with business growth rather than vanity metrics that don't drive revenue.
+        Focus on metrics that directly correlate with business growth rather than vanity metrics that don&apos;t drive revenue.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -400,7 +416,7 @@ const GrowthMarketingStrategy = () => {
 
       <h2>Execute Your Growth Marketing Transformation</h2>
       <p>
-        Growth marketing isn't just about tactics—it's about building a systematic approach to sustainable business expansion. The frameworks and strategies outlined in this guide have helped companies achieve 10x growth while building lasting competitive advantages.
+        Growth marketing isn&apos;t just about tactics—it&apos;s about building a systematic approach to sustainable business expansion. The frameworks and strategies outlined in this guide have helped companies achieve 10x growth while building lasting competitive advantages.
       </p>
       
       <p>
@@ -411,13 +427,7 @@ const GrowthMarketingStrategy = () => {
         The businesses that master growth marketing combine analytical rigor with creative experimentation. Every test teaches you something valuable about your customers, and every optimization compounds your results over time. Your growth marketing system becomes a strategic asset that drives long-term success.
       </p>
 
-      <Citation
-        source="Growth Marketing Conference Report 2024"
-        url="https://www.growthmarketing.com/research"
-        title="Companies implementing systematic growth marketing achieve 37% faster revenue growth than those using traditional marketing approaches."
-      />
-    </OptimizedBlogLayout>
-  );
+      <Citation source="Growth Marketing Conference Report 2024" url="https://www.growthmarketing.com/research" title="Companies implementing systematic growth marketing achieve 37% faster revenue growth than those using traditional marketing approaches." />
+    </OptimizedBlogLayout>;
 };
-
 export default GrowthMarketingStrategy;

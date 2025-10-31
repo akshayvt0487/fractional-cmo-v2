@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-
 import { Shield, Target, Users, Phone, Building, AlertTriangle, Lock } from 'lucide-react';
 import securityLeadGenerationHero from '@/assets/blog/security-lead-generation-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
+  description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
+  path: "/blog/security-lead-generation-strategy",
+  keywords: ["security", "lead", "generation", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
+    description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/security-lead-generation-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025"
+    }],
+    publishedTime: "2024-11-28",
+    modifiedTime: "2025-10-31T11:10:05.246Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
+    description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const articleData = {
   headline: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
   description: "Master lead generation for security companies. Learn proven strategies to attract residential and commercial security clients, build trust, and grow your security business through digital marketing.",
@@ -18,60 +46,41 @@ const articleData = {
   readTime: "24 min read",
   tags: ["Security Lead Generation", "Security Business Marketing", "Security Company Growth", "Digital Marketing for Security", "Security Service Leads"]
 };
-
-const faqs = [
-  {
-    question: "What's the best way to generate security leads online?",
-    answer: "A combination of local SEO, Google Ads for security services, content marketing about security topics, and social proof through case studies typically generates the highest quality leads for security companies."
-  },
-  {
-    question: "How much should security companies spend on marketing?",
-    answer: "Most successful security companies allocate 5-8% of their revenue to marketing and lead generation. Focus on channels that deliver qualified leads rather than just high volume."
-  },
-  {
-    question: "What's the average conversion rate for security leads?",
-    answer: "Security companies typically see conversion rates of 15-25% from qualified leads. Emergency or urgent security requests often convert at 40-60% when responded to quickly."
-  },
-  {
-    question: "Should we focus on residential or commercial security clients?",
-    answer: "Both markets have advantages. Commercial offers higher contract values and longer terms, while residential provides steady volume. Many successful companies serve both with targeted marketing strategies."
-  }
-];
-
-const relatedArticles = [
-  {
-    title: "Security Digital Marketing Guide: Complete Growth Strategy 2025",
-    description: "Comprehensive digital marketing strategies for security companies",
-    url: "/blog/security-digital-marketing-guide",
-    category: "Security",
-    readTime: "26 min read"
-  },
-  {
-    title: "Google Ads for Security Companies: Advanced Strategy Guide",
-    description: "Master Google Ads for security service lead generation",
-    url: "/blog/security-google-ads-strategy",
-    category: "Security",
-    readTime: "26 min read",
-  },
-  {
-    title: "Local SEO for Trade Businesses: Dominate Your Service Area",
-    description: "Advanced local SEO strategies for service businesses",
-    url: "/blog/local-seo-trade-businesses",
-    category: "Digital Marketing - SEO",
-    readTime: "18 min read"
-  }
-];
-
+const faqs = [{
+  question: "What's the best way to generate security leads online?",
+  answer: "A combination of local SEO, Google Ads for security services, content marketing about security topics, and social proof through case studies typically generates the highest quality leads for security companies."
+}, {
+  question: "How much should security companies spend on marketing?",
+  answer: "Most successful security companies allocate 5-8% of their revenue to marketing and lead generation. Focus on channels that deliver qualified leads rather than just high volume."
+}, {
+  question: "What's the average conversion rate for security leads?",
+  answer: "Security companies typically see conversion rates of 15-25% from qualified leads. Emergency or urgent security requests often convert at 40-60% when responded to quickly."
+}, {
+  question: "Should we focus on residential or commercial security clients?",
+  answer: "Both markets have advantages. Commercial offers higher contract values and longer terms, while residential provides steady volume. Many successful companies serve both with targeted marketing strategies."
+}];
+const relatedArticles = [{
+  title: "Security Digital Marketing Guide: Complete Growth Strategy 2025",
+  description: "Comprehensive digital marketing strategies for security companies",
+  url: "/blog/security-digital-marketing-guide",
+  category: "Security",
+  readTime: "26 min read"
+}, {
+  title: "Google Ads for Security Companies: Advanced Strategy Guide",
+  description: "Master Google Ads for security service lead generation",
+  url: "/blog/security-google-ads-strategy",
+  category: "Security",
+  readTime: "26 min read"
+}, {
+  title: "Local SEO for Trade Businesses: Dominate Your Service Area",
+  description: "Advanced local SEO strategies for service businesses",
+  url: "/blog/local-seo-trade-businesses",
+  category: "Digital Marketing - SEO",
+  readTime: "18 min read"
+}];
 const SecurityLeadGeneration = () => {
-  return (
-      <>
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles}
-        faqs={faqs}
-        heroImage={securityLeadGenerationHero}
-        heroAlt="Professional security team monitoring surveillance systems - lead generation guide"
-      >
+  return <>
+      <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={securityLeadGenerationHero} heroAlt="Professional security team monitoring surveillance systems - lead generation guide">
         <p className="text-lg text-muted-foreground mb-6">
           The global security services market is valued at over $350 billion and continues to grow as businesses and homeowners prioritize safety. However, generating quality leads in the security industry requires building trust, demonstrating expertise, and reaching clients at the right moment in their decision-making process.
         </p>
@@ -470,8 +479,6 @@ const SecurityLeadGeneration = () => {
         </section>
 
       </OptimizedBlogLayout>
-    </>
-  );
+    </>;
 };
-
 export default SecurityLeadGeneration;

@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Users, Target, TrendingUp, Shield, MessageCircle, CheckCircle } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
@@ -5,7 +6,35 @@ import { relatedArticles } from '@/utils/seoUtils';
 import ndisLeadGenerationHero from '@/assets/blog/ndis-lead-generation-mastery.jpg';
 import { Card, CardContent } from '@/components/ui/card';
 import StrategyForm from '@/components/ui/strategy-form';
-
+export const metadata = createMetadata({
+  title: "Ndis Lead Generation Mastery",
+  description: "Expert guidance on ndis lead generation mastery. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-lead-generation-mastery",
+  keywords: ["ndis", "lead", "generation", "mastery", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Lead Generation Mastery",
+    description: "Expert guidance on ndis lead generation mastery. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-lead-generation-mastery",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Lead Generation Mastery"
+    }],
+    publishedTime: "2024-12-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.978Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Lead Generation Mastery",
+    description: "Expert guidance on ndis lead generation mastery. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISLeadGeneration = () => {
   const articleData = {
     headline: "NDIS Lead Generation Mastery: Advanced Strategies for Disability Service Providers 2025",
@@ -19,30 +48,17 @@ const NDISLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Marketing Strategy"]
   };
-
-  const faqs = [
-    {
-      question: "What are the most effective lead generation channels for NDIS providers?",
-      answer: "The most effective channels are Google Ads targeting NDIS-specific keywords, SEO-optimized website content, referral partnerships with healthcare professionals and support coordinators, and social media engagement. Focus on quality over quantity to attract participants who align with your services."
-    },
-    {
-      question: "How long does it take to see results from NDIS lead generation campaigns?",
-      answer: "Digital campaigns typically show initial results within 30-60 days, with significant improvements after 3-6 months of consistent optimization. Referral relationships take longer to develop but provide higher-quality leads once established."
-    },
-    {
-      question: "What's the average cost per lead for NDIS providers?",
-      answer: "NDIS lead costs vary by service type and location, typically ranging from $50-$200 per qualified lead. Higher-value services like SIL can justify higher acquisition costs, while core supports require more cost-effective approaches."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.ndis}
-      faqs={faqs}
-      heroImage={ndisLeadGenerationHero}
-      heroAlt="NDIS lead generation strategies for disability service providers"
-    >
+  const faqs = [{
+    question: "What are the most effective lead generation channels for NDIS providers?",
+    answer: "The most effective channels are Google Ads targeting NDIS-specific keywords, SEO-optimized website content, referral partnerships with healthcare professionals and support coordinators, and social media engagement. Focus on quality over quantity to attract participants who align with your services."
+  }, {
+    question: "How long does it take to see results from NDIS lead generation campaigns?",
+    answer: "Digital campaigns typically show initial results within 30-60 days, with significant improvements after 3-6 months of consistent optimization. Referral relationships take longer to develop but provide higher-quality leads once established."
+  }, {
+    question: "What's the average cost per lead for NDIS providers?",
+    answer: "NDIS lead costs vary by service type and location, typically ranging from $50-$200 per qualified lead. Higher-value services like SIL can justify higher acquisition costs, while core supports require more cost-effective approaches."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisLeadGenerationHero} heroAlt="NDIS lead generation strategies for disability service providers">
       <Card className="bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-l-purple-500 p-8 mb-8">
         <div className="flex items-start space-x-4">
           <div className="bg-purple-100 p-3 rounded-full">
@@ -110,11 +126,11 @@ const NDISLeadGeneration = () => {
       
       <h4>NDIS-Specific Keywords</h4>
       <ul>
-        <li>"NDIS [service type] [location]" - e.g., "NDIS physiotherapy Melbourne"</li>
-        <li>"Disability support services [location]"</li>
-        <li>"NDIS registered provider [service area]"</li>
-        <li>"[Specific disability] support services"</li>
-        <li>"NDIS plan management [location]"</li>
+        <li>&quot;NDIS [service type] [location]&quot; - e.g., &quot;NDIS physiotherapy Melbourne&quot;</li>
+        <li>&quot;Disability support services [location]&quot;</li>
+        <li>&quot;NDIS registered provider [service area]&quot;</li>
+        <li>&quot;[Specific disability] support services&quot;</li>
+        <li>&quot;NDIS plan management [location]&quot;</li>
       </ul>
 
       <h4>Content Strategy</h4>
@@ -164,7 +180,7 @@ const NDISLeadGeneration = () => {
       <ul>
         <li><strong>Regular Communication:</strong> Monthly updates and service spotlights</li>
         <li><strong>Educational Sessions:</strong> Training sessions on your services and outcomes</li>
-        <li><strong>Feedback Loops:</strong> Regular feedback on referred participants' progress</li>
+        <li><strong>Feedback Loops:</strong> Regular feedback on referred participants&apos; progress</li>
         <li><strong>Reciprocal Referrals:</strong> Refer participants to trusted partners when appropriate</li>
       </ul>
 
@@ -205,7 +221,7 @@ const NDISLeadGeneration = () => {
           <li><strong>Simple Forms:</strong> Name, email, phone, service interest only</li>
           <li><strong>Multiple Contact Options:</strong> Phone, email, contact form, live chat</li>
           <li><strong>Visual Content:</strong> Photos of staff, facilities, and activities</li>
-          <li><strong>Clear Call-to-Action:</strong> "Request Information" or "Book Consultation"</li>
+          <li><strong>Clear Call-to-Action:</strong> &quot;Request Information&quot; or &quot;Book Consultation&quot;</li>
         </ul>
       </Card>
 
@@ -515,8 +531,6 @@ const NDISLeadGeneration = () => {
       <div className="my-12">
         <StrategyForm />
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default NDISLeadGeneration;

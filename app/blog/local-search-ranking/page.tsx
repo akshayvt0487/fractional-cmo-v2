@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import StrategyForm from "@/components/ui/strategy-form";
 import { relatedArticles } from "@/utils/seoUtils";
 import localSearchRankingHero from '@/assets/blog/local-search-ranking-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Local Search Ranking",
+  description: "Expert guidance on local search ranking. Learn proven strategies and best practices for business growth.",
+  path: "/blog/local-search-ranking",
+  keywords: ["local", "search", "ranking", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Local Search Ranking",
+    description: "Expert guidance on local search ranking. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/local-search-ranking",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Local Search Ranking"
+    }],
+    publishedTime: "2024-12-31T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.879Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Local Search Ranking",
+    description: "Expert guidance on local search ranking. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const LocalSearchRanking = () => {
   const articleData = {
     headline: "How to Rank Quickly in Local Search: 2024 Local SEO Guide",
@@ -18,30 +47,17 @@ const LocalSearchRanking = () => {
     readTime: "24 min read",
     tags: ["Local SEO", "Search Engine Optimization", "Local Marketing", "Google My Business", "Local Search"]
   };
-
-  const faqs = [
-    {
-      question: "How long does it take to see results from local SEO?",
-      answer: "Local SEO results typically appear within 3-6 months, with Google My Business optimizations showing improvements in 2-4 weeks. Consistent effort and quality content accelerate rankings."
-    },
-    {
-      question: "What's the most important factor for local search rankings?",
-      answer: "Google My Business optimization combined with consistent NAP (Name, Address, Phone) citations and positive reviews are the most critical factors for local search success."
-    },
-    {
-      question: "How many reviews do I need to rank well locally?",
-      answer: "While there's no magic number, businesses with 25+ positive reviews typically outperform competitors. Focus on consistent review generation and professional responses to all feedback."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={localSearchRankingHero}
-      heroAlt="Local search ranking strategies and Google My Business optimization"
-    >
+  const faqs = [{
+    question: "How long does it take to see results from local SEO?",
+    answer: "Local SEO results typically appear within 3-6 months, with Google My Business optimizations showing improvements in 2-4 weeks. Consistent effort and quality content accelerate rankings."
+  }, {
+    question: "What's the most important factor for local search rankings?",
+    answer: "Google My Business optimization combined with consistent NAP (Name, Address, Phone) citations and positive reviews are the most critical factors for local search success."
+  }, {
+    question: "How many reviews do I need to rank well locally?",
+    answer: "While there's no magic number, businesses with 25+ positive reviews typically outperform competitors. Focus on consistent review generation and professional responses to all feedback."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={localSearchRankingHero} heroAlt="Local search ranking strategies and Google My Business optimization">
         <h2>The Local Search Revolution</h2>
         
         <Card className="mb-8 bg-primary/5 border-primary/20">
@@ -59,7 +75,7 @@ const LocalSearchRanking = () => {
         <p>
           Local search has become the battleground where businesses win or lose customers every day. 
           With mobile searches dominating and consumers expecting immediate results, ranking quickly 
-          in local search isn't just an advantage—it's essential for survival.
+          in local search isn&apos;t just an advantage—it&apos;s essential for survival.
         </p>
 
         <h2>Google My Business: Your Foundation for Success</h2>
@@ -122,7 +138,7 @@ const LocalSearchRanking = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Industry-Specific</h4>
                   <ul className="space-y-1 text-sm">
-                    <li>• Angie's List (contractors)</li>
+                    <li>• Angie&apos;s List (contractors)</li>
                     <li>• TripAdvisor (restaurants/hotels)</li>
                     <li>• Healthgrades (healthcare)</li>
                     <li>• Avvo (legal services)</li>
@@ -159,7 +175,7 @@ const LocalSearchRanking = () => {
                 <li>• Write about local events and community involvement</li>
                 <li>• Create service area pages for each location</li>
                 <li>• Publish local case studies and testimonials</li>
-                <li>• Optimize for "near me" searches</li>
+                <li>• Optimize for &quot;near me&quot; searches</li>
                 <li>• Include local landmarks and neighborhoods</li>
               </ul>
             </CardContent>
@@ -343,7 +359,7 @@ const LocalSearchRanking = () => {
                 <li>• Create dedicated location pages for each service area</li>
                 <li>• Write blog posts about local events and community involvement</li>
                 <li>• Include local landmarks and references in content</li>
-                <li>• Optimize for "near me" searches with contextual content</li>
+                <li>• Optimize for &quot;near me&quot; searches with contextual content</li>
                 <li>• Feature local customer testimonials and case studies</li>
                 <li>• Create neighborhood guides and local resources</li>
               </ul>
@@ -441,7 +457,7 @@ const LocalSearchRanking = () => {
                   <li>• Use natural, conversational language</li>
                   <li>• Target question-based keywords</li>
                   <li>• Create FAQ pages with clear answers</li>
-                  <li>• Optimize for "near me" queries</li>
+                  <li>• Optimize for &quot;near me&quot; queries</li>
                   <li>• Include long-tail local keywords</li>
                 </ul>
               </div>
@@ -556,7 +572,7 @@ const LocalSearchRanking = () => {
                 <li>• Showcase before/after photos</li>
                 <li>• Emphasize licensing and insurance</li>
                 <li>• Create service area pages</li>
-                <li>• Target "near me" searches</li>
+                <li>• Target &quot;near me&quot; searches</li>
               </ul>
             </CardContent>
           </Card>
@@ -568,7 +584,7 @@ const LocalSearchRanking = () => {
                 Stores, cafes, restaurants, shops
               </p>
               <ul className="space-y-2 text-sm">
-                <li>• Optimize for "open now" searches</li>
+                <li>• Optimize for &quot;open now&quot; searches</li>
                 <li>• Keep hours updated (including holidays)</li>
                 <li>• Add menu/product photos regularly</li>
                 <li>• Use GMB attributes (outdoor seating, etc.)</li>
@@ -677,7 +693,7 @@ const LocalSearchRanking = () => {
         </Card>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "Local SEO success isn't about gaming the system—it's about genuinely serving your local community better than competitors. Focus on building a real, trustworthy presence both online and offline."
+          &quot;Local SEO success isn&apos;t about gaming the system—it&apos;s about genuinely serving your local community better than competitors. Focus on building a real, trustworthy presence both online and offline.&quot;
           <footer className="text-sm mt-2">— Local SEO Industry Best Practices</footer>
         </blockquote>
 
@@ -705,8 +721,6 @@ const LocalSearchRanking = () => {
           </CardContent>
         </Card>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default LocalSearchRanking;

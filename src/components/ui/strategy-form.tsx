@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,7 @@ const basheerImage = "/lovable-uploads/2975c655-d01c-4894-8737-276899af3f17.png"
 // This prevents an infinite re-render loop by creating a stable constant.
 const serviceMapping: Record<string, string> = {
   'google-ads': 'performance-ads',
-  'seo': 'seo-content', 
+  'seo': 'seo-content',
   'strategy': 'growth-strategy',
   'fractional-cmo': 'fractional-cmo',
   'conversion': 'conversion-optimization',
@@ -51,16 +51,16 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  
-  const router = useRouter(); 
+
+  const router = useRouter();
 
   useEffect(() => {
     if (preSelectedService && serviceMapping[preSelectedService]) {
-      setFormData(prev => ({ ...prev, service: serviceMapping[preSelectedService] }));
+      setFormData((prev) => ({ ...prev, service: serviceMapping[preSelectedService] }));
     }
-  // 🟢 REVISION: serviceMapping can be removed from dependencies
-  // as it's now a stable constant defined outside
-  }, [preSelectedService]); 
+    // 🟢 REVISION: serviceMapping can be removed from dependencies
+    // as it's now a stable constant defined outside
+  }, [preSelectedService]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -72,7 +72,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
       toast({
         title: "Configuration Error",
         description: "The form is not configured correctly. Please contact support.",
-        variant: "destructive",
+        variant: "destructive"
       });
       setIsSubmitting(false);
       return;
@@ -82,20 +82,20 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
       // 🟢 APPWRITE: Create a new document in the specified collection
       await databases.createDocument(
         APPWRITE_DATABASE_ID,
-       APPWRITE_COLLECTION_STRATEGY_FORM_ID, // This ID must be for your "form submissions" collection
+        APPWRITE_COLLECTION_STRATEGY_FORM_ID, // This ID must be for your "form submissions" collection
         ID.unique(), // Creates a new unique ID for the document
-        formData      // The form data object is saved as the document
+        formData // The form data object is saved as the document
       );
-      
+
       // 🟢 Appwrite throws an error on failure, so if we get here, it succeeded.
 
       toast({
         title: "Request submitted!",
-        description: "Redirecting...",
+        description: "Redirecting..."
       });
-      
+
       setIsOpen(false);
-      
+
       // Store form data for redirect logic *before* clearing state
       const submittedRevenue = formData.revenue;
       const submittedBudget = formData.budget;
@@ -112,10 +112,10 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
         challenge: "",
         timeline: ""
       });
-      
+
       // Check revenue and budget - redirect based on lead quality
       if (submittedRevenue === "under-500k" || submittedRevenue === "500k-1m" || submittedBudget === "under-5k") {
-        router.push('/not-ready'); 
+        router.push('/not-ready');
       } else {
         window.location.href = 'https://link.dsigns.com.au/widget/bookings/fractional-cmo-basheer';
       }
@@ -124,7 +124,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
       toast({
         title: "Submission failed",
         description: "Please try again or contact me directly.",
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
@@ -132,7 +132,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
   };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -146,11 +146,11 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
         <DialogHeader>
           <div className="flex items-center gap-4 pb-4">
             <Avatar className="h-16 w-16">
-              <AvatarImage 
-                src={basheerImage} 
-                alt="Basheer Padanna - Professional Fractional CMO and Growth Marketing Expert" 
-                className="object-cover"
-              />
+              <AvatarImage
+                src={basheerImage}
+                alt="Basheer Padanna - Professional Fractional CMO and Growth Marketing Expert"
+                className="object-cover" />
+              
               <AvatarFallback className="bg-primary text-primary-foreground">BP</AvatarFallback>
             </Avatar>
             <div>
@@ -172,8 +172,8 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
                 value={formData.name}
                 onChange={(e) => handleInputChange("name", e.target.value)}
                 placeholder="Your full name"
-                className="h-12 text-base"
-              />
+                className="h-12 text-base" />
+              
             </div>
             <div className="space-y-2">
               <Label htmlFor="email">Business Email *</Label>
@@ -184,8 +184,8 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
                 placeholder="your@company.com"
-                className="h-12 text-base"
-              />
+                className="h-12 text-base" />
+              
             </div>
           </div>
 
@@ -198,8 +198,8 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
                 value={formData.company}
                 onChange={(e) => handleInputChange("company", e.target.value)}
                 placeholder="Your company name"
-                className="h-12 text-base"
-              />
+                className="h-12 text-base" />
+              
             </div>
             <div className="space-y-2">
               <Label htmlFor="phone">Phone Number</Label>
@@ -209,8 +209,8 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
                 value={formData.phone}
                 onChange={(e) => handleInputChange("phone", e.target.value)}
                 placeholder="+61 4XX XXX XXX"
-                className="h-12 text-base"
-              />
+                className="h-12 text-base" />
+              
             </div>
           </div>
 
@@ -274,14 +274,14 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
               required
               value={formData.challenge}
               onChange={(e) => handleInputChange("challenge", e.target.value)}
-              placeholder="Please share:
-• What industry/niche you're in
-• Your biggest growth challenge right now  
-• Current marketing efforts (if any)
-• What success looks like for your business"
+              placeholder='Please share:\r\n\u2022 What industry/niche you&apos;re in\r\n\u2022 Your biggest growth challenge right now  \r\n\u2022 Current marketing efforts (if any)\r\n\u2022 What success looks like for your business'
+
+
+
+
               rows={5}
-              className="text-base min-h-[120px]"
-            />
+              className="text-base min-h-[120px]" />
+            
           </div>
 
           <div className="space-y-2">
@@ -306,9 +306,8 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
           </Button>
         </form>
       </DialogContent>
-    </Dialog>
-  );
+    </Dialog>);
+
 };
 
 export default StrategyForm;
-

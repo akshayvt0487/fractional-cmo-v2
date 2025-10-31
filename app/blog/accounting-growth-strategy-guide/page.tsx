@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -5,7 +6,35 @@ import { ArrowRight, TrendingUp, Users, Target, BarChart, Zap, Calendar } from "
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import accountingGrowthStrategyHero from '@/assets/blog/accounting-growth-strategy-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Accounting Growth Strategy Guide",
+  description: "Expert guidance on accounting growth strategy guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/accounting-growth-strategy-guide",
+  keywords: ["accounting", "growth", "strategy", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Accounting Growth Strategy Guide",
+    description: "Expert guidance on accounting growth strategy guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/accounting-growth-strategy-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Accounting Growth Strategy Guide"
+    }],
+    publishedTime: "2025-01-01T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.213Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Accounting Growth Strategy Guide",
+    description: "Expert guidance on accounting growth strategy guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const AccountingGrowthStrategy = () => {
   const articleData = {
     headline: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2025",
@@ -19,30 +48,17 @@ const AccountingGrowthStrategy = () => {
     readTime: "26 min read",
     tags: ["Accounting Growth", "Business Development", "Practice Management", "Service Expansion", "Team Building"]
   };
-
-  const faqs = [
-    {
-      question: "What's the most effective growth strategy for accounting practices?",
-      answer: "Service diversification combined with value-based positioning delivers the highest ROI. Successful firms expand beyond basic compliance to offer advisory services while positioning as strategic business partners rather than transactional service providers."
-    },
-    {
-      question: "How long does it take to see results from growth strategies?",
-      answer: "Initial improvements typically appear within 3-6 months for client acquisition efforts, while service expansion and team development initiatives usually show significant results after 6-12 months of consistent implementation."
-    },
-    {
-      question: "Should accounting practices specialize or offer diverse services?",
-      answer: "The most successful approach combines niche specialization with complementary advisory services. Focus on specific industries or client types while expanding service offerings that leverage your core expertise and client relationships."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={accountingGrowthStrategyHero}
-      heroAlt="Accounting practice team celebrating successful business growth strategy implementation"
-    >
+  const faqs = [{
+    question: "What's the most effective growth strategy for accounting practices?",
+    answer: "Service diversification combined with value-based positioning delivers the highest ROI. Successful firms expand beyond basic compliance to offer advisory services while positioning as strategic business partners rather than transactional service providers."
+  }, {
+    question: "How long does it take to see results from growth strategies?",
+    answer: "Initial improvements typically appear within 3-6 months for client acquisition efforts, while service expansion and team development initiatives usually show significant results after 6-12 months of consistent implementation."
+  }, {
+    question: "Should accounting practices specialize or offer diverse services?",
+    answer: "The most successful approach combines niche specialization with complementary advisory services. Focus on specific industries or client types while expanding service offerings that leverage your core expertise and client relationships."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={accountingGrowthStrategyHero} heroAlt="Accounting practice team celebrating successful business growth strategy implementation">
       <p className="text-lg leading-relaxed">
         The accounting industry is experiencing unprecedented transformation. Traditional bookkeeping services are becoming commoditized while demand for strategic business advisory services continues to grow. Forward-thinking accounting practices are evolving into comprehensive business partners that drive client success and command premium fees.
       </p>
@@ -484,8 +500,6 @@ const AccountingGrowthStrategy = () => {
           Get Your Custom Growth Strategy <ArrowRight className="h-4 w-4" />
         </Button>
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default AccountingGrowthStrategy;

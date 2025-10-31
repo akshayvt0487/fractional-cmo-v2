@@ -1,8 +1,37 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import floorSandingDigitalMarketingHero from '@/assets/blog/floor-sanding-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Floor Sanding Digital Marketing Guide",
+  description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/floor-sanding-digital-marketing-guide",
+  keywords: ["floor", "sanding", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Floor Sanding Digital Marketing Guide",
+    description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/floor-sanding-digital-marketing-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Floor Sanding Digital Marketing Guide"
+    }],
+    publishedTime: "2025-01-15",
+    modifiedTime: "2025-10-31T11:10:04.682Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Floor Sanding Digital Marketing Guide",
+    description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const FloorSandingDigitalMarketing = () => {
   const articleData = {
     headline: "Digital Marketing for Floor Sanding Specialists: Transform Your Business Growth 2025",
@@ -16,34 +45,20 @@ const FloorSandingDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["floor sanding", "digital marketing", "trade business", "home improvement"]
   };
-
-  const faqs = [
-    {
-      question: "How can digital marketing help my floor sanding business?",
-      answer: "Digital marketing helps floor sanding businesses showcase their craftsmanship online, attract homeowners actively searching for floor restoration services, and build a professional reputation that commands premium pricing."
-    },
-    {
-      question: "What social media platforms work best for floor sanding businesses?",
-      answer: "Instagram and Facebook are ideal for visual before/after content, Pinterest for design inspiration, and YouTube for detailed process videos that demonstrate expertise and build trust with potential clients."
-    },
-    {
-      question: "How important is local SEO for floor sanding specialists?",
-      answer: "Local SEO is critical as floor sanding is location-dependent. Most customers search for 'floor sanding near me' and choose providers within their service area who appear prominently in local search results."
-    },
-    {
-      question: "Should I invest in Google Ads for my floor sanding business?",
-      answer: "Yes, Google Ads can capture high-intent searches when homeowners are actively planning floor restoration projects. Target keywords like 'floor sanding [location]' and 'timber floor restoration' for best results."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout 
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={floorSandingDigitalMarketingHero}
-      heroAlt="Floor sanding specialists digital marketing and business growth strategies"
-    >
+  const faqs = [{
+    question: "How can digital marketing help my floor sanding business?",
+    answer: "Digital marketing helps floor sanding businesses showcase their craftsmanship online, attract homeowners actively searching for floor restoration services, and build a professional reputation that commands premium pricing."
+  }, {
+    question: "What social media platforms work best for floor sanding businesses?",
+    answer: "Instagram and Facebook are ideal for visual before/after content, Pinterest for design inspiration, and YouTube for detailed process videos that demonstrate expertise and build trust with potential clients."
+  }, {
+    question: "How important is local SEO for floor sanding specialists?",
+    answer: "Local SEO is critical as floor sanding is location-dependent. Most customers search for 'floor sanding near me' and choose providers within their service area who appear prominently in local search results."
+  }, {
+    question: "Should I invest in Google Ads for my floor sanding business?",
+    answer: "Yes, Google Ads can capture high-intent searches when homeowners are actively planning floor restoration projects. Target keywords like 'floor sanding [location]' and 'timber floor restoration' for best results."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={floorSandingDigitalMarketingHero} heroAlt="Floor sanding specialists digital marketing and business growth strategies">
       <p className="text-xl text-muted-foreground mb-8">
         Floor sanding and refinishing is a specialized trade that transforms worn, damaged timber floors into stunning home features. Digital marketing has become essential for floor sanding specialists to showcase their craftsmanship, attract homeowners with quality timber floors, and build a sustainable business with consistent project flow and premium pricing in competitive markets.
       </p>
@@ -153,7 +168,7 @@ const FloorSandingDigitalMarketing = () => {
           <h4 className="font-semibold text-blue-800 mb-4">Location-Specific Content Strategy</h4>
           <ul className="space-y-2 text-sm text-blue-700">
             <li>• Individual landing pages for each service area with local testimonials</li>
-            <li>• Suburb-specific keyword targeting ("floor sanding [suburb]", "timber floor restoration [area]")</li>
+            <li>• Suburb-specific keyword targeting (&quot;floor sanding [suburb]&quot;, &quot;timber floor restoration [area]&quot;)</li>
             <li>• Council permit and regulation guides tailored to different local areas</li>
             <li>• Community involvement content featuring local partnerships and charity work</li>
             <li>• Local building style expertise showcasing period home restoration experience</li>
@@ -281,21 +296,21 @@ const FloorSandingDigitalMarketing = () => {
             <div>
               <h5 className="font-medium text-blue-700 mb-3">Primary Keywords</h5>
               <ul className="space-y-1 text-sm text-blue-600">
-                <li>• "floor sanding near me" (high intent, local)</li>
-                <li>• "timber floor restoration [suburb]" (location-specific)</li>
-                <li>• "hardwood floor refinishing [city]" (service-focused)</li>
-                <li>• "floor polishing services" (maintenance-focused)</li>
-                <li>• "wooden floor repair" (problem-solving)</li>
+                <li>• &quot;floor sanding near me&quot; (high intent, local)</li>
+                <li>• &quot;timber floor restoration [suburb]&quot; (location-specific)</li>
+                <li>• &quot;hardwood floor refinishing [city]&quot; (service-focused)</li>
+                <li>• &quot;floor polishing services&quot; (maintenance-focused)</li>
+                <li>• &quot;wooden floor repair&quot; (problem-solving)</li>
               </ul>
             </div>
             <div>
               <h5 className="font-medium text-blue-700 mb-3">Content Marketing Keywords</h5>
               <ul className="space-y-1 text-sm text-blue-600">
-                <li>• "how much does floor sanding cost" (research phase)</li>
-                <li>• "when to sand hardwood floors" (timing questions)</li>
-                <li>• "best floor finish for [specific use]" (product research)</li>
-                <li>• "floor sanding vs replacement" (decision-making)</li>
-                <li>• "how to maintain hardwood floors" (ongoing care)</li>
+                <li>• &quot;how much does floor sanding cost&quot; (research phase)</li>
+                <li>• &quot;when to sand hardwood floors&quot; (timing questions)</li>
+                <li>• &quot;best floor finish for [specific use]&quot; (product research)</li>
+                <li>• &quot;floor sanding vs replacement&quot; (decision-making)</li>
+                <li>• &quot;how to maintain hardwood floors&quot; (ongoing care)</li>
               </ul>
             </div>
           </div>
@@ -317,11 +332,11 @@ const FloorSandingDigitalMarketing = () => {
             <div>
               <h5 className="font-medium text-orange-700 mb-3">High-Converting Ad Copy</h5>
               <ul className="space-y-1 text-sm text-orange-600">
-                <li>• "Transform Your Floors - Expert Sanding [Suburb]"</li>
-                <li>• "Premium Floor Restoration - Before/After Gallery"</li>
-                <li>• "Dustless Sanding Specialists - Same Day Quotes"</li>
-                <li>• "Heritage Floor Experts - 20+ Years Experience"</li>
-                <li>• "Free Assessments - Guaranteed Transformations"</li>
+                <li>• &quot;Transform Your Floors - Expert Sanding [Suburb]&quot;</li>
+                <li>• &quot;Premium Floor Restoration - Before/After Gallery&quot;</li>
+                <li>• &quot;Dustless Sanding Specialists - Same Day Quotes&quot;</li>
+                <li>• &quot;Heritage Floor Experts - 20+ Years Experience&quot;</li>
+                <li>• &quot;Free Assessments - Guaranteed Transformations&quot;</li>
               </ul>
             </div>
           </div>
@@ -485,7 +500,7 @@ const FloorSandingDigitalMarketing = () => {
 
         <div className="bg-blue-100 p-4 rounded-lg border border-blue-300">
           <h4 className="font-semibold text-blue-800 mb-2">Winter Planning (June-August)</h4>
-          <p className="text-sm text-blue-700">Interior projects, heritage restorations, and planning consultations for next season's work.</p>
+          <p className="text-sm text-blue-700">Interior projects, heritage restorations, and planning consultations for next season&apos;s work.</p>
         </div>
       </div>
 
@@ -531,8 +546,6 @@ const FloorSandingDigitalMarketing = () => {
       <p className="mb-8">
         The floor sanding industry offers excellent opportunities for specialists who understand how to market their expertise effectively. By implementing these digital marketing strategies and consistently delivering outstanding results, you can build a thriving business that serves your community while achieving your professional and financial goals.
       </p>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default FloorSandingDigitalMarketing;

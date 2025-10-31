@@ -1,10 +1,38 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import StrategyForm from "@/components/ui/strategy-form";
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import therapyGoogleAdsStrategyHero from "@/assets/blog/therapy-google-ads-strategy-hero.jpg";
-
+export const metadata = createMetadata({
+  title: "Therapy Google Ads Strategy",
+  description: "Expert guidance on therapy google ads strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/therapy-google-ads-strategy",
+  keywords: ["therapy", "google", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Therapy Google Ads Strategy",
+    description: "Expert guidance on therapy google ads strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/therapy-google-ads-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Therapy Google Ads Strategy"
+    }],
+    publishedTime: "2024-12-08T09:00:00+10:00",
+    modifiedTime: "2025-10-31T11:10:05.281Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Therapy Google Ads Strategy",
+    description: "Expert guidance on therapy google ads strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const TherapyGoogleAdsStrategy = () => {
   const articleData = {
     headline: "Google Ads for Therapy Clinics: Advanced NDIS Provider Advertising Strategy",
@@ -18,30 +46,17 @@ const TherapyGoogleAdsStrategy = () => {
     readTime: "26 min read",
     tags: ["Google Ads", "Therapy Services", "NDIS", "Digital Marketing", "Lead Generation"]
   };
-
-  const faqs = [
-    {
-      question: "How much should therapy clinics spend on Google Ads?",
-      answer: "Therapy clinics should start with $2,000-4,000 monthly for Google Ads, allocating 60% to Search campaigns and 40% to Display/Video. This budget allows for proper keyword coverage and testing across different therapy services."
-    },
-    {
-      question: "What are the best keywords for therapy Google Ads?",
-      answer: "Focus on service-specific keywords like 'speech therapy [location]', 'occupational therapy NDIS', 'ABA therapy provider', and condition-specific terms like 'autism therapy services' and 'child speech delay treatment'."
-    },
-    {
-      question: "How do I target NDIS participants in Google Ads?",
-      answer: "Use NDIS-specific keywords, create dedicated landing pages explaining NDIS funding, target relevant demographics, and use audience targeting based on interests in disability services and child development."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.ndis}
-        faqs={faqs}
-        heroImage={therapyGoogleAdsStrategyHero}
-        heroAlt="Google Ads strategy for therapy clinics including speech therapy, occupational therapy, and ABA therapy services"
-      >
+  const faqs = [{
+    question: "How much should therapy clinics spend on Google Ads?",
+    answer: "Therapy clinics should start with $2,000-4,000 monthly for Google Ads, allocating 60% to Search campaigns and 40% to Display/Video. This budget allows for proper keyword coverage and testing across different therapy services."
+  }, {
+    question: "What are the best keywords for therapy Google Ads?",
+    answer: "Focus on service-specific keywords like 'speech therapy [location]', 'occupational therapy NDIS', 'ABA therapy provider', and condition-specific terms like 'autism therapy services' and 'child speech delay treatment'."
+  }, {
+    question: "How do I target NDIS participants in Google Ads?",
+    answer: "Use NDIS-specific keywords, create dedicated landing pages explaining NDIS funding, target relevant demographics, and use audience targeting based on interests in disability services and child development."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyGoogleAdsStrategyHero} heroAlt="Google Ads strategy for therapy clinics including speech therapy, occupational therapy, and ABA therapy services">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Google Ads can be a game-changer for therapy clinics, but the unique nature of therapy services requires sophisticated targeting and messaging strategies. With over 65% of parents searching online for therapy services and NDIS funding covering many therapy interventions, a well-executed Google Ads strategy can significantly increase your client base while maintaining cost efficiency.
         </p>
@@ -165,8 +180,8 @@ const TherapyGoogleAdsStrategy = () => {
                 <li>• &quot;aggressive behavior ABA therapy&quot;</li>
                 <li>• &quot;school readiness occupational therapy&quot;</li>
                 <li><strong>NDIS-Specific:</strong></li>
-                <li>• "NDIS funded speech therapy near me"</li>
-                <li>• "how to use NDIS plan for therapy"</li>
+                <li>• &quot;NDIS funded speech therapy near me&quot;</li>
+                <li>• &quot;how to use NDIS plan for therapy&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -218,11 +233,11 @@ const TherapyGoogleAdsStrategy = () => {
             <CardContent className="p-6">
               <h4 className="font-semibold mb-3 text-primary">Headline Strategies</h4>
               <ul className="text-sm space-y-2">
-                <li><strong>Problem-Solution:</strong> "Is Your Child's Speech Delayed? We Can Help"</li>
-                <li><strong>Expertise-Focused:</strong> "20+ Years Helping Children Communicate"</li>
-                <li><strong>NDIS-Specific:</strong> "NDIS Registered Speech Therapy Provider"</li>
-                <li><strong>Local Trust:</strong> "Melbourne's Leading Pediatric Therapy Clinic"</li>
-                <li><strong>Outcome-Focused:</strong> "Help Your Child Reach Their Full Potential"</li>
+                <li><strong>Problem-Solution:</strong> &quot;Is Your Child&apos;s Speech Delayed? We Can Help&quot;</li>
+                <li><strong>Expertise-Focused:</strong> &quot;20+ Years Helping Children Communicate&quot;</li>
+                <li><strong>NDIS-Specific:</strong> &quot;NDIS Registered Speech Therapy Provider&quot;</li>
+                <li><strong>Local Trust:</strong> &quot;Melbourne&apos;s Leading Pediatric Therapy Clinic&quot;</li>
+                <li><strong>Outcome-Focused:</strong> &quot;Help Your Child Reach Their Full Potential&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -473,8 +488,6 @@ const TherapyGoogleAdsStrategy = () => {
           Google Ads for therapy services requires a delicate balance of professional expertise, emotional understanding, and strategic precision. Focus on building trust while demonstrating your ability to help children reach their full potential.
         </p>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default TherapyGoogleAdsStrategy;

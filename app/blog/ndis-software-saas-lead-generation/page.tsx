@@ -1,19 +1,49 @@
+import { createMetadata } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/sections/Footer";
 import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
-
-
 import InternalLinks from "@/components/InternalLinks";
 import { generateArticleSchema } from "@/utils/seoUtils";
 import ndisEngagementImage from "@/assets/blog/ndis-software-lead-generation.jpg";
 import ndisMarketingImage from "@/assets/ndis-marketing-materials.jpg";
 import { useContentGate } from "@/hooks/useContentGate";
 import ContentGate from "@/components/ContentGate";
-
+export const metadata = createMetadata({
+  title: "Ndis Software Saas Lead Generation",
+  description: "Expert guidance on ndis software saas lead generation. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-software-saas-lead-generation",
+  keywords: ["ndis", "software", "saas", "lead", "generation", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Software Saas Lead Generation",
+    description: "Expert guidance on ndis software saas lead generation. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-software-saas-lead-generation",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Software Saas Lead Generation"
+    }],
+    publishedTime: "2024-01-20",
+    modifiedTime: "2025-10-31T11:10:05.022Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Software Saas Lead Generation",
+    description: "Expert guidance on ndis software saas lead generation. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISSoftwareSaaSLeadGeneration = () => {
-  const { isUnlocked, unlock } = useContentGate("ndis-software-saas-lead-generation");
+  const {
+    isUnlocked,
+    unlock
+  } = useContentGate("ndis-software-saas-lead-generation");
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Lead Generation: Convert Prospects into Customers",
     description: "Master lead generation for NDIS software platforms. Learn proven techniques to attract, qualify, and convert NDIS providers into paying customers with sustainable, scalable strategies.",
@@ -23,64 +53,44 @@ const NDISSoftwareSaaSLeadGeneration = () => {
     url: "/blog/ndis-software-saas-lead-generation",
     imageUrl: ndisEngagementImage
   });
-
-  const relatedArticles = [
-    {
-      title: "NDIS Software SaaS Marketing Guide",
-      description: "Complete guide to B2B growth strategies for NDIS software platforms.",
-      url: "/blog/ndis-software-saas-marketing-guide",
-      category: "SaaS Marketing"
-    },
-    {
-      title: "NDIS Software SaaS Positioning Strategy",
-      description: "Stand out in a competitive market with effective positioning strategies.",
-      url: "/blog/ndis-software-saas-positioning-strategy",
-      category: "Positioning"
-    },
-    {
-      title: "NDIS Digital Marketing Strategies",
-      description: "Comprehensive digital marketing tactics for NDIS providers.",
-      url: "/blog/ndis-digital-marketing-strategies",
-      category: "NDIS"
-    },
-    {
-      title: "Google Ads for Service Businesses",
-      description: "Complete setup guide for profitable Google Ads campaigns.",
-      url: "/blog/google-ads-service-businesses",
-      category: "Paid Advertising"
-    }
-  ];
-
-  return (
-    <>
-      <SEO
-        title="NDIS Software SaaS Lead Generation: Convert Prospects into Customers"
-        description="Master lead generation for NDIS software platforms. Learn proven techniques to attract, qualify, and convert NDIS providers into paying customers with sustainable, scalable strategies."
-        canonical="/blog/ndis-software-saas-lead-generation"
-        ogType="article"
-        articlePublishedTime="2024-01-20T00:00:00Z"
-        articleModifiedTime="2024-01-20T00:00:00Z"
-        articleTags={["NDIS", "SaaS Lead Generation", "B2B Sales", "Digital Marketing", "Customer Acquisition"]}
-        structuredData={articleSchema}
-      />
+  const relatedArticles = [{
+    title: "NDIS Software SaaS Marketing Guide",
+    description: "Complete guide to B2B growth strategies for NDIS software platforms.",
+    url: "/blog/ndis-software-saas-marketing-guide",
+    category: "SaaS Marketing"
+  }, {
+    title: "NDIS Software SaaS Positioning Strategy",
+    description: "Stand out in a competitive market with effective positioning strategies.",
+    url: "/blog/ndis-software-saas-positioning-strategy",
+    category: "Positioning"
+  }, {
+    title: "NDIS Digital Marketing Strategies",
+    description: "Comprehensive digital marketing tactics for NDIS providers.",
+    url: "/blog/ndis-digital-marketing-strategies",
+    category: "NDIS"
+  }, {
+    title: "Google Ads for Service Businesses",
+    description: "Complete setup guide for profitable Google Ads campaigns.",
+    url: "/blog/google-ads-service-businesses",
+    category: "Paid Advertising"
+  }];
+  return <>
+      <SEO title="NDIS Software SaaS Lead Generation: Convert Prospects into Customers" description="Master lead generation for NDIS software platforms. Learn proven techniques to attract, qualify, and convert NDIS providers into paying customers with sustainable, scalable strategies." canonical="/blog/ndis-software-saas-lead-generation" ogType="article" articlePublishedTime="2024-01-20T00:00:00Z" articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Lead Generation", "B2B Sales", "Digital Marketing", "Customer Acquisition"]} structuredData={articleSchema} />
       <Header />
       <div className="min-h-screen bg-background pt-24">
         <div className="container max-w-4xl py-8">
-          <BreadcrumbNavigation 
-            items={[
-              { label: "Blog", href: "/blog" },
-              { label: "NDIS Software SaaS Lead Generation", href: "/blog/ndis-software-saas-lead-generation" }
-            ]} 
-          />
+          <BreadcrumbNavigation items={[{
+          label: "Blog",
+          href: "/blog"
+        }, {
+          label: "NDIS Software SaaS Lead Generation",
+          href: "/blog/ndis-software-saas-lead-generation"
+        }]} />
           
           <article className="prose prose-lg max-w-none">
             {/* Hero Section */}
             <div className="mb-12">
-              <img 
-                src={ndisEngagementImage} 
-                alt="NDIS software lead generation strategy meeting" 
-                className="w-full h-96 object-cover rounded-lg mb-8"
-              />
+              <img src={ndisEngagementImage} alt="NDIS software lead generation strategy meeting" className="w-full h-96 object-cover rounded-lg mb-8" />
               <h1 className="text-4xl font-bold mb-4 text-foreground">
                 NDIS Software SaaS Lead Generation: Convert Prospects into Customers
               </h1>
@@ -211,8 +221,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
 
             <ContentGate isUnlocked={isUnlocked} onUnlock={unlock} blogTitle="NDIS Software SaaS Lead Generation: Convert Prospects into Customers" />
 
-            {isUnlocked && (
-              <>
+            {isUnlocked && <>
                 {/* Lead Generation Channels */}
                 <section className="mb-12">
               <h2 className="text-3xl font-semibold mb-6 text-foreground">High-Impact Lead Generation Channels</h2>
@@ -229,8 +238,8 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                     <div>
                       <h4 className="font-semibold mb-3 text-foreground">High-Converting Content Types</h4>
                       <ul className="space-y-2 text-muted-foreground">
-                        <li>• <strong>Buyer's Guides:</strong> "Ultimate Guide to Choosing NDIS Software" (avg. 45 leads/month)</li>
-                        <li>• <strong>Comparison Articles:</strong> "Top 10 NDIS Software Solutions Compared" (avg. 35 leads/month)</li>
+                        <li>• <strong>Buyer&apos;s Guides:</strong> &quot;Ultimate Guide to Choosing NDIS Software&quot; (avg. 45 leads/month)</li>
+                        <li>• <strong>Comparison Articles:</strong> &quot;Top 10 NDIS Software Solutions Compared&quot; (avg. 35 leads/month)</li>
                         <li>• <strong>ROI Calculators:</strong> Interactive tools showing software savings (avg. 25 leads/month)</li>
                         <li>• <strong>Case Studies:</strong> Detailed customer success stories (avg. 20 leads/month)</li>
                         <li>• <strong>Compliance Guides:</strong> NDIS requirement updates and checklists (avg. 30 leads/month)</li>
@@ -239,11 +248,11 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                     <div>
                       <h4 className="font-semibold mb-3 text-foreground">SEO Strategy Focus</h4>
                       <ul className="space-y-2 text-muted-foreground">
-                        <li>• <strong>High-Intent Keywords:</strong> "NDIS practice management software"</li>
-                        <li>• <strong>Problem-Focused:</strong> "NDIS compliance management solutions"</li>
-                        <li>• <strong>Feature-Specific:</strong> "NDIS billing software with rostering"</li>
-                        <li>• <strong>Competitor Terms:</strong> "[Competitor] alternatives"</li>
-                        <li>• <strong>Long-Tail:</strong> "Best NDIS software for SIL providers"</li>
+                        <li>• <strong>High-Intent Keywords:</strong> &quot;NDIS practice management software&quot;</li>
+                        <li>• <strong>Problem-Focused:</strong> &quot;NDIS compliance management solutions&quot;</li>
+                        <li>• <strong>Feature-Specific:</strong> &quot;NDIS billing software with rostering&quot;</li>
+                        <li>• <strong>Competitor Terms:</strong> &quot;[Competitor] alternatives&quot;</li>
+                        <li>• <strong>Long-Tail:</strong> &quot;Best NDIS software for SIL providers&quot;</li>
                       </ul>
                     </div>
                   </div>
@@ -263,7 +272,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-semibold mb-4 text-foreground">2. LinkedIn Lead Generation</h3>
                   <p className="text-muted-foreground mb-6">
-                    Leverage LinkedIn's professional network to connect directly with NDIS decision-makers and build relationships that convert into sales opportunities.
+                    Leverage LinkedIn&apos;s professional network to connect directly with NDIS decision-makers and build relationships that convert into sales opportunities.
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -283,7 +292,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                           <ul className="text-sm mt-1 space-y-1">
                             <li>• Like and comment on their posts first</li>
                             <li>• Send personalized connection requests</li>
-                            <li>• Reference specific challenges they've shared</li>
+                            <li>• Reference specific challenges they&apos;ve shared</li>
                           </ul>
                         </div>
                         <div>
@@ -322,18 +331,18 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-semibold mb-4 text-foreground">3. Webinar Marketing</h3>
                   <p className="text-muted-foreground mb-6">
-                    Host educational webinars that provide value to NDIS providers while showcasing your software's capabilities and generating high-quality leads.
+                    Host educational webinars that provide value to NDIS providers while showcasing your software&apos;s capabilities and generating high-quality leads.
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
                     <div>
                       <h4 className="font-semibold mb-3 text-foreground">High-Converting Webinar Topics</h4>
                       <ul className="space-y-2 text-muted-foreground">
-                        <li>• <strong>"NDIS Compliance Masterclass":</strong> Avoid violations and pass audits</li>
-                        <li>• <strong>"Scaling Your NDIS Practice":</strong> Growth strategies and operational efficiency</li>
-                        <li>• <strong>"NDIS Software ROI Calculator":</strong> Measure and maximise your investment</li>
-                        <li>• <strong>"Future of NDIS Technology":</strong> Trends and innovations</li>
-                        <li>• <strong>"From Spreadsheets to Software":</strong> Digital transformation for providers</li>
+                        <li>• <strong>&quot;NDIS Compliance Masterclass&quot;:</strong> Avoid violations and pass audits</li>
+                        <li>• <strong>&quot;Scaling Your NDIS Practice&quot;:</strong> Growth strategies and operational efficiency</li>
+                        <li>• <strong>&quot;NDIS Software ROI Calculator&quot;:</strong> Measure and maximise your investment</li>
+                        <li>• <strong>&quot;Future of NDIS Technology&quot;:</strong> Trends and innovations</li>
+                        <li>• <strong>&quot;From Spreadsheets to Software&quot;:</strong> Digital transformation for providers</li>
                       </ul>
                     </div>
                     <div>
@@ -468,7 +477,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                         <div className="border rounded-lg p-3">
                           <h5 className="font-medium text-foreground">New Lead Welcome Series (7 emails, 14 days)</h5>
                           <ul className="text-sm text-muted-foreground mt-2 space-y-1">
-                            <li>1. Welcome + Software buyer's guide</li>
+                            <li>1. Welcome + Software buyer&apos;s guide</li>
                             <li>2. Common NDIS software mistakes to avoid</li>
                             <li>3. ROI calculator + customer case study</li>
                             <li>4. Compliance checklist + demo invitation</li>
@@ -633,7 +642,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                         <div className="border rounded-lg p-3">
                           <h5 className="font-medium text-foreground">Budget</h5>
                           <ul className="text-sm text-muted-foreground mt-1 space-y-1">
-                            <li>• What's your current software budget?</li>
+                            <li>• What&apos;s your current software budget?</li>
                             <li>• How much are you spending on manual processes?</li>
                             <li>• What ROI are you expecting from new software?</li>
                           </ul>
@@ -642,7 +651,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                           <h5 className="font-medium text-foreground">Authority</h5>
                           <ul className="text-sm text-muted-foreground mt-1 space-y-1">
                             <li>• Who makes software purchasing decisions?</li>
-                            <li>• What's the approval process?</li>
+                            <li>• What&apos;s the approval process?</li>
                             <li>• Who else is involved in the evaluation?</li>
                           </ul>
                         </div>
@@ -650,15 +659,15 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                           <h5 className="font-medium text-foreground">Need</h5>
                           <ul className="text-sm text-muted-foreground mt-1 space-y-1">
                             <li>• What challenges are you facing?</li>
-                            <li>• What's the impact of not solving this?</li>
-                            <li>• What's driving the need for change now?</li>
+                            <li>• What&apos;s the impact of not solving this?</li>
+                            <li>• What&apos;s driving the need for change now?</li>
                           </ul>
                         </div>
                         <div className="border rounded-lg p-3">
                           <h5 className="font-medium text-foreground">Timeline</h5>
                           <ul className="text-sm text-muted-foreground mt-1 space-y-1">
                             <li>• When do you need to have a solution in place?</li>
-                            <li>• What's driving your timeline?</li>
+                            <li>• What&apos;s driving your timeline?</li>
                             <li>• Are there any external deadlines?</li>
                           </ul>
                         </div>
@@ -687,7 +696,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                           <h5 className="font-medium text-foreground">Current Systems</h5>
                           <ul className="text-sm text-muted-foreground mt-1 space-y-1">
                             <li>• What software are you currently using?</li>
-                            <li>• What's working well/not working?</li>
+                            <li>• What&apos;s working well/not working?</li>
                             <li>• Integration requirements?</li>
                           </ul>
                         </div>
@@ -784,7 +793,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                             <span className="font-medium">35% conversion</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>Buyer's Guide:</span>
+                            <span>Buyer&apos;s Guide:</span>
                             <span className="font-medium">28% conversion</span>
                           </div>
                           <div className="flex justify-between">
@@ -875,7 +884,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                           <li>• Increase budget for top-performing channels</li>
                           <li>• Launch additional content campaigns</li>
                           <li>• Expand partnership program</li>
-                          <li>• Plan next quarter's strategy</li>
+                          <li>• Plan next quarter&apos;s strategy</li>
                         </ul>
                       </div>
                     </div>
@@ -955,15 +964,12 @@ const NDISSoftwareSaaSLeadGeneration = () => {
             </section>
 
             <InternalLinks articles={relatedArticles} title="Master Your NDIS SaaS Growth" />
-              </>
-            )}
+              </>}
           </article>
         </div>
       </div>
       <Footer />
       
-    </>
-  );
+    </>;
 };
-
 export default NDISSoftwareSaaSLeadGeneration;

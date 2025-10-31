@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Paintbrush, Home, Building, Palette } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import paintersDigitalMarketingHero from '@/assets/blog/painters-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Painters Digital Marketing Guide",
+  description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/painters-digital-marketing-guide",
+  keywords: ["painters", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Painters Digital Marketing Guide",
+    description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/painters-digital-marketing-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Painters Digital Marketing Guide"
+    }],
+    publishedTime: "2025-01-07T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:05.086Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Painters Digital Marketing Guide",
+    description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const PaintersDigitalMarketing = () => {
   const articleData = {
     headline: "Digital Marketing for Painters: Complete Business Growth Strategy 2025",
@@ -18,30 +47,17 @@ const PaintersDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["Digital Marketing", "Painting Business", "Local SEO", "Trade Marketing", "Business Growth"]
   };
-
-  const faqs = [
-    {
-      question: "What digital marketing strategies work best for painting contractors?",
-      answer: "The most effective strategies include local SEO optimization, visual portfolio showcasing, Google Ads targeting homeowners, social media marketing on visual platforms, and customer review management. Focus on before/after photos and local community engagement."
-    },
-    {
-      question: "How can painters attract customers through social media?",
-      answer: "Use Instagram for daily project photos, Facebook for community engagement, Pinterest for color inspiration, TikTok for transformation videos, and YouTube for detailed project walkthroughs. Consistent visual content showcasing quality work drives the most engagement."
-    },
-    {
-      question: "What's the average ROI for digital marketing in the painting industry?",
-      answer: "Well-executed digital marketing campaigns for painters typically generate 3:1 to 5:1 ROI within 6-12 months. Local SEO and Google Ads tend to provide the highest returns, with social media building long-term brand recognition and referrals."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={paintersDigitalMarketingHero}
-      heroAlt="Professional painting business digital marketing and client acquisition"
-    >
+  const faqs = [{
+    question: "What digital marketing strategies work best for painting contractors?",
+    answer: "The most effective strategies include local SEO optimization, visual portfolio showcasing, Google Ads targeting homeowners, social media marketing on visual platforms, and customer review management. Focus on before/after photos and local community engagement."
+  }, {
+    question: "How can painters attract customers through social media?",
+    answer: "Use Instagram for daily project photos, Facebook for community engagement, Pinterest for color inspiration, TikTok for transformation videos, and YouTube for detailed project walkthroughs. Consistent visual content showcasing quality work drives the most engagement."
+  }, {
+    question: "What's the average ROI for digital marketing in the painting industry?",
+    answer: "Well-executed digital marketing campaigns for painters typically generate 3:1 to 5:1 ROI within 6-12 months. Local SEO and Google Ads tend to provide the highest returns, with social media building long-term brand recognition and referrals."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={paintersDigitalMarketingHero} heroAlt="Professional painting business digital marketing and client acquisition">
       <p className="text-xl text-muted-foreground mb-8">
         The painting industry is highly competitive, with success often depending on local reputation and visual showcasing. Digital marketing has become essential for painting contractors to attract homeowners, demonstrate their craftsmanship, and build a sustainable business. This guide reveals proven strategies that top painting businesses use to dominate their local markets.
       </p>
@@ -324,8 +340,6 @@ const PaintersDigitalMarketing = () => {
         <li>Implement referral programs</li>
       </ul>
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default PaintersDigitalMarketing;

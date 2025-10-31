@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import { MapPin, Users, Target, TrendingUp, Shield, MessageCircle } from 'lucide-react';
 import StrategyForm from '@/components/ui/strategy-form';
 import ndisMarketingImage from '@/assets/ndis-marketing-materials.jpg';
@@ -5,7 +6,35 @@ import { Card, CardContent } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
+export const metadata = createMetadata({
+  title: "Ndis Digital Marketing Strategies",
+  description: "Expert guidance on ndis digital marketing strategies. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-digital-marketing-strategies",
+  keywords: ["ndis", "digital", "marketing", "strategies", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Digital Marketing Strategies",
+    description: "Expert guidance on ndis digital marketing strategies. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-digital-marketing-strategies",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Digital Marketing Strategies"
+    }],
+    publishedTime: "2024-12-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.932Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Digital Marketing Strategies",
+    description: "Expert guidance on ndis digital marketing strategies. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISDigitalMarketing = () => {
   const articleData = {
     headline: "NDIS Digital Marketing: Complete Guide for Disability Service Providers 2025",
@@ -19,30 +48,17 @@ const NDISDigitalMarketing = () => {
     readTime: "25 min read",
     tags: ["NDIS", "Digital Marketing", "Disability Services", "Participant Engagement", "Service Providers"]
   };
-
-  const faqs = [
-    {
-      question: "What are the most effective digital marketing strategies for NDIS providers?",
-      answer: "The most effective strategies include local SEO optimization, Google My Business management, participant-focused content marketing, accessible website design, and ethical social media engagement that prioritizes participant outcomes."
-    },
-    {
-      question: "How can NDIS providers ensure their marketing is ethical and participant-centered?",
-      answer: "Focus on transparent pricing, honest capability representation, participant success stories (with consent), outcome-based messaging, and always prioritizing participant dignity and choice in all marketing materials."
-    },
-    {
-      question: "What budget should NDIS providers allocate for digital marketing?",
-      answer: "NDIS providers should typically allocate 3-5% of revenue to marketing, with digital channels representing 60-80% of that budget. Start with $2,000-5,000 monthly for effective local reach and scale based on results."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={ndisMarketingImage}
-      heroAlt="NDIS digital marketing strategies and campaign materials for disability service providers"
-    >
+  const faqs = [{
+    question: "What are the most effective digital marketing strategies for NDIS providers?",
+    answer: "The most effective strategies include local SEO optimization, Google My Business management, participant-focused content marketing, accessible website design, and ethical social media engagement that prioritizes participant outcomes."
+  }, {
+    question: "How can NDIS providers ensure their marketing is ethical and participant-centered?",
+    answer: "Focus on transparent pricing, honest capability representation, participant success stories (with consent), outcome-based messaging, and always prioritizing participant dignity and choice in all marketing materials."
+  }, {
+    question: "What budget should NDIS providers allocate for digital marketing?",
+    answer: "NDIS providers should typically allocate 3-5% of revenue to marketing, with digital channels representing 60-80% of that budget. Start with $2,000-5,000 monthly for effective local reach and scale based on results."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={ndisMarketingImage} heroAlt="NDIS digital marketing strategies and campaign materials for disability service providers">
         <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-l-blue-500 p-8 mb-8 not-prose">
           <div className="flex items-start space-x-4">
             <div className="bg-blue-100 p-3 rounded-full">
@@ -143,20 +159,20 @@ const NDISDigitalMarketing = () => {
         
         <h4>Service-Based Keywords</h4>
         <ul>
-          <li>"NDIS support coordination [location]"</li>
-          <li>"disability accommodation [city]"</li>
-          <li>"NDIS plan management [area]"</li>
-          <li>"community participation programs [location]"</li>
-          <li>"allied health services NDIS [city]"</li>
+          <li>&quot;NDIS support coordination [location]&quot;</li>
+          <li>&quot;disability accommodation [city]&quot;</li>
+          <li>&quot;NDIS plan management [area]&quot;</li>
+          <li>&quot;community participation programs [location]&quot;</li>
+          <li>&quot;allied health services NDIS [city]&quot;</li>
         </ul>
 
         <h4>Participant-Focused Keywords</h4>
         <ul>
-          <li>"how to use NDIS funding"</li>
-          <li>"NDIS service providers near me"</li>
-          <li>"disability support services [location]"</li>
-          <li>"NDIS plan help [city]"</li>
-          <li>"autism support services NDIS"</li>
+          <li>&quot;how to use NDIS funding&quot;</li>
+          <li>&quot;NDIS service providers near me&quot;</li>
+          <li>&quot;disability support services [location]&quot;</li>
+          <li>&quot;NDIS plan help [city]&quot;</li>
+          <li>&quot;autism support services NDIS&quot;</li>
         </ul>
 
         <h3>Advanced Content Strategy for NDIS Services</h3>
@@ -463,21 +479,15 @@ const NDISDigitalMarketing = () => {
         </p>
         
         <p>
-          The regulatory environment may seem complex, but it creates opportunities for providers who invest in compliant, participant-centered marketing strategies. By focusing on education, community building, and transparent communication, you'll attract participants who are the right fit for your services.
+          The regulatory environment may seem complex, but it creates opportunities for providers who invest in compliant, participant-centered marketing strategies. By focusing on education, community building, and transparent communication, you&apos;ll attract participants who are the right fit for your services.
         </p>
 
         <p>
           Remember that every participant represents someone seeking to achieve their goals and live their best life. Your marketing should reflect this dignity and focus on empowerment rather than limitation. The NDIS providers who embrace this approach build sustainable businesses that make a meaningful difference in their communities.
         </p>
 
-        <Citation
-          source="NDIS Quarterly Report Q3 2024"
-          url="https://www.ndis.gov.au/about-us/publications/quarterly-reports"
-          title="The NDIS now supports over 610,000 participants with a focus on choice and control, creating opportunities for providers who prioritize participant-centered services."
-        />
+        <Citation source="NDIS Quarterly Report Q3 2024" url="https://www.ndis.gov.au/about-us/publications/quarterly-reports" title="The NDIS now supports over 610,000 participants with a focus on choice and control, creating opportunities for providers who prioritize participant-centered services." />
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default NDISDigitalMarketing;

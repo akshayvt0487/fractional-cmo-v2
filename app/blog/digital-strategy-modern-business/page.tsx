@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import Citation from '@/components/Citation';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import digitalStrategyModernBusinessHero from '@/assets/blog/digital-strategy-modern-business-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Digital Strategy Modern Business",
+  description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
+  path: "/blog/digital-strategy-modern-business",
+  keywords: ["digital", "strategy", "modern", "business", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Digital Strategy Modern Business",
+    description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/digital-strategy-modern-business",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Digital Strategy Modern Business"
+    }],
+    publishedTime: "2024-12-18T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.629Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Strategy Modern Business",
+    description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const DigitalStrategyModernBusiness = () => {
   const articleData = {
     headline: "Digital Strategy for Modern Businesses: Complete Transformation Guide 2025",
@@ -18,32 +47,19 @@ const DigitalStrategyModernBusiness = () => {
     readTime: "30 min read",
     tags: ["Digital Strategy", "Business Transformation", "Technology Integration", "Change Management", "Digital Innovation"]
   };
-
-  const faqs = [
-    {
-      question: "How long does digital transformation take for most businesses?",
-      answer: "Digital transformation is an ongoing process, but most businesses see initial results within 6-12 months. Complete transformation typically takes 2-3 years, depending on company size and complexity."
-    },
-    {
-      question: "What's the biggest challenge in implementing a digital strategy?",
-      answer: "Cultural resistance and change management are the biggest challenges. 70% of digital transformations fail due to employee resistance and lack of leadership buy-in rather than technology issues."
-    },
-    {
-      question: "How much should companies budget for digital transformation?",
-      answer: "Most successful companies invest 3-9% of revenue in digital transformation initiatives. The exact amount depends on industry, current digital maturity, and transformation scope."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={digitalStrategyModernBusinessHero}
-      heroAlt="Digital strategy planning session with business transformation roadmap"
-    >
+  const faqs = [{
+    question: "How long does digital transformation take for most businesses?",
+    answer: "Digital transformation is an ongoing process, but most businesses see initial results within 6-12 months. Complete transformation typically takes 2-3 years, depending on company size and complexity."
+  }, {
+    question: "What's the biggest challenge in implementing a digital strategy?",
+    answer: "Cultural resistance and change management are the biggest challenges. 70% of digital transformations fail due to employee resistance and lack of leadership buy-in rather than technology issues."
+  }, {
+    question: "How much should companies budget for digital transformation?",
+    answer: "Most successful companies invest 3-9% of revenue in digital transformation initiatives. The exact amount depends on industry, current digital maturity, and transformation scope."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={digitalStrategyModernBusinessHero} heroAlt="Digital strategy planning session with business transformation roadmap">
       <p className="text-xl text-muted-foreground mb-8">
-        In today's rapidly evolving digital landscape, businesses that fail to adapt their strategies face extinction. Digital transformation isn't just about adopting new technologies—it's about fundamentally reimagining how your business creates value, engages customers, and competes in the marketplace.
+        In today&apos;s rapidly evolving digital landscape, businesses that fail to adapt their strategies face extinction. Digital transformation isn&apos;t just about adopting new technologies—it&apos;s about fundamentally reimagining how your business creates value, engages customers, and competes in the marketplace.
       </p>
 
       <h2>The Digital Imperative: Why Strategy Matters More Than Ever</h2>
@@ -497,7 +513,7 @@ const DigitalStrategyModernBusiness = () => {
 
       <h2>Building Digital Capability: Skills and Culture</h2>
       <p>
-        Technology alone doesn't drive transformation—people do. Investing in digital skills and fostering an innovative culture are essential for sustained success.
+        Technology alone doesn&apos;t drive transformation—people do. Investing in digital skills and fostering an innovative culture are essential for sustained success.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
@@ -551,8 +567,6 @@ const DigitalStrategyModernBusiness = () => {
       <p>
         The businesses that thrive in the digital age are those that view technology not as a cost center, but as a strategic enabler of growth, efficiency, and customer value creation. Start building your comprehensive digital strategy today to secure your competitive advantage tomorrow.
       </p>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default DigitalStrategyModernBusiness;

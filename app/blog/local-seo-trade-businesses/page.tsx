@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import Citation from '@/components/Citation';
 import { citations } from '@/utils/blogCitations';
@@ -6,7 +7,35 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import localSeoTradeHero from '@/assets/blog/local-seo-trade.jpg';
 import { Card, CardContent } from '@/components/ui/card';
-
+export const metadata = createMetadata({
+  title: "Local Seo Trade Businesses",
+  description: "Expert guidance on local seo trade businesses. Learn proven strategies and best practices for business growth.",
+  path: "/blog/local-seo-trade-businesses",
+  keywords: ["local", "trade", "businesses", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Local Seo Trade Businesses",
+    description: "Expert guidance on local seo trade businesses. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/local-seo-trade-businesses",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Local Seo Trade Businesses"
+    }],
+    publishedTime: "2024-12-18T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.894Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Local Seo Trade Businesses",
+    description: "Expert guidance on local seo trade businesses. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const LocalSEOTrade = () => {
   const articleData = {
     headline: "Local SEO for Trade Businesses: Complete Guide to Dominating Local Search 2025",
@@ -20,30 +49,17 @@ const LocalSEOTrade = () => {
     readTime: "25 min read",
     tags: ["Local SEO", "Trade Business", "Digital Marketing", "Lead Generation", "Google Business Profile"]
   };
-
-  const faqs = [
-    {
-      question: "How long does it take to see results from local SEO for trade businesses?",
-      answer: "Most trade businesses see initial improvements in local search visibility within 3-6 months, with significant lead generation increases typically occurring within 6-12 months of consistent implementation."
-    },
-    {
-      question: "What's the most important factor for local SEO success in trade industries?",
-      answer: "Google Business Profile optimization combined with consistent customer reviews are the most critical factors. Complete profiles with regular updates, quality photos, and positive reviews drive the highest local search visibility."
-    },
-    {
-      question: "How do I compete with large national trade companies in local search?",
-      answer: "Focus on hyperlocal content, community involvement, and personalized service stories. Large companies can't match local knowledge, community connections, and personalized customer service that local trade businesses provide."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={localSeoTradeHero}
-      heroAlt="Local SEO Strategy for Trade Businesses - Complete guide to dominating local search"
-    >
+  const faqs = [{
+    question: "How long does it take to see results from local SEO for trade businesses?",
+    answer: "Most trade businesses see initial improvements in local search visibility within 3-6 months, with significant lead generation increases typically occurring within 6-12 months of consistent implementation."
+  }, {
+    question: "What's the most important factor for local SEO success in trade industries?",
+    answer: "Google Business Profile optimization combined with consistent customer reviews are the most critical factors. Complete profiles with regular updates, quality photos, and positive reviews drive the highest local search visibility."
+  }, {
+    question: "How do I compete with large national trade companies in local search?",
+    answer: "Focus on hyperlocal content, community involvement, and personalized service stories. Large companies can't match local knowledge, community connections, and personalized customer service that local trade businesses provide."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={localSeoTradeHero} heroAlt="Local SEO Strategy for Trade Businesses - Complete guide to dominating local search">
         <div className="bg-gradient-to-r from-orange-50 to-yellow-50 border-l-4 border-l-orange-500 p-8 mb-8 rounded-lg">
           <h3 className="text-xl font-semibold text-orange-800 mb-2">Industry Insight</h3>
           <p className="text-lg text-gray-700">
@@ -57,7 +73,7 @@ const LocalSEOTrade = () => {
         </p>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg mb-6 bg-muted/50 p-4 rounded">
-          "Local search is the new Yellow Pages for trade businesses. The companies that master local SEO will dominate their markets for the next decade." 
+          &quot;Local search is the new Yellow Pages for trade businesses. The companies that master local SEO will dominate their markets for the next decade.&quot; 
           <cite className="block mt-2 text-sm text-muted-foreground">— Local Search Industry Report 2024</cite>
         </blockquote>
 
@@ -70,7 +86,7 @@ const LocalSEOTrade = () => {
             <ul className="space-y-2 text-sm">
               <li>• 73% search during urgent situations (burst pipes, power outages)</li>
               <li>• Average decision time: 2-4 hours for emergency services</li>
-              <li>• Primary keywords: "emergency [service] near me"</li>
+              <li>• Primary keywords: &quot;emergency [service] near me&quot;</li>
               <li>• Mobile searches account for 89% of urgent queries</li>
               <li>• Price becomes secondary to availability and response time</li>
             </ul>
@@ -190,21 +206,21 @@ const LocalSEOTrade = () => {
               <div>
                 <h5 className="font-semibold mb-2">Plumbing Emergencies</h5>
                 <ul className="text-sm space-y-1">
-                  <li>• "emergency plumber [city]"</li>
-                  <li>• "24 hour plumber [suburb]"</li>
-                  <li>• "burst pipe repair [area]"</li>
-                  <li>• "blocked drain plumber [location]"</li>
-                  <li>• "gas leak emergency [city]"</li>
+                  <li>• &quot;emergency plumber [city]&quot;</li>
+                  <li>• &quot;24 hour plumber [suburb]&quot;</li>
+                  <li>• &quot;burst pipe repair [area]&quot;</li>
+                  <li>• &quot;blocked drain plumber [location]&quot;</li>
+                  <li>• &quot;gas leak emergency [city]&quot;</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-semibold mb-2">Electrical Emergencies</h5>
                 <ul className="text-sm space-y-1">
-                  <li>• "emergency electrician [city]"</li>
-                  <li>• "power outage repair [suburb]"</li>
-                  <li>• "electrical fault [area]"</li>
-                  <li>• "sparking outlet repair [location]"</li>
-                  <li>• "fuse box replacement [city]"</li>
+                  <li>• &quot;emergency electrician [city]&quot;</li>
+                  <li>• &quot;power outage repair [suburb]&quot;</li>
+                  <li>• &quot;electrical fault [area]&quot;</li>
+                  <li>• &quot;sparking outlet repair [location]&quot;</li>
+                  <li>• &quot;fuse box replacement [city]&quot;</li>
                 </ul>
               </div>
             </div>
@@ -216,21 +232,21 @@ const LocalSEOTrade = () => {
               <div>
                 <h5 className="font-semibold mb-2">Home Improvement</h5>
                 <ul className="text-sm space-y-1">
-                  <li>• "bathroom renovation cost [city]"</li>
-                  <li>• "kitchen remodel contractor [suburb]"</li>
-                  <li>• "home extension builder [area]"</li>
-                  <li>• "deck construction [location]"</li>
-                  <li>• "solar panel installation [city]"</li>
+                  <li>• &quot;bathroom renovation cost [city]&quot;</li>
+                  <li>• &quot;kitchen remodel contractor [suburb]&quot;</li>
+                  <li>• &quot;home extension builder [area]&quot;</li>
+                  <li>• &quot;deck construction [location]&quot;</li>
+                  <li>• &quot;solar panel installation [city]&quot;</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-semibold mb-2">Maintenance Services</h5>
                 <ul className="text-sm space-y-1">
-                  <li>• "roof maintenance [city]"</li>
-                  <li>• "HVAC servicing [suburb]"</li>
-                  <li>• "gutter cleaning [area]"</li>
-                  <li>• "painting contractor [location]"</li>
-                  <li>• "landscaping services [city]"</li>
+                  <li>• &quot;roof maintenance [city]&quot;</li>
+                  <li>• &quot;HVAC servicing [suburb]&quot;</li>
+                  <li>• &quot;gutter cleaning [area]&quot;</li>
+                  <li>• &quot;painting contractor [location]&quot;</li>
+                  <li>• &quot;landscaping services [city]&quot;</li>
                 </ul>
               </div>
             </div>
@@ -244,24 +260,24 @@ const LocalSEOTrade = () => {
           <Card className="p-6">
             <h4 className="text-lg font-semibold mb-3">Problem-Solution Keywords</h4>
             <ul className="text-sm space-y-1">
-              <li>• "how much does bathroom renovation cost [city]"</li>
-              <li>• "best hot water system for [climate/area]"</li>
-              <li>• "how to choose electrician [suburb]"</li>
-              <li>• "solar panel cost calculator [location]"</li>
-              <li>• "building permit requirements [city]"</li>
-              <li>• "energy efficient upgrades [area]"</li>
+              <li>• &quot;how much does bathroom renovation cost [city]&quot;</li>
+              <li>• &quot;best hot water system for [climate/area]&quot;</li>
+              <li>• &quot;how to choose electrician [suburb]&quot;</li>
+              <li>• &quot;solar panel cost calculator [location]&quot;</li>
+              <li>• &quot;building permit requirements [city]&quot;</li>
+              <li>• &quot;energy efficient upgrades [area]&quot;</li>
             </ul>
           </Card>
           
           <Card className="p-6">
             <h4 className="text-lg font-semibold mb-3">Comparison Keywords</h4>
             <ul className="text-sm space-y-1">
-              <li>• "best plumber vs cheapest [city]"</li>
-              <li>• "licensed vs unlicensed contractor [area]"</li>
-              <li>• "tile vs laminate flooring [suburb]"</li>
-              <li>• "gas vs electric hot water [location]"</li>
-              <li>• "repair vs replace HVAC [city]"</li>
-              <li>• "DIY vs professional installation [area]"</li>
+              <li>• &quot;best plumber vs cheapest [city]&quot;</li>
+              <li>• &quot;licensed vs unlicensed contractor [area]&quot;</li>
+              <li>• &quot;tile vs laminate flooring [suburb]&quot;</li>
+              <li>• &quot;gas vs electric hot water [location]&quot;</li>
+              <li>• &quot;repair vs replace HVAC [city]&quot;</li>
+              <li>• &quot;DIY vs professional installation [area]&quot;</li>
             </ul>
           </Card>
         </div>
@@ -289,7 +305,7 @@ const LocalSEOTrade = () => {
               
               <div className="bg-blue-50 p-4 rounded">
                 <h5 className="font-semibold mb-2">Follow-up Strategy (1 week later)</h5>
-                <p className="text-sm mb-2">Gentle reminder for customers who haven't responded.</p>
+                <p className="text-sm mb-2">Gentle reminder for customers who haven&apos;t responded.</p>
                 <ul className="text-sm space-y-1">
                   <li>• Reference specific work completed</li>
                   <li>• Highlight any unique problem-solving</li>
@@ -319,7 +335,7 @@ const LocalSEOTrade = () => {
             <h4 className="text-lg font-semibold mb-3">Negative Review Management</h4>
             <ul className="space-y-2 text-sm">
               <li><strong>Respond promptly:</strong> Within hours, not days</li>
-              <li><strong>Acknowledge concerns:</strong> Show you're listening</li>
+              <li><strong>Acknowledge concerns:</strong> Show you&apos;re listening</li>
               <li><strong>Offer solution:</strong> Demonstrate commitment to resolution</li>
               <li><strong>Take conversation offline:</strong> Provide direct contact</li>
               <li><strong>Professional tone:</strong> Never defensive or argumentative</li>
@@ -398,26 +414,26 @@ const LocalSEOTrade = () => {
           <Card className="p-6">
             <h4 className="text-lg font-semibold mb-3">Plumbing Content Topics</h4>
             <ul className="text-sm space-y-1">
-              <li>• "Signs You Need Emergency Plumbing Service"</li>
-              <li>• "Bathroom Renovation Cost Guide [City]"</li>
-              <li>• "How to Choose the Right Hot Water System"</li>
-              <li>• "Preventing Frozen Pipes in [Local Climate]"</li>
-              <li>• "When to DIY vs Call a Professional"</li>
-              <li>• "Understanding [City] Building Codes"</li>
-              <li>• "Water Efficiency Tips for [Local Area]"</li>
+              <li>• &quot;Signs You Need Emergency Plumbing Service&quot;</li>
+              <li>• &quot;Bathroom Renovation Cost Guide [City]&quot;</li>
+              <li>• &quot;How to Choose the Right Hot Water System&quot;</li>
+              <li>• &quot;Preventing Frozen Pipes in [Local Climate]&quot;</li>
+              <li>• &quot;When to DIY vs Call a Professional&quot;</li>
+              <li>• &quot;Understanding [City] Building Codes&quot;</li>
+              <li>• &quot;Water Efficiency Tips for [Local Area]&quot;</li>
             </ul>
           </Card>
           
           <Card className="p-6">
             <h4 className="text-lg font-semibold mb-3">Electrical Content Topics</h4>
             <ul className="text-sm space-y-1">
-              <li>• "Electrical Safety Checklist for Homeowners"</li>
-              <li>• "Smart Home Installation Guide [City]"</li>
-              <li>• "Understanding Your Electrical Panel"</li>
-              <li>• "Solar Panel Installation Process [Area]"</li>
-              <li>• "Electrical Code Updates in [City]"</li>
-              <li>• "Energy Efficiency Upgrades ROI"</li>
-              <li>• "Generator Installation for [Climate]"</li>
+              <li>• &quot;Electrical Safety Checklist for Homeowners&quot;</li>
+              <li>• &quot;Smart Home Installation Guide [City]&quot;</li>
+              <li>• &quot;Understanding Your Electrical Panel&quot;</li>
+              <li>• &quot;Solar Panel Installation Process [Area]&quot;</li>
+              <li>• &quot;Electrical Code Updates in [City]&quot;</li>
+              <li>• &quot;Energy Efficiency Upgrades ROI&quot;</li>
+              <li>• &quot;Generator Installation for [Climate]&quot;</li>
             </ul>
           </Card>
         </div>
@@ -506,7 +522,7 @@ const LocalSEOTrade = () => {
           <Card className="p-6">
             <h4 className="text-lg font-semibold mb-3">Trade-Specific Directories</h4>
             <ul className="text-sm space-y-1">
-              <li>• HomeAdvisor / Angie's List</li>
+              <li>• HomeAdvisor / Angie&apos;s List</li>
               <li>• Houzz (contractors and designers)</li>
               <li>• Thumbtack (service professionals)</li>
               <li>• Industry association directories</li>
@@ -691,7 +707,7 @@ const LocalSEOTrade = () => {
 
         <h2>Dominate Your Local Market</h2>
         <p>
-          Local SEO for trade businesses isn't just about showing up in search results—it's about establishing your company as the trusted choice in your community. The comprehensive strategies outlined in this guide have helped countless trade businesses achieve dramatic growth, with many seeing 200-400% increases in qualified leads within 12 months of systematic implementation.
+          Local SEO for trade businesses isn&apos;t just about showing up in search results—it&apos;s about establishing your company as the trusted choice in your community. The comprehensive strategies outlined in this guide have helped countless trade businesses achieve dramatic growth, with many seeing 200-400% increases in qualified leads within 12 months of systematic implementation.
         </p>
         
         <p>
@@ -699,21 +715,15 @@ const LocalSEOTrade = () => {
         </p>
 
         <p>
-          The key to long-term success is understanding that local SEO is not a one-time project but an ongoing investment in your business's digital presence. The businesses that implement these strategies consistently over 6-12 months see the most dramatic and sustainable results. Every positive review, every piece of local content, every community partnership, and every satisfied customer contributes to your growing local search authority.
+          The key to long-term success is understanding that local SEO is not a one-time project but an ongoing investment in your business&apos;s digital presence. The businesses that implement these strategies consistently over 6-12 months see the most dramatic and sustainable results. Every positive review, every piece of local content, every community partnership, and every satisfied customer contributes to your growing local search authority.
         </p>
 
         <p>
-          Your local community represents your greatest business asset and competitive advantage. Large national companies cannot match your local knowledge, community connections, and personalized service delivery. By combining exceptional service quality with strategic local SEO implementation, you'll build a digital presence that generates qualified leads, establishes market dominance, and creates sustainable business growth for years to come.
+          Your local community represents your greatest business asset and competitive advantage. Large national companies cannot match your local knowledge, community connections, and personalized service delivery. By combining exceptional service quality with strategic local SEO implementation, you&apos;ll build a digital presence that generates qualified leads, establishes market dominance, and creates sustainable business growth for years to come.
         </p>
 
-        <Citation
-          source="BrightLocal Local Search Industry Survey 2024"
-          url="https://www.brightlocal.com/research/local-search-industry-survey/"
-          title="89% of consumers read reviews for local businesses, with 76% trusting online reviews as much as personal recommendations. Trade businesses with optimized local SEO see 340% more qualified leads on average."
-        />
+        <Citation source="BrightLocal Local Search Industry Survey 2024" url="https://www.brightlocal.com/research/local-search-industry-survey/" title="89% of consumers read reviews for local businesses, with 76% trusting online reviews as much as personal recommendations. Trade businesses with optimized local SEO see 340% more qualified leads on average." />
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default LocalSEOTrade;

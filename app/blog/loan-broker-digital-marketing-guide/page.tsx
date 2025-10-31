@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import { Card } from '@/components/ui/card';
 import loanBrokerDigitalMarketingHero from '@/assets/blog/loan-broker-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Loan Broker Digital Marketing Guide",
+  description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/loan-broker-digital-marketing-guide",
+  keywords: ["loan", "broker", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Loan Broker Digital Marketing Guide",
+    description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/loan-broker-digital-marketing-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Loan Broker Digital Marketing Guide"
+    }],
+    publishedTime: "2025-01-02T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.860Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Loan Broker Digital Marketing Guide",
+    description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const LoanBrokerDigitalMarketing = () => {
   const articleData = {
     headline: "Digital Marketing for Loan Brokers: Complete Client Acquisition Strategy 2025",
@@ -18,30 +47,17 @@ const LoanBrokerDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["Loan Brokers", "Digital Marketing", "Mortgage Marketing", "Financial Services", "Client Acquisition"]
   };
-
-  const faqs = [
-    {
-      question: "What's the best digital marketing strategy for loan brokers?",
-      answer: "A combination of educational content marketing, local SEO, and Google Ads works best. Focus on helping potential borrowers understand the loan process while optimizing for local search to capture people actively looking for mortgage assistance."
-    },
-    {
-      question: "How do loan brokers build trust online?",
-      answer: "Transparency is key - showcase credentials, client testimonials, clear fee structures, and educational content that demonstrates expertise. Professional website design, security badges, and industry certifications also build credibility."
-    },
-    {
-      question: "What compliance considerations exist for loan broker marketing?",
-      answer: "Follow NCUA, NMLS, and state regulatory guidelines. Ensure all marketing materials include required disclosures, avoid misleading claims about rates or approvals, and maintain proper licensing information visibility."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={loanBrokerDigitalMarketingHero}
-      heroAlt="Digital marketing strategies for loan brokers and mortgage professionals"
-    >
+  const faqs = [{
+    question: "What's the best digital marketing strategy for loan brokers?",
+    answer: "A combination of educational content marketing, local SEO, and Google Ads works best. Focus on helping potential borrowers understand the loan process while optimizing for local search to capture people actively looking for mortgage assistance."
+  }, {
+    question: "How do loan brokers build trust online?",
+    answer: "Transparency is key - showcase credentials, client testimonials, clear fee structures, and educational content that demonstrates expertise. Professional website design, security badges, and industry certifications also build credibility."
+  }, {
+    question: "What compliance considerations exist for loan broker marketing?",
+    answer: "Follow NCUA, NMLS, and state regulatory guidelines. Ensure all marketing materials include required disclosures, avoid misleading claims about rates or approvals, and maintain proper licensing information visibility."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={loanBrokerDigitalMarketingHero} heroAlt="Digital marketing strategies for loan brokers and mortgage professionals">
       <p className="text-xl text-muted-foreground mb-8">
         The mortgage and lending industry is highly competitive, with loan brokers needing to differentiate themselves through digital marketing that builds trust, demonstrates expertise, and guides potential borrowers through complex financial decisions. Effective digital marketing helps brokers attract qualified leads while maintaining compliance with financial industry regulations.
       </p>
@@ -55,7 +71,7 @@ const LoanBrokerDigitalMarketing = () => {
               Mortgage brokers implementing strategic digital marketing see <strong className="text-primary">4.2x ROI</strong> compared to traditional advertising methods.
             </p>
             <p className="text-muted-foreground">
-              With 89% of home buyers beginning their search online, digital presence is no longer optional—it's essential for survival and growth in the competitive lending market.
+              With 89% of home buyers beginning their search online, digital presence is no longer optional—it&apos;s essential for survival and growth in the competitive lending market.
             </p>
           </div>
         </div>
@@ -71,7 +87,7 @@ const LoanBrokerDigitalMarketing = () => {
           <h4 className="text-lg font-bold mb-3">1. Awareness Stage</h4>
           <p className="text-sm text-muted-foreground mb-3">Borrowers realize they need financing help</p>
           <ul className="space-y-2 text-sm">
-            <li>• Google searches: "mortgage broker near me"</li>
+            <li>• Google searches: &quot;mortgage broker near me&quot;</li>
             <li>• Reading educational content</li>
             <li>• Asking friends for recommendations</li>
             <li>• Viewing social media content</li>
@@ -157,20 +173,20 @@ const LoanBrokerDigitalMarketing = () => {
           <div className="bg-muted/50 p-4 rounded-lg mb-4">
             <p className="text-sm font-semibold mb-2">Primary Keywords (High CPC but High Conversion):</p>
             <ul className="space-y-1 text-sm">
-              <li>• "mortgage broker near me" - $25-45 CPC</li>
-              <li>• "home loan specialist [city]" - $20-40 CPC</li>
-              <li>• "first home buyer mortgage broker" - $18-35 CPC</li>
-              <li>• "refinance mortgage broker" - $15-30 CPC</li>
-              <li>• "investment property mortgage broker" - $22-40 CPC</li>
+              <li>• &quot;mortgage broker near me&quot; - $25-45 CPC</li>
+              <li>• &quot;home loan specialist [city]&quot; - $20-40 CPC</li>
+              <li>• &quot;first home buyer mortgage broker&quot; - $18-35 CPC</li>
+              <li>• &quot;refinance mortgage broker&quot; - $15-30 CPC</li>
+              <li>• &quot;investment property mortgage broker&quot; - $22-40 CPC</li>
             </ul>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg">
             <p className="text-sm font-semibold mb-2">Long-Tail Keywords (Lower CPC, Qualified Traffic):</p>
             <ul className="space-y-1 text-sm">
-              <li>• "best mortgage broker for self-employed [city]"</li>
-              <li>• "low deposit home loan specialist"</li>
-              <li>• "bad credit mortgage broker near me"</li>
-              <li>• "compare home loan rates with broker"</li>
+              <li>• &quot;best mortgage broker for self-employed [city]&quot;</li>
+              <li>• &quot;low deposit home loan specialist&quot;</li>
+              <li>• &quot;bad credit mortgage broker near me&quot;</li>
+              <li>• &quot;compare home loan rates with broker&quot;</li>
             </ul>
           </div>
         </Card>
@@ -211,7 +227,7 @@ const LoanBrokerDigitalMarketing = () => {
               <li>✓ <strong>NMLS License Number:</strong> Prominently displayed for credibility</li>
               <li>✓ <strong>Comparison Table:</strong> Your value vs. bank direct lending</li>
               <li>✓ <strong>Client Testimonials:</strong> Real success stories with photos</li>
-              <li>✓ <strong>Clear CTA:</strong> "Get Pre-Approval in 24 Hours"</li>
+              <li>✓ <strong>Clear CTA:</strong> &quot;Get Pre-Approval in 24 Hours&quot;</li>
               <li>✓ <strong>Trust Badges:</strong> BBB, industry memberships, awards</li>
             </ul>
           </div>
@@ -227,19 +243,19 @@ const LoanBrokerDigitalMarketing = () => {
           <ul className="space-y-3 text-sm">
             <li>
               <strong>Facebook:</strong> Local community engagement
-              <span className="block text-muted-foreground mt-1">• Market updates and rate changes<br/>• First home buyer tips<br/>• Client success stories<br/>• Live Q&A sessions</span>
+              <span className="block text-muted-foreground mt-1">• Market updates and rate changes<br />• First home buyer tips<br />• Client success stories<br />• Live Q&A sessions</span>
             </li>
             <li>
               <strong>LinkedIn:</strong> Professional networking
-              <span className="block text-muted-foreground mt-1">• Real estate agent partnerships<br/>• Industry insights<br/>• B2B referral development<br/>• Thought leadership content</span>
+              <span className="block text-muted-foreground mt-1">• Real estate agent partnerships<br />• Industry insights<br />• B2B referral development<br />• Thought leadership content</span>
             </li>
             <li>
               <strong>Instagram:</strong> Visual storytelling
-              <span className="block text-muted-foreground mt-1">• Behind-the-scenes content<br/>• Client testimonials (with permission)<br/>• Infographics on loan process<br/>• Market statistics</span>
+              <span className="block text-muted-foreground mt-1">• Behind-the-scenes content<br />• Client testimonials (with permission)<br />• Infographics on loan process<br />• Market statistics</span>
             </li>
             <li>
               <strong>YouTube:</strong> Educational videos
-              <span className="block text-muted-foreground mt-1">• Loan process explanations<br/>• Rate comparison tutorials<br/>• First-time buyer guides<br/>• Market commentary</span>
+              <span className="block text-muted-foreground mt-1">• Loan process explanations<br />• Rate comparison tutorials<br />• First-time buyer guides<br />• Market commentary</span>
             </li>
           </ul>
         </Card>
@@ -437,11 +453,11 @@ const LoanBrokerDigitalMarketing = () => {
             <li>📜 <strong>Professional Credentials:</strong> Display all certifications and memberships</li>
             <li>⭐ <strong>Client Reviews:</strong> Showcase Google, Facebook, and Yelp reviews</li>
             <li>🏆 <strong>Awards & Recognition:</strong> Industry awards and accolades</li>
-            <li>📊 <strong>Track Record:</strong> "Helped 500+ families secure financing"</li>
+            <li>📊 <strong>Track Record:</strong> &quot;Helped 500+ families secure financing&quot;</li>
             <li>🔒 <strong>Security Badges:</strong> SSL certificate, encryption, data protection</li>
             <li>📞 <strong>Real Team Photos:</strong> Show actual team members, not stock images</li>
             <li>💬 <strong>Client Testimonials:</strong> Video testimonials most powerful</li>
-            <li>📱 <strong>Response Time Commitment:</strong> "24-hour response guarantee"</li>
+            <li>📱 <strong>Response Time Commitment:</strong> &quot;24-hour response guarantee&quot;</li>
           </ul>
         </Card>
 
@@ -462,7 +478,7 @@ const LoanBrokerDigitalMarketing = () => {
 
       <h2>Performance Tracking & Optimization</h2>
       <p>
-        Successful digital marketing requires continuous measurement and optimization. Track the right metrics to understand what's working and where to invest more resources.
+        Successful digital marketing requires continuous measurement and optimization. Track the right metrics to understand what&apos;s working and where to invest more resources.
       </p>
 
       <div className="space-y-6 my-8">
@@ -626,7 +642,7 @@ const LoanBrokerDigitalMarketing = () => {
             <p className="font-semibold mb-2">Strategy Implemented:</p>
             <ul className="space-y-1 text-sm text-muted-foreground">
               <li>• Reallocated $3,000 print budget to Google Ads and Facebook</li>
-              <li>• Created "First Home Buyer Ultimate Guide" lead magnet</li>
+              <li>• Created &quot;First Home Buyer Ultimate Guide&quot; lead magnet</li>
               <li>• Published 3 blog posts weekly targeting local searches</li>
               <li>• Implemented automated email nurture sequences</li>
               <li>• Optimized Google My Business with weekly posts and photos</li>
@@ -665,8 +681,6 @@ const LoanBrokerDigitalMarketing = () => {
       <p>
         Successful digital marketing for loan brokers requires balancing promotional efforts with educational content, maintaining regulatory compliance while building trust, and leveraging local market knowledge to attract and convert qualified borrowers.
       </p>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default LoanBrokerDigitalMarketing;

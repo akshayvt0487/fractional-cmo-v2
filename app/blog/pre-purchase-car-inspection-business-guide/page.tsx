@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import prePurchaseCarInspectionHero from '@/assets/blog/pre-purchase-car-inspection.jpg';
-
+export const metadata = createMetadata({
+  title: "Pre Purchase Car Inspection Business Guide",
+  description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/pre-purchase-car-inspection-business-guide",
+  keywords: ["purchase", "inspection", "business", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Pre Purchase Car Inspection Business Guide",
+    description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/pre-purchase-car-inspection-business-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Pre Purchase Car Inspection Business Guide"
+    }],
+    publishedTime: "2024-02-12T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:05.103Z",
+    authors: ["Automotive Inspection Expert"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pre Purchase Car Inspection Business Guide",
+    description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const PrePurchaseCarInspection = () => {
   const articleData = {
     headline: "Pre-Purchase Car Inspection Business: How to Build a Profitable Service",
@@ -18,30 +47,17 @@ const PrePurchaseCarInspection = () => {
     readTime: "24 min read",
     tags: ["Car Inspection", "Automotive Business", "Pre-Purchase Inspection", "Mobile Service", "Trade Business"]
   };
-
-  const faqs = [
-    {
-      question: "What qualifications do I need to start a car inspection business?",
-      answer: "You'll need automotive industry experience, relevant certifications (ASE, state inspection licenses), liability insurance, and business registration. Many states require specific licenses for vehicle inspection services."
-    },
-    {
-      question: "How much can I charge for pre-purchase car inspections?",
-      answer: "Rates typically range from $150-$400 depending on location, vehicle type, and inspection scope. Premium services for luxury vehicles or comprehensive inspections can command higher rates."
-    },
-    {
-      question: "What equipment do I need for mobile car inspections?",
-      answer: "Essential equipment includes diagnostic tools, multi-meter, compression tester, paint thickness gauge, inspection mirror, digital camera, and a reliable vehicle for transportation. Investment typically ranges from $5,000-$15,000."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={prePurchaseCarInspectionHero}
-      heroAlt="Pre-purchase car inspection service on residential driveway - mobile inspection professional"
-    >
+  const faqs = [{
+    question: "What qualifications do I need to start a car inspection business?",
+    answer: "You'll need automotive industry experience, relevant certifications (ASE, state inspection licenses), liability insurance, and business registration. Many states require specific licenses for vehicle inspection services."
+  }, {
+    question: "How much can I charge for pre-purchase car inspections?",
+    answer: "Rates typically range from $150-$400 depending on location, vehicle type, and inspection scope. Premium services for luxury vehicles or comprehensive inspections can command higher rates."
+  }, {
+    question: "What equipment do I need for mobile car inspections?",
+    answer: "Essential equipment includes diagnostic tools, multi-meter, compression tester, paint thickness gauge, inspection mirror, digital camera, and a reliable vehicle for transportation. Investment typically ranges from $5,000-$15,000."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={prePurchaseCarInspectionHero} heroAlt="Pre-purchase car inspection service on residential driveway - mobile inspection professional">
       <p className="text-xl text-muted-foreground mb-6">
         The pre-purchase car inspection business offers an excellent opportunity for automotive professionals to build a profitable service-based business. With the used car market continuing to grow and buyers becoming more cautious about their purchases, demand for professional inspection services remains strong.
       </p>
@@ -153,8 +169,6 @@ const PrePurchaseCarInspection = () => {
       <p>
         Success in the pre-purchase car inspection business requires combining automotive expertise with strong business fundamentals. Focus on building trust through thorough, professional inspections, developing strategic partnerships, and maintaining excellent customer service to generate referrals and repeat business.
       </p>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default PrePurchaseCarInspection;

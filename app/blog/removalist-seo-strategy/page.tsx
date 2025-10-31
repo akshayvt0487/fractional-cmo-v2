@@ -1,9 +1,38 @@
+import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import Citation from '@/components/Citation';
 import { Card, CardContent } from '@/components/ui/card';
 import removalistSeoStrategyHero from '@/assets/blog/removalist-seo-strategy-hero.jpg';
 import { relatedArticles } from '@/utils/seoUtils';
-
+export const metadata = createMetadata({
+  title: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
+  description: "Expert guidance on complete seo strategy for removalist businesses: dominate local search. Learn proven strategies and best practices for business growth.",
+  path: "/blog/removalist-seo-strategy",
+  keywords: ["removalist", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
+    description: "Expert guidance on complete seo strategy for removalist businesses: dominate local search. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/removalist-seo-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search"
+    }],
+    publishedTime: "2024-03-15",
+    modifiedTime: "2025-10-31T11:10:05.193Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
+    description: "Expert guidance on complete seo strategy for removalist businesses: dominate local search. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const articleData = {
   headline: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
   description: "Master semantic SEO, E-E-A-T principles, and local search strategies to grow your removalist business. Comprehensive guide with actionable tactics for Australian moving companies.",
@@ -16,35 +45,21 @@ const articleData = {
   imageUrl: removalistSeoStrategyHero,
   url: "/blog/removalist-seo-strategy"
 };
-
-const faqs = [
-  {
-    question: "How long does it take to see SEO results for a removalist business?",
-    answer: "Typically, you'll start seeing initial improvements in local search rankings within 3-6 months, with significant results usually visible after 6-12 months of consistent SEO efforts. Local SEO often shows faster results than national campaigns."
-  },
-  {
-    question: "What's the most important SEO factor for removalist companies?",
-    answer: "Google My Business optimization and local citations are crucial, but creating helpful, experience-based content that demonstrates your expertise (E-E-A-T) is equally important for long-term success."
-  },
-  {
-    question: "Should removalist businesses focus on local or national SEO?",
-    answer: "Most removalist businesses should prioritize local SEO for their service areas, while interstate companies can benefit from both local (in multiple cities) and national strategies."
-  },
-  {
-    question: "How do I compete with large removalist franchises in search results?",
-    answer: "Focus on hyperlocal content, customer experience stories, specialized services, and building strong local authority through community involvement and local partnerships."
-  }
-];
-
+const faqs = [{
+  question: "How long does it take to see SEO results for a removalist business?",
+  answer: "Typically, you'll start seeing initial improvements in local search rankings within 3-6 months, with significant results usually visible after 6-12 months of consistent SEO efforts. Local SEO often shows faster results than national campaigns."
+}, {
+  question: "What's the most important SEO factor for removalist companies?",
+  answer: "Google My Business optimization and local citations are crucial, but creating helpful, experience-based content that demonstrates your expertise (E-E-A-T) is equally important for long-term success."
+}, {
+  question: "Should removalist businesses focus on local or national SEO?",
+  answer: "Most removalist businesses should prioritize local SEO for their service areas, while interstate companies can benefit from both local (in multiple cities) and national strategies."
+}, {
+  question: "How do I compete with large removalist franchises in search results?",
+  answer: "Focus on hyperlocal content, customer experience stories, specialized services, and building strong local authority through community involvement and local partnerships."
+}];
 const RemovalistSEOStrategy = () => {
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.tradies}
-      faqs={faqs}
-      heroImage={removalistSeoStrategyHero}
-      heroAlt="Complete SEO strategy guide for removalist businesses showing analytics dashboard"
-    >
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={removalistSeoStrategyHero} heroAlt="Complete SEO strategy guide for removalist businesses showing analytics dashboard">
       <div className="space-y-8">
         <section>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -121,7 +136,7 @@ const RemovalistSEOStrategy = () => {
 
           <Card className="bg-primary/5 border-primary/20 mb-8">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4 text-primary">🚀 What You'll Learn</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary">🚀 What You&apos;ll Learn</h3>
               <ul className="space-y-2 text-sm">
                 <li>• How to implement semantic SEO for moving-related keywords</li>
                 <li>• Google E-E-A-T optimization strategies for removalist businesses</li>
@@ -139,7 +154,7 @@ const RemovalistSEOStrategy = () => {
           <h2 className="text-3xl font-bold mb-6">Understanding Semantic SEO for Removalist Services</h2>
           
           <p className="text-base leading-relaxed mb-6">
-            Semantic SEO goes beyond traditional keyword optimization. Google's algorithm now understands context, intent, and relationships between concepts. For removalist businesses, this means creating content that covers the entire customer journey and related topics.
+            Semantic SEO goes beyond traditional keyword optimization. Google&apos;s algorithm now understands context, intent, and relationships between concepts. For removalist businesses, this means creating content that covers the entire customer journey and related topics.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4">Core Semantic Keyword Clusters</h3>
@@ -172,13 +187,7 @@ const RemovalistSEOStrategy = () => {
             </Card>
           </div>
 
-          <Citation 
-            source="Google Search Central"
-            url="https://developers.google.com/search/docs/appearance/semantic-markup"
-            title="Understanding Semantic Markup and Search"
-            date="2024"
-            inline
-          />
+          <Citation source="Google Search Central" url="https://developers.google.com/search/docs/appearance/semantic-markup" title="Understanding Semantic Markup and Search" date="2024" inline />
 
           <p className="text-base leading-relaxed mb-6">
             By creating content that addresses these semantic clusters, you signal to Google that your website is a comprehensive resource for moving-related queries, improving your chances of ranking for multiple related terms.
@@ -189,7 +198,7 @@ const RemovalistSEOStrategy = () => {
           <h2 className="text-3xl font-bold mb-6">Implementing Google E-E-A-T Principles</h2>
           
           <p className="text-base leading-relaxed mb-6">
-            Google's E-E-A-T framework is crucial for local service businesses. Here's how to build each component for your removalist business:
+            Google&apos;s E-E-A-T framework is crucial for local service businesses. Here&apos;s how to build each component for your removalist business:
           </p>
 
           <div className="space-y-6 mb-8">
@@ -246,13 +255,7 @@ const RemovalistSEOStrategy = () => {
             </Card>
           </div>
 
-          <Citation 
-            source="Google Search Quality Evaluator Guidelines"
-            url="https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf"
-            title="Understanding E-E-A-T for Local Businesses"
-            date="2024"
-            inline
-          />
+          <Citation source="Google Search Quality Evaluator Guidelines" url="https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf" title="Understanding E-E-A-T for Local Businesses" date="2024" inline />
         </section>
 
         <section>
@@ -332,13 +335,7 @@ const RemovalistSEOStrategy = () => {
             </Card>
           </div>
 
-          <Citation 
-            source="BrightLocal"
-            url="https://www.brightlocal.com/research/local-consumer-review-survey/"
-            title="Local Consumer Review Survey 2024"
-            date="2024"
-            inline
-          />
+          <Citation source="BrightLocal" url="https://www.brightlocal.com/research/local-consumer-review-survey/" title="Local Consumer Review Survey 2024" date="2024" inline />
         </section>
 
         <section>
@@ -412,7 +409,7 @@ const RemovalistSEOStrategy = () => {
           <h2 className="text-3xl font-bold mb-6">High-Authority External Linking Strategy</h2>
           
           <p className="text-base leading-relaxed mb-6">
-            Strategic external linking to authoritative Australian websites builds trust and provides value to your visitors. Here's how to do it effectively:
+            Strategic external linking to authoritative Australian websites builds trust and provides value to your visitors. Here&apos;s how to do it effectively:
           </p>
 
           <h3 className="text-2xl font-semibold mb-4">Authoritative Australian Resources to Link To</h3>
@@ -471,12 +468,7 @@ const RemovalistSEOStrategy = () => {
             </Card>
           </div>
 
-          <Citation 
-            source="Australian Competition and Consumer Commission"
-            url="https://www.accc.gov.au/consumers/moving-house"
-            title="Moving House - Consumer Rights and Protections"
-            date="2024"
-          />
+          <Citation source="Australian Competition and Consumer Commission" url="https://www.accc.gov.au/consumers/moving-house" title="Moving House - Consumer Rights and Protections" date="2024" />
         </section>
 
         <section>
@@ -533,10 +525,10 @@ const RemovalistSEOStrategy = () => {
                 <h4 className="text-lg font-semibold mb-3 text-primary">3. Problem-Solution Content</h4>
                 <p className="text-sm mb-3">Address specific challenges your customers face:</p>
                 <ul className="text-sm space-y-1">
-                  <li>• "What to Do When Your Removalist Damages Your Belongings"</li>
-                  <li>• "Last-Minute Moving: How to Organize a Move in 24 Hours"</li>
-                  <li>• "Moving with Pets: Stress-Free Tips for Animal Transport"</li>
-                  <li>• "Fragile Item Packing: Protect Your Valuables During the Move"</li>
+                  <li>• &quot;What to Do When Your Removalist Damages Your Belongings&quot;</li>
+                  <li>• &quot;Last-Minute Moving: How to Organize a Move in 24 Hours&quot;</li>
+                  <li>• &quot;Moving with Pets: Stress-Free Tips for Animal Transport&quot;</li>
+                  <li>• &quot;Fragile Item Packing: Protect Your Valuables During the Move&quot;</li>
                 </ul>
               </CardContent>
             </Card>
@@ -635,13 +627,7 @@ const RemovalistSEOStrategy = () => {
             </div>
           </div>
 
-          <Citation 
-            source="Google Search Central"
-            url="https://developers.google.com/search/docs/appearance/structured-data/local-business"
-            title="LocalBusiness Structured Data Guidelines"
-            date="2024"
-            inline
-          />
+          <Citation source="Google Search Central" url="https://developers.google.com/search/docs/appearance/structured-data/local-business" title="LocalBusiness Structured Data Guidelines" date="2024" inline />
         </section>
 
         <section>
@@ -747,8 +733,6 @@ const RemovalistSEOStrategy = () => {
         </section>
 
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default RemovalistSEOStrategy;

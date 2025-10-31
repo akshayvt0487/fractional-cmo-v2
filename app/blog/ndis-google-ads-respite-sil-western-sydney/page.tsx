@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Target, Settings, Layers, Search, Zap, MapPin, TrendingUp } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
-
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import Citation from '@/components/Citation';
 import ndisGoogleAdsHero from '@/assets/blog/ndis-comprehensive-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Ndis Google Ads Respite Sil Western Sydney",
+  description: "Expert guidance on ndis google ads respite sil western sydney. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-google-ads-respite-sil-western-sydney",
+  keywords: ["ndis", "google", "respite", "western", "sydney", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Google Ads Respite Sil Western Sydney",
+    description: "Expert guidance on ndis google ads respite sil western sydney. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-google-ads-respite-sil-western-sydney",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Google Ads Respite Sil Western Sydney"
+    }],
+    publishedTime: "2025-01-30T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.960Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Google Ads Respite Sil Western Sydney",
+    description: "Expert guidance on ndis google ads respite sil western sydney. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISGoogleAdsRespiteSIL = () => {
   const articleData = {
     headline: "Google Ads for NDIS Respite Care & SIL Accommodation in Western Sydney",
@@ -19,33 +47,20 @@ const NDISGoogleAdsRespiteSIL = () => {
     readTime: "30 min read",
     tags: ["NDIS", "Google Ads", "Respite Care", "SIL Accommodation", "Western Sydney", "Lead Generation"]
   };
-
-  const faqs = [
-    {
-      question: "What's the average cost per click for NDIS respite and SIL Google Ads?",
-      answer: "CPC for NDIS service keywords typically ranges from $3-12, with competitive terms like 'respite care Western Sydney' and 'SIL accommodation' at the higher end. Focus on suburb-specific and service-specific long-tail keywords to reduce costs while capturing high-intent participants and families."
-    },
-    {
-      question: "How much should NDIS providers spend on Google Ads monthly?",
-      answer: "Start with $2,500-5,000 monthly budget for comprehensive campaigns covering respite care and SIL accommodation services in Western Sydney. Scale based on enquiry quality and vacancy fill rates. The average participant lifetime value typically justifies premium ad spend for quality placements."
-    },
-    {
-      question: "What's the best landing page strategy for NDIS Google Ads?",
-      answer: "Create service-specific landing pages for short-term respite, emergency respite, and SIL accommodation. Include NDIS Quality and Safeguards Commission registration details, facility photos, staff qualifications, participant testimonials, and easy enquiry forms. Emphasize Western Sydney locations and accessibility."
-    },
-    {
-      question: "How long does it take to see results from NDIS Google Ads?",
-      answer: "Initial enquiries typically start within 1-2 weeks of campaign launch. However, the full participant onboarding process (including NDIS plan approval and move-in coordination) can take 4-12 weeks. Track both immediate enquiries and pipeline conversions for accurate ROI measurement."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        faqs={faqs}
-        heroImage={ndisGoogleAdsHero}
-        heroAlt="NDIS Google Ads strategies for respite care and SIL accommodation"
-      >
+  const faqs = [{
+    question: "What's the average cost per click for NDIS respite and SIL Google Ads?",
+    answer: "CPC for NDIS service keywords typically ranges from $3-12, with competitive terms like 'respite care Western Sydney' and 'SIL accommodation' at the higher end. Focus on suburb-specific and service-specific long-tail keywords to reduce costs while capturing high-intent participants and families."
+  }, {
+    question: "How much should NDIS providers spend on Google Ads monthly?",
+    answer: "Start with $2,500-5,000 monthly budget for comprehensive campaigns covering respite care and SIL accommodation services in Western Sydney. Scale based on enquiry quality and vacancy fill rates. The average participant lifetime value typically justifies premium ad spend for quality placements."
+  }, {
+    question: "What's the best landing page strategy for NDIS Google Ads?",
+    answer: "Create service-specific landing pages for short-term respite, emergency respite, and SIL accommodation. Include NDIS Quality and Safeguards Commission registration details, facility photos, staff qualifications, participant testimonials, and easy enquiry forms. Emphasize Western Sydney locations and accessibility."
+  }, {
+    question: "How long does it take to see results from NDIS Google Ads?",
+    answer: "Initial enquiries typically start within 1-2 weeks of campaign launch. However, the full participant onboarding process (including NDIS plan approval and move-in coordination) can take 4-12 weeks. Track both immediate enquiries and pipeline conversions for accurate ROI measurement."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} faqs={faqs} heroImage={ndisGoogleAdsHero} heroAlt="NDIS Google Ads strategies for respite care and SIL accommodation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏠 Google Ads presents a powerful opportunity for NDIS respite care and SIL accommodation providers in Western Sydney to connect with participants and families actively seeking quality disability support services. This comprehensive guide reveals proven Google Ads strategies that successful NDIS providers use to generate qualified enquiries, fill vacancies, and establish their reputation in the competitive Western Sydney disability services market.
         </p>
@@ -192,37 +207,37 @@ const NDISGoogleAdsRespiteSIL = () => {
               <div>
                 <h4 className="font-semibold mb-2 text-purple-700">SIL Accommodation Keywords</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "SIL accommodation Western Sydney"</li>
-                  <li>• "supported independent living Penrith"</li>
-                  <li>• "NDIS group homes Blacktown"</li>
-                  <li>• "disability accommodation Parramatta"</li>
-                  <li>• "SIL vacancies Western Sydney"</li>
-                  <li>• "24/7 support accommodation Liverpool"</li>
+                  <li>• &quot;SIL accommodation Western Sydney&quot;</li>
+                  <li>• &quot;supported independent living Penrith&quot;</li>
+                  <li>• &quot;NDIS group homes Blacktown&quot;</li>
+                  <li>• &quot;disability accommodation Parramatta&quot;</li>
+                  <li>• &quot;SIL vacancies Western Sydney&quot;</li>
+                  <li>• &quot;24/7 support accommodation Liverpool&quot;</li>
                 </ul>
                 <h4 className="font-semibold mb-2 mt-4 text-purple-700">Service-Specific Terms</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "high physical support SIL"</li>
-                  <li>• "autism SIL accommodation"</li>
-                  <li>• "complex needs supported living"</li>
-                  <li>• "young adults SIL Western Sydney"</li>
+                  <li>• &quot;high physical support SIL&quot;</li>
+                  <li>• &quot;autism SIL accommodation&quot;</li>
+                  <li>• &quot;complex needs supported living&quot;</li>
+                  <li>• &quot;young adults SIL Western Sydney&quot;</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold mb-2 text-pink-700">Respite Care Keywords</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "NDIS respite care Western Sydney"</li>
-                  <li>• "short term accommodation NDIS"</li>
-                  <li>• "emergency respite Blacktown"</li>
-                  <li>• "weekend respite care Penrith"</li>
-                  <li>• "disability respite services near me"</li>
-                  <li>• "NDIS respite vacancies"</li>
+                  <li>• &quot;NDIS respite care Western Sydney&quot;</li>
+                  <li>• &quot;short term accommodation NDIS&quot;</li>
+                  <li>• &quot;emergency respite Blacktown&quot;</li>
+                  <li>• &quot;weekend respite care Penrith&quot;</li>
+                  <li>• &quot;disability respite services near me&quot;</li>
+                  <li>• &quot;NDIS respite vacancies&quot;</li>
                 </ul>
                 <h4 className="font-semibold mb-2 mt-4 text-pink-700">Urgent Intent Keywords</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "emergency NDIS respite available now"</li>
-                  <li>• "urgent SIL vacancy Western Sydney"</li>
-                  <li>• "immediate respite care needed"</li>
-                  <li>• "crisis accommodation NDIS"</li>
+                  <li>• &quot;emergency NDIS respite available now&quot;</li>
+                  <li>• &quot;urgent SIL vacancy Western Sydney&quot;</li>
+                  <li>• &quot;immediate respite care needed&quot;</li>
+                  <li>• &quot;crisis accommodation NDIS&quot;</li>
                 </ul>
               </div>
             </div>
@@ -240,18 +255,18 @@ const NDISGoogleAdsRespiteSIL = () => {
           <CardContent>
             <div className="grid md:grid-cols-2 gap-4">
               <ul className="space-y-2 text-sm">
-                <li>🔍 "best NDIS respite care in Penrith"</li>
-                <li>🏠 "SIL accommodation near Nepean Hospital"</li>
-                <li>⭐ "quality disability accommodation Blacktown"</li>
-                <li>👨‍👩‍👧 "family-friendly respite Western Sydney"</li>
-                <li>♿ "wheelchair accessible SIL Liverpool"</li>
+                <li>🔍 &quot;best NDIS respite care in Penrith&quot;</li>
+                <li>🏠 &quot;SIL accommodation near Nepean Hospital&quot;</li>
+                <li>⭐ &quot;quality disability accommodation Blacktown&quot;</li>
+                <li>👨‍👩‍👧 &quot;family-friendly respite Western Sydney&quot;</li>
+                <li>♿ &quot;wheelchair accessible SIL Liverpool&quot;</li>
               </ul>
               <ul className="space-y-2 text-sm">
-                <li>🌟 "NDIS registered respite provider Parramatta"</li>
-                <li>💰 "affordable SIL accommodation Western Sydney"</li>
-                <li>🎯 "autism-specialist supported living"</li>
-                <li>🏥 "respite care with nursing support"</li>
-                <li>📅 "flexible respite booking Western Sydney"</li>
+                <li>🌟 &quot;NDIS registered respite provider Parramatta&quot;</li>
+                <li>💰 &quot;affordable SIL accommodation Western Sydney&quot;</li>
+                <li>🎯 &quot;autism-specialist supported living&quot;</li>
+                <li>🏥 &quot;respite care with nursing support&quot;</li>
+                <li>📅 &quot;flexible respite booking Western Sydney&quot;</li>
               </ul>
             </div>
           </CardContent>
@@ -332,11 +347,11 @@ const NDISGoogleAdsRespiteSIL = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Headlines That Connect</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• "Quality SIL in Your Suburb"</li>
-                    <li>• "NDIS Respite - Available This Week"</li>
-                    <li>• "Modern Disability Accommodation"</li>
-                    <li>• "24/7 Support in Western Sydney"</li>
-                    <li>• "Registered NDIS Provider Near You"</li>
+                    <li>• &quot;Quality SIL in Your Suburb&quot;</li>
+                    <li>• &quot;NDIS Respite - Available This Week&quot;</li>
+                    <li>• &quot;Modern Disability Accommodation&quot;</li>
+                    <li>• &quot;24/7 Support in Western Sydney&quot;</li>
+                    <li>• &quot;Registered NDIS Provider Near You&quot;</li>
                   </ul>
                 </div>
                 <div>
@@ -353,12 +368,12 @@ const NDISGoogleAdsRespiteSIL = () => {
                 <div>
                   <h4 className="font-semibold mb-2">NDIS Trust Signals</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• "NDIS Registered Provider #[ID]"</li>
-                    <li>• "Quality & Safeguards Compliant"</li>
-                    <li>• "10+ Years NDIS Experience"</li>
-                    <li>• "5-Star Participant Reviews"</li>
-                    <li>• "Free Facility Tours"</li>
-                    <li>• "Easy NDIS Plan Compatible"</li>
+                    <li>• &quot;NDIS Registered Provider #[ID]&quot;</li>
+                    <li>• &quot;Quality & Safeguards Compliant&quot;</li>
+                    <li>• &quot;10+ Years NDIS Experience&quot;</li>
+                    <li>• &quot;5-Star Participant Reviews&quot;</li>
+                    <li>• &quot;Free Facility Tours&quot;</li>
+                    <li>• &quot;Easy NDIS Plan Compatible&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -834,14 +849,14 @@ const NDISGoogleAdsRespiteSIL = () => {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-3 text-red-700">❌ DON'T Include</h4>
+                  <h4 className="font-semibold mb-3 text-red-700">❌ DON&apos;T Include</h4>
                   <ul className="space-y-2 text-sm">
                     <li>✗ False or misleading claims about outcomes</li>
                     <li>✗ Guaranteed results or cure promises</li>
                     <li>✗ Pressure tactics or urgent scare messaging</li>
                     <li>✗ Participant photos without proper consent</li>
                     <li>✗ Comparisons disparaging other providers</li>
-                    <li>✗ Claims of being "best" without evidence</li>
+                    <li>✗ Claims of being &quot;best&quot; without evidence</li>
                     <li>✗ Medical advice or diagnosis claims</li>
                   </ul>
                 </div>
@@ -931,11 +946,11 @@ const NDISGoogleAdsRespiteSIL = () => {
                   <ul className="space-y-3 text-sm">
                     <li>
                       <strong className="text-red-600">❌ Too Broad Geographic Targeting</strong>
-                      <p className="text-muted-foreground mt-1">Targeting "all of Sydney" instead of focusing on Western Sydney suburbs where your facilities are located. Result: Wasted budget on irrelevant clicks.</p>
+                      <p className="text-muted-foreground mt-1">Targeting &quot;all of Sydney&quot; instead of focusing on Western Sydney suburbs where your facilities are located. Result: Wasted budget on irrelevant clicks.</p>
                     </li>
                     <li>
                       <strong className="text-red-600">❌ Ignoring Negative Keywords</strong>
-                      <p className="text-muted-foreground mt-1">Not excluding searches for "NDIS jobs", "NDIS registration", "NDIS courses", "free NDIS" that aren't looking for your services.</p>
+                      <p className="text-muted-foreground mt-1">Not excluding searches for &quot;NDIS jobs&quot;, &quot;NDIS registration&quot;, &quot;NDIS courses&quot;, &quot;free NDIS&quot; that aren&apos;t looking for your services.</p>
                     </li>
                     <li>
                       <strong className="text-red-600">❌ Generic Landing Pages</strong>
@@ -943,7 +958,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                     </li>
                     <li>
                       <strong className="text-red-600">❌ No Phone Call Tracking</strong>
-                      <p className="text-muted-foreground mt-1">Missing 60-70% of conversions that happen via phone. Can't optimize without tracking calls.</p>
+                      <p className="text-muted-foreground mt-1">Missing 60-70% of conversions that happen via phone. Can&apos;t optimize without tracking calls.</p>
                     </li>
                   </ul>
                 </div>
@@ -959,7 +974,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                     </li>
                     <li>
                       <strong className="text-red-600">❌ Competing on Brand Terms Only</strong>
-                      <p className="text-muted-foreground mt-1">Only bidding on your organization name. You're missing 95% of potential participants searching for services.</p>
+                      <p className="text-muted-foreground mt-1">Only bidding on your organization name. You&apos;re missing 95% of potential participants searching for services.</p>
                     </li>
                     <li>
                       <strong className="text-red-600">❌ No Compliance Verification</strong>
@@ -984,14 +999,7 @@ const NDISGoogleAdsRespiteSIL = () => {
           <StrategyForm preSelectedService="google-ads" />
         </div>
 
-        <Citation 
-          source="NDIS Quality and Safeguards Commission"
-          url="https://www.ndiscommission.gov.au/"
-          title="NDIS Provider Registration and Compliance Requirements"
-          date="2025"
-        />
-      </OptimizedBlogLayout>
-  );
+        <Citation source="NDIS Quality and Safeguards Commission" url="https://www.ndiscommission.gov.au/" title="NDIS Provider Registration and Compliance Requirements" date="2025" />
+      </OptimizedBlogLayout>;
 };
-
 export default NDISGoogleAdsRespiteSIL;

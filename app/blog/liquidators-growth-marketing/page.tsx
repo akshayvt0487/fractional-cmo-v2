@@ -1,61 +1,75 @@
+import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/liquidators-growth-marketing-hero.jpg";
-
+export const metadata = createMetadata({
+  title: "Liquidators Growth Marketing",
+  description: "Expert guidance on liquidators growth marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/liquidators-growth-marketing",
+  keywords: ["liquidators", "growth", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Liquidators Growth Marketing",
+    description: "Expert guidance on liquidators growth marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/liquidators-growth-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Liquidators Growth Marketing"
+    }],
+    publishedTime: "2025-01-15",
+    modifiedTime: "2025-10-31T11:10:04.850Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Liquidators Growth Marketing",
+    description: "Expert guidance on liquidators growth marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const LiquidatorsGrowthMarketing = () => {
-  const citations = [
-    {
-      source: "ARITA",
-      title: "Australian Restructuring Insolvency and Turnaround Association",
-      url: "https://www.arita.com.au/",
-      date: "2025"
-    },
-    {
-      source: "ASIC",
-      title: "ASIC - Corporate Insolvency Practitioners",
-      url: "https://asic.gov.au/regulatory-resources/insolvency/insolvency-for-directors/corporate-insolvency-an-overview/",
-      date: "2025"
-    }
-  ];
-
-  const relatedArticles = [
-    {
-      title: "B2B Lead Generation Strategies",
-      description: "Master B2B lead generation with proven strategies for professional services and complex sales cycles.",
-      url: "/blog/b2b-lead-generation",
-      category: "Lead Generation"
-    },
-    {
-      title: "Measuring Digital Marketing ROI",
-      description: "Learn how to accurately track and optimize your digital marketing return on investment.",
-      url: "/blog/digital-marketing-roi",
-      category: "Strategy"
-    },
-    {
-      title: "Growth Marketing Strategy Guide",
-      description: "Comprehensive growth marketing framework for scaling professional services firms.",
-      url: "/blog/growth-marketing-strategy",
-      category: "Growth"
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={{
-        headline: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2025",
-        description: "Comprehensive growth marketing strategies for liquidators and insolvency practitioners. Learn how to scale your liquidation practice with proven digital marketing tactics.",
-        publishedDate: "2025-01-15",
-        url: "/blog/liquidators-growth-marketing",
-        readTime: "12 min read",
-        category: "Legal",
-        author: "Basheer Padanna"
-      }}
-      heroImage={heroImage}
-      heroAlt="Growth Marketing for Liquidators"
-      relatedArticles={relatedArticles}
-    >
+  const citations = [{
+    source: "ARITA",
+    title: "Australian Restructuring Insolvency and Turnaround Association",
+    url: "https://www.arita.com.au/",
+    date: "2025"
+  }, {
+    source: "ASIC",
+    title: "ASIC - Corporate Insolvency Practitioners",
+    url: "https://asic.gov.au/regulatory-resources/insolvency/insolvency-for-directors/corporate-insolvency-an-overview/",
+    date: "2025"
+  }];
+  const relatedArticles = [{
+    title: "B2B Lead Generation Strategies",
+    description: "Master B2B lead generation with proven strategies for professional services and complex sales cycles.",
+    url: "/blog/b2b-lead-generation",
+    category: "Lead Generation"
+  }, {
+    title: "Measuring Digital Marketing ROI",
+    description: "Learn how to accurately track and optimize your digital marketing return on investment.",
+    url: "/blog/digital-marketing-roi",
+    category: "Strategy"
+  }, {
+    title: "Growth Marketing Strategy Guide",
+    description: "Comprehensive growth marketing framework for scaling professional services firms.",
+    url: "/blog/growth-marketing-strategy",
+    category: "Growth"
+  }];
+  return <OptimizedBlogLayout articleData={{
+    headline: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2025",
+    description: "Comprehensive growth marketing strategies for liquidators and insolvency practitioners. Learn how to scale your liquidation practice with proven digital marketing tactics.",
+    publishedDate: "2025-01-15",
+    url: "/blog/liquidators-growth-marketing",
+    readTime: "12 min read",
+    category: "Legal",
+    author: "Basheer Padanna"
+  }} heroImage={heroImage} heroAlt="Growth Marketing for Liquidators" relatedArticles={relatedArticles}>
       <p className="lead text-xl text-muted-foreground mb-8">
         The liquidation and insolvency sector is experiencing unprecedented change. With economic uncertainty driving increased corporate restructuring, liquidators who master growth marketing will capture the majority of new engagements.
       </p>
@@ -146,9 +160,9 @@ const LiquidatorsGrowthMarketing = () => {
               Your SEO strategy must target both immediate crisis searches and early research queries:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-              <li><strong>Crisis Intent Keywords:</strong> "company liquidation urgent", "liquidator today", "emergency liquidation services"</li>
-              <li><strong>Research Intent Keywords:</strong> "liquidation process Australia", "choosing a liquidator", "liquidation costs"</li>
-              <li><strong>Local SEO:</strong> Dominate "liquidator [city]" searches with optimized Google Business Profile and local citations</li>
+              <li><strong>Crisis Intent Keywords:</strong> &quot;company liquidation urgent&quot;, &quot;liquidator today&quot;, &quot;emergency liquidation services&quot;</li>
+              <li><strong>Research Intent Keywords:</strong> &quot;liquidation process Australia&quot;, &quot;choosing a liquidator&quot;, &quot;liquidation costs&quot;</li>
+              <li><strong>Local SEO:</strong> Dominate &quot;liquidator [city]&quot; searches with optimized Google Business Profile and local citations</li>
             </ul>
           </div>
 
@@ -488,12 +502,8 @@ const LiquidatorsGrowthMarketing = () => {
 
       <div className="mt-12">
         <h3 className="text-xl font-semibold mb-4">Citations & Resources</h3>
-        {citations.map((citation, index) => (
-          <Citation key={index} {...citation} />
-        ))}
+        {citations.map((citation, index) => <Citation key={index} {...citation} />)}
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default LiquidatorsGrowthMarketing;

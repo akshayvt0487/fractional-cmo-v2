@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import divorceLawyersDigitalMarketingHero from '@/assets/blog/divorce-lawyers-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Divorce Lawyers Digital Marketing",
+  description: "Expert guidance on divorce lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/divorce-lawyers-digital-marketing",
+  keywords: ["divorce", "lawyers", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Divorce Lawyers Digital Marketing",
+    description: "Expert guidance on divorce lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/divorce-lawyers-digital-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Divorce Lawyers Digital Marketing"
+    }],
+    publishedTime: "2024-12-15T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.641Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Divorce Lawyers Digital Marketing",
+    description: "Expert guidance on divorce lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const DivorceLawyersDigitalMarketing = () => {
   const articleData = {
     headline: "Divorce Lawyers Digital Marketing: Complete Client Acquisition Guide for Divorce Attorneys 2025",
@@ -18,43 +47,30 @@ const DivorceLawyersDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["Divorce Lawyers", "Legal Marketing", "Client Acquisition", "Law Firm Growth", "Digital Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "Is digital marketing ethical for divorce attorneys?",
-      answer: "Yes, when done responsibly. Digital marketing for divorce attorneys must prioritize client sensitivity, follow bar association guidelines, and focus on education rather than aggressive sales tactics."
-    },
-    {
-      question: "What's the best marketing channel for divorce lawyers?",
-      answer: "A combination of SEO-optimized content marketing, Google Ads for immediate visibility, and reputation management works best. The key is maintaining sensitivity while demonstrating expertise."
-    },
-    {
-      question: "How can divorce lawyers measure marketing ROI?",
-      answer: "Track consultation requests, conversion rates from consultation to retainer, average case value, and client lifetime value. Quality metrics are often more important than quantity for divorce practice."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={divorceLawyersDigitalMarketingHero}
-      heroAlt="Divorce lawyers digital marketing and client acquisition strategies"
-    >
+  const faqs = [{
+    question: "Is digital marketing ethical for divorce attorneys?",
+    answer: "Yes, when done responsibly. Digital marketing for divorce attorneys must prioritize client sensitivity, follow bar association guidelines, and focus on education rather than aggressive sales tactics."
+  }, {
+    question: "What's the best marketing channel for divorce lawyers?",
+    answer: "A combination of SEO-optimized content marketing, Google Ads for immediate visibility, and reputation management works best. The key is maintaining sensitivity while demonstrating expertise."
+  }, {
+    question: "How can divorce lawyers measure marketing ROI?",
+    answer: "Track consultation requests, conversion rates from consultation to retainer, average case value, and client lifetime value. Quality metrics are often more important than quantity for divorce practice."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={divorceLawyersDigitalMarketingHero} heroAlt="Divorce lawyers digital marketing and client acquisition strategies">
       <Card className="p-8 mb-8">
         <p className="text-lg font-semibold text-primary mb-4">
           Divorce attorneys who implement targeted digital marketing strategies see 300% higher quality client acquisition while maintaining ethical compliance and professional standards.
         </p>
         <p className="text-muted-foreground">
-          Marketing divorce law services requires exceptional sensitivity, ethical precision, and strategic positioning to reach clients during one of life's most challenging transitions.
+          Marketing divorce law services requires exceptional sensitivity, ethical precision, and strategic positioning to reach clients during one of life&apos;s most challenging transitions.
         </p>
       </Card>
 
       <h2>Understanding Divorce Law Marketing Landscape</h2>
       
       <p>
-        Divorce law marketing presents unique challenges that require balancing aggressive client acquisition with sensitivity to clients' emotional states. Successful divorce attorneys understand that their marketing must inspire trust while demonstrating competence in high-stakes legal matters.
+        Divorce law marketing presents unique challenges that require balancing aggressive client acquisition with sensitivity to clients&apos; emotional states. Successful divorce attorneys understand that their marketing must inspire trust while demonstrating competence in high-stakes legal matters.
       </p>
 
       <Card className="p-6 my-8 bg-accent/20">
@@ -91,7 +107,7 @@ const DivorceLawyersDigitalMarketing = () => {
             <strong>Financial Planning Guides:</strong> How to protect finances during divorce proceedings
           </div>
           <div>
-            <strong>Child Custody Resources:</strong> Understanding custody arrangements and children's rights
+            <strong>Child Custody Resources:</strong> Understanding custody arrangements and children&apos;s rights
           </div>
           <div>
             <strong>Emotional Support Information:</strong> Resources for managing stress during legal proceedings
@@ -107,7 +123,7 @@ const DivorceLawyersDigitalMarketing = () => {
       </p>
       <ul>
         <li><strong>Google My Business optimization:</strong> Complete profile with professional photos and current information</li>
-        <li><strong>Location-specific keywords:</strong> "divorce lawyer [city]", "divorce attorney near me"</li>
+        <li><strong>Location-specific keywords:</strong> &quot;divorce lawyer [city]&quot;, &quot;divorce attorney near me&quot;</li>
         <li><strong>Local directory listings:</strong> Legal-specific directories and general business listings</li>
         <li><strong>Community involvement content:</strong> Showcase local bar association participation</li>
         <li><strong>Client review management:</strong> Encourage and respond to client feedback professionally</li>
@@ -120,7 +136,7 @@ const DivorceLawyersDigitalMarketing = () => {
       <ul>
         <li><strong>Divorce process guides:</strong> Step-by-step explanations of legal procedures</li>
         <li><strong>Financial planning resources:</strong> Protecting assets during divorce proceedings</li>
-        <li><strong>Child custody information:</strong> Understanding parenting arrangements and children's rights</li>
+        <li><strong>Child custody information:</strong> Understanding parenting arrangements and children&apos;s rights</li>
         <li><strong>Emotional support resources:</strong> References to counseling and support services</li>
         <li><strong>Legal rights education:</strong> Explaining client rights and legal options</li>
       </ul>
@@ -234,25 +250,25 @@ const DivorceLawyersDigitalMarketing = () => {
           <div>
             <strong className="text-primary">Campaign 2: Divorce Services</strong>
             <ul className="mt-2 ml-4 space-y-1">
-              <li>"divorce lawyer [city]"</li>
-              <li>"divorce attorney near me"</li>
-              <li>"best divorce lawyer"</li>
+              <li>&quot;divorce lawyer [city]&quot;</li>
+              <li>&quot;divorce attorney near me&quot;</li>
+              <li>&quot;best divorce lawyer&quot;</li>
             </ul>
           </div>
           <div>
             <strong className="text-primary">Campaign 3: Specific Issues</strong>
             <ul className="mt-2 ml-4 space-y-1">
-              <li>"child custody attorney"</li>
-              <li>"spousal support lawyer"</li>
-              <li>"property settlement lawyer"</li>
+              <li>&quot;child custody attorney&quot;</li>
+              <li>&quot;spousal support lawyer&quot;</li>
+              <li>&quot;property settlement lawyer&quot;</li>
             </ul>
           </div>
           <div>
             <strong className="text-primary">Campaign 4: Uncontested Divorce</strong>
             <ul className="mt-2 ml-4 space-y-1">
-              <li>"uncontested divorce"</li>
-              <li>"simple divorce"</li>
-              <li>"affordable divorce lawyer"</li>
+              <li>&quot;uncontested divorce&quot;</li>
+              <li>&quot;simple divorce&quot;</li>
+              <li>&quot;affordable divorce lawyer&quot;</li>
             </ul>
           </div>
         </div>
@@ -264,18 +280,18 @@ const DivorceLawyersDigitalMarketing = () => {
       <Card className="p-6 my-8">
         <h4 className="font-semibold mb-3">Effective Ad Copy Elements:</h4>
         <ul className="space-y-2">
-          <li><strong>Compassionate Headlines:</strong> "Navigate Your Divorce with Compassion & Expertise"</li>
-          <li><strong>Value Proposition:</strong> "25+ Years Protecting Your Rights & Future"</li>
-          <li><strong>Clear Call-to-Action:</strong> "Free Confidential Consultation - Call Today"</li>
-          <li><strong>Trust Signals:</strong> "Board Certified • 500+ Cases Resolved"</li>
-          <li><strong>Specific Benefits:</strong> "Protect Your Assets • Secure Your Children's Future"</li>
+          <li><strong>Compassionate Headlines:</strong> &quot;Navigate Your Divorce with Compassion & Expertise&quot;</li>
+          <li><strong>Value Proposition:</strong> &quot;25+ Years Protecting Your Rights & Future&quot;</li>
+          <li><strong>Clear Call-to-Action:</strong> &quot;Free Confidential Consultation - Call Today&quot;</li>
+          <li><strong>Trust Signals:</strong> &quot;Board Certified • 500+ Cases Resolved&quot;</li>
+          <li><strong>Specific Benefits:</strong> &quot;Protect Your Assets • Secure Your Children&apos;s Future&quot;</li>
         </ul>
       </Card>
 
       <h3>Landing Page Optimization for Divorce Leads</h3>
       <p>Convert ad clicks into consultations with optimized landing pages:</p>
       <ul>
-        <li><strong>Clear Headline:</strong> Immediately address the visitor's concern</li>
+        <li><strong>Clear Headline:</strong> Immediately address the visitor&apos;s concern</li>
         <li><strong>Trust Elements:</strong> Professional headshots, credentials, testimonials</li>
         <li><strong>Simple Form:</strong> Name, phone, email, brief case description only</li>
         <li><strong>Privacy Assurance:</strong> Clearly state confidentiality protections</li>
@@ -550,16 +566,10 @@ const DivorceLawyersDigitalMarketing = () => {
       </ul>
 
       <p className="text-lg font-semibold mt-8">
-        Digital marketing for divorce lawyers requires balancing aggressive client acquisition with sensitivity to clients' emotional needs. Focus on building trust, demonstrating competence, and maintaining ethical compliance in all marketing activities to build a thriving, sustainable practice.
+        Digital marketing for divorce lawyers requires balancing aggressive client acquisition with sensitivity to clients&apos; emotional needs. Focus on building trust, demonstrating competence, and maintaining ethical compliance in all marketing activities to build a thriving, sustainable practice.
       </p>
 
-      <Citation
-        title="Model Rules of Professional Conduct"
-        source="American Bar Association"
-        url="https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/"
-      />
-    </OptimizedBlogLayout>
-  );
+      <Citation title="Model Rules of Professional Conduct" source="American Bar Association" url="https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/" />
+    </OptimizedBlogLayout>;
 };
-
 export default DivorceLawyersDigitalMarketing;

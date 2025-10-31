@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import { Users, Target, TrendingUp, Shield, MessageCircle, CheckCircle } from 'lucide-react';
 import StrategyForm from '@/components/ui/strategy-form';
 import ndisMarketingGuideHero from '@/assets/blog/ndis-marketing-guide.jpg';
@@ -5,7 +6,35 @@ import { Card, CardContent } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
+export const metadata = createMetadata({
+  title: "Ndis Marketing Guide 2024",
+  description: "Expert guidance on ndis marketing guide 2024. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-marketing-guide-2024",
+  keywords: ["ndis", "marketing", "guide", "2024", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Marketing Guide 2024",
+    description: "Expert guidance on ndis marketing guide 2024. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-marketing-guide-2024",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Marketing Guide 2024"
+    }],
+    publishedTime: "2024-12-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.996Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Marketing Guide 2024",
+    description: "Expert guidance on ndis marketing guide 2024. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISMarketingGuide = () => {
   const articleData = {
     headline: "The Complete NDIS Marketing Guide for Disability Service Providers 2025",
@@ -19,30 +48,17 @@ const NDISMarketingGuide = () => {
     readTime: "30 min read",
     tags: ["NDIS", "Marketing Guide", "Disability Services", "Provider Marketing", "Participant Engagement"]
   };
-
-  const faqs = [
-    {
-      question: "What are the key principles of ethical NDIS marketing?",
-      answer: "Ethical NDIS marketing focuses on transparent pricing, honest capability representation, participant dignity, outcome-focused messaging, and always prioritizing participant welfare over business growth."
-    },
-    {
-      question: "How can NDIS providers build trust through marketing?",
-      answer: "Build trust by prominently displaying NDIS registration details, showcasing staff qualifications, sharing participant success stories (with consent), maintaining transparent pricing, and demonstrating compliance with quality standards."
-    },
-    {
-      question: "What marketing channels work best for NDIS providers?",
-      answer: "Most effective channels include local SEO, Google My Business optimization, content marketing focused on participant outcomes, targeted social media, and community engagement programs."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={ndisMarketingGuideHero}
-      heroAlt="NDIS marketing guide for disability service providers"
-    >
+  const faqs = [{
+    question: "What are the key principles of ethical NDIS marketing?",
+    answer: "Ethical NDIS marketing focuses on transparent pricing, honest capability representation, participant dignity, outcome-focused messaging, and always prioritizing participant welfare over business growth."
+  }, {
+    question: "How can NDIS providers build trust through marketing?",
+    answer: "Build trust by prominently displaying NDIS registration details, showcasing staff qualifications, sharing participant success stories (with consent), maintaining transparent pricing, and demonstrating compliance with quality standards."
+  }, {
+    question: "What marketing channels work best for NDIS providers?",
+    answer: "Most effective channels include local SEO, Google My Business optimization, content marketing focused on participant outcomes, targeted social media, and community engagement programs."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={ndisMarketingGuideHero} heroAlt="NDIS marketing guide for disability service providers">
         <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-l-4 border-l-green-500 p-8 mb-8 not-prose">
           <div className="flex items-start space-x-4">
             <div className="bg-green-100 p-3 rounded-full">
@@ -176,24 +192,24 @@ const NDISMarketingGuide = () => {
           <Card className="p-6">
             <h4 className="text-lg font-semibold mb-3">Primary Keywords</h4>
             <ul className="text-sm space-y-1">
-              <li>• "NDIS [service type] [location]"</li>
-              <li>• "disability support services [area]"</li>
-              <li>• "NDIS registered provider [service]"</li>
-              <li>• "[disability type] support [location]"</li>
-              <li>• "NDIS plan management [area]"</li>
-              <li>• "support coordination [location]"</li>
+              <li>• &quot;NDIS [service type] [location]&quot;</li>
+              <li>• &quot;disability support services [area]&quot;</li>
+              <li>• &quot;NDIS registered provider [service]&quot;</li>
+              <li>• &quot;[disability type] support [location]&quot;</li>
+              <li>• &quot;NDIS plan management [area]&quot;</li>
+              <li>• &quot;support coordination [location]&quot;</li>
             </ul>
           </Card>
           
           <Card className="p-6">
             <h4 className="text-lg font-semibold mb-3">Long-Tail Keywords</h4>
             <ul className="text-sm space-y-1">
-              <li>• "how to choose NDIS provider [service]"</li>
-              <li>• "NDIS funding for [specific support]"</li>
-              <li>• "best NDIS provider [location] [service]"</li>
-              <li>• "NDIS [service] cost and pricing"</li>
-              <li>• "NDIS [service] eligibility requirements"</li>
-              <li>• "what is NDIS [specific support category]"</li>
+              <li>• &quot;how to choose NDIS provider [service]&quot;</li>
+              <li>• &quot;NDIS funding for [specific support]&quot;</li>
+              <li>• &quot;best NDIS provider [location] [service]&quot;</li>
+              <li>• &quot;NDIS [service] cost and pricing&quot;</li>
+              <li>• &quot;NDIS [service] eligibility requirements&quot;</li>
+              <li>• &quot;what is NDIS [specific support category]&quot;</li>
             </ul>
           </Card>
         </div>
@@ -484,14 +500,8 @@ const NDISMarketingGuide = () => {
           Success in NDIS marketing comes from consistency, authenticity, and genuine commitment to participant wellbeing. Focus on building long-term relationships rather than short-term transactions, and always prioritize participant choice, control, and independence in all your marketing activities.
         </p>
 
-        <Citation
-          source="NDIS Quarterly Report Q3 2024"
-          url="https://www.ndis.gov.au/about-us/publications/quarterly-reports"
-          title="The NDIS now supports over 610,000 participants with market growth of 12% annually, creating opportunities for providers who prioritize participant-centered marketing and service delivery."
-        />
+        <Citation source="NDIS Quarterly Report Q3 2024" url="https://www.ndis.gov.au/about-us/publications/quarterly-reports" title="The NDIS now supports over 610,000 participants with market growth of 12% annually, creating opportunities for providers who prioritize participant-centered marketing and service delivery." />
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default NDISMarketingGuide;

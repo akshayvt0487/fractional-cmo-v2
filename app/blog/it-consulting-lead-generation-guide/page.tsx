@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import itConsultingLeadGenerationHero from '@/assets/blog/it-consulting-lead-generation-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "It Consulting Lead Generation Guide",
+  description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/it-consulting-lead-generation-guide",
+  keywords: ["consulting", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "It Consulting Lead Generation Guide",
+    description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/it-consulting-lead-generation-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "It Consulting Lead Generation Guide"
+    }],
+    publishedTime: "2024-12-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.806Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "It Consulting Lead Generation Guide",
+    description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ITConsultingLeadGeneration = () => {
   const articleData = {
     headline: "Lead Generation for IT Consultants: Attract High-Value Technology Clients 2025",
@@ -18,30 +47,17 @@ const ITConsultingLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["IT Consulting", "Lead Generation", "Enterprise Sales", "Technology Marketing", "B2B Lead Generation"]
   };
-
-  const faqs = [
-    {
-      question: "What's the most effective lead generation method for IT consultants?",
-      answer: "Content marketing combined with LinkedIn outreach delivers the best results. IT decision-makers research extensively, so educational content that demonstrates expertise while building relationships through professional networks works best."
-    },
-    {
-      question: "How do IT consultants qualify leads effectively?",
-      answer: "Focus on company size, technology stack, budget authority, and project timeline. Look for signs of digital transformation initiatives, technology pain points, or compliance requirements that indicate genuine need for consulting services."
-    },
-    {
-      question: "What's the typical sales cycle for IT consulting services?",
-      answer: "Enterprise IT consulting sales cycles typically range from 3-9 months. Smaller companies may decide in 30-90 days, while large enterprises often take 6-12 months due to procurement processes and stakeholder involvement."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={itConsultingLeadGenerationHero}
-      heroAlt="IT Consulting Lead Generation Strategy"
-    >
+  const faqs = [{
+    question: "What's the most effective lead generation method for IT consultants?",
+    answer: "Content marketing combined with LinkedIn outreach delivers the best results. IT decision-makers research extensively, so educational content that demonstrates expertise while building relationships through professional networks works best."
+  }, {
+    question: "How do IT consultants qualify leads effectively?",
+    answer: "Focus on company size, technology stack, budget authority, and project timeline. Look for signs of digital transformation initiatives, technology pain points, or compliance requirements that indicate genuine need for consulting services."
+  }, {
+    question: "What's the typical sales cycle for IT consulting services?",
+    answer: "Enterprise IT consulting sales cycles typically range from 3-9 months. Smaller companies may decide in 30-90 days, while large enterprises often take 6-12 months due to procurement processes and stakeholder involvement."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={itConsultingLeadGenerationHero} heroAlt="IT Consulting Lead Generation Strategy">
       <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-l-blue-500 p-8 mb-8">
         <div className="flex items-start space-x-4">
           <div className="bg-blue-100 p-3 rounded-full">
@@ -87,19 +103,19 @@ const ITConsultingLeadGeneration = () => {
         <h4 className="text-lg font-semibold mb-4">High-Value Lead Magnets</h4>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <h5 className="font-semibold text-indigo-700 mb-2">"Cloud Migration Readiness Assessment"</h5>
+            <h5 className="font-semibold text-indigo-700 mb-2">&quot;Cloud Migration Readiness Assessment&quot;</h5>
             <p className="text-sm text-muted-foreground">Interactive tool with personalized recommendations based on current infrastructure, workload analysis, and business requirements</p>
           </div>
           <div>
-            <h5 className="font-semibold text-indigo-700 mb-2">"Cybersecurity Audit Checklist"</h5>
+            <h5 className="font-semibold text-indigo-700 mb-2">&quot;Cybersecurity Audit Checklist&quot;</h5>
             <p className="text-sm text-muted-foreground">Comprehensive security evaluation framework covering network security, data protection, and compliance requirements</p>
           </div>
           <div>
-            <h5 className="font-semibold text-indigo-700 mb-2">"Digital Transformation ROI Calculator"</h5>
+            <h5 className="font-semibold text-indigo-700 mb-2">&quot;Digital Transformation ROI Calculator&quot;</h5>
             <p className="text-sm text-muted-foreground">Tool to quantify technology investment returns with customized industry benchmarks and financial projections</p>
           </div>
           <div>
-            <h5 className="font-semibold text-indigo-700 mb-2">"IT Infrastructure Modernization Guide"</h5>
+            <h5 className="font-semibold text-indigo-700 mb-2">&quot;IT Infrastructure Modernization Guide&quot;</h5>
             <p className="text-sm text-muted-foreground">Step-by-step planning framework for legacy system migration and cloud-native architecture adoption</p>
           </div>
         </div>
@@ -108,10 +124,10 @@ const ITConsultingLeadGeneration = () => {
       <h3>Technical Webinar Series</h3>
       <p>Position yourself as a thought leader through educational webinars:</p>
       <ul>
-        <li><strong>"Kubernetes in Production: Lessons from 100+ Deployments":</strong> Real-world case studies and best practices</li>
-        <li><strong>"Zero-Trust Security Architecture: Implementation Guide":</strong> Step-by-step security framework deployment</li>
-        <li><strong>"Cloud Cost Optimization: Reducing Spend by 40%":</strong> Proven strategies for AWS, Azure, and GCP</li>
-        <li><strong>"AI/ML Infrastructure: Building Scalable Data Platforms":</strong> Architecture patterns for machine learning at scale</li>
+        <li><strong>&quot;Kubernetes in Production: Lessons from 100+ Deployments&quot;:</strong> Real-world case studies and best practices</li>
+        <li><strong>&quot;Zero-Trust Security Architecture: Implementation Guide&quot;:</strong> Step-by-step security framework deployment</li>
+        <li><strong>&quot;Cloud Cost Optimization: Reducing Spend by 40%&quot;:</strong> Proven strategies for AWS, Azure, and GCP</li>
+        <li><strong>&quot;AI/ML Infrastructure: Building Scalable Data Platforms&quot;:</strong> Architecture patterns for machine learning at scale</li>
       </ul>
 
       <h2>LinkedIn Lead Generation Strategy</h2>
@@ -254,20 +270,14 @@ const ITConsultingLeadGeneration = () => {
       </p>
       
       <p>
-        Start by developing comprehensive buyer personas and creating educational content that addresses your prospects' most pressing technology challenges. Focus on demonstrating your expertise through webinars, whitepapers, and case studies that showcase real-world problem-solving capabilities.
+        Start by developing comprehensive buyer personas and creating educational content that addresses your prospects&apos; most pressing technology challenges. Focus on demonstrating your expertise through webinars, whitepapers, and case studies that showcase real-world problem-solving capabilities.
       </p>
 
       <p>
-        Remember that IT decision-makers conduct extensive research before engaging consultants. Position yourself as the trusted advisor they discover during their research phase, and you'll naturally attract qualified prospects who already understand your value proposition. Consistency in content creation and relationship building will compound your results over time.
+        Remember that IT decision-makers conduct extensive research before engaging consultants. Position yourself as the trusted advisor they discover during their research phase, and you&apos;ll naturally attract qualified prospects who already understand your value proposition. Consistency in content creation and relationship building will compound your results over time.
       </p>
 
-      <Citation
-        source="IT Services Marketing Report 2024"
-        url="https://www.itservicesmarketing.com/research"
-        title="IT consulting firms with systematic lead generation processes achieve 67% higher close rates and 45% shorter sales cycles than those relying on traditional networking alone."
-      />
-    </OptimizedBlogLayout>
-  );
+      <Citation source="IT Services Marketing Report 2024" url="https://www.itservicesmarketing.com/research" title="IT consulting firms with systematic lead generation processes achieve 67% higher close rates and 45% shorter sales cycles than those relying on traditional networking alone." />
+    </OptimizedBlogLayout>;
 };
-
 export default ITConsultingLeadGeneration;

@@ -1,9 +1,38 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import homeBuildersLeadGenerationHero from '@/assets/blog/home-builders-lead-generation-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Home Builders Lead Generation Guide",
+  description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/home-builders-lead-generation-guide",
+  keywords: ["home", "builders", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Home Builders Lead Generation Guide",
+    description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/home-builders-lead-generation-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Home Builders Lead Generation Guide"
+    }],
+    publishedTime: "2025-01-10T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.746Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Home Builders Lead Generation Guide",
+    description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const HomeBuildersLeadGeneration = () => {
   const articleData = {
     headline: "Lead Generation for Home Builders: Digital Strategies to Attract Quality Prospects 2025",
@@ -17,30 +46,17 @@ const HomeBuildersLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["Home Builders", "Lead Generation", "Construction Marketing", "Digital Marketing", "Client Acquisition"]
   };
-
-  const faqs = [
-    {
-      question: "What's the best lead generation strategy for home builders?",
-      answer: "A combination of showcase marketing, local SEO, and referral programs works best. Focus on visual content that demonstrates quality craftsmanship while optimizing for local search to capture prospects actively looking for builders."
-    },
-    {
-      question: "How long does it take to see results from builder marketing?",
-      answer: "Initial leads typically appear within 30-60 days, with significant results usually visible after 3-6 months of consistent marketing efforts. Home building has longer sales cycles, so patience and nurturing are essential."
-    },
-    {
-      question: "Should home builders focus on custom or spec home marketing?",
-      answer: "Both markets require different approaches. Custom home marketing emphasizes luxury and personalization, while spec home marketing focuses on move-in ready convenience and value. Consider your target market and capabilities."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.construction}
-      faqs={faqs}
-      heroImage={homeBuildersLeadGenerationHero}
-      heroAlt="Home builders lead generation and digital marketing strategies"
-    >
+  const faqs = [{
+    question: "What's the best lead generation strategy for home builders?",
+    answer: "A combination of showcase marketing, local SEO, and referral programs works best. Focus on visual content that demonstrates quality craftsmanship while optimizing for local search to capture prospects actively looking for builders."
+  }, {
+    question: "How long does it take to see results from builder marketing?",
+    answer: "Initial leads typically appear within 30-60 days, with significant results usually visible after 3-6 months of consistent marketing efforts. Home building has longer sales cycles, so patience and nurturing are essential."
+  }, {
+    question: "Should home builders focus on custom or spec home marketing?",
+    answer: "Both markets require different approaches. Custom home marketing emphasizes luxury and personalization, while spec home marketing focuses on move-in ready convenience and value. Consider your target market and capabilities."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={homeBuildersLeadGenerationHero} heroAlt="Home builders lead generation and digital marketing strategies">
       <p className="text-xl text-muted-foreground mb-8">
         The home building industry is highly competitive, with success depending on attracting quality prospects who are ready to invest in custom homes. Digital lead generation has become essential for builders to consistently attract qualified clients, showcase their craftsmanship, and build a sustainable pipeline of high-value projects.
       </p>
@@ -83,7 +99,7 @@ const HomeBuildersLeadGeneration = () => {
       <h3>Google Ads for Home Builders</h3>
       <p>Target high-intent prospects with strategic campaigns:</p>
       <ul>
-        <li><strong>Custom home keywords:</strong> "custom home builder", "luxury home builder"</li>
+        <li><strong>Custom home keywords:</strong> &quot;custom home builder&quot;, &quot;luxury home builder&quot;</li>
         <li><strong>Location-based campaigns:</strong> Target specific suburbs and regions</li>
         <li><strong>Display campaigns:</strong> Visual ads on home and lifestyle websites</li>
         <li><strong>YouTube ads:</strong> Showcase build time-lapses and tours</li>
@@ -116,7 +132,7 @@ const HomeBuildersLeadGeneration = () => {
         <li><strong>Google My Business Optimization:</strong> Complete profile with photos and reviews</li>
         <li><strong>Local Directory Listings:</strong> Consistent NAP across all platforms</li>
         <li><strong>Location-Specific Content:</strong> Neighborhood and suburb-focused pages</li>
-        <li><strong>Local Keyword Targeting:</strong> "Custom home builders [city name]"</li>
+        <li><strong>Local Keyword Targeting:</strong> &quot;Custom home builders [city name]&quot;</li>
         <li><strong>Community Involvement:</strong> Sponsor local events and home shows</li>
       </ul>
 
@@ -486,7 +502,7 @@ const HomeBuildersLeadGeneration = () => {
             <strong className="text-primary">❌ Slow Response Time:</strong> Taking days to respond to inquiries instead of hours
           </li>
           <li>
-            <strong className="text-primary">❌ No Nurture System:</strong> Giving up on leads that aren't immediately ready
+            <strong className="text-primary">❌ No Nurture System:</strong> Giving up on leads that aren&apos;t immediately ready
           </li>
           <li>
             <strong className="text-primary">❌ Generic Marketing:</strong> Not highlighting what makes your building approach unique
@@ -526,8 +542,6 @@ const HomeBuildersLeadGeneration = () => {
           Ready to transform your lead generation? Implement this comprehensive strategy to attract quality prospects and grow your building business sustainably.
         </p>
       </Card>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default HomeBuildersLeadGeneration;

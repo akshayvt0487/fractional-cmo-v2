@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,7 +6,35 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import ndisImage from "@/assets/ndis-support-care.jpg";
 import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
-
+export const metadata = createMetadata({
+  title: "Ndis Web Design Guide",
+  description: "Expert guidance on ndis web design guide. Learn proven strategies and best practices for business growth.",
+  path: "/blog/ndis-web-design-guide",
+  keywords: ["ndis", "design", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Ndis Web Design Guide",
+    description: "Expert guidance on ndis web design guide. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/ndis-web-design-guide",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ndis Web Design Guide"
+    }],
+    publishedTime: "2024-03-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:05.078Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ndis Web Design Guide",
+    description: "Expert guidance on ndis web design guide. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const NDISWebDesign = () => {
   const articleData = {
     headline: "NDIS Website Design That Converts: Complete Guide for Disability Service Providers",
@@ -19,30 +48,17 @@ const NDISWebDesign = () => {
     readTime: "26 min read",
     tags: ["NDIS", "Web Design", "Accessibility", "User Experience", "Conversion Optimization"]
   };
-
-  const faqs = [
-    {
-      question: "What accessibility standards should NDIS websites meet?",
-      answer: "NDIS websites should comply with WCAG 2.1 AA standards, including alternative text for images, high contrast ratios (4.5:1 minimum), keyboard navigation support, resizable text up to 200%, and screen reader compatibility."
-    },
-    {
-      question: "How can NDIS providers build trust through their website design?",
-      answer: "Build trust through clear value propositions, authentic team photography, prominent NDIS registration displays, professional association memberships, client testimonials, and transparent pricing information."
-    },
-    {
-      question: "What are the most important elements for NDIS service pages?",
-      answer: "Include service overview in participant language, specific situations the service helps, expected outcomes, step-by-step process explanation, pricing transparency, clear call-to-actions, and staff qualifications."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.ndis}
-      faqs={faqs}
-      heroImage={ndisImage}
-      heroAlt="NDIS website design showcasing accessibility and user-friendly interface for disability service providers"
-    >
+  const faqs = [{
+    question: "What accessibility standards should NDIS websites meet?",
+    answer: "NDIS websites should comply with WCAG 2.1 AA standards, including alternative text for images, high contrast ratios (4.5:1 minimum), keyboard navigation support, resizable text up to 200%, and screen reader compatibility."
+  }, {
+    question: "How can NDIS providers build trust through their website design?",
+    answer: "Build trust through clear value propositions, authentic team photography, prominent NDIS registration displays, professional association memberships, client testimonials, and transparent pricing information."
+  }, {
+    question: "What are the most important elements for NDIS service pages?",
+    answer: "Include service overview in participant language, specific situations the service helps, expected outcomes, step-by-step process explanation, pricing transparency, clear call-to-actions, and staff qualifications."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisImage} heroAlt="NDIS website design showcasing accessibility and user-friendly interface for disability service providers">
       <h2>The NDIS Website Design Challenge</h2>
       
       <div className="grid md:grid-cols-4 gap-6 mb-8">
@@ -79,8 +95,9 @@ const NDISWebDesign = () => {
       </p>
 
       <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-        "An accessible website isn't just about compliance—it's about dignity, inclusion, 
-        and demonstrating your commitment to participant choice and control from the very first click."
+        {"An accessible website isn&apos;t just about compliance—it&apos;s about dignity, inclusion, "}
+        {"and demonstrating your commitment to participant choice and control from the very first click."}
+
         <footer className="text-sm mt-2">— Dr. Alex Morrison, Digital Accessibility Expert</footer>
       </blockquote>
 
@@ -174,11 +191,7 @@ const NDISWebDesign = () => {
       </div>
 
       <div className="my-8">
-        <img 
-          src={ndisQualityImage} 
-          alt="NDIS website quality standards and user experience design examples"
-          className="w-full rounded-lg shadow-lg"
-        />
+        <img src={ndisQualityImage} alt="NDIS website quality standards and user experience design examples" className="w-full rounded-lg shadow-lg" />
       </div>
 
       <h2>Service Pages That Convert Inquiries</h2>
@@ -319,7 +332,7 @@ const NDISWebDesign = () => {
       <h3>Local Search Optimization</h3>
       <ul>
         <li><strong>Google My Business:</strong> Complete profile with NDIS services listed</li>
-        <li><strong>Local Keywords:</strong> "NDIS provider [location]", "disability services [suburb]"</li>
+        <li><strong>Local Keywords:</strong> &quot;NDIS provider [location]&quot;, &quot;disability services [suburb]&quot;</li>
         <li><strong>Content Strategy:</strong> Location-specific pages and local community involvement</li>
         <li><strong>Reviews Management:</strong> Encouraging and responding to participant feedback</li>
       </ul>
@@ -362,8 +375,6 @@ const NDISWebDesign = () => {
         </Card>
       </div>
 
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default NDISWebDesign;

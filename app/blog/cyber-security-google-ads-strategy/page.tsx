@@ -1,11 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import cyberSecurityGoogleAdsHero from '@/assets/blog/cyber-security-google-ads.jpg';
-
+export const metadata = createMetadata({
+  title: "Cyber Security Google Ads Strategy",
+  description: "Expert guidance on cyber security google ads strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/cyber-security-google-ads-strategy",
+  keywords: ["cyber", "security", "google", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Cyber Security Google Ads Strategy",
+    description: "Expert guidance on cyber security google ads strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/cyber-security-google-ads-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Cyber Security Google Ads Strategy"
+    }],
+    publishedTime: "2024-01-15T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.569Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cyber Security Google Ads Strategy",
+    description: "Expert guidance on cyber security google ads strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const CyberSecurityGoogleAds = () => {
   const articleData = {
     headline: "Google Ads Strategy for Cyber Security Businesses: Complete Guide to High-Converting Campaigns",
@@ -19,30 +47,17 @@ const CyberSecurityGoogleAds = () => {
     readTime: "25 min read",
     tags: ["Cyber Security", "Google Ads", "PPC", "Lead Generation", "Digital Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What's the average cost per click for cyber security Google Ads?",
-      answer: "Cyber security CPCs typically range from $15-45, with highly competitive terms like 'cyber security consulting' reaching $60+. Focus on long-tail keywords and specific service terms for better cost efficiency."
-    },
-    {
-      question: "How can cyber security companies improve Google Ads quality scores?",
-      answer: "Improve quality scores by creating highly relevant ad copy that matches search intent, building dedicated landing pages for each service, ensuring fast page load times, and maintaining high click-through rates through compelling ad messaging."
-    },
-    {
-      question: "What's the best campaign structure for cyber security Google Ads?",
-      answer: "Use separate campaigns for each major service (penetration testing, compliance, incident response), create ad groups for specific solutions, and implement geo-targeting for local markets while maintaining national reach for enterprise services."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage="/images/cyber-security-google-ads.jpg"
-        heroAlt="Google Ads strategy for cyber security businesses"
-      >
+  const faqs = [{
+    question: "What's the average cost per click for cyber security Google Ads?",
+    answer: "Cyber security CPCs typically range from $15-45, with highly competitive terms like 'cyber security consulting' reaching $60+. Focus on long-tail keywords and specific service terms for better cost efficiency."
+  }, {
+    question: "How can cyber security companies improve Google Ads quality scores?",
+    answer: "Improve quality scores by creating highly relevant ad copy that matches search intent, building dedicated landing pages for each service, ensuring fast page load times, and maintaining high click-through rates through compelling ad messaging."
+  }, {
+    question: "What's the best campaign structure for cyber security Google Ads?",
+    answer: "Use separate campaigns for each major service (penetration testing, compliance, incident response), create ad groups for specific solutions, and implement geo-targeting for local markets while maintaining national reach for enterprise services."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/cyber-security-google-ads.jpg" heroAlt="Google Ads strategy for cyber security businesses">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🔒 Cyber security companies leveraging strategic Google Ads campaigns see 300% higher lead generation rates and 40% lower customer acquisition costs compared to traditional marketing methods. This comprehensive guide reveals the proven strategies, targeting techniques, and optimization methods that top cyber security firms use to dominate search results and capture high-value enterprise clients.
         </p>
@@ -76,10 +91,10 @@ const CyberSecurityGoogleAds = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4 text-red-700">Reactive Search Patterns</h3>
               <ul className="space-y-2 text-sm">
-                <li>🚨 <strong>Incident response:</strong> "cyber security breach help"</li>
-                <li>🔍 <strong>Threat detection:</strong> "malware removal services"</li>
-                <li>⚡ <strong>Emergency support:</strong> "24/7 cyber security help"</li>
-                <li>🛡️ <strong>Recovery services:</strong> "ransomware recovery specialist"</li>
+                <li>🚨 <strong>Incident response:</strong> &quot;cyber security breach help&quot;</li>
+                <li>🔍 <strong>Threat detection:</strong> &quot;malware removal services&quot;</li>
+                <li>⚡ <strong>Emergency support:</strong> &quot;24/7 cyber security help&quot;</li>
+                <li>🛡️ <strong>Recovery services:</strong> &quot;ransomware recovery specialist&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -88,10 +103,10 @@ const CyberSecurityGoogleAds = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4 text-blue-700">Proactive Search Patterns</h3>
               <ul className="space-y-2 text-sm">
-                <li>📋 <strong>Compliance needs:</strong> "GDPR compliance consulting"</li>
-                <li>🔒 <strong>Security assessment:</strong> "penetration testing services"</li>
-                <li>👥 <strong>Training programs:</strong> "cyber security awareness training"</li>
-                <li>🏢 <strong>Enterprise solutions:</strong> "managed security services"</li>
+                <li>📋 <strong>Compliance needs:</strong> &quot;GDPR compliance consulting&quot;</li>
+                <li>🔒 <strong>Security assessment:</strong> &quot;penetration testing services&quot;</li>
+                <li>👥 <strong>Training programs:</strong> &quot;cyber security awareness training&quot;</li>
+                <li>🏢 <strong>Enterprise solutions:</strong> &quot;managed security services&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -155,19 +170,19 @@ const CyberSecurityGoogleAds = () => {
                 <div>
                   <h4 className="font-medium mb-2 text-green-600">Incident Response</h4>
                   <ul className="text-sm space-y-1 text-gray-600">
-                    <li>• "cyber security incident response"</li>
-                    <li>• "data breach response team"</li>
-                    <li>• "ransomware recovery services"</li>
-                    <li>• "emergency cyber security help"</li>
+                    <li>• &quot;cyber security incident response&quot;</li>
+                    <li>• &quot;data breach response team&quot;</li>
+                    <li>• &quot;ransomware recovery services&quot;</li>
+                    <li>• &quot;emergency cyber security help&quot;</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="font-medium mb-2 text-green-600">Compliance & Testing</h4>
                   <ul className="text-sm space-y-1 text-gray-600">
-                    <li>• "penetration testing services"</li>
-                    <li>• "GDPR compliance consulting"</li>
-                    <li>• "cyber security audit"</li>
-                    <li>• "vulnerability assessment"</li>
+                    <li>• &quot;penetration testing services&quot;</li>
+                    <li>• &quot;GDPR compliance consulting&quot;</li>
+                    <li>• &quot;cyber security audit&quot;</li>
+                    <li>• &quot;vulnerability assessment&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -181,19 +196,19 @@ const CyberSecurityGoogleAds = () => {
                 <div>
                   <h4 className="font-medium mb-2 text-purple-600">Industry-Specific</h4>
                   <ul className="text-sm space-y-1 text-gray-600">
-                    <li>• "healthcare cyber security consulting"</li>
-                    <li>• "financial services security audit"</li>
-                    <li>• "manufacturing cyber security"</li>
-                    <li>• "legal firm data protection"</li>
+                    <li>• &quot;healthcare cyber security consulting&quot;</li>
+                    <li>• &quot;financial services security audit&quot;</li>
+                    <li>• &quot;manufacturing cyber security&quot;</li>
+                    <li>• &quot;legal firm data protection&quot;</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="font-medium mb-2 text-purple-600">Solution-Focused</h4>
                   <ul className="text-sm space-y-1 text-gray-600">
-                    <li>• "managed security services provider"</li>
-                    <li>• "cyber security training program"</li>
-                    <li>• "cloud security assessment"</li>
-                    <li>• "network security monitoring"</li>
+                    <li>• &quot;managed security services provider&quot;</li>
+                    <li>• &quot;cyber security training program&quot;</li>
+                    <li>• &quot;cloud security assessment&quot;</li>
+                    <li>• &quot;network security monitoring&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -202,8 +217,8 @@ const CyberSecurityGoogleAds = () => {
         </div>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "Cyber security Google Ads success comes from understanding that your prospects are either in crisis mode or planning mode. 
-          Your campaigns must address both urgency and education with precision targeting and compelling messaging."
+          &quot;Cyber security Google Ads success comes from understanding that your prospects are either in crisis mode or planning mode. 
+          Your campaigns must address both urgency and education with precision targeting and compelling messaging.&quot;
           <footer className="text-sm mt-2">— Cyber Security Marketing Strategy</footer>
         </blockquote>
 
@@ -277,9 +292,9 @@ const CyberSecurityGoogleAds = () => {
                 <div className="bg-red-50 p-4 rounded border">
                   <h5 className="font-semibold text-red-700 mb-2">Sample Structure:</h5>
                   <div className="text-xs text-red-600">
-                    <p><strong>Headline:</strong> "Cyber Attack in Progress? Get Help Now"</p>
-                    <p><strong>Subheadline:</strong> "24/7 emergency response team ready to contain and resolve security incidents"</p>
-                    <p><strong>CTA:</strong> "Call Now: 1800-CYBER-911"</p>
+                    <p><strong>Headline:</strong> &quot;Cyber Attack in Progress? Get Help Now&quot;</p>
+                    <p><strong>Subheadline:</strong> &quot;24/7 emergency response team ready to contain and resolve security incidents&quot;</p>
+                    <p><strong>CTA:</strong> &quot;Call Now: 1800-CYBER-911&quot;</p>
                   </div>
                 </div>
               </div>
@@ -303,9 +318,9 @@ const CyberSecurityGoogleAds = () => {
                 <div className="bg-green-50 p-4 rounded border">
                   <h5 className="font-semibold text-green-700 mb-2">Sample Structure:</h5>
                   <div className="text-xs text-green-600">
-                    <p><strong>Headline:</strong> "Prevent Cyber Attacks Before They Happen"</p>
-                    <p><strong>Subheadline:</strong> "Comprehensive security audit identifies vulnerabilities before attackers do"</p>
-                    <p><strong>CTA:</strong> "Get Free Security Assessment"</p>
+                    <p><strong>Headline:</strong> &quot;Prevent Cyber Attacks Before They Happen&quot;</p>
+                    <p><strong>Subheadline:</strong> &quot;Comprehensive security audit identifies vulnerabilities before attackers do&quot;</p>
+                    <p><strong>CTA:</strong> &quot;Get Free Security Assessment&quot;</p>
                   </div>
                 </div>
               </div>
@@ -528,10 +543,10 @@ const CyberSecurityGoogleAds = () => {
                 <div>
                   <h4 className="font-semibold text-blue-700">Specific Keywords</h4>
                   <ul className="text-sm space-y-1 text-blue-600">
-                    <li>• "HIPAA compliance cyber security"</li>
-                    <li>• "healthcare data breach response"</li>
-                    <li>• "medical practice security audit"</li>
-                    <li>• "hospital cyber security consulting"</li>
+                    <li>• &quot;HIPAA compliance cyber security&quot;</li>
+                    <li>• &quot;healthcare data breach response&quot;</li>
+                    <li>• &quot;medical practice security audit&quot;</li>
+                    <li>• &quot;hospital cyber security consulting&quot;</li>
                   </ul>
                 </div>
                 <div>
@@ -554,10 +569,10 @@ const CyberSecurityGoogleAds = () => {
                 <div>
                   <h4 className="font-semibold text-green-700">Specific Keywords</h4>
                   <ul className="text-sm space-y-1 text-green-600">
-                    <li>• "banking cyber security solutions"</li>
-                    <li>• "financial data protection"</li>
-                    <li>• "PCI DSS compliance consulting"</li>
-                    <li>• "fintech security assessment"</li>
+                    <li>• &quot;banking cyber security solutions&quot;</li>
+                    <li>• &quot;financial data protection&quot;</li>
+                    <li>• &quot;PCI DSS compliance consulting&quot;</li>
+                    <li>• &quot;fintech security assessment&quot;</li>
                   </ul>
                 </div>
                 <div>
@@ -617,7 +632,7 @@ const CyberSecurityGoogleAds = () => {
                   <li>• Year-end compliance audits</li>
                   <li>• Holiday security measures</li>
                   <li>• Incident response reviews</li>
-                  <li>• Next year's planning</li>
+                  <li>• Next year&apos;s planning</li>
                 </ul>
               </div>
             </div>
@@ -630,8 +645,6 @@ const CyberSecurityGoogleAds = () => {
           Successful cyber security Google Ads campaigns require a deep understanding of buyer psychology, technical credibility, and strategic execution. By implementing these proven strategies and maintaining focus on both emergency response and proactive security needs, your cyber security company can capture high-value clients and achieve predictable growth.
         </p>
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default CyberSecurityGoogleAds;

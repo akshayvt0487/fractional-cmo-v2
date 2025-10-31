@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import socialMediaMarketingStrategyHero from '@/assets/blog/social-media-marketing-strategy-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Social Media Marketing Strategy",
+  description: "Expert guidance on social media marketing strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/social-media-marketing-strategy",
+  keywords: ["social", "media", "marketing", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Social Media Marketing Strategy",
+    description: "Expert guidance on social media marketing strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/social-media-marketing-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Social Media Marketing Strategy"
+    }],
+    publishedTime: "2024-12-18T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:05.255Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Social Media Marketing Strategy",
+    description: "Expert guidance on social media marketing strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const SocialMediaMarketingStrategy = () => {
   const articleData = {
     headline: "Social Media Marketing Strategy for Service Businesses: Complete 2025 Guide",
@@ -18,30 +47,17 @@ const SocialMediaMarketingStrategy = () => {
     readTime: "25 min read",
     tags: ["Social Media Marketing", "Digital Marketing", "Lead Generation", "Business Growth", "Content Strategy"]
   };
-
-  const faqs = [
-    {
-      question: "Which social media platforms work best for service businesses?",
-      answer: "LinkedIn dominates B2B service marketing with 80% of leads, while Facebook works well for local services. Choose 2-3 platforms where your ideal clients are most active rather than trying to be everywhere."
-    },
-    {
-      question: "How often should service businesses post on social media?",
-      answer: "Quality over quantity: 3-5 educational posts per week on your primary platform, with consistent engagement. Focus on the 40-30-20-10 content distribution model for optimal results."
-    },
-    {
-      question: "What's the best way to measure social media ROI for services?",
-      answer: "Track lead generation volume and quality, cost per lead by platform, lead-to-customer conversion rate, and customer lifetime value from social channels. Use proper attribution tracking with UTM parameters."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={socialMediaMarketingStrategyHero}
-      heroAlt="Professional social media marketing strategy dashboard showing analytics and engagement metrics"
-    >
+  const faqs = [{
+    question: "Which social media platforms work best for service businesses?",
+    answer: "LinkedIn dominates B2B service marketing with 80% of leads, while Facebook works well for local services. Choose 2-3 platforms where your ideal clients are most active rather than trying to be everywhere."
+  }, {
+    question: "How often should service businesses post on social media?",
+    answer: "Quality over quantity: 3-5 educational posts per week on your primary platform, with consistent engagement. Focus on the 40-30-20-10 content distribution model for optimal results."
+  }, {
+    question: "What's the best way to measure social media ROI for services?",
+    answer: "Track lead generation volume and quality, cost per lead by platform, lead-to-customer conversion rate, and customer lifetime value from social channels. Use proper attribution tracking with UTM parameters."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={socialMediaMarketingStrategyHero} heroAlt="Professional social media marketing strategy dashboard showing analytics and engagement metrics">
       <Card className="p-8 mb-8">
                   <p className="text-lg leading-relaxed text-muted-foreground">
                     In today&apos;s digital-first economy, <strong>93% of businesses report that social media marketing has increased their brand exposure</strong> according to Social Media Examiner&apos;s 2024 industry report. For service businesses, social media isn&apos;t just about posting content—it&apos;s about building relationships, demonstrating expertise, and creating a consistent pipeline of qualified leads.
@@ -162,7 +178,7 @@ const SocialMediaMarketingStrategy = () => {
 
       <h3>Video Content Performance Data</h3>
       <p>
-        According to Wyzowl's 2024 Video Marketing Statistics:
+        According to Wyzowl&apos;s 2024 Video Marketing Statistics:
       </p>
       
       <ul className="list-disc pl-6 mb-6 space-y-2">
@@ -235,7 +251,7 @@ const SocialMediaMarketingStrategy = () => {
 
       <h3>Attribution Tracking Setup</h3>
       <p>
-        Proper attribution is crucial for understanding social media ROI. Here's how to set up comprehensive tracking:
+        Proper attribution is crucial for understanding social media ROI. Here&apos;s how to set up comprehensive tracking:
       </p>
 
       <div className="bg-muted p-6 rounded-lg mb-6">
@@ -289,13 +305,7 @@ const SocialMediaMarketingStrategy = () => {
                   <p>
                     Remember that social media success is a marathon, not a sprint. The service businesses that win on social media are those that provide consistent value, build authentic relationships, and position themselves as trusted advisors in their industry. Your expertise is your competitive advantage&mdash;let social media amplify it.
                   </p>
-        <Citation
-          source="Social Media Examiner Industry Report 2024"
-          url="https://www.socialmediaexaminer.com/social-media-marketing-industry-report/"
-          title="93% of businesses report that social media marketing has increased their brand exposure, with 89% stating it has increased traffic to their websites."
-        />
-    </OptimizedBlogLayout>
-  );
+        <Citation source="Social Media Examiner Industry Report 2024" url="https://www.socialmediaexaminer.com/social-media-marketing-industry-report/" title="93% of businesses report that social media marketing has increased their brand exposure, with 89% stating it has increased traffic to their websites." />
+    </OptimizedBlogLayout>;
 };
-
 export default SocialMediaMarketingStrategy;

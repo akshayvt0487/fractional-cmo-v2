@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import familyLawyersDigitalMarketingHero from '@/assets/blog/family-lawyers-digital-marketing-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Family Lawyers Digital Marketing",
+  description: "Expert guidance on family lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+  path: "/blog/family-lawyers-digital-marketing",
+  keywords: ["family", "lawyers", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Family Lawyers Digital Marketing",
+    description: "Expert guidance on family lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/family-lawyers-digital-marketing",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Family Lawyers Digital Marketing"
+    }],
+    publishedTime: "2024-12-15T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.650Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Family Lawyers Digital Marketing",
+    description: "Expert guidance on family lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const FamilyLawyersDigitalMarketing = () => {
   const articleData = {
     headline: "Family Lawyers Digital Marketing: Complete Client Acquisition Guide for Family Law Practices 2025",
@@ -18,30 +47,17 @@ const FamilyLawyersDigitalMarketing = () => {
     readTime: "26 min read",
     tags: ["Family Law", "Legal Marketing", "Client Acquisition", "Law Firm Growth", "Digital Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "How do family lawyers ethically market their services?",
-      answer: "Family lawyers must follow bar association guidelines, prioritize client education over sales tactics, maintain confidentiality in all marketing materials, and focus on building trust through valuable content and testimonials."
-    },
-    {
-      question: "What digital marketing channels work best for family law practices?",
-      answer: "Content marketing through blogs and educational resources, local SEO optimization, Google Ads for urgent legal needs, LinkedIn for professional networking, and careful social media presence work best for family lawyers."
-    },
-    {
-      question: "How can family lawyers measure their marketing ROI?",
-      answer: "Track consultation requests, case conversion rates, average case value, client lifetime value, and referral generation. Focus on quality metrics rather than just quantity, as family law clients represent significant long-term value."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={familyLawyersDigitalMarketingHero}
-      heroAlt="Family lawyers digital marketing and practice growth strategies"
-    >
+  const faqs = [{
+    question: "How do family lawyers ethically market their services?",
+    answer: "Family lawyers must follow bar association guidelines, prioritize client education over sales tactics, maintain confidentiality in all marketing materials, and focus on building trust through valuable content and testimonials."
+  }, {
+    question: "What digital marketing channels work best for family law practices?",
+    answer: "Content marketing through blogs and educational resources, local SEO optimization, Google Ads for urgent legal needs, LinkedIn for professional networking, and careful social media presence work best for family lawyers."
+  }, {
+    question: "How can family lawyers measure their marketing ROI?",
+    answer: "Track consultation requests, case conversion rates, average case value, client lifetime value, and referral generation. Focus on quality metrics rather than just quantity, as family law clients represent significant long-term value."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={familyLawyersDigitalMarketingHero} heroAlt="Family lawyers digital marketing and practice growth strategies">
       <Card className="p-8 mb-8">
         <p className="text-lg font-semibold text-primary mb-4">
           Family law practices that implement strategic digital marketing achieve 250% higher client acquisition rates while maintaining ethical compliance standards.
@@ -54,7 +70,7 @@ const FamilyLawyersDigitalMarketing = () => {
       <h2>Understanding Family Law Marketing Challenges</h2>
       
       <p>
-        Family law marketing is different from every other legal specialty. Your clients aren't just seeking legal expertise—they're looking for compassion, understanding, and hope during some of their most vulnerable moments.
+        Family law marketing is different from every other legal specialty. Your clients aren&apos;t just seeking legal expertise—they&apos;re looking for compassion, understanding, and hope during some of their most vulnerable moments.
       </p>
 
       <Card className="p-6 my-8 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-950/20 dark:to-indigo-950/20 border-purple-200 dark:border-purple-800">
@@ -172,7 +188,7 @@ const FamilyLawyersDigitalMarketing = () => {
         Family law SEO requires careful balance between visibility and sensitivity:
       </p>
       <ul>
-        <li><strong>Local keyword targeting:</strong> "family lawyer [city]", "custody attorney near me"</li>
+        <li><strong>Local keyword targeting:</strong> &quot;family lawyer [city]&quot;, &quot;custody attorney near me&quot;</li>
         <li><strong>Practice area pages:</strong> Dedicated pages for each family law service</li>
         <li><strong>FAQ optimization:</strong> Answer common family law questions</li>
         <li><strong>Local directory optimization:</strong> Legal and general business directory listings</li>
@@ -186,7 +202,7 @@ const FamilyLawyersDigitalMarketing = () => {
       <ul>
         <li><strong>Compassionate ad copy:</strong> Emphasize support and understanding</li>
         <li><strong>Geographic targeting:</strong> Focus on local service areas</li>
-        <li><strong>Time-of-day optimization:</strong> Reach clients when they're searching for help</li>
+        <li><strong>Time-of-day optimization:</strong> Reach clients when they&apos;re searching for help</li>
         <li><strong>Landing page alignment:</strong> Ensure ads match landing page messaging</li>
         <li><strong>Crisis-aware scheduling:</strong> Available for urgent legal matters</li>
       </ul>
@@ -292,8 +308,6 @@ const FamilyLawyersDigitalMarketing = () => {
       <p>
         Digital marketing for family lawyers requires balancing client acquisition goals with the emotional sensitivity required in family law practice. Prioritize trust-building, education, and ethical compliance in all marketing activities to build a sustainable and respected practice.
       </p>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default FamilyLawyersDigitalMarketing;

@@ -7,8 +7,8 @@ import { Users, FileText, Settings, BarChart3 } from 'lucide-react';
 
 export const Dashboard = () => {
   const [stats, setStats] = useState({
-    totalSubmissions: 0,
-   
+    totalSubmissions: 0
+
   });
 
   useEffect(() => {
@@ -19,15 +19,15 @@ export const Dashboard = () => {
     try {
       const dbId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID;
       const submissionsCol = process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_STRATEGY_FORM_ID;
-     
+
       // Fetch form submissions count
       const submissions = await databases.listDocuments(dbId, submissionsCol);
       const totalSubmissions = submissions?.total || submissions?.documents?.length || 0;
 
-    
+
       setStats({
-        totalSubmissions,
-      
+        totalSubmissions
+
       });
     } catch (error) {
       console.error('Error fetching stats:', error);
@@ -39,7 +39,7 @@ export const Dashboard = () => {
       <div>
         <h1 className="text-3xl font-bold">Dashboard Overview</h1>
         <p className="text-muted-foreground mt-2">
-          Welcome back! Here's what's happening with your site.
+          Welcome back! Here&apos;s what&apos;s happening with your site.
         </p>
       </div>
 
@@ -60,6 +60,6 @@ export const Dashboard = () => {
 
         
       </div>
-    </div>
-  );
+    </div>);
+
 };

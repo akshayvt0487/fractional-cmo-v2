@@ -20,6 +20,8 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+NOTE: Supabase was previously used in this project but has been removed in favor of Appwrite. If you see imports from `@/integrations/supabase/*`, they are left as shims or TODOs; migrate those call-sites to Appwrite (`src/integrations/appwrite`) and run `npm install` to regenerate a fresh lockfile.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

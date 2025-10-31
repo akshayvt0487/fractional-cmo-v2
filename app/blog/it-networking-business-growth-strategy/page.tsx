@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import itNetworkingGrowthStrategyHero from '@/assets/blog/it-networking-growth-strategy-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "It Networking Business Growth Strategy",
+  description: "Expert guidance on it networking business growth strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/it-networking-business-growth-strategy",
+  keywords: ["networking", "business", "growth", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "It Networking Business Growth Strategy",
+    description: "Expert guidance on it networking business growth strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/it-networking-business-growth-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "It Networking Business Growth Strategy"
+    }],
+    publishedTime: "2024-12-20T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.817Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "It Networking Business Growth Strategy",
+    description: "Expert guidance on it networking business growth strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const ITNetworkingGrowthStrategy = () => {
   const articleData = {
     headline: "IT Networking Business Growth: Scaling Your Network Solutions Company 2025",
@@ -18,36 +47,23 @@ const ITNetworkingGrowthStrategy = () => {
     readTime: "24 min read",
     tags: ["IT Networking", "Business Growth", "Network Solutions", "Enterprise Sales", "Technology Business"]
   };
-
-  const faqs = [
-    {
-      question: "What's the most profitable area of IT networking business?",
-      answer: "Enterprise network security and cloud infrastructure services typically offer the highest margins. Companies are willing to pay premium rates for expertise in cybersecurity, SD-WAN, and cloud connectivity solutions that protect business operations."
-    },
-    {
-      question: "How do I compete with large IT networking companies?",
-      answer: "Focus on specialized services, local market presence, and personalized customer service. Small to medium businesses often prefer working with boutique providers who offer dedicated attention and flexible solutions over large corporate vendors."
-    },
-    {
-      question: "What certifications are essential for IT networking business growth?",
-      answer: "Cisco, Juniper, and vendor-neutral certifications like CompTIA Network+ are foundational. For growth, pursue specialized certifications in cybersecurity (CISSP), cloud platforms (AWS/Azure), and emerging technologies like SD-WAN and network automation."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={itNetworkingGrowthStrategyHero}
-      heroAlt="IT networking business growth strategy and scaling operations"
-    >
+  const faqs = [{
+    question: "What's the most profitable area of IT networking business?",
+    answer: "Enterprise network security and cloud infrastructure services typically offer the highest margins. Companies are willing to pay premium rates for expertise in cybersecurity, SD-WAN, and cloud connectivity solutions that protect business operations."
+  }, {
+    question: "How do I compete with large IT networking companies?",
+    answer: "Focus on specialized services, local market presence, and personalized customer service. Small to medium businesses often prefer working with boutique providers who offer dedicated attention and flexible solutions over large corporate vendors."
+  }, {
+    question: "What certifications are essential for IT networking business growth?",
+    answer: "Cisco, Juniper, and vendor-neutral certifications like CompTIA Network+ are foundational. For growth, pursue specialized certifications in cybersecurity (CISSP), cloud platforms (AWS/Azure), and emerging technologies like SD-WAN and network automation."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={itNetworkingGrowthStrategyHero} heroAlt="IT networking business growth strategy and scaling operations">
       <p className="text-lg leading-relaxed">
         The IT networking industry continues to evolve rapidly, with businesses increasingly dependent on robust, secure network infrastructure. Successful networking companies must adapt to new technologies while maintaining expertise in traditional networking fundamentals to capture their share of the <strong>$47.5 billion global networking market</strong> projected by 2027.
       </p>
 
       <blockquote className="border-l-4 border-primary pl-6 italic text-lg mb-6 bg-muted/50 p-4 rounded">
-        "The future belongs to companies that can combine deep technical networking expertise with strategic business development and exceptional client service delivery." 
+        &quot;The future belongs to companies that can combine deep technical networking expertise with strategic business development and exceptional client service delivery.&quot; 
         <cite className="block mt-2 text-sm text-muted-foreground">— Network Infrastructure Survey 2024</cite>
       </blockquote>
 
@@ -194,7 +210,7 @@ const ITNetworkingGrowthStrategy = () => {
       <h2>Client Acquisition and Market Positioning</h2>
       
       <p>
-        Successful networking businesses understand that technical expertise alone isn't enough—you need strategic marketing and sales processes to attract and convert high-value clients.
+        Successful networking businesses understand that technical expertise alone isn&apos;t enough—you need strategic marketing and sales processes to attract and convert high-value clients.
       </p>
 
       <h3>Target Market Segmentation</h3>
@@ -353,22 +369,22 @@ const ITNetworkingGrowthStrategy = () => {
         <Card className="p-6">
           <h4 className="text-lg font-semibold mb-3">Primary Keywords</h4>
           <ul className="text-sm space-y-1">
-            <li>• "network security consultant [city]"</li>
-            <li>• "cloud migration services"</li>
-            <li>• "managed network services"</li>
-            <li>• "SD-WAN implementation"</li>
-            <li>• "enterprise wifi design"</li>
+            <li>• &quot;network security consultant [city]&quot;</li>
+            <li>• &quot;cloud migration services&quot;</li>
+            <li>• &quot;managed network services&quot;</li>
+            <li>• &quot;SD-WAN implementation&quot;</li>
+            <li>• &quot;enterprise wifi design&quot;</li>
           </ul>
         </Card>
         
         <Card className="p-6">
           <h4 className="text-lg font-semibold mb-3">Long-Tail Keywords</h4>
           <ul className="text-sm space-y-1">
-            <li>• "how to implement zero trust network"</li>
-            <li>• "network security assessment checklist"</li>
-            <li>• "best practices for cloud network design"</li>
-            <li>• "industrial IoT network architecture"</li>
-            <li>• "network monitoring tools comparison"</li>
+            <li>• &quot;how to implement zero trust network&quot;</li>
+            <li>• &quot;network security assessment checklist&quot;</li>
+            <li>• &quot;best practices for cloud network design&quot;</li>
+            <li>• &quot;industrial IoT network architecture&quot;</li>
+            <li>• &quot;network monitoring tools comparison&quot;</li>
           </ul>
         </Card>
       </div>
@@ -437,16 +453,10 @@ const ITNetworkingGrowthStrategy = () => {
       </ul>
 
       <p>
-        Remember that sustainable growth in IT networking comes from delivering consistent value to your clients. By positioning yourself as a trusted technology advisor rather than just a service provider, you'll build the foundation for long-term business success and recurring revenue streams.
+        Remember that sustainable growth in IT networking comes from delivering consistent value to your clients. By positioning yourself as a trusted technology advisor rather than just a service provider, you&apos;ll build the foundation for long-term business success and recurring revenue streams.
       </p>
 
-      <Citation
-        source="CompTIA IT Industry Outlook 2024"
-        url="https://www.comptia.org/content/research/it-industry-trends-analysis"
-        title="The global networking market is projected to reach $47.5 billion by 2027, driven by cloud adoption and digital transformation initiatives."
-      />
-    </OptimizedBlogLayout>
-  );
+      <Citation source="CompTIA IT Industry Outlook 2024" url="https://www.comptia.org/content/research/it-industry-trends-analysis" title="The global networking market is projected to reach $47.5 billion by 2027, driven by cloud adoption and digital transformation initiatives." />
+    </OptimizedBlogLayout>;
 };
-
 export default ITNetworkingGrowthStrategy;

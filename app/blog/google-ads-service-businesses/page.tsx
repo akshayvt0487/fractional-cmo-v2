@@ -1,13 +1,41 @@
+import { createMetadata } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
-
 import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import googleAdsImage from "@/assets/google-ads-dashboard.jpg";
 import googleAdsServiceHero from '@/assets/blog/google-ads-service-businesses.jpg';
-
+export const metadata = createMetadata({
+  title: "Google Ads Service Businesses",
+  description: "Expert guidance on google ads service businesses. Learn proven strategies and best practices for business growth.",
+  path: "/blog/google-ads-service-businesses",
+  keywords: ["google", "service", "businesses", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Google Ads Service Businesses",
+    description: "Expert guidance on google ads service businesses. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/google-ads-service-businesses",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Google Ads Service Businesses"
+    }],
+    publishedTime: "2024-12-10T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.720Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Google Ads Service Businesses",
+    description: "Expert guidance on google ads service businesses. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const GoogleAdsService = () => {
   const articleData = {
     headline: "Google Ads for Service Businesses: Complete Setup & Optimization Guide",
@@ -21,37 +49,24 @@ const GoogleAdsService = () => {
     readTime: "24 min read",
     tags: ["Google Ads", "Service Businesses", "PPC", "Digital Marketing", "Lead Generation"]
   };
-
-  const faqs = [
-    {
-      question: "What's a realistic budget for Google Ads for service businesses?",
-      answer: "Service businesses should budget $1,500-$5,000+ monthly for effective Google Ads campaigns. Start with $50-100 per day to gather data, then scale based on performance. High-value services can justify larger budgets."
-    },
-    {
-      question: "How long does it take to see results from Google Ads for services?",
-      answer: "Initial results appear within 1-2 weeks, but optimal performance takes 3-6 months of testing and optimization. Service businesses with longer sales cycles may need 6-12 months to accurately measure ROI."
-    },
-    {
-      question: "What's the average cost per click for service business Google Ads?",
-      answer: "Service business CPCs range from $5-50+ depending on industry. Legal services and home improvement often have higher CPCs ($20-100+), while general business services may be $5-25. Focus on value per conversion, not just CPC."
-    }
-  ];
-
-  return (
-      <OptimizedBlogLayout
-        articleData={articleData}
-        relatedArticles={relatedArticles.digitalMarketing}
-        faqs={faqs}
-        heroImage={googleAdsServiceHero}
-        heroAlt="Google Ads Campaign Dashboard - Complete setup guide for service businesses"
-      >
+  const faqs = [{
+    question: "What's a realistic budget for Google Ads for service businesses?",
+    answer: "Service businesses should budget $1,500-$5,000+ monthly for effective Google Ads campaigns. Start with $50-100 per day to gather data, then scale based on performance. High-value services can justify larger budgets."
+  }, {
+    question: "How long does it take to see results from Google Ads for services?",
+    answer: "Initial results appear within 1-2 weeks, but optimal performance takes 3-6 months of testing and optimization. Service businesses with longer sales cycles may need 6-12 months to accurately measure ROI."
+  }, {
+    question: "What's the average cost per click for service business Google Ads?",
+    answer: "Service business CPCs range from $5-50+ depending on industry. Legal services and home improvement often have higher CPCs ($20-100+), while general business services may be $5-25. Focus on value per conversion, not just CPC."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={googleAdsServiceHero} heroAlt="Google Ads Campaign Dashboard - Complete setup guide for service businesses">
         <h2>Google Ads Strategy for Service Businesses</h2>
         <p>
           Google Ads offers service businesses a powerful platform to reach potential customers actively searching for their services. However, success requires a strategic approach that differs significantly from e-commerce advertising, focusing on lead quality over quantity. For service businesses, every click represents a potential long-term client relationship, not just a one-time transaction.
         </p>
 
         <p>
-          The key to Google Ads success lies in understanding your customer's search behavior, creating highly relevant campaigns that match their intent, and optimizing for conversions that matter—phone calls, form submissions, and appointment bookings. Service businesses that master these fundamentals consistently achieve 300-500% ROI from their Google Ads investment.
+          The key to Google Ads success lies in understanding your customer&apos;s search behavior, creating highly relevant campaigns that match their intent, and optimizing for conversions that matter—phone calls, form submissions, and appointment bookings. Service businesses that master these fundamentals consistently achieve 300-500% ROI from their Google Ads investment.
         </p>
 
         <h2>Understanding Service Business Search Behavior</h2>
@@ -63,10 +78,10 @@ const GoogleAdsService = () => {
           <Card className="p-6">
             <h4 className="text-lg font-bold mb-3">Urgent Need Searches</h4>
             <ul className="space-y-2 text-sm">
-              <li>• "Emergency [service] near me"</li>
-              <li>• "24/7 [service]"</li>
-              <li>• "Same day [service]"</li>
-              <li>• "Fast [service]"</li>
+              <li>• &quot;Emergency [service] near me&quot;</li>
+              <li>• &quot;24/7 [service]&quot;</li>
+              <li>• &quot;Same day [service]&quot;</li>
+              <li>• &quot;Fast [service]&quot;</li>
             </ul>
             <p className="text-xs text-muted-foreground mt-3">Highest intent, ready to convert immediately</p>
           </Card>
@@ -74,10 +89,10 @@ const GoogleAdsService = () => {
           <Card className="p-6">
             <h4 className="text-lg font-bold mb-3">Research Phase Searches</h4>
             <ul className="space-y-2 text-sm">
-              <li>• "Best [service] in [city]"</li>
-              <li>• "[Service] cost"</li>
-              <li>• "[Service] reviews"</li>
-              <li>• "How to choose [service]"</li>
+              <li>• &quot;Best [service] in [city]&quot;</li>
+              <li>• &quot;[Service] cost&quot;</li>
+              <li>• &quot;[Service] reviews&quot;</li>
+              <li>• &quot;How to choose [service]&quot;</li>
             </ul>
             <p className="text-xs text-muted-foreground mt-3">Medium intent, evaluating options</p>
           </Card>
@@ -85,10 +100,10 @@ const GoogleAdsService = () => {
           <Card className="p-6">
             <h4 className="text-lg font-bold mb-3">Comparison Searches</h4>
             <ul className="space-y-2 text-sm">
-              <li>• "[Your company] vs [competitor]"</li>
-              <li>• "[Service] alternatives"</li>
-              <li>• "Cheap vs expensive [service]"</li>
-              <li>• "[Service] comparison"</li>
+              <li>• &quot;[Your company] vs [competitor]&quot;</li>
+              <li>• &quot;[Service] alternatives&quot;</li>
+              <li>• &quot;Cheap vs expensive [service]&quot;</li>
+              <li>• &quot;[Service] comparison&quot;</li>
             </ul>
             <p className="text-xs text-muted-foreground mt-3">High intent, final decision stage</p>
           </Card>
@@ -126,7 +141,7 @@ const GoogleAdsService = () => {
               <ul className="space-y-2 text-sm">
                 <li>• Service + location keywords</li>
                 <li>• Emergency/urgent modifiers</li>
-                <li>• "Near me" search terms</li>
+                <li>• &quot;Near me&quot; search terms</li>
                 <li>• Competitor brand terms</li>
                 <li>• Long-tail service keywords</li>
                 <li>• Question-based searches</li>
@@ -178,12 +193,12 @@ const GoogleAdsService = () => {
           <Card className="p-6">
             <h4 className="text-lg font-bold mb-3">Display Remarketing Campaigns</h4>
             <p className="text-sm mb-3">
-              Re-engage website visitors who didn't convert. Essential for service businesses with longer consideration cycles.
+              Re-engage website visitors who didn&apos;t convert. Essential for service businesses with longer consideration cycles.
             </p>
             <div className="bg-muted/50 p-4 rounded-lg">
               <p className="text-sm font-semibold mb-2">Audience Segmentation:</p>
               <ul className="space-y-1 text-sm">
-                <li>• Visited service pages but didn't call</li>
+                <li>• Visited service pages but didn&apos;t call</li>
                 <li>• Abandoned contact forms</li>
                 <li>• Spent 2+ minutes on site</li>
                 <li>• Visited pricing or FAQ pages</li>
@@ -220,19 +235,19 @@ const GoogleAdsService = () => {
           <div className="space-y-4">
             <div>
               <p className="font-semibold text-sm mb-2">Headline 1: Problem + Location</p>
-              <p className="text-sm text-muted-foreground italic">Example: "Emergency Plumber in Melbourne"</p>
+              <p className="text-sm text-muted-foreground italic">Example: &quot;Emergency Plumber in Melbourne&quot;</p>
             </div>
             <div>
               <p className="font-semibold text-sm mb-2">Headline 2: Unique Value Proposition</p>
-              <p className="text-sm text-muted-foreground italic">Example: "24/7 Response | Fixed Prices"</p>
+              <p className="text-sm text-muted-foreground italic">Example: &quot;24/7 Response | Fixed Prices&quot;</p>
             </div>
             <div>
               <p className="font-semibold text-sm mb-2">Headline 3: Trust Signal or Offer</p>
-              <p className="text-sm text-muted-foreground italic">Example: "5-Star Rated | Free Quotes"</p>
+              <p className="text-sm text-muted-foreground italic">Example: &quot;5-Star Rated | Free Quotes&quot;</p>
             </div>
             <div>
               <p className="font-semibold text-sm mb-2">Description: Benefits + CTA</p>
-              <p className="text-sm text-muted-foreground italic">Example: "Licensed plumbers arrive within 60 minutes. No callout fees. 12-month warranty. Call now for immediate service."</p>
+              <p className="text-sm text-muted-foreground italic">Example: &quot;Licensed plumbers arrive within 60 minutes. No callout fees. 12-month warranty. Call now for immediate service.&quot;</p>
             </div>
           </div>
         </div>
@@ -265,7 +280,7 @@ const GoogleAdsService = () => {
             <ul className="space-y-2 text-sm">
               <li><strong>Call Extensions:</strong> Priority #1 for service businesses</li>
               <li><strong>Location Extensions:</strong> Show your address and map</li>
-              <li><strong>Callout Extensions:</strong> "24/7 Service", "Free Quotes"</li>
+              <li><strong>Callout Extensions:</strong> &quot;24/7 Service&quot;, &quot;Free Quotes&quot;</li>
               <li><strong>Structured Snippets:</strong> Service types, specializations</li>
               <li><strong>Price Extensions:</strong> Starting prices for transparency</li>
               <li><strong>Review Extensions:</strong> Third-party ratings and awards</li>
@@ -287,7 +302,7 @@ const GoogleAdsService = () => {
               <li>✓ <strong>Clear headline</strong> - Match your ad copy exactly</li>
               <li>✓ <strong>Service area</strong> - Confirm you serve their location</li>
               <li>✓ <strong>Trust signals</strong> - Licenses, reviews, years in business</li>
-              <li>✓ <strong>Primary CTA button</strong> - "Call Now" or "Book Appointment"</li>
+              <li>✓ <strong>Primary CTA button</strong> - &quot;Call Now&quot; or &quot;Book Appointment&quot;</li>
               <li>✓ <strong>Service images</strong> - Real photos of your team/work</li>
             </ul>
           </Card>
@@ -302,7 +317,7 @@ const GoogleAdsService = () => {
               <li>□ No horizontal scrolling required</li>
               <li>□ Location map is easy to access</li>
               <li>□ Business hours clearly displayed</li>
-              <li>□ Chat widget doesn't block content</li>
+              <li>□ Chat widget doesn&apos;t block content</li>
             </ul>
           </Card>
         </div>
@@ -311,7 +326,7 @@ const GoogleAdsService = () => {
           <h4 className="font-bold mb-3">Landing Page A/B Testing Priorities</h4>
           <ol className="space-y-2 text-sm list-decimal list-inside">
             <li>Headline variations (match ad copy vs. benefit-focused)</li>
-            <li>CTA button text ("Call Now" vs. "Get Free Quote")</li>
+            <li>CTA button text (&quot;Call Now&quot; vs. &quot;Get Free Quote&quot;)</li>
             <li>Form length (short vs. detailed qualification questions)</li>
             <li>Social proof placement (above fold vs. mid-page)</li>
             <li>Trust signals (licenses, insurance, guarantees)</li>
@@ -386,7 +401,7 @@ const GoogleAdsService = () => {
             </div>
             <div>
               <p className="font-semibold text-sm mb-2">Wrong Location:</p>
-              <p className="text-sm text-muted-foreground">Add cities/regions you don't serve</p>
+              <p className="text-sm text-muted-foreground">Add cities/regions you don&apos;t serve</p>
             </div>
             <div>
               <p className="font-semibold text-sm mb-2">Information Seekers:</p>
@@ -400,7 +415,7 @@ const GoogleAdsService = () => {
 
         <h3>Conversion Tracking Setup</h3>
         <p>
-          Accurate conversion tracking is non-negotiable for service businesses. Without it, you're flying blind. Track every meaningful action that leads to business outcomes.
+          Accurate conversion tracking is non-negotiable for service businesses. Without it, you&apos;re flying blind. Track every meaningful action that leads to business outcomes.
         </p>
 
         <div className="space-y-6 my-8">
@@ -563,7 +578,7 @@ const GoogleAdsService = () => {
 
         <h2>Performance Measurement & KPIs</h2>
         <p>
-          Track the right metrics to evaluate Google Ads performance and make data-driven optimization decisions that align with your business objectives. Vanity metrics like impressions and clicks don't pay the bills—focus on what drives revenue.
+          Track the right metrics to evaluate Google Ads performance and make data-driven optimization decisions that align with your business objectives. Vanity metrics like impressions and clicks don&apos;t pay the bills—focus on what drives revenue.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
@@ -624,7 +639,7 @@ const GoogleAdsService = () => {
               <li>• <strong>Radius targeting:</strong> 10-25 mile radius from your location</li>
               <li>• <strong>Zip code exclusions:</strong> Remove low-converting areas</li>
               <li>• <strong>City-level bidding:</strong> Increase bids for affluent suburbs</li>
-              <li>• <strong>Location intent targeting:</strong> "People in or regularly in your locations"</li>
+              <li>• <strong>Location intent targeting:</strong> &quot;People in or regularly in your locations&quot;</li>
               <li>• <strong>Proximity targeting:</strong> Higher bids for closer prospects</li>
             </ul>
           </Card>
@@ -668,7 +683,7 @@ const GoogleAdsService = () => {
                 <li>• Increase budgets by 50-100%</li>
                 <li>• Bid more aggressively (raise bids 30-50%)</li>
                 <li>• Expand keyword coverage</li>
-                <li>• Add urgency to ad copy ("Book now - limited availability")</li>
+                <li>• Add urgency to ad copy (&quot;Book now - limited availability&quot;)</li>
                 <li>• Run promotion extensions</li>
               </ul>
             </div>
@@ -721,7 +736,7 @@ const GoogleAdsService = () => {
 
           <Card className="p-6 border-destructive/50">
             <h4 className="text-lg font-bold mb-3 text-destructive">❌ Mistake: Sending All Traffic to Homepage</h4>
-            <p className="text-sm mb-2">Generic landing pages don't convert well because they don't match specific search intent.</p>
+            <p className="text-sm mb-2">Generic landing pages don&apos;t convert well because they don&apos;t match specific search intent.</p>
             <div className="bg-success/10 p-3 rounded mt-3">
               <p className="text-sm font-semibold mb-1">✓ Solution:</p>
               <p className="text-sm">Create service-specific landing pages that match your ad copy and keyword themes. Each ad group should have its own landing page.</p>
@@ -730,7 +745,7 @@ const GoogleAdsService = () => {
 
           <Card className="p-6 border-destructive/50">
             <h4 className="text-lg font-bold mb-3 text-destructive">❌ Mistake: Not Tracking Phone Calls</h4>
-            <p className="text-sm mb-2">60-80% of service business conversions happen via phone, yet many don't track calls.</p>
+            <p className="text-sm mb-2">60-80% of service business conversions happen via phone, yet many don&apos;t track calls.</p>
             <div className="bg-success/10 p-3 rounded mt-3">
               <p className="text-sm font-semibold mb-1">✓ Solution:</p>
               <p className="text-sm">Implement Google call tracking or use CallRail. Track call duration and source. Optimize towards campaigns driving quality calls.</p>
@@ -738,7 +753,7 @@ const GoogleAdsService = () => {
           </Card>
 
           <Card className="p-6 border-destructive/50">
-            <h4 className="text-lg font-bold mb-3 text-destructive">❌ Mistake: Setting "Maximize Clicks" as Bidding Strategy</h4>
+            <h4 className="text-lg font-bold mb-3 text-destructive">❌ Mistake: Setting &quot;Maximize Clicks&quot; as Bidding Strategy</h4>
             <p className="text-sm mb-2">Google prioritizes cheap clicks over quality leads, sending low-intent traffic.</p>
             <div className="bg-success/10 p-3 rounded mt-3">
               <p className="text-sm font-semibold mb-1">✓ Solution:</p>
@@ -968,25 +983,19 @@ const GoogleAdsService = () => {
 
         <h2>Your Google Ads Success Roadmap</h2>
         <p>
-          Google Ads success for service businesses comes down to strategic targeting, compelling messaging, and relentless optimization. The platform offers unparalleled opportunities to reach potential clients at the exact moment they're searching for your services.
+          Google Ads success for service businesses comes down to strategic targeting, compelling messaging, and relentless optimization. The platform offers unparalleled opportunities to reach potential clients at the exact moment they&apos;re searching for your services.
         </p>
         
         <p>
-          Start with thorough keyword research, create tightly organized ad groups, and write compelling ad copy that speaks directly to your target audience's needs. Focus on quality over quantity—a few well-optimized campaigns will outperform dozens of poorly managed ones.
+          Start with thorough keyword research, create tightly organized ad groups, and write compelling ad copy that speaks directly to your target audience&apos;s needs. Focus on quality over quantity—a few well-optimized campaigns will outperform dozens of poorly managed ones.
         </p>
 
         <p>
           Remember that Google Ads is a marathon, not a sprint. Consistent testing, data analysis, and strategic refinement will compound your results over time. The businesses that treat Google Ads as a strategic marketing asset, not just an advertising tool, are the ones that achieve lasting success.
         </p>
 
-        <Citation
-          source="WordStream Google Ads Benchmarks 2024"
-          url="https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks"
-          title="Service businesses using Google Ads see an average of $2 in revenue for every $1 spent, with top performers achieving 8:1 ROI."
-        />
+        <Citation source="WordStream Google Ads Benchmarks 2024" url="https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks" title="Service businesses using Google Ads see an average of $2 in revenue for every $1 spent, with top performers achieving 8:1 ROI." />
 
-      </OptimizedBlogLayout>
-  );
+      </OptimizedBlogLayout>;
 };
-
 export default GoogleAdsService;

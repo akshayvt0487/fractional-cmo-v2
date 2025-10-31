@@ -1,70 +1,84 @@
+import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/voluntary-administration-lead-generation-hero.jpg";
-
+export const metadata = createMetadata({
+  title: "Voluntary Administration Lead Generation",
+  description: "Expert guidance on voluntary administration lead generation. Learn proven strategies and best practices for business growth.",
+  path: "/blog/voluntary-administration-lead-generation",
+  keywords: ["voluntary", "administration", "lead", "generation", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Voluntary Administration Lead Generation",
+    description: "Expert guidance on voluntary administration lead generation. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/voluntary-administration-lead-generation",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Voluntary Administration Lead Generation"
+    }],
+    publishedTime: "2025-01-15",
+    modifiedTime: "2025-10-31T11:10:05.333Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Voluntary Administration Lead Generation",
+    description: "Expert guidance on voluntary administration lead generation. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const VoluntaryAdministrationLeadGeneration = () => {
-  const citations = [
-    {
-      source: "ARITA",
-      title: "ARITA - Voluntary Administration Guide",
-      url: "https://www.arita.com.au/",
-      date: "2025"
-    },
-    {
-      source: "ASIC",
-      title: "ASIC - Voluntary Administration Information",
-      url: "https://asic.gov.au/for-business/your-business-is-in-trouble/insolvency-a-glossary-of-terms/voluntary-administration/",
-      date: "2025"
-    }
-  ];
-
-  const relatedArticles = [
-    {
-      title: "Growth Marketing for Liquidators",
-      description: "Strategic client acquisition and growth marketing for liquidation practices.",
-      url: "/blog/liquidators-growth-marketing",
-      category: "Legal"
-    },
-    {
-      title: "Digital Marketing for Insolvency Practitioners",
-      description: "Complete digital marketing strategy guide for insolvency professionals.",
-      url: "/blog/insolvency-digital-marketing",
-      category: "Legal"
-    },
-    {
-      title: "B2B Lead Generation Strategies",
-      description: "Master B2B lead generation for professional services and complex sales.",
-      url: "/blog/b2b-lead-generation",
-      category: "Lead Generation"
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={{
-        headline: "Lead Generation for Voluntary Administration Specialists: Complete 2025 Strategy",
-        description: "Master lead generation for voluntary administration services. Proven strategies to attract distressed businesses, build referrer networks, and grow your VA practice with sustainable client pipelines.",
-        publishedDate: "2025-01-15",
-        url: "/blog/voluntary-administration-lead-generation",
-        readTime: "15 min read",
-        category: "Legal",
-        author: "Basheer Padanna"
-      }}
-      heroImage={heroImage}
-      heroAlt="Lead Generation for Voluntary Administration"
-      relatedArticles={relatedArticles}
-    >
+  const citations = [{
+    source: "ARITA",
+    title: "ARITA - Voluntary Administration Guide",
+    url: "https://www.arita.com.au/",
+    date: "2025"
+  }, {
+    source: "ASIC",
+    title: "ASIC - Voluntary Administration Information",
+    url: "https://asic.gov.au/for-business/your-business-is-in-trouble/insolvency-a-glossary-of-terms/voluntary-administration/",
+    date: "2025"
+  }];
+  const relatedArticles = [{
+    title: "Growth Marketing for Liquidators",
+    description: "Strategic client acquisition and growth marketing for liquidation practices.",
+    url: "/blog/liquidators-growth-marketing",
+    category: "Legal"
+  }, {
+    title: "Digital Marketing for Insolvency Practitioners",
+    description: "Complete digital marketing strategy guide for insolvency professionals.",
+    url: "/blog/insolvency-digital-marketing",
+    category: "Legal"
+  }, {
+    title: "B2B Lead Generation Strategies",
+    description: "Master B2B lead generation for professional services and complex sales.",
+    url: "/blog/b2b-lead-generation",
+    category: "Lead Generation"
+  }];
+  return <OptimizedBlogLayout articleData={{
+    headline: "Lead Generation for Voluntary Administration Specialists: Complete 2025 Strategy",
+    description: "Master lead generation for voluntary administration services. Proven strategies to attract distressed businesses, build referrer networks, and grow your VA practice with sustainable client pipelines.",
+    publishedDate: "2025-01-15",
+    url: "/blog/voluntary-administration-lead-generation",
+    readTime: "15 min read",
+    category: "Legal",
+    author: "Basheer Padanna"
+  }} heroImage={heroImage} heroAlt="Lead Generation for Voluntary Administration" relatedArticles={relatedArticles}>
       <p className="lead text-xl text-muted-foreground mb-8">
-        Voluntary administration offers businesses a lifeline—but directors need to discover your services before it's too late. This comprehensive guide reveals the lead generation strategies that fill voluntary administration practices with quality appointments while building sustainable referrer networks.
+        Voluntary administration offers businesses a lifeline—but directors need to discover your services before it&apos;s too late. This comprehensive guide reveals the lead generation strategies that fill voluntary administration practices with quality appointments while building sustainable referrer networks.
       </p>
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Understanding the VA Lead Generation Landscape</h2>
         
         <p className="mb-6">
-          Lead generation for voluntary administration is fundamentally different from other professional services. You're targeting businesses in financial distress—often in crisis mode—while also building relationships with advisors who identify early warning signs before directors do.
+          Lead generation for voluntary administration is fundamentally different from other professional services. You&apos;re targeting businesses in financial distress—often in crisis mode—while also building relationships with advisors who identify early warning signs before directors do.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -127,7 +141,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
                   <li>voluntary administration urgent</li>
                   <li>VA administrator today</li>
                   <li>emergency business rescue</li>
-                  <li>can't pay creditors help</li>
+                  <li>can&apos;t pay creditors help</li>
                 </ul>
                 <ul className="list-disc pl-6 space-y-1 text-muted-foreground text-sm">
                   <li>save business from liquidation</li>
@@ -182,10 +196,10 @@ const VoluntaryAdministrationLeadGeneration = () => {
             <div>
               <h5 className="font-semibold mb-2">Cornerstone Guides</h5>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li><strong>"The Complete Guide to Voluntary Administration"</strong> - Comprehensive 3000+ word resource covering entire VA process</li>
-                <li><strong>"Director's Guide: VA vs Liquidation Decision Framework"</strong> - Help directors understand their options</li>
-                <li><strong>"Small Business Restructuring Under New Legislation"</strong> - Capitalize on simplified SBR awareness</li>
-                <li><strong>"Can Voluntary Administration Save Your Business?"</strong> - Address the key question with realistic expectations</li>
+                <li><strong>&quot;The Complete Guide to Voluntary Administration&quot;</strong> - Comprehensive 3000+ word resource covering entire VA process</li>
+                <li><strong>&quot;Director&apos;s Guide: VA vs Liquidation Decision Framework&quot;</strong> - Help directors understand their options</li>
+                <li><strong>&quot;Small Business Restructuring Under New Legislation&quot;</strong> - Capitalize on simplified SBR awareness</li>
+                <li><strong>&quot;Can Voluntary Administration Save Your Business?&quot;</strong> - Address the key question with realistic expectations</li>
               </ul>
             </div>
 
@@ -267,9 +281,9 @@ const VoluntaryAdministrationLeadGeneration = () => {
             <div>
               <h5 className="font-semibold mb-2">Above the Fold Essentials</h5>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li><strong>Headline:</strong> "Save Your Business Through Voluntary Administration" or "Expert VA Administrators | Same-Day Appointments"</li>
-                <li><strong>Sub-headline:</strong> Credibility and urgency ("ASIC Registered | 25+ Years Experience | 24/7 Availability")</li>
-                <li><strong>Primary CTA:</strong> Large "Book Emergency Consultation" button with phone number</li>
+                <li><strong>Headline:</strong> &quot;Save Your Business Through Voluntary Administration&quot; or &quot;Expert VA Administrators | Same-Day Appointments&quot;</li>
+                <li><strong>Sub-headline:</strong> Credibility and urgency (&quot;ASIC Registered | 25+ Years Experience | 24/7 Availability&quot;)</li>
+                <li><strong>Primary CTA:</strong> Large &quot;Book Emergency Consultation&quot; button with phone number</li>
                 <li><strong>Trust Signals:</strong> ARITA membership, successful VA statistics, years in practice</li>
               </ul>
             </div>
@@ -297,11 +311,11 @@ const VoluntaryAdministrationLeadGeneration = () => {
             <div>
               <h5 className="font-semibold mb-2">FAQ Section</h5>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>"How much does voluntary administration cost?"</li>
-                <li>"What percentage of businesses survive VA?"</li>
-                <li>"How long does the VA process take?"</li>
-                <li>"Can I still trade during voluntary administration?"</li>
-                <li>"What are my alternatives to VA?"</li>
+                <li>&quot;How much does voluntary administration cost?&quot;</li>
+                <li>&quot;What percentage of businesses survive VA?&quot;</li>
+                <li>&quot;How long does the VA process take?&quot;</li>
+                <li>&quot;Can I still trade during voluntary administration?&quot;</li>
+                <li>&quot;What are my alternatives to VA?&quot;</li>
               </ul>
             </div>
           </div>
@@ -415,8 +429,8 @@ const VoluntaryAdministrationLeadGeneration = () => {
             <div>
               <h5 className="font-semibold mb-2">Profile Optimization</h5>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li><strong>Headline:</strong> "Voluntary Administration Specialist | Helping Businesses Survive Financial Distress"</li>
-                <li><strong>About Section:</strong> Tell your story—why you're passionate about business rescue, your philosophy on VA</li>
+                <li><strong>Headline:</strong> &quot;Voluntary Administration Specialist | Helping Businesses Survive Financial Distress&quot;</li>
+                <li><strong>About Section:</strong> Tell your story—why you&apos;re passionate about business rescue, your philosophy on VA</li>
                 <li><strong>Featured Section:</strong> Showcase best content (VA guides, case studies, success stories)</li>
                 <li><strong>Recommendations:</strong> Request LinkedIn recommendations from satisfied directors and referrers</li>
               </ul>
@@ -477,19 +491,19 @@ const VoluntaryAdministrationLeadGeneration = () => {
                 <div>
                   <strong className="text-sm">Email 1 (Immediate):</strong>
                   <p className="text-muted-foreground text-sm">
-                    Confirmation with "Next 24 Hours: Your Action Plan"—immediate steps to protect the business
+                    Confirmation with &quot;Next 24 Hours: Your Action Plan&quot;—immediate steps to protect the business
                   </p>
                 </div>
                 <div>
                   <strong className="text-sm">Email 2 (2 hours later):</strong>
                   <p className="text-muted-foreground text-sm">
-                    "Understanding Your Options: VA vs Other Alternatives"—educational comparison
+                    &quot;Understanding Your Options: VA vs Other Alternatives&quot;—educational comparison
                   </p>
                 </div>
                 <div>
                   <strong className="text-sm">Email 3 (6 hours later):</strong>
                   <p className="text-muted-foreground text-sm">
-                    "What to Prepare for Your Consultation"—document checklist and questions to consider
+                    &quot;What to Prepare for Your Consultation&quot;—document checklist and questions to consider
                   </p>
                 </div>
                 <div>
@@ -513,13 +527,13 @@ const VoluntaryAdministrationLeadGeneration = () => {
                 <div>
                   <strong className="text-sm">Email 2 (Day 3):</strong>
                   <p className="text-muted-foreground text-sm">
-                    "5 Warning Signs Your Business Needs Urgent Help"—educational with soft CTA
+                    &quot;5 Warning Signs Your Business Needs Urgent Help&quot;—educational with soft CTA
                   </p>
                 </div>
                 <div>
                   <strong className="text-sm">Email 3 (Day 7):</strong>
                   <p className="text-muted-foreground text-sm">
-                    Case study—"How We Saved a Construction Business Through VA"
+                    Case study—&quot;How We Saved a Construction Business Through VA&quot;
                   </p>
                 </div>
                 <div>
@@ -549,7 +563,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
                 <div>
                   <strong className="text-sm">Referral Updates:</strong>
                   <p className="text-muted-foreground text-sm">
-                    Keep referrers informed on their clients' VA progress (maintaining confidentiality)
+                    Keep referrers informed on their clients&apos; VA progress (maintaining confidentiality)
                   </p>
                 </div>
               </div>
@@ -651,12 +665,8 @@ const VoluntaryAdministrationLeadGeneration = () => {
 
       <div className="mt-12">
         <h3 className="text-xl font-semibold mb-4">Citations & Resources</h3>
-        {citations.map((citation, index) => (
-          <Citation key={index} {...citation} />
-        ))}
+        {citations.map((citation, index) => <Citation key={index} {...citation} />)}
       </div>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default VoluntaryAdministrationLeadGeneration;

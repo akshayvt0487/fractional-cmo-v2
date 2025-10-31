@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import  Link  from "next/link";
+import Link from "next/link";
 
 const TermsConditions = () => {
   return (
@@ -57,7 +57,7 @@ const TermsConditions = () => {
 
           <h2>Disclaimer</h2>
           <p>
-            The materials on this website are provided on an 'as is' basis. Basheer Padanna makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+            The materials on this website are provided on an &apos;as is&apos; basis. Basheer Padanna makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
           </p>
 
           <h2>Service Terms</h2>
@@ -111,8 +111,8 @@ const TermsConditions = () => {
         </div>
       </main>
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default TermsConditions;

@@ -1,10 +1,39 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Target, Users, BarChart, Zap } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import financialPlannerLeadGenHero from '@/assets/blog/finance-broker-lead-generation-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Financial Planner Lead Generation",
+  description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
+  path: "/blog/financial-planner-lead-generation",
+  keywords: ["financial", "planner", "lead", "generation", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Financial Planner Lead Generation",
+    description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/financial-planner-lead-generation",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Financial Planner Lead Generation"
+    }],
+    publishedTime: "2024-12-29T00:00:00.000Z",
+    modifiedTime: "2025-10-31T11:10:04.663Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Financial Planner Lead Generation",
+    description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const FinancialPlannerLeadGeneration = () => {
   const articleData = {
     headline: "Lead Generation for Financial Planners: High-Value Client Acquisition Strategy 2025",
@@ -18,30 +47,17 @@ const FinancialPlannerLeadGeneration = () => {
     readTime: "28 min read",
     tags: ["Financial Planning", "Lead Generation", "Client Acquisition", "Wealth Management", "Finance Marketing"]
   };
-
-  const faqs = [
-    {
-      question: "What's the best lead generation strategy for financial planners?",
-      answer: "A combination of content marketing, local SEO, and referral partnerships works best. Focus on educational content that demonstrates expertise while building trust with potential clients through valuable resources."
-    },
-    {
-      question: "How long does it take to see results from financial planner marketing?",
-      answer: "Initial results typically appear within 3-6 months, with significant lead generation improvements usually visible after 6-12 months of consistent marketing efforts and relationship building."
-    },
-    {
-      question: "What type of content attracts high-value financial planning clients?",
-      answer: "Retirement planning guides, tax optimization strategies, investment education, and market commentary that demonstrates expertise attract affluent clients seeking comprehensive financial guidance."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={financialPlannerLeadGenHero}
-      heroAlt="Financial planner meeting with high-value clients for lead generation"
-    >
+  const faqs = [{
+    question: "What's the best lead generation strategy for financial planners?",
+    answer: "A combination of content marketing, local SEO, and referral partnerships works best. Focus on educational content that demonstrates expertise while building trust with potential clients through valuable resources."
+  }, {
+    question: "How long does it take to see results from financial planner marketing?",
+    answer: "Initial results typically appear within 3-6 months, with significant lead generation improvements usually visible after 6-12 months of consistent marketing efforts and relationship building."
+  }, {
+    question: "What type of content attracts high-value financial planning clients?",
+    answer: "Retirement planning guides, tax optimization strategies, investment education, and market commentary that demonstrates expertise attract affluent clients seeking comprehensive financial guidance."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={financialPlannerLeadGenHero} heroAlt="Financial planner meeting with high-value clients for lead generation">
       <p className="text-lg leading-relaxed">
         Financial planning is fundamentally a relationship-based business built on trust, expertise, and long-term value creation. Unlike transactional services, successful financial planners cultivate deep client relationships that span decades and generate substantial recurring revenue.
       </p>
@@ -80,7 +96,7 @@ const FinancialPlannerLeadGeneration = () => {
         </li>
         <li className="flex items-start gap-3">
           <BarChart className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-          <span><strong>Retirement Security:</strong> Uncertainty about whether they're saving enough for retirement</span>
+          <span><strong>Retirement Security:</strong> Uncertainty about whether they&apos;re saving enough for retirement</span>
         </li>
       </ul>
 
@@ -107,7 +123,7 @@ const FinancialPlannerLeadGeneration = () => {
         SEO is crucial for financial planners as high-net-worth individuals often research extensively before making decisions:
       </p>
       <ul>
-        <li><strong>Local SEO:</strong> Optimize for "financial planner [city]" and related terms</li>
+        <li><strong>Local SEO:</strong> Optimize for &quot;financial planner [city]&quot; and related terms</li>
         <li><strong>Service-specific pages:</strong> Create dedicated pages for retirement planning, tax strategies, and investment management</li>
         <li><strong>Educational content:</strong> Publish comprehensive guides on financial topics</li>
         <li><strong>Technical optimization:</strong> Ensure fast loading times and mobile optimization</li>
@@ -391,14 +407,12 @@ const FinancialPlannerLeadGeneration = () => {
       </p>
       
       <p>
-        Start by creating valuable educational content that addresses your prospects' most pressing financial concerns. Build a multi-channel presence that demonstrates expertise while maintaining compliance with industry regulations. Invest in technology that automates nurturing while preserving the personal touch that distinguishes exceptional financial advisors.
+        Start by creating valuable educational content that addresses your prospects&apos; most pressing financial concerns. Build a multi-channel presence that demonstrates expertise while maintaining compliance with industry regulations. Invest in technology that automates nurturing while preserving the personal touch that distinguishes exceptional financial advisors.
       </p>
 
       <p>
         Remember that financial planning is a long-term relationship business. The leads you generate today may not convert for months, but consistent value provision and professional relationship building will create a sustainable pipeline of high-quality prospects who become lifelong clients.
       </p>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default FinancialPlannerLeadGeneration;

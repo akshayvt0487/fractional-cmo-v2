@@ -1,3 +1,4 @@
+import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
@@ -5,7 +6,35 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { MousePointer, TrendingUp, Users, Target, BarChart, Zap } from "lucide-react";
 import taxAdvisorGoogleAdsHero from '@/assets/blog/tax-advisor-google-ads-hero.jpg';
-
+export const metadata = createMetadata({
+  title: "Tax Advisor Google Ads Strategy",
+  description: "Expert guidance on tax advisor google ads strategy. Learn proven strategies and best practices for business growth.",
+  path: "/blog/tax-advisor-google-ads-strategy",
+  keywords: ["advisor", "google", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Tax Advisor Google Ads Strategy",
+    description: "Expert guidance on tax advisor google ads strategy. Learn proven strategies and best practices for business growth.",
+    url: "https://your-domain.com/blog/tax-advisor-google-ads-strategy",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Tax Advisor Google Ads Strategy"
+    }],
+    publishedTime: "2024-12-30",
+    modifiedTime: "2025-10-31T11:10:05.272Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tax Advisor Google Ads Strategy",
+    description: "Expert guidance on tax advisor google ads strategy. Learn proven strategies and best practices for business growth.",
+    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 const TaxAdvisorGoogleAds = () => {
   const articleData = {
     headline: "Google Ads for Tax Advisors: Complete Campaign Strategy & Optimization Guide 2025",
@@ -19,34 +48,20 @@ const TaxAdvisorGoogleAds = () => {
     readTime: "24 min read",
     tags: ["tax advisors", "google ads", "tax preparation", "accounting marketing"]
   };
-
-  const faqs = [
-    {
-      question: "How much should tax advisors spend on Google Ads during tax season?",
-      answer: "Tax advisors typically spend $2,000-8,000 monthly during peak season (January-April). Start with $1,000-2,000 and scale based on performance. Cost-per-click ranges from $3-15 for tax-related keywords, with average cost-per-lead of $25-75."
-    },
-    {
-      question: "What are the best keywords for tax advisor Google Ads?",
-      answer: "Focus on local intent keywords like 'tax preparer near me', 'tax advisor [city]', service-specific terms like 'business tax preparation', and problem-solving keywords like 'IRS help' or 'tax debt relief'."
-    },
-    {
-      question: "Should tax advisors run Google Ads year-round?",
-      answer: "Yes, but adjust strategy seasonally. Peak season (Jan-Apr) focuses on tax preparation. Off-season targets tax planning, business services, and problem resolution. Maintain 20-30% budget year-round for ongoing lead nurturing."
-    },
-    {
-      question: "How can tax advisors improve their Google Ads conversion rates?",
-      answer: "Use trust signals (CPA credentials, years experience), offer free consultations, create urgency around tax deadlines, optimize for mobile, and ensure landing pages match ad messaging with clear calls-to-action."
-    }
-  ];
-
-  return (
-    <OptimizedBlogLayout 
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={taxAdvisorGoogleAdsHero}
-      heroAlt="Tax advisor optimizing Google Ads campaigns for maximum lead generation"
-    >
+  const faqs = [{
+    question: "How much should tax advisors spend on Google Ads during tax season?",
+    answer: "Tax advisors typically spend $2,000-8,000 monthly during peak season (January-April). Start with $1,000-2,000 and scale based on performance. Cost-per-click ranges from $3-15 for tax-related keywords, with average cost-per-lead of $25-75."
+  }, {
+    question: "What are the best keywords for tax advisor Google Ads?",
+    answer: "Focus on local intent keywords like 'tax preparer near me', 'tax advisor [city]', service-specific terms like 'business tax preparation', and problem-solving keywords like 'IRS help' or 'tax debt relief'."
+  }, {
+    question: "Should tax advisors run Google Ads year-round?",
+    answer: "Yes, but adjust strategy seasonally. Peak season (Jan-Apr) focuses on tax preparation. Off-season targets tax planning, business services, and problem resolution. Maintain 20-30% budget year-round for ongoing lead nurturing."
+  }, {
+    question: "How can tax advisors improve their Google Ads conversion rates?",
+    answer: "Use trust signals (CPA credentials, years experience), offer free consultations, create urgency around tax deadlines, optimize for mobile, and ensure landing pages match ad messaging with clear calls-to-action."
+  }];
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={taxAdvisorGoogleAdsHero} heroAlt="Tax advisor optimizing Google Ads campaigns for maximum lead generation">
       <p className="text-lg leading-relaxed">
         Tax season presents a unique opportunity for tax advisors and preparers to capture high-intent clients actively searching for professional tax services. Google Ads provides the perfect platform to reach these prospects precisely when they need your expertise most.
       </p>
@@ -218,7 +233,7 @@ const TaxAdvisorGoogleAds = () => {
         <h2 className="text-3xl font-bold mb-6">Advanced Bidding and Budget Strategies</h2>
         
         <h3 className="text-2xl font-semibold mb-4">Smart Bidding Implementation</h3>
-        <p>Leverage Google's machine learning for optimal performance:</p>
+        <p>Leverage Google&apos;s machine learning for optimal performance:</p>
         
         <Card className="mb-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-cyan-950">
           <CardContent className="p-6">
@@ -372,8 +387,6 @@ const TaxAdvisorGoogleAds = () => {
           Google Ads success for tax advisors requires strategic seasonal planning, targeted local campaigns, and conversion-optimized landing pages. Focus on high-intent keywords during peak season, build trust through professional messaging, and maintain year-round presence for ongoing business development. Start with well-structured campaigns and scale based on performance data and client acquisition costs.
         </p>
       </section>
-    </OptimizedBlogLayout>
-  );
+    </OptimizedBlogLayout>;
 };
-
 export default TaxAdvisorGoogleAds;
