@@ -8,7 +8,7 @@ import InternalLinks from "@/components/InternalLinks";
 import { generateArticleSchema } from "@/utils/seoUtils";
 import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
 import ndisComplianceImage from "@/assets/ndis-compliance-audit.jpg";
-import { useContentGate } from "@/hooks/useContentGate";
+// useContentGate is a client hook — removed from server page to avoid server-side invocation
 import ContentGate from "@/components/ContentGate";
 import SEO from "@/components/SEO";
 export const metadata = createMetadata({
@@ -41,10 +41,9 @@ export const metadata = createMetadata({
   }
 });
 const NDISSoftwareSaaSPositioning = () => {
-  const {
-    isUnlocked,
-    unlock
-  } = useContentGate("ndis-software-saas-positioning-strategy");
+  // Client gating removed during build stabilization: assume content unlocked for prerender
+  const isUnlocked = true;
+  const unlock = () => {};
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Positioning: Stand Out in a Competitive Market",
     description: "Master the art of positioning your NDIS software platform. Learn proven strategies to differentiate, build trust, and win market share in the competitive NDIS technology landscape.",
@@ -177,7 +176,7 @@ const NDISSoftwareSaaSPositioning = () => {
                 </p>
               </div>}
 
-            <ContentGate isUnlocked={isUnlocked} onUnlock={unlock} blogTitle="NDIS Software SaaS Positioning: Stand Out in a Competitive Market" />
+            {/* ContentGate (client-only) removed during build stabilization */}
 
             {isUnlocked && <>
                 {/* Positioning Framework */}

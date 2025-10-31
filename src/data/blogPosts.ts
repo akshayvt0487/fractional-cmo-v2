@@ -123,7 +123,7 @@ export interface BlogPost {
   slug: string;
   category: string;
   author: string;
-  image: string;
+  image: string | import('next/image').StaticImageData;
 }
 
 export const blogPosts: BlogPost[] = [

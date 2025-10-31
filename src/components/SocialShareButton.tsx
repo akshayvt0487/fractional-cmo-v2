@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import { Share2, Facebook, Twitter, Linkedin, Link, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -26,7 +28,8 @@ const SocialShareButton: React.FC<SocialShareButtonProps> = ({
 }) => {
   const [copied, setCopied] = useState(false);
   
-  const fullUrl = url.startsWith('http') ? url : `${window.location.origin}${url}`;
+  const origin = typeof window !== 'undefined' ? window.location.origin : '';
+  const fullUrl = url.startsWith('http') ? url : `${origin}${url}`;
   const encodedTitle = encodeURIComponent(title);
   const encodedUrl = encodeURIComponent(fullUrl);
   const encodedDescription = encodeURIComponent(description);

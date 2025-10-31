@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
 
@@ -12,7 +14,7 @@ const SocialSharePreview = ({ title, description, imageUrl, url }: SocialSharePr
   // Convert relative paths to absolute URLs for preview
   const getAbsoluteImageUrl = (img: string) => {
     if (img.startsWith('http')) return img;
-    const baseUrl = window.location.origin;
+    const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
     return img.startsWith('/') ? `${baseUrl}${img}` : `${baseUrl}/${img}`;
   };
 

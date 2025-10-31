@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -54,7 +54,9 @@ export default  function BlogLayout({
         {/* 'children' will be either your main blog listing page 
           or an individual blog post page.
         */}
-        <main>{children}</main>
+        <main>
+          <Suspense fallback={<div />}>{children}</Suspense>
+        </main>
       </div>
     </>
   );

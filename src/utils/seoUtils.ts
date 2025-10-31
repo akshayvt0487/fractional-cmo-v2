@@ -32,6 +32,9 @@ export const generateArticleSchema = (article: ArticleData) => {
     return imgUrl.startsWith('/') ? `${baseUrl}${imgUrl}` : `${baseUrl}/${imgUrl}`;
   };
   
+  // Normalize imageUrl (handle StaticImageData)
+  const imageUrlStr = typeof article.imageUrl === 'string' ? article.imageUrl : (article.imageUrl as any)?.src;
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -68,7 +71,7 @@ export const generateArticleSchema = (article: ArticleData) => {
     },
     "image": {
       "@type": "ImageObject",
-      "url": getAbsoluteImageUrl(article.imageUrl),
+      "url": getAbsoluteImageUrl(imageUrlStr),
       "width": 1200,
       "height": 630
     },

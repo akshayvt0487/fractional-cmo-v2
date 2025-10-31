@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
 import { blogPosts } from "@/data/blogPosts";
-//import { supabase } from "@/integrations/supabase/client";
+import { supabase } from "@/integrations/supabase/client";
 
 const DAILY_UNLOCK_KEY = "daily_content_unlocked";
 
@@ -70,8 +70,8 @@ const trackBlogAccess = async (blogSlug: string, blogTitle: string) => {
         userAgent: navigator.userAgent,
         isNewUser
       }
-    }).catch(error => {
-      console.error("Failed to send access notification:", error);
+    }).catch((err: unknown) => {
+      console.error("Failed to send access notification:", err);
       // Don't throw - this is a background task
     });
     

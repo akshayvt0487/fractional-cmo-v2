@@ -19,10 +19,12 @@ export const extractBlogMetadata = (slug: string): BlogMetadata | null => {
     return null;
   }
 
+  const imageSrc = typeof post.image === 'string' ? post.image : (post.image as any).src;
+
   return {
     title: post.title,
     description: post.excerpt,
-    image: post.image,
+    image: imageSrc,
     url: `/blog/${post.slug}`,
     category: post.category,
     readTime: post.readTime,

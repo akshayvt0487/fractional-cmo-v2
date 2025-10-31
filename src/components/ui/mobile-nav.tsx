@@ -8,11 +8,11 @@ import { usePathname } from "next/navigation";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = usePathname();
+  const pathname = usePathname();
 
   const handleSectionClick = (sectionId: string) => {
     setIsOpen(false);
-    if (location.pathname === '/') {
+  if (pathname === '/') {
       // If on homepage, scroll to section
       setTimeout(() => {
         const element = document.getElementById(sectionId);

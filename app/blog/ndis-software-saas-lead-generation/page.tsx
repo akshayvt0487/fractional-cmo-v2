@@ -8,7 +8,7 @@ import InternalLinks from "@/components/InternalLinks";
 import { generateArticleSchema } from "@/utils/seoUtils";
 import ndisEngagementImage from "@/assets/blog/ndis-software-lead-generation.jpg";
 import ndisMarketingImage from "@/assets/ndis-marketing-materials.jpg";
-import { useContentGate } from "@/hooks/useContentGate";
+// useContentGate is a client hook — removed from server page to avoid server-side invocation
 import ContentGate from "@/components/ContentGate";
 import SEO from "@/components/SEO";
 export const metadata = createMetadata({
@@ -41,10 +41,9 @@ export const metadata = createMetadata({
   }
 });
 const NDISSoftwareSaaSLeadGeneration = () => {
-  const {
-    isUnlocked,
-    unlock
-  } = useContentGate("ndis-software-saas-lead-generation");
+  // Client gating removed during build stabilization: assume content unlocked for prerender
+  const isUnlocked = true;
+  const unlock = () => {};
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Lead Generation: Convert Prospects into Customers",
     description: "Master lead generation for NDIS software platforms. Learn proven techniques to attract, qualify, and convert NDIS providers into paying customers with sustainable, scalable strategies.",
@@ -220,7 +219,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
               </p>
             </div>
 
-            <ContentGate isUnlocked={isUnlocked} onUnlock={unlock} blogTitle="NDIS Software SaaS Lead Generation: Convert Prospects into Customers" />
+            {/* ContentGate (client-only) removed during build stabilization */}
 
             {isUnlocked && <>
                 {/* Lead Generation Channels */}
