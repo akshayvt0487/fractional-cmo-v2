@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import StrategyForm from "@/components/ui/strategy-form";
 
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";

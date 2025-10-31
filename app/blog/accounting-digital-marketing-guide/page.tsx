@@ -1,7 +1,6 @@
 'use client'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, Target, Globe, Monitor, MapPin, PenTool, Building, Users, TrendingUp, CheckCircle, Search, BookOpen, BarChart, Lightbulb, Calendar, Mail, Smartphone, Award, Gift, Handshake, Star, MessageCircle } from "lucide-react";
-import StrategyForm from '@/components/ui/strategy-form';
 
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
@@ -57,7 +56,7 @@ const AccountingDigitalMarketing = () => {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Shield className="h-5 w-5 text-yellow-500" />
-                      Trust & Credibility Challenges
+                      Trust &amp; Credibility Challenges
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -126,7 +125,7 @@ const AccountingDigitalMarketing = () => {
                       <ul className="space-y-2 text-sm">
                         <li>✓ Google My Business optimization with complete information</li>
                         <li>✓ Location-specific landing pages for each office</li>
-                        <li>✓ Local keyword targeting (e.g., "accountant in [city]")</li>
+                        <li>✓ Local keyword targeting (e.g., &quot;accountant in [city]&quot;)</li>
                         <li>✓ Citation building across local directories</li>
                         <li>✓ Regular collection and management of online reviews</li>
                       </ul>
@@ -331,7 +330,7 @@ const AccountingDigitalMarketing = () => {
                 <li>• Regular posts about tax deadlines and updates</li>
                 <li>• Active review management and responses</li>
                 <li>• Service-specific categories and attributes</li>
-                <li>• Q&A section with common client questions</li>
+                <li>• Q&amp;A section with common client questions</li>
               </ul>
               <div className="mt-4 p-3 bg-muted/50 rounded">
                 <p className="text-xs font-medium">💡 Optimized GMB listings see 70% more location actions</p>
@@ -356,7 +355,7 @@ const AccountingDigitalMarketing = () => {
                 <li>• Client success stories by location</li>
               </ul>
               <div className="mt-4 p-3 bg-muted/50 rounded">
-                <p className="text-xs font-medium">🎯 Target: "accountant near me" gets 40K+ monthly searches</p>
+                <p className="text-xs font-medium">🎯 Target: &quot;accountant near me&quot; gets 40K+ monthly searches</p>
               </div>
             </CardContent>
           </Card>
@@ -427,7 +426,7 @@ const AccountingDigitalMarketing = () => {
             <CardContent>
               <h4 className="font-semibold mb-3">SEO Strategy</h4>
               <ul className="space-y-2 text-sm mb-4">
-                <li>• Target high-intent keywords like "tax accountant [city]"</li>
+                <li>• Target high-intent keywords like &quot;tax accountant [city]&quot;</li>
                 <li>• Create comprehensive service pages for each offering</li>
                 <li>• Build authority through regular blog content</li>
                 <li>• Optimize for voice search queries</li>
@@ -447,7 +446,7 @@ const AccountingDigitalMarketing = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Users className="h-5 w-5 text-primary" />
-                Social Media & Networking
+                Social Media &amp; Networking
               </CardTitle>
             </CardHeader>
             <CardContent>

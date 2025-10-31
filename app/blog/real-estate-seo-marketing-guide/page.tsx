@@ -2,9 +2,8 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Search, MapPin, TrendingUp, Users, Globe, Target, BarChart, CheckCircle, AlertTriangle } from 'lucide-react';
+import { Search, MapPin, TrendingUp, Users, Globe, Target, CheckCircle } from 'lucide-react';
 import realEstateSEOMarketingHero from '@/assets/blog/real-estate-seo-marketing-hero.jpg';
-import StrategyForm from '@/components/ui/strategy-form';
 
 const RealEstateSEOMarketing = () => {
   const articleData = {
@@ -77,11 +76,11 @@ const RealEstateSEOMarketing = () => {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
-              <li>🏠 <strong>Property searches:</strong> "homes for sale [suburb]", "apartments [location]"</li>
-              <li>🔍 <strong>Agent searches:</strong> "real estate agent near me", "best realtor [city]"</li>
-              <li>📊 <strong>Market research:</strong> "property prices [area]", "[suburb] market trends"</li>
-              <li>🎓 <strong>Educational searches:</strong> "how to buy a house", "property investment tips"</li>
-              <li>⚖️ <strong>Service searches:</strong> "property valuation", "buyers agent [location]"</li>
+              <li>🏠 <strong>Property searches:</strong> &quot;homes for sale [suburb]&quot;, &quot;apartments [location]&quot;</li>
+              <li>🔍 <strong>Agent searches:</strong> &quot;real estate agent near me&quot;, &quot;best realtor [city]&quot;</li>
+              <li>📊 <strong>Market research:</strong> &quot;property prices [area]&quot;, &quot;[suburb] market trends&quot;</li>
+              <li>🎓 <strong>Educational searches:</strong> &quot;how to buy a house&quot;, &quot;property investment tips&quot;</li>
+              <li>⚖️ <strong>Service searches:</strong> &quot;property valuation&quot;, &quot;buyers agent [location]&quot;</li>
             </ul>
           </CardContent>
         </Card>
@@ -105,7 +104,7 @@ const RealEstateSEOMarketing = () => {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
           <MapPin className="h-8 w-8 text-primary" />
-          Local SEO Foundation & Google My Business Mastery
+          Local SEO Foundation &amp; Google My Business Mastery
         </h2>
         
         <div className="mb-8">
@@ -139,7 +138,7 @@ const RealEstateSEOMarketing = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <TrendingUp className="h-5 w-5 text-green-600" />
-                Content & Engagement Strategy
+                Content &amp; Engagement Strategy
               </CardTitle>
               <CardDescription>Drive engagement and demonstrate expertise</CardDescription>
             </CardHeader>
@@ -147,7 +146,7 @@ const RealEstateSEOMarketing = () => {
               <ul className="space-y-2 text-sm">
                 <li>📸 <strong>High-quality photos:</strong> Team, office, recent sales, local area highlights</li>
                 <li>📱 <strong>Regular posts:</strong> New listings, market updates, sold properties</li>
-                <li>❓ <strong>Q&A management:</strong> Proactively answer common property questions</li>
+                <li>❓ <strong>Q&amp;A management:</strong> Proactively answer common property questions</li>
                 <li>⭐ <strong>Review strategy:</strong> Encourage client reviews and respond professionally</li>
                 <li>📅 <strong>Events posting:</strong> Open houses, market seminars, community involvement</li>
                 <li>🎥 <strong>Virtual tours:</strong> Link to property videos and 360° tours</li>
@@ -189,15 +188,15 @@ const RealEstateSEOMarketing = () => {
             <CardContent>
               <ul className="space-y-2 text-sm">
                 <li>💰 <strong>Buying intent:</strong></li>
-                <li>• "real estate agent [suburb]"</li>
-                <li>• "buy house [location]"</li>
-                <li>• "property for sale [area]"</li>
-                <li>• "homes under $X [suburb]"</li>
+                <li>• &quot;real estate agent [suburb]&quot;</li>
+                <li>• &quot;buy house [location]&quot;</li>
+                <li>• &quot;property for sale [area]&quot;</li>
+                <li>• &quot;homes under $X [suburb]&quot;</li>
                 <li>🏠 <strong>Selling intent:</strong></li>
-                <li>• "sell my house [suburb]"</li>
-                <li>• "property valuation [area]"</li>
-                <li>• "list my property"</li>
-                <li>• "real estate appraisal [location]"</li>
+                <li>• &quot;sell my house [suburb]&quot;</li>
+                <li>• &quot;property valuation [area]&quot;</li>
+                <li>• &quot;list my property&quot;</li>
+                <li>• &quot;real estate appraisal [location]&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -210,15 +209,15 @@ const RealEstateSEOMarketing = () => {
             <CardContent>
               <ul className="space-y-2 text-sm">
                 <li>📊 <strong>Market research:</strong></li>
-                <li>• "[suburb] property prices"</li>
-                <li>• "property market trends [area]"</li>
-                <li>• "median house price [location]"</li>
-                <li>• "property growth [suburb]"</li>
+                <li>• &quot;[suburb] property prices&quot;</li>
+                <li>• &quot;property market trends [area]&quot;</li>
+                <li>• &quot;median house price [location]&quot;</li>
+                <li>• &quot;property growth [suburb]&quot;</li>
                 <li>🎓 <strong>Educational content:</strong></li>
-                <li>• "how to buy first home"</li>
-                <li>• "property investment tips"</li>
-                <li>• "home buying process"</li>
-                <li>• "real estate market analysis"</li>
+                <li>• &quot;how to buy first home&quot;</li>
+                <li>• &quot;property investment tips&quot;</li>
+                <li>• &quot;home buying process&quot;</li>
+                <li>• &quot;real estate market analysis&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -231,14 +230,14 @@ const RealEstateSEOMarketing = () => {
             <CardContent>
               <ul className="space-y-2 text-sm">
                 <li>🎯 <strong>Service-specific:</strong></li>
-                <li>• "best real estate agent for first home buyers [city]"</li>
-                <li>• "investment property specialist [suburb]"</li>
-                <li>• "luxury property agent [area]"</li>
+                <li>• &quot;best real estate agent for first home buyers [city]&quot;</li>
+                <li>• &quot;investment property specialist [suburb]&quot;</li>
+                <li>• &quot;luxury property agent [area]&quot;</li>
                 <li>🌟 <strong>Problem-solving:</strong></li>
-                <li>• "how to sell house quickly [suburb]"</li>
-                <li>• "property not selling [area]"</li>
-                <li>• "avoid real estate agent fees"</li>
-                <li>• "property market crash [location]"</li>
+                <li>• &quot;how to sell house quickly [suburb]&quot;</li>
+                <li>• &quot;property not selling [area]&quot;</li>
+                <li>• &quot;avoid real estate agent fees&quot;</li>
+                <li>• &quot;property market crash [location]&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -246,7 +245,7 @@ const RealEstateSEOMarketing = () => {
 
         <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 border-yellow-200">
           <CardHeader>
-            <CardTitle className="text-yellow-700">Keyword Research Tools & Techniques</CardTitle>
+            <CardTitle className="text-yellow-700">Keyword Research Tools &amp; Techniques</CardTitle>
             <CardDescription>Tools and methods for comprehensive keyword discovery</CardDescription>
           </CardHeader>
           <CardContent>
@@ -261,7 +260,7 @@ const RealEstateSEOMarketing = () => {
                 </ul>
                 <h4 className="font-semibold mb-2 mt-4">Free Research Methods:</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• Google Autocomplete and "People also ask"</li>
+                  <li>• Google Autocomplete and &quot;People also ask&quot;</li>
                   <li>• Google Trends for seasonal patterns</li>
                   <li>• Local Facebook groups and forums</li>
                   <li>• Client inquiry analysis</li>
@@ -277,10 +276,10 @@ const RealEstateSEOMarketing = () => {
                 </ul>
                 <h4 className="font-semibold mb-2 mt-4">Voice Search Optimization:</h4>
                 <ul className="text-sm space-y-1">
-                  <li>• "How much is my house worth in [suburb]?"</li>
-                  <li>• "Who is the best real estate agent near me?"</li>
-                  <li>• "What are houses selling for in [area]?"</li>
-                  <li>• "Should I sell my house now?"</li>
+                  <li>• &quot;How much is my house worth in [suburb]?&quot;</li>
+                  <li>• &quot;Who is the best real estate agent near me?&quot;</li>
+                  <li>• &quot;What are houses selling for in [area]?&quot;</li>
+                  <li>• &quot;Should I sell my house now?&quot;</li>
                 </ul>
               </div>
             </div>
@@ -461,7 +460,7 @@ const RealEstateSEOMarketing = () => {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">🚧 Development & Growth Content:</h4>
+                  <h4 className="font-semibold mb-2">🚧 Development &amp; Growth Content:</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• New development previews</li>
                     <li>• Infrastructure project impacts</li>
@@ -479,7 +478,7 @@ const RealEstateSEOMarketing = () => {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
           <TrendingUp className="h-8 w-8 text-primary" />
-          Link Building & Citation Strategies
+          Link Building &amp; Citation Strategies
         </h2>
         
         <div className="mb-8">
@@ -515,7 +514,7 @@ const RealEstateSEOMarketing = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
-                <li>📊 <strong>Research & Reports:</strong></li>
+                <li>📊 <strong>Research &amp; Reports:</strong></li>
                 <li>• Local market analysis studies</li>
                 <li>• Property trend predictions</li>
                 <li>• First home buyer surveys</li>
@@ -619,7 +618,7 @@ const RealEstateSEOMarketing = () => {
       <ul>
         <li>Target conversational keywords and questions</li>
         <li>Create FAQ content for common property queries</li>
-        <li>Optimize for "near me" searches</li>
+        <li>Optimize for &quot;near me&quot; searches</li>
         <li>Use natural language in content</li>
         <li>Focus on featured snippet optimization</li>
       </ul>

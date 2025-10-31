@@ -44,6 +44,8 @@ const NDISSoftwareSaaSPositioning = () => {
       category: "Digital Marketing"
     }
   ];
+  
+  
 
   return (
     <>

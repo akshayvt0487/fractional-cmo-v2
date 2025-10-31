@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, Target, Users, User } from "lucide-react";
-import StrategyForm from '@/components/ui/strategy-form';
 
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
@@ -159,9 +158,9 @@ const B2BLeadGeneration = () => {
         <div className="space-y-8">
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">1. Content Marketing & SEO</h3>
+              <h3 className="text-xl font-semibold mb-4">1. Content Marketing &amp; SEO</h3>
               <p className="mb-4">
-                Create valuable, educational content that addresses your prospects' challenges and positions 
+                Create valuable, educational content that addresses your prospects&apos; challenges and positions 
                 your company as a thought leader.
               </p>
               <ul className="space-y-2 text-sm">
@@ -178,12 +177,12 @@ const B2BLeadGeneration = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">2. LinkedIn Marketing</h3>
               <p className="mb-4">
-                Leverage LinkedIn's professional network to connect with decision-makers and build relationships.
+                Leverage LinkedIn&apos;s professional network to connect with decision-makers and build relationships.
               </p>
               <ul className="space-y-2 text-sm">
                 <li>• Optimize company and personal profiles</li>
                 <li>• Share valuable content regularly</li>
-                <li>• Engage with prospects' posts</li>
+                <li>• Engage with prospects&apos; posts</li>
                 <li>• Use LinkedIn Sales Navigator</li>
                 <li>• Run targeted LinkedIn ads</li>
               </ul>
@@ -192,7 +191,7 @@ const B2BLeadGeneration = () => {
 
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">3. Email Marketing & Automation</h3>
+              <h3 className="text-xl font-semibold mb-4">3. Email Marketing &amp; Automation</h3>
               <p className="mb-4">
                 Develop sophisticated email campaigns that nurture leads through the buying journey.
               </p>
@@ -278,7 +277,7 @@ const B2BLeadGeneration = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Lead Nurturing Workflows</h3>
               <p className="mb-4">
-                Automated nurture sequences that guide prospects through the buyer's journey, delivering relevant content at each stage.
+                Automated nurture sequences that guide prospects through the buyer&apos;s journey, delivering relevant content at each stage.
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -427,10 +426,10 @@ const B2BLeadGeneration = () => {
 
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-3">Traditional & Hybrid Channels</h3>
+              <h3 className="text-lg font-semibold mb-3">Traditional &amp; Hybrid Channels</h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2 text-primary">Events & Conferences</h4>
+                  <h4 className="font-semibold mb-2 text-primary">Events &amp; Conferences</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• Industry trade shows</li>
                     <li>• Virtual conferences</li>
@@ -553,7 +552,7 @@ const B2BLeadGeneration = () => {
                   <p><strong>Last-Touch:</strong> Credits final interaction (good for conversion campaigns)</p>
                   <p><strong>Linear:</strong> Equal credit across all touchpoints (holistic view)</p>
                   <p><strong>Time-Decay:</strong> More credit to recent interactions (emphasis on closing)</p>
-                  <p><strong>U-Shaped:</strong> Credits first and last touch most (awareness & conversion)</p>
+                  <p><strong>U-Shaped:</strong> Credits first and last touch most (awareness &amp; conversion)</p>
                   <p><strong>W-Shaped:</strong> Credits first, middle, last (full journey)</p>
                   <p><strong>Custom:</strong> Weighted based on your specific buyer journey</p>
                 </div>
@@ -567,7 +566,7 @@ const B2BLeadGeneration = () => {
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-3">SaaS & Technology</h3>
+              <h3 className="text-lg font-semibold mb-3">SaaS &amp; Technology</h3>
               <p className="text-sm mb-3 text-muted-foreground">
                 Software, platforms, IT services
               </p>
@@ -601,7 +600,7 @@ const B2BLeadGeneration = () => {
 
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-3">Manufacturing & Industrial</h3>
+              <h3 className="text-lg font-semibold mb-3">Manufacturing &amp; Industrial</h3>
               <p className="text-sm mb-3 text-muted-foreground">
                 Equipment, supplies, industrial products
               </p>
@@ -635,7 +634,7 @@ const B2BLeadGeneration = () => {
         </div>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          "B2B buyers complete 57% of their purchase decision before engaging with sales. Your job is to be present and valuable throughout their entire research journey."
+          &quot;B2B buyers complete 57% of their purchase decision before engaging with sales. Your job is to be present and valuable throughout their entire research journey.&quot;
           <footer className="text-sm mt-2">— Forrester Research, B2B Buyer Journey Study</footer>
         </blockquote>
 
@@ -645,7 +644,7 @@ const B2BLeadGeneration = () => {
             <div className="space-y-4">
               <div>
                 <h4 className="font-semibold mb-2">Phase 1: Foundation (Months 1-3)</h4>
-                <p className="text-sm">Develop ICP, build content library, implement marketing automation, align sales & marketing</p>
+                <p className="text-sm">Develop ICP, build content library, implement marketing automation, align sales &amp; marketing</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Phase 2: Scale (Months 4-6)</h4>
@@ -664,7 +663,7 @@ const B2BLeadGeneration = () => {
         </Card>
         
         <p>
-          Focus on creating valuable content that addresses your target audience's biggest challenges. Build marketing systems that consistently attract, engage, and convert your ideal prospects. Remember that B2B buyers conduct extensive research before making decisions—be the trusted resource they turn to throughout their journey.
+          Focus on creating valuable content that addresses your target audience&apos;s biggest challenges. Build marketing systems that consistently attract, engage, and convert your ideal prospects. Remember that B2B buyers conduct extensive research before making decisions—be the trusted resource they turn to throughout their journey.
         </p>
 
         <p>

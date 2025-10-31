@@ -47,7 +47,7 @@ const SecurityDigitalMarketing = () => {
       heroAlt="Professional security services digital marketing and client acquisition"
     >
       <p className="text-xl text-muted-foreground mb-8">
-        In today's competitive security services market, traditional word-of-mouth marketing isn't enough. Digital marketing has become essential for security companies to attract high-value commercial clients, build trust, and scale their operations. This comprehensive guide reveals proven strategies that successful security businesses use to dominate their markets.
+        In today&apos;s competitive security services market, traditional word-of-mouth marketing isn&apos;t enough. Digital marketing has become essential for security companies to attract high-value commercial clients, build trust, and scale their operations. This comprehensive guide reveals proven strategies that successful security businesses use to dominate their markets.
       </p>
 
       <h2>Understanding Your Security Service Market</h2>
@@ -228,11 +228,11 @@ const SecurityDigitalMarketing = () => {
           <CardContent>
             <h4 className="font-semibold mb-3">High-Value Keywords</h4>
             <ul className="space-y-2 text-sm mb-4">
-              <li>• "commercial security services [city]" - 1,600 monthly searches</li>
-              <li>• "24 hour security guard services" - 2,100 monthly searches</li>
-              <li>• "corporate security consulting" - 880 monthly searches</li>
-              <li>• "retail security solutions" - 720 monthly searches</li>
-              <li>• "event security company" - 1,900 monthly searches</li>
+              <li>• &quot;commercial security services [city]&quot; - 1,600 monthly searches</li>
+              <li>• &quot;24 hour security guard services&quot; - 2,100 monthly searches</li>
+              <li>• &quot;corporate security consulting&quot; - 880 monthly searches</li>
+              <li>• &quot;retail security solutions&quot; - 720 monthly searches</li>
+              <li>• &quot;event security company&quot; - 1,900 monthly searches</li>
             </ul>
             
             <h4 className="font-semibold mb-3">Content Optimization</h4>
@@ -255,7 +255,7 @@ const SecurityDigitalMarketing = () => {
           <CardContent>
             <h4 className="font-semibold mb-3">Campaign Types</h4>
             <ul className="space-y-2 text-sm mb-4">
-              <li>• <strong>Emergency keywords:</strong> "immediate security services", "urgent security"</li>
+              <li>• <strong>Emergency keywords:</strong> &quot;immediate security services&quot;, &quot;urgent security&quot;</li>
               <li>• <strong>Service-specific campaigns:</strong> Guard services, surveillance, consultation</li>
               <li>• <strong>Geographic targeting:</strong> Local area radius around service zones</li>
               <li>• <strong>Competitor campaigns:</strong> Target searches for competing security companies</li>

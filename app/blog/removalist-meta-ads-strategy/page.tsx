@@ -49,10 +49,10 @@ const RemovalistMetaAdsStrategy = () => {
       <Card className="mb-8">
         <CardContent className="pt-6">
           <p className="text-lg leading-relaxed mb-4">
-            Every year, 2.4 million Australians move house, and most of them start their search for removalists online. Facebook and Instagram ads give your moving business the perfect opportunity to reach these potential customers right when they're planning their move.
+            Every year, 2.4 million Australians move house, and most of them start their search for removalists online. Facebook and Instagram ads give your moving business the perfect opportunity to reach these potential customers right when they&apos;re planning their move.
           </p>
           <p className="text-muted-foreground">
-            This guide will show you exactly how to use Facebook and Instagram ads to get more moving jobs. We'll cover everything from finding the right customers to creating ads that actually work - all explained in simple terms.
+            This guide will show you exactly how to use Facebook and Instagram ads to get more moving jobs. We&apos;ll cover everything from finding the right customers to creating ads that actually work - all explained in simple terms.
           </p>
         </CardContent>
       </Card>
@@ -129,7 +129,7 @@ const RemovalistMetaAdsStrategy = () => {
           </CardContent>
         </Card>
 
-        <h3 className="text-2xl font-semibold mb-4">2. People Who've Visited Your Website</h3>
+        <h3 className="text-2xl font-semibold mb-4">2. People Who&apos;ve Visited Your Website</h3>
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h4 className="text-lg font-semibold mb-3">Segmentation Strategy:</h4>
@@ -143,13 +143,13 @@ const RemovalistMetaAdsStrategy = () => {
             <h4 className="text-lg font-semibold mb-3">Retargeting Campaigns:</h4>
             <div className="space-y-3">
               <div className="bg-muted/30 p-3 rounded">
-                <p><strong>Quote Abandoners:</strong> "Still planning your move? Get instant quote in 60 seconds"</p>
+                <p><strong>Quote Abandoners:</strong> &quot;Still planning your move? Get instant quote in 60 seconds&quot;</p>
               </div>
               <div className="bg-muted/30 p-3 rounded">
                 <p><strong>Service Browsers:</strong> Special offers on specific services they viewed</p>
               </div>
               <div className="bg-muted/30 p-3 rounded">
-                <p><strong>Blog Readers:</strong> "Ready to book your stress-free move?" with social proof</p>
+                <p><strong>Blog Readers:</strong> &quot;Ready to book your stress-free move?&quot; with social proof</p>
               </div>
             </div>
           </CardContent>
@@ -186,9 +186,9 @@ const RemovalistMetaAdsStrategy = () => {
             
             <h4 className="text-lg font-semibold mb-3">Partnership-Focused Messaging:</h4>
             <div className="bg-muted/30 p-4 rounded-lg">
-              <p><strong>Value Proposition:</strong> "Reliable moving partners for your clients"</p>
+              <p><strong>Value Proposition:</strong> &quot;Reliable moving partners for your clients&quot;</p>
               <p><strong>Benefits:</strong> Referral commissions, priority booking, professional service</p>
-              <p><strong>Call-to-Action:</strong> "Join our agent partner program"</p>
+              <p><strong>Call-to-Action:</strong> &quot;Join our agent partner program&quot;</p>
             </div>
           </CardContent>
         </Card>
@@ -207,10 +207,10 @@ const RemovalistMetaAdsStrategy = () => {
             <h4 className="text-lg font-semibold mb-3">Timing-Sensitive Campaigns:</h4>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-green-50 dark:bg-green-950/30 p-3 rounded">
-                <p><strong>Buyers:</strong> "Moving to your new home? Book early and save 15%"</p>
+                <p><strong>Buyers:</strong> &quot;Moving to your new home? Book early and save 15%&quot;</p>
               </div>
               <div className="bg-orange-50 dark:bg-orange-950/30 p-3 rounded">
-                <p><strong>Sellers:</strong> "Selling soon? Professional moving = faster sale"</p>
+                <p><strong>Sellers:</strong> &quot;Selling soon? Professional moving = faster sale&quot;</p>
               </div>
             </div>
           </CardContent>
@@ -228,8 +228,8 @@ const RemovalistMetaAdsStrategy = () => {
             
             <h4 className="text-lg font-semibold mb-3">Forward-Planning Approach:</h4>
             <div className="bg-muted/30 p-4 rounded-lg">
-              <p><strong>Message:</strong> "Getting pre-approved? Plan your move early and lock in rates"</p>
-              <p><strong>Lead Magnet:</strong> "Moving checklist for new homeowners"</p>
+              <p><strong>Message:</strong> &quot;Getting pre-approved? Plan your move early and lock in rates&quot;</p>
+              <p><strong>Lead Magnet:</strong> &quot;Moving checklist for new homeowners&quot;</p>
               <p><strong>Timeline:</strong> 3-6 month nurture sequence</p>
             </div>
           </CardContent>
@@ -247,7 +247,7 @@ const RemovalistMetaAdsStrategy = () => {
             
             <h4 className="text-lg font-semibold mb-3">Volume Business Focus:</h4>
             <div className="bg-muted/30 p-4 rounded-lg">
-              <p><strong>Value Proposition:</strong> "Reliable moving services for your tenants"</p>
+              <p><strong>Value Proposition:</strong> &quot;Reliable moving services for your tenants&quot;</p>
               <p><strong>Benefits:</strong> Bulk booking discounts, priority service, tenant satisfaction</p>
               <p><strong>Proof Points:</strong> Case studies, testimonials from other property managers</p>
             </div>
@@ -501,7 +501,7 @@ fbq('track', 'PageView');
               <div className="border-l-4 border-green-500 pl-4">
                 <h4 className="font-semibold">High-Intent Visitors (Quote Page)</h4>
                 <p className="text-sm text-muted-foreground mt-1">30-day window, aggressive retargeting with special offers</p>
-                <p className="text-sm mt-2"><strong>Campaign:</strong> "Complete your quote in 60 seconds - Save 10%"</p>
+                <p><strong>Campaign:</strong> &quot;Complete your quote in 60 seconds - Save 10%&quot;</p>
               </div>
               
               <div className="border-l-4 border-yellow-500 pl-4">

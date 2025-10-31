@@ -3,6 +3,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent } from "@/components/ui/card";
 import removalistBusinessMarketingHero from '@/assets/blog/removalist-business-marketing.jpg';
+import Link from 'next/link';
 
 const RemovalistBusinessMarketing = () => {
   const articleData = {
@@ -89,12 +90,15 @@ const RemovalistBusinessMarketing = () => {
                       and differentiating your service quality.
                     </p>
 
-                    <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-                      "In the moving industry, trust isn't just important—it's everything. Customers are literally putting their lives 
-                      in your hands, and your marketing needs to reflect the care and professionalism they deserve."
-                      <footer className="text-sm mt-2">— Australian Furniture Removers Association</footer>
-                    </blockquote>
-                  </section>
+                                                                <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
+
+                                                                  &quot;In the moving industry, trust isn&apos;t just important—it&apos;s everything. Customers are literally putting their lives 
+
+                                                                  in your hands, and your marketing needs to reflect the care and professionalism they deserve.&quot;
+
+                                                                  <footer className="text-sm mt-2">— Australian Furniture Removers Association</footer>
+
+                                                                </blockquote>                  </section>
 
                   <section className="mb-12">
                     <h2 className="text-3xl font-bold text-foreground mb-6">Building Unshakeable Trust</h2>
@@ -176,23 +180,23 @@ const RemovalistBusinessMarketing = () => {
                             <h4 className="font-semibold mb-3">High-Intent Keywords</h4>
                             <div className="space-y-2 text-sm">
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"removalists [city]"</span>
+                                <span>&quot;removalists [city]&quot;</span>
                                 <span className="font-bold text-primary">High</span>
                               </div>
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"moving company near me"</span>
+                                <span>&quot;moving company near me&quot;</span>
                                 <span className="font-bold text-primary">High</span>
                               </div>
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"furniture removals [suburb]"</span>
+                                <span>&quot;furniture removals [suburb]&quot;</span>
                                 <span className="font-bold text-orange-600">Medium</span>
                               </div>
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"interstate removalists"</span>
+                                <span>&quot;interstate removalists&quot;</span>
                                 <span className="font-bold text-orange-600">Medium</span>
                               </div>
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"office relocation services"</span>
+                                <span>&quot;office relocation services&quot;</span>
                                 <span className="font-bold text-orange-600">Medium</span>
                               </div>
                             </div>
@@ -201,23 +205,23 @@ const RemovalistBusinessMarketing = () => {
                             <h4 className="font-semibold mb-3">Long-tail Opportunities</h4>
                             <div className="space-y-2 text-sm">
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"best removalists [city]"</span>
+                                <span>&quot;best removalists [city]&quot;</span>
                                 <span className="font-bold text-green-600">Target</span>
                               </div>
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"cheap moving company [area]"</span>
+                                <span>&quot;cheap moving company [area]&quot;</span>
                                 <span className="font-bold text-green-600">Target</span>
                               </div>
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"professional movers [suburb]"</span>
+                                <span>&quot;professional movers [suburb]&quot;</span>
                                 <span className="font-bold text-green-600">Target</span>
                               </div>
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"same day moving service"</span>
+                                <span>&quot;same day moving service&quot;</span>
                                 <span className="font-bold text-green-600">Target</span>
                               </div>
                               <div className="flex justify-between p-2 bg-muted rounded">
-                                <span>"piano movers [city]"</span>
+                                <span>&quot;piano movers [city]&quot;</span>
                                 <span className="font-bold text-green-600">Target</span>
                               </div>
                             </div>
@@ -331,8 +335,8 @@ const RemovalistBusinessMarketing = () => {
                       </Card>
 
                       <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-                        "Content marketing for removalists isn't about selling—it's about helping. When you help people 
-                        navigate the stressful process of moving, they naturally turn to you when they need professional help."
+                        &quot;Content marketing for removalists isn&apos;t about selling—it&apos;s about helping. When you help people 
+                        navigate the stressful process of moving, they naturally turn to you when they need professional help.&quot;
                         <footer className="text-sm mt-2">— Content Marketing Institute</footer>
                       </blockquote>
                     </div>
@@ -627,7 +631,7 @@ const RemovalistBusinessMarketing = () => {
                                 <li>• Expand successful content types</li>
                                 <li>• Strengthen partnership relationships</li>
                                 <li>• Scale referral program</li>
-                                <li>• Plan next quarter's strategy</li>
+                                <li>• Plan next quarter&apos;s strategy</li>
                               </ul>
                             </div>
                           </div>
@@ -638,11 +642,10 @@ const RemovalistBusinessMarketing = () => {
 
                   <section className="mb-12 bg-primary/5 p-8 rounded-lg">
                     <h2 className="text-2xl font-semibold mb-6 text-center">Transform Your Removalist Business Marketing</h2>
-                    <p className="text-center text-muted-foreground mb-6">
-                      Ready to build trust, attract quality customers, and grow your moving business? 
-                      Let's develop a comprehensive marketing strategy tailored to your removalist business.
-                    </p>
-                    <div className="text-center">
+                                          <p className="text-center text-muted-foreground mb-6">
+                                            Ready to build trust, attract quality customers, and grow your moving business? 
+                                            Let&apos;s develop a comprehensive marketing strategy tailored to your removalist business.
+                                          </p>                    <div className="text-center">
                       <Card className="inline-block bg-primary/5 border-primary/20">
                         <CardContent className="p-6">
                           <h3 className="font-semibold mb-3 text-primary">Get Your Removalist Marketing Strategy</h3>
@@ -651,12 +654,12 @@ const RemovalistBusinessMarketing = () => {
                             for your removalist business and start attracting more quality customers.
                           </p>
                           <div className="space-y-4">
-                            <a 
+                            <Link 
                               href="/contact" 
                               className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
                             >
                               Get Marketing Strategy
-                            </a>
+                            </Link>
                             <div className="text-xs text-muted-foreground">
                               Free 30-minute consultation • No obligation
                             </div>
@@ -687,7 +690,7 @@ const RemovalistBusinessMarketing = () => {
                           <div className="space-y-4">
                             <h3 className="text-lg font-semibold">Growth Marketing Solutions</h3>
                             <ul className="space-y-2 text-sm">
-                              <li>• <a href="/" className="text-primary hover:underline">Lead generation optimization</a> for movers</li>
+                              <li>• <Link href="/" className="text-primary hover:underline">Lead generation optimization</Link> for movers</li>
                               <li>• Multi-channel marketing coordination</li>
                               <li>• Performance measurement and analytics</li>
                               <li>• Team development and training</li>
@@ -698,10 +701,10 @@ const RemovalistBusinessMarketing = () => {
                         <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-primary/20">
                           <h4 className="text-lg font-semibold mb-3">Learn About Fractional CMO Services</h4>
                           <div className="flex flex-wrap gap-4">
-                            <a href="/blog/what-is-fractional-cmo" className="text-primary hover:underline font-medium">What is a Fractional CMO?</a>
-                            <a href="/blog/when-to-hire-fractional-cmo" className="text-primary hover:underline font-medium">When to Hire a Fractional CMO</a>
-                            <a href="/blog/fractional-cmo-vs-full-time-cmo" className="text-primary hover:underline font-medium">Fractional vs Full-Time CMO</a>
-                            <a href="/" className="text-primary hover:underline font-medium">Growth Marketing Services</a>
+                            <Link href="/blog/what-is-fractional-cmo" className="text-primary hover:underline font-medium">What is a Fractional CMO?</Link>
+                            <Link href="/blog/when-to-hire-fractional-cmo" className="text-primary hover:underline font-medium">When to Hire a Fractional CMO</Link>
+                            <Link href="/blog/fractional-cmo-vs-full-time-cmo" className="text-primary hover:underline font-medium">Fractional vs Full-Time CMO</Link>
+                            <Link href="/" className="text-primary hover:underline font-medium">Growth Marketing Services</Link>
                           </div>
                         </div>
                       </CardContent>
@@ -714,9 +717,9 @@ const RemovalistBusinessMarketing = () => {
                       <Card>
                         <CardContent className="p-6">
                           <h3 className="font-semibold mb-2">
-                            <a href="/blog/starting-removalist-business" className="text-primary hover:underline">
+                            <Link href="/blog/starting-removalist-business" className="text-primary hover:underline">
                               Starting a Removalist Business
-                            </a>
+                            </Link>
                           </h3>
                           <p className="text-sm text-muted-foreground">
                             Complete guide to launching your removalist business from licensing to first customers.
@@ -726,9 +729,9 @@ const RemovalistBusinessMarketing = () => {
                       <Card>
                         <CardContent className="p-6">
                           <h3 className="font-semibold mb-2">
-                            <a href="/blog/local-seo-trade-businesses" className="text-primary hover:underline">
+                            <Link href="/blog/local-seo-trade-businesses" className="text-primary hover:underline">
                               Local SEO for Trade Businesses
-                            </a>
+                            </Link>
                           </h3>
                           <p className="text-sm text-muted-foreground">
                             Master local search optimization to dominate your service area.
@@ -738,9 +741,9 @@ const RemovalistBusinessMarketing = () => {
                       <Card>
                         <CardContent className="p-6">
                           <h3 className="font-semibold mb-2">
-                            <a href="/blog/trade-customer-retention-strategies" className="text-primary hover:underline">
+                            <Link href="/blog/trade-customer-retention-strategies" className="text-primary hover:underline">
                               Customer Retention for Trade Businesses
-                            </a>
+                            </Link>
                           </h3>
                           <p className="text-sm text-muted-foreground">
                             Build lasting relationships that generate referrals and repeat business.

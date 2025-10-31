@@ -2,9 +2,8 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import StrategyForm from '@/components/ui/strategy-form';
 
-import { Shield, Target, Users, Phone, Building, Camera, AlertTriangle, Lock } from 'lucide-react';
+import { Shield, Target, Users, Phone, Building, AlertTriangle, Lock } from 'lucide-react';
 import securityLeadGenerationHero from '@/assets/blog/security-lead-generation-hero.jpg';
 
 const articleData = {
@@ -202,29 +201,28 @@ const SecurityLeadGeneration = () => {
             <div className="grid md:grid-cols-3 gap-4 text-sm">
               <div>
                 <Badge variant="secondary" className="mb-2">Emergency Keywords</Badge>
-                <ul className="space-y-1">
-                  <li>• "security company near me"</li>
-                  <li>• "24 hour security service"</li>
-                  <li>• "emergency security response"</li>
-                  <li>• "immediate security help"</li>
-                </ul>
-              </div>
+                                  <ul className="space-y-1">
+                                    <li>• &quot;security company near me&quot;</li>
+                                    <li>• &quot;24 hour security service&quot;</li>
+                                    <li>• &quot;emergency security response&quot;</li>
+                                    <li>• &quot;immediate security help&quot;</li>
+                                  </ul>              </div>
               <div>
                 <Badge variant="secondary" className="mb-2">Service-Specific</Badge>
                 <ul className="space-y-1">
-                  <li>• "commercial security [city]"</li>
-                  <li>• "event security services"</li>
-                  <li>• "security guards [location]"</li>
-                  <li>• "home security consultation"</li>
+                  <li>• &quot;commercial security [city]&quot;</li>
+                  <li>• &quot;event security services&quot;</li>
+                  <li>• &quot;security guards [location]&quot;</li>
+                  <li>• &quot;home security consultation&quot;</li>
                 </ul>
               </div>
               <div>
                 <Badge variant="secondary" className="mb-2">Industry-Specific</Badge>
                 <ul className="space-y-1">
-                  <li>• "construction site security"</li>
-                  <li>• "retail security services"</li>
-                  <li>• "warehouse security"</li>
-                  <li>• "corporate security firm"</li>
+                  <li>• &quot;construction site security&quot;</li>
+                  <li>• &quot;retail security services&quot;</li>
+                  <li>• &quot;warehouse security&quot;</li>
+                  <li>• &quot;corporate security firm&quot;</li>
                 </ul>
               </div>
             </div>
@@ -247,19 +245,19 @@ const SecurityLeadGeneration = () => {
                   <div>
                     <h4 className="font-semibold mb-2">Security Awareness Content:</h4>
                     <ul className="text-sm space-y-1">
-                      <li>• "How to Identify Security Vulnerabilities"</li>
-                      <li>• "Choosing the Right Security System"</li>
-                      <li>• "Emergency Response Procedures"</li>
-                      <li>• "Security Technology Updates"</li>
+                      <li>• &quot;How to Identify Security Vulnerabilities&quot;</li>
+                      <li>• &quot;Choosing the Right Security System&quot;</li>
+                      <li>• &quot;Emergency Response Procedures&quot;</li>
+                      <li>• &quot;Security Technology Updates&quot;</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Industry-Specific Guides:</h4>
                     <ul className="text-sm space-y-1">
-                      <li>• "Retail Security Best Practices"</li>
-                      <li>• "Office Building Security Guidelines"</li>
-                      <li>• "Event Security Planning Checklist"</li>
-                      <li>• "Construction Site Protection"</li>
+                      <li>• &quot;Retail Security Best Practices&quot;</li>
+                      <li>• &quot;Office Building Security Guidelines&quot;</li>
+                      <li>• &quot;Event Security Planning Checklist&quot;</li>
+                      <li>• &quot;Construction Site Protection&quot;</li>
                     </ul>
                   </div>
                 </div>

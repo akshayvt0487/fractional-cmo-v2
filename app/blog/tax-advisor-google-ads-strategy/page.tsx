@@ -129,16 +129,16 @@ const TaxAdvisorGoogleAds = () => {
             <h4 className="text-xl font-semibold mb-2">Local Tax Services Keywords</h4>
             <div className="grid md:grid-cols-2 gap-4">
               <ul className="space-y-1">
-                <li>• "tax preparer near me"</li>
-                <li>• "tax advisor [city name]"</li>
-                <li>• "tax accountant [zip code]"</li>
-                <li>• "CPA tax services [area]"</li>
+                <li>• &quot;tax preparer near me&quot;</li>
+                <li>• &quot;tax advisor [city name]&quot;</li>
+                <li>• &quot;tax accountant [zip code]&quot;</li>
+                <li>• &quot;CPA tax services [area]&quot;</li>
               </ul>
               <ul className="space-y-1">
-                <li>• "local tax preparation"</li>
-                <li>• "tax help [neighborhood]"</li>
-                <li>• "professional tax preparer"</li>
-                <li>• "certified tax advisor"</li>
+                <li>• &quot;local tax preparation&quot;</li>
+                <li>• &quot;tax help [neighborhood]&quot;</li>
+                <li>• &quot;professional tax preparer&quot;</li>
+                <li>• &quot;certified tax advisor&quot;</li>
               </ul>
             </div>
           </div>
@@ -147,16 +147,16 @@ const TaxAdvisorGoogleAds = () => {
             <h4 className="text-xl font-semibold mb-2">Service-Specific Keywords</h4>
             <div className="grid md:grid-cols-2 gap-4">
               <ul className="space-y-1">
-                <li>• "business tax preparation"</li>
-                <li>• "small business tax advisor"</li>
-                <li>• "tax planning services"</li>
-                <li>• "IRS audit representation"</li>
+                <li>• &quot;business tax preparation&quot;</li>
+                <li>• &quot;small business tax advisor&quot;</li>
+                <li>• &quot;tax planning services&quot;</li>
+                <li>• &quot;IRS audit representation&quot;</li>
               </ul>
               <ul className="space-y-1">
-                <li>• "estate tax preparation"</li>
-                <li>• "multi-state tax filing"</li>
-                <li>• "amended tax return help"</li>
-                <li>• "tax resolution services"</li>
+                <li>• &quot;estate tax preparation&quot;</li>
+                <li>• &quot;multi-state tax filing&quot;</li>
+                <li>• &quot;amended tax return help&quot;</li>
+                <li>• &quot;tax resolution services&quot;</li>
               </ul>
             </div>
           </div>
@@ -290,17 +290,17 @@ const TaxAdvisorGoogleAds = () => {
               <div>
                 <h5 className="font-medium mb-2">Credibility-Focused</h5>
                 <ul className="space-y-1 text-sm">
-                  <li>• "CPA with 15+ Years Experience"</li>
-                  <li>• "IRS Enrolled Agent - Licensed Tax Pro"</li>
-                  <li>• "Certified Tax Resolution Specialist"</li>
+                  <li>• &quot;CPA with 15+ Years Experience&quot;</li>
+                  <li>• &quot;IRS Enrolled Agent - Licensed Tax Pro&quot;</li>
+                  <li>• &quot;Certified Tax Resolution Specialist&quot;</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Urgency-Driven</h5>
                 <ul className="space-y-1 text-sm">
-                  <li>• "Same-Day Tax Preparation Available"</li>
-                  <li>• "Beat the Deadline - Quick Turnaround"</li>
-                  <li>• "Last-Minute Tax Help - We Can Help"</li>
+                  <li>• &quot;Same-Day Tax Preparation Available&quot;</li>
+                  <li>• &quot;Beat the Deadline - Quick Turnaround&quot;</li>
+                  <li>• &quot;Last-Minute Tax Help - We Can Help&quot;</li>
                 </ul>
               </div>
             </div>
@@ -310,10 +310,10 @@ const TaxAdvisorGoogleAds = () => {
         <h3 className="text-2xl font-semibold mb-4">Value Proposition Development</h3>
         <p>Communicate unique advantages in competitive tax market:</p>
         <ul className="space-y-2 mb-6">
-          <li><strong>Specialization messaging:</strong> "Small Business Tax Experts" or "Multi-State Return Specialists"</li>
-          <li><strong>Guarantee positioning:</strong> "Maximum Refund Guarantee" or "Accuracy Guaranteed"</li>
-          <li><strong>Convenience factors:</strong> "Virtual Appointments Available" or "Mobile Tax Service"</li>
-          <li><strong>Problem-solving focus:</strong> "IRS Problems Solved" or "Clean Up Tax Messes"</li>
+          <li><strong>Specialization messaging:</strong> &quot;Small Business Tax Experts&quot; or &quot;Multi-State Return Specialists&quot;</li>
+          <li><strong>Guarantee positioning:</strong> &quot;Maximum Refund Guarantee&quot; or &quot;Accuracy Guaranteed&quot;</li>
+          <li><strong>Convenience factors:</strong> &quot;Virtual Appointments Available&quot; or &quot;Mobile Tax Service&quot;</li>
+          <li><strong>Problem-solving focus:</strong> &quot;IRS Problems Solved&quot; or &quot;Clean Up Tax Messes&quot;</li>
         </ul>
       </section>
 

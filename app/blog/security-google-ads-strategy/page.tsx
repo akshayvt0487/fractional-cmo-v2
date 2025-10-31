@@ -76,33 +76,33 @@ const SecurityGoogleAdsStrategy = () => {
               <h3>Commercial Security Keywords</h3>
               <p>Target businesses actively seeking security services:</p>
               <ul>
-                <li><strong>Service keywords:</strong> "commercial security services", "business security company"</li>
-                <li><strong>Industry-specific:</strong> "retail security services", "office building security"</li>
-                <li><strong>Technology-focused:</strong> "CCTV installation", "access control systems"</li>
-                <li><strong>Location-based:</strong> "security company [city]", "security guards [area]"</li>
-                <li><strong>Urgency keywords:</strong> "emergency security services", "24/7 security"</li>
+                <li><strong>Service keywords:</strong> &quot;commercial security services&quot;, &quot;business security company&quot;</li>
+                <li><strong>Industry-specific:</strong> &quot;retail security services&quot;, &quot;office building security&quot;</li>
+                <li><strong>Technology-focused:</strong> &quot;CCTV installation&quot;, &quot;access control systems&quot;</li>
+                <li><strong>Location-based:</strong> &quot;security company [city]&quot;, &quot;security guards [area]&quot;</li>
+                <li><strong>Urgency keywords:</strong> &quot;emergency security services&quot;, &quot;24/7 security&quot;</li>
               </ul>
 
               <h3>Long-Tail Opportunities</h3>
               <p>Capture specific, high-intent searches:</p>
               <ul>
-                <li>"security company for construction site [location]"</li>
-                <li>"professional security guards for events [city]"</li>
-                <li>"24 hour security patrol services [area]"</li>
-                <li>"commercial security system installation [suburb]"</li>
-                <li>"warehouse security services near me"</li>
+                <li>&quot;security company for construction site [location]&quot;</li>
+                <li>&quot;professional security guards for events [city]&quot;</li>
+                <li>&quot;24 hour security patrol services [area]&quot;</li>
+                <li>&quot;commercial security system installation [suburb]&quot;</li>
+                <li>&quot;warehouse security services near me&quot;</li>
               </ul>
 
               <h2>Ad Copy That Builds Trust and Converts</h2>
               <h3>Compelling Headlines for Security Services</h3>
               <p>Create headlines that immediately communicate reliability and professionalism:</p>
               <ul>
-                <li>"Licensed Security Guards - 24/7 Professional Protection"</li>
-                <li>"Trusted Commercial Security - Protecting Businesses Since 2010"</li>
-                <li>"Elite Security Services - Licensed, Insured, Reliable"</li>
-                <li>"Emergency Security Response - Available 24/7"</li>
-                <li>"Professional Event Security - Experienced Guards"</li>
-                <li>"Complete Security Solutions - Guards, CCTV, Patrols"</li>
+                <li>&quot;Licensed Security Guards - 24/7 Professional Protection&quot;</li>
+                <li>&quot;Trusted Commercial Security - Protecting Businesses Since 2010&quot;</li>
+                <li>&quot;Elite Security Services - Licensed, Insured, Reliable&quot;</li>
+                <li>&quot;Emergency Security Response - Available 24/7&quot;</li>
+                <li>&quot;Professional Event Security - Experienced Guards&quot;</li>
+                <li>&quot;Complete Security Solutions - Guards, CCTV, Patrols&quot;</li>
               </ul>
 
               <h3>Trust-Building Description Lines</h3>

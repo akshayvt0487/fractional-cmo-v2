@@ -1,4 +1,3 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Footer from "@/components/sections/Footer";
@@ -12,7 +11,7 @@ import VirtualizedBlogGrid from "@/components/VirtualizedBlogGrid";
 import { Search, X } from "lucide-react";
 
 import BlogMegaMenu from "@/components/BlogMegaMenu";
-import { blogPosts, categories } from "@/data/blogPosts";
+import { blogPosts } from "@/data/blogPosts";
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
@@ -321,7 +320,7 @@ const Blog = () => {
               </div>
               {searchQuery && (
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Found {filteredPosts.length} article{filteredPosts.length !== 1 ? 's' : ''} matching "{searchQuery}"
+                  Found {filteredPosts.length} article{filteredPosts.length !== 1 ? 's' : ''} matching &quot;{searchQuery}&quot;
                 </p>
               )}
             </div>
@@ -400,7 +399,7 @@ const Blog = () => {
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-xl md:text-2xl font-semibold mb-3 md:mb-4">Ready to Transform Your Growth?</h2>
               <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6">
-                Let's discuss how these strategies can work for your business. Book a free 45-minute strategy call and let's map your next growth chapter.
+                Let&apos;s discuss how these strategies can work for your business. Book a free 45-minute strategy call and let&apos;s map your next growth chapter.
               </p>
               <StrategyForm preSelectedService="strategy" />
             </div>

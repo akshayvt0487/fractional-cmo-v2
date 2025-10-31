@@ -1,7 +1,6 @@
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import Citation from '@/components/Citation';
 import { Card, CardContent } from '@/components/ui/card';
-import StrategyForm from '@/components/ui/strategy-form';
 import removalistSeoStrategyHero from '@/assets/blog/removalist-seo-strategy-hero.jpg';
 import { relatedArticles } from '@/utils/seoUtils';
 
@@ -85,7 +84,7 @@ const RemovalistSEOStrategy = () => {
             <p className="mb-4">Most removalist businesses still rely on outdated marketing methods. Smart operators who master SEO capture disproportionate market share:</p>
             <ul className="space-y-2 text-sm">
               <li>• 78% of local mobile searches result in offline purchases within 24 hours</li>
-              <li>• "Removalists near me" generates 18,000+ monthly searches in Australia</li>
+              <li>• &quot;Removalists near me&quot; generates 18,000+ monthly searches in Australia</li>
               <li>• First-page Google results capture 92% of search traffic</li>
               <li>• Top 3 positions get 75% of all clicks</li>
               <li>• Local SEO leads cost 61% less than traditional advertising</li>
@@ -199,9 +198,9 @@ const RemovalistSEOStrategy = () => {
                 <h4 className="text-xl font-semibold mb-3">🎯 Experience</h4>
                 <p className="mb-4">Demonstrate real, hands-on experience in the removalist industry:</p>
                 <ul className="space-y-2 text-sm">
-                  <li>• Share detailed case studies of complex moves you've completed</li>
+                  <li>• Share detailed case studies of complex moves you&apos;ve completed</li>
                   <li>• Include photos and videos from actual moving jobs</li>
-                  <li>• Write about challenges you've overcome (narrow staircases, heritage homes, etc.)</li>
+                  <li>• Write about challenges you&apos;ve overcome (narrow staircases, heritage homes, etc.)</li>
                   <li>• Feature customer success stories with specific details</li>
                 </ul>
               </CardContent>
@@ -354,7 +353,7 @@ const RemovalistSEOStrategy = () => {
             
             <div className="space-y-4">
               <div>
-                <h5 className="font-medium text-primary mb-2">Main Hub: "Removalist Services"</h5>
+                <h5 className="font-medium text-primary mb-2">Main Hub: &quot;Removalist Services&quot;</h5>
                 <div className="grid md:grid-cols-2 gap-4 text-sm">
                   <div>
                     <strong>Spoke Pages:</strong>
@@ -385,7 +384,7 @@ const RemovalistSEOStrategy = () => {
             <li className="flex items-start gap-3">
               <span className="text-primary font-bold">1.</span>
               <div>
-                <strong>Use Descriptive Anchor Text:</strong> Instead of "click here," use "professional house removalist services in Melbourne"
+                <strong>Use Descriptive Anchor Text:</strong> Instead of &quot;click here,&quot; use &quot;professional house removalist services in Melbourne&quot;
               </div>
             </li>
             <li className="flex items-start gap-3">
@@ -495,10 +494,10 @@ const RemovalistSEOStrategy = () => {
                 <h4 className="text-lg font-semibold mb-3 text-primary">1. Comprehensive Moving Guides</h4>
                 <p className="text-sm mb-3">Create detailed, step-by-step guides that become go-to resources:</p>
                 <ul className="text-sm space-y-1">
-                  <li>• "Complete House Moving Checklist for Australian Families"</li>
-                  <li>• "Office Relocation Guide: Minimize Downtime and Costs"</li>
-                  <li>• "Interstate Moving: Legal Requirements and Cost Breakdown"</li>
-                  <li>• "Apartment Moving: Navigate Tight Spaces and Building Restrictions"</li>
+                  <li>• &quot;Complete House Moving Checklist for Australian Families&quot;</li>
+                  <li>• &quot;Office Relocation Guide: Minimize Downtime and Costs&quot;</li>
+                  <li>• &quot;Interstate Moving: Legal Requirements and Cost Breakdown&quot;</li>
+                  <li>• &quot;Apartment Moving: Navigate Tight Spaces and Building Restrictions&quot;</li>
                 </ul>
               </CardContent>
             </Card>
@@ -508,10 +507,10 @@ const RemovalistSEOStrategy = () => {
                 <h4 className="text-lg font-semibold mb-3 text-primary">2. Market Analysis Content</h4>
                 <p className="text-sm mb-3">Position yourself as an industry expert with data-driven insights:</p>
                 <ul className="text-sm space-y-1">
-                  <li>• "Australian Moving Trends: 2024 Industry Report"</li>
-                  <li>• "Cost of Moving by City: Comprehensive Price Comparison"</li>
-                  <li>• "Peak Moving Season Planning: When to Book and Save"</li>
-                  <li>• "Commercial Relocation Costs: Budget Planning Guide"</li>
+                  <li>• &quot;Australian Moving Trends: 2024 Industry Report&quot;</li>
+                  <li>• &quot;Cost of Moving by City: Comprehensive Price Comparison&quot;</li>
+                  <li>• &quot;Peak Moving Season Planning: When to Book and Save&quot;</li>
+                  <li>• &quot;Commercial Relocation Costs: Budget Planning Guide&quot;</li>
                 </ul>
               </CardContent>
             </Card>
@@ -521,10 +520,10 @@ const RemovalistSEOStrategy = () => {
                 <h4 className="text-lg font-semibold mb-3 text-secondary">3. Local Area Content</h4>
                 <p className="text-sm mb-3">Demonstrate local expertise while targeting location-based searches:</p>
                 <ul className="text-sm space-y-1">
-                  <li>• "Moving to [Suburb]: Complete Neighbourhood Guide"</li>
-                  <li>• "Best Time to Move in [City]: Weather and Traffic Considerations"</li>
-                  <li>• "Parking Permits and Moving Restrictions in [Council Area]"</li>
-                  <li>• "Storage Facilities Near [Location]: Costs and Features"</li>
+                  <li>• &quot;Moving to [Suburb]: Complete Neighbourhood Guide&quot;</li>
+                  <li>• &quot;Best Time to Move in [City]: Weather and Traffic Considerations&quot;</li>
+                  <li>• &quot;Parking Permits and Moving Restrictions in [Council Area]&quot;</li>
+                  <li>• &quot;Storage Facilities Near [Location]: Costs and Features&quot;</li>
                 </ul>
               </CardContent>
             </Card>
@@ -553,7 +552,7 @@ const RemovalistSEOStrategy = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h5 className="font-semibold mb-3">Problem-Agitation-Solution</h5>
-                <p className="text-sm mb-2">Example: "Moving day disasters happen more often than you think..."</p>
+                <p className="text-sm mb-2">Example: &quot;Moving day disasters happen more often than you think...&quot;</p>
                 <ul className="text-xs space-y-1">
                   <li>1. Identify the pain point</li>
                   <li>2. Amplify the consequences</li>
@@ -562,7 +561,7 @@ const RemovalistSEOStrategy = () => {
               </div>
               <div>
                 <h5 className="font-semibold mb-3">Curiosity Gap</h5>
-                <p className="text-sm mb-2">Example: "The removalist secret that saves 40% on moving costs..."</p>
+                <p className="text-sm mb-2">Example: &quot;The removalist secret that saves 40% on moving costs...&quot;</p>
                 <ul className="text-xs space-y-1">
                   <li>1. Promise valuable information</li>
                   <li>2. Create knowledge gap</li>

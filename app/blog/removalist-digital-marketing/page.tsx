@@ -64,15 +64,15 @@ const RemovalistDigitalMarketing = () => {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">The Digital Opportunity for Removalists</h2>
         
-        <p>
-          The removalist industry is rapidly evolving, with customers increasingly turning to digital 
-          channels to find, research, and book moving services. Traditional word-of-mouth marketing, 
-          while still valuable, is no longer sufficient to compete in today's marketplace.
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          The removalist industry is fiercely competitive, and it&apos;s the details that make a business stand out. 
+          This guide provides a comprehensive digital marketing strategy tailored for Australian removalists, 
+          focusing on practical steps to attract more clients, build a strong brand, and grow your business.
         </p>
 
         <p>
           Digital marketing offers removalist businesses unprecedented opportunities to reach customers 
-          exactly when they're planning a move, showcase their services, and build trust through online 
+          exactly when they&apos;re planning a move, showcase their services, and build trust through online 
           reviews and testimonials.
         </p>
       </section>

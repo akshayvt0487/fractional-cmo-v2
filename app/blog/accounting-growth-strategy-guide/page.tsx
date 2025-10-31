@@ -1,11 +1,9 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ArrowRight, TrendingUp, Users, Target, BarChart, Zap, Building, Calendar, Clock, User } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight, TrendingUp, Users, Target, BarChart, Zap, Calendar } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import Citation from '@/components/Citation';
 import accountingGrowthStrategyHero from '@/assets/blog/accounting-growth-strategy-hero.jpg';
 
 const AccountingGrowthStrategy = () => {
@@ -115,7 +113,7 @@ const AccountingGrowthStrategy = () => {
       
       <div className="space-y-6">
         <div>
-          <h4 className="text-xl font-semibold mb-2">Financial Planning and Analysis (FP&A)</h4>
+          <h4 className="text-xl font-semibold mb-2">Financial Planning and Analysis (FP&amp;A)</h4>
           <ul className="ml-6 space-y-2">
             <li>• Budgeting and forecasting development</li>
             <li>• Cash flow modeling and optimization</li>
@@ -146,7 +144,7 @@ const AccountingGrowthStrategy = () => {
         <li>• Growth-oriented leadership team</li>
         <li>• Complex financial needs requiring advisory services</li>
         <li>• Willingness to invest in professional services</li>
-        <li>• Industry expertise alignment with your team's capabilities</li>
+        <li>• Industry expertise alignment with your team&apos;s capabilities</li>
       </ul>
 
       <h3>Multi-Channel Client Acquisition Strategy</h3>
@@ -335,7 +333,7 @@ const AccountingGrowthStrategy = () => {
           <CardContent>
             <ul className="space-y-2">
               <li>• SaaS revenue recognition</li>
-              <li>• R&D tax credits</li>
+              <li>• R&amp;D tax credits</li>
               <li>• Equity compensation accounting</li>
               <li>• Venture capital reporting</li>
             </ul>
@@ -428,7 +426,7 @@ const AccountingGrowthStrategy = () => {
             <li>• Expand into chosen industry specializations</li>
             <li>• Launch advanced service offerings and premium tiers</li>
             <li>• Develop long-term strategic partnerships</li>
-            <li>• Plan for next quarter's growth initiatives</li>
+            <li>• Plan for next quarter&apos;s growth initiatives</li>
           </ul>
         </div>
       </div>

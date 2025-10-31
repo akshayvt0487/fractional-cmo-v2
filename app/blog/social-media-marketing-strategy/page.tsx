@@ -43,20 +43,19 @@ const SocialMediaMarketingStrategy = () => {
       heroAlt="Professional social media marketing strategy dashboard showing analytics and engagement metrics"
     >
       <Card className="p-8 mb-8">
+                  <p className="text-lg leading-relaxed text-muted-foreground">
+                    In today&apos;s digital-first economy, <strong>93% of businesses report that social media marketing has increased their brand exposure</strong> according to Social Media Examiner&apos;s 2024 industry report. For service businesses, social media isn&apos;t just about posting content—it&apos;s about building relationships, demonstrating expertise, and creating a consistent pipeline of qualified leads.
+                </p>        
         <p className="text-lg leading-relaxed text-muted-foreground">
-          In today's digital-first economy, <strong>93% of businesses report that social media marketing has increased their brand exposure</strong> according to Social Media Examiner's 2024 industry report. For service businesses, social media isn't just about posting content—it's about building relationships, demonstrating expertise, and creating a consistent pipeline of qualified leads.
-        </p>
-        
-        <p className="text-lg leading-relaxed text-muted-foreground">
-          This comprehensive guide reveals the exact strategies that successful service businesses use to generate over $10 million in annual revenue through strategic social media marketing. Whether you're a consultant, agency, or professional service provider, you'll learn how to transform your social presence into a powerful growth engine.
+          This comprehensive guide reveals the exact strategies that successful service businesses use to generate over $10 million in annual revenue through strategic social media marketing. Whether you&apos;re a consultant, agency, or professional service provider, you&apos;ll learn how to transform your social presence into a powerful growth engine.
         </p>
       </Card>
 
       <h2>The Strategic Foundation: Platform Selection & Audience Mapping</h2>
       
-      <h3>Understanding Your Audience's Platform Preferences</h3>
+      <h3>Understanding Your Audience&apos;s Platform Preferences</h3>
       <p>
-        <strong>LinkedIn dominates B2B service marketing</strong>, with 80% of B2B leads coming from LinkedIn according to LinkedIn's own research. However, the platform choice depends entirely on your target audience's behavior patterns.
+        <strong>LinkedIn dominates B2B service marketing</strong>, with 80% of B2B leads coming from LinkedIn according to LinkedIn&apos;s own research. However, the platform choice depends entirely on your target audience&apos;s behavior patterns.
       </p>
 
       <div className="bg-muted p-6 rounded-lg mb-6">
@@ -71,7 +70,7 @@ const SocialMediaMarketingStrategy = () => {
       </div>
 
       <blockquote className="border-l-4 border-primary pl-6 italic text-lg mb-6">
-        "The biggest mistake service businesses make is trying to be everywhere. Focus on 2-3 platforms where your ideal clients are most active and engaged." 
+        &quot;The biggest mistake service businesses make is trying to be everywhere. Focus on 2-3 platforms where your ideal clients are most active and engaged.&quot; 
         <cite className="block mt-2 text-sm text-muted-foreground">— Gary Vaynerchuk, VaynerMedia CEO</cite>
       </blockquote>
 
@@ -113,7 +112,7 @@ const SocialMediaMarketingStrategy = () => {
           <ul className="list-disc pl-6 space-y-1">
             <li>Publish 3-5 educational posts per week</li>
             <li>Share industry insights and data-driven analysis</li>
-            <li>Engage meaningfully with prospects' content</li>
+            <li>Engage meaningfully with prospects&apos; content</li>
             <li>Join relevant industry groups and discussions</li>
           </ul>
         </div>
@@ -121,7 +120,7 @@ const SocialMediaMarketingStrategy = () => {
         <div className="border-l-4 border-primary pl-6">
           <h4 className="text-xl font-semibold mb-2">2. Relationship Building Phase (Months 2-6)</h4>
           <ul className="list-disc pl-6 space-y-1">
-            <li>Comment thoughtfully on prospects' posts</li>
+            <li>Comment thoughtfully on prospects&apos; posts</li>
             <li>Share valuable resources without pitching</li>
             <li>Host live Q&A sessions and webinars</li>
             <li>Create collaborative content with industry peers</li>
@@ -150,13 +149,13 @@ const SocialMediaMarketingStrategy = () => {
         <h4 className="text-lg font-semibold mb-3">PAS Example for a Marketing Agency:</h4>
         <div className="space-y-3">
           <div>
-            <strong>Problem:</strong> "Struggling to generate consistent leads from your website?"
+            <strong>Problem:</strong> &quot;Struggling to generate consistent leads from your website?&quot;
           </div>
           <div>
-            <strong>Agitation:</strong> "You're not alone. 68% of businesses struggle with lead generation, losing potential revenue every day their website sits idle."
+            <strong>Agitation:</strong> &quot;You&apos;re not alone. 68% of businesses struggle with lead generation, losing potential revenue every day their website sits idle.&quot;
           </div>
           <div>
-            <strong>Solution:</strong> "Our conversion optimization process has helped 200+ businesses increase leads by 340% in 90 days. Here's how we do it..."
+            <strong>Solution:</strong> &quot;Our conversion optimization process has helped 200+ businesses increase leads by 340% in 90 days. Here&apos;s how we do it...&quot;
           </div>
         </div>
       </div>
@@ -230,8 +229,8 @@ const SocialMediaMarketingStrategy = () => {
       </div>
 
       <blockquote className="border-l-4 border-primary pl-6 italic text-lg mb-6">
-        "What gets measured gets managed. The most successful service businesses track social media ROI with the same rigor as their traditional marketing channels." 
-        <cite className="block mt-2 text-sm text-muted-foreground">— Jay Baer, Convince & Convert Founder</cite>
+        &quot;What gets measured gets managed. The most successful service businesses track social media ROI with the same rigor as their traditional marketing channels.&quot; 
+        <cite className="block mt-2 text-sm text-muted-foreground">— Jay Baer, Convince &amp; Convert Founder</cite>
       </blockquote>
 
       <h3>Attribution Tracking Setup</h3>
@@ -280,18 +279,16 @@ const SocialMediaMarketingStrategy = () => {
         </div>
 
         <h2>Your Social Media Success Action Plan</h2>
-        <p>
-          Social media marketing for service businesses isn't about posting pretty pictures or going viral—it's about building meaningful relationships that convert into long-term clients. The strategies outlined in this guide have helped countless service businesses generate millions in revenue through strategic social media marketing.
-        </p>
-        
+                  <p>
+                    Social media marketing for service businesses isn&apos;t about posting pretty pictures or going viral—it&apos;s about building meaningful relationships that convert into long-term clients. The strategies outlined in this guide have helped countless service businesses generate millions in revenue through strategic social media marketing.
+                  </p>        
         <p>
           Start by choosing 2-3 platforms where your ideal clients are most active. Focus on the 40-30-20-10 content distribution model and implement the social selling framework consistently for 90 days. Track your KPIs rigorously and optimize based on data, not assumptions.
         </p>
 
-        <p>
-          Remember that social media success is a marathon, not a sprint. The service businesses that win on social media are those that provide consistent value, build authentic relationships, and position themselves as trusted advisors in their industry. Your expertise is your competitive advantage—let social media amplify it.
-        </p>
-
+                  <p>
+                    Remember that social media success is a marathon, not a sprint. The service businesses that win on social media are those that provide consistent value, build authentic relationships, and position themselves as trusted advisors in their industry. Your expertise is your competitive advantage&mdash;let social media amplify it.
+                  </p>
         <Citation
           source="Social Media Examiner Industry Report 2024"
           url="https://www.socialmediaexaminer.com/social-media-marketing-industry-report/"

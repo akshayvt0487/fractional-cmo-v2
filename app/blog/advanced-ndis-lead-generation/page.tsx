@@ -1,10 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
-import { CheckCircle, Users, Target, Zap, Phone, Mail, Globe, MessageCircle } from "lucide-react";
+import { CheckCircle, Users, Globe, MessageCircle, Mail } from "lucide-react";
 
-import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import advancedNDISLeadGenerationHero from '@/assets/blog/advanced-ndis-lead-generation-hero.jpg';
@@ -224,7 +221,7 @@ const AdvancedNDISLeadGeneration = () => {
                   <div className="space-y-4">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
-                        <h4 className="font-semibold mb-2">Days 1-7: Education & Trust Building</h4>
+                        <h4 className="font-semibold mb-2">Days 1-7: Education &amp; Trust Building</h4>
                         <ul className="text-sm space-y-1 text-muted-foreground">
                           <li>• Day 1: Welcome and NDIS basics guide</li>
                           <li>• Day 3: Understanding your NDIS plan categories</li>
@@ -305,7 +302,7 @@ const AdvancedNDISLeadGeneration = () => {
                     <div>
                       <h4 className="font-semibold mb-2">Local SEO Dominance</h4>
                       <ul className="text-sm space-y-1 text-muted-foreground">
-                        <li>• "NDIS provider near me" optimization</li>
+                        <li>• &quot;NDIS provider near me&quot; optimization</li>
                         <li>• Google Business Profile optimization</li>
                         <li>• Local directory listings management</li>
                         <li>• Location-specific landing pages</li>
@@ -365,7 +362,7 @@ const AdvancedNDISLeadGeneration = () => {
             <Card className="mb-6">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Zap className="h-5 w-5 text-primary" />
+                  <CheckCircle className="h-5 w-5 text-primary" />
                   CRM and Automation Stack
                 </CardTitle>
               </CardHeader>
@@ -476,13 +473,13 @@ const AdvancedNDISLeadGeneration = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
-                        <li>• "NDIS Plan Maximization Guide"</li>
-                    <li>• "Choosing Your Support Provider Checklist"</li>
-                    <li>• "Understanding Your Rights Handbook"</li>
-                    <li>• "Service Agreement Template"</li>
-                    <li>• "Goal Setting Workbook"</li>
-                    <li>• "Provider Comparison Matrix"</li>
-                    <li>• "Emergency Contact Templates"</li>
+                        <li>• &quot;NDIS Plan Maximization Guide&quot;</li>
+                    <li>• &quot;Choosing Your Support Provider Checklist&quot;</li>
+                    <li>• &quot;Understanding Your Rights Handbook&quot;</li>
+                    <li>• &quot;Service Agreement Template&quot;</li>
+                    <li>• &quot;Goal Setting Workbook&quot;</li>
+                    <li>• &quot;Provider Comparison Matrix&quot;</li>
+                    <li>• &quot;Emergency Contact Templates&quot;</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -508,7 +505,7 @@ const AdvancedNDISLeadGeneration = () => {
 
           {/* Performance Measurement */}
           <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Advanced Analytics & Performance Tracking</h2>
+            <h2 className="text-3xl font-semibold mb-6">Advanced Analytics &amp; Performance Tracking</h2>
             
             <Card className="mb-6">
               <CardHeader>
@@ -538,7 +535,7 @@ const AdvancedNDISLeadGeneration = () => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3">Quality & Engagement Metrics</h4>
+                    <h4 className="font-semibold mb-3">Quality &amp; Engagement Metrics</h4>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
                         <span className="text-sm font-medium">Lead Quality Score</span>
@@ -565,7 +562,7 @@ const AdvancedNDISLeadGeneration = () => {
 
           {/* Compliance & Ethics */}
           <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Ethical Lead Generation & Compliance</h2>
+            <h2 className="text-3xl font-semibold mb-6">Ethical Lead Generation &amp; Compliance</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-green-200 bg-green-50">
@@ -600,7 +597,7 @@ const AdvancedNDISLeadGeneration = () => {
 
               <Card className="border-blue-200 bg-blue-50">
                 <CardHeader>
-                  <CardTitle className="text-blue-800">Privacy & Data Protection</CardTitle>
+                  <CardTitle className="text-blue-800">Privacy &amp; Data Protection</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm text-blue-700">

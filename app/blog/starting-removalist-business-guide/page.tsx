@@ -67,7 +67,7 @@ const StartingRemovalistBusiness = () => {
 
             <h2>Legal Requirements and Registration</h2>
                   <p>
-                    Before you start moving anyone's belongings, ensure your business is properly registered and compliant:
+                    Before you start moving anyone&apos;s belongings, ensure your business is properly registered and compliant:
                   </p>
 
                   <h3>1. Business Structure</h3>
@@ -101,7 +101,7 @@ const StartingRemovalistBusiness = () => {
 
                   <h3>Goods in Transit Insurance</h3>
                   <p>
-                    Covers items being transported if they're damaged, lost, or stolen during the move.
+                    Covers items being transported if they&apos;re damaged, lost, or stolen during the move.
                   </p>
 
                   <h3>Professional Indemnity Insurance</h3>

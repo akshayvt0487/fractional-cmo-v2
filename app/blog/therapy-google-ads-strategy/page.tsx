@@ -84,10 +84,10 @@ const TherapyGoogleAdsStrategy = () => {
             <CardContent className="p-6">
               <h4 className="font-semibold mb-3 text-primary">Immediate Need Searches</h4>
               <ul className="text-sm space-y-1">
-                <li>• "urgent speech therapy"</li>
-                <li>• "ABA therapy waiting list"</li>
-                <li>• "occupational therapy assessment"</li>
-                <li>• "child psychology emergency"</li>
+                <li>• &quot;urgent speech therapy&quot;</li>
+                <li>• &quot;ABA therapy waiting list&quot;</li>
+                <li>• &quot;occupational therapy assessment&quot;</li>
+                <li>• &quot;child psychology emergency&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -95,10 +95,10 @@ const TherapyGoogleAdsStrategy = () => {
             <CardContent className="p-6">
               <h4 className="font-semibold mb-3 text-primary">Research Phase Searches</h4>
               <ul className="text-sm space-y-1">
-                <li>• "best speech therapist near me"</li>
-                <li>• "ABA therapy reviews"</li>
-                <li>• "occupational therapy techniques"</li>
-                <li>• "child psychology approaches"</li>
+                <li>• &quot;best speech therapist near me&quot;</li>
+                <li>• &quot;ABA therapy reviews&quot;</li>
+                <li>• &quot;occupational therapy techniques&quot;</li>
+                <li>• &quot;child psychology approaches&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -144,14 +144,14 @@ const TherapyGoogleAdsStrategy = () => {
               <h4 className="font-semibold mb-3 text-primary">High-Intent Keywords (CPC: $8-25)</h4>
               <ul className="text-sm space-y-2">
                 <li><strong>Speech Therapy:</strong></li>
-                <li>• "speech therapy assessment near me"</li>
-                <li>• "child speech therapist urgent"</li>
-                <li>• "speech pathologist NDIS provider"</li>
-                <li>• "toddler speech delay help"</li>
+                <li>• &quot;speech therapy assessment near me&quot;</li>
+                <li>• &quot;child speech therapist urgent&quot;</li>
+                <li>• &quot;speech pathologist NDIS provider&quot;</li>
+                <li>• &quot;toddler speech delay help&quot;</li>
                 <li><strong>Occupational Therapy:</strong></li>
-                <li>• "occupational therapy evaluation"</li>
-                <li>• "sensory integration therapy"</li>
-                <li>• "pediatric OT clinic"</li>
+                <li>• &quot;occupational therapy evaluation&quot;</li>
+                <li>• &quot;sensory integration therapy&quot;</li>
+                <li>• &quot;pediatric OT clinic&quot;</li>
               </ul>
             </CardContent>
           </Card>
@@ -160,10 +160,10 @@ const TherapyGoogleAdsStrategy = () => {
               <h4 className="font-semibold mb-3 text-primary">Long-Tail Keywords (CPC: $3-12)</h4>
               <ul className="text-sm space-y-2">
                 <li><strong>Problem-Specific:</strong></li>
-                <li>• "my 3 year old won't talk speech therapy"</li>
-                <li>• "child won't eat texture issues therapy"</li>
-                <li>• "aggressive behavior ABA therapy"</li>
-                <li>• "school readiness occupational therapy"</li>
+                <li>• &quot;my 3 year old won&apos;t talk speech therapy&quot;</li>
+                <li>• &quot;child won&apos;t eat texture issues therapy&quot;</li>
+                <li>• &quot;aggressive behavior ABA therapy&quot;</li>
+                <li>• &quot;school readiness occupational therapy&quot;</li>
                 <li><strong>NDIS-Specific:</strong></li>
                 <li>• "NDIS funded speech therapy near me"</li>
                 <li>• "how to use NDIS plan for therapy"</li>

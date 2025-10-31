@@ -45,16 +45,28 @@ export async function verifyUserCredentials(email: string, password: string) {
   try {
     // Step 1: Create email session to verify credentials
     const session = await account.createEmailPasswordSession(email, password);
-    
-    // Step 2: Set the session on the client so subsequent calls work
-    userClient.setSession(session.secret);
-    
-    // Step 3: Now we can get user data (this will work because we set the session)
-    const user = await account.get();
-    
-    // Step 4: Clean up - delete the session
+
+    // Try to extract userId from session (SDK versions vary)
+    const userId =
+      (session as any).userId ??
+      (session as any).user_id ??
+      (session as any).user?.$id ??
+      (session as any).user?.id ??
+      null;
+
+    if (!userId) {
+      throw new Error("Unable to determine user id from session.");
+    }
+
+    // Use the admin Users service (admin API key) to fetch the user information
+    const user = await adminUsers.get(userId);
+
+    // Step: Clean up - delete the session (best-effort)
     try {
-      await account.deleteSession(session.$id);
+      const sessionId = (session as any).$id ?? (session as any).id;
+      if (sessionId) {
+        await account.deleteSession(sessionId);
+      }
     } catch (err) {
       console.error("Failed to cleanup session:", err);
     }
@@ -67,16 +79,16 @@ export async function verifyUserCredentials(email: string, password: string) {
 
   } catch (error: any) {
     console.error("Credential verification failed:", error);
-    
+
     // Provide specific error messages
     if (error.code === 401 || error.message?.includes("Invalid credentials")) {
       throw new Error("Invalid email or password.");
     }
-    
+
     if (error.message?.includes("missing scope")) {
       throw new Error("Authentication error. Please try again.");
     }
-    
+
     throw new Error("Authentication failed. Please try again.");
   }
 }

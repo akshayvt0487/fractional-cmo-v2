@@ -65,7 +65,7 @@ const RenovationBuildersDigitalMarketing = () => {
       </p>
 
               <h2>Understanding Your Renovation Market Segments</h2>
-              <p>As a renovation builder, you're not just constructing - you're transforming dreams into reality. Each project type brings its own opportunities, challenges, and profit potential. Let's explore the diverse landscape of renovation work and how to position yourself for success in each segment.</p>
+              <p>As a renovation builder, you&apos;re not just constructing - you&apos;re transforming dreams into reality. Each project type brings its own opportunities, challenges, and profit potential. Let&apos;s explore the diverse landscape of renovation work and how to position yourself for success in each segment.</p>
               
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
@@ -151,7 +151,7 @@ const RenovationBuildersDigitalMarketing = () => {
                 <MapPin className="h-6 w-6 text-primary" />
                 Local SEO for Maximum Visibility
               </h3>
-              <p className="mb-6">When homeowners decide to renovate, they don't just search for any builder - they want someone local, trusted, and proven in their area. Your digital presence needs to dominate local search results when potential clients are ready to invest in their biggest asset.</p>
+              <p className="mb-6">When homeowners decide to renovate, they don&apos;t just search for any builder - they want someone local, trusted, and proven in their area. Your digital presence needs to dominate local search results when potential clients are ready to invest in their biggest asset.</p>
               
               <div className="space-y-4 mb-8">
                 <Card className="hover:shadow-md transition-shadow">
@@ -160,7 +160,7 @@ const RenovationBuildersDigitalMarketing = () => {
                       <Search className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold mb-2">Google My Business Mastery</h4>
-                        <p className="text-muted-foreground">Transform your GMB profile into a project showcase. Regular updates with fresh renovation photos, client reviews, and project milestones keep you visible when homeowners search for "renovation builders near me."</p>
+                        <p className="text-muted-foreground">Transform your GMB profile into a project showcase. Regular updates with fresh renovation photos, client reviews, and project milestones keep you visible when homeowners search for &quot;renovation builders near me.&quot;</p>
                       </div>
                     </div>
                   </CardContent>
@@ -172,7 +172,7 @@ const RenovationBuildersDigitalMarketing = () => {
                       <Target className="h-5 w-5 text-secondary mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold mb-2">Hyper-Local Content Strategy</h4>
-                        <p className="text-muted-foreground">Create dedicated landing pages for each suburb you serve. Include local building requirements, council permit processes, and showcase projects completed in that specific area. Think "kitchen renovation Toorak" or "bathroom remodel Bondi."</p>
+                        <p className="text-muted-foreground">Create dedicated landing pages for each suburb you serve. Include local building requirements, council permit processes, and showcase projects completed in that specific area. Think &quot;kitchen renovation Toorak&quot; or &quot;bathroom remodel Bondi.&quot;</p>
                       </div>
                     </div>
                   </CardContent>
@@ -274,7 +274,7 @@ const RenovationBuildersDigitalMarketing = () => {
               <h3>Google Ads for Renovation Projects</h3>
               <p>Target homeowners actively planning renovation work:</p>
               <ul>
-                <li><strong>Project-specific campaigns:</strong> "kitchen renovation contractor", "bathroom remodel specialist"</li>
+                <li><strong>Project-specific campaigns:</strong> &quot;kitchen renovation contractor&quot;, &quot;bathroom remodel specialist&quot;</li>
                 <li><strong>Local targeting:</strong> Focus budget on specific suburbs and neighborhoods</li>
                 <li><strong>Seasonal campaigns:</strong> Spring renovation planning and summer project timing</li>
                 <li><strong>Display campaigns:</strong> Visual ads on home improvement and lifestyle websites</li>

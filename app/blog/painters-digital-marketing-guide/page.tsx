@@ -1,10 +1,9 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Paintbrush, Home, Building, Palette, CheckCircle, TrendingUp, Users, Target } from 'lucide-react';
+import { Paintbrush, Home, Building, Palette } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import paintersDigitalMarketingHero from '@/assets/blog/painters-digital-marketing-hero.jpg';
-import StrategyForm from '@/components/ui/strategy-form';
 
 const PaintersDigitalMarketing = () => {
   const articleData = {
@@ -98,7 +97,7 @@ const PaintersDigitalMarketing = () => {
           <CardHeader>
             <CardTitle className="flex items-center gap-3 text-orange-800 dark:text-orange-200">
               <Palette className="h-6 w-6" />
-              Specialty & Decorative Work
+              Specialty &amp; Decorative Work
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -130,7 +129,7 @@ const PaintersDigitalMarketing = () => {
       </p>
       <ul>
         <li>Google My Business optimization with project photos</li>
-        <li>Location-specific landing pages (e.g., "House Painters [City]")</li>
+        <li>Location-specific landing pages (e.g., &quot;House Painters [City]&quot;)</li>
         <li>Local keyword optimization and content</li>
         <li>Citations in local contractor directories</li>
         <li>Reviews management and customer feedback</li>
@@ -181,7 +180,7 @@ const PaintersDigitalMarketing = () => {
         Target homeowners actively searching for painting services:
       </p>
       <ul>
-        <li><strong>Search campaigns:</strong> "house painters near me", "interior painting"</li>
+        <li><strong>Search campaigns:</strong> &quot;house painters near me&quot;, &quot;interior painting&quot;</li>
         <li><strong>Local campaigns:</strong> Target specific neighborhoods</li>
         <li><strong>Display campaigns:</strong> Visual ads on home improvement sites</li>
         <li><strong>Seasonal campaigns:</strong> Spring exterior painting promotions</li>
