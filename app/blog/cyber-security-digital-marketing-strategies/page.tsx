@@ -18,10 +18,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/cyber-security-digital-marketing.jpg",
       width: 1200,
       height: 630,
-      alt: "Cyber Security Digital Marketing Strategies"
+      alt: "Digital marketing strategies for cyber security companies - comprehensive guide and tactics"
     }],
     publishedTime: "2024-01-30T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.558Z",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Cyber Security Digital Marketing Strategies",
     description: "Expert guidance on cyber security digital marketing strategies. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/cyber-security-digital-marketing.jpg"],
     site: "@FractionalCMO"
   }
 });

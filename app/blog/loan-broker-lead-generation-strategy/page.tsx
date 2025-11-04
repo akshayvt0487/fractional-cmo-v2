@@ -17,10 +17,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/loan-broker-lead-generation-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Loan Broker Lead Generation Strategy"
+      alt: "Lead Generation Strategy Guide for Loan Brokers"
     }],
     publishedTime: "2025-01-03T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.869Z",
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Loan Broker Lead Generation Strategy",
     description: "Expert guidance on loan broker lead generation strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/loan-broker-lead-generation-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

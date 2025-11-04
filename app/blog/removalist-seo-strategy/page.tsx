@@ -16,10 +16,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.au/images/blog/removalist-seo-strategy-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search"
+      alt: "Complete SEO Strategy Guide for Removalist Businesses"
     }],
     publishedTime: "2024-03-15",
     modifiedTime: "2025-10-31T11:10:05.193Z",
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
     description: "Expert guidance on complete seo strategy for removalist businesses: dominate local search. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.au/images/blog/removalist-seo-strategy-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

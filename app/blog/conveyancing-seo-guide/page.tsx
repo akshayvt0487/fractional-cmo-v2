@@ -18,10 +18,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.au/images/blog/conveyancing-seo-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Conveyancing Seo Guide"
+      alt: "Conveyancing SEO Strategy Guide"
     }],
     publishedTime: "2025-09-03T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.518Z",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Conveyancing Seo Guide",
     description: "Expert guidance on conveyancing seo guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.au/images/blog/conveyancing-seo-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

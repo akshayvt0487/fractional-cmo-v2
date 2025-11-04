@@ -10,29 +10,13 @@ export const metadata = createMetadata({
   title: "Conveyancing Lead Generation Strategies",
   description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/conveyancing-lead-generation-strategies",
+  image: "/images/blog/conveyancing-lead-generation-hero.jpg",
   keywords: ["conveyancing", "lead", "generation", "strategies", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
-    title: "Conveyancing Lead Generation Strategies",
-    description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/conveyancing-lead-generation-strategies",
-    siteName: "Fractional CMO",
     type: "article",
-    images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
-      width: 1200,
-      height: 630,
-      alt: "Conveyancing Lead Generation Strategies"
-    }],
     publishedTime: "2025-09-05T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.505Z",
     authors: ["Basheer Padanna"]
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Conveyancing Lead Generation Strategies",
-    description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
-    site: "@FractionalCMO"
   }
 });
 const ConveyancingLeadGeneration = () => {

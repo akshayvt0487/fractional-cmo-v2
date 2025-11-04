@@ -6,32 +6,16 @@ import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import b2bLeadGenerationHero from '@/assets/blog/b2b-lead-generation-hero.jpg';
 export const metadata = createMetadata({
-  title: "B2b Lead Generation",
-  description: "Expert guidance on b2b lead generation. Learn proven strategies and best practices for business growth.",
+  title: "B2B Lead Generation",
+  description: "Expert guidance on B2B lead generation. Learn proven strategies and best practices for business growth.",
   path: "/blog/b2b-lead-generation",
-  keywords: ["lead", "generation", "digital marketing", "business growth", "marketing strategy"],
+  image: "/images/blog/b2b-lead-generation-hero.jpg",
+  keywords: ["b2b", "lead generation", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
-    title: "B2b Lead Generation",
-    description: "Expert guidance on b2b lead generation. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/b2b-lead-generation",
-    siteName: "Fractional CMO",
     type: "article",
-    images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
-      width: 1200,
-      height: 630,
-      alt: "B2b Lead Generation"
-    }],
     publishedTime: "2024-12-31T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.304Z",
     authors: ["Basheer Padanna"]
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "B2b Lead Generation",
-    description: "Expert guidance on b2b lead generation. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
-    site: "@FractionalCMO"
   }
 });
 const B2BLeadGeneration = () => {

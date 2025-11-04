@@ -18,10 +18,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/what-is-fractional-cmo.jpg",
       width: 1200,
       height: 630,
-      alt: "What Is Fractional Cmo"
+      alt: "What Is Fractional CMO Guide"
     }],
     publishedTime: "2024-08-23T00:00:00Z",
     modifiedTime: "2025-10-31T11:10:05.346Z",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "What Is Fractional Cmo",
     description: "Expert guidance on what is fractional cmo. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/what-is-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });

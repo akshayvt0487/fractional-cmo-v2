@@ -16,10 +16,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/local-seo-search.jpg",
       width: 1200,
       height: 630,
-      alt: "Trade Customer Retention Strategies"
+      alt: "Trade Business Customer Retention Strategy Guide"
     }],
     publishedTime: "2024-01-22T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:05.321Z",
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Trade Customer Retention Strategies",
     description: "Expert guidance on trade customer retention strategies. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/local-seo-search.jpg"],
     site: "@FractionalCMO"
   }
 });

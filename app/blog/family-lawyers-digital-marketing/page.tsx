@@ -17,10 +17,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/family-lawyers-digital-marketing-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Family Lawyers Digital Marketing"
+      alt: "Digital marketing strategies for family lawyers - comprehensive guide for law firms"
     }],
     publishedTime: "2024-12-15T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.650Z",
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Family Lawyers Digital Marketing",
     description: "Expert guidance on family lawyers digital marketing. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/family-lawyers-digital-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

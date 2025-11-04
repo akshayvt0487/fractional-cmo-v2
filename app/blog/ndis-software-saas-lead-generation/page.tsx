@@ -23,10 +23,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/ndis-software-lead-gen-unique.jpg",
       width: 1200,
       height: 630,
-      alt: "Ndis Software Saas Lead Generation"
+      alt: "NDIS Software SaaS Lead Generation Strategy Guide"
     }],
     publishedTime: "2024-01-20",
     modifiedTime: "2025-10-31T11:10:05.022Z",
@@ -36,7 +36,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Software Saas Lead Generation",
     description: "Expert guidance on ndis software saas lead generation. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/ndis-software-lead-gen-unique.jpg"],
     site: "@FractionalCMO"
   }
 });

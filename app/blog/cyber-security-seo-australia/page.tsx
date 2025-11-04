@@ -17,10 +17,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/cyber-security-seo-australia.jpg",
       width: 1200,
       height: 630,
-      alt: "Cyber Security Seo Australia"
+      alt: "SEO strategies for cyber security companies in Australia - complete optimization guide"
     }],
     publishedTime: "2024-01-25T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.601Z",
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Cyber Security Seo Australia",
     description: "Expert guidance on cyber security seo australia. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/cyber-security-seo-australia.jpg"],
     site: "@FractionalCMO"
   }
 });

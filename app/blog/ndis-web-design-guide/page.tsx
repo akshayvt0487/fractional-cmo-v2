@@ -18,10 +18,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/ndis-support-care.jpg",
       width: 1200,
       height: 630,
-      alt: "Ndis Web Design Guide"
+      alt: "NDIS Web Design and Development Guide"
     }],
     publishedTime: "2024-03-20T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:05.078Z",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Web Design Guide",
     description: "Expert guidance on ndis web design guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/ndis-support-care.jpg"],
     site: "@FractionalCMO"
   }
 });

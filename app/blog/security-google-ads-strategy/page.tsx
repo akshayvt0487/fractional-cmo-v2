@@ -7,29 +7,13 @@ export const metadata = createMetadata({
   title: "Security Google Ads Strategy",
   description: "Expert guidance on security google ads strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/security-google-ads-strategy",
-  keywords: ["security", "google", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  image: "/images/blog/security-google-ads-strategy-hero.jpg",
+  keywords: ["security", "google ads", "strategy", "digital marketing", "business growth", "marketing strategy", "PPC"],
   openGraph: {
-    title: "Security Google Ads Strategy",
-    description: "Expert guidance on security google ads strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/security-google-ads-strategy",
-    siteName: "Fractional CMO",
     type: "article",
-    images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
-      width: 1200,
-      height: 630,
-      alt: "Security Google Ads Strategy"
-    }],
     publishedTime: "2025-01-04",
     modifiedTime: "2025-10-31T11:10:05.237Z",
     authors: ["Basheer Padanna"]
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Security Google Ads Strategy",
-    description: "Expert guidance on security google ads strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
-    site: "@FractionalCMO"
   }
 });
 const SecurityGoogleAdsStrategy = () => {

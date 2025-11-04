@@ -18,10 +18,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/tax-advisor-google-ads-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Tax Advisor Google Ads Strategy"
+      alt: "Tax Advisor Google Ads Strategy Guide"
     }],
     publishedTime: "2024-12-30",
     modifiedTime: "2025-10-31T11:10:05.272Z",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Tax Advisor Google Ads Strategy",
     description: "Expert guidance on tax advisor google ads strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/tax-advisor-google-ads-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

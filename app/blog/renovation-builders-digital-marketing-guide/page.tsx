@@ -18,10 +18,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/renovation-builders-digital-marketing-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Renovation Builders Digital Marketing Guide"
+      alt: "Digital Marketing Strategy Guide for Renovation Builders"
     }],
     publishedTime: "2025-01-11",
     modifiedTime: "2025-10-31T11:10:05.207Z",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Renovation Builders Digital Marketing Guide",
     description: "Expert guidance on renovation builders digital marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/renovation-builders-digital-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

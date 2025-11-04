@@ -18,10 +18,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/when-to-hire-fractional-cmo.jpg",
       width: 1200,
       height: 630,
-      alt: "When To Hire Fractional Cmo"
+      alt: "When to Hire a Fractional CMO: Complete Guide"
     }],
     publishedTime: "2024-08-23T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:05.364Z",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "When To Hire Fractional Cmo",
     description: "Expert guidance on when to hire fractional cmo. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/when-to-hire-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });

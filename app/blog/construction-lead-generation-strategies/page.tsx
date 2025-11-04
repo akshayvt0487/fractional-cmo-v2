@@ -18,10 +18,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/construction-lead-generation.jpg",
       width: 1200,
       height: 630,
-      alt: "Construction Lead Generation Strategies"
+      alt: "Lead generation strategies for construction companies - proven tactics for getting quality leads"
     }],
     publishedTime: "2024-02-15T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.443Z",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Construction Lead Generation Strategies",
     description: "Expert guidance on construction lead generation strategies. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/construction-lead-generation.jpg"],
     site: "@FractionalCMO"
   }
 });

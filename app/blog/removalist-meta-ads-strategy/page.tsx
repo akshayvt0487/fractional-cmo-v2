@@ -15,10 +15,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/removalist-meta-ads-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies"
+      alt: "Meta Ads Strategy Guide for Removalists and Moving Companies"
     }],
     publishedTime: "2024-12-18",
     modifiedTime: "2025-10-31T11:10:05.169Z",
@@ -28,7 +28,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
     description: "Expert guidance on meta ads for removalists: complete facebook marketing guide for moving companies. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/removalist-meta-ads-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

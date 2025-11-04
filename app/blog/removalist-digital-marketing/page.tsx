@@ -18,10 +18,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/removalist-digital-marketing-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Removalist Digital Marketing"
+      alt: "Removalist Digital Marketing Guide and Strategy"
     }],
     publishedTime: "2024-12-31",
     modifiedTime: "2025-10-31T11:10:05.154Z",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Removalist Digital Marketing",
     description: "Expert guidance on removalist digital marketing. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/removalist-digital-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

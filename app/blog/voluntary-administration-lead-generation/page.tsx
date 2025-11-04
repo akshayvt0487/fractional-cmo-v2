@@ -16,10 +16,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/voluntary-administration-lead-generation-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Voluntary Administration Lead Generation"
+      alt: "Voluntary Administration Lead Generation Guide"
     }],
     publishedTime: "2025-01-15",
     modifiedTime: "2025-10-31T11:10:05.333Z",
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Voluntary Administration Lead Generation",
     description: "Expert guidance on voluntary administration lead generation. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/voluntary-administration-lead-generation-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

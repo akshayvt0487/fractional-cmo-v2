@@ -17,10 +17,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/financial-planner-seo-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Financial Planner Seo Guide"
+      alt: "SEO guide for financial planners - comprehensive search engine optimization strategies"
     }],
     publishedTime: "2024-12-31T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.673Z",
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Financial Planner Seo Guide",
     description: "Expert guidance on financial planner seo guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/financial-planner-seo-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

@@ -19,10 +19,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/criminal-lawyers-digital-marketing-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Criminal Lawyers Digital Marketing"
+      alt: "Digital marketing strategies for criminal lawyers - comprehensive marketing guide"
     }],
     publishedTime: "2024-02-05T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.542Z",
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Criminal Lawyers Digital Marketing",
     description: "Expert guidance on criminal lawyers digital marketing. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/criminal-lawyers-digital-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

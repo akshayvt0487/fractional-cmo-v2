@@ -17,10 +17,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.au/images/blog/bricklayers-lead-generation-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Bricklayers Growth Marketing Strategy"
+      alt: "Bricklayers Growth Marketing and Lead Generation Strategy"
     }],
     publishedTime: "2025-01-14",
     modifiedTime: "2025-10-31T11:10:04.341Z",
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Bricklayers Growth Marketing Strategy",
     description: "Expert guidance on bricklayers growth marketing strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.au/images/blog/bricklayers-lead-generation-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

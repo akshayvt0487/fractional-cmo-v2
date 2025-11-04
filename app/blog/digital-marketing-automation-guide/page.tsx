@@ -19,10 +19,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/digital-marketing-automation.jpg",
       width: 1200,
       height: 630,
-      alt: "Digital Marketing Automation Guide"
+      alt: "Complete Digital Marketing Automation Guide and Strategy"
     }],
     publishedTime: "2024-01-24T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.608Z",
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Digital Marketing Automation Guide",
     description: "Expert guidance on digital marketing automation guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/digital-marketing-automation.jpg"],
     site: "@FractionalCMO"
   }
 });

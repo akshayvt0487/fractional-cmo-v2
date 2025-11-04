@@ -17,10 +17,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/cyber-security-growth-hacking.jpg",
       width: 1200,
       height: 630,
-      alt: "Cyber Security Growth Hacking"
+      alt: "Growth hacking strategies for cyber security companies - learn proven tactics for business growth"
     }],
     publishedTime: "2024-01-20T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.588Z",
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Cyber Security Growth Hacking",
     description: "Expert guidance on cyber security growth hacking. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/cyber-security-growth-hacking.jpg"],
     site: "@FractionalCMO"
   }
 });

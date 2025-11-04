@@ -17,10 +17,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/security-digital-marketing-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Security Digital Marketing Guide"
+      alt: "Security Company Digital Marketing Strategy Guide"
     }],
     publishedTime: "2025-01-05",
     modifiedTime: "2025-10-31T11:10:05.228Z",
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Security Digital Marketing Guide",
     description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/security-digital-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

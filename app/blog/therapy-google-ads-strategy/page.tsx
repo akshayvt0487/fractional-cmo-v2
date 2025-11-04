@@ -16,10 +16,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/therapy-google-ads-strategy-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Therapy Google Ads Strategy"
+      alt: "Google Ads Strategy Guide for Therapy Practices"
     }],
     publishedTime: "2024-12-08T09:00:00+10:00",
     modifiedTime: "2025-10-31T11:10:05.281Z",
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Therapy Google Ads Strategy",
     description: "Expert guidance on therapy google ads strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/therapy-google-ads-strategy-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

@@ -7,27 +7,17 @@ import StrategyForm from '@/components/ui/strategy-form';
 import heroImage from '@/assets/blog/ndis-lead-generation-strategies-hero.jpg';
 import { relatedArticles } from '@/utils/seoUtils';
 export const metadata = createMetadata({
-  title: "Ndis Lead Generation Strategies",
-  description: "Expert guidance on ndis lead generation strategies. Learn proven strategies and best practices for business growth.",
+  title: "NDIS Lead Generation Strategies",
+  description: "Expert guidance on NDIS lead generation strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-lead-generation-strategies",
-  keywords: ["ndis", "lead", "generation", "strategies", "digital marketing", "business growth", "marketing strategy"],
+  image: "/images/blog/ndis-lead-generation-strategies-hero.jpg",
+  keywords: ["ndis", "lead generation", "digital marketing", "disability services", "ndis provider", "marketing strategy"],
   openGraph: {
-    title: "Ndis Lead Generation Strategies",
-    description: "Expert guidance on ndis lead generation strategies. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-lead-generation-strategies",
-    siteName: "Fractional CMO",
     type: "article",
-    images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
-      width: 1200,
-      height: 630,
-      alt: "Ndis Lead Generation Strategies"
-    }],
     publishedTime: "2025-01-18",
     modifiedTime: "2025-10-31T11:10:04.986Z",
     authors: ["Basheer Padanna"]
-  },
-  twitter: {
+  });
     card: "summary_large_image",
     title: "Ndis Lead Generation Strategies",
     description: "Expert guidance on ndis lead generation strategies. Learn proven strategies and best practices for business growth.",

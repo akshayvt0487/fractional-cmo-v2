@@ -17,10 +17,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/finance-broker-lead-generation-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Financial Planner Lead Generation"
+      alt: "Lead generation strategies for financial planners - proven tactics for client acquisition"
     }],
     publishedTime: "2024-12-29T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.663Z",
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Financial Planner Lead Generation",
     description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/finance-broker-lead-generation-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

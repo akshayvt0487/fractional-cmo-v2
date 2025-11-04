@@ -7,20 +7,28 @@ import Citation from '@/components/Citation';
 import divorceLawyersDigitalMarketingHero from '@/assets/blog/divorce-lawyers-digital-marketing-hero.jpg';
 export const metadata = createMetadata({
   title: "Divorce Lawyers Digital Marketing",
-  description: "Expert guidance on divorce lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+  description: "Expert guidance on digital marketing for divorce lawyers. Learn proven strategies to attract clients and grow your law practice.",
   path: "/blog/divorce-lawyers-digital-marketing",
-  keywords: ["divorce", "lawyers", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
+  image: "/images/blog/divorce-lawyers-digital-marketing-hero.jpg",
+  keywords: [
+    "divorce lawyers",
+    "legal marketing",
+    "digital marketing",
+    "law firm growth",
+    "client acquisition",
+    "legal services marketing"
+  ],
   openGraph: {
     title: "Divorce Lawyers Digital Marketing",
-    description: "Expert guidance on divorce lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+    description: "Expert guidance on digital marketing for divorce lawyers. Learn proven strategies to attract clients and grow your law practice.",
     url: "https://your-domain.com/blog/divorce-lawyers-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/divorce-lawyers-digital-marketing-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Divorce Lawyers Digital Marketing"
+      alt: "Digital marketing strategies for divorce lawyers - comprehensive guide to client acquisition"
     }],
     publishedTime: "2024-12-15T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.641Z",
@@ -29,11 +37,12 @@ export const metadata = createMetadata({
   twitter: {
     card: "summary_large_image",
     title: "Divorce Lawyers Digital Marketing",
-    description: "Expert guidance on divorce lawyers digital marketing. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    description: "Expert guidance on digital marketing for divorce lawyers. Learn proven strategies to attract clients and grow your law practice.",
+    images: ["/images/blog/divorce-lawyers-digital-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });
+
 const DivorceLawyersDigitalMarketing = () => {
   const articleData = {
     headline: "Divorce Lawyers Digital Marketing: Complete Client Acquisition Guide for Divorce Attorneys 2025",

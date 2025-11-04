@@ -17,10 +17,10 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/mechanic-digital-marketing-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Mechanic Digital Marketing Guide"
+      alt: "Digital Marketing Strategy Guide for Mechanics"
     }],
     publishedTime: "2025-01-09",
     modifiedTime: "2025-10-31T11:10:04.904Z",
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Mechanic Digital Marketing Guide",
     description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/mechanic-digital-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });
