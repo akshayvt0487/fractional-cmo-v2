@@ -15,7 +15,7 @@ export const metadata = createMetadata({
   description:
     "Expert guidance on NDIS lead generation strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-lead-generation-strategies",
-  image: "/images/blog/ndis-lead-generation-strategies-hero.jpg",
+  image: "/assets/blog/ndis-lead-generation-strategies-hero.jpg",
   keywords: [
     "ndis",
     "lead generation",
@@ -35,7 +35,7 @@ export const metadata = createMetadata({
     title: "NDIS Lead Generation Strategies",
     description:
       "Expert guidance on NDIS lead generation strategies. Learn proven strategies and best practices for business growth.",
-    images: ["/images/blog/ndis-lead-generation-strateygies-hero.jpg"],
+    images: ["/assets/blog/ndis-lead-generation-strateygies-hero.jpg"],
     site: "@FractionalCMO",
   },
 });
