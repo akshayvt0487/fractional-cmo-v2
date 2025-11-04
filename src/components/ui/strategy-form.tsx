@@ -274,8 +274,11 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
               required
               value={formData.challenge}
               onChange={(e) => handleInputChange("challenge", e.target.value)}
-              placeholder='Please share:\r\n\u2022 What industry/niche you&apos;re in\r\n\u2022 Your biggest growth challenge right now  \r\n\u2022 Current marketing efforts (if any)\r\n\u2022 What success looks like for your business'
-
+              placeholder={`Please share:
+• What industry/niche you’re in
+• Your biggest growth challenge
+• Current marketing efforts (if any)
+• What success looks like for your business`}
 
 
 
@@ -301,7 +304,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
             </Select>
           </div>
 
-          <Button type="submit" className="w-full h-12 text-base" disabled={isSubmitting}>
+          <Button type="submit" className="w-full h-12 bg-[#0F172A] text-white cursor-pointer hover:bg-[#0F172A]/90" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit Request"}
           </Button>
         </form>

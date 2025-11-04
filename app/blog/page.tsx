@@ -291,7 +291,7 @@ const Blog = () => {
         </section>
 
         {/* Search and Category Filtering */}
-        <section className="py-6 md:py-8 border-b">
+        <section className="py-6 md:py-8 border-b ">
           <div className="container max-w-7xl px-4 md:px-6">
             {/* Search Bar */}
             <div className="mb-6 md:mb-8 ">
@@ -331,7 +331,7 @@ const Blog = () => {
             <BlogMegaMenu
               selectedCategory={selectedCategory}
               onCategorySelect={setSelectedCategory}
-              className="mb-6 cursor-pointer" />
+              className="mb-6" />
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mt-4 md:mt-6 ">
               <p className="text-xs md:text-sm text-muted-foreground">
@@ -378,8 +378,8 @@ const Blog = () => {
         </section>
 
         {/* Main Content */}
-        <section className="py-6 md:py-8 lg:py-12">
-          <div className="container max-w-7xl px-4 md:px-6">
+        <section className="py-6 md:py-8 lg:py-12 ">
+          <div className="container max-w-7xl px-4 md:px-6 mx-auto">
             <VirtualizedBlogGrid
               key={`${selectedCategory}-${sortOrder}`}
               posts={filteredPosts}

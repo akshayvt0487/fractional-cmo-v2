@@ -7,6 +7,8 @@ import StrategyForm from '@/components/ui/strategy-form';
 import heroImage from '@/assets/blog/ndis-lead-generation-strategies-hero.jpg';
 import { relatedArticles } from '@/utils/seoUtils';
 
+
+
 // ✅ Page metadata (SEO, OG, Twitter, Canonical, Robots)
 export const metadata = createMetadata({
   title: "NDIS Lead Generation Strategies",
@@ -78,7 +80,7 @@ const faqs = [
 ];
 
 // ✅ Page component
-export default function NDISLeadGenerationStrategies() {
+ function NDISLeadGenerationStrategies() {
   // ✅ JSON-LD Schema for SEO
   const articleSchema = {
     "@context": "https://schema.org",
@@ -515,6 +517,7 @@ export default function NDISLeadGenerationStrategies() {
   </>
   
   )
+};
   
 
 export default NDISLeadGenerationStrategies;

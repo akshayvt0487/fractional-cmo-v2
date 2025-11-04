@@ -20,7 +20,7 @@ const Index = () => {
      
       <a href="#main" className="sr-only focus:not-sr-only">Skip to content</a>
       <Hero />
-      <main id="main" className="max-w-[1400px] mx-auto">
+      <main id="main" className="max-w-[1400px] p-[2rem] mx-auto">
         <FractionalCMO />
        <About/>
         <Capabilities />

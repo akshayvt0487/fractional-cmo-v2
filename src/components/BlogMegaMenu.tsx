@@ -124,8 +124,8 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
 
         {/* Mobile Menu Dropdown */}
         {isMobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 z-[60] mt-2 bg-popover  rounded-lg shadow-lg max-h-96 overflow-y-auto">
-            <div className="p-2 space-y-1">
+          <div className="absolute top-full left-0 right-0 z-[60] mt-2  rounded-lg shadow-lg max-h-96 overflow-y-auto ">
+            <div className="p-2 space-y-1 bg-white">
               {mainCategoryGroups.map((group) => (
                 <div key={group.name}>
                   <Button
@@ -156,7 +156,7 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
                             onClick={() => handleSubcategoryClick(group.name, subcategory)}
                             className={cn(
                               "w-full justify-start text-left text-sm",
-                              selectedCategory === categoryKey && "bg-primary text-primary-foreground"
+                              selectedCategory === categoryKey && "bg-white text-primary-foreground"
                             )}
                           >
                             {subcategory}
@@ -177,11 +177,11 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
   // Desktop Mega Menu
   return (
     <div className={cn("relative", className)} ref={dropdownRef}>
-      <div className="flex flex-wrap items-center gap-1 bg-background   rounded-lg p-2">
+      <div className="flex flex-wrap items-center gap-1 bg-gray-100 border-1 border-gray-200   rounded-lg p-2">
         {mainCategoryGroups.map((group) => (
           <div
             key={group.name}
-            className="relative"
+            className="relative bg-gray-100 cursor-pointer"
             onMouseEnter={() => handleMouseEnter(group.name)}
             onMouseLeave={handleMouseLeave}
           >
@@ -190,7 +190,7 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
                        selectedCategory.startsWith(`${group.name === "Trade/Tradies" ? "Tradies" : group.name} - `)) ? "default" : "ghost"}
               onClick={() => handleCategoryClick(group.name, !!group.subcategories)}
               className={cn(
-                "relative",
+                "relative cursor-pointer",
                 (selectedCategory === group.name || (group.name === "Trade/Tradies" && selectedCategory === "Tradies")) && "bg-primary text-primary-foreground",
                 selectedCategory.startsWith(`${group.name === "Trade/Tradies" ? "Tradies" : group.name} - `) && "bg-primary/10 text-primary "
               )}
@@ -204,7 +204,7 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
             {/* Desktop Dropdown */}  
             {group.subcategories && activeDropdown === group.name && (
               <div 
-                className="absolute top-full left-0 z-60 mt-1 bg-white  rounded-lg shadow-lg p-2 min-w-48 cursor-pointer"
+                className="absolute top-full left-0 z-60 mt-1  rounded-lg bg-white shadow-lg p-2 min-w-48 cursor-pointer "
                 onMouseEnter={() => {
                   if (timeoutRef.current) clearTimeout(timeoutRef.current);
                 }}
@@ -217,13 +217,13 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
                       <Button
                         key={subcategory}
                         onClick={() => handleSubcategoryClick(group.name, subcategory)}
-                        className={cn(selectedCategory === categoryKey ? "w-full justify-start text-left text-sm  text-gray-600 cursor-pointer" : "text-gray-600 cursor-pointer  hover:text-black"
+                        className={cn(selectedCategory === categoryKey ? "w-full justify-start text-left text-sm bg-white text-gray-600 cursor-pointer" : "text-gray-600 cursor-pointer  hover:text-black"
                           ,
-                          selectedCategory === categoryKey && "bg-primary text-black "
+                          selectedCategory === categoryKey && "text-black "
                         )}
-                      >
+                      > 
                         <ul className="flex flex-col w-full">
-                          <li className="w-full">   {subcategory}</li>
+                          <li className="w-full">  - {subcategory}</li>
                         </ul>
                       
                       </Button>

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const SITE_NAME = "Fractional CMO";
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://fractional-cmo.com.au";
+
 export const SOCIAL_MEDIA = {
   twitter: "@FractionalCMO",
   facebook: "FractionalCMO",
@@ -52,7 +53,7 @@ export const defaultMetadata: Metadata = {
   },
 };
 
-interface PageMetadataInput {
+export interface PageMetadataInput {
   title?: string;
   description?: string;
   path?: string;
@@ -67,12 +68,13 @@ interface PageMetadataInput {
   };
   openGraph?: Metadata["openGraph"];
   twitter?: Metadata["twitter"];
-  schema?: Record<string, any>; // JSON-LD schema
+  schema?: Record<string, any>; // optional JSON-LD schema
 }
 
 export function createMetadata(input: PageMetadataInput = {}): Metadata {
   const title = input.title ? `${input.title} | ${SITE_NAME}` : DEFAULT_TITLE;
   const description = input.description || DEFAULT_DESCRIPTION;
+
   const url = input.path
     ? `${SITE_URL.replace(/\/$/, "")}${input.path}`
     : SITE_URL;
@@ -80,10 +82,13 @@ export function createMetadata(input: PageMetadataInput = {}): Metadata {
   const image = input.image || DEFAULT_IMAGE;
   const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image}`;
 
-  const hasArticleFields =
-    input.openGraph?.publishedTime ||
-    input.openGraph?.modifiedTime ||
-    input.openGraph?.authors;
+  // ✅ Works once `publishedTime`, `modifiedTime`, and `authors` are added via your .d.ts file
+  // Safely extract Open Graph article fields with loose typing
+const og = input.openGraph as Record<string, any> | undefined;
+
+const hasArticleFields =
+  og?.publishedTime || og?.modifiedTime || og?.authors;
+
 
   const robotsConfig = {
     index: input.robots?.index ?? true,
@@ -97,11 +102,9 @@ export function createMetadata(input: PageMetadataInput = {}): Metadata {
     description,
     metadataBase: new URL(SITE_URL),
     keywords: input.keywords || defaultMetadata.keywords,
-
     alternates: {
       canonical: input.canonical || url,
     },
-
     openGraph: {
       title,
       description,
@@ -118,7 +121,6 @@ export function createMetadata(input: PageMetadataInput = {}): Metadata {
       ],
       ...input.openGraph,
     },
-
     twitter: {
       card: "summary_large_image",
       title,
@@ -128,7 +130,6 @@ export function createMetadata(input: PageMetadataInput = {}): Metadata {
       creator: SOCIAL_MEDIA.twitter,
       ...input.twitter,
     },
-
     robots: robotsConfig,
   };
 }

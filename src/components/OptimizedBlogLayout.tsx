@@ -171,7 +171,7 @@ const OptimizedBlogLayout = ({
         </div>
       </main>
       
-      <Footer />
+     
     </>
   );
 };
