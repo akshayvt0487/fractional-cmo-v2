@@ -16,7 +16,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "/images/blog/accounting-digital-marketing-hero.jpg",
+       url: accountingDigitalMarketingHero.src,
       width: 1200,
       height: 630,
       alt: "Comprehensive Digital Marketing Guide for Accountants"
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Accounting Digital Marketing Guide",
     description: "Expert guidance on accounting digital marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["/images/blog/accounting-digital-marketing-hero.jpg"],
+    images: [accountingDigitalMarketingHero.src],
     site: "@FractionalCMO"
   }
 });

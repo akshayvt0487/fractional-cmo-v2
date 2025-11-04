@@ -1,28 +1,29 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
-export const SITE_NAME = 'Fractional CMO';
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://fractional-cmo.com.au';
+export const SITE_NAME = "Fractional CMO";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://fractional-cmo.com.au";
 export const SOCIAL_MEDIA = {
-  twitter: '@FractionalCMO',
-  facebook: 'FractionalCMO',
-  linkedin: 'fractional-cmo',
+  twitter: "@FractionalCMO",
+  facebook: "FractionalCMO",
+  linkedin: "fractional-cmo",
 };
 
-const DEFAULT_TITLE = 'Fractional CMO — Growth marketing for service businesses';
+const DEFAULT_TITLE = "Fractional CMO — Growth marketing for service businesses";
 const DEFAULT_DESCRIPTION =
-  'Fractional CMO provides growth marketing strategy, lead generation and Google Ads expertise for service businesses.';
-const DEFAULT_IMAGE = '/images/hero-fractional-cmo.jpg';
+  "Fractional CMO provides growth marketing strategy, lead generation and Google Ads expertise for service businesses.";
+const DEFAULT_IMAGE = "/images/hero-fractional-cmo.jpg";
 
 export const defaultMetadata: Metadata = {
   title: DEFAULT_TITLE,
   description: DEFAULT_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
   keywords: [
-    'fractional cmo',
-    'growth marketing',
-    'lead generation',
-    'google ads',
-    'digital marketing',
+    "fractional cmo",
+    "growth marketing",
+    "lead generation",
+    "google ads",
+    "digital marketing",
   ],
   openGraph: {
     title: DEFAULT_TITLE,
@@ -37,17 +38,17 @@ export const defaultMetadata: Metadata = {
         alt: SITE_NAME,
       },
     ],
-    type: 'website',
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
     images: [DEFAULT_IMAGE],
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -57,50 +58,56 @@ interface PageMetadataInput {
   path?: string;
   image?: string;
   keywords?: string[];
-  openGraph?: {
-    title?: string;
-    description?: string;
-    url?: string;
-    siteName?: string;
-    type?: 'website' | 'article';
-    images?: Array<{
-      url: string;
-      width?: number;
-      height?: number;
-      alt?: string;
-    }>;
-    publishedTime?: string;
-    modifiedTime?: string;
-    authors?: string[];
+  canonical?: string;
+  robots?: {
+    index?: boolean;
+    follow?: boolean;
+    nocache?: boolean;
+    googleBot?: string;
   };
-  twitter?: {
-    card?: 'summary' | 'summary_large_image';
-    site?: string;
-    creator?: string;
-    title?: string;
-    description?: string;
-    images?: string[];
-  };
-};
+  openGraph?: Metadata["openGraph"];
+  twitter?: Metadata["twitter"];
+  schema?: Record<string, any>; // JSON-LD schema
+}
 
 export function createMetadata(input: PageMetadataInput = {}): Metadata {
   const title = input.title ? `${input.title} | ${SITE_NAME}` : DEFAULT_TITLE;
   const description = input.description || DEFAULT_DESCRIPTION;
-  const url = input.path ? `${SITE_URL.replace(/\/$/, '')}${input.path}` : SITE_URL;
-  const image = input.image || DEFAULT_IMAGE;
+  const url = input.path
+    ? `${SITE_URL.replace(/\/$/, "")}${input.path}`
+    : SITE_URL;
 
-  const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`;
+  const image = input.image || DEFAULT_IMAGE;
+  const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image}`;
+
+  const hasArticleFields =
+    input.openGraph?.publishedTime ||
+    input.openGraph?.modifiedTime ||
+    input.openGraph?.authors;
+
+  const robotsConfig = {
+    index: input.robots?.index ?? true,
+    follow: input.robots?.follow ?? true,
+    nocache: input.robots?.nocache ?? false,
+    googleBot: input.robots?.googleBot,
+  };
 
   return {
     title,
     description,
     metadataBase: new URL(SITE_URL),
     keywords: input.keywords || defaultMetadata.keywords,
+
+    alternates: {
+      canonical: input.canonical || url,
+    },
+
     openGraph: {
       title,
       description,
       url,
       siteName: SITE_NAME,
+      type: hasArticleFields ? "article" : "website",
       images: [
         {
           url: imageUrl,
@@ -109,23 +116,19 @@ export function createMetadata(input: PageMetadataInput = {}): Metadata {
           alt: title,
         },
       ],
-      type: 'article',
+      ...input.openGraph,
     },
+
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title,
       description,
       images: [imageUrl],
       site: SOCIAL_MEDIA.twitter,
       creator: SOCIAL_MEDIA.twitter,
+      ...input.twitter,
     },
+
+    robots: robotsConfig,
   };
 }
-
-/*
-Usage:
-- For site-wide defaults, import and export `defaultMetadata` from `app/layout.tsx`:
-    export const metadata = defaultMetadata;
-
-- For per-page metadata, export `generateMetadata` or `metadata` in the page file and call `createMetadata({ title, description, path })`.
-*/

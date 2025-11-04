@@ -1,11 +1,13 @@
-import { createMetadata } from "@/lib/seo";
 import React from 'react';
+import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
 import heroImage from '@/assets/blog/ndis-lead-generation-strategies-hero.jpg';
 import { relatedArticles } from '@/utils/seoUtils';
+
+// ✅ Page metadata (SEO, OG, Twitter, Canonical, Robots)
 export const metadata = createMetadata({
   title: "NDIS Lead Generation Strategies",
   description:
@@ -31,39 +33,94 @@ export const metadata = createMetadata({
     title: "NDIS Lead Generation Strategies",
     description:
       "Expert guidance on NDIS lead generation strategies. Learn proven strategies and best practices for business growth.",
-    images: ["/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/ndis-lead-generation-strateygies-hero.jpg"],
     site: "@FractionalCMO",
   },
 });
 
-const NDISLeadGenerationStrategies = () => {
-  const articleData = {
-    headline: "NDIS Lead Generation Strategies: A Complete Guide for Providers",
-    description: "Master proven NDIS lead generation strategies to attract quality participants. Learn digital marketing, referral systems, and compliance-focused approaches that work.",
-    author: "Basheer Padanna",
-    publishedDate: "2025-01-18",
-    modifiedDate: "2025-01-18",
-    url: "/blog/ndis-lead-generation-strategies",
-    imageUrl: heroImage,
-    category: "NDIS Marketing",
-    readTime: "26 min read",
-    tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Provider Growth"]
-  };
-  const faqs = [{
+// ✅ Article Data (used by OptimizedBlogLayout)
+const articleData = {
+  headline: "NDIS Lead Generation Strategies: A Complete Guide for Providers",
+  description:
+    "Master proven NDIS lead generation strategies to attract quality participants. Learn digital marketing, referral systems, and compliance-focused approaches that work.",
+  author: "Basheer Padanna",
+  publishedDate: "2025-01-18",
+  modifiedDate: "2025-10-31",
+  url: "/blog/ndis-lead-generation-strategies",
+  imageUrl: heroImage.src,
+  category: "NDIS Marketing",
+  readTime: "26 min read",
+  tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Provider Growth"],
+};
+
+// ✅ FAQ Schema data for SEO + layout
+const faqs = [
+  {
     question: "What are the most effective lead generation strategies for NDIS providers?",
-    answer: "The most effective strategies include local SEO optimization, Google Ads targeting NDIS keywords, content marketing about disability services, referral programs, and community engagement. Focus on building trust through testimonials and compliance certifications."
-  }, {
+    answer:
+      "The most effective strategies include local SEO optimization, Google Ads targeting NDIS keywords, content marketing about disability services, referral programs, and community engagement. Focus on building trust through testimonials and compliance certifications.",
+  },
+  {
     question: "How much should I budget for NDIS lead generation?",
-    answer: "Allocate 10-15% of your revenue to marketing. For new providers, budget $2,000-5,000 monthly for digital marketing including Google Ads, SEO, and content creation. ROI typically shows within 3-6 months with proper strategy."
-  }, {
+    answer:
+      "Allocate 10-15% of your revenue to marketing. For new providers, budget $2,000–$5,000 monthly for digital marketing including Google Ads, SEO, and content creation. ROI typically shows within 3–6 months with proper strategy.",
+  },
+  {
     question: "Can NDIS providers advertise directly to participants?",
-    answer: "Yes, but with strict compliance requirements. All marketing must be truthful, not misleading, and respect participant dignity. Avoid pressure tactics and ensure all claims about services are accurate and verifiable."
-  }, {
+    answer:
+      "Yes, but with strict compliance requirements. All marketing must be truthful, not misleading, and respect participant dignity. Avoid pressure tactics and ensure all claims about services are accurate and verifiable.",
+  },
+  {
     question: "What digital marketing channels work best for NDIS providers?",
-    answer: "Google search ads, local SEO, Facebook for community building, LinkedIn for professional networks, and email marketing for existing participants. Video content showcasing your team and services performs particularly well."
-  }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={heroImage} heroAlt="NDIS provider implementing digital lead generation strategies with participant-focused approach">
-      <section className="mb-12">
+    answer:
+      "Google search ads, local SEO, Facebook for community building, LinkedIn for professional networks, and email marketing for existing participants. Video content showcasing your team and services performs particularly well.",
+  },
+];
+
+// ✅ Page component
+export default function NDISLeadGenerationStrategies() {
+  // ✅ JSON-LD Schema for SEO
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: articleData.headline,
+    description: articleData.description,
+    author: {
+      "@type": "Person",
+      name: articleData.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Fractional CMO",
+      logo: {
+        "@type": "ImageObject",
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/logo.png`,
+      },
+    },
+    datePublished: articleData.publishedDate,
+    dateModified: articleData.modifiedDate,
+    image: `${process.env.NEXT_PUBLIC_SITE_URL}${articleData.url}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${process.env.NEXT_PUBLIC_SITE_URL}${articleData.url}`,
+    },
+  };
+
+  return (
+    <>
+      {/* ✅ Inject JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+
+      <OptimizedBlogLayout
+        articleData={articleData}
+        relatedArticles={relatedArticles.ndis}
+        faqs={faqs}
+        heroImage={heroImage}
+        heroAlt="NDIS provider implementing digital lead generation strategies with participant-focused approach"
+      >  <section className="mb-12">
         <Card className="border-l-4 border-l-primary bg-primary/5 mb-8">
           <CardContent className="p-6">
             <div className="flex items-center gap-4 mb-4">
@@ -455,5 +512,9 @@ const NDISLeadGenerationStrategies = () => {
       </section>
 
     </OptimizedBlogLayout>;
-};
+  </>
+  
+  )
+  
+
 export default NDISLeadGenerationStrategies;
