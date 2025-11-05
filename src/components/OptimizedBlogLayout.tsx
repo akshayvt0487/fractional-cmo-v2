@@ -43,11 +43,14 @@ const OptimizedBlogLayout = ({
   const { isUnlocked, unlock } = useContentGate(articleData.url.replace('/blog/', ''));
   const [showSocialPreview, setShowSocialPreview] = useState(false);
 
-  // Always generate dynamic related articles for better relevance and variety
+  // Use provided relatedArticles or generate dynamic ones for better relevance and variety
   const relatedArticles = useMemo(() => {
+    if (providedRelatedArticles && providedRelatedArticles.length > 0) {
+      return providedRelatedArticles;
+    }
     const slug = articleData.url.replace('/blog/', '');
     return getRelatedArticles(slug, 4);
-  }, [articleData.url]);
+  }, [articleData.url, providedRelatedArticles]);
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },
