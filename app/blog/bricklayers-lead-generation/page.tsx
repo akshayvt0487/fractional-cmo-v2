@@ -3,65 +3,98 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import StrategyForm from '@/components/ui/strategy-form';
 import heroImage from '@/assets/blog/bricklayers-lead-generation-hero.jpg';
 import { relatedArticles } from '@/utils/seoUtils';
+
+// ————————————————————————————————————————
+// ✅ FULL SEO METADATA
+// (Synced with articleData for consistency)
+// ————————————————————————————————————————
 export const metadata = createMetadata({
-  title: "Bricklayers Lead Generation",
-  description: "Expert guidance on bricklayers lead generation. Learn proven strategies and best practices for business growth.",
+  title: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
+  description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
   path: "/blog/bricklayers-lead-generation",
-  keywords: ["bricklayers", "lead", "generation", "digital marketing", "business growth", "marketing strategy"],
+  keywords: [
+    "bricklayer lead generation",
+    "get bricklaying jobs",
+    "masonry lead generation",
+    "local SEO for bricklayers",
+    "trade marketing",
+    "construction leads",
+    "Google Ads for tradies"
+  ],
   openGraph: {
-    title: "Bricklayers Lead Generation",
-    description: "Expert guidance on bricklayers lead generation. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/bricklayers-lead-generation",
+    title: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
+    description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/bricklayers-lead-generation`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/bricklayers-lead-generation-hero.jpg`,
       width: 1200,
       height: 630,
-      alt: "Bricklayers Lead Generation"
+      alt: "Bricklayers Lead Generation Strategies"
     }],
-    publishedTime: "2025-01-18",
+    publishedTime: "2025-01-18T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.357Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bricklayers Lead Generation",
-    description: "Expert guidance on bricklayers lead generation. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    title: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
+    description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/bricklayers-lead-generation-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
-const BricklayersLeadGeneration = () => {
-  const articleData = {
-    headline: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
-    description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
-    author: "Basheer Padanna",
-    publishedDate: "2025-01-18",
-    modifiedDate: "2025-01-18",
-    url: "/blog/bricklayers-lead-generation",
-    imageUrl: heroImage,
-    category: "Trade Marketing",
-    readTime: "24 min read",
-    tags: ["Bricklaying", "Lead Generation", "Trade Marketing", "Construction", "Local SEO"]
-  };
-  const faqs = [{
+
+// ————————————————————————————————————————
+// ✅ Article Data & FAQs
+// ————————————————————————————————————————
+const articleData = {
+  headline: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
+  description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
+  author: "Basheer Padanna",
+  publishedDate: "2025-01-18",
+  modifiedDate: "2025-10-31T11:10:04.357Z", // Synced with metadata for freshness
+  url: "/blog/bricklayers-lead-generation",
+  imageUrl: heroImage,
+  category: "Trade Marketing",
+  readTime: "24 min read",
+  tags: ["Bricklaying", "Lead Generation", "Trade Marketing", "Construction", "Local SEO"]
+};
+
+const faqs = [
+  {
     question: "What's the best way for bricklayers to find new jobs?",
     answer: "The most effective methods combine online presence (Google My Business, website with photos) with traditional networking (building relationships with builders, architects, and past clients). Word-of-mouth referrals remain the strongest source for quality jobs."
-  }, {
+  },
+  {
     question: "Should bricklayers invest in online advertising?",
     answer: "Yes, especially Google Ads for local searches like 'bricklayer near me'. Start with a small budget ($300-500/month) and focus on residential projects or your specialty area like restoration or feature walls."
-  }, {
+  },
+  {
     question: "How important is having a website for bricklayers?",
     answer: "Very important. Even a simple website with photos of your work, contact details, and customer reviews significantly increases your credibility. Many clients won't hire tradespeople without seeing examples of their work online."
-  }, {
+  },
+  {
     question: "What types of projects should bricklayers target for lead generation?",
     answer: "Focus on your strengths - whether that's new home construction, restoration work, commercial projects, or decorative brickwork. Specializing in specific project types often leads to higher-paying jobs and better client relationships."
-  }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={heroImage} heroAlt="Professional bricklayer working on construction project with digital marketing elements showcasing lead generation strategies">
+  }
+];
+
+// ————————————————————————————————————————
+// ✅ Page Component
+// ————————————————————————————————————————
+const BricklayersLeadGeneration = () => {
+  return (
+    <OptimizedBlogLayout
+      articleData={articleData}
+      relatedArticles={relatedArticles.tradies}
+      faqs={faqs}
+      heroImage={heroImage}
+      heroAlt="Professional bricklayer working on construction project with digital marketing elements showcasing lead generation strategies"
+    >
       <section className="mb-12">
         <Card className="border-l-4 border-l-primary bg-primary/5 mb-8">
           <CardContent className="p-6">
@@ -96,23 +129,23 @@ const BricklayersLeadGeneration = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-8 text-foreground">Understanding Your Market</h2>
-        
+
         <div className="mb-8">
           <h3 className="text-2xl font-semibold mb-4 text-foreground">Types of Bricklaying Projects</h3>
           <p className="text-muted-foreground mb-4">
             Different project types require different marketing approaches. Understanding your target market helps focus your lead generation efforts:
           </p>
-          
+
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3 text-primary">Residential Projects</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• New home construction</li>
-                  <li>• Extensions and renovations</li>
-                  <li>• Garden walls and landscaping</li>
-                  <li>• Fireplaces and chimneys</li>
-                  <li>• Decorative feature walls</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>New home construction</li>
+                  <li>Extensions and renovations</li>
+                  <li>Garden walls and landscaping</li>
+                  <li>Fireplaces and chimneys</li>
+                  <li>Decorative feature walls</li>
                 </ul>
                 <div className="mt-4 p-3 bg-muted/50 rounded">
                   <p className="text-sm"><strong>Best marketing:</strong> Local SEO, Google Ads, social media showcasing</p>
@@ -122,12 +155,12 @@ const BricklayersLeadGeneration = () => {
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3 text-primary">Commercial Projects</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Office buildings and warehouses</li>
-                  <li>• Retail and hospitality venues</li>
-                  <li>• Industrial facilities</li>
-                  <li>• Public infrastructure</li>
-                  <li>• Heritage restoration</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Office buildings and warehouses</li>
+                  <li>Retail and hospitality venues</li>
+                  <li>Industrial facilities</li>
+                  <li>Public infrastructure</li>
+                  <li>Heritage restoration</li>
                 </ul>
                 <div className="mt-4 p-3 bg-muted/50 rounded">
                   <p className="text-sm"><strong>Best marketing:</strong> Industry networking, LinkedIn, trade publications</p>
@@ -174,34 +207,34 @@ const BricklayersLeadGeneration = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-8 text-foreground">Digital Lead Generation Strategies</h2>
-        
+
         <div className="mb-8">
           <h3 className="text-2xl font-semibold mb-4 text-foreground">Google My Business Optimization</h3>
           <p className="text-muted-foreground mb-6">
             Your Google My Business listing is often the first impression potential clients have of your business. Optimizing it properly can dramatically increase your local visibility.
           </p>
-          
+
           <div className="bg-primary/5 border border-primary/20 p-6 rounded-lg mb-6">
             <h4 className="font-semibold mb-4 text-primary">GMB Optimization Checklist</h4>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h5 className="font-medium mb-3">Essential Information</h5>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Complete business name and description</li>
-                  <li>• Accurate address and phone number</li>
-                  <li>• Business hours and service areas</li>
-                  <li>• Professional logo and cover photo</li>
-                  <li>• Categories: &quot;Bricklayer&quot; and &quot;Masonry&quot;</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Complete business name and description</li>
+                  <li>Accurate address and phone number</li>
+                  <li>Business hours and service areas</li>
+                  <li>Professional logo and cover photo</li>
+                  <li>Categories: "Bricklayer" and "Masonry"</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-3">Content Strategy</h5>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Upload high-quality project photos weekly</li>
-                  <li>• Respond to all reviews professionally</li>
-                  <li>• Post regular updates about completed work</li>
-                  <li>• Use Google Posts for special offers</li>
-                  <li>• Encourage satisfied clients to leave reviews</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Upload high-quality project photos weekly</li>
+                  <li>Respond to all reviews professionally</li>
+                  <li>Post regular updates about completed work</li>
+                  <li>Use Google Posts for special offers</li>
+                  <li>Encourage satisfied clients to leave reviews</li>
                 </ul>
               </div>
             </div>
@@ -246,29 +279,29 @@ const BricklayersLeadGeneration = () => {
             <div className="grid md:grid-cols-3 gap-4">
               <div>
                 <h5 className="font-medium mb-2">Core Services</h5>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• &quot;bricklayer [your city]&quot;</li>
-                  <li>• &quot;brick restoration [area]&quot;</li>
-                  <li>• &quot;garden wall builder&quot;</li>
-                  <li>• &quot;fireplace construction&quot;</li>
+                <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                  <li>"bricklayer [your city]"</li>
+                  <li>"brick restoration [area]"</li>
+                  <li>"garden wall builder"</li>
+                  <li>"fireplace construction"</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Long-tail Keywords</h5>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• &quot;bricklayer near me&quot;</li>
-                  <li>• &quot;best bricklayer [suburb]&quot;</li>
-                  <li>• &quot;brick wall repair&quot;</li>
-                  <li>• &quot;heritage brick restoration&quot;</li>
+                <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                  <li>"bricklayer near me"</li>
+                  <li>"best bricklayer [suburb]"</li>
+                  <li>"brick wall repair"</li>
+                  <li>"heritage brick restoration"</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Project-Specific</h5>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• &quot;house extension bricklayer&quot;</li>
-                  <li>• &quot;commercial bricklaying&quot;</li>
-                  <li>• &quot;retaining wall builder&quot;</li>
-                  <li>• &quot;chimney repair specialist&quot;</li>
+                <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                  <li>"house extension bricklayer"</li>
+                  <li>"commercial bricklaying"</li>
+                  <li>"retaining wall builder"</li>
+                  <li>"chimney repair specialist"</li>
                 </ul>
               </div>
             </div>
@@ -278,24 +311,24 @@ const BricklayersLeadGeneration = () => {
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">Website Essentials</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Clear contact information on every page</li>
-                  <li>• Photo gallery of completed projects</li>
-                  <li>• Service area coverage map</li>
-                  <li>• Customer testimonials and reviews</li>
-                  <li>• Mobile-friendly design</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Clear contact information on every page</li>
+                  <li>Photo gallery of completed projects</li>
+                  <li>Service area coverage map</li>
+                  <li>Customer testimonials and reviews</li>
+                  <li>Mobile-friendly design</li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">Content Ideas</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Project case studies with photos</li>
-                  <li>• &quot;Types of brick&quot; educational content</li>
-                  <li>• Maintenance tips for brick structures</li>
-                  <li>• Cost guides for common projects</li>
-                  <li>• Seasonal maintenance advice</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Project case studies with photos</li>
+                  <li>"Types of brick" educational content</li>
+                  <li>Maintenance tips for brick structures</li>
+                  <li>Cost guides for common projects</li>
+                  <li>Seasonal maintenance advice</li>
                 </ul>
               </CardContent>
             </Card>
@@ -314,9 +347,9 @@ const BricklayersLeadGeneration = () => {
               <div>
                 <h5 className="font-medium mb-2">Campaign: Local Bricklaying Services</h5>
                 <div className="bg-background p-4 rounded border">
-                  <p className="text-sm mb-2"><strong>Keywords:</strong> &quot;bricklayer Sydney&quot;, &quot;brick repair&quot;, &quot;garden wall builder&quot;</p>
+                  <p className="text-sm mb-2"><strong>Keywords:</strong> "bricklayer Sydney", "brick repair", "garden wall builder"</p>
                   <p className="text-sm mb-2"><strong>Budget:</strong> $20-40/day</p>
-                  <p className="text-sm mb-2"><strong>Ad Copy:</strong> &quot;Professional Bricklayer in Sydney | Free Quotes | 15+ Years Experience | Call Now&quot;</p>
+                  <p className="text-sm mb-2"><strong>Ad Copy:</strong> "Professional Bricklayer in Sydney | Free Quotes | 15+ Years Experience | Call Now"</p>
                   <p className="text-sm"><strong>Landing Page:</strong> Service area page with contact form and photo gallery</p>
                 </div>
               </div>
@@ -327,7 +360,7 @@ const BricklayersLeadGeneration = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-8 text-foreground">Traditional Lead Generation Methods</h2>
-        
+
         <div className="mb-8">
           <h3 className="text-2xl font-semibold mb-4 text-foreground">Building Industry Relationships</h3>
           <p className="text-muted-foreground mb-6">
@@ -338,36 +371,36 @@ const BricklayersLeadGeneration = () => {
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3 text-primary">Builders & Contractors</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Deliver quality work on time</li>
-                  <li>• Maintain competitive pricing</li>
-                  <li>• Be reliable and communicative</li>
-                  <li>• Offer flexible scheduling</li>
-                  <li>• Handle warranty work promptly</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Deliver quality work on time</li>
+                  <li>Maintain competitive pricing</li>
+                  <li>Be reliable and communicative</li>
+                  <li>Offer flexible scheduling</li>
+                  <li>Handle warranty work promptly</li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3 text-primary">Architects & Designers</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Understand design requirements</li>
-                  <li>• Suggest creative solutions</li>
-                  <li>• Work with heritage specifications</li>
-                  <li>• Provide material expertise</li>
-                  <li>• Meet aesthetic standards</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Understand design requirements</li>
+                  <li>Suggest creative solutions</li>
+                  <li>Work with heritage specifications</li>
+                  <li>Provide material expertise</li>
+                  <li>Meet aesthetic standards</li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3 text-primary">Fellow Tradies</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Landscapers and concreters</li>
-                  <li>• Roofers and guttering specialists</li>
-                  <li>• Waterproof membrane installers</li>
-                  <li>• Building inspectors</li>
-                  <li>• Demolition contractors</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Landscapers and concreters</li>
+                  <li>Roofers and guttering specialists</li>
+                  <li>Waterproof membrane installers</li>
+                  <li>Building inspectors</li>
+                  <li>Demolition contractors</li>
                 </ul>
               </CardContent>
             </Card>
@@ -378,20 +411,20 @@ const BricklayersLeadGeneration = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h5 className="font-medium mb-3">Monthly Actions</h5>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Visit 3-5 local builders&apos; offices</li>
-                  <li>• Attend construction industry events</li>
-                  <li>• Join local trade associations</li>
-                  <li>• Follow up on completed projects</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Visit 3-5 local builders' offices</li>
+                  <li>Attend construction industry events</li>
+                  <li>Join local trade associations</li>
+                  <li>Follow up on completed projects</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-3">Relationship Maintenance</h5>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Send holiday greetings to key contacts</li>
-                  <li>• Share interesting industry articles</li>
-                  <li>• Offer to help with rush jobs</li>
-                  <li>• Provide referrals when appropriate</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Send holiday greetings to key contacts</li>
+                  <li>Share interesting industry articles</li>
+                  <li>Offer to help with rush jobs</li>
+                  <li>Provide referrals when appropriate</li>
                 </ul>
               </div>
             </div>
@@ -401,7 +434,7 @@ const BricklayersLeadGeneration = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-8 text-foreground">Social Media Marketing</h2>
-        
+
         <div className="mb-8">
           <h3 className="text-2xl font-semibold mb-4 text-foreground">Instagram for Visual Impact</h3>
           <p className="text-muted-foreground mb-6">
@@ -412,24 +445,24 @@ const BricklayersLeadGeneration = () => {
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">Content Strategy</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Daily progress shots from current jobs</li>
-                  <li>• Before and after transformations</li>
-                  <li>• Time-lapse videos of work</li>
-                  <li>• Tool and technique demonstrations</li>
-                  <li>• Team and behind-the-scenes content</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Daily progress shots from current jobs</li>
+                  <li>Before and after transformations</li>
+                  <li>Time-lapse videos of work</li>
+                  <li>Tool and technique demonstrations</li>
+                  <li>Team and behind-the-scenes content</li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">Hashtag Strategy</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• #bricklayer #masonry #construction</li>
-                  <li>• #[yourcity]builder #localtrades</li>
-                  <li>• #homerenovation #brickwork</li>
-                  <li>• #beforeandafter #craftsmanship</li>
-                  <li>• #australianmade #tradielife</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>#bricklayer #masonry #construction</li>
+                  <li>#[yourcity]builder #localtrades</li>
+                  <li>#homerenovation #brickwork</li>
+                  <li>#beforeandafter #craftsmanship</li>
+                  <li>#australianmade #tradielife</li>
                 </ul>
               </CardContent>
             </Card>
@@ -438,25 +471,25 @@ const BricklayersLeadGeneration = () => {
           <div className="bg-primary/5 border border-primary/20 p-6 rounded-lg">
             <h4 className="font-semibold mb-4 text-primary">Facebook for Local Reach</h4>
             <p className="text-muted-foreground mb-4">
-              Facebook&apos;s local community groups and marketplace can be excellent for finding residential projects.
+              Facebook's local community groups and marketplace can be excellent for finding residential projects.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <h5 className="font-medium mb-2">Community Engagement</h5>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Join local community groups</li>
-                  <li>• Share helpful advice and tips</li>
-                  <li>• Respond to home improvement questions</li>
-                  <li>• Post completed project photos</li>
+                <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                  <li>Join local community groups</li>
+                  <li>Share helpful advice and tips</li>
+                  <li>Respond to home improvement questions</li>
+                  <li>Post completed project photos</li>
                 </ul>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Paid Advertising</h5>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Target homeowners in your area</li>
-                  <li>• Promote special offers or availability</li>
-                  <li>• Retarget website visitors</li>
-                  <li>• Boost posts showing quality work</li>
+                <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                  <li>Target homeowners in your area</li>
+                  <li>Promote special offers or availability</li>
+                  <li>Retarget website visitors</li>
+                  <li>Boost posts showing quality work</li>
                 </ul>
               </div>
             </div>
@@ -466,7 +499,7 @@ const BricklayersLeadGeneration = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-8 text-foreground">Lead Follow-Up and Conversion</h2>
-        
+
         <div className="mb-8">
           <h3 className="text-2xl font-semibold mb-4 text-foreground">Professional Quoting Process</h3>
           <p className="text-muted-foreground mb-6">
@@ -477,24 +510,24 @@ const BricklayersLeadGeneration = () => {
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">Quote Essentials</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Detailed scope of work description</li>
-                  <li>• Material specifications and quantities</li>
-                  <li>• Timeline with key milestones</li>
-                  <li>• Clear pricing breakdown</li>
-                  <li>• Insurance and warranty information</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Detailed scope of work description</li>
+                  <li>Material specifications and quantities</li>
+                  <li>Timeline with key milestones</li>
+                  <li>Clear pricing breakdown</li>
+                  <li>Insurance and warranty information</li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">Professional Presentation</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Company letterhead and branding</li>
-                  <li>• Photos of similar completed projects</li>
-                  <li>• Customer references and testimonials</li>
-                  <li>• Clear terms and conditions</li>
-                  <li>• Digital delivery via email</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Company letterhead and branding</li>
+                  <li>Photos of similar completed projects</li>
+                  <li>Customer references and testimonials</li>
+                  <li>Clear terms and conditions</li>
+                  <li>Digital delivery via email</li>
                 </ul>
               </CardContent>
             </Card>
@@ -504,40 +537,40 @@ const BricklayersLeadGeneration = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-8 text-foreground">Measuring and Improving Results</h2>
-        
+
         <div className="mb-8">
           <h3 className="text-2xl font-semibold mb-4 text-foreground">Key Metrics to Track</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3 text-primary">Lead Sources</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Referrals from past clients</li>
-                  <li>• Google searches and ads</li>
-                  <li>• Social media inquiries</li>
-                  <li>• Industry relationships</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Referrals from past clients</li>
+                  <li>Google searches and ads</li>
+                  <li>Social media inquiries</li>
+                  <li>Industry relationships</li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3 text-primary">Conversion Rates</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Inquiries to quotes provided</li>
-                  <li>• Quotes to jobs won</li>
-                  <li>• Average project value</li>
-                  <li>• Repeat client percentage</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Inquiries to quotes provided</li>
+                  <li>Quotes to jobs won</li>
+                  <li>Average project value</li>
+                  <li>Repeat client percentage</li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3 text-primary">Marketing ROI</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Cost per lead by source</li>
-                  <li>• Revenue per marketing dollar</li>
-                  <li>• Time to break even on ad spend</li>
-                  <li>• Customer lifetime value</li>
+                <ul className="space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Cost per lead by source</li>
+                  <li>Revenue per marketing dollar</li>
+                  <li>Time to break even on ad spend</li>
+                  <li>Customer lifetime value</li>
                 </ul>
               </CardContent>
             </Card>
@@ -545,6 +578,8 @@ const BricklayersLeadGeneration = () => {
         </div>
       </section>
 
-     </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+  );
 };
+
 export default BricklayersLeadGeneration;

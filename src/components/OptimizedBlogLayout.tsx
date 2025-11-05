@@ -6,9 +6,7 @@ import Footer from '@/components/sections/Footer';
 import BreadcrumbNavigation from '@/components/BreadcrumbNavigation';
 import BlogPostLayout from '@/components/BlogPostLayout';
 import InternalLinks from '@/components/InternalLinks';
-import ContentGate from '@/components/ContentGate';
 import SocialSharePreview from '@/components/SocialSharePreview';
-import { useContentGate } from '@/hooks/useContentGate';
 import { generateArticleSchema, generateBreadcrumbSchema, generatePersonSchema, getRelatedArticles, ArticleData } from '@/utils/seoUtils';
 import type { StaticImageData } from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -40,7 +38,6 @@ const OptimizedBlogLayout = ({
   heroImage,
   heroAlt,
 }: OptimizedBlogLayoutProps) => {
-  const { isUnlocked, unlock } = useContentGate(articleData.url.replace('/blog/', ''));
   const [showSocialPreview, setShowSocialPreview] = useState(false);
 
   // Use provided relatedArticles or generate dynamic ones for better relevance and variety
@@ -79,11 +76,6 @@ const OptimizedBlogLayout = ({
       }))
     });
   }
-
-  // Split children content to show preview before gate
-  const childrenArray = React.Children.toArray(children);
-  const previewContent = childrenArray.slice(0, 8); // Show first 8 elements (about 30% of content)
-  const gatedContent = childrenArray.slice(8); // Gate the rest
 
   // Normalize possible StaticImageData to a string src for places that need a string
   const normalizeImageToString = (img?: string | StaticImageData) => {
@@ -129,23 +121,11 @@ const OptimizedBlogLayout = ({
             )}
 
             <div className="prose prose-lg max-w-none">
-              {/* Show preview content (first ~20%) */}
-              {previewContent}
-              
-              {/* Content Gate positioned after preview */}
-              <ContentGate 
-                isUnlocked={isUnlocked} 
-                onUnlock={unlock}
-                blogTitle={articleData.headline}
-                blogSlug={articleData.url.replace('/blog/', '')}
-              />
-
-              {/* Gated content - only show if unlocked */}
-              {isUnlocked && gatedContent}
+              {children}
             </div>
 
-            {/* FAQ Section if provided and unlocked */}
-            {faqs && faqs.length > 0 && isUnlocked && (
+            {/* FAQ Section if provided */}
+            {faqs && faqs.length > 0 && (
               <section className="mt-12 mb-8">
                 <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
                 <div className="space-y-4">
@@ -166,10 +146,8 @@ const OptimizedBlogLayout = ({
               </section>
             )}
 
-            {/* Related Articles - only show if unlocked */}
-            {isUnlocked && (
-              <InternalLinks articles={relatedArticles} />
-            )}
+            {/* Related Articles */}
+            <InternalLinks articles={relatedArticles} />
           </BlogPostLayout>
         </div>
       </main>

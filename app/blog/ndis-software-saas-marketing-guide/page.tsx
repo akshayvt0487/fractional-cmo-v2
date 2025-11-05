@@ -8,7 +8,6 @@ import StrategyForm from "@/components/ui/strategy-form";
 import InternalLinks from "@/components/InternalLinks";
 import Citation from "@/components/Citation";
 import { generateArticleSchema } from "@/utils/seoUtils";
-import ContentGate from "@/components/ContentGate";
 import SEO from "@/components/SEO";
 // useContentGate is a client hook — removed from server page to avoid server-side invocation
 import ndisRegistrationImage from "@/assets/blog/ndis-provider-registration-new.jpg";
@@ -44,8 +43,6 @@ export const metadata = createMetadata({
 });
 const NDISSoftwareSaaSMarketing = () => {
   // Client gating removed during build stabilization: assume content unlocked for prerender
-  const isUnlocked = true;
-  const unlock = () => {};
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies",
     description: "Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively.",
@@ -200,16 +197,6 @@ const NDISSoftwareSaaSMarketing = () => {
               </div>
             </section>
 
-            {/* Content Gate - Show only 20% of content before gate */}
-            <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-6 my-8">
-              <p className="text-amber-800 dark:text-amber-200 font-semibold">
-                🔒 This comprehensive marketing guide contains proven SaaS strategies and implementation frameworks. Continue reading to access the complete 7-step marketing strategy, ABM techniques, and success metrics.
-              </p>
-            </div>
-
-            {/* ContentGate (client-only) removed during build stabilization */}
-
-            {isUnlocked && <>
                 {/* Marketing Strategies */}
                 <section className="mb-12">
                   <h2 className="text-3xl font-semibold mb-6 text-foreground">7 Core NDIS SaaS Marketing Strategies</h2>
@@ -618,7 +605,6 @@ const NDISSoftwareSaaSMarketing = () => {
             </section>
 
             <InternalLinks articles={relatedArticles} title="Continue Your NDIS SaaS Journey" />
-              </>}
           </article>
         </div>
       </div>

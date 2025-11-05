@@ -3,7 +3,7 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent } from "@/components/ui/card";
-import ContentGate from '@/components/ContentGate';
+
 // client hook removed from server page to avoid server-side invocation
 import removalistDigitalMarketingHero from '@/assets/blog/removalist-digital-marketing-hero.jpg';
 export const metadata = createMetadata({
@@ -37,8 +37,7 @@ export const metadata = createMetadata({
 });
 const RemovalistDigitalMarketing = () => {
   // Client gating removed during build stabilization: assume content unlocked for prerender
-  const isUnlocked = true;
-  const unlock = () => {};
+  
   const articleData = {
     headline: "Digital Marketing for Removalist Business: Complete Growth Guide 2024",
     description: "Transform your removalist business with proven digital marketing strategies. Attract more customers, increase bookings, and grow revenue online.",
@@ -149,9 +148,7 @@ const RemovalistDigitalMarketing = () => {
         </div>
       </section>
 
-  {/* ContentGate (client-only) removed during build stabilization */}
-
-      {isUnlocked && <>
+  
           <section className="mb-12">
             <h2 className="text-3xl font-bold mb-6">Search Engine Optimization (SEO) for Removalists</h2>
         
@@ -547,7 +544,7 @@ const RemovalistDigitalMarketing = () => {
           </CardContent>
         </Card>
       </section>
-        </>}
+        
     </OptimizedBlogLayout>;
 };
 export default RemovalistDigitalMarketing;

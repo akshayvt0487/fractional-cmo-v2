@@ -9,7 +9,6 @@ import { generateArticleSchema } from "@/utils/seoUtils";
 import ndisEngagementImage from "@/assets/blog/ndis-software-lead-generation.jpg";
 import ndisMarketingImage from "@/assets/ndis-marketing-materials.jpg";
 // useContentGate is a client hook — removed from server page to avoid server-side invocation
-import ContentGate from "@/components/ContentGate";
 import SEO from "@/components/SEO";
 export const metadata = createMetadata({
   title: "Ndis Software Saas Lead Generation",
@@ -42,8 +41,6 @@ export const metadata = createMetadata({
 });
 const NDISSoftwareSaaSLeadGeneration = () => {
   // Client gating removed during build stabilization: assume content unlocked for prerender
-  const isUnlocked = true;
-  const unlock = () => {};
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Lead Generation: Convert Prospects into Customers",
     description: "Master lead generation for NDIS software platforms. Learn proven techniques to attract, qualify, and convert NDIS providers into paying customers with sustainable, scalable strategies.",
@@ -212,16 +209,6 @@ const NDISSoftwareSaaSLeadGeneration = () => {
               </div>
             </section>
 
-            {/* Content Gate - Show only 20% of content before gate */}
-            <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-6 my-8">
-              <p className="text-amber-800 dark:text-amber-200 font-semibold">
-                🔒 This comprehensive lead generation guide contains proven strategies and implementation frameworks. Continue reading to access the complete channel strategies, qualification processes, and conversion optimization techniques.
-              </p>
-            </div>
-
-            {/* ContentGate (client-only) removed during build stabilization */}
-
-            {isUnlocked && <>
                 {/* Lead Generation Channels */}
                 <section className="mb-12">
               <h2 className="text-3xl font-semibold mb-6 text-foreground">High-Impact Lead Generation Channels</h2>
@@ -964,7 +951,6 @@ const NDISSoftwareSaaSLeadGeneration = () => {
             </section>
 
             <InternalLinks articles={relatedArticles} title="Master Your NDIS SaaS Growth" />
-              </>}
           </article>
         </div>
       </div>

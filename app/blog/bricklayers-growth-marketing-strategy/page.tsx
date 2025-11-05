@@ -5,62 +5,95 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Globe, Camera, Search, PenTool, BookOpen, Video } from "lucide-react";
 import bricklayersGrowthMarketingHero from '@/assets/blog/bricklayers-growth-marketing-hero.jpg';
+
+// ————————————————————————————————————————
+// ✅ FULL SEO METADATA
+// (Synced with articleData for consistency)
+// ————————————————————————————————————————
 export const metadata = createMetadata({
-  title: "Bricklayers Growth Marketing Strategy",
-  description: "Expert guidance on bricklayers growth marketing strategy. Learn proven strategies and best practices for business growth.",
+  title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
+  description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
   path: "/blog/bricklayers-growth-marketing-strategy",
-  keywords: ["bricklayers", "growth", "marketing", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  keywords: [
+    "growth marketing for bricklayers",
+    "masonry business",
+    "trade marketing",
+    "bricklayer client acquisition",
+    "local SEO for bricklayers",
+    "scaling a trade business"
+  ],
   openGraph: {
-    title: "Bricklayers Growth Marketing Strategy",
-    description: "Expert guidance on bricklayers growth marketing strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/bricklayers-growth-marketing-strategy",
+    title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
+    description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/bricklayers-growth-marketing-strategy`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.au/images/blog/bricklayers-lead-generation-hero.jpg",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/bricklayers-growth-marketing-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Bricklayers Growth Marketing and Lead Generation Strategy"
     }],
-    publishedTime: "2025-01-14",
+    publishedTime: "2025-01-14T00:00:00.000Z",
     modifiedTime: "2025-10-31T11:10:04.341Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bricklayers Growth Marketing Strategy",
-    description: "Expert guidance on bricklayers growth marketing strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.au/images/blog/bricklayers-lead-generation-hero.jpg"],
+    title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
+    description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/bricklayers-growth-marketing-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
-const BricklayersGrowthMarketing = () => {
-  const articleData = {
-    headline: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
-    description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
-    author: "Basheer Padanna",
-    publishedDate: "2025-01-14",
-    modifiedDate: "2025-01-14",
-    url: "/blog/bricklayers-growth-marketing-strategy",
-    imageUrl: bricklayersGrowthMarketingHero,
-    category: "Trade Marketing",
-    readTime: "26 min read",
-    tags: ["bricklaying", "masonry business", "growth marketing", "trade marketing"]
-  };
-  const faqs = [{
+
+// ————————————————————————————————————————
+// ✅ Article Data & FAQs
+// ————————————————————————————————————————
+const articleData = {
+  headline: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
+  description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
+  author: "Basheer Padanna",
+  publishedDate: "2025-01-14",
+  modifiedDate: "2025-10-31T11:10:04.341Z", // Synced with metadata for freshness
+  url: "/blog/bricklayers-growth-marketing-strategy",
+  imageUrl: bricklayersGrowthMarketingHero,
+  category: "Trade Marketing",
+  readTime: "26 min read",
+  tags: ["bricklaying", "masonry business", "growth marketing", "trade marketing"]
+};
+
+const faqs = [
+  {
     question: "How can growth marketing help my bricklaying business?",
     answer: "Growth marketing helps bricklayers scale beyond individual projects by building sustainable client acquisition systems, developing multiple revenue streams, and creating consistent work flow through strategic online and offline marketing tactics."
-  }, {
+  },
+  {
     question: "What's the best way to showcase bricklaying work online?",
     answer: "High-quality before/after photo galleries, time-lapse videos of construction process, detailed project case studies, and client testimonials with verified project photos are most effective for demonstrating craftsmanship and expertise."
-  }, {
+  },
+  {
     question: "Should bricklayers focus on residential or commercial markets?",
     answer: "Both offer opportunities, but commercial projects typically provide higher value contracts and longer-term relationships. Start with residential to build portfolio and reputation, then expand to commercial partnerships with builders and contractors."
-  }, {
+  },
+  {
     question: "How important is local SEO for bricklaying businesses?",
     answer: "Local SEO is critical as most bricklaying work is location-dependent. Optimize for 'bricklayer near me' searches, maintain active Google My Business profile, and create location-specific landing pages for each service area."
-  }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={bricklayersGrowthMarketingHero} heroAlt="Bricklayers growth marketing and business scaling strategies">
+  }
+];
+
+// ————————————————————————————————————————
+// ✅ Page Component
+// ————————————————————————————————————————
+const BricklayersGrowthMarketing = () => {
+  return (
+    <OptimizedBlogLayout
+      articleData={articleData}
+      relatedArticles={relatedArticles.tradies}
+      faqs={faqs}
+      heroImage={bricklayersGrowthMarketingHero}
+      heroAlt="Bricklayers growth marketing and business scaling strategies"
+    >
       <Card className="mb-8 bg-gradient-to-r from-orange-50 to-red-50 border-orange-200">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
@@ -74,7 +107,7 @@ const BricklayersGrowthMarketing = () => {
           <Target className="h-8 w-8 text-primary" />
           Understanding Your Diverse Bricklaying Market
         </h2>
-        
+
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card className="border-l-4 border-l-blue-500">
             <CardHeader>
@@ -109,7 +142,7 @@ const BricklayersGrowthMarketing = () => {
           <Globe className="h-8 w-8 text-primary" />
           Building Your Professional Digital Foundation
         </h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <Card className="bg-gradient-to-br from-purple-50 to-indigo-50 border-purple-200">
             <CardHeader>
@@ -143,7 +176,7 @@ const BricklayersGrowthMarketing = () => {
               <ul className="space-y-2 text-sm">
                 <li>✓ Google My Business optimization with project updates</li>
                 <li>✓ Location-specific landing pages for service areas</li>
-                <li>✓ Local keyword targeting (&quot;bricklayer near me&quot;)</li>
+                <li>✓ Local keyword targeting ("bricklayer near me")</li>
                 <li>✓ Building industry directory listings and citations</li>
                 <li>✓ Community involvement and partnership content</li>
                 <li>✓ Council and permit requirement guides by area</li>
@@ -158,7 +191,7 @@ const BricklayersGrowthMarketing = () => {
           <PenTool className="h-8 w-8 text-primary" />
           Content Marketing That Demonstrates Expertise
         </h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <Card className="border-l-4 border-l-orange-500">
             <CardHeader>
@@ -205,10 +238,10 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Lead Generation Strategies for Bricklayers</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
-            Successful bricklaying businesses need consistent lead flow across multiple channels. Here&apos;s how to build a reliable pipeline of quality projects:
+            Successful bricklaying businesses need consistent lead flow across multiple channels. Here's how to build a reliable pipeline of quality projects:
           </p>
         </div>
 
@@ -219,11 +252,11 @@ const BricklayersGrowthMarketing = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
-                <li>🌐 <strong>Google Ads for bricklaying services:</strong> Target high-intent keywords like &quot;bricklayer quotes&quot;, &quot;retaining wall builder&quot;</li>
+                <li>🌐 <strong>Google Ads for bricklaying services:</strong> Target high-intent keywords like "bricklayer quotes", "retaining wall builder"</li>
                 <li>📱 <strong>Facebook & Instagram advertising:</strong> Use project photos to showcase quality and attract homeowners</li>
                 <li>🏠 <strong>Home improvement platforms:</strong> HIPages, ServiceSeeking, HomeGuru for instant quote requests</li>
                 <li>📧 <strong>Email marketing campaigns:</strong> Seasonal reminders for maintenance and new project opportunities</li>
-                <li>🎯 <strong>Retargeting campaigns:</strong> Stay visible to website visitors who didn&apos;t convert initially</li>
+                <li>🎯 <strong>Retargeting campaigns:</strong> Stay visible to website visitors who didn't convert initially</li>
               </ul>
             </CardContent>
           </Card>
@@ -262,7 +295,7 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Pricing Strategies for Profitable Growth</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
             Smart pricing is essential for sustainable business growth. Move beyond basic hourly rates to value-based pricing that reflects your expertise and quality:
@@ -319,7 +352,7 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Building Strategic Partnerships</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
             Strategic partnerships can dramatically increase your project pipeline and business stability. Focus on mutually beneficial relationships that provide consistent work:
@@ -389,7 +422,7 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Project Management Excellence</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
             Efficient project management separates successful bricklaying businesses from the competition. Implement systems that ensure quality, timelines, and profitability:
@@ -446,7 +479,7 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Scaling Your Bricklaying Business</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
             Growth requires strategic thinking beyond just taking on more projects. Build systems that allow you to scale operations while maintaining quality and profitability:
@@ -516,7 +549,7 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Digital Marketing Channels That Work</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
             Successful bricklaying businesses leverage multiple digital channels to reach potential clients at different stages of their decision-making process:
@@ -534,7 +567,7 @@ const BricklayersGrowthMarketing = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Google Ads Strategy:</h4>
                   <ul className="space-y-1 text-sm">
-                    <li>• Target service-specific keywords: &quot;brick wall builder&quot;, &quot;retaining wall quotes&quot;</li>
+                    <li>• Target service-specific keywords: "brick wall builder", "retaining wall quotes"</li>
                     <li>• Location-based campaigns for your service areas</li>
                     <li>• Call-only ads for immediate phone inquiries</li>
                     <li>• Showcase project photos in visual campaigns</li>
@@ -586,7 +619,7 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Measuring Success & ROI</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
             Track key metrics to ensure your growth marketing efforts are delivering real business results and adjust strategies based on data:
@@ -643,7 +676,7 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Advanced Business Scaling Strategies</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
             To scale beyond a one-person operation, successful bricklaying businesses must develop systems, build teams, and create scalable processes that maintain quality while increasing capacity:
@@ -736,7 +769,7 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Market Expansion & Diversification</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
             Successful bricklaying businesses expand their market reach through geographic growth, service diversification, and strategic market positioning to reduce dependency on any single revenue source:
@@ -821,7 +854,7 @@ const BricklayersGrowthMarketing = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Financial Management & Growth Planning</h2>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
             Smart financial management and strategic planning are essential for sustainable growth. Develop robust systems for cash flow management, investment planning, and long-term business development:
@@ -881,6 +914,8 @@ const BricklayersGrowthMarketing = () => {
           </Card>
         </div>
       </section>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+  );
 };
+
 export default BricklayersGrowthMarketing;
