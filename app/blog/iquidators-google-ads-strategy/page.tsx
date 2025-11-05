@@ -4,7 +4,7 @@ import { Users, Target, Settings, Layers, Search, Zap } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import Citation from '@/components/Citation';
-import liquidatorsGoogleAdsHero from '@/assets/blog/liquidators-google-ads-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Iquidators Google Ads Strategy",
   description: "Expert guidance on iquidators google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Iquidators Google Ads Strategy",
     description: "Expert guidance on iquidators google ads strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/iquidators-google-ads-strategy",
+    url: "https://fractional-cmo.com.au/blog/iquidators-google-ads-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Iquidators Google Ads Strategy"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Iquidators Google Ads Strategy",
     description: "Expert guidance on iquidators google ads strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const LiquidatorsGoogleAdsStrategy = () => {
     question: "What's the best landing page strategy for liquidator ads?",
     answer: "Create service-specific landing pages for voluntary liquidation, creditor pressure scenarios, and director liability concerns. Include trust signals, ASIC registration details, confidential consultation offers, and clear next steps."
   }];
-  return <OptimizedBlogLayout articleData={articleData} faqs={faqs} heroImage={liquidatorsGoogleAdsHero} heroAlt="Liquidators Google Ads strategies and campaign optimization">
+  return <OptimizedBlogLayout articleData={articleData} faqs={faqs} heroImage={'/images/blog/liquidators-google-ads-hero.jpg'} heroAlt="Liquidators Google Ads strategies and campaign optimization">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           ⚖️ Google Ads can be a powerful channel for liquidators, connecting you with directors and business owners facing financial distress who need immediate professional guidance. This comprehensive guide reveals proven Google Ads strategies that successful liquidation firms use to generate qualified leads, establish market authority, and grow their practice consistently in the competitive insolvency sector.
         </p>

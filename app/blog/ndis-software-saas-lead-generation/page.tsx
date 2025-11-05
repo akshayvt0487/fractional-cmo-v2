@@ -6,8 +6,8 @@ import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
 import InternalLinks from "@/components/InternalLinks";
 import { generateArticleSchema } from "@/utils/seoUtils";
-import ndisEngagementImage from "@/assets/blog/ndis-software-lead-generation.jpg";
-import ndisMarketingImage from "@/assets/ndis-marketing-materials.jpg";
+
+
 // useContentGate is a client hook — removed from server page to avoid server-side invocation
 import SEO from "@/components/SEO";
 export const metadata = createMetadata({
@@ -18,7 +18,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Software Saas Lead Generation",
     description: "Expert guidance on ndis software saas lead generation. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-software-saas-lead-generation",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/ndis-software-saas-lead-generation`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -48,7 +48,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
     publishedDate: "2024-01-20",
     modifiedDate: "2024-01-20",
     url: "/blog/ndis-software-saas-lead-generation",
-    imageUrl: ndisEngagementImage
+    imageUrl: "/images/blog/ndis-software-lead-generation.jpg"
   });
   const relatedArticles = [{
     title: "NDIS Software SaaS Marketing Guide",
@@ -87,7 +87,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
           <article className="prose prose-lg max-w-none">
             {/* Hero Section */}
             <div className="mb-12">
-              <img src={String(ndisEngagementImage.src)} alt="NDIS software lead generation strategy meeting" className="w-full h-96 object-cover rounded-lg mb-8" />
+              <img src={"/images/blog/ndis-software-lead-generation.jpg"} alt="NDIS software lead generation strategy meeting" className="w-full h-96 object-cover rounded-lg mb-8" />
               <h1 className="text-4xl font-bold mb-4 text-foreground">
                 NDIS Software SaaS Lead Generation: Convert Prospects into Customers
               </h1>

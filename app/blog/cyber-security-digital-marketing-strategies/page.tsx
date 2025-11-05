@@ -5,7 +5,7 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import cyberSecurityDigitalMarketingHero from '@/assets/blog/cyber-security-digital-marketing.jpg';
+
 export const metadata = createMetadata({
   title: "Cyber Security Digital Marketing Strategies",
   description: "Expert guidance on cyber security digital marketing strategies. Learn proven strategies and best practices for business growth.",
@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Cyber Security Digital Marketing Strategies",
     description: "Expert guidance on cyber security digital marketing strategies. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/cyber-security-digital-marketing-strategies",
+    url: "https://fractional-cmo.com.au/blog/cyber-security-digital-marketing-strategies",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -58,7 +58,7 @@ const CyberSecurityDigitalMarketing = () => {
     question: "How long does cyber security lead generation take?",
     answer: "B2B cyber security sales cycles average 6-18 months. Content marketing and SEO show results in 3-6 months, while paid advertising can generate immediate leads."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={cyberSecurityDigitalMarketingHero} heroAlt="Cyber security startup team developing digital marketing strategies for business growth">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/cyber-security-digital-marketing.jpg'} heroAlt="Cyber security startup team developing digital marketing strategies for business growth">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Complete digital marketing playbook for startup cyber security companies. Learn how to establish 
           market presence, attract your first clients, build credibility, and create sustainable growth 

@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Target, Users, BarChart, Zap } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import financialPlannerLeadGenHero from '@/assets/blog/finance-broker-lead-generation-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Financial Planner Lead Generation",
   description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Financial Planner Lead Generation",
     description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/financial-planner-lead-generation",
+    url: "https://fractional-cmo.com.au/blog/financial-planner-lead-generation",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,7 +57,7 @@ const FinancialPlannerLeadGeneration = () => {
     question: "What type of content attracts high-value financial planning clients?",
     answer: "Retirement planning guides, tax optimization strategies, investment education, and market commentary that demonstrates expertise attract affluent clients seeking comprehensive financial guidance."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={financialPlannerLeadGenHero} heroAlt="Financial planner meeting with high-value clients for lead generation">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/finance-broker-lead-generation-hero.jpg'} heroAlt="Financial planner meeting with high-value clients for lead generation">
       <p className="text-lg leading-relaxed">
         Financial planning is fundamentally a relationship-based business built on trust, expertise, and long-term value creation. Unlike transactional services, successful financial planners cultivate deep client relationships that span decades and generate substantial recurring revenue.
       </p>

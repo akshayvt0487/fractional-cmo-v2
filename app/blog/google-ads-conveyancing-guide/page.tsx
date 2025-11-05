@@ -4,7 +4,7 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import conveyancingGoogleAdsHero from '@/assets/blog/conveyancing-google-ads-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Google Ads Conveyancing Guide",
   description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Google Ads Conveyancing Guide",
     description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/google-ads-conveyancing-guide",
+    url: "https://fractional-cmo.com.au/blog/google-ads-conveyancing-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Google Ads Conveyancing Guide"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Google Ads Conveyancing Guide",
     description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const ConveyancingGoogleAds = () => {
     question: "What's the best landing page strategy for conveyancing ads?",
     answer: "Create service-specific landing pages for residential, commercial, and first-time buyers. Include clear value propositions, fee transparency, client testimonials, and simple contact forms."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={conveyancingGoogleAdsHero} heroAlt="Google Ads strategies for conveyancing firms">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-google-ads-hero.jpg'} heroAlt="Google Ads strategies for conveyancing firms">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           When property buyers and sellers need a conveyancer, they turn to Google first. With the right Google Ads strategy, 
           your conveyancing firm can capture these high-intent prospects at the exact moment they&apos;re ready to engage a solicitor.

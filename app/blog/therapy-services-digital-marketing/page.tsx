@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Therapy Services Digital Marketing",
     description: "Expert guidance on therapy services digital marketing. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/therapy-services-digital-marketing",
+    url: "https://fractional-cmo.com.au/blog/therapy-services-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

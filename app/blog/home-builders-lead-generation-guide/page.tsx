@@ -3,7 +3,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import homeBuildersLeadGenerationHero from '@/assets/blog/home-builders-lead-generation-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Home Builders Lead Generation Guide",
   description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
@@ -12,11 +12,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Home Builders Lead Generation Guide",
     description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/home-builders-lead-generation-guide",
+    url: "https://fractional-cmo.com.au/blog/home-builders-lead-generation-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Home Builders Lead Generation Guide"
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Home Builders Lead Generation Guide",
     description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -56,7 +56,7 @@ const HomeBuildersLeadGeneration = () => {
     question: "Should home builders focus on custom or spec home marketing?",
     answer: "Both markets require different approaches. Custom home marketing emphasizes luxury and personalization, while spec home marketing focuses on move-in ready convenience and value. Consider your target market and capabilities."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={homeBuildersLeadGenerationHero} heroAlt="Home builders lead generation and digital marketing strategies">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={'/images/blog/home-builders-lead-generation-hero.jpg'} heroAlt="Home builders lead generation and digital marketing strategies">
       <p className="text-xl text-muted-foreground mb-8">
         The home building industry is highly competitive, with success depending on attracting quality prospects who are ready to invest in custom homes. Digital lead generation has become essential for builders to consistently attract qualified clients, showcase their craftsmanship, and build a sustainable pipeline of high-value projects.
       </p>

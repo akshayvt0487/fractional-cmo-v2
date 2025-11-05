@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import { Card } from '@/components/ui/card';
-import loanBrokerDigitalMarketingHero from '@/assets/blog/loan-broker-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Loan Broker Digital Marketing Guide",
   description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Loan Broker Digital Marketing Guide",
     description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/loan-broker-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/loan-broker-digital-marketing-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Loan Broker Digital Marketing Guide"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Loan Broker Digital Marketing Guide",
     description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const LoanBrokerDigitalMarketing = () => {
     question: "What compliance considerations exist for loan broker marketing?",
     answer: "Follow NCUA, NMLS, and state regulatory guidelines. Ensure all marketing materials include required disclosures, avoid misleading claims about rates or approvals, and maintain proper licensing information visibility."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={loanBrokerDigitalMarketingHero} heroAlt="Digital marketing strategies for loan brokers and mortgage professionals">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/loan-broker-digital-marketing-hero.jpg'} heroAlt="Digital marketing strategies for loan brokers and mortgage professionals">
       <p className="text-xl text-muted-foreground mb-8">
         The mortgage and lending industry is highly competitive, with loan brokers needing to differentiate themselves through digital marketing that builds trust, demonstrates expertise, and guides potential borrowers through complex financial decisions. Effective digital marketing helps brokers attract qualified leads while maintaining compliance with financial industry regulations.
       </p>

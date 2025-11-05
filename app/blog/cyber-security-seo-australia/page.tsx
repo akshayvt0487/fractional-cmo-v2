@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-import cyberSecuritySEOAustraliaHero from '@/assets/blog/cyber-security-seo-australia.jpg';
+
 export const metadata = createMetadata({
   title: "Cyber Security Seo Australia",
   description: "Expert guidance on cyber security seo australia. Learn proven strategies and best practices for business growth.",
@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Cyber Security Seo Australia",
     description: "Expert guidance on cyber security seo australia. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/cyber-security-seo-australia",
+    url: "https://fractional-cmo.com.au/blog/cyber-security-seo-australia",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

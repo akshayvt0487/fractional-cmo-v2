@@ -3,7 +3,7 @@ import React from 'react';
 import { Users, Target, TrendingUp, Shield, MessageCircle, CheckCircle } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import ndisLeadGenerationHero from '@/assets/blog/ndis-lead-generation-mastery.jpg';
+
 import { Card, CardContent } from '@/components/ui/card';
 import StrategyForm from '@/components/ui/strategy-form';
 export const metadata = createMetadata({
@@ -14,11 +14,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Lead Generation Mastery",
     description: "Expert guidance on ndis lead generation mastery. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-lead-generation-mastery",
+    url: "https://fractional-cmo.com.au/blog/ndis-lead-generation-mastery",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Lead Generation Mastery"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Lead Generation Mastery",
     description: "Expert guidance on ndis lead generation mastery. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -58,7 +58,7 @@ const NDISLeadGeneration = () => {
     question: "What's the average cost per lead for NDIS providers?",
     answer: "NDIS lead costs vary by service type and location, typically ranging from $50-$200 per qualified lead. Higher-value services like SIL can justify higher acquisition costs, while core supports require more cost-effective approaches."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisLeadGenerationHero} heroAlt="NDIS lead generation strategies for disability service providers">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-lead-generation-mastery.jpg'} heroAlt="NDIS lead generation strategies for disability service providers">
       <Card className="bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-l-purple-500 p-8 mb-8">
         <div className="flex items-start space-x-4">
           <div className="bg-purple-100 p-3 rounded-full">

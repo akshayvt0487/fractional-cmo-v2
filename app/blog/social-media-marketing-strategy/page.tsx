@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import socialMediaMarketingStrategyHero from '@/assets/blog/social-media-marketing-strategy-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Social Media Marketing Strategy",
   description: "Expert guidance on social media marketing strategy. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Social Media Marketing Strategy",
     description: "Expert guidance on social media marketing strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/social-media-marketing-strategy",
+    url: "https://fractional-cmo.com.au/blog/social-media-marketing-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Social Media Marketing Strategy"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Social Media Marketing Strategy",
     description: "Expert guidance on social media marketing strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const SocialMediaMarketingStrategy = () => {
     question: "What's the best way to measure social media ROI for services?",
     answer: "Track lead generation volume and quality, cost per lead by platform, lead-to-customer conversion rate, and customer lifetime value from social channels. Use proper attribution tracking with UTM parameters."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={socialMediaMarketingStrategyHero} heroAlt="Professional social media marketing strategy dashboard showing analytics and engagement metrics">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/social-media-marketing-strategy-hero.jpg'} heroAlt="Professional social media marketing strategy dashboard showing analytics and engagement metrics">
       <Card className="p-8 mb-8">
                   <p className="text-lg leading-relaxed text-muted-foreground">
                     In today&apos;s digital-first economy, <strong>93% of businesses report that social media marketing has increased their brand exposure</strong> according to Social Media Examiner&apos;s 2024 industry report. For service businesses, social media isn&apos;t just about posting content—it&apos;s about building relationships, demonstrating expertise, and creating a consistent pipeline of qualified leads.

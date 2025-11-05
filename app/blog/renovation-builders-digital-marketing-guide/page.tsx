@@ -5,7 +5,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Camera, TrendingUp, Users, Star, Search, Home, Palette, DollarSign, Clock, Target, Award } from 'lucide-react';
-import renovationBuildersDigitalMarketingHero from '@/assets/blog/renovation-builders-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Renovation Builders Digital Marketing Guide",
   description: "Expert guidance on renovation builders digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Renovation Builders Digital Marketing Guide",
     description: "Expert guidance on renovation builders digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/renovation-builders-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/renovation-builders-digital-marketing-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -61,7 +61,7 @@ const RenovationBuildersDigitalMarketing = () => {
     question: "What content works best for renovation builder marketing?",
     answer: "Before/after transformations, renovation planning guides, material selection advice, permit process explanations, design inspiration content, and client testimonials with verified project photos."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={renovationBuildersDigitalMarketingHero} heroAlt="Renovation builders digital marketing and client acquisition strategies">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/renovation-builders-digital-marketing-hero.jpg'} heroAlt="Renovation builders digital marketing and client acquisition strategies">
       <p className="text-xl text-muted-foreground mb-8">
         The renovation industry thrives on transformation stories and visual proof of quality work. Digital marketing has become essential for renovation builders to showcase their expertise, attract homeowners ready to invest in their properties, and build a sustainable business with consistent project flow and premium pricing.
       </p>

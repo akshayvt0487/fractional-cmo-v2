@@ -4,7 +4,7 @@ import { Users, Target, Settings, Layers, Search, Zap, MapPin, TrendingUp } from
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import Citation from '@/components/Citation';
-import ndisGoogleAdsHero from '@/assets/blog/ndis-comprehensive-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Ndis Google Ads Respite Sil Western Sydney",
   description: "Expert guidance on ndis google ads respite sil western sydney. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Google Ads Respite Sil Western Sydney",
     description: "Expert guidance on ndis google ads respite sil western sydney. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-google-ads-respite-sil-western-sydney",
+    url: "https://fractional-cmo.com.au/blog/ndis-google-ads-respite-sil-western-sydney",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Google Ads Respite Sil Western Sydney"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Google Ads Respite Sil Western Sydney",
     description: "Expert guidance on ndis google ads respite sil western sydney. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -60,7 +60,7 @@ const NDISGoogleAdsRespiteSIL = () => {
     question: "How long does it take to see results from NDIS Google Ads?",
     answer: "Initial enquiries typically start within 1-2 weeks of campaign launch. However, the full participant onboarding process (including NDIS plan approval and move-in coordination) can take 4-12 weeks. Track both immediate enquiries and pipeline conversions for accurate ROI measurement."
   }];
-  return <OptimizedBlogLayout articleData={articleData} faqs={faqs} heroImage={ndisGoogleAdsHero} heroAlt="NDIS Google Ads strategies for respite care and SIL accommodation">
+  return <OptimizedBlogLayout articleData={articleData} faqs={faqs} heroImage={'/images/blog/ndis-comprehensive-marketing-hero.jpg'} heroAlt="NDIS Google Ads strategies for respite care and SIL accommodation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏠 Google Ads presents a powerful opportunity for NDIS respite care and SIL accommodation providers in Western Sydney to connect with participants and families actively seeking quality disability support services. This comprehensive guide reveals proven Google Ads strategies that successful NDIS providers use to generate qualified enquiries, fill vacancies, and establish their reputation in the competitive Western Sydney disability services market.
         </p>

@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Web Design Guide",
     description: "Expert guidance on ndis web design guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-web-design-guide",
+    url: "https://fractional-cmo.com.au/blog/ndis-web-design-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

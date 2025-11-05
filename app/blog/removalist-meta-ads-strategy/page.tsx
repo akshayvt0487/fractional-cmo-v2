@@ -11,7 +11,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
     description: "Expert guidance on meta ads for removalists: complete facebook marketing guide for moving companies. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/removalist-meta-ads-strategy",
+    url: "https://fractional-cmo.com.au/blog/removalist-meta-ads-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

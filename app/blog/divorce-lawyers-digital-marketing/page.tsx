@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import divorceLawyersDigitalMarketingHero from '@/assets/blog/divorce-lawyers-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Divorce Lawyers Digital Marketing",
   description: "Expert guidance on digital marketing for divorce lawyers. Learn proven strategies to attract clients and grow your law practice.",
@@ -21,7 +21,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Divorce Lawyers Digital Marketing",
     description: "Expert guidance on digital marketing for divorce lawyers. Learn proven strategies to attract clients and grow your law practice.",
-    url: "https://your-domain.com/blog/divorce-lawyers-digital-marketing",
+    url: "https://fractional-cmo.com.au/blog/divorce-lawyers-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -66,7 +66,7 @@ const DivorceLawyersDigitalMarketing = () => {
     question: "How can divorce lawyers measure marketing ROI?",
     answer: "Track consultation requests, conversion rates from consultation to retainer, average case value, and client lifetime value. Quality metrics are often more important than quantity for divorce practice."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={divorceLawyersDigitalMarketingHero} heroAlt="Divorce lawyers digital marketing and client acquisition strategies">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/divorce-lawyers-digital-marketing-hero.jpg'} heroAlt="Divorce lawyers digital marketing and client acquisition strategies">
       <Card className="p-8 mb-8">
         <p className="text-lg font-semibold text-primary mb-4">
           Divorce attorneys who implement targeted digital marketing strategies see 300% higher quality client acquisition while maintaining ethical compliance and professional standards.

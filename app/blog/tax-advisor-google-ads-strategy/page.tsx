@@ -5,7 +5,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MousePointer, TrendingUp, Users, Target, BarChart, Zap } from "lucide-react";
-import taxAdvisorGoogleAdsHero from '@/assets/blog/tax-advisor-google-ads-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Tax Advisor Google Ads Strategy",
   description: "Expert guidance on tax advisor google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Tax Advisor Google Ads Strategy",
     description: "Expert guidance on tax advisor google ads strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/tax-advisor-google-ads-strategy",
+    url: "https://fractional-cmo.com.au/blog/tax-advisor-google-ads-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -61,7 +61,7 @@ const TaxAdvisorGoogleAds = () => {
     question: "How can tax advisors improve their Google Ads conversion rates?",
     answer: "Use trust signals (CPA credentials, years experience), offer free consultations, create urgency around tax deadlines, optimize for mobile, and ensure landing pages match ad messaging with clear calls-to-action."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={taxAdvisorGoogleAdsHero} heroAlt="Tax advisor optimizing Google Ads campaigns for maximum lead generation">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/tax-advisor-google-ads-hero.jpg'} heroAlt="Tax advisor optimizing Google Ads campaigns for maximum lead generation">
       <p className="text-lg leading-relaxed">
         Tax season presents a unique opportunity for tax advisors and preparers to capture high-intent clients actively searching for professional tax services. Google Ads provides the perfect platform to reach these prospects precisely when they need your expertise most.
       </p>

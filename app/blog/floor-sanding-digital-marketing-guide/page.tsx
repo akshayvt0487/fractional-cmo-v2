@@ -2,7 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import floorSandingDigitalMarketingHero from '@/assets/blog/floor-sanding-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Floor Sanding Digital Marketing Guide",
   description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -11,11 +11,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Floor Sanding Digital Marketing Guide",
     description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/floor-sanding-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/floor-sanding-digital-marketing-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Floor Sanding Digital Marketing Guide"
@@ -28,7 +28,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Floor Sanding Digital Marketing Guide",
     description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -58,7 +58,7 @@ const FloorSandingDigitalMarketing = () => {
     question: "Should I invest in Google Ads for my floor sanding business?",
     answer: "Yes, Google Ads can capture high-intent searches when homeowners are actively planning floor restoration projects. Target keywords like 'floor sanding [location]' and 'timber floor restoration' for best results."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={floorSandingDigitalMarketingHero} heroAlt="Floor sanding specialists digital marketing and business growth strategies">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/floor-sanding-digital-marketing-hero.jpg'} heroAlt="Floor sanding specialists digital marketing and business growth strategies">
       <p className="text-xl text-muted-foreground mb-8">
         Floor sanding and refinishing is a specialized trade that transforms worn, damaged timber floors into stunning home features. Digital marketing has become essential for floor sanding specialists to showcase their craftsmanship, attract homeowners with quality timber floors, and build a sustainable business with consistent project flow and premium pricing in competitive markets.
       </p>

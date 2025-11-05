@@ -89,8 +89,8 @@ const OptimizedBlogLayout = ({
       
       <Header />
       
-      <main className="min-h-screen pt-32 md:pt-28">
-        <div className="container max-w-4xl py-8">
+      <main className="min-h-screen flex flex-col items-center justify-center">
+        <div className="container max-w-4xl py-8 mt-20 md:mt-16">
           <BreadcrumbNavigation items={breadcrumbs.map(b => ({ label: b.name, href: b.url }))} />
           
           <BlogPostLayout

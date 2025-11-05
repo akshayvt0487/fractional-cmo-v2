@@ -6,7 +6,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-import digitalMarketingAutomationHero from '@/assets/blog/digital-marketing-automation.jpg';
+
 export const metadata = createMetadata({
   title: "Digital Marketing Automation Guide",
   description: "Expert guidance on digital marketing automation guide. Learn proven strategies and best practices for business growth.",
@@ -15,7 +15,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Digital Marketing Automation Guide",
     description: "Expert guidance on digital marketing automation guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/digital-marketing-automation-guide",
+    url: "https://fractional-cmo.com.au/blog/digital-marketing-automation-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -59,7 +59,7 @@ const DigitalMarketingAutomation = () => {
     question: "What ROI can I expect from marketing automation?",
     answer: "Most service businesses see 80% increase in leads, 77% higher conversions, and 451% ROI improvement within the first year. Results depend on proper setup, quality content, and ongoing optimization."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={digitalMarketingAutomationHero} heroAlt="Digital marketing automation strategies and workflows for service businesses">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/digital-marketing-automation.jpg'} heroAlt="Digital marketing automation strategies and workflows for service businesses">
       <h2>Marketing Automation Impact</h2>
       
       <div className="grid md:grid-cols-4 gap-6 mb-8">

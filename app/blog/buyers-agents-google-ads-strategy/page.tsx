@@ -5,7 +5,7 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import buyersAgentsGoogleAdsHero from '@/assets/blog/buyers-agents-google-ads-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Buyers Agents Google Ads Strategy",
   description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -14,11 +14,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Buyers Agents Google Ads Strategy",
     description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/buyers-agents-google-ads-strategy",
+    url: "https://fractional-cmo.com.au/blog/buyers-agents-google-ads-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Buyers Agents Google Ads Strategy"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Buyers Agents Google Ads Strategy",
     description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -58,7 +58,7 @@ const BuyersAgentsGoogleAds = () => {
     question: "What's the best landing page strategy for buyers agent ads?",
     answer: "Create service-specific landing pages for first home buyers, investors, and luxury markets. Include clear value propositions, client testimonials, and simple consultation booking forms."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={buyersAgentsGoogleAdsHero} heroAlt="Buyers agents Google Ads strategies and campaign optimization">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/buyers-agents-google-ads-hero.jpg'} heroAlt="Buyers agents Google Ads strategies and campaign optimization">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏠 Google Ads can be a game-changer for buyers agents, connecting you with property buyers and investors actively searching for professional representation. This comprehensive guide reveals proven Google Ads strategies that successful buyers agents use to generate qualified leads, outrank competitors, and grow their client base consistently in competitive property markets.
         </p>

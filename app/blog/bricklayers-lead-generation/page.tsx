@@ -3,7 +3,7 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import heroImage from '@/assets/blog/bricklayers-lead-generation-hero.jpg';
+
 import { relatedArticles } from '@/utils/seoUtils';
 
 // ————————————————————————————————————————
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/bricklayers-lead-generation-hero.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/bricklayers-lead-generation-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Bricklayers Lead Generation Strategies"
@@ -43,7 +43,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
     description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/bricklayers-lead-generation-hero.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/bricklayers-lead-generation-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -58,7 +58,7 @@ const articleData = {
   publishedDate: "2025-01-18",
   modifiedDate: "2025-10-31T11:10:04.357Z", // Synced with metadata for freshness
   url: "/blog/bricklayers-lead-generation",
-  imageUrl: heroImage,
+  imageUrl: '/images/blog/bricklayers-lead-generation-hero.jpg',
   category: "Trade Marketing",
   readTime: "24 min read",
   tags: ["Bricklaying", "Lead Generation", "Trade Marketing", "Construction", "Local SEO"]
@@ -92,7 +92,7 @@ const BricklayersLeadGeneration = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.tradies}
       faqs={faqs}
-      heroImage={heroImage}
+      heroImage={'/images/blog/bricklayers-lead-generation-hero.jpg'}
       heroAlt="Professional bricklayer working on construction project with digital marketing elements showcasing lead generation strategies"
     >
       <section className="mb-12">

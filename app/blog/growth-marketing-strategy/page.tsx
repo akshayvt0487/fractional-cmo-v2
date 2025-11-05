@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import growthMarketingStrategyHero from '@/assets/blog/growth-marketing-strategy-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Growth Marketing Strategy",
   description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Growth Marketing Strategy",
     description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/growth-marketing-strategy",
+    url: "https://fractional-cmo.com.au/blog/growth-marketing-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/growth-marketing-strategy-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Growth Marketing Strategy"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Growth Marketing Strategy",
     description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/growth-marketing-strategy-hero.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const GrowthMarketingStrategy = () => {
     question: "What budget should I allocate for growth marketing?",
     answer: "Most successful professional service businesses allocate 10-20% of revenue to growth marketing, with at least 30% dedicated to testing and experimentation. The key is starting with proven tactics and scaling what works."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={growthMarketingStrategyHero} heroAlt="Growth marketing dashboard showing conversion metrics and analytics">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/growth-marketing-strategy-hero.jpg'} heroAlt="Growth marketing dashboard showing conversion metrics and analytics">
       <Card className="p-8 mb-8">
         <p className="text-lg leading-relaxed text-muted-foreground">
           Growth marketing has evolved far beyond traditional marketing tactics. <strong>Companies that implement systematic growth marketing see 20x higher revenue growth rates</strong> compared to those using conventional approaches, according to HubSpot&apos;s Growth Marketing Report 2024.

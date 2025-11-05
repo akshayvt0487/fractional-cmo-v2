@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Shield, Target, Globe, Monitor, MapPin, PenTool, Building, Users, TrendingUp, CheckCircle, Search, BookOpen, BarChart, Lightbulb, Calendar, Mail, Smartphone, Award, Gift, Handshake, Star, MessageCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
-import accountingDigitalMarketingHero from '@/assets/blog/accounting-digital-marketing-hero.jpg';
+
 
 // ————————————————————————————————————————
 // ✅ FULL SEO METADATA
@@ -22,7 +22,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/accounting-digital-marketing-hero.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-digital-marketing-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Comprehensive Digital Marketing Guide for Accountants"
@@ -35,7 +35,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2025",
     description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/accounting-digital-marketing-hero.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-digital-marketing-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -50,7 +50,7 @@ const articleData = {
   publishedDate: "2024-12-28T00:00:00.000Z",
   modifiedDate: "2025-10-31T11:10:04.167Z", // Synced with metadata for freshness
   url: "/blog/accounting-digital-marketing-guide",
-  imageUrl: accountingDigitalMarketingHero,
+  imageUrl: '/images/blog/accounting-digital-marketing-hero.jpg',
   category: "Digital Marketing",
   readTime: "25 min read",
   tags: ["Accounting Marketing", "Digital Marketing", "Client Acquisition", "Professional Services"]
@@ -80,7 +80,7 @@ const AccountingDigitalMarketing = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={accountingDigitalMarketingHero}
+      heroImage={'/images/blog/accounting-digital-marketing-hero.jpg'}
       heroAlt="Professional accounting firm implementing digital marketing strategies"
     >
       <Card className="mb-8 bg-primary/5 border-primary/20">

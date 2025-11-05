@@ -6,8 +6,8 @@ import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
 import InternalLinks from "@/components/InternalLinks";
 import { generateArticleSchema } from "@/utils/seoUtils";
-import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
-import ndisComplianceImage from "@/assets/ndis-compliance-audit.jpg";
+
+
 // useContentGate is a client hook — removed from server page to avoid server-side invocation
 import SEO from "@/components/SEO";
 export const metadata = createMetadata({
@@ -18,11 +18,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Software Saas Positioning Strategy",
     description: "Expert guidance on ndis software saas positioning strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-software-saas-positioning-strategy",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/ndis-software-saas-positioning-strategy`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/ndis-software-saas-positioning-strategy.jpg`,
       width: 1200,
       height: 630,
       alt: "Ndis Software Saas Positioning Strategy"
@@ -35,7 +35,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Software Saas Positioning Strategy",
     description: "Expert guidance on ndis software saas positioning strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/ndis-software-saas-positioning-strategy.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -48,7 +48,7 @@ const NDISSoftwareSaaSPositioning = () => {
     publishedDate: "2024-01-20",
     modifiedDate: "2024-01-20",
     url: "/blog/ndis-software-saas-positioning-strategy",
-    imageUrl: ndisQualityImage
+    imageUrl: "/images/blog/ndis-quality-standards.jpg"
   });
   const relatedArticles = [{
     title: "NDIS Software SaaS Marketing Guide",
@@ -82,7 +82,7 @@ const NDISSoftwareSaaSPositioning = () => {
           <article className="prose prose-lg max-w-none">
             {/* Hero Section */}
             <div className="mb-12">
-              <img src={String(ndisQualityImage.src)} alt="NDIS software positioning strategy planning session" className="w-full h-96 object-cover rounded-lg mb-8" />
+              <img src={"/images/blog/ndis-quality-standards.jpg"} alt="NDIS software positioning strategy planning session" className="w-full h-96 object-cover rounded-lg mb-8" />
               <h1 className="text-4xl font-bold mb-4 text-foreground">
                 NDIS Software SaaS Positioning: Stand Out in a Competitive Market
               </h1>

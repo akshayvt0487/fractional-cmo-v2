@@ -10,8 +10,8 @@ import Citation from "@/components/Citation";
 import { generateArticleSchema } from "@/utils/seoUtils";
 import SEO from "@/components/SEO";
 // useContentGate is a client hook — removed from server page to avoid server-side invocation
-import ndisRegistrationImage from "@/assets/blog/ndis-provider-registration-new.jpg";
-import ndisComplianceImage from "@/assets/blog/ndis-compliance-quality-new.jpg";
+
+
 export const metadata = createMetadata({
   title: "Ndis Software Saas Marketing Guide",
   description: "Expert guidance on ndis software saas marketing guide. Learn proven strategies and best practices for business growth.",
@@ -20,7 +20,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Software Saas Marketing Guide",
     description: "Expert guidance on ndis software saas marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-software-saas-marketing-guide",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/ndis-software-saas-marketing-guide`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -50,7 +50,7 @@ const NDISSoftwareSaaSMarketing = () => {
     publishedDate: "2024-01-20",
     modifiedDate: "2024-01-20",
     url: "/blog/ndis-software-saas-marketing-guide",
-    imageUrl: ndisRegistrationImage
+    imageUrl: "/images/blog/ndis-provider-registration-new.jpg"
   });
   const relatedArticles = [{
     title: "NDIS Software SaaS Positioning Strategy",
@@ -89,7 +89,7 @@ const NDISSoftwareSaaSMarketing = () => {
           <article className="prose prose-lg max-w-none">
             {/* Hero Section */}
             <div className="mb-12">
-              <img src={String(ndisRegistrationImage.src)} alt="NDIS software marketing strategy planning" className="w-full h-96 object-cover rounded-lg mb-8" />
+              <img src={"/images/blog/ndis-provider-registration-new.jpg"} alt="NDIS software marketing strategy planning" className="w-full h-96 object-cover rounded-lg mb-8" />
               <h1 className="text-4xl font-bold mb-4 text-foreground">
                 NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies
               </h1>

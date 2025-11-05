@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, TrendingUp, Users, Target, BarChart, Zap, Calendar } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import accountingGrowthStrategyHero from '@/assets/blog/accounting-growth-strategy-hero.jpg';
+
 
 // ————————————————————————————————————————
 // ✅ FULL SEO METADATA
@@ -23,7 +23,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/accounting-growth-strategy-hero.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-growth-strategy-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Growth strategy guide for accounting firms - comprehensive business growth tactics"
@@ -36,7 +36,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2025",
     description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/accounting-growth-strategy-hero.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-growth-strategy-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -51,7 +51,7 @@ const articleData = {
   publishedDate: "2025-01-01T00:00:00.000Z",
   modifiedDate: "2025-10-31T11:10:04.213Z", // Synced with metadata for freshness
   url: "/blog/accounting-growth-strategy-guide",
-  imageUrl: accountingGrowthStrategyHero,
+  imageUrl: '/images/blog/accounting-growth-strategy-hero.jpg',
   category: "Accounting",
   readTime: "26 min read",
   tags: ["Accounting Growth", "Business Development", "Practice Management", "Service Expansion", "Team Building"]
@@ -81,7 +81,7 @@ const AccountingGrowthStrategy = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={accountingGrowthStrategyHero}
+      heroImage={'/images/blog/accounting-growth-strategy-hero.jpg'}
       heroAlt="Accounting practice team celebrating successful business growth strategy implementation"
     >
       <p className="text-lg leading-relaxed mb-8">

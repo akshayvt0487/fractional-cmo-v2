@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
-import heroImage from '@/assets/blog/ndis-lead-generation-strategies-hero.jpg';
+
 import { relatedArticles } from '@/utils/seoUtils';
 
 
@@ -15,7 +15,7 @@ export const metadata = createMetadata({
   description:
     "Expert guidance on NDIS lead generation strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-lead-generation-strategies",
-  image: "/assets/blog/ndis-lead-generation-strategies-hero.jpg",
+  image: "/images/blog/ndis-lead-generation-strategies-hero.jpg",
   keywords: [
     "ndis",
     "lead generation",
@@ -120,7 +120,7 @@ const faqs = [
         articleData={articleData}
         relatedArticles={relatedArticles.ndis}
         faqs={faqs}
-        heroImage={heroImage}
+        heroImage={'/images/blog/ndis-lead-generation-strategies-hero.jpg'}
         heroAlt="NDIS provider implementing digital lead generation strategies with participant-focused approach"
       >  <section className="mb-12">
         <Card className="border-l-4 border-l-primary bg-primary/5 mb-8">

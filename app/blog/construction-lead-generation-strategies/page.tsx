@@ -1,7 +1,7 @@
 import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import constructionImage from "@/assets/construction-team-site.jpg";
-import constructionLeadGenerationHero from '@/assets/blog/construction-lead-generation.jpg';
+
 import StrategyForm from "@/components/ui/strategy-form";
 import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Construction Lead Generation Strategies",
     description: "Expert guidance on construction lead generation strategies. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/construction-lead-generation-strategies",
+
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -43,7 +43,7 @@ const ConstructionLeadGeneration = () => {
     publishedDate: "2024-02-15T00:00:00.000Z",
     modifiedDate: "2024-02-15T00:00:00.000Z",
     url: "/blog/construction-lead-generation-strategies",
-    imageUrl: constructionLeadGenerationHero,
+    imageUrl: '/images/blog/construction-lead-generation.jpg',
     category: "Construction Marketing",
     readTime: "26 min read",
     tags: ["Construction Marketing", "Lead Generation", "Digital Marketing", "Google Ads", "SEO"]
@@ -58,7 +58,7 @@ const ConstructionLeadGeneration = () => {
     question: "How long does it take to see results from construction marketing?",
     answer: "Google Ads can generate leads within 1-2 weeks, while SEO typically takes 3-6 months for significant results. Content marketing and reputation building are ongoing processes that compound over time."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={constructionLeadGenerationHero} heroAlt="Construction Lead Generation Strategies - Professional Construction Team Working on Building Site Project Management">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/construction-lead-generation.jpg'} heroAlt="Construction Lead Generation Strategies - Professional Construction Team Working on Building Site Project Management">
         <blockquote className="border-l-4 border-primary pl-6 my-8 italic text-lg text-muted-foreground not-prose">
           &quot;In construction, relationships build businesses. But in today&apos;s digital world, those relationships start online.&quot;
           <footer className="text-sm mt-2 not-italic">— John Holland, CEO, John Holland Group</footer>

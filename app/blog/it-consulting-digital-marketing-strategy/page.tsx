@@ -5,7 +5,7 @@ import { Cloud, Shield, Zap, Building, Users, Target, TrendingUp, CheckCircle } 
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import itConsultingDigitalMarketingHero from '@/assets/blog/it-consulting-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "It Consulting Digital Marketing Strategy",
   description: "Expert guidance on it consulting digital marketing strategy. Learn proven strategies and best practices for business growth.",
@@ -14,11 +14,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "It Consulting Digital Marketing Strategy",
     description: "Expert guidance on it consulting digital marketing strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/it-consulting-digital-marketing-strategy",
+    url: "https://fractional-cmo.com.au/blog/it-consulting-digital-marketing-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "It Consulting Digital Marketing Strategy"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "It Consulting Digital Marketing Strategy",
     description: "Expert guidance on it consulting digital marketing strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -58,7 +58,7 @@ const ITConsultingDigitalMarketing = () => {
     question: "Should IT consultants focus on general or specialized services?",
     answer: "Specialization delivers much higher ROI. Focus on specific technology areas like cloud migration, cybersecurity, or digital transformation rather than being a generalist. Specialists command premium pricing and attract better clients."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={itConsultingDigitalMarketingHero} heroAlt="IT Consulting Digital Marketing Strategy">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-consulting-digital-marketing-hero.jpg'} heroAlt="IT Consulting Digital Marketing Strategy">
       <h2>The IT Consulting Marketing Challenge</h2>
       <p>
         IT consulting firms face unique marketing challenges in 2025. With 78% of businesses increasing their technology budgets, the demand for expert IT guidance has never been higher. Yet many consultants struggle to differentiate themselves in a crowded marketplace.

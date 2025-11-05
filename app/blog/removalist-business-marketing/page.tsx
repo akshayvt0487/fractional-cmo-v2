@@ -3,7 +3,7 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent } from "@/components/ui/card";
-import removalistBusinessMarketingHero from '@/assets/blog/removalist-business-marketing.jpg';
+
 import Link from 'next/link';
 export const metadata = createMetadata({
   title: "Removalist Business Marketing",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Removalist Business Marketing",
     description: "Expert guidance on removalist business marketing. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/removalist-business-marketing",
+    url: "https://fractional-cmo.com.au/blog/removalist-business-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Removalist Business Marketing"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Removalist Business Marketing",
     description: "Expert guidance on removalist business marketing. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });

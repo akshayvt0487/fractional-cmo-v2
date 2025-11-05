@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
-import conveyancingDigitalMarketingRoiHero from '@/assets/blog/conveyancing-digital-marketing-roi-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Conveyancing Digital Marketing Roi",
   description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
@@ -12,11 +12,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Conveyancing Digital Marketing Roi",
     description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/conveyancing-digital-marketing-roi",
+
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/conveyancing-digital-marketing-roi-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Conveyancing Digital Marketing Roi"
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Conveyancing Digital Marketing Roi",
     description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/conveyancing-digital-marketing-roi-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -41,7 +41,7 @@ const ConveyancingDigitalMarketingROI = () => {
     publishedDate: "2025-09-01T00:00:00.000Z",
     modifiedDate: "2025-09-01T00:00:00.000Z",
     url: "/blog/conveyancing-digital-marketing-roi",
-    imageUrl: conveyancingDigitalMarketingRoiHero,
+    imageUrl: '/images/blog/conveyancing-digital-marketing-roi-hero.jpg',
     category: "Legal Marketing",
     readTime: "24 min read",
     tags: ["ROI", "Digital Marketing", "Conveyancing", "Analytics", "Legal Marketing"]
@@ -56,7 +56,7 @@ const ConveyancingDigitalMarketingROI = () => {
     question: "What metrics should conveyancing firms track?",
     answer: "Key metrics include cost per lead, lead-to-client conversion rate, customer acquisition cost, customer lifetime value, organic traffic growth, and local search rankings. Track both quantity and quality of leads."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={conveyancingDigitalMarketingRoiHero} heroAlt="Digital marketing ROI measurement for conveyancing firms">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-digital-marketing-roi-hero.jpg'} heroAlt="Digital marketing ROI measurement for conveyancing firms">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Measuring digital marketing ROI is crucial for conveyancing firms investing in online growth strategies. 
           Without clear metrics and data-driven insights, it&apos;s impossible to know which marketing efforts drive real 

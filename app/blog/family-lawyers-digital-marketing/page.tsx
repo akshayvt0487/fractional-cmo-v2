@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import familyLawyersDigitalMarketingHero from '@/assets/blog/family-lawyers-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Family Lawyers Digital Marketing",
   description: "Expert guidance on family lawyers digital marketing. Learn proven strategies and best practices for business growth.",
@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Family Lawyers Digital Marketing",
     description: "Expert guidance on family lawyers digital marketing. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/family-lawyers-digital-marketing",
+
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,7 +57,7 @@ const FamilyLawyersDigitalMarketing = () => {
     question: "How can family lawyers measure their marketing ROI?",
     answer: "Track consultation requests, case conversion rates, average case value, client lifetime value, and referral generation. Focus on quality metrics rather than just quantity, as family law clients represent significant long-term value."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={familyLawyersDigitalMarketingHero} heroAlt="Family lawyers digital marketing and practice growth strategies">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/family-lawyers-digital-marketing-hero.jpg'} heroAlt="Family lawyers digital marketing and practice growth strategies">
       <Card className="p-8 mb-8">
         <p className="text-lg font-semibold text-primary mb-4">
           Family law practices that implement strategic digital marketing achieve 250% higher client acquisition rates while maintaining ethical compliance standards.

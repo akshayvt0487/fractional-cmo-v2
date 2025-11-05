@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Globe, Camera, Search, PenTool, BookOpen, Video } from "lucide-react";
-import bricklayersGrowthMarketingHero from '@/assets/blog/bricklayers-growth-marketing-hero.jpg';
+
 
 // ————————————————————————————————————————
 // ✅ FULL SEO METADATA
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/bricklayers-growth-marketing-hero.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/bricklayers-growth-marketing-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Bricklayers Growth Marketing and Lead Generation Strategy"
@@ -42,7 +42,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
     description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/bricklayers-growth-marketing-hero.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/bricklayers-growth-marketing-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const articleData = {
   publishedDate: "2025-01-14",
   modifiedDate: "2025-10-31T11:10:04.341Z", // Synced with metadata for freshness
   url: "/blog/bricklayers-growth-marketing-strategy",
-  imageUrl: bricklayersGrowthMarketingHero,
+  imageUrl: '/images/blog/bricklayers-growth-marketing-hero.jpg',
   category: "Trade Marketing",
   readTime: "26 min read",
   tags: ["bricklaying", "masonry business", "growth marketing", "trade marketing"]
@@ -91,7 +91,7 @@ const BricklayersGrowthMarketing = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.tradies}
       faqs={faqs}
-      heroImage={bricklayersGrowthMarketingHero}
+      heroImage={'/images/blog/bricklayers-growth-marketing-hero.jpg'}
       heroAlt="Bricklayers growth marketing and business scaling strategies"
     >
       <Card className="mb-8 bg-gradient-to-r from-orange-50 to-red-50 border-orange-200">

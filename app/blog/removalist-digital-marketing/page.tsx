@@ -5,7 +5,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent } from "@/components/ui/card";
 
 // client hook removed from server page to avoid server-side invocation
-import removalistDigitalMarketingHero from '@/assets/blog/removalist-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Removalist Digital Marketing",
   description: "Expert guidance on removalist digital marketing. Learn proven strategies and best practices for business growth.",
@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Removalist Digital Marketing",
     description: "Expert guidance on removalist digital marketing. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/removalist-digital-marketing",
+    url: "https://fractional-cmo.com.au/blog/removalist-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -45,7 +45,7 @@ const RemovalistDigitalMarketing = () => {
     publishedDate: "2024-12-31",
     modifiedDate: "2024-12-31",
     url: "/blog/removalist-digital-marketing",
-    imageUrl: removalistDigitalMarketingHero,
+    imageUrl: '/images/blog/removalist-digital-marketing-hero.jpg',
     category: "Service Business",
     readTime: "24 min read",
     tags: ["removalist marketing", "digital marketing", "moving business", "customer acquisition"]
@@ -63,7 +63,7 @@ const RemovalistDigitalMarketing = () => {
     question: "Should I use Google Ads for my removalist business?",
     answer: "Yes, Google Ads can be highly effective for removalists. Target emergency keywords like 'urgent movers' and local terms like 'removalists [city]' to capture high-intent customers actively searching for moving services."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={removalistDigitalMarketingHero} heroAlt="Digital marketing strategies for removalist and moving businesses">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/removalist-digital-marketing-hero.jpg'} heroAlt="Digital marketing strategies for removalist and moving businesses">
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <h3 className="text-xl font-semibold mb-4">Removalist Industry Digital Stats</h3>

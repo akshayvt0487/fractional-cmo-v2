@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Paintbrush, Home, Building, Palette } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import paintersDigitalMarketingHero from '@/assets/blog/painters-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Painters Digital Marketing Guide",
   description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Painters Digital Marketing Guide",
     description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/painters-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/painters-digital-marketing-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Painters Digital Marketing Guide"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Painters Digital Marketing Guide",
     description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const PaintersDigitalMarketing = () => {
     question: "What's the average ROI for digital marketing in the painting industry?",
     answer: "Well-executed digital marketing campaigns for painters typically generate 3:1 to 5:1 ROI within 6-12 months. Local SEO and Google Ads tend to provide the highest returns, with social media building long-term brand recognition and referrals."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={paintersDigitalMarketingHero} heroAlt="Professional painting business digital marketing and client acquisition">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/painters-digital-marketing-hero.jpg'} heroAlt="Professional painting business digital marketing and client acquisition">
       <p className="text-xl text-muted-foreground mb-8">
         The painting industry is highly competitive, with success often depending on local reputation and visual showcasing. Digital marketing has become essential for painting contractors to attract homeowners, demonstrate their craftsmanship, and build a sustainable business. This guide reveals proven strategies that top painting businesses use to dominate their local markets.
       </p>

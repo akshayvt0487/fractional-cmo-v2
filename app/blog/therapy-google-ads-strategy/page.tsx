@@ -12,7 +12,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Therapy Google Ads Strategy",
     description: "Expert guidance on therapy google ads strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/therapy-google-ads-strategy",
+    url: "https://fractional-cmo.com.au/blog/therapy-google-ads-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

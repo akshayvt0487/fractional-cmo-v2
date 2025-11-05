@@ -1,7 +1,7 @@
 import { createMetadata } from "@/lib/seo";
 import { Users, Target, TrendingUp, Shield, MessageCircle, CheckCircle } from 'lucide-react';
 import StrategyForm from '@/components/ui/strategy-form';
-import ndisMarketingGuideHero from '@/assets/blog/ndis-marketing-guide.jpg';
+
 import { Card, CardContent } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
@@ -14,11 +14,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Marketing Guide 2024",
     description: "Expert guidance on ndis marketing guide 2024. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-marketing-guide-2024",
+    url: "https://fractional-cmo.com.au/blog/ndis-marketing-guide-2024",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Marketing Guide 2024"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Marketing Guide 2024",
     description: "Expert guidance on ndis marketing guide 2024. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -58,7 +58,7 @@ const NDISMarketingGuide = () => {
     question: "What marketing channels work best for NDIS providers?",
     answer: "Most effective channels include local SEO, Google My Business optimization, content marketing focused on participant outcomes, targeted social media, and community engagement programs."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={ndisMarketingGuideHero} heroAlt="NDIS marketing guide for disability service providers">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/ndis-marketing-guide.jpg'} heroAlt="NDIS marketing guide for disability service providers">
         <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-l-4 border-l-green-500 p-8 mb-8 not-prose">
           <div className="flex items-start space-x-4">
             <div className="bg-green-100 p-3 rounded-full">

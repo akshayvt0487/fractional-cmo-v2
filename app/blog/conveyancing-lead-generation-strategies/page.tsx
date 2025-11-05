@@ -5,7 +5,7 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import conveyancingLeadGenerationHero from '@/assets/blog/conveyancing-lead-generation-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Conveyancing Lead Generation Strategies",
   description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
@@ -27,7 +27,7 @@ const ConveyancingLeadGeneration = () => {
     publishedDate: "2025-09-05T00:00:00.000Z",
     modifiedDate: "2025-09-05T00:00:00.000Z",
     url: "/blog/conveyancing-lead-generation-strategies",
-    imageUrl: conveyancingLeadGenerationHero,
+    imageUrl: '/images/blog/conveyancing-lead-generation-hero.jpg',
     category: "Legal Marketing",
     readTime: "26 min read",
     tags: ["Conveyancing", "Lead Generation", "Digital Marketing", "Property Law", "Legal Marketing"]
@@ -42,7 +42,7 @@ const ConveyancingLeadGeneration = () => {
     question: "What's the average cost per lead for conveyancing services?",
     answer: "Cost per lead varies by location and competition: $50-150 for residential conveyancing, $200-500 for commercial property. Focus on lead quality and conversion rates rather than just cost."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={conveyancingLeadGenerationHero} heroAlt="Digital marketing strategies for conveyancing lead generation">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-lead-generation-hero.jpg'} heroAlt="Digital marketing strategies for conveyancing lead generation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           In today&apos;s competitive property market, conveyancing firms need more than traditional referral networks to thrive. 
           With property transactions increasingly starting online, successful conveyancers are those who master digital lead generation.

@@ -5,7 +5,7 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import conveyancingSeoHero from '@/assets/blog/conveyancing-seo-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Conveyancing Seo Guide",
   description: "Expert guidance on conveyancing seo guide. Learn proven strategies and best practices for business growth.",
@@ -14,11 +14,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Conveyancing Seo Guide",
     description: "Expert guidance on conveyancing seo guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/conveyancing-seo-guide",
+
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.au/images/blog/conveyancing-seo-hero.jpg",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/conveyancing-seo-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Conveyancing SEO Strategy Guide"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Conveyancing Seo Guide",
     description: "Expert guidance on conveyancing seo guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.au/images/blog/conveyancing-seo-hero.jpg"],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/conveyancing-seo-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -43,7 +43,7 @@ const ConveyancingSEO = () => {
     publishedDate: "2025-09-03T00:00:00.000Z",
     modifiedDate: "2025-09-03T00:00:00.000Z",
     url: "/blog/conveyancing-seo-guide",
-    imageUrl: conveyancingSeoHero,
+    imageUrl: '/images/blog/conveyancing-seo-hero.jpg',
     category: "Legal Marketing",
     readTime: "25 min read",
     tags: ["Conveyancing SEO", "Property Law Marketing", "Legal SEO", "Local SEO", "Content Marketing"]
@@ -58,7 +58,7 @@ const ConveyancingSEO = () => {
     question: "Should conveyancing firms target national or local SEO?",
     answer: "Focus primarily on local SEO since conveyancing is location-specific. Target your service areas with geo-specific content while building authority through educational property law content."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={conveyancingSeoHero} heroAlt="Conveyancing SEO strategies for property lawyers">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-seo-hero.jpg'} heroAlt="Conveyancing SEO strategies for property lawyers">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏠 When property buyers and sellers search for conveyancing services, they&apos;re making crucial decisions about who will handle their largest financial transactions. This comprehensive SEO guide reveals proven strategies that successful conveyancing firms use to rank higher in search results, attract quality leads, and establish authority in competitive property law markets.
         </p>

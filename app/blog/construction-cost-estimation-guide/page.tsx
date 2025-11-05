@@ -4,7 +4,7 @@ import { AlertTriangle, Calculator } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
-import constructionCostEstimationHero from '@/assets/blog/construction-cost-estimation.jpg';
+
 export const metadata = createMetadata({
   title: "Construction Cost Estimation Guide",
   description: "Expert guidance on construction cost estimation guide. Learn proven strategies and best practices for business growth.",
@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Construction Cost Estimation Guide",
     description: "Expert guidance on construction cost estimation guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/construction-cost-estimation-guide",
+
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -42,7 +42,7 @@ const ConstructionCostEstimation = () => {
     publishedDate: "2024-03-01T00:00:00.000Z",
     modifiedDate: "2024-03-01T00:00:00.000Z",
     url: "/blog/construction-cost-estimation-guide",
-    imageUrl: constructionCostEstimationHero,
+    imageUrl: '/images/blog/construction-cost-estimation.jpg',
     category: "Construction",
     readTime: "24 min read",
     tags: ["Construction", "Cost Estimation", "Project Management", "Budget Planning"]
@@ -57,7 +57,7 @@ const ConstructionCostEstimation = () => {
     question: "What's the best software for construction cost estimation?",
     answer: "Popular options include PlanSwift, Bluebeam, CostX, and BuildingConnected. Choose based on project size, complexity, and integration needs with existing project management systems."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={constructionCostEstimationHero} heroAlt="Construction cost estimation and project management strategies">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={'/images/blog/construction-cost-estimation.jpg'} heroAlt="Construction cost estimation and project management strategies">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Accurate cost estimation is crucial for construction project success and profitability. This comprehensive guide covers proven methodologies and advanced strategies that help construction professionals deliver precise project pricing and avoid costly overruns.
         </p>

@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
 import { Palette, Target, Star, Phone, MapPin, Camera, FileText, Users } from 'lucide-react';
-import paintersLeadGenerationHero from '@/assets/blog/painters-lead-generation-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
   description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
@@ -14,11 +14,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
     description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/painters-lead-generation-guide",
+    url: "https://fractional-cmo.com.au/blog/painters-lead-generation-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
     description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -81,7 +81,7 @@ const relatedArticles = [{
 }];
 const PaintersLeadGeneration = () => {
   return <>
-      <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={paintersLeadGenerationHero} heroAlt="Professional painters working on home exterior - lead generation guide">
+      <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={'/images/blog/painters-lead-generation-hero.jpg'} heroAlt="Professional painters working on home exterior - lead generation guide">
         <p className="text-lg text-muted-foreground mb-6">
           The painting industry is highly competitive, with over 400,000 painting contractors operating across Australia and the US. Success in this market requires more than just quality workmanship—it demands a strategic approach to lead generation that consistently attracts the right clients to your painting business.
         </p>

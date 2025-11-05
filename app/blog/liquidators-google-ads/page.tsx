@@ -12,11 +12,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Liquidators Google Ads",
     description: "Expert guidance on liquidators google ads. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/liquidators-google-ads",
+    url: "https://fractional-cmo.com.au/blog/liquidators-google-ads",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Liquidators Google Ads"
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Liquidators Google Ads",
     description: "Expert guidance on liquidators google ads. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });

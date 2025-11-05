@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import StrategyForm from '@/components/ui/strategy-form';
 import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
-import loanBrokerLeadGenerationHero from '@/assets/blog/loan-broker-lead-generation-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Loan Broker Lead Generation Strategy",
   description: "Expert guidance on loan broker lead generation strategy. Learn proven strategies and best practices for business growth.",
@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Loan Broker Lead Generation Strategy",
     description: "Expert guidance on loan broker lead generation strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/loan-broker-lead-generation-strategy",
+    url: "https://fractional-cmo.com.au/blog/loan-broker-lead-generation-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,7 +57,7 @@ const LoanBrokerLeadGeneration = () => {
     question: "How do I qualify mortgage leads effectively?",
     answer: "Ask key qualifying questions about timeline, pre-approval status, price range, deposit readiness, and current agent relationships. Use lead scoring based on demographics, behavior, and engagement to prioritize follow-up efforts."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={loanBrokerLeadGenerationHero} heroAlt="Loan broker generating leads through digital marketing with analytics dashboard">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/loan-broker-lead-generation-hero.jpg'} heroAlt="Loan broker generating leads through digital marketing with analytics dashboard">
       <p className="text-xl text-muted-foreground mb-8">
         Consistent lead generation is the lifeblood of any successful loan brokerage. This comprehensive guide reveals the exact strategies top-performing mortgage brokers use to attract qualified borrowers, nurture prospects, and convert leads into profitable loan settlements.
       </p>

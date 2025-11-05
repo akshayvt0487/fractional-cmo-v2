@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
-import heroImage from '@/assets/blog/lawyers-lead-generation-hero.jpg';
+
 import { relatedArticles } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   title: "Lawyers Lead Generation",
@@ -14,11 +14,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Lawyers Lead Generation",
     description: "Expert guidance on lawyers lead generation. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/lawyers-lead-generation",
+    url: "https://fractional-cmo.com.au/blog/lawyers-lead-generation",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Lawyers Lead Generation"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Lawyers Lead Generation",
     description: "Expert guidance on lawyers lead generation. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -61,7 +61,7 @@ const LawyersLeadGeneration = () => {
     question: "How long does it take to see results from legal marketing?",
     answer: "SEO and content marketing typically show results in 6-12 months. Google Ads can generate leads immediately. Networking and referral building take 3-6 months to establish momentum. Consistent effort across multiple channels yields the best long-term results."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={heroImage} heroAlt="Professional lawyer implementing digital lead generation strategies in modern law firm office">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/lawyers-lead-generation-hero.jpg'} heroAlt="Professional lawyer implementing digital lead generation strategies in modern law firm office">
       <section className="mb-12">
         <Card className="border-l-4 border-l-primary bg-primary/5 mb-8">
           <CardContent className="p-6">

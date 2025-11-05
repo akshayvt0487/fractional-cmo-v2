@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Wrench, AlertTriangle, Building, Zap, Search, Users, Video, Play, MessageCircle, Star, CheckCircle } from 'lucide-react';
-import mechanicDigitalMarketingHero from '@/assets/blog/mechanic-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Mechanic Digital Marketing Guide",
   description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Mechanic Digital Marketing Guide",
     description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/mechanic-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/mechanic-digital-marketing-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -60,7 +60,7 @@ const MechanicDigitalMarketing = () => {
     question: "Should mechanics use social media marketing?",
     answer: "Yes, social media is excellent for showing your work, building community trust, and educational content. Facebook is great for local engagement, Instagram for showing repairs, and YouTube for detailed automotive tutorials."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={mechanicDigitalMarketingHero} heroAlt="Professional automotive service digital marketing and customer acquisition">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/mechanic-digital-marketing-hero.jpg'} heroAlt="Professional automotive service digital marketing and customer acquisition">
       <p className="text-xl text-muted-foreground mb-8">
         The automotive service industry is built on trust and expertise, but in today&apos;s digital world, even the best mechanics need strong online marketing to attract and retain customers. This comprehensive guide reveals proven digital marketing strategies that successful automotive service businesses use to build their reputation, attract loyal customers, and grow sustainably.
       </p>

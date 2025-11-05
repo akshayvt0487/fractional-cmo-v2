@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Search, MapPin, TrendingUp, Users, Globe, Target, CheckCircle } from 'lucide-react';
-import realEstateSEOMarketingHero from '@/assets/blog/real-estate-seo-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Real Estate Seo Marketing Guide",
   description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Real Estate Seo Marketing Guide",
     description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/real-estate-seo-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/real-estate-seo-marketing-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Real Estate Seo Marketing Guide"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Real Estate Seo Marketing Guide",
     description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const RealEstateSEOMarketing = () => {
     question: "Should real estate agents focus on national or local SEO?",
     answer: "Real estate agents should focus primarily on local SEO since most property searches are location-specific. Target keywords like 'real estate agent [city]', 'homes for sale [suburb]', and create location-specific content for your service areas."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={realEstateSEOMarketingHero} heroAlt="Real estate SEO and local search optimization strategies">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/real-estate-seo-marketing-hero.jpg'} heroAlt="Real estate SEO and local search optimization strategies">
       <Card className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
         <CardContent className="p-6">
           <div className="flex items-start space-x-4">

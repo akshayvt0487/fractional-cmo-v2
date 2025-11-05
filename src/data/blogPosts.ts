@@ -1,120 +1,3 @@
-// Blog posts data with proper image imports
-import b2bLeadGenerationHero from '@/assets/blog/b2b-lead-generation-hero.jpg';
-import localSearchRankingHero from '@/assets/blog/local-search-ranking-hero.jpg';
-import removalistDigitalMarketingHero from '@/assets/blog/removalist-digital-marketing-hero.jpg';
-import fractionalCmoWhatIsHero from '@/assets/blog/fractional-cmo-what-is-hero.jpg';
-import ndisDigitalMarketing from '@/assets/blog/ndis-digital-marketing.jpg';
-import constructionLeadGeneration from '@/assets/blog/construction-lead-generation.jpg';
-import localSeoTrade from '@/assets/blog/local-seo-trade.jpg';
-import googleAdsServiceBusinesses from '@/assets/blog/google-ads-service-businesses.jpg';
-import fractionalVsFulltimeCmoHero from '@/assets/blog/fractional-vs-fulltime-cmo-hero.jpg';
-import advancedNdisLeadGenerationHero from '@/assets/blog/advanced-ndis-lead-generation-hero.jpg';
-import whenHireFractionalCmoHero from '@/assets/blog/when-hire-fractional-cmo-hero.jpg';
-import ndisParticipantEngagementHero from '@/assets/blog/ndis-participant-engagement-hero.jpg';
-import constructionProjectManagementHero from '@/assets/blog/construction-project-management-hero.jpg';
-import carInspectionBusinessHero from '@/assets/blog/car-inspection-business-hero.jpg';
-import ndisLeadGenerationMastery from '@/assets/blog/ndis-lead-generation-mastery.jpg';
-import digitalMarketingAutomation from '@/assets/blog/digital-marketing-automation.jpg';
-import ndisWebDesign from '@/assets/blog/ndis-web-design.jpg';
-import tradeCustomerRetention from '@/assets/blog/trade-customer-retention.jpg';
-import digitalMarketingRoi from '@/assets/blog/digital-marketing-roi.jpg';
-import constructionCostEstimation from '@/assets/blog/construction-cost-estimation.jpg';
-import tradeBusinessGrowth from '@/assets/blog/trade-business-growth.jpg';
-import ndisMarketingGuideNew from '@/assets/blog/ndis-marketing-guide-new.jpg';
-import carInspectionMarketing from '@/assets/blog/car-inspection-marketing.jpg';
-import startingRemovalistBusinessFixed from '@/assets/blog/starting-removalist-business-fixed.jpg';
-import prePurchaseCarInspection from '@/assets/blog/pre-purchase-car-inspection.jpg';
-import whenToHireFractionalCmo from '@/assets/blog/when-to-hire-fractional-cmo.jpg';
-import whatIsFractionalCmo from '@/assets/blog/what-is-fractional-cmo.jpg';
-import fractionalCmoVsFullTime from '@/assets/blog/fractional-cmo-vs-full-time.jpg';
-import ndisParticipantEngagement from '@/assets/blog/ndis-participant-engagement.jpg';
-import removalistBusinessMarketing from '@/assets/blog/removalist-business-marketing.jpg';
-import removalistSeoStrategyHero from '@/assets/blog/removalist-seo-strategy-hero.jpg';
-import ndisLeadGeneration from '@/assets/blog/ndis-lead-generation-mastery.jpg';
-import ndisComplianceQualityNew from '@/assets/blog/ndis-compliance-quality-new.jpg';
-import ndisProviderRegistration from '@/assets/blog/ndis-provider-registration.jpg';
-import constructionSafetyCompliance from '@/assets/blog/construction-safety-compliance.jpg';
-import ndisMarketingGuide from '@/assets/blog/ndis-marketing-guide.jpg';
-import ndisMarketingGuideUnique from '@/assets/blog/ndis-marketing-guide-unique.jpg';
-import ndisSoftwareSaaSMarketingUnique from '@/assets/blog/ndis-software-saas-marketing-unique.jpg';
-import ndisSoftwarePositioningUnique from '@/assets/blog/ndis-software-positioning-unique.jpg';
-import ndisSoftwareLeadGenUnique from '@/assets/blog/ndis-software-lead-gen-unique.jpg';
-import ndisDigitalMarketingExcellenceUnique from '@/assets/blog/ndis-digital-marketing-excellence-unique.jpg';
-import ndisDigitalMarketingTraditional from '@/assets/blog/ndis-digital-marketing-traditional.jpg';
-import liquidatorsGrowthMarketingHero from '@/assets/blog/liquidators-growth-marketing-hero.jpg';
-import insolvencyDigitalMarketingHero from '@/assets/blog/insolvency-digital-marketing-hero.jpg';
-import liquidatorsGoogleAdsHero from '@/assets/blog/liquidators-google-ads-hero.jpg';
-import voluntaryAdministrationLeadGenerationHero from '@/assets/blog/voluntary-administration-lead-generation-hero.jpg';
-import ndisComprehensiveMarketingHero from '@/assets/blog/ndis-comprehensive-marketing-hero.jpg';
-
-// New unique images for improved blog post variety
-import removalistMetaAdsHero from '@/assets/blog/removalist-meta-ads-hero.jpg';
-import ndisLeadGenerationStrategiesHero from '@/assets/blog/ndis-lead-generation-strategies-hero.jpg';
-import bricklayersLeadGenerationHero from '@/assets/blog/bricklayers-lead-generation-hero.jpg';
-import lawyersLeadGenerationHero from '@/assets/blog/lawyers-lead-generation-hero.jpg';
-import removalistGoogleAdsAdvancedHero from '@/assets/blog/removalist-google-ads-advanced-hero.jpg';
-import removalistMarketingComprehensiveHero from '@/assets/blog/removalist-marketing-comprehensive-hero.jpg';
-import removalistSeoOptimizationHero from '@/assets/blog/removalist-seo-optimization-hero.jpg';
-import startingRemovalistBusiness2025Hero from '@/assets/blog/starting-removalist-business-2025-hero.jpg';
-import ndisBusinessScalingHero from '@/assets/blog/ndis-business-scaling-hero.jpg';
-import ndisComplianceManagementHero from '@/assets/blog/ndis-compliance-management-hero.jpg';
-import ndisProviderRegistrationGuideHero from '@/assets/blog/ndis-provider-registration-guide-hero.jpg';
-import ndisSoftwareSolutionsHero from '@/assets/blog/ndis-software-solutions-hero.jpg';
-import constructionManagementDigitalHero from '@/assets/blog/construction-management-digital-hero.jpg';
-import constructionCostEstimationAdvancedHero from '@/assets/blog/construction-cost-estimation-advanced-hero.jpg';
-import constructionSafetyProtocolsHero from '@/assets/blog/construction-safety-protocols-hero.jpg';
-import tradeCustomerLoyaltyHero from '@/assets/blog/trade-customer-loyalty-hero.jpg';
-import tradeBusinessExpansionHero from '@/assets/blog/trade-business-expansion-hero.jpg';
-
-// Cyber Security blog images
-import cyberSecurityGrowthHacking from '@/assets/blog/cyber-security-growth-hacking.jpg';
-import cyberSecurityGoogleAds from '@/assets/blog/cyber-security-google-ads.jpg';
-import cyberSecuritySEOAustralia from '@/assets/blog/cyber-security-seo-australia.jpg';
-import cyberSecurityDigitalMarketing from '@/assets/blog/cyber-security-digital-marketing.jpg';
-
-// Conveyancing blog images
-import conveyancingLeadGenerationHero from '@/assets/blog/conveyancing-lead-generation-hero.jpg';
-import conveyancingGoogleAdsHero from '@/assets/blog/conveyancing-google-ads-hero.jpg';
-import conveyancingSeoHero from '@/assets/blog/conveyancing-seo-hero.jpg';
-import conveyancingSocialMediaHero from '@/assets/blog/conveyancing-social-media-hero.jpg';
-import conveyancingDigitalMarketingRoiHero from '@/assets/blog/conveyancing-digital-marketing-roi-hero.jpg';
-
-// Therapy services blog images
-import therapyServicesDigitalMarketingHero from '@/assets/blog/therapy-services-digital-marketing-hero.jpg';
-import therapyGoogleAdsStrategyHero from '@/assets/blog/therapy-google-ads-strategy-hero.jpg';
-import therapyGrowthMarketingStrategyHero from '@/assets/blog/therapy-growth-marketing-strategy-hero.jpg';
-import accountingDigitalMarketingHero from '@/assets/blog/accounting-digital-marketing-hero.jpg';
-import financialPlannerLeadGenHero from '@/assets/blog/finance-broker-lead-generation-hero.jpg';
-import taxAdvisorGoogleAdsHero from '@/assets/blog/tax-advisor-google-ads-hero.jpg';
-import financialPlannerSEOHero from '@/assets/blog/financial-planner-seo-hero.jpg';
-import accountingGrowthStrategyHero from '@/assets/blog/accounting-growth-strategy-hero.jpg';
-import loanBrokerDigitalMarketingHero from '@/assets/blog/loan-broker-digital-marketing-hero.jpg';
-import loanBrokerLeadGenerationHero from '@/assets/blog/loan-broker-lead-generation-hero.jpg';
-import loanBrokerGoogleAdsHero from '@/assets/blog/loan-broker-google-ads-hero.jpg';
-import securityDigitalMarketingHero from '@/assets/blog/security-digital-marketing-hero.jpg';
-import securityLeadGenerationHero from '@/assets/blog/security-lead-generation-hero.jpg';
-import paintersDigitalMarketingHero from '@/assets/blog/painters-digital-marketing-hero.jpg';
-import paintersLeadGenerationHero from '@/assets/blog/painters-lead-generation-hero.jpg';
-import mechanicDigitalMarketingHero from '@/assets/blog/mechanic-digital-marketing-hero.jpg';
-import homeBuildersLeadGenerationHero from '@/assets/blog/home-builders-lead-generation-hero.jpg';
-import renovationBuildersDigitalMarketingHero from '@/assets/blog/renovation-builders-digital-marketing-hero.jpg';
-import realEstateSEOMarketingHero from '@/assets/blog/real-estate-seo-marketing-hero.jpg';
-import buyersAgentsGoogleAdsHero from '@/assets/blog/buyers-agents-google-ads-hero.jpg';
-import bricklayersGrowthMarketingHero from '@/assets/blog/bricklayers-growth-marketing-hero.jpg';
-import floorSandingDigitalMarketingHero from '@/assets/blog/floor-sanding-digital-marketing-hero.jpg';
-import securityGoogleAdsStrategyHero from '@/assets/blog/security-google-ads-strategy-hero.jpg';
-import socialMediaMarketingStrategyHero from '@/assets/blog/social-media-marketing-strategy-hero.jpg';
-import growthMarketingStrategyHero from '@/assets/blog/growth-marketing-strategy-hero.jpg';
-import digitalStrategyModernBusinessHero from '@/assets/blog/digital-strategy-modern-business-hero.jpg';
-import saasMarketingItSectorHero from '@/assets/blog/saas-marketing-it-sector-hero.jpg';
-import ndisDisabilityServiceMarketingHero from '@/assets/blog/ndis-disability-service-marketing-hero.jpg';
-import itConsultingDigitalMarketingHero from '@/assets/blog/it-consulting-digital-marketing-hero.jpg';
-import itNetworkingGrowthStrategyHero from '@/assets/blog/it-networking-growth-strategy-hero.jpg';
-import itConsultingLeadGenerationHero from '@/assets/blog/it-consulting-lead-generation-hero.jpg';
-import familyLawyersDigitalMarketingHero from '@/assets/blog/family-lawyers-digital-marketing-hero.jpg';
-import divorceLawyersDigitalMarketingHero from '@/assets/blog/divorce-lawyers-digital-marketing-hero.jpg';
-import criminalLawyersDigitalMarketingHero from '@/assets/blog/criminal-lawyers-digital-marketing-hero.jpg';
-
 export interface BlogPost {
   title: string;
   excerpt: string;
@@ -135,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-google-ads-respite-sil-western-sydney",
     category: "NDIS - Google Ads",
     author: "Basheer Padanna",
-    image: ndisComprehensiveMarketingHero
+    image: '/images/blog/ndis-comprehensive-marketing-hero.jpg'
   },
   {
     title: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2025",
@@ -145,7 +28,7 @@ export const blogPosts: BlogPost[] = [
     slug: "liquidators-growth-marketing",
     category: "Accounting & Finance - Liquidators",
     author: "Basheer Padanna",
-    image: liquidatorsGrowthMarketingHero
+    image: '/images/blog/liquidators-growth-marketing-hero.jpg'
   },
   {
     title: "Insolvency Digital Marketing: Complete Growth Guide for Liquidators & Administrators 2025",
@@ -155,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     slug: "insolvency-digital-marketing",
     category: "Accounting & Finance - Liquidators",
     author: "Basheer Padanna",
-    image: insolvencyDigitalMarketingHero
+    image: '/images/blog/insolvency-digital-marketing-hero.jpg'
   },
   {
     title: "Google Ads for Liquidators: Complete Strategy Guide 2025",
@@ -165,7 +48,7 @@ export const blogPosts: BlogPost[] = [
     slug: "liquidators-google-ads-strategy",
     category: "Insolvency - Google Ads",
     author: "Basheer Padanna",
-    image: liquidatorsGoogleAdsHero
+    image: '/images/blog/liquidators-google-ads-hero.jpg'
   },
   {
     title: "Google Ads for Liquidators: Complete PPC Strategy Guide 2025",
@@ -175,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     slug: "liquidators-google-ads",
     category: "Accounting & Finance - Liquidators",
     author: "Basheer Padanna",
-    image: liquidatorsGoogleAdsHero
+    image: '/images/blog/liquidators-google-ads-hero.jpg'
   },
   {
     title: "Voluntary Administration Lead Generation: Client Acquisition Strategies for Insolvency Practitioners 2025",
@@ -185,7 +68,7 @@ export const blogPosts: BlogPost[] = [
     slug: "voluntary-administration-lead-generation",
     category: "Accounting & Finance - Liquidators",
     author: "Basheer Padanna",
-    image: voluntaryAdministrationLeadGenerationHero
+    image: '/images/blog/voluntary-administration-lead-generation-hero.jpg'
   },
   {
     title: "Meta Ads for Removalist Business: Complete Facebook Advertising Strategy Guide 2025",
@@ -195,7 +78,7 @@ export const blogPosts: BlogPost[] = [
     slug: "removalist-meta-ads-strategy",
     category: "Tradies - Removalists",
     author: "Basheer Padanna",
-    image: removalistMetaAdsHero
+    image: '/images/blog/removalist-meta-ads-hero.jpg'
   },
   {
     title: "Family Lawyers Digital Marketing: Complete Client Acquisition Guide for Family Law Practices 2025",
@@ -205,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     slug: "family-lawyers-digital-marketing",
     category: "Legal",
     author: "Basheer Padanna",
-    image: familyLawyersDigitalMarketingHero
+    image: '/images/blog/family-lawyers-digital-marketing-hero.jpg'
   },
   {
     title: "Divorce Lawyers Digital Marketing: Complete Client Acquisition Guide for Divorce Attorneys 2025",
@@ -215,7 +98,7 @@ export const blogPosts: BlogPost[] = [
     slug: "divorce-lawyers-digital-marketing",
     category: "Legal",
     author: "Basheer Padanna",
-    image: divorceLawyersDigitalMarketingHero
+    image: '/images/blog/divorce-lawyers-digital-marketing-hero.jpg'
   },
   {
     title: "Criminal Lawyers Digital Marketing: Defense Attorney Growth Strategies & Client Acquisition Guide 2025",
@@ -225,7 +108,7 @@ export const blogPosts: BlogPost[] = [
     slug: "criminal-lawyers-digital-marketing",
     category: "Legal",
     author: "Basheer Padanna",
-    image: criminalLawyersDigitalMarketingHero
+    image: '/images/blog/criminal-lawyers-digital-marketing-hero.jpg'
   },
   {
     title: "Social Media Marketing Strategy for Service Businesses: Complete 2025 Guide",
@@ -235,7 +118,7 @@ export const blogPosts: BlogPost[] = [
     slug: "social-media-marketing-strategy",
     category: "Digital Marketing - Social Media",
     author: "Basheer Padanna",
-    image: socialMediaMarketingStrategyHero
+    image: '/images/blog/social-media-marketing-strategy-hero.jpg'
   },
   {
     title: "Growth Marketing Strategies for Professional Services: Data-Driven Scaling Guide 2025",
@@ -245,7 +128,7 @@ export const blogPosts: BlogPost[] = [
     slug: "growth-marketing-strategy",
     category: "Digital Marketing - Growth Marketing",
     author: "Basheer Padanna",
-    image: growthMarketingStrategyHero
+    image: '/images/blog/growth-marketing-strategy-hero.jpg'
   },
   {
     title: "Digital Strategy for Modern Businesses: Complete Transformation Guide 2025",
@@ -255,7 +138,7 @@ export const blogPosts: BlogPost[] = [
     slug: "digital-strategy-modern-business",
     category: "Digital Marketing - Digital Strategy",
     author: "Basheer Padanna",
-    image: digitalStrategyModernBusinessHero
+    image: '/images/blog/digital-strategy-modern-business-hero.jpg'
   },
   {
     title: "SaaS Marketing in the IT Sector: Complete Growth Guide for Software Companies 2025",
@@ -265,7 +148,7 @@ export const blogPosts: BlogPost[] = [
     slug: "saas-marketing-it-sector",
     category: "IT - SaaS",
     author: "Basheer Padanna",
-    image: saasMarketingItSectorHero
+    image: '/images/blog/saas-marketing-it-sector-hero.jpg'
   },
   {
     title: "NDIS Disability Service Digital Marketing: Complete Growth Strategy 2025",
@@ -275,7 +158,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-disability-service-marketing",
     category: "NDIS - Disability Service",
     author: "Basheer Padanna",
-    image: ndisDisabilityServiceMarketingHero
+    image: '/images/blog/ndis-disability-service-marketing-hero.jpg'
   },
   {
     title: "IT Consulting Digital Marketing: Complete Client Acquisition Strategy 2025",
@@ -285,7 +168,7 @@ export const blogPosts: BlogPost[] = [
     slug: "it-consulting-digital-marketing-strategy",
     category: "IT - Consulting",
     author: "Basheer Padanna",
-    image: itConsultingDigitalMarketingHero
+    image: '/images/blog/it-consulting-digital-marketing-hero.jpg'
   },
   {
     title: "IT Networking Business Growth: Scaling Your Network Solutions Company 2025",
@@ -295,7 +178,7 @@ export const blogPosts: BlogPost[] = [
     slug: "it-networking-business-growth-strategy",
     category: "IT - Networking",
     author: "Basheer Padanna",
-    image: itNetworkingGrowthStrategyHero
+    image: '/images/blog/it-networking-growth-strategy-hero.jpg'
   },
   {
     title: "Lead Generation for IT Consultants: Attract High-Value Technology Clients 2025",
@@ -305,7 +188,7 @@ export const blogPosts: BlogPost[] = [
     slug: "it-consulting-lead-generation-guide",
     category: "IT - Consulting",
     author: "Basheer Padanna",
-    image: itConsultingLeadGenerationHero
+    image: '/images/blog/it-consulting-lead-generation-hero.jpg'
   },
   {
     title: "Growth Marketing for Therapy Clinics: Scaling NDIS Provider Services in 2025",
@@ -315,7 +198,7 @@ export const blogPosts: BlogPost[] = [
     slug: "therapy-growth-marketing-strategy",
     category: "NDIS",
     author: "Basheer Padanna",
-    image: therapyGrowthMarketingStrategyHero
+    image: '/images/blog/therapy-growth-marketing-strategy-hero.jpg'
   },
   {
     title: "Google Ads for Therapy Clinics: Advanced NDIS Provider Advertising Strategy",
@@ -325,7 +208,7 @@ export const blogPosts: BlogPost[] = [
     slug: "therapy-google-ads-strategy",
     category: "NDIS",
     author: "Basheer Padanna",
-    image: therapyGoogleAdsStrategyHero
+    image: '/images/blog/therapy-google-ads-strategy-hero.jpg'
   },
   {
     title: "Digital Marketing for Therapy Services: Complete NDIS Provider Growth Guide",
@@ -335,7 +218,7 @@ export const blogPosts: BlogPost[] = [
     slug: "therapy-services-digital-marketing",
     category: "NDIS",
     author: "Basheer Padanna",
-    image: therapyServicesDigitalMarketingHero
+    image: '/images/blog/therapy-services-digital-marketing-hero.jpg'
   },
   {
     title: "Conveyancing Lead Generation: Digital Marketing Strategies for Property Law Firms",
@@ -345,7 +228,7 @@ export const blogPosts: BlogPost[] = [
     slug: "conveyancing-lead-generation-strategies",
     category: "Legal",
     author: "Basheer Padanna",
-    image: conveyancingLeadGenerationHero
+    image: '/images/blog/conveyancing-lead-generation-hero.jpg'
   },
   {
     title: "Google Ads for Conveyancers: How to Dominate Local Property Market",
@@ -355,7 +238,7 @@ export const blogPosts: BlogPost[] = [
     slug: "google-ads-conveyancing-guide",
     category: "Legal",
     author: "Basheer Padanna",
-    image: conveyancingGoogleAdsHero
+    image: '/images/blog/conveyancing-google-ads-hero.jpg'
   },
   {
     title: "SEO for Conveyancing: Ranking Higher When Clients Search for Property Lawyers",
@@ -365,7 +248,7 @@ export const blogPosts: BlogPost[] = [
     slug: "conveyancing-seo-guide",
     category: "Legal",
     author: "Basheer Padanna",
-    image: conveyancingSeoHero
+    image: '/images/blog/conveyancing-seo-hero.jpg'
   },
   {
     title: "Social Media Marketing for Conveyancers: Building Trust in the Digital Age",
@@ -375,7 +258,7 @@ export const blogPosts: BlogPost[] = [
     slug: "conveyancing-social-media-marketing",
     category: "Legal",
     author: "Basheer Padanna",
-    image: conveyancingSocialMediaHero
+    image: '/images/blog/conveyancing-social-media-hero.jpg'
   },
   {
     title: "Digital Marketing ROI for Conveyancing Firms: Measuring Success and Growth",
@@ -385,7 +268,7 @@ export const blogPosts: BlogPost[] = [
     slug: "conveyancing-digital-marketing-roi",
     category: "Legal",
     author: "Basheer Padanna",
-    image: conveyancingDigitalMarketingRoiHero
+    image: '/images/blog/conveyancing-digital-marketing-roi-hero.jpg'
   },
   {
     title: "Growth Hacking for Cyber Security Companies: Advanced Strategies for Rapid Business Expansion",
@@ -395,7 +278,7 @@ export const blogPosts: BlogPost[] = [
     slug: "cyber-security-growth-hacking",
     category: "Cyber Security",
     author: "Basheer Padanna",
-    image: cyberSecurityGrowthHacking
+    image: '/images/blog/cyber-security-growth-hacking.jpg'
   },
   {
     title: "Google Ads Strategy for Cyber Security Businesses: Complete Guide to High-Converting Campaigns",
@@ -405,7 +288,7 @@ export const blogPosts: BlogPost[] = [
     slug: "cyber-security-google-ads-strategy",
     category: "Cyber Security",
     author: "Basheer Padanna",
-    image: cyberSecurityGoogleAds
+    image: '/images/blog/cyber-security-google-ads.jpg'
   },
   {
     title: "SEO Services for Cyber Security Businesses in Australia: Complete Local Domination Guide",
@@ -415,7 +298,7 @@ export const blogPosts: BlogPost[] = [
     slug: "cyber-security-seo-australia",
     category: "Cyber Security",
     author: "Basheer Padanna",
-    image: cyberSecuritySEOAustralia
+    image: '/images/blog/cyber-security-seo-australia.jpg'
   },
   {
     title: "Digital Marketing Strategies for New Cyber Security Firms: Complete Startup Growth Guide",
@@ -425,7 +308,7 @@ export const blogPosts: BlogPost[] = [
     slug: "cyber-security-digital-marketing-strategies",
     category: "Cyber Security",
     author: "Basheer Padanna",
-    image: cyberSecurityDigitalMarketing
+    image: '/images/blog/cyber-security-digital-marketing.jpg'
   },
   {
     title: "B2B Lead Generation: 10 Proven Strategies for Service Businesses",
@@ -435,7 +318,7 @@ export const blogPosts: BlogPost[] = [
     slug: "b2b-lead-generation-strategies",
     category: "Digital Marketing",
     author: "Basheer Padanna",
-    image: b2bLeadGenerationHero
+    image: '/images/blog/b2b-lead-generation-hero.jpg'
   },
   {
     title: "How to Rank Quickly in Local Search Engines: Complete Guide",
@@ -445,7 +328,7 @@ export const blogPosts: BlogPost[] = [
     slug: "local-search-ranking-strategies",
     category: "Digital Marketing",
     author: "Basheer Padanna",
-    image: localSearchRankingHero
+    image: '/images/blog/local-search-ranking-hero.jpg'
   },
   {
     title: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
@@ -455,7 +338,7 @@ export const blogPosts: BlogPost[] = [
     slug: "removalist-seo-strategy",
     category: "Tradies - Removalists",
     author: "Basheer Padanna",
-    image: removalistSeoOptimizationHero
+    image: '/images/blog/removalist-seo-optimization-hero.jpg'
   },
   {
     title: "Digital Marketing for Removalist Business: Complete Growth Guide",
@@ -465,7 +348,7 @@ export const blogPosts: BlogPost[] = [
     slug: "removalist-digital-marketing-guide",
     category: "Tradies - Removalists",
     author: "Basheer Padanna",
-    image: removalistDigitalMarketingHero
+    image: '/images/blog/removalist-digital-marketing-hero.jpg'
   },
   {
     title: "What is a Fractional CMO? Complete Guide for Business Owners",
@@ -475,7 +358,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-fractional-cmo",
     category: "fCMO",
     author: "Basheer Padanna",
-    image: fractionalCmoWhatIsHero
+    image: '/images/blog/fractional-cmo-what-is-hero.jpg'
   },
   {
     title: "NDIS Business Growth Strategy: Scale Your Disability Services Sustainably",
@@ -485,7 +368,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-business-growth-strategy",
     category: "NDIS",
     author: "Basheer Padanna",
-    image: ndisDigitalMarketing
+    image: '/images/blog/ndis-digital-marketing.jpg'
   },
   {
     title: "Construction Lead Generation: 7 Strategies That Actually Work",
@@ -495,7 +378,7 @@ export const blogPosts: BlogPost[] = [
     slug: "construction-lead-generation-strategies",
     category: "Construction",
     author: "Basheer Padanna",
-    image: constructionLeadGeneration
+    image: '/images/blog/construction-lead-generation.jpg'
   },
   {
     title: "Local SEO for Trade Businesses: Dominate Your Service Area",
@@ -505,7 +388,7 @@ export const blogPosts: BlogPost[] = [
     slug: "local-seo-trade-businesses",
     category: "Trade",
     author: "Basheer Padanna",
-    image: localSeoTrade
+    image: '/images/blog/local-seo-trade.jpg'
   },
   {
     title: "Google Ads for Service Businesses: Complete Setup Guide",
@@ -515,7 +398,7 @@ export const blogPosts: BlogPost[] = [
     slug: "google-ads-service-businesses",
     category: "Digital Marketing",
     author: "Basheer Padanna",
-    image: googleAdsServiceBusinesses
+    image: '/images/blog/google-ads-service-businesses.jpg'
   },
   {
     title: "Fractional CMO vs Full-Time CMO: Which is Right for Your Business?",
@@ -525,7 +408,7 @@ export const blogPosts: BlogPost[] = [
     slug: "fractional-cmo-vs-full-time-cmo",
     category: "fCMO",
     author: "Basheer Padanna",
-    image: fractionalVsFulltimeCmoHero
+    image: '/images/blog/fractional-vs-fulltime-cmo-hero.jpg'
   },
   {
     title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2025",
@@ -535,7 +418,7 @@ export const blogPosts: BlogPost[] = [
     slug: "advanced-ndis-lead-generation",
     category: "NDIS",
     author: "Basheer Padanna",
-    image: advancedNdisLeadGenerationHero
+    image: '/images/blog/advanced-ndis-lead-generation-hero.jpg'
   },
   {
     title: "Trade Business Growth Strategies: Scale Your Service Business",
@@ -545,7 +428,7 @@ export const blogPosts: BlogPost[] = [
     slug: "trade-business-growth-strategies",
     category: "Trade",
     author: "Basheer Padanna",
-    image: tradeBusinessExpansionHero
+    image: '/images/blog/trade-business-expansion-hero.jpg'
   },
   {
     title: "Digital Marketing ROI: How Service Businesses Measure Success",
@@ -555,7 +438,7 @@ export const blogPosts: BlogPost[] = [
     slug: "digital-marketing-roi-service-businesses",
     category: "Digital Marketing",
     author: "Basheer Padanna",
-    image: digitalMarketingRoi
+    image: '/images/blog/digital-marketing-roi.jpg'
   },
   {
     title: "When to Hire a Fractional CMO: Signs Your Business Needs Strategic Marketing Leadership",
@@ -565,7 +448,7 @@ export const blogPosts: BlogPost[] = [
     slug: "when-to-hire-fractional-cmo",
     category: "fCMO",
     author: "Basheer Padanna",
-    image: whenHireFractionalCmoHero
+    image: '/images/blog/when-hire-fractional-cmo-hero.jpg'
   },
   {
     title: "NDIS Digital Marketing Excellence: Advanced Tactics for 2025",
@@ -575,7 +458,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-digital-marketing-excellence",
     category: "NDIS",
     author: "Basheer Padanna",
-    image: ndisDigitalMarketingExcellenceUnique
+    image: '/images/blog/ndis-digital-marketing-excellence-unique.jpg'
   },
   {
     title: "Construction Marketing: Digital Growth Strategies",
@@ -585,7 +468,7 @@ export const blogPosts: BlogPost[] = [
     slug: "construction-marketing-best-practices",
     category: "Construction",
     author: "Basheer Padanna",
-    image: constructionProjectManagementHero
+    image: '/images/blog/construction-project-management-hero.jpg'
   },
   {
     title: "Removalist Business Marketing: How to Build Trust and Win More Moves",
@@ -595,7 +478,7 @@ export const blogPosts: BlogPost[] = [
     slug: "removalist-business-marketing-guide",
     category: "Tradies - Removalists",
     author: "Removalist Marketing Expert",
-    image: removalistMarketingComprehensiveHero
+    image: '/images/blog/removalist-marketing-comprehensive-hero.jpg'
   },
   {
     title: "Digital Marketing Automation for Service Businesses: Complete Guide",
@@ -605,7 +488,7 @@ export const blogPosts: BlogPost[] = [
     slug: "digital-marketing-automation-guide",
     category: "Digital Marketing",
     author: "Marketing Automation Expert",
-    image: digitalMarketingAutomation
+    image: '/images/blog/digital-marketing-automation.jpg'
   },
   {
     title: "NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies",
@@ -615,7 +498,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-software-saas-marketing-guide",
     category: "NDIS",
     author: "Basheer Padanna",
-    image: ndisSoftwareSaaSMarketingUnique
+    image: '/images/blog/ndis-software-saas-marketing-unique.jpg'
   },
   {
     title: "Construction Cost Estimation Guide: Accurate Budgeting for Projects",
@@ -625,7 +508,7 @@ export const blogPosts: BlogPost[] = [
     slug: "construction-cost-estimation-guide",
     category: "Construction",
     author: "Basheer Padanna",
-    image: constructionCostEstimationAdvancedHero
+    image: '/images/blog/construction-cost-estimation-advanced-hero.jpg'
   },
   {
     title: "Trade Customer Retention Strategies: Building Lasting Client Relationships",
@@ -635,7 +518,7 @@ export const blogPosts: BlogPost[] = [
     slug: "trade-customer-retention-strategies",
     category: "Trade",
     author: "Trade Customer Success Expert",
-    image: tradeCustomerLoyaltyHero
+    image: '/images/blog/trade-customer-loyalty-hero.jpg'
   },
   {
     title: "NDIS Digital Marketing: 7 Proven Strategies to Attract Quality Participants",
@@ -645,7 +528,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-digital-marketing-strategies",
     category: "NDIS",
     author: "Digital Marketing Expert",
-    image: ndisDigitalMarketingTraditional
+    image: '/images/blog/ndis-digital-marketing-traditional.jpg'
   },
   {
     title: "NDIS Software SaaS Positioning: Stand Out in a Competitive Market",
@@ -655,7 +538,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-software-saas-positioning-strategy",
     category: "NDIS",
     author: "Basheer Padanna",
-    image: ndisSoftwarePositioningUnique
+    image: '/images/blog/ndis-software-positioning-unique.jpg'
   },
   {
     title: "Car Inspection Marketing: Digital Strategies to Attract Car Buyers",
@@ -665,7 +548,7 @@ export const blogPosts: BlogPost[] = [
     slug: "car-inspection-marketing-strategies",
     category: "Tradies - Mechanics",
     author: "Automotive Marketing Specialist",
-    image: carInspectionBusinessHero
+    image: '/images/blog/car-inspection-business-hero.jpg'
   },
   {
     title: "NDIS Software SaaS Lead Generation: Convert Prospects into Customers",
@@ -675,7 +558,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-software-saas-lead-generation",
     category: "NDIS",
     author: "Basheer Padanna",
-    image: ndisSoftwareLeadGenUnique
+    image: '/images/blog/ndis-software-lead-gen-unique.jpg'
   },
   {
     title: "Starting a Removalist Business: Complete Setup Guide for Success",
@@ -685,7 +568,7 @@ export const blogPosts: BlogPost[] = [
     slug: "starting-removalist-business-guide",
     category: "Tradies - Removalists",
     author: "Removalist Business Expert",
-    image: startingRemovalistBusiness2025Hero
+    image: '/images/blog/starting-removalist-business-2025-hero.jpg'
   },
   {
     title: "NDIS Website Design That Converts: Complete Guide for Disability Service Providers",
@@ -695,7 +578,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-web-design-guide",
     category: "NDIS",
     author: "Web Design Expert",
-    image: ndisWebDesign
+    image: '/images/blog/ndis-web-design.jpg'
   },
   {
     title: "Pre-Purchase Car Inspection Business: How to Build a Profitable Service",
@@ -705,7 +588,7 @@ export const blogPosts: BlogPost[] = [
     slug: "pre-purchase-car-inspection-business-guide",
     category: "Tradies - Mechanics",
     author: "Automotive Inspection Expert",
-    image: prePurchaseCarInspection
+    image: '/images/blog/pre-purchase-car-inspection.jpg'
   },
   {
     title: "NDIS Lead Generation Mastery: How to Fill Your Service Waitlist in 90 Days",
@@ -715,7 +598,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-lead-generation-mastery",
     category: "NDIS",
     author: "Lead Generation Expert",
-    image: ndisLeadGenerationMastery
+    image: '/images/blog/ndis-lead-generation-mastery.jpg'
   },
   {
     title: "Complete NDIS Marketing Guide: How to Generate Quality Leads",
@@ -725,7 +608,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-marketing-guide-2024",
     category: "NDIS",
     author: "NDIS Marketing Expert",
-    image: ndisMarketingGuideNew
+    image: '/images/blog/ndis-marketing-guide-new.jpg'
   },
   {
     title: "NDIS Participant Engagement Strategies: Building Meaningful Relationships",
@@ -735,7 +618,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ndis-participant-engagement-strategies",
     category: "NDIS",
     author: "NDIS Engagement Specialist",
-    image: ndisParticipantEngagementHero
+    image: '/images/blog/ndis-participant-engagement-hero.jpg'
   },
   {
     title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2025",
@@ -745,7 +628,7 @@ export const blogPosts: BlogPost[] = [
     slug: "accounting-digital-marketing-guide",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
-    image: accountingDigitalMarketingHero
+    image: '/images/blog/accounting-growth-strategy-hero.jpg'
   },
   {
     title: "Lead Generation for Financial Planners: High-Value Client Acquisition Strategy 2025",
@@ -755,7 +638,7 @@ export const blogPosts: BlogPost[] = [
     slug: "financial-planner-lead-generation",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
-    image: financialPlannerLeadGenHero
+    image: '/images/blog/financial-planner-lead-gen-hero.jpg'
   },
   {
     title: "Google Ads for Tax Advisors: Complete Campaign Strategy & Optimization Guide 2025",
@@ -765,7 +648,7 @@ export const blogPosts: BlogPost[] = [
     slug: "tax-advisor-google-ads-strategy",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
-    image: taxAdvisorGoogleAdsHero
+    image: '/images/blog/tax-advisor-google-ads-hero.jpg'
   },
   {
     title: "SEO for Financial Planners: Complete Local Search Domination Guide 2025",
@@ -775,7 +658,7 @@ export const blogPosts: BlogPost[] = [
     slug: "financial-planner-seo-guide",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
-    image: financialPlannerSEOHero
+    image: '/images/blog/financial-planner-seo-hero.jpg'
   },
   {
     title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2025",
@@ -785,7 +668,7 @@ export const blogPosts: BlogPost[] = [
     slug: "accounting-growth-strategy-guide",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
-    image: accountingGrowthStrategyHero
+    image: '/images/blog/accounting-growth-strategy-hero.jpg'
   },
   {
     title: "Digital Marketing for Loan Brokers: Complete Client Acquisition Strategy 2025",
@@ -795,7 +678,7 @@ export const blogPosts: BlogPost[] = [
     slug: "loan-broker-digital-marketing-guide",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
-    image: loanBrokerDigitalMarketingHero
+    image: '/images/blog/loan-broker-digital-marketing-hero.jpg'
   },
   {
     title: "Lead Generation for Loan Brokers: High-Converting Client Acquisition Strategies 2025",
@@ -805,7 +688,7 @@ export const blogPosts: BlogPost[] = [
     slug: "loan-broker-lead-generation-strategy",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
-    image: loanBrokerLeadGenerationHero
+    image: '/images/blog/loan-broker-lead-generation-hero.jpg'
   },
   {
     title: "Google Ads for Loan Brokers: Complete Mortgage Marketing Campaign Guide 2025",
@@ -815,7 +698,7 @@ export const blogPosts: BlogPost[] = [
     slug: "loan-broker-google-ads-strategy",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
-    image: loanBrokerGoogleAdsHero
+    image: '/images/blog/loan-broker-google-ads-hero.jpg'
   },
   {
     title: "Digital Marketing for Security Services: Complete Client Acquisition Guide 2025",
@@ -825,7 +708,7 @@ export const blogPosts: BlogPost[] = [
     slug: "security-digital-marketing-guide",
     category: "Tradies - Security",
     author: "Basheer Padanna",
-    image: securityDigitalMarketingHero
+    image: '/images/blog/security-digital-marketing-hero.jpg'
   },
   {
     title: "Lead Generation for Security Companies: Attract High-Value Commercial Clients 2025",
@@ -835,7 +718,7 @@ export const blogPosts: BlogPost[] = [
     slug: "security-lead-generation-strategy",
     category: "Tradies - Security",
     author: "Basheer Padanna",
-    image: securityLeadGenerationHero
+    image: '/images/blog/security-lead-generation-hero.jpg'
   },
   {
     title: "Google Ads for Security Companies: Generate Quality Commercial Leads 2025",
@@ -845,7 +728,7 @@ export const blogPosts: BlogPost[] = [
     slug: "security-google-ads-strategy",
     category: "Tradies - Security",
     author: "Basheer Padanna",
-    image: securityGoogleAdsStrategyHero
+    image: '/images/blog/security-google-ads-strategy-hero.jpg'
   },
   {
     title: "Digital Marketing for Painters: Complete Business Growth Strategy 2025",
@@ -855,7 +738,7 @@ export const blogPosts: BlogPost[] = [
     slug: "painters-digital-marketing-guide",
     category: "Tradies - Painters",
     author: "Basheer Padanna",
-    image: paintersDigitalMarketingHero
+    image: '/images/blog/painters-digital-marketing-hero.jpg'
   },
   {
     title: "Lead Generation for Painting Contractors: Attract Quality Residential Projects 2025",
@@ -865,7 +748,7 @@ export const blogPosts: BlogPost[] = [
     slug: "painters-lead-generation-strategy",
     category: "Tradies - Painters",
     author: "Basheer Padanna",
-    image: paintersLeadGenerationHero
+    image: '/images/blog/painters-lead-generation-hero.jpg'
   },
   {
     title: "Digital Marketing for Mechanics: Complete Automotive Service Growth Guide 2025",
@@ -875,7 +758,7 @@ export const blogPosts: BlogPost[] = [
     slug: "mechanic-digital-marketing-guide",
     category: "Tradies - Mechanics",
     author: "Basheer Padanna",
-    image: mechanicDigitalMarketingHero
+    image: '/images/blog/mechanic-digital-marketing-hero.jpg'
   },
   {
     title: "Lead Generation for Home Builders: Digital Strategies to Attract Quality Prospects 2025",
@@ -885,7 +768,7 @@ export const blogPosts: BlogPost[] = [
     slug: "home-builders-lead-generation-guide",
     category: "Building & Construction - Home Builders",
     author: "Basheer Padanna",
-    image: homeBuildersLeadGenerationHero
+    image: '/images/blog/home-builders-lead-generation-hero.jpg'
   },
   {
     title: "Digital Marketing for Renovation Builders: Complete Growth Strategy 2025",
@@ -895,7 +778,7 @@ export const blogPosts: BlogPost[] = [
     slug: "renovation-builders-digital-marketing-guide",
     category: "Building & Construction - Renovation Builders",
     author: "Basheer Padanna",
-    image: renovationBuildersDigitalMarketingHero
+    image: '/images/blog/renovation-builders-digital-marketing-hero.jpg'
   },
   {
     title: "SEO for Real Estate Agents: Dominate Local Property Search Rankings 2025",
@@ -905,7 +788,7 @@ export const blogPosts: BlogPost[] = [
     slug: "real-estate-seo-marketing-guide",
     category: "Building & Construction - Real Estate",
     author: "Basheer Padanna",
-    image: realEstateSEOMarketingHero
+    image: '/images/blog/real-estate-seo-marketing-hero.jpg'
   },
   {
     title: "Google Ads for Buyers Agents: Complete Strategy Guide 2025",
@@ -925,7 +808,7 @@ export const blogPosts: BlogPost[] = [
     slug: "bricklayers-growth-marketing-strategy",
     category: "Tradies - Bricklayers",
     author: "Basheer Padanna",
-    image: bricklayersGrowthMarketingHero
+    image: '/images/blog/bricklayers-growth-marketing-hero.jpg'
   },
   {
     title: "Digital Marketing for Floor Sanding Specialists: Attract Quality Flooring Projects 2025",
@@ -935,7 +818,7 @@ export const blogPosts: BlogPost[] = [
     slug: "floor-sanding-digital-marketing-guide",
     category: "Tradies - Floor Sanding",
     author: "Basheer Padanna",
-    image: floorSandingDigitalMarketingHero
+    image: '/images/blog/floor-sanding-digital-marketing-hero.jpg'
   }
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Shield, Users, Building, Zap, CheckCircle, TrendingUp, Search, Target, Video, Play } from 'lucide-react';
-import securityDigitalMarketingHero from '@/assets/blog/security-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Security Digital Marketing Guide",
   description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Security Digital Marketing Guide",
     description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/security-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/security-digital-marketing-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -60,7 +60,7 @@ const SecurityDigitalMarketing = () => {
     question: "Should security companies use Google Ads?",
     answer: "Yes, Google Ads can be effective for security services. Target high-intent keywords like 'commercial security services' and emergency terms like '24 hour security' to capture immediate needs."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={securityDigitalMarketingHero} heroAlt="Professional security services digital marketing and client acquisition">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/security-digital-marketing-hero.jpg'} heroAlt="Professional security services digital marketing and client acquisition">
       <p className="text-xl text-muted-foreground mb-8">
         In today&apos;s competitive security services market, traditional word-of-mouth marketing isn&apos;t enough. Digital marketing has become essential for security companies to attract high-value commercial clients, build trust, and scale their operations. This comprehensive guide reveals proven strategies that successful security businesses use to dominate their markets.
       </p>

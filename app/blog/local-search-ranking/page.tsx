@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import StrategyForm from "@/components/ui/strategy-form";
 import { relatedArticles } from "@/utils/seoUtils";
-import localSearchRankingHero from '@/assets/blog/local-search-ranking-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Local Search Ranking",
   description: "Expert guidance on local search ranking. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Local Search Ranking",
     description: "Expert guidance on local search ranking. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/local-search-ranking",
+    url: "https://fractional-cmo.com.au/blog/local-search-ranking",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Local Search Ranking"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Local Search Ranking",
     description: "Expert guidance on local search ranking. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const LocalSearchRanking = () => {
     question: "How many reviews do I need to rank well locally?",
     answer: "While there's no magic number, businesses with 25+ positive reviews typically outperform competitors. Focus on consistent review generation and professional responses to all feedback."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={localSearchRankingHero} heroAlt="Local search ranking strategies and Google My Business optimization">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/local-search-ranking-hero.jpg'} heroAlt="Local search ranking strategies and Google My Business optimization">
         <h2>The Local Search Revolution</h2>
         
         <Card className="mb-8 bg-primary/5 border-primary/20">

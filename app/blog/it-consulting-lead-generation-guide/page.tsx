@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import itConsultingLeadGenerationHero from '@/assets/blog/it-consulting-lead-generation-hero.jpg';
+
 export const metadata = createMetadata({
   title: "It Consulting Lead Generation Guide",
   description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "It Consulting Lead Generation Guide",
     description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/it-consulting-lead-generation-guide",
+    url: "https://fractional-cmo.com.au/blog/it-consulting-lead-generation-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "It Consulting Lead Generation Guide"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "It Consulting Lead Generation Guide",
     description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const ITConsultingLeadGeneration = () => {
     question: "What's the typical sales cycle for IT consulting services?",
     answer: "Enterprise IT consulting sales cycles typically range from 3-9 months. Smaller companies may decide in 30-90 days, while large enterprises often take 6-12 months due to procurement processes and stakeholder involvement."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={itConsultingLeadGenerationHero} heroAlt="IT Consulting Lead Generation Strategy">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-consulting-lead-generation-hero.jpg'} heroAlt="IT Consulting Lead Generation Strategy">
       <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-l-blue-500 p-8 mb-8">
         <div className="flex items-start space-x-4">
           <div className="bg-blue-100 p-3 rounded-full">

@@ -3,7 +3,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-import saasMarketingHero from '@/assets/blog/saas-marketing-it-sector-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Saas Marketing It Sector",
   description: "Expert guidance on saas marketing it sector. Learn proven strategies and best practices for business growth.",
@@ -12,11 +12,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Saas Marketing It Sector",
     description: "Expert guidance on saas marketing it sector. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/saas-marketing-it-sector",
+    url: "https://fractional-cmo.com.au/blog/saas-marketing-it-sector",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Saas Marketing It Sector"
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Saas Marketing It Sector",
     description: "Expert guidance on saas marketing it sector. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -56,7 +56,7 @@ const SaaSMarketingITSector = () => {
     question: "What's the best pricing model for a SaaS product?",
     answer: "The best pricing model depends on your target market and value proposition. Common approaches include freemium for mass adoption, tiered pricing for different segments, usage-based for scalable value, and custom enterprise pricing for large accounts."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={saasMarketingHero} heroAlt="SaaS marketing analytics dashboard showing key growth metrics and KPIs">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/saas-marketing-it-sector-hero.jpg'} heroAlt="SaaS marketing analytics dashboard showing key growth metrics and KPIs">
 
               <Card className="p-8 mb-8">
                 <p className="text-lg font-semibold text-primary mb-4">

@@ -5,7 +5,7 @@ import { citations } from '@/utils/blogCitations';
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import localSeoTradeHero from '@/assets/blog/local-seo-trade.jpg';
+
 import { Card, CardContent } from '@/components/ui/card';
 export const metadata = createMetadata({
   title: "Local Seo Trade Businesses",
@@ -15,11 +15,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Local Seo Trade Businesses",
     description: "Expert guidance on local seo trade businesses. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/local-seo-trade-businesses",
+    url: "https://fractional-cmo.com.au/blog/local-seo-trade-businesses",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Local Seo Trade Businesses"
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Local Seo Trade Businesses",
     description: "Expert guidance on local seo trade businesses. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -59,7 +59,7 @@ const LocalSEOTrade = () => {
     question: "How do I compete with large national trade companies in local search?",
     answer: "Focus on hyperlocal content, community involvement, and personalized service stories. Large companies can't match local knowledge, community connections, and personalized customer service that local trade businesses provide."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={localSeoTradeHero} heroAlt="Local SEO Strategy for Trade Businesses - Complete guide to dominating local search">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/local-seo-trade.jpg'} heroAlt="Local SEO Strategy for Trade Businesses - Complete guide to dominating local search">
         <div className="bg-gradient-to-r from-orange-50 to-yellow-50 border-l-4 border-l-orange-500 p-8 mb-8 rounded-lg">
           <h3 className="text-xl font-semibold text-orange-800 mb-2">Industry Insight</h3>
           <p className="text-lg text-gray-700">

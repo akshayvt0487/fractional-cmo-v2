@@ -6,7 +6,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Users, TrendingUp, Target, Shield, Calendar, DollarSign, BarChart3 } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-import ndisBusinessGrowthStrategyHero from '@/assets/blog/ndis-business-growth-strategy-new.jpg';
+
 export const metadata = createMetadata({
   title: "Ndis Business Growth Strategy",
   description: "Expert guidance on ndis business growth strategy. Learn proven strategies and best practices for business growth.",
@@ -15,11 +15,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Business Growth Strategy",
     description: "Expert guidance on ndis business growth strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-business-growth-strategy",
+    url: "https://fractional-cmo.com.au/blog/ndis-business-growth-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Business Growth Strategy"
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Business Growth Strategy",
     description: "Expert guidance on ndis business growth strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -59,7 +59,7 @@ const NDISBusinessGrowthStrategy = () => {
     question: "What are the biggest challenges when scaling NDIS disability services?",
     answer: "Key challenges include maintaining compliance standards during growth, recruiting qualified staff, managing increased operational complexity, and ensuring consistent service quality across expanded operations while meeting participant outcomes."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisBusinessGrowthStrategyHero} heroAlt="NDIS Business Growth Strategy - Sustainable scaling for disability service providers">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-business-growth-strategy-new.jpg'} heroAlt="NDIS Business Growth Strategy - Sustainable scaling for disability service providers">
         {/* Key Statistics */}
         <Card className="mb-12 bg-primary/5 border-primary/20">
           <CardHeader>

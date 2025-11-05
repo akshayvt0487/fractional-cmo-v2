@@ -6,7 +6,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import StrategyForm from '@/components/ui/strategy-form';
-import ndisDisabilityServiceMarketingHero from '@/assets/blog/ndis-disability-service-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Ndis Disability Service Marketing",
   description: "Expert guidance on ndis disability service marketing. Learn proven strategies and best practices for business growth.",
@@ -15,11 +15,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Disability Service Marketing",
     description: "Expert guidance on ndis disability service marketing. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-disability-service-marketing",
+    url: "https://fractional-cmo.com.au/blog/ndis-disability-service-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Disability Service Marketing"
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Disability Service Marketing",
     description: "Expert guidance on ndis disability service marketing. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -68,7 +68,7 @@ const NDISDisabilityServiceMarketing = () => {
     question: "What are the most effective marketing channels for NDIS disability services?",
     answer: "The most effective channels include local SEO, Google My Business optimization, community engagement, referral programs with healthcare professionals, and targeted social media marketing. Focus on quality over quantity in your channel selection."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisDisabilityServiceMarketingHero} heroAlt="NDIS disability service provider digital marketing">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-disability-service-marketing-hero.jpg'} heroAlt="NDIS disability service provider digital marketing">
       <Card className="bg-gradient-to-r from-purple-50 to-indigo-50 border-l-4 border-l-purple-500 p-8 mb-8 not-prose">
         <div className="flex items-start space-x-4">
           <div className="bg-purple-100 p-3 rounded-full">

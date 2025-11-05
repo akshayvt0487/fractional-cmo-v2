@@ -4,7 +4,7 @@ import { TrendingUp, Target, Users, User } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import b2bLeadGenerationHero from '@/assets/blog/b2b-lead-generation-hero.jpg';
+
 
 // ————————————————————————————————————————
 // ✅ FULL SEO METADATA
@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   title: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
   description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
   path: "/blog/b2b-lead-generation",
-  image: "/assets/blog/b2b-lead-generation-hero.jpg",
+  image: "/images/blog/b2b-lead-generation-hero.jpg",
   keywords: [
     "B2B lead generation",
     "B2B marketing",
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/b2b-lead-generation-hero.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/b2b-lead-generation-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "B2B lead generation strategies and funnel optimization"
@@ -44,7 +44,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
     description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/b2b-lead-generation-hero.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/b2b-lead-generation-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -59,7 +59,7 @@ const articleData = {
   publishedDate: "2024-12-31T00:00:00.000Z",
   modifiedDate: "2025-10-31T11:10:04.304Z", // Synced with metadata for freshness
   url: "/blog/b2b-lead-generation",
-  imageUrl: b2bLeadGenerationHero,
+  imageUrl: '/images/blog/b2b-lead-generation-hero.jpg',
   category: "Lead Generation",
   readTime: "26 min read",
   tags: ["B2B Marketing", "Lead Generation", "Business Growth", "Sales Strategy"]
@@ -89,7 +89,7 @@ const B2BLeadGeneration = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={b2bLeadGenerationHero}
+      heroImage={'/images/blog/b2b-lead-generation-hero.jpg'}
       heroAlt="B2B lead generation strategies and funnel optimization"
     >
       <p className="text-xl text-muted-foreground leading-relaxed mb-8">

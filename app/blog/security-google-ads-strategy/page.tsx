@@ -2,7 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import securityGoogleAdsStrategyHero from '@/assets/blog/security-google-ads-strategy-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Security Google Ads Strategy",
   description: "Expert guidance on security google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -42,7 +42,7 @@ const SecurityGoogleAdsStrategy = () => {
     question: "Should security companies use Google Ads year-round?",
     answer: "Yes, security needs are consistent year-round, but adjust bidding for seasonal patterns. Increase budgets during holiday seasons for retail clients, summer for events, and during local crime upticks that drive security awareness."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={securityGoogleAdsStrategyHero} heroAlt="Security companies Google Ads campaigns and lead generation strategies">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/security-google-ads-strategy-hero.jpg'} heroAlt="Security companies Google Ads campaigns and lead generation strategies">
       <p className="text-xl text-muted-foreground mb-8">
         Google Ads can be a game-changer for security companies, connecting you with businesses and property owners actively seeking professional security services. This comprehensive guide reveals proven Google Ads strategies that successful security companies use to generate high-value commercial leads and dominate their local markets.
       </p>

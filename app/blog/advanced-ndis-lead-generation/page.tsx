@@ -5,7 +5,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Users, Globe, MessageCircle, Mail } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-import advancedNDISLeadGenerationHero from '@/assets/blog/advanced-ndis-lead-generation-hero.jpg';
+
 
 // ————————————————————————————————————————
 // ✅ FULL SEO METADATA
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/advanced-ndis-lead-generation-hero.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/advanced-ndis-lead-generation-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Advanced NDIS Lead Generation Strategies"
@@ -44,7 +44,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2025",
     description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/assets/blog/advanced-ndis-lead-generation-hero.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/advanced-ndis-lead-generation-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -59,7 +59,7 @@ const articleData = {
   publishedDate: "2024-12-16T00:00:00.000Z",
   modifiedDate: "2025-10-31T11:10:04.264Z", // Synced with metadata for freshness
   url: "/blog/advanced-ndis-lead-generation",
-  imageUrl: advancedNDISLeadGenerationHero,
+  imageUrl: '/images/blog/advanced-ndis-lead-generation-hero.jpg',
   category: "NDIS Lead Generation",
   readTime: "26 min read",
   tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Growth Strategy", "Automation", "Compliance"]
@@ -89,7 +89,7 @@ const AdvancedNDISLeadGeneration = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.ndis}
       faqs={faqs}
-      heroImage={advancedNDISLeadGenerationHero}
+      heroImage={'/images/blog/advanced-ndis-lead-generation-hero.jpg'}
       heroAlt="Advanced NDIS Lead Generation Strategies - Multi-channel participant engagement and sustainable growth"
     >
       {/* Multi-Channel Framework */}

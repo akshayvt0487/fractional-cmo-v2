@@ -6,7 +6,7 @@ import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import googleAdsImage from "@/assets/google-ads-dashboard.jpg";
-import googleAdsServiceHero from '@/assets/blog/google-ads-service-businesses.jpg';
+
 export const metadata = createMetadata({
   title: "Google Ads Service Businesses",
   description: "Expert guidance on google ads service businesses. Learn proven strategies and best practices for business growth.",
@@ -15,11 +15,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Google Ads Service Businesses",
     description: "Expert guidance on google ads service businesses. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/google-ads-service-businesses",
+    url: "https://fractional-cmo.com.au/blog/google-ads-service-businesses",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Google Ads Service Businesses"
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Google Ads Service Businesses",
     description: "Expert guidance on google ads service businesses. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -59,7 +59,7 @@ const GoogleAdsService = () => {
     question: "What's the average cost per click for service business Google Ads?",
     answer: "Service business CPCs range from $5-50+ depending on industry. Legal services and home improvement often have higher CPCs ($20-100+), while general business services may be $5-25. Focus on value per conversion, not just CPC."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={googleAdsServiceHero} heroAlt="Google Ads Campaign Dashboard - Complete setup guide for service businesses">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/google-ads-service-businesses.jpg'} heroAlt="Google Ads Campaign Dashboard - Complete setup guide for service businesses">
         <h2>Google Ads Strategy for Service Businesses</h2>
         <p>
           Google Ads offers service businesses a powerful platform to reach potential customers actively searching for their services. However, success requires a strategic approach that differs significantly from e-commerce advertising, focusing on lead quality over quantity. For service businesses, every click represents a potential long-term client relationship, not just a one-time transaction.

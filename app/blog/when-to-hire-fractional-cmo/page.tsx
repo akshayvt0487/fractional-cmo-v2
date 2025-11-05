@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "When To Hire Fractional Cmo",
     description: "Expert guidance on when to hire fractional cmo. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/when-to-hire-fractional-cmo",
+    url: "https://fractional-cmo.com.au/blog/when-to-hire-fractional-cmo",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

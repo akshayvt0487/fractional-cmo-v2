@@ -2,7 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import Citation from '@/components/Citation';
 import { Card, CardContent } from '@/components/ui/card';
-import removalistSeoStrategyHero from '@/assets/blog/removalist-seo-strategy-hero.jpg';
+
 import { relatedArticles } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   title: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
@@ -12,7 +12,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
     description: "Expert guidance on complete seo strategy for removalist businesses: dominate local search. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/removalist-seo-strategy",
+    url: "https://fractional-cmo.com.au/blog/removalist-seo-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -59,7 +59,7 @@ const faqs = [{
   answer: "Focus on hyperlocal content, customer experience stories, specialized services, and building strong local authority through community involvement and local partnerships."
 }];
 const RemovalistSEOStrategy = () => {
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={removalistSeoStrategyHero} heroAlt="Complete SEO strategy guide for removalist businesses showing analytics dashboard">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/removalist-seo-strategy-hero.jpg'} heroAlt="Complete SEO strategy guide for removalist businesses showing analytics dashboard">
       <div className="space-y-8">
         <section>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">

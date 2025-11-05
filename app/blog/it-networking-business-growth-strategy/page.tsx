@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import itNetworkingGrowthStrategyHero from '@/assets/blog/it-networking-growth-strategy-hero.jpg';
+
 export const metadata = createMetadata({
   title: "It Networking Business Growth Strategy",
   description: "Expert guidance on it networking business growth strategy. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "It Networking Business Growth Strategy",
     description: "Expert guidance on it networking business growth strategy. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/it-networking-business-growth-strategy",
+    url: "https://fractional-cmo.com.au/blog/it-networking-business-growth-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "It Networking Business Growth Strategy"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "It Networking Business Growth Strategy",
     description: "Expert guidance on it networking business growth strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const ITNetworkingGrowthStrategy = () => {
     question: "What certifications are essential for IT networking business growth?",
     answer: "Cisco, Juniper, and vendor-neutral certifications like CompTIA Network+ are foundational. For growth, pursue specialized certifications in cybersecurity (CISSP), cloud platforms (AWS/Azure), and emerging technologies like SD-WAN and network automation."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={itNetworkingGrowthStrategyHero} heroAlt="IT networking business growth strategy and scaling operations">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-networking-growth-strategy-hero.jpg'} heroAlt="IT networking business growth strategy and scaling operations">
       <p className="text-lg leading-relaxed">
         The IT networking industry continues to evolve rapidly, with businesses increasingly dependent on robust, secure network infrastructure. Successful networking companies must adapt to new technologies while maintaining expertise in traditional networking fundamentals to capture their share of the <strong>$47.5 billion global networking market</strong> projected by 2027.
       </p>

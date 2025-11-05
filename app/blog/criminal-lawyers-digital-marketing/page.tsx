@@ -7,6 +7,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import criminalLawyersDigitalMarketingHero from '@/assets/blog/criminal-lawyers-digital-marketing-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Criminal Lawyers Digital Marketing",
   description: "Expert guidance on criminal lawyers digital marketing. Learn proven strategies and best practices for business growth.",
@@ -15,7 +16,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Criminal Lawyers Digital Marketing",
     description: "Expert guidance on criminal lawyers digital marketing. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/criminal-lawyers-digital-marketing",
+    url: "https://fractional-cmo.com.au/blog/criminal-lawyers-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -59,7 +60,7 @@ const CriminalLawyersDigitalMarketing = () => {
     question: "What's the most effective marketing channel for criminal lawyers?",
     answer: "Local SEO and Google My Business optimization are most effective, combined with targeted Google Ads for urgent legal needs, referral programs, and content marketing that demonstrates legal expertise and understanding of criminal law."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={criminalLawyersDigitalMarketingHero} heroAlt="Criminal lawyers digital marketing strategies for defense attorneys">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/criminal-lawyers-digital-marketing-hero.jpg'} heroAlt="Criminal lawyers digital marketing strategies for defense attorneys">
       <Card className="p-8 mb-8">
         <p className="text-lg font-semibold text-primary mb-4">
           Criminal defense attorneys using strategic digital marketing see 400% higher quality client acquisition while maintaining ethical standards and professional reputation.

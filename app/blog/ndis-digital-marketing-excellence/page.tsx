@@ -6,7 +6,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Smartphone, Monitor, Search, Share2, BarChart, Shield, Zap } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-import ndisDigitalMarketingExcellenceHero from '@/assets/blog/ndis-digital-marketing-excellence.jpg';
+
 export const metadata = createMetadata({
   title: "Ndis Digital Marketing Excellence",
   description: "Expert guidance on ndis digital marketing excellence. Learn proven strategies and best practices for business growth.",
@@ -15,7 +15,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Digital Marketing Excellence",
     description: "Expert guidance on ndis digital marketing excellence. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-digital-marketing-excellence",
+    url: "https://fractional-cmo.com.au/blog/ndis-digital-marketing-excellence",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -59,7 +59,7 @@ const NDISDigitalMarketingExcellence = () => {
     question: "What automation tools work best for NDIS digital marketing?",
     answer: "Use CRM systems with NDIS compliance features, automated email nurture sequences, lead scoring models, participant journey mapping, and integrated reporting dashboards. Ensure all tools maintain data privacy and accessibility standards."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisDigitalMarketingExcellenceHero} heroAlt="Advanced NDIS digital marketing strategies and materials for excellence in 2025">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-digital-marketing-excellence.jpg'} heroAlt="Advanced NDIS digital marketing strategies and materials for excellence in 2025">
         {/* Digital Marketing Excellence Metrics */}
         <Card className="mb-12 bg-primary/5 border-primary/20">
           <CardHeader>

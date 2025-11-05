@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
 import marketingROIImage from "@/assets/marketing-roi-dashboard.jpg";
-import digitalMarketingROIHero from '@/assets/blog/digital-marketing-roi.jpg';
+
 import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
@@ -15,11 +15,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Digital Marketing Roi Service Businesses",
     description: "Expert guidance on digital marketing roi service businesses. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/digital-marketing-roi-service-businesses",
+    url: "https://fractional-cmo.com.au/blog/digital-marketing-roi-service-businesses",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Digital Marketing Roi Service Businesses"
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Digital Marketing Roi Service Businesses",
     description: "Expert guidance on digital marketing roi service businesses. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -59,7 +59,7 @@ const DigitalMarketingROI = () => {
     question: "Which digital marketing channels provide the highest ROI for service businesses?",
     answer: "Email marketing typically delivers the highest ROI (4200% average), followed by SEO and content marketing. Paid search and social media can also be highly effective when properly optimized and targeted."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={digitalMarketingROIHero} heroAlt="Digital Marketing ROI Dashboard - Measuring success for service businesses">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/digital-marketing-roi.jpg'} heroAlt="Digital Marketing ROI Dashboard - Measuring success for service businesses">
         <h2>Understanding Digital Marketing ROI for Service Businesses</h2>
         <p>
           Measuring return on investment in digital marketing is crucial for service businesses to understand which strategies deliver the best results and optimize their marketing spend for maximum growth. Unlike product-based businesses, service companies face unique challenges in ROI measurement due to longer sales cycles and complex customer journeys.

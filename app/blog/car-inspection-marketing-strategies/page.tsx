@@ -6,7 +6,7 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-import carInspectionMarketingHero from '@/assets/blog/car-inspection-marketing.jpg';
+
 export const metadata = createMetadata({
   title: "Car Inspection Marketing Strategies",
   description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
@@ -15,11 +15,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Car Inspection Marketing Strategies",
     description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/car-inspection-marketing-strategies",
+
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/car-inspection-marketing-strategies.jpg`,
       width: 1200,
       height: 630,
       alt: "Car Inspection Marketing Strategies"
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Car Inspection Marketing Strategies",
     description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/car-inspection-marketing-strategies.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -44,7 +44,7 @@ const CarInspectionMarketing = () => {
     publishedDate: "2024-02-15T00:00:00.000Z",
     modifiedDate: "2024-02-15T00:00:00.000Z",
     url: "/blog/car-inspection-marketing-strategies",
-    imageUrl: carInspectionMarketingHero,
+    imageUrl: '/images/blog/car-inspection-marketing-strategies.jpg',
     category: "Trade Marketing",
     readTime: "24 min read",
     tags: ["Car Inspection", "Trade Marketing", "Digital Marketing", "Local SEO", "Lead Generation"]
@@ -59,7 +59,7 @@ const CarInspectionMarketing = () => {
     question: "Which marketing channels work best for car inspection services?",
     answer: "Google Ads and local SEO are most effective, followed by partnerships with car dealers, social media presence, and referral programs from satisfied customers."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={carInspectionMarketingHero} heroAlt="Car inspection marketing strategies and business growth">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/car-inspection-marketing-strategies.jpg'} heroAlt="Car inspection marketing strategies and business growth">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🚗 The car inspection industry offers tremendous growth opportunities, but success depends on effective marketing to reach car buyers when they need professional assessment services. This comprehensive guide reveals proven strategies that successful car inspection businesses use to build credibility, attract clients, and generate consistent bookings in competitive automotive markets.
         </p>

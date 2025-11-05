@@ -4,7 +4,7 @@ import { Building, Users, Target, TrendingUp } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
-import constructionProjectManagementHero from '@/assets/blog/construction-project-management.jpg';
+
 export const metadata = createMetadata({
   title: "Construction Marketing Best Practices",
   description: "Expert guidance on construction marketing best practices. Learn proven strategies and best practices for business growth.",
@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Construction Marketing Best Practices",
     description: "Expert guidance on construction marketing best practices. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/construction-marketing-best-practices",
+
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -42,7 +42,7 @@ const ConstructionMarketingBestPractices = () => {
     publishedDate: "2024-02-20T00:00:00.000Z",
     modifiedDate: "2024-02-20T00:00:00.000Z",
     url: "/blog/construction-marketing-best-practices",
-    imageUrl: constructionProjectManagementHero,
+    imageUrl: '/images/blog/construction-project-management.jpg',
     category: "Construction Marketing",
     readTime: "26 min read",
     tags: ["Construction Marketing", "Digital Strategy", "Lead Generation", "Brand Building", "Project Management"]
@@ -57,7 +57,7 @@ const ConstructionMarketingBestPractices = () => {
     question: "How can construction companies build trust online?",
     answer: "Showcase completed projects with before/after photos, display certifications and licenses, collect video testimonials, maintain active social media presence, and ensure consistent positive reviews."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={constructionProjectManagementHero} heroAlt="Construction marketing best practices and digital growth strategies">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={'/images/blog/construction-project-management.jpg'} heroAlt="Construction marketing best practices and digital growth strategies">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏗️ Construction companies face unique marketing challenges in a highly competitive industry where trust, expertise, and local reputation are crucial for success. This comprehensive guide reveals proven digital marketing strategies that successful construction businesses use to generate quality leads, build strong brand presence, and achieve sustainable growth in their local markets.
         </p>

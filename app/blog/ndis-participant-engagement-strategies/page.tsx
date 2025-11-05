@@ -14,11 +14,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Ndis Participant Engagement Strategies",
     description: "Expert guidance on ndis participant engagement strategies. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/ndis-participant-engagement-strategies",
+    url: "https://fractional-cmo.com.au/blog/ndis-participant-engagement-strategies",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "/images/blog/ndis-participant-engagement-new.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Participant Engagement Strategies"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Participant Engagement Strategies",
     description: "Expert guidance on ndis participant engagement strategies. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["/images/blog/ndis-participant-engagement-new.jpg"],
     site: "@FractionalCMO"
   }
 });

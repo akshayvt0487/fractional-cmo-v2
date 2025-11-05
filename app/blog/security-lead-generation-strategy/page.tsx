@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Shield, Target, Users, Phone, Building, AlertTriangle, Lock } from 'lucide-react';
-import securityLeadGenerationHero from '@/assets/blog/security-lead-generation-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
   description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
     description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/security-lead-generation-strategy",
+    url: "https://fractional-cmo.com.au/blog/security-lead-generation-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
     description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -80,7 +80,7 @@ const relatedArticles = [{
 }];
 const SecurityLeadGeneration = () => {
   return <>
-      <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={securityLeadGenerationHero} heroAlt="Professional security team monitoring surveillance systems - lead generation guide">
+      <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={'/images/blog/security-lead-generation-hero.jpg'} heroAlt="Professional security team monitoring surveillance systems - lead generation guide">
         <p className="text-lg text-muted-foreground mb-6">
           The global security services market is valued at over $350 billion and continues to grow as businesses and homeowners prioritize safety. However, generating quality leads in the security industry requires building trust, demonstrating expertise, and reaching clients at the right moment in their decision-making process.
         </p>

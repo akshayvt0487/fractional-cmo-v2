@@ -4,7 +4,7 @@ import Citation from '@/components/Citation';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import digitalStrategyModernBusinessHero from '@/assets/blog/digital-strategy-modern-business-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Digital Strategy Modern Business",
   description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Digital Strategy Modern Business",
     description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/digital-strategy-modern-business",
+    url: "https://fractional-cmo.com.au/blog/digital-strategy-modern-business",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Digital Strategy Modern Business"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Digital Strategy Modern Business",
     description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const DigitalStrategyModernBusiness = () => {
     question: "How much should companies budget for digital transformation?",
     answer: "Most successful companies invest 3-9% of revenue in digital transformation initiatives. The exact amount depends on industry, current digital maturity, and transformation scope."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={digitalStrategyModernBusinessHero} heroAlt="Digital strategy planning session with business transformation roadmap">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/digital-strategy-modern-business-hero.jpg'} heroAlt="Digital strategy planning session with business transformation roadmap">
       <p className="text-xl text-muted-foreground mb-8">
         In today&apos;s rapidly evolving digital landscape, businesses that fail to adapt their strategies face extinction. Digital transformation isn&apos;t just about adopting new technologies—it&apos;s about fundamentally reimagining how your business creates value, engages customers, and competes in the marketplace.
       </p>

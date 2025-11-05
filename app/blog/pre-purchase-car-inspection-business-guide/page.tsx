@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import prePurchaseCarInspectionHero from '@/assets/blog/pre-purchase-car-inspection.jpg';
+
 export const metadata = createMetadata({
   title: "Pre Purchase Car Inspection Business Guide",
   description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
@@ -13,11 +13,11 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Pre Purchase Car Inspection Business Guide",
     description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/pre-purchase-car-inspection-business-guide",
+    url: "https://fractional-cmo.com.au/blog/pre-purchase-car-inspection-business-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://your-domain.com/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
       width: 1200,
       height: 630,
       alt: "Pre Purchase Car Inspection Business Guide"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Pre Purchase Car Inspection Business Guide",
     description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://your-domain.com/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -57,7 +57,7 @@ const PrePurchaseCarInspection = () => {
     question: "What equipment do I need for mobile car inspections?",
     answer: "Essential equipment includes diagnostic tools, multi-meter, compression tester, paint thickness gauge, inspection mirror, digital camera, and a reliable vehicle for transportation. Investment typically ranges from $5,000-$15,000."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={prePurchaseCarInspectionHero} heroAlt="Pre-purchase car inspection service on residential driveway - mobile inspection professional">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/pre-purchase-car-inspection.jpg'} heroAlt="Pre-purchase car inspection service on residential driveway - mobile inspection professional">
       <p className="text-xl text-muted-foreground mb-6">
         The pre-purchase car inspection business offers an excellent opportunity for automotive professionals to build a profitable service-based business. With the used car market continuing to grow and buyers becoming more cautious about their purchases, demand for professional inspection services remains strong.
       </p>

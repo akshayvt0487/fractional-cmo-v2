@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, Target, Users, BarChart, Zap, CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-import financialPlannerSEOHero from '@/assets/blog/financial-planner-seo-hero.jpg';
+
 export const metadata = createMetadata({
   title: "Financial Planner Seo Guide",
   description: "Expert guidance on financial planner seo guide. Learn proven strategies and best practices for business growth.",
@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Financial Planner Seo Guide",
     description: "Expert guidance on financial planner seo guide. Learn proven strategies and best practices for business growth.",
-    url: "https://your-domain.com/blog/financial-planner-seo-guide",
+    url: "https://fractional-cmo.com.au/blog/financial-planner-seo-guide",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,7 +57,7 @@ const FinancialPlannerSEO = () => {
     question: "How long does SEO take to work for financial planners?",
     answer: "Initial SEO improvements typically appear within 3-6 months, with significant organic traffic growth usually visible after 6-12 months of consistent optimization and content creation efforts."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={financialPlannerSEOHero} heroAlt="Financial planner optimizing SEO strategy for client acquisition">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/financial-planner-seo-hero.jpg'} heroAlt="Financial planner optimizing SEO strategy for client acquisition">
       <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg">
         <p className="text-lg leading-relaxed text-gray-700">
           In the competitive financial services landscape, organic search visibility is critical for attracting affluent clients who research financial planners online before making decisions. SEO provides a sustainable, cost-effective way to establish authority and capture high-intent prospects searching for financial guidance.
