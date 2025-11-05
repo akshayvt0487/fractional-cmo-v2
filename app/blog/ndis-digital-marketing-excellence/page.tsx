@@ -44,7 +44,7 @@ const NDISDigitalMarketingExcellence = () => {
     publishedDate: "2024-12-17T00:00:00.000Z",
     modifiedDate: "2024-12-17T00:00:00.000Z",
     url: "/blog/ndis-digital-marketing-excellence",
-    imageUrl: ndisDigitalMarketingExcellenceHero,
+    imageUrl: "/images/blog/ndis-digital-marketing-excellence-hero.jpg",
     category: "NDIS Marketing",
     readTime: "24 min read",
     tags: ["NDIS", "Digital Marketing", "Advanced Tactics", "Disability Services", "Marketing Excellence", "Compliance", "Automation"]
@@ -721,3 +721,4 @@ const NDISDigitalMarketingExcellence = () => {
     </OptimizedBlogLayout>;
 };
 export default NDISDigitalMarketingExcellence;
+

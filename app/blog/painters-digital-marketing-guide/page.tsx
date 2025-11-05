@@ -42,7 +42,7 @@ const PaintersDigitalMarketing = () => {
     publishedDate: "2025-01-07T00:00:00.000Z",
     modifiedDate: "2025-01-07T00:00:00.000Z",
     url: "/blog/painters-digital-marketing-guide",
-    imageUrl: paintersDigitalMarketingHero,
+    imageUrl: "/images/blog/painters-digital-marketing-guide-hero.jpg",
     category: "Trade Marketing",
     readTime: "24 min read",
     tags: ["Digital Marketing", "Painting Business", "Local SEO", "Trade Marketing", "Business Growth"]
@@ -343,3 +343,4 @@ const PaintersDigitalMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default PaintersDigitalMarketing;
+

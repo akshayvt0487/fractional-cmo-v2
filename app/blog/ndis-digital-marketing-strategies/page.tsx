@@ -43,7 +43,7 @@ const NDISDigitalMarketing = () => {
     publishedDate: "2024-12-20T00:00:00.000Z",
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/ndis-digital-marketing-strategies",
-    imageUrl: ndisMarketingImage,
+    imageUrl: "/images/blog/ndis-digital-marketing-strategies-hero.jpg",
     category: "NDIS",
     readTime: "25 min read",
     tags: ["NDIS", "Digital Marketing", "Disability Services", "Participant Engagement", "Service Providers"]

@@ -42,7 +42,7 @@ const ConveyancingGoogleAds = () => {
     publishedDate: "2025-09-04T00:00:00.000Z",
     modifiedDate: "2025-09-04T00:00:00.000Z",
     url: "/blog/google-ads-conveyancing-guide",
-    imageUrl: conveyancingGoogleAdsHero,
+    imageUrl: "/images/blog/google-ads-conveyancing-guide-hero.jpg",
     category: "Legal Marketing",
     readTime: "24 min read",
     tags: ["Google Ads", "Conveyancing", "PPC", "Property Law", "Legal Marketing"]
@@ -533,3 +533,4 @@ const ConveyancingGoogleAds = () => {
       </OptimizedBlogLayout>;
 };
 export default ConveyancingGoogleAds;
+

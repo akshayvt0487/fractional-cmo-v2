@@ -43,7 +43,7 @@ const RenovationBuildersDigitalMarketing = () => {
     publishedDate: "2025-01-11",
     modifiedDate: "2025-01-11",
     url: "/blog/renovation-builders-digital-marketing-guide",
-    imageUrl: renovationBuildersDigitalMarketingHero,
+    imageUrl: "/images/blog/renovation-builders-digital-marketing-guide-hero.jpg",
     category: "Trade Marketing",
     readTime: "25 min read",
     tags: ["renovation builders", "digital marketing", "client acquisition", "trade marketing"]
@@ -368,3 +368,4 @@ const RenovationBuildersDigitalMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default RenovationBuildersDigitalMarketing;
+

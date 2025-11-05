@@ -42,7 +42,7 @@ const TherapyServicesDigitalMarketing = () => {
     publishedDate: "2024-11-15T09:00:00+10:00",
     modifiedDate: "2024-11-15T09:00:00+10:00",
     url: "/blog/therapy-services-digital-marketing",
-    imageUrl: therapyServicesDigitalMarketingHero,
+    imageUrl: "/images/blog/therapy-services-digital-marketing-hero.jpg",
     category: "NDIS",
     readTime: "25 min read",
     tags: ["Digital Marketing", "Therapy Services", "NDIS", "Healthcare Marketing", "Client Acquisition"]
@@ -425,3 +425,4 @@ const TherapyServicesDigitalMarketing = () => {
       </OptimizedBlogLayout>;
 };
 export default TherapyServicesDigitalMarketing;
+

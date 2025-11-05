@@ -42,7 +42,7 @@ const articleData = {
   readTime: "24 min read",
   category: "Local SEO",
   tags: ["SEO", "Removalist Marketing", "Local Search", "Google E-E-A-T", "Semantic SEO", "Moving Company SEO"],
-  imageUrl: removalistSeoStrategyHero,
+  imageUrl: "/images/blog/removalist-seo-strategy-hero.jpg",
   url: "/blog/removalist-seo-strategy"
 };
 const faqs = [{

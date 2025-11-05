@@ -42,7 +42,7 @@ const RemovalistBusinessMarketing = () => {
     publishedDate: "2023-08-14",
     modifiedDate: "2023-08-14",
     url: "/blog/removalist-business-marketing",
-    imageUrl: removalistBusinessMarketingHero,
+    imageUrl: "/images/blog/removalist-business-marketing-hero.jpg",
     category: "Trade Marketing",
     readTime: "24 min read",
     tags: ["removalist business", "marketing strategies", "trust building", "local SEO"]
@@ -767,3 +767,4 @@ const RemovalistBusinessMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default RemovalistBusinessMarketing;
+

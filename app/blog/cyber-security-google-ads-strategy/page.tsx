@@ -42,7 +42,7 @@ const CyberSecurityGoogleAds = () => {
     publishedDate: "2024-01-15T00:00:00.000Z",
     modifiedDate: "2024-01-15T00:00:00.000Z",
     url: "/blog/cyber-security-google-ads-strategy",
-    imageUrl: cyberSecurityGoogleAdsHero,
+    imageUrl: "/images/blog/cyber-security-google-ads-strategy-hero.jpg",
     category: "Cyber Security Marketing",
     readTime: "25 min read",
     tags: ["Cyber Security", "Google Ads", "PPC", "Lead Generation", "Digital Marketing"]
@@ -648,3 +648,4 @@ const CyberSecurityGoogleAds = () => {
       </OptimizedBlogLayout>;
 };
 export default CyberSecurityGoogleAds;
+

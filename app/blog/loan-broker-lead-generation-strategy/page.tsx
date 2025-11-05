@@ -42,7 +42,7 @@ const LoanBrokerLeadGeneration = () => {
     publishedDate: "2025-01-03T00:00:00.000Z",
     modifiedDate: "2025-01-03T00:00:00.000Z",
     url: "/blog/loan-broker-lead-generation-strategy",
-    imageUrl: loanBrokerLeadGenerationHero,
+    imageUrl: "/images/blog/loan-broker-lead-generation-strategy-hero.jpg",
     category: "Lead Generation",
     readTime: "26 min read",
     tags: ["Lead Generation", "Loan Brokers", "Mortgage Marketing", "Client Acquisition", "Digital Marketing"]
@@ -537,3 +537,4 @@ const LoanBrokerLeadGeneration = () => {
     </OptimizedBlogLayout>;
 };
 export default LoanBrokerLeadGeneration;
+

@@ -41,7 +41,7 @@ const HomeBuildersLeadGeneration = () => {
     publishedDate: "2025-01-10T00:00:00.000Z",
     modifiedDate: "2025-01-10T00:00:00.000Z",
     url: "/blog/home-builders-lead-generation-guide",
-    imageUrl: homeBuildersLeadGenerationHero,
+    imageUrl: "/images/blog/home-builders-lead-generation-guide-hero.jpg",
     category: "Construction",
     readTime: "26 min read",
     tags: ["Home Builders", "Lead Generation", "Construction Marketing", "Digital Marketing", "Client Acquisition"]
@@ -545,3 +545,4 @@ const HomeBuildersLeadGeneration = () => {
     </OptimizedBlogLayout>;
 };
 export default HomeBuildersLeadGeneration;
+

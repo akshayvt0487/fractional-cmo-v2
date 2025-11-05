@@ -41,7 +41,7 @@ const TherapyGoogleAdsStrategy = () => {
     publishedDate: "2024-12-08T09:00:00+10:00",
     modifiedDate: "2024-12-08T09:00:00+10:00",
     url: "/blog/therapy-google-ads-strategy",
-    imageUrl: therapyGoogleAdsStrategyHero,
+    imageUrl: "/images/blog/therapy-google-ads-strategy-hero.jpg",
     category: "NDIS",
     readTime: "26 min read",
     tags: ["Google Ads", "Therapy Services", "NDIS", "Digital Marketing", "Lead Generation"]
@@ -491,3 +491,4 @@ const TherapyGoogleAdsStrategy = () => {
       </OptimizedBlogLayout>;
 };
 export default TherapyGoogleAdsStrategy;
+

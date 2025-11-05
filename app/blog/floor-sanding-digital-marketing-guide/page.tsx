@@ -40,7 +40,7 @@ const FloorSandingDigitalMarketing = () => {
     publishedDate: "2025-01-15",
     modifiedDate: "2025-01-15",
     url: "/blog/floor-sanding-digital-marketing-guide",
-    imageUrl: floorSandingDigitalMarketingHero,
+    imageUrl: "/images/blog/floor-sanding-digital-marketing-guide-hero.jpg",
     category: "Trade Marketing",
     readTime: "24 min read",
     tags: ["floor sanding", "digital marketing", "trade business", "home improvement"]
@@ -549,3 +549,4 @@ const FloorSandingDigitalMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default FloorSandingDigitalMarketing;
+

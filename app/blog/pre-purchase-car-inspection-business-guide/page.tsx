@@ -42,7 +42,7 @@ const PrePurchaseCarInspection = () => {
     publishedDate: "2024-02-12T00:00:00.000Z",
     modifiedDate: "2024-02-12T00:00:00.000Z",
     url: "/blog/pre-purchase-car-inspection-business-guide",
-    imageUrl: prePurchaseCarInspectionHero,
+    imageUrl: "/images/blog/pre-purchase-car-inspection-business-guide-hero.jpg",
     category: "Automotive",
     readTime: "24 min read",
     tags: ["Car Inspection", "Automotive Business", "Pre-Purchase Inspection", "Mobile Service", "Trade Business"]
@@ -172,3 +172,4 @@ const PrePurchaseCarInspection = () => {
     </OptimizedBlogLayout>;
 };
 export default PrePurchaseCarInspection;
+

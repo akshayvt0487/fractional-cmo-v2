@@ -41,7 +41,7 @@ const TradeBusinessGrowth = () => {
     publishedDate: "2024-03-05T00:00:00.000Z",
     modifiedDate: "2024-03-05T00:00:00.000Z",
     url: "/blog/trade-business-growth-strategies",
-    imageUrl: localSEOImage,
+    imageUrl: "/images/blog/trade-business-growth-strategies-hero.jpg",
     category: "Business Growth",
     readTime: "24 min read",
     tags: ["Trade Business", "Business Growth", "Scaling", "Operations", "Digital Marketing"]

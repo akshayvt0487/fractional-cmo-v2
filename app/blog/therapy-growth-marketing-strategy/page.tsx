@@ -41,7 +41,7 @@ const TherapyGrowthMarketingStrategy = () => {
     publishedDate: "2025-01-12T09:00:00+10:00",
     modifiedDate: "2025-01-12T09:00:00+10:00",
     url: "/blog/therapy-growth-marketing-strategy",
-    imageUrl: therapyGrowthMarketingStrategyHero,
+    imageUrl: "/images/blog/therapy-growth-marketing-strategy-hero.jpg",
     category: "NDIS",
     readTime: "26 min read",
     tags: ["Growth Marketing", "Therapy Services", "NDIS", "Marketing Automation", "Business Scaling"]
@@ -435,3 +435,4 @@ const TherapyGrowthMarketingStrategy = () => {
       </OptimizedBlogLayout>;
 };
 export default TherapyGrowthMarketingStrategy;
+

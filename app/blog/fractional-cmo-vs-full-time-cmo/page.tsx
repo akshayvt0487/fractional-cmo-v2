@@ -42,7 +42,7 @@ const FractionalCMOVsFullTime = () => {
     publishedDate: "2024-04-25T00:00:00.000Z",
     modifiedDate: "2024-12-17T00:00:00.000Z",
     url: "/blog/fractional-cmo-vs-full-time-cmo",
-    imageUrl: fractionalCMOVsFullTimeImage,
+    imageUrl: "/images/blog/fractional-cmo-vs-full-time-cmo-hero.jpg",
     category: "Fractional CMO",
     readTime: "24 min read",
     tags: ["Fractional CMO", "Marketing Leadership", "Business Growth", "CMO Services", "Marketing Strategy"]

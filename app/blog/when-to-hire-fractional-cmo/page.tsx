@@ -43,7 +43,7 @@ const WhenToHireFractionalCMO = () => {
     publishedDate: "2024-08-23T00:00:00.000Z",
     modifiedDate: "2024-12-17T00:00:00.000Z",
     url: "/blog/when-to-hire-fractional-cmo",
-    imageUrl: whenToHireFractionalCMOImage,
+    imageUrl: "/images/blog/when-to-hire-fractional-cmo-hero.jpg",
     category: "Fractional CMO",
     readTime: "24 min read",
     tags: ["Fractional CMO", "Marketing Leadership", "Business Growth", "Marketing Strategy", "When to Hire"]

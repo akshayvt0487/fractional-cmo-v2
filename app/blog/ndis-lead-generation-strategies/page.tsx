@@ -35,7 +35,7 @@ export const metadata = createMetadata({
     title: "NDIS Lead Generation Strategies",
     description:
       "Expert guidance on NDIS lead generation strategies. Learn proven strategies and best practices for business growth.",
-    images: ["/assets/blog/ndis-lead-generation-strateygies-hero.jpg"],
+    images: ["/images/blog/ndis-lead-generation-strategies-hero.jpg"],
     site: "@FractionalCMO",
   },
 });
@@ -49,7 +49,7 @@ const articleData = {
   publishedDate: "2025-01-18",
   modifiedDate: "2025-10-31",
   url: "/blog/ndis-lead-generation-strategies",
-  imageUrl: heroImage.src,
+  imageUrl: "/images/blog/ndis-lead-generation-strategies-hero.jpg",
   category: "NDIS Marketing",
   readTime: "26 min read",
   tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Provider Growth"],

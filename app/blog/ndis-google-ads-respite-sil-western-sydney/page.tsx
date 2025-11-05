@@ -42,7 +42,7 @@ const NDISGoogleAdsRespiteSIL = () => {
     publishedDate: "2025-01-30T00:00:00.000Z",
     modifiedDate: "2025-01-30T00:00:00.000Z",
     url: "/blog/ndis-google-ads-respite-sil-western-sydney",
-    imageUrl: ndisGoogleAdsHero,
+    imageUrl: "/images/blog/ndis-google-ads-respite-sil-western-sydney-hero.jpg",
     category: "NDIS - Google Ads",
     readTime: "30 min read",
     tags: ["NDIS", "Google Ads", "Respite Care", "SIL Accommodation", "Western Sydney", "Lead Generation"]
@@ -1003,3 +1003,4 @@ const NDISGoogleAdsRespiteSIL = () => {
       </OptimizedBlogLayout>;
 };
 export default NDISGoogleAdsRespiteSIL;
+

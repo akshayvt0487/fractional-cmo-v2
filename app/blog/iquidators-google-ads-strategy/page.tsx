@@ -41,8 +41,8 @@ const LiquidatorsGoogleAdsStrategy = () => {
     author: "Basheer Padanna",
     publishedDate: "2025-01-30T00:00:00.000Z",
     modifiedDate: "2025-01-30T00:00:00.000Z",
-    url: "/blog/liquidators-google-ads-strategy",
-    imageUrl: liquidatorsGoogleAdsHero,
+    url: "/blog/iquidators-google-ads-strategy",
+    imageUrl: "/images/blog/iquidators-google-ads-strategy-hero.jpg",
     category: "Insolvency - Google Ads",
     readTime: "28 min read",
     tags: ["Liquidators", "Google Ads", "Insolvency Marketing", "Business Recovery", "Lead Generation"]
@@ -879,3 +879,4 @@ const LiquidatorsGoogleAdsStrategy = () => {
       </OptimizedBlogLayout>;
 };
 export default LiquidatorsGoogleAdsStrategy;
+

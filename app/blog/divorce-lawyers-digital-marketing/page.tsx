@@ -51,7 +51,7 @@ const DivorceLawyersDigitalMarketing = () => {
     publishedDate: "2024-12-15T00:00:00.000Z",
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/divorce-lawyers-digital-marketing",
-    imageUrl: divorceLawyersDigitalMarketingHero,
+    imageUrl: "/images/blog/divorce-lawyers-digital-marketing-hero.jpg",
     category: "Legal Marketing",
     readTime: "24 min read",
     tags: ["Divorce Lawyers", "Legal Marketing", "Client Acquisition", "Law Firm Growth", "Digital Marketing"]

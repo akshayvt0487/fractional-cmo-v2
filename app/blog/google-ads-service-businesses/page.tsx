@@ -44,7 +44,7 @@ const GoogleAdsService = () => {
     publishedDate: "2024-12-10T00:00:00.000Z",
     modifiedDate: "2024-12-10T00:00:00.000Z",
     url: "/blog/google-ads-service-businesses",
-    imageUrl: googleAdsServiceHero,
+    imageUrl: "/images/blog/google-ads-service-businesses-hero.jpg",
     category: "Google Ads",
     readTime: "24 min read",
     tags: ["Google Ads", "Service Businesses", "PPC", "Digital Marketing", "Lead Generation"]
@@ -999,3 +999,4 @@ const GoogleAdsService = () => {
       </OptimizedBlogLayout>;
 };
 export default GoogleAdsService;
+

@@ -43,7 +43,7 @@ const ITConsultingDigitalMarketing = () => {
     publishedDate: "2024-12-20T00:00:00.000Z",
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/it-consulting-digital-marketing-strategy",
-    imageUrl: itConsultingDigitalMarketingHero,
+    imageUrl: "/images/blog/it-consulting-digital-marketing-strategy-hero.jpg",
     category: "IT Services",
     readTime: "24 min read",
     tags: ["IT Consulting", "Digital Marketing", "Client Acquisition", "Technology Marketing", "B2B Marketing"]
@@ -471,3 +471,4 @@ const ITConsultingDigitalMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default ITConsultingDigitalMarketing;
+

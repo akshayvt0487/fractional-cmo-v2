@@ -44,7 +44,7 @@ const LocalSEOTrade = () => {
     publishedDate: "2024-12-18T00:00:00.000Z",
     modifiedDate: "2024-12-18T00:00:00.000Z",
     url: "/blog/local-seo-trade-businesses",
-    imageUrl: localSeoTradeHero,
+    imageUrl: "/images/blog/local-seo-trade-businesses-hero.jpg",
     category: "Trade Marketing",
     readTime: "25 min read",
     tags: ["Local SEO", "Trade Business", "Digital Marketing", "Lead Generation", "Google Business Profile"]
@@ -727,3 +727,4 @@ const LocalSEOTrade = () => {
     </OptimizedBlogLayout>;
 };
 export default LocalSEOTrade;
+

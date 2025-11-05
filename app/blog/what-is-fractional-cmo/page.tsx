@@ -43,7 +43,7 @@ const WhatIsFractionalCMO = () => {
     publishedDate: "2024-08-23T00:00:00Z",
     modifiedDate: "2024-12-15T00:00:00Z",
     url: "/blog/what-is-fractional-cmo",
-    imageUrl: whatIsFractionalCMOImage,
+    imageUrl: "/images/blog/what-is-fractional-cmo-hero.jpg",
     category: "Fractional CMO",
     readTime: "24 min read",
     tags: ["fractional cmo", "marketing leadership", "business growth", "marketing strategy", "cmo services"]

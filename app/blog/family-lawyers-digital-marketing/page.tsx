@@ -42,7 +42,7 @@ const FamilyLawyersDigitalMarketing = () => {
     publishedDate: "2024-12-15T00:00:00.000Z",
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/family-lawyers-digital-marketing",
-    imageUrl: familyLawyersDigitalMarketingHero,
+    imageUrl: "/images/blog/family-lawyers-digital-marketing-hero.jpg",
     category: "Legal Marketing",
     readTime: "26 min read",
     tags: ["Family Law", "Legal Marketing", "Client Acquisition", "Law Firm Growth", "Digital Marketing"]

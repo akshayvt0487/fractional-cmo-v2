@@ -42,7 +42,7 @@ const GrowthMarketingStrategy = () => {
     publishedDate: "2024-12-18T00:00:00.000Z",
     modifiedDate: "2024-12-18T00:00:00.000Z",
     url: "/blog/growth-marketing-strategy",
-    imageUrl: growthMarketingStrategyHero,
+    imageUrl: "/images/blog/growth-marketing-strategy-hero.jpg",
     category: "Digital Marketing",
     readTime: "28 min read",
     tags: ["Growth Marketing", "Digital Marketing", "Professional Services", "Business Growth", "Data-Driven Marketing"]
@@ -431,3 +431,4 @@ const GrowthMarketingStrategy = () => {
     </OptimizedBlogLayout>;
 };
 export default GrowthMarketingStrategy;
+

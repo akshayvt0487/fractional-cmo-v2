@@ -45,7 +45,7 @@ const CriminalLawyersDigitalMarketing = () => {
     publishedDate: "2024-02-05T00:00:00.000Z",
     modifiedDate: "2024-02-05T00:00:00.000Z",
     url: "/blog/criminal-lawyers-digital-marketing",
-    imageUrl: criminalLawyersDigitalMarketingHero,
+    imageUrl: "/images/blog/criminal-lawyers-digital-marketing-hero.jpg",
     category: "Legal Marketing",
     readTime: "24 min read",
     tags: ["Criminal Lawyers", "Legal Marketing", "Digital Strategy", "Client Acquisition", "Legal Ethics"]
@@ -693,3 +693,4 @@ const CriminalLawyersDigitalMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default CriminalLawyersDigitalMarketing;
+

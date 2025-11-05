@@ -44,7 +44,7 @@ const DigitalMarketingAutomation = () => {
     publishedDate: "2024-01-24T00:00:00.000Z",
     modifiedDate: "2024-01-24T00:00:00.000Z",
     url: "/blog/digital-marketing-automation-guide",
-    imageUrl: digitalMarketingAutomationHero,
+    imageUrl: "/images/blog/digital-marketing-automation-guide-hero.jpg",
     category: "Digital Marketing",
     readTime: "24 min read",
     tags: ["Marketing Automation", "Digital Marketing", "Lead Nurturing", "Email Marketing", "Business Growth"]
@@ -433,3 +433,4 @@ const DigitalMarketingAutomation = () => {
     </OptimizedBlogLayout>;
 };
 export default DigitalMarketingAutomation;
+

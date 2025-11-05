@@ -42,7 +42,7 @@ const DigitalStrategyModernBusiness = () => {
     publishedDate: "2024-12-18T00:00:00.000Z",
     modifiedDate: "2024-12-18T00:00:00.000Z",
     url: "/blog/digital-strategy-modern-business",
-    imageUrl: digitalStrategyModernBusinessHero,
+    imageUrl: "/images/blog/digital-strategy-modern-business-hero.jpg",
     category: "Digital Strategy",
     readTime: "30 min read",
     tags: ["Digital Strategy", "Business Transformation", "Technology Integration", "Change Management", "Digital Innovation"]
@@ -570,3 +570,4 @@ const DigitalStrategyModernBusiness = () => {
     </OptimizedBlogLayout>;
 };
 export default DigitalStrategyModernBusiness;
+

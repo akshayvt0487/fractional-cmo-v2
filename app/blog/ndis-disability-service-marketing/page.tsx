@@ -44,7 +44,7 @@ const NDISDisabilityServiceMarketing = () => {
     publishedDate: "2024-12-15T00:00:00.000Z",
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/ndis-disability-service-marketing",
-    imageUrl: ndisDisabilityServiceMarketingHero,
+    imageUrl: "/images/blog/ndis-disability-service-marketing-hero.jpg",
     category: "NDIS",
     readTime: "28 min read",
     tags: ["NDIS Marketing", "Disability Services", "Participant Engagement", "NDIS Compliance", "Service Provider Growth", "Digital Strategy"]
@@ -808,3 +808,4 @@ const NDISDisabilityServiceMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default NDISDisabilityServiceMarketing;
+

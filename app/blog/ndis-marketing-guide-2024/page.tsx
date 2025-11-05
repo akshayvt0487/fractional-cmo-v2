@@ -43,7 +43,7 @@ const NDISMarketingGuide = () => {
     publishedDate: "2024-12-20T00:00:00.000Z",
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/ndis-marketing-guide-2024",
-    imageUrl: ndisMarketingGuideHero,
+    imageUrl: "/images/blog/ndis-marketing-guide-2024-hero.jpg",
     category: "NDIS",
     readTime: "30 min read",
     tags: ["NDIS", "Marketing Guide", "Disability Services", "Provider Marketing", "Participant Engagement"]
@@ -505,3 +505,4 @@ const NDISMarketingGuide = () => {
     </OptimizedBlogLayout>;
 };
 export default NDISMarketingGuide;
+

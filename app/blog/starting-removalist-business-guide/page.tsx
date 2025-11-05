@@ -41,7 +41,7 @@ const StartingRemovalistBusiness = () => {
     publishedDate: "2021-07-14",
     modifiedDate: "2021-07-14",
     url: "/blog/starting-removalist-business-guide",
-    imageUrl: startingRemovalistBusinessImage,
+    imageUrl: "/images/blog/starting-removalist-business-guide-hero.jpg",
     category: "Trade Business",
     readTime: "24 min read",
     tags: ["removalist business", "startup guide", "business licensing", "moving company"]

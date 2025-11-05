@@ -42,7 +42,7 @@ const ITNetworkingGrowthStrategy = () => {
     publishedDate: "2024-12-20T00:00:00.000Z",
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/it-networking-business-growth-strategy",
-    imageUrl: itNetworkingGrowthStrategyHero,
+    imageUrl: "/images/blog/it-networking-business-growth-strategy-hero.jpg",
     category: "IT Services",
     readTime: "24 min read",
     tags: ["IT Networking", "Business Growth", "Network Solutions", "Enterprise Sales", "Technology Business"]
@@ -460,3 +460,4 @@ const ITNetworkingGrowthStrategy = () => {
     </OptimizedBlogLayout>;
 };
 export default ITNetworkingGrowthStrategy;
+

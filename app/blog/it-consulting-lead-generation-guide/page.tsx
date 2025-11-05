@@ -42,7 +42,7 @@ const ITConsultingLeadGeneration = () => {
     publishedDate: "2024-12-20T00:00:00.000Z",
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/it-consulting-lead-generation-guide",
-    imageUrl: itConsultingLeadGenerationHero,
+    imageUrl: "/images/blog/it-consulting-lead-generation-guide-hero.jpg",
     category: "IT Services",
     readTime: "26 min read",
     tags: ["IT Consulting", "Lead Generation", "Enterprise Sales", "Technology Marketing", "B2B Lead Generation"]
@@ -281,3 +281,4 @@ const ITConsultingLeadGeneration = () => {
     </OptimizedBlogLayout>;
 };
 export default ITConsultingLeadGeneration;
+

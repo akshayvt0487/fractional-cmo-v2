@@ -42,7 +42,7 @@ const CyberSecurityGrowthHacking = () => {
     publishedDate: "2024-01-20T00:00:00.000Z",
     modifiedDate: "2024-01-20T00:00:00.000Z",
     url: "/blog/cyber-security-growth-hacking",
-    imageUrl: cyberSecurityGrowthHackingHero,
+    imageUrl: "/images/blog/cyber-security-growth-hacking-hero.jpg",
     category: "Cyber Security Marketing",
     readTime: "26 min read",
     tags: ["Cyber Security", "Growth Hacking", "Lead Generation", "Digital Marketing", "Innovation"]
@@ -990,3 +990,4 @@ const CyberSecurityGrowthHacking = () => {
       </OptimizedBlogLayout>;
 };
 export default CyberSecurityGrowthHacking;
+

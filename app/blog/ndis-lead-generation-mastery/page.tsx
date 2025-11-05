@@ -43,7 +43,7 @@ const NDISLeadGeneration = () => {
     publishedDate: "2024-12-20T00:00:00.000Z",
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/ndis-lead-generation-mastery",
-    imageUrl: ndisLeadGenerationHero,
+    imageUrl: "/images/blog/ndis-lead-generation-mastery-hero.jpg",
     category: "NDIS Marketing",
     readTime: "26 min read",
     tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Marketing Strategy"]
@@ -534,3 +534,4 @@ const NDISLeadGeneration = () => {
     </OptimizedBlogLayout>;
 };
 export default NDISLeadGeneration;
+

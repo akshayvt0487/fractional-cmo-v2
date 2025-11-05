@@ -41,7 +41,7 @@ const TradeCustomerRetention = () => {
     publishedDate: "2024-01-22T00:00:00.000Z",
     modifiedDate: "2024-01-22T00:00:00.000Z",
     url: "/blog/trade-customer-retention-strategies",
-    imageUrl: localSEOImage,
+    imageUrl: "/images/blog/trade-customer-retention-strategies-hero.jpg",
     category: "Business Growth",
     readTime: "18 min read",
     tags: ["Customer Retention", "Trade Business", "Client Relationships", "Business Growth", "Loyalty"]

@@ -42,7 +42,7 @@ const FinancialPlannerLeadGeneration = () => {
     publishedDate: "2024-12-29T00:00:00.000Z",
     modifiedDate: "2024-12-29T00:00:00.000Z",
     url: "/blog/financial-planner-lead-generation",
-    imageUrl: financialPlannerLeadGenHero,
+    imageUrl: "/images/blog/financial-planner-lead-generation-hero.jpg",
     category: "Finance",
     readTime: "28 min read",
     tags: ["Financial Planning", "Lead Generation", "Client Acquisition", "Wealth Management", "Finance Marketing"]
@@ -416,3 +416,4 @@ const FinancialPlannerLeadGeneration = () => {
     </OptimizedBlogLayout>;
 };
 export default FinancialPlannerLeadGeneration;
+

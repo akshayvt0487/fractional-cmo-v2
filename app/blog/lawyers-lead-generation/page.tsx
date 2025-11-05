@@ -43,7 +43,7 @@ const LawyersLeadGeneration = () => {
     publishedDate: "2025-01-18",
     modifiedDate: "2025-01-18",
     url: "/blog/lawyers-lead-generation",
-    imageUrl: heroImage,
+    imageUrl: "/images/blog/lawyers-lead-generation-hero.jpg",
     category: "Legal Marketing",
     readTime: "26 min read",
     tags: ["Legal Marketing", "Lead Generation", "Law Firm Growth", "Digital Marketing", "Client Acquisition"]

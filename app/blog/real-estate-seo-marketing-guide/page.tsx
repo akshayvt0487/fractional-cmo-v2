@@ -42,7 +42,7 @@ const RealEstateSEOMarketing = () => {
     publishedDate: "2025-01-12T00:00:00.000Z",
     modifiedDate: "2025-01-12T00:00:00.000Z",
     url: "/blog/real-estate-seo-marketing-guide",
-    imageUrl: realEstateSEOMarketingHero,
+    imageUrl: "/images/blog/real-estate-seo-marketing-guide-hero.jpg",
     category: "Real Estate Marketing",
     readTime: "24 min read",
     tags: ["Real Estate SEO", "Local SEO", "Property Marketing", "Digital Marketing", "Search Optimization"]
@@ -656,3 +656,4 @@ const RealEstateSEOMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default RealEstateSEOMarketing;
+

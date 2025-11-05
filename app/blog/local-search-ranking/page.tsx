@@ -42,7 +42,7 @@ const LocalSearchRanking = () => {
     publishedDate: "2024-12-31T00:00:00.000Z",
     modifiedDate: "2024-12-31T00:00:00.000Z",
     url: "/blog/local-search-ranking",
-    imageUrl: localSearchRankingHero,
+    imageUrl: "/images/blog/local-search-ranking-hero.jpg",
     category: "Local SEO",
     readTime: "24 min read",
     tags: ["Local SEO", "Search Engine Optimization", "Local Marketing", "Google My Business", "Local Search"]
@@ -724,3 +724,4 @@ const LocalSearchRanking = () => {
       </OptimizedBlogLayout>;
 };
 export default LocalSearchRanking;
+

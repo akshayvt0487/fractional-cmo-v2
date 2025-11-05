@@ -42,7 +42,7 @@ const LoanBrokerDigitalMarketing = () => {
     publishedDate: "2025-01-02T00:00:00.000Z",
     modifiedDate: "2025-01-02T00:00:00.000Z",
     url: "/blog/loan-broker-digital-marketing-guide",
-    imageUrl: loanBrokerDigitalMarketingHero,
+    imageUrl: "/images/blog/loan-broker-digital-marketing-guide-hero.jpg",
     category: "Finance",
     readTime: "24 min read",
     tags: ["Loan Brokers", "Digital Marketing", "Mortgage Marketing", "Financial Services", "Client Acquisition"]
@@ -684,3 +684,4 @@ const LoanBrokerDigitalMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default LoanBrokerDigitalMarketing;
+

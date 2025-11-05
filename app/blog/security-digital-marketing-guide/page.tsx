@@ -42,7 +42,7 @@ const SecurityDigitalMarketing = () => {
     publishedDate: "2025-01-05",
     modifiedDate: "2025-01-05",
     url: "/blog/security-digital-marketing-guide",
-    imageUrl: securityDigitalMarketingHero,
+    imageUrl: "/images/blog/security-digital-marketing-guide-hero.jpg",
     category: "Service Business",
     readTime: "24 min read",
     tags: ["security services", "digital marketing", "B2B marketing", "client acquisition"]
@@ -395,3 +395,4 @@ const SecurityDigitalMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default SecurityDigitalMarketing;
+

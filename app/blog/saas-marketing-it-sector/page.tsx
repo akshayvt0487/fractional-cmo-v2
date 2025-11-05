@@ -41,7 +41,7 @@ const SaaSMarketingITSector = () => {
     publishedDate: "2024-12-15T00:00:00.000Z",
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/saas-marketing-it-sector",
-    imageUrl: saasMarketingHero,
+    imageUrl: "/images/blog/saas-marketing-it-sector-hero.jpg",
     category: "SaaS Marketing",
     readTime: "26 min read",
     tags: ["SaaS Marketing", "IT Sector", "Software Companies", "Growth Strategies", "Customer Acquisition"]
@@ -256,3 +256,4 @@ const SaaSMarketingITSector = () => {
       </OptimizedBlogLayout>;
 };
 export default SaaSMarketingITSector;
+

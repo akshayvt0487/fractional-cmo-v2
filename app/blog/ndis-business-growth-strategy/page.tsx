@@ -44,7 +44,7 @@ const NDISBusinessGrowthStrategy = () => {
     publishedDate: "2024-12-15T00:00:00.000Z",
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/ndis-business-growth-strategy",
-    imageUrl: ndisBusinessGrowthStrategyHero,
+    imageUrl: "/images/blog/ndis-business-growth-strategy-hero.jpg",
     category: "NDIS Growth",
     readTime: "26 min read",
     tags: ["NDIS", "Business Growth", "Disability Services", "Scaling Strategy", "Participant Acquisition"]
@@ -272,3 +272,4 @@ const NDISBusinessGrowthStrategy = () => {
       </OptimizedBlogLayout>;
 };
 export default NDISBusinessGrowthStrategy;
+

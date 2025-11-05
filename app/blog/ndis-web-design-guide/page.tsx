@@ -43,7 +43,7 @@ const NDISWebDesign = () => {
     publishedDate: "2024-03-20T00:00:00.000Z",
     modifiedDate: "2024-03-20T00:00:00.000Z",
     url: "/blog/ndis-web-design-guide",
-    imageUrl: ndisImage,
+    imageUrl: "/images/blog/ndis-web-design-guide-hero.jpg",
     category: "NDIS Marketing",
     readTime: "26 min read",
     tags: ["NDIS", "Web Design", "Accessibility", "User Experience", "Conversion Optimization"]

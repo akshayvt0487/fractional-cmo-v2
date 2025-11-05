@@ -41,7 +41,7 @@ const articleData = {
   publishedDate: "2024-11-28",
   modifiedDate: "2024-11-28",
   url: "/blog/security-lead-generation-strategy",
-  imageUrl: securityLeadGenerationHero,
+    imageUrl: "/images/blog/security-lead-generation-strategy-hero.jpg",
   category: "Security",
   readTime: "24 min read",
   tags: ["Security Lead Generation", "Security Business Marketing", "Security Company Growth", "Digital Marketing for Security", "Security Service Leads"]
@@ -482,3 +482,4 @@ const SecurityLeadGeneration = () => {
     </>;
 };
 export default SecurityLeadGeneration;
+

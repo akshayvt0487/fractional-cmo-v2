@@ -42,7 +42,7 @@ const MechanicDigitalMarketing = () => {
     publishedDate: "2025-01-09",
     modifiedDate: "2025-01-09",
     url: "/blog/mechanic-digital-marketing-guide",
-    imageUrl: mechanicDigitalMarketingHero,
+    imageUrl: "/images/blog/mechanic-digital-marketing-guide-hero.jpg",
     category: "Trade Marketing",
     readTime: "24 min read",
     tags: ["automotive marketing", "mechanic business", "digital marketing", "customer acquisition"]
@@ -412,3 +412,4 @@ const MechanicDigitalMarketing = () => {
     </OptimizedBlogLayout>;
 };
 export default MechanicDigitalMarketing;
+

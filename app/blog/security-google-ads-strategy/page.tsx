@@ -24,7 +24,7 @@ const SecurityGoogleAdsStrategy = () => {
     publishedDate: "2025-01-04",
     modifiedDate: "2025-01-04",
     url: "/blog/security-google-ads-strategy",
-    imageUrl: securityGoogleAdsStrategyHero,
+    imageUrl: "/images/blog/security-google-ads-strategy-hero.jpg",
     category: "Digital Marketing",
     readTime: "26 min read",
     tags: ["security companies", "google ads", "commercial leads", "security marketing"]
@@ -209,3 +209,4 @@ const SecurityGoogleAdsStrategy = () => {
     </OptimizedBlogLayout>;
 };
 export default SecurityGoogleAdsStrategy;
+

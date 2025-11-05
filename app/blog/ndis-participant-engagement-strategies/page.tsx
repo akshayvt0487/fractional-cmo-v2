@@ -43,7 +43,7 @@ const NDISParticipantEngagement = () => {
     publishedDate: "2024-01-20T00:00:00.000Z",
     modifiedDate: "2024-01-20T00:00:00.000Z",
     url: "/blog/ndis-participant-engagement-strategies",
-    imageUrl: ndisProviderImage,
+    imageUrl: "/images/blog/ndis-participant-engagement-strategies-hero.jpg",
     category: "NDIS Marketing",
     readTime: "24 min read",
     tags: ["NDIS", "Participant Engagement", "Disability Services", "Communication", "Cultural Competency"]

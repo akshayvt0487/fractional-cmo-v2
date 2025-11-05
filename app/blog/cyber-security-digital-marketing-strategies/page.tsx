@@ -43,7 +43,7 @@ const CyberSecurityDigitalMarketing = () => {
     publishedDate: "2024-01-30T00:00:00.000Z",
     modifiedDate: "2024-01-30T00:00:00.000Z",
     url: "/blog/cyber-security-digital-marketing-strategies",
-    imageUrl: cyberSecurityDigitalMarketingHero,
+    imageUrl: "/images/blog/cyber-security-digital-marketing.jpg",
     category: "Cyber Security Marketing",
     readTime: "26 min read",
     tags: ["Cyber Security Marketing", "Startup Marketing", "Digital Marketing", "Business Growth"]

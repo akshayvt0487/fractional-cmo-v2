@@ -42,7 +42,7 @@ const articleData = {
   publishedDate: "2024-11-28",
   modifiedDate: "2024-11-28",
   url: "/blog/painters-lead-generation-guide",
-  imageUrl: paintersLeadGenerationHero,
+    imageUrl: "/images/blog/painters-lead-generation-guide-hero.jpg",
   category: "Tradies - Painters",
   readTime: "26 min read",
   tags: ["Painters Lead Generation", "Painting Business Marketing", "Home Improvement Marketing", "Trade Business Growth", "Digital Marketing for Painters"]
@@ -441,3 +441,4 @@ const PaintersLeadGeneration = () => {
     </>;
 };
 export default PaintersLeadGeneration;
+

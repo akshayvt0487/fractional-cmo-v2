@@ -44,7 +44,7 @@ const DigitalMarketingROI = () => {
     publishedDate: "2024-12-15T00:00:00.000Z",
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/digital-marketing-roi-service-businesses",
-    imageUrl: digitalMarketingROIHero,
+    imageUrl: "/images/blog/digital-marketing-roi-service-businesses-hero.jpg",
     category: "Analytics",
     readTime: "26 min read",
     tags: ["Digital Marketing ROI", "Analytics", "Service Businesses", "Marketing Metrics", "Performance Measurement"]
@@ -750,3 +750,4 @@ const DigitalMarketingROI = () => {
       </OptimizedBlogLayout>;
 };
 export default DigitalMarketingROI;
+

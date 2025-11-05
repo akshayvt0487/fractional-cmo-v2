@@ -42,7 +42,7 @@ const FinancialPlannerSEO = () => {
     publishedDate: "2024-12-31T00:00:00.000Z",
     modifiedDate: "2024-12-31T00:00:00.000Z",
     url: "/blog/financial-planner-seo-guide",
-    imageUrl: financialPlannerSEOHero,
+    imageUrl: "/images/blog/financial-planner-seo-guide-hero.jpg",
     category: "Finance",
     readTime: "28 min read",
     tags: ["Financial Planner SEO", "Local Search", "Financial Services Marketing", "Search Optimization", "Digital Marketing"]
@@ -521,3 +521,4 @@ const FinancialPlannerSEO = () => {
     </OptimizedBlogLayout>;
 };
 export default FinancialPlannerSEO;
+

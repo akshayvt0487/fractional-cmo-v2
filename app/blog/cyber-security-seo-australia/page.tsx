@@ -42,7 +42,7 @@ const CyberSecuritySEOAustralia = () => {
     publishedDate: "2024-01-25T00:00:00.000Z",
     modifiedDate: "2024-01-25T00:00:00.000Z",
     url: "/blog/cyber-security-seo-australia",
-    imageUrl: cyberSecuritySEOAustraliaHero,
+    imageUrl: "/images/blog/cyber-security-seo-australia-hero.jpg",
     category: "Cyber Security Marketing",
     readTime: "28 min read",
     tags: ["Cyber Security", "SEO", "Australia", "Local Search", "Digital Marketing"]
@@ -355,3 +355,4 @@ const CyberSecuritySEOAustralia = () => {
       </OptimizedBlogLayout>;
 };
 export default CyberSecuritySEOAustralia;
+

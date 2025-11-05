@@ -43,7 +43,7 @@ const TaxAdvisorGoogleAds = () => {
     publishedDate: "2024-12-30",
     modifiedDate: "2024-12-30",
     url: "/blog/tax-advisor-google-ads-strategy",
-    imageUrl: taxAdvisorGoogleAdsHero,
+    imageUrl: "/images/blog/tax-advisor-google-ads-strategy-hero.jpg",
     category: "Accounting & Finance",
     readTime: "24 min read",
     tags: ["tax advisors", "google ads", "tax preparation", "accounting marketing"]
@@ -390,3 +390,4 @@ const TaxAdvisorGoogleAds = () => {
     </OptimizedBlogLayout>;
 };
 export default TaxAdvisorGoogleAds;
+
