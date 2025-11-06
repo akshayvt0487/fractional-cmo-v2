@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Book } from "lucide-react";
 import Link from "next/link";
 import Header from "@/components/ui/header";
-import Footer from "@/components/sections/Footer";
+
 
 const NotReady = () => {
   return (
@@ -36,15 +36,15 @@ const NotReady = () => {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                     <span><strong>Strategic Focus:</strong> CMO-level strategy requires existing systems and processes to optimise</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                     <span><strong>Investment Capacity:</strong> Strategic marketing initiatives typically require $5,000+ monthly budgets</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                     <span><strong>Team Management:</strong> CMOs work best when there&apos;s a marketing team or vendors to coordinate</span>
                   </li>
                 </ul>
@@ -153,7 +153,7 @@ const NotReady = () => {
         </section>
       </main>
       
-      <Footer />
+
     </>);
 
 };

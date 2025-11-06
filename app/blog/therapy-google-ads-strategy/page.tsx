@@ -263,10 +263,10 @@ const TherapyGoogleAdsStrategy = () => {
         </p>
 
         <div className="space-y-6 mb-8">
-          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 p-6 rounded-lg border-l-4 border-blue-500">
-            <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Sitelink Extensions</h4>
-            <p className="text-sm text-blue-600 dark:text-blue-400 mb-2">Direct users to specific services and information:</p>
-            <ul className="text-xs text-blue-500 dark:text-blue-400 grid grid-cols-2 gap-1">
+          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-blue-500">
+            <h4 className="font-semibold mb-3 text-blue-700">Sitelink Extensions</h4>
+            <p className="text-sm text-blue-600 mb-2">Direct users to specific services and information:</p>
+            <ul className="text-xs text-blue-500 grid grid-cols-2 gap-1">
               <li>• Speech Therapy Services</li>
               <li>• Occupational Therapy</li>
               <li>• Free Assessment Booking</li>
@@ -276,10 +276,10 @@ const TherapyGoogleAdsStrategy = () => {
             </ul>
           </div>
           
-          <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 p-6 rounded-lg border-l-4 border-green-500">
-            <h4 className="font-semibold mb-3 text-green-700 dark:text-green-300">Callout Extensions</h4>
-            <p className="text-sm text-green-600 dark:text-green-400 mb-2">Highlight key differentiators and benefits:</p>
-            <ul className="text-xs text-green-500 dark:text-green-400 grid grid-cols-2 gap-1">
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg border-l-4 border-green-500">
+            <h4 className="font-semibold mb-3 text-green-700">Callout Extensions</h4>
+            <p className="text-sm text-green-600 mb-2">Highlight key differentiators and benefits:</p>
+            <ul className="text-xs text-green-500 grid grid-cols-2 gap-1">
               <li>• NDIS Registered Provider</li>
               <li>• 20+ Years Experience</li>
               <li>• Free Initial Assessment</li>
@@ -408,20 +408,20 @@ const TherapyGoogleAdsStrategy = () => {
         </p>
 
         <div className="space-y-6 mb-8">
-          <div className="bg-gradient-to-r from-purple-50 to-violet-50 dark:from-purple-950/20 dark:to-violet-950/20 p-6 rounded-lg border-l-4 border-purple-500">
-            <h4 className="font-semibold mb-3 text-purple-700 dark:text-purple-300">Demographic Targeting</h4>
-            <p className="text-sm text-purple-600 dark:text-purple-400 mb-2">Target parents aged 25-45 with household incomes above $60,000:</p>
-            <ul className="text-xs text-purple-500 dark:text-purple-400 space-y-1">
+          <div className="bg-gradient-to-r from-purple-50 to-violet-50 p-6 rounded-lg border-l-4 border-purple-500">
+            <h4 className="font-semibold mb-3 text-purple-700">Demographic Targeting</h4>
+            <p className="text-sm text-purple-600 mb-2">Target parents aged 25-45 with household incomes above $60,000:</p>
+            <ul className="text-xs text-purple-500 space-y-1">
               <li>• Parental status: Has children aged 0-18</li>
               <li>• Education level: College degree or higher</li>
               <li>• Geographic radius: 30-50km from clinic locations</li>
             </ul>
           </div>
           
-          <div className="bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 p-6 rounded-lg border-l-4 border-orange-500">
-            <h4 className="font-semibold mb-3 text-orange-700 dark:text-orange-300">Interest-Based Targeting</h4>
-            <p className="text-sm text-orange-600 dark:text-orange-400 mb-2">Target audiences interested in child development and special needs:</p>
-            <ul className="text-xs text-orange-500 dark:text-orange-400 space-y-1">
+          <div className="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg border-l-4 border-orange-500">
+            <h4 className="font-semibold mb-3 text-orange-700">Interest-Based Targeting</h4>
+            <p className="text-sm text-orange-600 mb-2">Target audiences interested in child development and special needs:</p>
+            <ul className="text-xs text-orange-500 space-y-1">
               <li>• Special needs parenting groups and resources</li>
               <li>• Child development and early intervention topics</li>
               <li>• Healthcare and therapy-related content engagement</li>

@@ -58,15 +58,15 @@ const SocialShareButton: React.FC<SocialShareButtonProps> = ({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant={variant} size={size} className="gap-2">
+        <Button variant={variant} size={size} className="gap-2  border-gray-300">
           <Share2 className="h-4 w-4 bg-white" />
           Share this article
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="start" className="w-48">
+      <DropdownMenuContent align="start" className="w-48 bg-white">
         <DropdownMenuItem 
           onClick={() => handleShare('facebook')}
-          className="cursor-pointer"
+          className="cursor-pointer bg-white"
         >
           <Facebook className="h-4 w-4 mr-2" />
           Share on Facebook

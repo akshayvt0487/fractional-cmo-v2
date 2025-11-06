@@ -28,7 +28,7 @@ const BreadcrumbNavigation = ({ items }: BreadcrumbNavigationProps) => {
       <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-6 mt-16" aria-label="Breadcrumb">
         <Link 
           href="/" 
-          className="flex items-center hover:text-foreground transition-colors"
+          className="flex items-center hover:text-foreground transition-colors "
           aria-label="Go to homepage"
         >
           <Home size={16} />
@@ -44,7 +44,7 @@ const BreadcrumbNavigation = ({ items }: BreadcrumbNavigationProps) => {
             ) : (
               <Link 
                 href={item.href}
-                className="hover:text-foreground transition-colors"
+                className="hover:text-foreground transition-colors " 
               >
                 {item.label}
               </Link>

@@ -90,12 +90,12 @@ const WhenToHireFractionalCMO = () => {
           Understanding when to bridge this gap with a <strong>Fractional CMO</strong> can be the difference between continued struggle and accelerated growth. The key is recognizing the warning signs and readiness indicators that signal your business is ready for strategic marketing leadership.
         </p>
 
-        <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-8 my-12">
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-8 my-12">
           <div className="flex items-start gap-4">
-            <AlertTriangle className="w-7 h-7 text-amber-600 dark:text-amber-400 mt-1 flex-shrink-0" />
+            <AlertTriangle className="w-7 h-7 text-amber-600 mt-1 shrink-0" />
             <div>
-              <h3 className="text-amber-800 dark:text-amber-200 font-semibold mb-3 text-xl">Critical Timing</h3>
-              <p className="text-amber-700 dark:text-amber-300 text-base leading-relaxed">
+              <h3 className="text-amber-800 font-semibold mb-3 text-xl">Critical Timing</h3>
+              <p className="text-amber-700 text-base leading-relaxed">
                 Most businesses wait too long to invest in strategic marketing leadership, missing 12-18 months of potential growth opportunities.
               </p>
             </div>
@@ -126,14 +126,14 @@ const WhenToHireFractionalCMO = () => {
                 Not every business is ready for strategic marketing leadership. Here are the key indicators that suggest your organization would benefit from a Fractional CMO:
               </p>
 
-              <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-8 my-12">
-                <h3 className="text-lg font-semibold mb-4 text-green-800 dark:text-green-200">Readiness Checklist</h3>
+              <div className="bg-green-50 border border-green-200 rounded-lg p-8 my-12">
+                <h3 className="text-lg font-semibold mb-4 text-green-800">Readiness Checklist</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   {readinessIndicators.map((indicator, index) => <div key={index} className="flex items-start gap-3">
-                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center shrink-0 mt-0.5">
                         <div className="w-2 h-2 bg-white rounded-full" />
                       </div>
-                      <span className="text-sm text-green-700 dark:text-green-300">{indicator}</span>
+                      <span className="text-sm text-green-700">{indicator}</span>
                     </div>)}
                 </div>
               </div>
@@ -308,9 +308,9 @@ const WhenToHireFractionalCMO = () => {
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
-                <Card className="border-red-200 dark:border-red-800">
+                <Card className="border-red-200">
                   <CardHeader>
-                    <CardTitle className="text-red-600 dark:text-red-400">Risk of No Action</CardTitle>
+                    <CardTitle className="text-red-600">Risk of No Action</CardTitle>
                   </CardHeader>
                   <CardContent className="text-sm space-y-2">
                     <div>• Continued revenue stagnation</div>
@@ -321,9 +321,9 @@ const WhenToHireFractionalCMO = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="border-green-200 dark:border-green-800">
+                <Card className="border-green-200">
                   <CardHeader>
-                    <CardTitle className="text-green-600 dark:text-green-400">Investment Benefits</CardTitle>
+                    <CardTitle className="text-green-600">Investment Benefits</CardTitle>
                   </CardHeader>
                   <CardContent className="text-sm space-y-2">
                     <div>• Strategic clarity and direction</div>
@@ -441,9 +441,9 @@ const WhenToHireFractionalCMO = () => {
                <h2>Industry-Specific Timing Considerations</h2>
 
                <h3>Technology and SaaS Companies</h3>
-               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 my-6">
-                 <h4 className="font-semibold mb-3 text-blue-800 dark:text-blue-200">Optimal Timing Indicators</h4>
-                 <ul className="space-y-2 text-sm text-blue-700 dark:text-blue-300">
+               <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-6">
+                 <h4 className="font-semibold mb-3 text-blue-800">Optimal Timing Indicators</h4>
+                 <ul className="space-y-2 text-sm text-blue-700">
                    <li>• Product-market fit achieved with consistent user growth</li>
                    <li>• Monthly recurring revenue (MRR) of $100K+ or $1M+ ARR target</li>
                    <li>• Customer acquisition cost (CAC) exceeding comfort thresholds</li>
@@ -453,9 +453,9 @@ const WhenToHireFractionalCMO = () => {
                </div>
 
                <h3>Professional Services Firms</h3>
-               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 my-6">
-                 <h4 className="font-semibold mb-3 text-green-800 dark:text-green-200">Strategic Timing Signals</h4>
-                 <ul className="space-y-2 text-sm text-green-700 dark:text-green-300">
+               <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-6">
+                 <h4 className="font-semibold mb-3 text-green-800">Strategic Timing Signals</h4>
+                 <ul className="space-y-2 text-sm text-green-700">
                    <li>• Over-reliance on referrals creating growth constraints</li>
                    <li>• Partner time increasingly consumed by business development</li>
                    <li>• Market competition intensifying for quality clients</li>
@@ -465,9 +465,9 @@ const WhenToHireFractionalCMO = () => {
                </div>
 
                <h3>E-commerce and Retail Businesses</h3>
-               <div className="bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800 rounded-lg p-6 my-6">
-                 <h4 className="font-semibold mb-3 text-purple-800 dark:text-purple-200">Growth Phase Indicators</h4>
-                 <ul className="space-y-2 text-sm text-purple-700 dark:text-purple-300">
+               <div className="bg-purple-50 border border-purple-200 rounded-lg p-6 my-6">
+                 <h4 className="font-semibold mb-3 text-purple-800">Growth Phase Indicators</h4>
+                 <ul className="space-y-2 text-sm text-purple-700">
                    <li>• Multi-channel marketing coordination becoming complex</li>
                    <li>• Customer lifetime value (CLV) optimization opportunities</li>
                    <li>• Seasonal fluctuations requiring strategic planning</li>

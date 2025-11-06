@@ -61,54 +61,54 @@ const ConveyancingLeadGeneration = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <Card className="bg-gradient-to-br from-red-50 to-rose-100 dark:from-red-950/50 dark:to-rose-900/50 border-red-200 dark:border-red-800">
+          <Card className="bg-linear-to-br from-red-50 to-rose-100 border-red-200">
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-red-800 dark:text-red-200">
-                <TrendingDown className="h-6 w-6" />
+              <CardTitle className="flex items-center gap-3 text-black">
+                <TrendingDown className="h-6 w-6 " />
                 Traditional Marketing Limitations
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="flex items-start gap-3">
-                <X className="h-4 w-4 text-red-600 mt-1 flex-shrink-0" />
-                <span className="text-red-700 dark:text-red-300 text-sm">Restricted to existing referral networks and word-of-mouth</span>
+                <X className="h-4 w-4 text-red-800 mt-1 shrink-0" />
+                <span className="text-black text-sm">Restricted to existing referral networks and word-of-mouth</span>
               </div>
               <div className="flex items-start gap-3">
-                <X className="h-4 w-4 text-red-600 mt-1 flex-shrink-0" />
-                <span className="text-red-700 dark:text-red-300 text-sm">No way to track performance or measure actual ROI</span>
+                <X className="h-4 w-4 text-red-800 mt-1 shrink-0" />
+                <span className="text-black text-sm">No way to track performance or measure actual ROI</span>
               </div>
               <div className="flex items-start gap-3">
-                <X className="h-4 w-4 text-red-600 mt-1 flex-shrink-0" />
-                <span className="text-red-700 dark:text-red-300 text-sm">Unable to target specific buyer demographics or needs</span>
+                <X className="h-4 w-4 text-red-800 mt-1 shrink-0" />
+                <span className="text-black text-sm">Unable to target specific buyer demographics or needs</span>
               </div>
-              <div className="bg-red-100 dark:bg-red-900/30 p-3 rounded-lg">
-                <p className="text-xs text-red-800 dark:text-red-200 font-medium">⚠️ Reality Check: Relying only on traditional methods means missing 73% of potential clients who research online first.</p>
+              <div className="bg-red-100 p-3 rounded-lg">
+                <p className="text-xs text-black font-medium">⚠️ Reality Check: Relying only on traditional methods means missing 73% of potential clients who research online first.</p>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-950/50 dark:to-emerald-900/50 border-green-200 dark:border-green-800">
+          <Card className="bg-gradient-to-br from-green-50 to-emerald-100 border-green-200">
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-green-800 dark:text-green-200">
+              <CardTitle className="flex items-center gap-3 text-green-800">
                 <TrendingUp className="h-6 w-6" />
                 Digital Marketing Advantages
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                <span className="text-green-700 dark:text-green-300 text-sm">Direct access to actively searching property buyers and sellers</span>
+                <CheckCircle className="h-4 w-4 text-green-600 mt-1 shrink-0" />
+                <span className="text-green-700 text-sm">Direct access to actively searching property buyers and sellers</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                <span className="text-green-700 dark:text-green-300 text-sm">Laser-focused targeting and personalized messaging</span>
+                <CheckCircle className="h-4 w-4 text-green-600 mt-1 shrink-0" />
+                <span className="text-green-700 text-sm">Laser-focused targeting and personalized messaging</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                <span className="text-green-700 dark:text-green-300 text-sm">Complete visibility into ROI and campaign performance</span>
+                <CheckCircle className="h-4 w-4 text-green-600 mt-1 shrink-0" />
+                <span className="text-green-700 text-sm">Complete visibility into ROI and campaign performance</span>
               </div>
-              <div className="bg-green-100 dark:bg-green-900/30 p-3 rounded-lg">
-                <p className="text-xs text-green-800 dark:text-green-200 font-medium">🚀 Game Changer: Digital marketing works 24/7, capturing leads even when your office is closed!</p>
+              <div className="bg-green-100 p-3 rounded-lg">
+                <p className="text-xs text-green-800 font-medium">🚀 Game Changer: Digital marketing works 24/7, capturing leads even when your office is closed!</p>
               </div>
             </CardContent>
           </Card>

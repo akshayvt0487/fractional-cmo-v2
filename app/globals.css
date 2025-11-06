@@ -1,7 +1,13 @@
 
 @import "tailwindcss";
 
+:root {
+  font-family: var(--font-manrope);
+}
 
+* {
+  font-family: inherit;
+}
 
 /* --------------- DESIGN TOKENS & THEMING --------------- */
 

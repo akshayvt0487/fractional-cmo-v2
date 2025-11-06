@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import Footer from "@/components/sections/Footer";
+
 import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
 import SEO from "@/components/SEO";
@@ -406,7 +406,7 @@ const Blog = () => {
           </div>
         </section>
       </div>
-      <Footer />
+
     </>);
 
 };

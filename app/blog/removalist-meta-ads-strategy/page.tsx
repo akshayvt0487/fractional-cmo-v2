@@ -177,7 +177,7 @@ const RemovalistMetaAdsStrategy = () => {
             <h4 className="text-lg font-semibold mb-3">Cross-Platform Strategy:</h4>
             <p className="mb-4">Target users who clicked your Google Ads but didn&apos;t convert. These are high-intent prospects familiar with your brand.</p>
             
-            <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg">
+            <div className="bg-blue-50 p-4 rounded-lg">
               <h4 className="font-semibold mb-2">Campaign Approach:</h4>
               <ul className="space-y-1">
                 <li>• Lower-cost retargeting to complement Google Ads</li>
@@ -222,10 +222,10 @@ const RemovalistMetaAdsStrategy = () => {
             
             <h4 className="text-lg font-semibold mb-3">Timing-Sensitive Campaigns:</h4>
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-green-50 dark:bg-green-950/30 p-3 rounded">
+              <div className="bg-green-50 p-3 rounded">
                 <p><strong>Buyers:</strong> &quot;Moving to your new home? Book early and save 15%&quot;</p>
               </div>
-              <div className="bg-orange-50 dark:bg-orange-950/30 p-3 rounded">
+              <div className="bg-orange-50 p-3 rounded">
                 <p><strong>Sellers:</strong> &quot;Selling soon? Professional moving = faster sale&quot;</p>
               </div>
             </div>
@@ -363,7 +363,7 @@ const RemovalistMetaAdsStrategy = () => {
         <h3 className="text-2xl font-semibold mb-4">Step 1: Facebook Pixel Installation</h3>
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mb-4">
+            <div className="bg-gray-100 p-4 rounded-lg mb-4">
               <h4 className="font-semibold mb-2">Meta Pixel Code (Base Installation):</h4>
               <code className="text-sm">
                 {`<!-- Meta Pixel Code -->
@@ -426,7 +426,7 @@ fbq('track', 'PageView');
               <li>5. Choose attribution windows (7-day click, 1-day view)</li>
             </ol>
             
-            <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-950/30 rounded-lg">
+            <div className="mt-4 p-4 bg-blue-50 rounded-lg">
               <h4 className="font-semibold mb-2">Key Custom Conversions for Removalists:</h4>
               <ul className="space-y-1 text-sm">
                 <li>• Quote Request Submitted (Value: $50)</li>
@@ -464,7 +464,7 @@ fbq('track', 'PageView');
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h4 className="font-semibold mb-3">Campaign URL Structure:</h4>
-            <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+            <div className="bg-gray-100 p-4 rounded-lg">
               <code className="text-sm">
                 https://yourdomain.com/quote?utm_source=facebook&utm_medium=paid-social&utm_campaign=removalist-quotes&utm_content=video-testimonial&utm_term=melbourne-movers
               </code>
@@ -495,7 +495,7 @@ fbq('track', 'PageView');
               <li>5. Build automated reporting dashboards</li>
             </ol>
             
-            <div className="mt-4 p-4 bg-yellow-50 dark:bg-yellow-950/30 rounded-lg">
+            <div className="mt-4 p-4 bg-yellow-50 rounded-lg">
               <h4 className="font-semibold mb-2">Attribution Window Settings:</h4>
               <ul className="space-y-1 text-sm">
                 <li>• Meta Ads: 7-day click, 1-day view</li>
@@ -677,13 +677,13 @@ fbq('track', 'PageView');
           <CardContent className="pt-6">
             <h4 className="font-semibold mb-3">Cost Control Rules:</h4>
             <div className="space-y-3">
-              <div className="bg-red-50 dark:bg-red-950/30 p-3 rounded">
+              <div className="bg-red-50 p-3 rounded">
                 <p><strong>High CPL Alert:</strong> Pause ad sets if CPL &gt; $75 for 24 hours</p>
               </div>
-              <div className="bg-yellow-50 dark:bg-yellow-950/30 p-3 rounded">
+              <div className="bg-yellow-50 p-3 rounded">
                 <p><strong>Low Performance Alert:</strong> Notify if CTR &lt; 1% for 48 hours</p>
               </div>
-              <div className="bg-green-50 dark:bg-green-950/30 p-3 rounded">
+              <div className="bg-green-50 p-3 rounded">
                 <p><strong>Scaling Rule:</strong> Increase budget 20% if CPL &lt; $30 for 3 days</p>
               </div>
             </div>

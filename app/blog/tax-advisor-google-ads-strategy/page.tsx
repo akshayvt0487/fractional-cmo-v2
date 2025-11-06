@@ -235,7 +235,7 @@ const TaxAdvisorGoogleAds = () => {
         <h3 className="text-2xl font-semibold mb-4">Smart Bidding Implementation</h3>
         <p>Leverage Google&apos;s machine learning for optimal performance:</p>
         
-        <Card className="mb-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-cyan-950">
+        <Card className="mb-6 bg-gradient-to-r from-blue-50 to-cyan-50">
           <CardContent className="p-6">
             <h4 className="font-semibold mb-3">Recommended Bidding Strategies by Campaign Type</h4>
             <div className="grid md:grid-cols-2 gap-6">

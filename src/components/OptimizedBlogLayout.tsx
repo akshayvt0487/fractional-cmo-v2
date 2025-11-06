@@ -2,7 +2,7 @@
 
 import React, { useMemo, useState } from 'react';
 import Header from '@/components/ui/header';
-import Footer from '@/components/sections/Footer';
+
 import BreadcrumbNavigation from '@/components/BreadcrumbNavigation';
 import BlogPostLayout from '@/components/BlogPostLayout';
 import InternalLinks from '@/components/InternalLinks';

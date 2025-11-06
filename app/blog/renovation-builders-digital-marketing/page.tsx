@@ -201,7 +201,7 @@ const RenovationBuildersDigitalMarketing = () => {
               <p className="mb-6">In renovation, transformation is everything. Your ability to capture and present dramatic before-and-after stories determines whether prospects choose you or your competitors. Every project should become a powerful marketing asset that demonstrates your capability to transform spaces and lives.</p>
               
               <div className="grid md:grid-cols-2 gap-4 mb-8">
-                <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
+                <Card className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/10 border-blue-200 dark:border-blue-800">
                   <CardContent className="p-4">
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
                       <Camera className="h-4 w-4" />
@@ -211,7 +211,7 @@ const RenovationBuildersDigitalMarketing = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200">
+                <Card className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/20 dark:to-green-900/10 border-green-200 dark:border-green-800">
                   <CardContent className="p-4">
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
                       <Clock className="h-4 w-4" />
@@ -221,7 +221,7 @@ const RenovationBuildersDigitalMarketing = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
+                <Card className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/20 dark:to-purple-900/10 border-purple-200 dark:border-purple-800">
                   <CardContent className="p-4">
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
                       <Palette className="h-4 w-4" />
@@ -231,7 +231,7 @@ const RenovationBuildersDigitalMarketing = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200">
+                <Card className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950/20 dark:to-orange-900/10 border-orange-200 dark:border-orange-800">
                   <CardContent className="p-4">
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
                       <Home className="h-4 w-4" />

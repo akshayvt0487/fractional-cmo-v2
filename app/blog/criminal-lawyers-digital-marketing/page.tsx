@@ -77,51 +77,51 @@ const CriminalLawyersDigitalMarketing = () => {
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 my-8">
-        <Card className="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950 dark:to-red-900 border-red-200 dark:border-red-800">
+        <Card className="bg-gradient-to-br from-red-50 to-red-100 border-red-200">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-red-800 dark:text-red-200">
+            <CardTitle className="flex items-center gap-3 text-red-800">
               <Shield className="h-6 w-6" />
               DUI/DWI Defense
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-red-700 dark:text-red-300">Specialized defense for drunk driving and impaired driving charges, including license protection and penalty mitigation.</p>
+            <p className="text-red-700">Specialized defense for drunk driving and impaired driving charges, including license protection and penalty mitigation.</p>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 border-blue-200 dark:border-blue-800">
+        <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-blue-800 dark:text-blue-200">
+            <CardTitle className="flex items-center gap-3 text-blue-800">
               <Gavel className="h-6 w-6" />
               Felony Defense
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-blue-700 dark:text-blue-300">Complex defense strategies for serious criminal charges requiring extensive legal expertise and courtroom experience.</p>
+            <p className="text-blue-700">Complex defense strategies for serious criminal charges requiring extensive legal expertise and courtroom experience.</p>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900 border-purple-200 dark:border-purple-800">
+        <Card className="bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-purple-800 dark:text-purple-200">
+            <CardTitle className="flex items-center gap-3 text-purple-800">
               <Scale className="h-6 w-6" />
               White Collar Crime
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-purple-700 dark:text-purple-300">Defense against fraud, embezzlement, and corporate crime charges with focus on financial and regulatory compliance.</p>
+            <p className="text-purple-700">Defense against fraud, embezzlement, and corporate crime charges with focus on financial and regulatory compliance.</p>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900 border-green-200 dark:border-green-800">
+        <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-green-800 dark:text-green-200">
+            <CardTitle className="flex items-center gap-3 text-green-800">
               <Users className="h-6 w-6" />
               Drug Offense Defense
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-green-700 dark:text-green-300">Comprehensive defense strategies for drug possession, trafficking, and related charges with focus on constitutional rights.</p>
+            <p className="text-green-700">Comprehensive defense strategies for drug possession, trafficking, and related charges with focus on constitutional rights.</p>
           </CardContent>
         </Card>
       </div>
@@ -132,12 +132,12 @@ const CriminalLawyersDigitalMarketing = () => {
         Criminal defense attorneys must navigate strict ethical guidelines that govern legal advertising and client acquisition. Understanding these requirements is essential for building compliant marketing strategies that generate quality leads.
       </p>
 
-      <Card className="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950 dark:to-orange-950 border-amber-200 dark:border-amber-800 p-6 my-8">
-        <h3 className="text-xl font-semibold mb-4 text-amber-800 dark:text-amber-200">Legal Marketing Ethics Checklist</h3>
+      <Card className="bg-gradient-to-r from-amber-50 to-orange-50 border-amber-200 p-6 my-8">
+        <h3 className="text-xl font-semibold mb-4 text-amber-800">Legal Marketing Ethics Checklist</h3>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <h4 className="font-medium mb-3 text-amber-700 dark:text-amber-300">Required Compliance</h4>
-            <ul className="space-y-2 text-sm text-amber-600 dark:text-amber-400">
+            <h4 className="font-medium mb-3 text-amber-700">Required Compliance</h4>
+            <ul className="space-y-2 text-sm text-amber-600">
               <li>✓ State bar advertising rules compliance</li>
               <li>✓ No guarantee of outcomes or results</li>
               <li>✓ Accurate representation of experience</li>
@@ -146,8 +146,8 @@ const CriminalLawyersDigitalMarketing = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-medium mb-3 text-orange-700 dark:text-orange-300">Professional Standards</h4>
-            <ul className="space-y-2 text-sm text-orange-600 dark:text-orange-400">
+            <h4 className="font-medium mb-3 text-orange-700">Professional Standards</h4>
+            <ul className="space-y-2 text-sm text-orange-600">
               <li>✓ Dignified professional presentation</li>
               <li>✓ No solicitation of specific cases</li>
               <li>✓ Factual and verifiable claims only</li>
@@ -167,7 +167,7 @@ const CriminalLawyersDigitalMarketing = () => {
       <div className="grid md:grid-cols-3 gap-6 my-8">
         <Card className="border-l-4 border-l-blue-500">
           <CardHeader>
-            <CardTitle className="text-blue-700 dark:text-blue-300">Professional Website</CardTitle>
+            <CardTitle className="text-blue-700">Professional Website</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
@@ -181,7 +181,7 @@ const CriminalLawyersDigitalMarketing = () => {
 
         <Card className="border-l-4 border-l-green-500">
           <CardHeader>
-            <CardTitle className="text-green-700 dark:text-green-300">Trust Building Elements</CardTitle>
+            <CardTitle className="text-green-700">Trust Building Elements</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
@@ -195,7 +195,7 @@ const CriminalLawyersDigitalMarketing = () => {
 
         <Card className="border-l-4 border-l-purple-500">
           <CardHeader>
-            <CardTitle className="text-purple-700 dark:text-purple-300">User Experience</CardTitle>
+            <CardTitle className="text-purple-700">User Experience</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
@@ -214,12 +214,12 @@ const CriminalLawyersDigitalMarketing = () => {
         Criminal defense clients typically search for local attorneys when facing urgent legal situations. Dominating local search results is crucial for capturing high-intent prospects needing immediate legal representation.
       </p>
 
-      <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border-blue-200 dark:border-blue-800 p-6 my-8">
-        <h3 className="text-xl font-semibold mb-4 text-blue-800 dark:text-blue-200">Google Business Profile Optimization</h3>
+      <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200 p-6 my-8">
+        <h3 className="text-xl font-semibold mb-4 text-blue-800">Google Business Profile Optimization</h3>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <h4 className="font-medium mb-3 text-blue-700 dark:text-blue-300">Essential Information</h4>
-            <ul className="space-y-2 text-sm text-blue-600 dark:text-blue-400">
+            <h4 className="font-medium mb-3 text-blue-700">Essential Information</h4>
+            <ul className="space-y-2 text-sm text-blue-600">
               <li>• Complete business profile with all practice areas</li>
               <li>• 24/7 emergency contact information</li>
               <li>• Professional office photos and team images</li>
@@ -228,8 +228,8 @@ const CriminalLawyersDigitalMarketing = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-medium mb-3 text-indigo-700 dark:text-indigo-300">Review Management</h4>
-            <ul className="space-y-2 text-sm text-indigo-600 dark:text-indigo-400">
+            <h4 className="font-medium mb-3 text-indigo-700">Review Management</h4>
+            <ul className="space-y-2 text-sm text-indigo-600">
               <li>• Prompt professional responses to all reviews</li>
               <li>• Thank clients for positive feedback</li>
               <li>• Address concerns professionally and privately</li>
@@ -247,12 +247,12 @@ const CriminalLawyersDigitalMarketing = () => {
       </p>
 
       <div className="grid md:grid-cols-2 gap-8 my-8">
-        <Card className="bg-gradient-to-br from-gray-50 to-slate-50 dark:from-gray-950 dark:to-slate-950 border-gray-200 dark:border-gray-800">
+        <Card className="bg-gradient-to-br from-gray-50 to-slate-50 border-gray-200">
           <CardHeader>
-            <CardTitle className="text-gray-800 dark:text-gray-200">Educational Blog Topics</CardTitle>
+            <CardTitle className="text-gray-800">Educational Blog Topics</CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+            <ul className="space-y-2 text-sm text-gray-600">
               <li>⚖️ <strong>Rights education:</strong> &quot;What to Do When Arrested&quot;</li>
               <li>🚗 <strong>DUI guides:</strong> &quot;Understanding DUI Penalties&quot;</li>
               <li>📋 <strong>Process explanations:</strong> &quot;Criminal Court Procedures&quot;</li>
@@ -262,7 +262,7 @@ const CriminalLawyersDigitalMarketing = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950 dark:to-teal-950 border-emerald-200 dark:border-emerald-800">
+        <Card className="bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-200">
           <CardHeader>
             <CardTitle className="text-emerald-800 dark:text-emerald-200">Video Content Strategy</CardTitle>
           </CardHeader>

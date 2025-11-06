@@ -59,21 +59,21 @@ const ConstructionLeadGeneration = () => {
     answer: "Google Ads can generate leads within 1-2 weeks, while SEO typically takes 3-6 months for significant results. Content marketing and reputation building are ongoing processes that compound over time."
   }];
   return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/construction-lead-generation.jpg'} heroAlt="Construction Lead Generation Strategies - Professional Construction Team Working on Building Site Project Management">
-        <blockquote className="border-l-4 border-primary pl-6 my-8 italic text-lg text-muted-foreground not-prose">
+        <blockquote className="border-l-4 border-primary pl-6 my-8 italic text-lg text-gray-600 not-prose">
           &quot;In construction, relationships build businesses. But in today&apos;s digital world, those relationships start online.&quot;
           <footer className="text-sm mt-2 not-italic">— John Holland, CEO, John Holland Group</footer>
         </blockquote>
 
         <h2>The Australian Construction Lead Generation Landscape</h2>
         <p>
-          The construction industry faces unique lead generation challenges. According to the <a href="https://www.abs.gov.au/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Australian Bureau of Statistics</a>, construction work done in Australia reached $51.2 billion in the March quarter 2024, representing a 0.6% increase from the previous quarter.
+          The construction industry faces unique lead generation challenges. According to the <a href="https://www.abs.gov.au/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Australian Bureau of Statistics</a>, construction work done in Australia reached $51.2 billion in the March quarter 2024, representing a 0.6% increase from the previous quarter.
         </p>
 
         <p>
           However, competition is fierce. With over 390,000 construction businesses operating across Australia, standing out requires strategic lead generation that goes beyond traditional word-of-mouth referrals.
         </p>
 
-        <Card className="my-8 bg-blue-50 border-blue-200 not-prose">
+        <Card className="my-8 bg-blue-50 border-blue-100 not-prose shadow-sm">
           <CardContent className="p-6">
             <h3 className="font-semibold mb-3 text-blue-900">Australian Construction Industry Statistics (2024):</h3>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
@@ -90,7 +90,7 @@ const ConstructionLeadGeneration = () => {
                 <li>• <strong>34%</strong> growth in digital marketing adoption</li>
               </ul>
             </div>
-            <p className="text-xs text-blue-700 mt-4">
+            <p className="text-xs text-blue-600 mt-4">
               Sources: <a href="https://www.abs.gov.au/" className="underline">Australian Bureau of Statistics</a>, 
               <a href="https://www.masterbuilders.com.au/" className="underline ml-1">Master Builders Australia</a>
             </p>
@@ -98,7 +98,7 @@ const ConstructionLeadGeneration = () => {
         </Card>
 
         <h2>Google Ads for Construction Services</h2>
-        <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20 rounded-xl p-6 mb-6 border-l-4 border-blue-500 not-prose">
+        <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 mb-6 border-l-4 border-blue-500 not-prose">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -106,11 +106,11 @@ const ConstructionLeadGeneration = () => {
               </svg>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">💡 Expert Insight</h3>
-              <p className="text-blue-800 dark:text-blue-200 mb-3">
+              <h3 className="text-lg font-semibold text-blue-900 mb-2">💡 Expert Insight</h3>
+              <p className="text-blue-800 mb-3">
                 Here&apos;s the reality: while your competitors are waiting for referrals, Google Ads puts you in front of customers actively searching for construction services. We&apos;re talking about people who have their wallets out, ready to hire.
               </p>
-              <p className="text-blue-700 dark:text-blue-300 text-sm">
+              <p className="text-blue-700 text-sm">
                 Research by <Citation source="Google Economic Impact Report" url="https://economicimpact.google.com/methodology/" title="Google Economic Impact Study" inline /> shows $2 return for every $1 spent on Google Ads. But construction services? You can often see 3-5x returns due to high project values.
               </p>
             </div>
@@ -118,7 +118,7 @@ const ConstructionLeadGeneration = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-6 not-prose">
-          <Card className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 border-green-200 dark:border-green-800">
+          <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200 shadow-sm">
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
@@ -126,9 +126,9 @@ const ConstructionLeadGeneration = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-green-800 dark:text-green-200">Why Google Ads Works</h4>
+                <h4 className="font-semibold text-green-800">Why Google Ads Works</h4>
               </div>
-              <ul className="space-y-2 text-sm text-green-700 dark:text-green-300">
+              <ul className="space-y-2 text-sm text-green-700">
                 <li>• Targets high-intent searchers</li>
                 <li>• 73% include location terms</li>
                 <li>• Immediate visibility & results</li>
@@ -137,7 +137,7 @@ const ConstructionLeadGeneration = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 border-orange-200 dark:border-orange-800">
+          <Card className="bg-gradient-to-br from-orange-50 to-red-50 border-orange-200 shadow-sm">
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
@@ -145,16 +145,16 @@ const ConstructionLeadGeneration = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-orange-800 dark:text-orange-200">Common Mistake</h4>
+                <h4 className="font-semibold text-orange-800">Common Mistake</h4>
               </div>
-              <p className="text-sm text-orange-700 dark:text-orange-300">
+              <p className="text-sm text-orange-700">
                 Most construction companies waste budget on generic keywords like &quot;construction company.&quot; Instead, target specific services like &quot;commercial renovation contractor [city].&quot;
               </p>
             </CardContent>
           </Card>
         </div>
 
-        <Card className="my-8 bg-green-50 border-green-200 not-prose">
+        <Card className="my-8 bg-green-50 border-green-200 not-prose shadow-sm">
           <CardContent className="p-6">
             <h3 className="font-semibold mb-3 text-green-900">High-Converting Construction Keywords & Performance:</h3>
             <div className="space-y-3 text-sm">
@@ -186,7 +186,7 @@ const ConstructionLeadGeneration = () => {
         </Card>
 
         <h2>Local SEO Domination</h2>
-        <div className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-950/20 dark:to-indigo-950/20 rounded-xl p-6 mb-6 border-l-4 border-purple-500 not-prose">
+        <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-6 mb-6 border-l-4 border-purple-500 not-prose">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -195,8 +195,8 @@ const ConstructionLeadGeneration = () => {
               </svg>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-purple-900 dark:text-purple-100 mb-2">🎯 Local SEO Reality Check</h3>
-              <p className="text-purple-800 dark:text-purple-200 mb-3">
+              <h3 className="text-lg font-semibold text-purple-900 mb-2">🎯 Local SEO Reality Check</h3>
+              <p className="text-purple-800 mb-3">
                 Think about it: when was the last time you hired a construction company from another city? Exactly. 87% of construction projects are location-dependent, which means local SEO isn&apos;t optional—it&apos;s survival.
               </p>
               <p className="text-purple-700 dark:text-purple-300 text-sm">

@@ -1,7 +1,7 @@
 import { createMetadata } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Footer from "@/components/sections/Footer";
+
 import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
 import StrategyForm from "@/components/ui/strategy-form";
@@ -608,7 +608,7 @@ const NDISSoftwareSaaSMarketing = () => {
           </article>
         </div>
       </div>
-      <Footer />
+
       
     </>;
 };

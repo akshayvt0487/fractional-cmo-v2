@@ -185,7 +185,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master lead generation for IT consulting firms. Learn proven tactics to attract enterprise clients, build authority, and convert prospects into long-term technology partnerships.",
     date: "December 20, 2024",
     readTime: "22 min read", 
-    slug: "it-consulting-lead-generation-guide",
+    slug: "it-consulting-lead-generation",
     category: "IT - Consulting",
     author: "Basheer Padanna",
     image: '/images/blog/it-consulting-lead-generation-hero.jpg'
@@ -235,7 +235,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Complete Google Ads guide for conveyancing firms. Learn proven strategies, keyword targeting, and campaign optimization to attract property buyers and sellers in your local market.",
     date: "June 22, 2025",
     readTime: "20 min read",
-    slug: "google-ads-conveyancing-guide",
+    slug: "google-ads-conveyancing",
     category: "Legal",
     author: "Basheer Padanna",
     image: '/images/blog/conveyancing-google-ads-hero.jpg'
@@ -245,7 +245,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Comprehensive SEO strategies for conveyancing firms. Learn how to rank higher in search results, attract quality leads, and establish authority in property law markets.",
     date: "May 8, 2025",
     readTime: "18 min read",
-    slug: "conveyancing-seo-guide",
+    slug: "conveyancing-seo",
     category: "Legal",
     author: "Basheer Padanna",
     image: '/images/blog/conveyancing-seo-hero.jpg'
@@ -475,7 +475,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Complete marketing guide for removalist businesses to attract quality customers, build trust through reviews, and dominate local moving markets with proven strategies.",
     date: "April 15, 2025",
     readTime: "16 min read",
-    slug: "removalist-business-marketing-guide",
+    slug: "removalist-business-marketing",
     category: "Tradies - Removalists",
     author: "Removalist Marketing Expert",
     image: '/images/blog/removalist-marketing-comprehensive-hero.jpg'
@@ -485,7 +485,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Comprehensive guide to marketing automation for service businesses, including lead nurturing, email sequences, customer journey automation, and ROI optimisation.",
     date: "May 2, 2025",
     readTime: "19 min read",
-    slug: "digital-marketing-automation-guide",
+    slug: "digital-marketing-automation",
     category: "Digital Marketing",
     author: "Marketing Automation Expert",
     image: '/images/blog/digital-marketing-automation.jpg'
@@ -495,7 +495,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively.",
     date: "February 14, 2025",
     readTime: "15 min read",
-    slug: "ndis-software-saas-marketing-guide",
+    slug: "ndis-software-saas-marketing",
     category: "NDIS",
     author: "Basheer Padanna",
     image: '/images/blog/ndis-software-saas-marketing-unique.jpg'
@@ -505,7 +505,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Comprehensive guide to construction cost estimation, including methodologies, tools, contingency planning, and strategies for accurate project budgeting.",
     date: "March 8, 2025",
     readTime: "20 min read",
-    slug: "construction-cost-estimation-guide",
+    slug: "construction-cost-estimation",
     category: "Construction",
     author: "Basheer Padanna",
     image: '/images/blog/construction-cost-estimation-advanced-hero.jpg'
@@ -565,7 +565,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Step-by-step guide to launching a profitable removalist business, covering licensing, insurance, equipment, pricing strategies, and operational best practices.",
     date: "July 14, 2021",
     readTime: "19 min read",
-    slug: "starting-removalist-business-guide",
+    slug: "starting-removalist-business",
     category: "Tradies - Removalists",
     author: "Removalist Business Expert",
     image: '/images/blog/starting-removalist-business-2025-hero.jpg'
@@ -575,7 +575,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master NDIS website design with accessibility-first principles, conversion optimisation, and participant-centred user experiences that build trust and drive inquiries.",
     date: "December 22, 2022",
     readTime: "22 min read",
-    slug: "ndis-web-design-guide",
+    slug: "ndis-web-design",
     category: "NDIS",
     author: "Web Design Expert",
     image: '/images/blog/ndis-web-design.jpg'
@@ -585,7 +585,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Comprehensive guide to starting and growing a pre-purchase car inspection service, including certification requirements, pricing strategies, and customer acquisition.",
     date: "March 12, 2021",
     readTime: "17 min read",
-    slug: "pre-purchase-car-inspection-business-guide",
+    slug: "pre-purchase-car-inspection-business",
     category: "Tradies - Mechanics",
     author: "Automotive Inspection Expert",
     image: '/images/blog/pre-purchase-car-inspection.jpg'
@@ -625,7 +625,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition, online presence building, and growth tactics specifically for accounting professionals.",
     date: "December 28, 2024",
     readTime: "22 min read",
-    slug: "accounting-digital-marketing-guide",
+    slug: "accounting-digital-marketing",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
     image: '/images/blog/accounting-growth-strategy-hero.jpg'
@@ -655,7 +655,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master SEO for financial planning services. Learn local search optimization, content strategies, and technical SEO tactics that attract high-value clients and dominate search results.",
     date: "December 31, 2024",
     readTime: "24 min read",
-    slug: "financial-planner-seo-guide",
+    slug: "financial-planner-seo",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
     image: '/images/blog/financial-planner-seo-hero.jpg'
@@ -665,7 +665,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
     date: "January 1, 2025",
     readTime: "26 min read",
-    slug: "accounting-growth-strategy-guide",
+    slug: "accounting-growth-strategy",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
     image: '/images/blog/accounting-growth-strategy-hero.jpg'
@@ -675,7 +675,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master digital marketing for loan brokerage business. Learn proven strategies to attract borrowers, build trust, and grow your mortgage broker practice with digital channels.",
     date: "January 2, 2025",
     readTime: "21 min read",
-    slug: "loan-broker-digital-marketing-guide",
+    slug: "loan-broker-digital-marketing",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
     image: '/images/blog/loan-broker-digital-marketing-hero.jpg'
@@ -705,7 +705,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Transform your security service business with proven digital marketing strategies. Learn client acquisition, trust building, and growth tactics for security companies.",
     date: "January 5, 2025",
     readTime: "20 min read",
-    slug: "security-digital-marketing-guide",
+    slug: "security-digital-marketing",
     category: "Tradies - Security",
     author: "Basheer Padanna",
     image: '/images/blog/security-digital-marketing-hero.jpg'
@@ -735,7 +735,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master digital marketing for painting businesses. Learn proven strategies to attract homeowners, showcase your work, and build a profitable painting company.",
     date: "January 7, 2025",
     readTime: "19 min read",
-    slug: "painters-digital-marketing-guide",
+    slug: "painters-digital-marketing",
     category: "Tradies - Painters",
     author: "Basheer Padanna",
     image: '/images/blog/painters-digital-marketing-hero.jpg'
@@ -755,7 +755,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Transform your mechanic business with digital marketing. Learn client acquisition strategies, online presence building, and growth tactics for automotive services.",
     date: "January 9, 2025",
     readTime: "21 min read",
-    slug: "mechanic-digital-marketing-guide",
+    slug: "mechanic-digital-marketing",
     category: "Tradies - Mechanics",
     author: "Basheer Padanna",
     image: '/images/blog/mechanic-digital-marketing-hero.jpg'
@@ -765,7 +765,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master lead generation for home building companies. Learn proven digital marketing tactics to attract homeowners, showcase quality builds, and convert leads into construction contracts.",
     date: "January 10, 2025",
     readTime: "22 min read",
-    slug: "home-builders-lead-generation-guide",
+    slug: "home-builders-lead-generation",
     category: "Building & Construction - Home Builders",
     author: "Basheer Padanna",
     image: '/images/blog/home-builders-lead-generation-hero.jpg'
@@ -775,7 +775,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Transform your renovation business with digital marketing. Learn client acquisition strategies, portfolio showcasing, and growth tactics for renovation contractors.",
     date: "January 11, 2025",
     readTime: "20 min read",
-    slug: "renovation-builders-digital-marketing-guide",
+    slug: "renovation-builders-digital-marketing",
     category: "Building & Construction - Renovation Builders",
     author: "Basheer Padanna",
     image: '/images/blog/renovation-builders-digital-marketing-hero.jpg'
@@ -785,7 +785,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master SEO for real estate professionals. Learn local search optimization, content strategies, and digital tactics that attract homebuyers and sellers in your market.",
     date: "January 12, 2025",
     readTime: "24 min read",
-    slug: "real-estate-seo-marketing-guide",
+    slug: "real-estate-seo-marketing",
     category: "Building & Construction - Real Estate",
     author: "Basheer Padanna",
     image: '/images/blog/real-estate-seo-marketing-hero.jpg'
@@ -815,7 +815,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Transform your floor sanding business with digital marketing. Learn proven strategies to attract homeowners, showcase timber floor transformations, and grow your business.",
     date: "January 15, 2025",
     readTime: "17 min read",
-    slug: "floor-sanding-digital-marketing-guide",
+    slug: "floor-sanding-digital-marketing",
     category: "Tradies - Floor Sanding",
     author: "Basheer Padanna",
     image: '/images/blog/floor-sanding-digital-marketing-hero.jpg'

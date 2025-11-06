@@ -36,16 +36,16 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = ({
       {/* Hero Section */}
       <header className="mb-12">
         <div className="mb-6">
-          <Badge variant="secondary" className="bg-primary/10 text-primary mb-4">
+          <Badge variant="secondary" className="bg-blue-100 text-blue-800 mb-4">
             {category}
           </Badge>
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             {title}
           </h1>
         </div>
         
         {/* Article Meta */}
-        <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-8">
+        <div className="flex flex-wrap items-center gap-6 text-gray-600 mb-8">
           <div className="flex items-center gap-2">
             <User className="h-4 w-4" />
             <span className="font-medium">{author}</span>
@@ -67,7 +67,7 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = ({
             url={articleUrl}
             description={`${title} - A comprehensive guide by ${author}`}
           />
-          <Button variant="outline" size="sm" className="gap-2">
+          <Button variant="outline" size="sm" className="gap-2 border-gray-200 text-gray-700 hover:bg-gray-50">
             <Bookmark className="h-4 w-4" />
             Save
           </Button>
@@ -80,7 +80,7 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = ({
             preserves optimizations and already contains width/height.
         */}
         {heroImage && (
-          <div className="relative overflow-hidden rounded-xl mb-8 shadow-lg">
+          <div className="relative overflow-hidden rounded-xl mb-8 shadow-md">
             {typeof heroImage === 'string' ? (
               // plain HTML img for string sources (e.g. '/images/...')
               // keeps markup simple and avoids next/image width requirement
@@ -91,13 +91,13 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = ({
               // StaticImageData (imported image) - next/image will use embedded width/height
               <Image src={heroImage} alt={heroAlt} className="w-full h-auto object-cover" />
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/10 to-transparent" />
           </div>
         )}
       </header>
 
       {/* Content */}
-      <div className="prose prose-lg max-w-none prose-headings:scroll-mt-20 prose-headings:font-bold prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-12 prose-h3:text-xl prose-h3:mb-4 prose-h3:mt-8 prose-p:mb-6 prose-p:leading-relaxed prose-p:text-base prose-ul:mb-8 prose-li:mb-3 prose-li:leading-relaxed prose-strong:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-blockquote:border-l-primary prose-blockquote:bg-muted/50 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:my-8">
+      <div className="prose prose-lg max-w-none prose-headings:scroll-mt-20 prose-headings:font-bold prose-headings:text-gray-900 prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-12 prose-h3:text-xl prose-h3:mb-4 prose-h3:mt-8 prose-p:mb-6 prose-p:leading-relaxed prose-p:text-base prose-p:text-gray-700 prose-ul:mb-8 prose-li:mb-3 prose-li:leading-relaxed prose-li:text-gray-700 prose-strong:text-gray-900 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-blockquote:border-l-blue-500 prose-blockquote:bg-blue-50 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:my-8">
         {children}
       </div>
 

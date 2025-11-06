@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/ui/header";
-import Footer from "@/components/sections/Footer";
+
 import { CheckCircle, Calendar, MessageCircle, ArrowRight } from "lucide-react";
 // import { Link } from "react-router-dom"; // <-- Removed
 import Link from "next/link"; // <-- Added Next.js Link
@@ -141,7 +141,7 @@ const ThankYou = () => {
         </div>
       </main>
 
-      <Footer />
+
     </>);
 
 };

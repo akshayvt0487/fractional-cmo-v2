@@ -159,6 +159,7 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
                               selectedCategory === categoryKey && "bg-white text-primary-foreground"
                             )}
                           >
+                            
                             {subcategory}
                           </Button>
                         );
@@ -217,15 +218,15 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
                       <Button
                         key={subcategory}
                         onClick={() => handleSubcategoryClick(group.name, subcategory)}
-                        className={cn(selectedCategory === categoryKey ? "w-full justify-start text-left text-sm bg-white text-gray-600 cursor-pointer" : "text-gray-600 cursor-pointer  hover:text-black"
-                          ,
-                          selectedCategory === categoryKey && "text-black "
+                        variant="ghost"
+                        className={cn(
+                          "w-full justify-start text-left text-sm py-2 h-auto",
+                          selectedCategory === categoryKey ? "text-black font-medium" : "text-gray-600 hover:text-black",
                         )}
-                      > 
-                        <ul className="flex flex-col w-full">
-                          <li className="w-full">  - {subcategory}</li>
-                        </ul>
-                      
+                      >
+                        <span className="flex items-center">
+                          {subcategory}
+                        </span>
                       </Button>
                     );
                   })}

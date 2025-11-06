@@ -3,7 +3,7 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Shield, Users, Building, Zap, CheckCircle, TrendingUp, Search, Target, Video, Play } from 'lucide-react';
+import { Shield, Users, Building, Zap, CheckCircle, TrendingUp, Search, Target, Video, Play, Home } from 'lucide-react';
 
 export const metadata = createMetadata({
   title: "Security Digital Marketing Guide",
@@ -71,7 +71,7 @@ const SecurityDigitalMarketing = () => {
       </p>
       
       <div className="grid md:grid-cols-2 gap-6 my-8">
-        <Card className="bg-gradient-to-br from-blue-50 to-cyan-100 border-blue-200">
+        <Card className="bg-linear-to-br from-blue-50 to-cyan-100 border-blue-200">
           <CardHeader>
             <CardTitle className="flex items-center gap-3 text-blue-800">
               <Building className="h-6 w-6" />
@@ -86,11 +86,11 @@ const SecurityDigitalMarketing = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-green-50 to-emerald-100 border-green-200">
+        <Card className="bg-linear-to-br from-green-50 to-emerald-100 border-green-200">
           <CardHeader>
             <CardTitle className="flex items-center gap-3 text-green-800">
-              <Users className="h-6 w-6" />
-              Residential Complexes
+              <Home className="h-6 w-6" />
+              Residential Communities
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -101,7 +101,7 @@ const SecurityDigitalMarketing = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-purple-50 to-violet-100 border-purple-200">
+        <Card className="bg-linear-to-br from-purple-50 to-violet-100 border-purple-200">
           <CardHeader>
             <CardTitle className="flex items-center gap-3 text-purple-800">
               <Zap className="h-6 w-6" />
@@ -116,11 +116,11 @@ const SecurityDigitalMarketing = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-orange-50 to-red-100 border-orange-200">
+        <Card className="bg-linear-to-br from-orange-50 to-red-100 border-orange-200">
           <CardHeader>
             <CardTitle className="flex items-center gap-3 text-orange-800">
               <Shield className="h-6 w-6" />
-              High-Risk Facilities
+              Industrial Facilities
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -134,7 +134,7 @@ const SecurityDigitalMarketing = () => {
 
       <h2>Building Trust Through Digital Presence</h2>
       <div className="grid md:grid-cols-2 gap-8 my-8">
-        <Card className="bg-gradient-to-br from-blue-50 to-cyan-100 border-blue-200">
+        <Card className="bg-linear-to-br from-blue-50 to-cyan-100 border-blue-200">
           <CardHeader>
             <CardTitle className="flex items-center gap-3 text-blue-800">
               <Shield className="h-6 w-6" />
@@ -160,7 +160,7 @@ const SecurityDigitalMarketing = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-green-50 to-emerald-100 border-green-200">
+        <Card className="bg-linear-to-br from-green-50 to-emerald-100 border-green-200">
           <CardHeader>
             <CardTitle className="flex items-center gap-3 text-green-800">
               <TrendingUp className="h-6 w-6" />
@@ -289,7 +289,7 @@ const SecurityDigitalMarketing = () => {
 
       <h2>Video Marketing for Professional Credibility</h2>
       
-      <Card className="my-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
+      <Card className="my-8 bg-linear-to-r from-blue-50 to-indigo-50 border-blue-200">
         <CardContent className="p-8">
           <h3 className="text-2xl font-semibold mb-6">Building Trust Through Video Content</h3>
           <p className="text-lg text-muted-foreground mb-6">

@@ -1,7 +1,6 @@
 import { createMetadata } from "@/lib/seo";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import StrategyForm from "@/components/ui/strategy-form";
-import Footer from "@/components/sections/Footer";
 import Header from "@/components/ui/header";
 
 export const metadata = createMetadata({
@@ -41,7 +40,7 @@ const About = () => {
     <>
      
       <Header />
-      <div className="min-h-screen">
+      <div className="min-h-screen max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-30">
         {/* Hero Section */}
         <section className="py-24 md:py-32">
           <div className="container">
@@ -214,7 +213,7 @@ const About = () => {
           </div>
         </section>
       </div>
-      <Footer />
+
     </>);
 
 };

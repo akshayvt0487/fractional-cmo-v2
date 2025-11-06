@@ -67,62 +67,62 @@ const MechanicDigitalMarketing = () => {
 
       <h2>Understanding Your Automotive Service Market</h2>
       <div className="grid md:grid-cols-2 gap-8 my-8">
-        <Card className="bg-gradient-to-br from-blue-50 to-cyan-100 border-blue-200">
+        <Card className="bg-gradient-to-br from-blue-50 to-cyan-100 dark:from-blue-950 dark:to-cyan-900 border-blue-200 dark:border-blue-800">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-blue-800">
+            <CardTitle className="flex items-center gap-3 text-blue-800 dark:text-blue-200">
               <Wrench className="h-6 w-6" />
               Regular Maintenance Services
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-blue-700 text-sm mb-3">Oil changes, tune-ups, and inspections that keep vehicles running smoothly and prevent major repairs.</p>
-            <div className="bg-blue-100 p-3 rounded-lg">
-              <p className="text-xs text-blue-800 font-medium">💡 Pro Tip: Maintenance customers become lifetime clients worth $2,000+ annually!</p>
+            <p className="text-blue-700 dark:text-blue-300 text-sm mb-3">Oil changes, tune-ups, and inspections that keep vehicles running smoothly and prevent major repairs.</p>
+            <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg">
+              <p className="text-xs text-blue-800 dark:text-blue-200 font-medium">💡 Pro Tip: Maintenance customers become lifetime clients worth $2,000+ annually!</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-red-50 to-rose-100 border-red-200">
+        <Card className="bg-gradient-to-br from-red-50 to-rose-100 dark:from-red-950 dark:to-rose-900 border-red-200 dark:border-red-800">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-red-800">
+            <CardTitle className="flex items-center gap-3 text-red-800 dark:text-red-200">
               <AlertTriangle className="h-6 w-6" />
               Emergency Repair Services
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-red-700 text-sm mb-3">Engine, transmission, and brake repairs that address urgent automotive problems customers need fixed immediately.</p>
-            <div className="bg-red-100 p-3 rounded-lg">
-              <p className="text-xs text-red-800 font-medium">⚡ Key Insight: Emergency repairs drive highest profit margins and customer loyalty.</p>
+            <p className="text-red-700 dark:text-red-300 text-sm mb-3">Engine, transmission, and brake repairs that address urgent automotive problems customers need fixed immediately.</p>
+            <div className="bg-red-100 dark:bg-red-900/30 p-3 rounded-lg">
+              <p className="text-xs text-red-800 dark:text-red-200 font-medium">⚡ Key Insight: Emergency repairs drive highest profit margins and customer loyalty.</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-purple-50 to-violet-100 border-purple-200">
+        <Card className="bg-gradient-to-br from-purple-50 to-violet-100 dark:from-purple-950 dark:to-violet-900 border-purple-200 dark:border-purple-800">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-purple-800">
+            <CardTitle className="flex items-center gap-3 text-purple-800 dark:text-purple-200">
               <Zap className="h-6 w-6" />
               Specialized Diagnostics
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-purple-700 text-sm mb-3">AC repair, electrical systems, and computer diagnostics requiring specialized equipment and expertise.</p>
-            <div className="bg-purple-100 p-3 rounded-lg">
-              <p className="text-xs text-purple-800 font-medium">🔧 Advantage: Specialized services command premium pricing and reduce competition.</p>
+            <p className="text-purple-700 dark:text-purple-300 text-sm mb-3">AC repair, electrical systems, and computer diagnostics requiring specialized equipment and expertise.</p>
+            <div className="bg-purple-100 dark:bg-purple-900/30 p-3 rounded-lg">
+              <p className="text-xs text-purple-800 dark:text-purple-200 font-medium">🔧 Advantage: Specialized services command premium pricing and reduce competition.</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-green-50 to-emerald-100 border-green-200">
+        <Card className="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-950 dark:to-emerald-900 border-green-200 dark:border-green-800">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-green-800">
+            <CardTitle className="flex items-center gap-3 text-green-800 dark:text-green-200">
               <Building className="h-6 w-6" />
               Commercial Fleet Services
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-green-700 text-sm mb-3">Maintenance contracts for business fleets providing consistent, high-value recurring revenue.</p>
-            <div className="bg-green-100 p-3 rounded-lg">
-              <p className="text-xs text-green-800 font-medium">📈 Game Changer: Fleet contracts provide predictable monthly revenue of $5K-25K+.</p>
+            <p className="text-green-700 dark:text-green-300 text-sm mb-3">Maintenance contracts for business fleets providing consistent, high-value recurring revenue.</p>
+            <div className="bg-green-100 dark:bg-green-900/30 p-3 rounded-lg">
+              <p className="text-xs text-green-800 dark:text-green-200 font-medium">📈 Game Changer: Fleet contracts provide predictable monthly revenue of $5K-25K+.</p>
             </div>
           </CardContent>
         </Card>
