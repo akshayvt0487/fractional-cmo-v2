@@ -53,7 +53,7 @@ const BlogSection = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex-1 flex flex-col justify-end">
-                <div className="flex items-center justify-between text-xs text-muted-foreground">
+                <div className="flex items-center justify-between text-xs text-muted-foreground ">
                   <span>{post.date}</span>
                   <Button variant="ghost" size="sm" asChild>
                     <Link href={`/blog/${post.slug}`}>Read more →</Link>

@@ -1,4 +1,18 @@
-# Allow Common Search Engines
+# Sitemap
+Sitemap: https://fractionalcmo.com.au/sitemap.xml
+
+# Common Search Engines
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /about/
+Allow: /contact/
+Disallow: /admin/
+Disallow: /studio/
+Disallow: /api/
+Crawl-delay: 1
+
+# Allow faster crawling for Google
 User-agent: Googlebot
 Allow: /
 Allow: /blog/
@@ -7,15 +21,7 @@ Allow: /contact/
 Disallow: /admin/
 Disallow: /studio/
 Disallow: /api/
-
-User-agent: Bingbot
-Allow: /
-Allow: /blog/
-Allow: /about/
-Allow: /contact/
-Disallow: /admin/
-Disallow: /studio/
-Disallow: /api/
+Crawl-delay: 0.5
 
 # Social Media Crawlers
 User-agent: Twitterbot

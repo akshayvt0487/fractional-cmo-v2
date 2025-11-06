@@ -28,8 +28,8 @@ const FractionalCMO = () => {
   return (
     <section className="py-16 md:py-24 bg-linear-to-br from-background via-background to-primary/5 ">
       <div className="container">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-semibold md:text-4xl mb-4 ">
+        <div className="text-center mb-16 ">
+          <h2 className="text-3xl font-semibold md:text-4xl mb-4  ">
             What is a Fractional CMO?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -56,7 +56,7 @@ const FractionalCMO = () => {
                   <span className="text-primary font-semibold text-sm">2</span>
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1 font-semibold ">Growth Strategy Development</h4>
+                  <h4 className="mb-1 font-semibold ">Growth Strategy Development</h4>
                   <p className="text-gray-600 text-sm">Create a comprehensive roadmap with clear KPIs, channel priorities, and resource allocation.</p>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const FractionalCMO = () => {
             </div>
           </div>
 
-          <div className="bg-card rounded-lg p-8 border border-gray-300">
+          <div className="bg-card rounded-lg p-8 border border-gray-300 bg-gray-100 drop-shadow-2xl">
             <h3 className="text-xl font-semibold mb-6">Fractional CMO vs Full-Time Marketing Manager</h3>
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4 text-sm">

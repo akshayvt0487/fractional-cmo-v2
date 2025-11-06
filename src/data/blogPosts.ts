@@ -55,7 +55,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimize conversion rates, and maximize ROI for insolvency practitioners.",
     date: "January 28, 2025",
     readTime: "13 min read",
-    slug: "liquidators-google-ads",
+    slug: "liquidators-google-ads-ppc-guide",
     category: "Accounting & Finance - Liquidators",
     author: "Basheer Padanna",
     image: '/images/blog/liquidators-google-ads-hero.jpg'
