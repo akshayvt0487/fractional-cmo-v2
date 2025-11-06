@@ -3,6 +3,8 @@ import  Link  from "next/link";
 
 const Footer = () => (
   <footer className="border-t border-border py-8 md:py-12 text-sm w-full flex justify-center max-w-[1400px] mx-auto">
+   
+   
     <div className="container px-4 md:px-6 flex flex-col gap-6 md:gap-8">
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-3 md:gap-4">
@@ -40,6 +42,11 @@ const Footer = () => (
         </div>
       </div>
     </div>
+    <script 
+  src="https://widgets.leadconnectorhq.com/loader.js"  
+  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+ data-widget-id="690c5fb533e992e4708471d5"   > 
+ </script>
   </footer>
 );
 

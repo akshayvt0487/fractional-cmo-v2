@@ -108,8 +108,8 @@ const FractionalCMOVsFullTime = () => {
                 </Card>
               </div>
 
-              <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-6 my-8">
-                <p className="text-green-800 dark:text-green-200 font-semibold">
+              <div className="bg-green-50  border border-green-200  rounded-lg p-6 my-8">
+                <p className="text-green-800  font-semibold">
                   💡 Cost Savings: Fractional CMOs typically cost 60-80% less than full-time executives while delivering comparable strategic value.
                 </p>
               </div>
