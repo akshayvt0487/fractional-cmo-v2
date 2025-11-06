@@ -1,8 +1,6 @@
 import { createMetadata } from "@/lib/seo";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Car, Users, Target, AlertTriangle } from "lucide-react";
-import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
@@ -32,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Car Inspection Marketing Strategies",
     description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/car-inspection-marketing-strategies.jpg`],
+    images: ["https://fractional-cmo.com.au/images/blog/car-inspection-marketing-strategies.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -115,7 +113,7 @@ const CarInspectionMarketing = () => {
           Digital Foundation for Car Inspection Marketing
         </h2>
         
-        <Card className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
+        <Card className="mb-8 bg-linear-to-r from-blue-50 to-indigo-50 border-blue-200">
           <CardHeader>
             <CardTitle>Professional Website Essentials</CardTitle>
             <CardDescription>Your website is often the first impression potential clients have of your service</CardDescription>
@@ -187,7 +185,7 @@ const CarInspectionMarketing = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8 mb-8">
-          <Card className="bg-gradient-to-br from-orange-50 to-red-50 border-orange-200">
+          <Card className="bg-linear-to-br from-orange-50 to-red-50 border-orange-200">
             <CardHeader>
               <CardTitle>Qualification Showcase</CardTitle>
               <CardDescription>Prominently display your expertise and credentials</CardDescription>
@@ -203,7 +201,7 @@ const CarInspectionMarketing = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
+          <Card className="bg-linear-to-br from-green-50 to-emerald-50 border-green-200">
             <CardHeader>
               <CardTitle>Social Proof Strategy</CardTitle>
               <CardDescription>Leverage customer experiences to build confidence</CardDescription>

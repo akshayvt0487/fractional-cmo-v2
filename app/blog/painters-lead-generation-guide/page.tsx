@@ -18,7 +18,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/painters-lead-generation-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
     description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/painters-lead-generation-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

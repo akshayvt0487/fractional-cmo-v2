@@ -18,7 +18,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/buyers-agents-google-ads-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Buyers Agents Google Ads Strategy"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Buyers Agents Google Ads Strategy",
     description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/buyers-agents-google-ads-strategy.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -43,7 +43,7 @@ const BuyersAgentsGoogleAds = () => {
     publishedDate: "2025-01-13T00:00:00.000Z",
     modifiedDate: "2025-01-13T00:00:00.000Z",
     url: "/blog/buyers-agents-google-ads-strategy",
-    imageUrl: "/images/buyers-agents-google-ads-og.jpg",
+    imageUrl: "/images/blog/buyers-agents-google-ads-hero.jpg",
     category: "Real Estate Marketing",
     readTime: "28 min read",
     tags: ["Buyers Agents", "Google Ads", "Real Estate Marketing", "Property Marketing", "Lead Generation"]

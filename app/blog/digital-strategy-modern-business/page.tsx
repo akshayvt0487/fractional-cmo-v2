@@ -17,7 +17,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/digital-strategy-modern-business.jpg",
       width: 1200,
       height: 630,
       alt: "Digital Strategy Modern Business"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Digital Strategy Modern Business",
     description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/digital-strategy-modern-business.jpg"],
     site: "@FractionalCMO"
   }
 });
@@ -67,7 +67,7 @@ const DigitalStrategyModernBusiness = () => {
         Digital strategy has evolved from a nice-to-have to a business survival requirement. Companies with well-defined digital strategies achieve 2.8x higher revenue growth than those operating without strategic direction. The difference lies not in the tools they use, but in how strategically they deploy them to create competitive advantages and drive business outcomes.
       </p>
 
-      <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-500 p-8 my-8">
+      <Card className="bg-linear-to-r from-blue-50 to-purple-50 border-l-4 border-blue-500 p-8 my-8">
         <div className="flex items-start gap-4">
           <div className="text-4xl">🚀</div>
           <div>

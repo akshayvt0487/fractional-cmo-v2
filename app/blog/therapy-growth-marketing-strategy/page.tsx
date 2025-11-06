@@ -16,7 +16,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/therapy-growth-marketing-strategy-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Therapy Growth Marketing Strategy"
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Therapy Growth Marketing Strategy",
     description: "Expert guidance on therapy growth marketing strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/therapy-growth-marketing-strategy-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

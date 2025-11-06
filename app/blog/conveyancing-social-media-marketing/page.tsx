@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Conveyancing Social Media Marketing",
     description: "Expert guidance on conveyancing social media marketing. Learn proven strategies and best practices for business growth.",
-    images: ["/images/blog/conveyancing-social-media-hero.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/conveyancing-social-media-marketing.jpg"],
     site: "@FractionalCMO"
   }
 });

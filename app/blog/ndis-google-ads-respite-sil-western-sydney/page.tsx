@@ -17,7 +17,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/ndis-comprehensive-marketing-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Google Ads Respite Sil Western Sydney"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Google Ads Respite Sil Western Sydney",
     description: "Expert guidance on ndis google ads respite sil western sydney. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/ndis-comprehensive-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

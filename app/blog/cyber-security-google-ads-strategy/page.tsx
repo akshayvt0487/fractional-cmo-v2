@@ -57,7 +57,7 @@ const CyberSecurityGoogleAds = () => {
     question: "What's the best campaign structure for cyber security Google Ads?",
     answer: "Use separate campaigns for each major service (penetration testing, compliance, incident response), create ad groups for specific solutions, and implement geo-targeting for local markets while maintaining national reach for enterprise services."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/cyber-security-google-ads.jpg" heroAlt="Google Ads strategy for cyber security businesses">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/blog/cyber-security-google-ads.jpg" heroAlt="Google Ads strategy for cyber security businesses">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🔒 Cyber security companies leveraging strategic Google Ads campaigns see 300% higher lead generation rates and 40% lower customer acquisition costs compared to traditional marketing methods. This comprehensive guide reveals the proven strategies, targeting techniques, and optimization methods that top cyber security firms use to dominate search results and capture high-value enterprise clients.
         </p>

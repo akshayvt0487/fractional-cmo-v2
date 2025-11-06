@@ -39,7 +39,7 @@ const articleData = {
   publishedDate: "2024-12-18",
   modifiedDate: "2024-12-18",
   url: "/blog/removalist-meta-ads-strategy",
-  imageUrl: "/images/removalist-meta-ads-hero.jpg",
+  imageUrl: "/images/blog/removalist-meta-ads-hero.jpg",
   category: "Digital Marketing",
   readTime: "24 min read",
   tags: ["Meta Ads", "Facebook Marketing", "Removalist Marketing", "Moving Company Ads", "Lead Generation", "Audience Targeting"]

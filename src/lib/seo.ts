@@ -13,7 +13,7 @@ export const SOCIAL_MEDIA = {
 const DEFAULT_TITLE = "Fractional CMO — Growth marketing for service businesses";
 const DEFAULT_DESCRIPTION =
   "Fractional CMO provides growth marketing strategy, lead generation and Google Ads expertise for service businesses.";
-const DEFAULT_IMAGE = "/images/hero-fractional-cmo.jpg";
+const DEFAULT_IMAGE = "/images/blog/fractional-cmo-hero.jpg";
 
 export const defaultMetadata: Metadata = {
   title: DEFAULT_TITLE,

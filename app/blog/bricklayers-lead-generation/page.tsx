@@ -43,7 +43,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
     description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/bricklayers-lead-generation-hero.jpg`],
+    images: ["https://fractional-cmo.com.au/images/blog/bricklayers-lead-generation.jpg"],
     site: "@FractionalCMO"
   }
 });

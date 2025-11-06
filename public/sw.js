@@ -7,7 +7,7 @@ const DYNAMIC_CACHE = 'fcmo-dynamic-v9';
 const STATIC_ASSETS = [
   '/',
   '/favicon.png',
-  '/images/hero-fractional-cmo.jpg'
+  '/images/blog/fractional-cmo-hero.jpg'
 ];
 
 // Install event - cache static assets

@@ -75,7 +75,7 @@ function generateBlogMetadata(filePath: string, slug: string) {
   
   const siteURL = process.env.NEXT_PUBLIC_SITE_URL || 'https://your-domain.com';
   const fullURL = `${siteURL}/blog/${slug}`;
-  const imageURL = hasImage ? `${siteURL}${imagePath}` : `${siteURL}/images/hero-fractional-cmo.jpg`;
+  const imageURL = hasImage ? `${siteURL}${imagePath}` : `${siteURL}/images/blog/fractional-cmo-hero.jpg`;
   
   return {
     title,

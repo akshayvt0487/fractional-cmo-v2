@@ -59,7 +59,7 @@ const SocialShareButton: React.FC<SocialShareButtonProps> = ({
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant={variant} size={size} className="gap-2">
-          <Share2 className="h-4 w-4" />
+          <Share2 className="h-4 w-4 bg-white" />
           Share this article
         </Button>
       </DropdownMenuTrigger>

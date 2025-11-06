@@ -38,7 +38,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Divorce Lawyers Digital Marketing",
     description: "Expert guidance on digital marketing for divorce lawyers. Learn proven strategies to attract clients and grow your law practice.",
-    images: ["/images/blog/divorce-lawyers-digital-marketing-hero.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/divorce-lawyers-digital-marketing.jpg"],
     site: "@FractionalCMO"
   }
 });

@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Growth Marketing Strategy",
     description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
-    images: ["/images/blog/growth-marketing-strategy-hero.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/growth-marketing-strategy.jpg"],
     site: "@FractionalCMO"
   }
 });

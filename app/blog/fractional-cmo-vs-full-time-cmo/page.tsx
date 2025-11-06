@@ -17,7 +17,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/fractional-vs-fulltime-cmo-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Fractional Cmo Vs Full Time Cmo"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Fractional Cmo Vs Full Time Cmo",
     description: "Expert guidance on fractional cmo vs full time cmo. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/fractional-vs-fulltime-cmo-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

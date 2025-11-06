@@ -1,8 +1,5 @@
 import { createMetadata } from "@/lib/seo";
-import { Button } from "@/components/ui/button";
-import StrategyForm from "@/components/ui/strategy-form";
-import { Card, CardContent } from "@/components/ui/card";
-import marketingROIImage from "@/assets/marketing-roi-dashboard.jpg";
+import { Card } from "@/components/ui/card";
 
 import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
@@ -19,7 +16,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/digital-marketing-roi-service-businesses.jpg",
       width: 1200,
       height: 630,
       alt: "Digital Marketing Roi Service Businesses"
@@ -32,7 +29,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Digital Marketing Roi Service Businesses",
     description: "Expert guidance on digital marketing roi service businesses. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/digital-marketing-roi-service-businesses.jpg"],
     site: "@FractionalCMO"
   }
 });

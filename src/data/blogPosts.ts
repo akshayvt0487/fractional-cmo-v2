@@ -45,7 +45,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master Google Ads for liquidators with proven strategies. Expert campaign setup, keyword targeting & conversion tactics for distressed business leads.",
     date: "January 30, 2025",
     readTime: "28 min read",
-    slug: "liquidators-google-ads-strategy",
+    slug: "liquidators-google-ads",
     category: "Insolvency - Google Ads",
     author: "Basheer Padanna",
     image: '/images/blog/liquidators-google-ads-hero.jpg'
@@ -315,7 +315,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master B2B lead generation with proven strategies, tools, and techniques that drive qualified prospects for service businesses.",
     date: "July 3, 2025",
     readTime: "18 min read",
-    slug: "b2b-lead-generation-strategies",
+  slug: "b2b-lead-generation",
     category: "Digital Marketing",
     author: "Basheer Padanna",
     image: '/images/blog/b2b-lead-generation-hero.jpg'
@@ -325,7 +325,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Learn proven strategies to dominate local search results and attract more customers in your service area.",
     date: "April 18, 2025",
     readTime: "16 min read",
-    slug: "local-search-ranking-strategies",
+  slug: "local-search-ranking",
     category: "Digital Marketing",
     author: "Basheer Padanna",
     image: '/images/blog/local-search-ranking-hero.jpg'
@@ -345,7 +345,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Transform your removalist business with proven digital marketing strategies that attract quality customers and drive growth.",
     date: "June 8, 2025",
     readTime: "17 min read",
-    slug: "removalist-digital-marketing-guide",
+    slug: "removalist-digital-marketing",
     category: "Tradies - Removalists",
     author: "Basheer Padanna",
     image: '/images/blog/removalist-digital-marketing-hero.jpg'
@@ -798,7 +798,7 @@ export const blogPosts: BlogPost[] = [
     slug: "buyers-agents-google-ads-strategy",
     category: "Building & Construction - Buyers Agents",
     author: "Basheer Padanna",
-    image: "/images/buyers-agents-google-ads-og.jpg"
+    image: "/images/blog/buyers-agents-google-ads-hero.jpg"
   },
   {
     title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",

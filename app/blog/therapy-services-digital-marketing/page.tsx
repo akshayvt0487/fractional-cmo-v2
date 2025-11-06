@@ -17,7 +17,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.au/images/blog/therapy-services-digital-marketing-hero.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/therapy-services-digital-marketing-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Digital Marketing Strategy Guide for Therapy Services"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Therapy Services Digital Marketing",
     description: "Expert guidance on therapy services digital marketing. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.au/images/blog/therapy-services-digital-marketing-hero.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/therapy-services-digital-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

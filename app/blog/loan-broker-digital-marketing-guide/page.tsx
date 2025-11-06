@@ -17,7 +17,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/loan-broker-digital-marketing-guide.jpg",
       width: 1200,
       height: 630,
       alt: "Loan Broker Digital Marketing Guide"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Loan Broker Digital Marketing Guide",
     description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/loan-broker-digital-marketing-guide.jpg"],
     site: "@FractionalCMO"
   }
 });

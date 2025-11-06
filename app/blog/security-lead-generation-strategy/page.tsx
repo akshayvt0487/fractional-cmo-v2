@@ -17,7 +17,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/security-lead-generation-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025"
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
     description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/security-lead-generation-hero.jpg"],
     site: "@FractionalCMO"
   }
 });

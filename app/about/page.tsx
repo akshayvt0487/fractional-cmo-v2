@@ -1,7 +1,6 @@
 import { createMetadata } from "@/lib/seo";
-import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import StrategyForm from "@/components/ui/strategy-form";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Footer from "@/components/sections/Footer";
 import Header from "@/components/ui/header";
 
@@ -10,12 +9,31 @@ export const metadata = createMetadata({
   description: 'Learn about Basheer Padanna, a Fractional CMO helping ambitious service businesses build scalable growth systems through strategic thinking and hands-on execution.',
   path: '/about',
   keywords: [
-  'fractional cmo',
-  'basheer padanna',
-  'marketing leadership',
-  'growth strategy',
-  'digital marketing expert']
-
+    'fractional cmo',
+    'basheer padanna',
+    'marketing leadership',
+    'growth strategy',
+    'digital marketing expert'
+  ],
+  openGraph: {
+    title: 'About Basheer Padanna - Fractional CMO',
+    description: 'Learn about Basheer Padanna, a Fractional CMO helping ambitious service businesses build scalable growth systems.',
+    url: 'https://fractional-cmo.com.au/about',
+    siteName: 'Fractional CMO',
+    type: 'profile',
+    images: [{
+      url: '/images/about/basheer-padanna.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Basheer Padanna - Fractional CMO'
+    }]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Basheer Padanna - Fractional CMO',
+    description: 'Learn about Basheer Padanna, a Fractional CMO helping ambitious service businesses build scalable growth systems.',
+    images: ['/images/about/basheer-padanna.jpg']
+  }
 });
 
 const About = () => {

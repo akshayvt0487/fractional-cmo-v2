@@ -1,7 +1,7 @@
 // Critical resource preloading
 const preloadCriticalImages = () => {
   const criticalImages = [
-    '/images/hero-fractional-cmo.jpg',
+    '/images/blog/fractional-cmo-hero.jpg',
     '/favicon.png',
     '/lovable-uploads/5016915a-7345-483c-9d8f-50938a28715f.png',
     '/assets/basheer-padanna-professional.png'

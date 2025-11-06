@@ -15,7 +15,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/floor-sanding-digital-marketing-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Floor Sanding Digital Marketing Guide"
@@ -28,7 +28,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Floor Sanding Digital Marketing Guide",
     description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/floor-sanding-digital-marketing-guide.jpg"],
     site: "@FractionalCMO"
   }
 });

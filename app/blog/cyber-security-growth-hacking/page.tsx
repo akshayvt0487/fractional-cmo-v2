@@ -57,7 +57,7 @@ const CyberSecurityGrowthHacking = () => {
     question: "What metrics should cyber security companies track for growth hacking success?",
     answer: "Key metrics include security assessment completion rates, threat alert engagement, compliance checklist downloads, demo-to-consultation conversion rates, and customer lifetime value based on security service tiers."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/cyber-security-growth-hacking.jpg" heroAlt="Cyber security growth hacking strategies and innovative lead generation">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/blog/cyber-security-growth-hacking.jpg" heroAlt="Cyber security growth hacking strategies and innovative lead generation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🚀 Forward-thinking cyber security companies using growth hacking strategies achieve 250% faster client acquisition and 60% higher customer lifetime value compared to traditional marketing approaches. This guide reveals innovative tactics that security firms use to leverage technology, automation, and data-driven insights for explosive business growth.
         </p>

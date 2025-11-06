@@ -19,7 +19,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/ndis-business-growth-strategy-new.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Business Growth Strategy"
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Business Growth Strategy",
     description: "Expert guidance on ndis business growth strategy. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/ndis-business-growth-strategy-new.jpg"],
     site: "@FractionalCMO"
   }
 });

@@ -18,7 +18,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/ndis-marketing-guide-new.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Marketing Guide 2024"
@@ -31,7 +31,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Marketing Guide 2024",
     description: "Expert guidance on ndis marketing guide 2024. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/ndis-marketing-guide-new.jpg"],
     site: "@FractionalCMO"
   }
 });

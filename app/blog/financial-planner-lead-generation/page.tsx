@@ -30,7 +30,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Financial Planner Lead Generation",
     description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
-    images: ["/images/blog/finance-broker-lead-generation-hero.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/financial-planner-lead-generation.jpg"],
     site: "@FractionalCMO"
   }
 });

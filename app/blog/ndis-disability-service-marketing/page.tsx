@@ -19,7 +19,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/ndis-disability-service-marketing-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Ndis Disability Service Marketing"
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Ndis Disability Service Marketing",
     description: "Expert guidance on ndis disability service marketing. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/hero-fractional-cmo.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/ndis-disability-service-marketing-hero.jpg"],
     site: "@FractionalCMO"
   }
 });
