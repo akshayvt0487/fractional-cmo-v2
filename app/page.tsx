@@ -19,7 +19,7 @@ export const metadata = createMetadata({
     siteName: 'Fractional CMO',
     type: 'website',
     images: [{
-      url: '/images/homepage/hero-banner.jpg',
+      url: '/images/Basheer-Padanna.png',
       width: 1200,
       height: 630,
       alt: 'Basheer Padanna - Fractional CMO'
@@ -29,7 +29,7 @@ export const metadata = createMetadata({
     card: 'summary_large_image',
     title: 'Basheer Padanna — Fractional CMO & Digital Marketing Leader',
     description: 'Expert digital marketing leadership for service businesses. Strategic growth through SEO, Google Ads, and Meta lead generation.',
-    images: ['/images/homepage/hero-banner.jpg']
+    images: ['/images/Basheer-Padanna.png']
   }
 });
 
