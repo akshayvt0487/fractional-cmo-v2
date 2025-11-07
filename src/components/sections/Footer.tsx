@@ -1,5 +1,6 @@
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
-import  Link  from "next/link";
+import Link from "next/link";
+import GHLWidget from "@/components/widgets/GHLWidget";
 
 const Footer = () => (
   <footer className="border-t border-border py-8 md:py-12 text-sm w-full flex justify-center max-w-[1400px] mx-auto">
@@ -42,12 +43,6 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <script 
-  src="https://widgets.leadconnectorhq.com/loader.js"  
-  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
- data-widget-id="690c5fb533e992e4708471d5"   > 
- </script>
+    <GHLWidget />
   </footer>
-);
-
-export default Footer;
+);export default Footer;
