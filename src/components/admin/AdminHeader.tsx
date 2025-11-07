@@ -1,41 +1,29 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import { account } from '@/lib/appwrite'; // your Appwrite client setup file
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import { LogOut, User } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { SidebarTrigger } from '@/components/ui/sidebar';
+import { signOut, useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
+import { cn } from '@/lib/utils';
 
 export const AdminHeader = () => {
   const { toast } = useToast();
-  const [user, setUser] = useState<any>(null);
-
-  // 🔹 Fetch the logged-in user's info
-  useEffect(() => {
-    const getUser = async () => {
-      try {
-        const currentUser = await account.get();
-        setUser(currentUser);
-      } catch (error) {
-        console.warn('No active session found');
-      }
-    };
-    getUser();
-  }, []);
+  const { data: session } = useSession();
+  const router = useRouter();
 
   // 🔹 Handle sign out
   const handleSignOut = async () => {
     try {
-      await account.deleteSession('current');
-      setUser(null);
+      await signOut({ redirect: false });
       toast({
         title: 'Signed out',
         description: 'You have been successfully signed out.',
       });
-      // Optional: redirect to login
-      window.location.href = '/login';
-    } catch (error) {
+      router.push('/admin/login');
+    } catch (err) {
       toast({
         variant: 'destructive',
         title: 'Error',
@@ -54,24 +42,26 @@ export const AdminHeader = () => {
         </div>
 
         <div className="flex items-center gap-2 md:gap-4">
-          {user && (
+          {session?.user && (
             <div className="hidden sm:flex items-center gap-2 text-sm text-muted-foreground">
               <User className="h-4 w-4" />
-              <span className="max-w-[150px] md:max-w-none truncate">{user.email}</span>
+              <span className="max-w-[150px] md:max-w-none truncate">{session.user.email}</span>
             </div>
           )}
 
           <Button
-            variant="outline"
-            size="sm"
             onClick={handleSignOut}
-            // FIX: Removed custom classes: "bg-gray-800 text-white hover:bg-gray-700 border-gray-300"
-            // "variant='outline'" will now apply its proper styles.
-            // Kept "cursor-pointer" although it's redundant on a <button>.
-            className="flex items-center gap-2 cursor-pointer"
+            size="sm"
+            className={cn(
+              "flex items-center gap-2",
+              "bg-gradient-to-r from-blue-500 to-blue-600",
+              "hover:from-blue-600 hover:to-blue-700",
+              "text-white border-0 shadow-lg",
+              "transition-all duration-200"
+            )}
           >
-            <LogOut className="h-4 w-4 " />
-            <span className="hidden sm:inline ">Sign Out</span>
+            <LogOut className="h-4 w-4" />
+            <span className="hidden sm:inline">Sign Out</span>
           </Button>
         </div>
       </div>

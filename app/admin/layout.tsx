@@ -1,14 +1,12 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation'; // Next.js App Router navigation
+import { useRouter, usePathname } from 'next/navigation';
 import { useSession } from "next-auth/react";
 import { AdminHeader } from '@/components/admin/AdminHeader';
 import { AdminSidebar } from '@/components/admin/AdminSidebar';
-// Re-import useSidebar and SidebarProvider
 import { SidebarProvider, useSidebar } from '@/components/ui/sidebar';
 import { Loader2 } from 'lucide-react';
-// Re-import cn for conditional class names
 import { cn } from '@/lib/utils';
 
 // This component acts as a protected layout for all routes under /admin
@@ -31,16 +29,19 @@ function AdminLayoutContent({ children }: AdminLayoutProps): React.ReactElement 
       */}
       <div
         className={cn(
-          "flex-1 flex flex-col overflow-hidden transition-[margin-left] duration-200 ease-linear",
+          "flex-1 flex flex-col overflow-hidden",
+          "transition-all duration-300 ease-out transform",
           // When sidebar is collapsed, use the icon width.
           // When expanded, use the full width.
           sidebarState === 'collapsed'
-            ? "md:ml-[var(--sidebar-width-icon)]"
-            : "md:ml-[var(--sidebar-width)]"
+            ? "md:ml-(--sidebar-width-icon) md:w-[calc(100%-var(--sidebar-width-icon))]"
+            : "md:ml-(--sidebar-width) md:w-[calc(100%-var(--sidebar-width))]"
         )}
+        style={{
+          willChange: 'margin-left, width'
+        }}
       >
         <AdminHeader />
-        {/* FIX: Corrected typo p6 to p-6 */}
         <main className="flex-1 p-4 md:p-6 overflow-y-auto">
           <div className="max-w-7xl mx-auto">
             {children}
@@ -58,7 +59,7 @@ function AdminLayout({ children }: AdminLayoutProps): React.ReactElement {
   const pathname = usePathname();
 
   const isLoading = status === "loading";
-  const isAdmin = (session?.user as any)?.isAdmin;
+  const isAdmin = session?.user?.isAdmin as boolean | undefined;
   const isLoginPage = pathname === '/admin/login';
 
   useEffect(() => {

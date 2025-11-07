@@ -1,0 +1,64 @@
+/* Custom variables for sidebar widths */
+:root {
+  --sidebar-width: 260px;
+  --sidebar-width-icon: 60px;
+  --sidebar-transition-duration: 300ms;
+}
+
+/* Base sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 40;
+  transition: transform var(--sidebar-transition-duration) ease-out;
+  width: var(--sidebar-width);
+  background-color: hsl(var(--background));
+}
+
+/* Mobile sidebar (closed by default) */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar[data-state="open"] {
+    transform: translateX(0);
+  }
+
+  /* Overlay when sidebar is open */
+  .sidebar[data-state="open"]::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+}
+
+/* Desktop sidebar */
+@media (min-width: 769px) {
+  .sidebar {
+    transform: none;
+  }
+
+  .sidebar[data-collapsed="true"] {
+    width: var(--sidebar-width-icon);
+  }
+}
+
+/* Smooth transitions for content margin */
+.content-area {
+  transition: margin-left var(--sidebar-transition-duration) ease-out;
+}
+
+@media (min-width: 769px) {
+  .content-area {
+    margin-left: var(--sidebar-width);
+  }
+
+  .content-area[data-sidebar-collapsed="true"] {
+    margin-left: var(--sidebar-width-icon);
+  }
+}

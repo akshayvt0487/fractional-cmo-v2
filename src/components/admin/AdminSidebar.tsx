@@ -62,8 +62,11 @@ export const AdminSidebar = () => {
   };
 
   return (
-    // FIX: Removed "top-25" (not a standard Tailwind class) and "bg-white" (redundant, let the Sidebar component handle its bg)
-    <Sidebar collapsible="icon" className="border-r" variant='sidebar'>
+    <Sidebar 
+      collapsible="icon" 
+      className="border-r transition-transform duration-300 ease-out" 
+      variant='sidebar'
+    >
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Navigation</SidebarGroupLabel>

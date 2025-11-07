@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { Providers } from './providers';
 import './globals.css';
+import './styles/sidebar.css';
 import { defaultMetadata } from '@/lib/seo';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Manrope } from 'next/font/google';
