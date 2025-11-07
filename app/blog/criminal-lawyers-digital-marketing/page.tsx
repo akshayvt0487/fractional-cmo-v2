@@ -264,10 +264,10 @@ const CriminalLawyersDigitalMarketing = () => {
 
         <Card className="bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-200">
           <CardHeader>
-            <CardTitle className="text-emerald-800 dark:text-emerald-200">Video Content Strategy</CardTitle>
+            <CardTitle className="text-emerald-800 ">Video Content Strategy</CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="space-y-2 text-sm text-emerald-600 dark:text-emerald-400">
+            <ul className="space-y-2 text-sm text-emerald-600 ">
               <li>🎥 <strong>Attorney introductions:</strong> Professional background videos</li>
               <li>📚 <strong>Legal explanations:</strong> Complex law made simple</li>
               <li>🏛️ <strong>Courthouse tours:</strong> Demystifying legal processes</li>
@@ -290,12 +290,12 @@ const CriminalLawyersDigitalMarketing = () => {
         Criminal defense clients often need immediate legal assistance. Implementing emergency response marketing ensures your practice captures urgent legal consultations when potential clients need help most.
       </p>
 
-      <Card className="border-red-200 dark:border-red-800 bg-gradient-to-r from-red-50 to-pink-50 dark:from-red-950 dark:to-pink-950 p-6 my-8">
-        <h3 className="text-xl font-semibold mb-4 text-red-800 dark:text-red-200">24/7 Availability Strategy</h3>
+      <Card className="border-red-200  bg-gradient-to-r from-red-50 to-pink-50   p-6 my-8">
+        <h3 className="text-xl font-semibold mb-4 text-red-800 ">24/7 Availability Strategy</h3>
         <div className="grid md:grid-cols-3 gap-6">
           <div>
-            <h4 className="font-medium mb-3 text-red-700 dark:text-red-300">Immediate Response</h4>
-            <ul className="space-y-2 text-sm text-red-600 dark:text-red-400">
+            <h4 className="font-medium mb-3 text-red-700 ">Immediate Response</h4>
+            <ul className="space-y-2 text-sm text-red-600 ">
               <li>📞 Emergency hotline with live answering</li>
               <li>💬 24/7 chat support for urgent questions</li>
               <li>📧 Priority email response for arrests</li>
@@ -303,8 +303,8 @@ const CriminalLawyersDigitalMarketing = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-medium mb-3 text-pink-700 dark:text-pink-300">Quick Consultation</h4>
-            <ul className="space-y-2 text-sm text-pink-600 dark:text-pink-400">
+            <h4 className="font-medium mb-3 text-pink-700 ">Quick Consultation</h4>
+            <ul className="space-y-2 text-sm text-pink-600 ">
               <li>⏰ Same-day consultation scheduling</li>
               <li>🏃‍♂️ Jail visit arrangements</li>
               <li>🎯 Immediate case evaluation</li>
@@ -312,8 +312,8 @@ const CriminalLawyersDigitalMarketing = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-medium mb-3 text-red-700 dark:text-red-300">Family Support</h4>
-            <ul className="space-y-2 text-sm text-red-600 dark:text-red-400">
+            <h4 className="font-medium mb-3 text-red-700 ">Family Support</h4>
+            <ul className="space-y-2 text-sm text-red-600 ">
               <li>👥 Family consultation services</li>
               <li>📋 Arrest procedure guidance</li>
               <li>💰 Bail bond assistance referrals</li>
@@ -332,7 +332,7 @@ const CriminalLawyersDigitalMarketing = () => {
       <div className="grid md:grid-cols-2 gap-6 my-8">
         <Card className="border-l-4 border-l-yellow-500">
           <CardHeader>
-            <CardTitle className="text-yellow-700 dark:text-yellow-300">Online Presence Management</CardTitle>
+            <CardTitle className="text-yellow-700 ">Online Presence Management</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
@@ -347,7 +347,7 @@ const CriminalLawyersDigitalMarketing = () => {
 
         <Card className="border-l-4 border-l-cyan-500">
           <CardHeader>
-            <CardTitle className="text-cyan-700 dark:text-cyan-300">Community Engagement</CardTitle>
+            <CardTitle className="text-cyan-700 ">Community Engagement</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
@@ -402,7 +402,7 @@ const CriminalLawyersDigitalMarketing = () => {
       <div className="grid md:grid-cols-2 gap-6 my-8">
         <Card className="border-l-4 border-l-red-500">
           <CardHeader>
-            <CardTitle className="text-red-700 dark:text-red-300">High-Priority Campaigns</CardTitle>
+            <CardTitle className="text-red-700 ">High-Priority Campaigns</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
@@ -411,15 +411,15 @@ const CriminalLawyersDigitalMarketing = () => {
               <li>• <strong>Serious Felonies:</strong> Complex cases requiring expertise</li>
               <li>• <strong>Local Court Terms:</strong> &quot;[City] criminal court&quot;, &quot;courthouse&quot;</li>
             </ul>
-            <div className="mt-3 p-3 bg-red-50 dark:bg-red-950/30 rounded">
-              <p className="text-xs text-red-700 dark:text-red-300">Budget: $150-500/day depending on market size</p>
+            <div className="mt-3 p-3 bg-red-50  rounded">
+              <p className="text-xs text-red-700 ">Budget: $150-500/day depending on market size</p>
             </div>
           </CardContent>
         </Card>
 
         <Card className="border-l-4 border-l-blue-500">
           <CardHeader>
-            <CardTitle className="text-blue-700 dark:text-blue-300">Supporting Campaigns</CardTitle>
+            <CardTitle className="text-blue-700 ">Supporting Campaigns</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
@@ -428,8 +428,8 @@ const CriminalLawyersDigitalMarketing = () => {
               <li>• <strong>Branded Searches:</strong> Firm name protection</li>
               <li>• <strong>Retargeting:</strong> Website visitors and consultation schedulers</li>
             </ul>
-            <div className="mt-3 p-3 bg-blue-50 dark:bg-blue-950/30 rounded">
-              <p className="text-xs text-blue-700 dark:text-blue-300">Budget: $50-200/day for supporting campaigns</p>
+            <div className="mt-3 p-3 bg-blue-50  rounded">
+              <p className="text-xs text-blue-700 ">Budget: $50-200/day for supporting campaigns</p>
             </div>
           </CardContent>
         </Card>
@@ -543,12 +543,12 @@ const CriminalLawyersDigitalMarketing = () => {
         Criminal defense requires immediate response capabilities for clients facing arrest, charges, or urgent legal situations.
       </p>
 
-      <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 p-6 rounded-lg my-8">
-        <h4 className="font-semibold mb-4 text-red-800 dark:text-red-200">24/7 Response Infrastructure</h4>
+      <div className="bg-red-50  border border-red-200  p-6 rounded-lg my-8">
+        <h4 className="font-semibold mb-4 text-red-800 ">24/7 Response Infrastructure</h4>
         <div className="grid md:grid-cols-3 gap-4">
           <div>
             <h5 className="font-medium mb-2">Immediate Contact</h5>
-            <ul className="space-y-1 text-sm text-red-700 dark:text-red-300">
+            <ul className="space-y-1 text-sm text-red-700 ">
               <li>• Emergency hotline number</li>
               <li>• Live chat on website</li>
               <li>• Text message capability</li>
@@ -557,7 +557,7 @@ const CriminalLawyersDigitalMarketing = () => {
           </div>
           <div>
             <h5 className="font-medium mb-2">Rapid Response</h5>
-            <ul className="space-y-1 text-sm text-red-700 dark:text-red-300">
+            <ul className="space-y-1 text-sm text-red-700 ">
               <li>• 1-hour callback promise</li>
               <li>• Same-day consultation</li>
               <li>• Jail visit coordination</li>
@@ -566,7 +566,7 @@ const CriminalLawyersDigitalMarketing = () => {
           </div>
           <div>
             <h5 className="font-medium mb-2">Support Services</h5>
-            <ul className="space-y-1 text-sm text-red-700 dark:text-red-300">
+            <ul className="space-y-1 text-sm text-red-700 ">
               <li>• Family notification assistance</li>
               <li>• Bail information guidance</li>
               <li>• Court date reminders</li>
@@ -655,12 +655,12 @@ const CriminalLawyersDigitalMarketing = () => {
         Criminal defense marketing must navigate strict professional ethics rules while building effective client acquisition systems.
       </p>
 
-      <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 p-6 rounded-lg my-8">
-        <h4 className="font-semibold mb-4 text-amber-800 dark:text-amber-200">Marketing Compliance Checklist</h4>
+      <div className="bg-amber-50  border border-amber-200  p-6 rounded-lg my-8">
+        <h4 className="font-semibold mb-4 text-amber-800 ">Marketing Compliance Checklist</h4>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <h5 className="font-medium mb-3">Required Elements</h5>
-            <ul className="space-y-2 text-sm text-amber-700 dark:text-amber-300">
+            <ul className="space-y-2 text-sm text-amber-700 ">
               <li>✓ State bar compliance review</li>
               <li>✓ Accurate credentials display</li>
               <li>✓ No outcome guarantees</li>
@@ -670,7 +670,7 @@ const CriminalLawyersDigitalMarketing = () => {
           </div>
           <div>
             <h5 className="font-medium mb-3">Prohibited Practices</h5>
-            <ul className="space-y-2 text-sm text-amber-700 dark:text-amber-300">
+            <ul className="space-y-2 text-sm text-amber-700 ">
               <li>✗ Soliciting specific individuals</li>
               <li>✗ False or misleading claims</li>
               <li>✗ Guaranteed case outcomes</li>

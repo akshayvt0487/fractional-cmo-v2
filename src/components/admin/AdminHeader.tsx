@@ -61,7 +61,7 @@ export const AdminHeader = () => {
             )}
           >
             <LogOut className="h-4 w-4" />
-            <span className="hidden sm:inline">Sign Out</span>
+            <span className="hidden sm:inline cursor-pointer">Sign Out</span>
           </Button>
         </div>
       </div>

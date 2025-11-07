@@ -259,7 +259,12 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
                         required
                         value={formData.message}
                         onChange={(e) => handleInputChange("message", e.target.value)}
-                        placeholder='Please share:\r\n\u2022 What industry/niche you&apos;re in\r\n\u2022 Your biggest growth challenge right now  \r\n\u2022 Current marketing efforts (if any)\r\n\u2022 What success looks like for your business\r\n\u2022 Any specific goals or targets you&apos;re aiming for'
+placeholder={`Please share:
+• What industry/niche you're in
+• Your biggest growth challenge right now
+• Current marketing efforts (if any)
+• What success looks like for your business
+• Any specific goals or targets you're aiming for`}
 
 
 
@@ -281,7 +286,7 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
 
                     <Button
                       type="submit"
-                      className="w-full"
+                      className="w-full cursor-pointer" variant="hero"
                       disabled={isSubmitting}
                       size="lg">
                       

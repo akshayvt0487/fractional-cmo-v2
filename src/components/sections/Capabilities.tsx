@@ -11,7 +11,7 @@ const items = [
 
 const Capabilities = () => {
   return (
-    <section id="capabilities" className="py-16 md:py-24">
+    <section id="capabilities" className="py-16 md:py-24 lg:scroll-m-t-[50px] ">
       <div className="container">
         <h2 className="text-3xl font-semibold md:text-4xl">Capabilities</h2>
         <p className="mt-2 max-w-2xl text-muted-foreground">

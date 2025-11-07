@@ -82,7 +82,7 @@ const NDISSoftwareSaaSPositioning = () => {
           <article className="prose prose-lg max-w-none">
             {/* Hero Section */}
             <div className="mb-12">
-              <img src={"/images/blog/ndis-quality-standards.jpg"} alt="NDIS software positioning strategy planning session" className="w-full h-96 object-cover rounded-lg mb-8" />
+              <img src={"/images/blog/ndis-software-positioning.jpg"} alt="NDIS software positioning strategy planning session" className="w-full h-96 object-cover rounded-lg mb-8" />
               <h1 className="text-4xl font-bold mb-4 text-foreground">
                 NDIS Software SaaS Positioning: Stand Out in a Competitive Market
               </h1>

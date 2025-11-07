@@ -304,7 +304,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
             </Select>
           </div>
 
-          <Button type="submit" className="w-full h-12 bg-[#0F172A] text-white cursor-pointer hover:bg-[#0F172A]/90" disabled={isSubmitting}>
+          <Button type="submit" className="w-full h-12 bg-[#0F172A] text-white cursor-pointer hover:bg-[#0F172A]/90 duration-200" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit Request"}
           </Button>
         </form>

@@ -151,18 +151,29 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleSectionClick = (sectionId: string) => {
-    if (pathname === '/') {
-      // If on homepage, scroll to section
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      // If on other pages, navigate to homepage with hash
-      window.location.href = `/#${sectionId}`;
+const handleSectionClick = (sectionId: string) => {
+
+  const headerOffset = 50; 
+
+  if (pathname === '/') {
+    
+    const element = document.getElementById(sectionId);
+    if (element) {
+      
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
-  };
+  } else {
+    // If on other pages, navigate to homepage with hash
+    // This part works with your CSS 'scroll-margin-top'
+    window.location.href = `/#${sectionId}`;
+  }
+};
 
   return (
     <>

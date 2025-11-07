@@ -9,6 +9,7 @@ import { format } from 'date-fns';
 import { Models } from 'appwrite';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+
 // --------------------------
 // 🧩 INTERFACES
 // --------------------------
@@ -134,7 +135,7 @@ const FormSubmissionsViewer = () => {
               {strategySubmission && (
                 <>
                   {strategySubmission.service && (
-                    <Badge variant={getServiceBadgeColor(strategySubmission.service)}>
+                    <Badge className='bg-blue-100' variant={getServiceBadgeColor(strategySubmission.service)}>
                       {strategySubmission.service}
                     </Badge>
                   )}
@@ -195,25 +196,30 @@ const FormSubmissionsViewer = () => {
   // --------------------------
   return (
     <Card>
-      <CardHeader>
-        <CardTitle>Form Submissions</CardTitle>
-        <CardDescription>
-          Strategy call requests and contact form submissions
-        </CardDescription>
-      </CardHeader>
+      
 
       <CardContent>
         <Tabs defaultValue="strategy" className="space-y-4">
           <TabsList>
-            <TabsTrigger value="strategy">
+            <TabsTrigger value="strategy" className="
+    cursor-pointer 
+    data-[state=active]:bg-blue-400 
+    data-[state=active]:text-white
+    data-[state=inactive]:bg-gray-100
+  ">
               Strategy Form ({strategySubmissions.length})
             </TabsTrigger>
-            <TabsTrigger value="contact">
+            <TabsTrigger value="contact" className="
+    cursor-pointer 
+    data-[state=active]:bg-blue-400 
+    data-[state=active]:text-white
+    data-[state=inactive]:bg-gray-100
+  ">
               Contact Form ({contactSubmissions.length})
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="strategy" className="space-y-4">
+          <TabsContent value="strategy"  className="space-y-4">
             {strategySubmissions.length === 0 ? (
               <div className="text-center py-8 text-muted-foreground">
                 No strategy form submissions yet
@@ -224,6 +230,7 @@ const FormSubmissionsViewer = () => {
                   <SubmissionCard 
                     key={submission.$id} 
                     submission={submission} 
+                    
                     type="strategy" 
                   />
                 ))}

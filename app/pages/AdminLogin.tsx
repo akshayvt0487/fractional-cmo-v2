@@ -115,9 +115,9 @@ const AdminLogin = () => {
               />
             </div>
             
-            <Button 
+            <Button variant="hero"  className="w-full sm:w-auto cursor-pointer"
               type="submit" 
-              className="w-full" 
+             
               disabled={isLoading}
             >
               {isLoading ? (

@@ -73,51 +73,51 @@ const FamilyLawyersDigitalMarketing = () => {
         Family law marketing is different from every other legal specialty. Your clients aren&apos;t just seeking legal expertise—they&apos;re looking for compassion, understanding, and hope during some of their most vulnerable moments.
       </p>
 
-      <Card className="p-6 my-8 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-950/20 dark:to-indigo-950/20 border-purple-200 dark:border-purple-800">
-        <h3 className="text-xl font-semibold text-purple-900 dark:text-purple-100 mb-4">Key Family Law Practice Areas</h3>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="space-y-3">
-            <div className="flex items-start gap-3 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
-              <div>
-                <h4 className="font-semibold text-blue-800 dark:text-blue-200">Divorce Proceedings</h4>
-                <p className="text-sm text-blue-700 dark:text-blue-300">Contested and uncontested divorce cases</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-3 bg-green-50 dark:bg-green-950/20 rounded-lg border border-green-200 dark:border-green-800">
-              <div>
-                <h4 className="font-semibold text-green-800 dark:text-green-200">Child Custody</h4>
-                <p className="text-sm text-green-700 dark:text-green-300">Custody arrangements and parenting plans</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-3 bg-orange-50 dark:bg-orange-950/20 rounded-lg border border-orange-200 dark:border-orange-800">
-              <div>
-                <h4 className="font-semibold text-orange-800 dark:text-orange-200">Property Settlement</h4>
-                <p className="text-sm text-orange-700 dark:text-orange-300">Asset division and financial agreements</p>
-              </div>
-            </div>
-          </div>
-          <div className="space-y-3">
-            <div className="flex items-start gap-3 p-3 bg-red-50 dark:bg-red-950/20 rounded-lg border border-red-200 dark:border-red-800">
-              <div>
-                <h4 className="font-semibold text-red-800 dark:text-red-200">Domestic Violence</h4>
-                <p className="text-sm text-red-700 dark:text-red-300">Protection orders and legal representation</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-3 bg-purple-50 dark:bg-purple-950/20 rounded-lg border border-purple-200 dark:border-purple-800">
-              <div>
-                <h4 className="font-semibold text-purple-800 dark:text-purple-200">Adoption</h4>
-                <p className="text-sm text-purple-700 dark:text-purple-300">Legal adoption processes and documentation</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-3 bg-indigo-50 dark:bg-indigo-950/20 rounded-lg border border-indigo-200 dark:border-indigo-800">
-              <div>
-                <h4 className="font-semibold text-indigo-800 dark:text-indigo-200">De Facto Relationships</h4>
-                <p className="text-sm text-indigo-700 dark:text-indigo-300">Property and custody disputes</p>
-              </div>
-            </div>
-          </div>
+      <Card className="p-6 my-8 bg-gradient-to-br from-purple-50 to-indigo-50 border-purple-200">
+  <h3 className="text-xl font-semibold text-purple-900 mb-4">Key Family Law Practice Areas</h3>
+  <div className="grid md:grid-cols-2 gap-4">
+    <div className="space-y-3">
+      <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
+        <div>
+          <h4 className="font-semibold text-blue-800">Divorce Proceedings</h4>
+          <p className="text-sm text-blue-700">Contested and uncontested divorce cases</p>
         </div>
-      </Card>
+      </div>
+      <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border border-green-200">
+        <div>
+          <h4 className="font-semibold text-green-800">Child Custody</h4>
+          <p className="text-sm text-green-700">Custody arrangements and parenting plans</p>
+        </div>
+      </div>
+      <div className="flex items-start gap-3 p-3 bg-orange-50 rounded-lg border border-orange-200">
+        <div>
+          <h4 className="font-semibold text-orange-800">Property Settlement</h4>
+          <p className="text-sm text-orange-700">Asset division and financial agreements</p>
+        </div>
+      </div>
+    </div>
+    <div className="space-y-3">
+      <div className="flex items-start gap-3 p-3 bg-red-50 rounded-lg border border-red-200">
+        <div>
+          <h4 className="font-semibold text-red-800">Domestic Violence</h4>
+          <p className="text-sm text-red-700">Protection orders and legal representation</p>
+        </div>
+      </div>
+      <div className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg border border-purple-200">
+        <div>
+          <h4 className="font-semibold text-purple-800">Adoption</h4>
+          <p className="text-sm text-purple-700">Legal adoption processes and documentation</p>
+        </div>
+      </div>
+      <div className="flex items-start gap-3 p-3 bg-indigo-50 rounded-lg border border-indigo-200">
+        <div>
+          <h4 className="font-semibold text-indigo-800">De Facto Relationships</h4>
+          <p className="text-sm text-indigo-700">Property and custody disputes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Card>
 
       <h2>Ethical Digital Marketing Strategies</h2>
       
