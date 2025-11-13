@@ -1,7 +1,6 @@
-# Sitemap
-Sitemap: https://fractionalcmo.com.au/sitemap.xml
-
-# Common Search Engines
+# =====================================
+# Default Rules – Common Search Engines
+# =====================================
 User-agent: *
 Allow: /
 Allow: /blog/
@@ -12,7 +11,9 @@ Disallow: /studio/
 Disallow: /api/
 Crawl-delay: 1
 
-# Allow faster crawling for Google
+# =====================================
+# Googlebot (faster crawl)
+# =====================================
 User-agent: Googlebot
 Allow: /
 Allow: /blog/
@@ -23,7 +24,9 @@ Disallow: /studio/
 Disallow: /api/
 Crawl-delay: 0.5
 
+# =====================================
 # Social Media Crawlers
+# =====================================
 User-agent: Twitterbot
 Allow: /
 Allow: /blog/
@@ -34,29 +37,22 @@ Allow: /
 Allow: /blog/
 Allow: /images/
 
-# Allow Google Business Profile
+# =====================================
+# Google Business Profile (Extended)
+# =====================================
 User-agent: Google-Extended
 Allow: /
 
+# =====================================
 # Block AI Training Crawlers
+# =====================================
 User-agent: GPTBot
 Disallow: /
 
 User-agent: ChatGPT-User
 Disallow: /
 
-User-agent: Google-Extended
-Allow: /
-
-# Default Rules
-User-agent: *
-Allow: /
-Allow: /blog/
-Allow: /about/
-Allow: /contact/
-Disallow: /admin/
-Disallow: /studio/
-Disallow: /api/
-
-# Sitemaps
+# =====================================
+# Sitemap
+# =====================================
 Sitemap: https://fractional-cmo.com.au/sitemap.xml
