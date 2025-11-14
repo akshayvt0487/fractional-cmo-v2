@@ -7,6 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Manrope } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/next";
 import DynamicFooter from '@/components/client/DynamicFooter';
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -26,6 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${manrope.variable} font-sans antialiased`}>
+      <GoogleTagManager gtmId="GTM-W9PHPGPW" />
       <body className="font-sans">
         <Analytics />
         <SpeedInsights />
