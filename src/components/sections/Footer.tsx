@@ -31,6 +31,9 @@ const Footer = () => (
           <Link href="/contact" className="hover:text-foreground transition-colors">Contact</Link>
         </nav>
       </div>
+      <div className="flex flex-col justify-between md:flex-row ">
+
+      
       
       <div className="flex flex-col gap-2 pt-4 md:pt-6 border-t border-border text-xs text-muted-foreground">
         <div className="flex flex-wrap gap-3 md:gap-4">
@@ -41,6 +44,19 @@ const Footer = () => (
         <div className="text-xs">
           © {new Date().getFullYear()} Basheer Padanna. All rights reserved.
         </div>
+      </div>
+
+      <div className="flex flex-col gap-2 pt-4 md:pt-6 border-t border-border text-xs text-muted-foreground">
+        <div className="flex flex-wrap gap-3 md:gap-4">
+         <p>
+        
+         <p> Suite 611</p>
+          <p> Level 6</p>
+          <p> 150 George street Parramatta</p>
+         </p>
+        </div>
+        
+      </div>
       </div>
     </div>
     <GHLWidget />

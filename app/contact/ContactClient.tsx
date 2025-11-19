@@ -303,6 +303,43 @@ placeholder={`Please share:
               </Card>
             </div>
 
+            <div className="mb-16 grid md:grid-cols-2 gap-8  items-center border-1 border-gray-300 p-10 rounded-2xl bg-blue-100/10">
+             
+
+                
+                
+                <div className="flex gap-4 items-center">
+                
+
+                  <div>
+                      <MapPin />
+
+
+                  </div>
+                 <div>
+                   <h4 className="text-xl font-semibold">  Fractional CMO</h4> 
+                 <p>
+                  Suite 611 </p>
+                 <p> Level 6</p> 
+                  <p>150 George street Parramatta</p>
+                  </div> 
+                 
+                </div>
+
+                <div className="flex gap-4 items-start flex-col" >
+                  <p className="flex gap-2 font-semibold hover:text-blue-950"><Mail /> <a href="mailto:Basheer@fractional-cmo.com.au">Basheer@fractional-cmo.com.au </a> </p>
+                  <p className="flex  gap-2 font-semibold hover:text-blue-950"><Phone /> <a href="tel:0291918049"> 02 9191 8049</a></p>
+
+
+                </div>
+               
+
+ 
+
+
+
+            </div>
+
             {/* Trust Factors Section */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="text-center">
