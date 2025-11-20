@@ -187,7 +187,7 @@ const RemovalistSEOStrategy = () => {
             </Card>
           </div>
 
-          <Citation source="Google Search Central" url="https://developers.google.com/search/docs/appearance/semantic-markup" title="Understanding Semantic Markup and Search" date="2024" inline />
+          <Citation source="Google Search Central" url="https://developers.google.com/search/docs/appearance/structured-data/search-gallery" title="Understanding Semantic Markup and Search" date="2024" inline />
 
           <p className="text-base leading-relaxed mb-6">
             By creating content that addresses these semantic clusters, you signal to Google that your website is a comprehensive resource for moving-related queries, improving your chances of ranking for multiple related terms.
@@ -468,7 +468,7 @@ const RemovalistSEOStrategy = () => {
             </Card>
           </div>
 
-          <Citation source="Australian Competition and Consumer Commission" url="https://www.accc.gov.au/consumers/moving-house" title="Moving House - Consumer Rights and Protections" date="2024" />
+          <Citation source="Australian Competition and Consumer Commission" url="https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees" title="Moving House - Consumer Rights and Protections" date="2024" />
         </section>
 
         <section>

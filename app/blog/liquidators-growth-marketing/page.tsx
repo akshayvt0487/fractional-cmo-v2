@@ -42,7 +42,7 @@ const LiquidatorsGrowthMarketing = () => {
   }, {
     source: "ASIC",
     title: "ASIC - Corporate Insolvency Practitioners",
-    url: "https://asic.gov.au/regulatory-resources/insolvency/insolvency-for-directors/corporate-insolvency-an-overview/",
+    url: "https://www.asic.gov.au/regulatory-resources/insolvency/insolvency-for-directors/",
     date: "2025"
   }];
   const relatedArticles = [{

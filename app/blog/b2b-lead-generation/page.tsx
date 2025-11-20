@@ -107,7 +107,7 @@ const B2BLeadGeneration = () => {
             <div className="text-center">
               <div className="text-3xl font-bold text-red-600">61%</div>
               <div className="text-sm text-muted-foreground">Say lead generation is biggest challenge
-                <Citation inline source="HubSpot Research" url="https://blog.hubspot.com/marketing/state-of-inbound-2023" title="State of Inbound Marketing Report" date="2023" />
+                <Citation inline source="HubSpot Research" url="https://www.hubspot.com/state-of-marketing" title="State of Inbound Marketing Report" date="2023" />
               </div>
             </div>
             <div className="text-center">
