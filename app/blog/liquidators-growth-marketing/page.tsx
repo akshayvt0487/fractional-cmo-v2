@@ -53,7 +53,7 @@ const LiquidatorsGrowthMarketing = () => {
   }, {
     title: "Measuring Digital Marketing ROI",
     description: "Learn how to accurately track and optimize your digital marketing return on investment.",
-    url: "/blog/digital-marketing-roi",
+    url: "/blog/digital-marketing-roi-service-businesses",
     category: "Strategy"
   }, {
     title: "Growth Marketing Strategy Guide",

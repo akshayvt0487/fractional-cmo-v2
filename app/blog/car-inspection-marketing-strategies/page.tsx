@@ -261,7 +261,7 @@ const CarInspectionMarketing = () => {
           </CardContent>
         </Card>
 
-        <Citation source="ACCC" url="https://www.accc.gov.au/consumers/cars/buying-a-car" title="Buying a Car: Consumer Guide" date="2024" />
+        <Citation source="ACCC" url="https://www.accc.gov.au/consumers/specific-products-and-activities/buying-hiring-and-repairing-cars" title="Buying, hiring and repairing cars" date="2024" />
 
       </OptimizedBlogLayout>;
 };

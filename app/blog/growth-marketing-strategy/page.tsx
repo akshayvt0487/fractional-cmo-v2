@@ -427,7 +427,6 @@ const GrowthMarketingStrategy = () => {
         The businesses that master growth marketing combine analytical rigor with creative experimentation. Every test teaches you something valuable about your customers, and every optimization compounds your results over time. Your growth marketing system becomes a strategic asset that drives long-term success.
       </p>
 
-      <Citation source="Growth Marketing Conference Report 2024" url="https://www.growthmarketing.com/research" title="Companies implementing systematic growth marketing achieve 37% faster revenue growth than those using traditional marketing approaches." />
     </OptimizedBlogLayout>;
 };
 export default GrowthMarketingStrategy;
