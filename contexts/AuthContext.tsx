@@ -15,6 +15,12 @@ export function useAuth() {
     signIn: async (_email: string, _password: string): Promise<SignInResult> => {
       return { error: { message: 'Auth not configured in this environment' } };
     },
+    signUp: async (_email: string, _password: string): Promise<SignInResult> => {
+      return { error: { message: 'Auth not configured in this environment' } };
+    },
+    resetPassword: async (_email: string): Promise<SignInResult> => {
+      return { error: { message: 'Auth not configured in this environment' } };
+    },
     signOut: async () => {},
   };
 }

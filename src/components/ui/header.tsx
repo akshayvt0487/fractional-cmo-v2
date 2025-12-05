@@ -6,6 +6,7 @@ import Link from "next/link";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import MobileNav from "@/components/ui/mobile-nav";
 import { FileText, Users, Building2, Shield, Briefcase, Cpu, Code, Hammer, TrendingUp, Gavel, ChevronDown } from "lucide-react";
+import ServicesMegaMenu from '@/components/ui/ServicesMegaMenu';
 import { blogPosts } from "@/data/blogPosts";
 import {
   DropdownMenu,
@@ -185,7 +186,7 @@ const handleSectionClick = (sectionId: string) => {
         "bg-slate-900/80 backdrop-blur-sm border-b border-white/5 py-4"}`
         }>
         
-        <div className="container mx-auto px-6 flex items-center justify-between max-w-[1400px] mx-auto ">
+        <div className="container mx-auto px-6 flex items-center justify-between max-w-[1400px]">
           {/* Logo */}
           <div className="flex items-center">
             <Link
@@ -200,10 +201,10 @@ const handleSectionClick = (sectionId: string) => {
 
           {/* Desktop Navigation - Hidden on mobile */}
           <nav className="hidden md:flex items-center space-x-8">
+            <ServicesMegaMenu />
             <button
               onClick={() => handleSectionClick('capabilities')}
               className="text-white/80 hover:text-white transition-colors text-sm font-medium cursor-pointer">
-              
               Capabilities
             </button>
             <button
@@ -218,12 +219,7 @@ const handleSectionClick = (sectionId: string) => {
               
               Process
             </button>
-            <Link
-              href="/blog"
-              className="text-white/80 hover:text-white transition-colors text-sm font-medium">
-              
-              Blog
-            </Link>
+            <Link href="/blog" className="text-white/80 hover:text-white transition-colors text-sm font-medium">Blog</Link>
             <a
               href="https://LinkedIn.com/in/basheerpadanna"
               target="_blank"

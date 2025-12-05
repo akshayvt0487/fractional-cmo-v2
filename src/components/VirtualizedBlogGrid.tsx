@@ -1,3 +1,4 @@
+"use client"
 import { useState, useMemo, memo } from "react";
 import BlogCard from "@/components/BlogCard";
 import { Button } from "@/components/ui/button";

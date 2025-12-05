@@ -3,6 +3,7 @@ type SEOProps = {
   description?: string;
   canonical?: string;
   ogType?: string;
+  keywords?: string;
   articlePublishedTime?: string;
   articleModifiedTime?: string;
   articleTags?: string[];

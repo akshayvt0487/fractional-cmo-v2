@@ -48,12 +48,11 @@ const Footer = () => (
 
       <div className="flex flex-col gap-2 pt-4 md:pt-6 border-t border-border text-xs text-muted-foreground">
         <div className="flex flex-wrap gap-3 md:gap-4">
-         <p>
-        
-         <p> Suite 611</p>
-          <p> Level 6</p>
-          <p> 150 George street Parramatta</p>
-         </p>
+          <div>
+            <p>Suite 611</p>
+            <p>Level 6</p>
+            <p>150 George street Parramatta</p>
+          </div>
         </div>
         
       </div>

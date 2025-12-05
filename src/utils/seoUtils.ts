@@ -178,7 +178,7 @@ export const getRelatedArticles = (currentSlug: string, count: number = 3) => {
   // Extract keywords from current post including excerpt
   const extractKeywords = (text: string): string[] => {
     const words = text.toLowerCase().split(/\s+/);
-    const commonWords = ['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from', 'how', 'what', 'when', 'where', 'why', 'complete', 'guide', '2025', '2024', '2023', 'strategy', 'strategies', 'best', 'top', 'new', 'your', 'our', 'their', 'this', 'that', 'these', 'those'];
+    const commonWords = ['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from', 'how', 'what', 'when', 'where', 'why', 'complete', 'guide', '2026', '2025', '2024', '2023', 'strategy', 'strategies', 'best', 'top', 'new', 'your', 'our', 'their', 'this', 'that', 'these', 'those'];
     return words.filter(word => word.length > 4 && !commonWords.includes(word));
   };
 

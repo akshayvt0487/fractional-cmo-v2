@@ -845,6 +845,21 @@ const BuyersAgentsGoogleAds = () => {
           </div>
         </section>
 
+        <section className="my-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
+          <h3 className="text-2xl font-bold mb-4">Ready to Scale Your Buyers Agency with Google Ads?</h3>
+          <p className="mb-6 text-muted-foreground">
+            Google Ads is a powerful channel for buyers agents to attract qualified property buyers and investors. Whether you&apos;re looking to launch campaigns or optimize existing ones, our <a href="/services/google-ads/buyers-agents" className="text-blue-600 font-semibold hover:underline">Google Ads for Buyers Agents service</a> is designed specifically for real estate professionals like you.
+          </p>
+          <p className="mb-6 text-muted-foreground">
+            Explore our other real estate marketing services:
+          </p>
+          <ul className="space-y-2 mb-6">
+            <li>• <a href="/services/lead-generation/buyers-agents" className="text-blue-600 font-semibold hover:underline">Lead Generation for Buyers Agents</a> - Attract quality property prospects</li>
+            <li>• <a href="/services/seo-services/buyers-agents" className="text-blue-600 font-semibold hover:underline">SEO for Buyers Agents</a> - Dominate local search rankings</li>
+            <li>• <a href="/services/digital-marketing/buyers-agents" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Buyers Agents</a> - Complete growth strategy</li>
+          </ul>
+        </section>
+
       </OptimizedBlogLayout>;
 };
 export default BuyersAgentsGoogleAds;

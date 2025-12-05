@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -41,7 +42,7 @@ const ScrollBottomPopup = ({ onClose }: ScrollBottomPopupProps) => {
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <Card className="max-w-md w-full mx-4 relative">
+      <Card className="max-w-md w-full mx-4 relative bg-white">
         <Button
           variant="ghost"
           size="sm"

@@ -20,6 +20,14 @@ export function useAuth() {
       // No-op: production auth should replace this
       return { error: { message: 'Auth not configured in this environment' } };
     },
+    // simple signUp stub (matches expected shape in some pages)
+    signUp: async (email: string, password: string): Promise<SignInResult> => {
+      return { error: { message: 'Auth not configured in this environment' } };
+    },
+    // simple resetPassword stub
+    resetPassword: async (email: string): Promise<SignInResult> => {
+      return { error: { message: 'Auth not configured in this environment' } };
+    },
     signOut: async () => {},
   };
 }

@@ -42,10 +42,7 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
     company: "",
     phone: "",
     service: "",
-    budget: "",
-    revenue: "",
-    message: "",
-    timeline: ""
+    message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -182,74 +179,22 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
                       </div>
                     </div>
 
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="service">Primary Interest</Label>
-                        <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
-                          <SelectTrigger>
-                            <SelectValue placeholder="What do you need help with?" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="fractional-cmo">Fractional CMO Services</SelectItem>
-                            <SelectItem value="growth-strategy">Growth Strategy & Planning</SelectItem>
-                            <SelectItem value="performance-ads">Google Ads & Meta Advertising</SelectItem>
-                            <SelectItem value="seo-content">SEO & Content Marketing</SelectItem>
-                            <SelectItem value="conversion-optimization">Conversion Rate Optimisation</SelectItem>
-                            <SelectItem value="marketing-automation">Marketing Automation Setup</SelectItem>
-                            <SelectItem value="consultation">Strategy Consultation</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="revenue">Current/Targeted Annual Revenue</Label>
-                        <Select onValueChange={(value) => handleInputChange("revenue", value)}>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select revenue range" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="under-500k">Under $500K/year</SelectItem>
-                            <SelectItem value="500k-1m">$500K - $1M/year</SelectItem>
-                            <SelectItem value="1m-5m">$1M - $5M/year</SelectItem>
-                            <SelectItem value="5m-10m">$5M - $10M/year</SelectItem>
-                            <SelectItem value="10m-plus">$10M+/year</SelectItem>
-                            <SelectItem value="startup">Pre-revenue/Startup</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
-
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="budget">Marketing Budget Range</Label>
-                        <Select onValueChange={(value) => handleInputChange("budget", value)}>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Monthly marketing spend" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="under-5k">Under $5,000/month</SelectItem>
-                            <SelectItem value="5k-15k">$5,000 - $15,000/month</SelectItem>
-                            <SelectItem value="15k-30k">$15,000 - $30,000/month</SelectItem>
-                            <SelectItem value="30k-plus">$30,000+/month</SelectItem>
-                            <SelectItem value="project-based">One-time project</SelectItem>
-                            <SelectItem value="startup">Startup/Bootstrap</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="timeline">Preferred Start Timeline</Label>
-                        <Select onValueChange={(value) => handleInputChange("timeline", value)}>
-                          <SelectTrigger>
-                            <SelectValue placeholder="When would you like to begin?" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="asap">Ready to start ASAP</SelectItem>
-                            <SelectItem value="1-month">Within the next month</SelectItem>
-                            <SelectItem value="2-3-months">2-3 months out</SelectItem>
-                            <SelectItem value="planning">Still in planning phase</SelectItem>
-                            <SelectItem value="2025">Sometime in 2025</SelectItem>
-                          </SelectContent> 
-                        </Select>
-                      </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="service">Primary Interest</Label>
+                      <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
+                        <SelectTrigger>
+                          <SelectValue placeholder="What do you need help with?" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="fractional-cmo">Fractional CMO Services</SelectItem>
+                          <SelectItem value="growth-strategy">Growth Strategy & Planning</SelectItem>
+                          <SelectItem value="performance-ads">Google Ads & Meta Advertising</SelectItem>
+                          <SelectItem value="seo-content">SEO & Content Marketing</SelectItem>
+                          <SelectItem value="conversion-optimization">Conversion Rate Optimisation</SelectItem>
+                          <SelectItem value="marketing-automation">Marketing Automation Setup</SelectItem>
+                          <SelectItem value="consultation">Strategy Consultation</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     <div className="space-y-2">

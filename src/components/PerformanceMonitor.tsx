@@ -1,3 +1,4 @@
+"use client"
 import { useEffect } from 'react';
 
 interface PerformanceEntryWithTiming extends PerformanceEntry {
