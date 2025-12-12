@@ -1,13 +1,15 @@
 'use client'
 
 import { Button } from "@/components/ui/button";
-import StrategyForm from "@/components/ui/strategy-form";
+import StrategyFormInline from "@/components/ui/strategy-form-inline";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { useState } from 'react';
 import Header from "@/components/ui/header";
 
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { useEffect, useRef } from "react";
 
-const Hero = () => {
+const Hero = ({ preSelectedService }: { preSelectedService?: string }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -57,7 +59,9 @@ const Hero = () => {
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:items-start">
-          <StrategyForm preSelectedService="strategy" />
+          {/* Open strategy form in modal */}
+          {/** Using a modal to keep hero compact on smaller screens */}
+          <HeroStrategyButton preSelectedService={preSelectedService} />
           <Button
             asChild
             variant="ghost"
@@ -74,6 +78,29 @@ const Hero = () => {
   </div>
 </header>
 
+    </>
+  );
+};
+
+const HeroStrategyButton = ({ preSelectedService }: { preSelectedService?: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <Button size="lg" onClick={() => setIsOpen(true)} className="w-full sm:w-auto bg-white/10 text-white border border-white/20 hover:bg-white/20 hover:text-white">
+        Book Your Free Strategy
+      </Button>
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>Book Your Free Strategy Call</DialogTitle>
+            <DialogDescription>
+              Tell us about your goals and we&apos;ll customise a strategy for your business.
+            </DialogDescription>
+          </DialogHeader>
+          <StrategyFormInline preSelectedService={preSelectedService} />
+        </DialogContent>
+      </Dialog>
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { CheckCircle, TrendingUp, Users, DollarSign } from "lucide-react";
+﻿import { CheckCircle, TrendingUp, Users, DollarSign } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const FractionalCMO = () => {
@@ -43,7 +43,7 @@ const FractionalCMO = () => {
             <h3 className="text-2xl font-semibold mb-6">How It Works</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-gray-300/70 flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-8 h-8 rounded-full bg-gray-300/70 flex items-center justify-center shrink-0 mt-1">
                   <span className="text-primary font-semibold text-sm">1</span>
                 </div>
                 <div>
@@ -52,7 +52,7 @@ const FractionalCMO = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-gray-300/70 flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-8 h-8 rounded-full bg-gray-300/70 flex items-center justify-center shrink-0 mt-1">
                   <span className="text-primary font-semibold text-sm">2</span>
                 </div>
                 <div>
@@ -61,7 +61,7 @@ const FractionalCMO = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-gray-300/70 flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-8 h-8 rounded-full bg-gray-300/70 flex items-center justify-center shrink-0 mt-1">
                   <span className="text-primary font-semibold text-sm">3</span>
                 </div>
                 <div>

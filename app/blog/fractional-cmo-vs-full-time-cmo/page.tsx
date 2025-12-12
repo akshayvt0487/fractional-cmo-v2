@@ -162,7 +162,7 @@ const FractionalCMOVsFullTime = () => {
                   <h3 className="text-xl font-semibold mb-4 text-primary">Fractional CMO Advantages</h3>
                   <div className="space-y-3">
                     {fractionalAdvantages.map((advantage, index) => <div key={index} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
                         <span className="text-sm">{advantage}</span>
                       </div>)}
                   </div>
@@ -172,7 +172,7 @@ const FractionalCMOVsFullTime = () => {
                   <h3 className="text-xl font-semibold mb-4 text-primary">Full-Time CMO Advantages</h3>
                   <div className="space-y-3">
                     {fullTimeAdvantages.map((advantage, index) => <div key={index} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 shrink-0" />
                         <span className="text-sm">{advantage}</span>
                       </div>)}
                   </div>

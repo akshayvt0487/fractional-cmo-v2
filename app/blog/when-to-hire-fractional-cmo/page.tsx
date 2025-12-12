@@ -113,7 +113,7 @@ const WhenToHireFractionalCMO = () => {
                     <CardContent>
                       <ul className="text-sm space-y-1">
                         {item.signals.map((signal, idx) => <li key={idx} className="flex items-center gap-2">
-                            <div className="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0" />
+                            <div className="w-1.5 h-1.5 bg-red-500 rounded-full shrink-0" />
                             {signal}
                           </li>)}
                       </ul>

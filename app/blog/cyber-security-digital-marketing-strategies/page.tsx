@@ -195,23 +195,23 @@ const CyberSecurityDigitalMarketing = () => {
                 <h4 className="text-lg font-semibold mb-4 text-red-700">Trust and Credibility Signals</h4>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-start gap-3">
-                    <Shield className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
+                    <Shield className="h-4 w-4 text-red-500 mt-1 shrink-0" />
                     <span><strong>SSL certificate and HTTPS:</strong> Essential security foundation that prospects expect</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Shield className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
+                    <Shield className="h-4 w-4 text-red-500 mt-1 shrink-0" />
                     <span><strong>Professional team credentials:</strong> CISSP, CISM, CEH certifications prominently displayed</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Shield className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
+                    <Shield className="h-4 w-4 text-red-500 mt-1 shrink-0" />
                     <span><strong>Industry certifications:</strong> SOC 2, ISO 27001, NIST framework compliance</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Shield className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
+                    <Shield className="h-4 w-4 text-red-500 mt-1 shrink-0" />
                     <span><strong>Client testimonials:</strong> Security leaders from recognizable companies</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Shield className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
+                    <Shield className="h-4 w-4 text-red-500 mt-1 shrink-0" />
                     <span><strong>Quantified case studies:</strong> &quot;Reduced security incidents by 85%&quot; with specific metrics</span>
                   </li>
                 </ul>
@@ -220,23 +220,23 @@ const CyberSecurityDigitalMarketing = () => {
                 <h4 className="text-lg font-semibold mb-4 text-orange-700">Technical Performance Excellence</h4>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-start gap-3">
-                    <Zap className="h-4 w-4 text-orange-500 mt-1 flex-shrink-0" />
+                    <Zap className="h-4 w-4 text-orange-500 mt-1 shrink-0" />
                     <span><strong>Loading speed under 2 seconds:</strong> Demonstrates technical competence</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Zap className="h-4 w-4 text-orange-500 mt-1 flex-shrink-0" />
+                    <Zap className="h-4 w-4 text-orange-500 mt-1 shrink-0" />
                     <span><strong>Mobile-first responsive design:</strong> Professional appearance on all devices</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Zap className="h-4 w-4 text-orange-500 mt-1 flex-shrink-0" />
+                    <Zap className="h-4 w-4 text-orange-500 mt-1 shrink-0" />
                     <span><strong>Security-focused UX:</strong> Clear navigation that emphasizes protection</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Zap className="h-4 w-4 text-orange-500 mt-1 flex-shrink-0" />
+                    <Zap className="h-4 w-4 text-orange-500 mt-1 shrink-0" />
                     <span><strong>Advanced contact forms:</strong> Multi-step security assessment questionnaires</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Zap className="h-4 w-4 text-orange-500 mt-1 flex-shrink-0" />
+                    <Zap className="h-4 w-4 text-orange-500 mt-1 shrink-0" />
                     <span><strong>Live security dashboard:</strong> Real-time threat intelligence displays</span>
                   </li>
                 </ul>
@@ -364,19 +364,19 @@ const CyberSecurityDigitalMarketing = () => {
                 <h4 className="font-semibold mb-4 text-green-700">Immediate Credibility Builders</h4>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-start gap-3">
-                    <Award className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                    <Award className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                     <span><strong>Team Certifications:</strong> Display CISSP, CISM, CEH credentials prominently</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Award className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                    <Award className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                     <span><strong>Industry Recognition:</strong> Apply for startup awards and speaking opportunities</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Award className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                    <Award className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                     <span><strong>Professional Associations:</strong> Join ISC2, ISACA, (ISC)² for credibility</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Award className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                    <Award className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                     <span><strong>Media Coverage:</strong> Provide expert commentary on security news</span>
                   </li>
                 </ul>
@@ -385,19 +385,19 @@ const CyberSecurityDigitalMarketing = () => {
                 <h4 className="font-semibold mb-4 text-blue-700">Long-term Authority Building</h4>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-start gap-3">
-                    <TrendingUp className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <TrendingUp className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                     <span><strong>Original Research:</strong> Publish security studies and threat reports</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <TrendingUp className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <TrendingUp className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                     <span><strong>Conference Speaking:</strong> Present at RSA, Black Hat, local security events</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <TrendingUp className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <TrendingUp className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                     <span><strong>Security Blog:</strong> Weekly insights that demonstrate deep expertise</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <TrendingUp className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <TrendingUp className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                     <span><strong>Client Success Stories:</strong> Document measurable security improvements</span>
                   </li>
                 </ul>

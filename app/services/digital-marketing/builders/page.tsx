@@ -1,6 +1,60 @@
-import React from 'react';
-import Builders from '@/app/services/digital-marketing/Builders';
+import { Metadata } from 'next';
+import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema } from '@/data/serviceData';
+import IndustryServiceLayout from '@/components/IndustryServiceLayout';
+import { rawServiceData } from '@/data/serviceData';
 
-export default function Page() {
-  return <Builders />;
+const data = getIndustryServicePageData('builders', 'digital-marketing')!;
+
+export const metadata: Metadata = {
+  title: data.metaTitle,
+  description: data.metaDescription,
+  keywords: data.keywords,
+  openGraph: {
+    title: data.metaTitle,
+    description: data.metaDescription,
+    url: 'https://fractional-cmo.com.au/services/digital-marketing/builders',
+    siteName: 'Fractional CMO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: data.metaTitle,
+    description: data.metaDescription,
+  },
+};
+
+export default function BuildersDigitalMarketingPage() {
+  const serviceSchema = generateIndustryServiceSchema(
+    'builders',
+    'digital-marketing',
+    'builders',
+    'digital-marketing',
+    data.heroDescription
+  );
+  const faqSchema = generateIndustryFAQSchema(data.faqs);
+  const breadcrumbSchema = generateIndustryBreadcrumbSchema(
+    'digital-marketing',
+    'builders',
+    'digital-marketing',
+    'builders'
+  );
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <IndustryServiceLayout data={data} allServiceData={rawServiceData} />
+    </>
+  );
 }
+

@@ -262,23 +262,23 @@ const MechanicDigitalMarketing = () => {
           <CardContent>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
-                <Play className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Play className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Diagnostic demonstrations:</strong> Show how you identify problems using professional tools</span>
               </li>
               <li className="flex items-start gap-3">
-                <Play className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Play className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Maintenance tutorials:</strong> Basic car care customers can do at home</span>
               </li>
               <li className="flex items-start gap-3">
-                <Play className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Play className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Problem explanations:</strong> What&apos;s wrong and why it happened</span>
               </li>
               <li className="flex items-start gap-3">
-                <Play className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Play className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Shop tours:</strong> Show your clean, professional facility</span>
               </li>
               <li className="flex items-start gap-3">
-                <Play className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Play className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Tool showcases:</strong> Modern diagnostic equipment and capabilities</span>
               </li>
             </ul>
@@ -295,23 +295,23 @@ const MechanicDigitalMarketing = () => {
           <CardContent>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
-                <Star className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Star className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Problem resolution stories:</strong> How you solved challenging automotive issues</span>
               </li>
               <li className="flex items-start gap-3">
-                <Star className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Star className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Long-term relationships:</strong> Customers who&apos;ve trusted you for years</span>
               </li>
               <li className="flex items-start gap-3">
-                <Star className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Star className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Honest service stories:</strong> Times you saved customers money</span>
               </li>
               <li className="flex items-start gap-3">
-                <Star className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Star className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Emergency service:</strong> Going above and beyond for stranded customers</span>
               </li>
               <li className="flex items-start gap-3">
-                <Star className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <Star className="h-4 w-4 text-primary mt-1 shrink-0" />
                 <span><strong>Family business values:</strong> Personal attention and community involvement</span>
               </li>
             </ul>
@@ -334,19 +334,19 @@ const MechanicDigitalMarketing = () => {
               <h4 className="font-semibold mb-4 text-green-700">Proactive Review Generation</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span><strong>Follow-up system:</strong> Automated requests 24-48 hours after service completion</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span><strong>Multiple platforms:</strong> Google, Facebook, Yelp, and automotive-specific sites</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span><strong>QR codes:</strong> Easy review links at checkout and on receipts</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span><strong>In-person requests:</strong> Ask satisfied customers during service pickup</span>
                 </li>
               </ul>
@@ -355,19 +355,19 @@ const MechanicDigitalMarketing = () => {
               <h4 className="font-semibold mb-4 text-blue-700">Review Response Strategy</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <MessageCircle className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                  <MessageCircle className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                   <span><strong>Rapid response:</strong> Reply to all reviews within 24 hours</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <MessageCircle className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                  <MessageCircle className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                   <span><strong>Professional tone:</strong> Grateful for positive reviews, constructive with negative ones</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <MessageCircle className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                  <MessageCircle className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                   <span><strong>Specific responses:</strong> Reference the service provided and customer by name</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <MessageCircle className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                  <MessageCircle className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                   <span><strong>Problem resolution:</strong> Offer to discuss negative experiences offline</span>
                 </li>
               </ul>

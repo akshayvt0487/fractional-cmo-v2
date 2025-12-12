@@ -122,13 +122,13 @@ const RenovationBuildersDigitalMarketing = () => {
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-start gap-3">
-                    <Clock className="h-5 w-5 text-muted-foreground mt-1 flex-shrink-0" />
+                    <Clock className="h-5 w-5 text-muted-foreground mt-1 shrink-0" />
                     <div>
                       <strong>Heritage Restorations:</strong> Specialized historical work requiring unique expertise and commanding premium pricing for preservation projects.
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <DollarSign className="h-5 w-5 text-muted-foreground mt-1 flex-shrink-0" />
+                    <DollarSign className="h-5 w-5 text-muted-foreground mt-1 shrink-0" />
                     <div>
                       <strong>Investment Property Upgrades:</strong> Cost-effective improvements focused on rental returns and property value enhancement.
                     </div>
@@ -159,7 +159,7 @@ const RenovationBuildersDigitalMarketing = () => {
                 <Card className="hover:shadow-md transition-shadow">
                   <CardContent className="p-4">
                     <div className="flex items-start gap-3">
-                      <Search className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                      <Search className="h-5 w-5 text-primary mt-1 shrink-0" />
                       <div>
                         <h4 className="font-semibold mb-2">Google My Business Mastery</h4>
                         <p className="text-muted-foreground">Transform your GMB profile into a project showcase. Regular updates with fresh renovation photos, client reviews, and project milestones keep you visible when homeowners search for &quot;renovation builders near me.&quot;</p>
@@ -171,7 +171,7 @@ const RenovationBuildersDigitalMarketing = () => {
                 <Card className="hover:shadow-md transition-shadow">
                   <CardContent className="p-4">
                     <div className="flex items-start gap-3">
-                      <Target className="h-5 w-5 text-secondary mt-1 flex-shrink-0" />
+                      <Target className="h-5 w-5 text-secondary mt-1 shrink-0" />
                       <div>
                         <h4 className="font-semibold mb-2">Hyper-Local Content Strategy</h4>
                         <p className="text-muted-foreground">Create dedicated landing pages for each suburb you serve. Include local building requirements, council permit processes, and showcase projects completed in that specific area. Think &quot;kitchen renovation Toorak&quot; or &quot;bathroom remodel Bondi.&quot;</p>
@@ -183,7 +183,7 @@ const RenovationBuildersDigitalMarketing = () => {
                 <Card className="hover:shadow-md transition-shadow">
                   <CardContent className="p-4">
                     <div className="flex items-start gap-3">
-                      <Users className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
+                      <Users className="h-5 w-5 text-accent mt-1 shrink-0" />
                       <div>
                         <h4 className="font-semibold mb-2">Community Authority Building</h4>
                         <p className="text-muted-foreground">Become the go-to renovation expert in your community. Share insights about local building codes, partner with local suppliers, and create content about neighborhood-specific renovation considerations that only a local expert would know.</p>

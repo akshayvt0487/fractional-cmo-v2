@@ -302,19 +302,19 @@ const SecurityDigitalMarketing = () => {
               <h4 className="font-semibold mb-4 text-blue-700">Professional Showcase Videos</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <Video className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                  <Video className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                   <span><strong>Team introduction videos:</strong> Meet the security professionals, their backgrounds and certifications</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Video className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                  <Video className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                   <span><strong>Training demonstrations:</strong> Show ongoing education and skill development</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Video className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                  <Video className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                   <span><strong>Equipment showcases:</strong> Modern security technology and tools</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Video className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                  <Video className="h-4 w-4 text-blue-500 mt-1 shrink-0" />
                   <span><strong>Facility tours:</strong> Professional headquarters and command centers</span>
                 </li>
               </ul>
@@ -323,19 +323,19 @@ const SecurityDigitalMarketing = () => {
               <h4 className="font-semibold mb-4 text-indigo-700">Client Success Stories</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <Play className="h-4 w-4 text-indigo-500 mt-1 flex-shrink-0" />
+                  <Play className="h-4 w-4 text-indigo-500 mt-1 shrink-0" />
                   <span><strong>Client testimonial interviews:</strong> Business owners discussing security improvements</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Play className="h-4 w-4 text-indigo-500 mt-1 flex-shrink-0" />
+                  <Play className="h-4 w-4 text-indigo-500 mt-1 shrink-0" />
                   <span><strong>Before/after security assessments:</strong> Visual improvements in security posture</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Play className="h-4 w-4 text-indigo-500 mt-1 flex-shrink-0" />
+                  <Play className="h-4 w-4 text-indigo-500 mt-1 shrink-0" />
                   <span><strong>Emergency response scenarios:</strong> How your team handles critical situations</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Play className="h-4 w-4 text-indigo-500 mt-1 flex-shrink-0" />
+                  <Play className="h-4 w-4 text-indigo-500 mt-1 shrink-0" />
                   <span><strong>Day-in-the-life content:</strong> Behind-the-scenes professional operations</span>
                 </li>
               </ul>

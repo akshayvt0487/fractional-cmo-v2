@@ -119,7 +119,7 @@ const WhatIsFractionalCMO = () => {
       <div className="bg-primary/5 rounded-lg p-6 my-8">
         <ul className="space-y-3">
           {benefits.map((benefit, index) => <li key={index} className="flex items-start gap-3">
-              <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+              <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
               <span>{benefit}</span>
             </li>)}
         </ul>

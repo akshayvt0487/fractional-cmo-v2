@@ -1,6 +1,51 @@
-import React from 'react';
-import DigitalGrowthStrategy from '@/app/services/DigitalGrowthStrategy';
+import { Metadata } from 'next';
+import { getMainServicePageData, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/data/serviceData';
+import ServiceLayout from '@/components/ServicePageLayout.fixed';
 
-export default function Page() {
-  return <DigitalGrowthStrategy />;
+const data = getMainServicePageData('digital-growth-strategy')!;
+
+export const metadata: Metadata = {
+  title: data.metaTitle,
+  description: data.metaDescription,
+  keywords: data.keywords,
+  openGraph: {
+    title: data.metaTitle,
+    description: data.metaDescription,
+    url: 'https://fractional-cmo.com.au/services/digital-growth-strategy',
+    siteName: 'Fractional CMO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: data.metaTitle,
+    description: data.metaDescription,
+  },
+};
+
+export default function DigitalGrowthStrategyPage() {
+  const serviceSchema = generateServiceSchema(
+    data.heroTitle,
+    'digital-growth-strategy',
+    data.heroDescription
+  );
+  const faqSchema = generateFAQSchema(data.faqs);
+  const breadcrumbSchema = generateBreadcrumbSchema(data.heroTitle, 'digital-growth-strategy');
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <ServiceLayout data={data} />
+    </>
+  );
 }

@@ -1,0 +1,2062 @@
+{
+  "capabilities": {
+    "solutions": {
+      "sectionTitle": "Capabilities",
+      "sectionSubtitle": "Senior hands-on leadership across the full acquisition and conversion stack.",
+      "items": [
+        {
+          "iconName": "LineChart",
+          "title": "Growth Strategy",
+          "description": "North-star metrics, ICP, positioning, channel mix, and quarterly roadmaps."
+        },
+        {
+          "iconName": "Brush",
+          "title": "Website UX/UI",
+          "description": "High-converting information architecture, messaging, and landing page systems."
+        },
+        {
+          "iconName": "Search",
+          "title": "SEO Structure",
+          "description": "Technical foundations, content strategy, topic clusters, and internal linking."
+        },
+        {
+          "iconName": "Megaphone",
+          "title": "Google Ads",
+          "description": "Full-funnel performance with SKAGs where needed, exact-match hygiene, and creative testing."
+        },
+        {
+          "iconName": "MousePointerClick",
+          "title": "Meta Lead Gen",
+          "description": "Facebook & Instagram acquisition: creative sprints, audience refinement, and LTV cohorts."
+        },
+        {
+          "iconName": "BarChart3",
+          "title": "Analytics & CRO",
+          "description": "GA4, pixels, MTA hygiene, and experimentation for compounding wins."
+        }
+      ]
+    }
+  },
+"mainServicePages": {
+    "google-ads": {
+      "serviceName": "Google Ads",
+      "serviceSlug": "google-ads",
+      "metaTitle": "Google Ads Management Services Australia | PPC Advertising Expert",
+      "metaDescription": "Expert Google Ads management services in Australia. Drive qualified leads and sales with data-driven PPC campaigns. Free consultation available.",
+      "keywords": "google ads management, ppc advertising, google ads australia, pay per click, adwords management, sem services",
+      "heroTitle": "Google Ads Management That Delivers Real Results",
+      "heroSubtitle": "Pay-Per-Click Advertising",
+      "heroDescription": "Transform your advertising spend into predictable, scalable revenue. Our data-driven Google Ads strategies help Australian businesses achieve 3-5x return on ad spend through precision targeting and continuous optimization.",
+      "heroPoints": [
+        "Capture high-intent customers actively searching for your services",
+        "Pay only when prospects click—complete budget control",
+        "See measurable results within the first 30 days",
+        "Expert campaign management by certified professionals"
+      ],
+      "whyChoose": {
+        "title": "Why Choose Our Google Ads Services?",
+        "description": "We combine deep industry expertise with data-driven optimization to deliver campaigns that generate real business outcomes—not just clicks.",
+        "points": [
+          { "title": "Certified Expertise", "description": "Google Ads certified professionals with 15+ years of hands-on experience across industries." },
+          { "title": "ROI-Focused Approach", "description": "Every campaign is optimized for conversions and return on ad spend, not vanity metrics." },
+          { "title": "Transparent Reporting", "description": "Clear monthly reports showing exactly where your money goes and what results it generates." },
+          { "title": "Industry Specialization", "description": "Deep expertise in service businesses, NDIS providers, trades, and professional services." }
+        ]
+      },
+      "features": [
+        { "title": "Search Campaigns", "description": "Target high-intent customers actively searching for your products or services with precision keyword targeting and compelling ad copy." },
+        { "title": "Display Advertising", "description": "Build brand awareness and retarget visitors across millions of websites with visually engaging display ads." },
+        { "title": "Shopping Campaigns", "description": "Showcase your products directly in search results with optimized product feeds and smart bidding strategies." },
+        { "title": "Video Advertising", "description": "Engage audiences on YouTube with compelling video ads that drive brand awareness and conversions." },
+        { "title": "Performance Max", "description": "Leverage AI-powered campaigns that automatically optimize across all Google channels for maximum ROI." },
+        { "title": "Remarketing", "description": "Re-engage website visitors with tailored ads that bring them back to complete their purchase journey." }
+      ],
+      "process": [
+        { "step": 1, "title": "Audit & Research", "description": "Comprehensive analysis of your market, competitors, and current advertising performance." },
+        { "step": 2, "title": "Strategy Development", "description": "Custom campaign architecture designed to meet your specific business objectives and budget." },
+        { "step": 3, "title": "Campaign Launch", "description": "Professional setup of campaigns with optimized ad copy, extensions, and targeting parameters." },
+        { "step": 4, "title": "Optimize & Scale", "description": "Continuous optimization based on data insights to improve performance and maximize ROI." }
+      ],
+      "faqs": [
+        { "question": "How much should I budget for Google Ads?", "answer": "Budget depends on your industry, competition, and goals. We recommend starting with $2,000-$5,000/month for testing, then scaling based on results. Our clients typically see positive ROI within 60-90 days of optimized management." },
+        { "question": "How quickly will I see results from Google Ads?", "answer": "You can start seeing traffic immediately after launching. However, meaningful conversion data and optimization insights typically require 2-4 weeks. Significant ROI improvements usually occur within 60-90 days of professional management." },
+        { "question": "What's the difference between Google Ads and SEO?", "answer": "Google Ads provides immediate visibility through paid placements, while SEO builds organic rankings over time. We recommend a combined approach: Google Ads for immediate leads while building long-term SEO foundations." },
+        { "question": "Do you manage Performance Max campaigns?", "answer": "Yes, we're certified in all Google Ads campaign types including Performance Max. We leverage AI-powered campaigns alongside traditional search campaigns for optimal results across all Google properties." },
+        { "question": "How do you measure Google Ads success?", "answer": "We track key metrics including ROAS (Return on Ad Spend), cost per conversion, conversion rate, quality score, and impression share. We provide transparent monthly reports with actionable insights." }
+      ],
+      "relatedArticles": [
+        { "title": "Google Ads for Service Businesses: Complete Guide", "description": "Learn how to maximize ROI with Google Ads for your service-based business.", "url": "/blog/google-ads-service-businesses", "category": "Google Ads" },
+        { "title": "Buyers Agents Google Ads Strategy", "description": "Proven Google Ads strategies for buyers agents to generate quality leads.", "url": "/blog/buyers-agents-google-ads-strategy", "category": "Google Ads" },
+        { "title": "Tax Advisor Google Ads Strategy", "description": "How accounting firms can leverage Google Ads for client acquisition.", "url": "/blog/tax-advisor-google-ads-strategy", "category": "Google Ads" },
+        { "title": "Security Company Google Ads Strategy", "description": "Effective Google Ads campaigns for security service providers.", "url": "/blog/security-google-ads-strategy", "category": "Google Ads" }
+      ],
+      "benefits": [
+        "Immediate visibility on Google search results",
+        "Pay only when users click your ads",
+        "Precise targeting by location, demographics, and intent",
+        "Measurable ROI with detailed conversion tracking",
+        "Flexible budgets that scale with your business",
+        "Access to Google's vast advertising network",
+        "Remarketing to re-engage interested visitors",
+        "A/B testing capabilities for continuous improvement",
+        "Competitive advantage in crowded markets"
+      ],
+      "industries": ["Professional Services", "E-commerce", "Healthcare", "Legal Services", "Home Services", "Financial Services", "Real Estate", "Education", "Technology", "NDIS Providers"],
+      "schemaType": "Service",
+      "schemaDescription": "Professional Google Ads management and PPC advertising services in Australia"
+    },
+    "seo-services": {
+      "serviceName": "SEO Services",
+      "serviceSlug": "seo-services",
+      "metaTitle": "SEO Services Australia | Search Engine Optimization Expert",
+      "metaDescription": "Professional SEO services in Australia. Improve organic rankings, drive qualified traffic, and grow your business with proven search optimization strategies.",
+      "keywords": "seo services australia, search engine optimization, local seo, organic search, seo agency, seo consultant",
+      "heroTitle": "SEO Services That Drive Sustainable Growth",
+      "heroSubtitle": "Search Engine Optimization",
+      "heroDescription": "Build lasting organic visibility with our comprehensive SEO services. We combine technical expertise, content strategy, and data-driven optimization to help Australian businesses rank higher and convert more visitors into customers.",
+"heroPoints": [
+        "Build sustainable organic traffic that grows month over month",
+        "Rank higher than competitors for high-value keywords",
+        "Attract customers actively searching for your services",
+        "Reduce long-term customer acquisition costs"
+      ],
+      "whyChoose": {
+        "title": "Why Choose Our SEO Services?",
+        "description": "We take a data-driven, white-hat approach to SEO that builds lasting rankings and sustainable organic growth.",
+        "points": [
+          { "title": "Proven Methodology", "description": "A systematic approach to SEO that has delivered results across hundreds of client campaigns." },
+          { "title": "Transparent Reporting", "description": "Monthly reports showing ranking improvements, traffic growth, and business impact." },
+          { "title": "Technical Excellence", "description": "Deep technical SEO expertise to fix issues that hold your site back from ranking." },
+          { "title": "Content Strategy", "description": "Strategic content that targets high-value keywords and converts visitors into leads." }
+        ]
+      },
+      "features": [
+        { "title": "Technical SEO Audit", "description": "Comprehensive analysis of site architecture, speed, mobile-friendliness, and crawlability to ensure search engines can index your content effectively." },
+        { "title": "On-Page Optimization", "description": "Strategic optimization of title tags, meta descriptions, headers, content structure, and internal linking for maximum search visibility." },
+        { "title": "Content Strategy", "description": "Data-driven content planning that targets high-value keywords and addresses user search intent throughout the buyer journey." },
+        { "title": "Local SEO", "description": "Dominate local search results with Google Business Profile optimization, local citations, and geo-targeted content strategies." },
+        { "title": "Link Building", "description": "Ethical, white-hat link acquisition from authoritative websites to build domain authority and improve rankings." },
+        { "title": "SEO Analytics & Reporting", "description": "Transparent monthly reporting with actionable insights on rankings, traffic, conversions, and ROI metrics." }
+      ],
+      "process": [
+        { "step": 1, "title": "SEO Audit", "description": "Deep-dive analysis of your website's current SEO health, competitor landscape, and opportunity gaps." },
+        { "step": 2, "title": "Strategy Blueprint", "description": "Custom SEO roadmap prioritizing quick wins and long-term growth strategies aligned with your goals." },
+        { "step": 3, "title": "Implementation", "description": "Systematic execution of technical fixes, content optimization, and link building activities." },
+        { "step": 4, "title": "Monitor & Refine", "description": "Ongoing tracking, algorithm adaptation, and strategy refinement for sustained ranking improvements." }
+      ],
+      "faqs": [
+        { "question": "How long does SEO take to show results?", "answer": "SEO is a long-term investment. You'll typically see initial improvements in 3-6 months, with significant results in 6-12 months. The timeline depends on your website's current state, competition level, and the aggressiveness of your strategy." },
+        { "question": "What's the difference between on-page and off-page SEO?", "answer": "On-page SEO refers to optimizations made directly on your website (content, structure, technical elements). Off-page SEO involves external factors like backlinks, brand mentions, and social signals that build your site's authority." },
+        { "question": "Do you guarantee first page rankings?", "answer": "No ethical SEO provider can guarantee specific rankings as Google's algorithm considers 200+ factors. However, we guarantee following best practices, transparent reporting, and working toward agreed-upon KPIs with proven methodologies." },
+        { "question": "How do you approach local SEO?", "answer": "Our local SEO strategy includes Google Business Profile optimization, local citation building, location-specific content creation, review management, and schema markup implementation to dominate local search results." },
+        { "question": "Will SEO work alongside my paid advertising?", "answer": "Absolutely. SEO and paid advertising complement each other perfectly. While SEO builds long-term organic presence, paid ads provide immediate visibility. Together, they maximize your search engine real estate and overall marketing effectiveness." }
+      ],
+      "relatedArticles": [
+        { "title": "Local Search Ranking Strategies for Australian Businesses", "description": "Master local SEO to dominate search results in your service area.", "url": "/blog/local-search-ranking-strategies", "category": "SEO" },
+        { "title": "Local SEO for Trade Businesses", "description": "Complete guide to local SEO strategies for tradies and service providers.", "url": "/blog/local-seo-trade-businesses", "category": "SEO" },
+        { "title": "Conveyancing SEO Guide", "description": "SEO strategies specifically for conveyancing and legal professionals.", "url": "/blog/conveyancing-seo-guide", "category": "SEO" },
+        { "title": "Financial Planner SEO Guide", "description": "How financial planners can improve organic search visibility.", "url": "/blog/financial-planner-seo-guide", "category": "SEO" }
+      ],
+      "benefits": [
+        "Sustainable organic traffic growth",
+        "Higher quality leads from search intent",
+        "Improved brand credibility and trust",
+        "Lower cost per acquisition over time",
+        "24/7 visibility without ongoing ad spend",
+        "Competitive advantage in your market",
+        "Better user experience and site performance",
+        "Measurable ROI with clear attribution",
+        "Long-lasting results that compound over time"
+      ],
+      "industries": ["Professional Services", "Legal Services", "Healthcare", "Financial Services", "Home Services", "E-commerce", "Real Estate", "NDIS Providers", "Technology", "Education"],
+      "schemaType": "Service",
+      "schemaDescription": "Professional SEO and search engine optimization services in Australia"
+    },
+    "digital-marketing": {
+      "serviceName": "Digital Marketing",
+      "serviceSlug": "digital-marketing",
+      "metaTitle": "Digital Marketing Services Australia | Full-Service Marketing Agency",
+      "metaDescription": "Comprehensive digital marketing services in Australia. From strategy to execution, we help businesses grow with SEO, PPC, social media, and content marketing.",
+      "keywords": "digital marketing australia, online marketing, digital marketing agency, marketing services, full service marketing",
+      "heroTitle": "Full-Service Digital Marketing That Drives Growth",
+      "heroSubtitle": "Integrated Marketing Solutions",
+      "heroDescription": "Stop juggling disconnected marketing activities. Our integrated digital marketing services bring together strategy, execution, and optimization across all channels to deliver measurable business growth for Australian businesses.",
+"heroPoints": [
+        "Unify all marketing channels under one cohesive strategy",
+        "Eliminate wasted spend with data-driven decisions",
+        "Scale your marketing systematically as you grow",
+        "Get enterprise-level expertise without enterprise costs"
+      ],
+      "whyChoose": {
+        "title": "Why Choose Our Digital Marketing Services?",
+        "description": "We bring together all the pieces of digital marketing into one integrated system that delivers measurable business results.",
+        "points": [
+          { "title": "Full-Service Capability", "description": "All your marketing needs under one roof—strategy, execution, and optimization across every channel." },
+          { "title": "Industry Expertise", "description": "Deep experience in service businesses, NDIS providers, trades, and professional services." },
+          { "title": "ROI Focus", "description": "Every decision is based on data and focused on generating measurable business outcomes." },
+          { "title": "Agile Execution", "description": "Fast, responsive marketing that adapts to market changes and opportunities." }
+        ]
+      },
+      "features": [
+        { "title": "Integrated Marketing Strategy", "description": "Cohesive digital marketing plans that align all channels—SEO, PPC, social, email—toward unified business objectives." },
+        { "title": "Multi-Channel Campaign Management", "description": "Expert management across Google Ads, Meta, LinkedIn, and other platforms to maximize reach and ROI." },
+        { "title": "Conversion Rate Optimization", "description": "Data-driven improvements to landing pages, user journeys, and conversion funnels to maximize leads and sales." },
+        { "title": "Marketing Automation", "description": "Streamlined lead nurturing and customer engagement through automated email sequences and workflows." },
+        { "title": "Analytics & Attribution", "description": "Advanced tracking and reporting to understand which channels drive results and optimize marketing spend." },
+        { "title": "Brand Development", "description": "Consistent brand messaging and visual identity across all digital touchpoints to build trust and recognition." }
+      ],
+      "process": [
+        { "step": 1, "title": "Discovery & Audit", "description": "Comprehensive analysis of your current marketing efforts, competitors, and market opportunities." },
+        { "step": 2, "title": "Strategy Development", "description": "Custom digital marketing strategy with clear KPIs, channel mix, and resource allocation." },
+        { "step": 3, "title": "Campaign Execution", "description": "Professional implementation across all selected channels with consistent messaging and tracking." },
+        { "step": 4, "title": "Optimize & Scale", "description": "Continuous performance analysis and optimization to improve results and scale success." }
+      ],
+      "faqs": [
+        { "question": "What's included in your digital marketing services?", "answer": "Our comprehensive digital marketing services include strategy development, SEO, paid advertising (Google & Social), content marketing, email marketing, social media management, conversion optimization, and detailed analytics reporting." },
+        { "question": "How do you measure digital marketing success?", "answer": "We track key metrics aligned with your business goals: leads generated, cost per acquisition, return on ad spend, organic traffic growth, conversion rates, and revenue attribution. Monthly reports provide clear visibility into performance." },
+        { "question": "What budget do I need for effective digital marketing?", "answer": "Effective digital marketing typically starts at $3,000-$5,000/month including management and ad spend. The right budget depends on your goals, competition, and market size. We'll recommend an appropriate investment during your strategy consultation." },
+        { "question": "How long until I see results?", "answer": "Paid advertising can generate leads within days. SEO improvements typically show within 3-6 months. A comprehensive digital marketing strategy should demonstrate clear ROI within 90 days, with compounding results over time." },
+        { "question": "Do you work with businesses in my industry?", "answer": "We specialize in B2B services, professional services, NDIS providers, and trade businesses. Our strategies are customized to your industry's unique customer journey and competitive landscape." }
+      ],
+      "relatedArticles": [
+        { "title": "Digital Marketing ROI for Service Businesses", "description": "How to measure and maximize digital marketing return on investment.", "url": "/blog/digital-marketing-roi-service-businesses", "category": "Digital Marketing" },
+        { "title": "Digital Marketing Automation Guide", "description": "Streamline your marketing with automation strategies that scale.", "url": "/blog/digital-marketing-automation-guide", "category": "Digital Marketing" },
+        { "title": "Digital Strategy for Modern Business", "description": "Building a comprehensive digital strategy for business growth.", "url": "/blog/digital-strategy-modern-business", "category": "Digital Marketing" },
+        { "title": "B2B Lead Generation Strategies", "description": "Proven tactics for generating high-quality B2B leads online.", "url": "/blog/b2b-lead-generation-strategies", "category": "Lead Generation" }
+      ],
+      "benefits": [
+        "Unified strategy across all digital channels",
+        "Data-driven decisions backed by analytics",
+        "Consistent brand presence online",
+        "Improved lead quality and quantity",
+        "Better customer journey optimization",
+        "Scalable marketing systems",
+        "Transparent ROI measurement",
+        "Competitive market positioning",
+        "Expert guidance without full-time cost"
+      ],
+      "industries": ["Professional Services", "NDIS Providers", "Legal Services", "Healthcare", "Financial Services", "Home Services", "Real Estate", "Technology", "Construction", "Education"],
+      "schemaType": "Service",
+      "schemaDescription": "Full-service digital marketing agency services in Australia"
+    },
+    "digital-growth-strategy": {
+      "serviceName": "Growth Strategy",
+      "serviceSlug": "digital-growth-strategy",
+      "metaTitle": "Digital Growth Strategy Australia | Business Growth Consulting",
+      "metaDescription": "Expert digital growth strategy consulting in Australia. Build scalable systems for sustainable business growth with data-driven strategies and proven frameworks.",
+      "keywords": "digital growth strategy, business growth consulting, growth marketing, growth strategy australia, business strategy",
+      "heroTitle": "Strategic Growth Planning for Ambitious Businesses",
+      "heroSubtitle": "Growth Strategy Consulting",
+      "heroDescription": "Move beyond random marketing tactics to systematic growth. Our digital growth strategy service helps Australian businesses build scalable acquisition systems, optimize conversion funnels, and achieve sustainable revenue growth.",
+      "heroPoints": [
+        "Move from random tactics to systematic growth",
+        "Build scalable acquisition and conversion systems",
+        "Get a clear roadmap with prioritized initiatives",
+        "Access senior strategic guidance without full-time cost"
+      ],
+      "whyChoose": {
+        "title": "Why Choose Our Growth Strategy Services?",
+        "description": "We bring a systematic, data-driven approach to growth that transforms random marketing activities into predictable revenue engines.",
+        "points": [
+          { "title": "Senior Expertise", "description": "15+ years of hands-on growth experience across diverse industries and business models." },
+          { "title": "Systematic Framework", "description": "Proven methodology that identifies the highest-impact growth levers for your specific situation." },
+          { "title": "Actionable Roadmaps", "description": "Clear 90-day execution plans with priorities, milestones, and success metrics." },
+          { "title": "Implementation Support", "description": "Ongoing guidance to ensure successful execution and course-correction as needed." }
+        ]
+      },
+      "features": [
+        { "title": "Growth Audit & Assessment", "description": "Deep analysis of your current digital presence, market position, and growth opportunities to identify high-impact strategies." },
+        { "title": "Customer Journey Mapping", "description": "Detailed mapping of your ideal customer's path from awareness to purchase, identifying optimization opportunities at each stage." },
+        { "title": "Channel Strategy", "description": "Data-driven recommendations on which marketing channels will deliver the best ROI for your specific business and audience." },
+        { "title": "Growth Experimentation", "description": "Systematic testing framework to validate growth hypotheses and scale what works across your marketing efforts." },
+        { "title": "Technology Stack Optimization", "description": "Assessment and recommendations for marketing technology, CRM, and analytics tools to support scalable growth." },
+        { "title": "KPI Framework & Dashboards", "description": "Custom metrics framework and real-time dashboards to track progress toward your growth objectives." }
+      ],
+      "process": [
+        { "step": 1, "title": "Growth Diagnostic", "description": "Comprehensive assessment of your business model, market, competition, and current growth levers." },
+        { "step": 2, "title": "Strategy Design", "description": "Custom growth strategy with prioritized initiatives, resource requirements, and expected outcomes." },
+        { "step": 3, "title": "Roadmap Creation", "description": "Detailed 90-day execution plan with milestones, responsibilities, and success metrics." },
+        { "step": 4, "title": "Implementation Support", "description": "Ongoing strategic guidance, performance reviews, and strategy refinement as you execute." }
+      ],
+      "faqs": [
+        { "question": "What is a digital growth strategy?", "answer": "A digital growth strategy is a comprehensive plan that leverages digital channels, data, and technology to accelerate business growth. It goes beyond marketing to encompass customer acquisition, retention, product optimization, and scalable systems." },
+        { "question": "How is this different from regular marketing?", "answer": "Traditional marketing focuses on awareness and lead generation. Growth strategy takes a holistic view—analyzing your entire customer journey, identifying friction points, optimizing conversion funnels, and building systems that compound growth over time." },
+        { "question": "What kind of growth can I expect?", "answer": "Results vary by business, but our clients typically see 30-100% improvement in key metrics within 6-12 months. We focus on sustainable growth through systematic optimization rather than short-term tactics." },
+        { "question": "Do you implement the strategy or just advise?", "answer": "We offer both strategic consulting and implementation support. Many clients engage us for strategy development, then either implement internally or have us manage execution through our Fractional CMO service." },
+        { "question": "How do you prioritize growth initiatives?", "answer": "We use an ICE framework (Impact, Confidence, Ease) to prioritize initiatives. This ensures we focus on high-impact activities that are achievable and likely to succeed, balancing quick wins with longer-term strategic investments." }
+      ],
+      "relatedArticles": [
+        { "title": "Growth Marketing Strategy Guide", "description": "Comprehensive guide to building a growth marketing strategy that scales.", "url": "/blog/growth-marketing-strategy", "category": "Growth Marketing" },
+        { "title": "NDIS Business Growth Strategy", "description": "Strategic growth framework for NDIS service providers.", "url": "/blog/ndis-business-growth-strategy", "category": "NDIS" },
+        { "title": "Trade Business Growth Strategies", "description": "Proven growth strategies for trade and service businesses.", "url": "/blog/trade-business-growth-strategies", "category": "Business Growth" },
+        { "title": "Accounting Growth Strategy Guide", "description": "Growth strategies for accounting and financial services firms.", "url": "/blog/accounting-growth-strategy-guide", "category": "Professional Services" }
+      ],
+      "benefits": [
+        "Clear growth roadmap with priorities",
+        "Data-driven decision making",
+        "Systematic approach to scaling",
+        "Reduced wasted marketing spend",
+        "Aligned team and resources",
+        "Measurable growth metrics",
+        "Sustainable competitive advantage",
+        "Scalable marketing systems",
+        "Expert strategic guidance"
+      ],
+      "industries": ["SaaS & Technology", "Professional Services", "NDIS Providers", "Healthcare", "Financial Services", "E-commerce", "B2B Services", "Education", "Real Estate"],
+      "schemaType": "Service",
+      "schemaDescription": "Digital growth strategy and business growth consulting services in Australia"
+    },
+    "social-media-marketing": {
+      "serviceName": "Social Media Marketing",
+      "serviceSlug": "social-media-marketing",
+      "metaTitle": "Social Media Marketing Services Australia | Social Media Management",
+      "metaDescription": "Professional social media marketing services in Australia. Build your brand, engage your audience, and drive results with strategic social media management.",
+      "keywords": "social media marketing, social media management, facebook marketing, instagram marketing, linkedin marketing, social media australia",
+      "heroTitle": "Social Media Marketing That Builds Real Connections",
+      "heroSubtitle": "Social Media Management",
+      "heroDescription": "Transform your social media presence from an afterthought to a growth engine. Our strategic social media marketing helps Australian businesses build engaged communities, generate leads, and strengthen brand loyalty.",
+"heroPoints": [
+        "Build genuine connections with your target audience",
+        "Transform followers into leads and customers",
+        "Create consistent, engaging content that resonates",
+        "Measure real business impact from social media"
+      ],
+      "whyChoose": {
+        "title": "Why Choose Our Social Media Services?",
+        "description": "We focus on social media strategies that drive real business outcomes—not just vanity metrics like likes and followers.",
+        "points": [
+          { "title": "Strategy-First Approach", "description": "Every post and campaign is aligned with your business goals and target audience needs." },
+          { "title": "Quality Content", "description": "Professional content creation that reflects your brand voice and engages your ideal customers." },
+          { "title": "ROI Tracking", "description": "Proper attribution so you can see exactly how social media contributes to leads and sales." },
+          { "title": "Platform Expertise", "description": "Deep knowledge of Facebook, Instagram, LinkedIn, and emerging platforms." }
+        ]
+      },
+      "features": [
+        { "title": "Social Media Strategy", "description": "Comprehensive social media strategy aligned with your business goals, target audience, and brand voice." },
+        { "title": "Content Creation", "description": "Engaging, platform-optimized content including graphics, videos, and copy that resonates with your audience." },
+        { "title": "Community Management", "description": "Active engagement with your audience through comments, messages, and community building activities." },
+        { "title": "Paid Social Advertising", "description": "Targeted advertising campaigns on Facebook, Instagram, LinkedIn, and other platforms to reach ideal customers." },
+        { "title": "Influencer Partnerships", "description": "Strategic influencer collaborations to expand reach and build credibility with your target market." },
+        { "title": "Social Analytics & Reporting", "description": "Detailed performance tracking and insights to optimize content strategy and demonstrate ROI." }
+      ],
+      "process": [
+        { "step": 1, "title": "Audience Research", "description": "Deep dive into your target audience's social media behavior, preferences, and engagement patterns." },
+        { "step": 2, "title": "Strategy Development", "description": "Custom content strategy with platform selection, content pillars, posting schedule, and growth tactics." },
+        { "step": 3, "title": "Content & Campaign Execution", "description": "Professional content creation and paid campaign management across selected platforms." },
+        { "step": 4, "title": "Analyze & Optimize", "description": "Continuous performance analysis and strategy refinement based on engagement and conversion data." }
+      ],
+      "faqs": [
+        { "question": "Which social media platforms should my business use?", "answer": "Platform selection depends on your target audience and business type. B2B businesses typically perform well on LinkedIn, while B2C and visual products excel on Instagram and Facebook. We analyze your audience to recommend the optimal platform mix." },
+        { "question": "How often should I post on social media?", "answer": "Quality trumps quantity. We recommend 3-5 posts per week on primary platforms, focusing on valuable, engaging content rather than high-volume posting. Consistency and relevance matter more than frequency." },
+        { "question": "What's the ROI of social media marketing?", "answer": "Social media ROI includes brand awareness, lead generation, customer engagement, and direct sales. We set up proper attribution tracking so you can see exactly how social media contributes to your business goals." },
+        { "question": "Do you create the content or do we provide it?", "answer": "We offer full-service content creation including graphics, videos, and copy. We can also work with content you provide or take a collaborative approach where we enhance and optimize your existing content." },
+        { "question": "How do paid social ads compare to Google Ads?", "answer": "Paid social ads are excellent for brand awareness, audience building, and reaching people based on interests and behaviors. Google Ads capture high-intent searchers. Most businesses benefit from both working together strategically." }
+      ],
+      "relatedArticles": [
+        { "title": "Social Media Marketing Strategy Guide", "description": "Build a winning social media strategy for your business.", "url": "/blog/social-media-marketing-strategy", "category": "Social Media" },
+        { "title": "Conveyancing Social Media Marketing", "description": "Social media strategies for legal and conveyancing professionals.", "url": "/blog/conveyancing-social-media-marketing", "category": "Social Media" },
+        { "title": "NDIS Digital Marketing Strategies", "description": "Social media and digital marketing for NDIS providers.", "url": "/blog/ndis-digital-marketing-strategies", "category": "NDIS" },
+        { "title": "Therapy Services Digital Marketing", "description": "Social media strategies for therapy and healthcare providers.", "url": "/blog/therapy-services-digital-marketing", "category": "Healthcare" }
+      ],
+      "benefits": [
+        "Increased brand awareness and reach",
+        "Direct engagement with target audience",
+        "Cost-effective advertising options",
+        "Build community and loyalty",
+        "Drive website traffic and leads",
+        "Humanize your brand",
+        "Real-time customer feedback",
+        "Competitive insights and monitoring",
+        "Support for customer service"
+      ],
+      "industries": ["Retail & E-commerce", "Professional Services", "Healthcare", "Real Estate", "Hospitality", "NDIS Providers", "Education", "Technology", "Financial Services"],
+      "schemaType": "Service",
+      "schemaDescription": "Professional social media marketing and management services in Australia"
+    },
+    "email-marketing": {
+      "serviceName": "Email Marketing",
+      "serviceSlug": "email-marketing",
+      "metaTitle": "Email Marketing Services Australia | Email Automation Expert",
+      "metaDescription": "Professional email marketing services in Australia. Drive engagement and revenue with strategic email campaigns, automation, and list management.",
+      "keywords": "email marketing, email automation, email campaigns, newsletter marketing, email marketing australia, marketing automation",
+      "heroTitle": "Email Marketing That Converts Subscribers to Customers",
+      "heroSubtitle": "Email Marketing & Automation",
+      "heroDescription": "Unlock the power of your email list with strategic campaigns and intelligent automation. Our email marketing services help Australian businesses nurture leads, retain customers, and drive predictable revenue growth.",
+"heroPoints": [
+        "Achieve $42 ROI for every $1 spent—the highest of any channel",
+        "Own your audience with a direct communication line",
+        "Automate revenue generation with intelligent sequences",
+        "Nurture leads into customers on autopilot"
+      ],
+      "whyChoose": {
+        "title": "Why Choose Our Email Marketing Services?",
+        "description": "We build email systems that generate predictable revenue through strategic automation and compelling content.",
+        "points": [
+          { "title": "Revenue Focus", "description": "Email strategies designed to drive sales and customer lifetime value, not just opens and clicks." },
+          { "title": "Automation Expertise", "description": "Sophisticated automated sequences that nurture leads and retain customers without manual effort." },
+          { "title": "Deliverability Mastery", "description": "Technical setup that ensures your emails reach inboxes, not spam folders." },
+          { "title": "Full-Service Execution", "description": "Strategy, copywriting, design, automation, and optimization—all handled for you." }
+        ]
+      },
+      "features": [
+        { "title": "Email Strategy & Planning", "description": "Comprehensive email marketing strategy aligned with your customer journey, business goals, and audience segments." },
+        { "title": "Email Template Design", "description": "Professional, mobile-responsive email templates that reflect your brand and drive engagement." },
+        { "title": "Automation & Sequences", "description": "Automated email workflows for welcome series, lead nurturing, abandoned carts, and customer retention." },
+        { "title": "List Management & Segmentation", "description": "Strategic list building, hygiene, and segmentation to deliver relevant messages to the right subscribers." },
+        { "title": "Campaign Management", "description": "End-to-end management of email campaigns including copywriting, scheduling, A/B testing, and optimization." },
+        { "title": "Analytics & Optimization", "description": "Detailed performance tracking with actionable insights to continuously improve open rates, clicks, and conversions." }
+      ],
+      "process": [
+        { "step": 1, "title": "Audit & Assessment", "description": "Review of your current email marketing, list health, deliverability, and performance benchmarks." },
+        { "step": 2, "title": "Strategy Development", "description": "Custom email strategy with audience segmentation, content calendar, and automation roadmap." },
+        { "step": 3, "title": "Setup & Implementation", "description": "Email platform configuration, template design, automation building, and list optimization." },
+        { "step": 4, "title": "Execute & Optimize", "description": "Ongoing campaign management with continuous testing and performance optimization." }
+      ],
+      "faqs": [
+        { "question": "Is email marketing still effective?", "answer": "Absolutely. Email marketing delivers an average ROI of $42 for every $1 spent, making it one of the highest-performing digital channels. With proper strategy and personalization, email remains essential for customer engagement and revenue growth." },
+        { "question": "How often should I email my list?", "answer": "Frequency depends on your industry and audience expectations. Most businesses benefit from 1-4 emails per week. The key is consistency and value—every email should provide something useful to your subscribers." },
+        { "question": "What email platform do you recommend?", "answer": "We work with leading platforms including Klaviyo, Mailchimp, ActiveCampaign, and HubSpot. The right choice depends on your business size, features needed, and integration requirements. We'll recommend the best fit during consultation." },
+        { "question": "How do you grow an email list?", "answer": "We use multiple list-building strategies: lead magnets, content upgrades, website popups, social media campaigns, and referral programs. All methods focus on attracting qualified subscribers who are genuinely interested in your offerings." },
+        { "question": "What about spam compliance and deliverability?", "answer": "We ensure full compliance with Australian spam laws and international regulations (GDPR, CAN-SPAM). Our approach includes proper consent management, list hygiene, authentication setup, and deliverability monitoring to keep your emails out of spam folders." }
+      ],
+      "relatedArticles": [
+        { "title": "Digital Marketing Automation Guide", "description": "How to automate your email and marketing workflows for scale.", "url": "/blog/digital-marketing-automation-guide", "category": "Marketing Automation" },
+        { "title": "B2B Lead Generation Strategies", "description": "Email's role in B2B lead nurturing and conversion.", "url": "/blog/b2b-lead-generation-strategies", "category": "Lead Generation" },
+        { "title": "NDIS Participant Engagement Strategies", "description": "Using email to engage and retain NDIS participants.", "url": "/blog/ndis-participant-engagement-strategies", "category": "NDIS" },
+        { "title": "Trade Customer Retention Strategies", "description": "Email strategies to retain and upsell trade customers.", "url": "/blog/trade-customer-retention-strategies", "category": "Customer Retention" }
+      ],
+      "benefits": [
+        "Highest ROI of any marketing channel",
+        "Direct access to your audience",
+        "Personalization at scale",
+        "Automated revenue generation",
+        "Measurable results and attribution",
+        "Customer retention and loyalty",
+        "Cost-effective communication",
+        "Ownership of your audience list",
+        "Integration with other channels"
+      ],
+      "industries": ["E-commerce", "Professional Services", "SaaS & Technology", "Healthcare", "Financial Services", "Education", "Real Estate", "NDIS Providers", "Hospitality"],
+      "schemaType": "Service",
+      "schemaDescription": "Professional email marketing and automation services in Australia"
+    }
+  },
+  "industries": {
+    "ndis-providers": {
+      "name": "NDIS Providers",
+      "slug": "ndis-providers",
+      "description": "disability support services and NDIS registered providers",
+      "challenges": [
+        { "title": "NDIS Compliance", "description": "Navigating strict advertising guidelines while remaining compliant with NDIS regulations." },
+        { "title": "Participant Trust", "description": "Building trust with participants and families who are often vulnerable and cautious." },
+        { "title": "Service Differentiation", "description": "Standing out in a crowded market with many providers offering similar services." },
+        { "title": "Geographic Targeting", "description": "Reaching participants in specific service areas efficiently." },
+        { "title": "Long Decision Cycles", "description": "Managing the often lengthy decision-making process involving participants, families, and coordinators." },
+        { "title": "Plan Manager Relations", "description": "Building relationships with plan managers and support coordinators who influence referrals." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["ndis-google-ads-respite-sil-western-sydney"],
+        "seo": ["ndis-web-design-guide", "ndis-digital-marketing-excellence"],
+        "leadGeneration": ["advanced-ndis-lead-generation", "ndis-lead-generation-mastery", "ndis-lead-generation-strategies"],
+        "digitalMarketing": ["ndis-digital-marketing-strategies", "ndis-marketing-guide-2024", "ndis-disability-service-marketing"]
+      }
+    },
+    "builders": {
+      "name": "Builders",
+      "slug": "builders",
+      "description": "home builders, renovation builders, and construction companies",
+      "challenges": [
+        { "title": "High Competition", "description": "Standing out in a competitive market with many established builders." },
+        { "title": "Project Visibility", "description": "Showcasing quality work and completed projects effectively online." },
+        { "title": "Local Targeting", "description": "Reaching homeowners in specific geographic service areas." },
+        { "title": "Trust Building", "description": "Overcoming negative industry perceptions and building credibility." },
+        { "title": "Lead Quality", "description": "Attracting serious buyers rather than price shoppers." },
+        { "title": "Seasonal Demand", "description": "Managing marketing spend during slow construction seasons." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["google-ads-service-businesses"],
+        "seo": ["local-seo-trade-businesses", "local-search-ranking-strategies"],
+        "leadGeneration": ["home-builders-lead-generation-guide", "construction-lead-generation-strategies"],
+        "digitalMarketing": ["renovation-builders-digital-marketing-guide", "construction-marketing-best-practices"]
+      }
+    },
+    "painters": {
+      "name": "Painters",
+      "slug": "painters",
+      "description": "residential and commercial painting contractors",
+      "challenges": [
+        { "title": "Seasonal Fluctuations", "description": "Managing marketing during weather-dependent slow periods." },
+        { "title": "Price Competition", "description": "Competing against low-cost painters while justifying quality premiums." },
+        { "title": "Portfolio Showcase", "description": "Effectively displaying before/after transformations online." },
+        { "title": "Local Visibility", "description": "Being found by homeowners searching for painters in specific areas." },
+        { "title": "Review Management", "description": "Building and maintaining positive online reviews." },
+        { "title": "Commercial vs Residential", "description": "Balancing marketing for different client types." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["google-ads-service-businesses"],
+        "seo": ["local-seo-trade-businesses", "local-search-ranking-strategies"],
+        "leadGeneration": ["painters-lead-generation"],
+        "digitalMarketing": ["painters-digital-marketing-guide", "trade-business-growth-strategies"]
+      }
+    },
+    "electricians": {
+      "name": "Electricians",
+      "slug": "electricians",
+      "description": "electrical contractors and electrician businesses",
+      "challenges": [
+        { "title": "Emergency Response", "description": "Capturing urgent electrical emergency searches effectively." },
+        { "title": "Licensing Trust", "description": "Communicating proper licensing and insurance credentials." },
+        { "title": "Service Area Coverage", "description": "Balancing wide service areas with travel time efficiency." },
+        { "title": "Commercial Contracts", "description": "Winning commercial and industrial electrical contracts." },
+        { "title": "Review Competition", "description": "Competing with highly-reviewed established electricians." },
+        { "title": "Specialization Marketing", "description": "Marketing specialized services like solar, EV chargers, or smart home." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["google-ads-service-businesses"],
+        "seo": ["local-seo-trade-businesses", "local-search-ranking-strategies"],
+        "leadGeneration": ["trade-business-growth-strategies"],
+        "digitalMarketing": ["trade-customer-retention-strategies"]
+      }
+    },
+    "plumbers": {
+      "name": "Plumbers",
+      "slug": "plumbers",
+      "description": "plumbing contractors and plumbing businesses",
+      "challenges": [
+        { "title": "Emergency Visibility", "description": "Being found first for urgent plumbing emergencies." },
+        { "title": "24/7 Availability", "description": "Marketing after-hours and emergency services effectively." },
+        { "title": "Trust Concerns", "description": "Overcoming customer wariness about plumber pricing." },
+        { "title": "Service Diversity", "description": "Marketing both residential and commercial services." },
+        { "title": "Local Competition", "description": "Standing out among many local plumbing options." },
+        { "title": "Repeat Business", "description": "Building systems for maintenance contracts and repeat customers." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["google-ads-service-businesses"],
+        "seo": ["local-seo-trade-businesses", "local-search-ranking-strategies"],
+        "leadGeneration": ["trade-business-growth-strategies"],
+        "digitalMarketing": ["trade-customer-retention-strategies"]
+      }
+    },
+    "removalists": {
+      "name": "Removalists",
+      "slug": "removalists",
+      "description": "moving companies and removalist businesses",
+      "challenges": [
+        { "title": "Quote Shopping", "description": "Converting leads who are comparing multiple quotes." },
+        { "title": "Trust Issues", "description": "Overcoming concerns about belongings safety and hidden fees." },
+        { "title": "Seasonal Peaks", "description": "Managing marketing during peak moving seasons." },
+        { "title": "Geographic Targeting", "description": "Targeting both origin and destination suburbs effectively." },
+        { "title": "Review Importance", "description": "Managing reviews which heavily influence moving decisions." },
+        { "title": "Interstate Competition", "description": "Competing for lucrative interstate moving jobs." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["removalist-meta-ads-strategy"],
+        "seo": ["removalist-seo-strategy", "local-search-ranking-strategies"],
+        "leadGeneration": ["starting-removalist-business-guide"],
+        "digitalMarketing": ["removalist-digital-marketing-guide", "removalist-business-marketing-guide"]
+      }
+    },
+    "accountants": {
+      "name": "Accountants",
+      "slug": "accountants",
+      "description": "accounting firms, tax advisors, and financial professionals",
+      "challenges": [
+        { "title": "Seasonal Business", "description": "Managing marketing around tax season peaks and valleys." },
+        { "title": "Trust Requirements", "description": "Building trust for sensitive financial matters." },
+        { "title": "Differentiation", "description": "Standing out among similar accounting service offerings." },
+        { "title": "Client Retention", "description": "Balancing new client acquisition with retention." },
+        { "title": "Industry Specialization", "description": "Marketing niche expertise to specific industries." },
+        { "title": "Referral Dependence", "description": "Reducing reliance on referrals with direct marketing." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["tax-advisor-google-ads-strategy"],
+        "seo": ["financial-planner-seo-guide"],
+        "leadGeneration": ["financial-planner-lead-generation"],
+        "digitalMarketing": ["accounting-digital-marketing-guide", "accounting-growth-strategy-guide"]
+      }
+    },
+    "lawyers": {
+      "name": "Lawyers",
+      "slug": "lawyers",
+      "description": "law firms, solicitors, and legal practices",
+      "challenges": [
+        { "title": "Ethical Advertising", "description": "Navigating strict legal advertising regulations and ethics." },
+        { "title": "Practice Area Focus", "description": "Marketing multiple practice areas without diluting expertise." },
+        { "title": "High Competition", "description": "Competing in expensive legal keyword markets." },
+        { "title": "Trust Building", "description": "Building trust for sensitive legal matters." },
+        { "title": "Client Confidentiality", "description": "Showcasing success while maintaining client privacy." },
+        { "title": "Referral Networks", "description": "Building referral networks alongside direct marketing." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["google-ads-conveyancing-guide"],
+        "seo": ["conveyancing-seo-guide"],
+        "leadGeneration": ["lawyers-lead-generation", "conveyancing-lead-generation-strategies"],
+        "digitalMarketing": ["family-lawyers-digital-marketing", "divorce-lawyers-digital-marketing", "criminal-lawyers-digital-marketing"]
+      }
+    },
+    "finance-brokers": {
+      "name": "Finance Brokers",
+      "slug": "finance-brokers",
+      "description": "mortgage brokers, finance brokers, and lending specialists",
+      "challenges": [
+        { "title": "Regulatory Compliance", "description": "Navigating ASIC regulations and responsible lending requirements in marketing." },
+        { "title": "Bank Competition", "description": "Competing against banks with larger marketing budgets." },
+        { "title": "Trust Building", "description": "Building credibility for handling significant financial decisions." },
+        { "title": "Rate Sensitivity", "description": "Marketing value beyond just interest rates." },
+        { "title": "Lead Quality", "description": "Attracting pre-qualified borrowers ready to proceed." },
+        { "title": "Referral Dependence", "description": "Reducing reliance on real estate agent referrals." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["loan-broker-google-ads-strategy"],
+        "seo": ["financial-planner-seo-guide"],
+        "leadGeneration": ["loan-broker-lead-generation", "financial-planner-lead-generation"],
+        "digitalMarketing": ["loan-broker-digital-marketing-guide"]
+      }
+    },
+    "buyers-agents": {
+      "name": "Buyers Agents",
+      "slug": "buyers-agents",
+      "description": "buyer's agents, buyer's advocates, and property acquisition specialists",
+      "challenges": [
+        { "title": "Service Awareness", "description": "Educating potential clients about what buyers agents do." },
+        { "title": "Value Justification", "description": "Demonstrating ROI for buyers agent fees." },
+        { "title": "Market Competition", "description": "Standing out in a growing buyers agent market." },
+        { "title": "Geographic Focus", "description": "Marketing expertise in specific property markets." },
+        { "title": "Trust Requirements", "description": "Building trust for significant property investments." },
+        { "title": "Long Sales Cycle", "description": "Nurturing leads through lengthy decision processes." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["buyers-agents-google-ads-strategy"],
+        "seo": ["buyers-agents-seo", "real-estate-seo-marketing-guide"],
+        "leadGeneration": ["buyers-agents-lead-generation", "b2b-lead-generation-strategies"],
+        "digitalMarketing": ["buyers-agents-digital-marketing", "real-estate-seo-marketing-guide"]
+      }
+    },
+    "bricklayers": {
+      "name": "Bricklayers",
+      "slug": "bricklayers",
+      "description": "bricklaying contractors and masonry specialists",
+      "challenges": [
+        { "title": "Project Visibility", "description": "Showcasing quality brickwork and craftsmanship online." },
+        { "title": "Seasonal Demand", "description": "Managing marketing during weather-affected slow periods." },
+        { "title": "Builder Relationships", "description": "Balancing direct clients with builder subcontract work." },
+        { "title": "Price Competition", "description": "Competing against lower-quality operators on price." },
+        { "title": "Portfolio Display", "description": "Effectively showing completed masonry projects." },
+        { "title": "Local Targeting", "description": "Reaching customers in specific geographic service areas." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["google-ads-service-businesses"],
+        "seo": ["local-seo-trade-businesses"],
+        "leadGeneration": ["bricklayers-lead-generation-guide"],
+        "digitalMarketing": ["bricklayers-growth-marketing-strategy", "trade-business-growth-strategies"]
+      }
+    },
+    "floor-sanding": {
+      "name": "Floor Sanding Specialists",
+      "slug": "floor-sanding",
+      "description": "floor sanding, timber floor restoration, and flooring specialists",
+      "challenges": [
+        { "title": "Visual Showcasing", "description": "Displaying before/after timber floor transformations." },
+        { "title": "Seasonal Fluctuations", "description": "Managing demand during renovation busy seasons." },
+        { "title": "Quality Perception", "description": "Communicating craftsmanship vs DIY alternatives." },
+        { "title": "Local Competition", "description": "Standing out among local floor sanding businesses." },
+        { "title": "Project Size Mix", "description": "Balancing small residential and large commercial projects." },
+        { "title": "Review Building", "description": "Generating reviews for visual transformation services." }
+      ],
+      "relatedBlogSlugs": {
+        "googleAds": ["google-ads-service-businesses"],
+        "seo": ["local-seo-trade-businesses"],
+        "leadGeneration": ["trade-business-growth-strategies"],
+        "digitalMarketing": ["floor-sanding-digital-marketing-guide", "trade-business-growth-strategies"]
+      }
+    }
+  },
+  "services": {
+    "google-ads": {
+      "name": "Google Ads",
+      "slug": "google-ads",
+      "parentSlug": "google-ads",
+      "benefits": [
+        "Immediate visibility on Google search results",
+        "Precise targeting by location, keywords, and intent",
+        "Measurable ROI with detailed conversion tracking",
+        "Flexible budget control with no minimum spend",
+        "Retargeting to re-engage interested prospects",
+        "Access to Google Display Network and YouTube ads"
+      ],
+      "faqs": [
+        { "question": "How much should I budget for Google Ads?", "answer": "Budget depends on your industry, competition, and goals. We typically recommend starting with $1,500-$3,000/month to gather meaningful data, then scaling based on performance." },
+        { "question": "How quickly will I see results?", "answer": "You can start seeing traffic immediately. However, optimization for best results typically takes 2-3 months as we refine targeting, ads, and landing pages." },
+        { "question": "What makes your Google Ads management different?", "answer": "We specialize in your industry and understand its unique challenges. Our approach combines data-driven optimization with industry expertise for better ROI." },
+        { "question": "Do you provide landing pages?", "answer": "Yes, we can create or optimize landing pages specifically designed to convert your Google Ads traffic into leads and customers." }
+      ]
+    },
+    "seo": {
+      "name": "SEO Services",
+      "slug": "seo",
+      "parentSlug": "seo-services",
+      "benefits": [
+        "Long-term organic visibility and traffic",
+        "Higher trust and credibility than paid ads",
+        "Lower cost per lead over time",
+        "Local SEO for geographic targeting",
+        "Content that establishes industry authority",
+        "Compound growth as rankings improve"
+      ],
+      "faqs": [
+        { "question": "How long does SEO take to show results?", "answer": "SEO is a long-term strategy. Initial improvements can be seen in 3-4 months, with significant results typically appearing after 6-12 months of consistent effort." },
+        { "question": "What SEO activities do you perform?", "answer": "Our SEO includes technical optimization, content creation, local SEO, link building, and ongoing monitoring. We tailor activities to your industry and competitive landscape." },
+        { "question": "Do you guarantee first page rankings?", "answer": "We don't guarantee specific rankings as Google controls their algorithm. However, we do guarantee following best practices and working towards measurable traffic and lead improvements." },
+        { "question": "Is local SEO included?", "answer": "Yes, local SEO is crucial for service businesses. We optimize your Google Business Profile, local citations, and location-based content." }
+      ]
+    },
+    "lead-generation": {
+      "name": "Lead Generation",
+      "slug": "lead-generation",
+      "parentSlug": "digital-marketing",
+      "benefits": [
+        "Qualified leads delivered directly to you",
+        "Multi-channel approach for maximum reach",
+        "Lead scoring to prioritize hot prospects",
+        "CRM integration for seamless follow-up",
+        "Cost-per-lead transparency",
+        "Scalable systems for growth"
+      ],
+      "faqs": [
+        { "question": "What types of leads will I receive?", "answer": "We generate leads actively searching for your services. Each lead includes contact details and qualification information based on your criteria." },
+        { "question": "How are leads delivered?", "answer": "Leads can be delivered via email, SMS, CRM integration, or a custom dashboard. We set up the delivery method that works best for your sales process." },
+        { "question": "What's the average cost per lead?", "answer": "Cost per lead varies by industry and competition. We'll provide estimates during our strategy call and continuously optimize to improve your cost efficiency." },
+        { "question": "Do you guarantee lead quality?", "answer": "We have strict quality standards and will replace any leads that don't meet agreed criteria. Our goal is delivering leads that convert." }
+      ]
+    },
+    "digital-marketing": {
+      "name": "Digital Marketing",
+      "slug": "digital-marketing",
+      "parentSlug": "digital-marketing",
+      "benefits": [
+        "Comprehensive multi-channel strategy",
+        "Consistent brand presence across platforms",
+        "Data-driven decision making",
+        "Integrated campaigns for maximum impact",
+        "Regular reporting and optimization",
+        "Scalable as your business grows"
+      ],
+      "faqs": [
+        { "question": "What's included in digital marketing services?", "answer": "Our digital marketing includes strategy development, SEO, paid advertising, social media, content marketing, and email marketing—tailored to your business needs." },
+        { "question": "How do you measure success?", "answer": "We track KPIs including traffic, leads, conversion rates, cost per acquisition, and ROI. Monthly reports show exactly what's working and what we're optimizing." },
+        { "question": "Do I need all digital marketing services?", "answer": "Not necessarily. We assess your current situation and recommend the mix that will deliver best results for your budget and goals." },
+        { "question": "How involved do I need to be?", "answer": "As involved as you want. We handle execution but keep you informed with regular updates. We'll need your input on approvals and industry insights." }
+      ]
+    }
+  },
+  "industryServiceContent": {
+    "ndis-providers": {
+      "google-ads": {
+        "metaTitle": "Google Ads for NDIS Providers | NDIS PPC Advertising Agency Australia",
+        "metaDescription": "Expert Google Ads management for NDIS providers. Generate more participant enquiries with targeted PPC campaigns. NDIS-compliant advertising specialists.",
+        "keywords": "google ads ndis, ndis ppc, ndis advertising, ndis provider google ads, ndis marketing agency",
+        "heroTitle": "Google Ads for NDIS Providers",
+        "heroSubtitle": "Generate More Participant Enquiries with Targeted PPC",
+        "heroDescription": "Reach participants and families actively searching for disability support services. Our NDIS-compliant Google Ads campaigns connect you with people who need your services, when they need them most.",
+        "heroPoints": [
+          "Target participants and families actively searching for NDIS services",
+          "NDIS-compliant ad copy that meets all marketing guidelines",
+          "Geographic targeting for your specific service areas",
+          "Track every enquiry from first click to participant registration"
+        ],
+        "benefits": ["NDIS-compliant ad copy and landing pages", "Targeted campaigns for specific NDIS services (SIL, respite, therapy)", "Geographic targeting for your service areas", "Conversion tracking for enquiries and phone calls", "Plan manager and support coordinator targeting", "Remarketing to engaged website visitors"],
+        "solutions": [
+          { "icon": "ShieldCheck", "title": "NDIS-Compliant Campaigns", "description": "We create Google Ads campaigns that comply with NDIS marketing guidelines while still being compelling and effective." },
+          { "icon": "Target", "title": "Service-Specific Targeting", "description": "Separate campaigns for SIL, respite, community access, and other services ensure relevant ads for each search." },
+          { "icon": "Users", "title": "Family & Carer Focus", "description": "Targeting strategies that reach family members and carers who often make initial enquiries on behalf of participants." },
+          { "icon": "MapPin", "title": "Local Area Targeting", "description": "Precise geographic targeting ensures your ads show only to people in your service areas." }
+        ],
+        "faqs": [
+          { "question": "Are Google Ads NDIS compliant?", "answer": "Yes, when done correctly. We ensure all ad copy and landing pages follow NDIS marketing guidelines, avoiding prohibited claims while still being compelling." },
+          { "question": "What NDIS services work best with Google Ads?", "answer": "High-intent services like SIL accommodation, respite care, and allied health therapies typically perform well. We also run campaigns for support coordination and plan management." },
+          { "question": "How do you target NDIS participants?", "answer": "We target searches from participants, families, carers, and professionals. This includes service-specific keywords, location-based terms, and long-tail queries." },
+          { "question": "What budget do NDIS providers need for Google Ads?", "answer": "We typically recommend $1,500-$4,000/month depending on your service areas and the range of NDIS services you offer. Providers with multiple service lines may need higher budgets." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for NDIS Providers | NDIS Search Optimization Agency Australia",
+        "metaDescription": "Expert SEO services for NDIS providers. Rank higher for disability support searches and attract more participants organically with NDIS-compliant content.",
+        "keywords": "ndis seo, ndis provider seo, disability services seo, ndis search optimization",
+        "heroTitle": "SEO for NDIS Providers",
+        "heroSubtitle": "Rank Higher for Disability Support Searches",
+        "heroDescription": "Build sustainable organic visibility for your NDIS services. Our SEO strategies help participants and families find you when searching for disability support in your area.",
+        "heroPoints": [
+          "Rank higher for NDIS service searches in your local area",
+          "Build long-term organic traffic that reduces cost per participant",
+          "Establish authority as a trusted NDIS provider online",
+          "Attract participants already searching for your specific services"
+        ],
+        "benefits": ["Long-term organic visibility and traffic", "Higher trust and credibility than paid ads", "Lower cost per lead over time", "Local SEO for geographic targeting", "Content that establishes industry authority", "Compound growth as rankings improve"],
+        "solutions": [
+          { "icon": "FileText", "title": "NDIS Service Page Optimization", "description": "Dedicated pages for each NDIS service you offer, optimized for how participants search." },
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches in your service areas with optimized Google Business Profile and local citations." },
+          { "icon": "Award", "title": "Content Authority Building", "description": "Educational content that positions you as a trusted NDIS expert while improving rankings." },
+          { "icon": "Settings", "title": "Technical SEO Foundation", "description": "Fast, mobile-friendly website structure that search engines love and participants can navigate easily." }
+        ],
+        "faqs": [
+          { "question": "How long does NDIS SEO take to work?", "answer": "Initial improvements typically appear in 3-4 months. Significant ranking improvements for competitive NDIS keywords usually take 6-12 months of consistent effort." },
+          { "question": "What NDIS keywords should we target?", "answer": "We target service-specific keywords (SIL, respite, therapy), location-based searches, and long-tail queries that participants and families actually use." },
+          { "question": "Do you handle Google Business Profile?", "answer": "Yes, local SEO including Google Business Profile optimization is crucial for NDIS providers and is included in our services." },
+          { "question": "Can SEO help us get more support coordinator referrals?", "answer": "Yes, by ranking for searches support coordinators make when finding providers, and creating content that positions you as a trusted partner." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for NDIS Providers | NDIS Participant Acquisition Australia",
+        "metaDescription": "Generate qualified NDIS participant leads with proven lead generation strategies. Connect with participants, families, and support coordinators actively seeking services.",
+        "keywords": "ndis lead generation, ndis participant acquisition, ndis provider leads, disability services leads",
+        "heroTitle": "Lead Generation for NDIS Providers",
+        "heroSubtitle": "Connect with Participants Actively Seeking Services",
+        "heroDescription": "Build a consistent pipeline of qualified participant enquiries. Our lead generation strategies connect you with participants, families, and coordinators who are actively searching for disability support services.",
+        "heroPoints": [
+          "Receive qualified participant enquiries delivered to your inbox",
+          "Multi-channel approach reaching participants across platforms",
+          "Build relationships with support coordinators who refer participants",
+          "Scalable systems that grow with your NDIS organization"
+        ],
+        "benefits": ["Qualified leads delivered directly to you", "Multi-channel approach for maximum reach", "Lead scoring to prioritize hot prospects", "CRM integration for seamless follow-up", "Cost-per-lead transparency", "Scalable systems for growth"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Lead Generation", "description": "Combine Google Ads, SEO, social media, and referral strategies to maximize your lead flow." },
+          { "icon": "Handshake", "title": "Support Coordinator Outreach", "description": "Targeted campaigns to build relationships with support coordinators who can refer participants." },
+          { "icon": "Mail", "title": "Lead Nurturing Sequences", "description": "Automated follow-up systems that convert enquiries into registered participants." },
+          { "icon": "Share2", "title": "Referral Program Development", "description": "Systems to encourage and track referrals from satisfied participants and families." }
+        ],
+        "faqs": [
+          { "question": "What types of NDIS leads will I receive?", "answer": "We generate leads from participants, families, carers, and support coordinators. Each lead includes contact details and service requirements to help you qualify quickly." },
+          { "question": "How are NDIS leads delivered?", "answer": "Leads can be delivered via email, SMS, or directly into your CRM system. We set up the method that works best for your intake process." },
+          { "question": "Do you guarantee lead volume?", "answer": "We don't guarantee specific volumes as this depends on your services and location. We do guarantee transparency on lead costs and continuous optimization for improvement." },
+          { "question": "How quickly can we expect to see results?", "answer": "Paid channels can generate leads within the first week. SEO-based lead generation takes 3-6 months to build momentum but provides sustainable long-term flow." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for NDIS Providers | NDIS Marketing Agency Australia",
+        "metaDescription": "Comprehensive digital marketing services for NDIS providers. Build your brand, attract participants, and grow your disability support services with proven strategies.",
+        "keywords": "ndis digital marketing, ndis marketing agency, disability services marketing, ndis provider marketing",
+        "heroTitle": "Digital Marketing for NDIS Providers",
+        "heroSubtitle": "Grow Your NDIS Services with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that attracts participants and establishes your authority in the disability services sector. Our integrated marketing approach delivers sustainable growth for NDIS providers.",
+        "heroPoints": [
+          "Unified marketing strategy across all digital channels",
+          "NDIS-compliant messaging that builds trust with participants",
+          "Establish your brand as a leading disability support provider",
+          "Data-driven optimization that maximizes every marketing dollar"
+        ],
+        "benefits": ["Unified strategy across all digital channels", "NDIS-compliant marketing materials", "Brand building for trust and credibility", "Consistent messaging across touchpoints", "Data-driven optimization", "Scalable marketing systems"],
+        "solutions": [
+          { "icon": "LayoutGrid", "title": "Integrated Marketing Strategy", "description": "Cohesive marketing plan that aligns SEO, PPC, social, and content marketing for maximum impact." },
+          { "icon": "Palette", "title": "Brand Development", "description": "Professional branding that builds trust with participants, families, and referral partners." },
+          { "icon": "PenTool", "title": "Content Marketing", "description": "Educational content that positions you as a trusted NDIS expert and improves search visibility." },
+          { "icon": "Share2", "title": "Social Media Presence", "description": "Strategic social media management to build community and engage with participants and families." }
+        ],
+        "faqs": [
+          { "question": "What digital marketing works best for NDIS providers?", "answer": "A combination of local SEO, Google Ads for high-intent searches, and content marketing typically delivers the best results. The ideal mix depends on your specific services and target areas." },
+          { "question": "How do you ensure NDIS compliance?", "answer": "We stay current with NDIS marketing guidelines and ensure all content follows compliance requirements. This includes avoiding prohibited claims while still creating compelling marketing." },
+          { "question": "Can you help with our website?", "answer": "Yes, we can create or optimize your website as part of a comprehensive digital marketing strategy, ensuring it converts visitors into enquiries." },
+          { "question": "How do you measure NDIS marketing success?", "answer": "We track participant enquiries, cost per enquiry, website traffic, conversion rates, and ultimately registered participants. Monthly reports show exactly how marketing is driving growth." }
+        ]
+      }
+    },
+    "builders": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Builders | Builder PPC Advertising Agency Australia",
+        "metaDescription": "Expert Google Ads management for builders and construction companies. Generate quality leads for new homes, renovations, and commercial projects.",
+        "keywords": "google ads builders, builder ppc, construction advertising, builder marketing, home builder ads",
+        "heroTitle": "Google Ads for Builders",
+        "heroSubtitle": "Generate Quality Building Leads with Targeted PPC",
+        "heroDescription": "Connect with homeowners and property developers actively searching for building services. Our Google Ads campaigns target high-intent searches to deliver qualified leads for your construction business.",
+        "heroPoints": [
+          "Reach homeowners actively searching for builders in your area",
+          "Separate campaigns for new builds, renovations, and extensions",
+          "Track every lead from first click to signed contract",
+          "Geographic targeting to focus on your preferred suburbs"
+        ],
+        "benefits": ["Target homeowners actively searching for builders", "Separate campaigns for new builds, renovations, extensions", "Geographic targeting for your service areas", "Lead tracking from first click to signed contract", "Competitor targeting strategies", "Seasonal campaign optimization"],
+        "solutions": [
+          { "icon": "Hammer", "title": "Service-Specific Campaigns", "description": "Dedicated campaigns for new home builds, renovations, extensions, and commercial projects." },
+          { "icon": "MapPin", "title": "Local Area Domination", "description": "Target homeowners in specific suburbs and regions where you want to build." },
+          { "icon": "Search", "title": "High-Intent Keywords", "description": "Focus on searches that indicate serious buyers, not just browsers." },
+          { "icon": "Filter", "title": "Lead Quality Optimization", "description": "Continuous refinement to attract serious projects, not price shoppers." }
+        ],
+        "faqs": [
+          { "question": "What budget do builders need for Google Ads?", "answer": "Building projects have high value, so we typically recommend $2,000-$5,000/month to generate meaningful lead volume. ROI is usually strong given project values." },
+          { "question": "How do you target different building services?", "answer": "We create separate campaigns for new builds, renovations, extensions, and other services to ensure relevant ads and landing pages for each search type." },
+          { "question": "Can you target specific suburbs?", "answer": "Yes, geographic targeting is a key strength. We can target specific suburbs, regions, or even radius targeting around your preferred work areas." },
+          { "question": "How do you measure builder Google Ads success?", "answer": "We track leads, cost per lead, lead quality scores, and ultimately jobs won. We optimize for quality leads that convert to signed contracts, not just enquiries." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Builders | Builder Search Optimization Agency Australia",
+        "metaDescription": "Expert SEO services for builders and construction companies. Rank higher for building searches and attract quality leads organically.",
+        "keywords": "builder seo, construction seo, home builder seo, builder marketing, local seo builders",
+        "heroTitle": "SEO for Builders",
+        "heroSubtitle": "Rank Higher for Building Searches in Your Area",
+        "heroDescription": "Build long-term visibility for your construction business. Our SEO strategies help homeowners find you when searching for builders in your service area.",
+        "heroPoints": [
+          "Rank organically for 'builder near me' and suburb-specific searches",
+          "Showcase your portfolio to build trust before the first contact",
+          "Lower your cost per lead compared to paid advertising",
+          "Build lasting online authority in your local market"
+        ],
+        "benefits": ["Long-term organic visibility", "Local SEO for geographic targeting", "Portfolio showcasing for credibility", "Lower cost per lead over time", "Authority building through content", "Compound traffic growth"],
+        "solutions": [
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches with optimized Google Business Profile, citations, and location pages." },
+          { "icon": "Image", "title": "Portfolio Optimization", "description": "Showcase completed projects in a way that ranks and converts visitors." },
+          { "icon": "FileText", "title": "Service Area Pages", "description": "Dedicated pages for each suburb and region you serve to capture local searches." },
+          { "icon": "PenTool", "title": "Content Strategy", "description": "Educational content that positions you as the go-to builder in your market." }
+        ],
+        "faqs": [
+          { "question": "How long does builder SEO take?", "answer": "Initial improvements typically appear in 3-4 months. Significant rankings for competitive terms like 'builder [suburb]' usually take 6-12 months." },
+          { "question": "Can SEO help with commercial building leads?", "answer": "Yes, we can target commercial property searches and industry-specific terms to attract commercial and industrial project enquiries." },
+          { "question": "Do you optimize Google Business Profile?", "answer": "Absolutely, Google Business Profile is crucial for builders. We optimize your profile, manage reviews, and create posts to maximize local visibility." },
+          { "question": "What content should builders create for SEO?", "answer": "Project case studies, building guides, local area content, and educational articles about renovation and construction processes all perform well." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Builders | Construction Lead Generation Australia",
+        "metaDescription": "Generate qualified building leads with proven strategies. Connect with homeowners ready to start new home, renovation, and extension projects.",
+        "keywords": "builder lead generation, construction leads, home builder leads, renovation leads",
+        "heroTitle": "Lead Generation for Builders",
+        "heroSubtitle": "Connect with Homeowners Ready to Build",
+        "heroDescription": "Build a consistent pipeline of qualified building enquiries. Our lead generation strategies connect you with serious homeowners and developers who are ready to start projects.",
+        "heroPoints": [
+          "Receive qualified leads from homeowners ready to build",
+          "Filter leads by project type, budget, and timeline",
+          "Multi-channel approach for consistent lead flow",
+          "CRM integration for seamless follow-up"
+        ],
+        "benefits": ["Qualified project leads", "Multi-channel lead sourcing", "Lead qualification filtering", "CRM integration", "Cost-per-lead tracking", "Scalable lead flow"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and social media to maximize your lead pipeline." },
+          { "icon": "Filter", "title": "Lead Qualification", "description": "Filter leads by project type, budget range, and timeline to focus on serious enquiries." },
+          { "icon": "Mail", "title": "Follow-Up Systems", "description": "Automated nurturing to convert enquiries into booked consultations." },
+          { "icon": "Share2", "title": "Referral Programs", "description": "Systems to encourage and track referrals from satisfied clients." }
+        ],
+        "faqs": [
+          { "question": "What type of building leads will I receive?", "answer": "We can target specific project types: new homes, renovations, extensions, or commercial. Leads include contact details and project requirements." },
+          { "question": "How are leads delivered?", "answer": "Leads can be delivered via email, SMS, or directly into your CRM for immediate follow-up." },
+          { "question": "What is the typical cost per lead?", "answer": "Building lead costs vary by project type and location, typically ranging from $50-$200 per qualified lead. ROI is usually strong given project values." },
+          { "question": "Can you help us win more quotes?", "answer": "Yes, we provide follow-up systems and nurturing sequences that help convert more enquiries into signed contracts." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Builders | Construction Marketing Agency Australia",
+        "metaDescription": "Comprehensive digital marketing for builders and construction companies. Build your brand, showcase projects, and generate quality leads.",
+        "keywords": "builder digital marketing, construction marketing, home builder marketing, builder advertising",
+        "heroTitle": "Digital Marketing for Builders",
+        "heroSubtitle": "Grow Your Building Business with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that showcases your work and attracts quality projects. Our integrated marketing approach delivers sustainable growth for builders.",
+        "heroPoints": [
+          "Unified marketing strategy across all digital channels",
+          "Professional portfolio showcasing your best work",
+          "Reputation management that builds trust with prospects",
+          "Data-driven campaigns that maximize marketing ROI"
+        ],
+        "benefits": ["Unified digital strategy", "Professional brand presence", "Portfolio showcasing", "Multi-channel lead generation", "Reputation management", "Data-driven optimization"],
+        "solutions": [
+          { "icon": "Palette", "title": "Brand Development", "description": "Professional branding that differentiates you from competitors and builds trust." },
+          { "icon": "Image", "title": "Portfolio Marketing", "description": "Showcase completed projects through video, photography, and case studies." },
+          { "icon": "Star", "title": "Review Management", "description": "Systems to generate and manage online reviews that build credibility." },
+          { "icon": "LayoutGrid", "title": "Integrated Campaigns", "description": "Coordinated marketing across search, social, and content channels." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for builders?", "answer": "A combination of local SEO, Google Ads, and strong portfolio content typically delivers the best results. Social media can also work well for showcasing completed projects." },
+          { "question": "Can you help with our website?", "answer": "Yes, we can create or optimize your website with proper portfolio display, lead capture forms, and conversion optimization." },
+          { "question": "How do you showcase our work?", "answer": "We help create professional case studies, project galleries, and video content that demonstrates your quality and expertise." },
+          { "question": "How do you measure success for builders?", "answer": "We track leads, consultations booked, quotes sent, and ultimately contracts signed. Our focus is on generating leads that become profitable projects." }
+        ]
+      }
+    },
+    "painters": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Painters | Painting PPC Advertising Agency Australia",
+        "metaDescription": "Expert Google Ads management for painters. Generate quality leads for residential and commercial painting projects with targeted PPC campaigns.",
+        "keywords": "google ads painters, painter ppc, painting advertising, painter marketing",
+        "heroTitle": "Google Ads for Painters",
+        "heroSubtitle": "Generate More Painting Jobs with Targeted PPC",
+        "heroDescription": "Connect with homeowners and businesses actively searching for painting services. Our Google Ads campaigns target high-intent searches to deliver qualified leads.",
+        "heroPoints": [
+          "Target property owners actively searching for painters",
+          "Separate campaigns for interior, exterior, and commercial work",
+          "Geographic targeting for your preferred service areas",
+          "Optimize for quality leads that book quotes, not tire-kickers"
+        ],
+        "benefits": ["Target homeowners actively searching for painters", "Separate campaigns for residential and commercial", "Geographic targeting for your service areas", "Lead tracking for all enquiry types", "Seasonal campaign optimization", "Competitor targeting strategies"],
+        "solutions": [
+          { "icon": "Paintbrush", "title": "Service-Specific Campaigns", "description": "Dedicated campaigns for interior, exterior, residential, and commercial painting." },
+          { "icon": "MapPin", "title": "Local Area Targeting", "description": "Target property owners in specific suburbs and regions." },
+          { "icon": "Calendar", "title": "Seasonal Strategy", "description": "Optimize campaigns around weather patterns and peak painting seasons." },
+          { "icon": "Filter", "title": "Lead Quality Focus", "description": "Attract quality-focused customers, not just price shoppers." }
+        ],
+        "faqs": [
+          { "question": "What budget do painters need for Google Ads?", "answer": "We recommend $1,000-$3,000/month depending on your service area and target mix of residential vs. commercial work." },
+          { "question": "How do you target different painting services?", "answer": "We create separate campaigns for interior, exterior, residential, commercial, and specialty services." },
+          { "question": "Can you target specific suburbs?", "answer": "Yes, we can target specific suburbs, regions, or radius targeting around your preferred work areas." },
+          { "question": "How do you handle seasonal painting demand?", "answer": "We adjust budgets and messaging seasonally—ramping up in peak exterior season and shifting to interior campaigns during wet weather." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Painters | Painting Search Optimization Agency Australia",
+        "metaDescription": "Expert SEO services for painters. Rank higher for painting searches and attract quality leads organically in your service area.",
+        "keywords": "painter seo, painting company seo, painter marketing, local seo painters",
+        "heroTitle": "SEO for Painters",
+        "heroSubtitle": "Rank Higher for Painting Searches in Your Area",
+        "heroDescription": "Build long-term visibility for your painting business. Our SEO strategies help property owners find you when searching for painters in your service area.",
+        "heroPoints": [
+          "Rank organically for 'painter near me' searches in your area",
+          "Showcase stunning before/after transformations that convert",
+          "Build trust through reviews and portfolio content",
+          "Lower cost per lead compared to ongoing ad spend"
+        ],
+        "benefits": ["Long-term organic visibility", "Local SEO for geographic targeting", "Portfolio showcasing", "Lower cost per lead over time", "Review management integration", "Compound traffic growth"],
+        "solutions": [
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches for 'painter [suburb]' and related terms." },
+          { "icon": "ImagePlus", "title": "Portfolio Optimization", "description": "Showcase before/after transformations that rank and convert." },
+          { "icon": "FileText", "title": "Service Pages", "description": "Dedicated pages for each painting service you offer." },
+          { "icon": "Star", "title": "Review Strategy", "description": "Build and showcase reviews that improve rankings and trust." }
+        ],
+        "faqs": [
+          { "question": "How long does painter SEO take?", "answer": "Initial improvements typically appear in 2-3 months. Competitive local rankings usually take 4-8 months." },
+          { "question": "Are before/after photos important for SEO?", "answer": "Yes, optimized before/after galleries attract searchers and demonstrate quality. They're also great for image search traffic." },
+          { "question": "Do you optimize Google Business Profile?", "answer": "Yes, GBP optimization is crucial for painters and is included in our services." },
+          { "question": "What content should painters create?", "answer": "Before/after galleries, service area pages, painting guides, color selection tips, and project showcases all perform well for SEO." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Painters | Painting Lead Generation Australia",
+        "metaDescription": "Generate qualified painting leads with proven strategies. Connect with property owners needing residential and commercial painting services.",
+        "keywords": "painter lead generation, painting leads, painting contractor leads",
+        "heroTitle": "Lead Generation for Painters",
+        "heroSubtitle": "Connect with Clients Needing Painting Services",
+        "heroDescription": "Build a consistent pipeline of qualified painting enquiries. Our lead generation strategies connect you with residential and commercial clients.",
+        "heroPoints": [
+          "Receive qualified leads from property owners ready to paint",
+          "Filter leads by job type and property size",
+          "Multi-channel approach for consistent lead flow",
+          "CRM integration for immediate follow-up"
+        ],
+        "benefits": ["Qualified job leads", "Multi-channel lead sourcing", "Lead qualification filtering", "CRM integration", "Cost-per-lead tracking", "Scalable lead flow"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and social media for consistent lead flow." },
+          { "icon": "Filter", "title": "Lead Qualification", "description": "Filter leads by job type and client type (residential/commercial)." },
+          { "icon": "Mail", "title": "Follow-Up Systems", "description": "Automated nurturing to convert enquiries into booked quotes." },
+          { "icon": "Share2", "title": "Referral Programs", "description": "Systems to encourage and track referrals from satisfied customers." }
+        ],
+        "faqs": [
+          { "question": "What types of painting leads will I receive?", "answer": "We can target specific job types: residential, commercial, interior, exterior. Leads include contact details and job requirements." },
+          { "question": "How are leads delivered?", "answer": "Leads can be delivered via email, SMS, or directly into your CRM." },
+          { "question": "What is the typical cost per lead?", "answer": "Painting lead costs typically range from $30-$80 per qualified lead depending on job size and type." },
+          { "question": "How quickly do painting leads convert?", "answer": "Most painting leads are looking to proceed within 1-4 weeks. Quick follow-up is essential—we recommend responding within 1 hour." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Painters | Painting Marketing Agency Australia",
+        "metaDescription": "Comprehensive digital marketing for painters. Build your reputation, showcase transformations, and generate quality leads.",
+        "keywords": "painter digital marketing, painting company marketing, painter advertising",
+        "heroTitle": "Digital Marketing for Painters",
+        "heroSubtitle": "Grow Your Painting Business with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that showcases your work and attracts quality projects. Our integrated marketing approach delivers sustainable growth.",
+        "heroPoints": [
+          "Unified marketing strategy across search, social, and content",
+          "Visual portfolio that showcases your best transformations",
+          "Reputation management that builds trust and credibility",
+          "Seasonal marketing optimization for year-round leads"
+        ],
+        "benefits": ["Unified digital strategy", "Visual portfolio showcasing", "Multi-channel presence", "Reputation management", "Seasonal marketing optimization", "Data-driven results"],
+        "solutions": [
+          { "icon": "ImagePlus", "title": "Visual Marketing", "description": "Showcase stunning before/after transformations across all platforms." },
+          { "icon": "MapPin", "title": "Local Presence", "description": "Comprehensive local marketing to be the go-to painter in your area." },
+          { "icon": "Star", "title": "Review Management", "description": "Build and leverage positive reviews and testimonials." },
+          { "icon": "Camera", "title": "Social Visual Strategy", "description": "Leverage visual platforms to showcase your work." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for painters?", "answer": "Visual content showcasing transformations, local SEO, and Google Ads typically deliver the best results." },
+          { "question": "How important are before/after photos?", "answer": "Critical. Painting is visual and before/after photos are the most persuasive content type for attracting quality clients." },
+          { "question": "Can social media work for painters?", "answer": "Yes, visual platforms like Instagram and Facebook are excellent for showcasing painting transformations and building local reputation." },
+          { "question": "How do you measure success for painting businesses?", "answer": "We track leads, quote requests, jobs booked, and revenue generated. Our focus is on profitable jobs, not just enquiry volume." }
+        ]
+      }
+    },
+    "electricians": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Electricians | Electrical PPC Advertising Agency Australia",
+        "metaDescription": "Expert Google Ads management for electricians. Generate emergency and planned electrical job leads with targeted PPC campaigns.",
+        "keywords": "google ads electricians, electrician ppc, electrical advertising, electrician marketing",
+        "heroTitle": "Google Ads for Electricians",
+        "heroSubtitle": "Generate More Electrical Jobs with Targeted PPC",
+        "heroDescription": "Connect with homeowners and businesses needing electrical services. Our Google Ads campaigns capture both emergency searches and planned electrical work enquiries.",
+        "heroPoints": [
+          "Capture emergency electrical searches 24/7",
+          "Target residential, commercial, and specialty services",
+          "Click-to-call ads for urgent job bookings",
+          "Geographic targeting for your service areas"
+        ],
+        "benefits": ["Capture emergency electrical searches", "Target residential and commercial clients", "Geographic targeting for your service areas", "24/7 campaign monitoring for emergencies", "Lead tracking for all enquiry types", "Specialty service targeting"],
+        "solutions": [
+          { "icon": "Zap", "title": "Emergency Response Campaigns", "description": "Capture urgent electrical searches with fast-loading ads and click-to-call." },
+          { "icon": "Target", "title": "Service-Specific Targeting", "description": "Dedicated campaigns for residential, commercial, solar, and EV chargers." },
+          { "icon": "MapPin", "title": "Local Area Domination", "description": "Target property owners in your service areas." },
+          { "icon": "Building2", "title": "Commercial Lead Generation", "description": "Targeted campaigns for commercial and industrial contracts." }
+        ],
+        "faqs": [
+          { "question": "How do you capture emergency electrical searches?", "answer": "We use 24/7 campaigns with emergency-focused ad copy, click-to-call extensions, and fast-loading mobile pages." },
+          { "question": "What budget do electricians need for Google Ads?", "answer": "We recommend $1,500-$4,000/month depending on your service area and target mix." },
+          { "question": "Can you target specialty services?", "answer": "Yes, we create separate campaigns for solar, EV chargers, smart home, and other specialties." },
+          { "question": "How do you measure success for electrician Google Ads?", "answer": "We track calls, form submissions, cost per lead, and booked jobs. Our focus is on generating profitable work, not just clicks." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Electricians | Electrical Search Optimization Agency Australia",
+        "metaDescription": "Expert SEO services for electricians. Rank higher for electrical searches and attract quality leads organically.",
+        "keywords": "electrician seo, electrical company seo, electrician marketing, local seo electricians",
+        "heroTitle": "SEO for Electricians",
+        "heroSubtitle": "Rank Higher for Electrical Searches in Your Area",
+        "heroDescription": "Build long-term visibility for your electrical business. Our SEO strategies help property owners find you for both emergency and planned electrical work.",
+        "heroPoints": [
+          "Rank organically for 'electrician near me' emergency searches",
+          "Build trust through reviews and local presence",
+          "Lower cost per lead compared to ongoing ads",
+          "Specialty service pages for solar, EV, and smart home"
+        ],
+        "benefits": ["Long-term organic visibility", "Local SEO for emergency searches", "Service page optimization", "Lower cost per lead over time", "Review management integration", "Compound traffic growth"],
+        "solutions": [
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches including emergency 'electrician near me' queries." },
+          { "icon": "FileText", "title": "Service Page Strategy", "description": "Comprehensive pages for each electrical service you offer." },
+          { "icon": "Settings", "title": "Technical SEO", "description": "Fast-loading, mobile-optimized site crucial for emergency searches." },
+          { "icon": "Star", "title": "Review Strategy", "description": "Build and showcase reviews that improve rankings and trust." }
+        ],
+        "faqs": [
+          { "question": "How long does electrician SEO take?", "answer": "Initial improvements typically appear in 2-3 months. Competitive local rankings usually take 4-8 months." },
+          { "question": "Can SEO capture emergency searches?", "answer": "Yes, with proper local SEO and fast site speed, you can rank for emergency electrician searches." },
+          { "question": "Do you optimize Google Business Profile?", "answer": "Yes, GBP optimization is crucial for electricians and is included in our services." },
+          { "question": "What content should electricians create?", "answer": "Service pages, suburb pages, safety guides, and educational content about electrical work all perform well for SEO." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Electricians | Electrical Lead Generation Australia",
+        "metaDescription": "Generate qualified electrical leads with proven strategies. Connect with clients needing residential, commercial, and emergency electrical services.",
+        "keywords": "electrician lead generation, electrical leads, electrician contractor leads",
+        "heroTitle": "Lead Generation for Electricians",
+        "heroSubtitle": "Connect with Clients Needing Electrical Services",
+        "heroDescription": "Build a consistent pipeline of qualified electrical enquiries. Our lead generation strategies connect you with residential and commercial clients.",
+        "heroPoints": [
+          "Receive qualified leads for emergency and planned work",
+          "Instant SMS/email delivery for urgent leads",
+          "Filter leads by job type and client type",
+          "Scalable systems that grow with your business"
+        ],
+        "benefits": ["Qualified job leads", "Emergency and planned work mix", "Lead qualification filtering", "CRM integration", "Cost-per-lead tracking", "Scalable lead flow"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and local marketing for consistent lead flow." },
+          { "icon": "Filter", "title": "Lead Qualification", "description": "Filter leads by job type, urgency, and client type." },
+          { "icon": "Bell", "title": "Rapid Response Systems", "description": "Immediate notifications for emergency leads." },
+          { "icon": "Building2", "title": "Commercial Pipeline", "description": "Targeted strategies for commercial and industrial contracts." }
+        ],
+        "faqs": [
+          { "question": "What types of electrical leads will I receive?", "answer": "We can target specific job types: residential, commercial, emergency, or specialty work." },
+          { "question": "How quickly are emergency leads delivered?", "answer": "Emergency leads are delivered instantly via SMS and email." },
+          { "question": "What is the typical cost per lead?", "answer": "Electrical lead costs typically range from $40-$120 per qualified lead." },
+          { "question": "Can you help us grow commercial work?", "answer": "Yes, we develop targeted strategies specifically for attracting commercial and industrial electrical contracts." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Electricians | Electrical Marketing Agency Australia",
+        "metaDescription": "Comprehensive digital marketing for electricians. Build your reputation, capture emergency searches, and generate quality leads.",
+        "keywords": "electrician digital marketing, electrical company marketing, electrician advertising",
+        "heroTitle": "Digital Marketing for Electricians",
+        "heroSubtitle": "Grow Your Electrical Business with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that captures both emergency and planned electrical work. Our integrated marketing approach delivers sustainable growth.",
+        "heroPoints": [
+          "Unified strategy across search, social, and content",
+          "24/7 digital presence for emergency search capture",
+          "Reputation management that builds trust",
+          "Commercial lead development for larger contracts"
+        ],
+        "benefits": ["Unified digital strategy", "Emergency search capture", "Multi-channel presence", "Reputation management", "Commercial lead development", "Data-driven optimization"],
+        "solutions": [
+          { "icon": "Clock", "title": "Always-On Presence", "description": "Digital presence optimized for 24/7 emergency search capture." },
+          { "icon": "ShieldCheck", "title": "Trust Building", "description": "Reputation management and credibility building across all platforms." },
+          { "icon": "Zap", "title": "Service Marketing", "description": "Highlight your full range of electrical services effectively." },
+          { "icon": "Building2", "title": "Commercial Development", "description": "Targeted strategies for commercial and industrial client acquisition." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for electricians?", "answer": "Local SEO for emergency searches, Google Ads for immediate leads, and reputation management typically deliver the best results." },
+          { "question": "How important are reviews for electricians?", "answer": "Critical. Emergency searches especially rely on trust signals like reviews." },
+          { "question": "Can you help grow commercial work?", "answer": "Yes, we develop targeted strategies to attract commercial and industrial contracts." },
+          { "question": "How do you measure success?", "answer": "We track leads, booked jobs, revenue generated, and ROI. Our focus is on profitable work, not just marketing metrics." }
+        ]
+      }
+    },
+    "plumbers": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Plumbers | Plumbing PPC Advertising Agency Australia",
+        "metaDescription": "Expert Google Ads management for plumbers. Generate emergency and planned plumbing job leads with targeted PPC campaigns.",
+        "keywords": "google ads plumbers, plumber ppc, plumbing advertising, plumber marketing",
+        "heroTitle": "Google Ads for Plumbers",
+        "heroSubtitle": "Generate More Plumbing Jobs with Targeted PPC",
+        "heroDescription": "Connect with homeowners and businesses needing plumbing services. Our Google Ads campaigns capture both emergency searches and planned plumbing work enquiries.",
+        "heroPoints": [
+          "Capture emergency plumbing searches 24/7",
+          "Target hot water, drainage, and gas plumbing services",
+          "Click-to-call ads for urgent job bookings",
+          "Geographic targeting for your service areas"
+        ],
+        "benefits": ["Capture emergency plumbing searches", "Target residential and commercial clients", "Geographic targeting for your service areas", "Lead tracking for all enquiry types", "24/7 campaign monitoring for emergencies", "Seasonal campaign optimization"],
+        "solutions": [
+          { "icon": "Droplets", "title": "Emergency Response Campaigns", "description": "Capture urgent plumbing searches like burst pipes and blocked drains with fast-loading ads and click-to-call." },
+          { "icon": "Target", "title": "Service-Specific Targeting", "description": "Dedicated campaigns for hot water, drainage, renovations, and gas plumbing." },
+          { "icon": "MapPin", "title": "Local Area Domination", "description": "Target property owners in specific suburbs and regions." },
+          { "icon": "Building2", "title": "Commercial Lead Generation", "description": "Targeted campaigns for commercial and industrial plumbing contracts." }
+        ],
+        "faqs": [
+          { "question": "How do you capture emergency plumbing searches?", "answer": "We use 24/7 campaigns with emergency-focused ad copy, click-to-call extensions, and fast-loading mobile pages for urgent enquiries." },
+          { "question": "What budget do plumbers need for Google Ads?", "answer": "We recommend $1,500-$4,000/month depending on your service area and target mix of emergency vs. planned work." },
+          { "question": "Can you target specific plumbing services?", "answer": "Yes, we create separate campaigns for hot water, drainage, gas, renovations, and emergency services." },
+          { "question": "How do you measure plumber Google Ads success?", "answer": "We track calls, form submissions, cost per lead, and booked jobs. Our focus is on generating profitable work." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Plumbers | Plumbing Search Optimization Agency Australia",
+        "metaDescription": "Expert SEO services for plumbers. Rank higher for plumbing searches and attract quality leads organically in your service area.",
+        "keywords": "plumber seo, plumbing company seo, plumber marketing, local seo plumbers",
+        "heroTitle": "SEO for Plumbers",
+        "heroSubtitle": "Rank Higher for Plumbing Searches in Your Area",
+        "heroDescription": "Build long-term visibility for your plumbing business. Our SEO strategies help property owners find you for both emergency and planned plumbing work.",
+        "heroPoints": [
+          "Rank organically for 'plumber near me' emergency searches",
+          "Build trust through reviews and local presence",
+          "Lower cost per lead compared to ongoing ads",
+          "Service pages for every plumbing specialty"
+        ],
+        "benefits": ["Long-term organic visibility", "Local SEO for emergency searches", "Service page optimization", "Lower cost per lead over time", "Review management integration", "Compound traffic growth"],
+        "solutions": [
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches including emergency 'plumber near me' queries." },
+          { "icon": "FileText", "title": "Service Page Strategy", "description": "Comprehensive pages for each plumbing service you offer." },
+          { "icon": "Settings", "title": "Technical SEO", "description": "Fast-loading, mobile-optimized site crucial for emergency searches." },
+          { "icon": "Star", "title": "Review Strategy", "description": "Build and showcase reviews that improve rankings and trust." }
+        ],
+        "faqs": [
+          { "question": "How long does plumber SEO take?", "answer": "Initial improvements typically appear in 2-3 months. Competitive 'plumber [suburb]' rankings usually take 4-8 months." },
+          { "question": "Can SEO capture emergency searches?", "answer": "Yes, with proper local SEO and fast site speed, you can rank for 'emergency plumber' searches in your area." },
+          { "question": "Do you optimize Google Business Profile?", "answer": "Yes, GBP optimization is crucial for plumbers and is included in our services." },
+          { "question": "What content should plumbers create?", "answer": "Service pages, suburb pages, maintenance guides, and educational content about plumbing issues all perform well." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Plumbers | Plumbing Lead Generation Australia",
+        "metaDescription": "Generate qualified plumbing leads with proven strategies. Connect with property owners needing residential, commercial, and emergency plumbing services.",
+        "keywords": "plumber lead generation, plumbing leads, plumbing contractor leads, plumbing job leads",
+        "heroTitle": "Lead Generation for Plumbers",
+        "heroSubtitle": "Connect with Clients Needing Plumbing Services",
+        "heroDescription": "Build a consistent pipeline of qualified plumbing enquiries. Our lead generation strategies connect you with residential and commercial clients needing plumbing work.",
+        "heroPoints": [
+          "Receive qualified leads for emergency and planned work",
+          "Instant SMS/email delivery for urgent leads",
+          "Filter leads by job type and urgency",
+          "Scalable systems that grow with your business"
+        ],
+        "benefits": ["Qualified job leads", "Emergency and planned work mix", "Lead qualification filtering", "CRM integration", "Cost-per-lead tracking", "Scalable lead flow"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and local marketing for consistent lead flow." },
+          { "icon": "Filter", "title": "Lead Qualification", "description": "Filter leads by job type, urgency, and client type (residential/commercial)." },
+          { "icon": "Bell", "title": "Rapid Response Systems", "description": "Immediate notifications for emergency leads requiring fast follow-up." },
+          { "icon": "Building2", "title": "Commercial Pipeline", "description": "Targeted strategies for commercial and industrial plumbing contracts." }
+        ],
+        "faqs": [
+          { "question": "What types of plumbing leads will I receive?", "answer": "We can target specific job types: residential, commercial, emergency, or specialty work. Leads include contact details and job requirements." },
+          { "question": "How quickly are emergency leads delivered?", "answer": "Emergency leads are delivered instantly via SMS and email to enable rapid response." },
+          { "question": "What is the typical cost per lead?", "answer": "Plumbing lead costs typically range from $40-$120 per qualified lead depending on job type and urgency." },
+          { "question": "Can you help us grow commercial work?", "answer": "Yes, we develop targeted strategies specifically for attracting commercial and industrial plumbing contracts." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Plumbers | Plumbing Marketing Agency Australia",
+        "metaDescription": "Comprehensive digital marketing for plumbers. Build your reputation, capture emergency searches, and generate quality residential and commercial leads.",
+        "keywords": "plumber digital marketing, plumbing company marketing, plumber advertising",
+        "heroTitle": "Digital Marketing for Plumbers",
+        "heroSubtitle": "Grow Your Plumbing Business with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that captures both emergency and planned plumbing work. Our integrated marketing approach delivers sustainable growth for plumbing contractors.",
+        "heroPoints": [
+          "Unified strategy across search, social, and content",
+          "24/7 digital presence for emergency search capture",
+          "Reputation management that builds trust",
+          "Commercial lead development for larger contracts"
+        ],
+        "benefits": ["Unified digital strategy", "Emergency search capture", "Multi-channel presence", "Reputation management", "Commercial lead development", "Data-driven optimization"],
+        "solutions": [
+          { "icon": "Clock", "title": "Always-On Presence", "description": "Digital presence optimized for 24/7 emergency search capture." },
+          { "icon": "ShieldCheck", "title": "Trust Building", "description": "Reputation management and credibility building across all platforms." },
+          { "icon": "Droplets", "title": "Service Marketing", "description": "Highlight your full range of plumbing services effectively." },
+          { "icon": "Building2", "title": "Commercial Development", "description": "Targeted strategies for commercial and industrial client acquisition." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for plumbers?", "answer": "Local SEO for emergency searches, Google Ads for immediate leads, and reputation management typically deliver the best results." },
+          { "question": "How important are reviews for plumbers?", "answer": "Critical. Emergency searches especially rely on trust signals like reviews. We help build and showcase your reputation." },
+          { "question": "Can you help grow commercial work?", "answer": "Yes, we develop targeted strategies to attract commercial and industrial plumbing contracts." },
+          { "question": "How do you measure success?", "answer": "We track leads, booked jobs, revenue generated, and ROI. Our focus is on profitable work, not just marketing metrics." }
+        ]
+      }
+    },
+    "removalists": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Removalists | Removals PPC Advertising Agency Australia",
+        "metaDescription": "Expert Google Ads management for removalists. Generate more moving job leads with targeted PPC campaigns for residential and commercial moves.",
+        "keywords": "google ads removalists, removalist ppc, moving company advertising, removalist marketing",
+        "heroTitle": "Google Ads for Removalists",
+        "heroSubtitle": "Generate More Moving Jobs with Targeted PPC",
+        "heroDescription": "Connect with people actively searching for removalists. Our Google Ads campaigns target high-intent searches to deliver qualified leads for local, interstate, and commercial moves.",
+        "heroPoints": [
+          "Reach people actively searching for moving services",
+          "Separate campaigns for local, interstate, and commercial moves",
+          "Geographic targeting for origin and destination areas",
+          "Quote request optimization for higher booking conversion"
+        ],
+        "benefits": ["Target people actively planning moves", "Separate campaigns for local, interstate, commercial", "Geographic targeting for origin and destination", "Lead tracking from click to booked job", "Seasonal campaign optimization", "Competitor targeting strategies"],
+        "solutions": [
+          { "icon": "Truck", "title": "Move Type Campaigns", "description": "Dedicated campaigns for local moves, interstate moves, office relocations, and specialty items." },
+          { "icon": "MapPin", "title": "Geographic Targeting", "description": "Target people moving from specific areas or moving to your service regions." },
+          { "icon": "Calendar", "title": "Seasonal Optimization", "description": "Adjust campaigns for peak moving seasons to maximize bookings." },
+          { "icon": "ClipboardCheck", "title": "Quote Conversion Focus", "description": "Optimize for quote requests that convert to booked jobs, not just enquiries." }
+        ],
+        "faqs": [
+          { "question": "What budget do removalists need for Google Ads?", "answer": "We recommend $1,500-$4,000/month depending on your service area and move types. Peak seasons may require increased budgets." },
+          { "question": "How do you target different move types?", "answer": "We create separate campaigns for local, interstate, commercial, and specialty moves to ensure relevant ads and landing pages." },
+          { "question": "Can you target interstate moves?", "answer": "Yes, we can target people searching for interstate moves with specific origin-destination combinations." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Removalists | Removals Search Optimization Agency Australia",
+        "metaDescription": "Expert SEO services for removalists. Rank higher for moving searches and attract quality leads organically in your service area.",
+        "keywords": "removalist seo, moving company seo, removalist marketing, local seo removalists",
+        "heroTitle": "SEO for Removalists",
+        "heroSubtitle": "Rank Higher for Moving Searches in Your Area",
+        "heroDescription": "Build long-term visibility for your removals business. Our SEO strategies help people find you when searching for removalists in your service area.",
+        "heroPoints": [
+          "Rank organically for 'removalist near me' searches",
+          "Build trust through reviews and local presence",
+          "Route-specific pages for interstate moves",
+          "Lower cost per lead compared to paid advertising"
+        ],
+        "benefits": ["Long-term organic visibility", "Local SEO for geographic targeting", "Service page optimization", "Lower cost per lead over time", "Review management integration", "Compound traffic growth"],
+        "solutions": [
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches for 'removalists [suburb]' and related terms." },
+          { "icon": "FileText", "title": "Service Area Pages", "description": "Dedicated pages for each area and route you service." },
+          { "icon": "PenTool", "title": "Content Strategy", "description": "Moving tips and guides that attract searchers and build authority." },
+          { "icon": "Star", "title": "Review Strategy", "description": "Build and showcase reviews that improve rankings and conversion." }
+        ],
+        "faqs": [
+          { "question": "How long does removalist SEO take?", "answer": "Initial improvements typically appear in 2-3 months. Competitive 'removalist [suburb]' rankings usually take 4-8 months." },
+          { "question": "Can SEO help with interstate moving searches?", "answer": "Yes, we create content and pages targeting specific interstate routes to capture long-distance move enquiries." },
+          { "question": "Do you optimize Google Business Profile?", "answer": "Yes, GBP optimization is crucial for removalists and is included in our services." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Removalists | Removals Lead Generation Australia",
+        "metaDescription": "Generate qualified moving leads with proven strategies. Connect with people planning local, interstate, and commercial relocations.",
+        "keywords": "removalist lead generation, moving leads, furniture removal leads, relocation leads",
+        "heroTitle": "Lead Generation for Removalists",
+        "heroSubtitle": "Connect with People Ready to Move",
+        "heroDescription": "Build a consistent pipeline of qualified moving enquiries. Our lead generation strategies connect you with people and businesses planning local, interstate, and commercial moves.",
+        "heroPoints": [
+          "Receive qualified leads from people ready to move",
+          "Filter leads by move type, distance, and timeline",
+          "Multi-channel approach for consistent lead flow",
+          "Real estate agent referral program development"
+        ],
+        "benefits": ["Qualified move leads", "Multi-channel lead sourcing", "Lead qualification filtering", "CRM integration", "Cost-per-lead tracking", "Scalable lead flow"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and partnerships for consistent lead flow." },
+          { "icon": "Filter", "title": "Lead Qualification", "description": "Filter leads by move type, distance, timeline, and property size." },
+          { "icon": "ClipboardCheck", "title": "Quote System Optimization", "description": "Systems that convert enquiries into booked jobs efficiently." },
+          { "icon": "Handshake", "title": "Partnership Development", "description": "Build referral relationships with real estate agents and property managers." }
+        ],
+        "faqs": [
+          { "question": "What types of moving leads will I receive?", "answer": "We can target specific move types: local, interstate, commercial, or specialty. Leads include contact details and move requirements." },
+          { "question": "How are leads delivered?", "answer": "Leads can be delivered via email, SMS, or directly into your booking system for immediate follow-up." },
+          { "question": "What is the typical cost per lead?", "answer": "Removalist lead costs typically range from $30-$80 per qualified lead depending on move type and distance." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Removalists | Removals Marketing Agency Australia",
+        "metaDescription": "Comprehensive digital marketing for removalists. Build your brand, generate quality leads, and grow your moving business sustainably.",
+        "keywords": "removalist digital marketing, moving company marketing, removalist advertising",
+        "heroTitle": "Digital Marketing for Removalists",
+        "heroSubtitle": "Grow Your Removals Business with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that attracts quality moving enquiries. Our integrated marketing approach delivers sustainable growth for removalist businesses.",
+        "heroPoints": [
+          "Unified strategy across search, social, and content",
+          "Reputation management that builds trust",
+          "Partnership marketing with real estate agents",
+          "Seasonal campaign optimization for peak periods"
+        ],
+        "benefits": ["Unified digital strategy", "Multi-channel presence", "Reputation management", "Seasonal marketing optimization", "Partnership development", "Data-driven optimization"],
+        "solutions": [
+          { "icon": "Palette", "title": "Brand Building", "description": "Professional branding that builds trust and differentiates you from competitors." },
+          { "icon": "Star", "title": "Review Management", "description": "Systems to generate and showcase positive reviews that influence decisions." },
+          { "icon": "Handshake", "title": "Partnership Marketing", "description": "Build relationships with real estate agents and property managers for referrals." },
+          { "icon": "Calendar", "title": "Seasonal Campaigns", "description": "Coordinated marketing around peak moving seasons." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for removalists?", "answer": "Local SEO, Google Ads, and strong review presence typically deliver the best results. Partnerships with real estate agents can also be valuable." },
+          { "question": "How important are reviews for removalists?", "answer": "Extremely important. Moving decisions heavily rely on reviews and reputation. We help build and showcase your positive reviews." },
+          { "question": "Can you help with interstate marketing?", "answer": "Yes, we develop strategies for both local and interstate moving services, including route-specific targeting." }
+        ]
+      }
+    },
+    "accountants": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Accountants | Accounting Firm PPC Advertising Australia",
+        "metaDescription": "Expert Google Ads management for accountants and accounting firms. Generate quality leads from businesses seeking tax and accounting services.",
+        "keywords": "accountant google ads, accounting firm ppc, tax accountant advertising, accountant marketing",
+        "heroTitle": "Google Ads for Accountants",
+        "heroSubtitle": "Generate Quality Leads for Your Accounting Practice",
+        "heroDescription": "Reach businesses and individuals actively searching for accounting services. Our Google Ads campaigns target high-intent searches to deliver qualified leads for tax, bookkeeping, and advisory services.",
+        "heroPoints": [
+          "Target high-intent searches for accounting services",
+          "Separate campaigns for tax, bookkeeping, and advisory",
+          "Capture seasonal tax time enquiries effectively",
+          "B2B targeting for business accounting clients"
+        ],
+        "benefits": ["Target businesses actively seeking accountants", "Seasonal campaign optimization for tax time", "Service-specific campaigns (tax, bookkeeping, advisory)", "Local targeting for your service area", "Lead tracking and ROI measurement", "Industry-specific targeting"],
+        "solutions": [
+          { "icon": "Calendar", "title": "Seasonal Campaign Strategy", "description": "Maximize lead generation during tax season while maintaining year-round visibility." },
+          { "icon": "Target", "title": "Service-Specific Targeting", "description": "Dedicated campaigns for tax, bookkeeping, advisory, and specialty services." },
+          { "icon": "Building2", "title": "Business Size Targeting", "description": "Reach SMEs, sole traders, or corporations based on your ideal client profile." },
+          { "icon": "Briefcase", "title": "Industry Specialization", "description": "Target businesses in specific industries where you have expertise." }
+        ],
+        "faqs": [
+          { "question": "When is the best time to run Google Ads for accountants?", "answer": "Year-round presence is important, but we increase investment during EOFY and tax season. Strategic planning ensures you capture clients when they are actively searching." },
+          { "question": "How do you target different accounting services?", "answer": "We create separate campaigns for tax services, bookkeeping, business advisory, SMSF, and other specialties to ensure relevant messaging." },
+          { "question": "Can you target specific business types?", "answer": "Yes, we can target businesses by industry, size, and specific service needs using keyword and audience targeting strategies." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Accountants | Accounting Firm Search Optimization Australia",
+        "metaDescription": "Expert SEO services for accountants. Rank higher for accounting searches and build year-round visibility for your firm.",
+        "keywords": "accountant seo, accounting firm seo, tax accountant seo, accountant marketing",
+        "heroTitle": "SEO for Accountants",
+        "heroSubtitle": "Rank Higher for Accounting Searches",
+        "heroDescription": "Build sustainable organic visibility for your accounting firm. Our SEO strategies help businesses find you when searching for tax and accounting services.",
+        "heroPoints": [
+          "Rank organically for tax and accounting searches year-round",
+          "Build authority with content that demonstrates expertise",
+          "Attract quality clients without ongoing ad spend",
+          "Dominate local search results in your service area"
+        ],
+        "benefits": ["Year-round organic visibility", "Local SEO for geographic targeting", "Authority building through content", "Lower cost per lead over time", "Compound traffic growth", "Reduced reliance on referrals"],
+        "solutions": [
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches with optimized Google Business Profile and location-specific content." },
+          { "icon": "FileText", "title": "Service Page Optimization", "description": "Dedicated pages for each service you offer, optimized for relevant searches." },
+          { "icon": "Briefcase", "title": "Industry Expertise Content", "description": "Content targeting specific industries you specialize in serving." },
+          { "icon": "Calculator", "title": "Tax Content Strategy", "description": "Helpful tax content that ranks well and demonstrates expertise." }
+        ],
+        "faqs": [
+          { "question": "How long does SEO take for accountants?", "answer": "Initial improvements typically appear in 3-4 months. Significant rankings for competitive accounting terms usually take 6-12 months." },
+          { "question": "What content should accountants create?", "answer": "Tax tips, deadline reminders, industry-specific guides, and business advisory content perform well for attracting and converting clients." },
+          { "question": "Is local SEO important for accountants?", "answer": "Yes, many clients prefer local accountants. Local SEO including Google Business Profile is crucial for capturing these searches." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Accountants | Accounting Firm Lead Generation Australia",
+        "metaDescription": "Generate qualified leads for your accounting firm. Connect with businesses seeking tax, bookkeeping, and advisory services.",
+        "keywords": "accountant lead generation, accounting firm leads, tax accountant leads",
+        "heroTitle": "Lead Generation for Accountants",
+        "heroSubtitle": "Connect with Businesses Seeking Accounting Services",
+        "heroDescription": "Build a consistent pipeline of qualified accounting enquiries. Our lead generation strategies connect you with businesses actively seeking professional accounting services.",
+        "heroPoints": [
+          "Receive qualified leads from businesses seeking accounting services",
+          "Year-round lead flow, not just during tax season",
+          "Multi-channel approach for maximum pipeline consistency",
+          "CRM integration for seamless lead management"
+        ],
+        "benefits": ["Qualified business leads", "Multi-channel lead sourcing", "Service-based lead filtering", "CRM integration", "Year-round lead flow", "Scalable systems"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and content marketing for consistent lead flow." },
+          { "icon": "Filter", "title": "Lead Qualification", "description": "Filter leads by business size, service needs, and industry fit." },
+          { "icon": "Share2", "title": "Referral Programs", "description": "Systems to encourage and track referrals from satisfied clients." },
+          { "icon": "Calendar", "title": "Year-Round Pipeline", "description": "Consistent lead generation outside peak tax season." }
+        ],
+        "faqs": [
+          { "question": "What types of accounting leads will I receive?", "answer": "We can target specific services: tax, bookkeeping, advisory, or SMSF. Leads include business details and service requirements." },
+          { "question": "How do you generate leads outside tax season?", "answer": "Content marketing, advisory services positioning, and new business targeting maintain lead flow year-round." },
+          { "question": "What is the typical cost per accounting lead?", "answer": "Accounting lead costs vary by service type, typically ranging from $30-$100 per qualified lead. Client lifetime value makes ROI strong." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Accountants | Accounting Firm Marketing Australia",
+        "metaDescription": "Comprehensive digital marketing for accountants. Build your brand, demonstrate expertise, and generate quality leads year-round.",
+        "keywords": "accountant digital marketing, accounting firm marketing, accountant advertising",
+        "heroTitle": "Digital Marketing for Accountants",
+        "heroSubtitle": "Grow Your Accounting Firm with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that demonstrates expertise and attracts quality clients. Our integrated marketing approach delivers sustainable growth for accounting firms.",
+        "heroPoints": [
+          "Unified marketing strategy across all digital channels",
+          "Position your firm as the trusted accounting authority",
+          "Consistent client acquisition throughout the year",
+          "Data-driven campaigns that maximize marketing ROI"
+        ],
+        "benefits": ["Unified digital strategy", "Authority positioning", "Year-round visibility", "Multi-channel presence", "Client retention focus", "Data-driven optimization"],
+        "solutions": [
+          { "icon": "Award", "title": "Authority Building", "description": "Position your firm as the trusted expert through content and thought leadership." },
+          { "icon": "Mail", "title": "Client Communication", "description": "Email marketing and content that keeps clients engaged year-round." },
+          { "icon": "Calendar", "title": "Seasonal Strategy", "description": "Coordinated marketing around tax season and key financial deadlines." },
+          { "icon": "Briefcase", "title": "Industry Positioning", "description": "Marketing your expertise to specific industries you serve." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for accountants?", "answer": "Content marketing that demonstrates expertise, local SEO, and targeted Google Ads typically deliver the best results." },
+          { "question": "How do you build authority online?", "answer": "Through helpful tax content, industry insights, guides, and consistent thought leadership across digital channels." },
+          { "question": "Can you help with client retention?", "answer": "Yes, we develop email and content strategies that keep existing clients engaged and generate referrals." }
+        ]
+      }
+    },
+    "lawyers": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Lawyers | Legal PPC Advertising Agency Australia",
+        "metaDescription": "Expert Google Ads management for lawyers and law firms. Generate quality leads with compliant, targeted PPC campaigns.",
+        "keywords": "google ads lawyers, lawyer ppc, legal advertising, law firm marketing",
+        "heroTitle": "Google Ads for Lawyers",
+        "heroSubtitle": "Generate Quality Legal Leads with Compliant PPC",
+        "heroDescription": "Connect with clients actively searching for legal services. Our Google Ads campaigns comply with legal advertising regulations while delivering qualified leads.",
+        "heroPoints": [
+          "Capture clients actively searching for legal representation",
+          "Compliant campaigns that follow legal advertising ethics",
+          "Practice area specific targeting for qualified leads",
+          "Call tracking to measure every consultation booked"
+        ],
+        "benefits": ["Compliant legal advertising", "Practice area specific campaigns", "Geographic targeting for your jurisdiction", "Lead tracking and ROI measurement", "Competitor analysis and positioning", "Call tracking and recording"],
+        "solutions": [
+          { "icon": "Scale", "title": "Practice Area Campaigns", "description": "Dedicated campaigns for each practice area you serve." },
+          { "icon": "ShieldCheck", "title": "Compliance Focus", "description": "Ads that comply with legal advertising regulations and ethics." },
+          { "icon": "MapPin", "title": "Local Court Targeting", "description": "Target clients in specific courts and jurisdictions." },
+          { "icon": "Clock", "title": "Urgency Capture", "description": "Campaigns for time-sensitive legal matters." }
+        ],
+        "faqs": [
+          { "question": "Are Google Ads compliant with legal advertising rules?", "answer": "Yes, when done correctly. We ensure all ads comply with legal advertising regulations and professional conduct rules." },
+          { "question": "What budget do law firms need for Google Ads?", "answer": "Legal keywords are competitive. We recommend $2,000-$5,000/month minimum, with budget varying by practice area and location." },
+          { "question": "Can you target specific practice areas?", "answer": "Yes, we create separate campaigns for each practice area with tailored messaging and landing pages." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Lawyers | Legal Search Optimization Agency Australia",
+        "metaDescription": "Expert SEO services for lawyers and law firms. Rank higher for legal searches and attract quality clients organically.",
+        "keywords": "lawyer seo, law firm seo, legal marketing, attorney seo",
+        "heroTitle": "SEO for Lawyers",
+        "heroSubtitle": "Rank Higher for Legal Searches in Your Area",
+        "heroDescription": "Build sustainable organic visibility for your law firm. Our SEO strategies help clients find you when searching for legal services.",
+        "heroPoints": [
+          "Rank organically for high-value legal search terms",
+          "Build authority with content that demonstrates expertise",
+          "Attract clients searching for your specific practice areas",
+          "Lower long-term client acquisition costs"
+        ],
+        "benefits": ["Long-term organic visibility", "Practice area authority building", "Local SEO for geographic targeting", "Lower cost per lead over time", "Content that demonstrates expertise", "Compound traffic growth"],
+        "solutions": [
+          { "icon": "FileText", "title": "Practice Area Pages", "description": "Comprehensive pages for each practice area optimized for search." },
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches in your jurisdiction." },
+          { "icon": "PenTool", "title": "Legal Content Strategy", "description": "Helpful legal content that ranks and demonstrates expertise." },
+          { "icon": "Star", "title": "Review Management", "description": "Build and showcase client testimonials ethically." }
+        ],
+        "faqs": [
+          { "question": "How long does law firm SEO take?", "answer": "Legal SEO is competitive. Initial improvements typically appear in 4-6 months, with significant rankings taking 9-18 months." },
+          { "question": "What legal content should we create?", "answer": "Legal guides, FAQs, and helpful resources that answer common client questions while demonstrating expertise." },
+          { "question": "Can you help with multiple practice areas?", "answer": "Yes, we develop SEO strategies that build authority across all your practice areas without dilution." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Lawyers | Legal Lead Generation Australia",
+        "metaDescription": "Generate qualified legal leads with proven strategies. Connect with clients seeking legal services across various practice areas.",
+        "keywords": "lawyer lead generation, legal leads, law firm leads",
+        "heroTitle": "Lead Generation for Lawyers",
+        "heroSubtitle": "Connect with Clients Seeking Legal Help",
+        "heroDescription": "Build a consistent pipeline of qualified legal enquiries. Our lead generation strategies connect you with clients actively seeking legal representation.",
+        "heroPoints": [
+          "Receive qualified leads filtered by practice area and case type",
+          "Ethical lead generation that maintains professional standards",
+          "Multi-channel approach for consistent enquiry flow",
+          "CRM integration for efficient intake management"
+        ],
+        "benefits": ["Qualified legal leads", "Practice area filtering", "Ethical lead generation", "CRM integration", "Cost-per-lead tracking", "Scalable systems"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and content marketing for consistent lead flow." },
+          { "icon": "Filter", "title": "Lead Qualification", "description": "Filter leads by practice area, case type, and matter value." },
+          { "icon": "ClipboardCheck", "title": "Intake Optimization", "description": "Systems that convert enquiries into consultations efficiently." },
+          { "icon": "Handshake", "title": "Referral Network", "description": "Build referral relationships with complementary practices." }
+        ],
+        "faqs": [
+          { "question": "What types of legal leads will I receive?", "answer": "We can target specific practice areas. Leads include contact details, matter type, and case details to help qualification." },
+          { "question": "How do you ensure lead quality?", "answer": "We use qualification questions and targeting to focus on serious enquiries, not just information seekers." },
+          { "question": "What is the typical cost per legal lead?", "answer": "Legal lead costs vary significantly by practice area, typically ranging from $50-$300 per qualified lead." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Lawyers | Law Firm Marketing Agency Australia",
+        "metaDescription": "Comprehensive digital marketing for lawyers. Build your brand, demonstrate expertise, and generate quality leads ethically.",
+        "keywords": "lawyer digital marketing, law firm marketing, legal advertising",
+        "heroTitle": "Digital Marketing for Lawyers",
+        "heroSubtitle": "Grow Your Law Firm with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that demonstrates expertise and attracts quality clients. Our integrated marketing approach delivers sustainable growth for law firms.",
+        "heroPoints": [
+          "Unified marketing strategy across all digital channels",
+          "Ethical campaigns that maintain professional standards",
+          "Position your firm as the authority in your practice areas",
+          "Build referral relationships through strategic partnerships"
+        ],
+        "benefits": ["Unified digital strategy", "Ethical marketing practices", "Authority positioning", "Multi-channel presence", "Referral network building", "Data-driven optimization"],
+        "solutions": [
+          { "icon": "Award", "title": "Authority Building", "description": "Position your firm as the trusted expert in your practice areas." },
+          { "icon": "MessageSquare", "title": "Thought Leadership", "description": "Content and PR strategies that build your reputation." },
+          { "icon": "Users", "title": "Client Experience", "description": "Digital touchpoints that enhance client experience and generate referrals." },
+          { "icon": "Handshake", "title": "Referral Marketing", "description": "Strategies to build and leverage professional referral networks." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for law firms?", "answer": "Content marketing that demonstrates expertise, local SEO, and targeted Google Ads typically deliver the best results while remaining compliant." },
+          { "question": "How do you ensure marketing compliance?", "answer": "We stay current with legal advertising regulations and ensure all marketing follows professional conduct rules." },
+          { "question": "Can you help build referral relationships?", "answer": "Yes, we develop strategies to build relationships with complementary professionals who can refer clients." }
+        ]
+      }
+    },
+    "finance-brokers": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Finance Brokers | Mortgage Broker PPC Australia",
+        "metaDescription": "Expert Google Ads management for finance and mortgage brokers. Generate quality leads from borrowers seeking home loans and finance.",
+        "keywords": "google ads finance brokers, mortgage broker ppc, finance broker advertising",
+        "heroTitle": "Google Ads for Finance Brokers",
+        "heroSubtitle": "Generate Quality Borrower Leads with Targeted PPC",
+        "heroDescription": "Connect with borrowers actively searching for home loans and finance. Our Google Ads campaigns target high-intent searches while maintaining regulatory compliance.",
+        "heroPoints": [
+          "Capture borrowers actively searching for home loans",
+          "ASIC compliant campaigns that maintain regulatory standards",
+          "Loan type specific targeting for qualified leads",
+          "Track every lead from click to settled loan"
+        ],
+        "benefits": ["Compliant financial advertising", "Target active borrowers", "Loan type specific campaigns", "Geographic targeting", "Lead tracking and attribution", "Cost-per-lead optimization"],
+        "solutions": [
+          { "icon": "Home", "title": "Loan Type Campaigns", "description": "Dedicated campaigns for home loans, investment loans, refinancing, and commercial finance." },
+          { "icon": "ShieldCheck", "title": "Compliance Focus", "description": "Ads that comply with ASIC regulations and responsible lending requirements." },
+          { "icon": "CheckCircle", "title": "Pre-Qualification Focus", "description": "Target borrowers who are ready to proceed, not just rate shopping." },
+          { "icon": "MapPin", "title": "Local Market Targeting", "description": "Target borrowers in specific property markets." }
+        ],
+        "faqs": [
+          { "question": "Are finance broker Google Ads compliant?", "answer": "Yes, when done correctly. We ensure all ads comply with ASIC regulations and responsible lending requirements." },
+          { "question": "What budget do finance brokers need?", "answer": "We recommend $2,000-$4,000/month. One settled loan typically covers months of advertising costs." },
+          { "question": "Can you target specific loan types?", "answer": "Yes, we create separate campaigns for home loans, investment, refinancing, and commercial finance." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Finance Brokers | Mortgage Broker Search Optimization Australia",
+        "metaDescription": "Expert SEO services for finance and mortgage brokers. Rank higher for loan searches and attract quality borrower leads organically.",
+        "keywords": "finance broker seo, mortgage broker seo, loan broker marketing",
+        "heroTitle": "SEO for Finance Brokers",
+        "heroSubtitle": "Rank Higher for Loan and Finance Searches",
+        "heroDescription": "Build sustainable organic visibility for your finance brokerage. Our SEO strategies help borrowers find you when searching for home loans and finance.",
+        "heroPoints": [
+          "Rank organically for home loan and finance searches",
+          "Build authority with educational lending content",
+          "Attract quality borrowers without ongoing ad spend",
+          "Dominate local search results in your target markets"
+        ],
+        "benefits": ["Long-term organic visibility", "Authority building through content", "Local SEO for geographic targeting", "Lower cost per lead over time", "Compound traffic growth", "Reduced reliance on referrals"],
+        "solutions": [
+          { "icon": "FileText", "title": "Loan Type Pages", "description": "Comprehensive pages for each loan type you offer." },
+          { "icon": "MapPin", "title": "Local Market Content", "description": "Content targeting specific property markets and areas." },
+          { "icon": "BookOpen", "title": "Educational Content", "description": "Guides and resources that attract borrowers and demonstrate expertise." },
+          { "icon": "Star", "title": "Review Strategy", "description": "Build and showcase client testimonials." }
+        ],
+        "faqs": [
+          { "question": "How long does finance broker SEO take?", "answer": "Initial improvements typically appear in 3-4 months. Significant rankings for competitive loan terms usually take 6-12 months." },
+          { "question": "What content should finance brokers create?", "answer": "Loan guides, market updates, first home buyer resources, and property investment content perform well." },
+          { "question": "Is local SEO important for brokers?", "answer": "Yes, many borrowers prefer local brokers. Local SEO helps capture these searches effectively." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Finance Brokers | Mortgage Lead Generation Australia",
+        "metaDescription": "Generate qualified borrower leads with proven strategies. Connect with clients seeking home loans, investment finance, and refinancing.",
+        "keywords": "finance broker lead generation, mortgage leads, loan broker leads",
+        "heroTitle": "Lead Generation for Finance Brokers",
+        "heroSubtitle": "Connect with Borrowers Ready to Proceed",
+        "heroDescription": "Build a consistent pipeline of qualified borrower enquiries. Our lead generation strategies connect you with clients actively seeking finance solutions.",
+        "heroPoints": [
+          "Receive pre-qualified leads from serious borrowers",
+          "Multi-channel approach for consistent pipeline",
+          "Real estate partnership development for referrals",
+          "CRM integration for seamless application tracking"
+        ],
+        "benefits": ["Qualified borrower leads", "Multi-channel lead sourcing", "Pre-qualified lead filtering", "CRM integration", "Cost-per-lead tracking", "Scalable systems"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and partnerships for consistent lead flow." },
+          { "icon": "Filter", "title": "Lead Pre-Qualification", "description": "Filter leads by loan amount, deposit, and borrowing capacity." },
+          { "icon": "Handshake", "title": "Real Estate Partnerships", "description": "Build referral relationships with real estate agents." },
+          { "icon": "Mail", "title": "Follow-Up Systems", "description": "Automated nurturing to convert enquiries into applications." }
+        ],
+        "faqs": [
+          { "question": "What types of finance leads will I receive?", "answer": "We can target specific loan types: home purchase, investment, refinancing, or commercial. Leads include borrower details and requirements." },
+          { "question": "How do you ensure lead quality?", "answer": "We use pre-qualification questions to focus on borrowers who are ready to proceed, not just rate shopping." },
+          { "question": "What is the typical cost per lead?", "answer": "Finance lead costs typically range from $50-$150 per qualified lead. ROI is strong given typical commissions." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Finance Brokers | Mortgage Marketing Australia",
+        "metaDescription": "Comprehensive digital marketing for finance and mortgage brokers. Build your brand, demonstrate expertise, and generate quality leads.",
+        "keywords": "finance broker digital marketing, mortgage broker marketing, loan broker advertising",
+        "heroTitle": "Digital Marketing for Finance Brokers",
+        "heroSubtitle": "Grow Your Finance Brokerage with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that attracts quality borrower enquiries. Our integrated marketing approach delivers sustainable growth for finance brokers.",
+        "heroPoints": [
+          "Unified marketing strategy across all digital channels",
+          "Compliant campaigns that meet ASIC requirements",
+          "Build partnerships with real estate agents and accountants",
+          "Data-driven optimization for maximum ROI"
+        ],
+        "benefits": ["Unified digital strategy", "Compliant marketing", "Authority positioning", "Multi-channel presence", "Partnership development", "Data-driven optimization"],
+        "solutions": [
+          { "icon": "Award", "title": "Authority Building", "description": "Position yourself as the trusted finance expert through content and education." },
+          { "icon": "Handshake", "title": "Partnership Marketing", "description": "Build relationships with real estate agents and accountants for referrals." },
+          { "icon": "TrendingUp", "title": "Market Updates", "description": "Regular rate and market content that keeps you top of mind." },
+          { "icon": "Mail", "title": "Client Nurturing", "description": "Email and content strategies for long-term client relationships." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for finance brokers?", "answer": "Content marketing that educates borrowers, Google Ads for active searchers, and referral partnerships typically deliver the best results." },
+          { "question": "How do you ensure marketing compliance?", "answer": "We ensure all marketing complies with ASIC regulations and responsible lending requirements." },
+          { "question": "Can you help build referral relationships?", "answer": "Yes, we develop strategies to build and leverage partnerships with real estate agents and other professionals." }
+        ]
+      }
+    },
+    "buyers-agents": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Buyers Agents | Buyer's Agent PPC Advertising Australia",
+        "metaDescription": "Expert Google Ads management for buyers agents. Generate quality leads from property buyers seeking professional representation.",
+        "keywords": "buyers agent google ads, buyers advocate ppc, property buyer marketing, buyers agent advertising",
+        "heroTitle": "Google Ads for Buyers Agents",
+        "heroSubtitle": "Connect with Property Buyers Seeking Expert Representation",
+        "heroDescription": "Reach property buyers actively searching for professional buying assistance. Our Google Ads campaigns target high-intent searches from people ready to engage a buyers agent.",
+        "heroPoints": [
+          "Capture buyers actively searching for property representation",
+          "Separate campaigns for first home buyers, investors, upgraders",
+          "Target specific property markets where you specialize",
+          "Education-first landing pages that explain your value"
+        ],
+        "benefits": ["Target high-intent property buyer searches", "Geographic targeting for your service markets", "Separate campaigns for first home buyers, investors, upgraders", "Landing pages that educate and convert", "Competitor positioning strategies", "ROI tracking from click to settlement"],
+        "solutions": [
+          { "icon": "Users", "title": "Buyer Segment Targeting", "description": "Dedicated campaigns for first home buyers, investors, and upgraders with tailored messaging." },
+          { "icon": "MapPin", "title": "Market-Specific Campaigns", "description": "Target searches in specific property markets where you have expertise." },
+          { "icon": "BookOpen", "title": "Education-First Approach", "description": "Ads and landing pages that explain buyers agent value before asking for commitment." },
+          { "icon": "Mail", "title": "Lead Nurturing Integration", "description": "Connect ads to email sequences that nurture long buying cycles." }
+        ],
+        "faqs": [
+          { "question": "What budget do buyers agents need for Google Ads?", "answer": "Given the value of buyers agent fees, we typically recommend $2,000-$4,000/month. One converted client often covers months of ad spend." },
+          { "question": "How do you target different buyer types?", "answer": "We create separate campaigns for first home buyers, investors, upgraders, and downsizers with unique messaging and landing pages for each." },
+          { "question": "Can you target specific property markets?", "answer": "Yes, we can target searches for specific suburbs, regions, or property types where you specialize." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Buyers Agents | Buyer's Advocate Search Optimization Australia",
+        "metaDescription": "Expert SEO services for buyers agents. Rank higher for property buyer searches and establish authority in your target markets.",
+        "keywords": "buyers agent seo, buyers advocate seo, property buyer marketing, buyers agent digital marketing",
+        "heroTitle": "SEO for Buyers Agents",
+        "heroSubtitle": "Rank Higher for Property Buyer Searches",
+        "heroDescription": "Build sustainable organic visibility for your buyers agency. Our SEO strategies help property buyers find you when searching for professional buying assistance.",
+        "heroPoints": [
+          "Rank organically for buyers agent and property searches",
+          "Build market authority with suburb guides and insights",
+          "Attract serious buyers through educational content",
+          "Lower your cost per acquisition over time"
+        ],
+        "benefits": ["Long-term organic visibility", "Authority building through content", "Local SEO for market targeting", "Educational content that converts", "Lower cost per lead over time", "Compound traffic growth"],
+        "solutions": [
+          { "icon": "BarChart3", "title": "Market Authority Content", "description": "In-depth guides and market reports that establish expertise and rank for buyer searches." },
+          { "icon": "MapPin", "title": "Local Market Pages", "description": "Dedicated pages for each suburb and region you serve to capture local searches." },
+          { "icon": "BookOpen", "title": "Educational SEO", "description": "Content that educates buyers on the value of professional representation." },
+          { "icon": "Star", "title": "Review and Testimonial Optimization", "description": "Leverage client success stories for social proof and SEO benefit." }
+        ],
+        "faqs": [
+          { "question": "How long does buyers agent SEO take?", "answer": "Initial improvements typically appear in 3-4 months. Significant rankings for competitive terms usually take 6-12 months of consistent effort." },
+          { "question": "What content works best for buyers agent SEO?", "answer": "Market reports, suburb guides, buyer education content, and case studies perform well for attracting and converting property buyers." },
+          { "question": "Do you help with Google Business Profile?", "answer": "Yes, local SEO including Google Business Profile optimization is important for buyers agents targeting specific markets." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Buyers Agents | Property Buyer Lead Generation Australia",
+        "metaDescription": "Generate qualified leads from property buyers seeking professional representation. Multi-channel strategies for buyers agents.",
+        "keywords": "buyers agent lead generation, buyers advocate leads, property buyer leads",
+        "heroTitle": "Lead Generation for Buyers Agents",
+        "heroSubtitle": "Connect with Property Buyers Ready to Engage",
+        "heroDescription": "Build a consistent pipeline of qualified buyer enquiries. Our lead generation strategies connect you with property buyers actively seeking professional representation.",
+        "heroPoints": [
+          "Receive qualified leads from serious property buyers",
+          "Lead scoring by budget, timeline, and buyer type",
+          "Long-cycle nurturing for extended buying decisions",
+          "Referral systems from satisfied clients"
+        ],
+        "benefits": ["Qualified buyer leads", "Multi-channel lead sourcing", "Lead scoring by buyer type", "CRM integration", "Long-cycle nurturing", "Scalable lead flow"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and content marketing to maximize lead flow." },
+          { "icon": "Mail", "title": "Lead Nurturing", "description": "Email sequences that nurture buyers through long decision cycles." },
+          { "icon": "Filter", "title": "Buyer Segmentation", "description": "Identify and prioritize leads by buyer type, timeline, and budget." },
+          { "icon": "Share2", "title": "Referral Development", "description": "Systems to encourage referrals from satisfied clients and professional networks." }
+        ],
+        "faqs": [
+          { "question": "What types of buyer leads will I receive?", "answer": "We can target specific buyer segments: first home buyers, investors, upgraders, or downsizers. Leads include contact details and buying criteria." },
+          { "question": "How do you handle long buying cycles?", "answer": "We implement email nurturing sequences that keep you top-of-mind through long decision processes, typically 3-12 months." },
+          { "question": "What is the typical cost per lead?", "answer": "Buyers agent lead costs typically range from $50-$150 per qualified lead. ROI is usually strong given service fees." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Buyers Agents | Buyer's Advocate Marketing Australia",
+        "metaDescription": "Comprehensive digital marketing for buyers agents. Build authority, educate buyers, and generate qualified leads.",
+        "keywords": "buyers agent digital marketing, buyers advocate marketing, property buyer marketing",
+        "heroTitle": "Digital Marketing for Buyers Agents",
+        "heroSubtitle": "Grow Your Buyers Agency with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that educates buyers and establishes your market authority. Our integrated marketing approach delivers sustainable growth for buyers agents.",
+        "heroPoints": [
+          "Unified marketing strategy across all digital channels",
+          "Position yourself as the market authority in your areas",
+          "Educational content that attracts serious buyers",
+          "Multi-channel campaigns coordinated for maximum impact"
+        ],
+        "benefits": ["Unified digital strategy", "Authority positioning", "Educational content", "Multi-channel presence", "Long-cycle nurturing", "Data-driven optimization"],
+        "solutions": [
+          { "icon": "Award", "title": "Authority Building", "description": "Position yourself as the market expert through content, PR, and thought leadership." },
+          { "icon": "BookOpen", "title": "Educational Marketing", "description": "Content that explains buyers agent value and guides the decision process." },
+          { "icon": "BarChart3", "title": "Market Report Marketing", "description": "Regular market insights that demonstrate expertise and drive engagement." },
+          { "icon": "LayoutGrid", "title": "Multi-Channel Campaigns", "description": "Coordinated marketing across search, social, and email channels." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for buyers agents?", "answer": "Content marketing that educates buyers, combined with Google Ads for high-intent searches, typically delivers best results. LinkedIn can also work well for investor-focused agents." },
+          { "question": "How do you build authority online?", "answer": "Through market reports, educational content, case studies, PR opportunities, and consistent thought leadership across digital channels." },
+          { "question": "Can you help create market reports?", "answer": "Yes, we can help develop and distribute regular market reports that demonstrate expertise and attract buyer enquiries." }
+        ]
+      }
+    },
+    "bricklayers": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Bricklayers | Brickwork PPC Advertising Australia",
+        "metaDescription": "Expert Google Ads management for bricklayers. Generate quality leads for residential and commercial brickwork projects.",
+        "keywords": "google ads bricklayers, bricklayer ppc, brickwork advertising, bricklayer marketing",
+        "heroTitle": "Google Ads for Bricklayers",
+        "heroSubtitle": "Generate More Brickwork Jobs with Targeted PPC",
+        "heroDescription": "Connect with homeowners, builders, and developers searching for bricklaying services. Our Google Ads campaigns target high-intent searches to deliver qualified leads.",
+        "heroPoints": [
+          "Reach homeowners and builders searching for bricklayers",
+          "Separate campaigns for residential and commercial work",
+          "Geographic targeting for your preferred service areas",
+          "B2B targeting for builder subcontract opportunities"
+        ],
+        "benefits": ["Target homeowners and builders", "Separate campaigns for residential and commercial", "Geographic targeting for your service areas", "B2B targeting for builder subcontracts", "Lead tracking from click to job", "Seasonal campaign optimization"],
+        "solutions": [
+          { "icon": "Hammer", "title": "Service-Specific Campaigns", "description": "Dedicated campaigns for new builds, extensions, retaining walls, and restoration work." },
+          { "icon": "Building2", "title": "B2B Targeting", "description": "Campaigns specifically targeting builders and developers for subcontract work." },
+          { "icon": "MapPin", "title": "Local Area Domination", "description": "Target property owners and builders in your preferred service areas." },
+          { "icon": "Target", "title": "Project Type Focus", "description": "Separate campaigns for different brickwork types to attract relevant enquiries." }
+        ],
+        "faqs": [
+          { "question": "What budget do bricklayers need for Google Ads?", "answer": "We recommend $1,000-$3,000/month depending on your mix of residential vs. commercial work and service area size." },
+          { "question": "Can you help get builder subcontract work?", "answer": "Yes, we create B2B campaigns targeting builders and developers looking for reliable bricklaying contractors." },
+          { "question": "How do you target different brickwork services?", "answer": "We create separate campaigns for new construction, extensions, retaining walls, restoration, and other specialty services." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Bricklayers | Bricklaying Search Optimization Agency Australia",
+        "metaDescription": "Expert SEO services for bricklayers. Rank higher for brickwork searches and attract quality residential and commercial leads organically.",
+        "keywords": "bricklayer seo, brickwork company seo, bricklayer marketing, local seo bricklayers",
+        "heroTitle": "SEO for Bricklayers",
+        "heroSubtitle": "Rank Higher for Brickwork Searches",
+        "heroDescription": "Build long-term visibility for your bricklaying business. Our SEO strategies help property owners and builders find you when searching for quality brickwork services.",
+        "heroPoints": [
+          "Rank organically for bricklayer searches in your area",
+          "Showcase your portfolio to build trust before contact",
+          "Attract both homeowner and builder enquiries",
+          "Lower your cost per lead compared to paid ads"
+        ],
+        "benefits": ["Long-term organic visibility", "Local SEO for geographic targeting", "Portfolio showcasing", "Lower cost per lead over time", "Builder relationship development", "Compound traffic growth"],
+        "solutions": [
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches for 'bricklayer [suburb]' and related terms." },
+          { "icon": "Image", "title": "Portfolio Optimization", "description": "Showcase completed brickwork projects to attract similar jobs." },
+          { "icon": "FileText", "title": "Service Pages", "description": "Dedicated pages for each type of brickwork you offer." },
+          { "icon": "Building2", "title": "B2B Visibility", "description": "Content and optimization to attract builder subcontract opportunities." }
+        ],
+        "faqs": [
+          { "question": "How long does bricklayer SEO take?", "answer": "Initial improvements typically appear in 2-3 months. Competitive local rankings usually take 4-8 months." },
+          { "question": "Can SEO help get builder work?", "answer": "Yes, we optimize for searches builders make when looking for subcontractors, plus create content that attracts B2B enquiries." },
+          { "question": "Do you optimize Google Business Profile?", "answer": "Yes, GBP optimization is crucial for bricklayers and is included in our services." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Bricklayers | Brickwork Lead Generation Australia",
+        "metaDescription": "Generate qualified brickwork leads with proven strategies. Connect with homeowners, builders, and developers needing bricklaying services.",
+        "keywords": "bricklayer lead generation, brickwork leads, masonry leads, bricklaying job leads",
+        "heroTitle": "Lead Generation for Bricklayers",
+        "heroSubtitle": "Connect with Clients Needing Brickwork",
+        "heroDescription": "Build a consistent pipeline of qualified brickwork enquiries. Our lead generation strategies connect you with homeowners, builders, and developers needing bricklaying services.",
+        "heroPoints": [
+          "Receive qualified leads from homeowners and builders",
+          "Filter by project type, size, and timeline",
+          "B2B strategies to build builder relationships",
+          "CRM integration for seamless follow-up"
+        ],
+        "benefits": ["Qualified job leads", "Residential and commercial mix", "Lead qualification filtering", "CRM integration", "Cost-per-lead tracking", "Builder relationship building"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and B2B outreach for consistent lead flow." },
+          { "icon": "Filter", "title": "Lead Qualification", "description": "Filter leads by project type, size, and timeline to focus on serious enquiries." },
+          { "icon": "Handshake", "title": "Builder Outreach", "description": "Targeted strategies to build relationships with builders and developers." },
+          { "icon": "Mail", "title": "Follow-Up Systems", "description": "Automated nurturing to convert enquiries into booked jobs." }
+        ],
+        "faqs": [
+          { "question": "What types of brickwork leads will I receive?", "answer": "We can target specific project types: new builds, extensions, retaining walls, restoration. Leads include contact details and project requirements." },
+          { "question": "Can you help get builder subcontract work?", "answer": "Yes, we develop B2B lead generation strategies specifically targeting builders and developers." },
+          { "question": "What is the typical cost per lead?", "answer": "Brickwork lead costs typically range from $40-$100 per qualified lead depending on project type and size." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Bricklayers | Brickwork Marketing Agency Australia",
+        "metaDescription": "Comprehensive digital marketing for bricklayers. Build your reputation, showcase quality work, and generate residential and commercial leads.",
+        "keywords": "bricklayer digital marketing, brickwork marketing, bricklayer advertising, masonry marketing, brickwork lead generation",
+        "heroTitle": "Digital Marketing for Bricklayers",
+        "heroSubtitle": "Grow Your Bricklaying Business with Strategic Marketing",
+        "heroDescription": "In the competitive Australian construction market, skilled bricklayers often struggle to stand out despite delivering exceptional craftsmanship. Our comprehensive digital marketing strategies are specifically designed for bricklaying professionals—helping you build a powerful online presence that showcases your expertise, attracts high-value residential and commercial projects, and establishes lasting relationships with builders and developers. From stunning portfolio websites to targeted advertising campaigns, we handle your marketing so you can focus on what you do best: laying bricks.",
+        "heroPoints": [
+          "Unified strategy across search, social, and content",
+          "Professional portfolio showcasing your craftsmanship",
+          "B2B marketing for builder relationships",
+          "Reputation management that builds trust"
+        ],
+        "benefits": [
+          "Unified digital strategy tailored to the bricklaying industry",
+          "Professional portfolio showcasing that highlights your craftsmanship",
+          "Multi-channel presence across Google, social media, and trade directories",
+          "Proactive reputation management and review generation",
+          "Strategic B2B marketing to develop builder and developer relationships",
+          "Data-driven optimization with transparent ROI reporting",
+          "Seasonal campaign planning for peak construction periods",
+          "Competitive positioning against other local bricklayers"
+        ],
+        "solutions": [
+          { "icon": "Image", "title": "Visual Portfolio Marketing", "description": "Your brickwork speaks volumes—we make sure everyone sees it. We create stunning visual galleries featuring your best projects, from intricate feature walls to large-scale commercial developments. High-quality photography, before-and-after showcases, and detailed case studies help potential clients visualize the quality they'll receive when they choose you." },
+          { "icon": "MapPin", "title": "Local Market Dominance", "description": "Become the undisputed go-to bricklayer in your service area. Our local SEO strategies ensure you appear prominently when homeowners and builders search for bricklaying services. We optimize your Google Business Profile, build local citations, and create suburb-specific content that establishes your authority in every area you serve." },
+          { "icon": "Building2", "title": "Builder & Developer Outreach", "description": "Subcontract work with builders and developers provides consistent project flow. We develop targeted B2B marketing strategies including LinkedIn campaigns, trade publication features, and direct outreach that positions you as a reliable, quality-focused bricklaying partner for construction companies." },
+          { "icon": "Star", "title": "Reputation & Trust Building", "description": "In trades, reputation is everything. We implement systematic review generation campaigns, showcase testimonials prominently, and help you respond professionally to feedback. A strong online reputation becomes your most powerful sales tool, with potential clients choosing you based on the trust others have expressed." },
+          { "icon": "Megaphone", "title": "Paid Advertising Campaigns", "description": "Generate immediate leads with strategically targeted Google Ads and social media campaigns. We create separate campaigns for residential vs. commercial work, retaining walls vs. new builds, and restoration vs. new construction—ensuring your ad spend reaches the clients most likely to convert." },
+          { "icon": "PenTool", "title": "Content Marketing & Authority", "description": "Position yourself as the bricklaying expert in your market. We create educational content about brick selection, construction techniques, and project planning that attracts organic traffic and establishes you as a knowledgeable professional that clients can trust with their projects." }
+        ],
+        "faqs": [
+          { "question": "What marketing channels work best for bricklayers?", "answer": "The most effective marketing mix for bricklayers typically includes local SEO (for ongoing organic visibility), Google Ads (for immediate leads), and visual platforms like Instagram and Facebook (for showcasing work). We also recommend Google Business Profile optimization as it's crucial for local searches. The exact mix depends on whether you focus on residential work, commercial contracts, or builder relationships—we customize your strategy accordingly." },
+          { "question": "How important is showcasing previous work for bricklayers?", "answer": "Extremely important. Brickwork is inherently visual, and potential clients want to see evidence of your craftsmanship before committing. A well-curated portfolio featuring diverse projects—feature walls, extensions, commercial builds, restoration work—builds immediate trust. We help you document completed projects professionally and present them in ways that attract similar high-value work." },
+          { "question": "Can you help us get more builder subcontract work?", "answer": "Absolutely. We develop specific B2B strategies designed to attract builder and developer relationships. This includes LinkedIn presence optimization, targeted Google Ads campaigns for commercial terms, content that demonstrates your reliability and quality standards, and direct outreach campaigns. Many of our bricklayer clients have successfully established ongoing relationships with builders through our marketing efforts." },
+          { "question": "What budget should bricklayers invest in digital marketing?", "answer": "For bricklayers looking to grow consistently, we typically recommend starting with $2,000-$4,000/month including advertising spend. This covers local SEO foundations, Google Ads for lead generation, and reputation management. The right investment depends on your growth goals, competition in your area, and whether you're targeting residential, commercial, or both markets." },
+          { "question": "How do you handle seasonal fluctuations in the construction industry?", "answer": "We build seasonal strategy into your marketing plan. During peak construction seasons, we increase advertising spend and focus on lead generation. During slower periods, we emphasize brand building, portfolio development, and SEO improvements that pay dividends when activity picks up. This approach ensures consistent visibility year-round while maximizing budget efficiency." },
+          { "question": "Do you work with bricklayers who specialize in specific areas?", "answer": "Yes, we customize strategies based on your specialization. Whether you focus on heritage restoration, modern feature walls, commercial developments, retaining walls, or general residential work, we develop targeted messaging and campaigns that attract your ideal clients. Specialization often becomes a competitive advantage we can leverage in your marketing." }
+        ]
+      }
+    },
+    "floor-sanding": {
+      "google-ads": {
+        "metaTitle": "Google Ads for Floor Sanders | Floor Sanding PPC Advertising Australia",
+        "metaDescription": "Expert Google Ads management for floor sanding businesses. Generate quality leads for timber floor sanding, polishing, and restoration projects.",
+        "keywords": "google ads floor sanding, floor sander ppc, timber floor advertising, floor polishing marketing",
+        "heroTitle": "Google Ads for Floor Sanding Specialists",
+        "heroSubtitle": "Generate More Floor Sanding Jobs with Targeted PPC",
+        "heroDescription": "Connect with homeowners actively searching for floor sanding services. Our Google Ads campaigns target high-intent searches to deliver qualified leads for sanding, polishing, and restoration projects.",
+        "heroPoints": [
+          "Capture homeowners actively searching for floor restoration",
+          "Separate campaigns for sanding, polishing, and restoration",
+          "Geographic targeting for your preferred service areas",
+          "Track every lead from first click to booked job"
+        ],
+        "benefits": ["Target homeowners searching for floor sanding", "Separate campaigns for sanding, polishing, restoration", "Geographic targeting for your service areas", "Lead tracking from click to booked job", "Competitor targeting strategies", "Seasonal campaign optimization"],
+        "solutions": [
+          { "icon": "Sparkles", "title": "Service-Specific Campaigns", "description": "Dedicated campaigns for sanding, polishing, restoration, and new floor installation." },
+          { "icon": "MapPin", "title": "Local Area Targeting", "description": "Target homeowners in specific suburbs and regions where you want to work." },
+          { "icon": "Home", "title": "Renovation Market", "description": "Target people renovating homes who often need floor restoration." },
+          { "icon": "Award", "title": "Quality Focus", "description": "Position your services for quality-focused customers, not just price shoppers." }
+        ],
+        "faqs": [
+          { "question": "What budget do floor sanders need for Google Ads?", "answer": "We recommend $1,000-$2,500/month for floor sanding businesses. Job values make ROI typically strong." },
+          { "question": "How do you target different floor services?", "answer": "We create separate campaigns for sanding, polishing, restoration, and related services to ensure relevant ads." },
+          { "question": "Can you target renovation projects?", "answer": "Yes, we can target homeowners doing renovations who often need floor restoration as part of their project." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "SEO for Floor Sanders | Floor Sanding Search Optimization Australia",
+        "metaDescription": "Expert SEO services for floor sanding businesses. Rank higher for timber floor searches and attract quality leads organically.",
+        "keywords": "floor sanding seo, floor polishing seo, timber floor marketing, floor sander marketing",
+        "heroTitle": "SEO for Floor Sanding Specialists",
+        "heroSubtitle": "Rank Higher for Floor Sanding Searches",
+        "heroDescription": "Build long-term visibility for your floor sanding business. Our SEO strategies help homeowners find you when searching for timber floor sanding and polishing services.",
+        "heroPoints": [
+          "Rank organically for floor sanding searches in your area",
+          "Showcase stunning before/after transformations",
+          "Build trust through educational content and reviews",
+          "Lower your cost per lead compared to paid advertising"
+        ],
+        "benefits": ["Long-term organic visibility", "Local SEO for geographic targeting", "Before/after showcasing", "Lower cost per lead over time", "Review management integration", "Compound traffic growth"],
+        "solutions": [
+          { "icon": "MapPin", "title": "Local SEO Excellence", "description": "Dominate local searches for 'floor sanding [suburb]' and related terms." },
+          { "icon": "ImagePlus", "title": "Portfolio Optimization", "description": "Showcase before/after transformations that rank and convert." },
+          { "icon": "FileText", "title": "Service Pages", "description": "Dedicated pages for sanding, polishing, restoration, and finishes." },
+          { "icon": "PenTool", "title": "Content Strategy", "description": "Educational content about timber floors that attracts searchers." }
+        ],
+        "faqs": [
+          { "question": "How long does floor sanding SEO take?", "answer": "Initial improvements typically appear in 2-3 months. Competitive local rankings usually take 4-8 months." },
+          { "question": "Are before/after photos important for SEO?", "answer": "Yes, optimized before/after galleries attract searchers and demonstrate your quality, improving both rankings and conversions." },
+          { "question": "Do you optimize Google Business Profile?", "answer": "Yes, GBP optimization is crucial for floor sanding businesses and is included in our services." }
+        ]
+      },
+      "lead-generation": {
+        "metaTitle": "Lead Generation for Floor Sanders | Floor Sanding Leads Australia",
+        "metaDescription": "Generate qualified floor sanding leads with proven strategies. Connect with homeowners needing timber floor sanding, polishing, and restoration.",
+        "keywords": "floor sanding lead generation, timber floor leads, floor polishing leads, floor restoration leads",
+        "heroTitle": "Lead Generation for Floor Sanding Specialists",
+        "heroSubtitle": "Connect with Homeowners Ready for Floor Restoration",
+        "heroDescription": "Build a consistent pipeline of qualified floor sanding enquiries. Our lead generation strategies connect you with homeowners needing timber floor sanding, polishing, and restoration services.",
+        "heroPoints": [
+          "Receive qualified leads from homeowners needing floor work",
+          "Filter by service type, floor size, and timeline",
+          "Multi-channel approach for consistent lead flow",
+          "CRM integration for efficient job scheduling"
+        ],
+        "benefits": ["Qualified job leads", "Multi-channel lead sourcing", "Lead qualification filtering", "CRM integration", "Cost-per-lead tracking", "Scalable lead flow"],
+        "solutions": [
+          { "icon": "Layers", "title": "Multi-Channel Approach", "description": "Combine Google Ads, SEO, and social media for consistent lead flow." },
+          { "icon": "Filter", "title": "Lead Qualification", "description": "Filter leads by service type, floor size, and timeline." },
+          { "icon": "Mail", "title": "Follow-Up Systems", "description": "Automated nurturing to convert enquiries into booked quotes and jobs." },
+          { "icon": "Share2", "title": "Referral Programs", "description": "Systems to encourage and track referrals from satisfied customers." }
+        ],
+        "faqs": [
+          { "question": "What types of floor sanding leads will I receive?", "answer": "We can target specific services: sanding, polishing, restoration, or new floors. Leads include contact details and project requirements." },
+          { "question": "How are leads delivered?", "answer": "Leads can be delivered via email, SMS, or directly into your CRM for immediate follow-up." },
+          { "question": "What is the typical cost per lead?", "answer": "Floor sanding lead costs typically range from $30-$80 per qualified lead depending on service type and location." }
+        ]
+      },
+      "digital-marketing": {
+        "metaTitle": "Digital Marketing for Floor Sanders | Floor Sanding Marketing Australia",
+        "metaDescription": "Comprehensive digital marketing for floor sanding businesses. Showcase transformations, build reputation, and generate quality leads.",
+        "keywords": "floor sanding digital marketing, floor polishing marketing, timber floor advertising",
+        "heroTitle": "Digital Marketing for Floor Sanding Specialists",
+        "heroSubtitle": "Grow Your Floor Sanding Business with Strategic Marketing",
+        "heroDescription": "Build a comprehensive digital presence that showcases your floor transformations and attracts quality projects. Our integrated marketing approach delivers sustainable growth for floor sanding specialists.",
+        "heroPoints": [
+          "Unified marketing strategy across all digital channels",
+          "Showcase stunning floor transformations that attract enquiries",
+          "Build a reputation that makes you the go-to floor specialist",
+          "Visual marketing that leverages your best before/after work"
+        ],
+        "benefits": ["Unified digital strategy", "Transformation showcasing", "Multi-channel presence", "Reputation management", "Visual marketing focus", "Data-driven optimization"],
+        "solutions": [
+          { "icon": "ImagePlus", "title": "Visual Marketing", "description": "Showcase stunning before/after transformations across all platforms." },
+          { "icon": "MapPin", "title": "Local Presence", "description": "Comprehensive local marketing to be the go-to floor specialist in your area." },
+          { "icon": "Camera", "title": "Social Visual Strategy", "description": "Leverage visual platforms to showcase your work and attract enquiries." },
+          { "icon": "Star", "title": "Review Management", "description": "Build and showcase reviews that demonstrate quality and reliability." }
+        ],
+        "faqs": [
+          { "question": "What marketing works best for floor sanding?", "answer": "Visual content showcasing transformations, local SEO, and Google Ads typically deliver the best results." },
+          { "question": "How important are before/after photos?", "answer": "Critical. Floor sanding is inherently visual and before/after photos are the most persuasive content type for this service." },
+          { "question": "Can social media work for floor sanding?", "answer": "Yes, visual platforms like Instagram and Facebook are excellent for showcasing floor transformations and attracting homeowners." }
+        ]
+      }
+    }
+  },
+  "siteUrl": "https://fractional-cmo.com.au",
+  "defaultImage": "/lovable-uploads/5016915a-7345-483c-9d8f-50938a28715f.png"
+}

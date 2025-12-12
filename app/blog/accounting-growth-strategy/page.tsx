@@ -143,19 +143,19 @@ const AccountingGrowthStrategy = () => {
       <h3 className="text-2xl font-semibold mb-6">Growth Pillars for Modern Accounting Practices</h3>
       <ul className="space-y-3 mb-12">
         <li className="flex items-start gap-3">
-          <Target className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+          <Target className="h-5 w-5 text-primary mt-1 shrink-0" />
           <span><strong>Client Experience Excellence:</strong> Exceed expectations at every touchpoint</span>
         </li>
         <li className="flex items-start gap-3">
-          <Users className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+          <Users className="h-5 w-5 text-primary mt-1 shrink-0" />
           <span><strong>Strategic Service Expansion:</strong> Add high-value advisory services</span>
         </li>
         <li className="flex items-start gap-3">
-          <BarChart className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+          <BarChart className="h-5 w-5 text-primary mt-1 shrink-0" />
           <span><strong>Operational Efficiency:</strong> Streamline processes through technology</span>
         </li>
         <li className="flex items-start gap-3">
-          <Zap className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+          <Zap className="h-5 w-5 text-primary mt-1 shrink-0" />
           <span><strong>Market Differentiation:</strong> Establish unique value propositions</span>
         </li>
       </ul>

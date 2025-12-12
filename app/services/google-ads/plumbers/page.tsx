@@ -1,6 +1,59 @@
-import React from 'react';
-import Plumbers from '@/app/services/google-ads/Plumbers';
+import { Metadata } from 'next';
+import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema, rawServiceData } from '@/data/serviceData';
+import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 
-export default function Page() {
-  return <Plumbers />;
+const data = getIndustryServicePageData('plumbers', 'google-ads')!;
+
+export const metadata: Metadata = {
+  title: data.metaTitle,
+  description: data.metaDescription,
+  keywords: data.keywords,
+  openGraph: {
+    title: data.metaTitle,
+    description: data.metaDescription,
+    url: 'https://fractional-cmo.com.au/services/google-ads/plumbers',
+    siteName: 'Fractional CMO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: data.metaTitle,
+    description: data.metaDescription,
+  },
+};
+
+export default function PlumbersGoogleAdsPage() {
+  const serviceSchema = generateIndustryServiceSchema(
+    'plumbers',
+    'google-ads',
+    'plumbers',
+    'google-ads',
+    data.heroDescription
+  );
+  const faqSchema = generateIndustryFAQSchema(data.faqs);
+  const breadcrumbSchema = generateIndustryBreadcrumbSchema(
+    'google-ads',
+    'plumbers',
+    'google-ads',
+    'plumbers'
+  );
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <IndustryServiceLayout data={data} allServiceData={rawServiceData} />
+    </>
+  );
 }
+

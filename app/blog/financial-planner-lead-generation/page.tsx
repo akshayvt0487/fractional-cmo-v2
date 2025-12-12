@@ -87,15 +87,15 @@ const FinancialPlannerLeadGeneration = () => {
       <h3>Client Pain Points and Motivations</h3>
       <ul className="space-y-3">
         <li className="flex items-start gap-3">
-          <Target className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+          <Target className="h-5 w-5 text-primary mt-1 shrink-0" />
           <span><strong>Investment Complexity:</strong> Overwhelmed by investment options and market volatility</span>
         </li>
         <li className="flex items-start gap-3">
-          <Users className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+          <Users className="h-5 w-5 text-primary mt-1 shrink-0" />
           <span><strong>Tax Efficiency:</strong> Seeking strategies to minimize tax burden while maximizing wealth</span>
         </li>
         <li className="flex items-start gap-3">
-          <BarChart className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+          <BarChart className="h-5 w-5 text-primary mt-1 shrink-0" />
           <span><strong>Retirement Security:</strong> Uncertainty about whether they&apos;re saving enough for retirement</span>
         </li>
       </ul>

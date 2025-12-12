@@ -116,19 +116,19 @@ const TaxAdvisorGoogleAds = () => {
         <h3 className="text-2xl font-semibold mb-4">Search Volume and Seasonality</h3>
         <ul className="space-y-3">
           <li className="flex items-start gap-3">
-            <Target className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+            <Target className="h-5 w-5 text-primary mt-1 shrink-0" />
             <span><strong>Peak Season (January-April):</strong> 70% of annual tax preparation searches</span>
           </li>
           <li className="flex items-start gap-3">
-            <Users className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+            <Users className="h-5 w-5 text-primary mt-1 shrink-0" />
             <span><strong>Pre-Season (October-December):</strong> Tax planning and end-of-year strategies</span>
           </li>
           <li className="flex items-start gap-3">
-            <BarChart className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+            <BarChart className="h-5 w-5 text-primary mt-1 shrink-0" />
             <span><strong>Off-Season (May-September):</strong> Business tax services and planning consultations</span>
           </li>
           <li className="flex items-start gap-3">
-            <Zap className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+            <Zap className="h-5 w-5 text-primary mt-1 shrink-0" />
             <span><strong>Year-Round Opportunities:</strong> Quarterly business taxes and specialized services</span>
           </li>
         </ul>

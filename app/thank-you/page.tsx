@@ -76,15 +76,15 @@ const ThankYou = () => {
                 </h2>
                 <div className="space-y-3 text-sm text-muted-foreground text-left"> {/* Aligned text left */}
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 flex-shrink-0"></div> {/* Adjusted alignment */}
+                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 shrink-0"></div> {/* Adjusted alignment */}
                     <p>I&apos;ll personally review your submission and get back to you within <strong>24 business hours</strong>.</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 shrink-0"></div>
                     <p>We&apos;ll schedule a convenient time for your free <strong>45-minute strategy call</strong> via email.</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 shrink-0"></div>
                     <p>I&apos;ll prepare some initial thoughts based on your submission for our call.</p>
                   </div>
                 </div>

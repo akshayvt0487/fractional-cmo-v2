@@ -1,6 +1,6 @@
-import React from 'react';
-import SEOServices from '@/app/services/SEOServices';
+import { redirect } from 'next/navigation';
 
-export default function Page() {
-  return <SEOServices />;
+export default function SeoServicesRedirect() {
+  // Redirect legacy `/services/seo-services` to canonical `/services/seo`
+  redirect('/services/seo');
 }

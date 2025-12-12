@@ -143,31 +143,31 @@ const AccountingDigitalMarketing = () => {
             <CardContent>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Professional team photos and credentials</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Clear service descriptions with pricing transparency</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Client testimonials and case studies</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Industry certifications and awards</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Secure client portal access</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Resource library with valuable financial content</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Easy appointment scheduling system</span>
                 </li>
               </ul>
@@ -185,23 +185,23 @@ const AccountingDigitalMarketing = () => {
             <CardContent>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 shrink-0" />
                   <span>Google My Business optimization with complete information</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 shrink-0" />
                   <span>Location-specific landing pages for each office</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 shrink-0" />
                   <span>Local keyword targeting (e.g., &quot;accountant in [city]&quot;)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 shrink-0" />
                   <span>Citation building across local directories</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-purple-500 mt-1 shrink-0" />
                   <span>Regular collection and management of online reviews</span>
                 </li>
               </ul>
@@ -331,23 +331,23 @@ const AccountingDigitalMarketing = () => {
               <h4 className="text-lg font-semibold mb-4 text-primary">Credibility Indicators</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Professional certifications (CPA, CA, CGA) prominently displayed</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Team photos with credentials and specializations</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Client testimonials with specific results and outcomes</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Case studies showing client success stories</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Professional memberships and industry affiliations</span>
                 </li>
               </ul>
@@ -356,23 +356,23 @@ const AccountingDigitalMarketing = () => {
               <h4 className="text-lg font-semibold mb-4 text-primary">User Experience Essentials</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Clear service descriptions with transparent pricing</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Secure client portal for document sharing</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Online appointment scheduling system</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Resource library with tax guides and financial tools</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span>Mobile-optimized design for on-the-go access</span>
                 </li>
               </ul>
@@ -554,19 +554,19 @@ const AccountingDigitalMarketing = () => {
               <h4 className="font-semibold mb-4">Retention Strategies</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <Calendar className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                  <Calendar className="h-4 w-4 text-primary mt-1 shrink-0" />
                   <span><strong>Quarterly Business Reviews:</strong> Regular check-ins to assess financial health and planning needs</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Mail className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                  <Mail className="h-4 w-4 text-primary mt-1 shrink-0" />
                   <span><strong>Proactive Communication:</strong> Tax deadline reminders and financial planning opportunities</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Smartphone className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                  <Smartphone className="h-4 w-4 text-primary mt-1 shrink-0" />
                   <span><strong>Technology Integration:</strong> Modern client portals and mobile access for convenience</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Award className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                  <Award className="h-4 w-4 text-primary mt-1 shrink-0" />
                   <span><strong>Value-Added Services:</strong> Financial planning and advisory beyond basic compliance</span>
                 </li>
               </ul>
@@ -575,19 +575,19 @@ const AccountingDigitalMarketing = () => {
               <h4 className="font-semibold mb-4">Referral Generation</h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
-                  <Gift className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                  <Gift className="h-4 w-4 text-primary mt-1 shrink-0" />
                   <span><strong>Formal Referral Program:</strong> Incentives for clients who refer new business</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Handshake className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                  <Handshake className="h-4 w-4 text-primary mt-1 shrink-0" />
                   <span><strong>Professional Networks:</strong> Reciprocal relationships with lawyers, bankers, and consultants</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Star className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                  <Star className="h-4 w-4 text-primary mt-1 shrink-0" />
                   <span><strong>Excellence in Service:</strong> Exceptional results that naturally generate word-of-mouth</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <MessageCircle className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                  <MessageCircle className="h-4 w-4 text-primary mt-1 shrink-0" />
                   <span><strong>Client Success Stories:</strong> Case studies that demonstrate value and encourage referrals</span>
                 </li>
               </ul>

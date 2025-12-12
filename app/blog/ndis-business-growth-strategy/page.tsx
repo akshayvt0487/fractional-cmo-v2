@@ -116,15 +116,15 @@ const NDISBusinessGrowthStrategy = () => {
             <CardContent>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span className="text-sm">Embed quality and safety into every growth initiative</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span className="text-sm">Build scalable compliance systems from day one</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span className="text-sm">Regular internal audits and continuous improvement</span>
                 </li>
               </ul>
@@ -141,15 +141,15 @@ const NDISBusinessGrowthStrategy = () => {
             <CardContent>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span className="text-sm">Focus on outcomes, not just service delivery</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span className="text-sm">Build reputation through participant satisfaction</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                   <span className="text-sm">Measure and track participant goal achievement</span>
                 </li>
               </ul>

@@ -1,166 +1,71 @@
+"use client";
+
 import React from 'react';
+import Link from 'next/link';
 import SEO from '@/components/SEO';
 import Header from '@/components/ui/header';
 import Footer from '@/components/sections/Footer';
 import BreadcrumbNavigation from '@/components/BreadcrumbNavigation';
-import InternalLinks from '@/components/InternalLinks';
 import ScrollBottomPopup from '@/components/ui/scroll-bottom-popup';
-import ServiceInquiryForm from '@/components/ServiceInquiryForm';
 import StrategyForm from '@/components/ui/strategy-form';
+import ServiceInquiryForm from '@/components/ServiceInquiryForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import { Check, ChevronDown, Star, Award, Users, TrendingUp } from 'lucide-react';
+import { Check, ChevronDown, TrendingUp } from 'lucide-react';
+import type { MainServicePageData, ServiceFeature } from '@/data/serviceData';
 
-interface ServiceFAQ {
-  question: string;
-  answer: string;
-}
-
-interface ServiceFeature {
-  title: string;
-  description: string;
-}
-
-interface ServiceProcess {
-  step: number;
-  title: string;
-  description: string;
-}
-
-interface RelatedArticle {
-  title: string;
-  description: string;
-  url: string;
-  category: string;
-}
-
-interface ServicePageLayoutProps {
-  serviceName: string;
-  serviceSlug: string;
-  metaTitle: string;
-  metaDescription: string;
-  heroTitle: string;
-  heroSubtitle: string;
-  heroDescription: string;
-  features: ServiceFeature[];
-  process: ServiceProcess[];
-  faqs: ServiceFAQ[];
-  relatedArticles: RelatedArticle[];
-  benefits: string[];
-  industries?: string[];
+type Props = {
+  data: MainServicePageData;
+  serviceName?: string;
+  serviceSlug?: string;
   children?: React.ReactNode;
-}
+};
 
-const ServicePageLayout = ({
-  serviceName,
-  serviceSlug,
-  metaTitle,
-  metaDescription,
-  heroTitle,
-  heroSubtitle,
-  heroDescription,
-  features,
-  process,
-  faqs,
-  relatedArticles,
-  benefits,
-  industries,
-  children,
-}: ServicePageLayoutProps) => {
+const ServicePageLayout: React.FC<Props> = ({ data, serviceName: customServiceName, serviceSlug: customServiceSlug, children }) => {
+  const serviceName = customServiceName || data.serviceName || data.heroTitle || 'Service';
+  const serviceSlug = customServiceSlug || '';
+  const metaTitle = data.metaTitle || data.heroTitle || serviceName;
+  const metaDescription = data.metaDescription || data.heroDescription || '';
+  const heroTitle = data.heroTitle || serviceName;
+  const heroSubtitle = data.heroSubtitle || '';
+  const heroDescription = data.heroDescription || '';
+
+  const faqs = data.faqs || [];
+  const benefits = data.benefits || [];
+  const features = (data.features || data.solutions || []) as ServiceFeature[];
+  const process = data.process || [];
+
+  const rawSource = (data as unknown) as { industries?: unknown; relatedIndustries?: unknown };
+  const rawIndustries = rawSource.industries ?? rawSource.relatedIndustries ?? [];
+  const industries: string[] = Array.isArray(rawIndustries)
+    ? rawIndustries.map((it: any) => (typeof it === 'string' ? it : it?.name || it?.title)).filter(Boolean)
+    : [];
+
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Services', href: '/services' },
-    { label: serviceName, href: `/services/${serviceSlug}` }
+    { label: serviceName, href: `/services/${serviceSlug || '#'}` },
   ];
 
   const structuredData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": serviceName,
-      "description": metaDescription,
-      "provider": {
-        "@type": "Organization",
-        "name": "Basheer Padanna - Fractional CMO",
-        "url": "https://fractional-cmo.com.au"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Australia"
-      },
-      "serviceType": serviceName
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqs.map(faq => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.answer
-        }
-      }))
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": breadcrumbs.map((item, index) => ({
-        "@type": "ListItem",
-        "position": index + 1,
-        "name": item.label,
-        "item": `https://fractional-cmo.com.au${item.href}`
-      }))
-    }
+    { '@context': 'https://schema.org', '@type': 'Service', name: serviceName, description: metaDescription },
   ];
 
   return (
     <>
-      <SEO
-        title={metaTitle}
-        description={metaDescription}
-        canonical={`/services/${serviceSlug}`}
-        ogType="website"
-        keywords={`${serviceName}, ${serviceName} Australia, ${serviceName} services, professional ${serviceName.toLowerCase()}`}
-        structuredData={structuredData}
-      />
-      
+      <SEO title={metaTitle} description={metaDescription} canonical={`/services/${serviceSlug}`} ogType="website" structuredData={structuredData} />
       <Header />
-      
       <main className="min-h-screen pt-32 md:pt-28">
-        {/* Hero Section */}
         <section className="relative bg-linear-to-br from-background via-background to-primary/5 py-16 md:py-24">
           <div className="mx-auto max-w-6xl px-4">
             <BreadcrumbNavigation items={breadcrumbs} />
-            
             <div className="grid lg:grid-cols-2 gap-12 items-start mt-8">
               <div>
-                <Badge variant="secondary" className="mb-4">{heroSubtitle}</Badge>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
-                  {heroTitle}
-                </h1>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  {heroDescription}
-                </p>
-                
-                {/* Trust Indicators */}
-                <div className="flex flex-wrap gap-4 mb-8">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                    <span>15+ Years Experience</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Award className="w-4 h-4 text-primary" />
-                    <span>Certified Expert</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Users className="w-4 h-4 text-primary" />
-                    <span>100+ Clients Served</span>
-                  </div>
-                </div>
-
+                {heroSubtitle && <Badge variant="secondary" className="mb-4">{heroSubtitle}</Badge>}
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">{heroTitle}</h1>
+                {heroDescription && <p className="text-lg text-muted-foreground mb-6 leading-relaxed">{heroDescription}</p>}
                 <div className="flex flex-wrap gap-4">
                   <StrategyForm preSelectedService={serviceName} />
                   <Button variant="outline" size="lg" asChild>
@@ -168,23 +73,18 @@ const ServicePageLayout = ({
                   </Button>
                 </div>
               </div>
-
-              {/* Inline Inquiry Form */}
               <ServiceInquiryForm serviceName={serviceName} />
             </div>
           </div>
         </section>
 
-        {/* Benefits Section */}
         <section className="py-16 bg-muted/30">
           <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
-              Why Choose Our {serviceName} Services?
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">Why Choose Our {serviceName} Services?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3 p-4 bg-background rounded-lg border border-border/50">
-                  <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <Check className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                   <span className="text-foreground">{benefit}</span>
                 </div>
               ))}
@@ -192,21 +92,16 @@ const ServicePageLayout = ({
           </div>
         </section>
 
-        {/* Features Section */}
         <section className="py-16">
           <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-              Our {serviceName} Capabilities
-            </h2>
-            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-              Comprehensive solutions tailored to drive measurable results for your business.
-            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">Our {serviceName} Capabilities</h2>
+            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">Comprehensive solutions tailored to drive measurable results for your business.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {features.map((feature, index) => (
-                <Card key={index} className="border-border/50 hover:border-primary/30 transition-colors">
+              {features.map((f, idx) => (
+                <Card key={idx} className="border-border/50 hover:border-primary/30 transition-colors">
                   <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-3 text-foreground">{feature.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
+                    <h3 className="text-lg font-semibold mb-3 text-foreground">{f.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{f.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -214,119 +109,85 @@ const ServicePageLayout = ({
           </div>
         </section>
 
-        {/* Process Section */}
         <section id="process" className="py-16 bg-muted/30">
           <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-              Our Proven Process
-            </h2>
-            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-              A systematic approach to delivering results that exceed expectations.
-            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">Our Proven Process</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {process.map((step) => (
-                <div key={step.step} className="relative">
-                  <div className="bg-background rounded-lg p-6 border border-border/50 h-full">
-                    <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold mb-4">
-                      {step.step}
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2 text-foreground">{step.title}</h3>
-                    <p className="text-muted-foreground text-sm">{step.description}</p>
-                  </div>
+                <div key={step.step} className="bg-background rounded-lg p-6 border border-border/50 h-full">
+                  <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold mb-4">{step.step}</div>
+                  <h3 className="text-lg font-semibold mb-2 text-foreground">{step.title}</h3>
+                  <p className="text-muted-foreground text-sm">{step.description}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Industries Section */}
         {industries && industries.length > 0 && (
           <section className="py-16">
             <div className="mx-auto max-w-6xl px-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-                Industries We Serve
-              </h2>
-              <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-                Specialized expertise across diverse industry verticals.
-              </p>
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">Industries We Serve</h2>
               <div className="flex flex-wrap justify-center gap-3">
-                {industries.map((industry, index) => (
-                  <Badge key={index} variant="outline" className="px-4 py-2 text-sm">
-                    {industry}
-                  </Badge>
-                ))}
+                {industries.map((i, idx) => <Badge key={idx} variant="outline" className="px-4 py-2 text-sm">{i}</Badge>)}
               </div>
             </div>
           </section>
         )}
 
-        {/* Custom Content */}
         {children && (
-          <section className="py-16 bg-muted/30">
-            <div className="container max-w-4xl px-4">
-              {children}
-            </div>
-          </section>
+          <section className="py-16 bg-muted/30"><div className="container mx-auto max-w-4xl px-4">{children}</div></section>
         )}
 
-        {/* FAQ Section */}
         <section className="py-16">
-          <div className="mx-auto max-w-4xl px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-muted-foreground text-center mb-12">
-              Common questions about our {serviceName.toLowerCase()} services.
-            </p>
+          <div className="container mx-auto max-w-4xl px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">Frequently Asked Questions</h2>
             <div className="space-y-4">
-              {faqs.map((faq, index) => (
-                <Collapsible key={index}>
+              {faqs.map((faq, i) => (
+                <Collapsible key={i}>
                   <CollapsibleTrigger className="flex items-center justify-between w-full p-4 bg-background rounded-lg border border-border/50 hover:border-primary/30 transition-colors text-left">
                     <span className="font-medium text-foreground pr-4">{faq.question}</span>
-                    <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                    <ChevronDown className="w-5 h-5 text-muted-foreground shrink-0" />
                   </CollapsibleTrigger>
-                  <CollapsibleContent className="px-4 pb-4 pt-2 text-muted-foreground">
-                    {faq.answer}
-                  </CollapsibleContent>
+                  <CollapsibleContent className="px-4 pb-4 pt-2 text-muted-foreground">{faq.answer}</CollapsibleContent>
                 </Collapsible>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Related Articles */}
         <section className="py-16 bg-muted/30">
-          <div className="container max-w-6xl px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
-              Related Insights
-            </h2>
-            <p className="text-muted-foreground text-center mb-12">
-              Explore our latest articles on {serviceName.toLowerCase()}.
-            </p>
-            <InternalLinks articles={relatedArticles} title="" />
+          <div className="container mx-auto max-w-6xl px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">Related Insights</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {(data.relatedArticles || []).map((a: any, i: number) => (
+                <Card key={i} className="group hover:border-primary/30 transition-all border-border/50">
+                  <CardContent className="p-6 flex flex-col h-full">
+                    {a.category && <Badge className="mb-3 w-fit text-xs">{a.category}</Badge>}
+                    <h3 className="font-semibold mb-2 line-clamp-2 grow"><Link href={a.url}>{a.title}</Link></h3>
+                    <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{a.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* Final CTA */}
-        <section className="py-16">
-          <div className="container max-w-4xl px-4">
-            <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
+        <section className="py-16 flex items-center justify-center">
+          <div className="container mx-auto max-w-4xl px-4">
+            <Card className="bg-linear-to-r from-primary/10 to-secondary/10 border-primary/20">
               <CardContent className="p-8 md:p-12 text-center">
                 <TrendingUp className="w-12 h-12 text-primary mx-auto mb-6" />
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                  Ready to Transform Your {serviceName} Strategy?
-                </h2>
-                <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-                  Book a free 45-minute strategy call to discuss how we can help grow your business with proven {serviceName.toLowerCase()} strategies.
-                </p>
-                <StrategyForm preSelectedService={serviceName} />
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Transform Your {serviceName} Strategy?</h2>
+                <p className="text-muted-foreground mb-8 max-w-xl mx-auto">Book a free 45-minute strategy call to discuss how we can help grow your business with proven {serviceName.toLowerCase()} strategies.</p>
+                <StrategyForm />
               </CardContent>
             </Card>
           </div>
         </section>
       </main>
-      
       <ScrollBottomPopup />
+      <Footer />
     </>
   );
 };

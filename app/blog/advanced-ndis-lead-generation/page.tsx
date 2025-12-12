@@ -185,19 +185,19 @@ const AdvancedNDISLeadGeneration = () => {
                 <h4 className="font-semibold mb-3 text-green-600">High Priority (90-100 points)</h4>
                 <ul className="text-sm space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                     <span>Active NDIS plan with relevant funding categories</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                     <span>Immediate service need within 30 days</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                     <span>Located within primary service area</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                     <span>Multiple service category requirements</span>
                   </li>
                 </ul>
@@ -207,19 +207,19 @@ const AdvancedNDISLeadGeneration = () => {
                 <h4 className="font-semibold mb-3 text-orange-600">Medium Priority (70-89 points)</h4>
                 <ul className="text-sm space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 shrink-0" />
                     <span>NDIS plan in development or review</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 shrink-0" />
                     <span>Service need within 60-90 days</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 shrink-0" />
                     <span>Adjacent to primary service area</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 shrink-0" />
                     <span>Single service category focus</span>
                   </li>
                 </ul>
@@ -229,19 +229,19 @@ const AdvancedNDISLeadGeneration = () => {
                 <h4 className="font-semibold mb-3 text-blue-600">Low Priority (50-69 points)</h4>
                 <ul className="text-sm space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                     <span>Exploring NDIS eligibility</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                     <span>Future service need (3+ months)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                     <span>Outside primary service area</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                     <span>Information gathering stage</span>
                   </li>
                 </ul>
@@ -421,23 +421,23 @@ const AdvancedNDISLeadGeneration = () => {
                 <h4 className="font-semibold mb-3">Core CRM Features</h4>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                     <span>Automatic lead capture from all channels</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                     <span>Real-time lead scoring and prioritization</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                     <span>Automated task assignment and reminders</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                     <span>Comprehensive interaction history tracking</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                     <span>Pipeline management and forecasting</span>
                   </li>
                 </ul>
@@ -446,23 +446,23 @@ const AdvancedNDISLeadGeneration = () => {
                 <h4 className="font-semibold mb-3">Advanced Automation</h4>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                     <span>Intelligent email sequence deployment</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                     <span>SMS campaign automation</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                     <span>Social media message integration</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                     <span>Calendar booking and confirmation</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                     <span>Reporting and analytics dashboard</span>
                   </li>
                 </ul>
@@ -621,23 +621,23 @@ const AdvancedNDISLeadGeneration = () => {
             <CardContent>
               <ul className="space-y-2 text-sm text-green-700">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                   <span>Transparent pricing and service information</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                   <span>No pressure sales tactics or urgency manipulation</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                   <span>Clear communication about wait times and availability</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                   <span>Respect for participant choice and decision timeline</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                   <span>Educational focus over sales-oriented messaging</span>
                 </li>
               </ul>
@@ -651,23 +651,23 @@ const AdvancedNDISLeadGeneration = () => {
             <CardContent>
               <ul className="space-y-2 text-sm text-blue-700">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                   <span>GDPR and Privacy Act compliance</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                   <span>Clear consent mechanisms for all communications</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                   <span>Secure data storage and transmission</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                   <span>Easy opt-out and data deletion processes</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                   <span>Regular privacy policy updates and notifications</span>
                 </li>
               </ul>

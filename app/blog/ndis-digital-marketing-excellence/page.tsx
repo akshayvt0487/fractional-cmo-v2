@@ -267,23 +267,23 @@ const NDISDigitalMarketingExcellence = () => {
                       <h4 className="font-semibold mb-3">Interactive Content Formats</h4>
                       <ul className="space-y-2 text-sm">
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                           <span>NDIS eligibility assessment tools</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                           <span>Service cost calculators</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                           <span>Virtual facility tours</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                           <span>Goal setting worksheets</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                           <span>Progress tracking dashboards</span>
                         </li>
                       </ul>
@@ -292,23 +292,23 @@ const NDISDigitalMarketingExcellence = () => {
                       <h4 className="font-semibold mb-3">Video Content Strategy</h4>
                       <ul className="space-y-2 text-sm">
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                           <span>Live Q&A sessions with experts</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                           <span>Day-in-the-life staff content</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                           <span>Participant success story testimonials</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                           <span>Educational webinar series</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
                           <span>Behind-the-scenes facility content</span>
                         </li>
                       </ul>
@@ -526,23 +526,23 @@ const NDISDigitalMarketingExcellence = () => {
                 <CardContent>
                   <ul className="space-y-2 text-sm text-green-700">
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                       <span>Zero-party data collection strategies</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                       <span>Consent management platform integration</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                       <span>Data minimization and pseudonymization</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                       <span>Right to be forgotten automation</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                       <span>Cross-border data transfer compliance</span>
                     </li>
                   </ul>
@@ -556,23 +556,23 @@ const NDISDigitalMarketingExcellence = () => {
                 <CardContent>
                   <ul className="space-y-2 text-sm text-blue-700">
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                       <span>Practice Standards integration in marketing</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                       <span>Participant safeguarding in digital channels</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                       <span>Accessible communication standards</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                       <span>Ethical marketing practice adherence</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 shrink-0" />
                       <span>Quality indicator reporting automation</span>
                     </li>
                   </ul>

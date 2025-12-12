@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -167,7 +167,7 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
             />
           </div>
 
-          <Button type="submit" className="w-full" disabled={isSubmitting}>
+          <Button type="submit" className="w-full  bg-[#0F172A] text-white hover:bg-[#1B2335] cursor-pointer" disabled={isSubmitting}>
             {isSubmitting ? (
               'Submitting...'
             ) : (

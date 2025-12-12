@@ -484,7 +484,7 @@ const LawyersLeadGeneration = () => {
             <h4 className="font-semibold mb-4 text-primary">Consultation Follow-Up Process</h4>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <div className="bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center mt-1 flex-shrink-0">
+                <div className="bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center mt-1 shrink-0">
                   <span className="text-primary font-bold text-sm">1</span>
                 </div>
                 <div>
@@ -493,7 +493,7 @@ const LawyersLeadGeneration = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center mt-1 flex-shrink-0">
+                <div className="bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center mt-1 shrink-0">
                   <span className="text-primary font-bold text-sm">2</span>
                 </div>
                 <div>
@@ -502,7 +502,7 @@ const LawyersLeadGeneration = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center mt-1 flex-shrink-0">
+                <div className="bg-primary/10 rounded-full w-8 h-8 flex items-center justify-center mt-1 shrink-0">
                   <span className="text-primary font-bold text-sm">3</span>
                 </div>
                 <div>
