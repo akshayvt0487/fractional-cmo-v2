@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema, defaultImage } from '@/data/serviceData';
+import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema, defaultImage, rawServiceData } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 
 const data = getIndustryServicePageData('accountants', 'google-ads')!;
