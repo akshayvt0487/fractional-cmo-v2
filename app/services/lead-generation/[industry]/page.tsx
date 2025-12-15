@@ -4,7 +4,7 @@ import { getIndustryServicePageData, rawServiceData, generateIndustryServiceOGDa
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 
 export async function generateMetadata({ params }: { params: { industry: string } }): Promise<Metadata> {
-  const { industry } = await params;
+  const { industry } = params;
   const data = getIndustryServicePageData(industry, 'lead-generation');
 
   if (data) {
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: { params: { industry: string 
   } as Metadata;
 }
 
-export default async function LeadGenIndustryPage({ params }: { params: { industry: string } }) {
-  const { industry } = await params;
+export default function LeadGenIndustryPage({ params }: { params: { industry: string } }) {
+  const { industry } = params;
   const data = getIndustryServicePageData(industry, 'lead-generation');
 
   if (!data) {

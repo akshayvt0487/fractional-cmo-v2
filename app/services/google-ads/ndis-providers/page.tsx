@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema, rawServiceData, defaultImage } from '@/data/serviceData';
+import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema, rawServiceData } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 
 const data = getIndustryServicePageData('ndis-providers', 'google-ads')!;
@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     title: data.metaTitle,
     description: data.metaDescription,
     url: 'https://fractional-cmo.com.au/services/google-ads/ndis-providers',
-    images: [defaultImage],
     siteName: 'Fractional CMO',
     type: 'website',
   },
