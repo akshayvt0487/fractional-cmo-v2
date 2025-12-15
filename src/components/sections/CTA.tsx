@@ -18,7 +18,7 @@ const CTA = ({ service }: CTAProps = {}) =>
         <div className="mt-6 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
           <StrategyForm preSelectedService={service} />
           <Button variant="secondary" size="lg" asChild className="w-full sm:w-auto border-1 hover:bg-gray-100">
-            <a href="#services" aria-label="View engagements">View engagements</a>
+            <a href="/#services" aria-label="View engagements">View engagements</a>
           </Button>
         </div>
       </div>

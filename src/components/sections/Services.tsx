@@ -18,7 +18,7 @@ const Services = () => {
             <CardContent className="space-y-2 text-sm text-muted-foreground">
               <p>Deep-dive audit across web, SEO, and paid. Strategic roadmap with quick wins and north-star plan.</p>
               <Button variant="outline" className="mt-4" asChild>
-                <a href="#contact">Request details</a>
+                <a href="/#contact">Request details</a>
               </Button>
             </CardContent>
           </Card>
@@ -31,7 +31,7 @@ const Services = () => {
             <CardContent className="space-y-2 text-sm text-muted-foreground">
               <p>Ongoing leadership: own growth targets, manage channels and team, and install operating cadence.</p>
               <Button variant="outline" className="mt-4" asChild>
-                <a href="#contact">Discuss fit</a>
+                <a href="/#contact">Discuss fit</a>
               </Button>
             </CardContent>
           </Card>
@@ -44,7 +44,7 @@ const Services = () => {
             <CardContent className="space-y-2 text-sm text-muted-foreground">
               <p>Hands-on execution with dedicated team: creative testing, keyword rigor, and CRO partnership.</p>
               <Button variant="outline" className="mt-4" asChild>
-                <a href="#contact">Get a proposal</a>
+                <a href="/#contact">Get a proposal</a>
               </Button>
             </CardContent>
           </Card>

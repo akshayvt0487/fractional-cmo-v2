@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema } from '@/data/serviceData';
+import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema, defaultImage } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 import { rawServiceData } from '@/data/serviceData';
 
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     title: data.metaTitle,
     description: data.metaDescription,
     url: 'https://fractional-cmo.com.au/services/digital-marketing/bricklayers',
+    images: [defaultImage],
     siteName: 'Fractional CMO',
     type: 'website',
   },

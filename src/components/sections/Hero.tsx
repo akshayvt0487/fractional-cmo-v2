@@ -68,7 +68,7 @@ const Hero = ({ preSelectedService }: { preSelectedService?: string }) => {
             size="lg"
             className="w-full sm:w-auto bg-white/10 text-white border border-white/20 hover:bg-white/20 hover:text-white"
           >
-            <a href="#capabilities" aria-label="See capabilities">
+            <a href="/#capabilities" aria-label="See capabilities">
               See Capabilities
             </a>
           </Button>

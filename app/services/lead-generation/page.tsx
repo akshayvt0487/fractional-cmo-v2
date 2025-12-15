@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getMainServicePageData, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, rawServiceData } from '@/data/serviceData';
+import { getMainServicePageData, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, rawServiceData, defaultImage } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
 
 // Build a full page `data` by merging the parent main service page
@@ -63,6 +63,7 @@ export const metadata: Metadata = {
     title: data.metaTitle,
     description: data.metaDescription,
     url: 'https://fractional-cmo.com.au/services/lead-generation',
+    images: [defaultImage],
     siteName: 'Fractional CMO',
     type: 'website',
   },

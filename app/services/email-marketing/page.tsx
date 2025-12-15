@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getMainServicePageData, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/data/serviceData';
+import { getMainServicePageData, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, defaultImage } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
 
 const data = getMainServicePageData('email-marketing')!;
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     title: data.metaTitle,
     description: data.metaDescription,
     url: 'https://fractional-cmo.com.au/services/email-marketing',
+    images: [defaultImage],
     siteName: 'Fractional CMO',
     type: 'website',
   },

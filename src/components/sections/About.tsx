@@ -41,7 +41,7 @@ const About = () => {
             </div>
             
             <Button asChild className="bg-gray-900 text-white font-semibold hover:bg-gray-900/90">
-              <a href="#contact">Work with me</a>
+              <a href="/#contact">Work with me</a>
             </Button>
           </div>
           
