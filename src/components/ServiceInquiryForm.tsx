@@ -24,17 +24,12 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
     email: '',
     company: '',
     phone: '',
-    budget: '',
     challenge: ''
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSelectChange = (value: string) => {
-    setFormData(prev => ({ ...prev, budget: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -137,21 +132,6 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
                 placeholder="Your phone"
               />
             </div>
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="budget">Monthly Budget</Label>
-            <Select onValueChange={handleSelectChange} value={formData.budget}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select budget range" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="under-2k">Under $2,000/month</SelectItem>
-                <SelectItem value="2k-5k">$2,000 - $5,000/month</SelectItem>
-                <SelectItem value="5k-10k">$5,000 - $10,000/month</SelectItem>
-                <SelectItem value="10k-plus">$10,000+/month</SelectItem>
-              </SelectContent>
-            </Select>
           </div>
 
           <div className="space-y-2">

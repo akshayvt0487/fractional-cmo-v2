@@ -24,17 +24,12 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
     email: '',
     company: '',
     phone: '',
-    budget: '',
     challenge: ''
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSelectChange = (value: string) => {
-    setFormData(prev => ({ ...prev, budget: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -141,21 +136,6 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
                 placeholder="Your phone"
               />
             </div>
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="budget">Monthly Budget</Label>
-            <Select onValueChange={handleSelectChange} value={formData.budget}>
-              <SelectTrigger className="h-12 text-base transition-colors duration-200">
-                <SelectValue placeholder="Select budget range" />
-              </SelectTrigger>
-              <SelectContent className="py-1">
-                <SelectItem value="under-2k" className="hover:bg-primary/10 hover:text-primary cursor-pointer transition-colors duration-150">Under $2,000/month</SelectItem>
-                <SelectItem value="2k-5k" className="hover:bg-primary/10 hover:text-primary cursor-pointer transition-colors duration-150">$2,000 - $5,000/month</SelectItem>
-                <SelectItem value="5k-10k" className="hover:bg-primary/10 hover:text-primary cursor-pointer transition-colors duration-150">$5,000 - $10,000/month</SelectItem>
-                <SelectItem value="10k-plus" className="hover:bg-primary/10 hover:text-primary cursor-pointer transition-colors duration-150">$10,000+/month</SelectItem>
-              </SelectContent>
-            </Select>
           </div>
 
           <div className="space-y-2">

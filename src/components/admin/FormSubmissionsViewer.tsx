@@ -23,7 +23,6 @@ interface BaseSubmission extends Models.Document {
 interface StrategyFormSubmission extends BaseSubmission {
   service?: string;
   revenue?: string;
-  budget?: string;
   timeline?: string;
   challenge: string;
 }
@@ -144,12 +143,6 @@ const FormSubmissionsViewer = () => {
                       <div>
                         <span className="text-sm font-medium">Revenue: </span>
                         <span className="text-muted-foreground">{strategySubmission.revenue}</span>
-                      </div>
-                    )}
-                    {strategySubmission.budget && (
-                      <div>
-                        <span className="text-sm font-medium">Budget: </span>
-                        <span className="text-muted-foreground">{strategySubmission.budget}</span>
                       </div>
                     )}
                     {strategySubmission.timeline && (

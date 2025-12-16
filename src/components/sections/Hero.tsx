@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from "@/components/ui/button";
-import StrategyFormInline from "@/components/ui/strategy-form-inline";
+import StrategyForm from "@/components/ui/strategy-form";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { useState } from 'react';
 import Header from "@/components/ui/header";
@@ -87,20 +87,8 @@ const HeroStrategyButton = ({ preSelectedService }: { preSelectedService?: strin
 
   return (
     <>
-      <Button size="lg" onClick={() => setIsOpen(true)} className="w-full sm:w-auto bg-white/10 text-white border border-white/20 hover:bg-white/20 hover:text-white">
-        Book Your Free Strategy
-      </Button>
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
-          <DialogHeader>
-            <DialogTitle>Book Your Free Strategy Call</DialogTitle>
-            <DialogDescription>
-              Tell us about your goals and we&apos;ll customise a strategy for your business.
-            </DialogDescription>
-          </DialogHeader>
-          <StrategyFormInline preSelectedService={preSelectedService} />
-        </DialogContent>
-      </Dialog>
+       <StrategyForm preSelectedService={preSelectedService} />
+      
     </>
   );
 };

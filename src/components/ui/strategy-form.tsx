@@ -226,7 +226,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
             </Select>
           </div>
 
-          <Button type="submit" className="w-full h-12 text-base" disabled={isSubmitting}>
+          <Button type="submit" className="w-full h-12 text-white cursor-pointer bg-gray-950" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit Request"}
           </Button>
         </form>
