@@ -638,7 +638,7 @@ export const blogPosts: BlogPost[] = [
     slug: "financial-planner-lead-generation",
     category: "Accounting & Finance",
     author: "Basheer Padanna",
-    image: '/images/blog/financial-planner-lead-gen-hero.jpg'
+    image: '/images/blog/finance-broker-lead-generation-hero.jpg'
   },
   {
     title: "Google Ads for Tax Advisors: Complete Campaign Strategy & Optimization Guide 2026",

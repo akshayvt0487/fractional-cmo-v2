@@ -97,6 +97,7 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
+                className="h-12 text-base transition-shadow duration-200 focus:shadow-md"
                 placeholder="Your name"
                 required
               />
@@ -109,6 +110,7 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
                 type="email"
                 value={formData.email}
                 onChange={handleInputChange}
+                className="h-12 text-base transition-shadow duration-200 focus:shadow-md"
                 placeholder="your@email.com"
                 required
               />
@@ -123,6 +125,7 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
                 name="company"
                 value={formData.company}
                 onChange={handleInputChange}
+                className="h-12 text-base transition-shadow duration-200 focus:shadow-md"
                 placeholder="Company name"
               />
             </div>
@@ -134,6 +137,7 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
                 type="tel"
                 value={formData.phone}
                 onChange={handleInputChange}
+                className="h-12 text-base transition-shadow duration-200 focus:shadow-md"
                 placeholder="Your phone"
               />
             </div>
@@ -142,14 +146,14 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
           <div className="space-y-2">
             <Label htmlFor="budget">Monthly Budget</Label>
             <Select onValueChange={handleSelectChange} value={formData.budget}>
-              <SelectTrigger>
+              <SelectTrigger className="h-12 text-base transition-colors duration-200">
                 <SelectValue placeholder="Select budget range" />
               </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="under-2k">Under $2,000/month</SelectItem>
-                <SelectItem value="2k-5k">$2,000 - $5,000/month</SelectItem>
-                <SelectItem value="5k-10k">$5,000 - $10,000/month</SelectItem>
-                <SelectItem value="10k-plus">$10,000+/month</SelectItem>
+              <SelectContent className="py-1">
+                <SelectItem value="under-2k" className="hover:bg-primary/10 hover:text-primary cursor-pointer transition-colors duration-150">Under $2,000/month</SelectItem>
+                <SelectItem value="2k-5k" className="hover:bg-primary/10 hover:text-primary cursor-pointer transition-colors duration-150">$2,000 - $5,000/month</SelectItem>
+                <SelectItem value="5k-10k" className="hover:bg-primary/10 hover:text-primary cursor-pointer transition-colors duration-150">$5,000 - $10,000/month</SelectItem>
+                <SelectItem value="10k-plus" className="hover:bg-primary/10 hover:text-primary cursor-pointer transition-colors duration-150">$10,000+/month</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -161,13 +165,14 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
               name="challenge"
               value={formData.challenge}
               onChange={handleInputChange}
+              className="text-base min-h-[80px] transition-shadow duration-200 focus:shadow-md"
               placeholder={`Tell us about your current ${preSelectedService?.toLowerCase()} challenges and goals...`}
               rows={3}
               required
             />
           </div>
 
-          <Button type="submit" className="w-full bg-[#0F172A] text-white hover:bg-[#1B2335] cursor-pointer" disabled={isSubmitting}>
+          <Button type="submit" className="w-full bg-[#0F172A] text-white hover:bg-[#1B2335] transition-colors duration-200 transform hover:-translate-y-0.5 cursor-pointer" disabled={isSubmitting}>
             {isSubmitting ? (
               'Submitting...'
             ) : (
