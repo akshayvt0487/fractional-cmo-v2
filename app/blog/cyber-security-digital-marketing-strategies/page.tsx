@@ -5,7 +5,6 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Cyber Security Digital Marketing Strategies",
   description: "Expert guidance on cyber security digital marketing strategies. Learn proven strategies and best practices for business growth.",
@@ -24,7 +23,7 @@ export const metadata = createMetadata({
       alt: "Digital marketing strategies for cyber security companies - comprehensive guide and tactics"
     }],
     publishedTime: "2024-01-30T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.558Z",
+    modifiedTime: "2026-10-31T11:10:04.558Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +35,21 @@ export const metadata = createMetadata({
   }
 });
 const CyberSecurityDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "cyber-security-digital-marketing-strategies");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: cyber-security-digital-marketing-strategies");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Digital Marketing Strategies for New Cyber Security Firms: Complete Startup Growth Guide",
     description: "Complete digital marketing playbook for startup cyber security companies. Establish market presence & attract first clients.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-30T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-30T00:00:00.000Z",
     url: "/blog/cyber-security-digital-marketing-strategies",
     imageUrl: "/images/blog/cyber-security-digital-marketing.jpg",

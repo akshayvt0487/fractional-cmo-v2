@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
 export const metadata = createMetadata({
   title: "Cyber Security Seo Australia",
   description: "Expert guidance on cyber security seo australia. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "SEO strategies for cyber security companies in Australia - complete optimization guide"
     }],
     publishedTime: "2024-01-25T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.601Z",
+    modifiedTime: "2026-10-31T11:10:04.601Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const CyberSecuritySEOAustralia = () => {
+  const post = blogPosts.find(p => p.slug === "cyber-security-seo-australia");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: cyber-security-seo-australia");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Cyber Security SEO Australia: Complete Guide to Ranking #1 for Security Services",
     description: "Master cyber security SEO strategies specifically for the Australian market. Learn keyword targeting, content optimization, and local search tactics that help security companies dominate Google rankings.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-25T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-25T00:00:00.000Z",
     url: "/blog/cyber-security-seo-australia",
     imageUrl: "/images/blog/cyber-security-seo-australia-hero.jpg",

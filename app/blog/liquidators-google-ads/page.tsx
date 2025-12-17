@@ -1,9 +1,15 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/liquidators-google-ads-hero.jpg";
+const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+  
 export const metadata = createMetadata({
   title: "Liquidators Google Ads",
   description: "Expert guidance on liquidators google ads. Learn proven strategies and best practices for business growth.",
@@ -21,8 +27,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Liquidators Google Ads"
     }],
-    publishedTime: "2025-01-15",
-    modifiedTime: "2025-10-31T11:10:04.837Z",
+    publishedTime: "2026-01-15",
+    modifiedTime: "2026-10-31T11:10:04.837Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -38,12 +44,12 @@ const LiquidatorsGoogleAds = () => {
     source: "Google Ads",
     title: "Google Ads Best Practices",
     url: "https://support.google.com/google-ads/",
-    date: "2025"
+    date: "2026"
   }, {
     source: "ARITA",
     title: "ARITA - Professional Standards",
     url: "https://www.arita.com.au/",
-    date: "2025"
+    date: "2026"
   }];
   const relatedArticles = [{
     title: "Google Ads for Service Businesses",
@@ -61,10 +67,18 @@ const LiquidatorsGoogleAds = () => {
     url: "/blog/lawyers-lead-generation",
     category: "Legal"
   }];
+  const post = blogPosts.find(p => p.slug === "liquidators-google-ads");
+  if (!post) throw new Error("Blog post not found: liquidators-google-ads");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
   return <OptimizedBlogLayout articleData={{
-    headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2025",
+    headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2026",
     description: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimize conversion rates, and maximize ROI for insolvency practitioners.",
-    publishedDate: "2025-01-15",
+    publishedDate: convertDateFormat(post.date),
     url: "/blog/liquidators-google-ads",
     readTime: "13 min read",
     category: "Legal",

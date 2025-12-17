@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import StrategyForm from "@/components/ui/strategy-form";
 import { relatedArticles } from "@/utils/seoUtils";
-
 export const metadata = createMetadata({
   title: "Local Search Ranking",
   description: "Expert guidance on local search ranking. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Local Search Ranking"
     }],
     publishedTime: "2024-12-31T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.879Z",
+    modifiedTime: "2026-10-31T11:10:04.879Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const LocalSearchRanking = () => {
+  const post = blogPosts.find(p => p.slug === "local-search-ranking");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: local-search-ranking");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "How to Rank Quickly in Local Search: 2024 Local SEO Guide",
     description: "Master local SEO with proven strategies to rank quickly in local search results. Boost visibility, attract local customers, and dominate your market.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-31T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-31T00:00:00.000Z",
     url: "/blog/local-search-ranking",
     imageUrl: "/images/blog/local-search-ranking-hero.jpg",

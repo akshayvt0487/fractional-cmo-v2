@@ -24,7 +24,7 @@ export const metadata = createMetadata({
       alt: "NDIS Digital Marketing Strategies Guide"
     }],
     publishedTime: "2024-12-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.932Z",
+    modifiedTime: "2026-10-31T11:10:04.932Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const NDISDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-digital-marketing-strategies");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: ndis-digital-marketing-strategies");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "NDIS Digital Marketing: Complete Guide for Disability Service Providers 2025",
+    headline: "NDIS Digital Marketing: Complete Guide for Disability Service Providers 2026",
     description: "Master NDIS digital marketing strategies to attract participants, build trust & grow your disability service provider business effectively.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/ndis-digital-marketing-strategies",
     imageUrl: "/images/blog/ndis-digital-marketing-strategies-hero.jpg",

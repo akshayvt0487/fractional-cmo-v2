@@ -1,9 +1,15 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/liquidators-growth-marketing-hero.jpg";
+const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+  
 export const metadata = createMetadata({
   title: "Liquidators Growth Marketing",
   description: "Expert guidance on liquidators growth marketing. Learn proven strategies and best practices for business growth.",
@@ -21,8 +27,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Liquidators Growth Marketing"
     }],
-    publishedTime: "2025-01-15",
-    modifiedTime: "2025-10-31T11:10:04.850Z",
+    publishedTime: "2026-01-15",
+    modifiedTime: "2026-10-31T11:10:04.850Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -38,12 +44,12 @@ const LiquidatorsGrowthMarketing = () => {
     source: "ARITA",
     title: "Australian Restructuring Insolvency and Turnaround Association",
     url: "https://www.arita.com.au/",
-    date: "2025"
+    date: "2026"
   }, {
     source: "ASIC",
     title: "ASIC - Corporate Insolvency Practitioners",
     url: "https://www.asic.gov.au/regulatory-resources/insolvency/insolvency-for-directors/",
-    date: "2025"
+    date: "2026"
   }];
   const relatedArticles = [{
     title: "B2B Lead Generation Strategies",
@@ -61,10 +67,18 @@ const LiquidatorsGrowthMarketing = () => {
     url: "/blog/growth-marketing-strategy",
     category: "Growth"
   }];
+  const post = blogPosts.find(p => p.slug === "liquidators-growth-marketing");
+  if (!post) throw new Error("Blog post not found: liquidators-growth-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
   return <OptimizedBlogLayout articleData={{
-    headline: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2025",
+    headline: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2026",
     description: "Comprehensive growth marketing strategies for liquidators and insolvency practitioners. Learn how to scale your liquidation practice with proven digital marketing tactics.",
-    publishedDate: "2025-01-15",
+    publishedDate: convertDateFormat(post.date),
     url: "/blog/liquidators-growth-marketing",
     readTime: "12 min read",
     category: "Legal",

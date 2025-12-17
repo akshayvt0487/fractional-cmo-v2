@@ -4,7 +4,6 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Shield, Users, Building, Zap, CheckCircle, TrendingUp, Search, Target, Video, Play, Home } from 'lucide-react';
-
 export const metadata = createMetadata({
   title: "Security Digital Marketing Guide",
   description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -22,8 +21,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Security Company Digital Marketing Strategy Guide"
     }],
-    publishedTime: "2025-01-05",
-    modifiedTime: "2025-10-31T11:10:05.228Z",
+    publishedTime: "2026-01-05",
+    modifiedTime: "2026-10-31T11:10:05.228Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,12 +34,22 @@ export const metadata = createMetadata({
   }
 });
 const SecurityDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "security-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: security-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Digital Marketing for Security Services: Complete Client Acquisition Guide 2025",
+    headline: "Digital Marketing for Security Services: Complete Client Acquisition Guide 2026",
     description: "Transform your security service business with proven digital marketing strategies. Learn client acquisition, trust building, and growth tactics for security companies.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-05",
-    modifiedDate: "2025-01-05",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-05",
     url: "/blog/security-digital-marketing-guide",
     imageUrl: "/images/blog/security-digital-marketing-guide-hero.jpg",
     category: "Service Business",

@@ -4,15 +4,14 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Shield, Target, Users, Phone, Building, AlertTriangle, Lock } from 'lucide-react';
-
 export const metadata = createMetadata({
-  title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
-  description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
+  title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2026",
+  description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2026. Learn proven strategies and best practices for business growth.",
   path: "/blog/security-lead-generation-strategy",
   keywords: ["security", "lead", "generation", "strategy", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
-    title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
-    description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
+    title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2026",
+    description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2026. Learn proven strategies and best practices for business growth.",
     url: "https://fractional-cmo.com.au/blog/security-lead-generation-strategy",
     siteName: "Fractional CMO",
     type: "article",
@@ -20,25 +19,32 @@ export const metadata = createMetadata({
       url: "https://fractional-cmo.com.au/images/blog/security-lead-generation-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025"
+      alt: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2026"
     }],
     publishedTime: "2024-11-28",
-    modifiedTime: "2025-10-31T11:10:05.246Z",
+    modifiedTime: "2026-10-31T11:10:05.246Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
-    description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2025. Learn proven strategies and best practices for business growth.",
+    title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2026",
+    description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2026. Learn proven strategies and best practices for business growth.",
     images: ["https://fractional-cmo.com.au/images/blog/security-lead-generation-hero.jpg"],
     site: "@FractionalCMO"
   }
 });
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
-  headline: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2025",
+  headline: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2026",
   description: "Master lead generation for security companies. Learn proven strategies to attract residential and commercial security clients, build trust, and grow your security business through digital marketing.",
   author: "Basheer Padanna",
-  publishedDate: "2024-11-28",
+  publishedDate: convertDateFormat(post.date),
   modifiedDate: "2024-11-28",
   url: "/blog/security-lead-generation-strategy",
     imageUrl: "/images/blog/security-lead-generation-strategy-hero.jpg",
@@ -60,7 +66,7 @@ const faqs = [{
   answer: "Both markets have advantages. Commercial offers higher contract values and longer terms, while residential provides steady volume. Many successful companies serve both with targeted marketing strategies."
 }];
 const relatedArticles = [{
-  title: "Security Digital Marketing Guide: Complete Growth Strategy 2025",
+  title: "Security Digital Marketing Guide: Complete Growth Strategy 2026",
   description: "Comprehensive digital marketing strategies for security companies",
   url: "/blog/security-digital-marketing-guide",
   category: "Security",
@@ -79,6 +85,9 @@ const relatedArticles = [{
   readTime: "18 min read"
 }];
 const SecurityLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "security-lead-generation-strategy");
+  if (!post) throw new Error("Blog post not found: security-lead-generation-strategy");
+  
   return <>
       <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={'/images/blog/security-lead-generation-hero.jpg'} heroAlt="Professional security team monitoring surveillance systems - lead generation guide">
         <p className="text-lg text-muted-foreground mb-6">

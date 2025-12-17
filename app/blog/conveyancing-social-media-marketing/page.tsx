@@ -5,7 +5,6 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Conveyancing Social Media Marketing",
   description: "Expert guidance on conveyancing social media marketing. Learn proven strategies and best practices for business growth.",
@@ -23,8 +22,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Conveyancing Social Media Marketing Strategy Guide"
     }],
-    publishedTime: "2025-09-02T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.529Z",
+    publishedTime: "2026-09-02T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.529Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,12 +35,22 @@ export const metadata = createMetadata({
   }
 });
 const ConveyancingSocialMedia = () => {
+  const post = blogPosts.find(p => p.slug === "conveyancing-social-media-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: conveyancing-social-media-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Social Media Marketing for Conveyancers: Building Trust in the Digital Age",
     description: "Master social media marketing for conveyancing firms. Build trust, showcase expertise & attract property clients via LinkedIn & Facebook.",
     author: "Basheer Padanna",
-    publishedDate: "2025-09-02T00:00:00.000Z",
-    modifiedDate: "2025-09-02T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-09-02T00:00:00.000Z",
     url: "/blog/conveyancing-social-media-marketing",
     imageUrl: '/images/blog/conveyancing-social-media-hero.jpg',
     category: "Legal Marketing",

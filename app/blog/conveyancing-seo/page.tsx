@@ -5,7 +5,6 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Conveyancing Seo Guide",
   description: "Expert guidance on conveyancing seo guide. Learn proven strategies and best practices for business growth.",
@@ -23,8 +22,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Conveyancing SEO Strategy Guide"
     }],
-    publishedTime: "2025-09-03T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.518Z",
+    publishedTime: "2026-09-03T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.518Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,12 +35,22 @@ export const metadata = createMetadata({
   }
 });
 const ConveyancingSEO = () => {
+  const post = blogPosts.find(p => p.slug === "conveyancing-seo");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: conveyancing-seo");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "SEO for Conveyancing: Ranking Higher When Clients Search for Property Lawyers",
     description: "Comprehensive SEO strategies for conveyancing firms. Rank higher in search, attract quality leads & establish property law authority.",
     author: "Basheer Padanna",
-    publishedDate: "2025-09-03T00:00:00.000Z",
-    modifiedDate: "2025-09-03T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-09-03T00:00:00.000Z",
     url: "/blog/conveyancing-seo-guide",
     imageUrl: '/images/blog/conveyancing-seo-hero.jpg',
     category: "Legal Marketing",

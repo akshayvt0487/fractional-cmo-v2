@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, Target, Users, BarChart, Zap, CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Financial Planner Seo Guide",
   description: "Expert guidance on financial planner seo guide. Learn proven strategies and best practices for business growth.",
@@ -23,7 +23,7 @@ export const metadata = createMetadata({
       alt: "SEO guide for financial planners - comprehensive search engine optimization strategies"
     }],
     publishedTime: "2024-12-31T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.673Z",
+    modifiedTime: "2026-10-31T11:10:04.673Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +35,20 @@ export const metadata = createMetadata({
   }
 });
 const FinancialPlannerSEO = () => {
+  const post = blogPosts.find(p => p.slug === "financial-planner-seo");
+  if (!post) throw new Error("Blog post not found: financial-planner-seo");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "SEO for Financial Planners: Complete Local Search Domination Guide 2025",
+    headline: "SEO for Financial Planners: Complete Local Search Domination Guide 2026",
     description: "Master SEO for financial planners with proven strategies for local search domination, content marketing, and client acquisition. Complete guide with actionable tactics.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-31T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-31T00:00:00.000Z",
     url: "/blog/financial-planner-seo-guide",
     imageUrl: "/images/blog/financial-planner-seo-guide-hero.jpg",
@@ -64,7 +73,7 @@ const FinancialPlannerSEO = () => {
         </p>
       </div>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">The Financial Planner SEO Landscape in 2025</h2>
+      <h2 className="text-2xl font-bold mt-8 mb-4">The Financial Planner SEO Landscape in 2026</h2>
       
       <p className="mb-6">
         The financial planning industry has undergone significant digital transformation. Today&apos;s affluent clients expect financial advisors to have a strong online presence that demonstrates expertise and trustworthiness. With over 87% of financial services clients researching advisors online before making contact, SEO has become essential for practice growth.

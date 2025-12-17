@@ -4,7 +4,6 @@ import { Building, Users, Target, TrendingUp } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Construction Marketing Best Practices",
   description: "Expert guidance on construction marketing best practices. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Best marketing practices for construction companies - proven strategies for growth"
     }],
     publishedTime: "2024-02-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.463Z",
+    modifiedTime: "2026-10-31T11:10:04.463Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const ConstructionMarketingBestPractices = () => {
+  const post = blogPosts.find(p => p.slug === "construction-marketing-best-practices");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: construction-marketing-best-practices");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Construction Marketing Best Practices: Digital Growth Strategies",
     description: "Essential digital marketing strategies for construction companies looking to scale their business through effective online lead generation and brand building.",
     author: "Basheer Padanna",
-    publishedDate: "2024-02-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-02-20T00:00:00.000Z",
     url: "/blog/construction-marketing-best-practices",
     imageUrl: '/images/blog/construction-project-management.jpg',

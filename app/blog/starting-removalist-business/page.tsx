@@ -16,29 +16,39 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: "https://fractional-cmo.com.au/images/blog/starting-removalist-business-2025-hero.jpg",
+      url: "https://fractional-cmo.com.au/images/blog/starting-removalist-business-2026-hero.jpg",
       width: 1200,
       height: 630,
       alt: "Starting Removalist Business Guide"
     }],
     publishedTime: "2021-07-14",
-    modifiedTime: "2025-10-31T11:10:05.265Z",
+    modifiedTime: "2026-10-31T11:10:05.265Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Starting Removalist Business Guide",
     description: "Expert guidance on starting removalist business guide. Learn proven strategies and best practices for business growth.",
-    images: ["https://fractional-cmo.com.au/images/blog/starting-removalist-business-2025-hero.jpg"],
+    images: ["https://fractional-cmo.com.au/images/blog/starting-removalist-business-2026-hero.jpg"],
     site: "@FractionalCMO"
   }
 });
 const StartingRemovalistBusiness = () => {
+  const post = blogPosts.find(p => p.slug === "starting-removalist-business");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: starting-removalist-business");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Starting a Removalist Business: Complete Setup Guide for Success",
     description: "Comprehensive guide to starting a successful removalist business including licensing, equipment, pricing strategies, and marketing techniques for growth.",
     author: "Basheer Padanna",
-    publishedDate: "2021-07-14",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2021-07-14",
     url: "/blog/starting-removalist-business-guide",
     imageUrl: "/images/blog/starting-removalist-business-guide-hero.jpg",

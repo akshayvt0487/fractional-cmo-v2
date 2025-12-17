@@ -26,8 +26,8 @@ export const metadata = createMetadata({
   ],
   openGraph: {
     type: "article",
-    publishedTime: "2025-01-18",
-    modifiedTime: "2025-10-31T11:10:04.986Z",
+    publishedTime: "2026-01-18",
+    modifiedTime: "2026-10-31T11:10:04.986Z",
     authors: ["Basheer Padanna"],
   },
   twitter: {
@@ -41,13 +41,19 @@ export const metadata = createMetadata({
 });
 
 // ✅ Article Data (used by OptimizedBlogLayout)
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
   headline: "NDIS Lead Generation Strategies: A Complete Guide for Providers",
   description:
     "Master proven NDIS lead generation strategies to attract quality participants. Learn digital marketing, referral systems, and compliance-focused approaches that work.",
   author: "Basheer Padanna",
-  publishedDate: "2025-01-18",
-  modifiedDate: "2025-10-31",
+  publishedDate: convertDateFormat(post.date),
+  modifiedDate: "2026-10-31",
   url: "/blog/ndis-lead-generation-strategies",
   imageUrl: "/images/blog/ndis-lead-generation-strategies-hero.jpg",
   category: "NDIS Marketing",
@@ -129,7 +135,7 @@ const faqs = [
               <Badge variant="secondary" className="bg-primary/10 text-primary">
                 Market Opportunity
               </Badge>
-              <span className="text-sm text-muted-foreground">Updated January 2025</span>
+              <span className="text-sm text-muted-foreground">Updated January 2026</span>
             </div>
             <h3 className="text-xl font-semibold mb-3">NDIS Lead Generation Market</h3>
             <div className="grid md:grid-cols-3 gap-4 text-center">

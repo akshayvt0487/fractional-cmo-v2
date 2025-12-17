@@ -6,7 +6,6 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Users, TrendingUp, Target, Shield, Calendar, DollarSign, BarChart3 } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
 export const metadata = createMetadata({
   title: "Ndis Business Growth Strategy",
   description: "Expert guidance on ndis business growth strategy. Learn proven strategies and best practices for business growth.",
@@ -25,7 +24,7 @@ export const metadata = createMetadata({
       alt: "Ndis Business Growth Strategy"
     }],
     publishedTime: "2024-12-15T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.911Z",
+    modifiedTime: "2026-10-31T11:10:04.911Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -37,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const NDISBusinessGrowthStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-business-growth-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: ndis-business-growth-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "NDIS Business Growth Strategy: Scale Your Disability Services Sustainably",
     description: "Comprehensive guide to scaling NDIS disability services with proven business growth strategies, participant acquisition tactics, and sustainable expansion methods that prioritize quality care.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-15T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/ndis-business-growth-strategy",
     imageUrl: "/images/blog/ndis-business-growth-strategy-hero.jpg",

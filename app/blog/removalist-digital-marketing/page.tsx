@@ -5,7 +5,6 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent } from "@/components/ui/card";
 
 // client hook removed from server page to avoid server-side invocation
-
 export const metadata = createMetadata({
   title: "Removalist Digital Marketing",
   description: "Expert guidance on removalist digital marketing. Learn proven strategies and best practices for business growth.",
@@ -24,7 +23,7 @@ export const metadata = createMetadata({
       alt: "Removalist Digital Marketing Guide and Strategy"
     }],
     publishedTime: "2024-12-31",
-    modifiedTime: "2025-10-31T11:10:05.154Z",
+    modifiedTime: "2026-10-31T11:10:05.154Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,13 +35,23 @@ export const metadata = createMetadata({
   }
 });
 const RemovalistDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "removalist-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: removalist-digital-marketing");
+  
   // Client gating removed during build stabilization: assume content unlocked for prerender
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   
   const articleData = {
     headline: "Digital Marketing for Removalist Business: Complete Growth Guide 2024",
     description: "Transform your removalist business with proven digital marketing strategies. Attract more customers, increase bookings, and grow revenue online.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-31",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-31",
     url: "/blog/removalist-digital-marketing",
     imageUrl: '/images/blog/removalist-digital-marketing-hero.jpg',

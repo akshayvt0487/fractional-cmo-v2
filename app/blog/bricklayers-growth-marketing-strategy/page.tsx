@@ -11,7 +11,7 @@ import { Target, Globe, Camera, Search, PenTool, BookOpen, Video } from "lucide-
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
-  title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
+  title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
   description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
   path: "/blog/bricklayers-growth-marketing-strategy",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata = createMetadata({
     "scaling a trade business"
   ],
   openGraph: {
-    title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
+    title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
     description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/bricklayers-growth-marketing-strategy`,
     siteName: "Fractional CMO",
@@ -34,13 +34,13 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Bricklayers Growth Marketing and Lead Generation Strategy"
     }],
-    publishedTime: "2025-01-14T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.341Z",
+    publishedTime: "2026-01-14T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.341Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
+    title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
     description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/bricklayers-growth-marketing-hero.jpg`],
     site: "@FractionalCMO"
@@ -50,12 +50,19 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
 // ✅ Article Data & FAQs
 // ————————————————————————————————————————
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
-  headline: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2025",
+  headline: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
   description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
   author: "Basheer Padanna",
-  publishedDate: "2025-01-14",
-  modifiedDate: "2025-10-31T11:10:04.341Z", // Synced with metadata for freshness
+  publishedDate: convertDateFormat(post.date),
+  modifiedDate: "2026-10-31T11:10:04.341Z", // Synced with metadata for freshness
   url: "/blog/bricklayers-growth-marketing-strategy",
   imageUrl: '/images/blog/bricklayers-growth-marketing-hero.jpg',
   category: "Trade Marketing",
@@ -86,6 +93,9 @@ const faqs = [
 // ✅ Page Component
 // ————————————————————————————————————————
 const BricklayersGrowthMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "bricklayers-growth-marketing-strategy");
+  if (!post) throw new Error("Blog post not found: bricklayers-growth-marketing-strategy");
+  
   return (
     <OptimizedBlogLayout
       articleData={articleData}

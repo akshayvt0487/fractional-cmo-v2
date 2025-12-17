@@ -142,6 +142,10 @@ const Blog = () => {
               return post.title.toLowerCase().includes("criminal") ||
               post.slug.includes("criminal-lawyers");
             }
+            if (subcategory === "Immigration Law") {
+              return post.title.toLowerCase().includes("immigration") ||
+              post.slug.includes("immigration-lawyers");
+            }
           }
           if (mainCategory === "Digital Marketing") {
             if (subcategory === "Google Ads") {

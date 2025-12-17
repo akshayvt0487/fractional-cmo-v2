@@ -35,8 +35,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Bricklayers Lead Generation Strategies"
     }],
-    publishedTime: "2025-01-18T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.357Z",
+    publishedTime: "2026-01-18T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.357Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -51,12 +51,19 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
 // ✅ Article Data & FAQs
 // ————————————————————————————————————————
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
   headline: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
   description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
   author: "Basheer Padanna",
-  publishedDate: "2025-01-18",
-  modifiedDate: "2025-10-31T11:10:04.357Z", // Synced with metadata for freshness
+  publishedDate: convertDateFormat(post.date),
+  modifiedDate: "2026-10-31T11:10:04.357Z", // Synced with metadata for freshness
   url: "/blog/bricklayers-lead-generation",
   imageUrl: '/images/blog/bricklayers-lead-generation-hero.jpg',
   category: "Trade Marketing",
@@ -87,6 +94,9 @@ const faqs = [
 // ✅ Page Component
 // ————————————————————————————————————————
 const BricklayersLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "bricklayers-lead-generation");
+  if (!post) throw new Error("Blog post not found: bricklayers-lead-generation");
+  
   return (
     <OptimizedBlogLayout
       articleData={articleData}
@@ -102,7 +112,7 @@ const BricklayersLeadGeneration = () => {
               <Badge variant="secondary" className="bg-primary/10 text-primary">
                 Industry Opportunity
               </Badge>
-              <span className="text-sm text-muted-foreground">Updated January 2025</span>
+              <span className="text-sm text-muted-foreground">Updated January 2026</span>
             </div>
             <h3 className="text-xl font-semibold mb-3">Bricklaying Market Insights</h3>
             <div className="grid md:grid-cols-3 gap-4 text-center">

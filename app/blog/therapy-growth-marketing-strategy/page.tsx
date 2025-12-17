@@ -21,8 +21,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Therapy Growth Marketing Strategy"
     }],
-    publishedTime: "2025-01-12T09:00:00+10:00",
-    modifiedTime: "2025-10-31T11:10:05.295Z",
+    publishedTime: "2026-01-12T09:00:00+10:00",
+    modifiedTime: "2026-10-31T11:10:05.295Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -34,12 +34,22 @@ export const metadata = createMetadata({
   }
 });
 const TherapyGrowthMarketingStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "therapy-growth-marketing-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: therapy-growth-marketing-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Growth Marketing for Therapy Clinics: Scaling NDIS Provider Services in 2025",
+    headline: "Growth Marketing for Therapy Clinics: Scaling NDIS Provider Services in 2026",
     description: "Advanced growth marketing strategies for therapy clinics. Learn how to scale speech therapy, occupational therapy, ABA therapy, and psychology practices using data-driven marketing automation.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-12T09:00:00+10:00",
-    modifiedDate: "2025-01-12T09:00:00+10:00",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-12T09:00:00+10:00",
     url: "/blog/therapy-growth-marketing-strategy",
     imageUrl: "/images/blog/therapy-growth-marketing-strategy-hero.jpg",
     category: "NDIS",

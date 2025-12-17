@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Target, Users, BarChart, Zap } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Financial Planner Lead Generation",
   description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Lead generation strategies for financial planners - proven tactics for client acquisition"
     }],
     publishedTime: "2024-12-29T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.663Z",
+    modifiedTime: "2026-10-31T11:10:04.663Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const FinancialPlannerLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "financial-planner-lead-generation");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: financial-planner-lead-generation");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Lead Generation for Financial Planners: High-Value Client Acquisition Strategy 2025",
+    headline: "Lead Generation for Financial Planners: High-Value Client Acquisition Strategy 2026",
     description: "Lead generation for financial planners. Proven strategies to attract affluent clients & grow wealth management practices.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-29T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-29T00:00:00.000Z",
     url: "/blog/financial-planner-lead-generation",
     imageUrl: "/images/blog/financial-planner-lead-generation-hero.jpg",

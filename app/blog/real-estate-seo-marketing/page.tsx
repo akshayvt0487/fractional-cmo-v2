@@ -4,7 +4,6 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Search, MapPin, TrendingUp, Users, Globe, Target, CheckCircle } from 'lucide-react';
-
 export const metadata = createMetadata({
   title: "Real Estate Seo Marketing Guide",
   description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
@@ -22,8 +21,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Real Estate Seo Marketing Guide"
     }],
-    publishedTime: "2025-01-12T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:05.117Z",
+    publishedTime: "2026-01-12T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:05.117Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,12 +34,22 @@ export const metadata = createMetadata({
   }
 });
 const RealEstateSEOMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "real-estate-seo-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: real-estate-seo-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "SEO for Real Estate Agents: Dominate Local Property Search Rankings 2025",
+    headline: "SEO for Real Estate Agents: Dominate Local Property Search Rankings 2026",
     description: "Master SEO for real estate professionals. Learn local search optimization, content strategies, and digital tactics that attract homebuyers and sellers in your market.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-12T00:00:00.000Z",
-    modifiedDate: "2025-01-12T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-12T00:00:00.000Z",
     url: "/blog/real-estate-seo-marketing-guide",
     imageUrl: "/images/blog/real-estate-seo-marketing-guide-hero.jpg",
     category: "Real Estate Marketing",

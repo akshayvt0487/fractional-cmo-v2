@@ -4,7 +4,6 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import { Card } from '@/components/ui/card';
-
 export const metadata = createMetadata({
   title: "Loan Broker Digital Marketing Guide",
   description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -22,8 +21,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Loan Broker Digital Marketing Guide"
     }],
-    publishedTime: "2025-01-02T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.860Z",
+    publishedTime: "2026-01-02T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.860Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,12 +34,22 @@ export const metadata = createMetadata({
   }
 });
 const LoanBrokerDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "loan-broker-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: loan-broker-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Digital Marketing for Loan Brokers: Complete Client Acquisition Strategy 2025",
+    headline: "Digital Marketing for Loan Brokers: Complete Client Acquisition Strategy 2026",
     description: "Master digital marketing for loan brokerage business. Learn proven strategies to attract borrowers, build trust, and grow your mortgage broker practice with digital channels.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-02T00:00:00.000Z",
-    modifiedDate: "2025-01-02T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-02T00:00:00.000Z",
     url: "/blog/loan-broker-digital-marketing-guide",
     imageUrl: "/images/blog/loan-broker-digital-marketing-guide-hero.jpg",
     category: "Finance",

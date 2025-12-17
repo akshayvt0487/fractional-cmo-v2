@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Conveyancing Digital Marketing Roi",
   description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
@@ -21,8 +20,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Conveyancing Digital Marketing Roi"
     }],
-    publishedTime: "2025-09-01T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.486Z",
+    publishedTime: "2026-09-01T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.486Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -34,12 +33,22 @@ export const metadata = createMetadata({
   }
 });
 const ConveyancingDigitalMarketingROI = () => {
+  const post = blogPosts.find(p => p.slug === "conveyancing-digital-marketing-roi");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: conveyancing-digital-marketing-roi");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Digital Marketing ROI for Conveyancing Firms: Measuring Success and Growth",
     description: "Learn how conveyancing firms measure digital marketing ROI, track metrics & optimize campaigns for sustainable growth.",
     author: "Basheer Padanna",
-    publishedDate: "2025-09-01T00:00:00.000Z",
-    modifiedDate: "2025-09-01T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-09-01T00:00:00.000Z",
     url: "/blog/conveyancing-digital-marketing-roi",
     imageUrl: '/images/blog/conveyancing-digital-marketing-roi-hero.jpg',
     category: "Legal Marketing",

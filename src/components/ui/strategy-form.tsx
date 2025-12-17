@@ -103,7 +103,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button variant="hero" size="lg" className="w-full sm:w-auto">
+        <Button variant="hero" size="lg" className="w-full sm:w-auto ">
           Book a Free Strategy Call <ArrowRight />
         </Button>
       </DialogTrigger>
@@ -185,14 +185,14 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
               <SelectTrigger className="h-12 text-base">
                 <SelectValue placeholder="What do you need help with?" />
               </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="fractional-cmo">Fractional CMO Services</SelectItem>
-                <SelectItem value="growth-strategy">Growth Strategy & Planning</SelectItem>
-                <SelectItem value="performance-ads">Google Ads & Meta Advertising</SelectItem>
-                <SelectItem value="seo-content">SEO & Content Marketing</SelectItem>
-                <SelectItem value="conversion-optimization">Conversion Rate Optimisation</SelectItem>
-                <SelectItem value="marketing-automation">Marketing Automation Setup</SelectItem>
-                <SelectItem value="consultation">Strategy Consultation</SelectItem>
+              <SelectContent className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2">
+                <SelectItem value="fractional-cmo" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Fractional CMO Services</SelectItem>
+                <SelectItem value="growth-strategy" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Growth Strategy & Planning</SelectItem>
+                <SelectItem value="performance-ads" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Google Ads & Meta Advertising</SelectItem>
+                <SelectItem value="seo-content" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">SEO & Content Marketing</SelectItem>
+                <SelectItem value="conversion-optimization" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Conversion Rate Optimisation</SelectItem>
+                <SelectItem value="marketing-automation" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Marketing Automation Setup</SelectItem>
+                <SelectItem value="consultation" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Strategy Consultation</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -204,7 +204,11 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
               required
               value={formData.challenge}
               onChange={(e) => handleInputChange("challenge", e.target.value)}
-              placeholder="Please share:\n• What industry/niche you're in\n• Your biggest growth challenge right now  \n• Current marketing efforts (if any)\n• What success looks like for your business"
+              placeholder={`Please share:
+• What industry/niche you're in
+• Your biggest growth challenge right now
+• Current marketing efforts (if any)
+• What success looks like for your business`}
               rows={5}
               className="text-base min-h-[120px]"
             />
@@ -216,17 +220,17 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
               <SelectTrigger className="h-12 text-base">
                 <SelectValue placeholder="When would you like to begin?" />
               </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="asap">Ready to start ASAP</SelectItem>
-                <SelectItem value="1-month">Within the next month</SelectItem>
-                <SelectItem value="2-3-months">2-3 months out</SelectItem>
-                <SelectItem value="planning">Still in planning phase</SelectItem>
-                <SelectItem value="2026">Sometime in 2026</SelectItem>
+              <SelectContent className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2">
+                <SelectItem value="asap" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Ready to start ASAP</SelectItem>
+                <SelectItem value="1-month" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Within the next month</SelectItem>
+                <SelectItem value="2-3-months" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">2-3 months out</SelectItem>
+                <SelectItem value="planning" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Still in planning phase</SelectItem>
+                <SelectItem value="2026" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Sometime in 2026</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
-          <Button type="submit" className="w-full h-12 text-white cursor-pointer bg-gray-950" disabled={isSubmitting}>
+          <Button type="submit" className="w-full h-12 text-white cursor-pointer bg-[#1A2235] hover:bg-[#313C4E] duration-200 ease-in-out" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit Request"}
           </Button>
         </form>

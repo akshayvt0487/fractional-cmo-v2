@@ -4,7 +4,6 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Divorce Lawyers Digital Marketing",
   description: "Expert guidance on digital marketing for divorce lawyers. Learn proven strategies to attract clients and grow your law practice.",
@@ -31,7 +30,7 @@ export const metadata = createMetadata({
       alt: "Digital marketing strategies for divorce lawyers - comprehensive guide to client acquisition"
     }],
     publishedTime: "2024-12-15T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.641Z",
+    modifiedTime: "2026-10-31T11:10:04.641Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -44,11 +43,21 @@ export const metadata = createMetadata({
 });
 
 const DivorceLawyersDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "divorce-lawyers-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: divorce-lawyers-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Divorce Lawyers Digital Marketing: Complete Client Acquisition Guide for Divorce Attorneys 2025",
+    headline: "Divorce Lawyers Digital Marketing: Complete Client Acquisition Guide for Divorce Attorneys 2026",
     description: "Digital marketing for divorce lawyers. Sensitive client acquisition, reputation management & ethical lead generation tactics.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-15T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/divorce-lawyers-digital-marketing",
     imageUrl: "/images/blog/divorce-lawyers-digital-marketing-hero.jpg",

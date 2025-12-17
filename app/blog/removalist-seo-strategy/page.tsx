@@ -22,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Complete SEO Strategy Guide for Removalist Businesses"
     }],
     publishedTime: "2024-03-15",
-    modifiedTime: "2025-10-31T11:10:05.193Z",
+    modifiedTime: "2026-10-31T11:10:05.193Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -33,11 +33,18 @@ export const metadata = createMetadata({
     site: "@FractionalCMO"
   }
 });
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
   headline: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
   description: "Master semantic SEO, E-E-A-T principles, and local search strategies to grow your removalist business. Comprehensive guide with actionable tactics for Australian moving companies.",
   author: "Basheer Padanna",
-  publishedDate: "2024-03-15",
+  publishedDate: convertDateFormat(post.date),
   modifiedDate: "2024-03-15",
   readTime: "24 min read",
   category: "Local SEO",
@@ -59,6 +66,9 @@ const faqs = [{
   answer: "Focus on hyperlocal content, customer experience stories, specialized services, and building strong local authority through community involvement and local partnerships."
 }];
 const RemovalistSEOStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "removalist-seo-strategy");
+  if (!post) throw new Error("Blog post not found: removalist-seo-strategy");
+  
   return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/removalist-seo-strategy-hero.jpg'} heroAlt="Complete SEO strategy guide for removalist businesses showing analytics dashboard">
       <div className="space-y-8">
         <section>

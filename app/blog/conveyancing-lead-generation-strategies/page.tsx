@@ -5,7 +5,6 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Conveyancing Lead Generation Strategies",
   description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
@@ -14,18 +13,28 @@ export const metadata = createMetadata({
   keywords: ["conveyancing", "lead", "generation", "strategies", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     type: "article",
-    publishedTime: "2025-09-05T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.505Z",
+    publishedTime: "2026-09-05T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.505Z",
     authors: ["Basheer Padanna"]
   }
 });
 const ConveyancingLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "conveyancing-lead-generation-strategies");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: conveyancing-lead-generation-strategies");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Conveyancing Lead Generation: Digital Marketing Strategies for Property Law Firms",
     description: "Master conveyancing lead generation with proven digital strategies. Attract quality clients & dominate local property markets.",
     author: "Basheer Padanna",
-    publishedDate: "2025-09-05T00:00:00.000Z",
-    modifiedDate: "2025-09-05T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-09-05T00:00:00.000Z",
     url: "/blog/conveyancing-lead-generation-strategies",
     imageUrl: '/images/blog/conveyancing-lead-generation-hero.jpg',
     category: "Legal Marketing",

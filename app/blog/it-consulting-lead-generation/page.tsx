@@ -4,7 +4,6 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "It Consulting Lead Generation Guide",
   description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "It Consulting Lead Generation Guide"
     }],
     publishedTime: "2024-12-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.806Z",
+    modifiedTime: "2026-10-31T11:10:04.806Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const ITConsultingLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "it-consulting-lead-generation");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: it-consulting-lead-generation");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Lead Generation for IT Consultants: Attract High-Value Technology Clients 2025",
+    headline: "Lead Generation for IT Consultants: Attract High-Value Technology Clients 2026",
     description: "Master lead generation for IT consulting firms. Learn proven tactics to attract enterprise clients, build authority, and convert prospects into long-term technology partnerships.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/it-consulting-lead-generation-guide",
     imageUrl: "/images/blog/it-consulting-lead-generation-guide-hero.jpg",

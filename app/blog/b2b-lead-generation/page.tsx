@@ -37,7 +37,7 @@ export const metadata = createMetadata({
       alt: "B2B lead generation strategies and funnel optimization"
     }],
     publishedTime: "2024-12-31T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.304Z",
+    modifiedTime: "2026-10-31T11:10:04.304Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -52,12 +52,19 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
 // ✅ Article Data & FAQs
 // ————————————————————————————————————————
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
   headline: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
   description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
   author: "Basheer Padanna",
-  publishedDate: "2024-12-31T00:00:00.000Z",
-  modifiedDate: "2025-10-31T11:10:04.304Z", // Synced with metadata for freshness
+  publishedDate: convertDateFormat(post.date),
+  modifiedDate: "2026-10-31T11:10:04.304Z", // Synced with metadata for freshness
   url: "/blog/b2b-lead-generation",
   imageUrl: '/images/blog/b2b-lead-generation-hero.jpg',
   category: "Lead Generation",
@@ -84,6 +91,9 @@ const faqs = [
 // ✅ Page Component
 // ————————————————————————————————————————
 const B2BLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "b2b-lead-generation");
+  if (!post) throw new Error("Blog post not found: b2b-lead-generation");
+  
   return (
     <OptimizedBlogLayout
       articleData={articleData}

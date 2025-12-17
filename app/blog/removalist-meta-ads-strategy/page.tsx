@@ -21,7 +21,7 @@ export const metadata = createMetadata({
       alt: "Meta Ads Strategy Guide for Removalists and Moving Companies"
     }],
     publishedTime: "2024-12-18",
-    modifiedTime: "2025-10-31T11:10:05.169Z",
+    modifiedTime: "2026-10-31T11:10:05.169Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -32,11 +32,18 @@ export const metadata = createMetadata({
     site: "@FractionalCMO"
   }
 });
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
   headline: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
   description: "Master Facebook and Instagram advertising for your removalist business. Learn audience targeting, campaign optimization, conversion tracking, and retargeting strategies to generate quality moving leads.",
   author: "Basheer Padanna",
-  publishedDate: "2024-12-18",
+  publishedDate: convertDateFormat(post.date),
   modifiedDate: "2024-12-18",
   url: "/blog/removalist-meta-ads-strategy",
   imageUrl: "/images/blog/removalist-meta-ads-hero.jpg",
@@ -61,6 +68,9 @@ const faqs = [{
   answer: "Use 'Lead Generation' for form fills, 'Conversions' for website bookings, and 'Traffic' for awareness campaigns. Lead Generation typically performs best for service businesses."
 }];
 const RemovalistMetaAdsStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "removalist-meta-ads-strategy");
+  if (!post) throw new Error("Blog post not found: removalist-meta-ads-strategy");
+  
   return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs}>
       <Card className="mb-8">
         <CardContent className="pt-6">

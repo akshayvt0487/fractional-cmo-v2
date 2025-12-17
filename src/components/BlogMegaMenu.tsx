@@ -31,7 +31,7 @@ const mainCategoryGroups: CategoryGroup[] = [
   },
   { 
     name: "Legal", 
-    subcategories: ["Conveyancing", "Family Law", "Divorce Law", "Criminal Law"] 
+    subcategories: ["Conveyancing", "Family Law", "Divorce Law", "Criminal Law", "Immigration Law"] 
   },
   { 
     name: "NDIS", 

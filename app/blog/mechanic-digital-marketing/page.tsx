@@ -4,7 +4,6 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Wrench, AlertTriangle, Building, Zap, Search, Users, Video, Play, MessageCircle, Star, CheckCircle } from 'lucide-react';
-
 export const metadata = createMetadata({
   title: "Mechanic Digital Marketing Guide",
   description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -22,8 +21,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Digital Marketing Strategy Guide for Mechanics"
     }],
-    publishedTime: "2025-01-09",
-    modifiedTime: "2025-10-31T11:10:04.904Z",
+    publishedTime: "2026-01-09",
+    modifiedTime: "2026-10-31T11:10:04.904Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,12 +34,22 @@ export const metadata = createMetadata({
   }
 });
 const MechanicDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "mechanic-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: mechanic-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Digital Marketing for Mechanics: Complete Automotive Service Growth Guide 2025",
+    headline: "Digital Marketing for Mechanics: Complete Automotive Service Growth Guide 2026",
     description: "Transform your mechanic business with digital marketing. Learn client acquisition strategies, online presence building, and growth tactics for automotive services.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-09",
-    modifiedDate: "2025-01-09",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-09",
     url: "/blog/mechanic-digital-marketing-guide",
     imageUrl: "/images/blog/mechanic-digital-marketing-guide-hero.jpg",
     category: "Trade Marketing",

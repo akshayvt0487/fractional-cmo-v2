@@ -6,7 +6,6 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import StrategyForm from '@/components/ui/strategy-form';
-
 export const metadata = createMetadata({
   title: "Ndis Disability Service Marketing",
   description: "Expert guidance on ndis disability service marketing. Learn proven strategies and best practices for business growth.",
@@ -25,7 +24,7 @@ export const metadata = createMetadata({
       alt: "Ndis Disability Service Marketing"
     }],
     publishedTime: "2024-12-15T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.947Z",
+    modifiedTime: "2026-10-31T11:10:04.947Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -37,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const NDISDisabilityServiceMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-disability-service-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: ndis-disability-service-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "NDIS Disability Service Digital Marketing: Complete Growth Strategy 2025",
+    headline: "NDIS Disability Service Digital Marketing: Complete Growth Strategy 2026",
     description: "Comprehensive digital marketing guide for NDIS disability service providers. Learn compliant marketing strategies, participant engagement, lead generation, and growth tactics that drive sustainable success.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-15T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/ndis-disability-service-marketing",
     imageUrl: "/images/blog/ndis-disability-service-marketing-hero.jpg",

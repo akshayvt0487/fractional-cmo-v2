@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -28,7 +29,7 @@ export const metadata = createMetadata({
       alt: "Ndis Software Saas Positioning Strategy"
     }],
     publishedTime: "2024-01-20",
-    modifiedTime: "2025-10-31T11:10:05.066Z",
+    modifiedTime: "2026-10-31T11:10:05.066Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -40,12 +41,15 @@ export const metadata = createMetadata({
   }
 });
 const NDISSoftwareSaaSPositioning = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-software-saas-positioning-strategy");
+  if (!post) throw new Error("Blog post not found: ndis-software-saas-positioning-strategy");
+  
   // Client gating removed during build stabilization: assume content unlocked for prerender
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Positioning: Stand Out in a Competitive Market",
     description: "Master the art of positioning your NDIS software platform. Learn proven strategies to differentiate, build trust, and win market share in the competitive NDIS technology landscape.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-20",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-20",
     url: "/blog/ndis-software-saas-positioning-strategy",
     imageUrl: "/images/blog/ndis-quality-standards.jpg"
@@ -67,7 +71,7 @@ const NDISSoftwareSaaSPositioning = () => {
     category: "Digital Marketing"
   }];
   return <>
-      <SEO title="NDIS Software SaaS Positioning: Stand Out in a Competitive Market" description="Master the art of positioning your NDIS software platform. Learn proven strategies to differentiate, build trust, and win market share in the competitive NDIS technology landscape." canonical="/blog/ndis-software-saas-positioning-strategy" ogType="article" articlePublishedTime="2024-01-20T00:00:00Z" articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Positioning", "Competitive Strategy", "Market Differentiation", "B2B Software"]} structuredData={articleSchema} />
+      <SEO title="NDIS Software SaaS Positioning: Stand Out in a Competitive Market" description="Master the art of positioning your NDIS software platform. Learn proven strategies to differentiate, build trust, and win market share in the competitive NDIS technology landscape." canonical="/blog/ndis-software-saas-positioning-strategy" ogType="article" articlePublishedTime={convertDateFormat(post.date) + "T00:00:00Z"} articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Positioning", "Competitive Strategy", "Market Differentiation", "B2B Software"]} structuredData={articleSchema} />
       <Header />
       <div className="min-h-screen bg-background pt-24">
         <div className="container max-w-4xl py-8">

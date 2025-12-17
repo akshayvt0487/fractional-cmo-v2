@@ -2,7 +2,6 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Floor Sanding Digital Marketing Guide",
   description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -20,8 +19,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Floor Sanding Digital Marketing Guide"
     }],
-    publishedTime: "2025-01-15",
-    modifiedTime: "2025-10-31T11:10:04.682Z",
+    publishedTime: "2026-01-15",
+    modifiedTime: "2026-10-31T11:10:04.682Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -33,12 +32,22 @@ export const metadata = createMetadata({
   }
 });
 const FloorSandingDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "floor-sanding-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: floor-sanding-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Digital Marketing for Floor Sanding Specialists: Transform Your Business Growth 2025",
+    headline: "Digital Marketing for Floor Sanding Specialists: Transform Your Business Growth 2026",
     description: "Transform floor sanding business with digital marketing. Attract homeowners & showcase timber transformations.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-15",
-    modifiedDate: "2025-01-15",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-15",
     url: "/blog/floor-sanding-digital-marketing-guide",
     imageUrl: "/images/blog/floor-sanding-digital-marketing-guide-hero.jpg",
     category: "Trade Marketing",

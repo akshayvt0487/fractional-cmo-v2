@@ -5,7 +5,6 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Camera, TrendingUp, Users, Star, Search, Home, Palette, DollarSign, Clock, Target, Award } from 'lucide-react';
-
 export const metadata = createMetadata({
   title: "Renovation Builders Digital Marketing Guide",
   description: "Expert guidance on renovation builders digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -23,8 +22,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Digital Marketing Strategy Guide for Renovation Builders"
     }],
-    publishedTime: "2025-01-11",
-    modifiedTime: "2025-10-31T11:10:05.207Z",
+    publishedTime: "2026-01-11",
+    modifiedTime: "2026-10-31T11:10:05.207Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,12 +35,22 @@ export const metadata = createMetadata({
   }
 });
 const RenovationBuildersDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "renovation-builders-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: renovation-builders-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Digital Marketing for Renovation Builders: Complete Growth Strategy 2025",
+    headline: "Digital Marketing for Renovation Builders: Complete Growth Strategy 2026",
     description: "Transform your renovation business with digital marketing. Learn client acquisition strategies, portfolio showcasing, and growth tactics for renovation contractors.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-11",
-    modifiedDate: "2025-01-11",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-11",
     url: "/blog/renovation-builders-digital-marketing-guide",
     imageUrl: "/images/blog/renovation-builders-digital-marketing-guide-hero.jpg",
     category: "Trade Marketing",

@@ -22,8 +22,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Iquidators Google Ads Strategy"
     }],
-    publishedTime: "2025-01-30T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.783Z",
+    publishedTime: "2026-01-30T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.783Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +36,11 @@ export const metadata = createMetadata({
 });
 const LiquidatorsGoogleAdsStrategy = () => {
   const articleData = {
-    headline: "Google Ads for Liquidators: Complete Strategy Guide 2025",
+    headline: "Google Ads for Liquidators: Complete Strategy Guide 2026",
     description: "Master Google Ads for liquidators with proven strategies. Expert campaign setup, keyword targeting & conversion tactics for distressed business leads.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-30T00:00:00.000Z",
-    modifiedDate: "2025-01-30T00:00:00.000Z",
+    publishedDate: "2026-01-30T00:00:00.000Z",
+    modifiedDate: "2026-01-30T00:00:00.000Z",
     url: "/blog/iquidators-google-ads-strategy",
     imageUrl: "/images/blog/iquidators-google-ads-strategy-hero.jpg",
     category: "Insolvency - Google Ads",

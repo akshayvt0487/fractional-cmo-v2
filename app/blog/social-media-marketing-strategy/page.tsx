@@ -4,7 +4,6 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Social Media Marketing Strategy",
   description: "Expert guidance on social media marketing strategy. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Social Media Marketing Strategy"
     }],
     publishedTime: "2024-12-18T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:05.255Z",
+    modifiedTime: "2026-10-31T11:10:05.255Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const SocialMediaMarketingStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "social-media-marketing-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: social-media-marketing-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Social Media Marketing Strategy for Service Businesses: Complete 2025 Guide",
+    headline: "Social Media Marketing Strategy for Service Businesses: Complete 2026 Guide",
     description: "Master social media marketing for service businesses. Learn platform-specific strategies, content creation, lead generation tactics, and ROI measurement to drive growth and customer acquisition.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-18T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-18T00:00:00.000Z",
     url: "/blog/social-media-marketing-strategy",
     imageUrl: "/images/blog/social-media-marketing-strategy-hero.jpg",

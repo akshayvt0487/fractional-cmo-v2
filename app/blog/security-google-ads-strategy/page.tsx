@@ -2,7 +2,6 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Security Google Ads Strategy",
   description: "Expert guidance on security google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -11,18 +10,28 @@ export const metadata = createMetadata({
   keywords: ["security", "google ads", "strategy", "digital marketing", "business growth", "marketing strategy", "PPC"],
   openGraph: {
     type: "article",
-    publishedTime: "2025-01-04",
-    modifiedTime: "2025-10-31T11:10:05.237Z",
+    publishedTime: "2026-01-04",
+    modifiedTime: "2026-10-31T11:10:05.237Z",
     authors: ["Basheer Padanna"]
   }
 });
 const SecurityGoogleAdsStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "security-google-ads-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: security-google-ads-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Google Ads for Security Companies: Generate Quality Commercial Leads 2025",
+    headline: "Google Ads for Security Companies: Generate Quality Commercial Leads 2026",
     description: "Master Google Ads for security businesses. Learn campaign strategies, keyword targeting, and conversion tactics that attract commercial clients and high-value security contracts.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-04",
-    modifiedDate: "2025-01-04",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-04",
     url: "/blog/security-google-ads-strategy",
     imageUrl: "/images/blog/security-google-ads-strategy-hero.jpg",
     category: "Digital Marketing",

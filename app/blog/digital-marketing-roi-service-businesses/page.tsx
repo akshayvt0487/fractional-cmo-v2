@@ -22,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Digital Marketing Roi Service Businesses"
     }],
     publishedTime: "2024-12-15T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.619Z",
+    modifiedTime: "2026-10-31T11:10:04.619Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -34,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const DigitalMarketingROI = () => {
+  const post = blogPosts.find(p => p.slug === "digital-marketing-roi-service-businesses");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: digital-marketing-roi-service-businesses");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Digital Marketing ROI: How Service Businesses Measure Success",
     description: "Measure & optimize digital marketing ROI with key metrics, tools & frameworks for service businesses to maximize returns.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-15T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/digital-marketing-roi-service-businesses",
     imageUrl: "/images/blog/digital-marketing-roi-service-businesses-hero.jpg",

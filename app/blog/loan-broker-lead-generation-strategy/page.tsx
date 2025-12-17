@@ -4,7 +4,6 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import StrategyForm from '@/components/ui/strategy-form';
 import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Loan Broker Lead Generation Strategy",
   description: "Expert guidance on loan broker lead generation strategy. Learn proven strategies and best practices for business growth.",
@@ -22,8 +21,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Lead Generation Strategy Guide for Loan Brokers"
     }],
-    publishedTime: "2025-01-03T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.869Z",
+    publishedTime: "2026-01-03T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.869Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,12 +34,22 @@ export const metadata = createMetadata({
   }
 });
 const LoanBrokerLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "loan-broker-lead-generation-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: loan-broker-lead-generation-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Lead Generation for Loan Brokers: High-Converting Client Acquisition Strategies 2025",
+    headline: "Lead Generation for Loan Brokers: High-Converting Client Acquisition Strategies 2026",
     description: "Generate quality leads for your loan brokerage. Learn proven tactics to attract borrowers, nurture prospects, and convert leads into closed mortgage deals consistently.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-03T00:00:00.000Z",
-    modifiedDate: "2025-01-03T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-03T00:00:00.000Z",
     url: "/blog/loan-broker-lead-generation-strategy",
     imageUrl: "/images/blog/loan-broker-lead-generation-strategy-hero.jpg",
     category: "Lead Generation",

@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Pre Purchase Car Inspection Business Guide",
   description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Pre Purchase Car Inspection Business Guide"
     }],
     publishedTime: "2024-02-12T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:05.103Z",
+    modifiedTime: "2026-10-31T11:10:05.103Z",
     authors: ["Automotive Inspection Expert"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const PrePurchaseCarInspection = () => {
+  const post = blogPosts.find(p => p.slug === "pre-purchase-car-inspection-business");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: pre-purchase-car-inspection-business");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Pre-Purchase Car Inspection Business: How to Build a Profitable Service",
     description: "Comprehensive guide to starting and growing a pre-purchase car inspection service, including certification requirements, pricing strategies, and customer acquisition.",
     author: "Automotive Inspection Expert",
-    publishedDate: "2024-02-12T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-02-12T00:00:00.000Z",
     url: "/blog/pre-purchase-car-inspection-business-guide",
     imageUrl: "/images/blog/pre-purchase-car-inspection-business-guide-hero.jpg",

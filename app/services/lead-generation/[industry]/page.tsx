@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import { getIndustryServicePageData, rawServiceData, generateIndustryServiceOGData, generateIndustryServiceMeta } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 
-export async function generateMetadata({ params }: { params: { industry: string } }): Promise<Metadata> {
-  const { industry } = params;
+export async function generateMetadata({ params }: { params: Promise<{ industry: string }> }): Promise<Metadata> {
+  const { industry } = await params;
   const data = getIndustryServicePageData(industry, 'lead-generation');
 
   if (data) {
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: { params: { industry: string 
   } as Metadata;
 }
 
-export default function LeadGenIndustryPage({ params }: { params: { industry: string } }) {
-  const { industry } = params;
+export default async function LeadGenIndustryPage({ params }: { params: Promise<{ industry: string }> }) {
+  const { industry } = await params;
   const data = getIndustryServicePageData(industry, 'lead-generation');
 
   if (!data) {

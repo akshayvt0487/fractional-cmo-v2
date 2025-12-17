@@ -23,7 +23,7 @@ export const metadata = createMetadata({
       alt: "Digital Marketing Strategy Guide for Therapy Services"
     }],
     publishedTime: "2024-11-15T09:00:00+10:00",
-    modifiedTime: "2025-10-31T11:10:05.307Z",
+    modifiedTime: "2026-10-31T11:10:05.307Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +35,21 @@ export const metadata = createMetadata({
   }
 });
 const TherapyServicesDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "therapy-services-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: therapy-services-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Digital Marketing for Therapy Services: Complete NDIS Provider Growth Guide",
     description: "Master digital marketing for therapy services. Comprehensive strategies for speech therapy, occupational therapy, ABA therapy, and psychology practices to grow their NDIS client base.",
     author: "Basheer Padanna",
-    publishedDate: "2024-11-15T09:00:00+10:00",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-11-15T09:00:00+10:00",
     url: "/blog/therapy-services-digital-marketing",
     imageUrl: "/images/blog/therapy-services-digital-marketing-hero.jpg",

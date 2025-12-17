@@ -5,7 +5,6 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Buyers Agents Google Ads Strategy",
   description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -23,8 +22,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Buyers Agents Google Ads Strategy"
     }],
-    publishedTime: "2025-01-13T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.375Z",
+    publishedTime: "2026-01-13T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.375Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,12 +35,22 @@ export const metadata = createMetadata({
   }
 });
 const BuyersAgentsGoogleAds = () => {
+  const post = blogPosts.find(p => p.slug === "buyers-agents-google-ads-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: buyers-agents-google-ads-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Google Ads for Buyers Agents: Complete Strategy Guide 2025",
+    headline: "Google Ads for Buyers Agents: Complete Strategy Guide 2026",
     description: "Master Google Ads for buyers agents with proven strategies. Expert campaign setup, keyword targeting & conversion tactics for property leads.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-13T00:00:00.000Z",
-    modifiedDate: "2025-01-13T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-13T00:00:00.000Z",
     url: "/blog/buyers-agents-google-ads-strategy",
     imageUrl: "/images/blog/buyers-agents-google-ads-hero.jpg",
     category: "Real Estate Marketing",

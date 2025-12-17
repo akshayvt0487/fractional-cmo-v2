@@ -5,7 +5,6 @@ import { Cloud, Shield, Zap, Building, Users, Target, TrendingUp, CheckCircle } 
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "It Consulting Digital Marketing Strategy",
   description: "Expert guidance on it consulting digital marketing strategy. Learn proven strategies and best practices for business growth.",
@@ -24,7 +23,7 @@ export const metadata = createMetadata({
       alt: "It Consulting Digital Marketing Strategy"
     }],
     publishedTime: "2024-12-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.795Z",
+    modifiedTime: "2026-10-31T11:10:04.795Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +35,21 @@ export const metadata = createMetadata({
   }
 });
 const ITConsultingDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "it-consulting-digital-marketing-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: it-consulting-digital-marketing-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "IT Consulting Digital Marketing: Complete Client Acquisition Strategy 2025",
+    headline: "IT Consulting Digital Marketing: Complete Client Acquisition Strategy 2026",
     description: "Transform your IT consulting business with proven digital marketing strategies. Learn client acquisition, thought leadership, and growth tactics for technology consulting firms.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/it-consulting-digital-marketing-strategy",
     imageUrl: "/images/blog/it-consulting-digital-marketing-strategy-hero.jpg",
@@ -61,14 +70,14 @@ const ITConsultingDigitalMarketing = () => {
   return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-consulting-digital-marketing-hero.jpg'} heroAlt="IT Consulting Digital Marketing Strategy">
       <h2>The IT Consulting Marketing Challenge</h2>
       <p>
-        IT consulting firms face unique marketing challenges in 2025. With 78% of businesses increasing their technology budgets, the demand for expert IT guidance has never been higher. Yet many consultants struggle to differentiate themselves in a crowded marketplace.
+        IT consulting firms face unique marketing challenges in 2026. With 78% of businesses increasing their technology budgets, the demand for expert IT guidance has never been higher. Yet many consultants struggle to differentiate themselves in a crowded marketplace.
       </p>
 
       <h2>Building Your IT Consulting Brand Foundation</h2>
       
       <h3>Define Your Specialty and Value Proposition</h3>
       <p>
-        Generic IT consulting doesn&apos;t sell in 2025. The most successful firms position themselves as deep specialists rather than &quot;we do everything&quot; generalists.
+        Generic IT consulting doesn&apos;t sell in 2026. The most successful firms position themselves as deep specialists rather than &quot;we do everything&quot; generalists.
       </p>
       
       <div className="grid md:grid-cols-2 gap-6 my-8">

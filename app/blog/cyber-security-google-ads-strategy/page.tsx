@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
 export const metadata = createMetadata({
   title: "Cyber Security Google Ads Strategy",
   description: "Expert guidance on cyber security google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Effective Google Ads strategy for cyber security companies - proven PPC tactics and optimization"
     }],
     publishedTime: "2024-01-15T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.569Z",
+    modifiedTime: "2026-10-31T11:10:04.569Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const CyberSecurityGoogleAds = () => {
+  const post = blogPosts.find(p => p.slug === "cyber-security-google-ads-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: cyber-security-google-ads-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Google Ads Strategy for Cyber Security Businesses: Complete Guide to High-Converting Campaigns",
     description: "Master Google Ads for cyber security companies. Proven strategies, targeting techniques & optimization methods for quality leads.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-15T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-15T00:00:00.000Z",
     url: "/blog/cyber-security-google-ads-strategy",
     imageUrl: "/images/blog/cyber-security-google-ads-strategy-hero.jpg",

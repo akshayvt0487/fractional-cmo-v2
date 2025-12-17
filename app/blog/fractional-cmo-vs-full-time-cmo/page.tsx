@@ -23,7 +23,7 @@ export const metadata = createMetadata({
       alt: "Fractional Cmo Vs Full Time Cmo"
     }],
     publishedTime: "2024-04-25T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.692Z",
+    modifiedTime: "2026-10-31T11:10:04.692Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +35,21 @@ export const metadata = createMetadata({
   }
 });
 const FractionalCMOVsFullTime = () => {
+  const post = blogPosts.find(p => p.slug === "fractional-cmo-vs-full-time-cmo");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: fractional-cmo-vs-full-time-cmo");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Fractional CMO vs Full-Time CMO: Which is Right for Your Business?",
     description: "Fractional CMO vs Full-Time CMO comparison. Cost analysis, benefits & decision framework for growing businesses.",
     author: "Basheer Padanna",
-    publishedDate: "2024-04-25T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-17T00:00:00.000Z",
     url: "/blog/fractional-cmo-vs-full-time-cmo",
     imageUrl: "/images/blog/fractional-cmo-vs-full-time-cmo-hero.jpg",

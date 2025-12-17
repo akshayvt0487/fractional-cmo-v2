@@ -110,9 +110,10 @@ const Header = () => {
     path: `/blog?category=${encodeURIComponent("Legal")}`,
     subcategories: [
     { name: "Conveyancing", path: `/blog?category=${encodeURIComponent("Legal - Conveyancing")}` },
-    { name: "Criminal Law", path: `/blog?category=${encodeURIComponent("Legal - Criminal Law")}` },
+    { name: "Family Law", path: `/blog?category=${encodeURIComponent("Legal - Family Law")}` },
     { name: "Divorce Law", path: `/blog?category=${encodeURIComponent("Legal - Divorce Law")}` },
-    { name: "Family Law", path: `/blog?category=${encodeURIComponent("Legal - Family Law")}` }]
+    { name: "Criminal Law", path: `/blog?category=${encodeURIComponent("Legal - Criminal Law")}` },
+    { name: "Immigration Law", path: `/blog?category=${encodeURIComponent("Legal - Immigration Law")}` }]
 
   },
   {

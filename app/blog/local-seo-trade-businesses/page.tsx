@@ -25,7 +25,7 @@ export const metadata = createMetadata({
       alt: "Local Seo Trade Businesses"
     }],
     publishedTime: "2024-12-18T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.894Z",
+    modifiedTime: "2026-10-31T11:10:04.894Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -37,11 +37,21 @@ export const metadata = createMetadata({
   }
 });
 const LocalSEOTrade = () => {
+  const post = blogPosts.find(p => p.slug === "local-seo-trade-businesses");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: local-seo-trade-businesses");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Local SEO for Trade Businesses: Complete Guide to Dominating Local Search 2025",
+    headline: "Local SEO for Trade Businesses: Complete Guide to Dominating Local Search 2026",
     description: "Master local SEO for trade businesses. Learn proven strategies to dominate local search results, attract qualified leads, and outrank competitors in your service area.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-18T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-18T00:00:00.000Z",
     url: "/blog/local-seo-trade-businesses",
     imageUrl: "/images/blog/local-seo-trade-businesses-hero.jpg",

@@ -23,8 +23,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Lawyers Lead Generation"
     }],
-    publishedTime: "2025-01-18",
-    modifiedTime: "2025-10-31T11:10:04.826Z",
+    publishedTime: "2026-01-18",
+    modifiedTime: "2026-10-31T11:10:04.826Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,12 +36,22 @@ export const metadata = createMetadata({
   }
 });
 const LawyersLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "lawyers-lead-generation");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: lawyers-lead-generation");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Lawyer Lead Generation: Proven Strategies to Attract Quality Clients",
     description: "Master ethical lead generation strategies for law firms. Learn digital marketing, content strategies, and networking tactics that consistently attract high-value legal clients.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-18",
-    modifiedDate: "2025-01-18",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-18",
     url: "/blog/lawyers-lead-generation",
     imageUrl: "/images/blog/lawyers-lead-generation-hero.jpg",
     category: "Legal Marketing",
@@ -69,7 +79,7 @@ const LawyersLeadGeneration = () => {
               <Badge variant="secondary" className="bg-primary/10 text-primary">
                 Legal Market Insights
               </Badge>
-              <span className="text-sm text-muted-foreground">Updated January 2025</span>
+              <span className="text-sm text-muted-foreground">Updated January 2026</span>
             </div>
             <h3 className="text-xl font-semibold mb-3">Legal Services Market</h3>
             <div className="grid md:grid-cols-3 gap-4 text-center">

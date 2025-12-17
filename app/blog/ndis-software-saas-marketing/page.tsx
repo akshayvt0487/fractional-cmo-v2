@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -10,8 +11,6 @@ import Citation from "@/components/Citation";
 import { generateArticleSchema } from "@/utils/seoUtils";
 import SEO from "@/components/SEO";
 // useContentGate is a client hook — removed from server page to avoid server-side invocation
-
-
 export const metadata = createMetadata({
   title: "Ndis Software Saas Marketing Guide",
   description: "Expert guidance on ndis software saas marketing guide. Learn proven strategies and best practices for business growth.",
@@ -30,7 +29,7 @@ export const metadata = createMetadata({
       alt: "NDIS Software SaaS Marketing Strategy Guide"
     }],
     publishedTime: "2024-01-20",
-    modifiedTime: "2025-10-31T11:10:05.041Z",
+    modifiedTime: "2026-10-31T11:10:05.041Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -42,12 +41,15 @@ export const metadata = createMetadata({
   }
 });
 const NDISSoftwareSaaSMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-software-saas-marketing");
+  if (!post) throw new Error("Blog post not found: ndis-software-saas-marketing");
+  
   // Client gating removed during build stabilization: assume content unlocked for prerender
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies",
     description: "Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-20",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-20",
     url: "/blog/ndis-software-saas-marketing-guide",
     imageUrl: "/images/blog/ndis-provider-registration-new.jpg"
@@ -74,7 +76,7 @@ const NDISSoftwareSaaSMarketing = () => {
     category: "Digital Marketing"
   }];
   return <>
-      <SEO title="NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies" description="Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively." canonical="/blog/ndis-software-saas-marketing-guide" ogType="article" articlePublishedTime="2024-01-20T00:00:00Z" articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Marketing", "B2B Software", "Digital Marketing", "Growth Strategy"]} structuredData={articleSchema} />
+      <SEO title="NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies" description="Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively." canonical="/blog/ndis-software-saas-marketing-guide" ogType="article" articlePublishedTime={convertDateFormat(post.date) + "T00:00:00Z"} articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Marketing", "B2B Software", "Digital Marketing", "Growth Strategy"]} structuredData={articleSchema} />
       <Header />
       <div className="min-h-screen bg-background pt-24">
         <div className="container max-w-4xl py-8">

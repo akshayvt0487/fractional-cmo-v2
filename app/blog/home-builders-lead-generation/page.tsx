@@ -3,7 +3,6 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Home Builders Lead Generation Guide",
   description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
@@ -21,8 +20,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Home Builders Lead Generation Guide"
     }],
-    publishedTime: "2025-01-10T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.746Z",
+    publishedTime: "2026-01-10T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.746Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -34,12 +33,22 @@ export const metadata = createMetadata({
   }
 });
 const HomeBuildersLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "home-builders-lead-generation");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: home-builders-lead-generation");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Lead Generation for Home Builders: Digital Strategies to Attract Quality Prospects 2025",
+    headline: "Lead Generation for Home Builders: Digital Strategies to Attract Quality Prospects 2026",
     description: "Master lead generation for home building companies. Learn proven digital marketing tactics to attract homeowners, showcase quality builds, and convert leads into construction contracts.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-10T00:00:00.000Z",
-    modifiedDate: "2025-01-10T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-10T00:00:00.000Z",
     url: "/blog/home-builders-lead-generation-guide",
     imageUrl: "/images/blog/home-builders-lead-generation-guide-hero.jpg",
     category: "Construction",

@@ -5,7 +5,6 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MousePointer, TrendingUp, Users, Target, BarChart, Zap } from "lucide-react";
-
 export const metadata = createMetadata({
   title: "Tax Advisor Google Ads Strategy",
   description: "Expert guidance on tax advisor google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -24,7 +23,7 @@ export const metadata = createMetadata({
       alt: "Tax Advisor Google Ads Strategy Guide"
     }],
     publishedTime: "2024-12-30",
-    modifiedTime: "2025-10-31T11:10:05.272Z",
+    modifiedTime: "2026-10-31T11:10:05.272Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +35,21 @@ export const metadata = createMetadata({
   }
 });
 const TaxAdvisorGoogleAds = () => {
+  const post = blogPosts.find(p => p.slug === "tax-advisor-google-ads-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: tax-advisor-google-ads-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Google Ads for Tax Advisors: Complete Campaign Strategy & Optimization Guide 2025",
+    headline: "Google Ads for Tax Advisors: Complete Campaign Strategy & Optimization Guide 2026",
     description: "Master Google Ads for tax preparation services. Learn keyword strategies, campaign optimization, and conversion tactics that generate quality leads for tax advisors and preparers.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-30",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-30",
     url: "/blog/tax-advisor-google-ads-strategy",
     imageUrl: "/images/blog/tax-advisor-google-ads-strategy-hero.jpg",

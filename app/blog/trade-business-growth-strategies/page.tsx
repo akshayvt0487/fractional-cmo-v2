@@ -22,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Trade Business Growth Strategies"
     }],
     publishedTime: "2024-03-05T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:05.316Z",
+    modifiedTime: "2026-10-31T11:10:05.316Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -34,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const TradeBusinessGrowth = () => {
+  const post = blogPosts.find(p => p.slug === "trade-business-growth-strategies");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: trade-business-growth-strategies");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Trade Business Growth Strategies: Scale Your Service Business in 2025",
+    headline: "Trade Business Growth Strategies: Scale Your Service Business in 2026",
     description: "Comprehensive guide to growing a trade business. Learn proven scaling strategies, team building, operational efficiency, and sustainable growth frameworks for trades.",
     author: "Basheer Padanna",
-    publishedDate: "2024-03-05T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-03-05T00:00:00.000Z",
     url: "/blog/trade-business-growth-strategies",
     imageUrl: "/images/blog/trade-business-growth-strategies-hero.jpg",

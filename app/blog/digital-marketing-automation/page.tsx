@@ -6,7 +6,6 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
 export const metadata = createMetadata({
   title: "Digital Marketing Automation Guide",
   description: "Expert guidance on digital marketing automation guide. Learn proven strategies and best practices for business growth.",
@@ -25,7 +24,7 @@ export const metadata = createMetadata({
       alt: "Complete Digital Marketing Automation Guide and Strategy"
     }],
     publishedTime: "2024-01-24T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.608Z",
+    modifiedTime: "2026-10-31T11:10:04.608Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -37,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const DigitalMarketingAutomation = () => {
+  const post = blogPosts.find(p => p.slug === "digital-marketing-automation");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: digital-marketing-automation");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Digital Marketing Automation for Service Businesses: Complete Guide",
     description: "Marketing automation guide for service businesses. Lead nurturing, email sequences, customer journeys & ROI optimization.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-24T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-24T00:00:00.000Z",
     url: "/blog/digital-marketing-automation-guide",
     imageUrl: "/images/blog/digital-marketing-automation-guide-hero.jpg",

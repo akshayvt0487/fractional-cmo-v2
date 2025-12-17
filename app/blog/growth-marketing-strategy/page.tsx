@@ -4,7 +4,6 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Growth Marketing Strategy",
   description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Growth Marketing Strategy"
     }],
     publishedTime: "2024-12-18T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.731Z",
+    modifiedTime: "2026-10-31T11:10:04.731Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const GrowthMarketingStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "growth-marketing-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: growth-marketing-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Growth Marketing Strategies for Professional Services: Data-Driven Scaling Guide 2025",
+    headline: "Growth Marketing Strategies for Professional Services: Data-Driven Scaling Guide 2026",
     description: "Master growth marketing for professional services. Learn conversion optimization, funnel development, retention strategies, and scaling tactics that drive exponential business growth.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-18T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-18T00:00:00.000Z",
     url: "/blog/growth-marketing-strategy",
     imageUrl: "/images/blog/growth-marketing-strategy-hero.jpg",

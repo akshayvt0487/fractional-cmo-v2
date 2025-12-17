@@ -1,9 +1,15 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/insolvency-digital-marketing-hero.jpg";
+const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+  
 export const metadata = createMetadata({
   title: "Insolvency Digital Marketing",
   description: "Expert guidance on insolvency digital marketing. Learn proven strategies and best practices for business growth.",
@@ -21,8 +27,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Insolvency Digital Marketing"
     }],
-    publishedTime: "2025-01-15",
-    modifiedTime: "2025-10-31T11:10:04.761Z",
+    publishedTime: "2026-01-15",
+    modifiedTime: "2026-10-31T11:10:04.761Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -38,12 +44,12 @@ const InsolvencyDigitalMarketing = () => {
     source: "ARITA",
     title: "ARITA - Code of Professional Practice",
     url: "https://www.arita.com.au/",
-    date: "2025"
+    date: "2026"
   }, {
     source: "ASIC",
     title: "ASIC - Insolvency Practitioners",
     url: "https://asic.gov.au/regulatory-resources/insolvency/",
-    date: "2025"
+    date: "2026"
   }];
   const relatedArticles = [{
     title: "Lead Generation for Legal Services",
@@ -61,17 +67,25 @@ const InsolvencyDigitalMarketing = () => {
     url: "/blog/digital-strategy-modern-business",
     category: "Strategy"
   }];
+  const post = blogPosts.find(p => p.slug === "insolvency-digital-marketing");
+  if (!post) throw new Error("Blog post not found: insolvency-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
   return <OptimizedBlogLayout articleData={{
-    headline: "Digital Marketing Strategy for Insolvency Practitioners: Complete 2025 Guide",
+    headline: "Digital Marketing Strategy for Insolvency Practitioners: Complete 2026 Guide",
     description: "Master digital marketing for insolvency practices. Proven strategies to attract corporate clients, build authority, and grow your insolvency practice in competitive markets.",
-    publishedDate: "2025-01-15",
+    publishedDate: convertDateFormat(post.date),
     url: "/blog/insolvency-digital-marketing",
     readTime: "14 min read",
     category: "Legal",
     author: "Basheer Padanna"
   }} heroImage={heroImage} heroAlt="Digital Marketing for Insolvency Practitioners" relatedArticles={relatedArticles}>
       <p className="lead text-xl text-muted-foreground mb-8">
-        Insolvency practitioners face unique marketing challenges—highly regulated services, crisis-driven demand, and sophisticated B2B clients. This guide reveals the digital marketing strategies that drive sustainable growth for insolvency practices in 2025.
+        Insolvency practitioners face unique marketing challenges—highly regulated services, crisis-driven demand, and sophisticated B2B clients. This guide reveals the digital marketing strategies that drive sustainable growth for insolvency practices in 2026.
       </p>
 
       <section className="mb-12">

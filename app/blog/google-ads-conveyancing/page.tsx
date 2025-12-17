@@ -4,7 +4,6 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Google Ads Conveyancing Guide",
   description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
@@ -22,8 +21,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Google Ads Conveyancing Guide"
     }],
-    publishedTime: "2025-09-04T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.705Z",
+    publishedTime: "2026-09-04T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.705Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,12 +34,22 @@ export const metadata = createMetadata({
   }
 });
 const ConveyancingGoogleAds = () => {
+  const post = blogPosts.find(p => p.slug === "google-ads-conveyancing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: google-ads-conveyancing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Google Ads for Conveyancers: How to Dominate Local Property Market",
     description: "Complete Google Ads guide for conveyancing firms. Learn proven strategies, keyword targeting, and campaign optimization to attract property buyers and sellers in your local market.",
     author: "Basheer Padanna",
-    publishedDate: "2025-09-04T00:00:00.000Z",
-    modifiedDate: "2025-09-04T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-09-04T00:00:00.000Z",
     url: "/blog/google-ads-conveyancing-guide",
     imageUrl: "/images/blog/google-ads-conveyancing-guide-hero.jpg",
     category: "Legal Marketing",

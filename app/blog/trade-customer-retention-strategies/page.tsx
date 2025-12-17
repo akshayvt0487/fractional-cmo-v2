@@ -22,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Trade Business Customer Retention Strategy Guide"
     }],
     publishedTime: "2024-01-22T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:05.321Z",
+    modifiedTime: "2026-10-31T11:10:05.321Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -34,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const TradeCustomerRetention = () => {
+  const post = blogPosts.find(p => p.slug === "trade-customer-retention-strategies");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: trade-customer-retention-strategies");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Trade Customer Retention Strategies: Building Lasting Client Relationships",
     description: "Comprehensive guide to customer retention for trade businesses, including relationship building, loyalty programs, follow-up systems, and long-term value strategies.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-22T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-22T00:00:00.000Z",
     url: "/blog/trade-customer-retention-strategies",
     imageUrl: "/images/blog/trade-customer-retention-strategies-hero.jpg",

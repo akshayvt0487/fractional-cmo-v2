@@ -5,15 +5,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
 import { Palette, Target, Star, Phone, MapPin, Camera, FileText, Users } from 'lucide-react';
-
 export const metadata = createMetadata({
-  title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
-  description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
+  title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026",
+  description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2026. Learn proven strategies and best practices for business growth.",
   path: "/blog/painters-lead-generation-guide",
   keywords: ["painters", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
-    title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
-    description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
+    title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026",
+    description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2026. Learn proven strategies and best practices for business growth.",
     url: "https://fractional-cmo.com.au/blog/painters-lead-generation-guide",
     siteName: "Fractional CMO",
     type: "article",
@@ -21,25 +20,32 @@ export const metadata = createMetadata({
       url: "https://fractional-cmo.com.au/images/blog/painters-lead-generation-hero.jpg",
       width: 1200,
       height: 630,
-      alt: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025"
+      alt: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026"
     }],
     publishedTime: "2024-11-28",
-    modifiedTime: "2025-10-31T11:10:05.096Z",
+    modifiedTime: "2026-10-31T11:10:05.096Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
-    description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2025. Learn proven strategies and best practices for business growth.",
+    title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026",
+    description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2026. Learn proven strategies and best practices for business growth.",
     images: ["https://fractional-cmo.com.au/images/blog/painters-lead-generation-hero.jpg"],
     site: "@FractionalCMO"
   }
 });
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
-  headline: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2025",
+  headline: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026",
   description: "Master lead generation for painting businesses. Learn proven strategies to attract residential and commercial clients, build a strong brand presence, and grow your painting company through digital marketing.",
   author: "Basheer Padanna",
-  publishedDate: "2024-11-28",
+  publishedDate: convertDateFormat(post.date),
   modifiedDate: "2024-11-28",
   url: "/blog/painters-lead-generation-guide",
     imageUrl: "/images/blog/painters-lead-generation-guide-hero.jpg",
@@ -61,7 +67,7 @@ const faqs = [{
   answer: "Both have advantages. Residential provides steady volume and referrals, while commercial offers larger projects and higher margins. Many successful painters pursue both markets with targeted strategies."
 }];
 const relatedArticles = [{
-  title: "Digital Marketing for Painters: Complete Growth Strategy 2025",
+  title: "Digital Marketing for Painters: Complete Growth Strategy 2026",
   description: "Comprehensive digital marketing guide for painting businesses",
   url: "/blog/painters-digital-marketing-guide",
   category: "Tradies - Painters",
@@ -80,6 +86,9 @@ const relatedArticles = [{
   readTime: "20 min read"
 }];
 const PaintersLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "painters-lead-generation-strategy");
+  if (!post) throw new Error("Blog post not found: painters-lead-generation-strategy");
+  
   return <>
       <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={'/images/blog/painters-lead-generation-hero.jpg'} heroAlt="Professional painters working on home exterior - lead generation guide">
         <p className="text-lg text-muted-foreground mb-6">

@@ -38,9 +38,9 @@ const MobileNav = () => {
   const [expandedService, setExpandedService] = useState<string | null>(null);
 
   const navItems = [
+    { id: "servicesMenu", label: "Services", type: "servicesMenu" },
     { id: "capabilities", label: "Capabilities", type: "section" },
     { id: "servicesSection", label: "Engagements", type: "section" },
-    { id: "servicesMenu", label: "Services", type: "servicesMenu" },
     { id: "process", label: "Process", type: "section" },
     { href: "/blog", label: "Blog", type: "link" },
     { href: "/contact", label: "Contact", type: "link" },
@@ -52,7 +52,7 @@ const MobileNav = () => {
       // If on homepage, scroll to section after sheet closes
       // Use classic function form to avoid parser issues
       setTimeout(function () {
-        var element = document.getElementById(sectionId);
+        const element = document.getElementById(sectionId);
         if (element) element.scrollIntoView({ behavior: "smooth" });
       }, 100);
     } else {

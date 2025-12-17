@@ -6,7 +6,6 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Smartphone, Monitor, Search, Share2, BarChart, Shield, Zap } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
 export const metadata = createMetadata({
   title: "Ndis Digital Marketing Excellence",
   description: "Expert guidance on ndis digital marketing excellence. Learn proven strategies and best practices for business growth.",
@@ -25,7 +24,7 @@ export const metadata = createMetadata({
       alt: "NDIS Digital Marketing Excellence Guide"
     }],
     publishedTime: "2024-12-17T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.923Z",
+    modifiedTime: "2026-10-31T11:10:04.923Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -37,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const NDISDigitalMarketingExcellence = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-digital-marketing-excellence");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: ndis-digital-marketing-excellence");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "NDIS Digital Marketing Excellence: Advanced Tactics for 2025",
+    headline: "NDIS Digital Marketing Excellence: Advanced Tactics for 2026",
     description: "Master advanced NDIS digital marketing with cutting-edge strategies, automation tools, and compliance-focused approaches that drive exceptional results for disability service providers in the evolving digital landscape.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-17T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-17T00:00:00.000Z",
     url: "/blog/ndis-digital-marketing-excellence",
     imageUrl: "/images/blog/ndis-digital-marketing-excellence-hero.jpg",
@@ -59,7 +68,7 @@ const NDISDigitalMarketingExcellence = () => {
     question: "What automation tools work best for NDIS digital marketing?",
     answer: "Use CRM systems with NDIS compliance features, automated email nurture sequences, lead scoring models, participant journey mapping, and integrated reporting dashboards. Ensure all tools maintain data privacy and accessibility standards."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-digital-marketing-excellence.jpg'} heroAlt="Advanced NDIS digital marketing strategies and materials for excellence in 2025">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-digital-marketing-excellence.jpg'} heroAlt="Advanced NDIS digital marketing strategies and materials for excellence in 2026">
         {/* Digital Marketing Excellence Metrics */}
         <Card className="mb-12 bg-primary/5 border-primary/20">
           <CardHeader>

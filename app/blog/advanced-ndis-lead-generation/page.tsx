@@ -12,7 +12,7 @@ import { relatedArticles } from "@/utils/seoUtils";
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
-  title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2025",
+  title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
   description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
   path: "/blog/advanced-ndis-lead-generation",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata = createMetadata({
     "NDIS SEO"
   ],
   openGraph: {
-    title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2025",
+    title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
     description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/advanced-ndis-lead-generation`,
     siteName: "Fractional CMO",
@@ -37,12 +37,12 @@ export const metadata = createMetadata({
       alt: "Advanced NDIS Lead Generation Strategies"
     }],
     publishedTime: "2024-12-16T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.264Z",
+    modifiedTime: "2026-10-31T11:10:04.264Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2025",
+    title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
     description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/advanced-ndis-lead-generation-hero.jpg`],
     site: "@FractionalCMO"
@@ -52,12 +52,19 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
 // ✅ Article Data & FAQs
 // ————————————————————————————————————————
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
-  headline: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2025",
+  headline: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
   description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
   author: "Basheer Padanna",
-  publishedDate: "2024-12-16T00:00:00.000Z",
-  modifiedDate: "2025-10-31T11:10:04.264Z", // Synced with metadata for freshness
+  publishedDate: convertDateFormat(post.date),
+  modifiedDate: "2026-10-31T11:10:04.264Z", // Synced with metadata for freshness
   url: "/blog/advanced-ndis-lead-generation",
   imageUrl: '/images/blog/advanced-ndis-lead-generation-hero.jpg',
   category: "NDIS Lead Generation",
@@ -84,6 +91,9 @@ const faqs = [
 // ✅ Page Component
 // ————————————————————————————————————————
 const AdvancedNDISLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "advanced-ndis-lead-generation");
+  if (!post) throw new Error("Blog post not found: advanced-ndis-lead-generation");
+  
   return (
     <OptimizedBlogLayout
       articleData={articleData}

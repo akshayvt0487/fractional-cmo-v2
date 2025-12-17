@@ -23,7 +23,7 @@ export const metadata = createMetadata({
       alt: "Removalist Business Marketing"
     }],
     publishedTime: "2023-08-14",
-    modifiedTime: "2025-10-31T11:10:05.138Z",
+    modifiedTime: "2026-10-31T11:10:05.138Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +35,21 @@ export const metadata = createMetadata({
   }
 });
 const RemovalistBusinessMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "removalist-business-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: removalist-business-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Removalist Business Marketing: How to Build Trust and Win More Moves",
     description: "Expert marketing strategies for removalist businesses to build trust, attract customers, and grow their moving services through digital marketing and local SEO.",
     author: "Basheer Padanna",
-    publishedDate: "2023-08-14",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2023-08-14",
     url: "/blog/removalist-business-marketing",
     imageUrl: "/images/blog/removalist-business-marketing-hero.jpg",

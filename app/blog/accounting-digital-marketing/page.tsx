@@ -11,12 +11,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
-  title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2025",
+  title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
   description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
   path: "/blog/accounting-digital-marketing-guide",
   keywords: ["accounting", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy", "CPA marketing", "client acquisition"],
   openGraph: {
-    title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2025",
+    title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
     description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/accounting-digital-marketing-guide`,
     siteName: "Fractional CMO",
@@ -28,12 +28,12 @@ export const metadata = createMetadata({
       alt: "Comprehensive Digital Marketing Guide for Accountants"
     }],
     publishedTime: "2024-12-28T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.167Z",
+    modifiedTime: "2026-10-31T11:10:04.167Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2025",
+    title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
     description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-digital-marketing-hero.jpg`],
     site: "@FractionalCMO"
@@ -43,12 +43,19 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
 // ✅ Article Data & FAQs
 // ————————————————————————————————————————
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
-  headline: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2025",
+  headline: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
   description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
   author: "Basheer Padanna",
-  publishedDate: "2024-12-28T00:00:00.000Z",
-  modifiedDate: "2025-10-31T11:10:04.167Z", // Synced with metadata for freshness
+  publishedDate: convertDateFormat(post.date),
+  modifiedDate: "2026-10-31T11:10:04.167Z", // Synced with metadata for freshness
   url: "/blog/accounting-digital-marketing-guide",
   imageUrl: '/images/blog/accounting-digital-marketing-hero.jpg',
   category: "Digital Marketing",
@@ -75,6 +82,9 @@ const faqs = [
 // ✅ Page Component
 // ————————————————————————————————————————
 const AccountingDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "accounting-digital-marketing");
+  if (!post) throw new Error("Blog post not found: accounting-digital-marketing");
+  
   return (
     <OptimizedBlogLayout
       articleData={articleData}

@@ -24,7 +24,7 @@ export const metadata = createMetadata({
       alt: "Ndis Participant Engagement Strategies"
     }],
     publishedTime: "2024-01-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:05.004Z",
+    modifiedTime: "2026-10-31T11:10:05.004Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const NDISParticipantEngagement = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-participant-engagement-strategies");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: ndis-participant-engagement-strategies");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "NDIS Participant Engagement Strategies: Building Meaningful Relationships",
     description: "Comprehensive guide to effective participant engagement strategies for NDIS providers, including communication techniques, cultural competency, and outcome measurement.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-20T00:00:00.000Z",
     url: "/blog/ndis-participant-engagement-strategies",
     imageUrl: "/images/blog/ndis-participant-engagement-strategies-hero.jpg",

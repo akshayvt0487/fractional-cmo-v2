@@ -4,7 +4,6 @@ import { Car, Users, Target, AlertTriangle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Car Inspection Marketing Strategies",
   description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Car Inspection Marketing Strategies"
     }],
     publishedTime: "2024-02-15T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.391Z",
+    modifiedTime: "2026-10-31T11:10:04.391Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const CarInspectionMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "car-inspection-marketing-strategies");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: car-inspection-marketing-strategies");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Car Inspection Marketing: Digital Strategies to Attract Car Buyers",
     description: "Proven marketing strategies for pre-purchase car inspection services to reach potential car buyers, build credibility, and generate consistent bookings.",
     author: "Basheer Padanna",
-    publishedDate: "2024-02-15T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-02-15T00:00:00.000Z",
     url: "/blog/car-inspection-marketing-strategies",
     imageUrl: '/images/blog/car-inspection-marketing-strategies.jpg',

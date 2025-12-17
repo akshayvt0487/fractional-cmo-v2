@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
 export const metadata = createMetadata({
   title: "Cyber Security Growth Hacking",
   description: "Expert guidance on cyber security growth hacking. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Growth hacking strategies for cyber security companies - learn proven tactics for business growth"
     }],
     publishedTime: "2024-01-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.588Z",
+    modifiedTime: "2026-10-31T11:10:04.588Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const CyberSecurityGrowthHacking = () => {
+  const post = blogPosts.find(p => p.slug === "cyber-security-growth-hacking");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: cyber-security-growth-hacking");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Cyber Security Growth Hacking: Innovative Lead Generation Strategies for Security Companies",
     description: "Discover cutting-edge growth hacking techniques specifically designed for cyber security companies to accelerate client acquisition and scale revenue through innovative digital strategies.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-20T00:00:00.000Z",
     url: "/blog/cyber-security-growth-hacking",
     imageUrl: "/images/blog/cyber-security-growth-hacking-hero.jpg",

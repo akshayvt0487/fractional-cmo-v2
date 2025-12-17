@@ -244,7 +244,7 @@ const IndustryServiceLayout = ({
             <BreadcrumbNavigation items={breadcrumbs} />
             <div className="grid lg:grid-cols-2 gap-12 mt-8">
               <div>
-                <Badge variant="secondary" className="mb-4">{serviceName} for {industryName}</Badge>
+                <Badge variant="secondary" className="mb-4 bg-gray-200 border-gray-300 border-1">{serviceName} for {industryName}</Badge>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">{heroTitle}</h1>
                 <p className="text-xl text-primary font-medium mb-4">{heroSubtitle}</p>
                 <p className="text-muted-foreground mb-6">{heroDescription}</p>
@@ -294,7 +294,7 @@ const IndustryServiceLayout = ({
                   <Card key={index} className="border-border/50">
                     <CardContent className="p-6">
                       <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center mb-4">
-                        <AlertTriangle className="w-5 h-5 text-destructive" />
+                        <AlertTriangle className="w-5 h-5 text-destructive text-red-700" />
                       </div>
                       <h3 className="font-semibold mb-2 text-foreground">{ch.title}</h3>
                       <p className="text-sm text-muted-foreground">{ch.description}</p>
@@ -319,7 +319,7 @@ const IndustryServiceLayout = ({
                 <Card key={index} className="group hover:border-primary/30 transition-all">
                   <CardContent className="p-6">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                      <DynamicIcon name={solution.icon} className="w-5 h-5 text-primary" />
+                      <DynamicIcon name={solution.icon} className="w-5 h-5 text-blue-800" />
                     </div>
                     <h3 className="font-semibold mb-2 text-foreground">{solution.title}</h3>
                     <p className="text-sm text-muted-foreground">{solution.description}</p>

@@ -1,9 +1,15 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/voluntary-administration-lead-generation-hero.jpg";
+const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+  
 export const metadata = createMetadata({
   title: "Voluntary Administration Lead Generation",
   description: "Expert guidance on voluntary administration lead generation. Learn proven strategies and best practices for business growth.",
@@ -21,8 +27,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Voluntary Administration Lead Generation Guide"
     }],
-    publishedTime: "2025-01-15",
-    modifiedTime: "2025-10-31T11:10:05.333Z",
+    publishedTime: "2026-01-15",
+    modifiedTime: "2026-10-31T11:10:05.333Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -38,12 +44,12 @@ const VoluntaryAdministrationLeadGeneration = () => {
     source: "ARITA",
     title: "ARITA - Voluntary Administration Guide",
     url: "https://www.arita.com.au/",
-    date: "2025"
+    date: "2026"
   }, {
     source: "ASIC",
     title: "ASIC - Voluntary Administration Information",
     url: "https://asic.gov.au/for-business/your-business-is-in-trouble/insolvency-a-glossary-of-terms/voluntary-administration/",
-    date: "2025"
+    date: "2026"
   }];
   const relatedArticles = [{
     title: "Growth Marketing for Liquidators",
@@ -61,10 +67,18 @@ const VoluntaryAdministrationLeadGeneration = () => {
     url: "/blog/b2b-lead-generation",
     category: "Lead Generation"
   }];
+  const post = blogPosts.find(p => p.slug === "voluntary-administration-lead-generation");
+  if (!post) throw new Error("Blog post not found: voluntary-administration-lead-generation");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
   return <OptimizedBlogLayout articleData={{
-    headline: "Lead Generation for Voluntary Administration Specialists: Complete 2025 Strategy",
+    headline: "Lead Generation for Voluntary Administration Specialists: Complete 2026 Strategy",
     description: "Master lead generation for voluntary administration services. Proven strategies to attract distressed businesses, build referrer networks, and grow your VA practice with sustainable client pipelines.",
-    publishedDate: "2025-01-15",
+    publishedDate: convertDateFormat(post.date),
     url: "/blog/voluntary-administration-lead-generation",
     readTime: "15 min read",
     category: "Legal",

@@ -24,7 +24,7 @@ export const metadata = createMetadata({
       alt: "Lead generation strategies for construction companies - proven tactics for getting quality leads"
     }],
     publishedTime: "2024-02-15T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.443Z",
+    modifiedTime: "2026-10-31T11:10:04.443Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const ConstructionLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "construction-lead-generation-strategies");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: construction-lead-generation-strategies");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Construction Lead Generation: 7 Digital Marketing Strategies That Work",
     description: "Transform your construction business with proven digital marketing strategies that deliver high-quality leads through SEO & Google Ads.",
     author: "Basheer Padanna",
-    publishedDate: "2024-02-15T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-02-15T00:00:00.000Z",
     url: "/blog/construction-lead-generation-strategies",
     imageUrl: '/images/blog/construction-lead-generation.jpg',

@@ -24,7 +24,7 @@ export const metadata = createMetadata({
       alt: "Ndis Lead Generation Mastery"
     }],
     publishedTime: "2024-12-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.978Z",
+    modifiedTime: "2026-10-31T11:10:04.978Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const NDISLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-lead-generation-mastery");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: ndis-lead-generation-mastery");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "NDIS Lead Generation Mastery: Advanced Strategies for Disability Service Providers 2025",
+    headline: "NDIS Lead Generation Mastery: Advanced Strategies for Disability Service Providers 2026",
     description: "Master NDIS lead generation with proven strategies. Learn advanced techniques to attract quality participants, build sustainable referral systems, and grow your disability service provider business.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/ndis-lead-generation-mastery",
     imageUrl: "/images/blog/ndis-lead-generation-mastery-hero.jpg",

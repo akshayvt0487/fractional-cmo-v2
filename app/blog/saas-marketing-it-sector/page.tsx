@@ -3,7 +3,6 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
-
 export const metadata = createMetadata({
   title: "Saas Marketing It Sector",
   description: "Expert guidance on saas marketing it sector. Learn proven strategies and best practices for business growth.",
@@ -22,7 +21,7 @@ export const metadata = createMetadata({
       alt: "Saas Marketing It Sector"
     }],
     publishedTime: "2024-12-15T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:05.218Z",
+    modifiedTime: "2026-10-31T11:10:05.218Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -34,11 +33,21 @@ export const metadata = createMetadata({
   }
 });
 const SaaSMarketingITSector = () => {
+  const post = blogPosts.find(p => p.slug === "saas-marketing-it-sector");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: saas-marketing-it-sector");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "SaaS Marketing in the IT Sector: Complete Growth Guide for Software Companies 2025",
+    headline: "SaaS Marketing in the IT Sector: Complete Growth Guide for Software Companies 2026",
     description: "Master SaaS marketing strategies for IT companies. Learn customer acquisition, retention tactics, pricing optimization, and growth hacking techniques that drive sustainable revenue growth.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-15T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-15T00:00:00.000Z",
     url: "/blog/saas-marketing-it-sector",
     imageUrl: "/images/blog/saas-marketing-it-sector-hero.jpg",

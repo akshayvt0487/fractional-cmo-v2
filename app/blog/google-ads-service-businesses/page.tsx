@@ -6,7 +6,6 @@ import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import googleAdsImage from "@/assets/google-ads-dashboard.jpg";
-
 export const metadata = createMetadata({
   title: "Google Ads Service Businesses",
   description: "Expert guidance on google ads service businesses. Learn proven strategies and best practices for business growth.",
@@ -25,7 +24,7 @@ export const metadata = createMetadata({
       alt: "Google Ads Service Businesses"
     }],
     publishedTime: "2024-12-10T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.720Z",
+    modifiedTime: "2026-10-31T11:10:04.720Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -37,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const GoogleAdsService = () => {
+  const post = blogPosts.find(p => p.slug === "google-ads-service-businesses");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: google-ads-service-businesses");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Google Ads for Service Businesses: Complete Setup & Optimization Guide",
     description: "Master Google Ads for service-based businesses with proven campaign setup, optimization techniques, budget strategies, and advanced targeting methods to maximize ROI.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-10T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-10T00:00:00.000Z",
     url: "/blog/google-ads-service-businesses",
     imageUrl: "/images/blog/google-ads-service-businesses-hero.jpg",

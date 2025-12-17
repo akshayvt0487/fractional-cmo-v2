@@ -7,7 +7,6 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
 import criminalLawyersDigitalMarketingHero from '@/assets/blog/criminal-lawyers-digital-marketing-hero.jpg';
-
 export const metadata = createMetadata({
   title: "Criminal Lawyers Digital Marketing",
   description: "Expert guidance on criminal lawyers digital marketing. Learn proven strategies and best practices for business growth.",
@@ -26,7 +25,7 @@ export const metadata = createMetadata({
       alt: "Digital marketing strategies for criminal lawyers - comprehensive marketing guide"
     }],
     publishedTime: "2024-02-05T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.542Z",
+    modifiedTime: "2026-10-31T11:10:04.542Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -38,11 +37,21 @@ export const metadata = createMetadata({
   }
 });
 const CriminalLawyersDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "criminal-lawyers-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: criminal-lawyers-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Criminal Lawyers Digital Marketing: Defense Attorney Growth Strategies & Client Acquisition Guide 2025",
+    headline: "Criminal Lawyers Digital Marketing: Defense Attorney Growth Strategies & Client Acquisition Guide 2026",
     description: "Master digital marketing for criminal defense attorneys. Ethical client acquisition, reputation management & lead generation tactics.",
     author: "Basheer Padanna",
-    publishedDate: "2024-02-05T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-02-05T00:00:00.000Z",
     url: "/blog/criminal-lawyers-digital-marketing",
     imageUrl: "/images/blog/criminal-lawyers-digital-marketing-hero.jpg",
@@ -687,7 +696,7 @@ const CriminalLawyersDigitalMarketing = () => {
           Success comes from building trust through education, demonstrating expertise, and maintaining professional integrity while helping clients navigate their most challenging legal situations.&quot;
         </p>
         <cite className="text-xs text-muted-foreground block mt-2">
-          — Criminal Defense Marketing Excellence, 2025
+          — Criminal Defense Marketing Excellence, 2026
         </cite>
       </div>
     </OptimizedBlogLayout>;

@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -28,7 +29,7 @@ export const metadata = createMetadata({
       alt: "NDIS Software SaaS Lead Generation Strategy Guide"
     }],
     publishedTime: "2024-01-20",
-    modifiedTime: "2025-10-31T11:10:05.022Z",
+    modifiedTime: "2026-10-31T11:10:05.022Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -40,12 +41,15 @@ export const metadata = createMetadata({
   }
 });
 const NDISSoftwareSaaSLeadGeneration = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-software-saas-lead-generation");
+  if (!post) throw new Error("Blog post not found: ndis-software-saas-lead-generation");
+  
   // Client gating removed during build stabilization: assume content unlocked for prerender
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Lead Generation: Convert Prospects into Customers",
     description: "Master lead generation for NDIS software platforms. Learn proven techniques to attract, qualify, and convert NDIS providers into paying customers with sustainable, scalable strategies.",
     author: "Basheer Padanna",
-    publishedDate: "2024-01-20",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-20",
     url: "/blog/ndis-software-saas-lead-generation",
     imageUrl: "/images/blog/ndis-software-lead-generation.jpg"
@@ -72,7 +76,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
     category: "Paid Advertising"
   }];
   return <>
-      <SEO title="NDIS Software SaaS Lead Generation: Convert Prospects into Customers" description="Master lead generation for NDIS software platforms. Learn proven techniques to attract, qualify, and convert NDIS providers into paying customers with sustainable, scalable strategies." canonical="/blog/ndis-software-saas-lead-generation" ogType="article" articlePublishedTime="2024-01-20T00:00:00Z" articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Lead Generation", "B2B Sales", "Digital Marketing", "Customer Acquisition"]} structuredData={articleSchema} />
+      <SEO title="NDIS Software SaaS Lead Generation: Convert Prospects into Customers" description="Master lead generation for NDIS software platforms. Learn proven techniques to attract, qualify, and convert NDIS providers into paying customers with sustainable, scalable strategies." canonical="/blog/ndis-software-saas-lead-generation" ogType="article" articlePublishedTime={convertDateFormat(post.date) + "T00:00:00Z"} articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Lead Generation", "B2B Sales", "Digital Marketing", "Customer Acquisition"]} structuredData={articleSchema} />
       <Header />
       <div className="min-h-screen bg-background pt-24">
         <div className="container max-w-4xl py-8">

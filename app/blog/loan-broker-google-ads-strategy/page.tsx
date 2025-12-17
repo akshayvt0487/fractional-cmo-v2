@@ -9,12 +9,12 @@ import { Card } from '@/components/ui/card';
 // SEO Metadata Generation
 export const metadata = createMetadata({
   title: "Google Ads for Loan Brokers: Complete Mortgage Marketing Guide",
-  description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2025.",
+  description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2026.",
   path: "/blog/loan-broker-google-ads-strategy",
   keywords: ["Google Ads", "Loan Brokers", "Mortgage Marketing", "PPC", "Lead Generation", "Google Ads Strategy", "Loan Broker ROI"],
   openGraph: {
     title: "Google Ads for Loan Brokers: Complete Mortgage Marketing Guide",
-    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2025.",
+    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2026.",
     url: "https://fractional-cmo.com.au/blog/loan-broker-google-ads-strategy",
     siteName: "Fractional CMO",
     type: "article",
@@ -24,26 +24,36 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Google Ads dashboard for loan broker campaigns showing mortgage keywords and performance metrics"
     }],
-    publishedTime: "2025-01-04T00:00:00.000Z",
-    modifiedTime: "2025-01-04T00:00:00.000Z",
+    publishedTime: "2026-01-04T00:00:00.000Z",
+    modifiedTime: "2026-01-04T00:00:00.000Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Google Ads for Loan Brokers: Complete Mortgage Marketing Guide",
-    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2025.",
+    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2026.",
     images: ["https://fractional-cmo.com.au/images/blog/loan-broker-google-ads-strategy.jpg"], // Placeholder URL
     site: "@FractionalCMO"
   }
 });
 
 const LoanBrokerGoogleAds = () => {
+  const post = blogPosts.find(p => p.slug === "loan-broker-google-ads-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: loan-broker-google-ads-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Google Ads for Loan Brokers: Complete Mortgage Marketing Campaign Guide 2025",
+    headline: "Google Ads for Loan Brokers: Complete Mortgage Marketing Campaign Guide 2026",
     description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-04T00:00:00.000Z",
-    modifiedDate: "2025-01-04T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-04T00:00:00.000Z",
     url: "/blog/loan-broker-google-ads-strategy",
     imageUrl: loanBrokerGoogleAdsHero,
     category: "Digital Marketing",

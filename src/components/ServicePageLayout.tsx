@@ -63,7 +63,7 @@ const ServicePageLayout: React.FC<Props> = ({ data, serviceName: customServiceNa
             <BreadcrumbNavigation items={breadcrumbs} />
             <div className="grid lg:grid-cols-2 gap-12 items-start mt-8">
               <div>
-                {heroSubtitle && <Badge variant="secondary" className="mb-4">{heroSubtitle}</Badge>}
+                {heroSubtitle && <Badge variant="secondary" className="mb-4 ">{heroSubtitle}</Badge>}
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">{heroTitle}</h1>
                 {heroDescription && <p className="text-lg text-muted-foreground mb-6 leading-relaxed">{heroDescription}</p>}
                 <div className="flex flex-wrap gap-4">

@@ -4,7 +4,6 @@ import Citation from '@/components/Citation';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Digital Strategy Modern Business",
   description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Digital Strategy Modern Business"
     }],
     publishedTime: "2024-12-18T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.629Z",
+    modifiedTime: "2026-10-31T11:10:04.629Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const DigitalStrategyModernBusiness = () => {
+  const post = blogPosts.find(p => p.slug === "digital-strategy-modern-business");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: digital-strategy-modern-business");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Digital Strategy for Modern Businesses: Complete Transformation Guide 2025",
+    headline: "Digital Strategy for Modern Businesses: Complete Transformation Guide 2026",
     description: "Build comprehensive digital strategy for business transformation. Strategic planning, technology integration & change management.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-18T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-18T00:00:00.000Z",
     url: "/blog/digital-strategy-modern-business",
     imageUrl: "/images/blog/digital-strategy-modern-business-hero.jpg",

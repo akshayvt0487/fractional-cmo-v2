@@ -4,7 +4,6 @@ import { Users, Target, Settings, Layers, Search, Zap, MapPin, TrendingUp } from
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "Ndis Google Ads Respite Sil Western Sydney",
   description: "Expert guidance on ndis google ads respite sil western sydney. Learn proven strategies and best practices for business growth.",
@@ -22,8 +21,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Ndis Google Ads Respite Sil Western Sydney"
     }],
-    publishedTime: "2025-01-30T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.960Z",
+    publishedTime: "2026-01-30T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.960Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,12 +34,22 @@ export const metadata = createMetadata({
   }
 });
 const NDISGoogleAdsRespiteSIL = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-google-ads-respite-sil-western-sydney");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: ndis-google-ads-respite-sil-western-sydney");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Google Ads for NDIS Respite Care & SIL Accommodation in Western Sydney",
     description: "Master Google Ads for NDIS respite care and SIL accommodation services. Proven strategies for Western Sydney providers to generate quality participant enquiries and fill vacancies.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-30T00:00:00.000Z",
-    modifiedDate: "2025-01-30T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-30T00:00:00.000Z",
     url: "/blog/ndis-google-ads-respite-sil-western-sydney",
     imageUrl: "/images/blog/ndis-google-ads-respite-sil-western-sydney-hero.jpg",
     category: "NDIS - Google Ads",
@@ -999,7 +1008,7 @@ const NDISGoogleAdsRespiteSIL = () => {
           <StrategyForm preSelectedService="google-ads" />
         </div>
 
-        <Citation source="NDIS Quality and Safeguards Commission" url="https://www.ndiscommission.gov.au/" title="NDIS Provider Registration and Compliance Requirements" date="2025" />
+        <Citation source="NDIS Quality and Safeguards Commission" url="https://www.ndiscommission.gov.au/" title="NDIS Provider Registration and Compliance Requirements" date="2026" />
       </OptimizedBlogLayout>;
 };
 export default NDISGoogleAdsRespiteSIL;

@@ -4,7 +4,6 @@ import { AlertTriangle, Calculator } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Construction Cost Estimation Guide",
   description: "Expert guidance on construction cost estimation guide. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Construction cost estimation guide - comprehensive strategies for accurate project costing"
     }],
     publishedTime: "2024-03-01T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.408Z",
+    modifiedTime: "2026-10-31T11:10:04.408Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const ConstructionCostEstimation = () => {
+  const post = blogPosts.find(p => p.slug === "construction-cost-estimation");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: construction-cost-estimation");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Construction Cost Estimation: Advanced Strategies for Accurate Project Pricing",
     description: "Comprehensive guide to construction cost estimation including methodologies, risk assessment, and accuracy techniques for construction project managers and contractors.",
     author: "Basheer Padanna",
-    publishedDate: "2024-03-01T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-03-01T00:00:00.000Z",
     url: "/blog/construction-cost-estimation-guide",
     imageUrl: '/images/blog/construction-cost-estimation.jpg',

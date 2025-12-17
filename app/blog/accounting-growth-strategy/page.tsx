@@ -12,12 +12,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
-  title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2025",
+  title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
   description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
   path: "/blog/accounting-growth-strategy-guide",
   keywords: ["accounting growth strategy", "accounting practice growth", "accounting firm business development", "CPA firm growth", "service expansion", "team building", "accounting client acquisition"],
   openGraph: {
-    title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2025",
+    title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
     description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/accounting-growth-strategy-guide`,
     siteName: "Fractional CMO",
@@ -28,13 +28,13 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Growth strategy guide for accounting firms - comprehensive business growth tactics"
     }],
-    publishedTime: "2025-01-01T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.213Z",
+    publishedTime: "2026-01-01T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:04.213Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2025",
+    title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
     description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-growth-strategy-hero.jpg`],
     site: "@FractionalCMO"
@@ -44,12 +44,19 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
 // ✅ Article Data & FAQs
 // ————————————————————————————————————————
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+import { blogPosts } from '@/data/blogPosts';
+    return date.toISOString().split('T')[0];
+  };
+
+
 const articleData = {
-  headline: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2025",
+  headline: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
   description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
   author: "Basheer Padanna",
-  publishedDate: "2025-01-01T00:00:00.000Z",
-  modifiedDate: "2025-10-31T11:10:04.213Z", // Synced with metadata for freshness
+  publishedDate: convertDateFormat(post.date),
+  modifiedDate: "2026-10-31T11:10:04.213Z", // Synced with metadata for freshness
   url: "/blog/accounting-growth-strategy-guide",
   imageUrl: '/images/blog/accounting-growth-strategy-hero.jpg',
   category: "Accounting",
@@ -76,6 +83,9 @@ const faqs = [
 // ✅ Page Component
 // ————————————————————————————————————————
 const AccountingGrowthStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "accounting-growth-strategy");
+  if (!post) throw new Error("Blog post not found: accounting-growth-strategy");
+  
   return (
     <OptimizedBlogLayout
       articleData={articleData}

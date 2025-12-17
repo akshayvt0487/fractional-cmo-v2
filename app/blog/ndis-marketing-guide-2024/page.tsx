@@ -24,7 +24,7 @@ export const metadata = createMetadata({
       alt: "Ndis Marketing Guide 2024"
     }],
     publishedTime: "2024-12-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.996Z",
+    modifiedTime: "2026-10-31T11:10:04.996Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const NDISMarketingGuide = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-marketing-guide-2024");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: ndis-marketing-guide-2024");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "The Complete NDIS Marketing Guide for Disability Service Providers 2025",
+    headline: "The Complete NDIS Marketing Guide for Disability Service Providers 2026",
     description: "Comprehensive NDIS marketing guide for disability service providers. Learn proven strategies to attract participants, build trust, and grow your NDIS business ethically and effectively.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/ndis-marketing-guide-2024",
     imageUrl: "/images/blog/ndis-marketing-guide-2024-hero.jpg",

@@ -4,7 +4,6 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import Citation from '@/components/Citation';
-
 export const metadata = createMetadata({
   title: "It Networking Business Growth Strategy",
   description: "Expert guidance on it networking business growth strategy. Learn proven strategies and best practices for business growth.",
@@ -23,7 +22,7 @@ export const metadata = createMetadata({
       alt: "It Networking Business Growth Strategy"
     }],
     publishedTime: "2024-12-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:04.817Z",
+    modifiedTime: "2026-10-31T11:10:04.817Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const ITNetworkingGrowthStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "it-networking-business-growth-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: it-networking-business-growth-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "IT Networking Business Growth: Scaling Your Network Solutions Company 2025",
+    headline: "IT Networking Business Growth: Scaling Your Network Solutions Company 2026",
     description: "Discover proven strategies to grow your IT networking business. Learn how to scale operations, attract enterprise clients, and build a sustainable network solutions company.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-20T00:00:00.000Z",
     url: "/blog/it-networking-business-growth-strategy",
     imageUrl: "/images/blog/it-networking-business-growth-strategy-hero.jpg",

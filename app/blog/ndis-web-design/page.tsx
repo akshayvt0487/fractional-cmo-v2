@@ -24,7 +24,7 @@ export const metadata = createMetadata({
       alt: "NDIS Web Design and Development Guide"
     }],
     publishedTime: "2024-03-20T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:05.078Z",
+    modifiedTime: "2026-10-31T11:10:05.078Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -36,11 +36,21 @@ export const metadata = createMetadata({
   }
 });
 const NDISWebDesign = () => {
+  const post = blogPosts.find(p => p.slug === "ndis-web-design");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: ndis-web-design");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "NDIS Website Design That Converts: Complete Guide for Disability Service Providers",
     description: "Master NDIS website design with accessibility-first principles, conversion optimization, and participant-centered user experiences that build trust and drive inquiries.",
     author: "Basheer Padanna",
-    publishedDate: "2024-03-20T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-03-20T00:00:00.000Z",
     url: "/blog/ndis-web-design-guide",
     imageUrl: "/images/blog/ndis-web-design-guide-hero.jpg",

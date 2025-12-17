@@ -22,7 +22,7 @@ export const metadata = createMetadata({
       alt: "Google Ads Strategy Guide for Therapy Practices"
     }],
     publishedTime: "2024-12-08T09:00:00+10:00",
-    modifiedTime: "2025-10-31T11:10:05.281Z",
+    modifiedTime: "2026-10-31T11:10:05.281Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -34,11 +34,21 @@ export const metadata = createMetadata({
   }
 });
 const TherapyGoogleAdsStrategy = () => {
+  const post = blogPosts.find(p => p.slug === "therapy-google-ads-strategy");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: therapy-google-ads-strategy");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
     headline: "Google Ads for Therapy Clinics: Advanced NDIS Provider Advertising Strategy",
     description: "Master Google Ads for therapy services. Proven strategies for speech therapy, occupational therapy, ABA therapy, and psychology practices to attract NDIS participants and grow revenue.",
     author: "Basheer Padanna",
-    publishedDate: "2024-12-08T09:00:00+10:00",
+    publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-08T09:00:00+10:00",
     url: "/blog/therapy-google-ads-strategy",
     imageUrl: "/images/blog/therapy-google-ads-strategy-hero.jpg",

@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Paintbrush, Home, Building, Palette } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
-
 export const metadata = createMetadata({
   title: "Painters Digital Marketing Guide",
   description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -22,8 +21,8 @@ export const metadata = createMetadata({
       height: 630,
       alt: "Painters Digital Marketing Guide"
     }],
-    publishedTime: "2025-01-07T00:00:00.000Z",
-    modifiedTime: "2025-10-31T11:10:05.086Z",
+    publishedTime: "2026-01-07T00:00:00.000Z",
+    modifiedTime: "2026-10-31T11:10:05.086Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,12 +34,22 @@ export const metadata = createMetadata({
   }
 });
 const PaintersDigitalMarketing = () => {
+  const post = blogPosts.find(p => p.slug === "painters-digital-marketing");
+import { blogPosts } from '@/data/blogPosts';
+  if (!post) throw new Error("Blog post not found: painters-digital-marketing");
+  
+  const convertDateFormat = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+
   const articleData = {
-    headline: "Digital Marketing for Painters: Complete Business Growth Strategy 2025",
+    headline: "Digital Marketing for Painters: Complete Business Growth Strategy 2026",
     description: "Master digital marketing for painting businesses. Learn proven strategies to attract homeowners, showcase your work, and build a profitable painting company.",
     author: "Basheer Padanna",
-    publishedDate: "2025-01-07T00:00:00.000Z",
-    modifiedDate: "2025-01-07T00:00:00.000Z",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-01-07T00:00:00.000Z",
     url: "/blog/painters-digital-marketing-guide",
     imageUrl: "/images/blog/painters-digital-marketing-guide-hero.jpg",
     category: "Trade Marketing",
