@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 import therapyGrowthMarketingStrategyHero from "@/assets/blog/therapy-growth-marketing-strategy-hero.jpg";
 export const metadata = createMetadata({
   title: "Therapy Growth Marketing Strategy",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const TherapyGrowthMarketingStrategy = () => {
   const post = blogPosts.find(p => p.slug === "therapy-growth-marketing-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: therapy-growth-marketing-strategy");
   
   const convertDateFormat = (dateString: string): string => {

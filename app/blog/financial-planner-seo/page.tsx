@@ -5,6 +5,7 @@ import { Search, Target, Users, BarChart, Zap, CheckCircle } from "lucide-react"
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+
 export const metadata = createMetadata({
   title: "Financial Planner Seo Guide",
   description: "Expert guidance on financial planner seo guide. Learn proven strategies and best practices for business growth.",

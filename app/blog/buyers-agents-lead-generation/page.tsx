@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Lead Generation for Buyers Agents: Complete Strategy Guide 2026",
   description: "Discover proven lead generation strategies for buyers agents. Learn how to attract quality property buyer clients through digital marketing, referrals, and content marketing.",
@@ -35,52 +36,55 @@ export const metadata = createMetadata({
 });
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
 
-const articleData = {
-  headline: "Lead Generation for Buyers Agents: Complete Strategy Guide 2026",
-  description: "Discover proven lead generation strategies for buyers agents. Learn how to attract quality property buyer clients through digital marketing, referrals, and content marketing.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2025-01-20T00:00:00.000Z",
-  url: "/blog/buyers-agents-lead-generation",
-  imageUrl: '/images/blog/buyers-agents-lead-generation.jpg',
-  category: "Lead Generation",
-  readTime: "20 min read",
-  tags: ["Buyers Agents", "Lead Generation", "Property Leads", "Client Acquisition"]
-};
 
-const faqs = [
-  {
-    question: "What is the average cost per lead for buyers agents?",
-    answer: "Cost per lead varies significantly by channel: Google Ads typically $50-150, Facebook Ads $30-80, SEO $20-50 (once established), and referrals essentially $0 direct cost. Quality also varies, with referrals and SEO leads generally converting at higher rates."
-  },
-  {
-    question: "How many leads do buyers agents need to close a deal?",
-    answer: "Industry benchmarks suggest 8-15 qualified leads per closed deal. However, well-qualified leads from referrals or targeted content may convert at 1 in 4 or better. Focus on lead quality, not just quantity."
-  },
-  {
-    question: "What lead magnets work best for buyers agents?",
-    answer: "High-performing lead magnets include suburb reports, property investment calculators, first home buyer guides, auction preparation checklists, and market trend reports. Interactive tools typically outperform static PDFs."
-  },
-  {
-    question: "How should buyers agents follow up with leads?",
-    answer: "Best practice is initial response within 5 minutes during business hours. Use a structured 7-touch sequence over 14 days combining phone, email, and SMS. Leads not ready to proceed should enter a long-term nurture sequence with monthly value-add content."
-  }
-];
+
+
 
 const BuyersAgentsLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "buyers-agents-lead-generation");
   if (!post) throw new Error("Blog post not found: buyers-agents-lead-generation");
+  const articleData = {
+    headline: "Lead Generation for Buyers Agents: Complete Strategy Guide 2026",
+    description: "Discover proven lead generation strategies for buyers agents. Learn how to attract quality property buyer clients through digital marketing, referrals, and content marketing.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2025-01-20T00:00:00.000Z",
+    url: "/blog/buyers-agents-lead-generation",
+    imageUrl: '/images/blog/buyers-agents-lead-generation.jpg',
+    category: "Lead Generation",
+    readTime: "20 min read",
+    tags: ["Buyers Agents", "Lead Generation", "Property Leads", "Client Acquisition"]
+  };
+
+  const faqs = [
+    {
+      question: "What is the average cost per lead for buyers agents?",
+      answer: "Cost per lead varies significantly by channel: Google Ads typically $50-150, Facebook Ads $30-80, SEO $20-50 (once established), and referrals essentially $0 direct cost. Quality also varies, with referrals and SEO leads generally converting at higher rates."
+    },
+    {
+      question: "How many leads do buyers agents need to close a deal?",
+      answer: "Industry benchmarks suggest 8-15 qualified leads per closed deal. However, well-qualified leads from referrals or targeted content may convert at 1 in 4 or better. Focus on lead quality, not just quantity."
+    },
+    {
+      question: "What lead magnets work best for buyers agents?",
+      answer: "High-performing lead magnets include suburb reports, property investment calculators, first home buyer guides, auction preparation checklists, and market trend reports. Interactive tools typically outperform static PDFs."
+    },
+    {
+      question: "How should buyers agents follow up with leads?",
+      answer: "Best practice is initial response within 5 minutes during business hours. Use a structured 7-touch sequence over 14 days combining phone, email, and SMS. Leads not ready to proceed should enter a long-term nurture sequence with monthly value-add content."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout
       articleData={articleData}
-      relatedArticles={relatedArticles.leadGeneration}
+      relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
       heroImage={'/images/blog/buyers-agents-lead-generation.jpg'}
       heroAlt="Lead Generation Strategy for Buyers Agents"

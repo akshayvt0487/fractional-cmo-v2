@@ -2,6 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Floor Sanding Digital Marketing Guide",
   description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -33,7 +34,7 @@ export const metadata = createMetadata({
 });
 const FloorSandingDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "floor-sanding-digital-marketing");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: floor-sanding-digital-marketing");
   
   const convertDateFormat = (dateString: string): string => {

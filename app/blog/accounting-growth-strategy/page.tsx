@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, TrendingUp, Users, Target, BarChart, Zap, Calendar } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 
 
 // ————————————————————————————————————————
@@ -46,38 +47,14 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
-const articleData = {
-  headline: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
-  description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2026-10-31T11:10:04.213Z", // Synced with metadata for freshness
-  url: "/blog/accounting-growth-strategy-guide",
-  imageUrl: '/images/blog/accounting-growth-strategy-hero.jpg',
-  category: "Accounting",
-  readTime: "26 min read",
-  tags: ["Accounting Growth", "Business Development", "Practice Management", "Service Expansion", "Team Building"]
-};
 
-const faqs = [
-  {
-    question: "What's the most effective growth strategy for accounting practices?",
-    answer: "Service diversification combined with value-based positioning delivers the highest ROI. Successful firms expand beyond basic compliance to offer advisory services while positioning as strategic business partners rather than transactional service providers."
-  },
-  {
-    question: "How long does it take to see results from growth strategies?",
-    answer: "Initial improvements typically appear within 3-6 months for client acquisition efforts, while service expansion and team development initiatives usually show significant results after 6-12 months of consistent implementation."
-  },
-  {
-    question: "Should accounting practices specialize or offer diverse services?",
-    answer: "The most successful approach combines niche specialization with complementary advisory services. Focus on specific industries or client types while expanding service offerings that leverage your core expertise and client relationships."
-  }
-];
+
+
 
 // ————————————————————————————————————————
 // ✅ Page Component
@@ -85,6 +62,33 @@ const faqs = [
 const AccountingGrowthStrategy = () => {
   const post = blogPosts.find(p => p.slug === "accounting-growth-strategy");
   if (!post) throw new Error("Blog post not found: accounting-growth-strategy");
+  const articleData = {
+    headline: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
+    description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-10-31T11:10:04.213Z", // Synced with metadata for freshness
+    url: "/blog/accounting-growth-strategy-guide",
+    imageUrl: '/images/blog/accounting-growth-strategy-hero.jpg',
+    category: "Accounting",
+    readTime: "26 min read",
+    tags: ["Accounting Growth", "Business Development", "Practice Management", "Service Expansion", "Team Building"]
+  };
+
+  const faqs = [
+    {
+      question: "What's the most effective growth strategy for accounting practices?",
+      answer: "Service diversification combined with value-based positioning delivers the highest ROI. Successful firms expand beyond basic compliance to offer advisory services while positioning as strategic business partners rather than transactional service providers."
+    },
+    {
+      question: "How long does it take to see results from growth strategies?",
+      answer: "Initial improvements typically appear within 3-6 months for client acquisition efforts, while service expansion and team development initiatives usually show significant results after 6-12 months of consistent implementation."
+    },
+    {
+      question: "Should accounting practices specialize or offer diverse services?",
+      answer: "The most successful approach combines niche specialization with complementary advisory services. Focus on specific industries or client types while expanding service offerings that leverage your core expertise and client relationships."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout

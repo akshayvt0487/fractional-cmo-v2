@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Shield, Scale, Users, Gavel, Target, AlertTriangle, Clock, TrendingUp } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import criminalLawyersDigitalMarketingHero from '@/assets/blog/criminal-lawyers-digital-marketing-hero.jpg';
 export const metadata = createMetadata({
@@ -38,7 +39,7 @@ export const metadata = createMetadata({
 });
 const CriminalLawyersDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "criminal-lawyers-digital-marketing");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: criminal-lawyers-digital-marketing");
   
   const convertDateFormat = (dateString: string): string => {

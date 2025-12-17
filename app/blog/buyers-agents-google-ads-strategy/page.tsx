@@ -4,6 +4,7 @@ import { Users, Target, Settings, Layers, Search, Zap } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Buyers Agents Google Ads Strategy",
@@ -36,7 +37,7 @@ export const metadata = createMetadata({
 });
 const BuyersAgentsGoogleAds = () => {
   const post = blogPosts.find(p => p.slug === "buyers-agents-google-ads-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: buyers-agents-google-ads-strategy");
   
   const convertDateFormat = (dateString: string): string => {

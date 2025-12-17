@@ -128,7 +128,7 @@ const MobileNav = () => {
 
                                     <div className="grid grid-cols-2 gap-1 pt-1">
                                       {industries.map((ind) => {
-                                        const serviceSlug = (s as unknown).industrySlug || s.slug;
+                                        const serviceSlug = (s as { industrySlug?: string; slug: string }).industrySlug || (s as { slug: string }).slug;
                                         return (
                                           <Link
                                             key={`${s.slug}-${ind.slug}`}

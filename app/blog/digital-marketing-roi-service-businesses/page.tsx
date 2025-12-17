@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Digital Marketing Roi Service Businesses",
   description: "Expert guidance on digital marketing roi service businesses. Learn proven strategies and best practices for business growth.",
@@ -22,7 +23,7 @@ export const metadata = createMetadata({
       alt: "Digital Marketing Roi Service Businesses"
     }],
     publishedTime: "2024-12-15T00:00:00.000Z",
-    modifiedTime: "2026-10-31T11:10:04.619Z",
+    modifiedTime: "2025-10-31T11:10:04.619Z",
     authors: ["Basheer Padanna"]
   },
   twitter: {
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const DigitalMarketingROI = () => {
   const post = blogPosts.find(p => p.slug === "digital-marketing-roi-service-businesses");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: digital-marketing-roi-service-businesses");
   
   const convertDateFormat = (dateString: string): string => {

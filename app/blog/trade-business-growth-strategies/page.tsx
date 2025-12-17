@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import localSEOImage from "@/assets/local-seo-search.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Trade Business Growth Strategies",
   description: "Expert guidance on trade business growth strategies. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const TradeBusinessGrowth = () => {
   const post = blogPosts.find(p => p.slug === "trade-business-growth-strategies");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: trade-business-growth-strategies");
   
   const convertDateFormat = (dateString: string): string => {

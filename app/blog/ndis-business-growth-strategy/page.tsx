@@ -6,6 +6,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Users, TrendingUp, Target, Shield, Calendar, DollarSign, BarChart3 } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Ndis Business Growth Strategy",
   description: "Expert guidance on ndis business growth strategy. Learn proven strategies and best practices for business growth.",
@@ -37,7 +38,7 @@ export const metadata = createMetadata({
 });
 const NDISBusinessGrowthStrategy = () => {
   const post = blogPosts.find(p => p.slug === "ndis-business-growth-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: ndis-business-growth-strategy");
   
   const convertDateFormat = (dateString: string): string => {

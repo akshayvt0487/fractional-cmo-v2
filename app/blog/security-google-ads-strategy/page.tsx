@@ -2,6 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Security Google Ads Strategy",
   description: "Expert guidance on security google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -17,7 +18,7 @@ export const metadata = createMetadata({
 });
 const SecurityGoogleAdsStrategy = () => {
   const post = blogPosts.find(p => p.slug === "security-google-ads-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: security-google-ads-strategy");
   
   const convertDateFormat = (dateString: string): string => {

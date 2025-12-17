@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Pre Purchase Car Inspection Business Guide",
   description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const PrePurchaseCarInspection = () => {
   const post = blogPosts.find(p => p.slug === "pre-purchase-car-inspection-business");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: pre-purchase-car-inspection-business");
   
   const convertDateFormat = (dateString: string): string => {

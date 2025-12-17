@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Conveyancing Digital Marketing Roi",
   description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
@@ -34,7 +35,7 @@ export const metadata = createMetadata({
 });
 const ConveyancingDigitalMarketingROI = () => {
   const post = blogPosts.find(p => p.slug === "conveyancing-digital-marketing-roi");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: conveyancing-digital-marketing-roi");
   
   const convertDateFormat = (dateString: string): string => {

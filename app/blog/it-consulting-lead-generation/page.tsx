@@ -3,6 +3,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "It Consulting Lead Generation Guide",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const ITConsultingLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "it-consulting-lead-generation");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: it-consulting-lead-generation");
   
   const convertDateFormat = (dateString: string): string => {

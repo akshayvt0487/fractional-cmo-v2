@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Cyber Security Growth Hacking",
   description: "Expert guidance on cyber security growth hacking. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const CyberSecurityGrowthHacking = () => {
   const post = blogPosts.find(p => p.slug === "cyber-security-growth-hacking");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: cyber-security-growth-hacking");
   
   const convertDateFormat = (dateString: string): string => {

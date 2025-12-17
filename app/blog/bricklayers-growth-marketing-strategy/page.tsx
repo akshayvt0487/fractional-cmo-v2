@@ -2,6 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Globe, Camera, Search, PenTool, BookOpen, Video } from "lucide-react";
 
@@ -52,42 +53,14 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
-const articleData = {
-  headline: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
-  description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2026-10-31T11:10:04.341Z", // Synced with metadata for freshness
-  url: "/blog/bricklayers-growth-marketing-strategy",
-  imageUrl: '/images/blog/bricklayers-growth-marketing-hero.jpg',
-  category: "Trade Marketing",
-  readTime: "26 min read",
-  tags: ["bricklaying", "masonry business", "growth marketing", "trade marketing"]
-};
 
-const faqs = [
-  {
-    question: "How can growth marketing help my bricklaying business?",
-    answer: "Growth marketing helps bricklayers scale beyond individual projects by building sustainable client acquisition systems, developing multiple revenue streams, and creating consistent work flow through strategic online and offline marketing tactics."
-  },
-  {
-    question: "What's the best way to showcase bricklaying work online?",
-    answer: "High-quality before/after photo galleries, time-lapse videos of construction process, detailed project case studies, and client testimonials with verified project photos are most effective for demonstrating craftsmanship and expertise."
-  },
-  {
-    question: "Should bricklayers focus on residential or commercial markets?",
-    answer: "Both offer opportunities, but commercial projects typically provide higher value contracts and longer-term relationships. Start with residential to build portfolio and reputation, then expand to commercial partnerships with builders and contractors."
-  },
-  {
-    question: "How important is local SEO for bricklaying businesses?",
-    answer: "Local SEO is critical as most bricklaying work is location-dependent. Optimize for 'bricklayer near me' searches, maintain active Google My Business profile, and create location-specific landing pages for each service area."
-  }
-];
+
+
 
 // ————————————————————————————————————————
 // ✅ Page Component
@@ -95,6 +68,37 @@ const faqs = [
 const BricklayersGrowthMarketing = () => {
   const post = blogPosts.find(p => p.slug === "bricklayers-growth-marketing-strategy");
   if (!post) throw new Error("Blog post not found: bricklayers-growth-marketing-strategy");
+  const articleData = {
+    headline: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
+    description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-10-31T11:10:04.341Z", // Synced with metadata for freshness
+    url: "/blog/bricklayers-growth-marketing-strategy",
+    imageUrl: '/images/blog/bricklayers-growth-marketing-hero.jpg',
+    category: "Trade Marketing",
+    readTime: "26 min read",
+    tags: ["bricklaying", "masonry business", "growth marketing", "trade marketing"]
+  };
+
+  const faqs = [
+    {
+      question: "How can growth marketing help my bricklaying business?",
+      answer: "Growth marketing helps bricklayers scale beyond individual projects by building sustainable client acquisition systems, developing multiple revenue streams, and creating consistent work flow through strategic online and offline marketing tactics."
+    },
+    {
+      question: "What's the best way to showcase bricklaying work online?",
+      answer: "High-quality before/after photo galleries, time-lapse videos of construction process, detailed project case studies, and client testimonials with verified project photos are most effective for demonstrating craftsmanship and expertise."
+    },
+    {
+      question: "Should bricklayers focus on residential or commercial markets?",
+      answer: "Both offer opportunities, but commercial projects typically provide higher value contracts and longer-term relationships. Start with residential to build portfolio and reputation, then expand to commercial partnerships with builders and contractors."
+    },
+    {
+      question: "How important is local SEO for bricklaying businesses?",
+      answer: "Local SEO is critical as most bricklaying work is location-dependent. Optimize for 'bricklayer near me' searches, maintain active Google My Business profile, and create location-specific landing pages for each service area."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout

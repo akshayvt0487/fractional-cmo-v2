@@ -3,6 +3,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Social Media Marketing Strategy",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const SocialMediaMarketingStrategy = () => {
   const post = blogPosts.find(p => p.slug === "social-media-marketing-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: social-media-marketing-strategy");
   
   const convertDateFormat = (dateString: string): string => {

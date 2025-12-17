@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Cyber Security Google Ads Strategy",
   description: "Expert guidance on cyber security google ads strategy. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const CyberSecurityGoogleAds = () => {
   const post = blogPosts.find(p => p.slug === "cyber-security-google-ads-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: cyber-security-google-ads-strategy");
   
   const convertDateFormat = (dateString: string): string => {

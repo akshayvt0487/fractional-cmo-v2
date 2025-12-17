@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Car, Users, Target, AlertTriangle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Car Inspection Marketing Strategies",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const CarInspectionMarketing = () => {
   const post = blogPosts.find(p => p.slug === "car-inspection-marketing-strategies");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: car-inspection-marketing-strategies");
   
   const convertDateFormat = (dateString: string): string => {

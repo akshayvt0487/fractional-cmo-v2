@@ -3,6 +3,7 @@ import React from 'react';
 import { Users, Target, TrendingUp, Shield, MessageCircle, CheckCircle } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 
 import { Card, CardContent } from '@/components/ui/card';
 import StrategyForm from '@/components/ui/strategy-form';
@@ -37,7 +38,7 @@ export const metadata = createMetadata({
 });
 const NDISLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "ndis-lead-generation-mastery");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: ndis-lead-generation-mastery");
   
   const convertDateFormat = (dateString: string): string => {

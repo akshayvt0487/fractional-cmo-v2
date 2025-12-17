@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import StrategyForm from "@/components/ui/strategy-form";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Local Search Ranking",
   description: "Expert guidance on local search ranking. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const LocalSearchRanking = () => {
   const post = blogPosts.find(p => p.slug === "local-search-ranking");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: local-search-ranking");
   
   const convertDateFormat = (dateString: string): string => {

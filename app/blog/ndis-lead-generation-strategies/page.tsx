@@ -52,7 +52,7 @@ const articleData = {
   description:
     "Master proven NDIS lead generation strategies to attract quality participants. Learn digital marketing, referral systems, and compliance-focused approaches that work.",
   author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
+  publishedDate: "2026-01-01",
   modifiedDate: "2026-10-31",
   url: "/blog/ndis-lead-generation-strategies",
   imageUrl: "/images/blog/ndis-lead-generation-strategies-hero.jpg",

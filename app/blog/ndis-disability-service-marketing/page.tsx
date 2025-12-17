@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Users, Target, TrendingUp, Shield, MessageCircle, CheckCircle, Heart, Star, Globe, Phone } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import StrategyForm from '@/components/ui/strategy-form';
 export const metadata = createMetadata({
@@ -37,7 +38,7 @@ export const metadata = createMetadata({
 });
 const NDISDisabilityServiceMarketing = () => {
   const post = blogPosts.find(p => p.slug === "ndis-disability-service-marketing");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: ndis-disability-service-marketing");
   
   const convertDateFormat = (dateString: string): string => {

@@ -4,6 +4,7 @@ import { Shield, Target, Users, Building, Zap, BookOpen, Lightbulb, Search, Awar
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Cyber Security Digital Marketing Strategies",
@@ -36,7 +37,7 @@ export const metadata = createMetadata({
 });
 const CyberSecurityDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "cyber-security-digital-marketing-strategies");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: cyber-security-digital-marketing-strategies");
   
   const convertDateFormat = (dateString: string): string => {

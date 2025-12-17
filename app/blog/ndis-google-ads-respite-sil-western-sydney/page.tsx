@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Target, Settings, Layers, Search, Zap, MapPin, TrendingUp } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const NDISGoogleAdsRespiteSIL = () => {
   const post = blogPosts.find(p => p.slug === "ndis-google-ads-respite-sil-western-sydney");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: ndis-google-ads-respite-sil-western-sydney");
   
   const convertDateFormat = (dateString: string): string => {

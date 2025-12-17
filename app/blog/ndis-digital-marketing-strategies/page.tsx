@@ -5,6 +5,7 @@ import ndisMarketingImage from '@/assets/ndis-marketing-materials.jpg';
 import { Card, CardContent } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Ndis Digital Marketing Strategies",
@@ -37,7 +38,7 @@ export const metadata = createMetadata({
 });
 const NDISDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "ndis-digital-marketing-strategies");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: ndis-digital-marketing-strategies");
   
   const convertDateFormat = (dateString: string): string => {

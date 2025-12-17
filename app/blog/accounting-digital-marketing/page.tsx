@@ -1,4 +1,5 @@
 import React from 'react';
+import { blogPosts } from '@/data/blogPosts';
 import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, Target, Globe, Monitor, MapPin, PenTool, Building, Users, TrendingUp, CheckCircle, Search, BookOpen, BarChart, Lightbulb, Calendar, Mail, Smartphone, Award, Gift, Handshake, Star, MessageCircle } from "lucide-react";
@@ -49,33 +50,9 @@ export const metadata = createMetadata({
   };
 
 
-const articleData = {
-  headline: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
-  description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2026-10-31T11:10:04.167Z", // Synced with metadata for freshness
-  url: "/blog/accounting-digital-marketing-guide",
-  imageUrl: '/images/blog/accounting-digital-marketing-hero.jpg',
-  category: "Digital Marketing",
-  readTime: "25 min read",
-  tags: ["Accounting Marketing", "Digital Marketing", "Client Acquisition", "Professional Services"]
-};
 
-const faqs = [
-  {
-    question: "How much should accounting firms spend on digital marketing?",
-    answer: "Accounting firms should allocate 7-12% of revenue to marketing, with 60-70% focused on digital channels. Start with $2,000-5,000 monthly for a comprehensive digital strategy."
-  },
-  {
-    question: "What's the best digital marketing strategy for accounting firms?",
-    answer: "A combination of local SEO, content marketing, Google Ads, and LinkedIn marketing works best. Focus on building trust through testimonials, case studies, and educational content."
-  },
-  {
-    question: "How long does it take to see results from accounting firm digital marketing?",
-    answer: "SEO and content marketing typically show results in 3-6 months, while Google Ads can generate leads immediately. Consistent effort over 12+ months delivers the best long-term growth."
-  }
-];
+
+
 
 // ————————————————————————————————————————
 // ✅ Page Component
@@ -83,6 +60,33 @@ const faqs = [
 const AccountingDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "accounting-digital-marketing");
   if (!post) throw new Error("Blog post not found: accounting-digital-marketing");
+  const articleData = {
+    headline: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
+    description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-10-31T11:10:04.167Z", // Synced with metadata for freshness
+    url: "/blog/accounting-digital-marketing-guide",
+    imageUrl: '/images/blog/accounting-digital-marketing-hero.jpg',
+    category: "Digital Marketing",
+    readTime: "25 min read",
+    tags: ["Accounting Marketing", "Digital Marketing", "Client Acquisition", "Professional Services"]
+  };
+
+  const faqs = [
+    {
+      question: "How much should accounting firms spend on digital marketing?",
+      answer: "Accounting firms should allocate 7-12% of revenue to marketing, with 60-70% focused on digital channels. Start with $2,000-5,000 monthly for a comprehensive digital strategy."
+    },
+    {
+      question: "What's the best digital marketing strategy for accounting firms?",
+      answer: "A combination of local SEO, content marketing, Google Ads, and LinkedIn marketing works best. Focus on building trust through testimonials, case studies, and educational content."
+    },
+    {
+      question: "How long does it take to see results from accounting firm digital marketing?",
+      answer: "SEO and content marketing typically show results in 3-6 months, while Google Ads can generate leads immediately. Consistent effort over 12+ months delivers the best long-term growth."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout

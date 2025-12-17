@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, Target, Users, User } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 
 
@@ -54,38 +55,14 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
-const articleData = {
-  headline: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
-  description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2026-10-31T11:10:04.304Z", // Synced with metadata for freshness
-  url: "/blog/b2b-lead-generation",
-  imageUrl: '/images/blog/b2b-lead-generation-hero.jpg',
-  category: "Lead Generation",
-  readTime: "26 min read",
-  tags: ["B2B Marketing", "Lead Generation", "Business Growth", "Sales Strategy"]
-};
 
-const faqs = [
-  {
-    question: "What's the average cost per lead in B2B marketing?",
-    answer: "B2B lead costs vary by industry: Technology ($208), Healthcare ($162), Financial Services ($160). Focus on lead quality and lifetime value rather than just acquisition cost."
-  },
-  {
-    question: "How long does B2B lead generation take to show results?",
-    answer: "Content marketing and SEO typically show results in 3-6 months, while paid advertising can generate leads immediately. Most B2B sales cycles take 6-18 months from initial contact to close."
-  },
-  {
-    question: "What's the best B2B lead generation channel?",
-    answer: "LinkedIn is the top B2B lead generation platform, generating 80% of B2B leads. Content marketing, email marketing, and Google Ads are also highly effective when properly executed."
-  }
-];
+
+
 
 // ————————————————————————————————————————
 // ✅ Page Component
@@ -93,6 +70,33 @@ const faqs = [
 const B2BLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "b2b-lead-generation");
   if (!post) throw new Error("Blog post not found: b2b-lead-generation");
+  const articleData = {
+    headline: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
+    description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-10-31T11:10:04.304Z", // Synced with metadata for freshness
+    url: "/blog/b2b-lead-generation",
+    imageUrl: '/images/blog/b2b-lead-generation-hero.jpg',
+    category: "Lead Generation",
+    readTime: "26 min read",
+    tags: ["B2B Marketing", "Lead Generation", "Business Growth", "Sales Strategy"]
+  };
+
+  const faqs = [
+    {
+      question: "What's the average cost per lead in B2B marketing?",
+      answer: "B2B lead costs vary by industry: Technology ($208), Healthcare ($162), Financial Services ($160). Focus on lead quality and lifetime value rather than just acquisition cost."
+    },
+    {
+      question: "How long does B2B lead generation take to show results?",
+      answer: "Content marketing and SEO typically show results in 3-6 months, while paid advertising can generate leads immediately. Most B2B sales cycles take 6-18 months from initial contact to close."
+    },
+    {
+      question: "What's the best B2B lead generation channel?",
+      answer: "LinkedIn is the top B2B lead generation platform, generating 80% of B2B leads. Content marketing, email marketing, and Google Ads are also highly effective when properly executed."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout

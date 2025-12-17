@@ -5,6 +5,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Users, Globe, MessageCircle, Mail } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 
 
 // ————————————————————————————————————————
@@ -54,38 +55,14 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
-const articleData = {
-  headline: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
-  description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2026-10-31T11:10:04.264Z", // Synced with metadata for freshness
-  url: "/blog/advanced-ndis-lead-generation",
-  imageUrl: '/images/blog/advanced-ndis-lead-generation-hero.jpg',
-  category: "NDIS Lead Generation",
-  readTime: "26 min read",
-  tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Growth Strategy", "Automation", "Compliance"]
-};
 
-const faqs = [
-  {
-    question: "What's the most effective lead generation channel for NDIS providers?",
-    answer: "Multi-channel approaches work best, combining digital (SEO-optimized websites, targeted Google Ads) with relationship-based channels (support coordinator partnerships, referrals). The key is professional networks and trust-building rather than any single channel."
-  },
-  {
-    question: "How can NDIS providers ethically attract participants without being pushy?",
-    answer: "Focus on education and value-first content, transparent communication about services, genuine participant success stories, and building trust through consistent quality delivery. Avoid aggressive sales tactics and prioritize participant choice and dignity."
-  },
-  {
-    question: "What automation tools are compliant for NDIS lead generation?",
-    answer: "Use CRM systems with NDIS compliance features, automated email sequences with opt-in consent, lead scoring based on service fit, and participant journey tracking. Ensure all tools maintain privacy standards and accessibility requirements."
-  }
-];
+
+
 
 // ————————————————————————————————————————
 // ✅ Page Component
@@ -93,6 +70,33 @@ const faqs = [
 const AdvancedNDISLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "advanced-ndis-lead-generation");
   if (!post) throw new Error("Blog post not found: advanced-ndis-lead-generation");
+  const articleData = {
+    headline: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
+    description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-10-31T11:10:04.264Z", // Synced with metadata for freshness
+    url: "/blog/advanced-ndis-lead-generation",
+    imageUrl: '/images/blog/advanced-ndis-lead-generation-hero.jpg',
+    category: "NDIS Lead Generation",
+    readTime: "26 min read",
+    tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Growth Strategy", "Automation", "Compliance"]
+  };
+
+  const faqs = [
+    {
+      question: "What's the most effective lead generation channel for NDIS providers?",
+      answer: "Multi-channel approaches work best, combining digital (SEO-optimized websites, targeted Google Ads) with relationship-based channels (support coordinator partnerships, referrals). The key is professional networks and trust-building rather than any single channel."
+    },
+    {
+      question: "How can NDIS providers ethically attract participants without being pushy?",
+      answer: "Focus on education and value-first content, transparent communication about services, genuine participant success stories, and building trust through consistent quality delivery. Avoid aggressive sales tactics and prioritize participant choice and dignity."
+    },
+    {
+      question: "What automation tools are compliant for NDIS lead generation?",
+      answer: "Use CRM systems with NDIS compliance features, automated email sequences with opt-in consent, lead scoring based on service fit, and participant journey tracking. Ensure all tools maintain privacy standards and accessibility requirements."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout

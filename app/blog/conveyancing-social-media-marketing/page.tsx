@@ -4,6 +4,7 @@ import { Users, Share2, Building, MessageSquare } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Conveyancing Social Media Marketing",
@@ -36,7 +37,7 @@ export const metadata = createMetadata({
 });
 const ConveyancingSocialMedia = () => {
   const post = blogPosts.find(p => p.slug === "conveyancing-social-media-marketing");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: conveyancing-social-media-marketing");
   
   const convertDateFormat = (dateString: string): string => {

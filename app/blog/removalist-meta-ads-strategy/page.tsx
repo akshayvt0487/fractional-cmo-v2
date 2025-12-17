@@ -3,6 +3,7 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
   description: "Expert guidance on meta ads for removalists: complete facebook marketing guide for moving companies. Learn proven strategies and best practices for business growth.",
@@ -34,23 +35,12 @@ export const metadata = createMetadata({
 });
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
-const articleData = {
-  headline: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
-  description: "Master Facebook and Instagram advertising for your removalist business. Learn audience targeting, campaign optimization, conversion tracking, and retargeting strategies to generate quality moving leads.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2024-12-18",
-  url: "/blog/removalist-meta-ads-strategy",
-  imageUrl: "/images/blog/removalist-meta-ads-hero.jpg",
-  category: "Digital Marketing",
-  readTime: "24 min read",
-  tags: ["Meta Ads", "Facebook Marketing", "Removalist Marketing", "Moving Company Ads", "Lead Generation", "Audience Targeting"]
-};
+
 const faqs = [{
   question: "What's the minimum budget needed for Meta Ads for removalists?",
   answer: "Start with $30-50 per day for testing. Once you find winning campaigns, scale to $100-300 daily depending on your service area and business capacity."
@@ -70,6 +60,18 @@ const faqs = [{
 const RemovalistMetaAdsStrategy = () => {
   const post = blogPosts.find(p => p.slug === "removalist-meta-ads-strategy");
   if (!post) throw new Error("Blog post not found: removalist-meta-ads-strategy");
+  const articleData = {
+      headline: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
+      description: "Master Facebook and Instagram advertising for your removalist business. Learn audience targeting, campaign optimization, conversion tracking, and retargeting strategies to generate quality moving leads.",
+      author: "Basheer Padanna",
+      publishedDate: convertDateFormat(post.date),
+      modifiedDate: "2024-12-18",
+      url: "/blog/removalist-meta-ads-strategy",
+      imageUrl: "/images/blog/removalist-meta-ads-hero.jpg",
+      category: "Digital Marketing",
+      readTime: "24 min read",
+      tags: ["Meta Ads", "Facebook Marketing", "Removalist Marketing", "Moving Company Ads", "Lead Generation", "Audience Targeting"]
+    };
   
   return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs}>
       <Card className="mb-8">

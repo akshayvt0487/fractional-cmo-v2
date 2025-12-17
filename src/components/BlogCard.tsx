@@ -84,7 +84,7 @@ const BlogCard = memo(({ post, index = 0 }: BlogCardProps) => {
           <div className="flex items-center gap-1 text-xs text-muted-foreground">
             <Calendar className="h-3 w-3" />
             <span className="hidden sm:inline">{post.date}</span>
-            <span className="sm:hidden">{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+            <span className="sm:hidden">{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} </span>
           </div>
           <Button 
             variant="ghost" 

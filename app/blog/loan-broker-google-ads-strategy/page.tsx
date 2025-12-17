@@ -3,6 +3,7 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import StrategyForm from '@/components/ui/strategy-form';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import loanBrokerGoogleAdsHero from '@/assets/blog/loan-broker-google-ads-hero.jpg';
 import { Card } from '@/components/ui/card';
 
@@ -39,7 +40,7 @@ export const metadata = createMetadata({
 
 const LoanBrokerGoogleAds = () => {
   const post = blogPosts.find(p => p.slug === "loan-broker-google-ads-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: loan-broker-google-ads-strategy");
   
   const convertDateFormat = (dateString: string): string => {

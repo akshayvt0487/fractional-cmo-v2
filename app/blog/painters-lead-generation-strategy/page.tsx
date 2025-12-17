@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -36,23 +37,12 @@ export const metadata = createMetadata({
 });
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
-const articleData = {
-  headline: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026",
-  description: "Master lead generation for painting businesses. Learn proven strategies to attract residential and commercial clients, build a strong brand presence, and grow your painting company through digital marketing.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2024-11-28",
-  url: "/blog/painters-lead-generation-guide",
-    imageUrl: "/images/blog/painters-lead-generation-guide-hero.jpg",
-  category: "Tradies - Painters",
-  readTime: "26 min read",
-  tags: ["Painters Lead Generation", "Painting Business Marketing", "Home Improvement Marketing", "Trade Business Growth", "Digital Marketing for Painters"]
-};
+
 const faqs = [{
   question: "How much should painters spend on lead generation?",
   answer: "Most successful painting businesses allocate 5-10% of their revenue to marketing and lead generation. Start with a smaller budget and scale up as you see returns."
@@ -88,6 +78,18 @@ const relatedArticles = [{
 const PaintersLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "painters-lead-generation-strategy");
   if (!post) throw new Error("Blog post not found: painters-lead-generation-strategy");
+  const articleData = {
+      headline: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026",
+      description: "Master lead generation for painting businesses. Learn proven strategies to attract residential and commercial clients, build a strong brand presence, and grow your painting company through digital marketing.",
+      author: "Basheer Padanna",
+      publishedDate: convertDateFormat(post.date),
+      modifiedDate: "2024-11-28",
+      url: "/blog/painters-lead-generation-guide",
+        imageUrl: "/images/blog/painters-lead-generation-guide-hero.jpg",
+      category: "Tradies - Painters",
+      readTime: "26 min read",
+      tags: ["Painters Lead Generation", "Painting Business Marketing", "Home Improvement Marketing", "Trade Business Growth", "Digital Marketing for Painters"]
+    };
   
   return <>
       <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={'/images/blog/painters-lead-generation-hero.jpg'} heroAlt="Professional painters working on home exterior - lead generation guide">

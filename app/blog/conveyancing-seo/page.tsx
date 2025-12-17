@@ -4,6 +4,7 @@ import { Search, TrendingUp, Users, Star } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Conveyancing Seo Guide",
@@ -36,7 +37,7 @@ export const metadata = createMetadata({
 });
 const ConveyancingSEO = () => {
   const post = blogPosts.find(p => p.slug === "conveyancing-seo");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: conveyancing-seo");
   
   const convertDateFormat = (dateString: string): string => {

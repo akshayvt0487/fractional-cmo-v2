@@ -1,5 +1,6 @@
 import { createMetadata } from "@/lib/seo";
 import { blogPosts } from '@/data/blogPosts';
+
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";

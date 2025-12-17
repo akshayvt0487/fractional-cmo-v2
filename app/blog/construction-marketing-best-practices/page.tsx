@@ -4,6 +4,7 @@ import { Building, Users, Target, TrendingUp } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Construction Marketing Best Practices",
   description: "Expert guidance on construction marketing best practices. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const ConstructionMarketingBestPractices = () => {
   const post = blogPosts.find(p => p.slug === "construction-marketing-best-practices");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: construction-marketing-best-practices");
   
   const convertDateFormat = (dateString: string): string => {

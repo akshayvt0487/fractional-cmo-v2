@@ -64,7 +64,7 @@ VirtualizedBlogGrid = memo(({
           <Button 
             variant="outline" 
             onClick={loadMore}
-            className="w-full sm:w-auto min-w-45 hover:bg-primary hover:text-white transition-all duration-300 hover:bg-gray-500 group cursor-pointer border-0 bg-gray-300 shadow-xl">
+            className="w-full sm:w-auto min-w-max hover:bg-primary hover:text-white transition-all duration-300 hover:bg-gray-500 group cursor-pointer border-0 bg-gray-300 shadow-xl">
             Load More Articles
             <span className="ml-2 text-xs bg-primary/10 text-primary px-2 py-1 rounded-full group-hover:bg-primary-foreground/20 group-hover:text-primary-foreground">
               {posts.length - visibleCount} remaining

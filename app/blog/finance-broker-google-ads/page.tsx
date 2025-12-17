@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Google Ads for Finance Brokers: Complete PPC Strategy Guide 2026",
   description: "Master Google Ads for finance and mortgage brokers. Learn campaign structure, keyword strategy, ad copy best practices, and conversion optimisation for maximum ROI.",
@@ -35,52 +36,55 @@ export const metadata = createMetadata({
 });
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
 
-const articleData = {
-  headline: "Google Ads for Finance Brokers: Complete PPC Strategy Guide 2026",
-  description: "Master Google Ads for finance and mortgage brokers. Learn campaign structure, keyword strategy, ad copy best practices, and conversion optimisation.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2025-02-05T00:00:00.000Z",
-  url: "/blog/finance-broker-google-ads",
-  imageUrl: '/images/blog/finance-broker-google-ads.jpg',
-  category: "Google Ads",
-  readTime: "21 min read",
-  tags: ["Finance Brokers", "Google Ads", "PPC", "Mortgage Advertising", "Broker Advertising", "Paid Search"]
-};
 
-const faqs = [
-  {
-    question: "How much do Google Ads cost for finance brokers?",
-    answer: "Finance broker keywords typically cost $8-25 per click, with competitive terms like 'mortgage broker Sydney' reaching $30+. Monthly budgets of $2,000-$6,000 are common. Focus on conversion rate optimisation to maximise ROI at any budget level."
-  },
-  {
-    question: "What keywords should finance brokers target?",
-    answer: "Target service-specific keywords (mortgage broker, home loan broker), location keywords (finance broker Melbourne), loan type keywords (investment loan broker, refinance specialist), and long-tail variations. Negative keywords are essential to avoid wasted spend."
-  },
-  {
-    question: "How do I write compliant Google Ads for finance services?",
-    answer: "Include your ACL number in ads or landing pages, avoid specific rate claims unless you can guarantee them, use disclaimers appropriately, and don't make promises about loan approval. Google also has financial services policies to follow."
-  },
-  {
-    question: "What conversion rate should finance brokers expect from Google Ads?",
-    answer: "Well-optimised finance broker campaigns achieve 5-10% landing page conversion rates. Lead-to-client conversion varies from 10-25% depending on lead quality and follow-up processes. Target cost per client acquisition of $200-$500."
-  }
-];
+
+
 
 const FinanceBrokerGoogleAds = () => {
   const post = blogPosts.find(p => p.slug === "finance-broker-google-ads");
   if (!post) throw new Error("Blog post not found: finance-broker-google-ads");
+  const articleData = {
+    headline: "Google Ads for Finance Brokers: Complete PPC Strategy Guide 2026",
+    description: "Master Google Ads for finance and mortgage brokers. Learn campaign structure, keyword strategy, ad copy best practices, and conversion optimisation.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2025-02-05T00:00:00.000Z",
+    url: "/blog/finance-broker-google-ads",
+    imageUrl: '/images/blog/finance-broker-google-ads.jpg',
+    category: "Google Ads",
+    readTime: "21 min read",
+    tags: ["Finance Brokers", "Google Ads", "PPC", "Mortgage Advertising", "Broker Advertising", "Paid Search"]
+  };
+
+  const faqs = [
+    {
+      question: "How much do Google Ads cost for finance brokers?",
+      answer: "Finance broker keywords typically cost $8-25 per click, with competitive terms like 'mortgage broker Sydney' reaching $30+. Monthly budgets of $2,000-$6,000 are common. Focus on conversion rate optimisation to maximise ROI at any budget level."
+    },
+    {
+      question: "What keywords should finance brokers target?",
+      answer: "Target service-specific keywords (mortgage broker, home loan broker), location keywords (finance broker Melbourne), loan type keywords (investment loan broker, refinance specialist), and long-tail variations. Negative keywords are essential to avoid wasted spend."
+    },
+    {
+      question: "How do I write compliant Google Ads for finance services?",
+      answer: "Include your ACL number in ads or landing pages, avoid specific rate claims unless you can guarantee them, use disclaimers appropriately, and don't make promises about loan approval. Google also has financial services policies to follow."
+    },
+    {
+      question: "What conversion rate should finance brokers expect from Google Ads?",
+      answer: "Well-optimised finance broker campaigns achieve 5-10% landing page conversion rates. Lead-to-client conversion varies from 10-25% depending on lead quality and follow-up processes. Target cost per client acquisition of $200-$500."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout
       articleData={articleData}
-      relatedArticles={relatedArticles.googleAds}
+      relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
       heroImage={'/images/blog/finance-broker-google-ads.jpg'}
       heroAlt="Google Ads Strategy for Finance Brokers"

@@ -3,6 +3,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Saas Marketing It Sector",
   description: "Expert guidance on saas marketing it sector. Learn proven strategies and best practices for business growth.",
@@ -34,7 +35,7 @@ export const metadata = createMetadata({
 });
 const SaaSMarketingITSector = () => {
   const post = blogPosts.find(p => p.slug === "saas-marketing-it-sector");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: saas-marketing-it-sector");
   
   const convertDateFormat = (dateString: string): string => {

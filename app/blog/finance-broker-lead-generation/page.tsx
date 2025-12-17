@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Lead Generation for Finance Brokers: Complete Strategy Guide 2026",
   description: "Discover proven lead generation strategies for finance and mortgage brokers. Learn how to attract quality loan clients through digital marketing, referrals, and partnerships.",
@@ -35,52 +36,55 @@ export const metadata = createMetadata({
 });
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
 
-const articleData = {
-  headline: "Lead Generation for Finance Brokers: Complete Strategy Guide 2026",
-  description: "Discover proven lead generation strategies for finance and mortgage brokers. Learn how to attract quality loan clients.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2025-02-10T00:00:00.000Z",
-  url: "/blog/finance-broker-lead-generation",
-  imageUrl: '/images/blog/finance-broker-lead-generation.jpg',
-  category: "Lead Generation",
-  readTime: "20 min read",
-  tags: ["Finance Brokers", "Lead Generation", "Mortgage Leads", "Broker Leads", "Client Acquisition"]
-};
 
-const faqs = [
-  {
-    question: "What is the average cost per lead for finance brokers?",
-    answer: "Lead costs vary by source: Google Ads $40-100, Facebook Ads $25-60, SEO leads $15-40 (once established), purchased leads $30-80, and referrals have minimal direct cost. Quality and conversion rates vary significantly between sources."
-  },
-  {
-    question: "How do finance brokers qualify leads effectively?",
-    answer: "Use intake forms to capture loan amount, property type, employment status, and timeline. Score leads based on deal size potential, readiness to proceed, and fit with your expertise. Focus time on high-probability, high-value opportunities."
-  },
-  {
-    question: "What lead sources work best for mortgage brokers?",
-    answer: "Top lead sources include real estate agent referrals, accountant partnerships, Google Ads, organic search traffic, and past client referrals. Diversify across 3-5 channels to reduce dependency on any single source."
-  },
-  {
-    question: "How quickly should finance brokers follow up on leads?",
-    answer: "Speed to lead is critical in finance. Aim for initial contact within 5 minutes during business hours. After-hours leads should receive automated acknowledgment immediately and personal contact first thing next business day."
-  }
-];
+
+
 
 const FinanceBrokerLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "finance-broker-lead-generation");
   if (!post) throw new Error("Blog post not found: finance-broker-lead-generation");
+  const articleData = {
+    headline: "Lead Generation for Finance Brokers: Complete Strategy Guide 2026",
+    description: "Discover proven lead generation strategies for finance and mortgage brokers. Learn how to attract quality loan clients.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2025-02-10T00:00:00.000Z",
+    url: "/blog/finance-broker-lead-generation",
+    imageUrl: '/images/blog/finance-broker-lead-generation.jpg',
+    category: "Lead Generation",
+    readTime: "20 min read",
+    tags: ["Finance Brokers", "Lead Generation", "Mortgage Leads", "Broker Leads", "Client Acquisition"]
+  };
+
+  const faqs = [
+    {
+      question: "What is the average cost per lead for finance brokers?",
+      answer: "Lead costs vary by source: Google Ads $40-100, Facebook Ads $25-60, SEO leads $15-40 (once established), purchased leads $30-80, and referrals have minimal direct cost. Quality and conversion rates vary significantly between sources."
+    },
+    {
+      question: "How do finance brokers qualify leads effectively?",
+      answer: "Use intake forms to capture loan amount, property type, employment status, and timeline. Score leads based on deal size potential, readiness to proceed, and fit with your expertise. Focus time on high-probability, high-value opportunities."
+    },
+    {
+      question: "What lead sources work best for mortgage brokers?",
+      answer: "Top lead sources include real estate agent referrals, accountant partnerships, Google Ads, organic search traffic, and past client referrals. Diversify across 3-5 channels to reduce dependency on any single source."
+    },
+    {
+      question: "How quickly should finance brokers follow up on leads?",
+      answer: "Speed to lead is critical in finance. Aim for initial contact within 5 minutes during business hours. After-hours leads should receive automated acknowledgment immediately and personal contact first thing next business day."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout
       articleData={articleData}
-      relatedArticles={relatedArticles.leadGeneration}
+      relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
       heroImage={'/images/blog/finance-broker-lead-generation.jpg'}
       heroAlt="Lead Generation Strategy for Finance Brokers"

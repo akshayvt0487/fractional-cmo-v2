@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 
 // ————————————————————————————————————————
 // ✅ FULL SEO METADATA
@@ -53,42 +54,14 @@ export const metadata = createMetadata({
 // ————————————————————————————————————————
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
-const articleData = {
-  headline: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
-  description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2026-10-31T11:10:04.357Z", // Synced with metadata for freshness
-  url: "/blog/bricklayers-lead-generation",
-  imageUrl: '/images/blog/bricklayers-lead-generation-hero.jpg',
-  category: "Trade Marketing",
-  readTime: "24 min read",
-  tags: ["Bricklaying", "Lead Generation", "Trade Marketing", "Construction", "Local SEO"]
-};
 
-const faqs = [
-  {
-    question: "What's the best way for bricklayers to find new jobs?",
-    answer: "The most effective methods combine online presence (Google My Business, website with photos) with traditional networking (building relationships with builders, architects, and past clients). Word-of-mouth referrals remain the strongest source for quality jobs."
-  },
-  {
-    question: "Should bricklayers invest in online advertising?",
-    answer: "Yes, especially Google Ads for local searches like 'bricklayer near me'. Start with a small budget ($300-500/month) and focus on residential projects or your specialty area like restoration or feature walls."
-  },
-  {
-    question: "How important is having a website for bricklayers?",
-    answer: "Very important. Even a simple website with photos of your work, contact details, and customer reviews significantly increases your credibility. Many clients won't hire tradespeople without seeing examples of their work online."
-  },
-  {
-    question: "What types of projects should bricklayers target for lead generation?",
-    answer: "Focus on your strengths - whether that's new home construction, restoration work, commercial projects, or decorative brickwork. Specializing in specific project types often leads to higher-paying jobs and better client relationships."
-  }
-];
+
+
 
 // ————————————————————————————————————————
 // ✅ Page Component
@@ -96,6 +69,37 @@ const faqs = [
 const BricklayersLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "bricklayers-lead-generation");
   if (!post) throw new Error("Blog post not found: bricklayers-lead-generation");
+  const articleData = {
+    headline: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
+    description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2026-10-31T11:10:04.357Z", // Synced with metadata for freshness
+    url: "/blog/bricklayers-lead-generation",
+    imageUrl: '/images/blog/bricklayers-lead-generation-hero.jpg',
+    category: "Trade Marketing",
+    readTime: "24 min read",
+    tags: ["Bricklaying", "Lead Generation", "Trade Marketing", "Construction", "Local SEO"]
+  };
+
+  const faqs = [
+    {
+      question: "What's the best way for bricklayers to find new jobs?",
+      answer: "The most effective methods combine online presence (Google My Business, website with photos) with traditional networking (building relationships with builders, architects, and past clients). Word-of-mouth referrals remain the strongest source for quality jobs."
+    },
+    {
+      question: "Should bricklayers invest in online advertising?",
+      answer: "Yes, especially Google Ads for local searches like 'bricklayer near me'. Start with a small budget ($300-500/month) and focus on residential projects or your specialty area like restoration or feature walls."
+    },
+    {
+      question: "How important is having a website for bricklayers?",
+      answer: "Very important. Even a simple website with photos of your work, contact details, and customer reviews significantly increases your credibility. Many clients won't hire tradespeople without seeing examples of their work online."
+    },
+    {
+      question: "What types of projects should bricklayers target for lead generation?",
+      answer: "Focus on your strengths - whether that's new home construction, restoration work, commercial projects, or decorative brickwork. Specializing in specific project types often leads to higher-paying jobs and better client relationships."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout

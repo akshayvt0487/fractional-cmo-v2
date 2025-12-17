@@ -4,6 +4,7 @@ import { TrendingUp, TrendingDown, CheckCircle, X } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Conveyancing Lead Generation Strategies",
@@ -20,7 +21,7 @@ export const metadata = createMetadata({
 });
 const ConveyancingLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "conveyancing-lead-generation-strategies");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: conveyancing-lead-generation-strategies");
   
   const convertDateFormat = (dateString: string): string => {

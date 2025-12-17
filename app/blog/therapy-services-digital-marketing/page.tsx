@@ -4,6 +4,7 @@ import { Heart, Activity, Brain, Users, CheckCircle, TrendingUp, Target } from "
 import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 import therapyServicesDigitalMarketingHero from "@/assets/blog/therapy-services-digital-marketing-hero.jpg";
 export const metadata = createMetadata({
   title: "Therapy Services Digital Marketing",
@@ -36,7 +37,7 @@ export const metadata = createMetadata({
 });
 const TherapyServicesDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "therapy-services-digital-marketing");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: therapy-services-digital-marketing");
   
   const convertDateFormat = (dateString: string): string => {

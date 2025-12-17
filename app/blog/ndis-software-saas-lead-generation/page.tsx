@@ -1,5 +1,6 @@
 import { createMetadata } from "@/lib/seo";
 import { blogPosts } from '@/data/blogPosts';
+
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 

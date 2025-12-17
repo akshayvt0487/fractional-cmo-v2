@@ -3,6 +3,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 import localSEOImage from "@/assets/local-seo-search.jpg";
 export const metadata = createMetadata({
   title: "Trade Customer Retention Strategies",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const TradeCustomerRetention = () => {
   const post = blogPosts.find(p => p.slug === "trade-customer-retention-strategies");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: trade-customer-retention-strategies");
   
   const convertDateFormat = (dateString: string): string => {

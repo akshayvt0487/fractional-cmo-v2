@@ -3,6 +3,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Home Builders Lead Generation Guide",
   description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
@@ -34,7 +35,7 @@ export const metadata = createMetadata({
 });
 const HomeBuildersLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "home-builders-lead-generation");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: home-builders-lead-generation");
   
   const convertDateFormat = (dateString: string): string => {

@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Cloud, Shield, Zap, Building, Users, Target, TrendingUp, CheckCircle } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "It Consulting Digital Marketing Strategy",
@@ -36,7 +37,7 @@ export const metadata = createMetadata({
 });
 const ITConsultingDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "it-consulting-digital-marketing-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: it-consulting-digital-marketing-strategy");
   
   const convertDateFormat = (dateString: string): string => {

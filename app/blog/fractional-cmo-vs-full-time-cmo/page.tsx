@@ -5,6 +5,7 @@ import { Clock, DollarSign, TrendingUp, Users, CheckCircle, X } from "lucide-rea
 import fractionalCMOVsFullTimeImage from "@/assets/blog/fractional-cmo-vs-full-time.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Fractional Cmo Vs Full Time Cmo",
   description: "Expert guidance on fractional cmo vs full time cmo. Learn proven strategies and best practices for business growth.",
@@ -36,7 +37,7 @@ export const metadata = createMetadata({
 });
 const FractionalCMOVsFullTime = () => {
   const post = blogPosts.find(p => p.slug === "fractional-cmo-vs-full-time-cmo");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: fractional-cmo-vs-full-time-cmo");
   
   const convertDateFormat = (dateString: string): string => {

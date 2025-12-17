@@ -2,6 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Wrench, AlertTriangle, Building, Zap, Search, Users, Video, Play, MessageCircle, Star, CheckCircle } from 'lucide-react';
 export const metadata = createMetadata({
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const MechanicDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "mechanic-digital-marketing");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: mechanic-digital-marketing");
   
   const convertDateFormat = (dateString: string): string => {

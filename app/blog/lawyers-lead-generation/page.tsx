@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
 
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Lawyers Lead Generation",
   description: "Expert guidance on lawyers lead generation. Learn proven strategies and best practices for business growth.",
@@ -37,7 +38,7 @@ export const metadata = createMetadata({
 });
 const LawyersLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "lawyers-lead-generation");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: lawyers-lead-generation");
   
   const convertDateFormat = (dateString: string): string => {

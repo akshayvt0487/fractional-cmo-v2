@@ -1,5 +1,6 @@
 import { createMetadata } from "@/lib/seo";
 import { blogPosts } from '@/data/blogPosts';
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -40,6 +41,12 @@ export const metadata = createMetadata({
     site: "@FractionalCMO"
   }
 });
+
+const convertDateFormat = (dateString: string): string => {
+  const date = new Date(dateString);
+  return date.toISOString().split('T')[0];
+};
+
 const NDISSoftwareSaaSPositioning = () => {
   const post = blogPosts.find(p => p.slug === "ndis-software-saas-positioning-strategy");
   if (!post) throw new Error("Blog post not found: ndis-software-saas-positioning-strategy");

@@ -4,6 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import StrategyForm from '@/components/ui/strategy-form';
 import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Loan Broker Lead Generation Strategy",
   description: "Expert guidance on loan broker lead generation strategy. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const LoanBrokerLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "loan-broker-lead-generation-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: loan-broker-lead-generation-strategy");
   
   const convertDateFormat = (dateString: string): string => {

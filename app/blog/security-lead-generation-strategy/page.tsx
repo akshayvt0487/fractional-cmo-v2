@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import { blogPosts } from '@/data/blogPosts';
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -35,23 +36,12 @@ export const metadata = createMetadata({
 });
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
-const articleData = {
-  headline: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2026",
-  description: "Master lead generation for security companies. Learn proven strategies to attract residential and commercial security clients, build trust, and grow your security business through digital marketing.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2024-11-28",
-  url: "/blog/security-lead-generation-strategy",
-    imageUrl: "/images/blog/security-lead-generation-strategy-hero.jpg",
-  category: "Security",
-  readTime: "24 min read",
-  tags: ["Security Lead Generation", "Security Business Marketing", "Security Company Growth", "Digital Marketing for Security", "Security Service Leads"]
-};
+
 const faqs = [{
   question: "What's the best way to generate security leads online?",
   answer: "A combination of local SEO, Google Ads for security services, content marketing about security topics, and social proof through case studies typically generates the highest quality leads for security companies."
@@ -87,6 +77,18 @@ const relatedArticles = [{
 const SecurityLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "security-lead-generation-strategy");
   if (!post) throw new Error("Blog post not found: security-lead-generation-strategy");
+  const articleData = {
+      headline: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2026",
+      description: "Master lead generation for security companies. Learn proven strategies to attract residential and commercial security clients, build trust, and grow your security business through digital marketing.",
+      author: "Basheer Padanna",
+      publishedDate: convertDateFormat(post.date),
+      modifiedDate: "2024-11-28",
+      url: "/blog/security-lead-generation-strategy",
+        imageUrl: "/images/blog/security-lead-generation-strategy-hero.jpg",
+      category: "Security",
+      readTime: "24 min read",
+      tags: ["Security Lead Generation", "Security Business Marketing", "Security Company Growth", "Digital Marketing for Security", "Security Service Leads"]
+    };
   
   return <>
       <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={'/images/blog/security-lead-generation-hero.jpg'} heroAlt="Professional security team monitoring surveillance systems - lead generation guide">

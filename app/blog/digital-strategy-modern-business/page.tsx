@@ -4,6 +4,7 @@ import Citation from '@/components/Citation';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Digital Strategy Modern Business",
   description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const DigitalStrategyModernBusiness = () => {
   const post = blogPosts.find(p => p.slug === "digital-strategy-modern-business");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: digital-strategy-modern-business");
   
   const convertDateFormat = (dateString: string): string => {

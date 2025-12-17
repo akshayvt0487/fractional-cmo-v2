@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Target, Users, BarChart, Zap } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Financial Planner Lead Generation",
   description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const FinancialPlannerLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "financial-planner-lead-generation");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: financial-planner-lead-generation");
   
   const convertDateFormat = (dateString: string): string => {

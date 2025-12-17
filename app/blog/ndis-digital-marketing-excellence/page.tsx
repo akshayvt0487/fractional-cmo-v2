@@ -6,6 +6,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Smartphone, Monitor, Search, Share2, BarChart, Shield, Zap } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Ndis Digital Marketing Excellence",
   description: "Expert guidance on ndis digital marketing excellence. Learn proven strategies and best practices for business growth.",
@@ -37,7 +38,7 @@ export const metadata = createMetadata({
 });
 const NDISDigitalMarketingExcellence = () => {
   const post = blogPosts.find(p => p.slug === "ndis-digital-marketing-excellence");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: ndis-digital-marketing-excellence");
   
   const convertDateFormat = (dateString: string): string => {

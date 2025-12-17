@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "SEO for Buyers Agents: Complete Search Optimisation Guide 2026",
   description: "Master SEO for buyers agents with this comprehensive guide. Learn keyword research, local SEO, content strategy, and technical optimisation to attract quality property buyer clients.",
@@ -35,52 +36,55 @@ export const metadata = createMetadata({
 });
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
 
-const articleData = {
-  headline: "SEO for Buyers Agents: Complete Search Optimisation Guide 2026",
-  description: "Master SEO for buyers agents with this comprehensive guide. Learn keyword research, local SEO, content strategy, and technical optimisation.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2025-01-25T00:00:00.000Z",
-  url: "/blog/buyers-agents-seo",
-  imageUrl: '/images/blog/buyers-agents-seo.jpg',
-  category: "SEO",
-  readTime: "22 min read",
-  tags: ["Buyers Agents", "SEO", "Local SEO", "Property SEO", "Search Optimization"]
-};
 
-const faqs = [
-  {
-    question: "How long does SEO take to work for buyers agents?",
-    answer: "Most buyers agents see initial ranking improvements within 3-4 months, with significant traffic growth at 6-9 months. Local SEO results can appear faster (2-3 months). Competitive markets may take 12+ months for top positions on high-value keywords."
-  },
-  {
-    question: "What keywords should buyers agents target?",
-    answer: "Focus on location-based service keywords (buyers agent Sydney), client type keywords (first home buyer agent), and property type keywords (investment property buyers agent). Long-tail keywords often convert better than broad terms."
-  },
-  {
-    question: "Is local SEO important for buyers agents?",
-    answer: "Local SEO is critical for buyers agents as most clients search for services in specific areas. Google Business Profile optimisation, local citations, and location-specific content are essential for appearing in map results and local searches."
-  },
-  {
-    question: "How much does SEO cost for buyers agents?",
-    answer: "Quality SEO for buyers agents typically costs $2,000-$5,000 monthly for comprehensive services. This includes technical optimisation, content creation, link building, and local SEO. DIY approaches can reduce costs but require significant time investment."
-  }
-];
+
+
 
 const BuyersAgentsSEO = () => {
   const post = blogPosts.find(p => p.slug === "buyers-agents-seo");
   if (!post) throw new Error("Blog post not found: buyers-agents-seo");
+  const articleData = {
+    headline: "SEO for Buyers Agents: Complete Search Optimisation Guide 2026",
+    description: "Master SEO for buyers agents with this comprehensive guide. Learn keyword research, local SEO, content strategy, and technical optimisation.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2025-01-25T00:00:00.000Z",
+    url: "/blog/buyers-agents-seo",
+    imageUrl: '/images/blog/buyers-agents-seo.jpg',
+    category: "SEO",
+    readTime: "22 min read",
+    tags: ["Buyers Agents", "SEO", "Local SEO", "Property SEO", "Search Optimization"]
+  };
+
+  const faqs = [
+    {
+      question: "How long does SEO take to work for buyers agents?",
+      answer: "Most buyers agents see initial ranking improvements within 3-4 months, with significant traffic growth at 6-9 months. Local SEO results can appear faster (2-3 months). Competitive markets may take 12+ months for top positions on high-value keywords."
+    },
+    {
+      question: "What keywords should buyers agents target?",
+      answer: "Focus on location-based service keywords (buyers agent Sydney), client type keywords (first home buyer agent), and property type keywords (investment property buyers agent). Long-tail keywords often convert better than broad terms."
+    },
+    {
+      question: "Is local SEO important for buyers agents?",
+      answer: "Local SEO is critical for buyers agents as most clients search for services in specific areas. Google Business Profile optimisation, local citations, and location-specific content are essential for appearing in map results and local searches."
+    },
+    {
+      question: "How much does SEO cost for buyers agents?",
+      answer: "Quality SEO for buyers agents typically costs $2,000-$5,000 monthly for comprehensive services. This includes technical optimisation, content creation, link building, and local SEO. DIY approaches can reduce costs but require significant time investment."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout
       articleData={articleData}
-      relatedArticles={relatedArticles.seo}
+      relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
       heroImage={'/images/blog/buyers-agents-seo.jpg'}
       heroAlt="SEO Strategy for Buyers Agents"

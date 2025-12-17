@@ -4,6 +4,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { Card, CardContent } from "@/components/ui/card";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 import ndisProviderImage from "@/assets/blog/ndis-participant-engagement-new.jpg";
 import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
 export const metadata = createMetadata({
@@ -37,7 +38,7 @@ export const metadata = createMetadata({
 });
 const NDISParticipantEngagement = () => {
   const post = blogPosts.find(p => p.slug === "ndis-participant-engagement-strategies");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: ndis-participant-engagement-strategies");
   
   const convertDateFormat = (dateString: string): string => {

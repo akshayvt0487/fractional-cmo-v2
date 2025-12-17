@@ -5,6 +5,7 @@ import StrategyForm from '@/components/ui/strategy-form';
 import { Card, CardContent } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Ndis Marketing Guide 2024",
@@ -37,7 +38,7 @@ export const metadata = createMetadata({
 });
 const NDISMarketingGuide = () => {
   const post = blogPosts.find(p => p.slug === "ndis-marketing-guide-2024");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: ndis-marketing-guide-2024");
   
   const convertDateFormat = (dateString: string): string => {

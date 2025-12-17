@@ -4,6 +4,7 @@ import Citation from '@/components/Citation';
 import { Card, CardContent } from '@/components/ui/card';
 
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
   description: "Expert guidance on complete seo strategy for removalist businesses: dominate local search. Learn proven strategies and best practices for business growth.",
@@ -35,23 +36,12 @@ export const metadata = createMetadata({
 });
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
-const articleData = {
-  headline: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
-  description: "Master semantic SEO, E-E-A-T principles, and local search strategies to grow your removalist business. Comprehensive guide with actionable tactics for Australian moving companies.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2024-03-15",
-  readTime: "24 min read",
-  category: "Local SEO",
-  tags: ["SEO", "Removalist Marketing", "Local Search", "Google E-E-A-T", "Semantic SEO", "Moving Company SEO"],
-  imageUrl: "/images/blog/removalist-seo-strategy-hero.jpg",
-  url: "/blog/removalist-seo-strategy"
-};
+
 const faqs = [{
   question: "How long does it take to see SEO results for a removalist business?",
   answer: "Typically, you'll start seeing initial improvements in local search rankings within 3-6 months, with significant results usually visible after 6-12 months of consistent SEO efforts. Local SEO often shows faster results than national campaigns."
@@ -68,6 +58,18 @@ const faqs = [{
 const RemovalistSEOStrategy = () => {
   const post = blogPosts.find(p => p.slug === "removalist-seo-strategy");
   if (!post) throw new Error("Blog post not found: removalist-seo-strategy");
+  const articleData = {
+      headline: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
+      description: "Master semantic SEO, E-E-A-T principles, and local search strategies to grow your removalist business. Comprehensive guide with actionable tactics for Australian moving companies.",
+      author: "Basheer Padanna",
+      publishedDate: convertDateFormat(post.date),
+      modifiedDate: "2024-03-15",
+      readTime: "24 min read",
+      category: "Local SEO",
+      tags: ["SEO", "Removalist Marketing", "Local Search", "Google E-E-A-T", "Semantic SEO", "Moving Company SEO"],
+      imageUrl: "/images/blog/removalist-seo-strategy-hero.jpg",
+      url: "/blog/removalist-seo-strategy"
+    };
   
   return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/removalist-seo-strategy-hero.jpg'} heroAlt="Complete SEO strategy guide for removalist businesses showing analytics dashboard">
       <div className="space-y-8">

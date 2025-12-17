@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Paintbrush, Home, Building, Palette } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Painters Digital Marketing Guide",
   description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const PaintersDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "painters-digital-marketing");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: painters-digital-marketing");
   
   const convertDateFormat = (dateString: string): string => {

@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Digital Marketing for Buyers Agents: Complete Strategy Guide 2026",
   description: "Master digital marketing for buyers agents with proven SEO, content marketing, social media, and lead generation strategies. Comprehensive guide for property buyers advocates.",
@@ -35,47 +36,50 @@ export const metadata = createMetadata({
 });
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
-import { blogPosts } from '@/data/blogPosts';
+
     return date.toISOString().split('T')[0];
   };
 
 
 
-const articleData = {
-  headline: "Digital Marketing for Buyers Agents: Complete Strategy Guide 2026",
-  description: "Master digital marketing for buyers agents with proven SEO, content marketing, social media, and lead generation strategies.",
-  author: "Basheer Padanna",
-  publishedDate: convertDateFormat(post.date),
-  modifiedDate: "2025-01-15T00:00:00.000Z",
-  url: "/blog/buyers-agents-digital-marketing",
-  imageUrl: '/images/blog/buyers-agents-digital-marketing.jpg',
-  category: "Digital Marketing",
-  readTime: "18 min read",
-  tags: ["Buyers Agents", "Digital Marketing", "Property Marketing", "Real Estate Marketing", "SEO"]
-};
 
-const faqs = [
-  {
-    question: "What digital marketing channels work best for buyers agents?",
-    answer: "The most effective channels for buyers agents are SEO (targeting property buyer searches), content marketing (educational guides and market reports), LinkedIn for professional networking, and Google Ads for high-intent searches. Email marketing also delivers strong ROI for nurturing leads."
-  },
-  {
-    question: "How much should buyers agents invest in digital marketing?",
-    answer: "Buyers agents typically invest 5-10% of revenue in marketing. For established practices, this often means $3,000-$8,000 monthly across SEO, content creation, paid advertising, and social media. New practices may start with $1,500-$3,000 focusing on foundational SEO and content."
-  },
-  {
-    question: "How long does it take for digital marketing to generate leads?",
-    answer: "Paid advertising can generate leads within days. Content marketing and SEO typically take 3-6 months to show significant results. A balanced approach combining paid and organic strategies ensures both immediate leads and sustainable long-term growth."
-  },
-  {
-    question: "Should buyers agents focus on local or national marketing?",
-    answer: "Most buyers agents should prioritise local SEO and marketing for their service areas. National presence helps for investor clients or those relocating. Start with strong local foundations before expanding geographic targeting."
-  }
-];
+
+
 
 const BuyersAgentsDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "buyers-agents-digital-marketing");
   if (!post) throw new Error("Blog post not found: buyers-agents-digital-marketing");
+  const articleData = {
+    headline: "Digital Marketing for Buyers Agents: Complete Strategy Guide 2026",
+    description: "Master digital marketing for buyers agents with proven SEO, content marketing, social media, and lead generation strategies.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2025-01-15T00:00:00.000Z",
+    url: "/blog/buyers-agents-digital-marketing",
+    imageUrl: '/images/blog/buyers-agents-digital-marketing.jpg',
+    category: "Digital Marketing",
+    readTime: "18 min read",
+    tags: ["Buyers Agents", "Digital Marketing", "Property Marketing", "Real Estate Marketing", "SEO"]
+  };
+
+  const faqs = [
+    {
+      question: "What digital marketing channels work best for buyers agents?",
+      answer: "The most effective channels for buyers agents are SEO (targeting property buyer searches), content marketing (educational guides and market reports), LinkedIn for professional networking, and Google Ads for high-intent searches. Email marketing also delivers strong ROI for nurturing leads."
+    },
+    {
+      question: "How much should buyers agents invest in digital marketing?",
+      answer: "Buyers agents typically invest 5-10% of revenue in marketing. For established practices, this often means $3,000-$8,000 monthly across SEO, content creation, paid advertising, and social media. New practices may start with $1,500-$3,000 focusing on foundational SEO and content."
+    },
+    {
+      question: "How long does it take for digital marketing to generate leads?",
+      answer: "Paid advertising can generate leads within days. Content marketing and SEO typically take 3-6 months to show significant results. A balanced approach combining paid and organic strategies ensures both immediate leads and sustainable long-term growth."
+    },
+    {
+      question: "Should buyers agents focus on local or national marketing?",
+      answer: "Most buyers agents should prioritise local SEO and marketing for their service areas. National presence helps for investor clients or those relocating. Start with strong local foundations before expanding geographic targeting."
+    }
+  ];
   
   return (
     <OptimizedBlogLayout

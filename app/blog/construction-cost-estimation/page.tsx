@@ -4,6 +4,7 @@ import { AlertTriangle, Calculator } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   title: "Construction Cost Estimation Guide",
   description: "Expert guidance on construction cost estimation guide. Learn proven strategies and best practices for business growth.",
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const ConstructionCostEstimation = () => {
   const post = blogPosts.find(p => p.slug === "construction-cost-estimation");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: construction-cost-estimation");
   
   const convertDateFormat = (dateString: string): string => {

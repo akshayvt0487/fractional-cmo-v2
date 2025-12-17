@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
+import { blogPosts } from '@/data/blogPosts';
 import googleAdsImage from "@/assets/google-ads-dashboard.jpg";
 export const metadata = createMetadata({
   title: "Google Ads Service Businesses",
@@ -37,7 +38,7 @@ export const metadata = createMetadata({
 });
 const GoogleAdsService = () => {
   const post = blogPosts.find(p => p.slug === "google-ads-service-businesses");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: google-ads-service-businesses");
   
   const convertDateFormat = (dateString: string): string => {

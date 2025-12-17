@@ -2,6 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MousePointer, TrendingUp, Users, Target, BarChart, Zap } from "lucide-react";
@@ -36,7 +37,7 @@ export const metadata = createMetadata({
 });
 const TaxAdvisorGoogleAds = () => {
   const post = blogPosts.find(p => p.slug === "tax-advisor-google-ads-strategy");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: tax-advisor-google-ads-strategy");
   
   const convertDateFormat = (dateString: string): string => {

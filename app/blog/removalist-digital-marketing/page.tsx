@@ -2,6 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from "@/components/ui/card";
 
 // client hook removed from server page to avoid server-side invocation
@@ -36,7 +37,7 @@ export const metadata = createMetadata({
 });
 const RemovalistDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "removalist-digital-marketing");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: removalist-digital-marketing");
   
   // Client gating removed during build stabilization: assume content unlocked for prerender

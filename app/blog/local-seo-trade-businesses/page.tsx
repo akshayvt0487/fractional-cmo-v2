@@ -5,6 +5,7 @@ import { citations } from '@/utils/blogCitations';
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 
 import { Card, CardContent } from '@/components/ui/card';
 export const metadata = createMetadata({
@@ -38,7 +39,7 @@ export const metadata = createMetadata({
 });
 const LocalSEOTrade = () => {
   const post = blogPosts.find(p => p.slug === "local-seo-trade-businesses");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: local-seo-trade-businesses");
   
   const convertDateFormat = (dateString: string): string => {

@@ -2,6 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from "@/components/ui/card";
 import startingRemovalistBusinessImage from "@/assets/blog/starting-removalist-business-new.jpg";
 export const metadata = createMetadata({
@@ -35,7 +36,7 @@ export const metadata = createMetadata({
 });
 const StartingRemovalistBusiness = () => {
   const post = blogPosts.find(p => p.slug === "starting-removalist-business");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: starting-removalist-business");
   
   const convertDateFormat = (dateString: string): string => {

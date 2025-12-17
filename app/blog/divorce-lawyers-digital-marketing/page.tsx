@@ -3,6 +3,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
+import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
   title: "Divorce Lawyers Digital Marketing",
@@ -44,7 +45,7 @@ export const metadata = createMetadata({
 
 const DivorceLawyersDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === "divorce-lawyers-digital-marketing");
-import { blogPosts } from '@/data/blogPosts';
+
   if (!post) throw new Error("Blog post not found: divorce-lawyers-digital-marketing");
   
   const convertDateFormat = (dateString: string): string => {
