@@ -1,5 +1,4 @@
 'use client';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -12,7 +11,7 @@ import VirtualizedBlogGrid from "@/components/VirtualizedBlogGrid";
 import { Search, X } from "lucide-react";
 
 import BlogMegaMenu from "@/components/BlogMegaMenu";
-import { blogPosts, categories } from "@/data/blogPosts";
+import { blogPosts } from "@/data/blogPosts";
 
 const Blog = () => {
   const searchParams = useSearchParams();
@@ -264,7 +263,7 @@ const Blog = () => {
   }, [selectedCategory, sortOrder, searchQuery]);
 
   return (
-    <div className="mx-auto w-full max-w-[1400px]">
+    <div className="mx-auto w-full max-w-350">
       
       <Header />
       <div className="min-h-screen pt-32 md:pt-8">
@@ -407,8 +406,8 @@ const Blog = () => {
         </section>
       </div>
 
-    </div>);
-
+    </div>
+  );
 };
 
 export default Blog;

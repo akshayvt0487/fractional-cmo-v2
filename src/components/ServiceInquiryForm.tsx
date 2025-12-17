@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 import { Send, CheckCircle } from 'lucide-react';
@@ -65,12 +64,12 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
 
   if (isSubmitted) {
     return (
-      <Card className="border-primary/20 bg-gradient-to-br from-background to-primary/5">
+      <Card className="border-primary/20 bg-linear-to-br from-background to-primary/5">
         <CardContent className="p-8 text-center">
           <CheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
           <h3 className="text-xl font-semibold mb-2">Thank You!</h3>
           <p className="text-muted-foreground">
-            Your inquiry has been submitted. We'll contact you within 24 hours to discuss your {serviceName.toLowerCase()} needs.
+            Your inquiry has been submitted. We&apos;ll contact you within 24 hours to discuss your {serviceName.toLowerCase()} needs.
           </p>
         </CardContent>
       </Card>
@@ -135,7 +134,7 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="challenge">What's your biggest {serviceName.toLowerCase()} challenge? *</Label>
+            <Label htmlFor="challenge">What&apos;s your biggest {serviceName.toLowerCase()} challenge? *</Label>
             <Textarea
               id="challenge"
               name="challenge"
@@ -159,7 +158,7 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
           </Button>
           
           <p className="text-xs text-muted-foreground text-center">
-            No spam. We'll respond within 24 hours.
+            No spam. We&apos;ll respond within 24 hours.
           </p>
         </form>
       </CardContent>

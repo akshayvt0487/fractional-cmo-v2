@@ -124,7 +124,7 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
 
         {/* Mobile Menu Dropdown */}
         {isMobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 z-[60] mt-2  rounded-lg shadow-lg max-h-96 overflow-y-auto ">
+          <div className="absolute top-full left-0 right-0 z-60 mt-2 rounded-lg shadow-lg max-h-96 overflow-y-auto ">
             <div className="p-2 space-y-1 bg-white">
               {mainCategoryGroups.map((group) => (
                 <div key={group.name}>
@@ -178,7 +178,7 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
   // Desktop Mega Menu
   return (
     <div className={cn("relative", className)} ref={dropdownRef}>
-      <div className="flex flex-wrap items-center gap-1 bg-gray-100 border-1 border-gray-200   rounded-lg p-2">
+      <div className="flex flex-wrap items-center gap-1 bg-gray-100 border border-gray-200 rounded-lg p-2">
         {mainCategoryGroups.map((group) => (
           <div
             key={group.name}

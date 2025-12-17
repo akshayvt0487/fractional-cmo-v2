@@ -74,7 +74,7 @@ const MobileNav = () => {
         </Button>
       </SheetTrigger>
 
-      <SheetContent side="right" className="w-[280px] bg-slate-900 border-slate-800">
+      <SheetContent side="right" className="w-70 bg-slate-900 border-slate-800">
         <div className="flex flex-col h-full pt-8">
           <div className="flex items-center justify-between mb-8">
             <div className="text-white font-medium">Menu</div>
@@ -128,7 +128,7 @@ const MobileNav = () => {
 
                                     <div className="grid grid-cols-2 gap-1 pt-1">
                                       {industries.map((ind) => {
-                                        const serviceSlug = (s as any).industrySlug || s.slug;
+                                        const serviceSlug = (s as unknown).industrySlug || s.slug;
                                         return (
                                           <Link
                                             key={`${s.slug}-${ind.slug}`}

@@ -32,7 +32,7 @@ const ImmigrationLawyersGoogleAds = () => {
       <h2>Why Google Ads Works for Immigration Lawyers</h2>
       <p>
         Google Ads is one of the most effective channels for immigration lawyers because it captures high-intent 
-        searchers at the exact moment they're looking for visa assistance. Unlike passive marketing channels, 
+        searchers at the exact moment they&apos;re looking for visa assistance. Unlike passive marketing channels, 
         Google Ads puts your firm in front of potential clients who are actively searching for immigration help—
         whether they need a skilled visa assessment, partner visa application support, or urgent legal representation.
       </p>
@@ -52,10 +52,10 @@ const ImmigrationLawyersGoogleAds = () => {
         Target professionals seeking skilled visas:
       </p>
       <ul>
-        <li><strong>Ad Group 1 - Subclass 189:</strong> "skilled independent visa lawyer", "subclass 189 migration agent"</li>
-        <li><strong>Ad Group 2 - Subclass 190:</strong> "state nominated visa lawyer", "190 visa migration agent Sydney"</li>
-        <li><strong>Ad Group 3 - Subclass 491:</strong> "regional visa lawyer", "skilled regional visa migration agent"</li>
-        <li><strong>Ad Group 4 - General skilled:</strong> "skilled migration lawyer Australia", "points test visa help"</li>
+        <li><strong>Ad Group 1 - Subclass 189:</strong> &quot;skilled independent visa lawyer&quot;, &quot;subclass 189 migration agent&quot;</li>
+        <li><strong>Ad Group 2 - Subclass 190:</strong> &quot;state nominated visa lawyer&quot;, &quot;190 visa migration agent Sydney&quot;</li>
+        <li><strong>Ad Group 3 - Subclass 491:</strong> &quot;regional visa lawyer&quot;, &quot;skilled regional visa migration agent&quot;</li>
+        <li><strong>Ad Group 4 - General skilled:</strong> &quot;skilled migration lawyer Australia&quot;, &quot;points test visa help&quot;</li>
       </ul>
 
       <h3>Campaign 2: Partner and Family Visas</h3>
@@ -63,10 +63,10 @@ const ImmigrationLawyersGoogleAds = () => {
         Target clients seeking family reunion visas:
       </p>
       <ul>
-        <li><strong>Ad Group 1 - Partner visas:</strong> "partner visa lawyer", "spouse visa migration agent"</li>
-        <li><strong>Ad Group 2 - De facto:</strong> "de facto visa lawyer", "unmarried partner visa help"</li>
-        <li><strong>Ad Group 3 - Parent visas:</strong> "parent visa lawyer", "contributory parent visa migration agent"</li>
-        <li><strong>Ad Group 4 - Child visas:</strong> "child visa application lawyer", "dependent visa help"</li>
+        <li><strong>Ad Group 1 - Partner visas:</strong> &quot;partner visa lawyer&quot;, &quot;spouse visa migration agent&quot;</li>
+        <li><strong>Ad Group 2 - De facto:</strong> &quot;de facto visa lawyer&quot;, &quot;unmarried partner visa help&quot;</li>
+        <li><strong>Ad Group 3 - Parent visas:</strong> &quot;parent visa lawyer&quot;, &quot;contributory parent visa migration agent&quot;</li>
+        <li><strong>Ad Group 4 - Child visas:</strong> &quot;child visa application lawyer&quot;, &quot;dependent visa help&quot;</li>
       </ul>
 
       <h3>Campaign 3: Student and Graduate Visas</h3>
@@ -74,9 +74,9 @@ const ImmigrationLawyersGoogleAds = () => {
         Target students and graduates:
       </p>
       <ul>
-        <li><strong>Ad Group 1 - Student visas:</strong> "student visa lawyer", "500 visa extension help"</li>
-        <li><strong>Ad Group 2 - Graduate visas:</strong> "graduate visa lawyer", "485 visa migration agent"</li>
-        <li><strong>Ad Group 3 - Pathways:</strong> "student to PR pathway lawyer", "study visa to permanent residency"</li>
+        <li><strong>Ad Group 1 - Student visas:</strong> &quot;student visa lawyer&quot;, &quot;500 visa extension help&quot;</li>
+        <li><strong>Ad Group 2 - Graduate visas:</strong> &quot;graduate visa lawyer&quot;, &quot;485 visa migration agent&quot;</li>
+        <li><strong>Ad Group 3 - Pathways:</strong> &quot;student to PR pathway lawyer&quot;, &quot;study visa to permanent residency&quot;</li>
       </ul>
 
       <h3>Campaign 4: Business and Investor Migration</h3>
@@ -84,9 +84,9 @@ const ImmigrationLawyersGoogleAds = () => {
         Target entrepreneurs and investors:
       </p>
       <ul>
-        <li><strong>Ad Group 1 - Business innovation:</strong> "business visa lawyer", "188 visa migration agent"</li>
-        <li><strong>Ad Group 2 - Investor:</strong> "investor visa Australia lawyer", "significant investor visa help"</li>
-        <li><strong>Ad Group 3 - Talent:</strong> "global talent visa lawyer", "distinguished talent visa migration agent"</li>
+        <li><strong>Ad Group 1 - Business innovation:</strong> &quot;business visa lawyer&quot;, &quot;188 visa migration agent&quot;</li>
+        <li><strong>Ad Group 2 - Investor:</strong> &quot;investor visa Australia lawyer&quot;, &quot;significant investor visa help&quot;</li>
+        <li><strong>Ad Group 3 - Talent:</strong> &quot;global talent visa lawyer&quot;, &quot;distinguished talent visa migration agent&quot;</li>
       </ul>
 
       <h3>Campaign 5: Appeals and Urgent Matters</h3>
@@ -94,10 +94,10 @@ const ImmigrationLawyersGoogleAds = () => {
         Target clients with urgent needs:
       </p>
       <ul>
-        <li><strong>Ad Group 1 - Refusals:</strong> "visa refused lawyer", "visa rejection appeal help"</li>
-        <li><strong>Ad Group 2 - AAT appeals:</strong> "AAT appeal lawyer", "migration tribunal lawyer"</li>
-        <li><strong>Ad Group 3 - Cancellations:</strong> "visa cancellation lawyer", "character cancellation appeal"</li>
-        <li><strong>Ad Group 4 - Detention:</strong> "immigration detention lawyer", "urgent visa help"</li>
+        <li><strong>Ad Group 1 - Refusals:</strong> &quot;visa refused lawyer&quot;, &quot;visa rejection appeal help&quot;</li>
+        <li><strong>Ad Group 2 - AAT appeals:</strong> &quot;AAT appeal lawyer&quot;, &quot;migration tribunal lawyer&quot;</li>
+        <li><strong>Ad Group 3 - Cancellations:</strong> &quot;visa cancellation lawyer&quot;, &quot;character cancellation appeal&quot;</li>
+        <li><strong>Ad Group 4 - Detention:</strong> &quot;immigration detention lawyer&quot;, &quot;urgent visa help&quot;</li>
       </ul>
 
       <h2>Keyword Strategy and Match Types</h2>
@@ -107,11 +107,11 @@ const ImmigrationLawyersGoogleAds = () => {
         Focus budget on keywords that indicate purchase intent:
       </p>
       <ul>
-        <li>"immigration lawyer near me" - Strong local intent</li>
-        <li>"migration agent consultation" - Ready to book</li>
-        <li>"visa application help" - Seeking assistance</li>
-        <li>"[visa subclass] lawyer" - Specific visa need</li>
-        <li>"immigration lawyer fees" - Price shopping, ready to engage</li>
+        <li>&quot;immigration lawyer near me&quot; - Strong local intent</li>
+        <li>&quot;migration agent consultation&quot; - Ready to book</li>
+        <li>&quot;visa application help&quot; - Seeking assistance</li>
+        <li>&quot;[visa subclass] lawyer&quot; - Specific visa need</li>
+        <li>&quot;immigration lawyer fees&quot; - Price shopping, ready to engage</li>
       </ul>
 
       <h3>Match Type Strategy</h3>
@@ -126,11 +126,11 @@ const ImmigrationLawyersGoogleAds = () => {
         Essential negatives for immigration campaigns:
       </p>
       <ul>
-        <li>"free" - Filters out those seeking free assistance</li>
-        <li>"jobs", "careers" - People looking for immigration-related employment</li>
-        <li>"DIY", "self-lodge" - People not wanting professional help</li>
-        <li>"USA", "UK", "Canada" - Other countries' immigration</li>
-        <li>"news", "policy changes" - Informational searches</li>
+        <li>&quot;free&quot; - Filters out those seeking free assistance</li>
+        <li>&quot;jobs&quot;, &quot;careers&quot; - People looking for immigration-related employment</li>
+        <li>&quot;DIY&quot;, &quot;self-lodge&quot; - People not wanting professional help</li>
+        <li>&quot;USA&quot;, &quot;UK&quot;, &quot;Canada&quot; - Other countries&apos; immigration</li>
+        <li>&quot;news&quot;, &quot;policy changes&quot; - Informational searches</li>
         <li>Competitor names (unless targeting them intentionally)</li>
       </ul>
 
@@ -141,11 +141,11 @@ const ImmigrationLawyersGoogleAds = () => {
         Effective headline formulas for immigration ads:
       </p>
       <ul>
-        <li><strong>Credential-led:</strong> "MARA Registered Migration Agent"</li>
-        <li><strong>Specificity:</strong> "Skilled Visa 189 Specialists"</li>
-        <li><strong>Social proof:</strong> "1000+ Successful Visa Applications"</li>
-        <li><strong>Urgency:</strong> "Book Free Consultation Today"</li>
-        <li><strong>Location:</strong> "Sydney Immigration Lawyers"</li>
+        <li><strong>Credential-led:</strong> &quot;MARA Registered Migration Agent&quot;</li>
+        <li><strong>Specificity:</strong> &quot;Skilled Visa 189 Specialists&quot;</li>
+        <li><strong>Social proof:</strong> &quot;1000+ Successful Visa Applications&quot;</li>
+        <li><strong>Urgency:</strong> &quot;Book Free Consultation Today&quot;</li>
+        <li><strong>Location:</strong> &quot;Sydney Immigration Lawyers&quot;</li>
       </ul>
 
       <h3>Description Best Practices</h3>
@@ -167,7 +167,7 @@ const ImmigrationLawyersGoogleAds = () => {
       <p><strong>Descriptions:</strong></p>
       <ul>
         <li>Expert migration agents specialising in subclass 189, 190 & 491 skilled visas. High success rates. Book your free eligibility assessment today.</li>
-        <li>Trusted immigration lawyers with 1500+ successful visa applications. We handle complex cases others can't. Call for confidential consultation.</li>
+        <li>Trusted immigration lawyers with 1500+ successful visa applications. We handle complex cases others can&apos;t. Call for confidential consultation.</li>
       </ul>
 
       <h2>Landing Page Optimisation</h2>
@@ -245,7 +245,7 @@ const ImmigrationLawyersGoogleAds = () => {
         <li><strong>Call extensions:</strong> Essential for immigration queries</li>
         <li><strong>Location extensions:</strong> For local searches</li>
         <li><strong>Sitelink extensions:</strong> Link to specific visa pages, about us, contact</li>
-        <li><strong>Callout extensions:</strong> "Free Consultation", "MARA Registered", "15+ Years Experience"</li>
+        <li><strong>Callout extensions:</strong> &quot;Free Consultation&quot;, &quot;MARA Registered&quot;, &quot;15+ Years Experience&quot;</li>
         <li><strong>Structured snippets:</strong> List visa types you handle</li>
         <li><strong>Image extensions:</strong> Professional photos of your team/office</li>
       </ul>
@@ -257,8 +257,8 @@ const ImmigrationLawyersGoogleAds = () => {
       <ul>
         <li><strong>Website visitor remarketing:</strong> Target all website visitors</li>
         <li><strong>Page-specific remarketing:</strong> Target by visa type pages visited</li>
-        <li><strong>Form abandoners:</strong> Target those who started but didn't submit forms</li>
-        <li><strong>Customer match:</strong> Target past enquiries who didn't convert</li>
+        <li><strong>Form abandoners:</strong> Target those who started but didn&apos;t submit forms</li>
+        <li><strong>Customer match:</strong> Target past enquiries who didn&apos;t convert</li>
       </ul>
 
       <h2>Common Mistakes to Avoid</h2>

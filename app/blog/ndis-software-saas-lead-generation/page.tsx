@@ -1,13 +1,12 @@
 import { createMetadata } from "@/lib/seo";
 import { blogPosts } from '@/data/blogPosts';
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
 import InternalLinks from "@/components/InternalLinks";
 import { generateArticleSchema } from "@/utils/seoUtils";
-
 
 // useContentGate is a client hook — removed from server page to avoid server-side invocation
 import SEO from "@/components/SEO";
@@ -91,7 +90,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
           <article className="prose prose-lg max-w-none">
             {/* Hero Section */}
             <div className="mb-12">
-              <img src={"/images/blog/ndis-software-lead-generation.jpg"} alt="NDIS software lead generation strategy meeting" className="w-full h-96 object-cover rounded-lg mb-8" />
+              <Image src="/images/blog/ndis-software-lead-generation.jpg" alt="NDIS software lead generation strategy meeting" width={800} height={600} className="w-full h-96 object-cover rounded-lg mb-8" />
               <h1 className="text-4xl font-bold mb-4 text-foreground">
                 NDIS Software SaaS Lead Generation: Convert Prospects into Customers
               </h1>
@@ -190,7 +189,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                 </Card>
               </div>
 
-              <div className="bg-gradient-to-r from-primary/5 to-secondary/5 border rounded-lg p-6 mb-8">
+              <div className="bg-linear-to-r from-primary/5 to-secondary/5 border rounded-lg p-6 mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Lead Generation Benchmarks for NDIS Software</h3>
                 <div className="grid md:grid-cols-4 gap-6">
                   <div className="text-center">
@@ -748,7 +747,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                         </ul>
                       </div>
                       <div className="bg-background/50 border rounded-lg p-3">
-                        <h5 className="font-medium text-foreground mb-2">A/B Testing Priorities</h5>
+                        <h5 className="font-medium mb-2 text-foreground">A/B Testing Priorities</h5>
                         <ol className="text-sm text-muted-foreground space-y-1">
                           <li>1. Headlines and value propositions</li>
                           <li>2. Call-to-action buttons and placement</li>
@@ -777,7 +776,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                         </ul>
                       </div>
                       <div className="bg-background/50 border rounded-lg p-3">
-                        <h5 className="font-medium text-foreground mb-2">Lead Magnet Performance</h5>
+                        <h5 className="font-medium mb-2 text-foreground">Lead Magnet Performance</h5>
                         <div className="space-y-1 text-sm text-muted-foreground">
                           <div className="flex justify-between">
                             <span>ROI Calculator:</span>
@@ -929,7 +928,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                 </Card>
               </div>
 
-              <div className="bg-gradient-to-r from-primary/5 to-secondary/5 border rounded-lg p-6">
+              <div className="bg-linear-to-r from-primary/5 to-secondary/5 border rounded-lg p-6">
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Lead Generation ROI Targets</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -962,4 +961,11 @@ const NDISSoftwareSaaSLeadGeneration = () => {
       
     </>;
 };
+
+// Define convertDateFormat locally
+const convertDateFormat = (dateString: string): string => {
+  const date = new Date(dateString);
+  return date.toISOString().split('T')[0];
+};
+
 export default NDISSoftwareSaaSLeadGeneration;

@@ -1,6 +1,5 @@
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { blogPosts } from '@/data/blogPosts';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ImmigrationLawyersDigitalMarketing = () => {
   const post = blogPosts.find(p => p.slug === 'immigration-lawyers-digital-marketing');
@@ -52,7 +51,7 @@ const ImmigrationLawyersDigitalMarketing = () => {
       <h3>Skilled Worker Visa Applicants</h3>
       <p>
         These clients are typically professionals seeking to migrate to Australia through the points-based system. 
-        They're often tech-savvy, research-oriented, and compare multiple law firms before making a decision. 
+        They&apos;re often tech-savvy, research-oriented, and compare multiple law firms before making a decision. 
         Your marketing should emphasise your success rates, processing time expertise, and understanding of 
         occupation lists and skill assessments.
       </p>
@@ -90,11 +89,11 @@ const ImmigrationLawyersDigitalMarketing = () => {
         Structure your SEO around the visa categories you specialise in:
       </p>
       <ul>
-        <li><strong>Skilled visas:</strong> "subclass 189 visa lawyer", "skilled independent visa migration agent Sydney"</li>
-        <li><strong>Partner visas:</strong> "partner visa lawyer Melbourne", "defacto visa application help"</li>
-        <li><strong>Student visas:</strong> "student visa extension lawyer", "graduate visa 485 migration agent"</li>
-        <li><strong>Business visas:</strong> "business innovation visa lawyer", "investor visa migration agent Brisbane"</li>
-        <li><strong>Citizenship:</strong> "Australian citizenship application lawyer", "citizenship by descent migration agent"</li>
+        <li><strong>Skilled visas:</strong> &quot;subclass 189 visa lawyer&quot;, &quot;skilled independent visa migration agent Sydney&quot;</li>
+        <li><strong>Partner visas:</strong> &quot;partner visa lawyer Melbourne&quot;, &quot;defacto visa application help&quot;</li>
+        <li><strong>Student visas:</strong> &quot;student visa extension lawyer&quot;, &quot;graduate visa 485 migration agent&quot;</li>
+        <li><strong>Business visas:</strong> &quot;business innovation visa lawyer&quot;, &quot;investor visa migration agent Brisbane&quot;</li>
+        <li><strong>Citizenship:</strong> &quot;Australian citizenship application lawyer&quot;, &quot;citizenship by descent migration agent&quot;</li>
       </ul>
 
       <h3>Location-Based SEO</h3>
@@ -105,7 +104,7 @@ const ImmigrationLawyersDigitalMarketing = () => {
         <li>Create location-specific landing pages for each office</li>
         <li>Claim and optimise your Google Business Profile</li>
         <li>Build citations on Australian legal directories and immigration-specific platforms</li>
-        <li>Target "near me" searches with local content</li>
+        <li>Target &quot;near me&quot; searches with local content</li>
       </ul>
 
       <h3>Content Marketing for Immigration Law</h3>
@@ -173,7 +172,7 @@ const ImmigrationLawyersDigitalMarketing = () => {
       </p>
       <ul>
         <li>Join and participate in diaspora community groups (ethically and helpfully)</li>
-        <li>Host live Q&A sessions on visa topics</li>
+        <li>Host live Q&amp;A sessions on visa topics</li>
         <li>Share client success stories and testimonials</li>
         <li>Run targeted ads to specific nationality groups</li>
       </ul>
@@ -185,7 +184,7 @@ const ImmigrationLawyersDigitalMarketing = () => {
       <ul>
         <li>Create visa pathway explainer videos</li>
         <li>Document preparation checklists and guides</li>
-        <li>Interview format Q&As with common questions</li>
+        <li>Interview format Q&amp;As with common questions</li>
         <li>Policy update announcements and analysis</li>
       </ul>
 
@@ -246,7 +245,7 @@ const ImmigrationLawyersDigitalMarketing = () => {
       <h2>Conclusion</h2>
       <p>
         Digital marketing for immigration lawyers requires a strategic, multichannel approach that builds trust, 
-        demonstrates expertise, and reaches potential clients where they're searching. By combining strong SEO, 
+        demonstrates expertise, and reaches potential clients where they\u0027re searching. By combining strong SEO, 
         targeted advertising, valuable content, and active reputation management, you can establish your practice 
         as a leading immigration law firm and attract a consistent flow of quality clients across all visa categories.
       </p>

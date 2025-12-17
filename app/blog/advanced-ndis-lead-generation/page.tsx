@@ -481,7 +481,7 @@ const AdvancedNDISLeadGeneration = () => {
           </CardContent>
         </Card>
 
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6">
+        <div className="bg-linear-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6">
           <h4 className="font-semibold mb-3 text-blue-900">Recommended Technology Stack</h4>
           <div className="grid md:grid-cols-4 gap-4 text-sm">
             <div>

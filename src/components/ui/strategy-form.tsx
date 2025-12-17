@@ -11,7 +11,6 @@ import { ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { databases, APPWRITE_DATABASE_ID, APPWRITE_COLLECTION_STRATEGY_FORM_ID } from "@/integrations/appwrite/client";
 import { ID } from "appwrite";
-import { useRouter } from "next/navigation";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const basheerImage = "/lovable-uploads/2975c655-d01c-4894-8737-276899af3f17.png";
@@ -43,7 +42,6 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  const router = useRouter();
 
   useEffect(() => {
     if (preSelectedService && serviceMapping[preSelectedService]) {
@@ -84,7 +82,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
 
       // Redirect all leads to booking page
       window.location.href = 'https://link.dsigns.com.au/widget/bookings/fractional-cmo-basheer';
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Submission error:", error);
       toast({
         title: "Submission failed",
@@ -107,7 +105,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
           Book a Free Strategy Call <ArrowRight />
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-y-auto">
+      <DialogContent className="sm:max-w-175 max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="flex items-center gap-4 pb-4">
             <Avatar className="h-16 w-16">
@@ -186,13 +184,13 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
                 <SelectValue placeholder="What do you need help with?" />
               </SelectTrigger>
               <SelectContent className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2">
-                <SelectItem value="fractional-cmo" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Fractional CMO Services</SelectItem>
-                <SelectItem value="growth-strategy" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Growth Strategy & Planning</SelectItem>
-                <SelectItem value="performance-ads" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Google Ads & Meta Advertising</SelectItem>
-                <SelectItem value="seo-content" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">SEO & Content Marketing</SelectItem>
-                <SelectItem value="conversion-optimization" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Conversion Rate Optimisation</SelectItem>
-                <SelectItem value="marketing-automation" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Marketing Automation Setup</SelectItem>
-                <SelectItem value="consultation" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Strategy Consultation</SelectItem>
+                <SelectItem value="fractional-cmo" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Fractional CMO Services</SelectItem>
+                <SelectItem value="growth-strategy" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Growth Strategy & Planning</SelectItem>
+                <SelectItem value="performance-ads" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Google Ads & Meta Advertising</SelectItem>
+                <SelectItem value="seo-content" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">SEO & Content Marketing</SelectItem>
+                <SelectItem value="conversion-optimization" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Conversion Rate Optimisation</SelectItem>
+                <SelectItem value="marketing-automation" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Marketing Automation Setup</SelectItem>
+                <SelectItem value="consultation" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Strategy Consultation</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -210,7 +208,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
 • Current marketing efforts (if any)
 • What success looks like for your business`}
               rows={5}
-              className="text-base min-h-[120px]"
+              className="text-base min-h-30"
             />
           </div>
 
@@ -221,11 +219,11 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
                 <SelectValue placeholder="When would you like to begin?" />
               </SelectTrigger>
               <SelectContent className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2">
-                <SelectItem value="asap" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Ready to start ASAP</SelectItem>
-                <SelectItem value="1-month" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Within the next month</SelectItem>
-                <SelectItem value="2-3-months" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">2-3 months out</SelectItem>
-                <SelectItem value="planning" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Still in planning phase</SelectItem>
-                <SelectItem value="2026" className="data-[state=checked]:bg-gray-200 data-[highlighted]:bg-gray-200 cursor-pointer transition-colors duration-200">Sometime in 2026</SelectItem>
+                <SelectItem value="asap" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Ready to start ASAP</SelectItem>
+                <SelectItem value="1-month" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Within the next month</SelectItem>
+                <SelectItem value="2-3-months" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">2-3 months out</SelectItem>
+                <SelectItem value="planning" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Still in planning phase</SelectItem>
+                <SelectItem value="2026" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Sometime in 2026</SelectItem>
               </SelectContent>
             </Select>
           </div>

@@ -31,9 +31,9 @@ const ImmigrationLawyersLeadGeneration = () => {
     >
       <h2>The Immigration Law Lead Generation Landscape in Australia</h2>
       <p>
-        Australia's immigration system processes hundreds of thousands of visa applications annually, creating 
+        Australia&apos;s immigration system processes hundreds of thousands of visa applications annually, creating 
         substantial demand for professional migration assistance. For immigration lawyers, effective lead generation 
-        means connecting with potential clients at the right moment in their migration journey—whether they're 
+        means connecting with potential clients at the right moment in their migration journey&mdash;whether they&apos;re 
         just exploring options or urgently need legal representation.
       </p>
       <p>
@@ -101,8 +101,8 @@ const ImmigrationLawyersLeadGeneration = () => {
       </p>
       <ul>
         <li><strong>Visa-specific pages:</strong> Create comprehensive landing pages for each visa category you handle</li>
-        <li><strong>Location targeting:</strong> Optimise for "immigration lawyer [city]" and similar local searches</li>
-        <li><strong>Long-tail keywords:</strong> Target specific queries like "partner visa processing time 2025"</li>
+        <li><strong>Location targeting:</strong> Optimise for &quot;immigration lawyer [city]&quot; and similar local searches</li>
+        <li><strong>Long-tail keywords:</strong> Target specific queries like &quot;partner visa processing time 2025&quot;</li>
         <li><strong>FAQ content:</strong> Address common questions that indicate purchase intent</li>
       </ul>
 
@@ -113,7 +113,7 @@ const ImmigrationLawyersLeadGeneration = () => {
       <ul>
         <li><strong>Brand protection:</strong> Bid on your firm name to prevent competitor poaching</li>
         <li><strong>Visa category campaigns:</strong> Separate campaigns for skilled, family, business visas</li>
-        <li><strong>Emergency keywords:</strong> Target urgent searches like "visa refused help" or "deportation lawyer"</li>
+        <li><strong>Emergency keywords:</strong> Target urgent searches like &quot;visa refused help&quot; or &quot;deportation lawyer&quot;</li>
         <li><strong>Competitor targeting:</strong> Bid on competitor names with comparison landing pages</li>
       </ul>
 
@@ -190,12 +190,12 @@ const ImmigrationLawyersLeadGeneration = () => {
         <li>Use intake forms to collect basic case information</li>
         <li>Implement eligibility screening questions</li>
         <li>Clearly communicate your areas of specialisation</li>
-        <li>Be upfront about cases you don't handle</li>
+        <li>Be upfront about cases you don&apos;t handle</li>
       </ul>
 
       <h2>Lead Nurturing for Immigration Law</h2>
       <p>
-        Many immigration leads aren't ready to engage immediately. Nurture them over time:
+        Many immigration leads aren&apos;t ready to engage immediately. Nurture them over time:
       </p>
 
       <h3>Email Marketing Sequences</h3>
@@ -203,12 +203,12 @@ const ImmigrationLawyersLeadGeneration = () => {
         <li><strong>Welcome sequence:</strong> Introduce your firm and establish expertise</li>
         <li><strong>Educational series:</strong> Drip content relevant to their visa interest</li>
         <li><strong>Policy updates:</strong> Share relevant immigration news and changes</li>
-        <li><strong>Re-engagement campaigns:</strong> Reach out to leads who've gone quiet</li>
+        <li><strong>Re-engagement campaigns:</strong> Reach out to leads who\u0027ve gone quiet</li>
       </ul>
 
       <h3>Retargeting Campaigns</h3>
       <p>
-        Stay visible to website visitors who didn't convert:
+        Stay visible to website visitors who didn\u0027t convert:
       </p>
       <ul>
         <li>Display retargeting ads across the Google Display Network</li>
@@ -273,7 +273,7 @@ const ImmigrationLawyersLeadGeneration = () => {
         Long-term success requires diversified lead sources:
       </p>
       <ul>
-        <li>Don't rely on a single channel—diversify across paid, organic, and referral</li>
+        <li>Don\u0027t rely on a single channel&mdash;diversify across paid, organic, and referral</li>
         <li>Invest in brand building alongside direct response campaigns</li>
         <li>Build relationships that generate referrals over time</li>
         <li>Create content assets that compound in value</li>
@@ -290,7 +290,7 @@ const ImmigrationLawyersLeadGeneration = () => {
       <p>
         Remember that immigration is a high-trust, high-stakes service. Your lead generation should reflect the 
         professionalism, expertise, and genuine care that clients expect from their immigration lawyer. Build 
-        systems that nurture relationships over time, and you'll create a sustainable practice that grows through 
+        systems that nurture relationships over time, and you\u0027ll create a sustainable practice that grows through 
         both direct acquisition and referrals.
       </p>
     </OptimizedBlogLayout>

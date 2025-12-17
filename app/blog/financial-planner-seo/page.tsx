@@ -67,7 +67,7 @@ const FinancialPlannerSEO = () => {
     answer: "Initial SEO improvements typically appear within 3-6 months, with significant organic traffic growth usually visible after 6-12 months of consistent optimization and content creation efforts."
   }];
   return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/financial-planner-seo-hero.jpg'} heroAlt="Financial planner optimizing SEO strategy for client acquisition">
-      <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg">
+      <div className="mb-8 p-6 bg-linear-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg">
         <p className="text-lg leading-relaxed text-gray-700">
           In the competitive financial services landscape, organic search visibility is critical for attracting affluent clients who research financial planners online before making decisions. SEO provides a sustainable, cost-effective way to establish authority and capture high-intent prospects searching for financial guidance.
         </p>
@@ -171,7 +171,7 @@ const FinancialPlannerSEO = () => {
         Local SEO is particularly crucial for financial planners because clients prefer working with advisors in their geographic area. This preference is driven by the desire for face-to-face meetings, local market knowledge, and regional financial regulations understanding.
       </p>
 
-      <Card className="mb-8 bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
+      <Card className="mb-8 bg-linear-to-r from-green-50 to-blue-50 border-green-200">
         <CardHeader>
           <CardTitle className="text-green-800">Google Business Profile Optimization</CardTitle>
         </CardHeader>
@@ -290,7 +290,7 @@ const FinancialPlannerSEO = () => {
         Content marketing establishes you as a trusted financial expert while improving search rankings. Create comprehensive resources that address your prospects&apos; financial planning questions and concerns.
       </p>
 
-      <Card className="mb-8 bg-gradient-to-r from-indigo-50 to-purple-50 border-indigo-200">
+      <Card className="mb-8 bg-linear-to-r from-indigo-50 to-purple-50 border-indigo-200">
         <CardHeader>
           <CardTitle>Content Pillar Strategy</CardTitle>
         </CardHeader>
@@ -421,7 +421,7 @@ const FinancialPlannerSEO = () => {
         Optimize your website to convert organic traffic into qualified consultation requests:
       </p>
 
-      <Card className="mb-8 bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
+      <Card className="mb-8 bg-linear-to-r from-purple-50 to-pink-50 border-purple-200">
         <CardHeader>
           <CardTitle>Conversion Optimization Elements</CardTitle>
         </CardHeader>

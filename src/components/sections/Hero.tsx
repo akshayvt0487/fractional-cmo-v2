@@ -2,9 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { useState } from 'react';
 import Header from "@/components/ui/header";
+import Link from "next/link";
 
 import { CheckCircle2 } from "lucide-react";
 import { useEffect, useRef } from "react";
@@ -68,9 +67,9 @@ const Hero = ({ preSelectedService }: { preSelectedService?: string }) => {
             size="lg"
             className="w-full sm:w-auto bg-white/10 text-white border border-white/20 hover:bg-white/20 hover:text-white"
           >
-            <a href="/#capabilities" aria-label="See capabilities">
+            <Link href="/#capabilities" aria-label="See capabilities">
               See Capabilities
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
@@ -83,7 +82,7 @@ const Hero = ({ preSelectedService }: { preSelectedService?: string }) => {
 };
 
 const HeroStrategyButton = ({ preSelectedService }: { preSelectedService?: string }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  
 
   return (
     <>

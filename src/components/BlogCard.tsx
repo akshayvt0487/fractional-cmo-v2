@@ -4,7 +4,6 @@ import { memo } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import LazyImage from "@/components/LazyImage";
 import  Link  from "next/link";
 import { Clock, ArrowRight, Calendar } from "lucide-react";
 import type { BlogPost } from "@/data/blogPosts";
@@ -43,7 +42,7 @@ const BlogCard = memo(({ post, index = 0 }: BlogCardProps) => {
       className="group glass-card h-full flex flex-col overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in hover-scale"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
-      <div className="aspect-[16/9] overflow-hidden relative">
+      <div className="aspect-video overflow-hidden relative">
         <Image 
           src={post.image} 
           alt={`${post.title} - Digital Marketing Guide by ${post.author}`}
@@ -52,7 +51,7 @@ const BlogCard = memo(({ post, index = 0 }: BlogCardProps) => {
           width={400}
           height={225}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       
       <CardHeader className="space-y-2 md:space-y-3 p-4 md:p-6 pb-3 md:pb-4">

@@ -91,7 +91,7 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = ({
               // StaticImageData (imported image) - next/image will use embedded width/height
               <Image src={heroImage} alt={heroAlt} className="w-full h-auto object-cover" />
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/10 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-gray-900/10 to-transparent" />
           </div>
         )}
       </header>
