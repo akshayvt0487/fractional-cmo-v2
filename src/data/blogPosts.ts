@@ -139,7 +139,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Master Google Ads for liquidators with proven strategies. Expert campaign setup, keyword targeting & conversion tactics for distressed business leads.",
     date: "December 15, 2025",
     readTime: "28 min read",
-    slug: "liquidators-google-ads",
+    slug: "liquidators-google-ads-ppc-strategy",
     category: "Insolvency - Google Ads",
     author: "Basheer Padanna",
     image: '/images/blog/liquidators-google-ads-hero.jpg'

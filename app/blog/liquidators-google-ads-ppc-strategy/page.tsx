@@ -20,12 +20,12 @@ export const metadata = createMetadata({
 
   title: "Liquidators Google Ads",
   description: "Expert guidance on liquidators google ads. Learn proven strategies and best practices for business growth.",
-  path: "/blog/liquidators-google-ads",
+  path: "/blog/liquidators-google-ads-ppc-strategy",
   keywords: ["liquidators", "google", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Liquidators Google Ads",
     description: "Expert guidance on liquidators google ads. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/liquidators-google-ads",
+    url: "https://fractional-cmo.com.au/blog/liquidators-google-ads-ppc-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -74,8 +74,8 @@ const LiquidatorsGoogleAds = () => {
     url: "/blog/lawyers-lead-generation",
     category: "Legal"
   }];
-  const post = blogPosts.find(p => p.slug === "liquidators-google-ads");
-  if (!post) throw new Error("Blog post not found: liquidators-google-ads");
+  const post = blogPosts.find(p => p.slug === "liquidators-google-ads-ppc-strategy");
+  if (!post) throw new Error("Blog post not found: liquidators-google-ads-ppc-strategy");
   
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
@@ -86,7 +86,7 @@ const LiquidatorsGoogleAds = () => {
     headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2026",
     description: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimize conversion rates, and maximize ROI for insolvency practitioners.",
     publishedDate: convertDateFormat(post.date),
-    url: "/blog/liquidators-google-ads",
+    url: "/blog/liquidators-google-ads-ppc-strategy",
     readTime: "13 min read",
     category: "Legal",
     author: "Basheer Padanna"

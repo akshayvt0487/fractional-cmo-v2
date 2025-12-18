@@ -16,7 +16,7 @@ const PUBLIC_DIR = path.join(PROJECT_ROOT, 'public');
 const APP_DIR = path.join(PROJECT_ROOT, 'app');
 const SITE_URL = 'https://fractional-cmo.com.au';
 
-// Pages to exclude from sitemap (admin, private, utility)
+// Pages to exclude from sitemap (admin, private, utility, dynamic templates)
 const EXCLUDE_PATTERNS = [
   'admin',
   'admin-auth',
@@ -28,9 +28,30 @@ const EXCLUDE_PATTERNS = [
   'not-ready',
 ];
 
+// Industries for dynamic routes
+const INDUSTRIES = [
+  'ndis-providers',
+  'builders',
+  'buyers-agents',
+  'accountants',
+  'lawyers',
+  'painters',
+  'electricians',
+  'plumbers',
+  'removalists',
+  'finance-brokers',
+  'bricklayers',
+  'floor-sanding',
+];
+
 // Helper to check if a route should be excluded
 function shouldExclude(route) {
   return EXCLUDE_PATTERNS.some((pattern) => route.includes(pattern));
+}
+
+// Helper to check if route is a dynamic template
+function isDynamicTemplate(route) {
+  return route.includes('[') && route.includes(']');
 }
 
 // Define all site sections and their priorities
@@ -132,16 +153,42 @@ function generateSitemap(allRoutes) {
 
   // Add all routes
   const uniqueRoutes = new Set(allRoutes);
-  console.log(`Adding ${uniqueRoutes.size} unique routes to sitemap...`);
-  
+  const processedRoutes = new Set();
+
   for (const route of uniqueRoutes) {
+    // Skip if already processed or if it's a dynamic template
+    if (processedRoutes.has(route) || isDynamicTemplate(route)) {
+      continue;
+    }
+
     if (!shouldExclude(route)) {
       const url = `${SITE_URL}${route}`;
       const priority = getPriorityForRoute(route);
       const changefreq = getChangefreqForRoute(route);
       xmlContent += generateUrlEntry(url, changefreq, priority, '2025-12-18') + '\n';
+      processedRoutes.add(route);
     }
   }
+
+  // Add generated routes for dynamic templates
+  // /services/lead-generation/[industry] -> /services/lead-generation/{industry}
+  INDUSTRIES.forEach((industry) => {
+    const routes = [
+      `/services/lead-generation/${industry}`,
+      `/services/online-marketing/${industry}`,
+      `/services/seo-services/${industry}`,
+    ];
+    
+    routes.forEach((route) => {
+      if (!processedRoutes.has(route)) {
+        const url = `${SITE_URL}${route}`;
+        const priority = getPriorityForRoute(route);
+        const changefreq = getChangefreqForRoute(route);
+        xmlContent += generateUrlEntry(url, changefreq, priority, '2025-12-18') + '\n';
+        processedRoutes.add(route);
+      }
+    });
+  });
 
   // Close sitemap
   xmlContent += '</urlset>';
