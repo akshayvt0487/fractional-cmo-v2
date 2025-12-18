@@ -1,6 +1,11 @@
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { blogPosts } from '@/data/blogPosts';
 
+export const metadata = {
+  robots: { index: true, follow: true, nocache: false },
+};
+
+
 const ImmigrationLawyersGoogleAds = () => {
   const post = blogPosts.find(p => p.slug === 'immigration-lawyers-google-ads');
 
@@ -298,9 +303,4 @@ const ImmigrationLawyersGoogleAds = () => {
 };
 
 export default ImmigrationLawyersGoogleAds;
-
-export const metadata = {
-  canonical: 'https://fractional-cmo.com.au/blog/immigration-lawyers-google-ads',
-  robots: { index: true, follow: true, nocache: false },
-};
 

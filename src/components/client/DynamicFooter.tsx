@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 
 const Footer = dynamic(() => import('@/components/sections/Footer'), {
-  loading: () => <div className="h-[200px]" />,
+  loading: () => <div className="h-50" />,
   ssr: false
 });
 

@@ -258,6 +258,3 @@ const AdminAuth = () => {
 
 export default AdminAuth;
 
-export const metadata = {
-  robots: { index: false, follow: false },
-};

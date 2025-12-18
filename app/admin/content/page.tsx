@@ -2,6 +2,11 @@ import React from 'react';
 import AdminContentManager from '@/components/admin/AdminContentManager';
 import { GenerateSnapshots } from '@/components/admin/GenerateSnapshots';
 
+export const metadata = {
+  robots: { index: false, follow: false },
+};
+
+
 export const Content = () => {
   return (
     <div className="space-y-6">
@@ -18,8 +23,4 @@ export const Content = () => {
 };
 
 export default Content;
-
-export const metadata = {
-  robots: { index: false, follow: false },
-};
 

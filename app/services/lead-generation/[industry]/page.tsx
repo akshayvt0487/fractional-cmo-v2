@@ -32,11 +32,6 @@ export async function generateMetadata({ params }: { params: Promise<{ industry:
 
 export default async function LeadGenIndustryPage({ params }: { params: Promise<{ industry: string }> }) {
 
-export const metadata = {
-  canonical: 'https://fractional-cmo.com.au/services/lead-generation/[industry]',
-  robots: { index: true, follow: true, nocache: false },
-};
-
   const { industry } = await params;
   const data = getIndustryServicePageData(industry, 'lead-generation');
 

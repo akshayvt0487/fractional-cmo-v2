@@ -28,7 +28,7 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
   return (
     <div className="w-full py-8 md:py-12">
       {/* Centered container */}
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
         {/* Back button */}
         <div className="mb-8">
           <Button variant="outline" asChild>

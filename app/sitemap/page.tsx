@@ -1,5 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+export const metadata = {
+  robots: { index: true, follow: true, nocache: false },
+};
+
+
 const SitemapView = () => {
   const mainPages = [
     { url: "https://fractional-cmo.com.au/", title: "Home", priority: "1.0" },
@@ -144,7 +149,3 @@ const SitemapView = () => {
 
 export default SitemapView;
 
-export const metadata = {
-  canonical: 'https://fractional-cmo.com.au/sitemap',
-  robots: { index: true, follow: true, nocache: false },
-};

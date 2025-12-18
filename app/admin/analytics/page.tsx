@@ -1,11 +1,12 @@
 import React from 'react';
 import AdminContentManager from '@/components/admin/AdminContentManager';
 
-export default function Content ()  {
-
 export const metadata = {
   robots: { index: false, follow: false },
 };
+
+
+export default function Content ()  {
 
   return (
     <div className="space-y-6">

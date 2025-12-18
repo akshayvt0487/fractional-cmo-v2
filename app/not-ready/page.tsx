@@ -4,6 +4,11 @@ import { CheckCircle, ArrowRight, Book } from "lucide-react";
 import Link from "next/link";
 import Header from "@/components/ui/header";
 
+export const metadata = {
+  robots: { index: false, follow: false },
+};
+
+
 
 const NotReady = () => {
   return (
@@ -160,6 +165,3 @@ const NotReady = () => {
 
 export default NotReady;
 
-export const metadata = {
-  robots: { index: false, follow: false },
-};

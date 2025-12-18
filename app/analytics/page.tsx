@@ -1,6 +1,11 @@
 import React from 'react';
 import BlogAccessViewer from '@/components/admin/BlogAccessViewer';
 
+export const metadata = {
+  robots: { index: false, follow: false },
+};
+
+
 export const Analytics = () => {
   return (
     <div className="space-y-6">
@@ -16,8 +21,4 @@ export const Analytics = () => {
 };
 
 export default Analytics;
-
-export const metadata = {
-  robots: { index: false, follow: false },
-};
 

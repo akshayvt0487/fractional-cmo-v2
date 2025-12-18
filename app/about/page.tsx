@@ -46,7 +46,7 @@ const About = () => {
     <>
      
       <Header />
-      <div className="min-h-screen max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-30">
+      <div className="min-h-screen max-w-350 mx-auto px-4 sm:px-6 lg:px-8 pt-30">
         {/* Hero Section */}
         <section className="py-24 md:py-32">
           <div className="container">

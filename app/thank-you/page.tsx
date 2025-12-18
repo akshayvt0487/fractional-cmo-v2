@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/ui/header";
 
 import { CheckCircle, Calendar, MessageCircle, ArrowRight } from "lucide-react";
+
 // import { Link } from "react-router-dom"; // <-- Removed
 import Link from "next/link"; // <-- Added Next.js Link
 import type { Metadata } from 'next'; // <-- Import Metadata type
@@ -148,6 +149,3 @@ const ThankYou = () => {
 
 export default ThankYou;
 
-export const metadata = {
-  robots: { index: false, follow: false },
-};

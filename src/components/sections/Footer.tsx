@@ -3,7 +3,7 @@ import Link from "next/link";
 import GHLWidget from "@/components/widgets/GHLWidget";
 
 const Footer = () => (
-  <footer className="border-t border-border py-8 md:py-12 text-sm w-full flex justify-center max-w-[1400px] mx-auto">
+  <footer className="border-t border-border py-8 md:py-12 text-sm w-full flex justify-center max-w-350 mx-auto">
    
    
     <div className="container px-4 md:px-6 flex flex-col gap-6 md:gap-8">

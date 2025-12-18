@@ -1,11 +1,12 @@
 import React from 'react';
 import FormSubmissionsViewer from '@/components/admin/FormSubmissionsViewer';
 
-export default function Submissions () {
-
 export const metadata = {
   robots: { index: false, follow: false },
 };
+
+
+export default function Submissions () {
 
   return (
     <div className="space-y-6">
