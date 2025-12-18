@@ -6,6 +6,12 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Ndis Google Ads Respite Sil Western Sydney",
   description: "Expert guidance on ndis google ads respite sil western sydney. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-google-ads-respite-sil-western-sydney",

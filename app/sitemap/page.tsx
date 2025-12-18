@@ -143,3 +143,8 @@ const SitemapView = () => {
 };
 
 export default SitemapView;
+
+export const metadata = {
+  canonical: 'https://fractional-cmo.com.au/sitemap',
+  robots: { index: true, follow: true, nocache: false },
+};

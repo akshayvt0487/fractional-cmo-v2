@@ -8,6 +8,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Ndis Digital Marketing Excellence",
   description: "Expert guidance on ndis digital marketing excellence. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-digital-marketing-excellence",

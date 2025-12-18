@@ -6,6 +6,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Digital Marketing for Buyers Agents: Complete Strategy Guide 2026",
   description: "Master digital marketing for buyers agents with proven SEO, content marketing, social media, and lead generation strategies. Comprehensive guide for property buyers advocates.",
   path: "/blog/buyers-agents-digital-marketing",

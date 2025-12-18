@@ -6,6 +6,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Lead Generation for Buyers Agents: Complete Strategy Guide 2026",
   description: "Discover proven lead generation strategies for buyers agents. Learn how to attract quality property buyer clients through digital marketing, referrals, and content marketing.",
   path: "/blog/buyers-agents-lead-generation",

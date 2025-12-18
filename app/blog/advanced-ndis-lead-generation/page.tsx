@@ -13,6 +13,12 @@ import { blogPosts } from '@/data/blogPosts';
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
   description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
   path: "/blog/advanced-ndis-lead-generation",

@@ -7,6 +7,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "It Consulting Digital Marketing Strategy",
   description: "Expert guidance on it consulting digital marketing strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/it-consulting-digital-marketing-strategy",

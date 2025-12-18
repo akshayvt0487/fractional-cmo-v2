@@ -6,6 +6,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Construction Marketing Best Practices",
   description: "Expert guidance on construction marketing best practices. Learn proven strategies and best practices for business growth.",
   path: "/blog/construction-marketing-best-practices",

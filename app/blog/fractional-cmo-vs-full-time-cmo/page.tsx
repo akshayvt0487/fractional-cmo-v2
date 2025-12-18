@@ -7,6 +7,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Fractional Cmo Vs Full Time Cmo",
   description: "Expert guidance on fractional cmo vs full time cmo. Learn proven strategies and best practices for business growth.",
   path: "/blog/fractional-cmo-vs-full-time-cmo",

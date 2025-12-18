@@ -7,6 +7,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Buyers Agents Google Ads Strategy",
   description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/buyers-agents-google-ads-strategy",

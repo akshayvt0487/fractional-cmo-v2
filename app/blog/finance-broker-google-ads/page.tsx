@@ -6,6 +6,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Google Ads for Finance Brokers: Complete PPC Strategy Guide 2026",
   description: "Master Google Ads for finance and mortgage brokers. Learn campaign structure, keyword strategy, ad copy best practices, and conversion optimisation for maximum ROI.",
   path: "/blog/finance-broker-google-ads",

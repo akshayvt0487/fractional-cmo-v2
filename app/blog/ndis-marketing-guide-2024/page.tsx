@@ -8,6 +8,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Ndis Marketing Guide 2024",
   description: "Expert guidance on ndis marketing guide 2024. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-marketing-guide-2024",

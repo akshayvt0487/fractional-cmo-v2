@@ -6,6 +6,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "It Consulting Lead Generation Guide",
   description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/it-consulting-lead-generation-guide",

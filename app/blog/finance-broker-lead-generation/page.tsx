@@ -6,6 +6,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Lead Generation for Finance Brokers: Complete Strategy Guide 2026",
   description: "Discover proven lead generation strategies for finance and mortgage brokers. Learn how to attract quality loan clients through digital marketing, referrals, and partnerships.",
   path: "/blog/finance-broker-lead-generation",

@@ -7,6 +7,12 @@ import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import therapyServicesDigitalMarketingHero from "@/assets/blog/therapy-services-digital-marketing-hero.jpg";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Therapy Services Digital Marketing",
   description: "Expert guidance on therapy services digital marketing. Learn proven strategies and best practices for business growth.",
   path: "/blog/therapy-services-digital-marketing",

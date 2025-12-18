@@ -6,6 +6,12 @@ import StrategyForm from "@/components/ui/strategy-form";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Local Search Ranking",
   description: "Expert guidance on local search ranking. Learn proven strategies and best practices for business growth.",
   path: "/blog/local-search-ranking",

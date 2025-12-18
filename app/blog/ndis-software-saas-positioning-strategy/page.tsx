@@ -13,6 +13,12 @@ import { generateArticleSchema } from "@/utils/seoUtils";
 // useContentGate is a client hook — removed from server page to avoid server-side invocation
 import SEO from "@/components/SEO";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Ndis Software Saas Positioning Strategy",
   description: "Expert guidance on ndis software saas positioning strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-software-saas-positioning-strategy",

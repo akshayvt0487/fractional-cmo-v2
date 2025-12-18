@@ -6,6 +6,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "It Networking Business Growth Strategy",
   description: "Expert guidance on it networking business growth strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/it-networking-business-growth-strategy",

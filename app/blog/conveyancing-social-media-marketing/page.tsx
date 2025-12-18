@@ -7,6 +7,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Conveyancing Social Media Marketing",
   description: "Expert guidance on conveyancing social media marketing. Learn proven strategies and best practices for business growth.",
   path: "/blog/conveyancing-social-media-marketing",

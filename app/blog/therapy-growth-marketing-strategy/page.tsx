@@ -6,6 +6,12 @@ import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import therapyGrowthMarketingStrategyHero from "@/assets/blog/therapy-growth-marketing-strategy-hero.jpg";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Therapy Growth Marketing Strategy",
   description: "Expert guidance on therapy growth marketing strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/therapy-growth-marketing-strategy",

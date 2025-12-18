@@ -1,10 +1,16 @@
-import { createMetadata } from "@/lib/seo";
+import { createMetadata, SITE_URL } from "@/lib/seo";
 import Index from "@/app/pages/Index";
 
 export const metadata = createMetadata({
   title: 'Basheer Padanna — Fractional CMO & Digital Marketing Leader',
   description: 'Fractional CMO and Digital Marketing Strategist for end‑to‑end growth systems across strategy, UX/UI, SEO, Google Ads, and Meta lead generation.',
   path: '/',
+  canonical: SITE_URL,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
   keywords: [
     'fractional cmo',
     'growth marketing',

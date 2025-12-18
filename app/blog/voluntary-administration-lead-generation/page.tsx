@@ -12,6 +12,12 @@ const convertDateFormat = (dateString: string): string => {
   };
   
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Voluntary Administration Lead Generation",
   description: "Expert guidance on voluntary administration lead generation. Learn proven strategies and best practices for business growth.",
   path: "/blog/voluntary-administration-lead-generation",

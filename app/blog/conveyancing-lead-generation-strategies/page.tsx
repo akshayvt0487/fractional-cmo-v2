@@ -7,6 +7,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Conveyancing Lead Generation Strategies",
   description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/conveyancing-lead-generation-strategies",

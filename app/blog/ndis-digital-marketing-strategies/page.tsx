@@ -8,6 +8,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Ndis Digital Marketing Strategies",
   description: "Expert guidance on ndis digital marketing strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-digital-marketing-strategies",

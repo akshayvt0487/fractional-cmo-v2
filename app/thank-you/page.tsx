@@ -147,3 +147,7 @@ const ThankYou = () => {
 };
 
 export default ThankYou;
+
+export const metadata = {
+  robots: { index: false, follow: false },
+};

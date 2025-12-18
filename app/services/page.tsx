@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { createMetadata, SITE_URL } from '@/lib/seo';
 import Header from '@/components/ui/header';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
@@ -6,11 +7,18 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: 'Digital Marketing Services | Fractional CMO Australia',
   description: 'Professional digital marketing services including Google Ads, SEO, lead generation, digital growth strategy, social media marketing, and email marketing.',
-  keywords: 'digital marketing services, Google Ads, SEO, lead generation, digital growth, social media marketing',
-};
+  path: '/services',
+  canonical: `${SITE_URL}/services`,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+  keywords: ['digital marketing services', 'Google Ads', 'SEO', 'lead generation', 'digital growth', 'social media marketing'],
+});
 
 const services = [
   {

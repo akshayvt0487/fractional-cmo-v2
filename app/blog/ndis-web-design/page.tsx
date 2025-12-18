@@ -8,6 +8,12 @@ import { blogPosts } from '@/data/blogPosts';
 import ndisImage from "@/assets/ndis-support-care.jpg";
 import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Ndis Web Design Guide",
   description: "Expert guidance on ndis web design guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-web-design-guide",

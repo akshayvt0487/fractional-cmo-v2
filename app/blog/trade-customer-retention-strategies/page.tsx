@@ -6,6 +6,12 @@ import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import localSEOImage from "@/assets/local-seo-search.jpg";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Trade Customer Retention Strategies",
   description: "Expert guidance on trade customer retention strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/trade-customer-retention-strategies",

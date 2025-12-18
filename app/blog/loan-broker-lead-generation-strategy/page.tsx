@@ -6,6 +6,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Loan Broker Lead Generation Strategy",
   description: "Expert guidance on loan broker lead generation strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/loan-broker-lead-generation-strategy",

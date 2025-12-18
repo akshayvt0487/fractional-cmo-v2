@@ -18,3 +18,8 @@ export const Content = () => {
 };
 
 export default Content;
+
+export const metadata = {
+  robots: { index: false, follow: false },
+};
+

@@ -7,6 +7,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Camera, TrendingUp, Users, Star, Search, Home, Palette, DollarSign, Clock, Target, Award } from 'lucide-react';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Renovation Builders Digital Marketing Guide",
   description: "Expert guidance on renovation builders digital marketing guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/renovation-builders-digital-marketing-guide",

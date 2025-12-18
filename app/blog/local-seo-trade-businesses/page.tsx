@@ -9,6 +9,12 @@ import { blogPosts } from '@/data/blogPosts';
 
 import { Card, CardContent } from '@/components/ui/card';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Local Seo Trade Businesses",
   description: "Expert guidance on local seo trade businesses. Learn proven strategies and best practices for business growth.",
   path: "/blog/local-seo-trade-businesses",

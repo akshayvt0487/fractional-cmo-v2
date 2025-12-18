@@ -6,6 +6,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import Citation from '@/components/Citation';
 
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Iquidators Google Ads Strategy",
   description: "Expert guidance on iquidators google ads strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/iquidators-google-ads-strategy",

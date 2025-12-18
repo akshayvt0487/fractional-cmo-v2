@@ -6,6 +6,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "SEO for Buyers Agents: Complete Search Optimisation Guide 2026",
   description: "Master SEO for buyers agents with this comprehensive guide. Learn keyword research, local SEO, content strategy, and technical optimisation to attract quality property buyer clients.",
   path: "/blog/buyers-agents-seo",

@@ -12,6 +12,12 @@ const convertDateFormat = (dateString: string): string => {
   };
   
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Liquidators Growth Marketing",
   description: "Expert guidance on liquidators growth marketing. Learn proven strategies and best practices for business growth.",
   path: "/blog/liquidators-growth-marketing",

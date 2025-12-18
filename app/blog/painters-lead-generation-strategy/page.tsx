@@ -7,6 +7,12 @@ import { Badge } from '@/components/ui/badge';
 import StrategyForm from '@/components/ui/strategy-form';
 import { Palette, Target, Star, Phone, MapPin, Camera, FileText, Users } from 'lucide-react';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026",
   description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2026. Learn proven strategies and best practices for business growth.",
   path: "/blog/painters-lead-generation-guide",

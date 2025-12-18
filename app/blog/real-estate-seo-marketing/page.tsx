@@ -6,6 +6,12 @@ import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Search, MapPin, TrendingUp, Users, Globe, Target, CheckCircle } from 'lucide-react';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Real Estate Seo Marketing Guide",
   description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/real-estate-seo-marketing-guide",

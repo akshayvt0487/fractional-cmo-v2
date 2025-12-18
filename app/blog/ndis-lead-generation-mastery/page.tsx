@@ -8,6 +8,12 @@ import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from '@/components/ui/card';
 import StrategyForm from '@/components/ui/strategy-form';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Ndis Lead Generation Mastery",
   description: "Expert guidance on ndis lead generation mastery. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-lead-generation-mastery",

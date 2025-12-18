@@ -6,6 +6,12 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Financial Planner Lead Generation",
   description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
   path: "/blog/financial-planner-lead-generation",

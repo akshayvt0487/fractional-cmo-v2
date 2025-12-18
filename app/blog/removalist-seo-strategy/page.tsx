@@ -6,6 +6,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Complete SEO Strategy for Removalist Businesses: Dominate Local Search",
   description: "Expert guidance on complete seo strategy for removalist businesses: dominate local search. Learn proven strategies and best practices for business growth.",
   path: "/blog/removalist-seo-strategy",

@@ -8,6 +8,12 @@ import StrategyForm from '@/components/ui/strategy-form';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Lawyers Lead Generation",
   description: "Expert guidance on lawyers lead generation. Learn proven strategies and best practices for business growth.",
   path: "/blog/lawyers-lead-generation",

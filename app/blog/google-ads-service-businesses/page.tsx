@@ -8,6 +8,12 @@ import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import googleAdsImage from "@/assets/google-ads-dashboard.jpg";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Google Ads Service Businesses",
   description: "Expert guidance on google ads service businesses. Learn proven strategies and best practices for business growth.",
   path: "/blog/google-ads-service-businesses",

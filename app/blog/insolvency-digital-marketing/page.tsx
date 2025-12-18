@@ -12,6 +12,12 @@ const convertDateFormat = (dateString: string): string => {
   };
   
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Insolvency Digital Marketing",
   description: "Expert guidance on insolvency digital marketing. Learn proven strategies and best practices for business growth.",
   path: "/blog/insolvency-digital-marketing",

@@ -6,6 +6,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Social Media Marketing Strategy",
   description: "Expert guidance on social media marketing strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/social-media-marketing-strategy",

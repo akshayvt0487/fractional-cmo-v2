@@ -1,8 +1,9 @@
 import React, { Suspense } from 'react';
+import { Metadata } from 'next';
 import { Providers } from './providers';
 import './globals.css';
 import './styles/sidebar.css';
-import { defaultMetadata } from '@/lib/seo';
+import { defaultMetadata, SITE_URL } from '@/lib/seo';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/next";
@@ -18,7 +19,12 @@ const inter = Inter({
   adjustFontFallback: true,
 });
 
-export const metadata = defaultMetadata;
+export const metadata: Metadata = {
+  ...defaultMetadata,
+  alternates: {
+    canonical: SITE_URL,
+  },
+};
 
 export default function RootLayout({
   children,

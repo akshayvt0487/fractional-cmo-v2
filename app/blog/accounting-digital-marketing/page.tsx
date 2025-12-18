@@ -12,6 +12,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
   description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
   path: "/blog/accounting-digital-marketing-guide",

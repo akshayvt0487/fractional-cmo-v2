@@ -7,6 +7,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { MousePointer, TrendingUp, Users, Target, BarChart, Zap } from "lucide-react";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Tax Advisor Google Ads Strategy",
   description: "Expert guidance on tax advisor google ads strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/tax-advisor-google-ads-strategy",

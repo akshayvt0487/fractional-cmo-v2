@@ -7,6 +7,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Cyber Security Digital Marketing Strategies",
   description: "Expert guidance on cyber security digital marketing strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/cyber-security-digital-marketing-strategies",

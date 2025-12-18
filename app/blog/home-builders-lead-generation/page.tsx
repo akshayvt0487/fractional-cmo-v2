@@ -5,6 +5,12 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Home Builders Lead Generation Guide",
   description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/home-builders-lead-generation-guide",

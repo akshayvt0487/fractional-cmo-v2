@@ -6,6 +6,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Divorce Lawyers Digital Marketing",
   description: "Expert guidance on digital marketing for divorce lawyers. Learn proven strategies to attract clients and grow your law practice.",
   path: "/blog/divorce-lawyers-digital-marketing",

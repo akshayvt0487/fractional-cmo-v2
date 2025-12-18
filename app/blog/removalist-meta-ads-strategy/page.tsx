@@ -5,6 +5,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
   description: "Expert guidance on meta ads for removalists: complete facebook marketing guide for moving companies. Learn proven strategies and best practices for business growth.",
   path: "/blog/removalist-meta-ads-strategy",

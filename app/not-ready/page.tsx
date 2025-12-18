@@ -159,3 +159,7 @@ const NotReady = () => {
 };
 
 export default NotReady;
+
+export const metadata = {
+  robots: { index: false, follow: false },
+};

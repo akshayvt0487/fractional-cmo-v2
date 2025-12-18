@@ -7,6 +7,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 // client hook removed from server page to avoid server-side invocation
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Removalist Digital Marketing",
   description: "Expert guidance on removalist digital marketing. Learn proven strategies and best practices for business growth.",
   path: "/blog/removalist-digital-marketing",

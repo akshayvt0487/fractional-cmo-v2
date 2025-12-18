@@ -1,12 +1,18 @@
 // app/contact/page.tsx
 import type { Metadata } from 'next';
-import { createMetadata } from "@/lib/seo";
+import { createMetadata, SITE_URL } from "@/lib/seo";
 import ContactClient from './ContactClient'; // Make sure this path is correct
 
 export const metadata: Metadata = createMetadata({
   title: "Contact Basheer Padanna - Fractional CMO Consultation & Growth Strategy",
   description: "Book a free consultation with Basheer Padanna, experienced Fractional CMO. Get strategic marketing guidance and scalable growth solutions for your business.",
   path: "/contact",
+  canonical: `${SITE_URL}/contact`,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
   keywords: [
     'fractional cmo consultation',
     'marketing strategy consultation',

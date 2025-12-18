@@ -13,6 +13,12 @@ import { blogPosts } from '@/data/blogPosts';
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
   description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
   path: "/blog/accounting-growth-strategy-guide",

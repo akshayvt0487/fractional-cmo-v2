@@ -11,6 +11,11 @@ const allPostsQuery = `*[_type == "post"]{
 
 // This page doesn't receive 'params' with a slug
 export default async function TestPage() {
+
+export const metadata = {
+  robots: { index: false, follow: false },
+};
+
   
   // Fetch the query. Notice the 2nd argument (the params object) is removed.
   const posts = await client.fetch(allPostsQuery)

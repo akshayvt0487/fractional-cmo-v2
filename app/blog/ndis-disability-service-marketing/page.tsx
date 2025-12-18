@@ -8,6 +8,12 @@ import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import StrategyForm from '@/components/ui/strategy-form';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Ndis Disability Service Marketing",
   description: "Expert guidance on ndis disability service marketing. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-disability-service-marketing",

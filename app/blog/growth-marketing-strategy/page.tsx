@@ -6,6 +6,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Growth Marketing Strategy",
   description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/growth-marketing-strategy",

@@ -6,6 +6,12 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Painters Digital Marketing Guide",
   description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/painters-digital-marketing-guide",

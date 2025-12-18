@@ -5,6 +5,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Conveyancing Digital Marketing Roi",
   description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
   path: "/blog/conveyancing-digital-marketing-roi",

@@ -1,4 +1,4 @@
-import { createMetadata } from "@/lib/seo";
+import { createMetadata, SITE_URL } from "@/lib/seo";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import StrategyForm from "@/components/ui/strategy-form";
 import Header from "@/components/ui/header";
@@ -7,6 +7,12 @@ export const metadata = createMetadata({
   title: 'About Basheer Padanna - Fractional CMO',
   description: 'Learn about Basheer Padanna, a Fractional CMO helping ambitious service businesses build scalable growth systems through strategic thinking and hands-on execution.',
   path: '/about',
+  canonical: `${SITE_URL}/about`,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
   keywords: [
     'fractional cmo',
     'basheer padanna',

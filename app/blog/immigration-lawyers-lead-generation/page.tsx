@@ -298,3 +298,9 @@ const ImmigrationLawyersLeadGeneration = () => {
 };
 
 export default ImmigrationLawyersLeadGeneration;
+
+export const metadata = {
+  canonical: 'https://fractional-cmo.com.au/blog/immigration-lawyers-lead-generation',
+  robots: { index: true, follow: true, nocache: false },
+};
+

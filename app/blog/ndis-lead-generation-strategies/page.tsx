@@ -11,6 +11,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 
 // ✅ Page metadata (SEO, OG, Twitter, Canonical, Robots)
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "NDIS Lead Generation Strategies",
   description:
     "Expert guidance on NDIS lead generation strategies. Learn proven strategies and best practices for business growth.",

@@ -6,6 +6,12 @@ import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Shield, Users, Building, Zap, CheckCircle, TrendingUp, Search, Target, Video, Play, Home } from 'lucide-react';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Security Digital Marketing Guide",
   description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/security-digital-marketing-guide",

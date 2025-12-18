@@ -12,6 +12,12 @@ import { blogPosts } from '@/data/blogPosts';
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
   description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
   path: "/blog/bricklayers-lead-generation",

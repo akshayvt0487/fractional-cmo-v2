@@ -1,6 +1,20 @@
+import { Metadata } from "next";
+import { createMetadata, SITE_URL } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = createMetadata({
+  title: "Privacy Policy - Fractional CMO",
+  description: "Privacy Policy for Fractional CMO. Learn how we collect, use, and protect your personal information.",
+  path: "/privacy-policy",
+  canonical: `${SITE_URL}/privacy-policy`,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+});
 
 const PrivacyPolicy = () => {
   return (

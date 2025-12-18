@@ -16,3 +16,8 @@ export const Analytics = () => {
 };
 
 export default Analytics;
+
+export const metadata = {
+  robots: { index: false, follow: false },
+};
+

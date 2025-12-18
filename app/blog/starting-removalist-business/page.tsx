@@ -6,6 +6,12 @@ import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from "@/components/ui/card";
 import startingRemovalistBusinessImage from "@/assets/blog/starting-removalist-business-new.jpg";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Starting Removalist Business Guide",
   description: "Expert guidance on starting removalist business guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/starting-removalist-business-guide",

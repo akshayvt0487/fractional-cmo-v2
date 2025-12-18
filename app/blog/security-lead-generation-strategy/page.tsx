@@ -6,6 +6,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Shield, Target, Users, Phone, Building, AlertTriangle, Lock } from 'lucide-react';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Security Company Lead Generation: Proven Strategies to Attract Quality Security Clients 2026",
   description: "Expert guidance on security company lead generation: proven strategies to attract quality security clients 2026. Learn proven strategies and best practices for business growth.",
   path: "/blog/security-lead-generation-strategy",

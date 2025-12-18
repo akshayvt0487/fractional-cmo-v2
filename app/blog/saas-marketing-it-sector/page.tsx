@@ -5,6 +5,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Saas Marketing It Sector",
   description: "Expert guidance on saas marketing it sector. Learn proven strategies and best practices for business growth.",
   path: "/blog/saas-marketing-it-sector",

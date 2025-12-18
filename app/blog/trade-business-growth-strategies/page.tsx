@@ -6,6 +6,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Trade Business Growth Strategies",
   description: "Expert guidance on trade business growth strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/trade-business-growth-strategies",

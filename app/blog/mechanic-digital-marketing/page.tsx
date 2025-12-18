@@ -6,6 +6,12 @@ import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Wrench, AlertTriangle, Building, Zap, Search, Users, Video, Play, MessageCircle, Star, CheckCircle } from 'lucide-react';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Mechanic Digital Marketing Guide",
   description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/mechanic-digital-marketing-guide",

@@ -7,6 +7,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Conveyancing Seo Guide",
   description: "Expert guidance on conveyancing seo guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/conveyancing-seo-guide",

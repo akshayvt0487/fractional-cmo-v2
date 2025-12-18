@@ -6,6 +6,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Car Inspection Marketing Strategies",
   description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/car-inspection-marketing-strategies",

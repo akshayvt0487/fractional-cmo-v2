@@ -6,6 +6,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Family Lawyers Digital Marketing",
   description: "Expert guidance on family lawyers digital marketing. Learn proven strategies and best practices for business growth.",
   path: "/blog/family-lawyers-digital-marketing",

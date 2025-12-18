@@ -1,7 +1,28 @@
 import React, { Suspense } from 'react';
+import type { Metadata } from 'next';
+import { createMetadata, SITE_URL } from '@/lib/seo';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
+export const metadata: Metadata = createMetadata({
+  title: 'Blog - Digital Marketing & Growth Strategy Articles',
+  description: 'Read our latest articles on digital marketing, SEO, Google Ads, lead generation, and growth strategies for service businesses.',
+  path: '/blog',
+  canonical: `${SITE_URL}/blog`,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+  keywords: [
+    'digital marketing blog',
+    'SEO articles',
+    'lead generation guide',
+    'Google Ads tips',
+    'marketing strategy',
+  ],
+});
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -8,6 +8,12 @@ import { blogPosts } from '@/data/blogPosts';
 import ndisProviderImage from "@/assets/blog/ndis-participant-engagement-new.jpg";
 import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Ndis Participant Engagement Strategies",
   description: "Expert guidance on ndis participant engagement strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/ndis-participant-engagement-strategies",

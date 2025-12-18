@@ -258,3 +258,9 @@ const ImmigrationLawyersDigitalMarketing = () => {
 };
 
 export default ImmigrationLawyersDigitalMarketing;
+
+export const metadata = {
+  canonical: 'https://fractional-cmo.com.au/blog/immigration-lawyers-digital-marketing',
+  robots: { index: true, follow: true, nocache: false },
+};
+

@@ -12,6 +12,12 @@ import { Target, Globe, Camera, Search, PenTool, BookOpen, Video } from "lucide-
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
   description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
   path: "/blog/bricklayers-growth-marketing-strategy",

@@ -3,6 +3,11 @@ import Link from 'next/link';
 import { headers } from 'next/headers'; // Use headers for path if absolutely necessary, but not for client logging
 
 export default function NotFound() {
+
+export const metadata = {
+  robots: { index: false, follow: false },
+};
+
   // You cannot use 'usePathname' or 'useEffect' here.
   // The route that failed is not directly accessible this way.
 

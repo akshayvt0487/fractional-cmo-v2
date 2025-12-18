@@ -1,6 +1,20 @@
+import { Metadata } from "next";
+import { createMetadata, SITE_URL } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = createMetadata({
+  title: "Terms & Conditions - Fractional CMO",
+  description: "Terms & Conditions for Fractional CMO. Review our terms of service and conditions of use.",
+  path: "/terms-conditions",
+  canonical: `${SITE_URL}/terms-conditions`,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+});
 
 const TermsConditions = () => {
   return (

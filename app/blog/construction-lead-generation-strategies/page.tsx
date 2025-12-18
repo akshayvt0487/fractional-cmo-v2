@@ -8,6 +8,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Construction Lead Generation Strategies",
   description: "Expert guidance on construction lead generation strategies. Learn proven strategies and best practices for business growth.",
   path: "/blog/construction-lead-generation-strategies",

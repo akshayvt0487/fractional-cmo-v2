@@ -31,6 +31,23 @@ const Footer = () => (
           <Link href="/contact" className="hover:text-foreground transition-colors">Contact</Link>
         </nav>
       </div>
+
+      {/* Main Services Section */}
+      <div className="pt-4 md:pt-6 border-t border-border">
+        <div className="mb-4">
+          <h3 className="font-semibold text-xs md:text-sm mb-3 text-foreground">Our Services</h3>
+          <nav className="flex flex-wrap gap-3 md:gap-4 text-muted-foreground text-xs md:text-sm">
+            <Link href="/services/google-ads" className="hover:text-foreground transition-colors">Google Ads</Link>
+            <Link href="/services/seo" className="hover:text-foreground transition-colors">SEO</Link>
+            <Link href="/services/lead-generation" className="hover:text-foreground transition-colors">Lead Generation</Link>
+            <Link href="/services/digital-marketing" className="hover:text-foreground transition-colors">Digital Marketing</Link>
+            <Link href="/services/social-media-marketing" className="hover:text-foreground transition-colors">Social Media</Link>
+            <Link href="/services/email-marketing" className="hover:text-foreground transition-colors">Email Marketing</Link>
+            <Link href="/services/digital-growth-strategy" className="hover:text-foreground transition-colors">Growth Strategy</Link>
+          </nav>
+        </div>
+      </div>
+
       <div className="flex flex-col justify-between md:flex-row ">
 
       

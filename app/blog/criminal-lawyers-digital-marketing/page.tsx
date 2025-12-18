@@ -9,6 +9,12 @@ import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import criminalLawyersDigitalMarketingHero from '@/assets/blog/criminal-lawyers-digital-marketing-hero.jpg';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Criminal Lawyers Digital Marketing",
   description: "Expert guidance on criminal lawyers digital marketing. Learn proven strategies and best practices for business growth.",
   path: "/blog/criminal-lawyers-digital-marketing",

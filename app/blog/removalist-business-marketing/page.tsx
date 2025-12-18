@@ -7,6 +7,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import Link from 'next/link';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Removalist Business Marketing",
   description: "Expert guidance on removalist business marketing. Learn proven strategies and best practices for business growth.",
   path: "/blog/removalist-business-marketing",

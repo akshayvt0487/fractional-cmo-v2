@@ -6,6 +6,12 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Google Ads Conveyancing Guide",
   description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/google-ads-conveyancing-guide",

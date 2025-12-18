@@ -9,6 +9,12 @@ import { Card } from '@/components/ui/card';
 
 // SEO Metadata Generation
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Google Ads for Loan Brokers: Complete Mortgage Marketing Guide",
   description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2026.",
   path: "/blog/loan-broker-google-ads-strategy",

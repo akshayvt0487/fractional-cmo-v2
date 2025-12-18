@@ -6,6 +6,12 @@ import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import therapyGoogleAdsStrategyHero from "@/assets/blog/therapy-google-ads-strategy-hero.jpg";
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Therapy Google Ads Strategy",
   description: "Expert guidance on therapy google ads strategy. Learn proven strategies and best practices for business growth.",
   path: "/blog/therapy-google-ads-strategy",

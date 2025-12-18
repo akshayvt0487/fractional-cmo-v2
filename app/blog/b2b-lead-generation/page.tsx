@@ -12,6 +12,12 @@ import Citation from '@/components/Citation';
 // (Synced with articleData for consistency)
 // ————————————————————————————————————————
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
   description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
   path: "/blog/b2b-lead-generation",

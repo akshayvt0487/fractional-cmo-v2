@@ -6,6 +6,12 @@ import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import { Card } from '@/components/ui/card';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Loan Broker Digital Marketing Guide",
   description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
   path: "/blog/loan-broker-digital-marketing-guide",

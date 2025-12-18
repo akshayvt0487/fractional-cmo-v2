@@ -6,6 +6,12 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+
   title: "Digital Marketing for Finance Brokers: Complete Growth Strategy Guide 2026",
   description: "Master digital marketing for finance and mortgage brokers. Comprehensive guide covering SEO, Google Ads, content marketing, social media, and lead generation strategies.",
   path: "/blog/finance-broker-digital-marketing",

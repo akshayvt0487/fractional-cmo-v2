@@ -298,3 +298,9 @@ const ImmigrationLawyersGoogleAds = () => {
 };
 
 export default ImmigrationLawyersGoogleAds;
+
+export const metadata = {
+  canonical: 'https://fractional-cmo.com.au/blog/immigration-lawyers-google-ads',
+  robots: { index: true, follow: true, nocache: false },
+};
+

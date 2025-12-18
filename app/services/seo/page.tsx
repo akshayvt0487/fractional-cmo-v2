@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { SITE_URL } from '@/lib/seo';
 import { getMainServicePageData, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
 
@@ -10,6 +11,14 @@ export const metadata: Metadata = {
   title: data.metaTitle,
   description: data.metaDescription,
   keywords: data.keywords,
+  alternates: {
+    canonical: `${SITE_URL}/services/seo`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
   openGraph: {
     title: data.metaTitle,
     description: data.metaDescription,

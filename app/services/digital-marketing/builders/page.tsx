@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: data.metaTitle,
   description: data.metaDescription,
   keywords: data.keywords,
+  alternates: {
+    canonical: `https://fractional-cmo.com.au/services/digital-marketing/builders`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
   openGraph: {
     title: data.metaTitle,
     description: data.metaDescription,
