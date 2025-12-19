@@ -176,7 +176,7 @@ function generateSitemap(allRoutes) {
     const routes = [
       `/services/lead-generation/${industry}`,
       `/services/online-marketing/${industry}`,
-      `/services/seo-services/${industry}`,
+      `/services/seo/${industry}`,
     ];
     
     routes.forEach((route) => {

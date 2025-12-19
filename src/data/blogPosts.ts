@@ -485,6 +485,26 @@ export const blogPosts: BlogPost[] = [
     image: '/images/blog/fractional-vs-fulltime-cmo-hero.jpg'
   },
   {
+    title: "What is a Fractional CMO? Strategic Marketing Leadership for Growing Businesses",
+    excerpt: "Understand what a Fractional CMO is and how fractional marketing leadership can transform your business. Learn about responsibilities, benefits, and when you need this expertise.",
+    date: "December 10, 2025",
+    readTime: "8 min read",
+    slug: "what-is-fractional-cmo",
+    category: "fCMO",
+    author: "Basheer Padanna",
+    image: '/images/blog/fractional-cmo-what-is-hero.jpg'
+  },
+  {
+    title: "When to Hire a Fractional CMO: Signs Your Business Needs Strategic Marketing Leadership",
+    excerpt: "Identify key indicators and timing for hiring a fractional CMO to accelerate your business growth. Learn about readiness criteria and how to maximize fractional leadership value.",
+    date: "December 15, 2025",
+    readTime: "9 min read",
+    slug: "when-to-hire-fractional-cmo",
+    category: "fCMO",
+    author: "Basheer Padanna",
+    image: '/images/blog/when-hire-fractional-cmo-hero.jpg'
+  },
+  {
     title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
     excerpt: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods for sustainable growth.",
     date: "November 16, 2025",
