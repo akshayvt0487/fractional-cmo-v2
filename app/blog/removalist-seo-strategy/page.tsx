@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import Link from "next/link";
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -748,7 +749,14 @@ const RemovalistSEOStrategy = () => {
           <p className="text-base leading-relaxed mb-6">
             Remember, SEO is a marathon, not a sprint. The removalist businesses that consistently apply these strategies while focusing on genuine customer value will dominate local search results and build sustainable, profitable growth.
           </p>
+
+          <h2 className="text-3xl font-bold mb-6">Want to dominate local search?</h2>
+          
+          <p className="text-base leading-relaxed mb-6">
+          <Link href='/'> <strong>Fractional CMO </strong> </Link> helps removalist businesses increase leads, rankings and revenue with proven SEO systems. Book a strategy call today.
+          </p>
         </section>
+
 
       </div>
     </OptimizedBlogLayout>;

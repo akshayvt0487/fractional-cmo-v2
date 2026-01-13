@@ -7,6 +7,7 @@ import { blogPosts } from '@/data/blogPosts';
 
 import { Card, CardContent } from '@/components/ui/card';
 import StrategyForm from '@/components/ui/strategy-form';
+import Link from "next/link";
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -538,7 +539,7 @@ const NDISLeadGeneration = () => {
       <h2>Next Steps: Building Your Lead Generation System</h2>
       
       <p>
-        Successful NDIS lead generation requires a multi-channel approach combining digital marketing, referral relationships, and systematic nurturing processes. Start with the fundamentals—website optimization and Google Ads—then expand into SEO, content marketing, and professional networking as you build momentum.
+        Successful NDIS lead generation requires a multi-channel approach combining digital marketing, referral relationships, and systematic nurturing processes. Start with the fundamentals, website optimization and Google Ads, then expand into SEO, content marketing, and professional networking as you build momentum. <Link href='/'> <strong>Fractional CMO </strong> </Link> partners with disability service providers to implement these systems end-to-end, helping them build predictable participant acquisition pipelines and scale sustainably while staying fully compliant with NDIS guidelines.
       </p>
 
       <p className="text-lg font-semibold">

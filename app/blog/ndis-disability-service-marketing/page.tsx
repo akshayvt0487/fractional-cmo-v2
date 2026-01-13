@@ -7,6 +7,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import StrategyForm from '@/components/ui/strategy-form';
+import Link from "next/link";
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -817,7 +818,7 @@ const NDISDisabilityServiceMarketing = () => {
       <div className="bg-gradient-to-r from-purple-50 to-indigo-50 border-l-4 border-l-purple-500 p-6 mb-8">
         <h3 className="text-lg font-semibold mb-3 text-purple-800">Ready to Transform Your NDIS Marketing?</h3>
         <p className="text-gray-700 mb-4">
-          Implementing a comprehensive, compliant marketing strategy for your disability service business requires expertise, time, and ongoing optimization. Our team specializes in NDIS-compliant marketing strategies that drive participant acquisition while maintaining the highest standards of accessibility and quality.
+         Implementing a comprehensive, compliant marketing strategy for your disability service business requires expertise, time, and ongoing optimization. <Link href='/'> <strong>Fractional CMO </strong> </Link> specializes in NDIS-compliant marketing strategies that drive participant acquisition while maintaining the highest standards of accessibility and quality.
         </p>
       </div>
 

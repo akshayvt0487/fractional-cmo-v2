@@ -5,6 +5,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import { Card } from '@/components/ui/card';
+import Link from "next/link";
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -695,7 +696,7 @@ const LoanBrokerDigitalMarketing = () => {
 
       <h2>Ready to Grow Your Brokerage Business?</h2>
       <p>
-        Successful digital marketing for loan brokers requires balancing promotional efforts with educational content, maintaining regulatory compliance while building trust, and leveraging local market knowledge to attract and convert qualified borrowers.
+       Successful digital marketing for loan brokers requires balancing promotional efforts with education, staying compliant, and building trust at every stage of the borrower journey. If you want support putting all of this into action, <Link href='/'> <strong>Fractional CMO </strong> </Link>  helps loan brokers create simple, effective marketing systems that consistently attract qualified borrowers and turn them into long-term clients. We take the guesswork out of digital marketing so you can focus on what you do best, helping people secure the right loan.
       </p>
     </OptimizedBlogLayout>;
 };

@@ -5,6 +5,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import Link from "next/link";
 
 
 // ————————————————————————————————————————
@@ -713,6 +714,11 @@ const B2BLeadGeneration = () => {
 
       <p className="mb-8">
         The strategies outlined in this guide provide a comprehensive roadmap for B2B lead generation success. Implement them systematically, measure your results, and continuously optimize based on data. Your investment in strategic lead generation will compound over time, creating a sustainable competitive advantage.
+      </p>
+
+      <p>
+         <Link href='/'> <strong>Fractional CMO </strong> </Link> helps organisations turn these strategies into predictable, scalable lead generation engines that deliver measurable ROI across every stage of the funnel.
+
       </p>
 
       <Citation source="B2B Marketing Association Study 2024" url="https://www.b2bmarketing.net/research" title="B2B companies with strong lead generation processes achieve 133% greater revenue growth than those without systematic approaches." />

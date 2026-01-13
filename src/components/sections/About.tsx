@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import LazyImage from "@/components/LazyImage";
 import basheerPhoto from "@/assets/Basheer-Padanna.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -41,7 +42,7 @@ const About = () => {
             </div>
             
             <Button asChild className="bg-gray-900 text-white font-semibold hover:bg-gray-900/90">
-              <a href="/#contact">Work with me</a>
+              <Link href="/#contact">Work with me</Link>
             </Button>
           </div>
           

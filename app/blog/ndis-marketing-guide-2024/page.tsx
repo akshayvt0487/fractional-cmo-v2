@@ -7,6 +7,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import Link from "next/link";
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -514,7 +515,7 @@ const NDISMarketingGuide = () => {
         </p>
 
         <p>
-          Success in NDIS marketing comes from consistency, authenticity, and genuine commitment to participant wellbeing. Focus on building long-term relationships rather than short-term transactions, and always prioritize participant choice, control, and independence in all your marketing activities.
+         Success in NDIS marketing comes from consistency, authenticity, and genuine commitment to participant wellbeing. Focus on building long-term relationships rather than short-term transactions, and always prioritize participant choice, control, and independence in all your marketing activities.  <Link href='/'> <strong>Fractional CMO </strong> </Link>works with disability service providers to implement these strategies ethically and effectively, helping them build sustainable marketing systems that attract the right participants while upholding the highest NDIS practice standards.
         </p>
 
         <Citation source="NDIS Quarterly Report Q3 2024" url="https://www.ndis.gov.au/about-us/publications/quarterly-reports" title="The NDIS now supports over 610,000 participants with market growth of 12% annually, creating opportunities for providers who prioritize participant-centered marketing and service delivery." />

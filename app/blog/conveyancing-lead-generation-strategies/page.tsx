@@ -6,6 +6,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import Link from "next/link";
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -594,7 +595,11 @@ const ConveyancingLeadGeneration = () => {
         </p>
 
         <p>
-          Remember that every property transaction represents a significant life event for your clients. By positioning your firm as a trusted advisor who simplifies the conveyancing process, you&apos;ll not only generate more leads but also build a reputation that drives referrals and repeat business for years to come.
+          "Remember that every property transaction represents a significant life event for your clients. By positioning your firm as a trusted advisor who simplifies the conveyancing process, you'll not only generate more leads but also build a reputation that drives referrals and repeat business for years to come. <Link href='/'> <strong>Fractional CMO </strong> </Link>works with property law firms to implement these digital marketing strategies effectively, helping you attract high-quality clients, streamline lead generation, and build sustainable growth while maintaining professional integrity."
+
+        </p>
+        <p>
+          Conveyancing firms that partner with <Link href='/'> <strong>Fractional CMO </strong> </Link> gain a proven digital growth framework designed specifically to increase leads, improve conversion, and build long-term market dominance.
         </p>
 
         <Citation source="Australian Property Council Market Report 2024" url="https://www.propertycouncil.com.au" title="Property transactions in Australia reached 1.2 million in 2024, with 73% of buyers using online channels to research conveyancing services." />

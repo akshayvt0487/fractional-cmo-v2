@@ -6,6 +6,7 @@ import fractionalCMOVsFullTimeImage from "@/assets/blog/fractional-cmo-vs-full-t
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import Link from "next/link";
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -309,6 +310,9 @@ const FractionalCMOVsFullTime = () => {
 
         <p>
           For most startups and growing businesses ($1M+ targeted annual revenue), a Fractional CMO provides the optimal balance of expertise, flexibility, and cost-effectiveness. As you scale beyond $50M and develop complex marketing operations, transitioning to full-time leadership often makes strategic sense.
+        </p>
+         <p>
+         If you're evaluating marketing leadership options, <Link href="/"><strong>Fractional CMO</strong></Link> can help you determine the right model through a personalized assessment.
         </p>
     </OptimizedBlogLayout>;
 };

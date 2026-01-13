@@ -4,6 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 // client hook removed from server page to avoid server-side invocation
 export const metadata = createMetadata({
@@ -557,6 +558,10 @@ const RemovalistDigitalMarketing = () => {
                 <li>6. <strong>Monitor and Optimize:</strong> Monthly performance reviews and strategy adjustments</li>
               </ol>
             </div>
+
+            <p>
+              If all of this feels like a lot to juggle on your own, you're not alone. Many removalist businesses struggle to keep up with SEO, Google Ads, reviews, and day-to-day operations at the same time. That’s exactly where <Link href='/'> <strong>Fractional CMO </strong> </Link>  steps in. We help removalists build simple, predictable marketing systems that bring in consistent leads, improve online visibility, and turn your website into a real growth engine. If you’re ready to take your moving business to the next level, we’re here to make that process easier, clearer, and a whole lot more effective.
+            </p>
           </CardContent>
         </Card>
       </section>

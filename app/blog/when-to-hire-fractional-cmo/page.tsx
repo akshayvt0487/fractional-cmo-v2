@@ -5,6 +5,7 @@ import whenToHireFractionalCMOImage from "@/assets/blog/when-hire-fractional-cmo
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import StrategyForm from "@/components/ui/strategy-form";
 import { relatedArticles } from "@/utils/seoUtils";
+import Link from "next/link";
 
 const WhenToHireFractionalCMO = () => {
   const articleData = {
@@ -554,7 +555,7 @@ const WhenToHireFractionalCMO = () => {
          <div className="bg-card border rounded-lg p-6 my-8">
            <h3 className="text-xl font-semibold mb-4">Ready to Assess Your Fractional CMO Readiness?</h3>
            <p className="text-muted-foreground mb-4">
-             Schedule a strategic consultation to evaluate your marketing leadership needs and determine if fractional CMO services align with your growth objectives and business stage.
+            Book a strategic consultation with <Link href='/'> Fractional CMO</Link> to assess your marketing leadership needs and determine whether our services are the right next step for your growth.
            </p>
            <StrategyForm preSelectedService="strategy" />
          </div>
