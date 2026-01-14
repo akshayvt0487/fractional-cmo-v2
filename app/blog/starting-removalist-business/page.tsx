@@ -14,12 +14,12 @@ export const metadata = createMetadata({
 
   title: "Starting Removalist Business Guide",
   description: "Expert guidance on starting removalist business guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/starting-removalist-business-guide",
+  path: "/blog/starting-removalist-business",
   keywords: ["starting", "removalist", "business", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Starting Removalist Business Guide",
     description: "Expert guidance on starting removalist business guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/starting-removalist-business-guide",
+    url: "https://fractional-cmo.com.au/blog/starting-removalist-business",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,8 +57,8 @@ const StartingRemovalistBusiness = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2021-07-14",
-    url: "/blog/starting-removalist-business-guide",
-    imageUrl: "/images/blog/starting-removalist-business-guide-hero.jpg",
+    url: "/blog/starting-removalist-business",
+    imageUrl: "/images/blog/starting-removalist-business-hero.jpg",
     category: "Trade Business",
     readTime: "24 min read",
     tags: ["removalist business", "startup guide", "business licensing", "moving company"]

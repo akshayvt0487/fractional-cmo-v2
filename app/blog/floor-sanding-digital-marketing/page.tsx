@@ -12,12 +12,12 @@ export const metadata = createMetadata({
 
   title: "Floor Sanding Digital Marketing Guide",
   description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/floor-sanding-digital-marketing-guide",
+  path: "/blog/floor-sanding-digital-marketing",
   keywords: ["floor", "sanding", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Floor Sanding Digital Marketing Guide",
     description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/floor-sanding-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/floor-sanding-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -55,8 +55,8 @@ const FloorSandingDigitalMarketing = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-15",
-    url: "/blog/floor-sanding-digital-marketing-guide",
-    imageUrl: "/images/blog/floor-sanding-digital-marketing-guide-hero.jpg",
+    url: "/blog/floor-sanding-digital-marketing",
+    imageUrl: "/images/blog/floor-sanding-digital-marketing-hero.jpg",
     category: "Trade Marketing",
     readTime: "24 min read",
     tags: ["floor sanding", "digital marketing", "trade business", "home improvement"]

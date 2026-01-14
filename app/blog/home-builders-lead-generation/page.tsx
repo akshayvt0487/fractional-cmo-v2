@@ -13,12 +13,12 @@ export const metadata = createMetadata({
 
   title: "Home Builders Lead Generation Guide",
   description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/home-builders-lead-generation-guide",
+  path: "/blog/home-builders-lead-generation",
   keywords: ["home", "builders", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Home Builders Lead Generation Guide",
     description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/home-builders-lead-generation-guide",
+    url: "https://fractional-cmo.com.au/blog/home-builders-lead-generation",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -56,8 +56,8 @@ const HomeBuildersLeadGeneration = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-10T00:00:00.000Z",
-    url: "/blog/home-builders-lead-generation-guide",
-    imageUrl: "/images/blog/home-builders-lead-generation-guide-hero.jpg",
+    url: "/blog/home-builders-lead-generation",
+    imageUrl: "/images/blog/home-builders-lead-generation-hero.jpg",
     category: "Construction",
     readTime: "26 min read",
     tags: ["Home Builders", "Lead Generation", "Construction Marketing", "Digital Marketing", "Client Acquisition"]

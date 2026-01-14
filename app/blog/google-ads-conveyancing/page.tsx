@@ -14,12 +14,12 @@ export const metadata = createMetadata({
 
   title: "Google Ads Conveyancing Guide",
   description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/google-ads-conveyancing-guide",
+  path: "/blog/google-ads-conveyancing",
   keywords: ["google", "conveyancing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Google Ads Conveyancing Guide",
     description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/google-ads-conveyancing-guide",
+    url: "https://fractional-cmo.com.au/blog/google-ads-conveyancing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,8 +57,8 @@ const ConveyancingGoogleAds = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-09-04T00:00:00.000Z",
-    url: "/blog/google-ads-conveyancing-guide",
-    imageUrl: "/images/blog/google-ads-conveyancing-guide-hero.jpg",
+    url: "/blog/google-ads-conveyancing",
+    imageUrl: "/images/blog/google-ads-conveyancing-hero.jpg",
     category: "Legal Marketing",
     readTime: "24 min read",
     tags: ["Google Ads", "Conveyancing", "PPC", "Property Law", "Legal Marketing"]

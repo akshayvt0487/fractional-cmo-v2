@@ -21,7 +21,7 @@ export const metadata = createMetadata({
 
   title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
   description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
-  path: "/blog/accounting-growth-strategy-guide",
+  path: "/blog/accounting-growth-strategy",
   keywords: ["accounting growth strategy", "accounting practice growth", "accounting firm business development", "CPA firm growth", "service expansion", "team building", "accounting client acquisition"],
   openGraph: {
     title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
@@ -74,7 +74,7 @@ const AccountingGrowthStrategy = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.213Z", // Synced with metadata for freshness
-    url: "/blog/accounting-growth-strategy-guide",
+    url: "/blog/accounting-growth-strategy",
     imageUrl: '/images/blog/accounting-growth-strategy-hero.jpg',
     category: "Accounting",
     readTime: "26 min read",

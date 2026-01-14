@@ -14,12 +14,12 @@ export const metadata = createMetadata({
 
   title: "It Consulting Lead Generation Guide",
   description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/it-consulting-lead-generation-guide",
+  path: "/blog/it-consulting-lead-generation",
   keywords: ["consulting", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "It Consulting Lead Generation Guide",
     description: "Expert guidance on it consulting lead generation guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/it-consulting-lead-generation-guide",
+    url: "https://fractional-cmo.com.au/blog/it-consulting-lead-generation",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,8 +57,8 @@ const ITConsultingLeadGeneration = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-20T00:00:00.000Z",
-    url: "/blog/it-consulting-lead-generation-guide",
-    imageUrl: "/images/blog/it-consulting-lead-generation-guide-hero.jpg",
+    url: "/blog/it-consulting-lead-generation",
+    imageUrl: "/images/blog/it-consulting-lead-generation-hero.jpg",
     category: "IT Services",
     readTime: "26 min read",
     tags: ["IT Consulting", "Lead Generation", "Enterprise Sales", "Technology Marketing", "B2B Lead Generation"]

@@ -12,18 +12,18 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Digital Marketing for Buyers Agents: Complete Strategy Guide 2026",
-  description: "Master digital marketing for buyers agents with proven SEO, content marketing, social media, and lead generation strategies. Comprehensive guide for property buyers advocates.",
+  title: "Buyers Agents Digital Marketing Channels | SEO + Content + Paid Guide 2026",
+  description: "Multi-channel digital marketing for buyers agents: use local SEO, educational content, LinkedIn, and paid ads to build authority and attract property buyers in your market.",
   path: "/blog/buyers-agents-digital-marketing",
   keywords: ["buyers agents", "digital marketing", "property marketing", "real estate marketing", "SEO", "content marketing"],
   openGraph: {
-    title: "Digital Marketing for Buyers Agents: Complete Strategy Guide 2026",
-    description: "Master digital marketing for buyers agents with proven SEO, content marketing, social media, and lead generation strategies.",
+    title: "Buyers Agents Digital Marketing Channels | SEO + Content + Paid Guide 2026",
+    description: "Multi-channel digital marketing for buyers agents: use local SEO, educational content, LinkedIn, and paid ads to build authority and attract buyers.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/buyers-agents-digital-marketing`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-digital-marketing.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-google-ads-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Digital Marketing Strategy for Buyers Agents"
@@ -36,7 +36,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Digital Marketing for Buyers Agents: Complete Strategy Guide 2026",
     description: "Master digital marketing for buyers agents with proven strategies.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-digital-marketing.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-google-ads-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -62,7 +62,7 @@ const BuyersAgentsDigitalMarketing = () => {
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2025-01-15T00:00:00.000Z",
     url: "/blog/buyers-agents-digital-marketing",
-    imageUrl: '/images/blog/buyers-agents-digital-marketing.jpg',
+    imageUrl: '/images/blog/buyers-agents-google-ads-hero.jpg',
     category: "Digital Marketing",
     readTime: "18 min read",
     tags: ["Buyers Agents", "Digital Marketing", "Property Marketing", "Real Estate Marketing", "SEO"]
@@ -92,7 +92,7 @@ const BuyersAgentsDigitalMarketing = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={'/images/blog/buyers-agents-digital-marketing.jpg'}
+      heroImage={'/images/blog/buyers-agents-google-ads-hero.jpg'}
       heroAlt="Digital Marketing Strategy for Buyers Agents"
     >
       <Card className="mb-8 bg-primary/5 border-primary/20">

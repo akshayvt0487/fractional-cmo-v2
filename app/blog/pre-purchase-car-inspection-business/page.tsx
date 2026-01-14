@@ -14,12 +14,12 @@ export const metadata = createMetadata({
 
   title: "Pre Purchase Car Inspection Business Guide",
   description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/pre-purchase-car-inspection-business-guide",
+  path: "/blog/pre-purchase-car-inspection-business",
   keywords: ["purchase", "inspection", "business", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Pre Purchase Car Inspection Business Guide",
     description: "Expert guidance on pre purchase car inspection business guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/pre-purchase-car-inspection-business-guide",
+    url: "https://fractional-cmo.com.au/blog/pre-purchase-car-inspection-business",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,8 +57,8 @@ const PrePurchaseCarInspection = () => {
     author: "Automotive Inspection Expert",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-02-12T00:00:00.000Z",
-    url: "/blog/pre-purchase-car-inspection-business-guide",
-    imageUrl: "/images/blog/pre-purchase-car-inspection-business-guide-hero.jpg",
+    url: "/blog/pre-purchase-car-inspection-business",
+    imageUrl: "/images/blog/pre-purchase-car-inspection-business-hero.jpg",
     category: "Automotive",
     readTime: "24 min read",
     tags: ["Car Inspection", "Automotive Business", "Pre-Purchase Inspection", "Mobile Service", "Trade Business"]

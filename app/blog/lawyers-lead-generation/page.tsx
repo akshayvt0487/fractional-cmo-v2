@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import Link from "next/link";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
@@ -578,15 +579,15 @@ const LawyersLeadGeneration = () => {
       <section className="my-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
         <h3 className="text-2xl font-bold mb-4">Ready to Accelerate Your Legal Practice Growth?</h3>
         <p className="mb-6 text-muted-foreground">
-          Ethical, effective lead generation is crucial for law firm growth. Our <a href="/services/lead-generation/lawyers" className="text-blue-600 font-semibold hover:underline">lead generation services for lawyers</a> combine proven digital marketing strategies with compliance best practices to attract qualified clients to your practice.
+          Ethical, effective lead generation is crucial for law firm growth. Our <Link href="/services/lead-generation/lawyers" className="text-blue-600 font-semibold hover:underline">lead generation services for lawyers</Link> combine proven digital marketing strategies with compliance best practices to attract qualified clients to your practice.
         </p>
         <p className="mb-6 text-muted-foreground">
           Explore our other legal services marketing services:
         </p>
         <ul className="space-y-2 mb-6">
-          <li>• <a href="/services/seo-services/lawyers" className="text-blue-600 font-semibold hover:underline">SEO for Lawyers</a> - Rank higher for legal search queries</li>
-          <li>• <a href="/services/google-ads/lawyers" className="text-blue-600 font-semibold hover:underline">Google Ads for Law Firms</a> - Targeted campaigns for qualified leads</li>
-          <li>• <a href="/services/digital-marketing/lawyers" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Lawyers</a> - Complete growth strategy</li>
+          <li>• <Link href="/services/seo/lawyers" className="text-blue-600 font-semibold hover:underline">SEO for Lawyers</Link> - Rank higher for legal search queries</li>
+          <li>• <Link href="/services/google-ads/lawyers" className="text-blue-600 font-semibold hover:underline">Google Ads for Law Firms</Link> - Targeted campaigns for qualified leads</li>
+          <li>• <Link href="/services/digital-marketing/lawyers" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Lawyers</Link> - Complete growth strategy</li>
         </ul>
       </section>
 

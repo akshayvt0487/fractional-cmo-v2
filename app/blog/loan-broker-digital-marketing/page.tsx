@@ -15,12 +15,12 @@ export const metadata = createMetadata({
 
   title: "Loan Broker Digital Marketing Guide",
   description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/loan-broker-digital-marketing-guide",
+  path: "/blog/loan-broker-digital-marketing",
   keywords: ["loan", "broker", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Loan Broker Digital Marketing Guide",
     description: "Expert guidance on loan broker digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/loan-broker-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/loan-broker-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -58,8 +58,8 @@ const LoanBrokerDigitalMarketing = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-02T00:00:00.000Z",
-    url: "/blog/loan-broker-digital-marketing-guide",
-    imageUrl: "/images/blog/loan-broker-digital-marketing-guide-hero.jpg",
+    url: "/blog/loan-broker-digital-marketing",
+    imageUrl: "/images/blog/loan-broker-digital-marketing-hero.jpg",
     category: "Finance",
     readTime: "24 min read",
     tags: ["Loan Brokers", "Digital Marketing", "Mortgage Marketing", "Financial Services", "Client Acquisition"]

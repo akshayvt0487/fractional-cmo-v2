@@ -20,16 +20,16 @@ export const metadata = createMetadata({
 
   title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
   description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
-  path: "/blog/accounting-digital-marketing-guide",
+  path: "/blog/accounting-digital-marketing",
   keywords: ["accounting", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy", "CPA marketing", "client acquisition"],
   openGraph: {
     title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
     description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/accounting-digital-marketing-guide`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/accounting-digital-marketing`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-digital-marketing-hero.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-growth-strategy-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Comprehensive Digital Marketing Guide for Accountants"
@@ -42,7 +42,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
     description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-digital-marketing-hero.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-growth-strategy-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -72,7 +72,7 @@ const AccountingDigitalMarketing = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.167Z", // Synced with metadata for freshness
-    url: "/blog/accounting-digital-marketing-guide",
+    url: "/blog/accounting-digital-marketing",
     imageUrl: '/images/blog/accounting-digital-marketing-hero.jpg',
     category: "Digital Marketing",
     readTime: "25 min read",
@@ -99,7 +99,7 @@ const AccountingDigitalMarketing = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={'/images/blog/accounting-digital-marketing-hero.jpg'}
+      heroImage={'/images/blog/accounting-growth-strategy-hero.jpg'}
       heroAlt="Professional accounting firm implementing digital marketing strategies"
     >
       <Card className="mb-8 bg-primary/5 border-primary/20">

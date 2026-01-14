@@ -23,6 +23,12 @@ export const metadata: Metadata = {
     url: 'https://fractional-cmo.com.au/services/digital-marketing/buyers-agents',
     siteName: 'Fractional CMO',
     type: 'website',
+    images: [{
+      url: 'https://fractional-cmo.com.au/images/services/buyers-agents-digital-marketing-hero.jpg',
+      width: 1200,
+      height: 630,
+      alt: data.metaTitle,
+    }],
   },
   twitter: {
     card: 'summary_large_image',

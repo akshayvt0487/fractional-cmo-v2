@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import StrategyForm from "@/components/ui/strategy-form";
+import Link from "next/link";
 
 interface CTAProps {
   service?: string;
@@ -10,7 +11,7 @@ const CTA = ({ service }: CTAProps = {}) =>
     <div className="container px-4">
       <div className="glass-card rounded-xl p-6 md:p-10 text-center max-w-4xl mx-auto">
         <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl leading-tight">
-          Let&apos;s map your next growth chapter
+          Plan Your Growth with a Fractional CMO
         </h2>
         <p className="mt-3 text-base md:text-lg text-muted-foreground">
           Book a free 45‑minute strategy call.
@@ -18,7 +19,7 @@ const CTA = ({ service }: CTAProps = {}) =>
         <div className="mt-6 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
           <StrategyForm preSelectedService={service} />
           <Button variant="secondary" size="lg" asChild className="w-full sm:w-auto border-1 hover:bg-gray-100">
-            <a href="/#services" aria-label="View engagements">View engagements</a>
+            <Link href="/#services" aria-label="View engagements">View engagements</Link>
           </Button>
         </div>
       </div>

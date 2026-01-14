@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import Link from "next/link";
 import React from 'react';
 import Citation from '@/components/Citation';
 import { citations } from '@/utils/blogCitations';
@@ -654,7 +655,7 @@ const LocalSEOTrade = () => {
 
         <h2>Integration with Broader Marketing Strategies</h2>
         <p>
-          Local SEO works best when integrated with comprehensive digital marketing strategies. Consider how local SEO complements <a href="/blog/digital-marketing-roi-service-businesses" className="text-primary hover:underline">digital marketing ROI measurement</a> and works alongside <a href="/blog/google-ads-service-businesses" className="text-primary hover:underline">Google Ads for service businesses</a>.
+          Local SEO works best when integrated with comprehensive digital marketing strategies. Consider how local SEO complements <Link href="/blog/digital-marketing-roi-service-businesses" className="text-primary hover:underline">digital marketing ROI measurement</Link> and works alongside <Link href="/blog/google-ads-service-businesses" className="text-primary hover:underline">Google Ads for service businesses</Link>.
         </p>
 
         <h3>Cross-Channel Integration Opportunities</h3>

@@ -21,12 +21,12 @@ export const metadata = createMetadata({
 
   title: "Ndis Software Saas Marketing Guide",
   description: "Expert guidance on ndis software saas marketing guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/ndis-software-saas-marketing-guide",
+  path: "/blog/ndis-software-saas-marketing",
   keywords: ["ndis", "software", "saas", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Ndis Software Saas Marketing Guide",
     description: "Expert guidance on ndis software saas marketing guide. Learn proven strategies and best practices for business growth.",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/ndis-software-saas-marketing-guide`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/ndis-software-saas-marketing`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -64,7 +64,7 @@ const NDISSoftwareSaaSMarketing = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-20",
-    url: "/blog/ndis-software-saas-marketing-guide",
+    url: "/blog/ndis-software-saas-marketing",
     imageUrl: "/images/blog/ndis-provider-registration-new.jpg"
   });
   const relatedArticles = [{
@@ -89,7 +89,7 @@ const NDISSoftwareSaaSMarketing = () => {
     category: "Digital Marketing"
   }];
   return <>
-      <SEO title="NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies" description="Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively." canonical="/blog/ndis-software-saas-marketing-guide" ogType="article" articlePublishedTime={convertDateFormat(post.date) + "T00:00:00Z"} articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Marketing", "B2B Software", "Digital Marketing", "Growth Strategy"]} structuredData={articleSchema} />
+      <SEO title="NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies" description="Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively." canonical="/blog/ndis-software-saas-marketing" ogType="article" articlePublishedTime={convertDateFormat(post.date) + "T00:00:00Z"} articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Marketing", "B2B Software", "Digital Marketing", "Growth Strategy"]} structuredData={articleSchema} />
       <Header />
       <div className="min-h-screen bg-background pt-24">
         <div className="container max-w-4xl py-8">
@@ -98,7 +98,7 @@ const NDISSoftwareSaaSMarketing = () => {
           href: "/blog"
         }, {
           label: "NDIS Software SaaS Marketing",
-          href: "/blog/ndis-software-saas-marketing-guide"
+          href: "/blog/ndis-software-saas-marketing"
         }]} />
           
           <article className="prose prose-lg max-w-none">

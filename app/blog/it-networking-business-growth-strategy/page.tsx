@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import Link from "next/link";
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
@@ -364,7 +365,7 @@ const ITNetworkingGrowthStrategy = () => {
       <h2>Digital Marketing for IT Networking Firms</h2>
       
       <p>
-        Modern IT networking businesses must leverage digital marketing to reach decision-makers who research solutions online before engaging vendors. <a href="/blog/it-consulting-digital-marketing-strategy" className="text-primary hover:underline">Strategic digital marketing</a> can differentiate your firm and generate qualified leads.
+        Modern IT networking businesses must leverage digital marketing to reach decision-makers who research solutions online before engaging vendors. <Link href="/blog/it-consulting-digital-marketing-strategy" className="text-primary hover:underline">Strategic digital marketing</Link> can differentiate your firm and generate qualified leads.
       </p>
 
       <h3>Content Marketing Strategy</h3>
@@ -463,7 +464,7 @@ const ITNetworkingGrowthStrategy = () => {
       <ul className="space-y-2 mb-6">
         <li><strong>Certification Roadmap:</strong> Plan team certifications for emerging technologies</li>
         <li><strong>Service Portfolio Audit:</strong> Evaluate which services generate the highest margins</li>
-        <li><strong>Digital Marketing Launch:</strong> Start content creation and <a href="/blog/local-seo-trade-businesses" className="text-primary hover:underline">local SEO optimization</a></li>
+        <li><strong>Digital Marketing Launch:</strong> Start content creation and <Link href="/blog/local-seo-trade-businesses" className="text-primary hover:underline">local SEO optimization</Link></li>
         <li><strong>Partnership Development:</strong> Identify complementary service providers for referral relationships</li>
         <li><strong>Client Success Program:</strong> Implement systematic client satisfaction and retention initiatives</li>
       </ul>

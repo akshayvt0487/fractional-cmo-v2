@@ -14,12 +14,12 @@ export const metadata = createMetadata({
 
   title: "Painters Digital Marketing Guide",
   description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/painters-digital-marketing-guide",
+  path: "/blog/painters-digital-marketing",
   keywords: ["painters", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Painters Digital Marketing Guide",
     description: "Expert guidance on painters digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/painters-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/painters-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,8 +57,8 @@ const PaintersDigitalMarketing = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-07T00:00:00.000Z",
-    url: "/blog/painters-digital-marketing-guide",
-    imageUrl: "/images/blog/painters-digital-marketing-guide-hero.jpg",
+    url: "/blog/painters-digital-marketing",
+    imageUrl: "/images/blog/painters-digital-marketing-hero.jpg",
     category: "Trade Marketing",
     readTime: "24 min read",
     tags: ["Digital Marketing", "Painting Business", "Local SEO", "Trade Marketing", "Business Growth"]

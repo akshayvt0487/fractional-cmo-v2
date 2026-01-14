@@ -152,10 +152,10 @@
         { "question": "Will SEO work alongside my paid advertising?", "answer": "Absolutely. SEO and paid advertising complement each other perfectly. While SEO builds long-term organic presence, paid ads provide immediate visibility. Together, they maximize your search engine real estate and overall marketing effectiveness." }
       ],
       "relatedArticles": [
-        { "title": "Local Search Ranking Strategies for Australian Businesses", "description": "Master local SEO to dominate search results in your service area.", "url": "/blog/local-search-ranking-strategies", "category": "SEO" },
+        { "title": "Local Search Ranking Strategies for Australian Businesses", "description": "Master local SEO to dominate search results in your service area.", "url": "/blog/local-search-ranking", "category": "SEO" },
         { "title": "Local SEO for Trade Businesses", "description": "Complete guide to local SEO strategies for tradies and service providers.", "url": "/blog/local-seo-trade-businesses", "category": "SEO" },
-        { "title": "Conveyancing SEO Guide", "description": "SEO strategies specifically for conveyancing and legal professionals.", "url": "/blog/conveyancing-seo-guide", "category": "SEO" },
-        { "title": "Financial Planner SEO Guide", "description": "How financial planners can improve organic search visibility.", "url": "/blog/financial-planner-seo-guide", "category": "SEO" }
+        { "title": "Conveyancing SEO Guide", "description": "SEO strategies specifically for conveyancing and legal professionals.", "url": "/blog/conveyancing-seo", "category": "SEO" },
+        { "title": "Financial Planner SEO Guide", "description": "How financial planners can improve organic search visibility.", "url": "/blog/financial-planner-seo", "category": "SEO" }
       ],
       "benefits": [
         "Sustainable organic traffic growth",
@@ -220,9 +220,9 @@
       ],
       "relatedArticles": [
         { "title": "Digital Marketing ROI for Service Businesses", "description": "How to measure and maximize digital marketing return on investment.", "url": "/blog/digital-marketing-roi-service-businesses", "category": "Digital Marketing" },
-        { "title": "Digital Marketing Automation Guide", "description": "Streamline your marketing with automation strategies that scale.", "url": "/blog/digital-marketing-automation-guide", "category": "Digital Marketing" },
+        { "title": "Digital Marketing Automation Guide", "description": "Streamline your marketing with automation strategies that scale.", "url": "/blog/digital-marketing-automation", "category": "Digital Marketing" },
         { "title": "Digital Strategy for Modern Business", "description": "Building a comprehensive digital strategy for business growth.", "url": "/blog/digital-strategy-modern-business", "category": "Digital Marketing" },
-        { "title": "B2B Lead Generation Strategies", "description": "Proven tactics for generating high-quality B2B leads online.", "url": "/blog/b2b-lead-generation-strategies", "category": "Lead Generation" }
+        { "title": "B2B Lead Generation Strategies", "description": "Proven tactics for generating high-quality B2B leads online.", "url": "/blog/b2b-lead-generation", "category": "Lead Generation" }
       ],
       "benefits": [
         "Unified strategy across all digital channels",
@@ -289,7 +289,7 @@
         { "title": "Growth Marketing Strategy Guide", "description": "Comprehensive guide to building a growth marketing strategy that scales.", "url": "/blog/growth-marketing-strategy", "category": "Growth Marketing" },
         { "title": "NDIS Business Growth Strategy", "description": "Strategic growth framework for NDIS service providers.", "url": "/blog/ndis-business-growth-strategy", "category": "NDIS" },
         { "title": "Trade Business Growth Strategies", "description": "Proven growth strategies for trade and service businesses.", "url": "/blog/trade-business-growth-strategies", "category": "Business Growth" },
-        { "title": "Accounting Growth Strategy Guide", "description": "Growth strategies for accounting and financial services firms.", "url": "/blog/accounting-growth-strategy-guide", "category": "Professional Services" }
+        { "title": "Accounting Growth Strategy Guide", "description": "Growth strategies for accounting and financial services firms.", "url": "/blog/accounting-growth-strategy", "category": "Professional Services" }
       ],
       "benefits": [
         "Clear growth roadmap with priorities",
@@ -420,8 +420,8 @@
         { "question": "What about spam compliance and deliverability?", "answer": "We ensure full compliance with Australian spam laws and international regulations (GDPR, CAN-SPAM). Our approach includes proper consent management, list hygiene, authentication setup, and deliverability monitoring to keep your emails out of spam folders." }
       ],
       "relatedArticles": [
-        { "title": "Digital Marketing Automation Guide", "description": "How to automate your email and marketing workflows for scale.", "url": "/blog/digital-marketing-automation-guide", "category": "Marketing Automation" },
-        { "title": "B2B Lead Generation Strategies", "description": "Email's role in B2B lead nurturing and conversion.", "url": "/blog/b2b-lead-generation-strategies", "category": "Lead Generation" },
+        { "title": "Digital Marketing Automation Guide", "description": "How to automate your email and marketing workflows for scale.", "url": "/blog/digital-marketing-automation", "category": "Marketing Automation" },
+        { "title": "B2B Lead Generation Strategies", "description": "Email's role in B2B lead nurturing and conversion.", "url": "/blog/b2b-lead-generation", "category": "Lead Generation" },
         { "title": "NDIS Participant Engagement Strategies", "description": "Using email to engage and retain NDIS participants.", "url": "/blog/ndis-participant-engagement-strategies", "category": "NDIS" },
         { "title": "Trade Customer Retention Strategies", "description": "Email strategies to retain and upsell trade customers.", "url": "/blog/trade-customer-retention-strategies", "category": "Customer Retention" }
       ],
@@ -458,7 +458,7 @@
         "googleAds": ["ndis-google-ads-respite-sil-western-sydney"],
         "seo": ["ndis-web-design-guide", "ndis-digital-marketing-excellence"],
         "leadGeneration": ["advanced-ndis-lead-generation", "ndis-lead-generation-mastery", "ndis-lead-generation-strategies"],
-        "digitalMarketing": ["ndis-digital-marketing-strategies", "ndis-marketing-guide-2024", "ndis-disability-service-marketing"]
+        "digitalMarketing": ["ndis-digital-marketing-strategies", "ndis-marketing-guide", "ndis-disability-service-marketing"]
       }
     },
     "builders": {
@@ -476,8 +476,8 @@
       "relatedBlogSlugs": {
         "googleAds": ["google-ads-service-businesses"],
         "seo": ["local-seo-trade-businesses", "local-search-ranking-strategies"],
-        "leadGeneration": ["home-builders-lead-generation-guide", "construction-lead-generation-strategies"],
-        "digitalMarketing": ["renovation-builders-digital-marketing-guide", "construction-marketing-best-practices"]
+        "leadGeneration": ["home-builders-lead-generation", "construction-lead-generation-strategies"],
+        "digitalMarketing": ["renovation-builders-digital-marketing", "construction-marketing-best-practices"]
       }
     },
     "painters": {
@@ -496,7 +496,7 @@
         "googleAds": ["google-ads-service-businesses"],
         "seo": ["local-seo-trade-businesses", "local-search-ranking-strategies"],
         "leadGeneration": ["painters-lead-generation"],
-        "digitalMarketing": ["painters-digital-marketing-guide", "trade-business-growth-strategies"]
+        "digitalMarketing": ["painters-digital-marketing", "trade-business-growth-strategies"]
       }
     },
     "electricians": {
@@ -572,7 +572,7 @@
         "googleAds": ["tax-advisor-google-ads-strategy"],
         "seo": ["financial-planner-seo-guide"],
         "leadGeneration": ["financial-planner-lead-generation"],
-        "digitalMarketing": ["accounting-digital-marketing-guide", "accounting-growth-strategy-guide"]
+        "digitalMarketing": ["accounting-digital-marketing", "accounting-growth-strategy"]
       }
     },
     "lawyers": {
@@ -1726,9 +1726,9 @@
     },
     "buyers-agents": {
       "google-ads": {
-        "metaTitle": "Google Ads for Buyers Agents | Buyer's Agent PPC Advertising Australia",
-        "metaDescription": "Expert Google Ads management for buyers agents. Generate quality leads from property buyers seeking professional representation.",
-        "keywords": "buyers agent google ads, buyers advocate ppc, property buyer marketing, buyers agent advertising",
+        "metaTitle": "Google Ads for Buyers Agents | Fast-Track Buyer Leads | PPC Expert Australia",
+        "metaDescription": "Expert Google Ads management for buyers agents: fast-track leads from high-intent buyers, optimize ROI, and scale acquisition across all buyer segments.",
+        "keywords": "buyers agent google ads, google ads for real estate, property buyer ppc, buyers advocate lead generation, real estate advertising Australia",
         "heroTitle": "Google Ads for Buyers Agents",
         "heroSubtitle": "Connect with Property Buyers Seeking Expert Representation",
         "heroDescription": "Reach property buyers actively searching for professional buying assistance. Our Google Ads campaigns target high-intent searches from people ready to engage a buyers agent.",
@@ -1778,9 +1778,9 @@
         ]
       },
       "lead-generation": {
-        "metaTitle": "Lead Generation for Buyers Agents | Property Buyer Lead Generation Australia",
-        "metaDescription": "Generate qualified leads from property buyers seeking professional representation. Multi-channel strategies for buyers agents.",
-        "keywords": "buyers agent lead generation, buyers advocate leads, property buyer leads",
+        "metaTitle": "Lead Generation for Buyers Agents | Build Buyer Pipeline | Multi-Channel Australia",
+        "metaDescription": "Consistent buyer pipeline development for buyers agents: Google Ads, SEO content, referrals, and CRM integration to nurture long-cycle property buyer deals.",
+        "keywords": "buyers agent lead generation, property buyer leads, buyers advocate pipeline, real estate lead generation, qualified buyer acquisition",
         "heroTitle": "Lead Generation for Buyers Agents",
         "heroSubtitle": "Connect with Property Buyers Ready to Engage",
         "heroDescription": "Build a consistent pipeline of qualified buyer enquiries. Our lead generation strategies connect you with property buyers actively seeking professional representation.",
@@ -1804,9 +1804,9 @@
         ]
       },
       "digital-marketing": {
-        "metaTitle": "Digital Marketing for Buyers Agents | Buyer's Advocate Marketing Australia",
-        "metaDescription": "Comprehensive digital marketing for buyers agents. Build authority, educate buyers, and generate qualified leads.",
-        "keywords": "buyers agent digital marketing, buyers advocate marketing, property buyer marketing",
+        "metaTitle": "Digital Marketing for Buyers Agents | Build Authority & Attract Buyers Australia",
+        "metaDescription": "Full-funnel digital marketing for buyers agents: build market authority, position as expert, and educate property buyers through multi-channel campaigns.",
+        "keywords": "buyers agent marketing, real estate digital marketing, property buyer marketing Australia, buyers advocate authority",
         "heroTitle": "Digital Marketing for Buyers Agents",
         "heroSubtitle": "Grow Your Buyers Agency with Strategic Marketing",
         "heroDescription": "Build a comprehensive digital presence that educates buyers and establishes your market authority. Our integrated marketing approach delivers sustainable growth for buyers agents.",

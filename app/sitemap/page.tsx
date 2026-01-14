@@ -25,7 +25,7 @@ const SitemapView = () => {
     { url: "https://fractional-cmo.com.au/blog/ndis-digital-marketing-strategies", title: "NDIS Digital Marketing Strategies" },
     { url: "https://fractional-cmo.com.au/blog/ndis-web-design-guide", title: "NDIS Web Design Guide" },
     { url: "https://fractional-cmo.com.au/blog/ndis-lead-generation-mastery", title: "NDIS Lead Generation Mastery" },
-    { url: "https://fractional-cmo.com.au/blog/ndis-marketing-guide-2024", title: "NDIS Marketing Guide 2024" },
+    { url: "https://fractional-cmo.com.au/blog/ndis-marketing-guide", title: "NDIS Marketing Guide" },
     { url: "https://fractional-cmo.com.au/blog/ndis-participant-engagement-strategies", title: "NDIS Participant Engagement Strategies" },
   ];
 
@@ -49,7 +49,7 @@ const SitemapView = () => {
   const digitalMarketingArticles = [
     { url: "https://fractional-cmo.com.au/blog/google-ads-service-businesses", title: "Google Ads for Service Businesses" },
     { url: "https://fractional-cmo.com.au/blog/digital-marketing-roi-service-businesses", title: "Digital Marketing ROI for Service Businesses" },
-    { url: "https://fractional-cmo.com.au/blog/digital-marketing-automation-guide", title: "Digital Marketing Automation Guide" },
+    { url: "https://fractional-cmo.com.au/blog/digital-marketing-automation", title: "Digital Marketing Automation Guide" },
   ];
 
   const SectionCard = ({ title, items, showPriority = false }: { title: string; items: any[]; showPriority?: boolean }) => (

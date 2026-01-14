@@ -23,7 +23,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-seo.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-google-ads-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "SEO Strategy for Buyers Agents"
@@ -36,7 +36,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "SEO for Buyers Agents: Complete Search Optimisation Guide 2026",
     description: "Master SEO for buyers agents with comprehensive guide.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-seo.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-google-ads-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -62,7 +62,7 @@ const BuyersAgentsSEO = () => {
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2025-01-25T00:00:00.000Z",
     url: "/blog/buyers-agents-seo",
-    imageUrl: '/images/blog/buyers-agents-seo.jpg',
+    imageUrl: '/images/blog/buyers-agents-google-ads-hero.jpg',
     category: "SEO",
     readTime: "22 min read",
     tags: ["Buyers Agents", "SEO", "Local SEO", "Property SEO", "Search Optimization"]
@@ -92,7 +92,7 @@ const BuyersAgentsSEO = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={'/images/blog/buyers-agents-seo.jpg'}
+      heroImage={'/images/blog/buyers-agents-google-ads-hero.jpg'}
       heroAlt="SEO Strategy for Buyers Agents"
     >
       <Card className="mb-8 bg-primary/5 border-primary/20">

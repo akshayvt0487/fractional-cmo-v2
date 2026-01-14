@@ -16,12 +16,12 @@ export const metadata = createMetadata({
 
   title: "Digital Marketing Automation Guide",
   description: "Expert guidance on digital marketing automation guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/digital-marketing-automation-guide",
+  path: "/blog/digital-marketing-automation",
   keywords: ["digital", "marketing", "automation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Digital Marketing Automation Guide",
     description: "Expert guidance on digital marketing automation guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/digital-marketing-automation-guide",
+    url: "https://fractional-cmo.com.au/blog/digital-marketing-automation",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -59,8 +59,8 @@ const DigitalMarketingAutomation = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-24T00:00:00.000Z",
-    url: "/blog/digital-marketing-automation-guide",
-    imageUrl: "/images/blog/digital-marketing-automation-guide-hero.jpg",
+    url: "/blog/digital-marketing-automation",
+    imageUrl: "/images/blog/digital-marketing-automation-hero.jpg",
     category: "Digital Marketing",
     readTime: "24 min read",
     tags: ["Marketing Automation", "Digital Marketing", "Lead Nurturing", "Email Marketing", "Business Growth"]

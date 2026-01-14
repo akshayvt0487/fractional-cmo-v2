@@ -23,7 +23,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/finance-broker-google-ads.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/loan-broker-google-ads-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Google Ads Strategy for Finance Brokers"
@@ -36,7 +36,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Google Ads for Finance Brokers: Complete PPC Strategy Guide 2026",
     description: "Master Google Ads for finance and mortgage brokers.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/finance-broker-google-ads.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/loan-broker-google-ads-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -62,7 +62,7 @@ const FinanceBrokerGoogleAds = () => {
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2025-02-05T00:00:00.000Z",
     url: "/blog/finance-broker-google-ads",
-    imageUrl: '/images/blog/finance-broker-google-ads.jpg',
+    imageUrl: '/images/blog/loan-broker-google-ads-hero.jpg',
     category: "Google Ads",
     readTime: "21 min read",
     tags: ["Finance Brokers", "Google Ads", "PPC", "Mortgage Advertising", "Broker Advertising", "Paid Search"]
@@ -92,7 +92,7 @@ const FinanceBrokerGoogleAds = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={'/images/blog/finance-broker-google-ads.jpg'}
+      heroImage={'/images/blog/loan-broker-google-ads-hero.jpg'}
       heroAlt="Google Ads Strategy for Finance Brokers"
     >
       <Card className="mb-8 bg-primary/5 border-primary/20">

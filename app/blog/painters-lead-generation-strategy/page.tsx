@@ -65,7 +65,7 @@ const faqs = [{
 const relatedArticles = [{
   title: "Digital Marketing for Painters: Complete Growth Strategy 2026",
   description: "Comprehensive digital marketing guide for painting businesses",
-  url: "/blog/painters-digital-marketing-guide",
+  url: "/blog/painters-digital-marketing",
   category: "Tradies - Painters",
   readTime: "25 min read"
 }, {
@@ -77,7 +77,7 @@ const relatedArticles = [{
 }, {
   title: "Home Builders Lead Generation Guide",
   description: "Proven strategies to attract quality construction clients",
-  url: "/blog/home-builders-lead-generation-guide",
+  url: "/blog/home-builders-lead-generation",
   category: "Construction",
   readTime: "20 min read"
 }];
@@ -90,8 +90,8 @@ const PaintersLeadGeneration = () => {
       author: "Basheer Padanna",
       publishedDate: convertDateFormat(post.date),
       modifiedDate: "2024-11-28",
-      url: "/blog/painters-lead-generation-guide",
-        imageUrl: "/images/blog/painters-lead-generation-guide-hero.jpg",
+      url: "/blog/painters-lead-generation-strategy",
+        imageUrl: "/images/blog/painters-lead-generation-strategy-hero.jpg",
       category: "Tradies - Painters",
       readTime: "26 min read",
       tags: ["Painters Lead Generation", "Painting Business Marketing", "Home Improvement Marketing", "Trade Business Growth", "Digital Marketing for Painters"]

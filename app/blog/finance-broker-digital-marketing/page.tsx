@@ -23,7 +23,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/finance-broker-digital-marketing.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/loan-broker-digital-marketing-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Digital Marketing Strategy for Finance Brokers"
@@ -36,7 +36,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Digital Marketing for Finance Brokers: Complete Growth Strategy Guide 2026",
     description: "Master digital marketing for finance and mortgage brokers.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/finance-broker-digital-marketing.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/loan-broker-digital-marketing-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -62,7 +62,7 @@ const FinanceBrokerDigitalMarketing = () => {
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2025-02-01T00:00:00.000Z",
     url: "/blog/finance-broker-digital-marketing",
-    imageUrl: '/images/blog/finance-broker-digital-marketing.jpg',
+    imageUrl: '/images/blog/loan-broker-digital-marketing-hero.jpg',
     category: "Digital Marketing",
     readTime: "19 min read",
     tags: ["Finance Brokers", "Mortgage Brokers", "Digital Marketing", "Broker Marketing", "Financial Services"]
@@ -92,7 +92,7 @@ const FinanceBrokerDigitalMarketing = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={'/images/blog/finance-broker-digital-marketing.jpg'}
+      heroImage={'/images/blog/loan-broker-digital-marketing-hero.jpg'}
       heroAlt="Digital Marketing Strategy for Finance Brokers"
     >
       <Card className="mb-8 bg-primary/5 border-primary/20">

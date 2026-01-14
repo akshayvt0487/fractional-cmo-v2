@@ -58,8 +58,8 @@ const RenovationBuildersDigitalMarketing = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-11",
-    url: "/blog/renovation-builders-digital-marketing-guide",
-    imageUrl: "/images/blog/renovation-builders-digital-marketing-guide-hero.jpg",
+    url: "/blog/renovation-builders-digital-marketing",
+    imageUrl: "/images/blog/renovation-builders-digital-marketing-hero.jpg",
     category: "Trade Marketing",
     readTime: "25 min read",
     tags: ["renovation builders", "digital marketing", "client acquisition", "trade marketing"]

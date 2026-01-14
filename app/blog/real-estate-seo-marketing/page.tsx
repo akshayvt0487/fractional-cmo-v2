@@ -14,12 +14,12 @@ export const metadata = createMetadata({
 
   title: "Real Estate Seo Marketing Guide",
   description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/real-estate-seo-marketing-guide",
+  path: "/blog/real-estate-seo-marketing",
   keywords: ["real", "estate", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Real Estate Seo Marketing Guide",
     description: "Expert guidance on real estate seo marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/real-estate-seo-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/real-estate-seo-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -57,8 +57,8 @@ const RealEstateSEOMarketing = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-12T00:00:00.000Z",
-    url: "/blog/real-estate-seo-marketing-guide",
-    imageUrl: "/images/blog/real-estate-seo-marketing-guide-hero.jpg",
+    url: "/blog/real-estate-seo-marketing",
+    imageUrl: "/images/blog/real-estate-seo-marketing-hero.jpg",
     category: "Real Estate Marketing",
     readTime: "24 min read",
     tags: ["Real Estate SEO", "Local SEO", "Property Marketing", "Digital Marketing", "Search Optimization"]

@@ -12,18 +12,18 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Lead Generation for Buyers Agents: Complete Strategy Guide 2026",
-  description: "Discover proven lead generation strategies for buyers agents. Learn how to attract quality property buyer clients through digital marketing, referrals, and content marketing.",
+  title: "Buyers Agents Lead Generation: How to Source & Qualify Buyers 2026",
+  description: "Step-by-step buyers agent lead generation: Google Ads, SEO content, referral systems, and CRM strategies to build a consistent pipeline of qualified property buyers.",
   path: "/blog/buyers-agents-lead-generation",
-  keywords: ["buyers agents", "lead generation", "property leads", "real estate leads", "client acquisition"],
+  keywords: ["buyers agent leads", "lead generation for real estate", "property buyer acquisition", "real estate lead sourcing", "buyers advocate pipeline"],
   openGraph: {
-    title: "Lead Generation for Buyers Agents: Complete Strategy Guide 2026",
-    description: "Discover proven lead generation strategies for buyers agents.",
+    title: "Buyers Agents Lead Generation: How to Source & Qualify Buyers 2026",
+    description: "Step-by-step lead generation: Google Ads, SEO content, referrals, and CRM strategies to build a consistent pipeline of buyers.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/buyers-agents-lead-generation`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-lead-generation.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/painters-lead-generation-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Lead Generation Strategy for Buyers Agents"
@@ -36,7 +36,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Lead Generation for Buyers Agents: Complete Strategy Guide 2026",
     description: "Discover proven lead generation strategies for buyers agents.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-lead-generation.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/painters-lead-generation-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -56,13 +56,13 @@ const BuyersAgentsLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "buyers-agents-lead-generation");
   if (!post) throw new Error("Blog post not found: buyers-agents-lead-generation");
   const articleData = {
-    headline: "Lead Generation for Buyers Agents: Complete Strategy Guide 2026",
-    description: "Discover proven lead generation strategies for buyers agents. Learn how to attract quality property buyer clients through digital marketing, referrals, and content marketing.",
+    headline: "Buyers Agents Lead Generation: How to Source & Qualify Buyers 2026",
+    description: "Step-by-step lead generation: Google Ads, SEO content, referral systems, and CRM strategies to build a consistent pipeline of qualified buyers.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2025-01-20T00:00:00.000Z",
     url: "/blog/buyers-agents-lead-generation",
-    imageUrl: '/images/blog/buyers-agents-lead-generation.jpg',
+    imageUrl: '/images/blog/painters-lead-generation-hero.jpg',
     category: "Lead Generation",
     readTime: "20 min read",
     tags: ["Buyers Agents", "Lead Generation", "Property Leads", "Client Acquisition"]
@@ -92,7 +92,7 @@ const BuyersAgentsLeadGeneration = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={'/images/blog/buyers-agents-lead-generation.jpg'}
+      heroImage={'/images/blog/painters-lead-generation-hero.jpg'}
       heroAlt="Lead Generation Strategy for Buyers Agents"
     >
       <Card className="mb-8 bg-primary/5 border-primary/20">

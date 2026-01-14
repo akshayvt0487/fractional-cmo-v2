@@ -63,7 +63,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
   const relatedArticles = [{
     title: "NDIS Software SaaS Marketing Guide",
     description: "Complete guide to B2B growth strategies for NDIS software platforms.",
-    url: "/blog/ndis-software-saas-marketing-guide",
+    url: "/blog/ndis-software-saas-marketing",
     category: "SaaS Marketing"
   }, {
     title: "NDIS Software SaaS Positioning Strategy",

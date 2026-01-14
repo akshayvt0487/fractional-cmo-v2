@@ -57,8 +57,8 @@ const SecurityDigitalMarketing = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-05",
-    url: "/blog/security-digital-marketing-guide",
-    imageUrl: "/images/blog/security-digital-marketing-guide-hero.jpg",
+    url: "/blog/security-digital-marketing",
+    imageUrl: "/images/blog/security-digital-marketing-hero.jpg",
     category: "Service Business",
     readTime: "24 min read",
     tags: ["security services", "digital marketing", "B2B marketing", "client acquisition"]

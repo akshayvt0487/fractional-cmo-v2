@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Target, Settings, Layers, Search, Zap } from "lucide-react";
 import StrategyForm from '@/components/ui/strategy-form';
@@ -13,13 +14,13 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Buyers Agents Google Ads Strategy",
-  description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
+  title: "Google Ads for Buyers Agents: Campaign Setup & Targeting Guide 2026",
+  description: "Master Google Ads for buyers agents: keyword research, buyer segment targeting, ad copy, landing pages, and optimization tactics to attract property buyers actively searching.",
   path: "/blog/buyers-agents-google-ads-strategy",
-  keywords: ["buyers", "agents", "google", "strategy", "digital marketing", "business growth", "marketing strategy"],
+  keywords: ["buyers agents google ads", "real estate ppc", "google ads for real estate agents", "property buyer advertising", "real estate lead ads"],
   openGraph: {
-    title: "Buyers Agents Google Ads Strategy",
-    description: "Expert guidance on buyers agents google ads strategy. Learn proven strategies and best practices for business growth.",
+    title: "Google Ads for Buyers Agents: Campaign Setup & Targeting Guide 2026",
+    description: "Master Google Ads: keyword research, buyer segment targeting, ad copy, landing pages, and optimization to attract buyers actively searching.",
     url: "https://fractional-cmo.com.au/blog/buyers-agents-google-ads-strategy",
     siteName: "Fractional CMO",
     type: "article",
@@ -53,8 +54,8 @@ const BuyersAgentsGoogleAds = () => {
 
 
   const articleData = {
-    headline: "Google Ads for Buyers Agents: Complete Strategy Guide 2026",
-    description: "Master Google Ads for buyers agents with proven strategies. Expert campaign setup, keyword targeting & conversion tactics for property leads.",
+    headline: "Google Ads for Buyers Agents: Campaign Setup & Targeting Guide 2026",
+    description: "Master Google Ads: keyword research, buyer segment targeting, ad copy, landing pages, and optimization tactics for property buyer acquisition.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-13T00:00:00.000Z",
@@ -864,15 +865,15 @@ const BuyersAgentsGoogleAds = () => {
         <section className="my-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
           <h3 className="text-2xl font-bold mb-4">Ready to Scale Your Buyers Agency with Google Ads?</h3>
           <p className="mb-6 text-muted-foreground">
-            Google Ads is a powerful channel for buyers agents to attract qualified property buyers and investors. Whether you&apos;re looking to launch campaigns or optimize existing ones, our <a href="/services/google-ads/buyers-agents" className="text-blue-600 font-semibold hover:underline">Google Ads for Buyers Agents service</a> is designed specifically for real estate professionals like you.
+            Google Ads is a powerful channel for buyers agents to attract qualified property buyers and investors. Whether you're looking to launch campaigns or optimize existing ones, our <Link href="/services/google-ads/buyers-agents" className="text-blue-600 font-semibold hover:underline">Google Ads for Buyers Agents service</Link> is designed specifically for real estate professionals like you.
           </p>
           <p className="mb-6 text-muted-foreground">
             Explore our other real estate marketing services:
           </p>
           <ul className="space-y-2 mb-6">
-            <li>• <a href="/services/lead-generation/buyers-agents" className="text-blue-600 font-semibold hover:underline">Lead Generation for Buyers Agents</a> - Attract quality property prospects</li>
-            <li>• <a href="/services/seo-services/buyers-agents" className="text-blue-600 font-semibold hover:underline">SEO for Buyers Agents</a> - Dominate local search rankings</li>
-            <li>• <a href="/services/digital-marketing/buyers-agents" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Buyers Agents</a> - Complete growth strategy</li>
+            <li>• <Link href="/services/lead-generation/buyers-agents" className="text-blue-600 font-semibold hover:underline">Lead Generation for Buyers Agents</Link> - Attract quality property prospects</li>
+            <li>• <Link href="/services/seo/buyers-agents" className="text-blue-600 font-semibold hover:underline">SEO for Buyers Agents</Link> - Dominate local search rankings</li>
+            <li>• <Link href="/services/digital-marketing/buyers-agents" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Buyers Agents</Link> - Complete growth strategy</li>
           </ul>
         </section>
 

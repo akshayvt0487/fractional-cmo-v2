@@ -15,7 +15,7 @@ export const metadata = createMetadata({
 
   title: "Conveyancing Seo Guide",
   description: "Expert guidance on conveyancing seo guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/conveyancing-seo-guide",
+  path: "/blog/conveyancing-seo",
   keywords: ["conveyancing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Conveyancing Seo Guide",
@@ -58,7 +58,7 @@ const ConveyancingSEO = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-09-03T00:00:00.000Z",
-    url: "/blog/conveyancing-seo-guide",
+    url: "/blog/conveyancing-seo",
     imageUrl: '/images/blog/conveyancing-seo-hero.jpg',
     category: "Legal Marketing",
     readTime: "25 min read",

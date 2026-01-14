@@ -689,7 +689,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Discover proven strategies to attract NDIS participants while staying compliant with industry regulations and building trust in your community.",
     date: "July 20, 2025",
     readTime: "15 min read",
-    slug: "ndis-marketing-guide-2024",
+    slug: "ndis-marketing-guide",
     category: "NDIS",
     author: "NDIS Marketing Expert",
     image: '/images/blog/ndis-marketing-guide-new.jpg'

@@ -1,11 +1,11 @@
 import { createMetadata } from "@/lib/seo";
+import Link from "next/link";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from "@/components/ui/card";
 
-import Link from 'next/link';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -77,7 +77,7 @@ const RemovalistBusinessMarketing = () => {
     question: "What's the best way to price removalist services competitively?",
     answer: "Offer transparent hourly rates ($80-150 for 2-person teams), fixed quotes based on home size, volume-based pricing, and distance factors. Always provide written estimates and avoid hidden fees."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage="/assets/blog/removalist-business-marketing.jpg" heroAlt="Removalist business marketing strategies and customer trust building">
+  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage="/images/blog/removalist-business-marketing.jpg" heroAlt="Removalist business marketing strategies and customer trust building">
       <Card className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
@@ -703,7 +703,7 @@ const RemovalistBusinessMarketing = () => {
                       <CardContent className="p-8">
                         <h2 className="text-2xl font-bold mb-4 text-center">How a Fractional CMO Can Scale Your Removalist Business</h2>
                         <p className="text-lg mb-6 text-center text-muted-foreground">
-                          A <a href="/blog/what-is-fractional-cmo" className="text-primary hover:underline font-semibold">Fractional CMO</a> provides strategic marketing leadership to help removalist companies build predictable lead generation and expand market reach.
+                          A <Link href="/blog/what-is-fractional-cmo" className="text-primary hover:underline font-semibold">Fractional CMO</Link> provides strategic marketing leadership to help removalist companies build predictable lead generation and expand market reach.
                         </p>
                         
                         <div className="grid md:grid-cols-2 gap-6 mb-6">

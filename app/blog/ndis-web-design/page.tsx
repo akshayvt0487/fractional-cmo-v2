@@ -16,12 +16,12 @@ export const metadata = createMetadata({
 
   title: "Ndis Web Design Guide",
   description: "Expert guidance on ndis web design guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/ndis-web-design-guide",
+  path: "/blog/ndis-web-design",
   keywords: ["ndis", "design", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Ndis Web Design Guide",
     description: "Expert guidance on ndis web design guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/ndis-web-design-guide",
+    url: "https://fractional-cmo.com.au/blog/ndis-web-design",
     siteName: "Fractional CMO",
     type: "article",
     images: [{
@@ -59,8 +59,8 @@ const NDISWebDesign = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-03-20T00:00:00.000Z",
-    url: "/blog/ndis-web-design-guide",
-    imageUrl: "/images/blog/ndis-web-design-guide-hero.jpg",
+    url: "/blog/ndis-web-design",
+    imageUrl: "/images/blog/ndis-web-design-hero.jpg",
     category: "NDIS Marketing",
     readTime: "26 min read",
     tags: ["NDIS", "Web Design", "Accessibility", "User Experience", "Conversion Optimization"]

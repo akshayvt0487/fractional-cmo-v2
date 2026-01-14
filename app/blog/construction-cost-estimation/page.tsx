@@ -14,7 +14,7 @@ export const metadata = createMetadata({
 
   title: "Construction Cost Estimation Guide",
   description: "Expert guidance on construction cost estimation guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/construction-cost-estimation-guide",
+  path: "/blog/construction-cost-estimation",
   keywords: ["construction", "cost", "estimation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Construction Cost Estimation Guide",
@@ -57,7 +57,7 @@ const ConstructionCostEstimation = () => {
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-03-01T00:00:00.000Z",
-    url: "/blog/construction-cost-estimation-guide",
+    url: "/blog/construction-cost-estimation",
     imageUrl: '/images/blog/construction-cost-estimation.jpg',
     category: "Construction",
     readTime: "24 min read",

@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import Link from "next/link";
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Target, Users, BarChart, Zap } from "lucide-react";
@@ -433,15 +434,15 @@ const FinancialPlannerLeadGeneration = () => {
       <section className="my-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
         <h3 className="text-2xl font-bold mb-4">Ready to Accelerate Your Lead Generation?</h3>
         <p className="mb-6 text-muted-foreground">
-          Lead generation for financial planners requires a strategic, multi-channel approach. Our <a href="/services/lead-generation/finance-brokers" className="text-blue-600 font-semibold hover:underline">lead generation services for finance professionals</a> are specifically designed to attract high-value clients to your practice.
+          Lead generation for financial planners requires a strategic, multi-channel approach. Our <Link href="/services/lead-generation/finance-brokers" className="text-blue-600 font-semibold hover:underline">lead generation services for finance professionals</Link> are specifically designed to attract high-value clients to your practice.
         </p>
         <p className="mb-6 text-muted-foreground">
           Explore our other financial planning marketing services:
         </p>
         <ul className="space-y-2 mb-6">
-          <li>• <a href="/services/seo-services/finance-brokers" className="text-blue-600 font-semibold hover:underline">SEO for Financial Planners</a> - Rank higher for finance-related searches</li>
-          <li>• <a href="/services/google-ads/finance-brokers" className="text-blue-600 font-semibold hover:underline">Google Ads for Finance Professionals</a> - Targeted ads for qualified prospects</li>
-          <li>• <a href="/services/digital-marketing/finance-brokers" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Finance Brokers</a> - Complete growth strategy</li>
+          <li>• <Link href="/services/seo/finance-brokers" className="text-blue-600 font-semibold hover:underline">SEO for Financial Planners</Link> - Rank higher for finance-related searches</li>
+          <li>• <Link href="/services/google-ads/finance-brokers" className="text-blue-600 font-semibold hover:underline">Google Ads for Finance Professionals</Link> - Targeted ads for qualified prospects</li>
+          <li>• <Link href="/services/digital-marketing/finance-brokers" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Finance Brokers</Link> - Complete growth strategy</li>
         </ul>
       </section>
     </OptimizedBlogLayout>;

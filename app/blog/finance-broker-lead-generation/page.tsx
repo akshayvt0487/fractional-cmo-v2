@@ -23,7 +23,7 @@ export const metadata = createMetadata({
     siteName: "Fractional CMO",
     type: "article",
     images: [{
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/finance-broker-lead-generation.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/finance-broker-lead-generation-hero.jpg`,
       width: 1200,
       height: 630,
       alt: "Lead Generation Strategy for Finance Brokers"
@@ -36,7 +36,7 @@ export const metadata = createMetadata({
     card: "summary_large_image",
     title: "Lead Generation for Finance Brokers: Complete Strategy Guide 2026",
     description: "Discover proven lead generation strategies for finance and mortgage brokers.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/finance-broker-lead-generation.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/finance-broker-lead-generation-hero.jpg`],
     site: "@FractionalCMO"
   }
 });
@@ -62,7 +62,7 @@ const FinanceBrokerLeadGeneration = () => {
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2025-02-10T00:00:00.000Z",
     url: "/blog/finance-broker-lead-generation",
-    imageUrl: '/images/blog/finance-broker-lead-generation.jpg',
+    imageUrl: '/images/blog/finance-broker-lead-generation-hero.jpg',
     category: "Lead Generation",
     readTime: "20 min read",
     tags: ["Finance Brokers", "Lead Generation", "Mortgage Leads", "Broker Leads", "Client Acquisition"]
@@ -92,7 +92,7 @@ const FinanceBrokerLeadGeneration = () => {
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
-      heroImage={'/images/blog/finance-broker-lead-generation.jpg'}
+      heroImage={'/images/blog/finance-broker-lead-generation-hero.jpg'}
       heroAlt="Lead Generation Strategy for Finance Brokers"
     >
       <Card className="mb-8 bg-primary/5 border-primary/20">
