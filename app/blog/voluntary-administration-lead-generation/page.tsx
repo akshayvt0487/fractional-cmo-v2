@@ -55,7 +55,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
   }, {
     source: "ASIC",
     title: "ASIC - Voluntary Administration Information",
-    url: "https://asic.gov.au/for-business/your-business-is-in-trouble/insolvency-a-glossary-of-terms/voluntary-administration/",
+    url: "https://www.asic.gov.au/regulatory-resources/insolvency/insolvency-for-creditors/voluntary-administration-a-guide-for-creditors/",
     date: "2026"
   }];
   const relatedArticles = [{

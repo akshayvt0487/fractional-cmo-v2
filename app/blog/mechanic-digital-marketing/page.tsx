@@ -14,12 +14,12 @@ export const metadata = createMetadata({
 
   title: "Mechanic Digital Marketing Guide",
   description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/mechanic-digital-marketing-guide",
+  path: "/blog/mechanic-digital-marketing",
   keywords: ["mechanic", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Mechanic Digital Marketing Guide",
     description: "Expert guidance on mechanic digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/mechanic-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/mechanic-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

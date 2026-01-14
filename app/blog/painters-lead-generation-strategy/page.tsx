@@ -15,12 +15,12 @@ export const metadata = createMetadata({
 
   title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026",
   description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2026. Learn proven strategies and best practices for business growth.",
-  path: "/blog/painters-lead-generation-guide",
+  path: "/blog/painters-lead-generation-strategy",
   keywords: ["painters", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Painters Lead Generation: Proven Strategies to Attract Quality Painting Clients 2026",
     description: "Expert guidance on painters lead generation: proven strategies to attract quality painting clients 2026. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/painters-lead-generation-guide",
+    url: "https://fractional-cmo.com.au/blog/painters-lead-generation-strategy",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

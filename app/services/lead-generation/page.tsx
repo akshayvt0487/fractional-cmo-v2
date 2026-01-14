@@ -105,7 +105,7 @@ export default function LeadGenerationPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <ServiceLayout data={data} />
+      <ServiceLayout data={data} serviceSlug="lead-generation" />
     </>
   );
 }

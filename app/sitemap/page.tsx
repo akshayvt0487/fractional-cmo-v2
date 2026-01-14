@@ -2,6 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata = {
   robots: { index: true, follow: true, nocache: false },
+  alternates: {
+    canonical: 'https://fractional-cmo.com.au/sitemap',
+  },
 };
 
 

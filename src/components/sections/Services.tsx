@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -18,7 +19,7 @@ const Services = () => {
             <CardContent className="space-y-2 text-sm text-muted-foreground">
               <p>Deep-dive audit across web, SEO, and paid. Strategic roadmap with quick wins and north-star plan.</p>
               <Button variant="outline" className="mt-4" asChild>
-                <a href="/#contact">Request details</a>
+                <Link href="/#contact">Request details</Link>
               </Button>
             </CardContent>
           </Card>
@@ -31,7 +32,7 @@ const Services = () => {
             <CardContent className="space-y-2 text-sm text-muted-foreground">
               <p>Ongoing leadership: own growth targets, manage channels and team, and install operating cadence.</p>
               <Button variant="outline" className="mt-4" asChild>
-                <a href="/#contact">Discuss fit</a>
+                <Link href="/#contact">Discuss fit</Link>
               </Button>
             </CardContent>
           </Card>
@@ -44,7 +45,7 @@ const Services = () => {
             <CardContent className="space-y-2 text-sm text-muted-foreground">
               <p>Hands-on execution with dedicated team: creative testing, keyword rigor, and CRO partnership.</p>
               <Button variant="outline" className="mt-4" asChild>
-                <a href="/#contact">Get a proposal</a>
+                <Link href="/#contact">Get a proposal</Link>
               </Button>
             </CardContent>
           </Card>

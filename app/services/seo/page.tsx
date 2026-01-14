@@ -56,7 +56,7 @@ export default function SeoPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <ServiceLayout data={data} />
+      <ServiceLayout data={data} serviceSlug="seo" />
     </>
   );
 }

@@ -10,6 +10,7 @@ import StrategyForm from '@/components/ui/strategy-form';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import OtherServices from '@/components/OtherServices';
 import Link from 'next/link';
 import {
   CheckCircle2,
@@ -382,6 +383,8 @@ const IndustryServiceLayout = ({
             </div>
           </div>
         </section>
+
+        <OtherServices currentService={serviceSlug || ''} />
 
         {/* CTA Section */}
         <section className="py-16 bg-primary/5">

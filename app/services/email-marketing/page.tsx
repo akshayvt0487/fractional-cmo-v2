@@ -54,7 +54,7 @@ export default function EmailMarketingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <ServiceLayout data={data} />
+      <ServiceLayout data={data} serviceSlug="email-marketing" />
     </>
   );
 }

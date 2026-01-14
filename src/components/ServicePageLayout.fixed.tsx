@@ -9,6 +9,7 @@ import BreadcrumbNavigation from '@/components/BreadcrumbNavigation';
 import ScrollBottomPopup from '@/components/ui/scroll-bottom-popup';
 import StrategyForm from '@/components/ui/strategy-form';
 import ServiceInquiryForm from '@/components/ServiceInquiryForm';
+import OtherServices from '@/components/OtherServices';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -175,6 +176,8 @@ const ServicePageLayoutFixed: React.FC<Props> = ({ data, serviceName: customServ
         {children && (
           <section className="py-16 bg-muted/30"><div className="container mx-auto max-w-4xl px-4">{children}</div></section>
         )}
+
+        <OtherServices currentService={serviceSlug} />
 
         <section className="py-16">
           <div className="container mx-auto max-w-4xl px-4">

@@ -54,7 +54,7 @@ export default function SocialMediaMarketingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <ServiceLayout data={data} />
+      <ServiceLayout data={data} serviceSlug="social-media-marketing" />
     </>
   );
 }

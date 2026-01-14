@@ -11,6 +11,9 @@ export async function generateMetadata({ params }: { params: Promise<{ industry:
     return {
       title: data.metaTitle,
       description: data.metaDescription,
+      alternates: {
+        canonical: `https://fractional-cmo.com.au/services/lead-generation/${industry}`,
+      },
       openGraph: generateIndustryServiceOGData(data, industry, 'lead-generation') as any
     } as Metadata;
   }
@@ -20,13 +23,19 @@ export async function generateMetadata({ params }: { params: Promise<{ industry:
     return {
       title: (fallback as any).title,
       description: (fallback as any).description,
+      alternates: {
+        canonical: `https://fractional-cmo.com.au/services/lead-generation/${industry}`,
+      },
       openGraph: (fallback as any).openGraph as any
     } as Metadata;
   }
 
   return {
     title: 'Lead generation services',
-    description: 'Lead generation services tailored for your industry.'
+    description: 'Lead generation services tailored for your industry.',
+    alternates: {
+      canonical: `https://fractional-cmo.com.au/services/lead-generation/${industry}`,
+    }
   } as Metadata;
 }
 

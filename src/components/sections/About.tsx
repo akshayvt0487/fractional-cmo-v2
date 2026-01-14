@@ -12,11 +12,11 @@ const About = () => {
           <div className="space-y-6">
             <div>
               <h2 className="text-3xl font-semibold md:text-4xl">
-                Hello, I&apos;m <em className="text-primary">Basheer Padanna</em>
+                Hi, I&apos;m <em className="text-primary">Basheer Padanna</em>
               </h2>
-              <p className="mt-2 text-xl text-muted-foreground">
+              <h2 className="mt-2 text-xl text-muted-foreground">
                 Fractional CMO, Growth Strategist & Performance Marketing Leader
-              </p>
+              </h2>
             </div>
             
             <div className="prose prose-gray max-w-none">

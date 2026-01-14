@@ -14,12 +14,12 @@ export const metadata = createMetadata({
 
   title: "Security Digital Marketing Guide",
   description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/security-digital-marketing-guide",
+  path: "/blog/security-digital-marketing",
   keywords: ["security", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Security Digital Marketing Guide",
     description: "Expert guidance on security digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/security-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/security-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

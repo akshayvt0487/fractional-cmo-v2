@@ -15,12 +15,12 @@ export const metadata = createMetadata({
 
   title: "Renovation Builders Digital Marketing Guide",
   description: "Expert guidance on renovation builders digital marketing guide. Learn proven strategies and best practices for business growth.",
-  path: "/blog/renovation-builders-digital-marketing-guide",
+  path: "/blog/renovation-builders-digital-marketing",
   keywords: ["renovation", "builders", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
     title: "Renovation Builders Digital Marketing Guide",
     description: "Expert guidance on renovation builders digital marketing guide. Learn proven strategies and best practices for business growth.",
-    url: "https://fractional-cmo.com.au/blog/renovation-builders-digital-marketing-guide",
+    url: "https://fractional-cmo.com.au/blog/renovation-builders-digital-marketing",
     siteName: "Fractional CMO",
     type: "article",
     images: [{

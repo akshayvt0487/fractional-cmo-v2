@@ -1,10 +1,37 @@
+import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { blogPosts } from '@/data/blogPosts';
 
-export const metadata = {
+export const metadata = createMetadata({
   robots: { index: true, follow: true, nocache: false },
-};
-
+  title: "Immigration Lawyers Lead Generation: Proven Strategies to Attract Quality Visa Clients 2026",
+  description: "Expert guidance on immigration lawyers lead generation: proven strategies to attract quality visa clients 2026. Learn proven strategies and best practices for business growth.",
+  path: "/blog/immigration-lawyers-lead-generation",
+  keywords: ["immigration", "lawyers", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
+  openGraph: {
+    title: "Immigration Lawyers Lead Generation: Proven Strategies to Attract Quality Visa Clients 2026",
+    description: "Expert guidance on immigration lawyers lead generation: proven strategies to attract quality visa clients 2026. Learn proven strategies and best practices for business growth.",
+    url: "https://fractional-cmo.com.au/blog/immigration-lawyers-lead-generation",
+    siteName: "Fractional CMO",
+    type: "article",
+    images: [{
+      url: "https://fractional-cmo.com.au/images/blog/immigration-lawyers-lead-generation-hero.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Immigration Lawyers Lead Generation: Proven Strategies Guide"
+    }],
+    publishedTime: "2025-12-17T00:00:00.000Z",
+    modifiedTime: "2025-12-17T00:00:00.000Z",
+    authors: ["Basheer Padanna"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Immigration Lawyers Lead Generation: Proven Strategies to Attract Quality Visa Clients 2026",
+    description: "Expert guidance on immigration lawyers lead generation: proven strategies to attract quality visa clients 2026. Learn proven strategies and best practices for business growth.",
+    images: ["https://fractional-cmo.com.au/images/blog/immigration-lawyers-lead-generation-hero.jpg"],
+    site: "@FractionalCMO"
+  }
+});
 
 const ImmigrationLawyersLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === 'immigration-lawyers-lead-generation');
