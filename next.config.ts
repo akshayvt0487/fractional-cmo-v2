@@ -6,6 +6,28 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     minimumCacheTTL: 60,
   },
+  // Optimize CSS handling to reduce render-blocking CSS
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.optimization = {
+        ...config.optimization,
+        splitChunks: {
+          ...config.optimization?.splitChunks,
+          cacheGroups: {
+            ...config.optimization?.splitChunks?.cacheGroups,
+            // Separate Tailwind CSS into own chunk to allow deferred loading
+            styles: {
+              name: 'styles',
+              type: 'css/mini-extract',
+              chunks: 'async',
+              enforce: true,
+            },
+          },
+        },
+      };
+    }
+    return config;
+  },
   async redirects() {
     return [
       {

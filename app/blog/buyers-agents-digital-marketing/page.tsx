@@ -1,5 +1,6 @@
 import React from 'react';
 import { createMetadata } from "@/lib/seo";
+import { generateBlogPostingSchema, generateFAQSchema, SchemaScript } from "@/lib/schemas";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
@@ -68,6 +69,20 @@ const BuyersAgentsDigitalMarketing = () => {
     tags: ["Buyers Agents", "Digital Marketing", "Property Marketing", "Real Estate Marketing", "SEO"]
   };
 
+  const publishedDate = convertDateFormat(post.date);
+
+  const blogSchema = generateBlogPostingSchema({
+    title: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: publishedDate,
+    modifiedDate: "2025-01-15",
+    imageUrl: "https://fractional-cmo.com.au/images/blog/buyers-agents-google-ads-hero.jpg",
+    url: "/blog/buyers-agents-digital-marketing",
+    category: articleData.category,
+    keywords: articleData.tags,
+  });
+
   const faqs = [
     {
       question: "What digital marketing channels work best for buyers agents?",
@@ -86,15 +101,23 @@ const BuyersAgentsDigitalMarketing = () => {
       answer: "Most buyers agents should prioritise local SEO and marketing for their service areas. National presence helps for investor clients or those relocating. Start with strong local foundations before expanding geographic targeting."
     }
   ];
+
+  const faqSchema = generateFAQSchema({
+    faqs: faqs,
+    url: "/blog/buyers-agents-digital-marketing",
+  });
   
   return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={'/images/blog/buyers-agents-google-ads-hero.jpg'}
-      heroAlt="Digital Marketing Strategy for Buyers Agents"
-    >
+    <>
+      <SchemaScript schema={blogSchema} />
+      <SchemaScript schema={faqSchema} />
+      <OptimizedBlogLayout
+        articleData={articleData}
+        relatedArticles={relatedArticles.digitalMarketing}
+        faqs={faqs}
+        heroImage={'/images/blog/buyers-agents-google-ads-hero.jpg'}
+        heroAlt="Digital Marketing Strategy for Buyers Agents"
+      >
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
@@ -243,6 +266,7 @@ const BuyersAgentsDigitalMarketing = () => {
         </CardContent>
       </Card>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

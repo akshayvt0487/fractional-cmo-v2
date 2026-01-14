@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import { generateBlogPostingSchema, generateFAQSchema, generateHowToSchema, SchemaScript } from "@/lib/schemas";
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
@@ -50,12 +51,13 @@ const GrowthMarketingStrategy = () => {
     return date.toISOString().split('T')[0];
   };
 
+  const publishedDate = convertDateFormat(post.date);
 
   const articleData = {
     headline: "Growth Marketing Strategies for Professional Services: Data-Driven Scaling Guide 2026",
     description: "Master growth marketing for professional services. Learn conversion optimization, funnel development, retention strategies, and scaling tactics that drive exponential business growth.",
     author: "Basheer Padanna",
-    publishedDate: convertDateFormat(post.date),
+    publishedDate: publishedDate,
     modifiedDate: "2024-12-18T00:00:00.000Z",
     url: "/blog/growth-marketing-strategy",
     imageUrl: "/images/blog/growth-marketing-strategy-hero.jpg",
@@ -63,6 +65,58 @@ const GrowthMarketingStrategy = () => {
     readTime: "28 min read",
     tags: ["Growth Marketing", "Digital Marketing", "Professional Services", "Business Growth", "Data-Driven Marketing"]
   };
+
+  const blogSchema = generateBlogPostingSchema({
+    title: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: publishedDate,
+    modifiedDate: "2024-12-18",
+    imageUrl: "https://fractional-cmo.com.au/images/blog/growth-marketing-strategy-hero.jpg",
+    url: "/blog/growth-marketing-strategy",
+    category: articleData.category,
+    keywords: articleData.tags,
+  });
+
+  const howToSteps = [
+    {
+      name: "Establish Baseline Metrics",
+      description: "Document current conversion rates, customer acquisition cost, customer lifetime value, and retention rates. This baseline enables you to measure improvement and ROI of growth initiatives.",
+    },
+    {
+      name: "Define Growth Goals",
+      description: "Set SMART growth targets for the next 12 months. Specify revenue targets, customer acquisition numbers, and retention benchmarks based on your market position and capacity.",
+    },
+    {
+      name: "Build Your Acquisition Stack",
+      description: "Implement a multi-channel acquisition system combining SEO, content marketing, paid advertising, and direct outreach. Test each channel to identify the highest-ROI sources for your market.",
+    },
+    {
+      name: "Optimize Conversion Funnel",
+      description: "Analyze drop-off points in your customer journey. Implement A/B tests on landing pages, calls-to-action, and sales processes to systematically improve conversion rates at each stage.",
+    },
+    {
+      name: "Develop Retention Strategy",
+      description: "Create systems for customer success tracking, regular check-ins, and ongoing value delivery. Reduce churn and increase customer lifetime value through strategic retention initiatives.",
+    },
+    {
+      name: "Measure and Iterate",
+      description: "Review metrics weekly. Identify high-performing tactics and scale them. Pause underperforming experiments. Reinvest learnings into the next growth cycle.",
+    },
+  ];
+
+  const howToSchema = generateHowToSchema({
+    title: "How to Implement a Growth Marketing Strategy for Professional Services",
+    description: "Step-by-step guide to building a data-driven growth marketing system that scales revenue and optimizes every stage of your customer lifecycle.",
+    imageUrl: "https://fractional-cmo.com.au/images/blog/growth-marketing-strategy-hero.jpg",
+    author: "Basheer Padanna",
+    totalTime: "PT4H",
+    yield: "Complete growth marketing framework and implementation strategy",
+    steps: howToSteps,
+    url: "/blog/growth-marketing-strategy",
+    keywords: articleData.tags,
+  });
+
   const faqs = [{
     question: "What's the difference between growth marketing and traditional marketing?",
     answer: "Growth marketing is a systematic, data-driven approach that optimizes every stage of the customer lifecycle, focusing on revenue and retention metrics rather than vanity metrics like impressions. It involves continuous testing and iteration across the entire customer journey."
@@ -73,7 +127,17 @@ const GrowthMarketingStrategy = () => {
     question: "What budget should I allocate for growth marketing?",
     answer: "Most successful professional service businesses allocate 10-20% of revenue to growth marketing, with at least 30% dedicated to testing and experimentation. The key is starting with proven tactics and scaling what works."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/growth-marketing-strategy-hero.jpg'} heroAlt="Growth marketing dashboard showing conversion metrics and analytics">
+
+  const faqSchema = generateFAQSchema({
+    faqs: faqs,
+    url: "/blog/growth-marketing-strategy",
+  });
+
+  return <>
+    <SchemaScript schema={blogSchema} />
+    <SchemaScript schema={howToSchema} />
+    <SchemaScript schema={faqSchema} />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/growth-marketing-strategy-hero.jpg'} heroAlt="Growth marketing dashboard showing conversion metrics and analytics">
       <Card className="p-8 mb-8">
         <p className="text-lg leading-relaxed text-muted-foreground">
           Growth marketing has evolved far beyond traditional marketing tactics. <strong>Companies that implement systematic growth marketing see 20x higher revenue growth rates</strong> compared to those using conventional approaches, according to HubSpot&apos;s Growth Marketing Report 2024.
@@ -443,7 +507,8 @@ const GrowthMarketingStrategy = () => {
         The businesses that master growth marketing combine analytical rigor with creative experimentation. Every test teaches you something valuable about your customers, and every optimization compounds your results over time. Your growth marketing system becomes a strategic asset that drives long-term success.
       </p>
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+  </>;
 };
 export default GrowthMarketingStrategy;
 

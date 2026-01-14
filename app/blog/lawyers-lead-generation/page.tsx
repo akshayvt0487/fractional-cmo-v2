@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import { generateBlogPostingSchema, generateFAQSchema, SchemaScript } from "@/lib/schemas";
 import Link from "next/link";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
@@ -53,12 +54,13 @@ const LawyersLeadGeneration = () => {
     return date.toISOString().split('T')[0];
   };
 
+  const publishedDate = convertDateFormat(post.date);
 
   const articleData = {
     headline: "Lawyer Lead Generation: Proven Strategies to Attract Quality Clients",
     description: "Master ethical lead generation strategies for law firms. Learn digital marketing, content strategies, and networking tactics that consistently attract high-value legal clients.",
     author: "Basheer Padanna",
-    publishedDate: convertDateFormat(post.date),
+    publishedDate: publishedDate,
     modifiedDate: "2026-01-18",
     url: "/blog/lawyers-lead-generation",
     imageUrl: "/images/blog/lawyers-lead-generation-hero.jpg",
@@ -66,6 +68,19 @@ const LawyersLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["Legal Marketing", "Lead Generation", "Law Firm Growth", "Digital Marketing", "Client Acquisition"]
   };
+
+  const blogSchema = generateBlogPostingSchema({
+    title: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: publishedDate,
+    modifiedDate: "2026-01-18",
+    imageUrl: "https://fractional-cmo.com.au/images/blog/lawyers-lead-generation-hero.jpg",
+    url: "/blog/lawyers-lead-generation",
+    category: articleData.category,
+    keywords: articleData.tags,
+  });
+
   const faqs = [{
     question: "What are the most effective lead generation strategies for lawyers?",
     answer: "The most effective strategies include content marketing (legal guides, blog posts), SEO optimization for legal keywords, Google Ads for high-intent searches, networking events, referral programs, and thought leadership through speaking engagements and media appearances."
@@ -79,7 +94,16 @@ const LawyersLeadGeneration = () => {
     question: "How long does it take to see results from legal marketing?",
     answer: "SEO and content marketing typically show results in 6-12 months. Google Ads can generate leads immediately. Networking and referral building take 3-6 months to establish momentum. Consistent effort across multiple channels yields the best long-term results."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/lawyers-lead-generation-hero.jpg'} heroAlt="Professional lawyer implementing digital lead generation strategies in modern law firm office">
+
+  const faqSchema = generateFAQSchema({
+    faqs: faqs,
+    url: "/blog/lawyers-lead-generation",
+  });
+
+  return <>
+    <SchemaScript schema={blogSchema} />
+    <SchemaScript schema={faqSchema} />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/lawyers-lead-generation-hero.jpg'} heroAlt="Professional lawyer implementing digital lead generation strategies in modern law firm office">
       <section className="mb-12">
         <Card className="border-l-4 border-l-primary bg-primary/5 mb-8">
           <CardContent className="p-6">
@@ -591,6 +615,7 @@ const LawyersLeadGeneration = () => {
         </ul>
       </section>
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+  </>;
 };
 export default LawyersLeadGeneration;

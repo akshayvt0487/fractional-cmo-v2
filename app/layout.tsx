@@ -33,6 +33,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} font-sans antialiased`}>
+      <head>
+        {/* Preconnect to Bunny CDN for font delivery */}
+        <link rel="preconnect" href="https://fonts.bunny.net" crossOrigin="anonymous" />
+        {/* Preload critical Roboto font with font-display: swap */}
+        <link
+          rel="preload"
+          as="font"
+          href="https://fonts.bunny.net/files/roboto-latin-400-normal.woff2"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <GoogleTagManager gtmId="GTM-W9PHPGPW" />
       <body className="font-sans">
         <Analytics />

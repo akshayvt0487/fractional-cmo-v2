@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import { generateBlogPostingSchema, generateFAQSchema, SchemaScript } from "@/lib/schemas";
 import Link from "next/link";
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -51,12 +52,13 @@ const FinancialPlannerSEO = () => {
     return date.toISOString().split('T')[0];
   };
 
+  const publishedDate = convertDateFormat(post.date);
 
   const articleData = {
     headline: "SEO for Financial Planners: Complete Local Search Domination Guide 2026",
     description: "Master SEO for financial planners with proven strategies for local search domination, content marketing, and client acquisition. Complete guide with actionable tactics.",
     author: "Basheer Padanna",
-    publishedDate: convertDateFormat(post.date),
+    publishedDate: publishedDate,
     modifiedDate: "2024-12-31T00:00:00.000Z",
     url: "/blog/financial-planner-seo",
     imageUrl: "/images/blog/financial-planner-seo-hero.jpg",
@@ -64,6 +66,20 @@ const FinancialPlannerSEO = () => {
     readTime: "28 min read",
     tags: ["Financial Planner SEO", "Local Search", "Financial Services Marketing", "Search Optimization", "Digital Marketing"]
   };
+
+  // Generate structured data schemas
+  const blogSchema = generateBlogPostingSchema({
+    title: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: publishedDate,
+    modifiedDate: "2024-12-31",
+    imageUrl: "https://fractional-cmo.com.au/images/blog/financial-planner-seo-hero.jpg",
+    url: "/blog/financial-planner-seo",
+    category: articleData.category,
+    keywords: articleData.tags,
+  });
+
   const faqs = [{
     question: "How important is local SEO for financial planners?",
     answer: "Local SEO is critical as most clients prefer working with local financial planners. Optimizing for local search helps establish trust and captures high-intent prospects in your service area."
@@ -74,7 +90,16 @@ const FinancialPlannerSEO = () => {
     question: "How long does SEO take to work for financial planners?",
     answer: "Initial SEO improvements typically appear within 3-6 months, with significant organic traffic growth usually visible after 6-12 months of consistent optimization and content creation efforts."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/financial-planner-seo-hero.jpg'} heroAlt="Financial planner optimizing SEO strategy for client acquisition">
+
+  const faqSchema = generateFAQSchema({
+    faqs: faqs,
+    url: "/blog/financial-planner-seo",
+  });
+
+  return <>
+    <SchemaScript schema={blogSchema} />
+    <SchemaScript schema={faqSchema} />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/financial-planner-seo-hero.jpg'} heroAlt="Financial planner optimizing SEO strategy for client acquisition">
       <div className="mb-8 p-6 bg-linear-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg">
         <p className="text-lg leading-relaxed text-gray-700">
           In the competitive financial services landscape, organic search visibility is critical for attracting affluent clients who research financial planners online before making decisions. SEO provides a sustainable, cost-effective way to establish authority and capture high-intent prospects searching for financial guidance.
@@ -550,7 +575,8 @@ const FinancialPlannerSEO = () => {
           <li>• <Link href="/services/digital-marketing/finance-brokers" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Finance Brokers</Link> - Complete growth strategy</li>
         </ul>
       </section>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+  </>;
 };
 export default FinancialPlannerSEO;
 
