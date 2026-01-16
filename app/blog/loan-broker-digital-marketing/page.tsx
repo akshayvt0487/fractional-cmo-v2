@@ -3,7 +3,7 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
-import Citation from '@/components/Citation';
+
 import { Card } from '@/components/ui/card';
 import Link from "next/link";
 export const metadata = createMetadata({
@@ -635,7 +635,7 @@ const LoanBrokerDigitalMarketing = () => {
       </div>
 
       <h2>Real-World Success: Case Study</h2>
-      <Card className="p-8 my-8 bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-500">
+      <Card className="p-8 my-8 bg-linear-to-r from-blue-50 to-purple-50 border-l-4 border-blue-500">
         <div className="flex items-start gap-4 mb-4">
           <div className="bg-blue-100 p-4 rounded-lg">
             <p className="text-3xl font-bold text-blue-600">5.2x</p>

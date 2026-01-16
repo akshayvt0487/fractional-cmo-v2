@@ -1,5 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Clock, Users, TrendingUp, CheckCircle } from "lucide-react";
 import whatIsFractionalCMOImage from "@/assets/blog/fractional-cmo-what-is-hero.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
@@ -114,7 +113,7 @@ const WhatIsFractionalCMO = () => {
         <ul className="space-y-3">
           {benefits.map((benefit, index) => (
             <li key={index} className="flex items-start gap-3">
-              <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+              <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
               <span>{benefit}</span>
             </li>
           ))}

@@ -1,7 +1,7 @@
 import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, TrendingDown, CheckCircle, X } from "lucide-react";
-import StrategyForm from '@/components/ui/strategy-form';
+
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
@@ -104,7 +104,7 @@ const ConveyancingLeadGeneration = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-green-50 to-emerald-100 border-green-200">
+          <Card className="bg-linear-to-br from-green-50 to-emerald-100 border-green-200">
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-green-800">
                 <TrendingUp className="h-6 w-6" />

@@ -521,7 +521,7 @@ const RemovalistDigitalMarketing = () => {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Future-Proofing Your Digital Strategy</h2>
         
-        <Card className="bg-gradient-to-r from-primary/5 to-secondary/5">
+        <Card className="bg-linear-to-r from-primary/5 to-secondary/5">
           <CardContent className="p-6">
             <h3 className="text-xl font-semibold mb-4">Emerging Trends in Removalist Marketing</h3>
             <div className="grid md:grid-cols-2 gap-6">

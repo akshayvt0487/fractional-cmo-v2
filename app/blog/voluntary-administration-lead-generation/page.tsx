@@ -2,15 +2,10 @@ import { createMetadata } from "@/lib/seo";
 import { blogPosts } from '@/data/blogPosts';
 
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Citation from "@/components/Citation";
-import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/voluntary-administration-lead-generation-hero.jpg";
-const convertDateFormat = (dateString: string): string => {
-    const date = new Date(dateString);
-    return date.toISOString().split('T')[0];
-  };
-  
+
 export const metadata = createMetadata({
   robots: {
     index: true,

@@ -1,9 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Clock, AlertTriangle, TrendingUp, Target, Users, BarChart } from "lucide-react";
+import { AlertTriangle, Target, BarChart, TrendingUp, Users } from "lucide-react";
 import whenToHireFractionalCMOImage from "@/assets/blog/when-hire-fractional-cmo-hero.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import StrategyForm from "@/components/ui/strategy-form";
 import { relatedArticles } from "@/utils/seoUtils";
 import Link from "next/link";
 
@@ -91,7 +89,7 @@ const WhenToHireFractionalCMO = () => {
 
         <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-8 my-12">
           <div className="flex items-start gap-4">
-            <AlertTriangle className="w-7 h-7 text-amber-600 dark:text-amber-400 mt-1 flex-shrink-0" />
+            <AlertTriangle className="w-7 h-7 text-amber-600 dark:text-amber-400 mt-1 shrink-0" />
             <div>
               <h3 className="text-amber-800 dark:text-amber-200 font-semibold mb-3 text-xl">Critical Timing</h3>
               <p className="text-amber-700 dark:text-amber-300 text-base leading-relaxed">
@@ -114,7 +112,7 @@ const WhenToHireFractionalCMO = () => {
                       <ul className="text-sm space-y-1">
                         {item.signals.map((signal, idx) => (
                           <li key={idx} className="flex items-center gap-2">
-                            <div className="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0" />
+                            <div className="w-1.5 h-1.5 bg-red-500 rounded-full shrink-0" />
                             {signal}
                           </li>
                         ))}
@@ -134,7 +132,7 @@ const WhenToHireFractionalCMO = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   {readinessIndicators.map((indicator, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center shrink-0 mt-0.5">
                         <div className="w-2 h-2 bg-white rounded-full" />
                       </div>
                       <span className="text-sm text-green-700 dark:text-green-300">{indicator}</span>
@@ -557,7 +555,6 @@ const WhenToHireFractionalCMO = () => {
            <p className="text-muted-foreground mb-4">
             Book a strategic consultation with <Link href='/'> Fractional CMO</Link> to assess your marketing leadership needs and determine whether our services are the right next step for your growth.
            </p>
-           <StrategyForm preSelectedService="strategy" />
          </div>
     </OptimizedBlogLayout>
   );

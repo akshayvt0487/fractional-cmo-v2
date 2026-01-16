@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import SEO from '@/components/SEO';
 import Header from '@/components/ui/header';
-import Footer from '@/components/sections/Footer';
+
 import BreadcrumbNavigation from '@/components/BreadcrumbNavigation';
 import ScrollBottomPopup from '@/components/ui/scroll-bottom-popup';
 import StrategyForm from '@/components/ui/strategy-form';

@@ -1,6 +1,6 @@
 import { createMetadata } from "@/lib/seo";
 import React from 'react';
-import { Users, Target, TrendingUp, Shield, MessageCircle, CheckCircle } from 'lucide-react';
+import { Users, Target, Shield } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
@@ -77,7 +77,7 @@ const NDISLeadGeneration = () => {
     answer: "NDIS lead costs vary by service type and location, typically ranging from $50-$200 per qualified lead. Higher-value services like SIL can justify higher acquisition costs, while core supports require more cost-effective approaches."
   }];
   return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-lead-generation-mastery.jpg'} heroAlt="NDIS lead generation strategies for disability service providers">
-      <Card className="bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-l-purple-500 p-8 mb-8">
+      <Card className="bg-linear-to-r from-purple-50 to-blue-50 border-l-4 border-l-purple-500 p-8 mb-8">
         <div className="flex items-start space-x-4">
           <div className="bg-purple-100 p-3 rounded-full">
             <span className="text-2xl">🎯</span>

@@ -87,7 +87,7 @@ const RemovalistSEOStrategy = () => {
             commercial relocation market growing 8% annually, the opportunity is massive—but so is the competition.
           </p>
 
-          <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-6 mb-6">
+          <div className="bg-linear-to-r from-primary/10 to-secondary/10 rounded-lg p-6 mb-6">
             <h3 className="text-xl font-semibold mb-4">Australian Removalist Industry Snapshot</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -364,7 +364,7 @@ const RemovalistSEOStrategy = () => {
             Internal linking helps search engines understand your site structure and distributes page authority throughout your website. For removalist businesses, create topic clusters around your core services.
           </p>
 
-          <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-6 mb-6">
+          <div className="bg-linear-to-r from-primary/10 to-secondary/10 rounded-lg p-6 mb-6">
             <h4 className="text-lg font-semibold mb-4">Hub and Spoke Model for Removalist Sites</h4>
             
             <div className="space-y-4">
@@ -694,7 +694,7 @@ const RemovalistSEOStrategy = () => {
             </Card>
           </div>
 
-          <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-6 mb-8">
+          <div className="bg-linear-to-r from-primary/10 to-secondary/10 rounded-lg p-6 mb-8">
             <h4 className="text-lg font-semibold mb-4">SEO Success Timeline for Removalist Businesses</h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3">
@@ -720,7 +720,7 @@ const RemovalistSEOStrategy = () => {
             Implementing a comprehensive SEO strategy for your removalist business requires patience, consistency, and expertise. Start with the fundamentals—local SEO and Google Business Profile optimization—then gradually build your content marketing and technical SEO capabilities.
           </p>
 
-          <Card className="bg-gradient-to-r from-primary/5 to-secondary/5 border-primary/20 mb-8">
+          <Card className="bg-linear-to-r from-primary/5 to-secondary/5 border-primary/20 mb-8">
             <CardContent className="p-6">
               <h4 className="text-lg font-semibold mb-4">Quick Start Checklist</h4>
               <div className="grid md:grid-cols-2 gap-4">

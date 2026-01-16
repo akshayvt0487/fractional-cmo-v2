@@ -118,7 +118,7 @@ const B2BLeadGeneration = () => {
         and convert high-value business clients through strategic marketing and sales alignment.
       </p>
 
-      <Card className="mb-8 bg-gradient-to-r from-primary/10 to-blue/10 border-primary/20">
+      <Card className="mb-8 bg-linear-to-r from-primary/10 to-blue/10 border-primary/20">
         <CardContent className="p-8">
           <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
             <TrendingUp className="h-6 w-6 text-primary" />
@@ -275,7 +275,7 @@ const B2BLeadGeneration = () => {
 
       <h2 className="text-3xl font-bold mb-6">Account-Based Marketing (ABM) Strategies</h2>
 
-      <Card className="mb-8 bg-gradient-to-r from-orange-50 to-red-50 border-orange-200">
+      <Card className="mb-8 bg-linear-to-r from-orange-50 to-red-50 border-orange-200">
         <CardContent className="p-6">
           <h3 className="text-xl font-semibold mb-4">Strategic ABM Framework</h3>
           <p className="mb-4">
@@ -508,7 +508,7 @@ const B2BLeadGeneration = () => {
 
       <h2 className="text-3xl font-bold mb-6">Technology Stack for B2B Lead Generation</h2>
 
-      <Card className="mb-8 bg-gradient-to-r from-purple-50 to-indigo-50 border-purple-200">
+      <Card className="mb-8 bg-linear-to-r from-purple-50 to-indigo-50 border-purple-200">
         <CardContent className="p-6">
           <h3 className="text-xl font-semibold mb-4">Essential MarTech Tools</h3>
           <div className="grid md:grid-cols-3 gap-6">
@@ -684,7 +684,7 @@ const B2BLeadGeneration = () => {
         <footer className="text-sm mt-2">— Forrester Research, B2B Buyer Journey Study</footer>
       </blockquote>
 
-      <Card className="bg-gradient-to-r from-primary/10 to-blue-50 border-primary/20 mb-8">
+      <Card className="bg-linear-to-r from-primary/10 to-blue-50 border-primary/20 mb-8">
         <CardContent className="p-6">
           <h3 className="text-xl font-semibold mb-4">B2B Lead Generation Success Framework</h3>
           <div className="space-y-4">

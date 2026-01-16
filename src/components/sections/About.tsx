@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import LazyImage from "@/components/LazyImage";
+
 import basheerPhoto from "@/assets/Basheer-Padanna.png";
 import Image from "next/image";
 import Link from "next/link";

@@ -34,6 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} font-sans antialiased`}>
       <head>
+        {/* Advanced robots meta tag for SERP control */}
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        
         {/* Preconnect to Bunny CDN for font delivery */}
         <link rel="preconnect" href="https://fonts.bunny.net" crossOrigin="anonymous" />
         {/* Preload critical Roboto font with font-display: swap */}

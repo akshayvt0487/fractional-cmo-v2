@@ -1,12 +1,11 @@
 import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Users, Target, TrendingUp, Shield, MessageCircle, CheckCircle, Heart, Star, Globe, Phone } from 'lucide-react';
+import { Users, Target, TrendingUp, Heart } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
-import Citation from '@/components/Citation';
-import StrategyForm from '@/components/ui/strategy-form';
+
 import Link from "next/link";
 export const metadata = createMetadata({
   robots: {
@@ -86,7 +85,7 @@ const NDISDisabilityServiceMarketing = () => {
     answer: "The most effective channels include local SEO, Google My Business optimization, community engagement, referral programs with healthcare professionals, and targeted social media marketing. Focus on quality over quantity in your channel selection."
   }];
   return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-disability-service-marketing-hero.jpg'} heroAlt="NDIS disability service provider digital marketing">
-      <Card className="bg-gradient-to-r from-purple-50 to-indigo-50 border-l-4 border-l-purple-500 p-8 mb-8 not-prose">
+      <Card className="bg-linear-to-r from-purple-50 to-indigo-50 border-l-4 border-l-purple-500 p-8 mb-8 not-prose">
         <div className="flex items-start space-x-4">
           <div className="bg-purple-100 p-3 rounded-full">
             <Heart className="w-8 h-8 text-purple-600" />
@@ -734,7 +733,7 @@ const NDISDisabilityServiceMarketing = () => {
       <h2>Real-World Success Stories</h2>
 
       <div className="space-y-6 mb-8">
-        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50">
+        <Card className="bg-linear-to-r from-blue-50 to-indigo-50">
           <CardContent className="p-6">
             <h4 className="text-lg font-semibold mb-3 text-blue-800">Case Study: Community Participation Provider - Melbourne</h4>
             <div className="grid md:grid-cols-2 gap-6">
@@ -774,7 +773,7 @@ const NDISDisabilityServiceMarketing = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-r from-green-50 to-teal-50">
+        <Card className="bg-linear-to-r from-green-50 to-teal-50">
           <CardContent className="p-6">
             <h4 className="text-lg font-semibold mb-3 text-green-800">Case Study: SIL Provider - Regional Queensland</h4>
             <div className="grid md:grid-cols-2 gap-6">
@@ -815,7 +814,7 @@ const NDISDisabilityServiceMarketing = () => {
         </Card>
       </div>
 
-      <div className="bg-gradient-to-r from-purple-50 to-indigo-50 border-l-4 border-l-purple-500 p-6 mb-8">
+      <div className="bg-linear-to-r from-purple-50 to-indigo-50 border-l-4 border-l-purple-500 p-6 mb-8">
         <h3 className="text-lg font-semibold mb-3 text-purple-800">Ready to Transform Your NDIS Marketing?</h3>
         <p className="text-gray-700 mb-4">
          Implementing a comprehensive, compliant marketing strategy for your disability service business requires expertise, time, and ongoing optimization. <Link href='/'> <strong>Fractional CMO </strong> </Link> specializes in NDIS-compliant marketing strategies that drive participant acquisition while maintaining the highest standards of accessibility and quality.

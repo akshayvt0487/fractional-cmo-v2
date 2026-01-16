@@ -1,7 +1,6 @@
 import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Clock, DollarSign, TrendingUp, Users, CheckCircle, X } from "lucide-react";
+import { DollarSign, CheckCircle } from "lucide-react";
 import fractionalCMOVsFullTimeImage from "@/assets/blog/fractional-cmo-vs-full-time.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
