@@ -388,6 +388,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fractional-cmo.com.au/blog/ndis-marketing-guide-2024</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fractional-cmo.com.au/blog/ndis-participant-engagement-strategies</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -545,6 +551,18 @@
   </url>
   <url>
     <loc>https://fractional-cmo.com.au/blog/trade-customer-retention-strategies</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fractional-cmo.com.au/blog/what-is-fractional-cmo</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fractional-cmo.com.au/blog/when-to-hire-fractional-cmo</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -736,18 +754,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fractional-cmo.com.au/services/lead-generation</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fractional-cmo.com.au/services</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -832,18 +838,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fractional-cmo.com.au/services/seo-services</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fractional-cmo.com.au/services/social-media-marketing</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://fractional-cmo.com.au/sitemap</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://fractional-cmo.com.au/terms-conditions</loc>
     <lastmod>2025-12-18</lastmod>
@@ -857,19 +862,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/ndis-providers</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fractional-cmo.com.au/services/lead-generation/builders</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/builders</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -881,19 +874,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/buyers-agents</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fractional-cmo.com.au/services/lead-generation/accountants</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/accountants</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -905,19 +886,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/lawyers</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fractional-cmo.com.au/services/lead-generation/painters</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/painters</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -929,19 +898,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/electricians</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fractional-cmo.com.au/services/lead-generation/plumbers</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/plumbers</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -953,19 +910,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/removalists</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fractional-cmo.com.au/services/lead-generation/finance-brokers</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/finance-brokers</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -977,19 +922,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/bricklayers</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fractional-cmo.com.au/services/lead-generation/floor-sanding</loc>
-    <lastmod>2025-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fractional-cmo.com.au/services/online-marketing/floor-sanding</loc>
     <lastmod>2025-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

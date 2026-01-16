@@ -1,4 +1,5 @@
 import { createMetadata, SITE_URL } from "@/lib/seo";
+import { generateOrganizationSchema, SchemaScript } from "@/lib/schemas";
 import Index from "@/app/pages/Index";
 
 export const metadata = createMetadata({
@@ -40,11 +41,25 @@ export const metadata = createMetadata({
 });
 
 export default function Home() {
+  const organizationSchema = generateOrganizationSchema({
+    name: 'Fractional CMO',
+    description: 'Fractional CMO and Digital Marketing Strategist offering end-to-end growth systems for service businesses.',
+    url: SITE_URL,
+    imageUrl: `${SITE_URL.replace(/\/$/, '')}/images/Basheer-Padanna.png`,
+    socialProfiles: [
+      'https://www.facebook.com/FractionalCMO',
+      'https://www.linkedin.com/company/fractional-cmo',
+    ],
+    contactPoint: {
+      type: 'Customer Service',
+      email: 'contact@fractional-cmo.com.au',
+    },
+  });
+
   return (
     <div>
-       <Index/>
-
+      <SchemaScript schema={organizationSchema} />
+      <Index />
     </div>
-   
   );
 }

@@ -199,6 +199,7 @@ export interface OrganizationSchemaInput {
   description?: string;
   url?: string;
   logoUrl?: string;
+  imageUrl?: string;
   socialProfiles?: string[];
   contactPoint?: {
     type: string; // e.g., "Customer Service"
@@ -215,6 +216,7 @@ export function generateOrganizationSchema(input: OrganizationSchemaInput = {}) 
     description: input.description,
     url: input.url || SITE_URL,
     logo: input.logoUrl || `${SITE_URL.replace(/\/$/, '')}/logo.png`,
+    image: input.imageUrl || `${SITE_URL.replace(/\/$/, '')}/images/Basheer-Padanna.png`,
     ...(input.socialProfiles && input.socialProfiles.length > 0 && {
       sameAs: input.socialProfiles,
     }),
@@ -267,7 +269,7 @@ export interface LocalBusinessSchemaInput {
   description?: string;
   serviceType: string;
   areaServed?: string[];
-  priceRange?: string;
+  priceRange?: string; // e.g., "$$$" or "$$$$$"
   url: string;
   imageUrl?: string;
 }
@@ -281,19 +283,15 @@ export function generateLocalBusinessSchema(input: LocalBusinessSchemaInput) {
       description: input.description,
     }),
     url: `${SITE_URL.replace(/\/$/, '')}${input.url}`,
-    ...(input.imageUrl && {
-      image: input.imageUrl,
-    }),
+    image: input.imageUrl || `${SITE_URL.replace(/\/$/, '')}/images/Basheer-Padanna.png`,
     areaServed: {
       "@type": "Country",
       name: "Australia",
     },
-    ...(input.areaServed && {
+    ...(input.areaServed && input.areaServed.length > 0 && {
       areaServed: input.areaServed,
     }),
-    ...(input.priceRange && {
-      priceRange: input.priceRange,
-    }),
+    priceRange: input.priceRange || "$$$",
     ...(input.serviceType && {
       knowsAbout: input.serviceType,
     }),

@@ -26,7 +26,7 @@ export const metadata = createMetadata({
   openGraph: {
     title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
     description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/accounting-growth-strategy-guide`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/accounting-growth-strategy`,
     siteName: "Fractional CMO",
     type: "article",
     images: [{

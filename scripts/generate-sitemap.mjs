@@ -26,6 +26,10 @@ const EXCLUDE_PATTERNS = [
   'thank-you',
   'not-found',
   'not-ready',
+  '/services/online-marketing', // Redirected to /services/digital-marketing
+  '/services/lead-generation', // Redirected to industry-specific pages
+  '/services/online-marketing/', // Catch industry-specific online-marketing routes
+  '/services/seo-services', // Redirected to /services/seo
 ];
 
 // Industries for dynamic routes
@@ -175,7 +179,7 @@ function generateSitemap(allRoutes) {
   INDUSTRIES.forEach((industry) => {
     const routes = [
       `/services/lead-generation/${industry}`,
-      `/services/online-marketing/${industry}`,
+      // `/services/online-marketing/${industry}`, // Redirected to /services/digital-marketing/${industry}
       `/services/seo/${industry}`,
     ];
     

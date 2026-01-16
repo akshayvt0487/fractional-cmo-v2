@@ -95,6 +95,9 @@ const hasArticleFields =
     follow: input.robots?.follow ?? true,
     nocache: input.robots?.nocache ?? false,
     googleBot: input.robots?.googleBot,
+    "max-snippet": -1, // Allow unlimited snippet length in search results
+    "max-image-preview": "large", // Allow large image previews
+    "max-video-preview": -1, // Allow unlimited video preview duration
   };
 
   return {

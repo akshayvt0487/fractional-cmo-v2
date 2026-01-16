@@ -64,7 +64,7 @@ const faqs = [{
 const relatedArticles = [{
   title: "Security Digital Marketing Guide: Complete Growth Strategy 2026",
   description: "Comprehensive digital marketing strategies for security companies",
-  url: "/blog/security-digital-marketing-guide",
+  url: "/blog/security-digital-marketing",
   category: "Security",
   readTime: "26 min read"
 }, {
