@@ -57,7 +57,8 @@ export default function PaintersDigitalMarketingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      /><IndustryServiceLayout data={data} allServiceData={rawServiceData} />
+      />
+      <IndustryServiceLayout data={data} allServiceData={rawServiceData} />
     </>
   );
 }
