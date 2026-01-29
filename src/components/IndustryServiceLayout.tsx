@@ -222,17 +222,9 @@ const IndustryServiceLayout = ({
       "provider": { "@type": "Organization", "name": "Fractional CMO Australia" },
       "areaServed": { "@type": "Country", "name": "Australia" },
       "serviceType": serviceName
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqs.map((faq: FAQ) => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
-      }))
     }
   ];
+  // FAQ schema is rendered at page level to avoid duplication
 
   return (
     <>
