@@ -38,12 +38,102 @@ export const metadata: Metadata = {
 };
 
 export default function EmailMarketingPage() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://fractional-cmo.com.au/services/email-marketing#service",
+    "name": "Email Marketing Services",
+    "serviceType": "Email Marketing",
+    "url": "https://fractional-cmo.com.au/services/email-marketing",
+    "description": "Strategic email marketing services for Australian businesses focused on lead nurturing, customer retention, and predictable revenue growth through targeted campaigns and intelligent automation.",
+    "inLanguage": "en-AU",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fractional-cmo.com.au/services/email-marketing"
+    },
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": "https://fractional-cmo.com.au/#localbusiness"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Businesses looking to increase revenue, retention, and engagement through email marketing"
+    },
+    "category": "Marketing Services > Email Marketing",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Email Marketing Capabilities",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Email Strategy & Planning",
+            "description": "Email marketing strategies aligned with customer journeys, business goals, and audience segmentation."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Email Template Design",
+            "description": "Professional, mobile-responsive email template design that reflects brand identity and improves engagement."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Automation & Sequences",
+            "description": "Automated email workflows for lead nurturing, onboarding, abandoned carts, and customer retention."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "List Management & Segmentation",
+            "description": "Strategic list growth, hygiene, and segmentation to ensure relevant messaging and high deliverability."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Campaign Management",
+            "description": "End-to-end campaign execution including copywriting, scheduling, A/B testing, and optimisation."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Analytics & Optimisation",
+            "description": "Performance tracking and optimisation to improve open rates, click-through rates, and conversions."
+          }
+        }
+      ]
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://fractional-cmo.com.au/services/email-marketing",
+      "areaServed": "AU"
+    }
+  };
   const faqSchema = generateFAQSchema(data.faqs);
-  // Service schema is rendered by ServiceLayout component to avoid duplication
   // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

@@ -89,12 +89,102 @@ export const metadata: Metadata = {
 };
 
 export default function LeadGenerationPage() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://fractional-cmo.com.au/services/lead-generation#service",
+    "name": "Lead Generation Services",
+    "serviceType": "Lead Generation Digital Marketing",
+    "url": "https://fractional-cmo.com.au/services/lead-generation",
+    "description": "Integrated lead generation services for Australian businesses focused on delivering qualified leads through multi-channel digital marketing. Our approach combines strategy, execution, conversion optimisation, and automation to create scalable and measurable lead acquisition systems.",
+    "inLanguage": "en-AU",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fractional-cmo.com.au/services/lead-generation"
+    },
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": "https://fractional-cmo.com.au/#localbusiness"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Businesses seeking scalable and cost-effective lead generation systems"
+    },
+    "category": "Marketing Services > Lead Generation",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Lead Generation Capabilities",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Integrated Marketing Strategy",
+            "description": "Cohesive lead generation strategies aligning SEO, PPC, social media, and email marketing toward unified business goals."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Multi-Channel Campaign Management",
+            "description": "Expert management of campaigns across Google Ads, Meta, LinkedIn, and other platforms to maximise reach and lead quality."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Conversion Rate Optimisation",
+            "description": "Data-driven optimisation of landing pages, funnels, and user journeys to increase lead conversion rates."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Marketing Automation",
+            "description": "Automated lead nurturing workflows and email sequences to improve engagement and conversion efficiency."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Analytics & Attribution",
+            "description": "Advanced tracking and reporting to identify high-performing channels, cost per lead, and ROI."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Brand Development",
+            "description": "Consistent brand messaging and visual identity across all digital touchpoints to build trust and recognition."
+          }
+        }
+      ]
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://fractional-cmo.com.au/services/lead-generation",
+      "areaServed": "AU"
+    }
+  };
   const faqSchema = generateFAQSchema(data.faqs);
-  // Service schema is rendered by ServiceLayout component to avoid duplication
   // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

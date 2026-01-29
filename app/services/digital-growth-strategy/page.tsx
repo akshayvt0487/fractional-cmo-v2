@@ -38,12 +38,102 @@ export const metadata: Metadata = {
 };
 
 export default function DigitalGrowthStrategyPage() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://fractional-cmo.com.au/services/digital-growth-strategy#service",
+    "name": "Digital Growth Strategy Consulting",
+    "serviceType": "Growth Strategy Consulting",
+    "url": "https://fractional-cmo.com.au/services/digital-growth-strategy",
+    "description": "Strategic growth planning for ambitious Australian businesses to move beyond random marketing tactics and implement systematic, data-driven digital growth strategies that scale acquisition, optimise conversion funnels, and drive sustainable revenue growth.",
+    "inLanguage": "en-AU",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://fractional-cmo.com.au/services/digital-growth-strategy"
+    },
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": "https://fractional-cmo.com.au/#localbusiness"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Ambitious, growth-focused and service-based businesses"
+    },
+    "category": "Marketing Services > Digital Growth Strategy",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Growth Strategy Capabilities",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Growth Audit & Assessment",
+            "description": "Deep analysis of digital presence, market position, and growth opportunities to identify high-impact strategic initiatives."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Customer Journey Mapping",
+            "description": "Detailed mapping of the customer journey from awareness to purchase to identify optimisation opportunities at every stage."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Channel Strategy",
+            "description": "Data-driven recommendations on the most effective marketing channels to maximise return on investment."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Growth Experimentation",
+            "description": "Systematic experimentation and testing framework to validate growth hypotheses and scale successful initiatives."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Technology Stack Optimisation",
+            "description": "Assessment and optimisation of marketing technology, CRM, and analytics tools to support scalable growth."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "KPI Framework & Dashboards",
+            "description": "Custom KPI frameworks and real-time dashboards to measure progress and track growth performance."
+          }
+        }
+      ]
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": "https://fractional-cmo.com.au/services/digital-growth-strategy",
+      "areaServed": "AU"
+    }
+  };
   const faqSchema = generateFAQSchema(data.faqs);
-  // Service schema is rendered by ServiceLayout component to avoid duplication
   // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
