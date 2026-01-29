@@ -46,11 +46,6 @@ export default function DigitalGrowthStrategyPage() {
     "serviceType": "Growth Strategy Consulting",
     "url": "https://fractional-cmo.com.au/services/digital-growth-strategy",
     "description": "Strategic growth planning for ambitious Australian businesses to move beyond random marketing tactics and implement systematic, data-driven digital growth strategies that scale acquisition, optimise conversion funnels, and drive sustainable revenue growth.",
-    "inLanguage": "en-AU",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://fractional-cmo.com.au/services/digital-growth-strategy"
-    },
     "provider": {
       "@type": "LocalBusiness",
       "@id": "https://fractional-cmo.com.au/#localbusiness"

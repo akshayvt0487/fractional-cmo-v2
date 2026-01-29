@@ -46,11 +46,6 @@ export default function EmailMarketingPage() {
     "serviceType": "Email Marketing",
     "url": "https://fractional-cmo.com.au/services/email-marketing",
     "description": "Strategic email marketing services for Australian businesses focused on lead nurturing, customer retention, and predictable revenue growth through targeted campaigns and intelligent automation.",
-    "inLanguage": "en-AU",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://fractional-cmo.com.au/services/email-marketing"
-    },
     "provider": {
       "@type": "LocalBusiness",
       "@id": "https://fractional-cmo.com.au/#localbusiness"

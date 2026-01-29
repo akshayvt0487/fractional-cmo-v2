@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema } from '@/data/serviceData';
+import { getIndustryServicePageData, generateIndustryFAQSchema } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 import { rawServiceData } from '@/data/serviceData';
 

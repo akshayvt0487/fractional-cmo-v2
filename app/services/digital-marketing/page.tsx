@@ -46,11 +46,6 @@ export default function DigitalMarketingPage() {
     "serviceType": "Digital Marketing Services",
     "url": "https://fractional-cmo.com.au/services/digital-marketing",
     "description": "Integrated digital marketing services for Australian businesses, combining strategy, execution, and optimisation across SEO, paid media, social, automation, and analytics to drive measurable and scalable business growth.",
-    "inLanguage": "en-AU",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://fractional-cmo.com.au/services/digital-marketing"
-    },
     "provider": {
       "@type": "LocalBusiness",
       "@id": "https://fractional-cmo.com.au/#localbusiness"

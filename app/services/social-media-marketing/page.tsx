@@ -46,11 +46,6 @@ export default function SocialMediaMarketingPage() {
     "serviceType": "Social Media Marketing",
     "url": "https://fractional-cmo.com.au/services/social-media-marketing",
     "description": "Strategic social media marketing services for Australian businesses focused on building engaged communities, generating leads, and strengthening brand loyalty through organic and paid social channels.",
-    "inLanguage": "en-AU",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://fractional-cmo.com.au/services/social-media-marketing"
-    },
     "provider": {
       "@type": "LocalBusiness",
       "@id": "https://fractional-cmo.com.au/#localbusiness"

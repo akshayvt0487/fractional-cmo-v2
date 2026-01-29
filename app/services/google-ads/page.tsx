@@ -46,11 +46,6 @@ export default function GoogleAdsPage() {
     "serviceType": "Pay-Per-Click Advertising",
     "url": "https://fractional-cmo.com.au/services/google-ads",
     "description": "Data-driven Google Ads management services for Australian businesses, designed to deliver predictable and scalable revenue through precision targeting, continuous optimisation, and measurable return on ad spend.",
-    "inLanguage": "en-AU",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://fractional-cmo.com.au/services/google-ads"
-    },
     "provider": {
       "@type": "LocalBusiness",
       "@id": "https://fractional-cmo.com.au/#localbusiness"

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, rawServiceData } from '@/data/serviceData';
+import { getIndustryServicePageData, generateIndustryFAQSchema, rawServiceData } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 
 const data = getIndustryServicePageData('plumbers', 'seo')!;

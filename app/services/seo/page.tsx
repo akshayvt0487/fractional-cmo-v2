@@ -48,11 +48,6 @@ export default function SeoPage() {
     "serviceType": "Search Engine Optimization",
     "url": "https://fractional-cmo.com.au/services/seo",
     "description": "Comprehensive SEO services for Australian businesses focused on sustainable organic growth. Our approach combines technical SEO, on-page optimisation, content strategy, and ethical link building to improve search visibility, user experience, and conversion performance.",
-    "inLanguage": "en-AU",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://fractional-cmo.com.au/services/seo"
-    },
     "provider": {
       "@type": "LocalBusiness",
       "@id": "https://fractional-cmo.com.au/#localbusiness"

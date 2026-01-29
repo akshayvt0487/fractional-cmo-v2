@@ -97,11 +97,6 @@ export default function LeadGenerationPage() {
     "serviceType": "Lead Generation Digital Marketing",
     "url": "https://fractional-cmo.com.au/services/lead-generation",
     "description": "Integrated lead generation services for Australian businesses focused on delivering qualified leads through multi-channel digital marketing. Our approach combines strategy, execution, conversion optimisation, and automation to create scalable and measurable lead acquisition systems.",
-    "inLanguage": "en-AU",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://fractional-cmo.com.au/services/lead-generation"
-    },
     "provider": {
       "@type": "LocalBusiness",
       "@id": "https://fractional-cmo.com.au/#localbusiness"
