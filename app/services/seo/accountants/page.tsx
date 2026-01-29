@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, rawServiceData } from '@/data/serviceData';
+import { getIndustryServicePageData, generateIndustryFAQSchema, rawServiceData } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 
 const data = getIndustryServicePageData('accountants', 'seo')!;
@@ -37,22 +37,12 @@ export const metadata: Metadata = {
 };
 
 export default function AccountantsSeoPage() {
-  const serviceSchema = generateIndustryServiceSchema(
-    'accountants',
-    'seo',
-    'accountants',
-    'seo',
-    data.heroDescription
-  );
   const faqSchema = generateIndustryFAQSchema(data.faqs);
+  // Service schema is rendered by IndustryServiceLayout component to avoid duplication
   // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

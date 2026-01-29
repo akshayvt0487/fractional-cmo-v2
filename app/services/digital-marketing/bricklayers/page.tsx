@@ -38,22 +38,12 @@ export const metadata: Metadata = {
 };
 
 export default function BricklayersDigitalMarketingPage() {
-  const serviceSchema = generateIndustryServiceSchema(
-    'bricklayers',
-    'digital-marketing',
-    'bricklayers',
-    'digital-marketing',
-    data.heroDescription
-  );
   const faqSchema = generateIndustryFAQSchema(data.faqs);
+  // Service schema is rendered by IndustryServiceLayout component to avoid duplication
   // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
