@@ -11,7 +11,8 @@
       "Bash(npm run build:*)",
       "Bash(python /tmp/fix_formatting.py:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(grep:*)"
     ]
   }
 }

@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
-import { getIndustryServicePageData, generateIndustryFAQSchema, rawServiceData } from '@/data/serviceData';
+import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, rawServiceData } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
-import { rawServiceData } from '@/data/serviceData';
 
 const data = getIndustryServicePageData('lawyers', 'digital-marketing')!;
 
