@@ -202,11 +202,25 @@ export const generateServiceSchema = (a: MainServicePageData | string, b?: strin
       '@type': 'Organization',
       name: 'Basheer Padanna - Fractional CMO',
       url: siteUrl,
-      logo: defaultImage
+      logo: {
+        '@type': 'ImageObject',
+        url: defaultImage
+      }
     },
-    areaServed: { '@type': 'Country', name: 'Australia' },
+    areaServed: {
+      '@type': 'Country',
+      name: 'Australia'
+    },
     serviceType: (pageData as any).serviceName,
-    url: `${siteUrl}/services/${(pageData as any).serviceSlug || ''}`
+    url: `${siteUrl}/services/${(pageData as any).serviceSlug || ''}`,
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: `${siteUrl}/services/${(pageData as any).serviceSlug || ''}`,
+      serviceLocation: {
+        '@type': 'Place',
+        name: 'Australia'
+      }
+    }
   };
 };
 
@@ -289,11 +303,33 @@ export const generateIndustryServiceSchema = (industryName: string, serviceName:
   '@type': 'Service',
   name: `${serviceName} for ${industryName}`,
   description,
-  provider: { '@type': 'Organization', name: 'Basheer Padanna - Fractional CMO', url: siteUrl, logo: defaultImage },
-  areaServed: { '@type': 'Country', name: 'Australia' },
+  provider: {
+    '@type': 'Organization',
+    name: 'Basheer Padanna - Fractional CMO',
+    url: siteUrl,
+    logo: {
+      '@type': 'ImageObject',
+      url: defaultImage
+    }
+  },
+  areaServed: {
+    '@type': 'Country',
+    name: 'Australia'
+  },
   serviceType: serviceName,
-  audience: { '@type': 'Audience', audienceType: industryName },
-  url: `${siteUrl}/services/${serviceSlug}/${industrySlug}`
+  audience: {
+    '@type': 'Audience',
+    audienceType: industryName
+  },
+  url: `${siteUrl}/services/${serviceSlug}/${industrySlug}`,
+  availableChannel: {
+    '@type': 'ServiceChannel',
+    serviceUrl: `${siteUrl}/services/${serviceSlug}/${industrySlug}`,
+    serviceLocation: {
+      '@type': 'Place',
+      name: 'Australia'
+    }
+  }
 });
 
 export const generateIndustryFAQSchema = (faqs: IndustryServiceFAQ[]) => ({

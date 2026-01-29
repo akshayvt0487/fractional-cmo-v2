@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SITE_URL } from '@/lib/seo';
-import { getMainServicePageData, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/data/serviceData';
+import { getMainServicePageData, generateServiceSchema, generateFAQSchema } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
 
 const data = getMainServicePageData('digital-marketing')!;
@@ -44,7 +44,7 @@ export default function DigitalMarketingPage() {
     data.heroDescription
   );
   const faqSchema = generateFAQSchema(data.faqs);
-  const breadcrumbSchema = generateBreadcrumbSchema(data.heroTitle, 'digital-marketing');
+  // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
 
   return (
     <>
@@ -55,10 +55,6 @@ export default function DigitalMarketingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <ServiceLayout data={data} serviceSlug="digital-marketing" />
     </>

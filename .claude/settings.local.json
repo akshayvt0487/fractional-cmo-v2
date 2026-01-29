@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const html = require\\(''fs''\\).readFileSync\\(''C:/Users/aksha/.claude/projects/d--DSIGNS-Fractional-CMO-fractional-cmo-v3-fractional-cmo-v2/c5525afd-3d71-4a6b-9931-85cb21d7b9ee/tool-results/toolu_017QtANNr8H8ZEkRCGA1Q34V.txt'', ''utf8''\\); const schemas = [...html.matchAll\\(/&lt;script type=\\\\\"\"application\\\\/ld\\\\+json\\\\\"\"&gt;\\({[^<]+}\\)/g\\)].map\\(\\(m, i\\) => \\({index: i+1, type: JSON.parse\\(m[1]\\)[''@type'']}\\)\\); console.log\\(JSON.stringify\\(schemas, null, 2\\)\\);\")",
+      "Bash(findstr:*)",
+      "Bash(dir:*)",
+      "Bash(for dir in google-ads lead-generation social-media-marketing digital-marketing seo)",
+      "Bash(do echo \"$dir\")",
+      "Bash(done)",
+      "Bash(git checkout:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}

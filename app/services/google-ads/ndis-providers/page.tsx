@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema, rawServiceData } from '@/data/serviceData';
+import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, rawServiceData } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 
 const data = getIndustryServicePageData('ndis-providers', 'google-ads')!;
@@ -45,12 +45,7 @@ export default function NdisProvidersGoogleAdsPage() {
     data.heroDescription
   );
   const faqSchema = generateIndustryFAQSchema(data.faqs);
-  const breadcrumbSchema = generateIndustryBreadcrumbSchema(
-    'google-ads',
-    'ndis-providers',
-    'google-ads',
-    'ndis-providers'
-  );
+  // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
 
   return (
     <>
@@ -61,12 +56,7 @@ export default function NdisProvidersGoogleAdsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <IndustryServiceLayout data={data} allServiceData={rawServiceData} />
+      /><IndustryServiceLayout data={data} allServiceData={rawServiceData} />
     </>
   );
 }

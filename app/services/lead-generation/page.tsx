@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SITE_URL } from '@/lib/seo';
-import { getMainServicePageData, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema, rawServiceData } from '@/data/serviceData';
+import { getMainServicePageData, generateServiceSchema, generateFAQSchema, rawServiceData } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
 
 // Build a full page `data` by merging the parent main service page
@@ -95,7 +95,7 @@ export default function LeadGenerationPage() {
     data.heroDescription
   );
   const faqSchema = generateFAQSchema(data.faqs);
-  const breadcrumbSchema = generateBreadcrumbSchema(data.heroTitle, 'lead-generation');
+  // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
 
   return (
     <>
@@ -106,10 +106,6 @@ export default function LeadGenerationPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <ServiceLayout data={data} serviceSlug="lead-generation" />
     </>

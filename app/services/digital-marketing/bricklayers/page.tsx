@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema, generateIndustryBreadcrumbSchema } from '@/data/serviceData';
+import { getIndustryServicePageData, generateIndustryServiceSchema, generateIndustryFAQSchema } from '@/data/serviceData';
 import IndustryServiceLayout from '@/components/IndustryServiceLayout';
 import { rawServiceData } from '@/data/serviceData';
 
@@ -46,12 +46,7 @@ export default function BricklayersDigitalMarketingPage() {
     data.heroDescription
   );
   const faqSchema = generateIndustryFAQSchema(data.faqs);
-  const breadcrumbSchema = generateIndustryBreadcrumbSchema(
-    'digital-marketing',
-    'bricklayers',
-    'digital-marketing',
-    'bricklayers'
-  );
+  // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
 
   return (
     <>
@@ -62,12 +57,7 @@ export default function BricklayersDigitalMarketingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <IndustryServiceLayout data={data} allServiceData={rawServiceData} />
+      /><IndustryServiceLayout data={data} allServiceData={rawServiceData} />
     </>
   );
 }

@@ -15,12 +15,17 @@ const BreadcrumbNavigation = ({ items }: BreadcrumbNavigationProps) => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": items.map((item, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "name": item.label,
-      "item": `https://fractional-cmo.com.au${item.href}`
-    }))
+    itemListElement: items.map((item, index) => {
+      const baseUrl = 'https://fractional-cmo.com.au';
+      const itemUrl = item.href === '/' ? baseUrl : `${baseUrl}${item.href}`;
+
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.label,
+        item: itemUrl
+      };
+    })
   };
 
   return (
