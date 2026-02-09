@@ -84,13 +84,17 @@ const LiquidatorsGrowthMarketing = () => {
   };
 
   
-  const articleData = {headline: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2026",
+  const articleData = {
+    headline: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2026",
     description: "Comprehensive growth marketing strategies for liquidators and insolvency practitioners. Learn how to scale your liquidation practice with proven digital marketing tactics.",
     publishedDate: convertDateFormat(post.date),
     url: "/blog/liquidators-growth-marketing",
+    imageUrl: "/images/blog/liquidators-growth-marketing-hero.jpg",
     readTime: "12 min read",
     category: "Legal",
-    author: "Basheer Padanna"};
+    author: "Basheer Padanna",
+    tags: ["Liquidators", "Growth Marketing", "Legal Marketing", "Insolvency", "Client Acquisition"]
+  };
 
   const blogPostingSchema = generateBlogPostingSchema({
     headline: articleData.headline,

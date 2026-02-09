@@ -84,13 +84,17 @@ const LiquidatorsGoogleAds = () => {
   };
 
   
-  const articleData = {headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2026",
+  const articleData = {
+    headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2026",
     description: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimize conversion rates, and maximize ROI for insolvency practitioners.",
     publishedDate: convertDateFormat(post.date),
     url: "/blog/liquidators-google-ads-ppc-strategy",
+    imageUrl: "/images/blog/liquidators-google-ads-hero.jpg",
     readTime: "13 min read",
     category: "Legal",
-    author: "Basheer Padanna"};
+    author: "Basheer Padanna",
+    tags: ["Liquidators", "Google Ads", "PPC", "Legal Marketing", "Insolvency Marketing"]
+  };
 
   const blogPostingSchema = generateBlogPostingSchema({
     headline: articleData.headline,

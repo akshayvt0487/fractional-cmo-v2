@@ -84,13 +84,17 @@ const InsolvencyDigitalMarketing = () => {
   };
 
   
-  const articleData = {headline: "Digital Marketing Strategy for Insolvency Practitioners: Complete 2026 Guide",
+  const articleData = {
+    headline: "Digital Marketing Strategy for Insolvency Practitioners: Complete 2026 Guide",
     description: "Master digital marketing for insolvency practices. Proven strategies to attract corporate clients, build authority, and grow your insolvency practice in competitive markets.",
     publishedDate: convertDateFormat(post.date),
     url: "/blog/insolvency-digital-marketing",
+    imageUrl: "/images/blog/insolvency-digital-marketing-hero.jpg",
     readTime: "14 min read",
     category: "Legal",
-    author: "Basheer Padanna"};
+    author: "Basheer Padanna",
+    tags: ["Insolvency", "Digital Marketing", "Legal Marketing", "Insolvency Practitioners", "B2B Marketing"]
+  };
 
   const blogPostingSchema = generateBlogPostingSchema({
     headline: articleData.headline,

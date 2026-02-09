@@ -83,7 +83,19 @@ const LoanBrokerGoogleAds = () => {
     }
   ];
 
-  const blogPostingSchema = generateBlogPostingSchema(articleData);
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2025-02-03",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags,
+    category: articleData.category,
+    wordCount: 6500,
+    readTime: "PT32M"
+  });
 
   return (
     <>

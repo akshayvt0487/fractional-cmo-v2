@@ -97,9 +97,22 @@ const SecurityLeadGeneration = () => {
       tags: ["Security Lead Generation", "Security Business Marketing", "Security Company Growth", "Digital Marketing for Security", "Security Service Leads"]
     };
 
-  const blogPostingSchema = generateBlogPostingSchema(articleData);
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2024-11-28",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags,
+    category: articleData.category,
+    wordCount: 5800,
+    readTime: "PT24M"
+  });
 
-  return <>
+  return (
+    <>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
@@ -503,7 +516,8 @@ const SecurityLeadGeneration = () => {
         </section>
 
       </OptimizedBlogLayout>
-    </>;
+    </>
+  );
 };
 export default SecurityLeadGeneration;
 
