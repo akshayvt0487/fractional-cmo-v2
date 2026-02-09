@@ -75,16 +75,31 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = ({
         
         {/* Hero Image with Next.js Image optimization */}
         {heroImage && (
-          <div className="relative overflow-hidden rounded-xl mb-8 shadow-md aspect-video">
-            <Image
-              src={heroImage}
-              alt={heroAlt}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover"
-              priority
-              quality={85}
-            />
+          <div className="relative overflow-hidden rounded-xl mb-8 shadow-md">
+            {typeof heroImage === 'string' ? (
+              // String URL - use fill layout with aspect-video container
+              <div className="relative aspect-video">
+                <Image
+                  src={heroImage}
+                  alt={heroAlt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                  priority
+                  quality={85}
+                />
+              </div>
+            ) : (
+              // StaticImageData - use the imported dimensions
+              <Image
+                src={heroImage}
+                alt={heroAlt}
+                className="w-full h-auto object-cover"
+                priority
+                quality={85}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            )}
             <div className="absolute inset-0 bg-linear-to-t from-gray-900/10 to-transparent" />
           </div>
         )}
