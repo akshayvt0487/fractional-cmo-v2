@@ -73,24 +73,18 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = ({
           </Button>
         </div>
         
-        {/* Hero Image (render only if provided).
-            If `heroImage` is a string we render a regular <img /> to avoid
-            requiring explicit width/height props for next/image. If it's
-            a StaticImageData import we use Next's Image component which
-            preserves optimizations and already contains width/height.
-        */}
+        {/* Hero Image with Next.js Image optimization */}
         {heroImage && (
-          <div className="relative overflow-hidden rounded-xl mb-8 shadow-md">
-            {typeof heroImage === 'string' ? (
-              // plain HTML img for string sources (e.g. '/images/...')
-              // keeps markup simple and avoids next/image width requirement
-              // for runtime-provided string URLs.
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={heroImage} alt={heroAlt} className="w-full h-auto object-cover" />
-            ) : (
-              // StaticImageData (imported image) - next/image will use embedded width/height
-              <Image src={heroImage} alt={heroAlt} className="w-full h-auto object-cover" />
-            )}
+          <div className="relative overflow-hidden rounded-xl mb-8 shadow-md aspect-video">
+            <Image
+              src={heroImage}
+              alt={heroAlt}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover"
+              priority
+              quality={85}
+            />
             <div className="absolute inset-0 bg-linear-to-t from-gray-900/10 to-transparent" />
           </div>
         )}

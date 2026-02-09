@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Loader2, Mail, Phone, Building2, Calendar } from 'lucide-react';
 import { format } from 'date-fns';
-import { Models } from 'appwrite';
+import { Models, Query } from 'appwrite';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 
@@ -52,12 +52,12 @@ const FormSubmissionsViewer = () => {
         databases.listDocuments<StrategyFormSubmission>(
           DATABASE_ID,
           STRATEGY_COLLECTION_ID,
-          []
+          [Query.orderDesc('$createdAt')]
         ),
         databases.listDocuments<ContactFormSubmission>(
           DATABASE_ID,
           CONTACT_COLLECTION_ID,
-          []
+          [Query.orderDesc('$createdAt')]
         ),
       ]);
 
