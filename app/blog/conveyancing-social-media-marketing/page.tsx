@@ -6,6 +6,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const ConveyancingSocialMedia = () => {
     readTime: "24 min read",
     tags: ["Conveyancing Marketing", "Social Media", "Legal Marketing", "Property Law", "Digital Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1100,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "Which social media platforms work best for conveyancing firms?",
     answer: "LinkedIn is most effective for professional networking and referrals, Facebook for local community engagement, and Instagram for showcasing office culture and educational content. Focus on 2-3 platforms rather than spreading efforts thin."
@@ -74,7 +90,12 @@ const ConveyancingSocialMedia = () => {
     question: "How often should conveyancing firms post on social media?",
     answer: "Aim for 3-5 posts per week on Facebook, 2-3 posts per week on LinkedIn, and 4-6 posts per week on Instagram. Consistency is more important than frequency - maintain a regular schedule."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-social-media-hero.jpg'} heroAlt="Social media marketing strategies for conveyancing firms">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-social-media-hero.jpg'} heroAlt="Social media marketing strategies for conveyancing firms">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏠 In today&apos;s digital landscape, conveyancing firms must establish trust and credibility before clients even walk through their doors. This comprehensive guide reveals how successful property lawyers use social media to build relationships, showcase expertise, and attract quality clients who value professional conveyancing services.
         </p>
@@ -398,6 +419,7 @@ const ConveyancingSocialMedia = () => {
 
         <Citation source="Social Media Examiner Legal Industry Report 2024" url="https://www.socialmediaexaminer.com" title="Legal professionals using social media report 45% higher client satisfaction rates and 38% more referral business compared to those without social media presence." />
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default ConveyancingSocialMedia;

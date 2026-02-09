@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AlertTriangle, Target, BarChart, TrendingUp, Users } from "lucide-react";
 import whenToHireFractionalCMOImage from "@/assets/blog/when-hire-fractional-cmo-hero.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { relatedArticles } from "@/utils/seoUtils";
+import { relatedArticles, generateBlogPostingSchema } from "@/utils/seoUtils";
 import Link from "next/link";
 
 const WhenToHireFractionalCMO = () => {
@@ -70,14 +70,33 @@ const WhenToHireFractionalCMO = () => {
     }
   ];
 
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: "2024-08-23",
+    modifiedDate: "2024-12-17",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags,
+    category: articleData.category,
+    wordCount: 5500,
+    readTime: "PT24M"
+  });
+
   return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.fractionalCMO}
-      faqs={faqs}
-      heroImage={whenToHireFractionalCMOImage}
-      heroAlt="When to hire a fractional CMO - Strategic marketing leadership indicators and business readiness assessment"
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
+        articleData={articleData}
+        relatedArticles={relatedArticles.fractionalCMO}
+        faqs={faqs}
+        heroImage={whenToHireFractionalCMOImage}
+        heroAlt="When to hire a fractional CMO - Strategic marketing leadership indicators and business readiness assessment"
+      >
         <h2>The Marketing Leadership Gap</h2>
         <p>
           Many growing businesses find themselves in a challenging position: they've outgrown basic marketing tactics but aren't yet ready for a full-time Chief Marketing Officer. This gap often manifests as stagnant growth, inefficient marketing spend, and missed opportunities.
@@ -557,6 +576,7 @@ const WhenToHireFractionalCMO = () => {
            </p>
          </div>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

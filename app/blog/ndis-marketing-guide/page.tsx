@@ -8,6 +8,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -66,6 +67,21 @@ const NDISMarketingGuide = () => {
     readTime: "30 min read",
     tags: ["NDIS", "Marketing Guide", "Disability Services", "Provider Marketing", "Participant Engagement"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1800,
+    readTime: "PT30M"
+  });
+
   const faqs = [{
     question: "What are the key principles of ethical NDIS marketing?",
     answer: "Ethical NDIS marketing focuses on transparent pricing, honest capability representation, participant dignity, outcome-focused messaging, and always prioritizing participant welfare over business growth."
@@ -76,7 +92,12 @@ const NDISMarketingGuide = () => {
     question: "What marketing channels work best for NDIS providers?",
     answer: "Most effective channels include local SEO, Google My Business optimization, content marketing focused on participant outcomes, targeted social media, and community engagement programs."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/ndis-marketing-guide.jpg'} heroAlt="NDIS marketing guide for disability service providers">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/ndis-marketing-guide.jpg'} heroAlt="NDIS marketing guide for disability service providers">
         <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-l-4 border-l-green-500 p-8 mb-8 not-prose">
           <div className="flex items-start space-x-4">
             <div className="bg-green-100 p-3 rounded-full">
@@ -520,6 +541,7 @@ const NDISMarketingGuide = () => {
 
         <Citation source="NDIS Quarterly Report Q3 2024" url="https://www.ndis.gov.au/about-us/publications/quarterly-reports" title="The NDIS now supports over 610,000 participants with market growth of 12% annually, creating opportunities for providers who prioritize participant-centered marketing and service delivery." />
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default NDISMarketingGuide;

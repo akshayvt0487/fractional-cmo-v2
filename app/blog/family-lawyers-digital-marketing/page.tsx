@@ -5,6 +5,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const FamilyLawyersDigitalMarketing = () => {
     readTime: "26 min read",
     tags: ["Family Law", "Legal Marketing", "Client Acquisition", "Law Firm Growth", "Digital Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "How do family lawyers ethically market their services?",
     answer: "Family lawyers must follow bar association guidelines, prioritize client education over sales tactics, maintain confidentiality in all marketing materials, and focus on building trust through valuable content and testimonials."
@@ -73,7 +89,12 @@ const FamilyLawyersDigitalMarketing = () => {
     question: "How can family lawyers measure their marketing ROI?",
     answer: "Track consultation requests, case conversion rates, average case value, client lifetime value, and referral generation. Focus on quality metrics rather than just quantity, as family law clients represent significant long-term value."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/family-lawyers-digital-marketing-hero.jpg'} heroAlt="Family lawyers digital marketing and practice growth strategies">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/family-lawyers-digital-marketing-hero.jpg'} heroAlt="Family lawyers digital marketing and practice growth strategies">
       <Card className="p-8 mb-8">
         <p className="text-lg font-semibold text-primary mb-4">
           Family law practices that implement strategic digital marketing achieve 250% higher client acquisition rates while maintaining ethical compliance standards.
@@ -324,6 +345,7 @@ const FamilyLawyersDigitalMarketing = () => {
       <p>
         Digital marketing for family lawyers requires balancing client acquisition goals with the emotional sensitivity required in family law practice. Prioritize trust-building, education, and ethical compliance in all marketing activities to build a sustainable and respected practice.
       </p>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default FamilyLawyersDigitalMarketing;

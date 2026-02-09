@@ -4,6 +4,7 @@ import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -62,6 +63,21 @@ const ConveyancingDigitalMarketingROI = () => {
     readTime: "24 min read",
     tags: ["ROI", "Digital Marketing", "Conveyancing", "Analytics", "Legal Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2100,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What's a good ROI for conveyancing digital marketing?",
     answer: "A healthy digital marketing ROI for conveyancing firms is 3:1 to 5:1, meaning $3-5 in revenue for every $1 spent. Top performing firms achieve 6:1 or higher through optimized campaigns and strong conversion rates."
@@ -72,7 +88,12 @@ const ConveyancingDigitalMarketingROI = () => {
     question: "What metrics should conveyancing firms track?",
     answer: "Key metrics include cost per lead, lead-to-client conversion rate, customer acquisition cost, customer lifetime value, organic traffic growth, and local search rankings. Track both quantity and quality of leads."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-digital-marketing-roi-hero.jpg'} heroAlt="Digital marketing ROI measurement for conveyancing firms">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-digital-marketing-roi-hero.jpg'} heroAlt="Digital marketing ROI measurement for conveyancing firms">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Measuring digital marketing ROI is crucial for conveyancing firms investing in online growth strategies. 
           Without clear metrics and data-driven insights, it&apos;s impossible to know which marketing efforts drive real 
@@ -774,6 +795,7 @@ const ConveyancingDigitalMarketingROI = () => {
           <StrategyForm />
         </div>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default ConveyancingDigitalMarketingROI;

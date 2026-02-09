@@ -4,7 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 
 // ————————————————————————————————————————
@@ -106,9 +106,28 @@ const BricklayersLeadGeneration = () => {
       answer: "Focus on your strengths - whether that's new home construction, restoration work, commercial projects, or decorative brickwork. Specializing in specific project types often leads to higher-paying jobs and better client relationships."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: articleData.publishedDate,
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 4800,
+    readTime: "PT24M"
+  });
+
   return (
-    <OptimizedBlogLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.tradies}
       faqs={faqs}
@@ -599,6 +618,7 @@ const BricklayersLeadGeneration = () => {
       </section>
 
     </OptimizedBlogLayout>
+    </>
   );
 };
 

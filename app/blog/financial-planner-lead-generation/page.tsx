@@ -6,6 +6,7 @@ import { DollarSign, Target, Users, BarChart, Zap } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const FinancialPlannerLeadGeneration = () => {
     readTime: "28 min read",
     tags: ["Financial Planning", "Lead Generation", "Client Acquisition", "Wealth Management", "Finance Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1400,
+    readTime: "PT28M"
+  });
+
   const faqs = [{
     question: "What's the best lead generation strategy for financial planners?",
     answer: "A combination of content marketing, local SEO, and referral partnerships works best. Focus on educational content that demonstrates expertise while building trust with potential clients through valuable resources."
@@ -74,7 +90,12 @@ const FinancialPlannerLeadGeneration = () => {
     question: "What type of content attracts high-value financial planning clients?",
     answer: "Retirement planning guides, tax optimization strategies, investment education, and market commentary that demonstrates expertise attract affluent clients seeking comprehensive financial guidance."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/finance-broker-lead-generation-hero.jpg'} heroAlt="Financial planner meeting with high-value clients for lead generation">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/finance-broker-lead-generation-hero.jpg'} heroAlt="Financial planner meeting with high-value clients for lead generation">
       <p className="text-lg leading-relaxed">
         Financial planning is fundamentally a relationship-based business built on trust, expertise, and long-term value creation. Unlike transactional services, successful financial planners cultivate deep client relationships that span decades and generate substantial recurring revenue.
       </p>
@@ -445,7 +466,8 @@ const FinancialPlannerLeadGeneration = () => {
           <li>• <Link href="/services/digital-marketing/finance-brokers" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Finance Brokers</Link> - Complete growth strategy</li>
         </ul>
       </section>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default FinancialPlannerLeadGeneration;
 

@@ -8,6 +8,7 @@ import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from '@/components/ui/card';
 import StrategyForm from '@/components/ui/strategy-form';
 import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -66,6 +67,21 @@ const NDISLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["NDIS", "Lead Generation", "Digital Marketing", "Disability Services", "Marketing Strategy"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1800,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What are the most effective lead generation channels for NDIS providers?",
     answer: "The most effective channels are Google Ads targeting NDIS-specific keywords, SEO-optimized website content, referral partnerships with healthcare professionals and support coordinators, and social media engagement. Focus on quality over quantity to attract participants who align with your services."
@@ -76,7 +92,12 @@ const NDISLeadGeneration = () => {
     question: "What's the average cost per lead for NDIS providers?",
     answer: "NDIS lead costs vary by service type and location, typically ranging from $50-$200 per qualified lead. Higher-value services like SIL can justify higher acquisition costs, while core supports require more cost-effective approaches."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-lead-generation-mastery.jpg'} heroAlt="NDIS lead generation strategies for disability service providers">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-lead-generation-mastery.jpg'} heroAlt="NDIS lead generation strategies for disability service providers">
       <Card className="bg-linear-to-r from-purple-50 to-blue-50 border-l-4 border-l-purple-500 p-8 mb-8">
         <div className="flex items-start space-x-4">
           <div className="bg-purple-100 p-3 rounded-full">
@@ -549,7 +570,8 @@ const NDISLeadGeneration = () => {
       <div className="my-12">
         <StrategyForm />
       </div>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default NDISLeadGeneration;
 

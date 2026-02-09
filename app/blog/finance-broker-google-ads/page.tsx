@@ -3,7 +3,7 @@ import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   robots: {
@@ -86,8 +86,27 @@ const FinanceBrokerGoogleAds = () => {
       answer: "Well-optimised finance broker campaigns achieve 5-10% landing page conversion rates. Lead-to-client conversion varies from 10-25% depending on lead quality and follow-up processes. Target cost per client acquisition of $200-$500."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2025-02-05",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags,
+    category: articleData.category,
+    wordCount: 5000,
+    readTime: "PT21M"
+  });
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
     <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
@@ -262,6 +281,7 @@ const FinanceBrokerGoogleAds = () => {
         </CardContent>
       </Card>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

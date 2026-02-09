@@ -6,6 +6,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const ConveyancingSEO = () => {
     readTime: "25 min read",
     tags: ["Conveyancing SEO", "Property Law Marketing", "Legal SEO", "Local SEO", "Content Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT25M"
+  });
+
   const faqs = [{
     question: "How long does it take to see SEO results for a conveyancing firm?",
     answer: "Typically 3-6 months for local rankings and 6-12 months for competitive keywords. Local SEO often shows faster results due to less competition in specific geographic areas."
@@ -74,7 +90,12 @@ const ConveyancingSEO = () => {
     question: "Should conveyancing firms target national or local SEO?",
     answer: "Focus primarily on local SEO since conveyancing is location-specific. Target your service areas with geo-specific content while building authority through educational property law content."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-seo-hero.jpg'} heroAlt="Conveyancing SEO strategies for property lawyers">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-seo-hero.jpg'} heroAlt="Conveyancing SEO strategies for property lawyers">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏠 When property buyers and sellers search for conveyancing services, they&apos;re making crucial decisions about who will handle their largest financial transactions. This comprehensive SEO guide reveals proven strategies that successful conveyancing firms use to rank higher in search results, attract quality leads, and establish authority in competitive property law markets.
         </p>
@@ -323,6 +344,7 @@ const ConveyancingSEO = () => {
 
         <Citation source="Local Search Association 2024" url="https://www.localsearchassociation.org" title='87% of consumers research local services online before making contact, with 72% visiting a business&apos;s website within 24 hours of their initial search.' />
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default ConveyancingSEO;

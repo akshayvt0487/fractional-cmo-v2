@@ -8,6 +8,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import criminalLawyersDigitalMarketingHero from '@/assets/blog/criminal-lawyers-digital-marketing-hero.jpg';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -66,6 +67,21 @@ const CriminalLawyersDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["Criminal Lawyers", "Legal Marketing", "Digital Strategy", "Client Acquisition", "Legal Ethics"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1600,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What are the ethical considerations for criminal lawyer digital marketing?",
     answer: "Criminal lawyers must follow strict advertising rules, including attorney privilege protection, avoiding solicitation, ensuring accurate representations, complying with state bar regulations, and maintaining client confidentiality in all marketing efforts."
@@ -76,7 +92,12 @@ const CriminalLawyersDigitalMarketing = () => {
     question: "What's the most effective marketing channel for criminal lawyers?",
     answer: "Local SEO and Google My Business optimization are most effective, combined with targeted Google Ads for urgent legal needs, referral programs, and content marketing that demonstrates legal expertise and understanding of criminal law."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/criminal-lawyers-digital-marketing-hero.jpg'} heroAlt="Criminal lawyers digital marketing strategies for defense attorneys">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/criminal-lawyers-digital-marketing-hero.jpg'} heroAlt="Criminal lawyers digital marketing strategies for defense attorneys">
       <Card className="p-8 mb-8">
         <p className="text-lg font-semibold text-primary mb-4">
           Criminal defense attorneys using strategic digital marketing see 400% higher quality client acquisition while maintaining ethical standards and professional reputation.
@@ -706,7 +727,8 @@ const CriminalLawyersDigitalMarketing = () => {
           — Criminal Defense Marketing Excellence, 2026
         </cite>
       </div>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default CriminalLawyersDigitalMarketing;
 

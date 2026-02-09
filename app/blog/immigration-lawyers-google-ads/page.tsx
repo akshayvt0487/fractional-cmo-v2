@@ -1,6 +1,8 @@
 import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { blogPosts } from '@/data/blogPosts';
+import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 
 export const metadata = createMetadata({
   robots: { index: true, follow: true, nocache: false },
@@ -55,12 +57,31 @@ const ImmigrationLawyersGoogleAds = () => {
     readTime: post.readTime
   };
 
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: post.title,
+    description: post.excerpt,
+    author: post.author,
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2025-12-15",
+    url: `/blog/${post.slug}`,
+    imageUrl: post.image,
+    keywords: ["Immigration Lawyers", "Google Ads", "PPC", "Legal Marketing", "Visa Lawyers"],
+    category: post.category,
+    wordCount: 5200,
+    readTime: "PT26M"
+  });
+
   return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      heroImage={post.image}
-      heroAlt={post.title}
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
+        articleData={articleData}
+        heroImage={post.image}
+        heroAlt={post.title}
+      >
       <h2>Why Google Ads Works for Immigration Lawyers</h2>
       <p>
         Google Ads is one of the most effective channels for immigration lawyers because it captures high-intent 
@@ -204,7 +225,8 @@ const ImmigrationLawyersGoogleAds = () => {
 
       <h2>Landing Page Optimisation</h2>
       <p>
-        Your landing pages must convert the traffic your ads generate:
+        Your landing pages must convert the traffic your ads generate, which is why conversion-focused <Link href="/services/google-ads">Google Ads services</Link> are critical for immigration law firms.
+
       </p>
 
       <h3>Essential Landing Page Elements</h3>
@@ -316,9 +338,8 @@ const ImmigrationLawyersGoogleAds = () => {
 
       <h2>Conclusion</h2>
       <p>
-        Google Ads can be a powerful lead generation channel for immigration lawyers when executed strategically. 
-        The key is building a well-structured account that targets specific visa categories, uses compelling ad 
-        copy that builds trust, and sends traffic to optimised landing pages designed to convert.
+        Google Ads can be a powerful lead generation channel for immigration lawyers when executed strategically through professional <Link href="/services/google-ads">Google Ads Management</Link>. The key is building a well-structured account that targets specific visa categories, uses compelling ad copy that builds trust, and sends traffic to optimised landing pages designed to convert.
+
       </p>
       <p>
         Start with your highest-value visa categories, build conversion data, and then expand to additional 
@@ -326,6 +347,7 @@ const ImmigrationLawyersGoogleAds = () => {
         performance over time, making Google Ads a sustainable and profitable channel for your immigration practice.
       </p>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

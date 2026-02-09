@@ -5,6 +5,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const ConveyancingGoogleAds = () => {
     readTime: "24 min read",
     tags: ["Google Ads", "Conveyancing", "PPC", "Property Law", "Legal Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1500,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What's the average cost per click for conveyancing Google Ads?",
     answer: "CPC for conveyancing keywords typically ranges from $8-25, with competitive markets like Sydney and Melbourne at the higher end. Focus on long-tail keywords and local targeting to reduce costs."
@@ -73,7 +89,12 @@ const ConveyancingGoogleAds = () => {
     question: "What's the best landing page strategy for conveyancing ads?",
     answer: "Create service-specific landing pages for residential, commercial, and first-time buyers. Include clear value propositions, fee transparency, client testimonials, and simple contact forms."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-google-ads-hero.jpg'} heroAlt="Google Ads strategies for conveyancing firms">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-google-ads-hero.jpg'} heroAlt="Google Ads strategies for conveyancing firms">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           When property buyers and sellers need a conveyancer, they turn to Google first. With the right Google Ads strategy, 
           your conveyancing firm can capture these high-intent prospects at the exact moment they&apos;re ready to engage a solicitor.
@@ -546,7 +567,8 @@ const ConveyancingGoogleAds = () => {
 
         <Citation source="Google Ads Benchmark Report 2024" url="https://www.google.com/ads/resources/" title="Legal services average a 4.8% click-through rate on Google Ads, with conversion rates averaging 3.2% across the industry." />
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default ConveyancingGoogleAds;
 

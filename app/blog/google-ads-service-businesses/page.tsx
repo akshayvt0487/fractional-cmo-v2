@@ -7,6 +7,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import googleAdsImage from "@/assets/google-ads-dashboard.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const GoogleAdsService = () => {
     readTime: "24 min read",
     tags: ["Google Ads", "Service Businesses", "PPC", "Digital Marketing", "Lead Generation"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 3400,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What's a realistic budget for Google Ads for service businesses?",
     answer: "Service businesses should budget $1,500-$5,000+ monthly for effective Google Ads campaigns. Start with $50-100 per day to gather data, then scale based on performance. High-value services can justify larger budgets."
@@ -75,7 +91,12 @@ const GoogleAdsService = () => {
     question: "What's the average cost per click for service business Google Ads?",
     answer: "Service business CPCs range from $5-50+ depending on industry. Legal services and home improvement often have higher CPCs ($20-100+), while general business services may be $5-25. Focus on value per conversion, not just CPC."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/google-ads-service-businesses.jpg'} heroAlt="Google Ads Campaign Dashboard - Complete setup guide for service businesses">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/google-ads-service-businesses.jpg'} heroAlt="Google Ads Campaign Dashboard - Complete setup guide for service businesses">
         <h2>Google Ads Strategy for Service Businesses</h2>
         <p>
           Google Ads offers service businesses a powerful platform to reach potential customers actively searching for their services. However, success requires a strategic approach that differs significantly from e-commerce advertising, focusing on lead quality over quantity. For service businesses, every click represents a potential long-term client relationship, not just a one-time transaction.
@@ -1012,7 +1033,8 @@ const GoogleAdsService = () => {
 
         <Citation source="WordStream Google Ads Benchmarks 2024" url="https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks" title="Service businesses using Google Ads see an average of $2 in revenue for every $1 spent, with top performers achieving 8:1 ROI." />
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default GoogleAdsService;
 

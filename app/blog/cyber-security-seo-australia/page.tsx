@@ -5,6 +5,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const CyberSecuritySEOAustralia = () => {
     readTime: "28 min read",
     tags: ["Cyber Security", "SEO", "Australia", "Local Search", "Digital Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT28M"
+  });
+
   const faqs = [{
     question: "What are the best keywords for cyber security SEO in Australia?",
     answer: "Focus on 'cyber security Australia', 'penetration testing Melbourne/Sydney', 'GDPR compliance consulting', 'managed security services', and industry-specific terms like 'healthcare cyber security' or 'financial services security audit'."
@@ -73,7 +89,12 @@ const CyberSecuritySEOAustralia = () => {
     question: "Should cyber security companies target national or local SEO in Australia?",
     answer: "Use a hybrid approach: target major cities (Sydney, Melbourne, Brisbane) for local presence while competing nationally for specialized services like penetration testing and compliance consulting. Enterprise clients often search nationally."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/blog/cyber-security-seo-australia.jpg" heroAlt="Cyber security SEO strategies for Australian market">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/blog/cyber-security-seo-australia.jpg" heroAlt="Cyber security SEO strategies for Australian market">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🇦🇺 Australian cyber security companies implementing strategic SEO achieve 350% higher organic visibility and capture 65% more qualified leads compared to companies relying solely on paid advertising. This comprehensive guide reveals the specific tactics, keyword strategies, and content approaches that help security firms dominate Australian search results and build sustainable lead generation.
         </p>
@@ -368,7 +389,8 @@ const CyberSecuritySEOAustralia = () => {
           </Card>
         </div>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default CyberSecuritySEOAustralia;
 

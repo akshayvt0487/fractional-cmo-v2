@@ -3,7 +3,7 @@ import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   robots: {
@@ -86,9 +86,28 @@ const BuyersAgentsSEO = () => {
       answer: "Quality SEO for buyers agents typically costs $2,000-$5,000 monthly for comprehensive services. This includes technical optimisation, content creation, link building, and local SEO. DIY approaches can reduce costs but require significant time investment."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: articleData.modifiedDate,
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 4400,
+    readTime: "PT22M"
+  });
+
   return (
-    <OptimizedBlogLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
@@ -234,6 +253,7 @@ const BuyersAgentsSEO = () => {
         </CardContent>
       </Card>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

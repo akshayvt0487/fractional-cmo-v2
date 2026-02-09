@@ -168,6 +168,85 @@ export const generateFAQSchema = (faqs: Array<{ question: string; answer: string
   };
 };
 
+export interface BlogPostingSchemaData {
+  headline: string;
+  description: string;
+  author?: string;
+  publishedDate: string;
+  modifiedDate?: string;
+  url: string;
+  imageUrl?: string | StaticImageData;
+  keywords?: string[];
+  category?: string;
+  wordCount?: number;
+  readTime?: string;
+}
+
+export const generateBlogPostingSchema = (data: BlogPostingSchemaData) => {
+  const baseUrl = "https://fractional-cmo.com.au";
+
+  // Convert image URL to absolute path
+  const getAbsoluteImageUrl = (imgUrl?: string | StaticImageData) => {
+    if (!imgUrl) {
+      return `${baseUrl}/lovable-uploads/5016915a-7345-483c-9d8f-50938a28715f.png`;
+    }
+
+    const imageUrlStr = typeof imgUrl === 'string' ? imgUrl : (imgUrl as any)?.src;
+
+    if (!imageUrlStr) {
+      return `${baseUrl}/lovable-uploads/5016915a-7345-483c-9d8f-50938a28715f.png`;
+    }
+
+    if (imageUrlStr.startsWith('http')) return imageUrlStr;
+    return imageUrlStr.startsWith('/') ? `${baseUrl}${imageUrlStr}` : `${baseUrl}/${imageUrlStr}`;
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${baseUrl}${data.url}#blogposting`,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${baseUrl}${data.url}`
+    },
+    "headline": data.headline,
+    "description": data.description,
+    "image": {
+      "@type": "ImageObject",
+      "url": getAbsoluteImageUrl(data.imageUrl),
+      "width": 832,
+      "height": 512
+    },
+    "author": {
+      "@type": "Person",
+      "name": data.author || "Basheer Padanna"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fractional CMO",
+      "url": baseUrl
+    },
+    "datePublished": data.publishedDate,
+    "dateModified": data.modifiedDate || data.publishedDate,
+    "inLanguage": "en-AU",
+    "wordCount": data.wordCount || 4800,
+    "timeRequired": data.readTime || "24M",
+    "keywords": data.keywords || [],
+    "articleSection": data.category ? [data.category] : ["Digital Marketing"],
+    "about": {
+      "@type": "Thing",
+      "name": data.category || "Digital Marketing"
+    },
+    "isAccessibleForFree": true,
+    "isPartOf": {
+      "@type": "Blog",
+      "@id": `${baseUrl}/blog#blog`,
+      "name": "Fractional CMO Blog",
+      "url": `${baseUrl}/blog`
+    }
+  };
+};
+
 // Dynamic related articles generator
 import { blogPosts, type BlogPost } from '@/data/blogPosts';
 
@@ -398,9 +477,10 @@ export const seoChecklist = {
 
 export default {
   generateArticleSchema,
-  generateBreadcrumbSchema, 
+  generateBreadcrumbSchema,
   generatePersonSchema,
   generateFAQSchema,
+  generateBlogPostingSchema,
   getRelatedArticles,
   relatedArticles,
   seoChecklist

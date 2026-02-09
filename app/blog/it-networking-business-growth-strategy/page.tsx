@@ -6,6 +6,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const ITNetworkingGrowthStrategy = () => {
     readTime: "24 min read",
     tags: ["IT Networking", "Business Growth", "Network Solutions", "Enterprise Sales", "Technology Business"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1600,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What's the most profitable area of IT networking business?",
     answer: "Enterprise network security and cloud infrastructure services typically offer the highest margins. Companies are willing to pay premium rates for expertise in cybersecurity, SD-WAN, and cloud connectivity solutions that protect business operations."
@@ -74,7 +90,12 @@ const ITNetworkingGrowthStrategy = () => {
     question: "What certifications are essential for IT networking business growth?",
     answer: "Cisco, Juniper, and vendor-neutral certifications like CompTIA Network+ are foundational. For growth, pursue specialized certifications in cybersecurity (CISSP), cloud platforms (AWS/Azure), and emerging technologies like SD-WAN and network automation."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-networking-growth-strategy-hero.jpg'} heroAlt="IT networking business growth strategy and scaling operations">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-networking-growth-strategy-hero.jpg'} heroAlt="IT networking business growth strategy and scaling operations">
       <p className="text-lg leading-relaxed">
         The IT networking industry continues to evolve rapidly, with businesses increasingly dependent on robust, secure network infrastructure. Successful networking companies must adapt to new technologies while maintaining expertise in traditional networking fundamentals to capture their share of the <strong>$47.5 billion global networking market</strong> projected by 2027.
       </p>
@@ -474,7 +495,8 @@ const ITNetworkingGrowthStrategy = () => {
       </p>
 
       <Citation source="CompTIA IT Industry Outlook 2024" url="https://www.comptia.org/content/research/it-industry-trends-analysis" title="The global networking market is projected to reach $47.5 billion by 2027, driven by cloud adoption and digital transformation initiatives." />
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default ITNetworkingGrowthStrategy;
 

@@ -5,6 +5,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from "@/components/ui/card";
 import startingRemovalistBusinessImage from "@/assets/blog/starting-removalist-business-new.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const StartingRemovalistBusiness = () => {
     readTime: "24 min read",
     tags: ["removalist business", "startup guide", "business licensing", "moving company"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What licenses do I need to start a removalist business?",
     answer: "You'll need business registration with local council, ABN, vehicle registration for commercial use, heavy vehicle licenses for trucks over 4.5 tonnes, and workplace health and safety compliance. Requirements vary by state."
@@ -76,7 +92,12 @@ const StartingRemovalistBusiness = () => {
     question: "How should I price my removalist services?",
     answer: "Common pricing models include hourly rates ($80-150 for 2-person team), fixed quotes based on home size and distance, volume-based pricing per cubic meter, plus distance factors for long-distance moves."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={startingRemovalistBusinessImage} heroAlt="Starting a removalist business - professional moving truck and equipment">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={startingRemovalistBusinessImage} heroAlt="Starting a removalist business - professional moving truck and equipment">
             <Card className="mb-8 bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
               <CardContent className="p-8">
                 <h2 className="text-2xl font-semibold mb-4">Essential Steps to Start Your Removalist Business</h2>
@@ -290,6 +311,7 @@ const StartingRemovalistBusiness = () => {
                   it can be a rewarding and profitable venture. Take it step by step, focus on quality service, 
                   and always prioritize customer satisfaction.
                 </p>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default StartingRemovalistBusiness;

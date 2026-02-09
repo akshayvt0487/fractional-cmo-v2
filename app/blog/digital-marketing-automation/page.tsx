@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const DigitalMarketingAutomation = () => {
     readTime: "24 min read",
     tags: ["Marketing Automation", "Digital Marketing", "Lead Nurturing", "Email Marketing", "Business Growth"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What's the best marketing automation platform for service businesses?",
     answer: "HubSpot, Marketo, and Pardot are top choices for comprehensive automation. For smaller businesses, ActiveCampaign and ConvertKit offer excellent value. Choose based on your budget, technical requirements, and integration needs."
@@ -75,7 +91,12 @@ const DigitalMarketingAutomation = () => {
     question: "What ROI can I expect from marketing automation?",
     answer: "Most service businesses see 80% increase in leads, 77% higher conversions, and 451% ROI improvement within the first year. Results depend on proper setup, quality content, and ongoing optimization."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/digital-marketing-automation.jpg'} heroAlt="Digital marketing automation strategies and workflows for service businesses">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/digital-marketing-automation.jpg'} heroAlt="Digital marketing automation strategies and workflows for service businesses">
       <h2>Marketing Automation Impact</h2>
       
       <div className="grid md:grid-cols-4 gap-6 mb-8">
@@ -446,7 +467,8 @@ const DigitalMarketingAutomation = () => {
         </Card>
       </div>
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default DigitalMarketingAutomation;
 

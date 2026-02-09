@@ -3,19 +3,12 @@
 # =====================================
 User-agent: *
 Allow: /
-Allow: /blog/
-Allow: /about/
-Allow: /contact/
-Allow: /services/
-Allow: /images/
-Allow: /assets/
 Disallow: /admin/
 Disallow: /studio/
 Disallow: /api/
 Disallow: /*.json$
 Disallow: /test/
 Disallow: /not-ready/
-Disallow: /?*
 Crawl-delay: 1
 Request-rate: 30/60
 
@@ -24,12 +17,6 @@ Request-rate: 30/60
 # =====================================
 User-agent: Googlebot
 Allow: /
-Allow: /blog/
-Allow: /about/
-Allow: /contact/
-Allow: /services/
-Allow: /images/
-Allow: /assets/
 Disallow: /admin/
 Disallow: /studio/
 Disallow: /api/
@@ -40,10 +27,15 @@ Crawl-delay: 0
 Request-rate: 60/60
 
 # =====================================
-# Googlebot Fast - Crawl Critical Content
+# Googlebot Mobile (Mobile-friendly indexing)
 # =====================================
 User-agent: Googlebot-Mobile
 Allow: /
+Disallow: /admin/
+Disallow: /studio/
+Disallow: /api/
+Disallow: /test/
+Disallow: /not-ready/
 Crawl-delay: 0
 Request-rate: 50/60
 
@@ -51,10 +43,15 @@ Request-rate: 50/60
 # Google Image Crawler
 # =====================================
 User-agent: Googlebot-Image
-Allow: /
 Allow: /images/
 Allow: /assets/
 Allow: /public/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
 Crawl-delay: 0.5
 
 # =====================================
@@ -62,25 +59,7 @@ Crawl-delay: 0.5
 # =====================================
 User-agent: Googlebot-Video
 Allow: /
-Allow: /videos/
-Allow: /assets/
 Crawl-delay: 0.5
-
-# =====================================
-# Priority Content Paths
-# =====================================
-# Blog posts - High priority for indexing
-Allow: /blog/
-Request-rate: 30/30
-
-# Service pages - High priority
-Allow: /services/
-Request-rate: 30/30
-
-# Main pages - Critical indexing
-Allow: /about/
-Allow: /contact/
-Request-rate: 30/30
 
 # =====================================
 # Social Media Crawlers
@@ -241,92 +220,15 @@ User-agent: Perplexity
 Disallow: /
 
 # =====================================
-# Sitemap Location
-# =====================================
-Sitemap: https://fractional-cmo.com.au/sitemap.xml
-
-# =====================================
-# Content Type Specific Rules
-# =====================================
-# HTML Pages - Maximum crawl priority
-User-agent: *
-Allow: *.html
-Request-rate: 30/30
-
-# Blog content - Highest priority for indexing
-User-agent: Googlebot
-Allow: /blog/*.html
-Request-rate: 60/60
-
-User-agent: Bingbot
-Allow: /blog/*.html
-Request-rate: 40/60
-
-# Service pages - High priority
-User-agent: Googlebot
-Allow: /services/*.html
-Request-rate: 60/60
-
-# =====================================
-# Image & Media File Indexing
-# =====================================
-User-agent: *
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.png$
-Allow: /*.gif$
-Allow: /*.webp$
-Allow: /*.svg$
-Allow: /*.ico$
-
-# Video content
-Allow: /*.mp4$
-Allow: /*.webm$
-Allow: /*.ogg$
-Allow: /*.mov$
-
-# Documents
-Allow: /*.pdf$
-Allow: /*.doc$
-Allow: /*.docx$
-
-# =====================================
-# Cache Control for Speed
-# =====================================
-# Never cache dynamic API endpoints
-User-agent: *
-Disallow: /api/
-Disallow: /admin/
-
-# Allow caching of static assets
-Allow: /assets/
-Allow: /images/
-Allow: /public/
-
-# =====================================
-# Query String & Fragment Handling
-# =====================================
-# Crawl-delay applies across all query parameters
-User-agent: Googlebot
-Allow: /?*
-Crawl-delay: 0
-
-# =====================================
-# Extended Googlebot Rules
+# Extended Googlebot for AI Training
 # =====================================
 User-agent: Google-Extended
 Allow: /
 
 # =====================================
-# Additional Mobile Optimization
+# Sitemap Location
 # =====================================
-User-agent: Googlebot-Mobile
-Allow: /
-Allow: /blog/
-Allow: /services/
-Allow: /images/
-Crawl-delay: 0
-Request-rate: 50/60
+Sitemap: https://fractional-cmo.com.au/sitemap.xml
 
 
 

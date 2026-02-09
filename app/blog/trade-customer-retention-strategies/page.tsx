@@ -5,6 +5,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import localSEOImage from "@/assets/local-seo-search.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const TradeCustomerRetention = () => {
     readTime: "18 min read",
     tags: ["Customer Retention", "Trade Business", "Client Relationships", "Business Growth", "Loyalty"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT18M"
+  });
+
   const faqs = [{
     question: "How much more expensive is acquiring new customers vs retaining existing ones?",
     answer: "Acquiring new customers costs 5-25 times more than retaining existing ones. Studies show that increasing customer retention rates by just 5% can increase profits by 25-95% for trade businesses."
@@ -73,7 +89,12 @@ const TradeCustomerRetention = () => {
     question: "How can trade businesses create customer loyalty programs?",
     answer: "Offer tiered loyalty programs with benefits like priority scheduling, exclusive discounts, extended warranties, and referral rewards. Focus on value-added services rather than just price discounts."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={localSEOImage} heroAlt="Trade business owner building lasting relationships with satisfied customers">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={localSEOImage} heroAlt="Trade business owner building lasting relationships with satisfied customers">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Acquiring new customers costs 5-25 times more than retaining existing ones. This comprehensive 
           guide reveals proven strategies for building lasting relationships with trade customers, 
@@ -115,6 +136,7 @@ const TradeCustomerRetention = () => {
           and repeat business that drives sustainable growth.
         </p>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default TradeCustomerRetention;

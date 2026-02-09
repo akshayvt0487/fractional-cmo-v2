@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, TrendingUp, Users, Target, BarChart, Zap, Calendar } from "lucide-react";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 
 
@@ -95,9 +95,28 @@ const AccountingGrowthStrategy = () => {
       answer: "The most successful approach combines niche specialization with complementary advisory services. Focus on specific industries or client types while expanding service offerings that leverage your core expertise and client relationships."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: articleData.publishedDate,
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 5000,
+    readTime: "PT26M"
+  });
+
   return (
-    <OptimizedBlogLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
@@ -558,6 +577,7 @@ const AccountingGrowthStrategy = () => {
         </Button>
       </div>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

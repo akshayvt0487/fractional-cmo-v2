@@ -5,6 +5,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Shield, Users, Building, Zap, CheckCircle, TrendingUp, Search, Target, Video, Play, Home } from 'lucide-react';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const SecurityDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["security services", "digital marketing", "B2B marketing", "client acquisition"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "How can digital marketing help my security service business?",
     answer: "Digital marketing helps security companies build trust, attract high-value commercial clients, showcase expertise, and compete effectively against larger companies through targeted online strategies and professional online presence."
@@ -76,7 +92,12 @@ const SecurityDigitalMarketing = () => {
     question: "Should security companies use Google Ads?",
     answer: "Yes, Google Ads can be effective for security services. Target high-intent keywords like 'commercial security services' and emergency terms like '24 hour security' to capture immediate needs."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/security-digital-marketing-hero.jpg'} heroAlt="Professional security services digital marketing and client acquisition">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/security-digital-marketing-hero.jpg'} heroAlt="Professional security services digital marketing and client acquisition">
       <p className="text-xl text-muted-foreground mb-8">
         In today&apos;s competitive security services market, traditional word-of-mouth marketing isn&apos;t enough. Digital marketing has become essential for security companies to attract high-value commercial clients, build trust, and scale their operations. This comprehensive guide reveals proven strategies that successful security businesses use to dominate their markets.
       </p>
@@ -408,7 +429,8 @@ const SecurityDigitalMarketing = () => {
           </CardContent>
         </Card>
       </div>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default SecurityDigitalMarketing;
 

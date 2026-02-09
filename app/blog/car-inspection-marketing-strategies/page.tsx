@@ -5,6 +5,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const CarInspectionMarketing = () => {
     readTime: "24 min read",
     tags: ["Car Inspection", "Trade Marketing", "Digital Marketing", "Local SEO", "Lead Generation"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "How much should car inspection businesses spend on digital marketing?",
     answer: "Start with 5-10% of revenue on digital marketing. For new businesses, allocate $1,500-3,000 monthly across Google Ads, SEO, and social media for effective market penetration."
@@ -73,7 +89,12 @@ const CarInspectionMarketing = () => {
     question: "Which marketing channels work best for car inspection services?",
     answer: "Google Ads and local SEO are most effective, followed by partnerships with car dealers, social media presence, and referral programs from satisfied customers."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/car-inspection-marketing.jpg'} heroAlt="Car inspection marketing strategies and business growth">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/car-inspection-marketing.jpg'} heroAlt="Car inspection marketing strategies and business growth">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🚗 The car inspection industry offers tremendous growth opportunities, but success depends on effective marketing to reach car buyers when they need professional assessment services. This comprehensive guide reveals proven strategies that successful car inspection businesses use to build credibility, attract clients, and generate consistent bookings in competitive automotive markets.
         </p>
@@ -279,6 +300,7 @@ const CarInspectionMarketing = () => {
 
         <Citation source="ACCC" url="https://www.accc.gov.au/consumers/specific-products-and-activities/buying-hiring-and-repairing-cars" title="Buying, hiring and repairing cars" date="2024" />
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default CarInspectionMarketing;

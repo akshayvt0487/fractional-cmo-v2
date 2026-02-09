@@ -7,6 +7,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -49,6 +50,21 @@ const ConveyancingLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["Conveyancing", "Lead Generation", "Digital Marketing", "Property Law", "Legal Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1600,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What's the best lead generation strategy for conveyancing firms?",
     answer: "A multi-channel approach works best: local SEO (40%), Google Ads (30%), referral partnerships (20%), and content marketing (10%). Focus on high-intent keywords and local market dominance."
@@ -59,7 +75,12 @@ const ConveyancingLeadGeneration = () => {
     question: "What's the average cost per lead for conveyancing services?",
     answer: "Cost per lead varies by location and competition: $50-150 for residential conveyancing, $200-500 for commercial property. Focus on lead quality and conversion rates rather than just cost."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-lead-generation-hero.jpg'} heroAlt="Digital marketing strategies for conveyancing lead generation">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.legal} faqs={faqs} heroImage={'/images/blog/conveyancing-lead-generation-hero.jpg'} heroAlt="Digital marketing strategies for conveyancing lead generation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           In today&apos;s competitive property market, conveyancing firms need more than traditional referral networks to thrive. 
           With property transactions increasingly starting online, successful conveyancers are those who master digital lead generation.
@@ -604,6 +625,7 @@ const ConveyancingLeadGeneration = () => {
 
         <Citation source="Australian Property Council Market Report 2024" url="https://www.propertycouncil.com.au" title="Property transactions in Australia reached 1.2 million in 2024, with 73% of buyers using online channels to research conveyancing services." />
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default ConveyancingLeadGeneration;

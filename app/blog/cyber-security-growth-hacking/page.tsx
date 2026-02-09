@@ -5,6 +5,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const CyberSecurityGrowthHacking = () => {
     readTime: "26 min read",
     tags: ["Cyber Security", "Growth Hacking", "Lead Generation", "Digital Marketing", "Innovation"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2600,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What are the most effective growth hacking tactics for cyber security companies?",
     answer: "The most effective tactics include threat intelligence content marketing, security assessment tools, breach simulation demos, compliance checklists, and leveraging security news cycles for thought leadership positioning."
@@ -73,7 +89,12 @@ const CyberSecurityGrowthHacking = () => {
     question: "What metrics should cyber security companies track for growth hacking success?",
     answer: "Key metrics include security assessment completion rates, threat alert engagement, compliance checklist downloads, demo-to-consultation conversion rates, and customer lifetime value based on security service tiers."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/blog/cyber-security-growth-hacking.jpg" heroAlt="Cyber security growth hacking strategies and innovative lead generation">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/blog/cyber-security-growth-hacking.jpg" heroAlt="Cyber security growth hacking strategies and innovative lead generation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🚀 Forward-thinking cyber security companies using growth hacking strategies achieve 250% faster client acquisition and 60% higher customer lifetime value compared to traditional marketing approaches. This guide reveals innovative tactics that security firms use to leverage technology, automation, and data-driven insights for explosive business growth.
         </p>
@@ -1003,7 +1024,8 @@ const CyberSecurityGrowthHacking = () => {
           </CardContent>
         </Card>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default CyberSecurityGrowthHacking;
 

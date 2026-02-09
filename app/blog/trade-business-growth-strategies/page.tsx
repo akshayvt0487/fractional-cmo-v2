@@ -5,6 +5,7 @@ import localSEOImage from "@/assets/local-seo-search.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const TradeBusinessGrowth = () => {
     readTime: "24 min read",
     tags: ["Trade Business", "Business Growth", "Scaling", "Operations", "Digital Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What are the biggest challenges trade businesses face when scaling?",
     answer: "The main challenges include maintaining quality while growing, managing cash flow during expansion, finding and training skilled workers, implementing scalable systems, and transitioning from working in the business to working on the business."
@@ -73,7 +89,12 @@ const TradeBusinessGrowth = () => {
     question: "When should a trade business consider hiring additional management?",
     answer: "Consider hiring management when you're consistently working 60+ hours per week, revenue exceeds $500K annually, or you have 5+ employees. This allows you to focus on strategy and growth rather than day-to-day operations."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={localSEOImage} heroAlt="Trade business owner reviewing growth strategies and expansion plans">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={localSEOImage} heroAlt="Trade business owner reviewing growth strategies and expansion plans">
         <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 mb-8 border-l-4 border-blue-500 not-prose">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center shrink-0">
@@ -288,6 +309,7 @@ const TradeBusinessGrowth = () => {
           Invest in trade-specific software for scheduling, invoicing, inventory management, and customer relationship management. The right technology stack can dramatically improve efficiency and scalability.
         </p>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default TradeBusinessGrowth;

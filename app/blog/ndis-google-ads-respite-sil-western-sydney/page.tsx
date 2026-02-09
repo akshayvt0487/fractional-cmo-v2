@@ -5,6 +5,8 @@ import { Users, Target, Settings, Layers, Search, Zap, MapPin, TrendingUp } from
 import StrategyForm from '@/components/ui/strategy-form';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import Citation from '@/components/Citation';
+import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -76,9 +78,30 @@ const NDISGoogleAdsRespiteSIL = () => {
     question: "How long does it take to see results from NDIS Google Ads?",
     answer: "Initial enquiries typically start within 1-2 weeks of campaign launch. However, the full participant onboarding process (including NDIS plan approval and move-in coordination) can take 4-12 weeks. Track both immediate enquiries and pipeline conversions for accurate ROI measurement."
   }];
-  return <OptimizedBlogLayout articleData={articleData} faqs={faqs} heroImage={'/images/blog/ndis-comprehensive-marketing-hero.jpg'} heroAlt="NDIS Google Ads strategies for respite care and SIL accommodation">
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: articleData.modifiedDate,
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags,
+    category: articleData.category,
+    wordCount: 7200,
+    readTime: "PT30M"
+  });
+
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} faqs={faqs} heroImage={'/images/blog/ndis-comprehensive-marketing-hero.jpg'} heroAlt="NDIS Google Ads strategies for respite care and SIL accommodation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-          🏠 Google Ads presents a powerful opportunity for NDIS respite care and SIL accommodation providers in Western Sydney to connect with participants and families actively seeking quality disability support services. This comprehensive guide reveals proven Google Ads strategies that successful NDIS providers use to generate qualified enquiries, fill vacancies, and establish their reputation in the competitive Western Sydney disability services market.
+          Google Ads presents a powerful opportunity for NDIS respite care and SIL accommodation providers in Western Sydney to connect with participants and families actively seeking quality disability support services through targeted <Link href="/services/google-ads">Google Ads Services</Link>. This comprehensive guide reveals proven Google Ads strategies that successful NDIS providers use to generate qualified enquiries, fill vacancies, and establish their reputation in the competitive Western Sydney disability services market.
+
         </p>
 
         <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-l-primary p-6 rounded-lg mb-8">
@@ -402,7 +425,8 @@ const NDISGoogleAdsRespiteSIL = () => {
           
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
-              Effective bidding strategy is crucial in the competitive Western Sydney NDIS market. Families and support coordinators often search during decision-making moments, making timing and ad position critical:
+             Effective bidding strategy is crucial in the competitive Western Sydney NDIS market, which is why specialised <Link href="/services/google-ads/ndis-providers">NDIS PPC management</Link> is essential for consistent enquiry generation.
+
             </p>
           </div>
 
@@ -1006,7 +1030,7 @@ const NDISGoogleAdsRespiteSIL = () => {
         <div className="bg-gradient-to-r from-primary/10 to-primary/5 border-l-4 border-l-primary p-8 rounded-lg mb-12">
           <h2 className="text-2xl font-bold mb-4">Ready to Fill Your NDIS Vacancies with Quality Participants?</h2>
           <p className="text-lg mb-6">
-            Google Ads offers Western Sydney NDIS providers a direct path to connect with participants and families actively seeking respite care and SIL accommodation. By implementing the strategies in this guide, you can generate consistent, high-quality enquiries while building your reputation as a trusted disability service provider.
+           Google Ads offers Western Sydney NDIS providers a direct path to connect with participants and families actively seeking respite care and SIL accommodation through professional <Link href="/services/google-ads">Google Ads Management</Link>.
           </p>
           <p className="text-base mb-6">
             Success requires ongoing optimization, NDIS compliance awareness, and a commitment to participant-centered messaging. Start with focused campaigns targeting your core Western Sydney suburbs, track every conversion, and scale what works.
@@ -1016,7 +1040,8 @@ const NDISGoogleAdsRespiteSIL = () => {
         </div>
 
         <Citation source="NDIS Quality and Safeguards Commission" url="https://www.ndiscommission.gov.au/" title="NDIS Provider Registration and Compliance Requirements" date="2026" />
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default NDISGoogleAdsRespiteSIL;
 

@@ -6,6 +6,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const ITConsultingDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["IT Consulting", "Digital Marketing", "Client Acquisition", "Technology Marketing", "B2B Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1400,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What's the best marketing strategy for IT consulting firms?",
     answer: "Thought leadership content combined with LinkedIn marketing and SEO works best. IT clients research extensively before buying, so educational content that demonstrates expertise and builds trust is crucial for long-term success."
@@ -74,7 +90,12 @@ const ITConsultingDigitalMarketing = () => {
     question: "Should IT consultants focus on general or specialized services?",
     answer: "Specialization delivers much higher ROI. Focus on specific technology areas like cloud migration, cybersecurity, or digital transformation rather than being a generalist. Specialists command premium pricing and attract better clients."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-consulting-digital-marketing-hero.jpg'} heroAlt="IT Consulting Digital Marketing Strategy">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-consulting-digital-marketing-hero.jpg'} heroAlt="IT Consulting Digital Marketing Strategy">
       <h2>The IT Consulting Marketing Challenge</h2>
       <p>
         IT consulting firms face unique marketing challenges in 2026. With 78% of businesses increasing their technology budgets, the demand for expert IT guidance has never been higher. Yet many consultants struggle to differentiate themselves in a crowded marketplace.
@@ -484,7 +505,8 @@ const ITConsultingDigitalMarketing = () => {
       </p>
 
       <Citation source="Gartner IT Services Market Research" url="https://www.gartner.com/" title="Global IT Services Market Analysis" />
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default ITConsultingDigitalMarketing;
 

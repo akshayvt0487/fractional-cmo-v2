@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/liquidators-growth-marketing-hero.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
     return date.toISOString().split('T')[0];
@@ -82,15 +83,36 @@ const LiquidatorsGrowthMarketing = () => {
     return date.toISOString().split('T')[0];
   };
 
-  return <OptimizedBlogLayout articleData={{
-    headline: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2026",
+  
+  const articleData = {headline: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2026",
     description: "Comprehensive growth marketing strategies for liquidators and insolvency practitioners. Learn how to scale your liquidation practice with proven digital marketing tactics.",
     publishedDate: convertDateFormat(post.date),
     url: "/blog/liquidators-growth-marketing",
     readTime: "12 min read",
     category: "Legal",
-    author: "Basheer Padanna"
-  }} heroImage={heroImage} heroAlt="Growth Marketing for Liquidators" relatedArticles={relatedArticles}>
+    author: "Basheer Padanna"};
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1400,
+    readTime: "PT12M"
+  });
+
+
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Growth Marketing for Liquidators" relatedArticles={relatedArticles}>
       <p className="lead text-xl text-muted-foreground mb-8">
         The liquidation and insolvency sector is experiencing unprecedented change. With economic uncertainty driving increased corporate restructuring, liquidators who master growth marketing will capture the majority of new engagements.
       </p>
@@ -525,6 +547,7 @@ const LiquidatorsGrowthMarketing = () => {
         <h3 className="text-xl font-semibold mb-4">Citations & Resources</h3>
         {citations.map((citation, index) => <Citation key={index} {...citation} />)}
       </div>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default LiquidatorsGrowthMarketing;

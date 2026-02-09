@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const PrePurchaseCarInspection = () => {
     readTime: "24 min read",
     tags: ["Car Inspection", "Automotive Business", "Pre-Purchase Inspection", "Mobile Service", "Trade Business"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What qualifications do I need to start a car inspection business?",
     answer: "You'll need automotive industry experience, relevant certifications (ASE, state inspection licenses), liability insurance, and business registration. Many states require specific licenses for vehicle inspection services."
@@ -73,7 +89,12 @@ const PrePurchaseCarInspection = () => {
     question: "What equipment do I need for mobile car inspections?",
     answer: "Essential equipment includes diagnostic tools, multi-meter, compression tester, paint thickness gauge, inspection mirror, digital camera, and a reliable vehicle for transportation. Investment typically ranges from $5,000-$15,000."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/pre-purchase-car-inspection.jpg'} heroAlt="Pre-purchase car inspection service on residential driveway - mobile inspection professional">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/pre-purchase-car-inspection.jpg'} heroAlt="Pre-purchase car inspection service on residential driveway - mobile inspection professional">
       <p className="text-xl text-muted-foreground mb-6">
         The pre-purchase car inspection business offers an excellent opportunity for automotive professionals to build a profitable service-based business. With the used car market continuing to grow and buyers becoming more cautious about their purchases, demand for professional inspection services remains strong.
       </p>
@@ -185,7 +206,8 @@ const PrePurchaseCarInspection = () => {
       <p>
         Success in the pre-purchase car inspection business requires combining automotive expertise with strong business fundamentals. Focus on building trust through thorough, professional inspections, developing strategic partnerships, and maintaining excellent customer service to generate referrals and repeat business.
       </p>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default PrePurchaseCarInspection;
 

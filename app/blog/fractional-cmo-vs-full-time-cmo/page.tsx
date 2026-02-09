@@ -6,6 +6,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const FractionalCMOVsFullTime = () => {
     readTime: "24 min read",
     tags: ["Fractional CMO", "Marketing Leadership", "Business Growth", "CMO Services", "Marketing Strategy"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const fractionalAdvantages = ["60-80% cost reduction compared to full-time", "Immediate access to senior-level expertise", "Flexible engagement that scales with business needs", "Cross-industry best practices and methodologies", "No long-term employment commitments", "Objective outside perspective on challenges"];
   const fullTimeAdvantages = ["100% dedicated focus on your business", "Deep integration with company culture", "Available for daily operational decisions", "Long-term strategic continuity", "Direct team management and mentoring", "Equity alignment with company success"];
   const faqs = [{
@@ -76,7 +92,12 @@ const FractionalCMOVsFullTime = () => {
     question: "Can a Fractional CMO help recruit a full-time CMO later?",
     answer: "Yes, many businesses use a hybrid approach. A Fractional CMO can establish marketing strategy and systems, then help recruit and onboard a full-time CMO when the business scale justifies the investment. This reduces hiring risk and ensures a smoother transition."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.fractionalCMO} faqs={faqs} heroImage={fractionalCMOVsFullTimeImage} heroAlt="Fractional CMO vs Full-Time CMO - Cost comparison and decision framework for business growth">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.fractionalCMO} faqs={faqs} heroImage={fractionalCMOVsFullTimeImage} heroAlt="Fractional CMO vs Full-Time CMO - Cost comparison and decision framework for business growth">
         <h2>The Marketing Leadership Decision</h2>
         <p>
           As your business grows, the need for senior marketing leadership becomes crucial. However, the path to acquiring this expertise isn&apos;t always clear. Should you hire a full-time Chief Marketing Officer or engage a Fractional CMO?
@@ -313,6 +334,7 @@ const FractionalCMOVsFullTime = () => {
          <p>
          If you're evaluating marketing leadership options, <Link href="/"><strong>Fractional CMO</strong></Link> can help you determine the right model through a personalized assessment.
         </p>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default FractionalCMOVsFullTime;

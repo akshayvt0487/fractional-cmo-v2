@@ -1,6 +1,8 @@
 import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { blogPosts } from '@/data/blogPosts';
+import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 
 export const metadata = createMetadata({
   robots: { index: true, follow: true, nocache: false },
@@ -55,18 +57,35 @@ const ImmigrationLawyersLeadGeneration = () => {
     readTime: post.readTime
   };
 
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: post.title,
+    description: post.excerpt,
+    author: post.author,
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2025-12-17",
+    url: `/blog/${post.slug}`,
+    imageUrl: post.image,
+    keywords: ["Immigration Lawyers", "Lead Generation", "Visa Clients", "Legal Marketing", "Client Acquisition"],
+    category: post.category,
+    wordCount: 5000,
+    readTime: "PT25M"
+  });
+
   return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      heroImage={post.image}
-      heroAlt={post.title}
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
+        articleData={articleData}
+        heroImage={post.image}
+        heroAlt={post.title}
+      >
       <h2>The Immigration Law Lead Generation Landscape in Australia</h2>
       <p>
-        Australia&apos;s immigration system processes hundreds of thousands of visa applications annually, creating 
-        substantial demand for professional migration assistance. For immigration lawyers, effective lead generation 
-        means connecting with potential clients at the right moment in their migration journey&mdash;whether they&apos;re 
-        just exploring options or urgently need legal representation.
+        Australia&apos;s immigration system processes hundreds of thousands of visa applications annually, creating substantial demand for professional migration assistance. For immigration lawyers, effective <Link href="/services/lead-generation"> lead generation </Link> means connecting with potential clients at the right moment in their migration journey—whether they're just exploring options or urgently need legal representation.
+
       </p>
       <p>
         Unlike many legal services where clients find you through emergencies or referrals, immigration clients 
@@ -326,6 +345,7 @@ const ImmigrationLawyersLeadGeneration = () => {
         both direct acquisition and referrals.
       </p>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

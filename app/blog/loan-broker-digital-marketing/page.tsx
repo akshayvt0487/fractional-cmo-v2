@@ -6,6 +6,7 @@ import { blogPosts } from '@/data/blogPosts';
 
 import { Card } from '@/components/ui/card';
 import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const LoanBrokerDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["Loan Brokers", "Digital Marketing", "Mortgage Marketing", "Financial Services", "Client Acquisition"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2300,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What's the best digital marketing strategy for loan brokers?",
     answer: "A combination of educational content marketing, local SEO, and Google Ads works best. Focus on helping potential borrowers understand the loan process while optimizing for local search to capture people actively looking for mortgage assistance."
@@ -74,7 +90,12 @@ const LoanBrokerDigitalMarketing = () => {
     question: "What compliance considerations exist for loan broker marketing?",
     answer: "Follow NCUA, NMLS, and state regulatory guidelines. Ensure all marketing materials include required disclosures, avoid misleading claims about rates or approvals, and maintain proper licensing information visibility."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/loan-broker-digital-marketing-hero.jpg'} heroAlt="Digital marketing strategies for loan brokers and mortgage professionals">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/loan-broker-digital-marketing-hero.jpg'} heroAlt="Digital marketing strategies for loan brokers and mortgage professionals">
       <p className="text-xl text-muted-foreground mb-8">
         The mortgage and lending industry is highly competitive, with loan brokers needing to differentiate themselves through digital marketing that builds trust, demonstrates expertise, and guides potential borrowers through complex financial decisions. Effective digital marketing helps brokers attract qualified leads while maintaining compliance with financial industry regulations.
       </p>
@@ -698,7 +719,8 @@ const LoanBrokerDigitalMarketing = () => {
       <p>
        Successful digital marketing for loan brokers requires balancing promotional efforts with education, staying compliant, and building trust at every stage of the borrower journey. If you want support putting all of this into action, <Link href='/'> <strong>Fractional CMO </strong> </Link>  helps loan brokers create simple, effective marketing systems that consistently attract qualified borrowers and turn them into long-term clients. We take the guesswork out of digital marketing so you can focus on what you do best, helping people secure the right loan.
       </p>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default LoanBrokerDigitalMarketing;
 

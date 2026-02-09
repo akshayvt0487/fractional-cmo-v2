@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Users, Globe, MessageCircle, Mail } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { relatedArticles } from "@/utils/seoUtils";
+import { relatedArticles, generateBlogPostingSchema } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 
 
@@ -103,9 +103,28 @@ const AdvancedNDISLeadGeneration = () => {
       answer: "Use CRM systems with NDIS compliance features, automated email sequences with opt-in consent, lead scoring based on service fit, and participant journey tracking. Ensure all tools maintain privacy standards and accessibility requirements."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: articleData.publishedDate,
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 5200,
+    readTime: "PT26M"
+  });
+
   return (
-    <OptimizedBlogLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.ndis}
       faqs={faqs}
@@ -708,6 +727,7 @@ const AdvancedNDISLeadGeneration = () => {
       </Card>
 
     </OptimizedBlogLayout>
+    </>
   );
 };
 

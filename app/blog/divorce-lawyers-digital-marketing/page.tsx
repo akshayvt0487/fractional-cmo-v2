@@ -5,6 +5,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -72,6 +73,21 @@ const DivorceLawyersDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["Divorce Lawyers", "Legal Marketing", "Client Acquisition", "Law Firm Growth", "Digital Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1900,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "Is digital marketing ethical for divorce attorneys?",
     answer: "Yes, when done responsibly. Digital marketing for divorce attorneys must prioritize client sensitivity, follow bar association guidelines, and focus on education rather than aggressive sales tactics."
@@ -82,7 +98,12 @@ const DivorceLawyersDigitalMarketing = () => {
     question: "How can divorce lawyers measure marketing ROI?",
     answer: "Track consultation requests, conversion rates from consultation to retainer, average case value, and client lifetime value. Quality metrics are often more important than quantity for divorce practice."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/divorce-lawyers-digital-marketing-hero.jpg'} heroAlt="Divorce lawyers digital marketing and client acquisition strategies">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/divorce-lawyers-digital-marketing-hero.jpg'} heroAlt="Divorce lawyers digital marketing and client acquisition strategies">
       <Card className="p-8 mb-8">
         <p className="text-lg font-semibold text-primary mb-4">
           Divorce attorneys who implement targeted digital marketing strategies see 300% higher quality client acquisition while maintaining ethical compliance and professional standards.
@@ -595,6 +616,7 @@ const DivorceLawyersDigitalMarketing = () => {
       </p>
 
       <Citation title="Model Rules of Professional Conduct" source="American Bar Association" url="https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/" />
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default DivorceLawyersDigitalMarketing;

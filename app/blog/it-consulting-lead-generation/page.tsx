@@ -5,6 +5,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const ITConsultingLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["IT Consulting", "Lead Generation", "Enterprise Sales", "Technology Marketing", "B2B Lead Generation"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What's the most effective lead generation method for IT consultants?",
     answer: "Content marketing combined with LinkedIn outreach delivers the best results. IT decision-makers research extensively, so educational content that demonstrates expertise while building relationships through professional networks works best."
@@ -73,7 +89,12 @@ const ITConsultingLeadGeneration = () => {
     question: "What's the typical sales cycle for IT consulting services?",
     answer: "Enterprise IT consulting sales cycles typically range from 3-9 months. Smaller companies may decide in 30-90 days, while large enterprises often take 6-12 months due to procurement processes and stakeholder involvement."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-consulting-lead-generation-hero.jpg'} heroAlt="IT Consulting Lead Generation Strategy">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/it-consulting-lead-generation-hero.jpg'} heroAlt="IT Consulting Lead Generation Strategy">
       <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-l-blue-500 p-8 mb-8">
         <div className="flex items-start space-x-4">
           <div className="bg-blue-100 p-3 rounded-full">
@@ -294,7 +315,8 @@ const ITConsultingLeadGeneration = () => {
       </p>
 
       <Citation source="IT Services Marketing Report 2024" url="https://www.itservicesmarketing.com/research" title="IT consulting firms with systematic lead generation processes achieve 67% higher close rates and 45% shorter sales cycles than those relying on traditional networking alone." />
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default ITConsultingLeadGeneration;
 

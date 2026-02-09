@@ -5,6 +5,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Shield, Target, Users, Phone, Building, AlertTriangle, Lock } from 'lucide-react';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -95,8 +96,14 @@ const SecurityLeadGeneration = () => {
       readTime: "24 min read",
       tags: ["Security Lead Generation", "Security Business Marketing", "Security Company Growth", "Digital Marketing for Security", "Security Service Leads"]
     };
-  
+
+  const blogPostingSchema = generateBlogPostingSchema(articleData);
+
   return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
       <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={'/images/blog/security-lead-generation-hero.jpg'} heroAlt="Professional security team monitoring surveillance systems - lead generation guide">
         <p className="text-lg text-muted-foreground mb-6">
           The global security services market is valued at over $350 billion and continues to grow as businesses and homeowners prioritize safety. However, generating quality leads in the security industry requires building trust, demonstrating expertise, and reaching clients at the right moment in their decision-making process.

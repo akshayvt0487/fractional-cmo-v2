@@ -2,7 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, Target, Users, User } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
 import Link from "next/link";
@@ -104,9 +104,28 @@ const B2BLeadGeneration = () => {
       answer: "LinkedIn is the top B2B lead generation platform, generating 80% of B2B leads. Content marketing, email marketing, and Google Ads are also highly effective when properly executed."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: articleData.publishedDate,
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 5500,
+    readTime: "PT26M"
+  });
+
   return (
-    <OptimizedBlogLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
@@ -724,6 +743,7 @@ const B2BLeadGeneration = () => {
       <Citation source="B2B Marketing Association Study 2024" url="https://www.b2bmarketing.net/research" title="B2B companies with strong lead generation processes achieve 133% greater revenue growth than those without systematic approaches." />
 
     </OptimizedBlogLayout>
+    </>
   );
 };
 

@@ -3,6 +3,7 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -45,6 +46,21 @@ const SecurityGoogleAdsStrategy = () => {
     readTime: "26 min read",
     tags: ["security companies", "google ads", "commercial leads", "security marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "How much should security companies spend on Google Ads?",
     answer: "Start with $1,000-3,000 monthly budget depending on market size. Security services typically see good ROI with cost-per-lead ranging from $50-200 for commercial clients, with average contract values of $2,000-10,000+ annually."
@@ -58,7 +74,12 @@ const SecurityGoogleAdsStrategy = () => {
     question: "Should security companies use Google Ads year-round?",
     answer: "Yes, security needs are consistent year-round, but adjust bidding for seasonal patterns. Increase budgets during holiday seasons for retail clients, summer for events, and during local crime upticks that drive security awareness."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/security-google-ads-strategy-hero.jpg'} heroAlt="Security companies Google Ads campaigns and lead generation strategies">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/security-google-ads-strategy-hero.jpg'} heroAlt="Security companies Google Ads campaigns and lead generation strategies">
       <p className="text-xl text-muted-foreground mb-8">
         Google Ads can be a game-changer for security companies, connecting you with businesses and property owners actively seeking professional security services. This comprehensive guide reveals proven Google Ads strategies that successful security companies use to generate high-value commercial leads and dominate their local markets.
       </p>
@@ -222,7 +243,8 @@ const SecurityGoogleAdsStrategy = () => {
               <p>
                 Google Ads success for security companies requires strategic targeting, trust-building messaging, and conversion-optimized landing pages. Focus on demonstrating professionalism, reliability, and rapid response capabilities to attract businesses and property owners who value quality security services. Start with well-structured campaigns targeting your most profitable client types, then scale based on performance data and market feedback.
               </p>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default SecurityGoogleAdsStrategy;
 

@@ -6,6 +6,7 @@ import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Camera, TrendingUp, Users, Star, Search, Home, Palette, DollarSign, Clock, Target, Award } from 'lucide-react';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const RenovationBuildersDigitalMarketing = () => {
     readTime: "25 min read",
     tags: ["renovation builders", "digital marketing", "client acquisition", "trade marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1300,
+    readTime: "PT25M"
+  });
+
   const faqs = [{
     question: "How can renovation builders showcase their work effectively online?",
     answer: "Use high-quality before/after photography, time-lapse videos, 3D renderings, and virtual tours. Create organized project galleries by room type and include detailed case studies showing the transformation process and client satisfaction."
@@ -77,7 +93,12 @@ const RenovationBuildersDigitalMarketing = () => {
     question: "What content works best for renovation builder marketing?",
     answer: "Before/after transformations, renovation planning guides, material selection advice, permit process explanations, design inspiration content, and client testimonials with verified project photos."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/renovation-builders-digital-marketing-hero.jpg'} heroAlt="Renovation builders digital marketing and client acquisition strategies">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/renovation-builders-digital-marketing-hero.jpg'} heroAlt="Renovation builders digital marketing and client acquisition strategies">
       <p className="text-xl text-muted-foreground mb-8">
         The renovation industry thrives on transformation stories and visual proof of quality work. Digital marketing has become essential for renovation builders to showcase their expertise, attract homeowners ready to invest in their properties, and build a sustainable business with consistent project flow and premium pricing.
       </p>
@@ -381,7 +402,8 @@ const RenovationBuildersDigitalMarketing = () => {
       <p>
         Digital marketing success for renovation builders requires a combination of visual storytelling, strategic positioning, and systematic lead generation. Focus on showcasing quality transformations through compelling before/after content, building trust through client testimonials, and maintaining consistent visibility in your target market. Start with the foundation elements and gradually expand your marketing efforts based on what generates the best results for your specific renovation specialties.
       </p>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default RenovationBuildersDigitalMarketing;
 

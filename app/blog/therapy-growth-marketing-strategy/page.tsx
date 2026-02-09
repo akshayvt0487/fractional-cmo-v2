@@ -5,6 +5,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import therapyGrowthMarketingStrategyHero from "@/assets/blog/therapy-growth-marketing-strategy-hero.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const TherapyGrowthMarketingStrategy = () => {
     readTime: "26 min read",
     tags: ["Growth Marketing", "Therapy Services", "NDIS", "Marketing Automation", "Business Scaling"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1100,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What is growth marketing for therapy clinics?",
     answer: "Growth marketing for therapy clinics focuses on data-driven, systematic approaches to scale client acquisition and retention. It combines marketing automation, multi-channel lead generation, and continuous optimization to create sustainable growth systems."
@@ -73,7 +89,12 @@ const TherapyGrowthMarketingStrategy = () => {
     question: "What's the difference between traditional marketing and growth marketing for therapy services?",
     answer: "Traditional marketing focuses on brand awareness and individual campaigns. Growth marketing takes a systematic approach, using data to optimize every stage of the client journey, from initial awareness to long-term retention and referrals."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyGrowthMarketingStrategyHero} heroAlt="Growth marketing strategies for therapy clinics including automation, SEO, and lead generation systems">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyGrowthMarketingStrategyHero} heroAlt="Growth marketing strategies for therapy clinics including automation, SEO, and lead generation systems">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           The therapy services industry is experiencing unprecedented growth, with NDIS participants requiring more specialized care than ever before. However, traditional marketing approaches often fall short when trying to scale therapy clinics efficiently. Growth marketing offers a data-driven, systematic approach to scaling speech therapy, occupational therapy, ABA therapy, and psychology practices while maintaining quality care delivery.
         </p>
@@ -449,7 +470,8 @@ const TherapyGrowthMarketingStrategy = () => {
           Growth marketing for therapy clinics requires a systematic, data-driven approach that balances professional healthcare standards with aggressive growth tactics. Focus on building sustainable systems that can scale while maintaining the personal touch that families expect from therapy services.
         </p>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default TherapyGrowthMarketingStrategy;
 

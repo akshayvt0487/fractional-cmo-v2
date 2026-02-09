@@ -2,7 +2,7 @@ import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import StrategyForm from '@/components/ui/strategy-form';
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import loanBrokerGoogleAdsHero from '@/assets/blog/loan-broker-google-ads-hero.jpg';
 import { Card } from '@/components/ui/card';
@@ -83,7 +83,14 @@ const LoanBrokerGoogleAds = () => {
     }
   ];
 
+  const blogPostingSchema = generateBlogPostingSchema(articleData);
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
     <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
@@ -409,6 +416,7 @@ const LoanBrokerGoogleAds = () => {
       </p>
 
     </OptimizedBlogLayout>
+    </>
   );
 };
 

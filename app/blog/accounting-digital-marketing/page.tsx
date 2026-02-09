@@ -4,7 +4,7 @@ import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, Target, Globe, Monitor, MapPin, PenTool, Building, Users, TrendingUp, CheckCircle, Search, BookOpen, BarChart, Lightbulb, Calendar, Mail, Smartphone, Award, Gift, Handshake, Star, MessageCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 
 
 // ————————————————————————————————————————
@@ -93,15 +93,34 @@ const AccountingDigitalMarketing = () => {
       answer: "SEO and content marketing typically show results in 3-6 months, while Google Ads can generate leads immediately. Consistent effort over 12+ months delivers the best long-term growth."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2024-12-28",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags,
+    category: articleData.category,
+    wordCount: 6000,
+    readTime: "PT25M"
+  });
+
   return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.digitalMarketing}
-      faqs={faqs}
-      heroImage={'/images/blog/accounting-growth-strategy-hero.jpg'}
-      heroAlt="Professional accounting firm implementing digital marketing strategies"
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
+        articleData={articleData}
+        relatedArticles={relatedArticles.digitalMarketing}
+        faqs={faqs}
+        heroImage={'/images/blog/accounting-growth-strategy-hero.jpg'}
+        heroAlt="Professional accounting firm implementing digital marketing strategies"
+      >
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
@@ -616,6 +635,7 @@ const AccountingDigitalMarketing = () => {
       </Card>
 
     </OptimizedBlogLayout>
+    </>
   );
 };
 

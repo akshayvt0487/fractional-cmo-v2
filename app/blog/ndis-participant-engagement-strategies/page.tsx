@@ -7,6 +7,7 @@ import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import ndisProviderImage from "@/assets/blog/ndis-participant-engagement-new.jpg";
 import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const NDISParticipantEngagement = () => {
     readTime: "24 min read",
     tags: ["NDIS", "Participant Engagement", "Disability Services", "Communication", "Cultural Competency"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What are the key principles of effective NDIS participant engagement?",
     answer: "Effective engagement is based on person-centered approaches, choice and control, cultural competency, and strength-based planning. It involves recognizing each participant as unique, supporting their decision-making, and building on their existing capabilities."
@@ -75,7 +91,12 @@ const NDISParticipantEngagement = () => {
     question: "What communication strategies work best for participants with different disabilities?",
     answer: "Use visual supports, technology aids, interpreters, and easy-read materials as needed. Adapt communication pace, offer multiple channels, confirm understanding through repetition, and provide choices rather than open-ended questions."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisProviderImage} heroAlt="NDIS support worker engaging with participant in meaningful conversation in community setting">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisProviderImage} heroAlt="NDIS support worker engaging with participant in meaningful conversation in community setting">
       <h2>Participant Engagement Landscape</h2>
       
       <div className="grid md:grid-cols-4 gap-6 mb-8">
@@ -386,6 +407,7 @@ const NDISParticipantEngagement = () => {
         </Card>
       </div>
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default NDISParticipantEngagement;

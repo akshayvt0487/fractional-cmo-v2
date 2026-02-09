@@ -3,6 +3,7 @@ import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -61,6 +62,21 @@ const FloorSandingDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["floor sanding", "digital marketing", "trade business", "home improvement"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1700,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "How can digital marketing help my floor sanding business?",
     answer: "Digital marketing helps floor sanding businesses showcase their craftsmanship online, attract homeowners actively searching for floor restoration services, and build a professional reputation that commands premium pricing."
@@ -74,7 +90,12 @@ const FloorSandingDigitalMarketing = () => {
     question: "Should I invest in Google Ads for my floor sanding business?",
     answer: "Yes, Google Ads can capture high-intent searches when homeowners are actively planning floor restoration projects. Target keywords like 'floor sanding [location]' and 'timber floor restoration' for best results."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/floor-sanding-digital-marketing-hero.jpg'} heroAlt="Floor sanding specialists digital marketing and business growth strategies">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/floor-sanding-digital-marketing-hero.jpg'} heroAlt="Floor sanding specialists digital marketing and business growth strategies">
       <p className="text-xl text-muted-foreground mb-8">
         Floor sanding and refinishing is a specialized trade that transforms worn, damaged timber floors into stunning home features. Digital marketing has become essential for floor sanding specialists to showcase their craftsmanship, attract homeowners with quality timber floors, and build a sustainable business with consistent project flow and premium pricing in competitive markets.
       </p>
@@ -562,7 +583,8 @@ const FloorSandingDigitalMarketing = () => {
       <p className="mb-8">
         The floor sanding industry offers excellent opportunities for specialists who understand how to market their expertise effectively. By implementing these digital marketing strategies and consistently delivering outstanding results, you can build a thriving business that serves your community while achieving your professional and financial goals.
       </p>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default FloorSandingDigitalMarketing;
 

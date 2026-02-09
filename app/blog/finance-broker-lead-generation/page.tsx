@@ -3,7 +3,7 @@ import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   robots: {
@@ -86,8 +86,15 @@ const FinanceBrokerLeadGeneration = () => {
       answer: "Speed to lead is critical in finance. Aim for initial contact within 5 minutes during business hours. After-hours leads should receive automated acknowledgment immediately and personal contact first thing next business day."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema(articleData);
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
     <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
@@ -253,6 +260,7 @@ const FinanceBrokerLeadGeneration = () => {
         </CardContent>
       </Card>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

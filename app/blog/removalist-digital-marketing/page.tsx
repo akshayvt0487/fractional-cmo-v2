@@ -5,6 +5,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 
 // client hook removed from server page to avoid server-side invocation
 export const metadata = createMetadata({
@@ -67,6 +68,21 @@ const RemovalistDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["removalist marketing", "digital marketing", "moving business", "customer acquisition"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1500,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "How can digital marketing help my removalist business?",
     answer: "Digital marketing helps removalist businesses reach customers exactly when they're planning a move, build trust through online reviews, showcase services effectively, and compete with larger moving companies through targeted online strategies."
@@ -80,7 +96,12 @@ const RemovalistDigitalMarketing = () => {
     question: "Should I use Google Ads for my removalist business?",
     answer: "Yes, Google Ads can be highly effective for removalists. Target emergency keywords like 'urgent movers' and local terms like 'removalists [city]' to capture high-intent customers actively searching for moving services."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/removalist-digital-marketing-hero.jpg'} heroAlt="Digital marketing strategies for removalist and moving businesses">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/removalist-digital-marketing-hero.jpg'} heroAlt="Digital marketing strategies for removalist and moving businesses">
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <h3 className="text-xl font-semibold mb-4">Removalist Industry Digital Stats</h3>
@@ -566,6 +587,7 @@ const RemovalistDigitalMarketing = () => {
         </Card>
       </section>
         
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default RemovalistDigitalMarketing;

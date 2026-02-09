@@ -6,6 +6,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const CyberSecurityDigitalMarketing = () => {
     readTime: "26 min read",
     tags: ["Cyber Security Marketing", "Startup Marketing", "Digital Marketing", "Business Growth"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "How much should cyber security startups spend on marketing?",
     answer: "Successful cyber security firms invest 15-25% of revenue in marketing. Startups should allocate $10,000-25,000 monthly for comprehensive digital marketing, focusing 60% on digital channels."
@@ -74,7 +90,12 @@ const CyberSecurityDigitalMarketing = () => {
     question: "How long does cyber security lead generation take?",
     answer: "B2B cyber security sales cycles average 6-18 months. Content marketing and SEO show results in 3-6 months, while paid advertising can generate immediate leads."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/cyber-security-digital-marketing.jpg'} heroAlt="Cyber security startup team developing digital marketing strategies for business growth">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/cyber-security-digital-marketing.jpg'} heroAlt="Cyber security startup team developing digital marketing strategies for business growth">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Complete digital marketing playbook for startup cyber security companies. Learn how to establish 
           market presence, attract your first clients, build credibility, and create sustainable growth 
@@ -471,6 +492,7 @@ const CyberSecurityDigitalMarketing = () => {
           </Card>
         </div>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default CyberSecurityDigitalMarketing;

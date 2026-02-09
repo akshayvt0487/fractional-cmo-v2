@@ -7,6 +7,7 @@ import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const ConstructionLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["Construction Marketing", "Lead Generation", "Digital Marketing", "Google Ads", "SEO"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1400,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What's the best way to generate leads for a construction business?",
     answer: "The most effective approach combines Google Ads for immediate results, local SEO for long-term visibility, and content marketing to build trust. Focus on high-intent keywords and showcase completed projects."
@@ -75,7 +91,12 @@ const ConstructionLeadGeneration = () => {
     question: "How long does it take to see results from construction marketing?",
     answer: "Google Ads can generate leads within 1-2 weeks, while SEO typically takes 3-6 months for significant results. Content marketing and reputation building are ongoing processes that compound over time."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/construction-lead-generation.jpg'} heroAlt="Construction Lead Generation Strategies - Professional Construction Team Working on Building Site Project Management">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/construction-lead-generation.jpg'} heroAlt="Construction Lead Generation Strategies - Professional Construction Team Working on Building Site Project Management">
         <blockquote className="border-l-4 border-primary pl-6 my-8 italic text-lg text-gray-600 not-prose">
           &quot;In construction, relationships build businesses. But in today&apos;s digital world, those relationships start online.&quot;
           <footer className="text-sm mt-2 not-italic">— John Holland, CEO, John Holland Group</footer>
@@ -619,6 +640,7 @@ const ConstructionLeadGeneration = () => {
 
         <Citation source="Australian Bureau of Statistics - Construction Industry Statistics" url="https://www.abs.gov.au/" title="Construction Work Done Survey" />
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default ConstructionLeadGeneration;

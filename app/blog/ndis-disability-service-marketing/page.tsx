@@ -7,6 +7,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 
 import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const NDISDisabilityServiceMarketing = () => {
     readTime: "28 min read",
     tags: ["NDIS Marketing", "Disability Services", "Participant Engagement", "NDIS Compliance", "Service Provider Growth", "Digital Strategy"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2500,
+    readTime: "PT28M"
+  });
+
   const faqs = [{
     question: "How do NDIS providers market their services compliantly?",
     answer: "Focus on educational content, participant testimonials (with consent), and clear service descriptions. Avoid making medical claims, ensure all marketing materials are accessible, and maintain transparency about costs and service delivery approaches."
@@ -84,7 +100,12 @@ const NDISDisabilityServiceMarketing = () => {
     question: "What are the most effective marketing channels for NDIS disability services?",
     answer: "The most effective channels include local SEO, Google My Business optimization, community engagement, referral programs with healthcare professionals, and targeted social media marketing. Focus on quality over quantity in your channel selection."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-disability-service-marketing-hero.jpg'} heroAlt="NDIS disability service provider digital marketing">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-disability-service-marketing-hero.jpg'} heroAlt="NDIS disability service provider digital marketing">
       <Card className="bg-linear-to-r from-purple-50 to-indigo-50 border-l-4 border-l-purple-500 p-8 mb-8 not-prose">
         <div className="flex items-start space-x-4">
           <div className="bg-purple-100 p-3 rounded-full">
@@ -821,7 +842,8 @@ const NDISDisabilityServiceMarketing = () => {
         </p>
       </div>
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default NDISDisabilityServiceMarketing;
 

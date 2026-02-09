@@ -3,7 +3,7 @@ import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 export const metadata = createMetadata({
   robots: {
@@ -86,9 +86,28 @@ const FinanceBrokerDigitalMarketing = () => {
       answer: "Digital marketing supports referral generation through professional branding, case study content, co-marketing with referral partners, LinkedIn presence, and automated referral request sequences. Happy clients are more likely to refer when reminded systematically."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: articleData.modifiedDate,
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 3800,
+    readTime: "PT19M"
+  });
+
   return (
-    <OptimizedBlogLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
@@ -267,6 +286,7 @@ const FinanceBrokerDigitalMarketing = () => {
         </CardContent>
       </Card>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

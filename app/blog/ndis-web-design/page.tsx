@@ -7,6 +7,7 @@ import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import ndisImage from "@/assets/ndis-support-care.jpg";
 import ndisQualityImage from "@/assets/ndis-quality-standards.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const NDISWebDesign = () => {
     readTime: "26 min read",
     tags: ["NDIS", "Web Design", "Accessibility", "User Experience", "Conversion Optimization"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What accessibility standards should NDIS websites meet?",
     answer: "NDIS websites should comply with WCAG 2.1 AA standards, including alternative text for images, high contrast ratios (4.5:1 minimum), keyboard navigation support, resizable text up to 200%, and screen reader compatibility."
@@ -75,7 +91,12 @@ const NDISWebDesign = () => {
     question: "What are the most important elements for NDIS service pages?",
     answer: "Include service overview in participant language, specific situations the service helps, expected outcomes, step-by-step process explanation, pricing transparency, clear call-to-actions, and staff qualifications."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisImage} heroAlt="NDIS website design showcasing accessibility and user-friendly interface for disability service providers">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={ndisImage} heroAlt="NDIS website design showcasing accessibility and user-friendly interface for disability service providers">
       <h2>The NDIS Website Design Challenge</h2>
       
       <div className="grid md:grid-cols-4 gap-6 mb-8">
@@ -392,6 +413,7 @@ const NDISWebDesign = () => {
         </Card>
       </div>
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default NDISWebDesign;

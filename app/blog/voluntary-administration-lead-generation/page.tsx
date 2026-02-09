@@ -5,6 +5,8 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import heroImage from "@/assets/blog/voluntary-administration-lead-generation-hero.jpg";
+import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 
 export const metadata = createMetadata({
   robots: {
@@ -77,7 +79,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
     return date.toISOString().split('T')[0];
   };
 
-  return <OptimizedBlogLayout articleData={{
+  const articleData = {
     headline: "Lead Generation for Voluntary Administration Specialists: Complete 2026 Strategy",
     description: "Master lead generation for voluntary administration services. Proven strategies to attract distressed businesses, build referrer networks, and grow your VA practice with sustainable client pipelines.",
     publishedDate: convertDateFormat(post.date),
@@ -85,7 +87,28 @@ const VoluntaryAdministrationLeadGeneration = () => {
     readTime: "15 min read",
     category: "Legal",
     author: "Basheer Padanna"
-  }} heroImage={heroImage} heroAlt="Lead Generation for Voluntary Administration" relatedArticles={relatedArticles}>
+  };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-01-15",
+    url: articleData.url,
+    imageUrl: "/images/blog/voluntary-administration-lead-generation-hero.jpg",
+    keywords: ["Voluntary Administration", "Lead Generation", "Insolvency", "Business Rescue", "VA Specialists"],
+    category: articleData.category,
+    wordCount: 3600,
+    readTime: "PT15M"
+  });
+
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Lead Generation for Voluntary Administration" relatedArticles={relatedArticles}>
       <p className="lead text-xl text-muted-foreground mb-8">
         Voluntary administration offers businesses a lifeline—but directors need to discover your services before it&apos;s too late. This comprehensive guide reveals the lead generation strategies that fill voluntary administration practices with quality appointments while building sustainable referrer networks.
       </p>
@@ -94,7 +117,8 @@ const VoluntaryAdministrationLeadGeneration = () => {
         <h2 className="text-3xl font-bold mb-6">Understanding the VA Lead Generation Landscape</h2>
         
         <p className="mb-6">
-          Lead generation for voluntary administration is fundamentally different from other professional services. You&apos;re targeting businesses in financial distress—often in crisis mode—while also building relationships with advisors who identify early warning signs before directors do.
+         <Link href="/services/lead-generation">Lead generation </Link> for voluntary administration is fundamentally different from other professional services. You're targeting businesses in financial distress—often in crisis mode—while also building relationships with advisors who identify early warning signs before directors do.
+
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -672,7 +696,8 @@ const VoluntaryAdministrationLeadGeneration = () => {
       <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
         <h3 className="text-xl font-semibold mb-3">Ready to Build a Sustainable Lead Pipeline?</h3>
         <p className="mb-4">
-          Lead generation for voluntary administration specialists requires specialized knowledge of both digital marketing and the unique dynamics of insolvency services. Our team has worked with VA practitioners across Australia to develop comprehensive lead generation strategies that deliver consistent, high-quality appointments.
+         Lead generation for voluntary administration specialists requires specialized knowledge of both digital marketing and the unique dynamics of insolvency services. Our team has worked with VA practitioners across Australia to develop comprehensive <Link href="/services/lead-generation">lead generation strategies</Link> that deliver consistent, high-quality appointments.
+
         </p>
         <p className="mb-0">
           Book a strategy call to discuss how we can help you build a sustainable lead pipeline through integrated direct and referral marketing strategies.
@@ -683,6 +708,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
         <h3 className="text-xl font-semibold mb-4">Citations & Resources</h3>
         {citations.map((citation, index) => <Citation key={index} {...citation} />)}
       </div>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+  </>;
 };
 export default VoluntaryAdministrationLeadGeneration;

@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -62,6 +63,21 @@ const SaaSMarketingITSector = () => {
     readTime: "26 min read",
     tags: ["SaaS Marketing", "IT Sector", "Software Companies", "Growth Strategies", "Customer Acquisition"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What are the key metrics for SaaS marketing success?",
     answer: "Essential SaaS marketing metrics include Customer Acquisition Cost (CAC), Monthly Recurring Revenue (MRR), Customer Lifetime Value (CLV), churn rate, and Net Promoter Score (NPS). Focus on the CAC to CLV ratio of 3:1 or higher for sustainable growth."
@@ -72,7 +88,12 @@ const SaaSMarketingITSector = () => {
     question: "What's the best pricing model for a SaaS product?",
     answer: "The best pricing model depends on your target market and value proposition. Common approaches include freemium for mass adoption, tiered pricing for different segments, usage-based for scalable value, and custom enterprise pricing for large accounts."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/saas-marketing-it-sector-hero.jpg'} heroAlt="SaaS marketing analytics dashboard showing key growth metrics and KPIs">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/saas-marketing-it-sector-hero.jpg'} heroAlt="SaaS marketing analytics dashboard showing key growth metrics and KPIs">
 
               <Card className="p-8 mb-8">
                 <p className="text-lg font-semibold text-primary mb-4">
@@ -269,7 +290,8 @@ const SaaSMarketingITSector = () => {
                   </Card>
               </div>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default SaaSMarketingITSector;
 

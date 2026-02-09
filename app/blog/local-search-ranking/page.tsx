@@ -5,6 +5,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import StrategyForm from "@/components/ui/strategy-form";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const LocalSearchRanking = () => {
     readTime: "24 min read",
     tags: ["Local SEO", "Search Engine Optimization", "Local Marketing", "Google My Business", "Local Search"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1900,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "How long does it take to see results from local SEO?",
     answer: "Local SEO results typically appear within 3-6 months, with Google My Business optimizations showing improvements in 2-4 weeks. Consistent effort and quality content accelerate rankings."
@@ -73,7 +89,12 @@ const LocalSearchRanking = () => {
     question: "How many reviews do I need to rank well locally?",
     answer: "While there's no magic number, businesses with 25+ positive reviews typically outperform competitors. Focus on consistent review generation and professional responses to all feedback."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/local-search-ranking-hero.jpg'} heroAlt="Local search ranking strategies and Google My Business optimization">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/local-search-ranking-hero.jpg'} heroAlt="Local search ranking strategies and Google My Business optimization">
         <h2>The Local Search Revolution</h2>
         
         <Card className="mb-8 bg-primary/5 border-primary/20">
@@ -737,7 +758,8 @@ const LocalSearchRanking = () => {
           </CardContent>
         </Card>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default LocalSearchRanking;
 

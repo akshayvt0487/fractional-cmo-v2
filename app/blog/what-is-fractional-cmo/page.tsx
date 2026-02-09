@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock, Users, TrendingUp, CheckCircle } from "lucide-react";
 import whatIsFractionalCMOImage from "@/assets/blog/fractional-cmo-what-is-hero.jpg";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
-import { relatedArticles, ArticleData } from "@/utils/seoUtils";
+import { relatedArticles, ArticleData, generateBlogPostingSchema } from "@/utils/seoUtils";
 import StrategyForm from "@/components/ui/strategy-form";
 import Link from "next/link";
 
@@ -42,20 +42,39 @@ const WhatIsFractionalCMO = () => {
   const benefits = [
     "Access to senior-level marketing expertise without full-time costs",
     "Immediate strategic impact and implementation",
-    "Flexible engagement model that scales with your business", 
+    "Flexible engagement model that scales with your business",
     "Cross-industry experience and proven methodologies",
     "No long-term employment commitments or overhead",
     "Objective outside perspective on your marketing challenges"
   ];
 
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: "2024-08-23",
+    modifiedDate: "2024-12-15",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags,
+    category: articleData.category,
+    wordCount: 5800,
+    readTime: "PT24M"
+  });
+
   return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      relatedArticles={relatedArticles.fractionalCMO}
-      faqs={faqs}
-      heroImage={whatIsFractionalCMOImage}
-      heroAlt="Fractional CMO strategic planning and business growth consultation"
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
+        articleData={articleData}
+        relatedArticles={relatedArticles.fractionalCMO}
+        faqs={faqs}
+        heroImage={whatIsFractionalCMOImage}
+        heroAlt="Fractional CMO strategic planning and business growth consultation"
+      >
       <h2>Understanding the Fractional CMO Model</h2>
       <p>
         In today's competitive business landscape, many companies need senior-level marketing expertise but can't justify the cost of a full-time Chief Marketing Officer. At <Link href="/"><strong>Fractional CMO </strong></Link>, our services help businesses access senior-level marketing leadership without the cost of a full-time hire.
@@ -415,6 +434,7 @@ const WhatIsFractionalCMO = () => {
         <StrategyForm preSelectedService="strategy" />
       </div>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

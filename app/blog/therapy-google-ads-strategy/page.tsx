@@ -5,6 +5,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import therapyGoogleAdsStrategyHero from "@/assets/blog/therapy-google-ads-strategy-hero.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const TherapyGoogleAdsStrategy = () => {
     readTime: "26 min read",
     tags: ["Google Ads", "Therapy Services", "NDIS", "Digital Marketing", "Lead Generation"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "How much should therapy clinics spend on Google Ads?",
     answer: "Therapy clinics should start with $2,000-4,000 monthly for Google Ads, allocating 60% to Search campaigns and 40% to Display/Video. This budget allows for proper keyword coverage and testing across different therapy services."
@@ -73,7 +89,12 @@ const TherapyGoogleAdsStrategy = () => {
     question: "How do I target NDIS participants in Google Ads?",
     answer: "Use NDIS-specific keywords, create dedicated landing pages explaining NDIS funding, target relevant demographics, and use audience targeting based on interests in disability services and child development."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyGoogleAdsStrategyHero} heroAlt="Google Ads strategy for therapy clinics including speech therapy, occupational therapy, and ABA therapy services">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyGoogleAdsStrategyHero} heroAlt="Google Ads strategy for therapy clinics including speech therapy, occupational therapy, and ABA therapy services">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Google Ads can be a game-changer for therapy clinics, but the unique nature of therapy services requires sophisticated targeting and messaging strategies. With over 65% of parents searching online for therapy services and NDIS funding covering many therapy interventions, a well-executed Google Ads strategy can significantly increase your client base while maintaining cost efficiency.
         </p>
@@ -505,7 +526,8 @@ const TherapyGoogleAdsStrategy = () => {
           Google Ads for therapy services requires a delicate balance of professional expertise, emotional understanding, and strategic precision. Focus on building trust while demonstrating your ability to help children reach their full potential.
         </p>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default TherapyGoogleAdsStrategy;
 

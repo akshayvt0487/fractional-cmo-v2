@@ -7,6 +7,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const NDISDigitalMarketing = () => {
     readTime: "25 min read",
     tags: ["NDIS", "Digital Marketing", "Disability Services", "Participant Engagement", "Service Providers"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1300,
+    readTime: "PT25M"
+  });
+
   const faqs = [{
     question: "What are the most effective digital marketing strategies for NDIS providers?",
     answer: "The most effective strategies include local SEO optimization, Google My Business management, participant-focused content marketing, accessible website design, and ethical social media engagement that prioritizes participant outcomes."
@@ -75,7 +91,12 @@ const NDISDigitalMarketing = () => {
     question: "What budget should NDIS providers allocate for digital marketing?",
     answer: "NDIS providers should typically allocate 3-5% of revenue to marketing, with digital channels representing 60-80% of that budget. Start with $2,000-5,000 monthly for effective local reach and scale based on results."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={ndisMarketingImage} heroAlt="NDIS digital marketing strategies and campaign materials for disability service providers">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={ndisMarketingImage} heroAlt="NDIS digital marketing strategies and campaign materials for disability service providers">
         <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-l-blue-500 p-8 mb-8 not-prose">
           <div className="flex items-start space-x-4">
             <div className="bg-blue-100 p-3 rounded-full">
@@ -505,6 +526,7 @@ const NDISDigitalMarketing = () => {
 
         <Citation source="NDIS Quarterly Report Q3 2024" url="https://www.ndis.gov.au/about-us/publications/quarterly-reports" title="The NDIS now supports over 610,000 participants with a focus on choice and control, creating opportunities for providers who prioritize participant-centered services." />
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default NDISDigitalMarketing;

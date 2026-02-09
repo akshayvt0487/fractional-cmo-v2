@@ -5,6 +5,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Search, MapPin, TrendingUp, Users, Globe, Target, CheckCircle } from 'lucide-react';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const RealEstateSEOMarketing = () => {
     readTime: "24 min read",
     tags: ["Real Estate SEO", "Local SEO", "Property Marketing", "Digital Marketing", "Search Optimization"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1900,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "How long does it take to see SEO results for real estate websites?",
     answer: "Real estate SEO typically shows initial improvements within 3-6 months, with significant results after 6-12 months of consistent optimization. Local SEO can show faster results, often within 1-3 months for Google My Business optimization."
@@ -73,7 +89,12 @@ const RealEstateSEOMarketing = () => {
     question: "Should real estate agents focus on national or local SEO?",
     answer: "Real estate agents should focus primarily on local SEO since most property searches are location-specific. Target keywords like 'real estate agent [city]', 'homes for sale [suburb]', and create location-specific content for your service areas."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/real-estate-seo-marketing-hero.jpg'} heroAlt="Real estate SEO and local search optimization strategies">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/real-estate-seo-marketing-hero.jpg'} heroAlt="Real estate SEO and local search optimization strategies">
       <Card className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
         <CardContent className="p-6">
           <div className="flex items-start space-x-4">
@@ -669,7 +690,8 @@ const RealEstateSEOMarketing = () => {
         SEO success for real estate agents requires consistent local optimization, valuable content creation, and technical excellence. Implement these strategies to attract more qualified buyers and sellers in your target market areas.
       </p>
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default RealEstateSEOMarketing;
 

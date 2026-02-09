@@ -12,7 +12,10 @@
       "Bash(python /tmp/fix_formatting.py:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(python scripts/add_blog_schema.py:*)",
+      "Bash(find:*)",
+      "Bash(python scripts/validate_blog_schemas.py:*)"
     ]
   }
 }

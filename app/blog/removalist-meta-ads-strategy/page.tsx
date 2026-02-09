@@ -4,6 +4,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -78,8 +79,28 @@ const RemovalistMetaAdsStrategy = () => {
       readTime: "24 min read",
       tags: ["Meta Ads", "Facebook Marketing", "Removalist Marketing", "Moving Company Ads", "Lead Generation", "Audience Targeting"]
     };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2100,
+    readTime: "PT24M"
+  });
+
   
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs}>
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs}>
       <Card className="mb-8">
         <CardContent className="pt-6">
           <p className="text-lg leading-relaxed mb-4">
@@ -835,6 +856,7 @@ fbq('track', 'PageView');
           </CardContent>
         </Card>
       </section>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default RemovalistMetaAdsStrategy;

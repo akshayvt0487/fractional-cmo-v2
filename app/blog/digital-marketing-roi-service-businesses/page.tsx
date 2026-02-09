@@ -5,6 +5,7 @@ import Citation from "@/components/Citation";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const DigitalMarketingROI = () => {
     readTime: "26 min read",
     tags: ["Digital Marketing ROI", "Analytics", "Service Businesses", "Marketing Metrics", "Performance Measurement"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2025-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2200,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What's a good ROI benchmark for service business digital marketing?",
     answer: "Service businesses should target a 300-500% ROI from digital marketing efforts. This means for every $1 spent, you should generate $3-5 in revenue. Professional services often achieve higher ROI due to higher transaction values."
@@ -73,7 +89,12 @@ const DigitalMarketingROI = () => {
     question: "Which digital marketing channels provide the highest ROI for service businesses?",
     answer: "Email marketing typically delivers the highest ROI (4200% average), followed by SEO and content marketing. Paid search and social media can also be highly effective when properly optimized and targeted."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/digital-marketing-roi.jpg'} heroAlt="Digital Marketing ROI Dashboard - Measuring success for service businesses">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/digital-marketing-roi.jpg'} heroAlt="Digital Marketing ROI Dashboard - Measuring success for service businesses">
         <h2>Understanding Digital Marketing ROI for Service Businesses</h2>
         <p>
           Measuring return on investment in digital marketing is crucial for service businesses to understand which strategies deliver the best results and optimize their marketing spend for maximum growth. Unlike product-based businesses, service companies face unique challenges in ROI measurement due to longer sales cycles and complex customer journeys.
@@ -761,7 +782,8 @@ const DigitalMarketingROI = () => {
 
         <Citation source="Marketing Accountability Standards Board 2024" url="https://themasb.org" title="Companies with advanced marketing measurement capabilities achieve 15-20% higher marketing ROI than those without formal measurement systems." />
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default DigitalMarketingROI;
 

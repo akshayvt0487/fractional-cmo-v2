@@ -7,6 +7,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const BuyersAgentsGoogleAds = () => {
     readTime: "28 min read",
     tags: ["Buyers Agents", "Google Ads", "Real Estate Marketing", "Property Marketing", "Lead Generation"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2500,
+    readTime: "PT28M"
+  });
+
   const faqs = [{
     question: "What's the average cost per click for buyers agent Google Ads?",
     answer: "CPC for buyers agent keywords typically ranges from $5-25, with competitive markets like Sydney and Melbourne at the higher end. Focus on long-tail keywords and local targeting to reduce costs."
@@ -75,7 +91,12 @@ const BuyersAgentsGoogleAds = () => {
     question: "What's the best landing page strategy for buyers agent ads?",
     answer: "Create service-specific landing pages for first home buyers, investors, and luxury markets. Include clear value propositions, client testimonials, and simple consultation booking forms."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/buyers-agents-google-ads-hero.jpg'} heroAlt="Buyers agents Google Ads strategies and campaign optimization">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/buyers-agents-google-ads-hero.jpg'} heroAlt="Buyers agents Google Ads strategies and campaign optimization">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏠 Google Ads can be a game-changer for buyers agents, connecting you with property buyers and investors actively searching for professional representation. This comprehensive guide reveals proven Google Ads strategies that successful buyers agents use to generate qualified leads, outrank competitors, and grow their client base consistently in competitive property markets.
         </p>
@@ -877,6 +898,7 @@ const BuyersAgentsGoogleAds = () => {
           </ul>
         </section>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default BuyersAgentsGoogleAds;

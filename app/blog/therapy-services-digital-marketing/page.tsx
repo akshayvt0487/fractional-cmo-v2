@@ -6,6 +6,7 @@ import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
 import therapyServicesDigitalMarketingHero from "@/assets/blog/therapy-services-digital-marketing-hero.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -64,6 +65,21 @@ const TherapyServicesDigitalMarketing = () => {
     readTime: "25 min read",
     tags: ["Digital Marketing", "Therapy Services", "NDIS", "Healthcare Marketing", "Client Acquisition"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT25M"
+  });
+
   const faqs = [{
     question: "How do therapy services market ethically while staying compliant?",
     answer: "Focus on educational content that helps families understand therapy benefits, share success stories with consent, maintain professional boundaries, and ensure all marketing claims are evidence-based and truthful."
@@ -74,7 +90,12 @@ const TherapyServicesDigitalMarketing = () => {
     question: "How much should therapy practices spend on digital marketing?",
     answer: "Therapy practices should allocate 5-8% of revenue to marketing, with 70% focused on digital channels. Start with $2,500-4,000 monthly for local SEO, Google Ads, and content marketing to see meaningful results."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyServicesDigitalMarketingHero} heroAlt="Digital marketing strategies for therapy services including speech therapy, occupational therapy, and psychology practices">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyServicesDigitalMarketingHero} heroAlt="Digital marketing strategies for therapy services including speech therapy, occupational therapy, and psychology practices">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           The therapy services sector under NDIS is experiencing unprecedented growth, with over 580,000 NDIS participants requiring speech therapy, occupational therapy, ABA therapy, and psychology services. However, with increased competition and evolving digital landscapes, therapy providers need sophisticated marketing strategies to attract and retain clients while maintaining their professional reputation.
         </p>
@@ -439,7 +460,8 @@ const TherapyServicesDigitalMarketing = () => {
           Digital marketing for therapy services requires a balanced approach of professional expertise, genuine care, and strategic growth tactics. Focus on providing value to families while building sustainable marketing systems that grow your practice.
         </p>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default TherapyServicesDigitalMarketing;
 

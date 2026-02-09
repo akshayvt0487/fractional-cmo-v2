@@ -1,7 +1,7 @@
 import { createMetadata } from "@/lib/seo";
 import React from 'react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
-import { relatedArticles } from '@/utils/seoUtils';
+import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Globe, Camera, Search, PenTool, BookOpen, Video } from "lucide-react";
@@ -105,9 +105,28 @@ const BricklayersGrowthMarketing = () => {
       answer: "Local SEO is critical as most bricklaying work is location-dependent. Optimize for 'bricklayer near me' searches, maintain active Google My Business profile, and create location-specific landing pages for each service area."
     }
   ];
-  
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author,
+    publishedDate: articleData.publishedDate,
+    modifiedDate: articleData.publishedDate,
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 5000,
+    readTime: "PT26M"
+  });
+
   return (
-    <OptimizedBlogLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
       articleData={articleData}
       relatedArticles={relatedArticles.tradies}
       faqs={faqs}
@@ -935,6 +954,7 @@ const BricklayersGrowthMarketing = () => {
         </div>
       </section>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

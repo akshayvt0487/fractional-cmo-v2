@@ -5,6 +5,7 @@ import StrategyForm from "@/components/ui/strategy-form";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const CyberSecurityGoogleAds = () => {
     readTime: "25 min read",
     tags: ["Cyber Security", "Google Ads", "PPC", "Lead Generation", "Digital Marketing"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1500,
+    readTime: "PT25M"
+  });
+
   const faqs = [{
     question: "What's the average cost per click for cyber security Google Ads?",
     answer: "Cyber security CPCs typically range from $15-45, with highly competitive terms like 'cyber security consulting' reaching $60+. Focus on long-tail keywords and specific service terms for better cost efficiency."
@@ -73,7 +89,12 @@ const CyberSecurityGoogleAds = () => {
     question: "What's the best campaign structure for cyber security Google Ads?",
     answer: "Use separate campaigns for each major service (penetration testing, compliance, incident response), create ad groups for specific solutions, and implement geo-targeting for local markets while maintaining national reach for enterprise services."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/blog/cyber-security-google-ads.jpg" heroAlt="Google Ads strategy for cyber security businesses">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/blog/cyber-security-google-ads.jpg" heroAlt="Google Ads strategy for cyber security businesses">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🔒 Cyber security companies leveraging strategic Google Ads campaigns see 300% higher lead generation rates and 40% lower customer acquisition costs compared to traditional marketing methods. This comprehensive guide reveals the proven strategies, targeting techniques, and optimization methods that top cyber security firms use to dominate search results and capture high-value enterprise clients.
         </p>
@@ -661,7 +682,8 @@ const CyberSecurityGoogleAds = () => {
           Successful cyber security Google Ads campaigns require a deep understanding of buyer psychology, technical credibility, and strategic execution. By implementing these proven strategies and maintaining focus on both emergency response and proactive security needs, your cyber security company can capture high-value clients and achieve predictable growth.
         </p>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default CyberSecurityGoogleAds;
 

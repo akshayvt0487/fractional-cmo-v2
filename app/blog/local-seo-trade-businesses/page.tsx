@@ -9,6 +9,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 
 import { Card, CardContent } from '@/components/ui/card';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -67,6 +68,21 @@ const LocalSEOTrade = () => {
     readTime: "25 min read",
     tags: ["Local SEO", "Trade Business", "Digital Marketing", "Lead Generation", "Google Business Profile"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2700,
+    readTime: "PT25M"
+  });
+
   const faqs = [{
     question: "How long does it take to see results from local SEO for trade businesses?",
     answer: "Most trade businesses see initial improvements in local search visibility within 3-6 months, with significant lead generation increases typically occurring within 6-12 months of consistent implementation."
@@ -77,7 +93,12 @@ const LocalSEOTrade = () => {
     question: "How do I compete with large national trade companies in local search?",
     answer: "Focus on hyperlocal content, community involvement, and personalized service stories. Large companies can't match local knowledge, community connections, and personalized customer service that local trade businesses provide."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/local-seo-trade.jpg'} heroAlt="Local SEO Strategy for Trade Businesses - Complete guide to dominating local search">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/local-seo-trade.jpg'} heroAlt="Local SEO Strategy for Trade Businesses - Complete guide to dominating local search">
         <div className="bg-gradient-to-r from-orange-50 to-yellow-50 border-l-4 border-l-orange-500 p-8 mb-8 rounded-lg">
           <h3 className="text-xl font-semibold text-orange-800 mb-2">Industry Insight</h3>
           <p className="text-lg text-gray-700">
@@ -742,7 +763,8 @@ const LocalSEOTrade = () => {
 
         <Citation source="BrightLocal Local Search Industry Survey 2024" url="https://www.brightlocal.com/research/local-search-industry-survey/" title="89% of consumers read reviews for local businesses, with 76% trusting online reviews as much as personal recommendations. Trade businesses with optimized local SEO see 340% more qualified leads on average." />
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default LocalSEOTrade;
 

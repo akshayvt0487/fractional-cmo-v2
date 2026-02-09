@@ -5,6 +5,7 @@ import { Paintbrush, Home, Building, Palette } from 'lucide-react';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const PaintersDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["Digital Marketing", "Painting Business", "Local SEO", "Trade Marketing", "Business Growth"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What digital marketing strategies work best for painting contractors?",
     answer: "The most effective strategies include local SEO optimization, visual portfolio showcasing, Google Ads targeting homeowners, social media marketing on visual platforms, and customer review management. Focus on before/after photos and local community engagement."
@@ -73,7 +89,12 @@ const PaintersDigitalMarketing = () => {
     question: "What's the average ROI for digital marketing in the painting industry?",
     answer: "Well-executed digital marketing campaigns for painters typically generate 3:1 to 5:1 ROI within 6-12 months. Local SEO and Google Ads tend to provide the highest returns, with social media building long-term brand recognition and referrals."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/painters-digital-marketing-hero.jpg'} heroAlt="Professional painting business digital marketing and client acquisition">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/painters-digital-marketing-hero.jpg'} heroAlt="Professional painting business digital marketing and client acquisition">
       <p className="text-xl text-muted-foreground mb-8">
         The painting industry is highly competitive, with success often depending on local reputation and visual showcasing. Digital marketing has become essential for painting contractors to attract homeowners, demonstrate their craftsmanship, and build a sustainable business. This guide reveals proven strategies that top painting businesses use to dominate their local markets.
       </p>
@@ -356,7 +377,8 @@ const PaintersDigitalMarketing = () => {
         <li>Implement referral programs</li>
       </ul>
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default PaintersDigitalMarketing;
 

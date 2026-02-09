@@ -7,6 +7,7 @@ import { CheckCircle, Smartphone, Monitor, Search, Share2, BarChart, Shield, Zap
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const NDISDigitalMarketingExcellence = () => {
     readTime: "24 min read",
     tags: ["NDIS", "Digital Marketing", "Advanced Tactics", "Disability Services", "Marketing Excellence", "Compliance", "Automation"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "What makes NDIS digital marketing different from traditional healthcare marketing?",
     answer: "NDIS digital marketing requires specialized compliance knowledge, participant-centered messaging, outcome-focused content, and understanding of NDIS funding structures. It emphasizes accessibility, dignity, and choice while meeting strict regulatory requirements."
@@ -75,7 +91,12 @@ const NDISDigitalMarketingExcellence = () => {
     question: "What automation tools work best for NDIS digital marketing?",
     answer: "Use CRM systems with NDIS compliance features, automated email nurture sequences, lead scoring models, participant journey mapping, and integrated reporting dashboards. Ensure all tools maintain data privacy and accessibility standards."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-digital-marketing-excellence.jpg'} heroAlt="Advanced NDIS digital marketing strategies and materials for excellence in 2026">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-digital-marketing-excellence.jpg'} heroAlt="Advanced NDIS digital marketing strategies and materials for excellence in 2026">
         {/* Digital Marketing Excellence Metrics */}
         <Card className="mb-12 bg-primary/5 border-primary/20">
           <CardHeader>
@@ -734,7 +755,8 @@ const NDISDigitalMarketingExcellence = () => {
         </CardContent>
       </Card>
 
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default NDISDigitalMarketingExcellence;
 

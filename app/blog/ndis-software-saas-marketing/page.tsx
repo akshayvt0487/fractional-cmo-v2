@@ -9,7 +9,7 @@ import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
 import StrategyForm from "@/components/ui/strategy-form";
 import InternalLinks from "@/components/InternalLinks";
 import Citation from "@/components/Citation";
-import { generateArticleSchema } from "@/utils/seoUtils";
+import { generateArticleSchema, generateBlogPostingSchema } from "@/utils/seoUtils";
 import SEO from "@/components/SEO";
 // useContentGate is a client hook — removed from server page to avoid server-side invocation
 export const metadata = createMetadata({
@@ -67,6 +67,19 @@ const NDISSoftwareSaaSMarketing = () => {
     url: "/blog/ndis-software-saas-marketing",
     imageUrl: "/images/blog/ndis-provider-registration-new.jpg"
   });
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: "NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies",
+    description: "Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively.",
+    author: "Basheer Padanna",
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2024-01-20",
+    url: "/blog/ndis-software-saas-marketing",
+    imageUrl: "/images/blog/ndis-provider-registration-new.jpg",
+    category: "SaaS Marketing",
+    readTime: "22 min read"
+  });
+
   const relatedArticles = [{
     title: "NDIS Software SaaS Positioning Strategy",
     description: "Learn how to position your NDIS software effectively in a competitive market.",
@@ -89,6 +102,10 @@ const NDISSoftwareSaaSMarketing = () => {
     category: "Digital Marketing"
   }];
   return <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
       <SEO title="NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies" description="Master NDIS software marketing with proven SaaS strategies. Learn how to reach NDIS providers, build trust, and scale your B2B software platform effectively." canonical="/blog/ndis-software-saas-marketing" ogType="article" articlePublishedTime={convertDateFormat(post.date) + "T00:00:00Z"} articleModifiedTime="2024-01-20T00:00:00Z" articleTags={["NDIS", "SaaS Marketing", "B2B Software", "Digital Marketing", "Growth Strategy"]} structuredData={articleSchema} />
       <Header />
       <div className="min-h-screen bg-background pt-24">

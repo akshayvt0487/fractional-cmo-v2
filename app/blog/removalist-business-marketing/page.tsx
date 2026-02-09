@@ -5,6 +5,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent } from "@/components/ui/card";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 
 export const metadata = createMetadata({
   robots: {
@@ -64,6 +65,21 @@ const RemovalistBusinessMarketing = () => {
     readTime: "24 min read",
     tags: ["removalist business", "marketing strategies", "trust building", "local SEO"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2800,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "How can removalist businesses build trust with potential customers?",
     answer: "Build trust through professional website design, verified customer reviews, clear pricing, comprehensive insurance coverage display, AFRA membership, and transparent communication about services and policies."
@@ -77,7 +93,12 @@ const RemovalistBusinessMarketing = () => {
     question: "What's the best way to price removalist services competitively?",
     answer: "Offer transparent hourly rates ($80-150 for 2-person teams), fixed quotes based on home size, volume-based pricing, and distance factors. Always provide written estimates and avoid hidden fees."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage="/images/blog/removalist-business-marketing.jpg" heroAlt="Removalist business marketing strategies and customer trust building">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage="/images/blog/removalist-business-marketing.jpg" heroAlt="Removalist business marketing strategies and customer trust building">
       <Card className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
@@ -781,7 +802,8 @@ const RemovalistBusinessMarketing = () => {
                       </Card>
                     </div>
       </section>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default RemovalistBusinessMarketing;
 

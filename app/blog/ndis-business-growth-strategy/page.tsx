@@ -7,6 +7,7 @@ import { CheckCircle, Users, TrendingUp, Target, Shield, Calendar, DollarSign, B
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
 import { relatedArticles } from "@/utils/seoUtils";
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -65,6 +66,21 @@ const NDISBusinessGrowthStrategy = () => {
     readTime: "26 min read",
     tags: ["NDIS", "Business Growth", "Disability Services", "Scaling Strategy", "Participant Acquisition"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What's the most effective way to scale an NDIS business sustainably?",
     answer: "Focus on compliance-first growth with systematic participant acquisition, staff development programs, and technology integration. Prioritize quality service delivery over rapid expansion to maintain NDIS standards and participant satisfaction."
@@ -75,7 +91,12 @@ const NDISBusinessGrowthStrategy = () => {
     question: "What are the biggest challenges when scaling NDIS disability services?",
     answer: "Key challenges include maintaining compliance standards during growth, recruiting qualified staff, managing increased operational complexity, and ensuring consistent service quality across expanded operations while meeting participant outcomes."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-business-growth-strategy-new.jpg'} heroAlt="NDIS Business Growth Strategy - Sustainable scaling for disability service providers">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={'/images/blog/ndis-business-growth-strategy-new.jpg'} heroAlt="NDIS Business Growth Strategy - Sustainable scaling for disability service providers">
         {/* Key Statistics */}
         <Card className="mb-12 bg-primary/5 border-primary/20">
           <CardHeader>
@@ -285,7 +306,8 @@ const NDISBusinessGrowthStrategy = () => {
           </p>
         </div>
 
-      </OptimizedBlogLayout>;
+      </OptimizedBlogLayout>
+    </>;
 };
 export default NDISBusinessGrowthStrategy;
 

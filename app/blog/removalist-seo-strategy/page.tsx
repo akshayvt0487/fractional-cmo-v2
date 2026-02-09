@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -77,8 +78,28 @@ const RemovalistSEOStrategy = () => {
       imageUrl: "/images/blog/removalist-seo-strategy-hero.jpg",
       url: "/blog/removalist-seo-strategy"
     };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2200,
+    readTime: "PT24M"
+  });
+
   
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/removalist-seo-strategy-hero.jpg'} heroAlt="Complete SEO strategy guide for removalist businesses showing analytics dashboard">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/removalist-seo-strategy-hero.jpg'} heroAlt="Complete SEO strategy guide for removalist businesses showing analytics dashboard">
       <div className="space-y-8">
         <section>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -759,6 +780,7 @@ const RemovalistSEOStrategy = () => {
 
 
       </div>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default RemovalistSEOStrategy;

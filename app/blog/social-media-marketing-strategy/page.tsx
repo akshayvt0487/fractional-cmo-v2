@@ -5,6 +5,7 @@ import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import Citation from '@/components/Citation';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const SocialMediaMarketingStrategy = () => {
     readTime: "25 min read",
     tags: ["Social Media Marketing", "Digital Marketing", "Lead Generation", "Business Growth", "Content Strategy"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT25M"
+  });
+
   const faqs = [{
     question: "Which social media platforms work best for service businesses?",
     answer: "LinkedIn dominates B2B service marketing with 80% of leads, while Facebook works well for local services. Choose 2-3 platforms where your ideal clients are most active rather than trying to be everywhere."
@@ -73,7 +89,12 @@ const SocialMediaMarketingStrategy = () => {
     question: "What's the best way to measure social media ROI for services?",
     answer: "Track lead generation volume and quality, cost per lead by platform, lead-to-customer conversion rate, and customer lifetime value from social channels. Use proper attribution tracking with UTM parameters."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/social-media-marketing-strategy-hero.jpg'} heroAlt="Professional social media marketing strategy dashboard showing analytics and engagement metrics">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/social-media-marketing-strategy-hero.jpg'} heroAlt="Professional social media marketing strategy dashboard showing analytics and engagement metrics">
       <Card className="p-8 mb-8">
                   <p className="text-lg leading-relaxed text-muted-foreground">
                     In today&apos;s digital-first economy, <strong>93% of businesses report that social media marketing has increased their brand exposure</strong> according to Social Media Examiner&apos;s 2024 industry report. For service businesses, social media isn&apos;t just about posting content—it&apos;s about building relationships, demonstrating expertise, and creating a consistent pipeline of qualified leads.
@@ -322,7 +343,8 @@ const SocialMediaMarketingStrategy = () => {
                     Remember that social media success is a marathon, not a sprint. The service businesses that win on social media are those that provide consistent value, build authentic relationships, and position themselves as trusted advisors in their industry. Your expertise is your competitive advantage&mdash;let social media amplify it.
                   </p>
         <Citation source="Social Media Examiner Industry Report 2024" url="https://www.socialmediaexaminer.com/social-media-marketing-industry-report/" title="93% of businesses report that social media marketing has increased their brand exposure, with 89% stating it has increased traffic to their websites." />
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default SocialMediaMarketingStrategy;
 

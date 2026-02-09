@@ -1,6 +1,8 @@
 import { createMetadata } from "@/lib/seo";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { blogPosts } from '@/data/blogPosts';
+import Link from "next/link";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 
 export const metadata = createMetadata({
   robots: { index: true, follow: true, nocache: false },
@@ -55,18 +57,35 @@ const ImmigrationLawyersDigitalMarketing = () => {
     readTime: post.readTime
   };
 
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: post.title,
+    description: post.excerpt,
+    author: post.author,
+    publishedDate: convertDateFormat(post.date),
+    modifiedDate: "2025-12-16",
+    url: `/blog/${post.slug}`,
+    imageUrl: post.image,
+    keywords: ["Immigration Lawyers", "Digital Marketing", "Legal Marketing", "Client Acquisition", "Immigration Law"],
+    category: post.category,
+    wordCount: 4500,
+    readTime: "PT22M"
+  });
+
   return (
-    <OptimizedBlogLayout
-      articleData={articleData}
-      heroImage={post.image}
-      heroAlt={post.title}
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <OptimizedBlogLayout
+        articleData={articleData}
+        heroImage={post.image}
+        heroAlt={post.title}
+      >
       <h2>Why Immigration Lawyers Need Specialised Digital Marketing</h2>
       <p>
-        Immigration law is one of the most competitive legal niches in Australia, with clients actively searching online 
-        for help with skilled worker visas, partner visas, student visas, business migration, and citizenship applications. 
-        Unlike other legal services, immigration clients often research extensively before choosing a lawyer, making your 
-        digital presence crucial for building trust and attracting quality leads.
+        Immigration law is one of the most competitive legal niches in Australia, with clients actively searching online for help with skilled worker visas, partner visas, student visas, business migration, and citizenship applications. Unlike other legal services, immigration clients often research extensively before choosing a lawyer, making <Link href="/services/digital-marketing"> Digital Marketing that drives growth </Link> crucial for building trust and attracting quality leads.
+
       </p>
       <p>
         The Australian immigration landscape is complex and constantly evolving, with regular changes to visa categories, 
@@ -276,16 +295,15 @@ const ImmigrationLawyersDigitalMarketing = () => {
 
       <h2>Conclusion</h2>
       <p>
-        Digital marketing for immigration lawyers requires a strategic, multichannel approach that builds trust, 
-        demonstrates expertise, and reaches potential clients where they\u0027re searching. By combining strong SEO, 
-        targeted advertising, valuable content, and active reputation management, you can establish your practice 
-        as a leading immigration law firm and attract a consistent flow of quality clients across all visa categories.
+       <Link href="/services/digital-marketing/lawyers">Digital marketing for immigration lawyers</Link> requires a strategic, multichannel approach that builds trust, demonstrates expertise, and reaches potential clients where they are searching. By combining strong <Link href="/services/seo-services">SEO</Link>, targeted advertising, valuable content, and active reputation management, you can establish your practice as a leading immigration law firm and attract a consistent flow of quality clients across all visa categories.
+
       </p>
       <p>
         Remember that immigration clients often have complex, emotional needs and deserve marketing that respects 
         their journey while clearly communicating how your expertise can help them achieve their migration goals.
       </p>
     </OptimizedBlogLayout>
+    </>
   );
 };
 

@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/liquidators-google-ads-hero.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
     return date.toISOString().split('T')[0];
@@ -82,15 +83,36 @@ const LiquidatorsGoogleAds = () => {
     return date.toISOString().split('T')[0];
   };
 
-  return <OptimizedBlogLayout articleData={{
-    headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2026",
+  
+  const articleData = {headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2026",
     description: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimize conversion rates, and maximize ROI for insolvency practitioners.",
     publishedDate: convertDateFormat(post.date),
     url: "/blog/liquidators-google-ads-ppc-strategy",
     readTime: "13 min read",
     category: "Legal",
-    author: "Basheer Padanna"
-  }} heroImage={heroImage} heroAlt="Google Ads for Liquidators" relatedArticles={relatedArticles}>
+    author: "Basheer Padanna"};
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2700,
+    readTime: "PT13M"
+  });
+
+
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Google Ads for Liquidators" relatedArticles={relatedArticles}>
       <p className="lead text-xl text-muted-foreground mb-8">
         When a director searches &quot;liquidator near me urgent&quot; or &quot;company liquidation Sydney&quot;, you need to be the first name they see. Google Ads delivers immediate visibility for high-value liquidation appointments—when properly executed. This guide reveals the exact strategies that drive results for liquidators.
       </p>
@@ -836,6 +858,7 @@ const LiquidatorsGoogleAds = () => {
         <h3 className="text-xl font-semibold mb-4">Citations & Resources</h3>
         {citations.map((citation, index) => <Citation key={index} {...citation} />)}
       </div>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default LiquidatorsGoogleAds;

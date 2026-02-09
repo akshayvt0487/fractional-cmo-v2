@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import Citation from "@/components/Citation";
 import InternalLinks from "@/components/InternalLinks";
 import heroImage from "@/assets/blog/insolvency-digital-marketing-hero.jpg";
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
     return date.toISOString().split('T')[0];
@@ -82,15 +83,36 @@ const InsolvencyDigitalMarketing = () => {
     return date.toISOString().split('T')[0];
   };
 
-  return <OptimizedBlogLayout articleData={{
-    headline: "Digital Marketing Strategy for Insolvency Practitioners: Complete 2026 Guide",
+  
+  const articleData = {headline: "Digital Marketing Strategy for Insolvency Practitioners: Complete 2026 Guide",
     description: "Master digital marketing for insolvency practices. Proven strategies to attract corporate clients, build authority, and grow your insolvency practice in competitive markets.",
     publishedDate: convertDateFormat(post.date),
     url: "/blog/insolvency-digital-marketing",
     readTime: "14 min read",
     category: "Legal",
-    author: "Basheer Padanna"
-  }} heroImage={heroImage} heroAlt="Digital Marketing for Insolvency Practitioners" relatedArticles={relatedArticles}>
+    author: "Basheer Padanna"};
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2100,
+    readTime: "PT14M"
+  });
+
+
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Digital Marketing for Insolvency Practitioners" relatedArticles={relatedArticles}>
       <p className="lead text-xl text-muted-foreground mb-8">
         Insolvency practitioners face unique marketing challenges—highly regulated services, crisis-driven demand, and sophisticated B2B clients. This guide reveals the digital marketing strategies that drive sustainable growth for insolvency practices in 2026.
       </p>
@@ -707,6 +729,7 @@ const InsolvencyDigitalMarketing = () => {
         <h3 className="text-xl font-semibold mb-4">Citations & Resources</h3>
         {citations.map((citation, index) => <Citation key={index} {...citation} />)}
       </div>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default InsolvencyDigitalMarketing;

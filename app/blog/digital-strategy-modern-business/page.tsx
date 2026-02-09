@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const DigitalStrategyModernBusiness = () => {
     readTime: "30 min read",
     tags: ["Digital Strategy", "Business Transformation", "Technology Integration", "Change Management", "Digital Innovation"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 2000,
+    readTime: "PT30M"
+  });
+
   const faqs = [{
     question: "How long does digital transformation take for most businesses?",
     answer: "Digital transformation is an ongoing process, but most businesses see initial results within 6-12 months. Complete transformation typically takes 2-3 years, depending on company size and complexity."
@@ -73,7 +89,12 @@ const DigitalStrategyModernBusiness = () => {
     question: "How much should companies budget for digital transformation?",
     answer: "Most successful companies invest 3-9% of revenue in digital transformation initiatives. The exact amount depends on industry, current digital maturity, and transformation scope."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/digital-strategy-modern-business-hero.jpg'} heroAlt="Digital strategy planning session with business transformation roadmap">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/digital-strategy-modern-business-hero.jpg'} heroAlt="Digital strategy planning session with business transformation roadmap">
       <p className="text-xl text-muted-foreground mb-8">
         In today&apos;s rapidly evolving digital landscape, businesses that fail to adapt their strategies face extinction. Digital transformation isn&apos;t just about adopting new technologies—it&apos;s about fundamentally reimagining how your business creates value, engages customers, and competes in the marketplace.
       </p>
@@ -583,7 +604,8 @@ const DigitalStrategyModernBusiness = () => {
       <p>
         The businesses that thrive in the digital age are those that view technology not as a cost center, but as a strategic enabler of growth, efficiency, and customer value creation. Start building your comprehensive digital strategy today to secure your competitive advantage tomorrow.
       </p>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default DigitalStrategyModernBusiness;
 

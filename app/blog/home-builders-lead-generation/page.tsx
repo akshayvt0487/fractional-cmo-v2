@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/card';
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -62,6 +63,21 @@ const HomeBuildersLeadGeneration = () => {
     readTime: "26 min read",
     tags: ["Home Builders", "Lead Generation", "Construction Marketing", "Digital Marketing", "Client Acquisition"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1700,
+    readTime: "PT26M"
+  });
+
   const faqs = [{
     question: "What's the best lead generation strategy for home builders?",
     answer: "A combination of showcase marketing, local SEO, and referral programs works best. Focus on visual content that demonstrates quality craftsmanship while optimizing for local search to capture prospects actively looking for builders."
@@ -72,7 +88,12 @@ const HomeBuildersLeadGeneration = () => {
     question: "Should home builders focus on custom or spec home marketing?",
     answer: "Both markets require different approaches. Custom home marketing emphasizes luxury and personalization, while spec home marketing focuses on move-in ready convenience and value. Consider your target market and capabilities."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={'/images/blog/home-builders-lead-generation-hero.jpg'} heroAlt="Home builders lead generation and digital marketing strategies">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.construction} faqs={faqs} heroImage={'/images/blog/home-builders-lead-generation-hero.jpg'} heroAlt="Home builders lead generation and digital marketing strategies">
       <p className="text-xl text-muted-foreground mb-8">
         The home building industry is highly competitive, with success depending on attracting quality prospects who are ready to invest in custom homes. Digital lead generation has become essential for builders to consistently attract qualified clients, showcase their craftsmanship, and build a sustainable pipeline of high-value projects.
       </p>
@@ -558,7 +579,8 @@ const HomeBuildersLeadGeneration = () => {
           Ready to transform your lead generation? Implement this comprehensive strategy to attract quality prospects and grow your building business sustainably.
         </p>
       </Card>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default HomeBuildersLeadGeneration;
 

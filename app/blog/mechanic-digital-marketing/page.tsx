@@ -5,6 +5,7 @@ import { relatedArticles } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Wrench, AlertTriangle, Building, Zap, Search, Users, Video, Play, MessageCircle, Star, CheckCircle } from 'lucide-react';
+import { generateBlogPostingSchema } from '@/utils/seoUtils';
 export const metadata = createMetadata({
   robots: {
     index: true,
@@ -63,6 +64,21 @@ const MechanicDigitalMarketing = () => {
     readTime: "24 min read",
     tags: ["automotive marketing", "mechanic business", "digital marketing", "customer acquisition"]
   };
+
+  const blogPostingSchema = generateBlogPostingSchema({
+    headline: articleData.headline,
+    description: articleData.description,
+    author: articleData.author || "Basheer Padanna",
+    publishedDate: articleData.publishedDate,
+    modifiedDate: "2026-10-31",
+    url: articleData.url,
+    imageUrl: articleData.imageUrl,
+    keywords: articleData.tags || [],
+    category: articleData.category,
+    wordCount: 1000,
+    readTime: "PT24M"
+  });
+
   const faqs = [{
     question: "How can digital marketing help my auto repair shop?",
     answer: "Digital marketing helps mechanics build trust with potential customers, showcase expertise through educational content, attract customers actively searching for auto repair services, and maintain relationships that lead to repeat business and referrals."
@@ -76,7 +92,12 @@ const MechanicDigitalMarketing = () => {
     question: "Should mechanics use social media marketing?",
     answer: "Yes, social media is excellent for showing your work, building community trust, and educational content. Facebook is great for local engagement, Instagram for showing repairs, and YouTube for detailed automotive tutorials."
   }];
-  return <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/mechanic-digital-marketing-hero.jpg'} heroAlt="Professional automotive service digital marketing and customer acquisition">
+  return <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+    />
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/mechanic-digital-marketing-hero.jpg'} heroAlt="Professional automotive service digital marketing and customer acquisition">
       <p className="text-xl text-muted-foreground mb-8">
         The automotive service industry is built on trust and expertise, but in today&apos;s digital world, even the best mechanics need strong online marketing to attract and retain customers. This comprehensive guide reveals proven digital marketing strategies that successful automotive service businesses use to build their reputation, attract loyal customers, and grow sustainably.
       </p>
@@ -425,7 +446,8 @@ const MechanicDigitalMarketing = () => {
           </CardContent>
         </Card>
       </div>
-    </OptimizedBlogLayout>;
+    </OptimizedBlogLayout>
+    </>;
 };
 export default MechanicDigitalMarketing;
 
