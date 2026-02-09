@@ -31,6 +31,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/(.*)",
+        has: [
+          {
+            type: "host",
+            value: "www.fractional-cmo.com.au"
+          }
+        ],
+        destination: "https://fractional-cmo.com.au/$1",
+        permanent: true
+      },
+      {
         source: '/blog/accounting-digital-marketing-guide',
         destination: '/blog/accounting-digital-marketing',
         permanent: true,

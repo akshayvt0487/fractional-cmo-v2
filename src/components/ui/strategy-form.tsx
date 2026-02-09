@@ -12,6 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 import { databases, APPWRITE_DATABASE_ID, APPWRITE_COLLECTION_STRATEGY_FORM_ID } from "@/integrations/appwrite/client";
 import { ID } from "appwrite";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { sendStrategyFormNotification } from "@/lib/email";
 
 const basheerImage = "/lovable-uploads/2975c655-d01c-4894-8737-276899af3f17.png";
 
@@ -64,6 +65,9 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
         ID.unique(),
         formData
       );
+
+      // Send notification email to admin
+      await sendStrategyFormNotification(formData);
 
       toast({
         title: "Request submitted!",

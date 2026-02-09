@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fractional-cmo.com.au"
+        }
+      ],
+      "destination": "https://fractional-cmo.com.au/$1",
+      "permanent": true
+    }
+  ]
+}

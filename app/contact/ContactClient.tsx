@@ -20,6 +20,7 @@ import { ID } from "appwrite";
 import { Mail, Phone, MapPin, Send, Shield, Clock, Star, Users, CheckCircle, Award } from "lucide-react";
 import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
+import { sendContactFormNotification } from "@/lib/email";
 
 // 🟢 CORRECTED: Moved serviceMapping outside the component
 // This prevents an infinite re-render loop by creating a stable constant.
@@ -79,6 +80,9 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
         ID.unique(),
         formData
       );
+
+      // Send notification email to admin
+      await sendContactFormNotification(formData);
 
       // Navigate to thank you page
       router.push('/thank-you');

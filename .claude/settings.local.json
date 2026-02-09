@@ -16,7 +16,8 @@
       "Bash(python scripts/add_blog_schema.py:*)",
       "Bash(find:*)",
       "Bash(python scripts/validate_blog_schemas.py:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git reset:*)"
     ]
   }
 }
