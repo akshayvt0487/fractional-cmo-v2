@@ -52,16 +52,16 @@ const ThankYou = () => {
       
       <Header />
       
-      <main className="min-h-screen flex items-center justify-center py-16 px-4 bg-gradient-to-br from-background to-muted/30"> {/* Added subtle gradient */}
+      <main className="min-h-screen flex items-center justify-center py-16 px-4 bg-gradient-to-br from-background to-muted/30 mt-10 "> {/* Added subtle gradient */}
         <div className="max-w-2xl w-full mx-auto text-center">
           {/* Applied Tailwind classes directly for glass effect */}
-          <Card className="bg-card/80 backdrop-blur-lg border border-border/20 shadow-xl rounded-xl p-8 md:p-12"> 
+          <Card className="bg-card/80 backdrop-blur-lg border border-border/20 shadow-xl rounded-xl p-8 md:p-12 bg-gray-200/80 border-2 border-gray-200 mt-10"> 
             <CardContent className="space-y-6">
               <div className="flex justify-center mb-4"> {/* Added margin */}
-                <CheckCircle className="w-16 h-16 text-primary animate-pulse" /> {/* Added subtle animation */}
+                <CheckCircle className="w-16 h-16 text-green-700 animate-pulse" /> {/* Added subtle animation */}
               </div>
               
-              <div className="space-y-4">
+              <div className="space-y-4 ">
                 <h1 className="text-3xl md:text-4xl font-bold text-foreground"> {/* Ensured text color */}
                   Thank You!
                 </h1>
@@ -97,16 +97,16 @@ const ThankYou = () => {
                 </p>
                 
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-  <Button variant="outline" asChild>
+  <Button variant="outline" className="border-2 border-gray-300 bg-gray-700 text-white" asChild>
     <Link href="/blog">
-      <span className="inline-flex items-center"> 
-        <MessageCircle className="w-4 h-4 mr-2" />
+      <span className="inline-flex items-center "> 
+        <MessageCircle className="w-4 h-4 mr-2 " />
         Read Latest Insights
       </span>
     </Link>
   </Button>
   
-  <Button variant="secondary" asChild>
+  <Button variant="secondary" className="border " asChild>
     <Link href="/about">
       <span className="inline-flex items-center"> 
         Learn More About Me
