@@ -7,7 +7,9 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { supabase } from '@/integrations/supabase/client';
+import { databases, APPWRITE_DATABASE_ID, APPWRITE_COLLECTION_STRATEGY_FORM_ID } from '@/integrations/appwrite/client';
+import { ID } from 'appwrite';
+import { sendStrategyFormNotification } from '@/lib/email';
 import { Send, CheckCircle } from 'lucide-react';
 
 interface StrategyFormInlineProps {
@@ -36,14 +38,31 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke('submit-strategy-form', {
-        body: {
-          ...formData,
-          service: preSelectedService
+      // Save to Appwrite database
+      await databases.createDocument(
+        APPWRITE_DATABASE_ID,
+        APPWRITE_COLLECTION_STRATEGY_FORM_ID,
+        ID.unique(),
+        {
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || null,
+          phone: formData.phone || null,
+          service: preSelectedService || null,
+          challenge: formData.challenge,
+          created_at: new Date().toISOString()
         }
+      );
+
+      // Send email notification
+      const emailResult = await sendStrategyFormNotification({
+        ...formData,
+        service: preSelectedService
       });
 
-      if (error) throw error;
+      if (!emailResult.success) {
+        console.error('Email notification failed:', emailResult.error);
+      }
 
       setIsSubmitted(true);
       toast({

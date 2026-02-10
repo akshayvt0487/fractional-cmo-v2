@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Download, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+import { sendLeadMagnetNotification } from "@/lib/email";
 import jsPDF from "jspdf";
 
 interface DownloadFormProps {
@@ -171,18 +171,17 @@ const DownloadForm = ({ title, filename, variant = "outline", size = "lg" }: Dow
 
     try {
       // Send lead magnet notification email
-      const { error: emailError } = await supabase.functions.invoke('send-lead-magnet-email', {
-        body: {
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          guideName: title,
-          filename: filename
-        }
+      const emailResult = await sendLeadMagnetNotification({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        guideName: title,
+        filename: filename
       });
 
-      if (emailError) {
-        throw emailError;
+      if (!emailResult.success) {
+        console.error('Email notification failed:', emailResult.error);
+        // Continue with download even if email fails
       }
 
       // Generate and download the enhanced PDF

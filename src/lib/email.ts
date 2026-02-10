@@ -4,6 +4,7 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+const EMAIL_FROM = 'notifications@fractional-cmo.com.au';
 const PRIMARY_RECIPIENT = 'basheer@dsigns.com.au';
 const CC_RECIPIENTS = ['akshay@dsigns.com.au', 'admin@dsigns.com.au'];
 
@@ -25,6 +26,14 @@ interface ContactFormData {
   phone?: string;
   service?: string;
   message: string;
+}
+
+interface LeadMagnetFormData {
+  name: string;
+  email: string;
+  phone?: string;
+  guideName: string;
+  filename: string;
 }
 
 export async function sendStrategyFormNotification(formData: StrategyFormData) {
@@ -55,7 +64,7 @@ export async function sendStrategyFormNotification(formData: StrategyFormData) {
     `;
 
     const response = await resend.emails.send({
-      from: 'noreply@dsigns.com.au',
+      from: EMAIL_FROM,
       to: PRIMARY_RECIPIENT,
       cc: CC_RECIPIENTS,
       subject: `New Strategy Form Submission from ${formData.name}`,
@@ -74,7 +83,7 @@ export async function sendContactFormNotification(formData: ContactFormData) {
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #1A2235;">New Contact Form Submission</h2>
-        
+
         <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
           <p><strong>Name:</strong> ${formData.name}</p>
           <p><strong>Email:</strong> <a href="mailto:${formData.email}">${formData.email}</a></p>
@@ -82,12 +91,12 @@ export async function sendContactFormNotification(formData: ContactFormData) {
           ${formData.phone ? `<p><strong>Phone:</strong> <a href="tel:${formData.phone}">${formData.phone}</a></p>` : ''}
           ${formData.service ? `<p><strong>Service Interest:</strong> ${formData.service}</p>` : ''}
         </div>
-        
+
         <div style="margin: 20px 0;">
           <h3 style="color: #1A2235;">Message:</h3>
           <p style="white-space: pre-wrap;">${formData.message}</p>
         </div>
-        
+
         <p style="color: #666; font-size: 12px; margin-top: 30px;">
           This is an automated notification from your website form submissions.
         </p>
@@ -95,7 +104,7 @@ export async function sendContactFormNotification(formData: ContactFormData) {
     `;
 
     const response = await resend.emails.send({
-      from: 'noreply@dsigns.com.au',
+      from: EMAIL_FROM,
       to: PRIMARY_RECIPIENT,
       cc: CC_RECIPIENTS,
       subject: `New Contact Form Submission from ${formData.name}`,
@@ -105,6 +114,41 @@ export async function sendContactFormNotification(formData: ContactFormData) {
     return { success: true, messageId: response.data?.id };
   } catch (error) {
     console.error('Error sending contact form notification:', error);
+    return { success: false, error };
+  }
+}
+
+export async function sendLeadMagnetNotification(formData: LeadMagnetFormData) {
+  try {
+    const html = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #1A2235;">New Lead Magnet Download</h2>
+
+        <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p><strong>Name:</strong> ${formData.name}</p>
+          <p><strong>Email:</strong> <a href="mailto:${formData.email}">${formData.email}</a></p>
+          ${formData.phone ? `<p><strong>Phone:</strong> <a href="tel:${formData.phone}">${formData.phone}</a></p>` : ''}
+          <p><strong>Downloaded Guide:</strong> ${formData.guideName}</p>
+          <p><strong>Filename:</strong> ${formData.filename}</p>
+        </div>
+
+        <p style="color: #666; font-size: 12px; margin-top: 30px;">
+          This is an automated notification from your website lead magnet downloads.
+        </p>
+      </div>
+    `;
+
+    const response = await resend.emails.send({
+      from: EMAIL_FROM,
+      to: PRIMARY_RECIPIENT,
+      cc: CC_RECIPIENTS,
+      subject: `New Lead Magnet Download: ${formData.guideName} - ${formData.name}`,
+      html,
+    });
+
+    return { success: true, messageId: response.data?.id };
+  } catch (error) {
+    console.error('Error sending lead magnet notification:', error);
     return { success: false, error };
   }
 }
