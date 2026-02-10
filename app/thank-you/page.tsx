@@ -70,23 +70,23 @@ const ThankYou = () => {
                 </p>
               </div>
 
-              <div className="bg-accent/50 rounded-lg p-6 space-y-4 border border-border/10"> {/* Adjusted background opacity */}
-                <h2 className="text-xl font-semibold flex items-center justify-center gap-2 text-foreground"> {/* Ensured text color */}
-                  <Calendar className="w-5 h-5 text-primary" /> {/* Added color */}
+              <div className="bg-accent/50 rounded-lg p-6 space-y-4 border border-border/10">
+                <h2 className="text-xl font-semibold flex items-center justify-center gap-2 text-foreground">
+                  <Calendar className="w-5 h-5 text-primary" />
                   What happens next?
                 </h2>
-                <div className="space-y-3 text-sm text-muted-foreground text-left"> {/* Aligned text left */}
+                <div className="space-y-3 text-sm text-muted-foreground">
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 shrink-0"></div> {/* Adjusted alignment */}
-                    <p>I&apos;ll personally review your submission and get back to you within <strong>24 business hours</strong>.</p>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-1.5 shrink-0"></div>
+                    <p className="text-left">I&apos;ll personally review your submission and get back to you within <strong className="text-foreground">24 business hours</strong>.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-1.5 shrink-0"></div>
-                    <p>We&apos;ll schedule a convenient time for your free <strong>45-minute strategy call</strong> via email.</p>
+                    <p className="text-left">We&apos;ll schedule a convenient time for your free <strong className="text-foreground">45-minute strategy call</strong> via email.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-1.5 shrink-0"></div>
-                    <p>I&apos;ll prepare some initial thoughts based on your submission for our call.</p>
+                    <p className="text-left">I&apos;ll prepare some initial thoughts based on your submission for our call.</p>
                   </div>
                 </div>
               </div>

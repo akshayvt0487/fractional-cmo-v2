@@ -4,7 +4,7 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const EMAIL_FROM = 'notifications@fractional-cmo.com.au';
+const EMAIL_FROM = 'Fractional CMO <notifications@fractional-cmo.com.au>';
 const PRIMARY_RECIPIENT = 'basheer@dsigns.com.au';
 const CC_RECIPIENTS = ['akshay@dsigns.com.au', 'admin@dsigns.com.au'];
 
