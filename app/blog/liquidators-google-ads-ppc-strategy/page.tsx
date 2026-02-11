@@ -77,13 +77,24 @@ const LiquidatorsGoogleAds = () => {
   }];
   const post = blogPosts.find(p => p.slug === "liquidators-google-ads-ppc-strategy");
   if (!post) throw new Error("Blog post not found: liquidators-google-ads-ppc-strategy");
-  
+
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
     return date.toISOString().split('T')[0];
   };
 
-  
+  const faqs = [{
+    question: "What should liquidators budget for Google Ads campaigns?",
+    answer: "Liquidators should budget $2,000-$8,000 per month for effective Google Ads campaigns, with higher budgets in competitive metropolitan markets. Start with $3,000-4,000/month to test campaigns across branded, high-intent service, and geographic targeting. Scale budget based on cost per appointment and appointment value, prioritizing campaigns that deliver quality leads at sustainable acquisition costs."
+  }, {
+    question: "What's a good conversion rate for liquidation Google Ads?",
+    answer: "Well-optimized liquidation campaigns typically achieve 5-15% landing page conversion rates with 2-4% click-through rates on search ads. Cost per consultation ranges from $150-400 depending on keyword competitiveness and geographic targeting. Track both form submissions and phone calls, as many liquidation inquiries come through direct phone contact, especially for urgent appointments."
+  }, {
+    question: "Should liquidators run Google Ads 24/7 or only during business hours?",
+    answer: "Run Google Ads 24/7 but adjust bids based on your response capability. Directors often search outside business hours when making difficult decisions. If you have after-hours response systems, maintain full bidding. Otherwise, reduce bids by 30-50% outside business hours while keeping ads active to capture urgent searches. Use dayparting to optimize spend during peak conversion hours while maintaining visibility."
+  }];
+
+
   const articleData = {
     headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2026",
     description: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimize conversion rates, and maximize ROI for insolvency practitioners.",
@@ -116,7 +127,7 @@ const LiquidatorsGoogleAds = () => {
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
     />
-    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Google Ads for Liquidators" relatedArticles={relatedArticles}>
+    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Google Ads for Liquidators" relatedArticles={relatedArticles} faqs={faqs}>
       <p className="lead text-xl text-muted-foreground mb-8">
         When a director searches &quot;liquidator near me urgent&quot; or &quot;company liquidation Sydney&quot;, you need to be the first name they see. Google Ads delivers immediate visibility for high-value liquidation appointments—when properly executed. This guide reveals the exact strategies that drive results for liquidators.
       </p>

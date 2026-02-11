@@ -77,13 +77,24 @@ const LiquidatorsGrowthMarketing = () => {
   }];
   const post = blogPosts.find(p => p.slug === "liquidators-growth-marketing");
   if (!post) throw new Error("Blog post not found: liquidators-growth-marketing");
-  
+
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
     return date.toISOString().split('T')[0];
   };
 
-  
+  const faqs = [{
+    question: "How do liquidators build sustainable referral networks?",
+    answer: "Build sustainable referral networks by providing ongoing value to accountants and lawyers through CPD training, industry insights, and transparent communication. Host quarterly networking events, share anonymized case studies demonstrating your expertise, and maintain rapid response times for referral inquiries. Consistently update referrers on appointment outcomes while maintaining confidentiality to strengthen relationships and generate repeat referrals."
+  }, {
+    question: "What's more important for liquidator growth: direct marketing or referrals?",
+    answer: "Both are essential for balanced growth. Referrals from accountants and lawyers typically provide higher-quality appointments but take 6-12 months to develop. Direct marketing through SEO and Google Ads generates immediate appointment flow while building referral relationships. Successful liquidators allocate 60% of marketing resources to referral development and 40% to direct channels for optimal growth and sustainability."
+  }, {
+    question: "How quickly can liquidators see results from growth marketing?",
+    answer: "Google Ads delivers results within weeks, while SEO takes 3-6 months for meaningful organic traffic growth. Referral partnerships require 6-12 months of consistent engagement before generating steady appointments. Most liquidators see increased appointment flow within 90 days when implementing comprehensive growth marketing, with compounding results as multiple channels mature and referral networks strengthen over time."
+  }];
+
+
   const articleData = {
     headline: "Growth Marketing for Liquidators: Strategic Client Acquisition in 2026",
     description: "Comprehensive growth marketing strategies for liquidators and insolvency practitioners. Learn how to scale your liquidation practice with proven digital marketing tactics.",
@@ -116,7 +127,7 @@ const LiquidatorsGrowthMarketing = () => {
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
     />
-    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Growth Marketing for Liquidators" relatedArticles={relatedArticles}>
+    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Growth Marketing for Liquidators" relatedArticles={relatedArticles} faqs={faqs}>
       <p className="lead text-xl text-muted-foreground mb-8">
         The liquidation and insolvency sector is experiencing unprecedented change. With economic uncertainty driving increased corporate restructuring, liquidators who master growth marketing will capture the majority of new engagements.
       </p>

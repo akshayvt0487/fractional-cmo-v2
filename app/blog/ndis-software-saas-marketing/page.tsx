@@ -56,7 +56,18 @@ const convertDateFormat = (dateString: string): string => {
 const NDISSoftwareSaaSMarketing = () => {
   const post = blogPosts.find(p => p.slug === "ndis-software-saas-marketing");
   if (!post) throw new Error("Blog post not found: ndis-software-saas-marketing");
-  
+
+  const faqs = [{
+    question: "What makes NDIS software marketing different from general SaaS marketing?",
+    answer: "NDIS software marketing requires deep industry knowledge of compliance requirements, provider pain points, and disability services terminology. The audience is smaller and more specialized than general SaaS markets, making relationship-based marketing and industry-specific content critical. Decision cycles are longer due to operational complexity, requiring sophisticated nurture campaigns and stakeholder education throughout the buying journey."
+  }, {
+    question: "Should NDIS software companies focus on large or small providers?",
+    answer: "Most successful NDIS software companies start by serving mid-sized providers (10-50 participants) who have outgrown spreadsheets but lack enterprise budgets. This segment offers the best balance of deal size, implementation complexity, and sales cycle length. Once established, expand to larger enterprise clients or create simplified offerings for smaller providers based on your competitive advantages and market positioning."
+  }, {
+    question: "How important are partnerships in NDIS software marketing?",
+    answer: "Partnerships are crucial for NDIS software growth, providing 30-50% of quality leads for established platforms. Strategic partnerships with NDIS consultants, accounting software providers, and industry associations accelerate market penetration and provide credibility. Develop co-marketing programs, integration partnerships, and referral arrangements to leverage partner networks while building your direct marketing channels for sustainable growth."
+  }];
+
   // Client gating removed during build stabilization: assume content unlocked for prerender
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Marketing: Complete Guide to B2B Growth Strategies",

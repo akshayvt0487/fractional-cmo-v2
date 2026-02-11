@@ -9,6 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/next";
 import DynamicFooter from '@/components/client/DynamicFooter';
+import ScrollBottomPopup from '@/components/ui/scroll-bottom-popup';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -113,6 +114,7 @@ export default function RootLayout({
             {children}
           </Suspense>
           <DynamicFooter />
+          <ScrollBottomPopup />
         </Providers>
       </body>
     </html>

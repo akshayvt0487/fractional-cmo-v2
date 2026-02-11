@@ -50,6 +50,17 @@ const NDISSoftwareSaaSLeadGeneration = () => {
   const post = blogPosts.find(p => p.slug === "ndis-software-saas-lead-generation");
   if (!post) throw new Error("Blog post not found: ndis-software-saas-lead-generation");
 
+  const faqs = [{
+    question: "What's the best lead generation channel for NDIS software companies?",
+    answer: "Content marketing combined with LinkedIn outreach delivers the highest quality leads for NDIS software. Create comprehensive guides on NDIS compliance and software selection to attract providers researching solutions. LinkedIn enables direct connection with decision-makers and builds relationships that convert to sales. Combine with webinars and Google Ads for a multi-channel approach that captures prospects at different buyer journey stages."
+  }, {
+    question: "How long is the typical sales cycle for NDIS software?",
+    answer: "NDIS software sales cycles typically range from 3-6 months from initial contact to contract signing. The buying journey includes 3-6 months of awareness and research, 2-4 months of solution comparison, and 1-3 months of vendor evaluation and negotiation. Complex enterprise deals may extend to 9-12 months. Implement lead nurturing sequences to maintain engagement throughout this extended decision process."
+  }, {
+    question: "What's a good cost per lead for NDIS software marketing?",
+    answer: "NDIS software cost per lead should target $150-250 for marketing qualified leads, with sales qualified leads costing $500-1,000. Customer acquisition costs typically range from $1,500-3,000 depending on deal size and sales cycle complexity. Focus on lead quality over quantity, as a well-qualified lead from a provider with 20+ participants is far more valuable than multiple small provider inquiries."
+  }];
+
   // Client gating removed during build stabilization: assume content unlocked for prerender
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Lead Generation: Convert Prospects into Customers",

@@ -46,6 +46,17 @@ const ImmigrationLawyersGoogleAds = () => {
     return date.toISOString().split('T')[0];
   };
 
+  const faqs = [{
+    question: "How much should immigration lawyers budget for Google Ads?",
+    answer: "Immigration lawyers should budget $3,000-$10,000+ per month depending on location and competition. Start with $3,000-5,000/month to test campaigns, then scale based on performance. High-value visa categories like skilled migration and business visas justify higher budgets due to their substantial case values and strong ROI potential."
+  }, {
+    question: "What's a good conversion rate for immigration lawyer Google Ads?",
+    answer: "Well-optimized immigration law campaigns typically achieve 5-15% conversion rates on landing pages, with 3-6% click-through rates on search ads. Cost per lead typically ranges from $50-200 depending on visa type and market competition. Track both form submissions and phone calls for accurate conversion measurement."
+  }, {
+    question: "Should immigration lawyers bid on competitor names in Google Ads?",
+    answer: "Yes, ethically targeting competitor names can be effective for immigration lawyers. Use competitor keywords to capture prospects comparison shopping, but focus ad copy on your differentiators rather than disparaging competitors. Ensure your landing pages clearly communicate your unique value proposition and MARA credentials to convert these high-intent searchers."
+  }];
+
   const articleData = {
     headline: post.title,
     description: post.excerpt,
@@ -81,6 +92,7 @@ const ImmigrationLawyersGoogleAds = () => {
         articleData={articleData}
         heroImage={post.image}
         heroAlt={post.title}
+        faqs={faqs}
       >
       <h2>Why Google Ads Works for Immigration Lawyers</h2>
       <p>
@@ -342,8 +354,8 @@ const ImmigrationLawyersGoogleAds = () => {
 
       </p>
       <p>
-        Start with your highest-value visa categories, build conversion data, and then expand to additional 
-        campaigns. Regular optimisation, negative keyword management, and landing page testing will improve 
+        Start with your highest-value visa categories, build conversion data, and then expand to additional
+        campaigns. Regular optimisation, negative keyword management, and landing page testing will improve
         performance over time, making Google Ads a sustainable and profitable channel for your immigration practice.
       </p>
     </OptimizedBlogLayout>

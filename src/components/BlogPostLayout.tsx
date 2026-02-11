@@ -110,7 +110,6 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = ({
         {children}
       </div>
 
-
     </article>
   );
 };

@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,16 +14,23 @@ interface ScrollBottomPopupProps {
 const ScrollBottomPopup = ({ onClose }: ScrollBottomPopupProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
+  const pathname = usePathname();
+
+  // Don't show popup on homepage
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
+    // Skip if on homepage
+    if (isHomePage) return;
+
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const scrollHeight = document.documentElement.scrollHeight;
       const clientHeight = document.documentElement.clientHeight;
-      
+
       // Show popup when user scrolls to 90% of the page
       const scrolledToBottom = scrollTop + clientHeight >= scrollHeight * 0.9;
-      
+
       if (scrolledToBottom && !hasShown) {
         setIsVisible(true);
         setHasShown(true);
@@ -31,7 +39,7 @@ const ScrollBottomPopup = ({ onClose }: ScrollBottomPopupProps) => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [hasShown]);
+  }, [hasShown, isHomePage]);
 
   const handleClose = () => {
     setIsVisible(false);

@@ -46,6 +46,17 @@ const ImmigrationLawyersLeadGeneration = () => {
     return date.toISOString().split('T')[0];
   };
 
+  const faqs = [{
+    question: "What are the most effective lead generation channels for immigration lawyers?",
+    answer: "The most effective channels are Google Ads for immediate visibility, SEO for long-term organic traffic, and referral partnerships with accountants and community organizations. Content marketing through visa-specific guides and webinars also drives quality leads. A diversified approach combining paid search, organic content, and professional referrals typically delivers the best results for immigration practices."
+  }, {
+    question: "How long does it take to see results from immigration lawyer lead generation?",
+    answer: "Google Ads can generate leads within days of launching campaigns. SEO typically takes 3-6 months to build momentum and deliver consistent organic traffic. Referral partnerships require 6-12 months of relationship building to generate steady appointment flow. Most immigration practices see meaningful results within 90 days when implementing a comprehensive multi-channel strategy."
+  }, {
+    question: "What's a reasonable cost per lead for immigration law services?",
+    answer: "Immigration law cost per lead typically ranges from $50-200 depending on visa type, location, and competition. Skilled migration and business visa leads tend toward the higher end due to case value. Student and partner visa leads typically cost less. Focus on lead quality and conversion rates rather than just cost, as a $150 lead that converts at 30% is more valuable than a $50 lead converting at 5%."
+  }];
+
   const articleData = {
     headline: post.title,
     description: post.excerpt,
@@ -81,6 +92,7 @@ const ImmigrationLawyersLeadGeneration = () => {
         articleData={articleData}
         heroImage={post.image}
         heroAlt={post.title}
+        faqs={faqs}
       >
       <h2>The Immigration Law Lead Generation Landscape in Australia</h2>
       <p>

@@ -935,6 +935,37 @@ export const blogPosts: BlogPost[] = [
     category: "Building & Construction",
     author: "Basheer Padanna",
     image: '/images/blog/renovation-builders-digital-marketing-hero.jpg'
+  },
+  // NEW BLOGS - RENOVATION BUILDERS
+  {
+    title: "Google Ads for Renovation Builders: Complete PPC Strategy Guide 2026",
+    excerpt: "Master Google Ads for renovation builders with proven PPC strategies. Learn keyword research, campaign setup, ad copy optimization, and conversion tactics to attract homeowners ready to renovate.",
+    date: "February 11, 2025",
+    readTime: "22 min read",
+    slug: "renovation-builders-google-ads",
+    category: "Building & Construction - Renovation Builders",
+    author: "Basheer Padanna",
+    image: '/images/blog/renovation-builders-digital-marketing-hero.jpg'
+  },
+  {
+    title: "Lead Generation for Renovation Builders: Complete Strategy Guide 2026",
+    excerpt: "Master lead generation for renovation builders with comprehensive strategies. Learn digital marketing tactics, referral systems, portfolio showcasing, and conversion optimization to attract quality renovation projects.",
+    date: "February 11, 2025",
+    readTime: "24 min read",
+    slug: "renovation-builders-lead-generation",
+    category: "Building & Construction - Renovation Builders",
+    author: "Basheer Padanna",
+    image: '/images/blog/renovation-builders-digital-marketing-hero.jpg'
+  },
+  {
+    title: "SEO for Renovation Builders: Complete Local Search Strategy 2026",
+    excerpt: "Master SEO for renovation builders to dominate local searches. Learn local search optimization, keyword research, content strategies, and technical SEO tactics for sustained organic lead generation.",
+    date: "February 11, 2025",
+    readTime: "26 min read",
+    slug: "renovation-builders-seo",
+    category: "Building & Construction - Renovation Builders",
+    author: "Basheer Padanna",
+    image: '/images/blog/renovation-builders-digital-marketing-hero.jpg'
   }
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

@@ -56,7 +56,18 @@ const convertDateFormat = (dateString: string): string => {
 const NDISSoftwareSaaSPositioning = () => {
   const post = blogPosts.find(p => p.slug === "ndis-software-saas-positioning-strategy");
   if (!post) throw new Error("Blog post not found: ndis-software-saas-positioning-strategy");
-  
+
+  const faqs = [{
+    question: "Should NDIS software companies position on features or outcomes?",
+    answer: "Position on outcomes first, features second. NDIS providers care about results like reducing compliance violations by 95%, saving 20 hours per week on administration, or improving participant satisfaction. Lead with these quantifiable outcomes, then support with the features that enable them. Feature-focused positioning fails to differentiate in a crowded market where most platforms offer similar core functionality."
+  }, {
+    question: "Is it better to specialize in one NDIS service type or offer a broad solution?",
+    answer: "Specialization typically wins in the NDIS software market. Focusing on specific provider types like SIL specialists, plan managers, or therapy providers allows deeper feature development, stronger positioning, and premium pricing. Start with a narrow focus to dominate one segment, then expand to adjacent markets once established. Broad positioning makes differentiation difficult against well-funded generalist competitors."
+  }, {
+    question: "How do you compete against established NDIS software providers?",
+    answer: "Compete through superior positioning focused on underserved segments or specific pain points. Emphasize modern technology, better support, faster implementation, or niche specialization rather than trying to match feature-for-feature. Highlight agility and responsiveness compared to legacy providers, or target specific provider types where incumbents deliver generic solutions. Build case studies demonstrating superior outcomes for your target market."
+  }];
+
   // Client gating removed during build stabilization: assume content unlocked for prerender
   const articleSchema = generateArticleSchema({
     headline: "NDIS Software SaaS Positioning: Stand Out in a Competitive Market",

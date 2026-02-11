@@ -13,11 +13,11 @@ import FractionalCMO from "../../src/components/sections/FractionalCMO";
 const Index = () => {
   // Automatically ping search engines when site is published
   //usePublishIndexing();
-  
-  
+
+
   return (
     <>
-     
+
       <a href="#main" className="sr-only focus:not-sr-only">Skip to content</a>
       <Hero />
       <main id="main" className="max-w-[1400px] p-8 mx-auto">
@@ -26,11 +26,11 @@ const Index = () => {
         <Capabilities />
         <Services />
         <Process />
-        
+
         <BlogSection />
         <CTA />
       </main>
-     
+
     </>
   );
 };

@@ -44,6 +44,17 @@ export const metadata = createMetadata({
   }
 });
 const VoluntaryAdministrationLeadGeneration = () => {
+  const faqs = [{
+    question: "How do voluntary administration specialists generate quality leads?",
+    answer: "VA specialists generate quality leads through a dual-channel approach: direct marketing capturing crisis-stage director searches via SEO and Google Ads, combined with B2B referral development through accountants and lawyers who identify distress signals early. Content marketing establishes authority on business rescue, while strategic networking and educational programs build sustainable referrer relationships that deliver the highest quality appointments."
+  }, {
+    question: "What's the typical cost per appointment for voluntary administration leads?",
+    answer: "Cost per voluntary administration appointment typically ranges from $300-800 through direct marketing channels like Google Ads, while referral channel costs are lower but require longer relationship development investment. Track both immediate acquisition costs and referrer lifetime value for accurate ROI measurement. High-quality referral appointments often lead to subsequent DOCA or liquidation work, making their total value significantly higher than initial appointment fees."
+  }, {
+    question: "Should VA specialists focus more on direct marketing or referral partnerships?",
+    answer: "The most successful VA practices balance both channels strategically. Allocate 40% of marketing resources to direct channels (SEO, Google Ads) for immediate appointment flow, and 60% to referral development for sustainable long-term growth. Direct marketing provides quick results while building referral networks, which ultimately deliver higher quality appointments with better outcomes. Start with paid advertising for immediate visibility while investing in relationship building for compounding returns."
+  }];
+
   const citations = [{
     source: "ARITA",
     title: "ARITA - Voluntary Administration Guide",
@@ -108,7 +119,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
     />
-    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Lead Generation for Voluntary Administration" relatedArticles={relatedArticles}>
+    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Lead Generation for Voluntary Administration" relatedArticles={relatedArticles} faqs={faqs}>
       <p className="lead text-xl text-muted-foreground mb-8">
         Voluntary administration offers businesses a lifeline—but directors need to discover your services before it&apos;s too late. This comprehensive guide reveals the lead generation strategies that fill voluntary administration practices with quality appointments while building sustainable referrer networks.
       </p>

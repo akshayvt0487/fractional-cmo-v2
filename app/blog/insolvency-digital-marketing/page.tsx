@@ -77,13 +77,24 @@ const InsolvencyDigitalMarketing = () => {
   }];
   const post = blogPosts.find(p => p.slug === "insolvency-digital-marketing");
   if (!post) throw new Error("Blog post not found: insolvency-digital-marketing");
-  
+
   const convertDateFormat = (dateString: string): string => {
     const date = new Date(dateString);
     return date.toISOString().split('T')[0];
   };
 
-  
+  const faqs = [{
+    question: "How do insolvency practitioners generate leads online?",
+    answer: "Insolvency practitioners generate leads through a combination of SEO targeting crisis-stage searches, Google Ads for immediate visibility, and LinkedIn networking with professional referrers. Content marketing establishes authority, while strategic partnerships with accountants and lawyers provide the majority of high-quality appointments. A multi-channel approach balancing direct and referral marketing delivers the best results."
+  }, {
+    question: "What's the typical client acquisition cost for insolvency services?",
+    answer: "Client acquisition costs for insolvency services typically range from $500-2,000 per appointment depending on service type and marketing channel. Direct Google Ads leads cost more but convert faster, while referral partnerships have lower direct costs but require longer relationship development. Track both immediate conversion metrics and lifetime referrer value for accurate ROI measurement."
+  }, {
+    question: "Should insolvency practitioners focus on SEO or paid advertising?",
+    answer: "The most successful insolvency practices use both SEO and paid advertising strategically. Google Ads provides immediate visibility for urgent searches while SEO builds long-term organic authority and reduces acquisition costs over time. Start with paid ads for quick results, then invest in SEO for sustainable growth. Combine both with referral network development for a balanced lead generation strategy."
+  }];
+
+
   const articleData = {
     headline: "Digital Marketing Strategy for Insolvency Practitioners: Complete 2026 Guide",
     description: "Master digital marketing for insolvency practices. Proven strategies to attract corporate clients, build authority, and grow your insolvency practice in competitive markets.",
@@ -116,7 +127,7 @@ const InsolvencyDigitalMarketing = () => {
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
     />
-    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Digital Marketing for Insolvency Practitioners" relatedArticles={relatedArticles}>
+    <OptimizedBlogLayout articleData={articleData} heroImage={heroImage} heroAlt="Digital Marketing for Insolvency Practitioners" relatedArticles={relatedArticles} faqs={faqs}>
       <p className="lead text-xl text-muted-foreground mb-8">
         Insolvency practitioners face unique marketing challenges—highly regulated services, crisis-driven demand, and sophisticated B2B clients. This guide reveals the digital marketing strategies that drive sustainable growth for insolvency practices in 2026.
       </p>
