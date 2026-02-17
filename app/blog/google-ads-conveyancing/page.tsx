@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Google Ads Conveyancing Guide",
-  description: "Expert guidance on google ads conveyancing guide. Learn proven strategies and best practices for business growth.",
+  title: "How to Boost Property Leads Using Google Ads for Conveyancers",
+  description: "Master how to use Google Ads for conveyancing. Target local searches, craft compelling ads, and optimize landing pages for maximum leads.",
   path: "/blog/google-ads-conveyancing",
   keywords: ["google", "conveyancing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

@@ -14,8 +14,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Fractional Cmo Vs Full Time Cmo",
-  description: "Expert guidance on fractional cmo vs full time cmo. Learn proven strategies and best practices for business growth.",
+  title: "Fractional CMO vs Full-Time CMO | Which to Hire in 2026",
+  description: "Compare Fractional vs Full-Time CMOs. Discover costs, benefits, and when each marketing leadership model is right for your business growth strategy.",
   path: "/blog/fractional-cmo-vs-full-time-cmo",
   keywords: ["fractional", "full", "time", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

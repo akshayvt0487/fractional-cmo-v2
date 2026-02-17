@@ -15,8 +15,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Construction Lead Generation Strategies",
-  description: "Expert guidance on construction lead generation strategies. Learn proven strategies and best practices for business growth.",
+  title: "Construction Lead Generation: 7 Proven Digital Strategies",
+  description: "Discover 7 effective digital marketing strategies for construction companies to generate leads, build trust, and grow your business online",
   path: "/blog/construction-lead-generation-strategies",
   keywords: ["construction", "lead", "generation", "strategies", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

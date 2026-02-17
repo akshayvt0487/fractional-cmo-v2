@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Cyber Security Growth Hacking",
-  description: "Expert guidance on cyber security growth hacking. Learn proven strategies and best practices for business growth.",
+  title: "Cyber Security Growth Hacking | Innovative Lead Generation",
+  description: "Learn how cyber security companies use growth hacking tactics to generate leads, test channels faster, and scale demand in competitive security markets.",
   path: "/blog/cyber-security-growth-hacking",
   keywords: ["cyber", "security", "growth", "hacking", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

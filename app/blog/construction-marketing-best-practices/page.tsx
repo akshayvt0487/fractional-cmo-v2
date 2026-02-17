@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Construction Marketing Best Practices",
-  description: "Expert guidance on construction marketing best practices. Learn proven strategies and best practices for business growth.",
+  title: "Construction Marketing Best Practices | Digital Growth Tips",
+  description: "Learn top digital marketing strategies for construction companies to generate leads, build authority, and grow your local business effectively.",
   path: "/blog/construction-marketing-best-practices",
   keywords: ["construction", "marketing", "best", "practices", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

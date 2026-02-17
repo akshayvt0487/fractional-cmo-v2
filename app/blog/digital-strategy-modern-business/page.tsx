@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Digital Strategy Modern Business",
-  description: "Expert guidance on digital strategy modern business. Learn proven strategies and best practices for business growth.",
+  title: "Digital Strategy for Modern Businesses | Complete Guide",
+  description: "A complete guide to digital strategy for modern businesses, covering transformation frameworks, technology alignment, KPIs, and execution roadmaps.",
   path: "/blog/digital-strategy-modern-business",
   keywords: ["digital", "strategy", "modern", "business", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

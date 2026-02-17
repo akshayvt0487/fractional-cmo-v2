@@ -14,8 +14,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Cyber Security Digital Marketing Strategies",
-  description: "Expert guidance on cyber security digital marketing strategies. Learn proven strategies and best practices for business growth.",
+  title: "Digital Marketing for Cyber Security Startups | Growth Guide",
+  description: "Explore digital marketing strategies for new cyber security firms to build visibility, attract clients, and grow your startup successfully in 2026.",
   path: "/blog/cyber-security-digital-marketing-strategies",
   keywords: ["cyber", "security", "digital", "marketing", "strategies", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

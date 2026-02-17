@@ -12,12 +12,12 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "SEO for Buyers Agents: Complete Search Optimisation Guide 2026",
-  description: "Master SEO for buyers agents with this comprehensive guide. Learn keyword research, local SEO, content strategy, and technical optimisation to attract quality property buyer clients.",
+  title: "SEO for Buyers Agents | Complete Optimization Guide 2026",
+  description: "Learn SEO for buyers agents in 2026: optimise your website, target local searches, and generate consistent leads from motivated property buyers.",
   path: "/blog/buyers-agents-seo",
   keywords: ["buyers agents", "SEO", "local SEO", "property SEO", "search optimisation", "Google ranking"],
   openGraph: {
-    title: "SEO for Buyers Agents: Complete Search Optimisation Guide 2026",
+    title: "SEO for Buyers Agents | Complete Optimization Guide 2026",
     description: "Master SEO for buyers agents with comprehensive keyword research, local SEO, content strategy.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/buyers-agents-seo`,
     siteName: "Fractional CMO",
@@ -34,7 +34,7 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO for Buyers Agents: Complete Search Optimisation Guide 2026",
+    title: "SEO for Buyers Agents | Complete Optimization Guide 2026",
     description: "Master SEO for buyers agents with comprehensive guide.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-google-ads-hero.jpg`],
     site: "@FractionalCMO"

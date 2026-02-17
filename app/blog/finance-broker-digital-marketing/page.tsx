@@ -12,8 +12,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Digital Marketing for Finance Brokers: Complete Growth Strategy Guide 2026",
-  description: "Master digital marketing for finance and mortgage brokers. Comprehensive guide covering SEO, Google Ads, content marketing, social media, and lead generation strategies.",
+  title: "Digital Marketing Strategies for Finance Brokers | Guide 2026",
+  description: "Learn how finance brokers build trust, generate leads, and grow online with SEO, content marketing, Google Ads, and professional networking in 2026.",
   path: "/blog/finance-broker-digital-marketing",
   keywords: ["finance brokers", "mortgage brokers", "digital marketing", "broker marketing", "financial services marketing"],
   openGraph: {

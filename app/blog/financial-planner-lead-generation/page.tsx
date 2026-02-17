@@ -14,8 +14,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Financial Planner Lead Generation",
-  description: "Expert guidance on financial planner lead generation. Learn proven strategies and best practices for business growth.",
+  title: "Lead Generation Strategies for Financial Planners | Guide 2026",
+  description: "Learn how financial planners attract high-value clients. Multi-channel strategies, content marketing, and nurturing sequences to build a sustainable client pipeline.",
   path: "/blog/financial-planner-lead-generation",
   keywords: ["financial", "planner", "lead", "generation", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

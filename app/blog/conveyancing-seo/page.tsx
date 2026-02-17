@@ -14,8 +14,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Conveyancing Seo Guide",
-  description: "Expert guidance on conveyancing seo guide. Learn proven strategies and best practices for business growth.",
+  title: "SEO Tips for Conveyancing Firms | Improve Online Ranking",
+  description: "Discover practical SEO strategies for conveyancing blogs to attract clients, boost visibility, and grow your property law online presence.",
   path: "/blog/conveyancing-seo",
   keywords: ["conveyancing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

@@ -16,8 +16,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Criminal Lawyers Digital Marketing",
-  description: "Expert guidance on criminal lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+  title: "Digital Marketing for Criminal Lawyers | Growth Insights 2026",
+  description: "Learn how criminal lawyers leverage digital marketing to attract clients, increase visibility, and grow their practice with proven strategies in 2026.",
   path: "/blog/criminal-lawyers-digital-marketing",
   keywords: ["criminal", "lawyers", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

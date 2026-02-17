@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Cyber Security Google Ads Strategy",
-  description: "Expert guidance on cyber security google ads strategy. Learn proven strategies and best practices for business growth.",
+  title: "Google Ads Strategy for Cyber Security | Complete Guide",
+  description: "Learn how cyber security firms can create high-converting Google Ads campaigns, reach the right audience, and generate quality leads effectively.",
   path: "/blog/cyber-security-google-ads-strategy",
   keywords: ["cyber", "security", "google", "strategy", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

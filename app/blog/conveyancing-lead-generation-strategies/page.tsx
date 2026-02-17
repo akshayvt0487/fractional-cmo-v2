@@ -15,8 +15,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Conveyancing Lead Generation Strategies",
-  description: "Expert guidance on conveyancing lead generation strategies. Learn proven strategies and best practices for business growth.",
+  title: "Conveyancing Lead Generation Strategies for Law Firms",
+  description: "Learn effective digital marketing strategies for conveyancing firms to generate quality leads, attract clients, and grow your property law business.",
   path: "/blog/conveyancing-lead-generation-strategies",
   image: "/images/blog/conveyancing-lead-generation-hero.jpg",
   keywords: ["conveyancing", "lead", "generation", "strategies", "digital marketing", "business growth", "marketing strategy"],

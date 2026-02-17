@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Growth Marketing Strategy",
-  description: "Expert guidance on growth marketing strategy. Learn proven strategies and best practices for business growth.",
+  title: "Growth Marketing Strategy for Professional Services | Guide 2026",
+  description: "How to grow professional service businesses using data-driven growth marketing?. Learn strategies, frameworks, and optimization for scalable results.",
   path: "/blog/growth-marketing-strategy",
   keywords: ["growth", "marketing", "strategy", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

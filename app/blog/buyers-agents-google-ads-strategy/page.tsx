@@ -15,12 +15,12 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Google Ads for Buyers Agents: Campaign Setup & Targeting Guide 2026",
-  description: "Master Google Ads for buyers agents: keyword research, buyer segment targeting, ad copy, landing pages, and optimization tactics to attract property buyers actively searching.",
+  title: "Google Ads Strategies for Buyers Agents | 2026 Guide",
+  description: "Discover how buyers agents can attract qualified property clients using Google Ads. Learn campaign structure, targeting, and ad copy tips for real results.",
   path: "/blog/buyers-agents-google-ads-strategy",
   keywords: ["buyers agents google ads", "real estate ppc", "google ads for real estate agents", "property buyer advertising", "real estate lead ads"],
   openGraph: {
-    title: "Google Ads for Buyers Agents: Campaign Setup & Targeting Guide 2026",
+    title: "Google Ads Strategies for Buyers Agents | 2026 Guide",
     description: "Master Google Ads: keyword research, buyer segment targeting, ad copy, landing pages, and optimization to attract buyers actively searching.",
     url: "https://fractional-cmo.com.au/blog/buyers-agents-google-ads-strategy",
     siteName: "Fractional CMO",

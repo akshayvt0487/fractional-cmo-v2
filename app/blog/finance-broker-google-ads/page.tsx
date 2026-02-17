@@ -12,8 +12,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Google Ads for Finance Brokers: Complete PPC Strategy Guide 2026",
-  description: "Master Google Ads for finance and mortgage brokers. Learn campaign structure, keyword strategy, ad copy best practices, and conversion optimisation for maximum ROI.",
+  title: "Finance Broker PPC Guide | Google Ads Strategy 2026",
+  description: "Step-by-step Google Ads blueprint for finance brokers: plan campaigns, target local and high-intent keywords, optimize ads, and maximize conversions.",
   path: "/blog/finance-broker-google-ads",
   keywords: ["finance brokers", "Google Ads", "PPC", "mortgage advertising", "broker advertising", "paid search"],
   openGraph: {

@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Digital Marketing Roi Service Businesses",
-  description: "Expert guidance on digital marketing roi service businesses. Learn proven strategies and best practices for business growth.",
+  title: "Digital Marketing ROI | How Service Businesses Measure Success",
+  description: "A detailed guide explaining how service businesses calculate, track, and improve digital marketing ROI across SEO, ads, email, and social channels.",
   path: "/blog/digital-marketing-roi-service-businesses",
   keywords: ["digital", "marketing", "service", "businesses", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

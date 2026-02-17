@@ -18,8 +18,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
-  description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
+  title: "Growth Marketing Strategies for Bricklayers | 2026 Guide",
+  description: "Discover strategies for bricklayers to attract high-value projects, optimize marketing channels, and expand operations for sustainable growth in 2026.",
   path: "/blog/bricklayers-growth-marketing-strategy",
   keywords: [
     "growth marketing for bricklayers",
@@ -30,8 +30,8 @@ export const metadata = createMetadata({
     "scaling a trade business"
   ],
   openGraph: {
-    title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
-    description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
+    title: "Growth Marketing Strategies for Bricklayers | 2026 Guide",
+    description: "Discover strategies for bricklayers to attract high-value projects, optimize marketing channels, and expand operations for sustainable growth in 2026.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/bricklayers-growth-marketing-strategy`,
     siteName: "Fractional CMO",
     type: "article",
@@ -47,8 +47,8 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
-    description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
+    title: "Growth Marketing Strategies for Bricklayers | 2026 Guide",
+    description: "Discover strategies for bricklayers to attract high-value projects, optimize marketing channels, and expand operations for sustainable growth in 2026.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/bricklayers-growth-marketing-hero.jpg`],
     site: "@FractionalCMO"
   }
@@ -76,7 +76,7 @@ const BricklayersGrowthMarketing = () => {
   if (!post) throw new Error("Blog post not found: bricklayers-growth-marketing-strategy");
   const articleData = {
     headline: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
-    description: "Accelerate your bricklaying business growth with proven marketing strategies. Learn client acquisition, reputation building, and scaling tactics for masonry contractors.",
+    description: "Discover strategies for bricklayers to attract high-value projects, optimize marketing channels, and expand operations for sustainable growth in 2026.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.341Z", // Synced with metadata for freshness

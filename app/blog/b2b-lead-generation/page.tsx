@@ -19,8 +19,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
-  description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
+  title: "B2B Lead Generation Strategies | 2026 Complete Guide",
+  description: "Learn how businesses can attract and convert high-value B2B clients with multi-channel strategies, ABM, and lead nurturing for growth in 2026.",
   path: "/blog/b2b-lead-generation",
   image: "/images/blog/b2b-lead-generation-hero.jpg",
   keywords: [
@@ -33,8 +33,8 @@ export const metadata = createMetadata({
     "LinkedIn marketing"
   ],
   openGraph: {
-    title: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
-    description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
+    title: "B2B Lead Generation Strategies | 2026 Complete Guide",
+    description: "Learn how businesses can attract and convert high-value B2B clients with multi-channel strategies, ABM, and lead nurturing for growth in 2026.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/b2b-lead-generation`,
     siteName: "Fractional CMO",
     type: "article",
@@ -50,8 +50,8 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: "summary_large_image",
-    title: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
-    description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
+    title: "B2B Lead Generation Strategies | 2026 Complete Guide",
+    description: "Learn how businesses can attract and convert high-value B2B clients with multi-channel strategies, ABM, and lead nurturing for growth in 2026.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/b2b-lead-generation-hero.jpg`],
     site: "@FractionalCMO"
   }
@@ -79,7 +79,7 @@ const B2BLeadGeneration = () => {
   if (!post) throw new Error("Blog post not found: b2b-lead-generation");
   const articleData = {
     headline: "B2B Lead Generation: Complete Guide to Attracting High-Value Business Clients",
-    description: "Master B2B lead generation with proven strategies, tools, and techniques. Learn how to attract, nurture, and convert high-value business clients effectively.",
+    description: "Learn how businesses can attract and convert high-value B2B clients with multi-channel strategies, ABM, and lead nurturing for growth in 2026.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.304Z", // Synced with metadata for freshness

@@ -12,8 +12,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Home Builders Lead Generation Guide",
-  description: "Expert guidance on home builders lead generation guide. Learn proven strategies and best practices for business growth.",
+  title: "How to Generate Leads for Home Builders | Digital Strategies 2026",
+  description: "Discover how home builders can attract high-quality leads with digital strategies, optimized websites, and effective marketing campaigns.",
   path: "/blog/home-builders-lead-generation",
   keywords: ["home", "builders", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

@@ -15,8 +15,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Financial Planner Seo Guide",
-  description: "Expert guidance on financial planner seo guide. Learn proven strategies and best practices for business growth.",
+  title: "Financial Planner SEO Guide | Local Search Domination",
+  description: "Complete SEO guide for financial planners. Optimize local search, publish educational content, and convert organic traffic into qualified consultation requests.",
   path: "/blog/financial-planner-seo",
   keywords: ["financial", "planner", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

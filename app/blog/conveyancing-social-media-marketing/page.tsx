@@ -14,8 +14,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Conveyancing Social Media Marketing",
-  description: "Expert guidance on conveyancing social media marketing. Learn proven strategies and best practices for business growth.",
+  title: "Social Media Marketing Strategies for Conveyancers",
+  description: "Discover how conveyancers can build trust, engage clients, and showcase expertise using social media to attract property buyers and sellers.",
   path: "/blog/conveyancing-social-media-marketing",
   keywords: ["conveyancing", "social", "media", "marketing", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

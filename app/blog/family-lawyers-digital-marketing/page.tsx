@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Family Lawyers Digital Marketing",
-  description: "Expert guidance on family lawyers digital marketing. Learn proven strategies and best practices for business growth.",
+  title: "Digital Marketing for Family Lawyers | Ethical Growth Guide",
+  description: "Learn how family law practices attract clients ethically using SEO, Google Ads, content marketing, and reputation management in 2026.",
   path: "/blog/family-lawyers-digital-marketing",
   keywords: ["family", "lawyers", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

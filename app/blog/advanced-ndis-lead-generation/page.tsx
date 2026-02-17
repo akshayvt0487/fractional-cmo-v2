@@ -19,8 +19,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
-  description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
+  title: "Advanced NDIS Lead Generation Strategies | 2026 Guide",
+  description: "Discover multi-channel NDIS lead generation strategies, automation, and local marketing tactics to grow participant engagement and referrals in 2026.",
   path: "/blog/advanced-ndis-lead-generation",
   keywords: [
     "advanced NDIS lead generation",
@@ -32,8 +32,8 @@ export const metadata = createMetadata({
     "NDIS SEO"
   ],
   openGraph: {
-    title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
-    description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
+    title: "Advanced NDIS Lead Generation Strategies | 2026 Guide",
+    description: "Discover multi-channel NDIS lead generation strategies, automation, and local marketing tactics to grow participant engagement and referrals in 2026.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/advanced-ndis-lead-generation`,
     siteName: "Fractional CMO",
     type: "article",
@@ -49,8 +49,8 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: "summary_large_image",
-    title: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
-    description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
+    title: "Advanced NDIS Lead Generation Strategies | 2026 Guide",
+    description: "Discover multi-channel NDIS lead generation strategies, automation, and local marketing tactics to grow participant engagement and referrals in 2026.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/advanced-ndis-lead-generation-hero.jpg`],
     site: "@FractionalCMO"
   }
@@ -78,7 +78,7 @@ const AdvancedNDISLeadGeneration = () => {
   if (!post) throw new Error("Blog post not found: advanced-ndis-lead-generation");
   const articleData = {
     headline: "Advanced NDIS Lead Generation: Strategies for Sustainable Growth in 2026",
-    description: "Master advanced NDIS lead generation with proven multi-channel strategies, automation systems, and ethical participant attraction methods that drive sustainable growth while maintaining compliance.",
+    description: "Discover multi-channel NDIS lead generation strategies, automation, and local marketing tactics to grow participant engagement and referrals in 2026.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.264Z", // Synced with metadata for freshness

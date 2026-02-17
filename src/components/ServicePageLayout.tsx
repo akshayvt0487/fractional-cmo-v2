@@ -9,11 +9,12 @@ import BreadcrumbNavigation from '@/components/BreadcrumbNavigation';
 import ScrollBottomPopup from '@/components/ui/scroll-bottom-popup';
 import StrategyForm from '@/components/ui/strategy-form';
 import ServiceInquiryForm from '@/components/ServiceInquiryForm';
+import CTA from '@/components/sections/CTA';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import { Check, ChevronDown, TrendingUp } from 'lucide-react';
+import { Check, ChevronDown } from 'lucide-react';
 import type { MainServicePageData, ServiceFeature } from '@/data/serviceData';
 
 type Props = {
@@ -173,18 +174,7 @@ const ServicePageLayout: React.FC<Props> = ({ data, serviceName: customServiceNa
           </div>
         </section>
 
-        <section className="py-16 flex items-center justify-center">
-          <div className="container mx-auto max-w-4xl px-4">
-            <Card className="bg-linear-to-r from-primary/10 to-secondary/10 border-primary/20">
-              <CardContent className="p-8 md:p-12 text-center">
-                <TrendingUp className="w-12 h-12 text-primary mx-auto mb-6" />
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Transform Your {serviceName} Strategy?</h2>
-                <p className="text-muted-foreground mb-8 max-w-xl mx-auto">Book a free 45-minute strategy call to discuss how we can help grow your business with proven {serviceName.toLowerCase()} strategies.</p>
-                <StrategyForm />
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+        <CTA service={serviceName} />
       </main>
       <ScrollBottomPopup />
       <Footer />

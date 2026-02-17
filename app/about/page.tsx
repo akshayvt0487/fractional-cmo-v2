@@ -4,8 +4,8 @@ import StrategyForm from "@/components/ui/strategy-form";
 import Header from "@/components/ui/header";
 
 export const metadata = createMetadata({
-  title: 'About Basheer Padanna - Fractional CMO',
-  description: 'Learn about Basheer Padanna, a Fractional CMO helping ambitious service businesses build scalable growth systems through strategic thinking and hands-on execution.',
+  title: 'About Basheer Padanna | Expert Fractional CMO & Growth Leader',
+  description: 'Learn about Basheer Padanna, a Fractional CMO with 15+ years\' experience helping Australian businesses scale. Expert in growth strategy, performance marketing, and conversion optimisation.',
   path: '/about',
   canonical: `${SITE_URL}/about`,
   robots: {
@@ -21,8 +21,8 @@ export const metadata = createMetadata({
     'digital marketing expert'
   ],
   openGraph: {
-    title: 'About Basheer Padanna - Fractional CMO',
-    description: 'Learn about Basheer Padanna, a Fractional CMO helping ambitious service businesses build scalable growth systems.',
+    title: 'About Basheer Padanna | Expert Fractional CMO & Growth Leader',
+    description: 'Learn about Basheer Padanna, a Fractional CMO with 15+ years\' experience helping Australian businesses scale. Expert in growth strategy, performance marketing, and conversion optimisation.',
     url: 'https://fractional-cmo.com.au/about',
     siteName: 'Fractional CMO',
     type: 'profile',
@@ -35,8 +35,8 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Basheer Padanna - Fractional CMO',
-    description: 'Learn about Basheer Padanna, a Fractional CMO helping ambitious service businesses build scalable growth systems.',
+    title: 'About Basheer Padanna | Expert Fractional CMO & Growth Leader',
+    description: 'Learn about Basheer Padanna, a Fractional CMO with 15+ years\' experience helping Australian businesses scale. Expert in growth strategy, performance marketing, and conversion optimisation.',
     images: ['/images/about/basheer-padanna.jpg']
   }
 });

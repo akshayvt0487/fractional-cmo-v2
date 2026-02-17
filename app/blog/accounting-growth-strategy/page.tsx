@@ -19,13 +19,13 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
-  description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
+  title: "Growth Strategy for Accounting Practices | 2026 Guide",
+  description: "Learn how accounting firms can expand with strategic client acquisition, advisory services, and operational efficiency for sustained growth in 2026",
   path: "/blog/accounting-growth-strategy",
   keywords: ["accounting growth strategy", "accounting practice growth", "accounting firm business development", "CPA firm growth", "service expansion", "team building", "accounting client acquisition"],
   openGraph: {
-    title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
-    description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
+    title: "Growth Strategy for Accounting Practices | 2026 Guide",
+    description: "Learn how accounting firms can expand with strategic client acquisition, advisory services, and operational efficiency for sustained growth in 2026",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/accounting-growth-strategy`,
     siteName: "Fractional CMO",
     type: "article",
@@ -41,8 +41,8 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: "summary_large_image",
-    title: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
-    description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
+    title: "Growth Strategy for Accounting Practices | 2026 Guide",
+    description: "Learn how accounting firms can expand with strategic client acquisition, advisory services, and operational efficiency for sustained growth in 2026",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-growth-strategy-hero.jpg`],
     site: "@FractionalCMO"
   }
@@ -70,7 +70,7 @@ const AccountingGrowthStrategy = () => {
   if (!post) throw new Error("Blog post not found: accounting-growth-strategy");
   const articleData = {
     headline: "Growth Strategy for Accounting Practices: Scale Your Firm with Proven Business Development Tactics 2026",
-    description: "Master growth strategies for accounting firms. Learn client acquisition, service expansion, team building, and technology integration tactics that drive sustainable accounting practice growth.",
+    description: "Learn how accounting firms can expand with strategic client acquisition, advisory services, and operational efficiency for sustained growth in 2026",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.213Z", // Synced with metadata for freshness

@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Cyber Security Seo Australia",
-  description: "Expert guidance on cyber security seo australia. Learn proven strategies and best practices for business growth.",
+  title: "Cyber Security SEO Australia | Complete Ranking Guide",
+  description: "This guide explains cyber security SEO in Australia, covering keyword research, content strategy, local SEO, and how security firms improve search rankings.",
   path: "/blog/cyber-security-seo-australia",
   keywords: ["cyber", "security", "australia", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

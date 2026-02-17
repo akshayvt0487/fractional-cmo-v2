@@ -11,8 +11,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Floor Sanding Digital Marketing Guide",
-  description: "Expert guidance on floor sanding digital marketing guide. Learn proven strategies and best practices for business growth.",
+  title: "Digital Marketing for Floor Sanding Specialists | Guide 2026",
+  description: "Learn proven digital marketing strategies for floor sanding specialists. Boost local visibility, showcase your portfolio, and attract premium clients online.",
   path: "/blog/floor-sanding-digital-marketing",
   keywords: ["floor", "sanding", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

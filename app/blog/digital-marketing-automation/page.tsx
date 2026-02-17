@@ -15,8 +15,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Digital Marketing Automation Guide",
-  description: "Expert guidance on digital marketing automation guide. Learn proven strategies and best practices for business growth.",
+  title: "Digital Marketing Automation Guide for Service Businesses",
+  description: "Learn how digital marketing automation supports service businesses through automated emails, lead scoring, behavioral triggers, and scalable growth systems.",
   path: "/blog/digital-marketing-automation",
   keywords: ["digital", "marketing", "automation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

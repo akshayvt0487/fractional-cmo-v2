@@ -18,8 +18,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
-  description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
+  title: "Bricklayer Lead Generation Strategies | Get More Jobs 2026",
+  description: "Proven lead generation tactics for bricklayers: attract more clients, optimize local SEO, use Google Ads & social media to secure high-value projects in 2026.",
   path: "/blog/bricklayers-lead-generation",
   keywords: [
     "bricklayer lead generation",
@@ -31,8 +31,8 @@ export const metadata = createMetadata({
     "Google Ads for tradies"
   ],
   openGraph: {
-    title: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
-    description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
+    title: "Bricklayer Lead Generation Strategies | Get More Jobs 2026",
+    description: "Proven lead generation tactics for bricklayers: attract more clients, optimize local SEO, use Google Ads & social media to secure high-value projects in 2026.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/bricklayers-lead-generation`,
     siteName: "Fractional CMO",
     type: "article",
@@ -48,8 +48,8 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
-    description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
+    title: "Bricklayer Lead Generation Strategies | Get More Jobs 2026",
+    description: "Proven lead generation tactics for bricklayers: attract more clients, optimize local SEO, use Google Ads & social media to secure high-value projects in 2026.",
     images: ["https://fractional-cmo.com.au/images/blog/bricklayers-lead-generation.jpg"],
     site: "@FractionalCMO"
   }
@@ -77,7 +77,7 @@ const BricklayersLeadGeneration = () => {
   if (!post) throw new Error("Blog post not found: bricklayers-lead-generation");
   const articleData = {
     headline: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
-    description: "Master lead generation strategies for bricklaying businesses. Learn digital marketing, local SEO, and networking tactics that consistently attract quality construction projects.",
+    description: "Proven lead generation tactics for bricklayers: attract more clients, optimize local SEO, use Google Ads & social media to secure high-value projects in 2026.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.357Z", // Synced with metadata for freshness

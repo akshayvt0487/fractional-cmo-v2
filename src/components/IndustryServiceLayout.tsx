@@ -7,6 +7,7 @@ import SEO from '@/components/SEO';
 import BreadcrumbNavigation from '@/components/BreadcrumbNavigation';
 import ScrollBottomPopup from '@/components/ui/scroll-bottom-popup';
 import StrategyForm from '@/components/ui/strategy-form';
+import CTA from '@/components/sections/CTA';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -379,13 +380,7 @@ const IndustryServiceLayout = ({
         <OtherServices currentService={serviceSlug || ''} />
 
         {/* CTA Section */}
-        <section className="py-16 bg-primary/5">
-          <div className="container mx-auto max-w-4xl px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Grow Your {industryName} Business?</h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">Book a free 45-minute strategy call to discuss how our {serviceName.toLowerCase()} services can help grow your {industryName.toLowerCase()} business.</p>
-            <StrategyForm />
-          </div>
-        </section>
+        <CTA service={serviceName} />
       </main>
       <ScrollBottomPopup />
     </>

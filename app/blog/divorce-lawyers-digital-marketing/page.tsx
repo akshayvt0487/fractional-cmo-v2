@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Divorce Lawyers Digital Marketing",
-  description: "Expert guidance on digital marketing for divorce lawyers. Learn proven strategies to attract clients and grow your law practice.",
+  title: "Divorce Lawyers Digital Marketing | Complete Guide 2026",
+  description: "A complete 2026 guide to digital marketing for divorce lawyers, covering ethical client acquisition, SEO, Google Ads, content strategy, and compliance.",
   path: "/blog/divorce-lawyers-digital-marketing",
   image: "/images/blog/divorce-lawyers-digital-marketing-hero.jpg",
   keywords: [

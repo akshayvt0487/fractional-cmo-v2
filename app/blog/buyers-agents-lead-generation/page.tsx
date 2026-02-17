@@ -12,12 +12,12 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Buyers Agents Lead Generation: How to Source & Qualify Buyers 2026",
-  description: "Step-by-step buyers agent lead generation: Google Ads, SEO content, referral systems, and CRM strategies to build a consistent pipeline of qualified property buyers.",
+  title: "Lead Generation for Buyers Agents | Complete 2026 Guide",
+  description: "A comprehensive guide on lead generation for buyers agents. Learn actionable strategies to capture, nurture, and convert property buyers and investors.",
   path: "/blog/buyers-agents-lead-generation",
   keywords: ["buyers agent leads", "lead generation for real estate", "property buyer acquisition", "real estate lead sourcing", "buyers advocate pipeline"],
   openGraph: {
-    title: "Buyers Agents Lead Generation: How to Source & Qualify Buyers 2026",
+    title: "Lead Generation for Buyers Agents | Complete 2026 Guide",
     description: "Step-by-step lead generation: Google Ads, SEO content, referrals, and CRM strategies to build a consistent pipeline of buyers.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/buyers-agents-lead-generation`,
     siteName: "Fractional CMO",

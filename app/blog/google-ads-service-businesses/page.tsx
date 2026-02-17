@@ -15,8 +15,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Google Ads Service Businesses",
-  description: "Expert guidance on google ads service businesses. Learn proven strategies and best practices for business growth.",
+  title: "Google Ads for Service Businesses | Complete Guide 2026",
+  description: "Learn how service businesses can attract high-quality leads with Google Ads. Step-by-step setup, campaign optimization, and conversion strategies for measurable growth.",
   path: "/blog/google-ads-service-businesses",
   keywords: ["google", "service", "businesses", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

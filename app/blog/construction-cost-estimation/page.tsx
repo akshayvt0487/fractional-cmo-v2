@@ -13,8 +13,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Construction Cost Estimation Guide",
-  description: "Expert guidance on construction cost estimation guide. Learn proven strategies and best practices for business growth.",
+  title: "Construction Cost Estimation: Methods & Best Practices",
+  description: "Master construction cost estimation with proven strategies, modern tools, and risk management tips. Improve project pricing accuracy and avoid costly overruns.",
   path: "/blog/construction-cost-estimation",
   keywords: ["construction", "cost", "estimation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

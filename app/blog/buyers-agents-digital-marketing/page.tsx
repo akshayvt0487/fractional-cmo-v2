@@ -13,12 +13,12 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Buyers Agents Digital Marketing Channels | SEO + Content + Paid Guide 2026",
-  description: "Multi-channel digital marketing for buyers agents: use local SEO, educational content, LinkedIn, and paid ads to build authority and attract property buyers in your market.",
+  title: "Digital Marketing for Buyers Agents | Strategy Guide 2026",
+  description: "Boost your buyers agent practice with proven digital marketing strategies: SEO, content, paid ads, and lead generation to attract quality property clients.",
   path: "/blog/buyers-agents-digital-marketing",
   keywords: ["buyers agents", "digital marketing", "property marketing", "real estate marketing", "SEO", "content marketing"],
   openGraph: {
-    title: "Buyers Agents Digital Marketing Channels | SEO + Content + Paid Guide 2026",
+    title: "Digital Marketing for Buyers Agents | Strategy Guide 2026",
     description: "Multi-channel digital marketing for buyers agents: use local SEO, educational content, LinkedIn, and paid ads to build authority and attract buyers.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/buyers-agents-digital-marketing`,
     siteName: "Fractional CMO",

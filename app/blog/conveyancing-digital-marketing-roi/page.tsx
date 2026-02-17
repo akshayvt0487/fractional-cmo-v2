@@ -12,8 +12,8 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Conveyancing Digital Marketing Roi",
-  description: "Expert guidance on conveyancing digital marketing roi. Learn proven strategies and best practices for business growth.",
+  title: "Digital Marketing ROI for Conveyancing Firms | Growth Tips",
+  description: "Discover how conveyancing firms can measure digital marketing ROI, optimize campaigns, and drive growth with proven strategies for success.",
   path: "/blog/conveyancing-digital-marketing-roi",
   keywords: ["conveyancing", "digital", "marketing", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {

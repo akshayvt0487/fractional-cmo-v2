@@ -13,13 +13,13 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Car Inspection Marketing Strategies",
-  description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
+  title: "Car Inspection Marketing Strategies | Get More Bookings",
+  description: "A complete guide on marketing car inspection services. Improve visibility, build credibility, and consistently attract car buyers online.",
   path: "/blog/car-inspection-marketing-strategies",
   keywords: ["inspection", "marketing", "strategies", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
-    title: "Car Inspection Marketing Strategies",
-    description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
+    title: "Car Inspection Marketing Strategies | Get More Bookings",
+    description: "A complete guide on marketing car inspection services. Improve visibility, build credibility, and consistently attract car buyers online.",
 
     siteName: "Fractional CMO",
     type: "article",
@@ -35,8 +35,8 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: "summary_large_image",
-    title: "Car Inspection Marketing Strategies",
-    description: "Expert guidance on car inspection marketing strategies. Learn proven strategies and best practices for business growth.",
+    title: "Car Inspection Marketing Strategies | Get More Bookings",
+    description: "A complete guide on marketing car inspection services. Improve visibility, build credibility, and consistently attract car buyers online.",
     images: ["https://fractional-cmo.com.au/images/blog/car-inspection-marketing.jpg"],
     site: "@FractionalCMO"
   }

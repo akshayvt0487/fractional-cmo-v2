@@ -18,13 +18,13 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
-  description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
+  title: "Digital Marketing for Accounting Firms | Client Guide 2026",
+  description: "Learn how accounting firms can attract clients with local SEO, content marketing, and digital strategies to build trust and authority online in 2026.",
   path: "/blog/accounting-digital-marketing",
   keywords: ["accounting", "digital", "marketing", "guide", "digital marketing", "business growth", "marketing strategy", "CPA marketing", "client acquisition"],
   openGraph: {
-    title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
-    description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
+    title: "Digital Marketing for Accounting Firms | Client Guide 2026",
+    description: "Learn how accounting firms can attract clients with local SEO, content marketing, and digital strategies to build trust and authority online in 2026.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/accounting-digital-marketing`,
     siteName: "Fractional CMO",
     type: "article",
@@ -40,8 +40,8 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
-    description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
+    title: "Digital Marketing for Accounting Firms | Client Guide 2026",
+    description: "Learn how accounting firms can attract clients with local SEO, content marketing, and digital strategies to build trust and authority online in 2026.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/accounting-growth-strategy-hero.jpg`],
     site: "@FractionalCMO"
   }
@@ -68,7 +68,7 @@ const AccountingDigitalMarketing = () => {
   if (!post) throw new Error("Blog post not found: accounting-digital-marketing");
   const articleData = {
     headline: "Digital Marketing for Accounting Firms: Complete Client Acquisition Guide 2026",
-    description: "Transform your accounting practice with proven digital marketing strategies. Learn client acquisition & growth tactics for professionals.",
+    description: "Learn how accounting firms can attract clients with local SEO, content marketing, and digital strategies to build trust and authority online in 2026.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.167Z", // Synced with metadata for freshness

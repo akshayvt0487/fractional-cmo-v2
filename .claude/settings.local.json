@@ -18,7 +18,8 @@
       "Bash(python scripts/validate_blog_schemas.py:*)",
       "Bash(git push:*)",
       "Bash(git reset:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(xargs -I {} bash -c \"echo ''=== {} ==='' && head -50 ''{}''\")"
     ]
   }
 }

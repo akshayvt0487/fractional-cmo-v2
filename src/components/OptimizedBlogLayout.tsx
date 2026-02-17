@@ -7,6 +7,7 @@ import BreadcrumbNavigation from '@/components/BreadcrumbNavigation';
 import BlogPostLayout from '@/components/BlogPostLayout';
 import InternalLinks from '@/components/InternalLinks';
 import SocialSharePreview from '@/components/SocialSharePreview';
+import CTA from '@/components/sections/CTA';
 import { generateArticleSchema, generateBreadcrumbSchema, generatePersonSchema, getRelatedArticles, ArticleData } from '@/utils/seoUtils';
 import type { StaticImageData } from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -123,7 +124,14 @@ const OptimizedBlogLayout = ({
             <div className="prose prose-lg max-w-none">
               {children}
             </div>
+          </BlogPostLayout>
+        </div>
 
+        {/* CTA Section */}
+        <CTA />
+
+        <div className="container max-w-4xl py-8">
+          <div className="prose prose-lg max-w-none">
             {/* FAQ Section if provided */}
             {faqs && faqs.length > 0 && (
               <section className="mt-12 mb-8">
@@ -148,11 +156,11 @@ const OptimizedBlogLayout = ({
 
             {/* Related Articles */}
             <InternalLinks articles={relatedArticles} />
-          </BlogPostLayout>
+          </div>
         </div>
       </main>
-      
-     
+
+
     </>
   );
 };
