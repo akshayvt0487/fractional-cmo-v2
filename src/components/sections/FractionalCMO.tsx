@@ -5,7 +5,7 @@ const FractionalCMO = () => {
   const benefits = [
   {
     icon: DollarSign,
-    title: "Cost-Effectigve Strategy",
+    title: "Cost-Effective Strategy",
     description: "Access senior-level marketing leadership at 60-80% less than a full-time CMO salary, benefits, and equity."
   },
   {
