@@ -81,7 +81,7 @@ const FractionalCMO = () => {
               </div>
               <div className="grid grid-cols-2 gap-4 text-sm border-t  border-gray-300 pt-4">
                 <div>Strategic Experience</div>
-                <div className="text-primary font-medium">10+ years, multi-industry</div>
+                <div className="text-primary font-medium">15+ years, multi-industry</div>
               </div>
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>Cost Commitment</div>
