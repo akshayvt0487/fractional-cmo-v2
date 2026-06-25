@@ -1,6 +1,5 @@
 'use client';
 
-import { SessionProvider } from 'next-auth/react';
 import { NavigationLoadingProvider } from '@/contexts/NavigationLoadingContext';
 import TopProgressBar from '@/components/ui/TopProgressBar';
 
@@ -9,12 +8,10 @@ import TopProgressBar from '@/components/ui/TopProgressBar';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <SessionProvider>
-      <NavigationLoadingProvider>
-        <TopProgressBar />
-        {children}
-        {/* <Toaster /> */}
-      </NavigationLoadingProvider>
-    </SessionProvider>
+    <NavigationLoadingProvider>
+      <TopProgressBar />
+      {children}
+      {/* <Toaster /> */}
+    </NavigationLoadingProvider>
   );
 }

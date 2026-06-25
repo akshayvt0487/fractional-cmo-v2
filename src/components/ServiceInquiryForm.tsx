@@ -7,10 +7,8 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { databases, APPWRITE_DATABASE_ID, APPWRITE_COLLECTION_STRATEGY_FORM_ID } from '@/integrations/appwrite/client';
-import { ID } from 'appwrite';
-import { sendStrategyFormNotification } from '@/lib/email';
-import { Send, CheckCircle } from 'lucide-react';
+import { Send, CheckCircle, Shield } from 'lucide-react';
+import SubmittingOverlay from "@/components/ui/SubmittingOverlay";
 
 interface ServiceInquiryFormProps {
   serviceName: string;
@@ -38,30 +36,20 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
     setIsSubmitting(true);
 
     try {
-      // Save to Appwrite database
-      await databases.createDocument(
-        APPWRITE_DATABASE_ID,
-        APPWRITE_COLLECTION_STRATEGY_FORM_ID,
-        ID.unique(),
-        {
-          name: formData.name,
-          email: formData.email,
-          company: formData.company || null,
-          phone: formData.phone || null,
-          service: serviceName,
-          challenge: formData.challenge,
-          created_at: new Date().toISOString()
-        }
-      );
-
-      // Send email notification
-      const emailResult = await sendStrategyFormNotification({
-        ...formData,
-        service: serviceName
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          source: 'Service Inquiry Form',
+          ...formData,
+          service: serviceName
+        }),
       });
 
-      if (!emailResult.success) {
-        console.error('Email notification failed:', emailResult.error);
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
       }
 
       setIsSubmitted(true);
@@ -96,92 +84,96 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
   }
 
   return (
-    <Card className="border-border/50 bg-background">
-      <CardHeader>
-        <CardTitle className="text-xl">Get a Free {serviceName} Consultation</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="grid grid-cols-2 gap-4">
+    <>
+      <SubmittingOverlay isVisible={isSubmitting} />
+      <Card className="w-full max-w-2xl mx-auto border-border/50 bg-background">
+        <CardHeader>
+          <CardTitle className="text-xl">Get a Free {serviceName} Consultation</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="name">Name *</Label>
+                <Input
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="email">Email *</Label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="company">Company</Label>
+                <Input
+                  id="company"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleInputChange}
+                  placeholder="Company name"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="phone">Phone</Label>
+                <Input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  placeholder="Your phone"
+                />
+              </div>
+            </div>
+
             <div className="space-y-2">
-              <Label htmlFor="name">Name *</Label>
-              <Input
-                id="name"
-                name="name"
-                value={formData.name}
+              <Label htmlFor="challenge">What&apos;s your biggest {serviceName.toLowerCase()} challenge? *</Label>
+              <Textarea
+                id="challenge"
+                name="challenge"
+                value={formData.challenge}
                 onChange={handleInputChange}
-                placeholder="Your name"
+                placeholder={`Tell us about your current ${serviceName.toLowerCase()} challenges and goals...`}
+                rows={3}
                 required
               />
             </div>
-            <div className="space-y-2">
-              <Label htmlFor="email">Email *</Label>
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                placeholder="your@email.com"
-                required
-              />
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <Label htmlFor="company">Company</Label>
-              <Input
-                id="company"
-                name="company"
-                value={formData.company}
-                onChange={handleInputChange}
-                placeholder="Company name"
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="phone">Phone</Label>
-              <Input
-                id="phone"
-                name="phone"
-                type="tel"
-                value={formData.phone}
-                onChange={handleInputChange}
-                placeholder="Your phone"
-              />
-            </div>
-          </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="challenge">What&apos;s your biggest {serviceName.toLowerCase()} challenge? *</Label>
-            <Textarea
-              id="challenge"
-              name="challenge"
-              value={formData.challenge}
-              onChange={handleInputChange}
-              placeholder={`Tell us about your current ${serviceName.toLowerCase()} challenges and goals...`}
-              rows={3}
-              required
-            />
-          </div>
+            <Button type="submit" className="w-full bg-[#0F172A] text-white hover:bg-[#1B2335] cursor-pointer" disabled={isSubmitting}>
+              {isSubmitting ? (
+                'Submitting...'
+              ) : (
+                <>
+                  <Send className="w-4 h-4 mr-2" />
+                  Get Free Consultation
+                </>
+              )}
+            </Button>
 
-          <Button type="submit" className="w-full  bg-[#0F172A] text-white hover:bg-[#1B2335] cursor-pointer" disabled={isSubmitting}>
-            {isSubmitting ? (
-              'Submitting...'
-            ) : (
-              <>
-                <Send className="w-4 h-4 mr-2" />
-                Get Free Consultation
-              </>
-            )}
-          </Button>
-          
-          <p className="text-xs text-muted-foreground text-center">
-            No spam. We&apos;ll respond within 24 hours.
-          </p>
-        </form>
-      </CardContent>
-    </Card>
+            <p className="text-sm text-muted-foreground text-center flex items-center justify-center gap-2">
+              <Shield className="w-4 h-4" />
+              Your information is secure and confidential
+            </p>
+          </form>
+        </CardContent>
+      </Card>
+    </>
   );
 };
 
