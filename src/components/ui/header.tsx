@@ -36,13 +36,6 @@ const getDailyFeaturedArticles = () => {
     selectedArticles.push(categoryArticles[articleIndex]);
   }
 
-  console.log('Header Featured Articles:', selectedArticles.map((a) => ({
-    title: a.title,
-    slug: a.slug,
-    category: a.category,
-    linkTo: `/blog/${a.slug}`
-  })));
-
   return selectedArticles;
 };
 

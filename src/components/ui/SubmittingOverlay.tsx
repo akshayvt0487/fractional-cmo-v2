@@ -32,8 +32,6 @@ export default function SubmittingOverlay({
     };
   }, [isVisible]);
 
-  console.log("SubmittingOverlay rendering:", { isVisible, mounted });
-
   if (!isVisible || !mounted) return null;
 
   return createPortal(
