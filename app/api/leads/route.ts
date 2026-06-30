@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     const webhookSecret = process.env.WEBHOOK_SECRET || '';
     if (webhookUrl) {
       try {
-        await fetch(webhookUrl, {
+        const response = await fetch(webhookUrl, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -48,9 +48,17 @@ export async function POST(req: Request) {
             submittedAt: new Date().toISOString()
           }),
         });
+
+        if (!response.ok) {
+          console.error('Google Sheets webhook HTTP error:', response.status, await response.text());
+        } else {
+          const resData = await response.json().catch(() => null);
+          if (resData && !resData.success) {
+            console.error('Google Sheets Webhook rejected request:', resData.error);
+          }
+        }
       } catch (webhookError) {
-        console.error('Error sending to Google Sheets webhook:', webhookError);
-        // Continue to send email even if webhook fails
+        console.error('Error sending to Google Sheets webhook network request:', webhookError);
       }
     } else {
       console.warn('GOOGLE_SHEETS_WEBHOOK_URL is not defined in environment variables.');
@@ -192,8 +200,9 @@ export async function POST(req: Request) {
 
       // Parse BCC recipients from comma-separated string, or use default array
       let bccRecipients = ['akshay@dsigns.com.au'];
-      if (typeof process.env.BREVO_BCC_RECIPIENTS !== 'undefined') {
-        bccRecipients = process.env.BREVO_BCC_RECIPIENTS.split(',').map(e => e.trim()).filter(Boolean);
+      const bccEnv = process.env.BREVO_BCC_RECIPIENTS;
+      if (bccEnv) {
+        bccRecipients = bccEnv.split(',').map((e: string) => e.trim()).filter(Boolean);
       }
 
       // Only add cc property if there are recipients
