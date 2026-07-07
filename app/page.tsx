@@ -1,5 +1,4 @@
 import { createMetadata, SITE_URL } from "@/lib/seo";
-import { generateOrganizationSchema, SchemaScript } from "@/lib/schemas";
 import Index from "@/app/pages/Index";
 
 export const metadata = createMetadata({
@@ -40,25 +39,51 @@ export const metadata = createMetadata({
   }
 });
 
-export default function Home() {
-  const organizationSchema = generateOrganizationSchema({
-    name: 'Fractional CMO',
-    description: 'Fractional CMO and Digital Marketing Strategist offering end-to-end growth systems for service businesses.',
-    url: SITE_URL,
-    imageUrl: `${SITE_URL.replace(/\/$/, '')}/images/Basheer-Padanna.png`,
-    socialProfiles: [
-      'https://www.facebook.com/FractionalCMO',
-      'https://www.linkedin.com/company/fractional-cmo',
-    ],
-    contactPoint: {
-      type: 'Customer Service',
-      email: 'contact@fractional-cmo.com.au',
+const organizationPersonSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://fractional-cmo.com.au/#organization",
+      "name": "Fractional CMO",
+      "description": "Fractional CMO and Digital Marketing Strategist offering end-to-end growth systems for service businesses.",
+      "url": "https://fractional-cmo.com.au/",
+      "image": "https://fractional-cmo.com.au/images/Basheer-Padanna.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "Basheer@fractional-cmo.com.au"
+      },
+      "founder": { "@type": "Person", "@id": "https://fractional-cmo.com.au/#basheer-padanna" },
+      "sameAs": [
+        "https://www.facebook.com/fractionalCMOau/",
+        "https://www.linkedin.com/company/fractional-cmo-au"
+      ]
     },
-  });
+    {
+      "@type": "Person",
+      "@id": "https://fractional-cmo.com.au/#basheer-padanna",
+      "name": "Basheer Padanna",
+      "jobTitle": "Fractional CMO, Growth Strategist & Performance Marketing Leader",
+      "description": "Fractional CMO and Digital Marketing Strategist with 15+ years of growth marketing and conversion optimization experience. Managed $2M+ in annual ad spend across Google Ads and Meta. Built and optimized 50+ high-converting landing page systems.",
+      "image": "https://fractional-cmo.com.au/images/Basheer-Padanna.png",
+      "url": "https://fractional-cmo.com.au/",
+      "worksFor": { "@type": "Organization", "@id": "https://fractional-cmo.com.au/#organization" },
+      "sameAs": [
+        "https://www.linkedin.com/in/basheerpadanna"
+      ],
+      "knowsAbout": ["Growth Marketing", "Performance Marketing", "CRO", "Google Ads", "Meta Advertising", "SEO", "Landing Page Optimization", "Lead Generation"]
+    }
+  ]
+};
 
+export default function Home() {
   return (
     <div>
-      <SchemaScript schema={organizationSchema} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationPersonSchema) }}
+      />
       <Index />
     </div>
   );
