@@ -42,15 +42,16 @@ export const metadata: Metadata = createMetadata({
 });
 
 // 1. Accept 'searchParams' as a prop here
-export default function ContactPage({
+export default async function ContactPage({
   searchParams,
 }: {
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
+  const resolvedSearchParams = await searchParams;
 
   // 2. Safely get the 'service' param
-  const serviceParam = typeof searchParams.service === 'string' 
-    ? searchParams.service 
+  const serviceParam = typeof resolvedSearchParams.service === 'string' 
+    ? resolvedSearchParams.service 
     : undefined;
 
   // 3. Pass it as a prop to your client component

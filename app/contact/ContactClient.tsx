@@ -9,18 +9,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-
-// 🟢 CORRECTED: Consolidated Appwrite imports
-// 1. Imports 'databases' and IDs from your established client file.
-// 2. Removed the duplicate import from "@/lib/appwrite".
-import { databases, APPWRITE_DATABASE_ID, APPWRITE_COLLECTION_CONTACT_SUBMISSION_ID } from "@/integrations/appwrite/client";
-// 3. Added 'ID' from the 'appwrite' package itself.
-import { ID } from "appwrite";
-
 import { Mail, Phone, MapPin, Send, Shield, Clock, Star, Users, CheckCircle, Award } from "lucide-react";
+
 import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
-import { sendContactFormNotification } from "@/lib/email";
+import SubmittingOverlay from "@/components/ui/SubmittingOverlay";
 
 // 🟢 CORRECTED: Moved serviceMapping outside the component
 // This prevents an infinite re-render loop by creating a stable constant.
@@ -34,7 +27,7 @@ const serviceMapping: Record<string, string> = {
   'consultation': 'consultation'
 };
 
-const ContactClient = ({ initialService }: {initialService?: string;}) => {
+const ContactClient = ({ initialService }: { initialService?: string; }) => {
   const router = useRouter();
 
   const [formData, setFormData] = useState({
@@ -60,29 +53,21 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // This validation is correct!
-    if (!APPWRITE_DATABASE_ID || !APPWRITE_COLLECTION_CONTACT_SUBMISSION_ID) {
-      console.error("Appwrite Database ID or Contact Submission Collection ID is not set.");
-      toast({
-        title: "Configuration Error",
-        description: "The form is not configured correctly. Please contact support.",
-        variant: "destructive"
-      });
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
-      // 🟢 CORRECTED: Use the imported constants instead of process.env
-      await databases.createDocument(
-        APPWRITE_DATABASE_ID,
-        APPWRITE_COLLECTION_CONTACT_SUBMISSION_ID,
-        ID.unique(),
-        formData
-      );
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          source: 'Contact Form',
+          ...formData
+        }),
+      });
 
-      // Send notification email to admin
-      await sendContactFormNotification(formData);
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
 
       // Navigate to thank you page
       router.push('/thank-you');
@@ -104,14 +89,15 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
 
   return (
     <>
+      <SubmittingOverlay isVisible={isSubmitting} />
       <Header />
       <div className="min-h-screen bg-background pt-32 max-w-[1400px] mx-auto">
         <div className="container max-w-6xl py-8">
           <BreadcrumbNavigation
             items={[
-            { label: "Contact", href: "/contact" }]
+              { label: "Contact", href: "/contact" }]
             } />
-          
+
         </div>
 
         <main className="container mx-auto px-6 py-12">
@@ -144,7 +130,7 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
                           value={formData.name}
                           onChange={(e) => handleInputChange("name", e.target.value)}
                           placeholder="Your full name" />
-                        
+
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="email">Business Email *</Label>
@@ -155,7 +141,7 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
                           value={formData.email}
                           onChange={(e) => handleInputChange("email", e.target.value)}
                           placeholder="your@company.com" />
-                        
+
                       </div>
                     </div>
 
@@ -168,7 +154,7 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
                           value={formData.company}
                           onChange={(e) => handleInputChange("company", e.target.value)}
                           placeholder="Your company name" />
-                        
+
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="phone">Phone Number *</Label>
@@ -179,7 +165,7 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
                           required
                           onChange={(e) => handleInputChange("phone", e.target.value)}
                           placeholder="+61 4XX XXX XXX" />
-                        
+
                       </div>
                     </div>
 
@@ -208,7 +194,7 @@ const ContactClient = ({ initialService }: {initialService?: string;}) => {
                         required
                         value={formData.message}
                         onChange={(e) => handleInputChange("message", e.target.value)}
-placeholder={`Please share:
+                        placeholder={`Please share:
 • What industry/niche you're in
 • Your biggest growth challenge right now
 • Current marketing efforts (if any)
@@ -220,14 +206,14 @@ placeholder={`Please share:
 
 
                         rows={6} />
-                      
+
                     </div>
 
                     <div className="bg-accent/10 rounded-lg p-4 text-sm text-muted-foreground">
                       <div className="flex items-start gap-2">
                         <Shield className="h-4 w-4 mt-0.5 text-primary" />
                         <p>
-                          <strong>Privacy:</strong> Your information is confidential and will never be shared. 
+                          <strong>Privacy:</strong> Your information is confidential and will never be shared.
                           I&apos;ll use it only to understand your business and provide relevant recommendations.
                         </p>
                       </div>
@@ -238,11 +224,11 @@ placeholder={`Please share:
                       className="w-full cursor-pointer" variant="hero"
                       disabled={isSubmitting}
                       size="lg">
-                      
-                      {isSubmitting ?
-                      "Sending Your Message..." :
 
-                      <>
+                      {isSubmitting ?
+                        "Sending Your Message..." :
+
+                        <>
                           Send Message & Get Free Insights <Send className="ml-2 h-4 w-4" />
                         </>
                       }
@@ -253,37 +239,37 @@ placeholder={`Please share:
             </div>
 
             <div className="mb-16 grid md:grid-cols-2 gap-8  items-center border-1 border-gray-300 p-10 rounded-2xl bg-blue-100/10">
-             
-
-                
-                
-                <div className="flex gap-4 items-center">
-                
-
-                  <div>
-                      <MapPin />
 
 
-                  </div>
-                 <div>
-                   <h4 className="text-xl font-semibold">  Fractional CMO</h4> 
-                 <p>
-                  Suite 611 </p>
-                 <p> Level 6</p> 
+
+
+              <div className="flex gap-4 items-center">
+
+
+                <div>
+                  <MapPin />
+
+
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold">  Fractional CMO</h4>
+                  <p>
+                    Suite 611 </p>
+                  <p> Level 6</p>
                   <p>150 George street Parramatta</p>
-                  </div> 
-                 
                 </div>
 
-                <div className="flex gap-4 items-start flex-col" >
-                  <p className="flex gap-2 font-semibold hover:text-blue-950"><Mail /> <a href="mailto:Basheer@fractional-cmo.com.au">Basheer@fractional-cmo.com.au </a> </p>
-                  <p className="flex  gap-2 font-semibold hover:text-blue-950"><Phone /> <a href="tel:0291918049"> 02 9191 8049</a></p>
+              </div>
+
+              <div className="flex gap-4 items-start flex-col" >
+                <p className="flex gap-2 font-semibold hover:text-blue-950"><Mail /> <a href="mailto:Basheer@fractional-cmo.com.au">Basheer@fractional-cmo.com.au </a> </p>
+                <p className="flex  gap-2 font-semibold hover:text-blue-950"><Phone /> <a href="tel:0291918049"> 02 9191 8049</a></p>
 
 
-                </div>
-               
+              </div>
 
- 
+
+
 
 
 

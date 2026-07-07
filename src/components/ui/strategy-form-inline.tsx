@@ -7,10 +7,8 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { databases, APPWRITE_DATABASE_ID, APPWRITE_COLLECTION_STRATEGY_FORM_ID } from '@/integrations/appwrite/client';
-import { ID } from 'appwrite';
-import { sendStrategyFormNotification } from '@/lib/email';
 import { Send, CheckCircle } from 'lucide-react';
+import SubmittingOverlay from '@/components/ui/SubmittingOverlay';
 
 interface StrategyFormInlineProps {
   preSelectedService?: string;
@@ -38,30 +36,20 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
     setIsSubmitting(true);
 
     try {
-      // Save to Appwrite database
-      await databases.createDocument(
-        APPWRITE_DATABASE_ID,
-        APPWRITE_COLLECTION_STRATEGY_FORM_ID,
-        ID.unique(),
-        {
-          name: formData.name,
-          email: formData.email,
-          company: formData.company || null,
-          phone: formData.phone || null,
-          service: preSelectedService || null,
-          challenge: formData.challenge,
-          created_at: new Date().toISOString()
-        }
-      );
-
-      // Send email notification
-      const emailResult = await sendStrategyFormNotification({
-        ...formData,
-        service: preSelectedService
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          source: 'Inline Strategy Form',
+          ...formData,
+          service: preSelectedService || null
+        }),
       });
 
-      if (!emailResult.success) {
-        console.error('Email notification failed:', emailResult.error);
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
       }
 
       setIsSubmitted(true);
@@ -96,8 +84,10 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
   }
 
   return (
-    <Card className="border-primary/20 bg-linear-to-br from-background to-primary/5">
-      <CardHeader>
+    <>
+      <SubmittingOverlay isVisible={isSubmitting} />
+      <Card className="border-primary/20 bg-linear-to-br from-background to-primary/5">
+        <CardHeader>
         <CardTitle className="text-xl">Get a Free {preSelectedService} Consultation</CardTitle>
       </CardHeader>
       <CardContent>
@@ -129,7 +119,7 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
               />
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="company">Company</Label>
@@ -180,13 +170,14 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
               </>
             )}
           </Button>
-          
+
           <p className="text-xs text-muted-foreground text-center">
             No spam. We&apos;ll respond within 24 hours.
           </p>
         </form>
       </CardContent>
     </Card>
+    </>
   );
 };
 

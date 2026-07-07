@@ -9,10 +9,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { databases, APPWRITE_DATABASE_ID, APPWRITE_COLLECTION_STRATEGY_FORM_ID } from "@/integrations/appwrite/client";
-import { ID } from "appwrite";
+import SubmittingOverlay from "@/components/ui/SubmittingOverlay";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { sendStrategyFormNotification } from "@/lib/email";
 
 const basheerImage = "/lovable-uploads/2975c655-d01c-4894-8737-276899af3f17.png";
 
@@ -55,19 +53,20 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
     setIsSubmitting(true);
 
     try {
-      if (!APPWRITE_DATABASE_ID || !APPWRITE_COLLECTION_STRATEGY_FORM_ID) {
-        throw new Error('Appwrite not configured');
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          source: 'Strategy Form Popup',
+          ...formData
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
       }
-
-      await databases.createDocument(
-        APPWRITE_DATABASE_ID,
-        APPWRITE_COLLECTION_STRATEGY_FORM_ID,
-        ID.unique(),
-        formData
-      );
-
-      // Send notification email to admin
-      await sendStrategyFormNotification(formData);
 
       toast({
         title: "Request submitted!",
@@ -103,8 +102,10 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogTrigger asChild>
+    <>
+      <SubmittingOverlay isVisible={isSubmitting} />
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+        <DialogTrigger asChild>
         <Button variant="hero" size="lg" className="w-full sm:w-auto ">
           Book a Free Strategy Call <ArrowRight />
         </Button>
@@ -113,9 +114,9 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
         <DialogHeader>
           <div className="flex items-center gap-4 pb-4">
             <Avatar className="h-16 w-16">
-              <AvatarImage 
-                src={basheerImage} 
-                alt="Basheer Padanna - Professional Fractional CMO and Growth Marketing Expert" 
+              <AvatarImage
+                src={basheerImage}
+                alt="Basheer Padanna - Professional Fractional CMO and Growth Marketing Expert"
                 className="object-cover"
               />
               <AvatarFallback className="bg-primary text-primary-foreground">BP</AvatarFallback>
@@ -238,6 +239,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
         </form>
       </DialogContent>
     </Dialog>
+    </>
   );
 };
 
