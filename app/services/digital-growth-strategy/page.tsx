@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { SITE_URL } from '@/lib/seo';
 import { getMainServicePageData } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
@@ -129,7 +130,11 @@ export default function DigitalGrowthStrategyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <ServiceLayout data={data} serviceSlug="digital-growth-strategy" />
+      <ServiceLayout data={data} serviceSlug="digital-growth-strategy">
+        <p className="text-lg text-muted-foreground">
+          Many clients engage us for strategy development, then have us manage execution through our <Link href="/" className="text-primary font-semibold hover:underline">Fractional CMO</Link> service for ongoing strategic guidance.
+        </p>
+      </ServiceLayout>
     </>
   );
 }

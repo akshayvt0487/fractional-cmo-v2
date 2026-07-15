@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { SITE_URL } from '@/lib/seo';
 import { getMainServicePageData } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
@@ -131,7 +132,11 @@ export default function SeoPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <ServiceLayout data={data} serviceSlug="seo" />
+      <ServiceLayout data={data} serviceSlug="seo">
+        <p className="text-lg text-muted-foreground">
+          SEO and paid advertising work together to maximise your search engine real estate and overall marketing effectiveness—a balance often coordinated by a <Link href="/" className="text-primary font-semibold hover:underline">Fractional CMO</Link> overseeing the full channel mix.
+        </p>
+      </ServiceLayout>
     </>
   );
 }

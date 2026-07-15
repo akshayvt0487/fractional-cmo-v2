@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { SITE_URL } from '@/lib/seo';
 import { getMainServicePageData } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
@@ -129,7 +130,11 @@ export default function SocialMediaMarketingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <ServiceLayout data={data} serviceSlug="social-media-marketing" />
+      <ServiceLayout data={data} serviceSlug="social-media-marketing">
+        <p className="text-lg text-muted-foreground">
+          Most businesses benefit from paid social and Google Ads working together strategically, often under the guidance of a <Link href="/" className="text-primary font-semibold hover:underline">Fractional CMO</Link> who aligns spend and messaging across channels.
+        </p>
+      </ServiceLayout>
     </>
   );
 }

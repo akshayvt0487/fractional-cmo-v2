@@ -233,7 +233,7 @@ const WhatIsFractionalCMO = () => {
 
       <h2>Getting Started with a Fractional CMO</h2>
       <p>
-        The typical engagement begins with a comprehensive marketing audit and strategy development phase, followed by implementation support and ongoing optimisation.
+        Under the guidance of <Link href="/about" className="text-primary font-semibold hover:underline">Basheer Padanna</Link>, the typical engagement begins with a comprehensive marketing audit and strategy development phase, followed by implementation support and ongoing optimisation.
       </p>
 
       <p>
@@ -429,7 +429,7 @@ const WhatIsFractionalCMO = () => {
       <div className="bg-card border rounded-lg p-6 my-8">
         <h3 className="text-xl font-semibold mb-4">Ready to Explore Fractional CMO Services?</h3>
         <p className="text-muted-foreground mb-4">
-          Schedule a strategic consultation to discuss how fractional marketing leadership can accelerate your business growth and transform your marketing effectiveness.
+          Schedule a strategic consultation to discuss how a <Link href="/" className="text-primary font-semibold hover:underline">Fractional CMO</Link> can accelerate your business growth and transform your marketing effectiveness.
         </p>
         <StrategyForm preSelectedService="strategy" />
       </div>

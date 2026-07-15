@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
@@ -117,7 +118,7 @@ const FinanceBrokerDigitalMarketing = () => {
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
-            Digital marketing has become essential for finance and mortgage brokers to compete in an increasingly online marketplace. Modern borrowers research options extensively online before contacting brokers, making a strong digital presence critical for business growth.
+            Digital marketing has become essential for finance and mortgage brokers to compete in an increasingly online marketplace. Modern borrowers research options extensively online before contacting brokers, making a strong digital presence critical for business growth — a strategy shaped in this guide by <Link href="/about" className="text-primary font-semibold hover:underline">our Fractional CMO, Basheer Padanna</Link>.
           </p>
         </CardContent>
       </Card>

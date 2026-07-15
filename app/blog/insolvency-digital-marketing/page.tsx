@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import Link from "next/link";
 import { blogPosts } from '@/data/blogPosts';
 
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
@@ -733,7 +734,7 @@ const InsolvencyDigitalMarketing = () => {
       <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
         <h3 className="text-xl font-semibold mb-3">Ready to Transform Your Insolvency Practice?</h3>
         <p className="mb-4">
-          Digital marketing for insolvency practitioners requires specialised expertise in both marketing strategy and understanding the unique dynamics of the insolvency sector. Our team has worked with insolvency practices across Australia to develop comprehensive digital strategies that generate consistent, high-quality appointments.
+          Digital marketing for insolvency practitioners requires specialised expertise in both marketing strategy and understanding the unique dynamics of the insolvency sector. This guide was developed by <Link href="/about" className="text-primary font-semibold hover:underline">our Fractional CMO, Basheer Padanna</Link>, who has worked with insolvency practices across Australia to build comprehensive digital strategies that generate consistent, high-quality appointments.
         </p>
         <p className="mb-0">
           Book a strategy call to discuss how we can help your practice build digital authority, attract more appointments, and grow your referrer network.

@@ -311,8 +311,8 @@ const ImmigrationLawyersDigitalMarketing = () => {
 
       </p>
       <p>
-        Remember that immigration clients often have complex, emotional needs and deserve marketing that respects 
-        their journey while clearly communicating how your expertise can help them achieve their migration goals.
+        Remember that immigration clients often have complex, emotional needs and deserve marketing that respects
+        their journey while clearly communicating how your expertise can help them achieve their migration goals — a strategic approach <Link href="/about" className="text-primary font-semibold hover:underline">our Fractional CMO, Basheer Padanna</Link>, applies when working with immigration law firms.
       </p>
     </OptimizedBlogLayout>
     </>

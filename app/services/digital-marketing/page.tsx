@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { SITE_URL } from '@/lib/seo';
 import { getMainServicePageData } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
@@ -129,7 +130,11 @@ export default function DigitalMarketingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <ServiceLayout data={data} serviceSlug="digital-marketing" />
+      <ServiceLayout data={data} serviceSlug="digital-marketing">
+        <p className="text-lg text-muted-foreground">
+          Our integrated marketing strategies align all channels toward unified business objectives, overseen with the strategic guidance of a <Link href="/" className="text-primary font-semibold hover:underline">Fractional CMO</Link>.
+        </p>
+      </ServiceLayout>
     </>
   );
 }

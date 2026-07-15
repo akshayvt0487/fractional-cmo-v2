@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { SITE_URL } from '@/lib/seo';
 import { getMainServicePageData, rawServiceData } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
@@ -180,7 +181,11 @@ export default function LeadGenerationPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <ServiceLayout data={data} serviceSlug="lead-generation" />
+      <ServiceLayout data={data} serviceSlug="lead-generation">
+        <p className="text-lg text-muted-foreground">
+          Our lead generation strategies align all channels toward unified business objectives, guided by the strategic oversight of a <Link href="/" className="text-primary font-semibold hover:underline">Fractional CMO</Link>.
+        </p>
+      </ServiceLayout>
     </>
   );
 }
