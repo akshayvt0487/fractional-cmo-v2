@@ -1,5 +1,6 @@
 import { createMetadata } from "@/lib/seo";
 import React from 'react';
+import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import StrategyForm from "@/components/ui/strategy-form";
 import { CheckCircle, Users, Globe, MessageCircle, Mail } from "lucide-react";
