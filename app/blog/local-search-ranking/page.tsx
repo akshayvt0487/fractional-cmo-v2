@@ -62,7 +62,7 @@ const LocalSearchRanking = () => {
     imageUrl: "/images/blog/local-search-ranking-hero.jpg",
     category: "Local SEO",
     readTime: "24 min read",
-    tags: ["Local SEO", "Search Engine Optimization", "Local Marketing", "Google My Business", "Local Search"]
+    tags: ["Local SEO", "Search Engine optimisation", "Local Marketing", "Google My Business", "Local Search"]
   };
 
   const blogPostingSchema = generateBlogPostingSchema({
@@ -81,10 +81,10 @@ const LocalSearchRanking = () => {
 
   const faqs = [{
     question: "How long does it take to see results from local SEO?",
-    answer: "Local SEO results typically appear within 3-6 months, with Google My Business optimizations showing improvements in 2-4 weeks. Consistent effort and quality content accelerate rankings."
+    answer: "Local SEO results typically appear within 3-6 months, with Google My Business optimisations showing improvements in 2-4 weeks. Consistent effort and quality content accelerate rankings."
   }, {
     question: "What's the most important factor for local search rankings?",
-    answer: "Google My Business optimization combined with consistent NAP (Name, Address, Phone) citations and positive reviews are the most critical factors for local search success."
+    answer: "Google My Business optimisation combined with consistent NAP (Name, Address, Phone) citations and positive reviews are the most critical factors for local search success."
   }, {
     question: "How many reviews do I need to rank well locally?",
     answer: "While there's no magic number, businesses with 25+ positive reviews typically outperform competitors. Focus on consistent review generation and professional responses to all feedback."
@@ -94,7 +94,7 @@ const LocalSearchRanking = () => {
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
     />
-    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/local-search-ranking-hero.jpg'} heroAlt="Local search ranking strategies and Google My Business optimization">
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/local-search-ranking-hero.jpg'} heroAlt="Local search ranking strategies and Google My Business optimisation">
         <h2>The Local Search Revolution</h2>
         
         <Card className="mb-8 bg-primary/5 border-primary/20">
@@ -118,13 +118,13 @@ const LocalSearchRanking = () => {
         <h2>Google My Business: Your Foundation for Success</h2>
         
         <p>
-          Google My Business (GMB) is your most powerful local SEO tool. A fully optimized GMB profile 
+          Google My Business (GMB) is your most powerful local SEO tool. A fully optimised GMB profile 
           can dramatically improve your local search visibility.
         </p>
 
         <Card className="mb-8">
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-4">GMB Optimization Checklist</h3>
+            <h3 className="text-xl font-semibold mb-4">GMB optimisation Checklist</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold mb-2">Basic Information</h4>
@@ -145,7 +145,7 @@ const LocalSearchRanking = () => {
                   <li>✓ Services/products list</li>
                   <li>✓ Attributes and amenities</li>
                   <li>✓ Regular posts and updates</li>
-                  <li>✓ Q&A optimization</li>
+                  <li>✓ Q&A optimisation</li>
                 </ul>
               </div>
             </div>
@@ -157,7 +157,7 @@ const LocalSearchRanking = () => {
         <div className="space-y-6">
           <Card className="border-l-4 border-l-primary">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">1. Citation Optimization (Days 1-7)</h3>
+              <h3 className="text-xl font-semibold mb-4">1. Citation optimisation (Days 1-7)</h3>
               <p className="mb-4">
                 Ensure your business information is consistent across all online directories.
               </p>
@@ -212,7 +212,7 @@ const LocalSearchRanking = () => {
                 <li>• Write about local events and community involvement</li>
                 <li>• Create service area pages for each location</li>
                 <li>• Publish local case studies and testimonials</li>
-                <li>• Optimize for &quot;near me&quot; searches</li>
+                <li>• optimise for &quot;near me&quot; searches</li>
                 <li>• Include local landmarks and neighborhoods</li>
               </ul>
             </CardContent>
@@ -233,7 +233,7 @@ const LocalSearchRanking = () => {
                   <h4 className="font-semibold mb-2">Essential Schema Types</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• LocalBusiness</li>
-                    <li>• Organization</li>
+                    <li>• organisation</li>
                     <li>• Review</li>
                     <li>• FAQ</li>
                     <li>• Service</li>
@@ -260,7 +260,7 @@ const LocalSearchRanking = () => {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>• Partner with local businesses for cross-promotion</li>
-                <li>• Sponsor local events and organizations</li>
+                <li>• Sponsor local events and organisations</li>
                 <li>• Get featured in local media and publications</li>
                 <li>• Join local business associations</li>
                 <li>• Create valuable resources for the community</li>
@@ -270,7 +270,7 @@ const LocalSearchRanking = () => {
 
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Mobile-First Optimization</h3>
+              <h3 className="text-xl font-semibold mb-4">Mobile-First optimisation</h3>
               <p className="mb-4">
                 Ensure your website performs perfectly on mobile devices for local searchers.
               </p>
@@ -279,13 +279,13 @@ const LocalSearchRanking = () => {
                 <li>• Touch-friendly navigation and buttons</li>
                 <li>• Click-to-call phone numbers</li>
                 <li>• Easy-to-find contact information</li>
-                <li>• Mobile-optimized maps and directions</li>
+                <li>• Mobile-optimised maps and directions</li>
               </ul>
             </CardContent>
           </Card>
         </div>
 
-        <h2>Local Keyword Research and Optimization</h2>
+        <h2>Local Keyword Research and optimisation</h2>
         
         <Card className="mb-6">
           <CardContent className="p-6">
@@ -366,7 +366,7 @@ const LocalSearchRanking = () => {
                   <h4 className="font-semibold mb-2">Essential Schema Types</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• LocalBusiness schema</li>
-                    <li>• Organization schema</li>
+                    <li>• organisation schema</li>
                     <li>• Review schema</li>
                     <li>• Product/Service schema</li>
                     <li>• FAQ schema</li>
@@ -378,7 +378,7 @@ const LocalSearchRanking = () => {
                     <li>• Enhanced search appearance</li>
                     <li>• Rich snippets in results</li>
                     <li>• Better click-through rates</li>
-                    <li>• Voice search optimization</li>
+                    <li>• Voice search optimisation</li>
                     <li>• Competitive advantage</li>
                   </ul>
                 </div>
@@ -396,7 +396,7 @@ const LocalSearchRanking = () => {
                 <li>• Create dedicated location pages for each service area</li>
                 <li>• Write blog posts about local events and community involvement</li>
                 <li>• Include local landmarks and references in content</li>
-                <li>• Optimize for &quot;near me&quot; searches with contextual content</li>
+                <li>• optimise for &quot;near me&quot; searches with contextual content</li>
                 <li>• Feature local customer testimonials and case studies</li>
                 <li>• Create neighborhood guides and local resources</li>
               </ul>
@@ -408,10 +408,10 @@ const LocalSearchRanking = () => {
 
         <Card className="mb-8">
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Technical Optimization Checklist</h3>
+            <h3 className="text-xl font-semibold mb-4">Technical optimisation Checklist</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
-                <h4 className="font-semibold mb-3 text-primary">Mobile Optimization</h4>
+                <h4 className="font-semibold mb-3 text-primary">Mobile optimisation</h4>
                 <ul className="space-y-2 text-sm">
                   <li>✓ Mobile-responsive design</li>
                   <li>✓ Fast mobile page speed (under 3s)</li>
@@ -423,11 +423,11 @@ const LocalSearchRanking = () => {
               <div>
                 <h4 className="font-semibold mb-3 text-primary">Site Performance</h4>
                 <ul className="space-y-2 text-sm">
-                  <li>✓ Page load speed optimization</li>
-                  <li>✓ Image compression and optimization</li>
+                  <li>✓ Page load speed optimisation</li>
+                  <li>✓ Image compression and optimisation</li>
                   <li>✓ Browser caching enabled</li>
                   <li>✓ Content Delivery Network (CDN)</li>
-                  <li>✓ Minimize redirects</li>
+                  <li>✓ minimise redirects</li>
                 </ul>
               </div>
               <div>
@@ -437,7 +437,7 @@ const LocalSearchRanking = () => {
                   <li>✓ Accessible navigation</li>
                   <li>✓ Clear site structure</li>
                   <li>✓ XML sitemap submission</li>
-                  <li>✓ Robots.txt optimization</li>
+                  <li>✓ Robots.txt optimisation</li>
                 </ul>
               </div>
             </div>
@@ -450,14 +450,14 @@ const LocalSearchRanking = () => {
           <CardContent className="p-6">
             <h3 className="text-xl font-semibold mb-4">Understanding Your Local Competition</h3>
             <p className="mb-4">
-              Analyze competitors to identify opportunities and develop strategies that help you stand out in local search.
+              analyse competitors to identify opportunities and develop strategies that help you stand out in local search.
             </p>
             <div className="space-y-4">
               <div>
                 <h4 className="font-semibold mb-2">Competitor Analysis Framework</h4>
                 <ul className="space-y-2 text-sm">
                   <li>• Identify top 5-10 local competitors in search results</li>
-                  <li>• Analyze their GMB profiles (photos, posts, reviews)</li>
+                  <li>• analyse their GMB profiles (photos, posts, reviews)</li>
                   <li>• Review their website content and structure</li>
                   <li>• Check their citation profiles and backlinks</li>
                   <li>• Monitor their social media presence</li>
@@ -468,24 +468,24 @@ const LocalSearchRanking = () => {
                 <h4 className="font-semibold mb-2">Differentiation Strategies</h4>
                 <p className="text-sm mb-2">Find gaps in competitor offerings:</p>
                 <ul className="space-y-1 text-sm">
-                  <li>• Specialize in underserved service areas</li>
+                  <li>• specialise in underserved service areas</li>
                   <li>• Offer extended hours or emergency services</li>
                   <li>• Provide unique guarantees or warranties</li>
                   <li>• Highlight superior customer service</li>
-                  <li>• Emphasize local expertise and community ties</li>
+                  <li>• emphasise local expertise and community ties</li>
                 </ul>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <h2>Voice Search Optimization</h2>
+        <h2>Voice Search optimisation</h2>
 
         <Card className="mb-8 bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Optimizing for Voice Queries</h3>
+            <h3 className="text-xl font-semibold mb-4">optimising for Voice Queries</h3>
             <p className="mb-4">
-              58% of consumers use voice search to find local business information. Optimize for conversational queries.
+              58% of consumers use voice search to find local business information. optimise for conversational queries.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -494,12 +494,12 @@ const LocalSearchRanking = () => {
                   <li>• Use natural, conversational language</li>
                   <li>• Target question-based keywords</li>
                   <li>• Create FAQ pages with clear answers</li>
-                  <li>• Optimize for &quot;near me&quot; queries</li>
+                  <li>• optimise for &quot;near me&quot; queries</li>
                   <li>• Include long-tail local keywords</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold mb-3">Featured Snippet Optimization</h4>
+                <h4 className="font-semibold mb-3">Featured Snippet optimisation</h4>
                 <ul className="space-y-2 text-sm">
                   <li>• Answer questions concisely (40-60 words)</li>
                   <li>• Use proper heading structure</li>
@@ -523,7 +523,7 @@ const LocalSearchRanking = () => {
                   <h4 className="font-semibold mb-2">Systematic Review Request Process</h4>
                   <ol className="space-y-2 text-sm list-decimal list-inside">
                     <li>Identify satisfied customers immediately after service completion</li>
-                    <li>Send personalized review request via email or SMS</li>
+                    <li>Send personalised review request via email or SMS</li>
                     <li>Provide direct links to review platforms (GMB, industry-specific sites)</li>
                     <li>Make the process as simple as possible (1-2 clicks)</li>
                     <li>Follow up once if no response (respectfully)</li>
@@ -586,7 +586,7 @@ const LocalSearchRanking = () => {
                     <li>❌ Using stock photos instead of real images</li>
                     <li>❌ Neglecting GMB posts and updates</li>
                     <li>❌ Keyword stuffing in GMB description</li>
-                    <li>❌ Not optimizing for voice search</li>
+                    <li>❌ Not optimising for voice search</li>
                   </ul>
                 </div>
               </div>
@@ -607,7 +607,7 @@ const LocalSearchRanking = () => {
                 <li>• Focus on emergency service keywords</li>
                 <li>• Highlight 24/7 availability</li>
                 <li>• Showcase before/after photos</li>
-                <li>• Emphasize licensing and insurance</li>
+                <li>• emphasise licensing and insurance</li>
                 <li>• Create service area pages</li>
                 <li>• Target &quot;near me&quot; searches</li>
               </ul>
@@ -621,7 +621,7 @@ const LocalSearchRanking = () => {
                 Stores, cafes, restaurants, shops
               </p>
               <ul className="space-y-2 text-sm">
-                <li>• Optimize for &quot;open now&quot; searches</li>
+                <li>• optimise for &quot;open now&quot; searches</li>
                 <li>• Keep hours updated (including holidays)</li>
                 <li>• Add menu/product photos regularly</li>
                 <li>• Use GMB attributes (outdoor seating, etc.)</li>
@@ -641,7 +641,7 @@ const LocalSearchRanking = () => {
                 <li>• Highlight credentials and expertise</li>
                 <li>• Create educational content</li>
                 <li>• Focus on trust signals</li>
-                <li>• Optimize for specific practice areas</li>
+                <li>• optimise for specific practice areas</li>
                 <li>• Share case studies and testimonials</li>
                 <li>• Enable appointment booking</li>
               </ul>
@@ -740,15 +740,15 @@ const LocalSearchRanking = () => {
             <div className="space-y-4">
               <div>
                 <h4 className="font-semibold mb-2">Week 1: Foundation</h4>
-                <p className="text-sm">Claim and optimize GMB, ensure NAP consistency, submit to major directories</p>
+                <p className="text-sm">Claim and optimise GMB, ensure NAP consistency, submit to major directories</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Week 2-3: Content & Reviews</h4>
                 <p className="text-sm">Create location pages, implement schema markup, start review generation</p>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">Week 4-8: Scale & Optimize</h4>
-                <p className="text-sm">Build citations, create local content, optimize technical SEO, monitor rankings</p>
+                <h4 className="font-semibold mb-2">Week 4-8: Scale & optimise</h4>
+                <p className="text-sm">Build citations, create local content, optimise technical SEO, monitor rankings</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Ongoing: Maintain & Improve</h4>

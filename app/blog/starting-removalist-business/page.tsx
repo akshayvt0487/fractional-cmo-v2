@@ -243,8 +243,8 @@ const StartingRemovalistBusiness = () => {
                   <h3>Digital Marketing</h3>
                   <ul>
                     <li>Professional website with online booking system</li>
-                    <li>Google My Business optimization</li>
-                    <li>Search engine optimization (SEO)</li>
+                    <li>Google My Business optimisation</li>
+                    <li>Search engine optimisation (SEO)</li>
                     <li>Social media presence (Facebook, Instagram)</li>
                     <li>Google Ads campaigns</li>
                   </ul>
@@ -309,7 +309,7 @@ const StartingRemovalistBusiness = () => {
                 <p>
                   Starting a removalist business requires careful planning, but with the right approach, 
                   it can be a rewarding and profitable venture. Take it step by step, focus on quality service, 
-                  and always prioritize customer satisfaction.
+                  and always prioritise customer satisfaction.
                 </p>
     </OptimizedBlogLayout>
     </>;

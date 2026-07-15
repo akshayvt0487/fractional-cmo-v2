@@ -103,7 +103,7 @@ const WhenToHireFractionalCMO = () => {
         </p>
         
         <p>
-          Understanding when to bridge this gap with a <strong>Fractional CMO</strong> can be the difference between continued struggle and accelerated growth. The key is recognizing the warning signs and readiness indicators that signal your business is ready for strategic marketing leadership.
+          Understanding when to bridge this gap with a <strong>Fractional CMO</strong> can be the difference between continued struggle and accelerated growth. The key is recognising the warning signs and readiness indicators that signal your business is ready for strategic marketing leadership.
         </p>
 
         <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-8 my-12">
@@ -143,7 +143,7 @@ const WhenToHireFractionalCMO = () => {
 
               <h2 className="text-3xl font-bold mb-6 mt-12">Business Readiness Indicators</h2>
               <p className="text-lg leading-relaxed mb-8">
-                Not every business is ready for strategic marketing leadership. Here are the key indicators that suggest your organization would benefit from a Fractional CMO:
+                Not every business is ready for strategic marketing leadership. Here are the key indicators that suggest your organisation would benefit from a Fractional CMO:
               </p>
 
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-8 my-12">
@@ -164,11 +164,11 @@ const WhenToHireFractionalCMO = () => {
 
               <h3>1. Revenue Plateau Despite Marketing Investment</h3>
               <p>
-                You're spending significant money on marketing ($15K+ monthly) but seeing diminishing returns. This often indicates a lack of strategic coordination between channels and missing optimization opportunities.
+                You're spending significant money on marketing ($15K+ monthly) but seeing diminishing returns. This often indicates a lack of strategic coordination between channels and missing optimisation opportunities.
               </p>
 
               <blockquote className="border-l-4 border-primary pl-4 italic my-6">
-                "We were spending $25K monthly on Google Ads and Facebook but our customer acquisition costs kept rising. We needed someone to see the bigger picture and optimize our entire funnel." - Tech Startup CEO
+                "We were spending $25K monthly on Google Ads and Facebook but our customer acquisition costs kept rising. We needed someone to see the bigger picture and optimise our entire funnel." - Tech Startup CEO
               </blockquote>
 
               <h3>2. Rapid Growth Overwhelming Current Systems</h3>
@@ -183,7 +183,7 @@ const WhenToHireFractionalCMO = () => {
 
               <h3>4. Marketing Team Lacks Strategic Direction</h3>
               <p>
-                Your marketing team excels at execution but lacks the strategic oversight to prioritize effectively and coordinate efforts for maximum impact.
+                Your marketing team excels at execution but lacks the strategic oversight to prioritise effectively and coordinate efforts for maximum impact.
               </p>
 
               <h3>5. Competitive Pressure Intensifying</h3>
@@ -256,14 +256,14 @@ const WhenToHireFractionalCMO = () => {
                 <strong>Ideal timing:</strong> When experiencing rapid growth or channel saturation
               </p>
               <ul>
-                <li>Need multi-channel coordination and optimization</li>
+                <li>Need multi-channel coordination and optimisation</li>
                 <li>Require customer lifetime value improvement</li>
                 <li>Want to expand product lines or markets</li>
               </ul>
 
               <h2>How to Assess Your Current Marketing Maturity</h2>
               <p>
-                Use this framework to evaluate where your marketing organization stands:
+                Use this framework to evaluate where your marketing organisation stands:
               </p>
 
               <div className="bg-card border rounded-lg p-6 my-8">
@@ -296,7 +296,7 @@ const WhenToHireFractionalCMO = () => {
                       <ul className="space-y-1">
                         <li>• Integrated strategy</li>
                         <li>• Data-driven decisions</li>
-                        <li>• Continuous optimization</li>
+                        <li>• Continuous optimisation</li>
                       </ul>
                     </div>
                   </div>
@@ -415,7 +415,7 @@ const WhenToHireFractionalCMO = () => {
                      <h4 className="font-medium mb-3">Strategy Development</h4>
                      <ul className="space-y-2 text-sm text-muted-foreground">
                        <li>• Comprehensive marketing strategy creation</li>
-                       <li>• Channel optimization roadmap</li>
+                       <li>• Channel optimisation roadmap</li>
                        <li>• Content strategy and calendar</li>
                        <li>• Lead generation system design</li>
                        <li>• Brand positioning refinement</li>
@@ -427,7 +427,7 @@ const WhenToHireFractionalCMO = () => {
                        <li>• Marketing automation setup</li>
                        <li>• Analytics and tracking implementation</li>
                        <li>• Process documentation and training</li>
-                       <li>• Team workflow optimization</li>
+                       <li>• Team workflow optimisation</li>
                        <li>• Performance dashboard creation</li>
                      </ul>
                    </div>
@@ -435,7 +435,7 @@ const WhenToHireFractionalCMO = () => {
                </div>
 
                <div className="bg-muted/50 p-6 rounded-lg my-8">
-                 <h3 className="text-lg font-semibold mb-4">Phase 3: Execution and Optimization (Days 61-90)</h3>
+                 <h3 className="text-lg font-semibold mb-4">Phase 3: Execution and optimisation (Days 61-90)</h3>
                  <div className="grid md:grid-cols-2 gap-6">
                    <div>
                      <h4 className="font-medium mb-3">Campaign Launch</h4>
@@ -491,7 +491,7 @@ const WhenToHireFractionalCMO = () => {
                  <h4 className="font-semibold mb-3 text-purple-800 dark:text-purple-200">Growth Phase Indicators</h4>
                  <ul className="space-y-2 text-sm text-purple-700 dark:text-purple-300">
                    <li>• Multi-channel marketing coordination becoming complex</li>
-                   <li>• Customer lifetime value (CLV) optimization opportunities</li>
+                   <li>• Customer lifetime value (CLV) optimisation opportunities</li>
                    <li>• Seasonal fluctuations requiring strategic planning</li>
                    <li>• International expansion or new product line launches</li>
                    <li>• Need for sophisticated retention and loyalty programs</li>
@@ -552,7 +552,7 @@ const WhenToHireFractionalCMO = () => {
                    <tbody>
                      <tr>
                        <td className="border border-border p-4 font-medium">3 Months</td>
-                       <td className="border border-border p-4">Strategic clarity, process optimization, quick wins</td>
+                       <td className="border border-border p-4">Strategic clarity, process optimisation, quick wins</td>
                        <td className="border border-border p-4">1.5-2.5x investment</td>
                      </tr>
                      <tr>

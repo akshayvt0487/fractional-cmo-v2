@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   },
 
   title: "How to Generate Leads for Home Builders | Digital Strategies 2026",
-  description: "Discover how home builders can attract high-quality leads with digital strategies, optimized websites, and effective marketing campaigns.",
+  description: "Discover how home builders can attract high-quality leads with digital strategies, optimised websites, and effective marketing campaigns.",
   path: "/blog/home-builders-lead-generation",
   keywords: ["home", "builders", "lead", "generation", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
@@ -80,13 +80,13 @@ const HomeBuildersLeadGeneration = () => {
 
   const faqs = [{
     question: "What's the best lead generation strategy for home builders?",
-    answer: "A combination of showcase marketing, local SEO, and referral programs works best. Focus on visual content that demonstrates quality craftsmanship while optimizing for local search to capture prospects actively looking for builders."
+    answer: "A combination of showcase marketing, local SEO, and referral programs works best. Focus on visual content that demonstrates quality craftsmanship while optimising for local search to capture prospects actively looking for builders."
   }, {
     question: "How long does it take to see results from builder marketing?",
     answer: "Initial leads typically appear within 30-60 days, with significant results usually visible after 3-6 months of consistent marketing efforts. Home building has longer sales cycles, so patience and nurturing are essential."
   }, {
     question: "Should home builders focus on custom or spec home marketing?",
-    answer: "Both markets require different approaches. Custom home marketing emphasizes luxury and personalization, while spec home marketing focuses on move-in ready convenience and value. Consider your target market and capabilities."
+    answer: "Both markets require different approaches. Custom home marketing emphasises luxury and personalisation, while spec home marketing focuses on move-in ready convenience and value. Consider your target market and capabilities."
   }];
   return <>
     <script
@@ -109,7 +109,7 @@ const HomeBuildersLeadGeneration = () => {
       </ul>
 
       <h2>Digital Foundation for Lead Generation</h2>
-      <h3>Website Optimization for Builders</h3>
+      <h3>Website optimisation for Builders</h3>
       <p>Your website must showcase quality and build trust:</p>
       <ul>
         <li>High-quality project galleries with before/after photos</li>
@@ -166,7 +166,7 @@ const HomeBuildersLeadGeneration = () => {
       <h3>Local SEO for Home Builders</h3>
       <p>Dominate local search results when prospects look for builders in your area:</p>
       <ul>
-        <li><strong>Google My Business Optimization:</strong> Complete profile with photos and reviews</li>
+        <li><strong>Google My Business optimisation:</strong> Complete profile with photos and reviews</li>
         <li><strong>Local Directory Listings:</strong> Consistent NAP across all platforms</li>
         <li><strong>Location-Specific Content:</strong> Neighborhood and suburb-focused pages</li>
         <li><strong>Local Keyword Targeting:</strong> &quot;Custom home builders [city name]&quot;</li>
@@ -200,7 +200,7 @@ const HomeBuildersLeadGeneration = () => {
       <h3>CRM Systems for Builders</h3>
       <p>Implement technology that tracks and nurtures leads effectively:</p>
       <ul>
-        <li><strong>Lead Scoring Systems:</strong> Prioritize prospects based on readiness</li>
+        <li><strong>Lead Scoring Systems:</strong> prioritise prospects based on readiness</li>
         <li><strong>Automated Follow-up Sequences:</strong> Consistent communication workflows</li>
         <li><strong>Project Management Integration:</strong> Connect sales to construction phases</li>
         <li><strong>Communication Tracking:</strong> Record all client interactions</li>
@@ -230,7 +230,7 @@ const HomeBuildersLeadGeneration = () => {
       </ul>
 
       <h3>Lead Scoring Metrics</h3>
-      <p>Implement systematic scoring to prioritize sales efforts:</p>
+      <p>Implement systematic scoring to prioritise sales efforts:</p>
       <ul>
         <li><strong>Demographic Scoring:</strong> Location, income, property ownership</li>
         <li><strong>Behavioral Scoring:</strong> Website activity, content engagement</li>
@@ -282,7 +282,7 @@ const HomeBuildersLeadGeneration = () => {
 
       <h2>Home Show and Event Marketing</h2>
       
-      <h3>Maximizing Home Show ROI</h3>
+      <h3>maximising Home Show ROI</h3>
       <p>Strategic approach to home shows and industry events:</p>
 
       <Card className="p-6 my-8">
@@ -316,7 +316,7 @@ const HomeBuildersLeadGeneration = () => {
             <strong className="text-primary">Follow-Up Process:</strong>
             <ul className="mt-2 ml-4 space-y-1 text-sm">
               <li>• Contact within 24 hours of show</li>
-              <li>• Personalized follow-up based on conversation</li>
+              <li>• personalised follow-up based on conversation</li>
               <li>• Invitation to view model homes or current builds</li>
             </ul>
           </div>
@@ -359,10 +359,10 @@ const HomeBuildersLeadGeneration = () => {
         <li><strong>Special Offers:</strong> Limited-time incentives or promotions</li>
       </ul>
 
-      <h2>Performance Measurement and Optimization</h2>
+      <h2>Performance Measurement and optimisation</h2>
       
       <h3>Key Performance Indicators</h3>
-      <p>Track these metrics to optimize your lead generation efforts:</p>
+      <p>Track these metrics to optimise your lead generation efforts:</p>
 
       <Card className="p-6 my-8">
         <h4 className="font-semibold mb-4">Critical Metrics Dashboard</h4>
@@ -445,7 +445,7 @@ const HomeBuildersLeadGeneration = () => {
         <div className="mb-4">
           <strong className="text-primary">Solution Implemented:</strong>
           <ul className="mt-2 space-y-1">
-            <li>• Local SEO optimization targeting suburb-specific keywords</li>
+            <li>• Local SEO optimisation targeting suburb-specific keywords</li>
             <li>• Facebook and Instagram ads showcasing spec homes</li>
             <li>• Virtual tour technology for online viewing</li>
             <li>• Email drip campaigns for prospect nurturing</li>
@@ -472,7 +472,7 @@ const HomeBuildersLeadGeneration = () => {
         <p className="text-sm text-muted-foreground mb-4">For builders investing $3,000-5,000/month in marketing</p>
         <ul className="space-y-2">
           <li><strong>Google Ads (30-40%):</strong> $900-2,000 for search and display campaigns</li>
-          <li><strong>Website & SEO (20-25%):</strong> $600-1,250 for optimization and content</li>
+          <li><strong>Website & SEO (20-25%):</strong> $600-1,250 for optimisation and content</li>
           <li><strong>Photography/Video (15-20%):</strong> $450-1,000 for professional visual content</li>
           <li><strong>Social Media Ads (15-20%):</strong> $450-1,000 for Facebook/Instagram campaigns</li>
           <li><strong>Email Marketing (5-10%):</strong> $150-500 for automation and campaigns</li>
@@ -490,8 +490,8 @@ const HomeBuildersLeadGeneration = () => {
             <h4 className="font-semibold text-primary mb-2">Days 1-30: Foundation</h4>
             <ul className="space-y-1">
               <li>□ Professional photography of 5-10 best projects</li>
-              <li>□ Website optimization (galleries, testimonials, clear CTAs)</li>
-              <li>□ Google My Business optimization with photos and posts</li>
+              <li>□ Website optimisation (galleries, testimonials, clear CTAs)</li>
+              <li>□ Google My Business optimisation with photos and posts</li>
               <li>□ Set up tracking systems (Google Analytics, call tracking)</li>
               <li>□ Create email nurture sequences</li>
               <li>□ Develop lead magnet (design guide or cost calculator)</li>
@@ -503,7 +503,7 @@ const HomeBuildersLeadGeneration = () => {
             <ul className="space-y-1">
               <li>□ Launch Google Ads campaigns ($1,500-2,500/month)</li>
               <li>□ Begin Facebook/Instagram advertising</li>
-              <li>□ Publish 5 SEO-optimized blog articles</li>
+              <li>□ Publish 5 SEO-optimised blog articles</li>
               <li>□ Create 3 video walkthroughs of recent builds</li>
               <li>□ Start monthly email newsletter</li>
               <li>□ Implement referral program for past clients</li>
@@ -511,9 +511,9 @@ const HomeBuildersLeadGeneration = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-primary mb-2">Days 61-90: Optimize & Expand</h4>
+            <h4 className="font-semibold text-primary mb-2">Days 61-90: optimise & Expand</h4>
             <ul className="space-y-1">
-              <li>□ Analyze channel performance and adjust budget</li>
+              <li>□ analyse channel performance and adjust budget</li>
               <li>□ A/B test landing pages and ad creative</li>
               <li>□ Launch remarketing campaigns</li>
               <li>□ Create case study content</li>
@@ -554,7 +554,7 @@ const HomeBuildersLeadGeneration = () => {
       </Card>
 
       <h2>Continuous Improvement Process</h2>
-      <p>Regularly analyze and optimize your lead generation strategies:</p>
+      <p>Regularly analyse and optimise your lead generation strategies:</p>
       <ul>
         <li><strong>Weekly Performance Check:</strong> Monitor lead volume and quality</li>
         <li><strong>Monthly Reviews:</strong> Deep dive into all channel performance</li>
@@ -571,7 +571,7 @@ const HomeBuildersLeadGeneration = () => {
       </p>
 
       <p className="text-lg font-semibold">
-        Start with the fundamentals—professional photography, optimized website, and Google Ads—then expand into additional channels as you build momentum. Remember, home building has a long sales cycle, so patience and consistent nurturing are essential for converting prospects into contracts.
+        Start with the fundamentals—professional photography, optimised website, and Google Ads—then expand into additional channels as you build momentum. Remember, home building has a long sales cycle, so patience and consistent nurturing are essential for converting prospects into contracts.
       </p>
 
       <Card className="p-6 my-8 bg-primary/5">

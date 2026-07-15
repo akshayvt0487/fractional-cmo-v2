@@ -20,7 +20,7 @@ export const metadata = createMetadata({
   },
 
   title: "Bricklayer Lead Generation Strategies | Get More Jobs 2026",
-  description: "Proven lead generation tactics for bricklayers: attract more clients, optimize local SEO, use Google Ads & social media to secure high-value projects in 2026.",
+  description: "Proven lead generation tactics for bricklayers: attract more clients, optimise local SEO, use Google Ads & social media to secure high-value projects in 2026.",
   path: "/blog/bricklayers-lead-generation",
   keywords: [
     "bricklayer lead generation",
@@ -33,7 +33,7 @@ export const metadata = createMetadata({
   ],
   openGraph: {
     title: "Bricklayer Lead Generation Strategies | Get More Jobs 2026",
-    description: "Proven lead generation tactics for bricklayers: attract more clients, optimize local SEO, use Google Ads & social media to secure high-value projects in 2026.",
+    description: "Proven lead generation tactics for bricklayers: attract more clients, optimise local SEO, use Google Ads & social media to secure high-value projects in 2026.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/bricklayers-lead-generation`,
     siteName: "Fractional CMO",
     type: "article",
@@ -50,7 +50,7 @@ export const metadata = createMetadata({
   twitter: {
     card: "summary_large_image",
     title: "Bricklayer Lead Generation Strategies | Get More Jobs 2026",
-    description: "Proven lead generation tactics for bricklayers: attract more clients, optimize local SEO, use Google Ads & social media to secure high-value projects in 2026.",
+    description: "Proven lead generation tactics for bricklayers: attract more clients, optimise local SEO, use Google Ads & social media to secure high-value projects in 2026.",
     images: ["https://fractional-cmo.com.au/images/blog/bricklayers-lead-generation.jpg"],
     site: "@FractionalCMO"
   }
@@ -78,7 +78,7 @@ const BricklayersLeadGeneration = () => {
   if (!post) throw new Error("Blog post not found: bricklayers-lead-generation");
   const articleData = {
     headline: "Bricklayer Lead Generation: Proven Strategies to Get More Jobs",
-    description: "Proven lead generation tactics for bricklayers: attract more clients, optimize local SEO, use Google Ads & social media to secure high-value projects in 2026.",
+    description: "Proven lead generation tactics for bricklayers: attract more clients, optimise local SEO, use Google Ads & social media to secure high-value projects in 2026.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.357Z", // Synced with metadata for freshness
@@ -104,7 +104,7 @@ const BricklayersLeadGeneration = () => {
     },
     {
       question: "What types of projects should bricklayers target for lead generation?",
-      answer: "Focus on your strengths - whether that's new home construction, restoration work, commercial projects, or decorative brickwork. Specializing in specific project types often leads to higher-paying jobs and better client relationships."
+      answer: "Focus on your strengths - whether that's new home construction, restoration work, commercial projects, or decorative brickwork. specialising in specific project types often leads to higher-paying jobs and better client relationships."
     }
   ];
 
@@ -249,13 +249,13 @@ const BricklayersLeadGeneration = () => {
         <h2 className="text-3xl font-bold mb-8 text-foreground">Digital Lead Generation Strategies</h2>
 
         <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 text-foreground">Google My Business Optimization</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-foreground">Google My Business optimisation</h3>
           <p className="text-muted-foreground mb-6">
-            Your Google My Business listing is often the first impression potential clients have of your business. Optimizing it properly can dramatically increase your local visibility.
+            Your Google My Business listing is often the first impression potential clients have of your business. optimising it properly can dramatically increase your local visibility.
           </p>
 
           <div className="bg-primary/5 border border-primary/20 p-6 rounded-lg mb-6">
-            <h4 className="font-semibold mb-4 text-primary">GMB Optimization Checklist</h4>
+            <h4 className="font-semibold mb-4 text-primary">GMB optimisation Checklist</h4>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h5 className="font-medium mb-3">Essential Information</h5>
@@ -283,7 +283,7 @@ const BricklayersLeadGeneration = () => {
           <div className="mb-8">
             <h4 className="font-semibold mb-4">Photo Strategy for Maximum Impact</h4>
             <p className="text-muted-foreground mb-4">
-              Photos are crucial for bricklayers. They show your skill level and help clients visualize their projects.
+              Photos are crucial for bricklayers. They show your skill level and help clients visualise their projects.
             </p>
             <div className="grid md:grid-cols-3 gap-4">
               <Card>

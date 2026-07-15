@@ -16,12 +16,12 @@ export const metadata = createMetadata({
   },
 
   title: "Google Ads for Loan Brokers: Complete Mortgage Marketing Guide",
-  description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2026.",
+  description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimisation, and conversion tactics that generate qualified borrower leads and maximise ROI in 2026.",
   path: "/blog/loan-broker-google-ads-strategy",
   keywords: ["Google Ads", "Loan Brokers", "Mortgage Marketing", "PPC", "Lead Generation", "Google Ads Strategy", "Loan Broker ROI"],
   openGraph: {
     title: "Google Ads for Loan Brokers: Complete Mortgage Marketing Guide",
-    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2026.",
+    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimisation, and conversion tactics that generate qualified borrower leads and maximise ROI in 2026.",
     url: "https://fractional-cmo.com.au/blog/loan-broker-google-ads-strategy",
     siteName: "Fractional CMO",
     type: "article",
@@ -38,7 +38,7 @@ export const metadata = createMetadata({
   twitter: {
     card: "summary_large_image",
     title: "Google Ads for Loan Brokers: Complete Mortgage Marketing Guide",
-    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI in 2026.",
+    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimisation, and conversion tactics that generate qualified borrower leads and maximise ROI in 2026.",
     images: ["https://fractional-cmo.com.au/images/blog/loan-broker-google-ads-strategy.jpg"], // Placeholder URL
     site: "@FractionalCMO"
   }
@@ -57,7 +57,7 @@ const LoanBrokerGoogleAds = () => {
 
   const articleData = {
     headline: "Google Ads for Loan Brokers: Complete Mortgage Marketing Campaign Guide 2026",
-    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimization, and conversion tactics that generate qualified borrower leads and maximize ROI.",
+    description: "Master Google Ads for mortgage brokers. Learn keyword strategies, campaign optimisation, and conversion tactics that generate qualified borrower leads and maximise ROI.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-04T00:00:00.000Z",
@@ -75,7 +75,7 @@ const LoanBrokerGoogleAds = () => {
     },
     {
       question: "How long does it take to see results from Google Ads for loan brokers?",
-      answer: "Most loan brokers see initial leads within 2-4 weeks of launching Google Ads campaigns. Optimal performance and significant ROI typically develop after 2-3 months of consistent optimization and data collection."
+      answer: "Most loan brokers see initial leads within 2-4 weeks of launching Google Ads campaigns. Optimal performance and significant ROI typically develop after 2-3 months of consistent optimisation and data collection."
     },
     {
       question: "What's the best keyword strategy for mortgage broker campaigns?",
@@ -156,7 +156,7 @@ const LoanBrokerGoogleAds = () => {
       
       <h3>Campaign Architecture: Segment for Success</h3>
       <p>
-        Organize your account for maximum performance and control by segmenting campaigns based on loan type and borrower intent:
+        organise your account for maximum performance and control by segmenting campaigns based on loan type and borrower intent:
       </p>
       <ul>
         <li><strong>Home Loans Campaign:</strong> First-time buyers and purchases</li>
@@ -224,7 +224,7 @@ const LoanBrokerGoogleAds = () => {
           <li>"Get Pre-Approved in 60 Minutes"</li>
           <li>"Local Mortgage Broker - Compare 40+ Lenders"</li>
           <li>"First Home Buyer Specialists | Free Consultation"</li>
-          <li>"Investment Loan Experts - Maximize Your Returns"</li>
+          <li>"Investment Loan Experts - maximise Your Returns"</li>
         </ul>
       </div>
 
@@ -240,9 +240,9 @@ const LoanBrokerGoogleAds = () => {
         <li>Include a clear call-to-action (e.g., "Book Your Free Consultation Now")</li>
       </ul>
 
-      <h3>Ad Extensions: Maximizing Real Estate</h3>
+      <h3>Ad Extensions: maximising Real Estate</h3>
       <p>
-        Maximize your ad's visibility and provide additional options to the borrower:
+        maximise your ad's visibility and provide additional options to the borrower:
       </p>
       <ul>
         <li><strong>Sitelinks:</strong> Link to key pages (Calculator, About Us, Testimonials, Loan Types)</li>
@@ -252,7 +252,7 @@ const LoanBrokerGoogleAds = () => {
         <li><strong>Price extensions:</strong> Display competitive rates or fees (use with caution and compliance)</li>
       </ul>
 
-      <h2>Landing Page Optimization: The Conversion Engine</h2>
+      <h2>Landing Page optimisation: The Conversion Engine</h2>
       <h3>Essential Landing Page Elements</h3>
       <p>
         Your landing pages must provide a seamless, high-trust experience that matches the ad message:
@@ -265,7 +265,7 @@ const LoanBrokerGoogleAds = () => {
             <li>✓ <strong>Trust signals:</strong> Testimonials, lender logos, NMLS/license number</li>
             <li>✓ <strong>Simple contact form:</strong> 3-5 fields max, immediate follow-up promised</li>
             <li>✓ <strong>Phone number:</strong> Large and prominently displayed (click-to-call on mobile)</li>
-            <li>✓ <strong>Mobile optimization:</strong> Fast loading, easy navigation</li>
+            <li>✓ <strong>Mobile optimisation:</strong> Fast loading, easy navigation</li>
           </ul>
         </Card>
         <Card className="p-6">
@@ -284,12 +284,12 @@ const LoanBrokerGoogleAds = () => {
       <h2>Bidding Strategies and Budget Management</h2>
       <h3>Smart Bidding Options for ROI</h3>
       <p>
-        Leverage Google's machine learning to optimize bids for conversions:
+        Leverage Google's machine learning to optimise bids for conversions:
       </p>
       <ul>
         <li><strong>Target CPA (Cost Per Acquisition):</strong> Focus on a target cost for a qualified lead/application.</li>
-        <li><strong>Target ROAS (Return On Ad Spend):</strong> Optimize for the value of the lead (e.g., estimated loan value).</li>
-        <li><strong>Maximize conversions:</strong> Get the most leads within your budget constraints.</li>
+        <li><strong>Target ROAS (Return On Ad Spend):</strong> optimise for the value of the lead (e.g., estimated loan value).</li>
+        <li><strong>maximise conversions:</strong> Get the most leads within your budget constraints.</li>
         <li><strong>Enhanced CPC:</strong> Manual bidding with automated adjustments for conversion opportunities.</li>
       </ul>
 
@@ -333,7 +333,7 @@ const LoanBrokerGoogleAds = () => {
       <div className="space-y-3 my-4">
         <ul className="space-y-2 text-sm">
           <li><strong>Standard remarketing:</strong> Show generic ads to all past visitors.</li>
-          <li><strong>Dynamic remarketing:</strong> Personalized ads based on the specific loan type or calculator page they viewed.</li>
+          <li><strong>Dynamic remarketing:</strong> personalised ads based on the specific loan type or calculator page they viewed.</li>
           <li><strong>Customer Match:</strong> Upload client lists for exclusion or targeting (compliance check required).</li>
           <li><strong>Similar Audiences:</strong> Find prospects with characteristics similar to your best converters.</li>
         </ul>
@@ -349,10 +349,10 @@ const LoanBrokerGoogleAds = () => {
         <li>Target videos to "In-Market" audiences actively searching for homes or loans.</li>
       </ul>
 
-      <h2>Performance Monitoring and Optimization</h2>
+      <h2>Performance Monitoring and optimisation</h2>
       <h3>Key Metrics to Monitor Weekly</h3>
       <p>
-        Successful loan broker campaigns require constant monitoring and optimization:
+        Successful loan broker campaigns require constant monitoring and optimisation:
       </p>
       <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
         <Card className="p-6">
@@ -387,7 +387,7 @@ const LoanBrokerGoogleAds = () => {
         </Card>
 
         <Card className="p-6 border-green-200">
-          <h4 className="text-lg font-bold mb-3">Month 2: Optimization and Refinement</h4>
+          <h4 className="text-lg font-bold mb-3">Month 2: optimisation and Refinement</h4>
           <ul className="space-y-1 text-sm text-muted-foreground">
             <li>✓ Weekly audit of Search Terms and add 50+ negative keywords.</li>
             <li>✓ A/B test ad copy (focus on headlines 1 & 2) and landing pages.</li>
@@ -420,7 +420,7 @@ const LoanBrokerGoogleAds = () => {
 
       <h2>Ready to Dominate Google Search?</h2>
       <p>
-        Google Ads success for loan brokers requires strategic thinking, continuous optimization, and a deep understanding of your borrowers' search behavior. By implementing these proven strategies, you'll generate more qualified leads, improve your ROI, and build a sustainable competitive advantage in the mortgage market.
+        Google Ads success for loan brokers requires strategic thinking, continuous optimisation, and a deep understanding of your borrowers' search behavior. By implementing these proven strategies, you'll generate more qualified leads, improve your ROI, and build a sustainable competitive advantage in the mortgage market.
       </p>
 
       <p>

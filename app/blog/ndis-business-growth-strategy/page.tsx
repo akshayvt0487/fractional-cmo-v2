@@ -56,7 +56,7 @@ const NDISBusinessGrowthStrategy = () => {
 
   const articleData = {
     headline: "NDIS Business Growth Strategy: Scale Your Disability Services Sustainably",
-    description: "Comprehensive guide to scaling NDIS disability services with proven business growth strategies, participant acquisition tactics, and sustainable expansion methods that prioritize quality care.",
+    description: "Comprehensive guide to scaling NDIS disability services with proven business growth strategies, participant acquisition tactics, and sustainable expansion methods that prioritise quality care.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-15T00:00:00.000Z",
@@ -83,7 +83,7 @@ const NDISBusinessGrowthStrategy = () => {
 
   const faqs = [{
     question: "What's the most effective way to scale an NDIS business sustainably?",
-    answer: "Focus on compliance-first growth with systematic participant acquisition, staff development programs, and technology integration. Prioritize quality service delivery over rapid expansion to maintain NDIS standards and participant satisfaction."
+    answer: "Focus on compliance-first growth with systematic participant acquisition, staff development programs, and technology integration. prioritise quality service delivery over rapid expansion to maintain NDIS standards and participant satisfaction."
   }, {
     question: "How long does it typically take to see growth results for NDIS providers?",
     answer: "Initial growth appears within 3-6 months with proper strategy implementation. Sustainable scaling typically takes 12-18 months as you build reputation, systems, and participant base while maintaining compliance standards."
@@ -234,7 +234,7 @@ const NDISBusinessGrowthStrategy = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center text-sm font-bold">2</div>
-                Service Optimization
+                Service optimisation
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -243,7 +243,7 @@ const NDISBusinessGrowthStrategy = () => {
                   <h4 className="font-semibold mb-2">Operational Excellence</h4>
                   <ul className="text-sm space-y-1 text-muted-foreground">
                     <li>• Streamline service delivery processes</li>
-                    <li>• Implement scheduling optimization</li>
+                    <li>• Implement scheduling optimisation</li>
                     <li>• Develop standard operating procedures</li>
                     <li>• Create participant onboarding systems</li>
                   </ul>
@@ -253,7 +253,7 @@ const NDISBusinessGrowthStrategy = () => {
                   <ul className="text-sm space-y-1 text-muted-foreground">
                     <li>• Service delivery consistency</li>
                     <li>• Participant goal achievement rates</li>
-                    <li>• Staff utilization efficiency</li>
+                    <li>• Staff utilisation efficiency</li>
                     <li>• Cost per service hour</li>
                   </ul>
                 </div>
@@ -285,7 +285,7 @@ const NDISBusinessGrowthStrategy = () => {
                   <ul className="text-sm space-y-1 text-muted-foreground">
                     <li>• New participant acquisition rate</li>
                     <li>• Market share in target areas</li>
-                    <li>• Service utilization rates</li>
+                    <li>• Service utilisation rates</li>
                     <li>• Revenue per participant</li>
                   </ul>
                 </div>

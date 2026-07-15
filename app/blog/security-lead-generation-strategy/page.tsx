@@ -119,7 +119,7 @@ const SecurityLeadGeneration = () => {
     />
       <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles} faqs={faqs} heroImage={'/images/blog/security-lead-generation-hero.jpg'} heroAlt="Professional security team monitoring surveillance systems - lead generation guide">
         <p className="text-lg text-muted-foreground mb-6">
-          The global security services market is valued at over $350 billion and continues to grow as businesses and homeowners prioritize safety. However, generating quality leads in the security industry requires building trust, demonstrating expertise, and reaching clients at the right moment in their decision-making process.
+          The global security services market is valued at over $350 billion and continues to grow as businesses and homeowners prioritise safety. However, generating quality leads in the security industry requires building trust, demonstrating expertise, and reaching clients at the right moment in their decision-making process.
         </p>
 
         <div className="bg-primary/10 p-6 rounded-lg mb-8">
@@ -174,7 +174,7 @@ const SecurityLeadGeneration = () => {
                   <li><strong>Corporate Security:</strong> Office buildings, retail chains, warehouses</li>
                   <li><strong>Event Security:</strong> Concerts, conferences, sporting events</li>
                   <li><strong>Industrial Security:</strong> Manufacturing facilities, construction sites</li>
-                  <li><strong>Specialized Services:</strong> Cybersecurity consulting, risk assessment</li>
+                  <li><strong>specialised Services:</strong> Cybersecurity consulting, risk assessment</li>
                 </ul>
               </CardContent>
             </Card>
@@ -217,7 +217,7 @@ const SecurityLeadGeneration = () => {
           
           <Card className="mb-6">
             <CardHeader>
-              <CardTitle>Google Business Profile Optimization</CardTitle>
+              <CardTitle>Google Business Profile optimisation</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -368,7 +368,7 @@ const SecurityLeadGeneration = () => {
                       <ul className="text-sm space-y-1">
                         <li>• Consultation-focused campaigns</li>
                         <li>• Service-specific landing pages</li>
-                        <li>• Quote request optimization</li>
+                        <li>• Quote request optimisation</li>
                         <li>• Longer nurture sequences</li>
                       </ul>
                     </div>

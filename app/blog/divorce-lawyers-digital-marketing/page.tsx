@@ -90,10 +90,10 @@ const DivorceLawyersDigitalMarketing = () => {
 
   const faqs = [{
     question: "Is digital marketing ethical for divorce attorneys?",
-    answer: "Yes, when done responsibly. Digital marketing for divorce attorneys must prioritize client sensitivity, follow bar association guidelines, and focus on education rather than aggressive sales tactics."
+    answer: "Yes, when done responsibly. Digital marketing for divorce attorneys must prioritise client sensitivity, follow bar association guidelines, and focus on education rather than aggressive sales tactics."
   }, {
     question: "What's the best marketing channel for divorce lawyers?",
-    answer: "A combination of SEO-optimized content marketing, Google Ads for immediate visibility, and reputation management works best. The key is maintaining sensitivity while demonstrating expertise."
+    answer: "A combination of SEO-optimised content marketing, Google Ads for immediate visibility, and reputation management works best. The key is maintaining sensitivity while demonstrating expertise."
   }, {
     question: "How can divorce lawyers measure marketing ROI?",
     answer: "Track consultation requests, conversion rates from consultation to retainer, average case value, and client lifetime value. Quality metrics are often more important than quantity for divorce practice."
@@ -163,12 +163,12 @@ const DivorceLawyersDigitalMarketing = () => {
 
       <h2>Strategic Marketing Approaches for Divorce Law</h2>
       
-      <h3>Local SEO Optimization for Divorce Attorneys</h3>
+      <h3>Local SEO optimisation for Divorce Attorneys</h3>
       <p>
         Divorce proceedings are inherently local, making local SEO critical for divorce attorney marketing:
       </p>
       <ul>
-        <li><strong>Google My Business optimization:</strong> Complete profile with professional photos and current information</li>
+        <li><strong>Google My Business optimisation:</strong> Complete profile with professional photos and current information</li>
         <li><strong>Location-specific keywords:</strong> &quot;divorce lawyer [city]&quot;, &quot;divorce attorney near me&quot;</li>
         <li><strong>Local directory listings:</strong> Legal-specific directories and general business listings</li>
         <li><strong>Community involvement content:</strong> Showcase local bar association participation</li>
@@ -207,9 +207,9 @@ const DivorceLawyersDigitalMarketing = () => {
       </p>
       <ul>
         <li><strong>Compassionate messaging:</strong> Acknowledging the emotional difficulty of divorce</li>
-        <li><strong>Solution-focused content:</strong> Emphasizing positive outcomes and new beginnings</li>
+        <li><strong>Solution-focused content:</strong> emphasising positive outcomes and new beginnings</li>
         <li><strong>Professional tone:</strong> Avoiding aggressive or confrontational language</li>
-        <li><strong>Privacy assurance:</strong> Emphasizing confidentiality and discretion</li>
+        <li><strong>Privacy assurance:</strong> emphasising confidentiality and discretion</li>
         <li><strong>Support-oriented approach:</strong> Positioning as a guide through the process</li>
       </ul>
 
@@ -222,8 +222,8 @@ const DivorceLawyersDigitalMarketing = () => {
       <ul>
         <li><strong>SEO for organic reach:</strong> Long-term visibility for divorce-related searches</li>
         <li><strong>Google Ads for immediate visibility:</strong> Target high-intent keywords carefully</li>
-        <li><strong>Content optimization:</strong> Answer common divorce law questions</li>
-        <li><strong>Local search optimization:</strong> Dominate local divorce attorney searches</li>
+        <li><strong>Content optimisation:</strong> Answer common divorce law questions</li>
+        <li><strong>Local search optimisation:</strong> Dominate local divorce attorney searches</li>
       </ul>
 
       <h3>Social Media Presence</h3>
@@ -334,8 +334,8 @@ const DivorceLawyersDigitalMarketing = () => {
         </ul>
       </Card>
 
-      <h3>Landing Page Optimization for Divorce Leads</h3>
-      <p>Convert ad clicks into consultations with optimized landing pages:</p>
+      <h3>Landing Page optimisation for Divorce Leads</h3>
+      <p>Convert ad clicks into consultations with optimised landing pages:</p>
       <ul>
         <li><strong>Clear Headline:</strong> Immediately address the visitor&apos;s concern</li>
         <li><strong>Trust Elements:</strong> Professional headshots, credentials, testimonials</li>
@@ -346,7 +346,7 @@ const DivorceLawyersDigitalMarketing = () => {
         <li><strong>Process Overview:</strong> What to expect from consultation to resolution</li>
       </ul>
 
-      <h2>Website Optimization for Divorce Attorney Firms</h2>
+      <h2>Website optimisation for Divorce Attorney Firms</h2>
       
       <h3>Essential Website Components</h3>
       <p>Your website serves as your 24/7 marketing representative:</p>
@@ -377,7 +377,7 @@ const DivorceLawyersDigitalMarketing = () => {
         </div>
       </Card>
 
-      <h3>Mobile Optimization</h3>
+      <h3>Mobile optimisation</h3>
       <p>Over 70% of initial searches happen on mobile devices:</p>
       <ul>
         <li><strong>Click-to-Call Buttons:</strong> Prominent throughout mobile site</li>
@@ -534,8 +534,8 @@ const DivorceLawyersDigitalMarketing = () => {
           <div>
             <h4 className="font-semibold text-primary mb-2">Days 1-30: Foundation</h4>
             <ul className="space-y-1">
-              <li>□ Website optimization (mobile, speed, conversion elements)</li>
-              <li>□ Google My Business optimization</li>
+              <li>□ Website optimisation (mobile, speed, conversion elements)</li>
+              <li>□ Google My Business optimisation</li>
               <li>□ Implement call tracking and analytics</li>
               <li>□ Create 3 service-specific landing pages</li>
               <li>□ Launch first lead magnet (divorce preparation checklist)</li>
@@ -554,7 +554,7 @@ const DivorceLawyersDigitalMarketing = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-primary mb-2">Days 61-90: Optimization</h4>
+            <h4 className="font-semibold text-primary mb-2">Days 61-90: optimisation</h4>
             <ul className="space-y-1">
               <li>□ A/B test ad copy and landing pages</li>
               <li>□ Expand keyword targeting based on performance</li>

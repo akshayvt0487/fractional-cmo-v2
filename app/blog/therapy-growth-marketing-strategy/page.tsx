@@ -81,13 +81,13 @@ const TherapyGrowthMarketingStrategy = () => {
 
   const faqs = [{
     question: "What is growth marketing for therapy clinics?",
-    answer: "Growth marketing for therapy clinics focuses on data-driven, systematic approaches to scale client acquisition and retention. It combines marketing automation, multi-channel lead generation, and continuous optimization to create sustainable growth systems."
+    answer: "Growth marketing for therapy clinics focuses on data-driven, systematic approaches to scale client acquisition and retention. It combines marketing automation, multi-channel lead generation, and continuous optimisation to create sustainable growth systems."
   }, {
     question: "How long does it take to see results from growth marketing?",
     answer: "Initial results typically appear within 30-45 days for paid advertising and content marketing. However, comprehensive growth marketing systems that include SEO, automation, and relationship building show significant results within 3-6 months."
   }, {
     question: "What's the difference between traditional marketing and growth marketing for therapy services?",
-    answer: "Traditional marketing focuses on brand awareness and individual campaigns. Growth marketing takes a systematic approach, using data to optimize every stage of the client journey, from initial awareness to long-term retention and referrals."
+    answer: "Traditional marketing focuses on brand awareness and individual campaigns. Growth marketing takes a systematic approach, using data to optimise every stage of the client journey, from initial awareness to long-term retention and referrals."
   }];
   return <>
     <script
@@ -96,11 +96,11 @@ const TherapyGrowthMarketingStrategy = () => {
     />
     <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.ndis} faqs={faqs} heroImage={therapyGrowthMarketingStrategyHero} heroAlt="Growth marketing strategies for therapy clinics including automation, SEO, and lead generation systems">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-          The therapy services industry is experiencing unprecedented growth, with NDIS participants requiring more specialized care than ever before. However, traditional marketing approaches often fall short when trying to scale therapy clinics efficiently. Growth marketing offers a data-driven, systematic approach to scaling speech therapy, occupational therapy, ABA therapy, and psychology practices while maintaining quality care delivery.
+          The therapy services industry is experiencing unprecedented growth, with NDIS participants requiring more specialised care than ever before. However, traditional marketing approaches often fall short when trying to scale therapy clinics efficiently. Growth marketing offers a data-driven, systematic approach to scaling speech therapy, occupational therapy, ABA therapy, and psychology practices while maintaining quality care delivery.
         </p>
 
         <p className="mb-6">
-          This comprehensive guide reveals advanced growth marketing strategies specifically designed for therapy clinics looking to scale beyond their current capacity. Learn how to implement marketing automation, optimize the entire client journey, and create sustainable growth systems that work 24/7 to attract and convert high-quality NDIS participants.
+          This comprehensive guide reveals advanced growth marketing strategies specifically designed for therapy clinics looking to scale beyond their current capacity. Learn how to implement marketing automation, optimise the entire client journey, and create sustainable growth systems that work 24/7 to attract and convert high-quality NDIS participants.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 my-12">
@@ -127,7 +127,7 @@ const TherapyGrowthMarketingStrategy = () => {
         <h2 className="text-3xl font-bold mt-12 mb-6">The Growth Marketing Framework for Therapy Services</h2>
         
         <p className="mb-6">
-          Growth marketing for therapy clinics differs significantly from traditional healthcare marketing. It focuses on creating systematic, scalable processes that can consistently attract, convert, and retain clients while providing data insights for continuous optimization.
+          Growth marketing for therapy clinics differs significantly from traditional healthcare marketing. It focuses on creating systematic, scalable processes that can consistently attract, convert, and retain clients while providing data insights for continuous optimisation.
         </p>
 
         <h3 className="text-2xl font-semibold mt-8 mb-4">The SCALE Framework for Therapy Clinics</h3>
@@ -144,7 +144,7 @@ const TherapyGrowthMarketingStrategy = () => {
           </div>
           
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-lg border-l-4 border-primary">
-            <h4 className="font-semibold mb-3 text-primary">A - Analytics & Optimization</h4>
+            <h4 className="font-semibold mb-3 text-primary">A - Analytics & optimisation</h4>
             <p className="text-sm">Use data-driven insights to continuously improve marketing performance and client acquisition efficiency.</p>
           </div>
           
@@ -155,14 +155,14 @@ const TherapyGrowthMarketingStrategy = () => {
           
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-lg border-l-4 border-primary">
             <h4 className="font-semibold mb-3 text-primary">E - Expansion & Retention</h4>
-            <p className="text-sm">Focus on client lifetime value optimization and strategic expansion into new service areas or locations.</p>
+            <p className="text-sm">Focus on client lifetime value optimisation and strategic expansion into new service areas or locations.</p>
           </div>
         </div>
 
         <h2 className="text-3xl font-bold mt-12 mb-6">Marketing Automation for Therapy Services</h2>
         
         <p className="mb-6">
-          Marketing automation allows therapy clinics to provide personalized communication at scale while maintaining the caring, professional approach that families expect. The key is creating automated sequences that feel personal and provide genuine value.
+          Marketing automation allows therapy clinics to provide personalised communication at scale while maintaining the caring, professional approach that families expect. The key is creating automated sequences that feel personal and provide genuine value.
         </p>
 
         <h3 className="text-2xl font-semibold mt-8 mb-4">Essential Automation Sequences for Therapy Clinics</h3>
@@ -197,7 +197,7 @@ const TherapyGrowthMarketingStrategy = () => {
         <h2 className="text-3xl font-bold mt-12 mb-6">Multi-Channel Lead Generation System</h2>
         
         <p className="mb-6">
-          Growth marketing for therapy clinics requires a systematic approach to lead generation that captures prospects across multiple touchpoints. The key is creating integrated campaigns that work together to maximize visibility and conversion rates.
+          Growth marketing for therapy clinics requires a systematic approach to lead generation that captures prospects across multiple touchpoints. The key is creating integrated campaigns that work together to maximise visibility and conversion rates.
         </p>
 
         <h3 className="text-2xl font-semibold mt-8 mb-4">Integrated Campaign Strategy</h3>
@@ -257,9 +257,9 @@ const TherapyGrowthMarketingStrategy = () => {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold mt-12 mb-6">Conversion Rate Optimization</h2>
+        <h2 className="text-3xl font-bold mt-12 mb-6">Conversion Rate optimisation</h2>
         
-        <h3 className="text-2xl font-semibold mt-8 mb-4">Landing Page Optimization Framework</h3>
+        <h3 className="text-2xl font-semibold mt-8 mb-4">Landing Page optimisation Framework</h3>
         
         <p className="mb-6">
           High-converting landing pages for therapy services must address parent concerns, build trust, and make it easy to take the next step. Focus on emotional connection while providing practical information.
@@ -307,7 +307,7 @@ const TherapyGrowthMarketingStrategy = () => {
         <h3 className="text-2xl font-semibold mt-8 mb-4">A/B Testing Strategies</h3>
         
         <p className="mb-6">
-          Continuous testing and optimization are essential for growth marketing success. Test different elements systematically to improve conversion rates over time.
+          Continuous testing and optimisation are essential for growth marketing success. Test different elements systematically to improve conversion rates over time.
         </p>
 
         <div className="bg-muted/50 p-6 rounded-lg mb-8">
@@ -333,19 +333,19 @@ const TherapyGrowthMarketingStrategy = () => {
         <h3 className="text-2xl font-semibold mt-8 mb-4">Retention-Focused Growth Strategies</h3>
         
         <p className="mb-6">
-          While acquiring new clients is important, retaining existing clients and maximizing their lifetime value is often more profitable. Focus on creating exceptional experiences that lead to long-term relationships.
+          While acquiring new clients is important, retaining existing clients and maximising their lifetime value is often more profitable. Focus on creating exceptional experiences that lead to long-term relationships.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <Card>
             <CardContent className="p-6">
-              <h4 className="font-semibold mb-3 text-primary">Client Experience Optimization</h4>
+              <h4 className="font-semibold mb-3 text-primary">Client Experience optimisation</h4>
               <ul className="text-sm space-y-2">
                 <li>• Seamless onboarding process</li>
                 <li>• Regular progress updates and reports</li>
                 <li>• Family education and training</li>
                 <li>• Flexible scheduling and communication</li>
-                <li>• Personalized therapy approaches</li>
+                <li>• personalised therapy approaches</li>
               </ul>
             </CardContent>
           </Card>
@@ -374,12 +374,12 @@ const TherapyGrowthMarketingStrategy = () => {
         <div className="space-y-6 mb-8">
           <div className="bg-gradient-to-r from-purple-50 to-violet-50 p-6 rounded-lg border-l-4 border-purple-500">
             <h4 className="font-semibold mb-3 text-purple-700">Market Research Phase</h4>
-            <p className="text-sm text-purple-600">Analyze potential markets for demographics, competition, NDIS participant density, and existing therapy service gaps.</p>
+            <p className="text-sm text-purple-600">analyse potential markets for demographics, competition, NDIS participant density, and existing therapy service gaps.</p>
           </div>
           
           <div className="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg border-l-4 border-orange-500">
             <h4 className="font-semibold mb-3 text-orange-700">Marketing System Replication</h4>
-            <p className="text-sm text-orange-600">Adapt successful marketing campaigns, landing pages, and automation sequences for new geographic markets with local customization.</p>
+            <p className="text-sm text-orange-600">Adapt successful marketing campaigns, landing pages, and automation sequences for new geographic markets with local customisation.</p>
           </div>
         </div>
 
@@ -439,14 +439,14 @@ const TherapyGrowthMarketingStrategy = () => {
               <li>• Create high-converting landing pages for each therapy service</li>
               <li>• Implement comprehensive analytics and tracking systems</li>
               <li>• Launch initial Google Ads and Facebook campaigns</li>
-              <li>• Begin content creation and SEO optimization</li>
+              <li>• Begin content creation and SEO optimisation</li>
             </ul>
           </div>
           
           <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg">
-            <h4 className="font-semibold mb-3 text-blue-700">Days 31-60: Optimization & Scaling</h4>
+            <h4 className="font-semibold mb-3 text-blue-700">Days 31-60: optimisation & Scaling</h4>
             <ul className="text-sm space-y-2 text-blue-600">
-              <li>• Analyze initial campaign performance and optimize based on data</li>
+              <li>• analyse initial campaign performance and optimise based on data</li>
               <li>• Launch advanced retargeting campaigns and lookalike audiences</li>
               <li>• Expand successful campaigns to new audiences and platforms</li>
               <li>• Implement A/B testing for landing pages and ad creatives</li>

@@ -83,7 +83,7 @@ const NDISDigitalMarketingExcellence = () => {
 
   const faqs = [{
     question: "What makes NDIS digital marketing different from traditional healthcare marketing?",
-    answer: "NDIS digital marketing requires specialized compliance knowledge, participant-centered messaging, outcome-focused content, and understanding of NDIS funding structures. It emphasizes accessibility, dignity, and choice while meeting strict regulatory requirements."
+    answer: "NDIS digital marketing requires specialised compliance knowledge, participant-centered messaging, outcome-focused content, and understanding of NDIS funding structures. It emphasises accessibility, dignity, and choice while meeting strict regulatory requirements."
   }, {
     question: "How can NDIS providers measure digital marketing ROI effectively?",
     answer: "Track participant acquisition costs, service plan activation rates, compliance scores, participant satisfaction metrics, and long-term value. Focus on quality metrics like goal achievement rates rather than just volume metrics."
@@ -190,11 +190,11 @@ const NDISDigitalMarketingExcellence = () => {
                     <div>
                       <h4 className="font-semibold mb-2">Integrated Platform Strategy</h4>
                       <ul className="text-sm space-y-1 text-muted-foreground">
-                        <li>• AI-powered website personalization</li>
+                        <li>• AI-powered website personalisation</li>
                         <li>• Cross-platform content synchronization</li>
                         <li>• Unified customer data platform (CDP)</li>
                         <li>• Progressive web app development</li>
-                        <li>• Voice search optimization</li>
+                        <li>• Voice search optimisation</li>
                       </ul>
                     </div>
                     <div>
@@ -203,7 +203,7 @@ const NDISDigitalMarketingExcellence = () => {
                         <li>• Real-time behavioral tracking</li>
                         <li>• Predictive lead scoring models</li>
                         <li>• Customer journey attribution</li>
-                        <li>• Conversion funnel optimization</li>
+                        <li>• Conversion funnel optimisation</li>
                         <li>• ROI performance dashboards</li>
                       </ul>
                     </div>
@@ -221,10 +221,10 @@ const NDISDigitalMarketingExcellence = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold mb-2">Mobile Experience Optimization</h4>
+                      <h4 className="font-semibold mb-2">Mobile Experience optimisation</h4>
                       <ul className="text-sm space-y-1 text-muted-foreground">
                         <li>• Accelerated Mobile Pages (AMP)</li>
-                        <li>• Touch-optimized interface design</li>
+                        <li>• Touch-optimised interface design</li>
                         <li>• Voice-activated search functionality</li>
                         <li>• Offline content accessibility</li>
                         <li>• Mobile app development strategy</li>
@@ -235,9 +235,9 @@ const NDISDigitalMarketingExcellence = () => {
                       <ul className="text-sm space-y-1 text-muted-foreground">
                         <li>• Geofencing campaign automation</li>
                         <li>• Local inventory and availability</li>
-                        <li>• Near me search optimization</li>
+                        <li>• Near me search optimisation</li>
                         <li>• Mobile-specific call tracking</li>
-                        <li>• Location-based personalization</li>
+                        <li>• Location-based personalisation</li>
                       </ul>
                     </div>
                   </div>
@@ -261,21 +261,21 @@ const NDISDigitalMarketingExcellence = () => {
                 <CardContent>
                   <div className="grid md:grid-cols-3 gap-6">
                     <div>
-                      <h4 className="font-semibold mb-2">Core Web Vitals Optimization</h4>
+                      <h4 className="font-semibold mb-2">Core Web Vitals optimisation</h4>
                       <ul className="text-sm space-y-1 text-muted-foreground">
-                        <li>• Page load speed optimization (under 2 seconds)</li>
-                        <li>• Largest Contentful Paint optimization</li>
+                        <li>• Page load speed optimisation (under 2 seconds)</li>
+                        <li>• Largest Contentful Paint optimisation</li>
                         <li>• Cumulative Layout Shift reduction</li>
-                        <li>• First Input Delay minimization</li>
+                        <li>• First Input Delay minimisation</li>
                         <li>• Mobile usability improvements</li>
                       </ul>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Structured Data Implementation</h4>
                       <ul className="text-sm space-y-1 text-muted-foreground">
-                        <li>• Organization schema markup</li>
+                        <li>• organisation schema markup</li>
                         <li>• LocalBusiness structured data</li>
-                        <li>• Service schema optimization</li>
+                        <li>• Service schema optimisation</li>
                         <li>• Review and rating markup</li>
                         <li>• FAQ and HowTo schemas</li>
                       </ul>
@@ -283,9 +283,9 @@ const NDISDigitalMarketingExcellence = () => {
                     <div>
                       <h4 className="font-semibold mb-2">Advanced Keyword Strategy</h4>
                       <ul className="text-sm space-y-1 text-muted-foreground">
-                        <li>• Entity-based SEO optimization</li>
+                        <li>• Entity-based SEO optimisation</li>
                         <li>• Semantic keyword clustering</li>
-                        <li>• Voice search query optimization</li>
+                        <li>• Voice search query optimisation</li>
                         <li>• Long-tail keyword development</li>
                         <li>• Competitor gap analysis</li>
                       </ul>
@@ -406,12 +406,12 @@ const NDISDigitalMarketingExcellence = () => {
                         <li>• Content calendar management</li>
                         <li>• Cross-platform posting automation</li>
                         <li>• Social listening and monitoring</li>
-                        <li>• Hashtag optimization tools</li>
+                        <li>• Hashtag optimisation tools</li>
                         <li>• Performance analytics dashboards</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Engagement Optimization</h4>
+                      <h4 className="font-semibold mb-2">Engagement optimisation</h4>
                       <ul className="text-sm space-y-1 text-muted-foreground">
                         <li>• AI-powered response suggestions</li>
                         <li>• Community management workflows</li>
@@ -454,30 +454,30 @@ const NDISDigitalMarketingExcellence = () => {
                       <div className="p-3 bg-green-50 rounded border-l-4 border-green-500">
                         <div className="font-medium text-green-800 mb-1">Email Engagement Triggers</div>
                         <ul className="text-sm text-green-700 space-y-1">
-                          <li>• Open rate optimization sequences</li>
+                          <li>• Open rate optimisation sequences</li>
                           <li>• Click-through behavior responses</li>
                           <li>• Non-opener re-engagement campaigns</li>
-                          <li>• Preference center optimization</li>
+                          <li>• Preference center optimisation</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3">Personalization Engine</h4>
+                    <h4 className="font-semibold mb-3">personalisation Engine</h4>
                     <div className="space-y-3">
                       <div className="p-3 bg-purple-50 rounded border-l-4 border-purple-500">
-                        <div className="font-medium text-purple-800 mb-1">Content Personalization</div>
+                        <div className="font-medium text-purple-800 mb-1">Content personalisation</div>
                         <ul className="text-sm text-purple-700 space-y-1">
                           <li>• Service-specific content delivery</li>
                           <li>• Geographic location targeting</li>
                           <li>• Interest-based recommendations</li>
-                          <li>• Journey stage customization</li>
+                          <li>• Journey stage customisation</li>
                         </ul>
                       </div>
                       <div className="p-3 bg-orange-50 rounded border-l-4 border-orange-500">
                         <div className="font-medium text-orange-800 mb-1">Dynamic Content Systems</div>
                         <ul className="text-sm text-orange-700 space-y-1">
-                          <li>• Real-time website personalization</li>
+                          <li>• Real-time website personalisation</li>
                           <li>• Adaptive email content blocks</li>
                           <li>• Predictive content suggestions</li>
                           <li>• A/B testing automation</li>
@@ -507,7 +507,7 @@ const NDISDigitalMarketingExcellence = () => {
                     <li>• Customer lifetime value modeling</li>
                     <li>• Churn risk identification</li>
                     <li>• Seasonal trend analysis</li>
-                    <li>• Resource allocation optimization</li>
+                    <li>• Resource allocation optimisation</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -520,7 +520,7 @@ const NDISDigitalMarketingExcellence = () => {
                   <ul className="space-y-2 text-sm">
                     <li>• Natural language processing for inquiries</li>
                     <li>• Sentiment analysis on social media</li>
-                    <li>• Automated content optimization</li>
+                    <li>• Automated content optimisation</li>
                     <li>• Dynamic pricing recommendations</li>
                     <li>• Fraud detection systems</li>
                     <li>• Chatbot intelligence enhancement</li>
@@ -538,7 +538,7 @@ const NDISDigitalMarketingExcellence = () => {
                     <li>• Live dashboard monitoring</li>
                     <li>• Instant alert systems</li>
                     <li>• Real-time competitor analysis</li>
-                    <li>• Dynamic campaign optimization</li>
+                    <li>• Dynamic campaign optimisation</li>
                     <li>• Live chat intelligence</li>
                     <li>• Performance anomaly detection</li>
                     <li>• Conversion opportunity alerts</li>
@@ -572,7 +572,7 @@ const NDISDigitalMarketingExcellence = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                      <span>Data minimization and pseudonymization</span>
+                      <span>Data minimisation and pseudonymization</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
@@ -618,13 +618,13 @@ const NDISDigitalMarketingExcellence = () => {
             </div>
           </section>
 
-          {/* Performance Optimization */}
+          {/* Performance optimisation */}
           <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Advanced Performance Optimization</h2>
+            <h2 className="text-3xl font-semibold mb-6">Advanced Performance optimisation</h2>
             
             <Card className="mb-6">
               <CardHeader>
-                <CardTitle>Conversion Rate Optimization (CRO) Framework</CardTitle>
+                <CardTitle>Conversion Rate optimisation (CRO) Framework</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-3 gap-6">
@@ -633,8 +633,8 @@ const NDISDigitalMarketingExcellence = () => {
                     <ul className="text-sm space-y-2 text-muted-foreground">
                       <li>• Multivariate testing protocols</li>
                       <li>• Statistical significance monitoring</li>
-                      <li>• Personalization testing strategies</li>
-                      <li>• Mobile vs desktop optimization</li>
+                      <li>• personalisation testing strategies</li>
+                      <li>• Mobile vs desktop optimisation</li>
                       <li>• Cross-device journey testing</li>
                     </ul>
                   </div>
@@ -645,16 +645,16 @@ const NDISDigitalMarketingExcellence = () => {
                       <li>• User session recordings</li>
                       <li>• Accessibility testing protocols</li>
                       <li>• Cognitive load assessment</li>
-                      <li>• Form optimization studies</li>
+                      <li>• Form optimisation studies</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3">Optimization Priorities</h4>
+                    <h4 className="font-semibold mb-3">optimisation Priorities</h4>
                     <ul className="text-sm space-y-2 text-muted-foreground">
                       <li>• Landing page conversion rates</li>
                       <li>• Contact form completion rates</li>
                       <li>• Phone call conversion tracking</li>
-                      <li>• Email subscription optimization</li>
+                      <li>• Email subscription optimisation</li>
                       <li>• Social media engagement rates</li>
                     </ul>
                   </div>
@@ -679,7 +679,7 @@ const NDISDigitalMarketingExcellence = () => {
                 </div>
                 <div>
                   <div className="font-medium text-indigo-800 mb-1">Lifetime Value Growth</div>
-                  <div className="text-indigo-600">Long-term value optimization</div>
+                  <div className="text-indigo-600">Long-term value optimisation</div>
                 </div>
               </div>
             </div>
@@ -700,16 +700,16 @@ const NDISDigitalMarketingExcellence = () => {
                       <h4 className="font-semibold mb-2">Artificial Intelligence Integration</h4>
                       <ul className="text-sm space-y-1 text-muted-foreground">
                         <li>• Conversational AI chatbots</li>
-                        <li>• Voice search optimization</li>
+                        <li>• Voice search optimisation</li>
                         <li>• Image and video AI analysis</li>
                         <li>• Predictive content creation</li>
-                        <li>• Automated campaign optimization</li>
+                        <li>• Automated campaign optimisation</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Next-Gen Personalization</h4>
+                      <h4 className="font-semibold mb-2">Next-Gen personalisation</h4>
                       <ul className="text-sm space-y-1 text-muted-foreground">
-                        <li>• Hyper-personalized experiences</li>
+                        <li>• Hyper-personalised experiences</li>
                         <li>• Real-time content adaptation</li>
                         <li>• Behavioral prediction modeling</li>
                         <li>• Dynamic pricing strategies</li>
@@ -728,15 +728,15 @@ const NDISDigitalMarketingExcellence = () => {
                   <div className="space-y-4">
                     <div className="p-3 bg-green-50 rounded border-l-4 border-green-500">
                       <div className="font-medium text-green-800 mb-1">Phase 1: Foundation (Months 1-3)</div>
-                      <div className="text-sm text-green-700">Core platform optimization and basic automation setup</div>
+                      <div className="text-sm text-green-700">Core platform optimisation and basic automation setup</div>
                     </div>
                     <div className="p-3 bg-blue-50 rounded border-l-4 border-blue-500">
                       <div className="font-medium text-blue-800 mb-1">Phase 2: Enhancement (Months 4-6)</div>
-                      <div className="text-sm text-blue-700">Advanced personalization and AI tool integration</div>
+                      <div className="text-sm text-blue-700">Advanced personalisation and AI tool integration</div>
                     </div>
                     <div className="p-3 bg-purple-50 rounded border-l-4 border-purple-500">
                       <div className="font-medium text-purple-800 mb-1">Phase 3: Innovation (Months 7-12)</div>
-                      <div className="text-sm text-purple-700">Cutting-edge technology adoption and optimization</div>
+                      <div className="text-sm text-purple-700">Cutting-edge technology adoption and optimisation</div>
                     </div>
                   </div>
                 </CardContent>

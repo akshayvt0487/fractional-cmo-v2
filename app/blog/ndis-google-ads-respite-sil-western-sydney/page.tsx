@@ -73,7 +73,7 @@ const NDISGoogleAdsRespiteSIL = () => {
     answer: "Start with $2,500-5,000 monthly budget for comprehensive campaigns covering respite care and SIL accommodation services in Western Sydney. Scale based on enquiry quality and vacancy fill rates. The average participant lifetime value typically justifies premium ad spend for quality placements."
   }, {
     question: "What's the best landing page strategy for NDIS Google Ads?",
-    answer: "Create service-specific landing pages for short-term respite, emergency respite, and SIL accommodation. Include NDIS Quality and Safeguards Commission registration details, facility photos, staff qualifications, participant testimonials, and easy enquiry forms. Emphasize Western Sydney locations and accessibility."
+    answer: "Create service-specific landing pages for short-term respite, emergency respite, and SIL accommodation. Include NDIS Quality and Safeguards Commission registration details, facility photos, staff qualifications, participant testimonials, and easy enquiry forms. emphasise Western Sydney locations and accessibility."
   }, {
     question: "How long does it take to see results from NDIS Google Ads?",
     answer: "Initial enquiries typically start within 1-2 weeks of campaign launch. However, the full participant onboarding process (including NDIS plan approval and move-in coordination) can take 4-12 weeks. Track both immediate enquiries and pipeline conversions for accurate ROI measurement."
@@ -140,7 +140,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                 <li>🏠 <strong>SIL seekers:</strong> Looking for independent living support</li>
                 <li>⏰ <strong>Respite needs:</strong> Requiring short-term or emergency care</li>
                 <li>📋 <strong>Plan managed:</strong> Have flexibility in provider choice</li>
-                <li>🌟 <strong>Quality focused:</strong> Prioritize NDIS-registered quality providers</li>
+                <li>🌟 <strong>Quality focused:</strong> prioritise NDIS-registered quality providers</li>
               </ul>
             </CardContent>
           </Card>
@@ -184,9 +184,9 @@ const NDISGoogleAdsRespiteSIL = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Target className="h-5 w-5 text-blue-600" />
-                NDIS Campaign Organization
+                NDIS Campaign organisation
               </CardTitle>
-              <CardDescription>Organize campaigns by service type and urgency</CardDescription>
+              <CardDescription>organise campaigns by service type and urgency</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
@@ -194,7 +194,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                 <li>⏰ <strong>Planned Respite Campaign:</strong> Scheduled short-term care</li>
                 <li>🚨 <strong>Emergency Respite Campaign:</strong> Urgent vacancy fills</li>
                 <li>📍 <strong>Western Sydney Suburbs Campaign:</strong> Hyperlocal targeting</li>
-                <li>🏷️ <strong>Branded Campaign:</strong> Organization name protection</li>
+                <li>🏷️ <strong>Branded Campaign:</strong> organisation name protection</li>
                 <li>🎯 <strong>Support Coordinator Campaign:</strong> B2B professional targeting</li>
               </ul>
             </CardContent>
@@ -339,7 +339,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                     <ul className="text-sm space-y-1">
                       <li>• Highlight NDIS registration prominently</li>
                       <li>• Specify exact Western Sydney locations</li>
-                      <li>• Emphasize vacancy availability</li>
+                      <li>• emphasise vacancy availability</li>
                       <li>• Include support level details (24/7)</li>
                       <li>• Mention modern facilities and amenities</li>
                     </ul>
@@ -365,7 +365,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                     <h4 className="font-semibold mb-2">Key Elements:</h4>
                     <ul className="text-sm space-y-1">
                       <li>• Address urgency (same-week availability)</li>
-                      <li>• Emphasize family peace of mind</li>
+                      <li>• emphasise family peace of mind</li>
                       <li>• Highlight booking flexibility</li>
                       <li>• Include emergency respite options</li>
                       <li>• Mention experienced, qualified staff</li>
@@ -434,7 +434,7 @@ const NDISGoogleAdsRespiteSIL = () => {
             <Card className="border-l-4 border-l-indigo-500">
               <CardHeader>
                 <CardTitle className="text-indigo-700">Bidding Strategy by Service Type</CardTitle>
-                <CardDescription>Optimize for different NDIS services and urgency</CardDescription>
+                <CardDescription>optimise for different NDIS services and urgency</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -442,7 +442,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                     <h4 className="font-semibold mb-2">🏠 SIL Accommodation Campaigns</h4>
                     <ul className="text-sm space-y-1 ml-4">
                       <li>• Target CPA strategy ($80-150 per enquiry)</li>
-                      <li>• Focus on conversion optimization</li>
+                      <li>• Focus on conversion optimisation</li>
                       <li>• Bid higher during business hours (9am-6pm)</li>
                       <li>• Desktop bid adjustments +20% (thorough research)</li>
                     </ul>
@@ -450,10 +450,10 @@ const NDISGoogleAdsRespiteSIL = () => {
                   <div>
                     <h4 className="font-semibold mb-2">⏰ Planned Respite Campaigns</h4>
                     <ul className="text-sm space-y-1 ml-4">
-                      <li>• Maximize Conversions strategy</li>
+                      <li>• maximise Conversions strategy</li>
                       <li>• Emphasis on weekends and evenings</li>
                       <li>• Mobile bid adjustments +25-35%</li>
-                      <li>• Quality score optimization focus</li>
+                      <li>• Quality score optimisation focus</li>
                     </ul>
                   </div>
                   <div>
@@ -514,7 +514,7 @@ const NDISGoogleAdsRespiteSIL = () => {
           <Card className="bg-gradient-to-r from-green-50 to-teal-50 border-green-200">
             <CardHeader>
               <CardTitle className="text-green-700">Western Sydney Geographic Bid Adjustments</CardTitle>
-              <CardDescription>Optimize bids based on suburb demand and competition</CardDescription>
+              <CardDescription>optimise bids based on suburb demand and competition</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-3 gap-4">
@@ -551,7 +551,7 @@ const NDISGoogleAdsRespiteSIL = () => {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Landing Page Optimization for NDIS Services</h2>
+          <h2 className="text-3xl font-bold mb-6">Landing Page optimisation for NDIS Services</h2>
           
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
@@ -590,7 +590,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                   <li>👨‍⚕️ <strong>Care Capabilities:</strong> Medical support, behavior support, allied health</li>
                   <li>🚨 <strong>Emergency Respite:</strong> Highlight same-day/urgent availability</li>
                   <li>💰 <strong>NDIS Pricing:</strong> Support item numbers, quote calculator</li>
-                  <li>📱 <strong>Mobile Optimization:</strong> Easy booking from smartphones</li>
+                  <li>📱 <strong>Mobile optimisation:</strong> Easy booking from smartphones</li>
                   <li>🔒 <strong>Privacy & Safety:</strong> Safety measures, privacy policy</li>
                 </ul>
               </CardContent>
@@ -788,11 +788,11 @@ const NDISGoogleAdsRespiteSIL = () => {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Campaign Optimization & Scaling</h2>
+          <h2 className="text-3xl font-bold mb-6">Campaign optimisation & Scaling</h2>
           
           <Card className="mb-6 border-l-4 border-l-orange-500">
             <CardHeader>
-              <CardTitle className="text-orange-700">Weekly Optimization Checklist</CardTitle>
+              <CardTitle className="text-orange-700">Weekly optimisation Checklist</CardTitle>
               <CardDescription>Maintain peak performance with regular reviews</CardDescription>
             </CardHeader>
             <CardContent>
@@ -801,14 +801,14 @@ const NDISGoogleAdsRespiteSIL = () => {
                   <h4 className="font-semibold mb-3">Performance Review</h4>
                   <ul className="space-y-2 text-sm">
                     <li>✅ Review conversion rates by campaign and ad group</li>
-                    <li>✅ Analyze cost per enquiry trends and outliers</li>
+                    <li>✅ analyse cost per enquiry trends and outliers</li>
                     <li>✅ Check quality scores and landing page experience</li>
                     <li>✅ Monitor competitor activity and ad positions</li>
                     <li>✅ Review search term reports for new opportunities</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-3">Active Optimizations</h4>
+                  <h4 className="font-semibold mb-3">Active optimisations</h4>
                   <ul className="space-y-2 text-sm">
                     <li>🔧 Add negative keywords from irrelevant searches</li>
                     <li>🔧 Adjust bids based on conversion performance</li>
@@ -823,7 +823,7 @@ const NDISGoogleAdsRespiteSIL = () => {
 
           <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
             <CardHeader>
-              <CardTitle className="text-purple-700">Seasonal NDIS Optimization Strategies</CardTitle>
+              <CardTitle className="text-purple-700">Seasonal NDIS optimisation Strategies</CardTitle>
               <CardDescription>Adjust campaigns for Western Sydney market patterns</CardDescription>
             </CardHeader>
             <CardContent>
@@ -832,7 +832,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                   <h4 className="font-semibold mb-2">🌞 Summer Holiday Period (Dec-Jan)</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Increase respite campaign budgets by 40-60%</li>
-                    <li>• Emphasize holiday programs and activities</li>
+                    <li>• emphasise holiday programs and activities</li>
                     <li>• Extend operating hours for enquiry response</li>
                     <li>• Highlight pool, outdoor facilities for summer</li>
                   </ul>
@@ -842,7 +842,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Target families of young adults transitioning post-school</li>
                     <li>• Increase SIL campaign budgets by 30%</li>
-                    <li>• Emphasize education, skill development programs</li>
+                    <li>• emphasise education, skill development programs</li>
                     <li>• Highlight supported employment pathways</li>
                   </ul>
                 </div>
@@ -851,8 +851,8 @@ const NDISGoogleAdsRespiteSIL = () => {
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Increase budgets across all campaigns by 20-30%</li>
                     <li>• Create ads targeting plan renewal decision-making</li>
-                    <li>• Emphasize provider switching benefits</li>
-                    <li>• Offer plan utilization reviews and quotes</li>
+                    <li>• emphasise provider switching benefits</li>
+                    <li>• Offer plan utilisation reviews and quotes</li>
                   </ul>
                 </div>
               </div>
@@ -933,7 +933,7 @@ const NDISGoogleAdsRespiteSIL = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
-                  <li><strong>Week 1-2:</strong> Account setup, conversion tracking, landing page optimization</li>
+                  <li><strong>Week 1-2:</strong> Account setup, conversion tracking, landing page optimisation</li>
                   <li><strong>Week 3-4:</strong> Launch core campaigns (SIL + Respite), gather initial data</li>
                   <li><strong>Budget:</strong> Start conservative ($2,000-3,000)</li>
                   <li><strong>Goal:</strong> 20-30 qualified enquiries</li>
@@ -943,12 +943,12 @@ const NDISGoogleAdsRespiteSIL = () => {
 
             <Card className="border-t-4 border-t-purple-500">
               <CardHeader>
-                <CardTitle className="text-purple-700">Month 2: Optimization</CardTitle>
+                <CardTitle className="text-purple-700">Month 2: optimisation</CardTitle>
                 <CardDescription>Refine based on performance data</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
-                  <li><strong>Week 5-6:</strong> Analyze results, add negative keywords, adjust bids</li>
+                  <li><strong>Week 5-6:</strong> analyse results, add negative keywords, adjust bids</li>
                   <li><strong>Week 7-8:</strong> Expand to new suburbs, test new ad variations</li>
                   <li><strong>Budget:</strong> Increase to $3,500-4,500</li>
                   <li><strong>Goal:</strong> 40-50 qualified enquiries, improve conversion rate</li>
@@ -959,7 +959,7 @@ const NDISGoogleAdsRespiteSIL = () => {
             <Card className="border-t-4 border-t-green-500">
               <CardHeader>
                 <CardTitle className="text-green-700">Month 3: Scaling</CardTitle>
-                <CardDescription>Scale what works, maximize ROI</CardDescription>
+                <CardDescription>Scale what works, maximise ROI</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
@@ -998,7 +998,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                     </li>
                     <li>
                       <strong className="text-red-600">❌ No Phone Call Tracking</strong>
-                      <p className="text-muted-foreground mt-1">Missing 60-70% of conversions that happen via phone. Can&apos;t optimize without tracking calls.</p>
+                      <p className="text-muted-foreground mt-1">Missing 60-70% of conversions that happen via phone. Can&apos;t optimise without tracking calls.</p>
                     </li>
                   </ul>
                 </div>
@@ -1006,7 +1006,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                   <ul className="space-y-3 text-sm">
                     <li>
                       <strong className="text-red-600">❌ Ignoring Mobile Experience</strong>
-                      <p className="text-muted-foreground mt-1">60%+ of NDIS searches happen on mobile. Slow-loading or non-mobile-optimized landing pages lose enquiries.</p>
+                      <p className="text-muted-foreground mt-1">60%+ of NDIS searches happen on mobile. Slow-loading or non-mobile-optimised landing pages lose enquiries.</p>
                     </li>
                     <li>
                       <strong className="text-red-600">❌ Set and Forget Mentality</strong>
@@ -1014,7 +1014,7 @@ const NDISGoogleAdsRespiteSIL = () => {
                     </li>
                     <li>
                       <strong className="text-red-600">❌ Competing on Brand Terms Only</strong>
-                      <p className="text-muted-foreground mt-1">Only bidding on your organization name. You&apos;re missing 95% of potential participants searching for services.</p>
+                      <p className="text-muted-foreground mt-1">Only bidding on your organisation name. You&apos;re missing 95% of potential participants searching for services.</p>
                     </li>
                     <li>
                       <strong className="text-red-600">❌ No Compliance Verification</strong>
@@ -1033,7 +1033,7 @@ const NDISGoogleAdsRespiteSIL = () => {
            Google Ads offers Western Sydney NDIS providers a direct path to connect with participants and families actively seeking respite care and SIL accommodation through professional <Link href="/services/google-ads">Google Ads Management</Link>.
           </p>
           <p className="text-base mb-6">
-            Success requires ongoing optimization, NDIS compliance awareness, and a commitment to participant-centered messaging. Start with focused campaigns targeting your core Western Sydney suburbs, track every conversion, and scale what works.
+            Success requires ongoing optimisation, NDIS compliance awareness, and a commitment to participant-centered messaging. Start with focused campaigns targeting your core Western Sydney suburbs, track every conversion, and scale what works.
           </p>
           
           <StrategyForm preSelectedService="google-ads" />

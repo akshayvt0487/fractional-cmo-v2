@@ -54,7 +54,7 @@ const RealEstateSEOMarketing = () => {
 
   const articleData = {
     headline: "SEO for Real Estate Agents: Dominate Local Property Search Rankings 2026",
-    description: "Master SEO for real estate professionals. Learn local search optimization, content strategies, and digital tactics that attract homebuyers and sellers in your market.",
+    description: "Master SEO for real estate professionals. Learn local search optimisation, content strategies, and digital tactics that attract homebuyers and sellers in your market.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-12T00:00:00.000Z",
@@ -62,7 +62,7 @@ const RealEstateSEOMarketing = () => {
     imageUrl: "/images/blog/real-estate-seo-marketing-hero.jpg",
     category: "Real Estate Marketing",
     readTime: "24 min read",
-    tags: ["Real Estate SEO", "Local SEO", "Property Marketing", "Digital Marketing", "Search Optimization"]
+    tags: ["Real Estate SEO", "Local SEO", "Property Marketing", "Digital Marketing", "Search optimisation"]
   };
 
   const blogPostingSchema = generateBlogPostingSchema({
@@ -81,10 +81,10 @@ const RealEstateSEOMarketing = () => {
 
   const faqs = [{
     question: "How long does it take to see SEO results for real estate websites?",
-    answer: "Real estate SEO typically shows initial improvements within 3-6 months, with significant results after 6-12 months of consistent optimization. Local SEO can show faster results, often within 1-3 months for Google My Business optimization."
+    answer: "Real estate SEO typically shows initial improvements within 3-6 months, with significant results after 6-12 months of consistent optimisation. Local SEO can show faster results, often within 1-3 months for Google My Business optimisation."
   }, {
     question: "What are the most important SEO factors for real estate agents?",
-    answer: "The most critical factors include Google My Business optimization, local keyword targeting, property listing optimization with schema markup, high-quality local content creation, and managing online reviews from clients."
+    answer: "The most critical factors include Google My Business optimisation, local keyword targeting, property listing optimisation with schema markup, high-quality local content creation, and managing online reviews from clients."
   }, {
     question: "Should real estate agents focus on national or local SEO?",
     answer: "Real estate agents should focus primarily on local SEO since most property searches are location-specific. Target keywords like 'real estate agent [city]', 'homes for sale [suburb]', and create location-specific content for your service areas."
@@ -94,7 +94,7 @@ const RealEstateSEOMarketing = () => {
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
     />
-    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/real-estate-seo-marketing-hero.jpg'} heroAlt="Real estate SEO and local search optimization strategies">
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/real-estate-seo-marketing-hero.jpg'} heroAlt="Real estate SEO and local search optimisation strategies">
       <Card className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
         <CardContent className="p-6">
           <div className="flex items-start space-x-4">
@@ -162,7 +162,7 @@ const RealEstateSEOMarketing = () => {
         
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
-            Local SEO is the cornerstone of real estate success. Your Google My Business profile often appears before your website in search results, making optimization critical for lead generation:
+            Local SEO is the cornerstone of real estate success. Your Google My Business profile often appears before your website in search results, making optimisation critical for lead generation:
           </p>
         </div>
 
@@ -210,7 +210,7 @@ const RealEstateSEOMarketing = () => {
       </section>
 
       <h2>Local SEO Foundation</h2>
-      <h3>Google My Business Optimization</h3>
+      <h3>Google My Business optimisation</h3>
       <p>Essential for real estate local visibility:</p>
       <ul>
         <li>Complete business profile with accurate NAP details</li>
@@ -308,7 +308,7 @@ const RealEstateSEOMarketing = () => {
                 <ul className="text-sm space-y-1">
                   <li>• <strong>Ahrefs:</strong> Competitor analysis and keyword difficulty</li>
                   <li>• <strong>SEMrush:</strong> Local keyword tracking and SERP analysis</li>
-                  <li>• <strong>Moz Local:</strong> Local search optimization insights</li>
+                  <li>• <strong>Moz Local:</strong> Local search optimisation insights</li>
                   <li>• <strong>BrightLocal:</strong> Local citation and ranking tracking</li>
                 </ul>
                 <h4 className="font-semibold mb-2 mt-4">Free Research Methods:</h4>
@@ -327,7 +327,7 @@ const RealEstateSEOMarketing = () => {
                   <li>• Local newspaper property sections</li>
                   <li>• Council planning and development data</li>
                 </ul>
-                <h4 className="font-semibold mb-2 mt-4">Voice Search Optimization:</h4>
+                <h4 className="font-semibold mb-2 mt-4">Voice Search optimisation:</h4>
                 <ul className="text-sm space-y-1">
                   <li>• &quot;How much is my house worth in [suburb]?&quot;</li>
                   <li>• &quot;Who is the best real estate agent near me?&quot;</li>
@@ -355,8 +355,8 @@ const RealEstateSEOMarketing = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <Card className="border-l-4 border-l-indigo-500">
             <CardHeader>
-              <CardTitle className="text-indigo-700">Property Listing Optimization</CardTitle>
-              <CardDescription>Maximize visibility of individual property pages</CardDescription>
+              <CardTitle className="text-indigo-700">Property Listing optimisation</CardTitle>
+              <CardDescription>maximise visibility of individual property pages</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -366,7 +366,7 @@ const RealEstateSEOMarketing = () => {
                     <li>• RealEstate schema for property details</li>
                     <li>• LocalBusiness schema for agent information</li>
                     <li>• Review schema for client testimonials</li>
-                    <li>• Organization schema for agency branding</li>
+                    <li>• organisation schema for agency branding</li>
                   </ul>
                 </div>
                 <div>
@@ -379,12 +379,12 @@ const RealEstateSEOMarketing = () => {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Image Optimization:</h4>
+                  <h4 className="font-semibold mb-2">Image optimisation:</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Descriptive filenames with location keywords</li>
                     <li>• Alt text for accessibility and SEO</li>
                     <li>• WebP format for faster loading</li>
-                    <li>• Responsive images for mobile optimization</li>
+                    <li>• Responsive images for mobile optimisation</li>
                   </ul>
                 </div>
               </div>
@@ -393,8 +393,8 @@ const RealEstateSEOMarketing = () => {
 
           <Card className="border-l-4 border-l-emerald-500">
             <CardHeader>
-              <CardTitle className="text-emerald-700">Site Performance Optimization</CardTitle>
-              <CardDescription>Speed and mobile optimization for better rankings</CardDescription>
+              <CardTitle className="text-emerald-700">Site Performance optimisation</CardTitle>
+              <CardDescription>Speed and mobile optimisation for better rankings</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -408,7 +408,7 @@ const RealEstateSEOMarketing = () => {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Mobile Optimization:</h4>
+                  <h4 className="font-semibold mb-2">Mobile optimisation:</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Responsive design for all screen sizes</li>
                     <li>• Touch-friendly navigation and buttons</li>
@@ -422,7 +422,7 @@ const RealEstateSEOMarketing = () => {
                     <li>• SSL certificate for security and trust</li>
                     <li>• CDN for faster global content delivery</li>
                     <li>• XML sitemaps for search engine discovery</li>
-                    <li>• Robots.txt optimization</li>
+                    <li>• Robots.txt optimisation</li>
                   </ul>
                 </div>
               </div>
@@ -596,7 +596,7 @@ const RealEstateSEOMarketing = () => {
                 <li>• Local sports team sponsorship</li>
                 <li>• Community event participation</li>
                 <li>• School fundraising support</li>
-                <li>• Charity organization partnerships</li>
+                <li>• Charity organisation partnerships</li>
               </ul>
             </CardContent>
           </Card>
@@ -616,12 +616,12 @@ const RealEstateSEOMarketing = () => {
 
       <h2>Mobile SEO for Real Estate</h2>
       
-      <h3>Mobile Optimization Essentials</h3>
+      <h3>Mobile optimisation Essentials</h3>
       <ul>
         <li>Fast-loading mobile property galleries</li>
         <li>Click-to-call contact information</li>
         <li>Mobile-friendly property search functionality</li>
-        <li>Optimized contact forms for mobile users</li>
+        <li>optimised contact forms for mobile users</li>
         <li>Location-based services integration</li>
       </ul>
 
@@ -652,7 +652,7 @@ const RealEstateSEOMarketing = () => {
         <li>Duplicate content across property listings</li>
         <li>Slow-loading high-resolution images</li>
         <li>Missing schema markup for properties</li>
-        <li>Poor mobile optimization</li>
+        <li>Poor mobile optimisation</li>
         <li>Inconsistent NAP information</li>
       </ul>
 
@@ -661,33 +661,33 @@ const RealEstateSEOMarketing = () => {
         <li>Generic, non-localized content</li>
         <li>Keyword stuffing in property descriptions</li>
         <li>Neglecting to update market information</li>
-        <li>Ignoring voice search optimization</li>
+        <li>Ignoring voice search optimisation</li>
         <li>Not leveraging client testimonials</li>
       </ul>
 
       <h2>Advanced Real Estate SEO Tactics</h2>
       
-      <h3>Voice Search Optimization</h3>
+      <h3>Voice Search optimisation</h3>
       <ul>
         <li>Target conversational keywords and questions</li>
         <li>Create FAQ content for common property queries</li>
-        <li>Optimize for &quot;near me&quot; searches</li>
+        <li>optimise for &quot;near me&quot; searches</li>
         <li>Use natural language in content</li>
-        <li>Focus on featured snippet optimization</li>
+        <li>Focus on featured snippet optimisation</li>
       </ul>
 
       <h3>Video SEO</h3>
       <ul>
-        <li>Property tour video optimization</li>
+        <li>Property tour video optimisation</li>
         <li>Market update video content</li>
-        <li>YouTube channel optimization</li>
+        <li>YouTube channel optimisation</li>
         <li>Video schema markup implementation</li>
         <li>Video transcription for SEO</li>
       </ul>
 
       <h2>Ready to Dominate Real Estate Search?</h2>
       <p>
-        SEO success for real estate agents requires consistent local optimization, valuable content creation, and technical excellence. Implement these strategies to attract more qualified buyers and sellers in your target market areas.
+        SEO success for real estate agents requires consistent local optimisation, valuable content creation, and technical excellence. Implement these strategies to attract more qualified buyers and sellers in your target market areas.
       </p>
 
     </OptimizedBlogLayout>

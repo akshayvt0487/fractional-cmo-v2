@@ -14,7 +14,7 @@ export const metadata = createMetadata({
   },
 
   title: "How to Boost Property Leads Using Google Ads for Conveyancers",
-  description: "Master how to use Google Ads for conveyancing. Target local searches, craft compelling ads, and optimize landing pages for maximum leads.",
+  description: "Master how to use Google Ads for conveyancing. Target local searches, craft compelling ads, and optimise landing pages for maximum leads.",
   path: "/blog/google-ads-conveyancing",
   keywords: ["google", "conveyancing", "guide", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
@@ -54,7 +54,7 @@ const ConveyancingGoogleAds = () => {
 
   const articleData = {
     headline: "Google Ads for Conveyancers: How to Dominate Local Property Market",
-    description: "Complete Google Ads guide for conveyancing firms. Learn proven strategies, keyword targeting, and campaign optimization to attract property buyers and sellers in your local market.",
+    description: "Complete Google Ads guide for conveyancing firms. Learn proven strategies, keyword targeting, and campaign optimisation to attract property buyers and sellers in your local market.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-09-04T00:00:00.000Z",
@@ -161,7 +161,7 @@ const ConveyancingGoogleAds = () => {
               Promote your physical location to nearby prospects using Google&apos;s location extensions and local inventory.
             </p>
             <ul className="space-y-2">
-              <li>• Automatic optimization for local relevance</li>
+              <li>• Automatic optimisation for local relevance</li>
               <li>• Integration with Google My Business</li>
               <li>• Drive phone calls and office visits</li>
               <li>• Showcase local market expertise</li>
@@ -330,7 +330,7 @@ const ConveyancingGoogleAds = () => {
           </CardContent>
         </Card>
 
-        <h2 className="text-3xl font-bold mb-6">Landing Page Optimization for Conversions</h2>
+        <h2 className="text-3xl font-bold mb-6">Landing Page optimisation for Conversions</h2>
         
         <h3 className="text-2xl font-semibold mb-4">Landing Page Structure</h3>
         <p className="mb-6">
@@ -384,7 +384,7 @@ const ConveyancingGoogleAds = () => {
           </CardContent>
         </Card>
 
-        <h3 className="text-2xl font-semibold mb-4">Conversion Rate Optimization</h3>
+        <h3 className="text-2xl font-semibold mb-4">Conversion Rate optimisation</h3>
         <p className="mb-6">
           Small improvements to your landing pages can significantly impact your cost per lead.
         </p>
@@ -417,7 +417,7 @@ const ConveyancingGoogleAds = () => {
           </CardContent>
         </Card>
 
-        <h2 className="text-3xl font-bold mb-6">Campaign Management and Optimization</h2>
+        <h2 className="text-3xl font-bold mb-6">Campaign Management and optimisation</h2>
         
         <h3 className="text-2xl font-semibold mb-4">Bidding Strategies</h3>
         <p className="mb-6">
@@ -431,18 +431,18 @@ const ConveyancingGoogleAds = () => {
               <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
                 <h5 className="font-medium text-blue-800 mb-2">Target CPA (Cost Per Acquisition)</h5>
                 <p className="text-sm text-blue-700 mb-2">Best for: Established campaigns with conversion history</p>
-                <p className="text-xs text-blue-600">Recommendation: Start with 150% of your actual CPA, then optimize down</p>
+                <p className="text-xs text-blue-600">Recommendation: Start with 150% of your actual CPA, then optimise down</p>
               </div>
               
               <div className="p-4 bg-green-50 rounded-lg border border-green-200">
-                <h5 className="font-medium text-green-800 mb-2">Maximize Conversions</h5>
+                <h5 className="font-medium text-green-800 mb-2">maximise Conversions</h5>
                 <p className="text-sm text-green-700 mb-2">Best for: New campaigns focused on lead volume</p>
-                <p className="text-xs text-green-600">Recommendation: Use when you want to maximize total leads within budget</p>
+                <p className="text-xs text-green-600">Recommendation: Use when you want to maximise total leads within budget</p>
               </div>
               
               <div className="p-4 bg-orange-50 rounded-lg border border-orange-200">
                 <h5 className="font-medium text-orange-800 mb-2">Enhanced CPC</h5>
-                <p className="text-sm text-orange-700 mb-2">Best for: Manual control with automated optimization</p>
+                <p className="text-sm text-orange-700 mb-2">Best for: Manual control with automated optimisation</p>
                 <p className="text-xs text-orange-600">Recommendation: Good starting point for new conveyancing campaigns</p>
               </div>
             </div>
@@ -451,7 +451,7 @@ const ConveyancingGoogleAds = () => {
 
         <h3 className="text-2xl font-semibold mb-4">Performance Monitoring</h3>
         <p className="mb-6">
-          Regular monitoring and optimization are essential for sustained Google Ads success.
+          Regular monitoring and optimisation are essential for sustained Google Ads success.
         </p>
 
         <Card className="mb-8">
@@ -522,7 +522,7 @@ const ConveyancingGoogleAds = () => {
 
         <h3 className="text-2xl font-semibold mb-4">ROI Calculation Framework</h3>
         <p className="mb-6">
-          Understanding your return on investment helps justify and optimize your Google Ads spending.
+          Understanding your return on investment helps justify and optimise your Google Ads spending.
         </p>
 
         <Card className="mb-8">
@@ -554,11 +554,11 @@ const ConveyancingGoogleAds = () => {
 
         <h2>Your Path to Google Ads Success</h2>
         <p>
-          Google Ads represents one of the most effective ways for conveyancing firms to attract qualified leads and grow their practice. By implementing strategic keyword targeting, compelling ad copy, and optimized landing pages, you can position your firm in front of potential clients at the exact moment they&apos;re searching for conveyancing services.
+          Google Ads represents one of the most effective ways for conveyancing firms to attract qualified leads and grow their practice. By implementing strategic keyword targeting, compelling ad copy, and optimised landing pages, you can position your firm in front of potential clients at the exact moment they&apos;re searching for conveyancing services.
         </p>
         
         <p>
-          Success with Google Ads requires ongoing optimization and refinement. Start with a focused campaign targeting your most profitable services and geographic areas, then expand as you gather data and improve your conversion rates. Remember that every click is an opportunity to demonstrate your expertise and convert a prospect into a valuable client.
+          Success with Google Ads requires ongoing optimisation and refinement. Start with a focused campaign targeting your most profitable services and geographic areas, then expand as you gather data and improve your conversion rates. Remember that every click is an opportunity to demonstrate your expertise and convert a prospect into a valuable client.
         </p>
 
         <p className="mb-8">

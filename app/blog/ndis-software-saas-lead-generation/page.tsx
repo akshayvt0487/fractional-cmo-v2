@@ -316,7 +316,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                           <strong>Step 2: Engage & Connect</strong>
                           <ul className="text-sm mt-1 space-y-1">
                             <li>• Like and comment on their posts first</li>
-                            <li>• Send personalized connection requests</li>
+                            <li>• Send personalised connection requests</li>
                             <li>• Reference specific challenges they&apos;ve shared</li>
                           </ul>
                         </div>
@@ -453,7 +453,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                         <div>
                           <h5 className="font-medium text-foreground">InMail Campaigns</h5>
                           <ul className="text-sm text-muted-foreground space-y-1">
-                            <li>• Personalized messages to decision-makers</li>
+                            <li>• personalised messages to decision-makers</li>
                             <li>• Offer value before asking for anything</li>
                             <li>• Include social proof and credibility markers</li>
                             <li>• Clear, single call-to-action</li>
@@ -524,7 +524,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-3 text-foreground">Email Performance Optimization</h4>
+                      <h4 className="font-semibold mb-3 text-foreground">Email Performance optimisation</h4>
                       <div className="space-y-3">
                         <div>
                           <h5 className="font-medium text-foreground">Subject Line Best Practices</h5>
@@ -532,7 +532,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                             <li>• Keep under 50 characters for mobile</li>
                             <li>• Use numbers and specific benefits</li>
                             <li>• Create urgency without being pushy</li>
-                            <li>• Personalize with company name or role</li>
+                            <li>• personalise with company name or role</li>
                             <li>• A/B test different approaches</li>
                           </ul>
                         </div>
@@ -605,12 +605,12 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                           </ul>
                         </div>
                         <div>
-                          <h5 className="font-medium text-foreground">Industry Organizations</h5>
+                          <h5 className="font-medium text-foreground">Industry organisations</h5>
                           <ul className="text-sm text-muted-foreground space-y-1">
                             <li>• National Disability Services (NDS)</li>
                             <li>• State-based provider associations</li>
                             <li>• Disability advocacy groups</li>
-                            <li>• Professional development organizations</li>
+                            <li>• Professional development organisations</li>
                           </ul>
                         </div>
                       </div>
@@ -761,14 +761,14 @@ const NDISSoftwareSaaSLeadGeneration = () => {
               </Card>
             </section>
 
-            {/* Conversion Optimization */}
+            {/* Conversion optimisation */}
             <section className="mb-12">
-              <h2 className="text-3xl font-semibold mb-6 text-foreground">Lead Conversion Optimization</h2>
+              <h2 className="text-3xl font-semibold mb-6 text-foreground">Lead Conversion optimisation</h2>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-4 text-foreground">Landing Page Optimization</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-foreground">Landing Page optimisation</h3>
                     <div className="space-y-4">
                       <div>
                         <h4 className="font-medium text-foreground mb-2">Key Elements for High-Converting Pages</h4>
@@ -778,7 +778,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
                           <li>• <strong>Social Proof:</strong> Customer logos, testimonials, reviews</li>
                           <li>• <strong>Minimal Form Fields:</strong> Only essential information</li>
                           <li>• <strong>Strong CTA:</strong> Action-oriented, contrasting button</li>
-                          <li>• <strong>Mobile Optimization:</strong> Fast loading, thumb-friendly</li>
+                          <li>• <strong>Mobile optimisation:</strong> Fast loading, thumb-friendly</li>
                         </ul>
                       </div>
                       <div className="bg-background/50 border rounded-lg p-3">
@@ -892,7 +892,7 @@ const NDISSoftwareSaaSLeadGeneration = () => {
 
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-4 text-foreground">Days 61-90: Optimization & Scale</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-foreground">Days 61-90: optimisation & Scale</h3>
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-medium mb-2 text-foreground">Week 9-10: Performance Analysis</h4>

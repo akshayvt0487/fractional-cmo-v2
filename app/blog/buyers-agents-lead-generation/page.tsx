@@ -181,7 +181,7 @@ const BuyersAgentsLeadGeneration = () => {
       <Card className="mb-8">
         <CardHeader>
           <CardTitle>Multi-Channel Lead Generation Strategy</CardTitle>
-          <CardDescription>Diversify across multiple channels to reduce risk and maximize lead flow</CardDescription>
+          <CardDescription>Diversify across multiple channels to reduce risk and maximise lead flow</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="space-y-6">

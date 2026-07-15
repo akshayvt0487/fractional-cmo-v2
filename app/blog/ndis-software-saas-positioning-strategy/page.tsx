@@ -61,11 +61,11 @@ const NDISSoftwareSaaSPositioning = () => {
     question: "Should NDIS software companies position on features or outcomes?",
     answer: "Position on outcomes first, features second. NDIS providers care about results like reducing compliance violations by 95%, saving 20 hours per week on administration, or improving participant satisfaction. Lead with these quantifiable outcomes, then support with the features that enable them. Feature-focused positioning fails to differentiate in a crowded market where most platforms offer similar core functionality."
   }, {
-    question: "Is it better to specialize in one NDIS service type or offer a broad solution?",
-    answer: "Specialization typically wins in the NDIS software market. Focusing on specific provider types like SIL specialists, plan managers, or therapy providers allows deeper feature development, stronger positioning, and premium pricing. Start with a narrow focus to dominate one segment, then expand to adjacent markets once established. Broad positioning makes differentiation difficult against well-funded generalist competitors."
+    question: "Is it better to specialise in one NDIS service type or offer a broad solution?",
+    answer: "specialisation typically wins in the NDIS software market. Focusing on specific provider types like SIL specialists, plan managers, or therapy providers allows deeper feature development, stronger positioning, and premium pricing. Start with a narrow focus to dominate one segment, then expand to adjacent markets once established. Broad positioning makes differentiation difficult against well-funded generalist competitors."
   }, {
     question: "How do you compete against established NDIS software providers?",
-    answer: "Compete through superior positioning focused on underserved segments or specific pain points. Emphasize modern technology, better support, faster implementation, or niche specialization rather than trying to match feature-for-feature. Highlight agility and responsiveness compared to legacy providers, or target specific provider types where incumbents deliver generic solutions. Build case studies demonstrating superior outcomes for your target market."
+    answer: "Compete through superior positioning focused on underserved segments or specific pain points. emphasise modern technology, better support, faster implementation, or niche specialisation rather than trying to match feature-for-feature. Highlight agility and responsiveness compared to legacy providers, or target specific provider types where incumbents deliver generic solutions. Build case studies demonstrating superior outcomes for your target market."
   }];
 
   // Client gating removed during build stabilization: assume content unlocked for prerender
@@ -248,9 +248,9 @@ const NDISSoftwareSaaSPositioning = () => {
                         <div>
                           <h5 className="font-medium mb-2 text-foreground">Market-Based</h5>
                           <ul className="text-sm text-muted-foreground space-y-1">
-                            <li>• Specific disability specialization</li>
+                            <li>• Specific disability specialisation</li>
                             <li>• Regional market focus</li>
-                            <li>• Provider size specialization</li>
+                            <li>• Provider size specialisation</li>
                             <li>• Service type expertise</li>
                           </ul>
                         </div>
@@ -299,7 +299,7 @@ const NDISSoftwareSaaSPositioning = () => {
                         <div>
                           <h5 className="font-medium mb-2 text-foreground">Medium Providers (10-50 participants)</h5>
                           <p className="text-sm text-muted-foreground">
-                            &quot;Growth-ready platform that scales with your organization&quot;
+                            &quot;Growth-ready platform that scales with your organisation&quot;
                           </p>
                         </div>
                         <div>
@@ -322,7 +322,7 @@ const NDISSoftwareSaaSPositioning = () => {
                           <ul className="text-sm text-muted-foreground space-y-1">
                             <li>• More agile and responsive to feedback</li>
                             <li>• Better value for money</li>
-                            <li>• Specialized focus vs. generic solution</li>
+                            <li>• specialised focus vs. generic solution</li>
                             <li>• Modern technology vs. legacy systems</li>
                           </ul>
                         </div>
@@ -467,7 +467,7 @@ const NDISSoftwareSaaSPositioning = () => {
                       <h4 className="font-semibold mb-3 text-foreground">Participant Outcome Messaging</h4>
                       <ul className="space-y-2 text-muted-foreground">
                         <li>• &quot;Improve participant satisfaction by 40%&quot;</li>
-                        <li>• &quot;Personalized care plans for better outcomes&quot;</li>
+                        <li>• &quot;personalised care plans for better outcomes&quot;</li>
                         <li>• &quot;Real-time participant feedback and insights&quot;</li>
                         <li>• &quot;Seamless participant portal and communication&quot;</li>
                         <li>• &quot;Evidence-based outcome tracking&quot;</li>
@@ -477,7 +477,7 @@ const NDISSoftwareSaaSPositioning = () => {
                       <h4 className="font-semibold mb-3 text-foreground">Participant Features</h4>
                       <ul className="space-y-2 text-muted-foreground">
                         <li>• Mobile app for participants and families</li>
-                        <li>• Goal tracking and progress visualization</li>
+                        <li>• Goal tracking and progress visualisation</li>
                         <li>• Integrated communication tools</li>
                         <li>• Outcome measurement frameworks</li>
                         <li>• Participant feedback collection</li>
@@ -528,7 +528,7 @@ const NDISSoftwareSaaSPositioning = () => {
                   <div className="bg-background/50 border rounded-lg p-4">
                     <h5 className="font-medium mb-2 text-foreground">Target Audience</h5>
                     <p className="text-sm text-muted-foreground">
-                      Tech-savvy providers, larger organizations with IT departments, and early adopters seeking competitive advantage.
+                      Tech-savvy providers, larger organisations with IT departments, and early adopters seeking competitive advantage.
                     </p>
                   </div>
                 </CardContent>
@@ -599,7 +599,7 @@ const NDISSoftwareSaaSPositioning = () => {
                         <li>• Dedicated customer success managers</li>
                         <li>• Live chat support during business hours</li>
                         <li>• Comprehensive online training library</li>
-                        <li>• Regular check-ins and optimization reviews</li>
+                        <li>• Regular check-ins and optimisation reviews</li>
                         <li>• Free ongoing training and updates</li>
                       </ul>
                     </div>
@@ -617,14 +617,14 @@ const NDISSoftwareSaaSPositioning = () => {
               {/* Strategy 7 */}
               <Card className="mb-8">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4 text-foreground">7. Niche Specialization Positioning</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-foreground">7. Niche specialisation Positioning</h3>
                   <p className="text-muted-foreground mb-6">
-                    Focus on specific NDIS provider types, disability categories, or service specializations for targeted market dominance.
+                    Focus on specific NDIS provider types, disability categories, or service specialisations for targeted market dominance.
                   </p>
                   
                   <div className="grid md:grid-cols-3 gap-6 mb-6">
                     <div>
-                      <h4 className="font-semibold mb-3 text-foreground">Service Type Specialization</h4>
+                      <h4 className="font-semibold mb-3 text-foreground">Service Type specialisation</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
                         <li>• Plan Management specialists</li>
                         <li>• SIL providers</li>
@@ -634,7 +634,7 @@ const NDISSoftwareSaaSPositioning = () => {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-3 text-foreground">Disability Specialization</h4>
+                      <h4 className="font-semibold mb-3 text-foreground">Disability specialisation</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
                         <li>• Autism spectrum support</li>
                         <li>• Intellectual disability services</li>
@@ -644,7 +644,7 @@ const NDISSoftwareSaaSPositioning = () => {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-3 text-foreground">Geographic Specialization</h4>
+                      <h4 className="font-semibold mb-3 text-foreground">Geographic specialisation</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
                         <li>• Remote and rural providers</li>
                         <li>• Metropolitan service areas</li>
@@ -656,9 +656,9 @@ const NDISSoftwareSaaSPositioning = () => {
                   </div>
 
                   <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                    <h5 className="font-medium mb-2 text-foreground">Specialization Benefits</h5>
+                    <h5 className="font-medium mb-2 text-foreground">specialisation Benefits</h5>
                     <p className="text-sm text-muted-foreground">
-                      Specialization allows for deeper market penetration, higher prices, stronger word-of-mouth, and reduced competition.
+                      specialisation allows for deeper market penetration, higher prices, stronger word-of-mouth, and reduced competition.
                     </p>
                   </div>
                 </CardContent>
@@ -677,7 +677,7 @@ const NDISSoftwareSaaSPositioning = () => {
                       <div>
                         <h4 className="font-medium mb-2 text-foreground">Market Research</h4>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>• Analyze competitor positioning and messaging</li>
+                          <li>• analyse competitor positioning and messaging</li>
                           <li>• Conduct customer interviews and surveys</li>
                           <li>• Identify market gaps and opportunities</li>
                           <li>• Map competitor strengths and weaknesses</li>
@@ -688,7 +688,7 @@ const NDISSoftwareSaaSPositioning = () => {
                         <ul className="text-sm text-muted-foreground space-y-1">
                           <li>• Audit current positioning and messaging</li>
                           <li>• Identify unique capabilities and advantages</li>
-                          <li>• Analyze customer success stories and feedback</li>
+                          <li>• analyse customer success stories and feedback</li>
                           <li>• Assess team strengths and resources</li>
                         </ul>
                       </div>
@@ -750,7 +750,7 @@ const NDISSoftwareSaaSPositioning = () => {
 
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-4 text-foreground">Phase 4: Launch & Optimization (Weeks 9-12)</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-foreground">Phase 4: Launch & optimisation (Weeks 9-12)</h3>
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-medium mb-2 text-foreground">Rollout Plan</h4>
@@ -762,7 +762,7 @@ const NDISSoftwareSaaSPositioning = () => {
                         </ul>
                       </div>
                       <div>
-                        <h4 className="font-medium mb-2 text-foreground">Measurement & Optimization</h4>
+                        <h4 className="font-medium mb-2 text-foreground">Measurement & optimisation</h4>
                         <ul className="text-sm text-muted-foreground space-y-1">
                           <li>• Track positioning effectiveness metrics</li>
                           <li>• Monitor brand perception and awareness</li>

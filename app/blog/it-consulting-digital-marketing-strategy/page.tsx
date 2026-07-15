@@ -87,8 +87,8 @@ const ITConsultingDigitalMarketing = () => {
     question: "How long does it take to see results from IT consulting marketing?",
     answer: "Initial engagement typically appears within 2-3 months, with significant lead generation improvements usually visible after 6-12 months. IT consulting has longer sales cycles, requiring consistent nurturing and relationship building."
   }, {
-    question: "Should IT consultants focus on general or specialized services?",
-    answer: "Specialization delivers much higher ROI. Focus on specific technology areas like cloud migration, cybersecurity, or digital transformation rather than being a generalist. Specialists command premium pricing and attract better clients."
+    question: "Should IT consultants focus on general or specialised services?",
+    answer: "specialisation delivers much higher ROI. Focus on specific technology areas like cloud migration, cybersecurity, or digital transformation rather than being a generalist. Specialists command premium pricing and attract better clients."
   }];
   return <>
     <script
@@ -129,12 +129,12 @@ const ITConsultingDigitalMarketing = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-red-700 dark:text-red-300 text-sm mb-3">Specialize in compliance, penetration testing, or security architecture with proven frameworks.</p>
+            <p className="text-red-700 dark:text-red-300 text-sm mb-3">specialise in compliance, penetration testing, or security architecture with proven frameworks.</p>
           </CardContent>
         </Card>
       </div>
 
-      <h2>Website Optimization for IT Consulting</h2>
+      <h2>Website optimisation for IT Consulting</h2>
       
       <h3>Professional Website Essentials</h3>
       <p>Your website serves as your digital business card. Essential elements include:</p>
@@ -163,7 +163,7 @@ const ITConsultingDigitalMarketing = () => {
       <h3>Professional Network Building</h3>
       <p>LinkedIn remains the primary platform for B2B IT consulting marketing:</p>
       <ul>
-        <li><strong>Optimize Profiles:</strong> Include relevant keywords and clear value propositions</li>
+        <li><strong>optimise Profiles:</strong> Include relevant keywords and clear value propositions</li>
         <li><strong>Share Industry Insights:</strong> Comment thoughtfully on industry discussions</li>
         <li><strong>Publish Articles:</strong> Demonstrate thought leadership through detailed posts</li>
         <li><strong>Engage with Prospects:</strong> Participate in relevant group discussions</li>
@@ -178,7 +178,7 @@ const ITConsultingDigitalMarketing = () => {
         <li><strong>Client Success Stories:</strong> Share anonymized case studies and results</li>
       </ul>
 
-      <h2>Search Engine Optimization for IT Consulting</h2>
+      <h2>Search Engine optimisation for IT Consulting</h2>
       
       <h3>Technical SEO Strategy</h3>
       <p>IT consultants need sophisticated SEO approaches that demonstrate technical expertise:</p>
@@ -262,7 +262,7 @@ const ITConsultingDigitalMarketing = () => {
         <li><strong>Service-Specific Campaigns:</strong> Separate campaigns for each core service</li>
         <li><strong>Geographic Targeting:</strong> Focus on profitable service areas</li>
         <li><strong>Professional Targeting:</strong> Target IT managers, CTOs, and business owners</li>
-        <li><strong>Time-of-Day Optimization:</strong> Increase bids during business hours</li>
+        <li><strong>Time-of-Day optimisation:</strong> Increase bids during business hours</li>
       </ul>
 
       <h4>High-Converting Ad Copy Examples</h4>
@@ -284,7 +284,7 @@ const ITConsultingDigitalMarketing = () => {
       <ul>
         <li><strong>Sponsored Content:</strong> Promote thought leadership articles</li>
         <li><strong>Message Ads:</strong> Direct outreach to qualified prospects</li>
-        <li><strong>Dynamic Ads:</strong> Personalized content for target audiences</li>
+        <li><strong>Dynamic Ads:</strong> personalised content for target audiences</li>
         <li><strong>Event Promotion:</strong> Drive attendance to webinars and workshops</li>
       </ul>
 
@@ -459,7 +459,7 @@ const ITConsultingDigitalMarketing = () => {
 
       <h2>Getting Started: Your Action Plan</h2>
       <p>
-        Implementing a comprehensive digital marketing strategy requires systematic execution and continuous optimization.
+        Implementing a comprehensive digital marketing strategy requires systematic execution and continuous optimisation.
       </p>
 
       <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg p-6 mb-8">
@@ -468,11 +468,11 @@ const ITConsultingDigitalMarketing = () => {
           <div>
             <h4 className="font-semibold text-blue-700 mb-2">Month 1: Foundation</h4>
             <ul className="space-y-1 text-sm text-blue-600">
-              <li>• Website optimization and lead capture</li>
+              <li>• Website optimisation and lead capture</li>
               <li>• Define target market and personas</li>
               <li>• Create core content and case studies</li>
               <li>• Set up analytics and tracking</li>
-              <li>• Optimize LinkedIn presence</li>
+              <li>• optimise LinkedIn presence</li>
             </ul>
           </div>
           
@@ -488,10 +488,10 @@ const ITConsultingDigitalMarketing = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold text-purple-700 mb-2">Month 3: Scale & Optimize</h4>
+            <h4 className="font-semibold text-purple-700 mb-2">Month 3: Scale & optimise</h4>
             <ul className="space-y-1 text-sm text-purple-600">
               <li>• Launch ad campaigns</li>
-              <li>• Analyze performance data</li>
+              <li>• analyse performance data</li>
               <li>• Develop partnerships</li>
               <li>• Expand successful channels</li>
               <li>• Plan long-term strategy</li>

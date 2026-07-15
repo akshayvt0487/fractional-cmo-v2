@@ -138,13 +138,13 @@ const MechanicDigitalMarketing = () => {
           <CardHeader>
             <CardTitle className="flex items-center gap-3 text-purple-800 dark:text-purple-200">
               <Zap className="h-6 w-6" />
-              Specialized Diagnostics
+              specialised Diagnostics
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-purple-700 dark:text-purple-300 text-sm mb-3">AC repair, electrical systems, and computer diagnostics requiring specialized equipment and expertise.</p>
+            <p className="text-purple-700 dark:text-purple-300 text-sm mb-3">AC repair, electrical systems, and computer diagnostics requiring specialised equipment and expertise.</p>
             <div className="bg-purple-100 dark:bg-purple-900/30 p-3 rounded-lg">
-              <p className="text-xs text-purple-800 dark:text-purple-200 font-medium">🔧 Advantage: Specialized services command premium pricing and reduce competition.</p>
+              <p className="text-xs text-purple-800 dark:text-purple-200 font-medium">🔧 Advantage: specialised services command premium pricing and reduce competition.</p>
             </div>
           </CardContent>
         </Card>
@@ -180,9 +180,9 @@ const MechanicDigitalMarketing = () => {
       <h3>Local SEO for Auto Shops</h3>
       <p>Most customers search for nearby automotive services:</p>
       <ul>
-        <li>Google My Business optimization with service photos</li>
+        <li>Google My Business optimisation with service photos</li>
         <li>Location-specific landing pages</li>
-        <li>Local keyword optimization (e.g., &quot;auto repair [city]&quot;)</li>
+        <li>Local keyword optimisation (e.g., &quot;auto repair [city]&quot;)</li>
         <li>Citations in automotive and local directories</li>
         <li>Reviews management and response strategy</li>
       </ul>
@@ -201,7 +201,7 @@ const MechanicDigitalMarketing = () => {
             <h4 className="font-semibold mb-3">Local SEO Strategy</h4>
             <ul className="space-y-2 text-sm mb-4">
               <li>• Target &quot;auto repair near me&quot; (27,000 monthly searches)</li>
-              <li>• Optimize for &quot;car mechanic [city]&quot; variations</li>
+              <li>• optimise for &quot;car mechanic [city]&quot; variations</li>
               <li>• Create service-specific pages (brake repair, oil change)</li>
               <li>• Build citations in automotive directories</li>
             </ul>

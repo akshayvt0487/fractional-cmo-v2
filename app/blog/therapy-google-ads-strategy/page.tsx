@@ -100,7 +100,7 @@ const TherapyGoogleAdsStrategy = () => {
         </p>
 
         <p className="mb-6">
-          This comprehensive guide reveals advanced Google Ads strategies specifically designed for speech therapy, occupational therapy, ABA therapy, and psychology practices. Learn how to target the right families, create compelling ads that build trust, and optimize campaigns for maximum NDIS participant acquisition.
+          This comprehensive guide reveals advanced Google Ads strategies specifically designed for speech therapy, occupational therapy, ABA therapy, and psychology practices. Learn how to target the right families, create compelling ads that build trust, and optimise campaigns for maximum NDIS participant acquisition.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 my-12">
@@ -119,7 +119,7 @@ const TherapyGoogleAdsStrategy = () => {
           <Card>
             <CardContent className="p-6 text-center">
               <div className="text-3xl font-bold text-primary mb-2">180%</div>
-              <div className="text-sm text-muted-foreground">Increase in qualified leads with optimized campaigns</div>
+              <div className="text-sm text-muted-foreground">Increase in qualified leads with optimised campaigns</div>
             </CardContent>
           </Card>
         </div>
@@ -127,7 +127,7 @@ const TherapyGoogleAdsStrategy = () => {
         <h2 className="text-3xl font-bold mt-12 mb-6">Understanding Therapy Services Search Behavior</h2>
         
         <p className="mb-6">
-          Successful Google Ads campaigns for therapy services start with understanding how families search for help. Unlike other healthcare services, therapy searches often involve emotional stress, urgency, and complex decision-making processes that require specialized ad strategies.
+          Successful Google Ads campaigns for therapy services start with understanding how families search for help. Unlike other healthcare services, therapy searches often involve emotional stress, urgency, and complex decision-making processes that require specialised ad strategies.
         </p>
 
         <h3 className="text-2xl font-semibold mt-8 mb-4">Search Intent Categories for Therapy Services</h3>
@@ -297,7 +297,7 @@ const TherapyGoogleAdsStrategy = () => {
         <h3 className="text-2xl font-semibold mt-8 mb-4">Ad Extensions for Therapy Services</h3>
         
         <p className="mb-6">
-          Ad extensions are particularly important for therapy services as they provide additional space to showcase credentials, services, and contact options. Use all relevant extensions to maximize ad real estate and click-through rates.
+          Ad extensions are particularly important for therapy services as they provide additional space to showcase credentials, services, and contact options. Use all relevant extensions to maximise ad real estate and click-through rates.
         </p>
 
         <div className="space-y-6 mb-8">
@@ -328,7 +328,7 @@ const TherapyGoogleAdsStrategy = () => {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold mt-12 mb-6">Landing Page Optimization for Therapy Services</h2>
+        <h2 className="text-3xl font-bold mt-12 mb-6">Landing Page optimisation for Therapy Services</h2>
         
         <h3 className="text-2xl font-semibold mt-8 mb-4">Trust-Building Elements</h3>
         
@@ -378,7 +378,7 @@ const TherapyGoogleAdsStrategy = () => {
           </Card>
         </div>
 
-        <h2 className="text-3xl font-bold mt-12 mb-6">Budget Management and Optimization</h2>
+        <h2 className="text-3xl font-bold mt-12 mb-6">Budget Management and optimisation</h2>
         
         <h3 className="text-2xl font-semibold mt-8 mb-4">Smart Budget Allocation</h3>
         
@@ -403,17 +403,17 @@ const TherapyGoogleAdsStrategy = () => {
               <ul className="text-sm space-y-1">
                 <li>• Speech Therapy: 40% (Highest demand)</li>
                 <li>• Occupational Therapy: 30% (Growing demand)</li>
-                <li>• ABA Therapy: 20% (Specialized, higher value)</li>
+                <li>• ABA Therapy: 20% (specialised, higher value)</li>
                 <li>• Psychology Services: 10% (Competitive market)</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <h3 className="text-2xl font-semibold mt-8 mb-4">Performance Monitoring and Optimization</h3>
+        <h3 className="text-2xl font-semibold mt-8 mb-4">Performance Monitoring and optimisation</h3>
         
         <p className="mb-6">
-          Regular monitoring and optimization are essential for therapy Google Ads success. Focus on metrics that indicate quality leads and long-term client relationships, not just clicks and impressions.
+          Regular monitoring and optimisation are essential for therapy Google Ads success. Focus on metrics that indicate quality leads and long-term client relationships, not just clicks and impressions.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 mb-8">

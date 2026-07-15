@@ -56,7 +56,7 @@ const DigitalMarketingAutomation = () => {
 
   const articleData = {
     headline: "Digital Marketing Automation for Service Businesses: Complete Guide",
-    description: "Marketing automation guide for service businesses. Lead nurturing, email sequences, customer journeys & ROI optimization.",
+    description: "Marketing automation guide for service businesses. Lead nurturing, email sequences, customer journeys & ROI optimisation.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-24T00:00:00.000Z",
@@ -86,10 +86,10 @@ const DigitalMarketingAutomation = () => {
     answer: "HubSpot, Marketo, and Pardot are top choices for comprehensive automation. For smaller businesses, ActiveCampaign and ConvertKit offer excellent value. Choose based on your budget, technical requirements, and integration needs."
   }, {
     question: "How long does it take to see results from marketing automation?",
-    answer: "Initial improvements appear within 30-60 days, with significant results typically visible after 3-6 months. The key is consistent optimization and testing of your automation workflows."
+    answer: "Initial improvements appear within 30-60 days, with significant results typically visible after 3-6 months. The key is consistent optimisation and testing of your automation workflows."
   }, {
     question: "What ROI can I expect from marketing automation?",
-    answer: "Most service businesses see 80% increase in leads, 77% higher conversions, and 451% ROI improvement within the first year. Results depend on proper setup, quality content, and ongoing optimization."
+    answer: "Most service businesses see 80% increase in leads, 77% higher conversions, and 451% ROI improvement within the first year. Results depend on proper setup, quality content, and ongoing optimisation."
   }];
   return <>
     <script
@@ -143,7 +143,7 @@ const DigitalMarketingAutomation = () => {
               <li>• Behavioral trigger campaigns</li>
               <li>• Lead scoring and qualification</li>
               <li>• Progressive profiling</li>
-              <li>• Content personalization</li>
+              <li>• Content personalisation</li>
               <li>• Sales handoff automation</li>
             </ul>
           </CardContent>
@@ -195,7 +195,7 @@ const DigitalMarketingAutomation = () => {
                   <li>• Proof and testimonials</li>
                   <li>• Addressing common objections</li>
                   <li>• Competitive advantages</li>
-                  <li>• Call-to-action optimization</li>
+                  <li>• Call-to-action optimisation</li>
                 </ul>
               </div>
             </div>
@@ -206,8 +206,8 @@ const DigitalMarketingAutomation = () => {
           <CardContent className="p-6">
             <h4 className="text-xl font-semibold mb-4">Behavioral Trigger Campaigns</h4>
             <p className="mb-4">
-              Behavioral triggers respond to specific user actions, delivering personalized content 
-              at precisely the right moment to maximize engagement and conversion rates.
+              Behavioral triggers respond to specific user actions, delivering personalised content 
+              at precisely the right moment to maximise engagement and conversion rates.
             </p>
             <div className="grid md:grid-cols-3 gap-4">
               <div>
@@ -249,7 +249,7 @@ const DigitalMarketingAutomation = () => {
       
       <h3>Implementing Effective Lead Scoring</h3>
       <p>
-        Lead scoring automatically prioritizes prospects based on their likelihood to convert, 
+        Lead scoring automatically prioritises prospects based on their likelihood to convert, 
         allowing sales teams to focus on the highest-value opportunities while automation 
         continues nurturing lower-scored leads.
       </p>
@@ -332,14 +332,14 @@ const DigitalMarketingAutomation = () => {
                 <h5 className="font-semibold mb-2">Warm Leads (26-50 points)</h5>
                 <p className="text-sm text-muted-foreground">
                   Solution-focused content, case studies, service explanations. 
-                  Bi-weekly personalized email sequences and consultation offers.
+                  Bi-weekly personalised email sequences and consultation offers.
                 </p>
               </div>
               <div className="bg-muted p-4 rounded-lg">
                 <h5 className="font-semibold mb-2">Hot Leads (51-75 points)</h5>
                 <p className="text-sm text-muted-foreground">
-                  Personalized outreach, direct sales contact, proposal development. 
-                  Weekly follow-ups and customized solution presentations.
+                  personalised outreach, direct sales contact, proposal development. 
+                  Weekly follow-ups and customised solution presentations.
                 </p>
               </div>
               <div className="bg-muted p-4 rounded-lg">
@@ -354,9 +354,9 @@ const DigitalMarketingAutomation = () => {
         </Card>
       </div>
 
-      <h2>Advanced Personalization Strategies</h2>
+      <h2>Advanced personalisation Strategies</h2>
       
-      <h3>Dynamic Content Personalization</h3>
+      <h3>Dynamic Content personalisation</h3>
       <p>
         Advanced automation platforms enable dynamic content that adapts based on user behavior, 
         demographics, and engagement history, creating highly relevant experiences for each prospect.
@@ -365,7 +365,7 @@ const DigitalMarketingAutomation = () => {
       <div className="grid md:grid-cols-2 gap-6 mb-6">
         <Card>
           <CardContent className="p-6">
-            <h4 className="font-semibold mb-3">Content Personalization Types</h4>
+            <h4 className="font-semibold mb-3">Content personalisation Types</h4>
             <ul className="space-y-2 text-sm">
               <li>• Industry-specific case studies</li>
               <li>• Role-based content recommendations</li>
@@ -382,8 +382,8 @@ const DigitalMarketingAutomation = () => {
             <ul className="space-y-2 text-sm">
               <li>• Smart content blocks in emails</li>
               <li>• Dynamic website sections</li>
-              <li>• Personalized landing pages</li>
-              <li>• Customized download recommendations</li>
+              <li>• personalised landing pages</li>
+              <li>• customised download recommendations</li>
               <li>• Tailored product suggestions</li>
               <li>• Behavioral trigger sequences</li>
             </ul>
@@ -458,7 +458,7 @@ const DigitalMarketingAutomation = () => {
                 <ul className="text-xs space-y-1">
                   <li>• Simple, powerful automation</li>
                   <li>• Creator-focused features</li>
-                  <li>• Tag-based organization</li>
+                  <li>• Tag-based organisation</li>
                   <li>• Landing page builder</li>
                 </ul>
               </div>

@@ -27,7 +27,7 @@ export const metadata = createMetadata({
       url: "/images/blog/cyber-security-seo-australia.jpg",
       width: 1200,
       height: 630,
-      alt: "SEO strategies for cyber security companies in Australia - complete optimization guide"
+      alt: "SEO strategies for cyber security companies in Australia - complete optimisation guide"
     }],
     publishedTime: "2024-01-25T00:00:00.000Z",
     modifiedTime: "2026-10-31T11:10:04.601Z",
@@ -54,7 +54,7 @@ const CyberSecuritySEOAustralia = () => {
 
   const articleData = {
     headline: "Cyber Security SEO Australia: Complete Guide to Ranking #1 for Security Services",
-    description: "Master cyber security SEO strategies specifically for the Australian market. Learn keyword targeting, content optimization, and local search tactics that help security companies dominate Google rankings.",
+    description: "Master cyber security SEO strategies specifically for the Australian market. Learn keyword targeting, content optimisation, and local search tactics that help security companies dominate Google rankings.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-25T00:00:00.000Z",
@@ -87,7 +87,7 @@ const CyberSecuritySEOAustralia = () => {
     answer: "Typically 4-8 months for competitive keywords, with local search improvements visible in 2-3 months. Technical content and compliance-focused pages often rank faster due to lower competition and high authority signals."
   }, {
     question: "Should cyber security companies target national or local SEO in Australia?",
-    answer: "Use a hybrid approach: target major cities (Sydney, Melbourne, Brisbane) for local presence while competing nationally for specialized services like penetration testing and compliance consulting. Enterprise clients often search nationally."
+    answer: "Use a hybrid approach: target major cities (Sydney, Melbourne, Brisbane) for local presence while competing nationally for specialised services like penetration testing and compliance consulting. Enterprise clients often search nationally."
   }];
   return <>
     <script
@@ -154,12 +154,12 @@ const CyberSecuritySEOAustralia = () => {
         <h2 className="text-3xl font-bold mb-6">Local SEO Strategy for Australian Cities</h2>
         
         <p className="mb-6">
-          Australian cyber security companies must balance national reach with local presence, targeting major business centers while building authority for specialized services across the country.
+          Australian cyber security companies must balance national reach with local presence, targeting major business centers while building authority for specialised services across the country.
         </p>
 
         <Card className="mb-8 bg-gradient-to-r from-orange-50 to-red-50 border-orange-200">
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-4 text-orange-800">City-Specific Optimization Strategy</h3>
+            <h3 className="text-xl font-semibold mb-4 text-orange-800">City-Specific optimisation Strategy</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <h4 className="font-semibold text-orange-700 mb-3">Sydney Market</h4>
@@ -185,7 +185,7 @@ const CyberSecuritySEOAustralia = () => {
                 <h4 className="font-semibold text-orange-700 mb-3">Brisbane/Perth Markets</h4>
                 <ul className="text-sm space-y-2 text-orange-600">
                   <li>• Mining and resources security</li>
-                  <li>• Energy sector specialization</li>
+                  <li>• Energy sector specialisation</li>
                   <li>• Regional business support</li>
                   <li>• Growth market positioning</li>
                   <li>• Emerging threat education</li>
@@ -275,7 +275,7 @@ const CyberSecuritySEOAustralia = () => {
         <h2 className="text-3xl font-bold mb-6">Technical SEO for Cyber Security Sites</h2>
         
         <p className="mb-6">
-          Cyber security websites require specialized technical optimization that balances SEO best practices with security requirements, ensuring fast performance while maintaining trust signals and secure connections.
+          Cyber security websites require specialised technical optimisation that balances SEO best practices with security requirements, ensuring fast performance while maintaining trust signals and secure connections.
         </p>
 
         <Card className="mb-8 bg-gradient-to-r from-purple-50 to-indigo-50 border-purple-200">
@@ -294,13 +294,13 @@ const CyberSecuritySEOAustralia = () => {
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-indigo-700 mb-3">Performance Optimization</h4>
+                <h4 className="font-semibold text-indigo-700 mb-3">Performance optimisation</h4>
                 <ul className="text-sm space-y-2 text-indigo-600">
-                  <li>• Core Web Vitals optimization</li>
+                  <li>• Core Web Vitals optimisation</li>
                   <li>• Secure CDN implementation</li>
                   <li>• Image compression and lazy loading</li>
                   <li>• Minification of CSS/JS files</li>
-                  <li>• Database query optimization</li>
+                  <li>• Database query optimisation</li>
                   <li>• Caching strategy implementation</li>
                 </ul>
               </div>
@@ -311,7 +311,7 @@ const CyberSecuritySEOAustralia = () => {
         <h2 className="text-3xl font-bold mb-6">Link Building for Cyber Security Authority</h2>
         
         <p className="mb-6">
-          Building authoritative links for cyber security companies requires strategic partnerships with government agencies, industry associations, educational institutions, and reputable technology organizations.
+          Building authoritative links for cyber security companies requires strategic partnerships with government agencies, industry associations, educational institutions, and reputable technology organisations.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -345,7 +345,7 @@ const CyberSecuritySEOAustralia = () => {
         <h2 className="text-3xl font-bold mb-6">Measuring Australian Cyber Security SEO Success</h2>
         
         <p className="mb-6">
-          Tracking cyber security SEO performance requires specialized metrics that go beyond traditional SEO KPIs to measure actual business impact and lead quality in the Australian market.
+          Tracking cyber security SEO performance requires specialised metrics that go beyond traditional SEO KPIs to measure actual business impact and lead quality in the Australian market.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 mb-8">

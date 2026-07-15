@@ -81,13 +81,13 @@ const LoanBrokerLeadGeneration = () => {
 
   const faqs = [{
     question: "What's the best lead generation strategy for loan brokers?",
-    answer: "The most effective approach combines SEO-optimized content marketing, targeted Google Ads, educational lead magnets, and strategic partnerships with real estate agents. Focus on quality over quantity to attract pre-qualified borrowers."
+    answer: "The most effective approach combines SEO-optimised content marketing, targeted Google Ads, educational lead magnets, and strategic partnerships with real estate agents. Focus on quality over quantity to attract pre-qualified borrowers."
   }, {
     question: "How much should loan brokers spend on lead generation?",
     answer: "Most successful loan brokers invest 15-25% of their revenue in marketing and lead generation. For new brokers, budget $3,000-$8,000 monthly across digital channels to establish consistent lead flow."
   }, {
     question: "How do I qualify mortgage leads effectively?",
-    answer: "Ask key qualifying questions about timeline, pre-approval status, price range, deposit readiness, and current agent relationships. Use lead scoring based on demographics, behavior, and engagement to prioritize follow-up efforts."
+    answer: "Ask key qualifying questions about timeline, pre-approval status, price range, deposit readiness, and current agent relationships. Use lead scoring based on demographics, behavior, and engagement to prioritise follow-up efforts."
   }];
   return <>
     <script
@@ -112,7 +112,7 @@ const LoanBrokerLeadGeneration = () => {
 
               <h2>Digital Lead Generation Channels</h2>
               
-              <h3>Search Engine Optimization (SEO)</h3>
+              <h3>Search Engine optimisation (SEO)</h3>
               <p>
                 Capture borrowers actively searching for loan information:
               </p>
@@ -154,7 +154,7 @@ const LoanBrokerLeadGeneration = () => {
                 <li>Borrowing capacity calculator</li>
                 <li>Stamp duty calculator</li>
                 <li>Refinance savings calculator</li>
-                <li>Investment property analyzer</li>
+                <li>Investment property analyser</li>
               </ul>
 
               <h2>Content Marketing for Lead Generation</h2>
@@ -217,7 +217,7 @@ const LoanBrokerLeadGeneration = () => {
 
               <h3>Segmentation Strategy</h3>
               <p>
-                Personalize messages based on borrower type:
+                personalise messages based on borrower type:
               </p>
               <ul>
                 <li>First-time homebuyers</li>
@@ -252,7 +252,7 @@ const LoanBrokerLeadGeneration = () => {
               <h2>Lead Qualification and Scoring</h2>
               <h3>Lead Scoring Criteria</h3>
               <p>
-                Prioritize leads based on qualification factors:
+                prioritise leads based on qualification factors:
               </p>
               <ul>
                 <li><strong>Demographics:</strong> Age, income, location</li>
@@ -273,20 +273,20 @@ const LoanBrokerLeadGeneration = () => {
                 <li>Are you working with a real estate agent?</li>
               </ul>
 
-              <h2>Conversion Optimization</h2>
+              <h2>Conversion optimisation</h2>
               <h3>Landing Page Best Practices</h3>
               <p>
-                Optimize pages for maximum conversions:
+                optimise pages for maximum conversions:
               </p>
               <ul>
                 <li>Clear, compelling headlines</li>
                 <li>Simple, focused forms</li>
                 <li>Trust signals and testimonials</li>
-                <li>Mobile-optimized design</li>
+                <li>Mobile-optimised design</li>
                 <li>Fast loading speeds</li>
               </ul>
 
-              <h3>Call-to-Action Optimization</h3>
+              <h3>Call-to-Action optimisation</h3>
               <p>
                 Guide prospects toward conversion:
               </p>
@@ -352,7 +352,7 @@ const LoanBrokerLeadGeneration = () => {
                 <li>Set up tracking and analytics</li>
                 <li>Create lead magnets</li>
                 <li>Launch Google Ads campaigns</li>
-                <li>Optimize website for conversions</li>
+                <li>optimise website for conversions</li>
               </ul>
 
               <h3>Month 2: Content and Social</h3>
@@ -363,9 +363,9 @@ const LoanBrokerLeadGeneration = () => {
                 <li>Create video content</li>
               </ul>
 
-              <h3>Month 3: Optimization and Scale</h3>
+              <h3>Month 3: optimisation and Scale</h3>
               <ul>
-                <li>Analyze campaign performance</li>
+                <li>analyse campaign performance</li>
                 <li>Scale successful channels</li>
                 <li>Develop referral partnerships</li>
                 <li>Implement advanced automation</li>
@@ -382,7 +382,7 @@ const LoanBrokerLeadGeneration = () => {
                   <CardContent className="p-6">
                     <h4 className="font-semibold mb-3 text-blue-700">High-Engagement Triggers</h4>
                     <ul className="space-y-2 text-sm">
-                      <li><strong>Calculator Usage:</strong> Follow up with personalized scenarios</li>
+                      <li><strong>Calculator Usage:</strong> Follow up with personalised scenarios</li>
                       <li><strong>Guide Downloads:</strong> Send related content and tips</li>
                       <li><strong>Rate Inquiries:</strong> Provide real-time rate updates</li>
                       <li><strong>Multiple Visits:</strong> Offer consultation booking</li>
@@ -408,7 +408,7 @@ const LoanBrokerLeadGeneration = () => {
               <h2>Advanced Digital Marketing Tactics</h2>
               
               <h3>Retargeting and Audience Expansion</h3>
-              <p>Sophisticated audience targeting maximizes the value of every website visitor and lead interaction.</p>
+              <p>Sophisticated audience targeting maximises the value of every website visitor and lead interaction.</p>
 
               <Card className="mb-8 bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
                 <CardContent className="p-6">
@@ -481,10 +481,10 @@ const LoanBrokerLeadGeneration = () => {
                   <CardContent className="p-6">
                     <h4 className="text-lg font-semibold mb-3 text-orange-700">Video Distribution Strategy</h4>
                     <div className="space-y-3">
-                      <div><strong>YouTube Optimization:</strong> SEO-focused titles, descriptions, and tags for discovery</div>
+                      <div><strong>YouTube optimisation:</strong> SEO-focused titles, descriptions, and tags for discovery</div>
                       <div><strong>Social Media:</strong> Platform-native uploads for maximum reach and engagement</div>
                       <div><strong>Email Marketing:</strong> Video thumbnails linking to hosted content</div>
-                      <div><strong>Website Integration:</strong> Landing page videos for conversion optimization</div>
+                      <div><strong>Website Integration:</strong> Landing page videos for conversion optimisation</div>
                       <div><strong>Paid Promotion:</strong> Video ads on Facebook, LinkedIn, and YouTube</div>
                     </div>
                   </CardContent>
@@ -501,7 +501,7 @@ const LoanBrokerLeadGeneration = () => {
                   <CardContent className="p-6">
                     <h4 className="text-lg font-semibold mb-3 text-blue-800">Service Differentiation</h4>
                     <ul className="space-y-2 text-sm text-blue-700">
-                      <li><strong>Specialization:</strong> Focus on specific loan types or customer segments</li>
+                      <li><strong>specialisation:</strong> Focus on specific loan types or customer segments</li>
                       <li><strong>Speed:</strong> Faster processing times and pre-approval guarantees</li>
                       <li><strong>Technology:</strong> Advanced tools and digital experience</li>
                       <li><strong>Support:</strong> Extended hours and ongoing relationship management</li>
@@ -526,7 +526,7 @@ const LoanBrokerLeadGeneration = () => {
 
               <h2>Automation and Technology Integration</h2>
               
-              <p>Leverage technology to scale your lead generation while maintaining personalized service.</p>
+              <p>Leverage technology to scale your lead generation while maintaining personalised service.</p>
 
               <Card className="mb-8">
                 <CardContent className="p-6">
@@ -547,13 +547,13 @@ const LoanBrokerLeadGeneration = () => {
                       <ul className="space-y-2 text-sm text-green-600">
                         <li>• Multi-channel drip campaigns</li>
                         <li>• SMS automation for urgent updates</li>
-                        <li>• Video email personalization</li>
+                        <li>• Video email personalisation</li>
                         <li>• Social media scheduling</li>
                         <li>• Review request automation</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-purple-700 mb-3">Analytics & Optimization</h4>
+                      <h4 className="font-semibold text-purple-700 mb-3">Analytics & optimisation</h4>
                       <ul className="space-y-2 text-sm text-purple-600">
                         <li>• Attribution modeling setup</li>
                         <li>• Conversion path analysis</li>
@@ -568,7 +568,7 @@ const LoanBrokerLeadGeneration = () => {
 
               <h2>Ready to Generate More Quality Leads?</h2>
               <p>
-                Successful lead generation for loan brokers requires a systematic approach, consistent execution, and continuous optimization. By implementing these proven strategies and leveraging advanced automation, you&apos;ll build a predictable pipeline of qualified borrowers and achieve sustainable growth in a competitive market.
+                Successful lead generation for loan brokers requires a systematic approach, consistent execution, and continuous optimisation. By implementing these proven strategies and leveraging advanced automation, you&apos;ll build a predictable pipeline of qualified borrowers and achieve sustainable growth in a competitive market.
               </p>
 
     </OptimizedBlogLayout>

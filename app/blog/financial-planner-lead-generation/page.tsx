@@ -88,7 +88,7 @@ const FinancialPlannerLeadGeneration = () => {
     answer: "Initial results typically appear within 3-6 months, with significant lead generation improvements usually visible after 6-12 months of consistent marketing efforts and relationship building."
   }, {
     question: "What type of content attracts high-value financial planning clients?",
-    answer: "Retirement planning guides, tax optimization strategies, investment education, and market commentary that demonstrates expertise attract affluent clients seeking comprehensive financial guidance."
+    answer: "Retirement planning guides, tax optimisation strategies, investment education, and market commentary that demonstrates expertise attract affluent clients seeking comprehensive financial guidance."
   }];
   return <>
     <script
@@ -108,7 +108,7 @@ const FinancialPlannerLeadGeneration = () => {
             <CardTitle>Affluent Professionals</CardTitle>
           </CardHeader>
           <CardContent>
-            <p>Doctors, lawyers, executives, and business owners seeking comprehensive wealth management and tax optimization strategies.</p>
+            <p>Doctors, lawyers, executives, and business owners seeking comprehensive wealth management and tax optimisation strategies.</p>
           </CardContent>
         </Card>
         
@@ -130,7 +130,7 @@ const FinancialPlannerLeadGeneration = () => {
         </li>
         <li className="flex items-start gap-3">
           <Users className="h-5 w-5 text-primary mt-1 shrink-0" />
-          <span><strong>Tax Efficiency:</strong> Seeking strategies to minimize tax burden while maximizing wealth</span>
+          <span><strong>Tax Efficiency:</strong> Seeking strategies to minimise tax burden while maximising wealth</span>
         </li>
         <li className="flex items-start gap-3">
           <BarChart className="h-5 w-5 text-primary mt-1 shrink-0" />
@@ -150,21 +150,21 @@ const FinancialPlannerLeadGeneration = () => {
         
         <div>
           <h4 className="text-xl font-semibold mb-2">Tax-Efficient Investment Strategies</h4>
-          <p>Share advanced strategies that demonstrate your expertise in tax-optimized wealth building.</p>
+          <p>Share advanced strategies that demonstrate your expertise in tax-optimised wealth building.</p>
         </div>
       </div>
 
       <h2>Digital Marketing Channels for Financial Planners</h2>
       
-      <h3>Search Engine Optimization (SEO)</h3>
+      <h3>Search Engine optimisation (SEO)</h3>
       <p>
         SEO is crucial for financial planners as high-net-worth individuals often research extensively before making decisions:
       </p>
       <ul>
-        <li><strong>Local SEO:</strong> Optimize for &quot;financial planner [city]&quot; and related terms</li>
+        <li><strong>Local SEO:</strong> optimise for &quot;financial planner [city]&quot; and related terms</li>
         <li><strong>Service-specific pages:</strong> Create dedicated pages for retirement planning, tax strategies, and investment management</li>
         <li><strong>Educational content:</strong> Publish comprehensive guides on financial topics</li>
-        <li><strong>Technical optimization:</strong> Ensure fast loading times and mobile optimization</li>
+        <li><strong>Technical optimisation:</strong> Ensure fast loading times and mobile optimisation</li>
       </ul>
 
       <h3>Content Marketing Strategy</h3>
@@ -174,7 +174,7 @@ const FinancialPlannerLeadGeneration = () => {
       <ul>
         <li><strong>Market commentary:</strong> Regular updates on economic trends and their impact</li>
         <li><strong>Planning guides:</strong> Comprehensive resources for different life stages</li>
-        <li><strong>Tax strategy content:</strong> Timely advice on tax optimization</li>
+        <li><strong>Tax strategy content:</strong> Timely advice on tax optimisation</li>
         <li><strong>Case studies:</strong> Anonymized examples of successful planning outcomes</li>
       </ul>
 
@@ -212,7 +212,7 @@ const FinancialPlannerLeadGeneration = () => {
         <li><strong>Service-specific campaigns:</strong> Separate campaigns for retirement, tax, and investment planning</li>
         <li><strong>Geographic targeting:</strong> Focus on affluent neighborhoods and suburbs</li>
         <li><strong>Keyword strategy:</strong> Target problem-solving and solution-seeking terms</li>
-        <li><strong>Landing page optimization:</strong> Create compelling pages that build trust</li>
+        <li><strong>Landing page optimisation:</strong> Create compelling pages that build trust</li>
       </ul>
 
       <h3>Social Media Marketing</h3>
@@ -234,9 +234,9 @@ const FinancialPlannerLeadGeneration = () => {
       </p>
       <ul>
         <li><strong>Professional certifications:</strong> CFP, ChFC, CFA, and other relevant designations</li>
-        <li><strong>Industry experience:</strong> Years in practice and areas of specialization</li>
+        <li><strong>Industry experience:</strong> Years in practice and areas of specialisation</li>
         <li><strong>Continuing education:</strong> Ongoing professional development and training</li>
-        <li><strong>Professional associations:</strong> Memberships in industry organizations</li>
+        <li><strong>Professional associations:</strong> Memberships in industry organisations</li>
       </ul>
 
       <h3>Client Testimonials and Case Studies</h3>
@@ -305,7 +305,7 @@ const FinancialPlannerLeadGeneration = () => {
           <div>
             <h5 className="font-semibold text-purple-700 mb-2">Days 61-90: Conversion</h5>
             <ul className="text-sm space-y-1">
-              <li>• Personalized planning assessment</li>
+              <li>• personalised planning assessment</li>
               <li>• Direct outreach call</li>
               <li>• Limited-time incentive offer</li>
               <li>• Success story similar to their situation</li>
@@ -314,7 +314,7 @@ const FinancialPlannerLeadGeneration = () => {
         </div>
       </Card>
 
-      <h2>Specialized Lead Generation Tactics</h2>
+      <h2>specialised Lead Generation Tactics</h2>
       
       <h3>Professional Networking Events</h3>
       <p>
@@ -322,14 +322,14 @@ const FinancialPlannerLeadGeneration = () => {
       </p>
       <ul>
         <li><strong>Retirement Planning Workshops:</strong> Monthly seminars on retirement preparation strategies</li>
-        <li><strong>Tax Strategy Seminars:</strong> Year-end tax planning and optimization workshops</li>
+        <li><strong>Tax Strategy Seminars:</strong> Year-end tax planning and optimisation workshops</li>
         <li><strong>Investment Education Series:</strong> Market trends and portfolio management insights</li>
         <li><strong>Estate Planning Conferences:</strong> Partner with attorneys for comprehensive planning</li>
       </ul>
 
       <h3>Strategic Content Distribution</h3>
       <p>
-        Maximize reach and impact of your educational content:
+        maximise reach and impact of your educational content:
       </p>
       
       <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -422,7 +422,7 @@ const FinancialPlannerLeadGeneration = () => {
         <li><strong>Campaign analysis:</strong> Measure performance of specific marketing initiatives</li>
         <li><strong>Multi-touch attribution:</strong> Understand the complete client journey touchpoints</li>
         <li><strong>ROI calculation:</strong> Compare marketing investment to client acquisition value</li>
-        <li><strong>Ongoing optimization:</strong> Adjust strategies based on performance data insights</li>
+        <li><strong>Ongoing optimisation:</strong> Adjust strategies based on performance data insights</li>
       </ul>
 
       <h2>Compliance and Regulatory Considerations</h2>

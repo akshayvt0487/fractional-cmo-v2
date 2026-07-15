@@ -126,7 +126,7 @@ const ITConsultingLeadGeneration = () => {
       <ul>
         <li>Legacy system modernization pressures</li>
         <li>Cybersecurity threats and compliance requirements</li>
-        <li>Cloud migration and optimization challenges</li>
+        <li>Cloud migration and optimisation challenges</li>
         <li>Digital transformation initiatives</li>
         <li>Skills gaps and resource constraints</li>
       </ul>
@@ -141,7 +141,7 @@ const ITConsultingLeadGeneration = () => {
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <h5 className="font-semibold text-indigo-700 mb-2">&quot;Cloud Migration Readiness Assessment&quot;</h5>
-            <p className="text-sm text-muted-foreground">Interactive tool with personalized recommendations based on current infrastructure, workload analysis, and business requirements</p>
+            <p className="text-sm text-muted-foreground">Interactive tool with personalised recommendations based on current infrastructure, workload analysis, and business requirements</p>
           </div>
           <div>
             <h5 className="font-semibold text-indigo-700 mb-2">&quot;Cybersecurity Audit Checklist&quot;</h5>
@@ -149,7 +149,7 @@ const ITConsultingLeadGeneration = () => {
           </div>
           <div>
             <h5 className="font-semibold text-indigo-700 mb-2">&quot;Digital Transformation ROI Calculator&quot;</h5>
-            <p className="text-sm text-muted-foreground">Tool to quantify technology investment returns with customized industry benchmarks and financial projections</p>
+            <p className="text-sm text-muted-foreground">Tool to quantify technology investment returns with customised industry benchmarks and financial projections</p>
           </div>
           <div>
             <h5 className="font-semibold text-indigo-700 mb-2">&quot;IT Infrastructure Modernization Guide&quot;</h5>
@@ -163,7 +163,7 @@ const ITConsultingLeadGeneration = () => {
       <ul>
         <li><strong>&quot;Kubernetes in Production: Lessons from 100+ Deployments&quot;:</strong> Real-world case studies and best practices</li>
         <li><strong>&quot;Zero-Trust Security Architecture: Implementation Guide&quot;:</strong> Step-by-step security framework deployment</li>
-        <li><strong>&quot;Cloud Cost Optimization: Reducing Spend by 40%&quot;:</strong> Proven strategies for AWS, Azure, and GCP</li>
+        <li><strong>&quot;Cloud Cost optimisation: Reducing Spend by 40%&quot;:</strong> Proven strategies for AWS, Azure, and GCP</li>
         <li><strong>&quot;AI/ML Infrastructure: Building Scalable Data Platforms&quot;:</strong> Architecture patterns for machine learning at scale</li>
       </ul>
 
@@ -203,7 +203,7 @@ const ITConsultingLeadGeneration = () => {
       
       <ul>
         <li><strong>Account Research:</strong> Deep analysis of target company technology stack and challenges</li>
-        <li><strong>Personalized Content:</strong> Custom reports and assessments for specific companies</li>
+        <li><strong>personalised Content:</strong> Custom reports and assessments for specific companies</li>
         <li><strong>Multi-Touch Campaigns:</strong> Coordinated outreach across LinkedIn, email, and events</li>
         <li><strong>Executive Engagement:</strong> Direct outreach to C-level technology decision makers</li>
         <li><strong>Industry Event Targeting:</strong> Speaking opportunities and sponsored presence at key conferences</li>
@@ -222,7 +222,7 @@ const ITConsultingLeadGeneration = () => {
             <ul className="text-sm space-y-1">
               <li>• Technology trend analysis</li>
               <li>• Security vulnerability alerts</li>
-              <li>• Performance optimization tips</li>
+              <li>• Performance optimisation tips</li>
               <li>• Architecture best practices</li>
             </ul>
           </div>
@@ -254,13 +254,13 @@ const ITConsultingLeadGeneration = () => {
       
       <ul>
         <li><strong>Software Vendors:</strong> Partner with technology vendors for implementation services</li>
-        <li><strong>MSP Relationships:</strong> Collaborate with managed service providers for specialized projects</li>
+        <li><strong>MSP Relationships:</strong> Collaborate with managed service providers for specialised projects</li>
         <li><strong>Business Consultants:</strong> Connect with management consulting firms for technology components</li>
         <li><strong>Legal and Compliance Firms:</strong> Partner on technology governance and compliance projects</li>
         <li><strong>Financial Advisors:</strong> Technology advisory for investment due diligence</li>
       </ul>
 
-      <h2>Performance Measurement and Optimization</h2>
+      <h2>Performance Measurement and optimisation</h2>
       
       <h3>Lead Generation Metrics</h3>
       <p>Track metrics that drive business outcomes:</p>
@@ -290,7 +290,7 @@ const ITConsultingLeadGeneration = () => {
       </Card>
 
       <h3>Marketing Technology Stack</h3>
-      <p>Leverage technology to automate and optimize lead generation:</p>
+      <p>Leverage technology to automate and optimise lead generation:</p>
       
       <ul>
         <li><strong>CRM Platform:</strong> Salesforce, HubSpot, or Microsoft Dynamics for relationship management</li>

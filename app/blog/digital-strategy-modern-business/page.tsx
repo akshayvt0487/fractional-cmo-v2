@@ -110,7 +110,7 @@ const DigitalStrategyModernBusiness = () => {
           <div>
             <h3 className="text-xl font-semibold mb-2">Digital Transformation ROI</h3>
             <p className="text-lg mb-2">
-              Organizations with mature digital strategies see <strong className="text-primary">2.8x higher revenue growth</strong> and <strong className="text-primary">26% higher profitability</strong> than competitors.
+              organisations with mature digital strategies see <strong className="text-primary">2.8x higher revenue growth</strong> and <strong className="text-primary">26% higher profitability</strong> than competitors.
             </p>
             <p className="text-sm text-muted-foreground">
               Source: MIT Sloan Management Review - Digital Business Study 2024
@@ -147,7 +147,7 @@ const DigitalStrategyModernBusiness = () => {
       </p>
       <ul>
         <li><strong>Revenue Growth:</strong> New markets, products, and customer acquisition channels</li>
-        <li><strong>Operational Excellence:</strong> Process optimization and cost reduction</li>
+        <li><strong>Operational Excellence:</strong> Process optimisation and cost reduction</li>
         <li><strong>Customer Centricity:</strong> Enhanced experiences and relationship deepening</li>
         <li><strong>Innovation Leadership:</strong> Competitive advantage through technology adoption</li>
         <li><strong>Risk Management:</strong> Cybersecurity, compliance, and business continuity</li>
@@ -157,22 +157,22 @@ const DigitalStrategyModernBusiness = () => {
       
       <h3>Customer Experience Transformation</h3>
       <p>
-        Modern customers expect seamless, personalized experiences across all touchpoints:
+        Modern customers expect seamless, personalised experiences across all touchpoints:
       </p>
       <ul>
         <li><strong>Omnichannel Integration:</strong> Consistent experience across web, mobile, social, and physical channels</li>
-        <li><strong>Personalization Engines:</strong> AI-driven content and product recommendations</li>
+        <li><strong>personalisation Engines:</strong> AI-driven content and product recommendations</li>
         <li><strong>Self-Service Capabilities:</strong> Empowering customers to solve problems independently</li>
         <li><strong>Real-Time Engagement:</strong> Chatbots, live support, and instant communication</li>
-        <li><strong>Journey Optimization:</strong> Removing friction from customer paths to purchase</li>
+        <li><strong>Journey optimisation:</strong> Removing friction from customer paths to purchase</li>
       </ul>
 
       <h3>Data-Driven Decision Making</h3>
       <p>
-        Transform your organization into a data-driven enterprise:
+        Transform your organisation into a data-driven enterprise:
       </p>
       <ul>
-        <li><strong>Data Strategy Development:</strong> What to collect, how to store, and how to analyze</li>
+        <li><strong>Data Strategy Development:</strong> What to collect, how to store, and how to analyse</li>
         <li><strong>Analytics Implementation:</strong> Tools and platforms for business intelligence</li>
         <li><strong>Performance Dashboards:</strong> Real-time visibility into key metrics</li>
         <li><strong>Predictive Analytics:</strong> Forecasting trends and customer behavior</li>
@@ -187,7 +187,7 @@ const DigitalStrategyModernBusiness = () => {
         <li><strong>Cloud Migration:</strong> Scalability, cost efficiency, and accessibility</li>
         <li><strong>API-First Architecture:</strong> Integration flexibility and third-party connectivity</li>
         <li><strong>Cybersecurity Framework:</strong> Protecting data and systems from threats</li>
-        <li><strong>Automation Platforms:</strong> Workflow optimization and human resource allocation</li>
+        <li><strong>Automation Platforms:</strong> Workflow optimisation and human resource allocation</li>
         <li><strong>Mobile-First Design:</strong> Responsive interfaces and mobile-native experiences</li>
       </ul>
 
@@ -199,19 +199,19 @@ const DigitalStrategyModernBusiness = () => {
       </p>
       <ul>
         <li><strong>Content Strategy:</strong> Educational, engaging content that guides customer journeys</li>
-        <li><strong>SEO and SEM:</strong> Organic and paid search optimization</li>
+        <li><strong>SEO and SEM:</strong> Organic and paid search optimisation</li>
         <li><strong>Social Media Marketing:</strong> Community building and brand awareness</li>
         <li><strong>Email Marketing:</strong> Automated nurturing and retention campaigns</li>
-        <li><strong>Marketing Automation:</strong> Lead scoring, segmentation, and personalized messaging</li>
+        <li><strong>Marketing Automation:</strong> Lead scoring, segmentation, and personalised messaging</li>
       </ul>
 
-      <h3>Performance Measurement and Optimization</h3>
+      <h3>Performance Measurement and optimisation</h3>
       <p>
         Implement continuous improvement processes:
       </p>
       <ul>
         <li><strong>KPI Framework:</strong> Metrics that matter for business objectives</li>
-        <li><strong>A/B Testing:</strong> Systematic optimization of campaigns and experiences</li>
+        <li><strong>A/B Testing:</strong> Systematic optimisation of campaigns and experiences</li>
         <li><strong>Attribution Modeling:</strong> Understanding customer journey touchpoints</li>
         <li><strong>ROI Analysis:</strong> Measuring return on digital investments</li>
         <li><strong>Competitive Intelligence:</strong> Monitoring market dynamics and opportunities</li>
@@ -227,19 +227,19 @@ const DigitalStrategyModernBusiness = () => {
         <li><strong>Phase 1 (Foundation):</strong> Infrastructure, basic analytics, and quick wins</li>
         <li><strong>Phase 2 (Enhancement):</strong> Customer experience improvements and automation</li>
         <li><strong>Phase 3 (Innovation):</strong> Advanced analytics, AI implementation, and new business models</li>
-        <li><strong>Phase 4 (Optimization):</strong> Continuous improvement and competitive differentiation</li>
+        <li><strong>Phase 4 (optimisation):</strong> Continuous improvement and competitive differentiation</li>
       </ul>
 
-      <h3>Organizational Change Management</h3>
+      <h3>organisational Change Management</h3>
       <p>
-        Ensure successful adoption across your organization:
+        Ensure successful adoption across your organisation:
       </p>
       <ul>
         <li><strong>Leadership Alignment:</strong> Executive sponsorship and resource commitment</li>
         <li><strong>Skill Development:</strong> Training programs and capability building</li>
         <li><strong>Culture Transformation:</strong> Embracing digital-first mindsets</li>
         <li><strong>Communication Strategy:</strong> Keeping teams informed and engaged</li>
-        <li><strong>Success Celebration:</strong> Recognizing achievements and milestones</li>
+        <li><strong>Success Celebration:</strong> recognising achievements and milestones</li>
       </ul>
 
       <h2>Future-Proofing Your Digital Strategy</h2>
@@ -252,14 +252,14 @@ const DigitalStrategyModernBusiness = () => {
         <li><strong>Artificial Intelligence:</strong> Machine learning, natural language processing, and automation</li>
         <li><strong>Internet of Things:</strong> Connected devices and sensor data integration</li>
         <li><strong>Blockchain Technology:</strong> Security, transparency, and decentralized processes</li>
-        <li><strong>Augmented Reality:</strong> Enhanced customer experiences and visualization</li>
-        <li><strong>Voice Technology:</strong> Voice search optimization and smart speaker integration</li>
+        <li><strong>Augmented Reality:</strong> Enhanced customer experiences and visualisation</li>
+        <li><strong>Voice Technology:</strong> Voice search optimisation and smart speaker integration</li>
       </ul>
 
       <h2>Measuring Digital Strategy Success</h2>
       
       <p>
-        Digital transformation is an ongoing journey requiring continuous monitoring and adaptation. Success metrics should align with your strategic objectives and provide actionable insights for optimization.
+        Digital transformation is an ongoing journey requiring continuous monitoring and adaptation. Success metrics should align with your strategic objectives and provide actionable insights for optimisation.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
@@ -296,9 +296,9 @@ const DigitalStrategyModernBusiness = () => {
           <h4 className="text-lg font-bold mb-3">Retail & E-Commerce</h4>
           <ul className="space-y-2 text-sm">
             <li>• <strong>Omnichannel Experience:</strong> Seamless integration of online and offline</li>
-            <li>• <strong>Personalization Engine:</strong> AI-powered product recommendations</li>
+            <li>• <strong>personalisation Engine:</strong> AI-powered product recommendations</li>
             <li>• <strong>Inventory Management:</strong> Real-time stock visibility across channels</li>
-            <li>• <strong>Mobile-First Commerce:</strong> App and mobile web optimization</li>
+            <li>• <strong>Mobile-First Commerce:</strong> App and mobile web optimisation</li>
             <li>• <strong>Social Commerce:</strong> Instagram, Facebook, TikTok shop integration</li>
           </ul>
         </Card>
@@ -392,7 +392,7 @@ const DigitalStrategyModernBusiness = () => {
 
         <Card className="p-6 border-destructive/50">
           <h4 className="text-lg font-bold mb-3 text-destructive">❌ Insufficient Data Strategy</h4>
-          <p className="text-sm mb-2">Collecting data without governance or utilization plan</p>
+          <p className="text-sm mb-2">Collecting data without governance or utilisation plan</p>
           <div className="bg-success/10 p-3 rounded mt-3">
             <p className="text-sm font-semibold mb-1">✓ Solution:</p>
             <p className="text-sm">Develop data governance framework before scaling data collection</p>
@@ -494,10 +494,10 @@ const DigitalStrategyModernBusiness = () => {
               </ul>
             </div>
             <div>
-              <p className="font-semibold text-sm mb-2">Month 8: Personalization & Automation</p>
+              <p className="font-semibold text-sm mb-2">Month 8: personalisation & Automation</p>
               <ul className="space-y-1 text-sm text-muted-foreground">
                 <li>• Implement marketing automation platform</li>
-                <li>• Deploy personalization engine</li>
+                <li>• Deploy personalisation engine</li>
                 <li>• Create omnichannel customer journey</li>
                 <li>• Launch email marketing transformation</li>
               </ul>
@@ -506,7 +506,7 @@ const DigitalStrategyModernBusiness = () => {
               <p className="font-semibold text-sm mb-2">Month 9: Feedback & Iteration</p>
               <ul className="space-y-1 text-sm text-muted-foreground">
                 <li>• Gather customer feedback on new experiences</li>
-                <li>• Analyze usage data and behavior patterns</li>
+                <li>• analyse usage data and behavior patterns</li>
                 <li>• Iterate based on insights</li>
                 <li>• Scale successful pilots</li>
               </ul>
@@ -515,7 +515,7 @@ const DigitalStrategyModernBusiness = () => {
         </Card>
 
         <Card className="p-6 border-orange-200">
-          <h4 className="text-lg font-bold mb-3">Quarter 4: Innovation & Optimization (Months 10-12)</h4>
+          <h4 className="text-lg font-bold mb-3">Quarter 4: Innovation & optimisation (Months 10-12)</h4>
           <div className="space-y-3">
             <div>
               <p className="font-semibold text-sm mb-2">Month 10: Advanced Technologies</p>
@@ -527,10 +527,10 @@ const DigitalStrategyModernBusiness = () => {
               </ul>
             </div>
             <div>
-              <p className="font-semibold text-sm mb-2">Month 11: Optimization & Measurement</p>
+              <p className="font-semibold text-sm mb-2">Month 11: optimisation & Measurement</p>
               <ul className="space-y-1 text-sm text-muted-foreground">
                 <li>• Comprehensive performance review</li>
-                <li>• Optimize based on data insights</li>
+                <li>• optimise based on data insights</li>
                 <li>• Calculate ROI on initiatives</li>
                 <li>• Document lessons learned</li>
               </ul>
@@ -541,7 +541,7 @@ const DigitalStrategyModernBusiness = () => {
                 <li>• Review and refine strategy</li>
                 <li>• Set next year objectives</li>
                 <li>• Secure budget for continued transformation</li>
-                <li>• Celebrate wins and recognize contributors</li>
+                <li>• Celebrate wins and recognise contributors</li>
               </ul>
             </div>
           </div>
@@ -564,7 +564,7 @@ const DigitalStrategyModernBusiness = () => {
             <li>• <strong>Technology Fluency:</strong> Comfort with new tools and platforms</li>
             <li>• <strong>Cybersecurity Awareness:</strong> Security best practices</li>
             <li>• <strong>Project Management:</strong> Digital initiative coordination</li>
-            <li>• <strong>Change Management:</strong> Leading organizational transformation</li>
+            <li>• <strong>Change Management:</strong> Leading organisational transformation</li>
           </ul>
         </Card>
 
@@ -593,12 +593,12 @@ const DigitalStrategyModernBusiness = () => {
         <li><strong>Artificial Intelligence:</strong> Machine learning, natural language processing, and automation</li>
         <li><strong>Internet of Things:</strong> Connected devices and sensor data integration</li>
         <li><strong>Blockchain Technology:</strong> Security, transparency, and decentralized processes</li>
-        <li><strong>Augmented Reality:</strong> Enhanced customer experiences and visualization</li>
-        <li><strong>Voice Technology:</strong> Voice search optimization and smart speaker integration</li>
+        <li><strong>Augmented Reality:</strong> Enhanced customer experiences and visualisation</li>
+        <li><strong>Voice Technology:</strong> Voice search optimisation and smart speaker integration</li>
       </ul>
 
       <p>
-        Digital transformation is an ongoing journey requiring continuous monitoring and adaptation. Success metrics should align with your strategic objectives and provide actionable insights for optimization. Regular strategy reviews ensure your approach remains relevant and effective in an ever-changing digital landscape.
+        Digital transformation is an ongoing journey requiring continuous monitoring and adaptation. Success metrics should align with your strategic objectives and provide actionable insights for optimisation. Regular strategy reviews ensure your approach remains relevant and effective in an ever-changing digital landscape.
       </p>
 
       <p>

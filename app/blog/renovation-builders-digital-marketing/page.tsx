@@ -82,13 +82,13 @@ const RenovationBuildersDigitalMarketing = () => {
 
   const faqs = [{
     question: "How can renovation builders showcase their work effectively online?",
-    answer: "Use high-quality before/after photography, time-lapse videos, 3D renderings, and virtual tours. Create organized project galleries by room type and include detailed case studies showing the transformation process and client satisfaction."
+    answer: "Use high-quality before/after photography, time-lapse videos, 3D renderings, and virtual tours. Create organised project galleries by room type and include detailed case studies showing the transformation process and client satisfaction."
   }, {
     question: "What's the best digital marketing strategy for renovation builders?",
-    answer: "Focus on local SEO, Google My Business optimization, visual content marketing through social media, and targeted Google Ads. Build authority through educational content about renovation processes and showcase completed projects prominently."
+    answer: "Focus on local SEO, Google My Business optimisation, visual content marketing through social media, and targeted Google Ads. Build authority through educational content about renovation processes and showcase completed projects prominently."
   }, {
     question: "How should renovation builders price their services competitively?",
-    answer: "Research local market rates, factor in materials, labor, permits, and overhead costs. Offer clear pricing ranges for different project types and emphasize value through quality, timeline adherence, and comprehensive service packages."
+    answer: "Research local market rates, factor in materials, labor, permits, and overhead costs. Offer clear pricing ranges for different project types and emphasise value through quality, timeline adherence, and comprehensive service packages."
   }, {
     question: "What content works best for renovation builder marketing?",
     answer: "Before/after transformations, renovation planning guides, material selection advice, permit process explanations, design inspiration content, and client testimonials with verified project photos."
@@ -155,13 +155,13 @@ const RenovationBuildersDigitalMarketing = () => {
               <div className="bg-gradient-to-br from-muted/50 to-muted/20 rounded-lg p-6 my-8">
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                   <Target className="h-5 w-5 text-primary" />
-                  Specialized Market Opportunities
+                  specialised Market Opportunities
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-start gap-3">
                     <Clock className="h-5 w-5 text-muted-foreground mt-1 shrink-0" />
                     <div>
-                      <strong>Heritage Restorations:</strong> Specialized historical work requiring unique expertise and commanding premium pricing for preservation projects.
+                      <strong>Heritage Restorations:</strong> specialised historical work requiring unique expertise and commanding premium pricing for preservation projects.
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -174,11 +174,11 @@ const RenovationBuildersDigitalMarketing = () => {
               </div>
 
               <h2>Building Your Digital Foundation</h2>
-              <h3>Website Optimization for Renovation Builders</h3>
+              <h3>Website optimisation for Renovation Builders</h3>
               <p>Your website must immediately demonstrate quality and inspire confidence:</p>
               <ul>
                 <li>High-impact homepage showcasing your best transformations</li>
-                <li>Detailed project galleries organized by room type</li>
+                <li>Detailed project galleries organised by room type</li>
                 <li>Interactive before/after sliders for dramatic effect</li>
                 <li>Builder registration and insurance information</li>
                 <li>Clear pricing ranges and project timelines</li>
@@ -264,7 +264,7 @@ const RenovationBuildersDigitalMarketing = () => {
                       <Palette className="h-4 w-4" />
                       3D Renderings & Concepts
                     </h4>
-                    <p className="text-sm text-muted-foreground">Help clients visualize possibilities before construction begins. 3D renderings reduce uncertainty, improve decision-making, and often lead to scope increases during the sales process.</p>
+                    <p className="text-sm text-muted-foreground">Help clients visualise possibilities before construction begins. 3D renderings reduce uncertainty, improve decision-making, and often lead to scope increases during the sales process.</p>
                   </CardContent>
                 </Card>
 
@@ -320,7 +320,7 @@ const RenovationBuildersDigitalMarketing = () => {
                 <li><strong>YouTube advertising:</strong> Target renovation inspiration content viewers</li>
               </ul>
 
-              <h2>Lead Generation and Conversion Optimization</h2>
+              <h2>Lead Generation and Conversion optimisation</h2>
               <h3>High-Converting Lead Magnets</h3>
               <p>Capture qualified prospects with valuable renovation resources:</p>
               <ul>
@@ -332,7 +332,7 @@ const RenovationBuildersDigitalMarketing = () => {
                 <li><strong>Timeline Templates:</strong> Realistic project schedules for different renovation types</li>
               </ul>
 
-              <h3>Customer Journey Optimization</h3>
+              <h3>Customer Journey optimisation</h3>
               <p>Guide prospects from initial interest to project booking:</p>
               <ul>
                 <li><strong>Awareness Stage:</strong> Educational content about renovation possibilities and trends</li>
@@ -348,13 +348,13 @@ const RenovationBuildersDigitalMarketing = () => {
                 <li><strong>Real Estate Agents:</strong> Pre-sale renovations and property improvement recommendations</li>
                 <li><strong>Interior Designers:</strong> Collaborative partnerships for complete home transformations</li>
                 <li><strong>Architects:</strong> Structural renovation and extension project referrals</li>
-                <li><strong>Kitchen Designers:</strong> Specialized renovation project partnerships</li>
+                <li><strong>Kitchen Designers:</strong> specialised renovation project partnerships</li>
                 <li><strong>Property Managers:</strong> Investment property improvement opportunities</li>
                 <li><strong>Insurance Companies:</strong> Damage restoration and improvement work</li>
               </ul>
 
               <h3>Client Retention and Referral Programs</h3>
-              <p>Maximize value from every completed renovation project:</p>
+              <p>maximise value from every completed renovation project:</p>
               <ul>
                 <li>Professional project photography for portfolio and client keepsakes</li>
                 <li>Video testimonials recorded during project handover celebrations</li>
@@ -364,7 +364,7 @@ const RenovationBuildersDigitalMarketing = () => {
                 <li>Annual check-ins for additional renovation opportunities</li>
               </ul>
 
-              <h2>Performance Measurement and Optimization</h2>
+              <h2>Performance Measurement and optimisation</h2>
               <h3>Key Performance Indicators for Renovation Builders</h3>
               <p>Track metrics that directly impact business growth and profitability:</p>
               <ul>
@@ -378,13 +378,13 @@ const RenovationBuildersDigitalMarketing = () => {
               </ul>
 
               <h3>Continuous Improvement Strategies</h3>
-              <p>Optimize marketing performance through data-driven decisions:</p>
+              <p>optimise marketing performance through data-driven decisions:</p>
               <ul>
                 <li><strong>A/B testing:</strong> Test different ad copy, landing pages, and lead magnets</li>
                 <li><strong>Conversion tracking:</strong> Monitor full customer journey from ad click to project completion</li>
                 <li><strong>Review analysis:</strong> Identify common themes in client feedback for service improvements</li>
                 <li><strong>Competitor monitoring:</strong> Stay informed about market positioning and pricing strategies</li>
-                <li><strong>Seasonal optimization:</strong> Adjust marketing focus based on renovation trends and seasons</li>
+                <li><strong>Seasonal optimisation:</strong> Adjust marketing focus based on renovation trends and seasons</li>
               </ul>
 
               <h2>Technology and Efficiency</h2>
@@ -392,7 +392,7 @@ const RenovationBuildersDigitalMarketing = () => {
               <p>Leverage technology to improve operations and client experience:</p>
               <ul>
                 <li><strong>Project management software:</strong> Track timelines, materials, and client communication</li>
-                <li><strong>Design visualization tools:</strong> Help clients envision renovation outcomes</li>
+                <li><strong>Design visualisation tools:</strong> Help clients envision renovation outcomes</li>
                 <li><strong>Estimation software:</strong> Quick and accurate project quotes</li>
                 <li><strong>Client communication apps:</strong> Regular updates and progress sharing</li>
                 <li><strong>Financial tracking systems:</strong> Monitor project profitability and cash flow</li>

@@ -51,7 +51,7 @@ const ImmigrationLawyersGoogleAds = () => {
     answer: "Immigration lawyers should budget $3,000-$10,000+ per month depending on location and competition. Start with $3,000-5,000/month to test campaigns, then scale based on performance. High-value visa categories like skilled migration and business visas justify higher budgets due to their substantial case values and strong ROI potential."
   }, {
     question: "What's a good conversion rate for immigration lawyer Google Ads?",
-    answer: "Well-optimized immigration law campaigns typically achieve 5-15% conversion rates on landing pages, with 3-6% click-through rates on search ads. Cost per lead typically ranges from $50-200 depending on visa type and market competition. Track both form submissions and phone calls for accurate conversion measurement."
+    answer: "Well-optimised immigration law campaigns typically achieve 5-15% conversion rates on landing pages, with 3-6% click-through rates on search ads. Cost per lead typically ranges from $50-200 depending on visa type and market competition. Track both form submissions and phone calls for accurate conversion measurement."
   }, {
     question: "Should immigration lawyers bid on competitor names in Google Ads?",
     answer: "Yes, ethically targeting competitor names can be effective for immigration lawyers. Use competitor keywords to capture prospects comparison shopping, but focus ad copy on your differentiators rather than disparaging competitors. Ensure your landing pages clearly communicate your unique value proposition and MARA credentials to convert these high-intent searchers."

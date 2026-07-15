@@ -176,7 +176,7 @@ const InsolvencyDigitalMarketing = () => {
           <h4 className="font-semibold mb-4">Positioning Options for Insolvency Practitioners</h4>
           <div className="space-y-4">
             <div>
-              <h5 className="font-semibold mb-2">Industry Specialization</h5>
+              <h5 className="font-semibold mb-2">Industry specialisation</h5>
               <p className="text-muted-foreground mb-2">
                 Position as the expert for specific sectors facing unique insolvency challenges:
               </p>
@@ -190,7 +190,7 @@ const InsolvencyDigitalMarketing = () => {
             </div>
 
             <div>
-              <h5 className="font-semibold mb-2">Service Specialization</h5>
+              <h5 className="font-semibold mb-2">Service specialisation</h5>
               <p className="text-muted-foreground mb-2">
                 Focus on specific insolvency appointments:
               </p>
@@ -206,7 +206,7 @@ const InsolvencyDigitalMarketing = () => {
             <div>
               <h5 className="font-semibold mb-2">Geographic Positioning</h5>
               <p className="text-muted-foreground">
-                Regional practitioners can compete effectively against metro firms by emphasizing local presence, market knowledge, and accessibility. Metropolitan practitioners should highlight capacity for complex, multi-jurisdictional appointments.
+                Regional practitioners can compete effectively against metro firms by emphasising local presence, market knowledge, and accessibility. Metropolitan practitioners should highlight capacity for complex, multi-jurisdictional appointments.
               </p>
             </div>
           </div>
@@ -214,7 +214,7 @@ const InsolvencyDigitalMarketing = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Search Engine Optimization (SEO) Strategy</h2>
+        <h2 className="text-3xl font-bold mb-6">Search Engine optimisation (SEO) Strategy</h2>
         
         <p className="mb-6">
           SEO for insolvency practitioners targets two distinct audiences: distressed directors seeking immediate assistance, and professional advisors researching practitioners for client referrals.
@@ -252,10 +252,10 @@ const InsolvencyDigitalMarketing = () => {
         <div className="bg-muted/50 p-6 rounded-lg mb-6">
           <ul className="space-y-3">
             <li>
-              <strong>Mobile Optimization:</strong> Directors in crisis often search outside business hours on mobile devices. Your site must load fast and display perfectly on all devices.
+              <strong>Mobile optimisation:</strong> Directors in crisis often search outside business hours on mobile devices. Your site must load fast and display perfectly on all devices.
             </li>
             <li>
-              <strong>Local SEO:</strong> Optimize Google Business Profile with accurate NAP (name, address, phone), service areas, and insolvency-specific categories.
+              <strong>Local SEO:</strong> optimise Google Business Profile with accurate NAP (name, address, phone), service areas, and insolvency-specific categories.
             </li>
             <li>
               <strong>Site Structure:</strong> Clear navigation with dedicated pages for each service type (liquidation, voluntary administration, receivership, etc.).
@@ -264,7 +264,7 @@ const InsolvencyDigitalMarketing = () => {
               <strong>Schema Markup:</strong> Implement legal service schema to enhance search visibility and provide structured data to search engines.
             </li>
             <li>
-              <strong>Page Speed:</strong> Compress images, enable caching, and minimize code to achieve sub-3-second load times.
+              <strong>Page Speed:</strong> Compress images, enable caching, and minimise code to achieve sub-3-second load times.
             </li>
           </ul>
         </div>
@@ -331,7 +331,7 @@ const InsolvencyDigitalMarketing = () => {
                     <li>Bid on exact match firm name variations</li>
                     <li>Include sitelink extensions to key service pages</li>
                     <li>Highlight ARITA registration and credentials</li>
-                    <li>Emphasize immediate availability</li>
+                    <li>emphasise immediate availability</li>
                   </ul>
                 </div>
 
@@ -341,7 +341,7 @@ const InsolvencyDigitalMarketing = () => {
                     Separate campaigns for each primary service:
                   </p>
                   <ul className="list-disc pl-6 space-y-1 text-muted-foreground text-sm">
-                    <li><strong>Voluntary Administration:</strong> Target VA-specific searches, emphasize business rescue options</li>
+                    <li><strong>Voluntary Administration:</strong> Target VA-specific searches, emphasise business rescue options</li>
                     <li><strong>Liquidation Services:</strong> Focus on CVL and court liquidation inquiries</li>
                     <li><strong>Small Business Restructuring:</strong> Capitalize on new SBR legislation awareness</li>
                     <li><strong>Receivership:</strong> Target secured creditor and receiver appointment searches</li>
@@ -368,7 +368,7 @@ const InsolvencyDigitalMarketing = () => {
                   <span className="text-sm text-muted-foreground">Example: &quot;Voluntary Administration Expert | Same Day Appointments&quot;</span>
                 </li>
                 <li>
-                  <strong>Headline 2:</strong> Emphasize credentials and specialization
+                  <strong>Headline 2:</strong> emphasise credentials and specialisation
                   <br />
                   <span className="text-sm text-muted-foreground">Example: &quot;Registered Liquidator | Construction Insolvency Specialist&quot;</span>
                 </li>
@@ -387,7 +387,7 @@ const InsolvencyDigitalMarketing = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4">Landing Page Optimization</h3>
+            <h3 className="text-xl font-semibold mb-4">Landing Page optimisation</h3>
             <Card className="p-6">
               <p className="text-muted-foreground mb-4">
                 Don&apos;t send paid traffic to your homepage. Create dedicated landing pages for each campaign:
@@ -417,10 +417,10 @@ const InsolvencyDigitalMarketing = () => {
           <h3 className="text-xl font-semibold mb-4">Personal Brand Development</h3>
           <div className="space-y-4">
             <div>
-              <h4 className="font-semibold mb-2">Profile Optimization</h4>
+              <h4 className="font-semibold mb-2">Profile optimisation</h4>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>Professional headshot and cover image reflecting insolvency expertise</li>
-                <li>Headline emphasizing specialization (&quot;Registered Liquidator | Construction Insolvency Specialist&quot;)</li>
+                <li>Headline emphasising specialisation (&quot;Registered Liquidator | Construction Insolvency Specialist&quot;)</li>
                 <li>About section telling your professional story and philosophy</li>
                 <li>Featured section showcasing key content and case studies</li>
                 <li>Regular activity demonstrating ongoing market engagement</li>
@@ -448,7 +448,7 @@ const InsolvencyDigitalMarketing = () => {
                 <li>Share relevant content from referral partners with your commentary</li>
                 <li>Participate in relevant LinkedIn groups (accounting, legal, business advisory)</li>
                 <li>Respond promptly to comments on your content</li>
-                <li>Send personalized connection requests with clear value proposition</li>
+                <li>Send personalised connection requests with clear value proposition</li>
               </ul>
             </div>
           </div>
@@ -471,7 +471,7 @@ const InsolvencyDigitalMarketing = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Website Conversion Optimization</h2>
+        <h2 className="text-3xl font-bold mb-6">Website Conversion optimisation</h2>
         
         <p className="mb-6">
           Your website must convert distressed directors and professional referrers into appointments. Every element should reduce friction and build confidence.
@@ -494,7 +494,7 @@ const InsolvencyDigitalMarketing = () => {
               <h4 className="font-semibold mb-2">Key Sections</h4>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>Services overview with links to detailed pages</li>
-                <li>Industry specializations you serve</li>
+                <li>Industry specialisations you serve</li>
                 <li>Process explanation (what to expect)</li>
                 <li>Practitioner credentials and experience</li>
                 <li>Client testimonials and results</li>
@@ -537,7 +537,7 @@ const InsolvencyDigitalMarketing = () => {
           </p>
           <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
             <li>Click-to-call button sticky header on mobile</li>
-            <li>Simplified forms (3-4 fields maximum) optimized for mobile input</li>
+            <li>Simplified forms (3-4 fields maximum) optimised for mobile input</li>
             <li>Fast load times (under 3 seconds) even on 4G connections</li>
             <li>Easy navigation without pinch-zoom requirements</li>
             <li>Readable text without zooming (minimum 16px font size)</li>
@@ -653,7 +653,7 @@ const InsolvencyDigitalMarketing = () => {
             <li>Survey new clients on how they found you</li>
             <li>Use unique phone numbers for different campaigns (call tracking)</li>
             <li>Implement UTM parameters on all marketing URLs</li>
-            <li>Analyze conversion paths in Google Analytics</li>
+            <li>analyse conversion paths in Google Analytics</li>
             <li>Calculate ROI for each marketing channel</li>
           </ul>
         </div>
@@ -696,9 +696,9 @@ const InsolvencyDigitalMarketing = () => {
             <h3 className="text-xl font-semibold mb-4">Months 1: Foundation & Quick Wins</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>✓ Audit current digital presence and competitive landscape</li>
-              <li>✓ Define positioning and specialization strategy</li>
-              <li>✓ Optimize Google Business Profile</li>
-              <li>✓ Implement click-to-call and mobile optimization</li>
+              <li>✓ Define positioning and specialisation strategy</li>
+              <li>✓ optimise Google Business Profile</li>
+              <li>✓ Implement click-to-call and mobile optimisation</li>
               <li>✓ Launch Google Ads for immediate visibility</li>
               <li>✓ Set up analytics and conversion tracking</li>
             </ul>
@@ -712,14 +712,14 @@ const InsolvencyDigitalMarketing = () => {
               <li>✓ Launch LinkedIn thought leadership program</li>
               <li>✓ Implement email nurture sequences</li>
               <li>✓ Build referrer resources and toolkits</li>
-              <li>✓ Optimize service landing pages</li>
+              <li>✓ optimise service landing pages</li>
             </ul>
           </Card>
 
           <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Month 3: Scale & Optimize</h3>
+            <h3 className="text-xl font-semibold mb-4">Month 3: Scale & optimise</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>✓ Analyze performance data and ROI</li>
+              <li>✓ analyse performance data and ROI</li>
               <li>✓ Expand content marketing calendar</li>
               <li>✓ Launch LinkedIn Ads for referrer targeting</li>
               <li>✓ Refine Google Ads based on conversion data</li>
@@ -733,7 +733,7 @@ const InsolvencyDigitalMarketing = () => {
       <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
         <h3 className="text-xl font-semibold mb-3">Ready to Transform Your Insolvency Practice?</h3>
         <p className="mb-4">
-          Digital marketing for insolvency practitioners requires specialized expertise in both marketing strategy and understanding the unique dynamics of the insolvency sector. Our team has worked with insolvency practices across Australia to develop comprehensive digital strategies that generate consistent, high-quality appointments.
+          Digital marketing for insolvency practitioners requires specialised expertise in both marketing strategy and understanding the unique dynamics of the insolvency sector. Our team has worked with insolvency practices across Australia to develop comprehensive digital strategies that generate consistent, high-quality appointments.
         </p>
         <p className="mb-0">
           Book a strategy call to discuss how we can help your practice build digital authority, attract more appointments, and grow your referrer network.

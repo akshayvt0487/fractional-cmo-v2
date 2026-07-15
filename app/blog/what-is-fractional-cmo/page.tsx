@@ -31,7 +31,7 @@ const WhatIsFractionalCMO = () => {
     },
     {
       question: "How long do Fractional CMO engagements typically last?",
-      answer: "Most successful Fractional CMO engagements run 12-24 months, starting with an intensive 90-day strategy development phase followed by ongoing implementation and optimization support."
+      answer: "Most successful Fractional CMO engagements run 12-24 months, starting with an intensive 90-day strategy development phase followed by ongoing implementation and optimisation support."
     },
     {
       question: "What size business needs a Fractional CMO?",
@@ -109,7 +109,7 @@ const WhatIsFractionalCMO = () => {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground">
-              Guide and mentor existing marketing teams while building high-performing marketing organizations.
+              Guide and mentor existing marketing teams while building high-performing marketing organisations.
             </p>
           </CardContent>
         </Card>
@@ -121,7 +121,7 @@ const WhatIsFractionalCMO = () => {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground">
-              Ensure marketing initiatives are executed effectively with proper measurement and optimization.
+              Ensure marketing initiatives are executed effectively with proper measurement and optimisation.
             </p>
           </CardContent>
         </Card>
@@ -233,7 +233,7 @@ const WhatIsFractionalCMO = () => {
 
       <h2>Getting Started with a Fractional CMO</h2>
       <p>
-        The typical engagement begins with a comprehensive marketing audit and strategy development phase, followed by implementation support and ongoing optimization.
+        The typical engagement begins with a comprehensive marketing audit and strategy development phase, followed by implementation support and ongoing optimisation.
       </p>
 
       <p>
@@ -276,7 +276,7 @@ const WhatIsFractionalCMO = () => {
               <li>• Weekly team meetings</li>
               <li>• Campaign planning and review</li>
               <li>• Team mentoring and training</li>
-              <li>• Performance optimization</li>
+              <li>• Performance optimisation</li>
             </ul>
             <div className="mt-4 p-3 bg-muted/50 rounded">
               <p className="text-xs font-medium">Best for: Growing companies scaling marketing operations</p>
@@ -330,7 +330,7 @@ const WhatIsFractionalCMO = () => {
         <ul className="space-y-2">
           <li>• Expanded to 3 new markets successfully</li>
           <li>• 200% increase in inbound leads</li>
-          <li>• Partner became recognized industry thought leader</li>
+          <li>• Partner became recognised industry thought leader</li>
           <li>• 40% revenue growth year-over-year</li>
         </ul>
       </div>
@@ -387,7 +387,7 @@ const WhatIsFractionalCMO = () => {
             <ul className="space-y-2 text-sm">
               <li>• <strong>Dashboard Creation:</strong> Real-time performance visibility</li>
               <li>• <strong>Attribution Modeling:</strong> Multi-touch revenue attribution</li>
-              <li>• <strong>A/B Testing Platforms:</strong> Optimizely, VWO, Google Optimize</li>
+              <li>• <strong>A/B Testing Platforms:</strong> optimisely, VWO, Google optimise</li>
               <li>• <strong>Reporting Automation:</strong> Automated stakeholder updates</li>
               <li>• <strong>ROI Tracking:</strong> Marketing investment performance</li>
             </ul>
@@ -403,7 +403,7 @@ const WhatIsFractionalCMO = () => {
       <h3>Industry Trends</h3>
       <ul className="space-y-2 my-6">
         <li>• Growing acceptance of remote executive leadership</li>
-        <li>• Increased demand for specialized marketing expertise</li>
+        <li>• Increased demand for specialised marketing expertise</li>
         <li>• Rise of fractional teams across all business functions</li>
         <li>• Integration of AI tools enhancing fractional efficiency</li>
         <li>• Evolution toward outcome-based engagement models</li>
@@ -417,7 +417,7 @@ const WhatIsFractionalCMO = () => {
       <ul className="space-y-2 my-6">
         <li>• Document strategies, processes, and best practices</li>
         <li>• Develop internal team capabilities and knowledge transfer</li>
-        <li>• Build robust measurement and optimization systems</li>
+        <li>• Build robust measurement and optimisation systems</li>
         <li>• Create scalable marketing technology infrastructure</li>
         <li>• Plan transition strategy for future marketing leadership needs</li>
       </ul>

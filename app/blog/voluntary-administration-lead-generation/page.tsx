@@ -176,7 +176,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Direct Lead Generation: Capturing Crisis Searches</h2>
         
-        <h3 className="text-2xl font-semibold mb-4 mt-8">Search Engine Optimization (SEO) Strategy</h3>
+        <h3 className="text-2xl font-semibold mb-4 mt-8">Search Engine optimisation (SEO) Strategy</h3>
         
         <p className="mb-6">
           Directors researching voluntary administration conduct extensive online research before contacting practitioners. Your SEO strategy must capture both crisis-stage and research-stage searches.
@@ -296,7 +296,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
               <p className="text-muted-foreground text-sm mb-2">Target urgent searches with maximum budget priority:</p>
               <ul className="list-disc pl-6 space-y-1 text-muted-foreground text-sm">
                 <li><strong>Keywords:</strong> voluntary administration urgent, VA administrator today, business rescue urgent</li>
-                <li><strong>Ad Copy:</strong> Emphasize same-day appointments, 24/7 availability, immediate action</li>
+                <li><strong>Ad Copy:</strong> emphasise same-day appointments, 24/7 availability, immediate action</li>
                 <li><strong>Landing Page:</strong> Emergency consultation booking with minimal form fields</li>
                 <li><strong>Bid Strategy:</strong> Aggressive bidding to capture top positions</li>
               </ul>
@@ -307,7 +307,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
               <p className="text-muted-foreground text-sm mb-2">Target specific VA-related searches:</p>
               <ul className="list-disc pl-6 space-y-1 text-muted-foreground text-sm">
                 <li><strong>Keywords:</strong> voluntary administration [location], VA administrator, business restructuring</li>
-                <li><strong>Ad Copy:</strong> Highlight expertise, success rates, industry specializations</li>
+                <li><strong>Ad Copy:</strong> Highlight expertise, success rates, industry specialisations</li>
                 <li><strong>Landing Page:</strong> Comprehensive service page with process overview and testimonials</li>
               </ul>
             </div>
@@ -324,7 +324,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
           </div>
         </div>
 
-        <h3 className="text-2xl font-semibold mb-4 mt-8">Website Conversion Optimization</h3>
+        <h3 className="text-2xl font-semibold mb-4 mt-8">Website Conversion optimisation</h3>
         
         <Card className="p-6 mb-6">
           <h4 className="font-semibold mb-4">Landing Page Elements for VA Services</h4>
@@ -478,7 +478,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
           <h4 className="font-semibold mb-4">LinkedIn Strategy for VA Specialists</h4>
           <div className="space-y-4">
             <div>
-              <h5 className="font-semibold mb-2">Profile Optimization</h5>
+              <h5 className="font-semibold mb-2">Profile optimisation</h5>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li><strong>Headline:</strong> &quot;Voluntary Administration Specialist | Helping Businesses Survive Financial Distress&quot;</li>
                 <li><strong>About Section:</strong> Tell your story—why you&apos;re passionate about business rescue, your philosophy on VA</li>
@@ -507,7 +507,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
                 <li>Comment thoughtfully on posts from accountants, lawyers, business advisors</li>
                 <li>Share relevant content from referral partners with your insights</li>
                 <li>Participate in relevant LinkedIn groups (accounting, legal, business advisory)</li>
-                <li>Send personalized connection requests to target referrers</li>
+                <li>Send personalised connection requests to target referrers</li>
                 <li>Use LinkedIn Articles for long-form thought leadership</li>
               </ul>
             </div>
@@ -670,7 +670,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
             <h3 className="text-xl font-semibold mb-4">Month 1: Foundation & Quick Wins</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>✓ Audit existing lead sources and conversion rates</li>
-              <li>✓ Optimize website for VA-specific conversions</li>
+              <li>✓ optimise website for VA-specific conversions</li>
               <li>✓ Launch Google Ads for urgent VA searches</li>
               <li>✓ Create core content assets (VA guide, process explainer)</li>
               <li>✓ Set up conversion tracking and analytics</li>
@@ -691,9 +691,9 @@ const VoluntaryAdministrationLeadGeneration = () => {
           </Card>
 
           <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Month 3: Scale & Optimize</h3>
+            <h3 className="text-xl font-semibold mb-4">Month 3: Scale & optimise</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>✓ Analyze lead source performance and ROI</li>
+              <li>✓ analyse lead source performance and ROI</li>
               <li>✓ Scale successful channels and tactics</li>
               <li>✓ Launch LinkedIn Ads for referrer targeting</li>
               <li>✓ Expand content marketing reach</li>
@@ -707,7 +707,7 @@ const VoluntaryAdministrationLeadGeneration = () => {
       <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
         <h3 className="text-xl font-semibold mb-3">Ready to Build a Sustainable Lead Pipeline?</h3>
         <p className="mb-4">
-         Lead generation for voluntary administration specialists requires specialized knowledge of both digital marketing and the unique dynamics of insolvency services. Our team has worked with VA practitioners across Australia to develop comprehensive <Link href="/services/lead-generation">lead generation strategies</Link> that deliver consistent, high-quality appointments.
+         Lead generation for voluntary administration specialists requires specialised knowledge of both digital marketing and the unique dynamics of insolvency services. Our team has worked with VA practitioners across Australia to develop comprehensive <Link href="/services/lead-generation">lead generation strategies</Link> that deliver consistent, high-quality appointments.
 
         </p>
         <p className="mb-0">

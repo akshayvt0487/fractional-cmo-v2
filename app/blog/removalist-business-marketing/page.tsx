@@ -85,7 +85,7 @@ const RemovalistBusinessMarketing = () => {
     answer: "Build trust through professional website design, verified customer reviews, clear pricing, comprehensive insurance coverage display, AFRA membership, and transparent communication about services and policies."
   }, {
     question: "What are the most effective marketing channels for removalist businesses?",
-    answer: "Local SEO and Google My Business optimization, social media showcasing successful moves, referral programs, partnerships with real estate agents, and targeted Google Ads for emergency moving services."
+    answer: "Local SEO and Google My Business optimisation, social media showcasing successful moves, referral programs, partnerships with real estate agents, and targeted Google Ads for emergency moving services."
   }, {
     question: "How should removalist businesses handle negative reviews?",
     answer: "Respond professionally within 24 hours, acknowledge concerns, offer solutions, and demonstrate commitment to customer satisfaction. Use feedback to improve services and prevent similar issues."
@@ -227,7 +227,7 @@ const RemovalistBusinessMarketing = () => {
                     
                     <Card className="mb-8">
                       <CardContent className="p-6">
-                        <h3 className="text-xl font-semibold mb-4">Local Keyword Optimization</h3>
+                        <h3 className="text-xl font-semibold mb-4">Local Keyword optimisation</h3>
                         <div className="grid md:grid-cols-2 gap-8">
                           <div>
                             <h4 className="font-semibold mb-3">High-Intent Keywords</h4>
@@ -286,7 +286,7 @@ const RemovalistBusinessMarketing = () => {
                     <div className="grid md:grid-cols-2 gap-6">
                       <Card>
                         <CardContent className="p-6">
-                          <h3 className="text-lg font-semibold mb-4">Google My Business Optimization</h3>
+                          <h3 className="text-lg font-semibold mb-4">Google My Business optimisation</h3>
                           <div className="space-y-3">
                             <div>
                               <h4 className="font-semibold">Complete Profile Setup</h4>
@@ -585,7 +585,7 @@ const RemovalistBusinessMarketing = () => {
                   </section>
 
                   <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-foreground mb-6">Performance Measurement & Optimization</h2>
+                    <h2 className="text-3xl font-bold text-foreground mb-6">Performance Measurement & optimisation</h2>
                     
                     <div className="grid md:grid-cols-2 gap-6 mb-8">
                       <Card>
@@ -657,7 +657,7 @@ const RemovalistBusinessMarketing = () => {
                             <div>
                               <h4 className="font-semibold text-primary mb-3">Days 1-30: Foundation</h4>
                               <ul className="text-sm space-y-2">
-                                <li>• Optimize Google My Business profile</li>
+                                <li>• optimise Google My Business profile</li>
                                 <li>• Set up website analytics tracking</li>
                                 <li>• Create customer review collection system</li>
                                 <li>• Audit and update all directory listings</li>
@@ -677,10 +677,10 @@ const RemovalistBusinessMarketing = () => {
                               </ul>
                             </div>
                             <div>
-                              <h4 className="font-semibold text-primary mb-3">Days 61-90: Optimization</h4>
+                              <h4 className="font-semibold text-primary mb-3">Days 61-90: optimisation</h4>
                               <ul className="text-sm space-y-2">
-                                <li>• Analyze performance data</li>
-                                <li>• Optimize high-performing campaigns</li>
+                                <li>• analyse performance data</li>
+                                <li>• optimise high-performing campaigns</li>
                                 <li>• Expand successful content types</li>
                                 <li>• Strengthen partnership relationships</li>
                                 <li>• Scale referral program</li>
@@ -731,7 +731,7 @@ const RemovalistBusinessMarketing = () => {
                           <div className="space-y-4">
                             <h3 className="text-lg font-semibold">Removalist Marketing Strategy</h3>
                             <ul className="space-y-2 text-sm">
-                              <li>• Moving season optimization strategies</li>
+                              <li>• Moving season optimisation strategies</li>
                               <li>• Local and interstate service marketing</li>
                               <li>• Digital lead generation systems</li>
                               <li>• Customer acquisition cost management</li>
@@ -740,7 +740,7 @@ const RemovalistBusinessMarketing = () => {
                           <div className="space-y-4">
                             <h3 className="text-lg font-semibold">Growth Marketing Solutions</h3>
                             <ul className="space-y-2 text-sm">
-                              <li>• <Link href="/" className="text-primary hover:underline">Lead generation optimization</Link> for movers</li>
+                              <li>• <Link href="/" className="text-primary hover:underline">Lead generation optimisation</Link> for movers</li>
                               <li>• Multi-channel marketing coordination</li>
                               <li>• Performance measurement and analytics</li>
                               <li>• Team development and training</li>
@@ -784,7 +784,7 @@ const RemovalistBusinessMarketing = () => {
                             </Link>
                           </h3>
                           <p className="text-sm text-muted-foreground">
-                            Master local search optimization to dominate your service area.
+                            Master local search optimisation to dominate your service area.
                           </p>
                         </CardContent>
                       </Card>

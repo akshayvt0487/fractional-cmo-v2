@@ -82,7 +82,7 @@ const LoanBrokerDigitalMarketing = () => {
 
   const faqs = [{
     question: "What's the best digital marketing strategy for loan brokers?",
-    answer: "A combination of educational content marketing, local SEO, and Google Ads works best. Focus on helping potential borrowers understand the loan process while optimizing for local search to capture people actively looking for mortgage assistance."
+    answer: "A combination of educational content marketing, local SEO, and Google Ads works best. Focus on helping potential borrowers understand the loan process while optimising for local search to capture people actively looking for mortgage assistance."
   }, {
     question: "How do loan brokers build trust online?",
     answer: "Transparency is key - showcase credentials, client testimonials, clear fee structures, and educational content that demonstrates expertise. Professional website design, security badges, and industry certifications also build credibility."
@@ -123,7 +123,7 @@ const LoanBrokerDigitalMarketing = () => {
       <div className="grid md:grid-cols-3 gap-6 my-8 not-prose">
         <Card className="p-6">
           <h4 className="text-lg font-bold mb-3">1. Awareness Stage</h4>
-          <p className="text-sm text-muted-foreground mb-3">Borrowers realize they need financing help</p>
+          <p className="text-sm text-muted-foreground mb-3">Borrowers realise they need financing help</p>
           <ul className="space-y-2 text-sm">
             <li>• Google searches: &quot;mortgage broker near me&quot;</li>
             <li>• Reading educational content</li>
@@ -160,7 +160,7 @@ const LoanBrokerDigitalMarketing = () => {
       <ul>
         <li><strong>First-time homebuyers:</strong> Need education about the loan process and qualification requirements</li>
         <li><strong>Refinancing homeowners:</strong> Looking to improve rates or access equity</li>
-        <li><strong>Investment property buyers:</strong> Require specialized loan products and expertise</li>
+        <li><strong>Investment property buyers:</strong> Require specialised loan products and expertise</li>
         <li><strong>Self-employed borrowers:</strong> Need brokers experienced with complex income documentation</li>
         <li><strong>Credit-challenged borrowers:</strong> Seeking alternative lending solutions and guidance</li>
       </ul>
@@ -193,7 +193,7 @@ const LoanBrokerDigitalMarketing = () => {
       <h3>Geographic Market Focus</h3>
       <p>Most borrowers prefer working with local brokers:</p>
       <ul>
-        <li>Google My Business optimization with client reviews</li>
+        <li>Google My Business optimisation with client reviews</li>
         <li>Location-specific landing pages for service areas</li>
         <li>Local real estate market content and insights</li>
         <li>Community involvement and local partnership features</li>
@@ -256,7 +256,7 @@ const LoanBrokerDigitalMarketing = () => {
         </Card>
 
         <Card className="p-6">
-          <h4 className="text-lg font-bold mb-3">Landing Page Optimization</h4>
+          <h4 className="text-lg font-bold mb-3">Landing Page optimisation</h4>
           <p className="text-sm mb-3">Your landing pages must address borrower concerns immediately:</p>
           <div className="bg-primary/5 p-4 rounded-lg">
             <p className="font-semibold text-sm mb-2">Essential Elements:</p>
@@ -381,7 +381,7 @@ const LoanBrokerDigitalMarketing = () => {
             <li><strong>Market Update:</strong> Rate changes and property market trends</li>
             <li><strong>Featured Article:</strong> In-depth guide on relevant topic</li>
             <li><strong>Client Spotlight:</strong> Recent success story</li>
-            <li><strong>Refinance Alert:</strong> Personalized rate comparison for existing clients</li>
+            <li><strong>Refinance Alert:</strong> personalised rate comparison for existing clients</li>
             <li><strong>Referral Program:</strong> Incentives for client referrals</li>
             <li><strong>Industry News:</strong> Regulatory changes, government programs</li>
           </ul>
@@ -514,9 +514,9 @@ const LoanBrokerDigitalMarketing = () => {
         </Card>
       </div>
 
-      <h2>Performance Tracking & Optimization</h2>
+      <h2>Performance Tracking & optimisation</h2>
       <p>
-        Successful digital marketing requires continuous measurement and optimization. Track the right metrics to understand what&apos;s working and where to invest more resources.
+        Successful digital marketing requires continuous measurement and optimisation. Track the right metrics to understand what&apos;s working and where to invest more resources.
       </p>
 
       <div className="space-y-6 my-8">
@@ -571,7 +571,7 @@ const LoanBrokerDigitalMarketing = () => {
 
       <h2>90-Day Marketing Implementation Plan</h2>
       <p>
-        A structured approach to launching and optimizing your digital marketing efforts ensures consistent progress and measurable results.
+        A structured approach to launching and optimising your digital marketing efforts ensures consistent progress and measurable results.
       </p>
 
       <div className="space-y-6 my-8">
@@ -581,12 +581,12 @@ const LoanBrokerDigitalMarketing = () => {
             <div>
               <p className="font-semibold text-sm mb-2">Week 1-2: Website & Tech Setup</p>
               <ul className="space-y-1 text-sm text-muted-foreground">
-                <li>✓ Website audit and optimization</li>
+                <li>✓ Website audit and optimisation</li>
                 <li>✓ Install conversion tracking (Google Analytics, Google Ads, Facebook Pixel)</li>
                 <li>✓ Set up call tracking numbers</li>
                 <li>✓ Create lead capture forms and calculators</li>
                 <li>✓ Implement live chat or chatbot</li>
-                <li>✓ Optimize for mobile</li>
+                <li>✓ optimise for mobile</li>
               </ul>
             </div>
             <div>
@@ -611,8 +611,8 @@ const LoanBrokerDigitalMarketing = () => {
                 <li>✓ Launch Google Ads campaigns ($1,500-3,000/month budget)</li>
                 <li>✓ Set up Facebook/Instagram ad campaigns</li>
                 <li>✓ Create retargeting campaigns</li>
-                <li>✓ Start local SEO optimization</li>
-                <li>✓ Claim and optimize Google My Business</li>
+                <li>✓ Start local SEO optimisation</li>
+                <li>✓ Claim and optimise Google My Business</li>
               </ul>
             </div>
             <div>
@@ -629,12 +629,12 @@ const LoanBrokerDigitalMarketing = () => {
         </Card>
 
         <Card className="p-6 border-purple-200">
-          <h4 className="text-lg font-bold mb-3">Month 3: Optimization & Scale</h4>
+          <h4 className="text-lg font-bold mb-3">Month 3: optimisation & Scale</h4>
           <div className="space-y-4">
             <div>
               <p className="font-semibold text-sm mb-2">Week 9-10: Data Analysis & Refinement</p>
               <ul className="space-y-1 text-sm text-muted-foreground">
-                <li>✓ Analyze first 60 days of data</li>
+                <li>✓ analyse first 60 days of data</li>
                 <li>✓ Pause underperforming campaigns/keywords</li>
                 <li>✓ Double down on winning channels</li>
                 <li>✓ A/B test landing pages and ad copy</li>
@@ -683,7 +683,7 @@ const LoanBrokerDigitalMarketing = () => {
               <li>• Created &quot;First Home Buyer Ultimate Guide&quot; lead magnet</li>
               <li>• Published 3 blog posts weekly targeting local searches</li>
               <li>• Implemented automated email nurture sequences</li>
-              <li>• Optimized Google My Business with weekly posts and photos</li>
+              <li>• optimised Google My Business with weekly posts and photos</li>
               <li>• Partnered with 8 real estate agents for referrals</li>
             </ul>
           </div>

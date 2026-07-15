@@ -16,7 +16,7 @@ export const metadata = createMetadata({
   },
 
   title: "Google Ads for Service Businesses | Complete Guide 2026",
-  description: "Learn how service businesses can attract high-quality leads with Google Ads. Step-by-step setup, campaign optimization, and conversion strategies for measurable growth.",
+  description: "Learn how service businesses can attract high-quality leads with Google Ads. Step-by-step setup, campaign optimisation, and conversion strategies for measurable growth.",
   path: "/blog/google-ads-service-businesses",
   keywords: ["google", "service", "businesses", "digital marketing", "business growth", "marketing strategy"],
   openGraph: {
@@ -55,8 +55,8 @@ const GoogleAdsService = () => {
 
 
   const articleData = {
-    headline: "Google Ads for Service Businesses: Complete Setup & Optimization Guide",
-    description: "Master Google Ads for service-based businesses with proven campaign setup, optimization techniques, budget strategies, and advanced targeting methods to maximize ROI.",
+    headline: "Google Ads for Service Businesses: Complete Setup & optimisation Guide",
+    description: "Master Google Ads for service-based businesses with proven campaign setup, optimisation techniques, budget strategies, and advanced targeting methods to maximise ROI.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-10T00:00:00.000Z",
@@ -86,7 +86,7 @@ const GoogleAdsService = () => {
     answer: "Service businesses should budget $1,500-$5,000+ monthly for effective Google Ads campaigns. Start with $50-100 per day to gather data, then scale based on performance. High-value services can justify larger budgets."
   }, {
     question: "How long does it take to see results from Google Ads for services?",
-    answer: "Initial results appear within 1-2 weeks, but optimal performance takes 3-6 months of testing and optimization. Service businesses with longer sales cycles may need 6-12 months to accurately measure ROI."
+    answer: "Initial results appear within 1-2 weeks, but optimal performance takes 3-6 months of testing and optimisation. Service businesses with longer sales cycles may need 6-12 months to accurately measure ROI."
   }, {
     question: "What's the average cost per click for service business Google Ads?",
     answer: "Service business CPCs range from $5-50+ depending on industry. Legal services and home improvement often have higher CPCs ($20-100+), while general business services may be $5-25. Focus on value per conversion, not just CPC."
@@ -103,7 +103,7 @@ const GoogleAdsService = () => {
         </p>
 
         <p>
-          The key to Google Ads success lies in understanding your customer&apos;s search behavior, creating highly relevant campaigns that match their intent, and optimizing for conversions that matter—phone calls, form submissions, and appointment bookings. Service businesses that master these fundamentals consistently achieve 300-500% ROI from their Google Ads investment.
+          The key to Google Ads success lies in understanding your customer&apos;s search behavior, creating highly relevant campaigns that match their intent, and optimising for conversions that matter—phone calls, form submissions, and appointment bookings. Service businesses that master these fundamentals consistently achieve 300-500% ROI from their Google Ads investment.
         </p>
 
         <h2>Understanding Service Business Search Behavior</h2>
@@ -148,7 +148,7 @@ const GoogleAdsService = () => {
 
         <h2>Campaign Setup Fundamentals</h2>
         <p>
-          Building effective Google Ads campaigns for service businesses starts with proper structure, targeting, and keyword research that aligns with your service offerings and local market dynamics. A well-structured campaign makes optimization easier and performance tracking more accurate.
+          Building effective Google Ads campaigns for service businesses starts with proper structure, targeting, and keyword research that aligns with your service offerings and local market dynamics. A well-structured campaign makes optimisation easier and performance tracking more accurate.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 my-8 not-prose">
@@ -156,7 +156,7 @@ const GoogleAdsService = () => {
             <h3 className="text-xl font-bold mb-4">Campaign Structure</h3>
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">
-                Organize campaigns by service type and geographic location for better control and optimization.
+                organise campaigns by service type and geographic location for better control and optimisation.
               </p>
               <ul className="space-y-2 text-sm">
                 <li>• Service-specific campaigns</li>
@@ -189,7 +189,7 @@ const GoogleAdsService = () => {
 
         <h3>Advanced Campaign Types for Service Businesses</h3>
         <p>
-          Different campaign types serve different purposes in your Google Ads strategy. Understanding when and how to use each type maximizes your reach and conversion potential.
+          Different campaign types serve different purposes in your Google Ads strategy. Understanding when and how to use each type maximises your reach and conversion potential.
         </p>
 
         <div className="space-y-6 my-8">
@@ -247,7 +247,7 @@ const GoogleAdsService = () => {
           <Card className="p-6">
             <h4 className="text-lg font-bold mb-3">Performance Max Campaigns</h4>
             <p className="text-sm mb-3">
-              AI-driven campaigns that automatically optimize across all Google properties. Use cautiously for service businesses.
+              AI-driven campaigns that automatically optimise across all Google properties. Use cautiously for service businesses.
             </p>
             <div className="bg-muted/50 p-4 rounded-lg">
               <p className="text-sm font-semibold mb-2">When to Use:</p>
@@ -318,7 +318,7 @@ const GoogleAdsService = () => {
               <li><strong>Call Extensions:</strong> Priority #1 for service businesses</li>
               <li><strong>Location Extensions:</strong> Show your address and map</li>
               <li><strong>Callout Extensions:</strong> &quot;24/7 Service&quot;, &quot;Free Quotes&quot;</li>
-              <li><strong>Structured Snippets:</strong> Service types, specializations</li>
+              <li><strong>Structured Snippets:</strong> Service types, specialisations</li>
               <li><strong>Price Extensions:</strong> Starting prices for transparency</li>
               <li><strong>Review Extensions:</strong> Third-party ratings and awards</li>
               <li><strong>Promotion Extensions:</strong> Limited-time offers</li>
@@ -326,7 +326,7 @@ const GoogleAdsService = () => {
           </Card>
         </div>
 
-        <h2>Landing Page Optimization for Service Conversions</h2>
+        <h2>Landing Page optimisation for Service Conversions</h2>
         <p>
           Your landing page is where clicks convert to customers. Service business landing pages must load fast, clearly communicate value, and make it effortless for visitors to take action—especially on mobile devices where most service searches occur.
         </p>
@@ -345,7 +345,7 @@ const GoogleAdsService = () => {
           </Card>
 
           <Card className="p-6">
-            <h4 className="text-lg font-bold mb-3">Mobile Optimization Checklist</h4>
+            <h4 className="text-lg font-bold mb-3">Mobile optimisation Checklist</h4>
             <ul className="space-y-2 text-sm">
               <li>□ Page loads in under 2 seconds</li>
               <li>□ Phone number is tap-to-call</li>
@@ -372,9 +372,9 @@ const GoogleAdsService = () => {
           </ol>
         </div>
 
-        <h2>Advanced Optimization Techniques</h2>
+        <h2>Advanced optimisation Techniques</h2>
         <p>
-          Continuous optimization is essential for Google Ads success. The difference between average and exceptional results lies in systematic testing, data-driven adjustments, and strategic refinement of every campaign element.
+          Continuous optimisation is essential for Google Ads success. The difference between average and exceptional results lies in systematic testing, data-driven adjustments, and strategic refinement of every campaign element.
         </p>
 
         <h3>Quality Score Mastery</h3>
@@ -409,7 +409,7 @@ const GoogleAdsService = () => {
 
           <Card className="p-6">
             <h4 className="text-lg font-bold mb-3">Landing Page Experience</h4>
-            <p className="text-sm text-muted-foreground mb-3">Optimize for speed, relevance, and usability</p>
+            <p className="text-sm text-muted-foreground mb-3">optimise for speed, relevance, and usability</p>
             <ul className="space-y-2 text-sm">
               <li>• Load time under 2 seconds</li>
               <li>• Mobile-responsive design</li>
@@ -500,7 +500,7 @@ const GoogleAdsService = () => {
 
         <h2>Budget Management & Bidding Strategies</h2>
         <p>
-          Effective budget allocation and bidding strategies help service businesses maximize their Google Ads investment while maintaining cost-effective lead generation. The right bidding strategy depends on your business goals, conversion volume, and campaign maturity.
+          Effective budget allocation and bidding strategies help service businesses maximise their Google Ads investment while maintaining cost-effective lead generation. The right bidding strategy depends on your business goals, conversion volume, and campaign maturity.
         </p>
 
         <h3>Budget Allocation Framework</h3>
@@ -513,7 +513,7 @@ const GoogleAdsService = () => {
               <li>• 15% Display remarketing</li>
               <li>• 5% Testing (new keywords, locations)</li>
             </ul>
-            <p className="text-xs text-muted-foreground mt-3">Focus: Data gathering and initial optimization</p>
+            <p className="text-xs text-muted-foreground mt-3">Focus: Data gathering and initial optimisation</p>
           </Card>
 
           <Card className="p-6">
@@ -571,21 +571,21 @@ const GoogleAdsService = () => {
                 <li>• Have stable conversion rates</li>
               </ul>
               <p className="text-xs text-muted-foreground mt-2">
-                Pro tip: Set initial target CPA at 120% of your actual CPA to give the algorithm room to optimize.
+                Pro tip: Set initial target CPA at 120% of your actual CPA to give the algorithm room to optimise.
               </p>
             </div>
           </Card>
 
           <Card className="p-6">
             <h4 className="text-lg font-bold mb-3">Stage 4: Target ROAS (Advanced)</h4>
-            <p className="text-sm mb-3">Optimize for return on ad spend when you can track revenue per conversion. Best for high-value services with varying deal sizes.</p>
+            <p className="text-sm mb-3">optimise for return on ad spend when you can track revenue per conversion. Best for high-value services with varying deal sizes.</p>
             <div className="bg-muted/50 p-4 rounded-lg">
               <p className="text-sm font-semibold mb-2">When to Use:</p>
               <ul className="space-y-1 text-sm">
                 <li>• Track revenue per conversion</li>
                 <li>• 50+ conversions per month</li>
                 <li>• Services with varying customer lifetime values</li>
-                <li>• Want to maximize revenue, not just conversions</li>
+                <li>• Want to maximise revenue, not just conversions</li>
               </ul>
             </div>
           </Card>
@@ -615,7 +615,7 @@ const GoogleAdsService = () => {
 
         <h2>Performance Measurement & KPIs</h2>
         <p>
-          Track the right metrics to evaluate Google Ads performance and make data-driven optimization decisions that align with your business objectives. Vanity metrics like impressions and clicks don&apos;t pay the bills—focus on what drives revenue.
+          Track the right metrics to evaluate Google Ads performance and make data-driven optimisation decisions that align with your business objectives. Vanity metrics like impressions and clicks don&apos;t pay the bills—focus on what drives revenue.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
@@ -706,9 +706,9 @@ const GoogleAdsService = () => {
           </Card>
         </div>
 
-        <h2>Seasonal Optimization Strategies</h2>
+        <h2>Seasonal optimisation Strategies</h2>
         <p>
-          Service demand fluctuates throughout the year. Smart seasonal adjustments maximize profitability during peak periods and maintain visibility during slow seasons.
+          Service demand fluctuates throughout the year. Smart seasonal adjustments maximise profitability during peak periods and maintain visibility during slow seasons.
         </p>
 
         <div className="bg-muted/50 p-6 my-8 rounded-lg">
@@ -728,7 +728,7 @@ const GoogleAdsService = () => {
               <p className="font-semibold text-sm mb-2">Shoulder Season (4-6 months):</p>
               <ul className="space-y-1 text-sm text-muted-foreground">
                 <li>• Maintain moderate budgets</li>
-                <li>• Focus on efficiency (optimize for lower CPA)</li>
+                <li>• Focus on efficiency (optimise for lower CPA)</li>
                 <li>• Test new keywords and ad copy</li>
                 <li>• Build remarketing audiences for future campaigns</li>
                 <li>• Offer special off-season pricing</li>
@@ -749,7 +749,7 @@ const GoogleAdsService = () => {
 
         <h2>Common Google Ads Mistakes to Avoid</h2>
         <p>
-          Even experienced service businesses make critical Google Ads mistakes that waste budget and limit growth. Avoid these common pitfalls to maximize campaign performance.
+          Even experienced service businesses make critical Google Ads mistakes that waste budget and limit growth. Avoid these common pitfalls to maximise campaign performance.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
@@ -785,16 +785,16 @@ const GoogleAdsService = () => {
             <p className="text-sm mb-2">60-80% of service business conversions happen via phone, yet many don&apos;t track calls.</p>
             <div className="bg-success/10 p-3 rounded mt-3">
               <p className="text-sm font-semibold mb-1">✓ Solution:</p>
-              <p className="text-sm">Implement Google call tracking or use CallRail. Track call duration and source. Optimize towards campaigns driving quality calls.</p>
+              <p className="text-sm">Implement Google call tracking or use CallRail. Track call duration and source. optimise towards campaigns driving quality calls.</p>
             </div>
           </Card>
 
           <Card className="p-6 border-destructive/50">
-            <h4 className="text-lg font-bold mb-3 text-destructive">❌ Mistake: Setting &quot;Maximize Clicks&quot; as Bidding Strategy</h4>
-            <p className="text-sm mb-2">Google prioritizes cheap clicks over quality leads, sending low-intent traffic.</p>
+            <h4 className="text-lg font-bold mb-3 text-destructive">❌ Mistake: Setting &quot;maximise Clicks&quot; as Bidding Strategy</h4>
+            <p className="text-sm mb-2">Google prioritises cheap clicks over quality leads, sending low-intent traffic.</p>
             <div className="bg-success/10 p-3 rounded mt-3">
               <p className="text-sm font-semibold mb-1">✓ Solution:</p>
-              <p className="text-sm">Use manual CPC initially, then transition to Target CPA or Target ROAS once you have conversion data. Never optimize for clicks.</p>
+              <p className="text-sm">Use manual CPC initially, then transition to Target CPA or Target ROAS once you have conversion data. Never optimise for clicks.</p>
             </div>
           </Card>
 
@@ -834,7 +834,7 @@ const GoogleAdsService = () => {
                   <li>• Daily budget monitoring and adjustments</li>
                   <li>• Add negative keywords from search terms report</li>
                   <li>• Track and record all leads (quality and source)</li>
-                  <li>• Initial Quality Score optimization</li>
+                  <li>• Initial Quality Score optimisation</li>
                 </ul>
               </div>
               <p className="text-sm font-semibold mt-4">Goal: 15-30 conversions, identify top-performing keywords</p>
@@ -842,7 +842,7 @@ const GoogleAdsService = () => {
           </Card>
 
           <Card className="p-6">
-            <h4 className="text-lg font-bold mb-3">Month 2: Optimization & Expansion</h4>
+            <h4 className="text-lg font-bold mb-3">Month 2: optimisation & Expansion</h4>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold text-sm mb-1">Week 5-6: Refine</p>
@@ -860,7 +860,7 @@ const GoogleAdsService = () => {
                   <li>• Add new high-intent keywords discovered in search terms</li>
                   <li>• Launch remarketing campaigns</li>
                   <li>• Test location bid adjustments</li>
-                  <li>• Optimize landing pages based on data</li>
+                  <li>• optimise landing pages based on data</li>
                   <li>• Add call and location extensions</li>
                 </ul>
               </div>
@@ -1020,11 +1020,11 @@ const GoogleAdsService = () => {
 
         <h2>Your Google Ads Success Roadmap</h2>
         <p>
-          Google Ads success for service businesses comes down to strategic targeting, compelling messaging, and relentless optimization. The platform offers unparalleled opportunities to reach potential clients at the exact moment they&apos;re searching for your services.
+          Google Ads success for service businesses comes down to strategic targeting, compelling messaging, and relentless optimisation. The platform offers unparalleled opportunities to reach potential clients at the exact moment they&apos;re searching for your services.
         </p>
         
         <p>
-          Start with thorough keyword research, create tightly organized ad groups, and write compelling ad copy that speaks directly to your target audience&apos;s needs. Focus on quality over quantity—a few well-optimized campaigns will outperform dozens of poorly managed ones.
+          Start with thorough keyword research, create tightly organised ad groups, and write compelling ad copy that speaks directly to your target audience&apos;s needs. Focus on quality over quantity—a few well-optimised campaigns will outperform dozens of poorly managed ones.
         </p>
 
         <p>

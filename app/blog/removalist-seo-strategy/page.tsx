@@ -55,13 +55,13 @@ const faqs = [{
   answer: "Typically, you'll start seeing initial improvements in local search rankings within 3-6 months, with significant results usually visible after 6-12 months of consistent SEO efforts. Local SEO often shows faster results than national campaigns."
 }, {
   question: "What's the most important SEO factor for removalist companies?",
-  answer: "Google My Business optimization and local citations are crucial, but creating helpful, experience-based content that demonstrates your expertise (E-E-A-T) is equally important for long-term success."
+  answer: "Google My Business optimisation and local citations are crucial, but creating helpful, experience-based content that demonstrates your expertise (E-E-A-T) is equally important for long-term success."
 }, {
   question: "Should removalist businesses focus on local or national SEO?",
-  answer: "Most removalist businesses should prioritize local SEO for their service areas, while interstate companies can benefit from both local (in multiple cities) and national strategies."
+  answer: "Most removalist businesses should prioritise local SEO for their service areas, while interstate companies can benefit from both local (in multiple cities) and national strategies."
 }, {
   question: "How do I compete with large removalist franchises in search results?",
-  answer: "Focus on hyperlocal content, customer experience stories, specialized services, and building strong local authority through community involvement and local partnerships."
+  answer: "Focus on hyperlocal content, customer experience stories, specialised services, and building strong local authority through community involvement and local partnerships."
 }];
 const RemovalistSEOStrategy = () => {
   const post = blogPosts.find(p => p.slug === "removalist-seo-strategy");
@@ -179,12 +179,12 @@ const RemovalistSEOStrategy = () => {
               <h3 className="text-xl font-semibold mb-4 text-primary">🚀 What You&apos;ll Learn</h3>
               <ul className="space-y-2 text-sm">
                 <li>• How to implement semantic SEO for moving-related keywords</li>
-                <li>• Google E-E-A-T optimization strategies for removalist businesses</li>
+                <li>• Google E-E-A-T optimisation strategies for removalist businesses</li>
                 <li>• Advanced local SEO tactics that actually work in 2024</li>
                 <li>• Strategic internal and external linking frameworks</li>
                 <li>• Content strategies that convert browsers into customers</li>
                 <li>• Customer segmentation and seasonal demand patterns</li>
-                <li>• Pricing strategies that maximize profitability</li>
+                <li>• Pricing strategies that maximise profitability</li>
               </ul>
             </CardContent>
           </Card>
@@ -194,7 +194,7 @@ const RemovalistSEOStrategy = () => {
           <h2 className="text-3xl font-bold mb-6">Understanding Semantic SEO for Removalist Services</h2>
           
           <p className="text-base leading-relaxed mb-6">
-            Semantic SEO goes beyond traditional keyword optimization. Google&apos;s algorithm now understands context, intent, and relationships between concepts. For removalist businesses, this means creating content that covers the entire customer journey and related topics.
+            Semantic SEO goes beyond traditional keyword optimisation. Google&apos;s algorithm now understands context, intent, and relationships between concepts. For removalist businesses, this means creating content that covers the entire customer journey and related topics.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4">Core Semantic Keyword Clusters</h3>
@@ -302,13 +302,13 @@ const RemovalistSEOStrategy = () => {
           <h2 className="text-3xl font-bold mb-6">Advanced Local SEO Strategies</h2>
           
           <p className="text-base leading-relaxed mb-6">
-            Local SEO is the foundation of removalist marketing success. With 46% of all Google searches being local, your local optimization directly impacts your bottom line.
+            Local SEO is the foundation of removalist marketing success. With 46% of all Google searches being local, your local optimisation directly impacts your bottom line.
           </p>
 
-          <h3 className="text-2xl font-semibold mb-4">Google Business Profile Optimization</h3>
+          <h3 className="text-2xl font-semibold mb-4">Google Business Profile optimisation</h3>
           
           <div className="bg-muted/50 rounded-lg p-6 mb-6">
-            <h4 className="font-semibold mb-3">Essential Optimization Checklist:</h4>
+            <h4 className="font-semibold mb-3">Essential optimisation Checklist:</h4>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <h5 className="font-medium mb-2">Basic Information</h5>
@@ -527,7 +527,7 @@ const RemovalistSEOStrategy = () => {
                 <p className="text-sm mb-3">Create detailed, step-by-step guides that become go-to resources:</p>
                 <ul className="text-sm space-y-1">
                   <li>• &quot;Complete House Moving Checklist for Australian Families&quot;</li>
-                  <li>• &quot;Office Relocation Guide: Minimize Downtime and Costs&quot;</li>
+                  <li>• &quot;Office Relocation Guide: minimise Downtime and Costs&quot;</li>
                   <li>• &quot;Interstate Moving: Legal Requirements and Cost Breakdown&quot;</li>
                   <li>• &quot;Apartment Moving: Navigate Tight Spaces and Building Restrictions&quot;</li>
                 </ul>
@@ -566,7 +566,7 @@ const RemovalistSEOStrategy = () => {
                 <p className="text-sm mb-3">Address specific challenges your customers face:</p>
                 <ul className="text-sm space-y-1">
                   <li>• &quot;What to Do When Your Removalist Damages Your Belongings&quot;</li>
-                  <li>• &quot;Last-Minute Moving: How to Organize a Move in 24 Hours&quot;</li>
+                  <li>• &quot;Last-Minute Moving: How to organise a Move in 24 Hours&quot;</li>
                   <li>• &quot;Moving with Pets: Stress-Free Tips for Animal Transport&quot;</li>
                   <li>• &quot;Fragile Item Packing: Protect Your Valuables During the Move&quot;</li>
                 </ul>
@@ -574,7 +574,7 @@ const RemovalistSEOStrategy = () => {
             </Card>
           </div>
 
-          <h3 className="text-2xl font-semibold mb-4">Content Optimization Hooks</h3>
+          <h3 className="text-2xl font-semibold mb-4">Content optimisation Hooks</h3>
           
           <p className="text-base leading-relaxed mb-4">
             Use these proven hook formulas to increase engagement and time on page:
@@ -619,14 +619,14 @@ const RemovalistSEOStrategy = () => {
                   <li>• <strong>Largest Contentful Paint (LCP):</strong> Under 2.5 seconds</li>
                   <li>• <strong>First Input Delay (FID):</strong> Under 100 milliseconds</li>
                   <li>• <strong>Cumulative Layout Shift (CLS):</strong> Under 0.1</li>
-                  <li>• Optimize images and minimize JavaScript</li>
+                  <li>• optimise images and minimise JavaScript</li>
                 </ul>
               </CardContent>
             </Card>
             
             <Card>
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-3 text-primary">Mobile Optimization</h4>
+                <h4 className="font-semibold mb-3 text-primary">Mobile optimisation</h4>
                 <ul className="text-sm space-y-2">
                   <li>• Responsive design for all screen sizes</li>
                   <li>• Touch-friendly buttons and forms</li>
@@ -697,7 +697,7 @@ const RemovalistSEOStrategy = () => {
                   <li>• Local pack rankings</li>
                   <li>• Target keyword positions</li>
                   <li>• Featured snippet captures</li>
-                  <li>• Voice search optimization</li>
+                  <li>• Voice search optimisation</li>
                 </ul>
               </CardContent>
             </Card>
@@ -720,7 +720,7 @@ const RemovalistSEOStrategy = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3">
                 <span className="bg-primary text-primary-foreground px-2 py-1 rounded text-xs font-medium">Month 1-2</span>
-                <span>Technical optimizations, Google Business Profile setup, initial content creation</span>
+                <span>Technical optimisations, Google Business Profile setup, initial content creation</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="bg-secondary text-secondary-foreground px-2 py-1 rounded text-xs font-medium">Month 3-6</span>
@@ -738,7 +738,7 @@ const RemovalistSEOStrategy = () => {
           <h2 className="text-3xl font-bold mb-6">Conclusion: Your SEO Action Plan</h2>
           
           <p className="text-base leading-relaxed mb-6">
-            Implementing a comprehensive SEO strategy for your removalist business requires patience, consistency, and expertise. Start with the fundamentals—local SEO and Google Business Profile optimization—then gradually build your content marketing and technical SEO capabilities.
+            Implementing a comprehensive SEO strategy for your removalist business requires patience, consistency, and expertise. Start with the fundamentals—local SEO and Google Business Profile optimisation—then gradually build your content marketing and technical SEO capabilities.
           </p>
 
           <Card className="bg-linear-to-r from-primary/5 to-secondary/5 border-primary/20 mb-8">
@@ -748,7 +748,7 @@ const RemovalistSEOStrategy = () => {
                 <div>
                   <h5 className="font-medium mb-2">Week 1-2</h5>
                   <ul className="text-sm space-y-1">
-                    <li>□ Optimize Google Business Profile</li>
+                    <li>□ optimise Google Business Profile</li>
                     <li>□ Audit current website technical issues</li>
                     <li>□ Research local keyword opportunities</li>
                     <li>□ Set up analytics and tracking</li>

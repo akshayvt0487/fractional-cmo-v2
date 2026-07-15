@@ -200,7 +200,7 @@ const TradeBusinessGrowth = () => {
                     <div className="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center font-bold">2</div>
                     <div>
                       <h4 className="font-semibold text-green-800">Operational Excellence</h4>
-                      <p className="text-sm text-green-700">Process optimization and efficiency improvements</p>
+                      <p className="text-sm text-green-700">Process optimisation and efficiency improvements</p>
                     </div>
                   </div>
                 </div>
@@ -218,7 +218,7 @@ const TradeBusinessGrowth = () => {
                     <div className="w-12 h-12 bg-purple-600 text-white rounded-lg flex items-center justify-center font-bold">4</div>
                     <div>
                       <h4 className="font-semibold text-purple-800">Financial Management</h4>
-                      <p className="text-sm text-purple-700">Cash flow optimization and strategic investment</p>
+                      <p className="text-sm text-purple-700">Cash flow optimisation and strategic investment</p>
                     </div>
                   </div>
                 </div>
@@ -299,9 +299,9 @@ const TradeBusinessGrowth = () => {
           Scaling a trade business requires robust operational systems that can handle increased volume without sacrificing quality or customer satisfaction.
         </p>
 
-        <h3>Process Standardization</h3>
+        <h3>Process standardisation</h3>
         <p>
-          Document and standardize your core processes to ensure consistency as you grow. This includes job estimation, customer communication, project management, and quality control procedures.
+          Document and standardise your core processes to ensure consistency as you grow. This includes job estimation, customer communication, project management, and quality control procedures.
         </p>
 
         <h3>Technology Implementation</h3>

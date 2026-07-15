@@ -13,12 +13,12 @@ export const metadata = createMetadata({
     nocache: false,
   },
 
-  title: "SEO for Buyers Agents | Complete Optimization Guide 2026",
+  title: "SEO for Buyers Agents | Complete optimisation Guide 2026",
   description: "Learn SEO for buyers agents in 2026: optimise your website, target local searches, and generate consistent leads from motivated property buyers.",
   path: "/blog/buyers-agents-seo",
   keywords: ["buyers agents", "SEO", "local SEO", "property SEO", "search optimisation", "Google ranking"],
   openGraph: {
-    title: "SEO for Buyers Agents | Complete Optimization Guide 2026",
+    title: "SEO for Buyers Agents | Complete optimisation Guide 2026",
     description: "Master SEO for buyers agents with comprehensive keyword research, local SEO, content strategy.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/buyers-agents-seo`,
     siteName: "Fractional CMO",
@@ -35,7 +35,7 @@ export const metadata = createMetadata({
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO for Buyers Agents | Complete Optimization Guide 2026",
+    title: "SEO for Buyers Agents | Complete optimisation Guide 2026",
     description: "Master SEO for buyers agents with comprehensive guide.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/buyers-agents-google-ads-hero.jpg`],
     site: "@FractionalCMO"
@@ -66,7 +66,7 @@ const BuyersAgentsSEO = () => {
     imageUrl: '/images/blog/buyers-agents-google-ads-hero.jpg',
     category: "SEO",
     readTime: "22 min read",
-    tags: ["Buyers Agents", "SEO", "Local SEO", "Property SEO", "Search Optimization"]
+    tags: ["Buyers Agents", "SEO", "Local SEO", "Property SEO", "Search optimisation"]
   };
 
   const faqs = [
@@ -118,7 +118,7 @@ const BuyersAgentsSEO = () => {
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
-            SEO is one of the most cost-effective long-term strategies for buyers agents to generate consistent, qualified leads. By optimizing your online presence with <Link href="/services/seo/buyers-agents" className="text-primary font-semibold hover:underline">professional SEO services</Link>, you can appear in front of property buyers actively searching for representation in your area.
+            SEO is one of the most cost-effective long-term strategies for buyers agents to generate consistent, qualified leads. By optimising your online presence with <Link href="/services/seo/buyers-agents" className="text-primary font-semibold hover:underline">professional SEO services</Link>, you can appear in front of property buyers actively searching for representation in your area.
           </p>
         </CardContent>
       </Card>
@@ -126,7 +126,7 @@ const BuyersAgentsSEO = () => {
       <h2 className="text-3xl font-bold mb-6">SEO Fundamentals for Buyers Agents</h2>
       
       <p className="text-lg text-muted-foreground mb-6">
-        SEO works by optimizing your website and online presence to rank higher in search engine results for keywords your potential clients are searching for.
+        SEO works by optimising your website and online presence to rank higher in search engine results for keywords your potential clients are searching for.
       </p>
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -138,7 +138,7 @@ const BuyersAgentsSEO = () => {
             <ul className="space-y-2 list-disc list-inside">
               <li>Keyword research and targeting</li>
               <li>Title tags and meta descriptions</li>
-              <li>Header tag optimization</li>
+              <li>Header tag optimisation</li>
               <li>Content quality and depth</li>
               <li>Internal linking structure</li>
             </ul>
@@ -151,7 +151,7 @@ const BuyersAgentsSEO = () => {
           </CardHeader>
           <CardContent className="text-sm space-y-2">
             <ul className="space-y-2 list-disc list-inside">
-              <li>Google Business Profile optimization</li>
+              <li>Google Business Profile optimisation</li>
               <li>Local citations and directories</li>
               <li>Location-specific landing pages</li>
               <li>Review management</li>
@@ -199,7 +199,7 @@ const BuyersAgentsSEO = () => {
 
       <Card className="mb-8">
         <CardHeader>
-          <CardTitle>Google Business Profile Optimization</CardTitle>
+          <CardTitle>Google Business Profile optimisation</CardTitle>
           <CardDescription>Critical for local SEO visibility and map rankings</CardDescription>
         </CardHeader>
         <CardContent>

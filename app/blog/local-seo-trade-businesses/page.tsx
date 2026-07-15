@@ -88,10 +88,10 @@ const LocalSEOTrade = () => {
     answer: "Most trade businesses see initial improvements in local search visibility within 3-6 months, with significant lead generation increases typically occurring within 6-12 months of consistent implementation."
   }, {
     question: "What's the most important factor for local SEO success in trade industries?",
-    answer: "Google Business Profile optimization combined with consistent customer reviews are the most critical factors. Complete profiles with regular updates, quality photos, and positive reviews drive the highest local search visibility."
+    answer: "Google Business Profile optimisation combined with consistent customer reviews are the most critical factors. Complete profiles with regular updates, quality photos, and positive reviews drive the highest local search visibility."
   }, {
     question: "How do I compete with large national trade companies in local search?",
-    answer: "Focus on hyperlocal content, community involvement, and personalized service stories. Large companies can't match local knowledge, community connections, and personalized customer service that local trade businesses provide."
+    answer: "Focus on hyperlocal content, community involvement, and personalised service stories. Large companies can't match local knowledge, community connections, and personalised customer service that local trade businesses provide."
   }];
   return <>
     <script
@@ -145,10 +145,10 @@ const LocalSEOTrade = () => {
 
         <h2>Google Business Profile Mastery for Trade Businesses</h2>
         <p>
-          Your Google Business Profile serves as your digital storefront for local customers. A fully optimized profile can increase visibility by up to 70% and significantly improve lead conversion rates.
+          Your Google Business Profile serves as your digital storefront for local customers. A fully optimised profile can increase visibility by up to 70% and significantly improve lead conversion rates.
         </p>
 
-        <h3>Complete Profile Optimization Checklist</h3>
+        <h3>Complete Profile optimisation Checklist</h3>
         <div className="space-y-6 mb-8">
           <Card className="p-6 border-l-4 border-l-blue-500">
             <h4 className="text-lg font-semibold mb-3">Essential Business Information</h4>
@@ -234,7 +234,7 @@ const LocalSEOTrade = () => {
 
         <h2>Local Keyword Research and Strategy</h2>
         <p>
-          Effective keyword targeting captures customers at different stages of their decision journey, from immediate emergencies to planned renovations. Understanding search intent is crucial for conversion optimization.
+          Effective keyword targeting captures customers at different stages of their decision journey, from immediate emergencies to planned renovations. Understanding search intent is crucial for conversion optimisation.
         </p>
 
         <h3>Keyword Categories by Search Intent</h3>
@@ -338,7 +338,7 @@ const LocalSEOTrade = () => {
                   <li>• Send automated SMS with review link</li>
                   <li>• Follow up with email including project photos</li>
                   <li>• Include multiple platform options (Google, Facebook)</li>
-                  <li>• Personalize message with customer name and service details</li>
+                  <li>• personalise message with customer name and service details</li>
                 </ul>
               </div>
               
@@ -425,7 +425,7 @@ const LocalSEOTrade = () => {
                   <li>• Youth sports teams and leagues</li>
                   <li>• Community events and festivals</li>
                   <li>• School programs and fundraisers</li>
-                  <li>• Charity organizations</li>
+                  <li>• Charity organisations</li>
                   <li>• Local business chamber membership</li>
                 </ul>
               </div>
@@ -478,10 +478,10 @@ const LocalSEOTrade = () => {
         </div>
 
         <h3>Content Distribution and Promotion</h3>
-        <p>Maximize content reach and impact through strategic distribution:</p>
+        <p>maximise content reach and impact through strategic distribution:</p>
         
         <ul className="space-y-2 mb-8">
-          <li><strong>Website Blog:</strong> SEO-optimized articles targeting local keywords</li>
+          <li><strong>Website Blog:</strong> SEO-optimised articles targeting local keywords</li>
           <li><strong>Google Business Posts:</strong> Share tips and project updates</li>
           <li><strong>Social Media:</strong> Visual content showcasing work and expertise</li>
           <li><strong>Email Newsletter:</strong> Monthly maintenance tips and seasonal advice</li>
@@ -506,7 +506,7 @@ const LocalSEOTrade = () => {
                   <li>• LocalBusiness schema</li>
                   <li>• Service schema for each offering</li>
                   <li>• Review and rating schema</li>
-                  <li>• Organization schema</li>
+                  <li>• organisation schema</li>
                   <li>• FAQ schema for common questions</li>
                 </ul>
               </div>
@@ -524,7 +524,7 @@ const LocalSEOTrade = () => {
           </Card>
           
           <Card className="p-6 border-l-4 border-l-orange-500">
-            <h4 className="text-lg font-semibold mb-3">Mobile Optimization for Trades</h4>
+            <h4 className="text-lg font-semibold mb-3">Mobile optimisation for Trades</h4>
             <div className="space-y-3">
               <p className="text-sm">Critical for emergency services (89% of urgent searches are mobile):</p>
               <ul className="text-sm space-y-1">
@@ -573,7 +573,7 @@ const LocalSEOTrade = () => {
 
         <h2>Measuring and Tracking Local SEO Success</h2>
         <p>
-          Comprehensive tracking enables data-driven optimization and demonstrates ROI from local SEO investments.
+          Comprehensive tracking enables data-driven optimisation and demonstrates ROI from local SEO investments.
         </p>
 
         <h3>Key Performance Indicators</h3>
@@ -624,12 +624,12 @@ const LocalSEOTrade = () => {
           <li><strong>Neighborhood-Specific Pages:</strong> Individual pages for each suburb with local landmarks and references</li>
           <li><strong>Local Building Code Content:</strong> Guides specific to city regulations and requirements</li>
           <li><strong>Climate-Specific Advice:</strong> Seasonal maintenance tips for local weather patterns</li>
-          <li><strong>Historical Home Content:</strong> Specialized services for heritage or period homes in the area</li>
+          <li><strong>Historical Home Content:</strong> specialised services for heritage or period homes in the area</li>
           <li><strong>Local Supplier Partnerships:</strong> Content featuring relationships with area material suppliers</li>
         </ul>
 
-        <h3>Seasonal SEO Optimization</h3>
-        <p>Align content and optimization with seasonal demand patterns:</p>
+        <h3>Seasonal SEO optimisation</h3>
+        <p>Align content and optimisation with seasonal demand patterns:</p>
         
         <div className="grid md:grid-cols-4 gap-4 mb-8">
           <Card className="p-4">
@@ -701,7 +701,7 @@ const LocalSEOTrade = () => {
               <li>• Ignoring negative reviews or responding defensively</li>
               <li>• Using generic, non-local content</li>
               <li>• Keyword stuffing in business names or descriptions</li>
-              <li>• Neglecting mobile optimization for emergency services</li>
+              <li>• Neglecting mobile optimisation for emergency services</li>
               <li>• Creating multiple listings for the same location</li>
             </ul>
           </Card>
@@ -750,7 +750,7 @@ const LocalSEOTrade = () => {
         </p>
         
         <p>
-          Success in local SEO requires a systematic approach and consistent execution. Start with the fundamentals: complete Google Business Profile optimization, implement strategic keyword targeting, establish a systematic review collection process, and create valuable local content. Then expand into advanced strategies like hyperlocal content development, seasonal optimization, and community partnership building.
+          Success in local SEO requires a systematic approach and consistent execution. Start with the fundamentals: complete Google Business Profile optimisation, implement strategic keyword targeting, establish a systematic review collection process, and create valuable local content. Then expand into advanced strategies like hyperlocal content development, seasonal optimisation, and community partnership building.
         </p>
 
         <p>
@@ -758,10 +758,10 @@ const LocalSEOTrade = () => {
         </p>
 
         <p>
-          Your local community represents your greatest business asset and competitive advantage. Large national companies cannot match your local knowledge, community connections, and personalized service delivery. By combining exceptional service quality with strategic local SEO implementation, you&apos;ll build a digital presence that generates qualified leads, establishes market dominance, and creates sustainable business growth for years to come.
+          Your local community represents your greatest business asset and competitive advantage. Large national companies cannot match your local knowledge, community connections, and personalised service delivery. By combining exceptional service quality with strategic local SEO implementation, you&apos;ll build a digital presence that generates qualified leads, establishes market dominance, and creates sustainable business growth for years to come.
         </p>
 
-        <Citation source="BrightLocal Local Search Industry Survey 2024" url="https://www.brightlocal.com/research/local-search-industry-survey/" title="89% of consumers read reviews for local businesses, with 76% trusting online reviews as much as personal recommendations. Trade businesses with optimized local SEO see 340% more qualified leads on average." />
+        <Citation source="BrightLocal Local Search Industry Survey 2024" url="https://www.brightlocal.com/research/local-search-industry-survey/" title="89% of consumers read reviews for local businesses, with 76% trusting online reviews as much as personal recommendations. Trade businesses with optimised local SEO see 340% more qualified leads on average." />
 
     </OptimizedBlogLayout>
     </>;

@@ -104,7 +104,7 @@ const SecurityDigitalMarketing = () => {
 
       <h2>Understanding Your Security Service Market</h2>
       <p className="mb-6">
-        The security services industry is more diverse than most realize. Each segment requires a tailored marketing approach because their needs, decision-makers, and buying processes are completely different:
+        The security services industry is more diverse than most realise. Each segment requires a tailored marketing approach because their needs, decision-makers, and buying processes are completely different:
       </p>
       
       <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -146,7 +146,7 @@ const SecurityDigitalMarketing = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-purple-700 text-sm mb-3">Concerts, corporate events, and weddings requiring specialized crowd control expertise.</p>
+            <p className="text-purple-700 text-sm mb-3">Concerts, corporate events, and weddings requiring specialised crowd control expertise.</p>
             <div className="bg-purple-100 p-3 rounded-lg">
               <p className="text-xs text-purple-800 font-medium">🎭 Challenge: Seasonal demand, immediate booking needs</p>
             </div>
@@ -161,7 +161,7 @@ const SecurityDigitalMarketing = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-orange-700 text-sm mb-3">Manufacturing plants and construction sites requiring specialized security protocols.</p>
+            <p className="text-orange-700 text-sm mb-3">Manufacturing plants and construction sites requiring specialised security protocols.</p>
             <div className="bg-orange-100 p-3 rounded-lg">
               <p className="text-xs text-orange-800 font-medium">🏭 Requirements: Safety compliance, asset protection</p>
             </div>
@@ -207,7 +207,7 @@ const SecurityDigitalMarketing = () => {
           <CardContent className="space-y-3">
             <div className="flex items-start gap-3">
               <TrendingUp className="h-4 w-4 text-green-600 mt-1 shrink-0" />
-              <span className="text-green-700 text-sm">Google My Business optimization with specific service areas</span>
+              <span className="text-green-700 text-sm">Google My Business optimisation with specific service areas</span>
             </div>
             <div className="flex items-start gap-3">
               <TrendingUp className="h-4 w-4 text-green-600 mt-1 shrink-0" />
@@ -287,7 +287,7 @@ const SecurityDigitalMarketing = () => {
               <li>• &quot;event security company&quot; - 1,900 monthly searches</li>
             </ul>
             
-            <h4 className="font-semibold mb-3">Content Optimization</h4>
+            <h4 className="font-semibold mb-3">Content optimisation</h4>
             <ul className="space-y-2 text-sm">
               <li>• Industry-specific landing pages for each vertical</li>
               <li>• Service area pages for geographic coverage</li>
@@ -315,7 +315,7 @@ const SecurityDigitalMarketing = () => {
             
             <h4 className="font-semibold mb-3">Ad Copy Strategy</h4>
             <ul className="space-y-2 text-sm">
-              <li>• Emphasize licensing, bonding, and insurance credentials</li>
+              <li>• emphasise licensing, bonding, and insurance credentials</li>
               <li>• Highlight 24/7 availability and rapid response times</li>
               <li>• Include specific service areas and coverage zones</li>
               <li>• Use urgency and trust-building language</li>
@@ -407,7 +407,7 @@ const SecurityDigitalMarketing = () => {
             <ul className="space-y-2 text-sm">
               <li>• Comprehensive security evaluation</li>
               <li>• Risk assessment documentation</li>
-              <li>• Customized security proposal</li>
+              <li>• customised security proposal</li>
               <li>• References from similar clients</li>
               <li>• Service level agreement details</li>
             </ul>

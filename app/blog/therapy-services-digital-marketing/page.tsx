@@ -128,7 +128,7 @@ const TherapyServicesDigitalMarketing = () => {
         <h2 className="text-3xl font-bold mt-12 mb-6">Understanding the Therapy Services Digital Landscape</h2>
         
         <p className="mb-6">
-          The therapy services market has unique characteristics that require specialized marketing approaches. Unlike other healthcare services, therapy providers must build long-term relationships with families, demonstrate expertise across multiple therapy modalities, and navigate complex NDIS funding structures.
+          The therapy services market has unique characteristics that require specialised marketing approaches. Unlike other healthcare services, therapy providers must build long-term relationships with families, demonstrate expertise across multiple therapy modalities, and navigate complex NDIS funding structures.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 my-8">
@@ -146,7 +146,7 @@ const TherapyServicesDigitalMarketing = () => {
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-4 w-4 text-blue-600 mt-1 shrink-0" />
-                <span className="text-blue-700 text-sm">Specialized autism spectrum communication support</span>
+                <span className="text-blue-700 text-sm">specialised autism spectrum communication support</span>
               </div>
               <div className="bg-blue-100 p-3 rounded-lg">
                 <p className="text-xs text-blue-800 font-medium">💡 Impact: 87% of children show measurable communication improvements within 6 months.</p>
@@ -180,10 +180,10 @@ const TherapyServicesDigitalMarketing = () => {
         <h2 className="text-3xl font-bold mt-12 mb-6">Foundation Strategy 1: Comprehensive SEO for Therapy Services</h2>
         
         <p className="mb-6">
-          Search Engine Optimization for therapy services requires a multi-layered approach targeting various therapy modalities, local areas, and specific client needs. Here&apos;s our proven framework:
+          Search Engine optimisation for therapy services requires a multi-layered approach targeting various therapy modalities, local areas, and specific client needs. Here&apos;s our proven framework:
         </p>
 
-        <h3 className="text-2xl font-semibold mt-8 mb-4">Service-Specific Keyword Optimization</h3>
+        <h3 className="text-2xl font-semibold mt-8 mb-4">Service-Specific Keyword optimisation</h3>
         
         <div className="bg-muted/50 p-6 rounded-lg mb-6">
           <h4 className="font-semibold mb-3">Primary Keywords by Service Type:</h4>
@@ -268,13 +268,13 @@ const TherapyServicesDigitalMarketing = () => {
         <h3 className="text-2xl font-semibold mt-8 mb-4">Content Distribution Strategy</h3>
         
         <p className="mb-6">
-          Creating great content is only half the battle. Strategic distribution ensures your expertise reaches families when they need it most. Focus on multi-channel distribution that maximizes your content investment.
+          Creating great content is only half the battle. Strategic distribution ensures your expertise reaches families when they need it most. Focus on multi-channel distribution that maximises your content investment.
         </p>
 
         <div className="space-y-6 mb-8">
           <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-blue-500">
             <h4 className="font-semibold mb-3 text-blue-700">Blog-to-Social Media Pipeline</h4>
-            <p className="text-sm text-blue-600">Transform each blog post into 5-8 social media posts, infographics, and video snippets to maximize reach and engagement across platforms.</p>
+            <p className="text-sm text-blue-600">Transform each blog post into 5-8 social media posts, infographics, and video snippets to maximise reach and engagement across platforms.</p>
           </div>
           
           <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg border-l-4 border-green-500">
@@ -330,14 +330,14 @@ const TherapyServicesDigitalMarketing = () => {
         <h3 className="text-2xl font-semibold mt-8 mb-4">NDIS-Specific Marketing Approaches</h3>
         
         <p className="mb-6">
-          NDIS participants have unique needs and funding considerations that require specialized marketing approaches. Your messaging must address funding processes, plan management, and outcome expectations clearly.
+          NDIS participants have unique needs and funding considerations that require specialised marketing approaches. Your messaging must address funding processes, plan management, and outcome expectations clearly.
         </p>
 
         <div className="bg-muted/50 p-6 rounded-lg mb-8">
           <h4 className="font-semibold mb-3">NDIS Marketing Best Practices:</h4>
           <ul className="space-y-2 text-sm">
             <li><strong>Funding Education:</strong> Create detailed guides explaining how NDIS funding works for different therapy types</li>
-            <li><strong>Plan Management Support:</strong> Offer assistance with plan reviews and budget optimization</li>
+            <li><strong>Plan Management Support:</strong> Offer assistance with plan reviews and budget optimisation</li>
             <li><strong>Goal-Focused Messaging:</strong> Align your services with NDIS participant goals and outcomes</li>
             <li><strong>Provider Registration:</strong> Clearly display your NDIS registration status and service categories</li>
             <li><strong>Transparent Pricing:</strong> Publish NDIS price guide rates and explain any additional services</li>
@@ -367,7 +367,7 @@ const TherapyServicesDigitalMarketing = () => {
           </Card>
           <Card>
             <CardContent className="p-6">
-              <h4 className="font-semibold mb-3 text-primary">Specialized Healthcare Tools</h4>
+              <h4 className="font-semibold mb-3 text-primary">specialised Healthcare Tools</h4>
               <ul className="text-sm space-y-2">
                 <li><strong>Appointment Booking:</strong> Acuity or Calendly with NDIS integration</li>
                 <li><strong>Video Conferencing:</strong> Telehealth-compliant platforms</li>
@@ -413,7 +413,7 @@ const TherapyServicesDigitalMarketing = () => {
         <h3 className="text-2xl font-semibold mt-8 mb-4">Healthcare Marketing Regulations</h3>
         
         <p className="mb-6">
-          Therapy services must navigate complex healthcare marketing regulations while building trust with families. Always prioritize compliance and ethical practices in your marketing efforts.
+          Therapy services must navigate complex healthcare marketing regulations while building trust with families. Always prioritise compliance and ethical practices in your marketing efforts.
         </p>
 
         <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-lg mb-8">
@@ -431,7 +431,7 @@ const TherapyServicesDigitalMarketing = () => {
         
         <h3 className="text-2xl font-semibold mt-8 mb-4">Phase 1: Foundation (Days 1-30)</h3>
         <ul className="space-y-2 mb-6">
-          <li>• Complete website audit and optimization</li>
+          <li>• Complete website audit and optimisation</li>
           <li>• Set up Google My Business and local directories</li>
           <li>• Implement basic SEO and keyword targeting</li>
           <li>• Create lead capture forms and landing pages</li>
@@ -447,9 +447,9 @@ const TherapyServicesDigitalMarketing = () => {
           <li>• Begin monthly educational webinars</li>
         </ul>
 
-        <h3 className="text-2xl font-semibold mt-8 mb-4">Phase 3: Optimization (Days 61-90)</h3>
+        <h3 className="text-2xl font-semibold mt-8 mb-4">Phase 3: optimisation (Days 61-90)</h3>
         <ul className="space-y-2 mb-8">
-          <li>• Analyze performance data and optimize campaigns</li>
+          <li>• analyse performance data and optimise campaigns</li>
           <li>• Expand successful marketing channels</li>
           <li>• Develop referral partner relationships</li>
           <li>• Create advanced retargeting campaigns</li>

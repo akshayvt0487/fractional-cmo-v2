@@ -224,7 +224,7 @@ const AccountingDigitalMarketing = () => {
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-4 w-4 text-purple-500 mt-1 shrink-0" />
-                  <span>Google My Business optimization with complete information</span>
+                  <span>Google My Business optimisation with complete information</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-4 w-4 text-purple-500 mt-1 shrink-0" />
@@ -328,7 +328,7 @@ const AccountingDigitalMarketing = () => {
               <li>Investment portfolio management</li>
               <li>Estate planning coordination</li>
               <li>Retirement planning strategies</li>
-              <li>Tax optimization consulting</li>
+              <li>Tax optimisation consulting</li>
             </ul>
             <div className="mt-4 p-3 bg-green-50 rounded">
               <p className="text-xs text-green-800 font-medium">🎯 Premium positioning: $1,500-5,000 per client</p>
@@ -344,7 +344,7 @@ const AccountingDigitalMarketing = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-sm text-muted-foreground mb-4">Strategic financial guidance for business growth and optimization.</p>
+            <p className="text-sm text-muted-foreground mb-4">Strategic financial guidance for business growth and optimisation.</p>
             <ul className="space-y-2 text-sm list-disc list-inside">
               <li>Financial planning and forecasting</li>
               <li>Business valuation services</li>
@@ -374,7 +374,7 @@ const AccountingDigitalMarketing = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
-                  <span>Team photos with credentials and specializations</span>
+                  <span>Team photos with credentials and specialisations</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
@@ -411,7 +411,7 @@ const AccountingDigitalMarketing = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-4 w-4 text-green-500 mt-1 shrink-0" />
-                  <span>Mobile-optimized design for on-the-go access</span>
+                  <span>Mobile-optimised design for on-the-go access</span>
                 </li>
               </ul>
             </div>
@@ -430,7 +430,7 @@ const AccountingDigitalMarketing = () => {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <MapPin className="h-5 w-5 text-primary" />
-              Google My Business Optimization
+              Google My Business optimisation
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -443,7 +443,7 @@ const AccountingDigitalMarketing = () => {
               <li>Q&A section with common client questions</li>
             </ul>
             <div className="mt-4 p-3 bg-muted/50 rounded">
-              <p className="text-xs font-medium">💡 Optimized GMB listings see 70% more location actions</p>
+              <p className="text-xs font-medium">💡 optimised GMB listings see 70% more location actions</p>
             </div>
           </CardContent>
         </Card>
@@ -489,7 +489,7 @@ const AccountingDigitalMarketing = () => {
                 <li>• <strong>Tax Planning Guides:</strong> Industry-specific strategies for different business types</li>
                 <li>• <strong>Financial Health Assessments:</strong> Free tools to evaluate business performance</li>
                 <li>• <strong>Regulatory Updates:</strong> Clear explanations of new tax laws and requirements</li>
-                <li>• <strong>Expense Optimization:</strong> Strategies to reduce tax liability legally</li>
+                <li>• <strong>Expense optimisation:</strong> Strategies to reduce tax liability legally</li>
                 <li>• <strong>Cash Flow Templates:</strong> Practical tools for financial management</li>
               </ul>
             </div>
@@ -539,7 +539,7 @@ const AccountingDigitalMarketing = () => {
               <li>Target high-intent keywords like &quot;tax accountant [city]&quot;</li>
               <li>Create comprehensive service pages for each offering</li>
               <li>Build authority through regular blog content</li>
-              <li>Optimize for voice search queries</li>
+              <li>optimise for voice search queries</li>
             </ul>
 
             <h4 className="font-semibold mb-3">Google Ads Campaigns</h4>

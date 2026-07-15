@@ -20,7 +20,7 @@ export const metadata = createMetadata({
   },
 
   title: "Growth Marketing Strategies for Bricklayers | 2026 Guide",
-  description: "Discover strategies for bricklayers to attract high-value projects, optimize marketing channels, and expand operations for sustainable growth in 2026.",
+  description: "Discover strategies for bricklayers to attract high-value projects, optimise marketing channels, and expand operations for sustainable growth in 2026.",
   path: "/blog/bricklayers-growth-marketing-strategy",
   keywords: [
     "growth marketing for bricklayers",
@@ -32,7 +32,7 @@ export const metadata = createMetadata({
   ],
   openGraph: {
     title: "Growth Marketing Strategies for Bricklayers | 2026 Guide",
-    description: "Discover strategies for bricklayers to attract high-value projects, optimize marketing channels, and expand operations for sustainable growth in 2026.",
+    description: "Discover strategies for bricklayers to attract high-value projects, optimise marketing channels, and expand operations for sustainable growth in 2026.",
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/bricklayers-growth-marketing-strategy`,
     siteName: "Fractional CMO",
     type: "article",
@@ -49,7 +49,7 @@ export const metadata = createMetadata({
   twitter: {
     card: "summary_large_image",
     title: "Growth Marketing Strategies for Bricklayers | 2026 Guide",
-    description: "Discover strategies for bricklayers to attract high-value projects, optimize marketing channels, and expand operations for sustainable growth in 2026.",
+    description: "Discover strategies for bricklayers to attract high-value projects, optimise marketing channels, and expand operations for sustainable growth in 2026.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/bricklayers-growth-marketing-hero.jpg`],
     site: "@FractionalCMO"
   }
@@ -77,7 +77,7 @@ const BricklayersGrowthMarketing = () => {
   if (!post) throw new Error("Blog post not found: bricklayers-growth-marketing-strategy");
   const articleData = {
     headline: "Growth Marketing for Bricklayers: Scale Your Masonry Business 2026",
-    description: "Discover strategies for bricklayers to attract high-value projects, optimize marketing channels, and expand operations for sustainable growth in 2026.",
+    description: "Discover strategies for bricklayers to attract high-value projects, optimise marketing channels, and expand operations for sustainable growth in 2026.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-10-31T11:10:04.341Z", // Synced with metadata for freshness
@@ -103,7 +103,7 @@ const BricklayersGrowthMarketing = () => {
     },
     {
       question: "How important is local SEO for bricklaying businesses?",
-      answer: "Local SEO is critical as most bricklaying work is location-dependent. Optimize for 'bricklayer near me' searches, maintain active Google My Business profile, and create location-specific landing pages for each service area."
+      answer: "Local SEO is critical as most bricklaying work is location-dependent. optimise for 'bricklayer near me' searches, maintain active Google My Business profile, and create location-specific landing pages for each service area."
     }
   ];
 
@@ -157,7 +157,7 @@ const BricklayersGrowthMarketing = () => {
               <ul className="space-y-2 text-sm">
                 <li>🏠 <strong>Residential projects:</strong> Home extensions, garden walls, driveways</li>
                 <li>🏢 <strong>Commercial construction:</strong> Office buildings, retail developments</li>
-                <li>🏛️ <strong>Restoration work:</strong> Heritage buildings, specialized preservation</li>
+                <li>🏛️ <strong>Restoration work:</strong> Heritage buildings, specialised preservation</li>
               </ul>
             </CardContent>
           </Card>
@@ -194,7 +194,7 @@ const BricklayersGrowthMarketing = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
-                <li>✓ High-quality project galleries organized by work type</li>
+                <li>✓ High-quality project galleries organised by work type</li>
                 <li>✓ Detailed before and after photo comparisons</li>
                 <li>✓ Time-lapse videos showing construction process</li>
                 <li>✓ Client testimonials with verified project photos</li>
@@ -214,7 +214,7 @@ const BricklayersGrowthMarketing = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
-                <li>✓ Google My Business optimization with project updates</li>
+                <li>✓ Google My Business optimisation with project updates</li>
                 <li>✓ Location-specific landing pages for service areas</li>
                 <li>✓ Local keyword targeting ("bricklayer near me")</li>
                 <li>✓ Building industry directory listings and citations</li>
@@ -546,7 +546,7 @@ const BricklayersGrowthMarketing = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Training Systems:</h4>
                   <ul className="space-y-1 text-sm">
-                    <li>• Standardized procedures and quality checklists</li>
+                    <li>• standardised procedures and quality checklists</li>
                     <li>• Mentorship programs for new team members</li>
                     <li>• Regular skills assessment and improvement plans</li>
                     <li>• Safety training and certification maintenance</li>
@@ -706,7 +706,7 @@ const BricklayersGrowthMarketing = () => {
                 <li>⏰ <strong>Project completion times:</strong> Track against estimates for better planning</li>
                 <li>✅ <strong>Quality metrics:</strong> Client satisfaction scores and complaint rates</li>
                 <li>👥 <strong>Team productivity:</strong> Output per team member and training effectiveness</li>
-                <li>🔧 <strong>Equipment utilization:</strong> Return on investment for tools and machinery</li>
+                <li>🔧 <strong>Equipment utilisation:</strong> Return on investment for tools and machinery</li>
                 <li>🏆 <strong>Repeat business rate:</strong> Percentage of clients who hire you again</li>
               </ul>
             </CardContent>
@@ -732,7 +732,7 @@ const BricklayersGrowthMarketing = () => {
             <CardContent>
               <ul className="space-y-2 text-sm">
                 <li>👨‍🎓 <strong>Apprenticeship programs:</strong> Partner with TAFE colleges to develop young talent</li>
-                <li>📚 <strong>Skill standardization:</strong> Create training manuals for consistent techniques and quality</li>
+                <li>📚 <strong>Skill standardisation:</strong> Create training manuals for consistent techniques and quality</li>
                 <li>🏆 <strong>Performance incentives:</strong> Bonus structures tied to quality metrics and client satisfaction</li>
                 <li>🔧 <strong>Tool investment:</strong> Provide quality equipment to ensure professional standards</li>
                 <li>📈 <strong>Career progression:</strong> Clear pathways from laborer to supervisor to project manager</li>
@@ -751,13 +751,13 @@ const BricklayersGrowthMarketing = () => {
             <CardContent>
               <ul className="space-y-2 text-sm">
                 <li>📋 <strong>Standard operating procedures:</strong> Document every aspect from quoting to completion</li>
-                <li>🎯 <strong>Quality control checklists:</strong> Standardized inspections for each project phase</li>
+                <li>🎯 <strong>Quality control checklists:</strong> standardised inspections for each project phase</li>
                 <li>💰 <strong>Pricing templates:</strong> Consistent cost calculations across all project types</li>
                 <li>📱 <strong>Project management software:</strong> Digital tools for scheduling, tracking, and communication</li>
                 <li>📊 <strong>Performance dashboards:</strong> Real-time visibility into project progress and profitability</li>
                 <li>🔄 <strong>Workflow automation:</strong> Streamline repetitive tasks and reduce administrative overhead</li>
                 <li>📈 <strong>Scalable processes:</strong> Systems that work with 2 teams or 20 teams</li>
-                <li>🎨 <strong>Brand consistency:</strong> Standardized uniforms, vehicle signage, and client materials</li>
+                <li>🎨 <strong>Brand consistency:</strong> standardised uniforms, vehicle signage, and client materials</li>
               </ul>
             </CardContent>
           </Card>
@@ -775,8 +775,8 @@ const BricklayersGrowthMarketing = () => {
                   <h4 className="font-semibold mb-3 text-purple-700">Project Management</h4>
                   <ul className="space-y-2 text-sm">
                     <li>📱 <strong>Field service apps:</strong> Real-time updates from job sites</li>
-                    <li>📊 <strong>Resource planning:</strong> Optimize crew allocation and equipment usage</li>
-                    <li>📅 <strong>Scheduling optimization:</strong> AI-powered timeline and resource management</li>
+                    <li>📊 <strong>Resource planning:</strong> optimise crew allocation and equipment usage</li>
+                    <li>📅 <strong>Scheduling optimisation:</strong> AI-powered timeline and resource management</li>
                     <li>💳 <strong>Mobile payments:</strong> Accept deposits and progress payments on-site</li>
                     <li>☁️ <strong>Cloud collaboration:</strong> Share plans and updates with clients instantly</li>
                   </ul>
@@ -787,7 +787,7 @@ const BricklayersGrowthMarketing = () => {
                     <li>📧 <strong>CRM systems:</strong> Track all client interactions and project history</li>
                     <li>🔔 <strong>Automated follow-ups:</strong> Maintenance reminders and service offers</li>
                     <li>⭐ <strong>Review management:</strong> Monitor and respond to online feedback</li>
-                    <li>📈 <strong>Lead scoring:</strong> Prioritize prospects based on conversion probability</li>
+                    <li>📈 <strong>Lead scoring:</strong> prioritise prospects based on conversion probability</li>
                     <li>📱 <strong>Client portals:</strong> Self-service access to project updates and documents</li>
                   </ul>
                 </div>
@@ -795,9 +795,9 @@ const BricklayersGrowthMarketing = () => {
                   <h4 className="font-semibold mb-3 text-purple-700">Business Intelligence</h4>
                   <ul className="space-y-2 text-sm">
                     <li>📊 <strong>Analytics dashboards:</strong> Real-time business performance metrics</li>
-                    <li>💰 <strong>Profit analysis:</strong> Project profitability tracking and optimization</li>
+                    <li>💰 <strong>Profit analysis:</strong> Project profitability tracking and optimisation</li>
                     <li>📈 <strong>Predictive modeling:</strong> Forecast demand and resource requirements</li>
-                    <li>🎯 <strong>Market intelligence:</strong> Competitive analysis and pricing optimization</li>
+                    <li>🎯 <strong>Market intelligence:</strong> Competitive analysis and pricing optimisation</li>
                     <li>🔍 <strong>Performance benchmarking:</strong> Compare against industry standards</li>
                   </ul>
                 </div>
@@ -824,11 +824,11 @@ const BricklayersGrowthMarketing = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
-                <li>🗺️ <strong>Market research:</strong> Analyze demand, competition, and pricing in new areas</li>
+                <li>🗺️ <strong>Market research:</strong> analyse demand, competition, and pricing in new areas</li>
                 <li>🏢 <strong>Satellite operations:</strong> Establish service hubs in high-demand regions</li>
                 <li>🤝 <strong>Local partnerships:</strong> Collaborate with builders and suppliers in new markets</li>
                 <li>📱 <strong>Digital marketing:</strong> Location-specific Google Ads and SEO campaigns</li>
-                <li>🚛 <strong>Logistics planning:</strong> Optimize travel times and equipment distribution</li>
+                <li>🚛 <strong>Logistics planning:</strong> optimise travel times and equipment distribution</li>
                 <li>👥 <strong>Local hiring:</strong> Recruit skilled workers familiar with regional requirements</li>
                 <li>📋 <strong>Regulatory compliance:</strong> Understand local building codes and permit processes</li>
                 <li>🎯 <strong>Market testing:</strong> Start with smaller projects to establish reputation</li>
@@ -879,8 +879,8 @@ const BricklayersGrowthMarketing = () => {
                   <h4 className="font-semibold mb-3 text-teal-700">Product-Based Revenue</h4>
                   <ul className="space-y-2 text-sm">
                     <li>🧱 <strong>Material supply:</strong> Sell specialty bricks and stone to other contractors</li>
-                    <li>🛠️ <strong>Tool rental:</strong> Rent specialized equipment to smaller operators</li>
-                    <li>📐 <strong>Custom fabrication:</strong> Pre-cast elements and specialized components</li>
+                    <li>🛠️ <strong>Tool rental:</strong> Rent specialised equipment to smaller operators</li>
+                    <li>📐 <strong>Custom fabrication:</strong> Pre-cast elements and specialised components</li>
                     <li>📚 <strong>Digital products:</strong> Training videos, planning templates, cost guides</li>
                     <li>🎨 <strong>Design services:</strong> Architectural drawings and 3D modeling</li>
                     <li>📱 <strong>Software licensing:</strong> Custom apps or tools for the industry</li>
@@ -904,7 +904,7 @@ const BricklayersGrowthMarketing = () => {
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <Card className="bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-200">
             <CardHeader>
-              <CardTitle className="text-emerald-700">Cash Flow Optimization</CardTitle>
+              <CardTitle className="text-emerald-700">Cash Flow optimisation</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
@@ -930,7 +930,7 @@ const BricklayersGrowthMarketing = () => {
                 <li>👥 <strong>Team development:</strong> Training and certification investment ROI</li>
                 <li>💻 <strong>Technology upgrades:</strong> Software and digital tool investment planning</li>
                 <li>📈 <strong>Marketing budget:</strong> Systematic approach to marketing investment</li>
-                <li>🛡️ <strong>Insurance optimization:</strong> Coverage analysis and cost management</li>
+                <li>🛡️ <strong>Insurance optimisation:</strong> Coverage analysis and cost management</li>
                 <li>🎯 <strong>Strategic reserves:</strong> Emergency funds for opportunities and challenges</li>
               </ul>
             </CardContent>
@@ -948,7 +948,7 @@ const BricklayersGrowthMarketing = () => {
                 <li>💼 <strong>Succession planning:</strong> Develop next-generation leadership</li>
                 <li>🌐 <strong>Market positioning:</strong> Brand development and competitive differentiation</li>
                 <li>📈 <strong>Scalability assessment:</strong> Systems evaluation for growth capacity</li>
-                <li>🔄 <strong>Continuous improvement:</strong> Regular business model evaluation and optimization</li>
+                <li>🔄 <strong>Continuous improvement:</strong> Regular business model evaluation and optimisation</li>
               </ul>
             </CardContent>
           </Card>

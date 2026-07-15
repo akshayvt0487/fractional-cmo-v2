@@ -86,7 +86,7 @@ const NDISDisabilityServiceMarketing = () => {
     answer: "Focus on educational content, participant testimonials (with consent), and clear service descriptions. Avoid making medical claims, ensure all marketing materials are accessible, and maintain transparency about costs and service delivery approaches."
   }, {
     question: "What's the best way to attract NDIS participants?",
-    answer: "Community engagement, referral partnerships with allied health professionals, and digital presence optimization work best. Participants often research providers online and rely on recommendations from healthcare professionals and other participants."
+    answer: "Community engagement, referral partnerships with allied health professionals, and digital presence optimisation work best. Participants often research providers online and rely on recommendations from healthcare professionals and other participants."
   }, {
     question: "How important is accessibility in NDIS marketing?",
     answer: "Accessibility is crucial and legally required. Ensure websites meet WCAG guidelines, provide content in multiple formats, use clear language, and offer various communication channels to accommodate different disability types and preferences."
@@ -98,7 +98,7 @@ const NDISDisabilityServiceMarketing = () => {
     answer: "Digital marketing campaigns typically show initial results within 6-8 weeks, with significant improvements after 3-6 months of consistent effort. Relationship building and community engagement can take longer but provide more sustainable results."
   }, {
     question: "What are the most effective marketing channels for NDIS disability services?",
-    answer: "The most effective channels include local SEO, Google My Business optimization, community engagement, referral programs with healthcare professionals, and targeted social media marketing. Focus on quality over quantity in your channel selection."
+    answer: "The most effective channels include local SEO, Google My Business optimisation, community engagement, referral programs with healthcare professionals, and targeted social media marketing. Focus on quality over quantity in your channel selection."
   }];
   return <>
     <script
@@ -235,7 +235,7 @@ const NDISDisabilityServiceMarketing = () => {
       </div>
 
       <h3>SEO Strategy for Disability Services</h3>
-      <p>Search engine optimization helps participants find your services when they need them most:</p>
+      <p>Search engine optimisation helps participants find your services when they need them most:</p>
 
       <h4>Keyword Strategy</h4>
       <ul>
@@ -312,7 +312,7 @@ const NDISDisabilityServiceMarketing = () => {
       <ul>
         <li><strong>Healthcare Providers:</strong> GPs, specialists, allied health professionals</li>
         <li><strong>Educational Institutions:</strong> Schools, TAFEs, universities</li>
-        <li><strong>Community Organizations:</strong> Local councils, advocacy groups, sporting clubs</li>
+        <li><strong>Community organisations:</strong> Local councils, advocacy groups, sporting clubs</li>
         <li><strong>Other NDIS Providers:</strong> Complementary service providers for referrals</li>
       </ul>
 
@@ -337,7 +337,7 @@ const NDISDisabilityServiceMarketing = () => {
               <li><strong>Direct Engagement:</strong> Accessible communication channels</li>
               <li><strong>Peer Support:</strong> Connect with current participants</li>
               <li><strong>Trial Services:</strong> Opportunity to experience services</li>
-              <li><strong>Choice & Control:</strong> Emphasize participant autonomy</li>
+              <li><strong>Choice & Control:</strong> emphasise participant autonomy</li>
             </ul>
           </CardContent>
         </Card>
@@ -367,10 +367,10 @@ const NDISDisabilityServiceMarketing = () => {
         </Card>
       </div>
 
-      <h3>Conversion Optimization</h3>
-      <p>Optimize every touchpoint in the participant journey:</p>
+      <h3>Conversion optimisation</h3>
+      <p>optimise every touchpoint in the participant journey:</p>
 
-      <h4>Inquiry Process Optimization</h4>
+      <h4>Inquiry Process optimisation</h4>
       <ul>
         <li><strong>Multiple Contact Methods:</strong> Phone, email, web forms, in-person</li>
         <li><strong>Quick Response Times:</strong> Acknowledge inquiries within 24 hours</li>
@@ -378,7 +378,7 @@ const NDISDisabilityServiceMarketing = () => {
         <li><strong>Clear Next Steps:</strong> Transparent process from inquiry to service</li>
       </ul>
 
-      <h2>Performance Measurement and Optimization</h2>
+      <h2>Performance Measurement and optimisation</h2>
 
       <h3>Key Performance Indicators</h3>
       <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -409,7 +409,7 @@ const NDISDisabilityServiceMarketing = () => {
 
       <h3>Continuous Improvement Strategy</h3>
       <ul>
-        <li><strong>Regular Reviews:</strong> Monthly performance assessment and optimization</li>
+        <li><strong>Regular Reviews:</strong> Monthly performance assessment and optimisation</li>
         <li><strong>Participant Feedback:</strong> Ongoing feedback collection and analysis</li>
         <li><strong>Market Research:</strong> Stay updated on participant needs and preferences</li>
         <li><strong>Competitive Analysis:</strong> Monitor competitor strategies and differentiation</li>
@@ -442,10 +442,10 @@ const NDISDisabilityServiceMarketing = () => {
 
       <h3>Emerging Trends in Disability Service Marketing</h3>
       <ul>
-        <li><strong>AI and Accessibility:</strong> Automated captioning, voice interfaces, personalization</li>
+        <li><strong>AI and Accessibility:</strong> Automated captioning, voice interfaces, personalisation</li>
         <li><strong>Virtual Reality:</strong> Immersive service demonstrations and training</li>
-        <li><strong>Mobile-First Approach:</strong> Smartphone-optimized experiences</li>
-        <li><strong>Data-Driven Personalization:</strong> Customized content and service recommendations</li>
+        <li><strong>Mobile-First Approach:</strong> Smartphone-optimised experiences</li>
+        <li><strong>Data-Driven personalisation:</strong> customised content and service recommendations</li>
         <li><strong>Community Platforms:</strong> Online support networks and peer connections</li>
       </ul>
 
@@ -504,13 +504,13 @@ const NDISDisabilityServiceMarketing = () => {
         </div>
       </div>
 
-      <h3>Budget Optimization and Bidding</h3>
+      <h3>Budget optimisation and Bidding</h3>
       <ul>
         <li><strong>Starting Budget:</strong> $1,500-3,000/month for local NDIS campaigns</li>
-        <li><strong>Bid Strategy:</strong> Start with Maximize Conversions, transition to Target CPA</li>
-        <li><strong>Geographic Focus:</strong> Prioritize suburbs with high NDIS participant density</li>
+        <li><strong>Bid Strategy:</strong> Start with maximise Conversions, transition to Target CPA</li>
+        <li><strong>Geographic Focus:</strong> prioritise suburbs with high NDIS participant density</li>
         <li><strong>Time-Based Adjustments:</strong> Increase bids during business hours and weekdays</li>
-        <li><strong>Device Optimization:</strong> Mobile-first bidding (65% of searches on mobile)</li>
+        <li><strong>Device optimisation:</strong> Mobile-first bidding (65% of searches on mobile)</li>
       </ul>
 
       <h2>Email Marketing and Participant Nurturing</h2>
@@ -649,13 +649,13 @@ const NDISDisabilityServiceMarketing = () => {
                   <li>• WCAG 2.1 accessibility compliance check</li>
                   <li>• Service information and pricing clarity review</li>
                   <li>• Registration details and credentials verification</li>
-                  <li>• Contact forms and inquiry process optimization</li>
+                  <li>• Contact forms and inquiry process optimisation</li>
                 </ul>
               </div>
               <div className="bg-blue-50 p-3 rounded">
                 <p className="font-semibold text-sm mb-1">Week 3-4: Local SEO Foundation</p>
                 <ul className="text-xs space-y-1 ml-4">
-                  <li>• Google My Business optimization</li>
+                  <li>• Google My Business optimisation</li>
                   <li>• Local directory listings (NDIS provider directories)</li>
                   <li>• Location page creation for service areas</li>
                   <li>• Keyword research and content planning</li>
@@ -683,7 +683,7 @@ const NDISDisabilityServiceMarketing = () => {
                 <ul className="text-xs space-y-1 ml-4">
                   <li>• Google Ads account structure and campaigns</li>
                   <li>• Facebook/Instagram awareness campaigns</li>
-                  <li>• Landing page creation and optimization</li>
+                  <li>• Landing page creation and optimisation</li>
                   <li>• Conversion tracking implementation</li>
                 </ul>
               </div>
@@ -693,7 +693,7 @@ const NDISDisabilityServiceMarketing = () => {
 
         <Card className="border-l-4 border-l-purple-500">
           <CardContent className="p-6">
-            <h4 className="text-lg font-semibold mb-3 text-purple-700">Month 3: Optimization & Scaling</h4>
+            <h4 className="text-lg font-semibold mb-3 text-purple-700">Month 3: optimisation & Scaling</h4>
             <div className="space-y-2">
               <div className="bg-purple-50 p-3 rounded">
                 <p className="font-semibold text-sm mb-1">Week 9-10: Community Engagement</p>
@@ -708,7 +708,7 @@ const NDISDisabilityServiceMarketing = () => {
                 <p className="font-semibold text-sm mb-1">Week 11-12: Analysis & Refinement</p>
                 <ul className="text-xs space-y-1 ml-4">
                   <li>• Comprehensive performance review</li>
-                  <li>• Campaign optimization based on data</li>
+                  <li>• Campaign optimisation based on data</li>
                   <li>• Budget reallocation to best-performing channels</li>
                   <li>• Quarter 2 strategy development</li>
                 </ul>
@@ -768,7 +768,7 @@ const NDISDisabilityServiceMarketing = () => {
                 <h5 className="font-semibold mb-2">The Strategy</h5>
                 <ul className="text-sm space-y-1">
                   <li>• Website accessibility overhaul</li>
-                  <li>• Local SEO optimization</li>
+                  <li>• Local SEO optimisation</li>
                   <li>• Video content showcasing activities</li>
                   <li>• Strategic Google Ads targeting</li>
                 </ul>
@@ -838,7 +838,7 @@ const NDISDisabilityServiceMarketing = () => {
       <div className="bg-linear-to-r from-purple-50 to-indigo-50 border-l-4 border-l-purple-500 p-6 mb-8">
         <h3 className="text-lg font-semibold mb-3 text-purple-800">Ready to Transform Your NDIS Marketing?</h3>
         <p className="text-gray-700 mb-4">
-         Implementing a comprehensive, compliant marketing strategy for your disability service business requires expertise, time, and ongoing optimization. <Link href='/'> <strong>Fractional CMO </strong> </Link> specializes in NDIS-compliant marketing strategies that drive participant acquisition while maintaining the highest standards of accessibility and quality.
+         Implementing a comprehensive, compliant marketing strategy for your disability service business requires expertise, time, and ongoing optimisation. <Link href='/'> <strong>Fractional CMO </strong> </Link> specialises in NDIS-compliant marketing strategies that drive participant acquisition while maintaining the highest standards of accessibility and quality.
         </p>
       </div>
 

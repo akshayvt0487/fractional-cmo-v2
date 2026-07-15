@@ -208,7 +208,7 @@ const SocialMediaMarketingStrategy = () => {
             <strong>Agitation:</strong> &quot;You&apos;re not alone. 68% of businesses struggle with lead generation, losing potential revenue every day their website sits idle.&quot;
           </div>
           <div>
-            <strong>Solution:</strong> &quot;Our conversion optimization process has helped 200+ businesses increase leads by 340% in 90 days. Here&apos;s how we do it...&quot;
+            <strong>Solution:</strong> &quot;Our conversion optimisation process has helped 200+ businesses increase leads by 340% in 90 days. Here&apos;s how we do it...&quot;
           </div>
         </div>
       </div>
@@ -245,7 +245,7 @@ const SocialMediaMarketingStrategy = () => {
         </div>
       </div>
 
-      <h2>Measuring ROI and Optimizing Performance</h2>
+      <h2>Measuring ROI and optimising Performance</h2>
       
       <h3>Key Performance Indicators (KPIs) for Service Businesses</h3>
       
@@ -336,7 +336,7 @@ const SocialMediaMarketingStrategy = () => {
                     Social media marketing for service businesses isn&apos;t about posting pretty pictures or going viral—it&apos;s about building meaningful relationships that convert into long-term clients. The strategies outlined in this guide have helped countless service businesses generate millions in revenue through strategic social media marketing.
                   </p>        
         <p>
-          Start by choosing 2-3 platforms where your ideal clients are most active. Focus on the 40-30-20-10 content distribution model and implement the social selling framework consistently for 90 days. Track your KPIs rigorously and optimize based on data, not assumptions.
+          Start by choosing 2-3 platforms where your ideal clients are most active. Focus on the 40-30-20-10 content distribution model and implement the social selling framework consistently for 90 days. Track your KPIs rigorously and optimise based on data, not assumptions.
         </p>
 
                   <p>

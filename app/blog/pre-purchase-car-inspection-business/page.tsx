@@ -108,7 +108,7 @@ const PrePurchaseCarInspection = () => {
       <ul>
         <li><strong>First-time car buyers:</strong> Nervous about making a significant purchase</li>
         <li><strong>Luxury car buyers:</strong> Higher-value purchases requiring thorough inspection</li>
-        <li><strong>Classic car enthusiasts:</strong> Specialized knowledge requirements</li>
+        <li><strong>Classic car enthusiasts:</strong> specialised knowledge requirements</li>
         <li><strong>Out-of-state buyers:</strong> Cannot inspect vehicles personally</li>
         <li><strong>Corporate fleet buyers:</strong> Volume inspection needs</li>
       </ul>
@@ -124,7 +124,7 @@ const PrePurchaseCarInspection = () => {
         <li><strong>Market Value Assessment:</strong> Fair market pricing evaluation</li>
       </ul>
 
-      <h3>Specialized Service Offerings</h3>
+      <h3>specialised Service Offerings</h3>
       <ul>
         <li>Classic and vintage car inspections</li>
         <li>Exotic and luxury vehicle evaluations</li>
@@ -186,7 +186,7 @@ const PrePurchaseCarInspection = () => {
       
       <h3>Digital Marketing Strategies</h3>
       <ul>
-        <li>Search engine optimization for local car inspection services</li>
+        <li>Search engine optimisation for local car inspection services</li>
         <li>Google Ads targeting used car buyers</li>
         <li>Social media presence showcasing inspection process</li>
         <li>Customer testimonials and case studies</li>

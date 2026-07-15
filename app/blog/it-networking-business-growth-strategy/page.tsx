@@ -85,10 +85,10 @@ const ITNetworkingGrowthStrategy = () => {
     answer: "Enterprise network security and cloud infrastructure services typically offer the highest margins. Companies are willing to pay premium rates for expertise in cybersecurity, SD-WAN, and cloud connectivity solutions that protect business operations."
   }, {
     question: "How do I compete with large IT networking companies?",
-    answer: "Focus on specialized services, local market presence, and personalized customer service. Small to medium businesses often prefer working with boutique providers who offer dedicated attention and flexible solutions over large corporate vendors."
+    answer: "Focus on specialised services, local market presence, and personalised customer service. Small to medium businesses often prefer working with boutique providers who offer dedicated attention and flexible solutions over large corporate vendors."
   }, {
     question: "What certifications are essential for IT networking business growth?",
-    answer: "Cisco, Juniper, and vendor-neutral certifications like CompTIA Network+ are foundational. For growth, pursue specialized certifications in cybersecurity (CISSP), cloud platforms (AWS/Azure), and emerging technologies like SD-WAN and network automation."
+    answer: "Cisco, Juniper, and vendor-neutral certifications like CompTIA Network+ are foundational. For growth, pursue specialised certifications in cybersecurity (CISSP), cloud platforms (AWS/Azure), and emerging technologies like SD-WAN and network automation."
   }];
   return <>
     <script
@@ -128,7 +128,7 @@ const ITNetworkingGrowthStrategy = () => {
           <h4 className="text-lg font-semibold mb-3 text-primary">Cloud Connectivity Solutions</h4>
           <ul className="space-y-2 text-sm">
             <li>• Multi-cloud network architecture</li>
-            <li>• SD-WAN deployment and optimization</li>
+            <li>• SD-WAN deployment and optimisation</li>
             <li>• Hybrid cloud integration strategies</li>
             <li>• Cloud-native security implementation</li>
             <li>• Network automation and orchestration</li>
@@ -150,7 +150,7 @@ const ITNetworkingGrowthStrategy = () => {
           <h4 className="text-lg font-semibold mb-3 text-primary">Network Operations and Monitoring</h4>
           <ul className="space-y-2 text-sm">
             <li>• 24/7 network operations center (NOC) services</li>
-            <li>• AI-driven network analytics and optimization</li>
+            <li>• AI-driven network analytics and optimisation</li>
             <li>• Predictive maintenance programs</li>
             <li>• Performance monitoring and reporting</li>
             <li>• Disaster recovery and business continuity</li>
@@ -188,7 +188,7 @@ const ITNetworkingGrowthStrategy = () => {
                 <li>• CCNA (Associate Level Foundation)</li>
                 <li>• CCNP Enterprise (Professional Routing/Switching)</li>
                 <li>• CCIE Enterprise Infrastructure (Expert Level)</li>
-                <li>• CCNP Security (Security Specialization)</li>
+                <li>• CCNP Security (Security specialisation)</li>
                 <li>• DevNet Professional (Network Automation)</li>
               </ul>
             </div>
@@ -240,7 +240,7 @@ const ITNetworkingGrowthStrategy = () => {
       <ul className="space-y-2 mb-8">
         <li><strong>Annual Training Budget:</strong> Allocate 10-15% of revenue for team certification and training</li>
         <li><strong>Industry Conferences:</strong> Attend Cisco Live, VMworld, AWS re:Invent, and other major events</li>
-        <li><strong>Online Learning:</strong> Utilize Pluralsight, LinkedIn Learning, and vendor-specific training platforms</li>
+        <li><strong>Online Learning:</strong> utilise Pluralsight, LinkedIn Learning, and vendor-specific training platforms</li>
         <li><strong>Hands-On Labs:</strong> Maintain lab environments for testing new technologies and configurations</li>
         <li><strong>Knowledge Sharing:</strong> Implement internal brown-bag sessions and technical documentation</li>
       </ul>
@@ -267,7 +267,7 @@ const ITNetworkingGrowthStrategy = () => {
         </Card>
         
         <Card className="p-6">
-          <h4 className="text-lg font-semibold mb-3">Healthcare Organizations</h4>
+          <h4 className="text-lg font-semibold mb-3">Healthcare organisations</h4>
           <ul className="space-y-2 text-sm">
             <li><strong>Pain Points:</strong> HIPAA compliance, legacy systems, patient data security</li>
             <li><strong>Services:</strong> Secure network design, compliance auditing, telemedicine infrastructure</li>
@@ -293,7 +293,7 @@ const ITNetworkingGrowthStrategy = () => {
           <ul className="space-y-2 text-sm">
             <li><strong>Pain Points:</strong> OT/IT convergence, industrial IoT, production uptime</li>
             <li><strong>Services:</strong> Industrial networking, IoT implementation, network segmentation</li>
-            <li><strong>Value Proposition:</strong> Operational technology expertise and production optimization</li>
+            <li><strong>Value Proposition:</strong> Operational technology expertise and production optimisation</li>
             <li><strong>Decision Makers:</strong> Plant Manager, IT Director, Operations VP</li>
             <li><strong>Sales Cycle:</strong> 90-180 days average</li>
           </ul>
@@ -321,7 +321,7 @@ const ITNetworkingGrowthStrategy = () => {
           <ul className="grid md:grid-cols-2 gap-2 text-sm">
             <li>• 24/7 network monitoring</li>
             <li>• Managed security services</li>
-            <li>• Performance optimization</li>
+            <li>• Performance optimisation</li>
             <li>• Patch management</li>
             <li>• Capacity planning</li>
             <li>• Incident response</li>
@@ -335,7 +335,7 @@ const ITNetworkingGrowthStrategy = () => {
             <li>• Technology roadmap development</li>
             <li>• Vendor selection and management</li>
             <li>• IT governance frameworks</li>
-            <li>• Budget planning and optimization</li>
+            <li>• Budget planning and optimisation</li>
             <li>• Change management support</li>
           </ul>
         </Card>
@@ -356,7 +356,7 @@ const ITNetworkingGrowthStrategy = () => {
           <ul className="space-y-2 text-sm">
             <li><strong>Senior Network Engineers:</strong> Lead complex projects, mentor junior staff, client-facing technical expertise</li>
             <li><strong>Security Specialists:</strong> Handle cybersecurity implementations, compliance assessments, incident response</li>
-            <li><strong>Cloud Architects:</strong> Design multi-cloud solutions, migration strategies, optimization recommendations</li>
+            <li><strong>Cloud Architects:</strong> Design multi-cloud solutions, migration strategies, optimisation recommendations</li>
             <li><strong>Field Technicians:</strong> On-site installations, troubleshooting, maintenance, client training</li>
           </ul>
         </Card>
@@ -373,14 +373,14 @@ const ITNetworkingGrowthStrategy = () => {
       </div>
 
       <h3>Operational Excellence Framework</h3>
-      <p>Implement standardized processes that ensure consistent service delivery and client satisfaction:</p>
+      <p>Implement standardised processes that ensure consistent service delivery and client satisfaction:</p>
       
       <ul className="space-y-3 mb-8">
         <li><strong>Project Management Methodology:</strong> Use ITIL, PMI, or Agile frameworks for consistent project delivery</li>
         <li><strong>Quality Assurance Processes:</strong> Implement peer reviews, testing protocols, and client acceptance procedures</li>
         <li><strong>Documentation Standards:</strong> Maintain comprehensive network documentation, runbooks, and knowledge bases</li>
         <li><strong>Client Communication Protocols:</strong> Regular status updates, escalation procedures, and feedback collection</li>
-        <li><strong>Performance Metrics:</strong> Track SLAs, client satisfaction, project success rates, and team utilization</li>
+        <li><strong>Performance Metrics:</strong> Track SLAs, client satisfaction, project success rates, and team utilisation</li>
       </ul>
 
       <h2>Digital Marketing for IT Networking Firms</h2>
@@ -400,8 +400,8 @@ const ITNetworkingGrowthStrategy = () => {
         <li><strong>Webinars:</strong> Educational sessions on network security, cloud migrations, and emerging technologies</li>
       </ul>
 
-      <h3>Search Engine Optimization (SEO)</h3>
-      <p>Optimize your website to rank for high-intent keywords that potential clients search for:</p>
+      <h3>Search Engine optimisation (SEO)</h3>
+      <p>optimise your website to rank for high-intent keywords that potential clients search for:</p>
       
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="p-6">
@@ -485,7 +485,7 @@ const ITNetworkingGrowthStrategy = () => {
       <ul className="space-y-2 mb-6">
         <li><strong>Certification Roadmap:</strong> Plan team certifications for emerging technologies</li>
         <li><strong>Service Portfolio Audit:</strong> Evaluate which services generate the highest margins</li>
-        <li><strong>Digital Marketing Launch:</strong> Start content creation and <Link href="/blog/local-seo-trade-businesses" className="text-primary hover:underline">local SEO optimization</Link></li>
+        <li><strong>Digital Marketing Launch:</strong> Start content creation and <Link href="/blog/local-seo-trade-businesses" className="text-primary hover:underline">local SEO optimisation</Link></li>
         <li><strong>Partnership Development:</strong> Identify complementary service providers for referral relationships</li>
         <li><strong>Client Success Program:</strong> Implement systematic client satisfaction and retention initiatives</li>
       </ul>

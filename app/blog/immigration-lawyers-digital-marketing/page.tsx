@@ -76,7 +76,7 @@ const ImmigrationLawyersDigitalMarketing = () => {
     answer: "The most effective strategies include SEO targeting visa-specific keywords, Google Ads for high-intent searches, content marketing explaining complex immigration processes, and social proof through client testimonials. Focus on building authority through educational content about visa pathways, processing times, and eligibility requirements."
   }, {
     question: "How can immigration lawyers generate leads online?",
-    answer: "Generate leads through targeted Google Ads campaigns for specific visa types, SEO-optimized content answering common immigration questions, free visa eligibility assessments, downloadable immigration guides, and multilingual content targeting diverse client demographics. Combine with retargeting to nurture prospects through the consideration process."
+    answer: "Generate leads through targeted Google Ads campaigns for specific visa types, SEO-optimised content answering common immigration questions, free visa eligibility assessments, downloadable immigration guides, and multilingual content targeting diverse client demographics. Combine with retargeting to nurture prospects through the consideration process."
   }, {
     question: "What compliance issues should immigration lawyers consider in digital marketing?",
     answer: "Ensure all marketing complies with legal advertising regulations, avoid making outcome guarantees, clearly disclose fees and service scope, protect client confidentiality in case studies and testimonials, and maintain accurate information about visa requirements and processing times. Always include proper disclaimers and privacy policies."

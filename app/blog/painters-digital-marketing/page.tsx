@@ -81,7 +81,7 @@ const PaintersDigitalMarketing = () => {
 
   const faqs = [{
     question: "What digital marketing strategies work best for painting contractors?",
-    answer: "The most effective strategies include local SEO optimization, visual portfolio showcasing, Google Ads targeting homeowners, social media marketing on visual platforms, and customer review management. Focus on before/after photos and local community engagement."
+    answer: "The most effective strategies include local SEO optimisation, visual portfolio showcasing, Google Ads targeting homeowners, social media marketing on visual platforms, and customer review management. Focus on before/after photos and local community engagement."
   }, {
     question: "How can painters attract customers through social media?",
     answer: "Use Instagram for daily project photos, Facebook for community engagement, Pinterest for color inspiration, TikTok for transformation videos, and YouTube for detailed project walkthroughs. Consistent visual content showcasing quality work drives the most engagement."
@@ -162,7 +162,7 @@ const PaintersDigitalMarketing = () => {
         </Card>
       </div>
 
-      <h2>Visual Portfolio and Website Optimization</h2>
+      <h2>Visual Portfolio and Website optimisation</h2>
       <h3>Showcase Your Best Work</h3>
       <p>
         For painters, visual proof is everything. Your website must showcase quality:
@@ -181,9 +181,9 @@ const PaintersDigitalMarketing = () => {
         Dominate local search results for painting services:
       </p>
       <ul>
-        <li>Google My Business optimization with project photos</li>
+        <li>Google My Business optimisation with project photos</li>
         <li>Location-specific landing pages (e.g., &quot;House Painters [City]&quot;)</li>
-        <li>Local keyword optimization and content</li>
+        <li>Local keyword optimisation and content</li>
         <li>Citations in local contractor directories</li>
         <li>Reviews management and customer feedback</li>
       </ul>
@@ -276,7 +276,7 @@ const PaintersDigitalMarketing = () => {
         <li>Special offers for repeat customers</li>
       </ul>
 
-      <h2>Conversion Optimization</h2>
+      <h2>Conversion optimisation</h2>
       <h3>Website Lead Capture</h3>
       <p>
         Convert visitors into qualified leads:
@@ -302,9 +302,9 @@ const PaintersDigitalMarketing = () => {
       </ul>
 
       <h2>Seasonal Marketing Strategies</h2>
-      <h3>Peak Season Optimization</h3>
+      <h3>Peak Season optimisation</h3>
       <p>
-        Maximize business during peak painting seasons:
+        maximise business during peak painting seasons:
       </p>
       <ul>
         <li><strong>Spring preparation:</strong> Early bird booking incentives</li>
@@ -346,7 +346,7 @@ const PaintersDigitalMarketing = () => {
       </p>
       <ul>
         <li>Project management and scheduling software</li>
-        <li>Photo organization and portfolio platforms</li>
+        <li>Photo organisation and portfolio platforms</li>
         <li>Estimating and proposal software</li>
         <li>Customer communication tools</li>
         <li>Social media scheduling platforms</li>
@@ -355,7 +355,7 @@ const PaintersDigitalMarketing = () => {
       <h2>90-Day Launch Strategy</h2>
       <h3>Month 1: Foundation</h3>
       <ul>
-        <li>Optimize Google My Business with project photos</li>
+        <li>optimise Google My Business with project photos</li>
         <li>Create professional website with portfolio</li>
         <li>Set up social media profiles</li>
         <li>Launch initial Google Ads campaign</li>
@@ -369,9 +369,9 @@ const PaintersDigitalMarketing = () => {
         <li>Begin review collection process</li>
       </ul>
 
-      <h3>Month 3: Optimization and Growth</h3>
+      <h3>Month 3: optimisation and Growth</h3>
       <ul>
-        <li>Analyze campaign performance data</li>
+        <li>analyse campaign performance data</li>
         <li>Scale successful marketing channels</li>
         <li>Develop partnership relationships</li>
         <li>Implement referral programs</li>

@@ -69,7 +69,7 @@ const SecurityGoogleAdsStrategy = () => {
     answer: "Target local commercial keywords like 'commercial security services [city]', 'business security company', 'security guards [area]', and emergency terms like '24/7 security services' and 'emergency security response'."
   }, {
     question: "How can security companies improve their Google Ads conversion rates?",
-    answer: "Focus on trust-building elements: display licensing prominently, include client testimonials, offer free security assessments, emphasize 24/7 availability, and create mobile-optimized landing pages with clear contact forms."
+    answer: "Focus on trust-building elements: display licensing prominently, include client testimonials, offer free security assessments, emphasise 24/7 availability, and create mobile-optimised landing pages with clear contact forms."
   }, {
     question: "Should security companies use Google Ads year-round?",
     answer: "Yes, security needs are consistent year-round, but adjust bidding for seasonal patterns. Increase budgets during holiday seasons for retail clients, summer for events, and during local crime upticks that drive security awareness."
@@ -97,12 +97,12 @@ const SecurityGoogleAdsStrategy = () => {
               </ul>
 
               <h2>Strategic Campaign Structure for Maximum ROI</h2>
-              <h3>Campaign Organization Best Practices</h3>
+              <h3>Campaign organisation Best Practices</h3>
               <p>Structure campaigns for optimal performance and budget control:</p>
               <ul>
                 <li><strong>Commercial Security Campaign:</strong> Target business security needs</li>
                 <li><strong>Residential Security Campaign:</strong> Focus on home and community protection</li>
-                <li><strong>Event Security Campaign:</strong> Target event organizers and venues</li>
+                <li><strong>Event Security Campaign:</strong> Target event organisers and venues</li>
                 <li><strong>Emergency Response Campaign:</strong> Capture urgent security needs</li>
                 <li><strong>Branded Campaign:</strong> Protect your company name and reputation</li>
                 <li><strong>Location-Specific Campaigns:</strong> Target high-value geographic areas</li>
@@ -151,7 +151,7 @@ const SecurityGoogleAdsStrategy = () => {
                 <li>Feature industry-specific experience and expertise</li>
               </ul>
 
-              <h2>Landing Page Optimization for Security Services</h2>
+              <h2>Landing Page optimisation for Security Services</h2>
               <h3>Essential Landing Page Elements</h3>
               <p>Build pages that immediately establish trust and credibility:</p>
               <ul>
@@ -164,12 +164,12 @@ const SecurityGoogleAdsStrategy = () => {
                 <li><strong>Response guarantees:</strong> Clear commitments to service levels</li>
               </ul>
 
-              <h3>Mobile Optimization for Emergency Response</h3>
+              <h3>Mobile optimisation for Emergency Response</h3>
               <p>Ensure seamless mobile experience for urgent security needs:</p>
               <ul>
                 <li>Fast-loading pages with essential information above the fold</li>
                 <li>One-click calling for emergency security requests</li>
-                <li>Simple forms optimized for mobile completion</li>
+                <li>Simple forms optimised for mobile completion</li>
                 <li>Clear service area maps and coverage information</li>
                 <li>Quick quote tools for immediate pricing estimates</li>
               </ul>
@@ -195,7 +195,7 @@ const SecurityGoogleAdsStrategy = () => {
                 <li><strong>Construction managers:</strong> Site security decision-makers</li>
               </ul>
 
-              <h2>Conversion Tracking and Performance Optimization</h2>
+              <h2>Conversion Tracking and Performance optimisation</h2>
               <h3>Key Performance Metrics for Security Companies</h3>
               <p>Track metrics that directly impact business growth:</p>
               <ul>
@@ -207,13 +207,13 @@ const SecurityGoogleAdsStrategy = () => {
                 <li><strong>Geographic performance:</strong> Which areas generate highest-value clients</li>
               </ul>
 
-              <h3>Continuous Campaign Optimization</h3>
+              <h3>Continuous Campaign optimisation</h3>
               <p>Implement systematic testing and improvement processes:</p>
               <ul>
                 <li><strong>A/B testing:</strong> Test headlines, descriptions, and landing page elements</li>
                 <li><strong>Keyword refinement:</strong> Expand high-performing terms, eliminate waste</li>
-                <li><strong>Bid optimization:</strong> Adjust based on lead quality and conversion data</li>
-                <li><strong>Schedule optimization:</strong> Focus budget on high-conversion times</li>
+                <li><strong>Bid optimisation:</strong> Adjust based on lead quality and conversion data</li>
+                <li><strong>Schedule optimisation:</strong> Focus budget on high-conversion times</li>
                 <li><strong>Audience expansion:</strong> Scale successful targeting parameters</li>
               </ul>
 
@@ -241,7 +241,7 @@ const SecurityGoogleAdsStrategy = () => {
 
               <h2>Ready to Secure More High-Value Clients?</h2>
               <p>
-                Google Ads success for security companies requires strategic targeting, trust-building messaging, and conversion-optimized landing pages. Focus on demonstrating professionalism, reliability, and rapid response capabilities to attract businesses and property owners who value quality security services. Start with well-structured campaigns targeting your most profitable client types, then scale based on performance data and market feedback.
+                Google Ads success for security companies requires strategic targeting, trust-building messaging, and conversion-optimised landing pages. Focus on demonstrating professionalism, reliability, and rapid response capabilities to attract businesses and property owners who value quality security services. Start with well-structured campaigns targeting your most profitable client types, then scale based on performance data and market feedback.
               </p>
     </OptimizedBlogLayout>
     </>;

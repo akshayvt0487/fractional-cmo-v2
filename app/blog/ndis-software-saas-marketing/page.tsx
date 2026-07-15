@@ -59,7 +59,7 @@ const NDISSoftwareSaaSMarketing = () => {
 
   const faqs = [{
     question: "What makes NDIS software marketing different from general SaaS marketing?",
-    answer: "NDIS software marketing requires deep industry knowledge of compliance requirements, provider pain points, and disability services terminology. The audience is smaller and more specialized than general SaaS markets, making relationship-based marketing and industry-specific content critical. Decision cycles are longer due to operational complexity, requiring sophisticated nurture campaigns and stakeholder education throughout the buying journey."
+    answer: "NDIS software marketing requires deep industry knowledge of compliance requirements, provider pain points, and disability services terminology. The audience is smaller and more specialised than general SaaS markets, making relationship-based marketing and industry-specific content critical. Decision cycles are longer due to operational complexity, requiring sophisticated nurture campaigns and stakeholder education throughout the buying journey."
   }, {
     question: "Should NDIS software companies focus on large or small providers?",
     answer: "Most successful NDIS software companies start by serving mid-sized providers (10-50 participants) who have outgrown spreadsheets but lack enterprise budgets. This segment offers the best balance of deal size, implementation complexity, and sales cycle length. Once established, expand to larger enterprise clients or create simplified offerings for smaller providers based on your competitive advantages and market positioning."
@@ -208,7 +208,7 @@ const NDISSoftwareSaaSMarketing = () => {
                       </div>
                       <div>
                         <h4 className="font-medium text-foreground">Operations Managers (35%)</h4>
-                        <p className="text-sm text-muted-foreground">Focus: Efficiency, compliance, workflow optimization</p>
+                        <p className="text-sm text-muted-foreground">Focus: Efficiency, compliance, workflow optimisation</p>
                       </div>
                       <div>
                         <h4 className="font-medium text-foreground">IT/Technology Leaders (20%)</h4>
@@ -224,7 +224,7 @@ const NDISSoftwareSaaSMarketing = () => {
                     <div className="space-y-4">
                       <div>
                         <h4 className="font-medium text-foreground">Problem Recognition (3-6 months)</h4>
-                        <p className="text-sm text-muted-foreground">Realizing current systems are inadequate</p>
+                        <p className="text-sm text-muted-foreground">realising current systems are inadequate</p>
                       </div>
                       <div>
                         <h4 className="font-medium text-foreground">Solution Research (2-4 months)</h4>
@@ -290,14 +290,14 @@ const NDISSoftwareSaaSMarketing = () => {
                     <CardContent className="p-8">
                       <h3 className="text-2xl font-semibold mb-4 text-foreground">2. Account-Based Marketing (ABM)</h3>
                       <p className="text-muted-foreground mb-6">
-                        Target high-value NDIS providers with personalized campaigns that address their specific operational challenges.
+                        Target high-value NDIS providers with personalised campaigns that address their specific operational challenges.
                       </p>
                       
                       <div className="grid md:grid-cols-3 gap-6 mb-6">
                         <div>
                           <h4 className="font-semibold mb-3 text-foreground">Tier 1 Accounts (50+ participants)</h4>
                           <ul className="text-sm text-muted-foreground space-y-1">
-                            <li>• Personalized video messages</li>
+                            <li>• personalised video messages</li>
                             <li>• Custom ROI calculators</li>
                             <li>• Executive lunch meetings</li>
                             <li>• Tailored demo environments</li>
@@ -340,7 +340,7 @@ const NDISSoftwareSaaSMarketing = () => {
                             <li><strong>Consultants & Advisors:</strong> NDIS registration specialists, compliance experts</li>
                             <li><strong>Technology Partners:</strong> CRM providers, accounting software, HR platforms</li>
                             <li><strong>Industry Associations:</strong> Provider peak bodies, professional networks</li>
-                            <li><strong>Training Organizations:</strong> NDIS education providers, professional development</li>
+                            <li><strong>Training organisations:</strong> NDIS education providers, professional development</li>
                           </ul>
                         </div>
                         <div>
@@ -359,7 +359,7 @@ const NDISSoftwareSaaSMarketing = () => {
                   {/* Strategy 4 */}
                   <Card className="mb-8">
                     <CardContent className="p-8">
-                      <h3 className="text-2xl font-semibold mb-4 text-foreground">4. Search Engine Optimization (SEO)</h3>
+                      <h3 className="text-2xl font-semibold mb-4 text-foreground">4. Search Engine optimisation (SEO)</h3>
                       <p className="text-muted-foreground mb-6">
                         Dominate search results for NDIS software-related keywords to capture high-intent prospects.
                       </p>
@@ -419,7 +419,7 @@ const NDISSoftwareSaaSMarketing = () => {
                         <div>
                           <h4 className="font-semibold mb-3 text-foreground">LinkedIn Strategy Components</h4>
                           <ul className="space-y-2 text-muted-foreground">
-                            <li>• <strong>Company Page Optimization:</strong> Industry keywords, regular updates</li>
+                            <li>• <strong>Company Page optimisation:</strong> Industry keywords, regular updates</li>
                             <li>• <strong>Employee Advocacy:</strong> Team members sharing industry insights</li>
                             <li>• <strong>LinkedIn Groups:</strong> Active participation in NDIS professional groups</li>
                             <li>• <strong>Thought Leadership:</strong> Regular articles and industry commentary</li>
@@ -430,7 +430,7 @@ const NDISSoftwareSaaSMarketing = () => {
                           <h4 className="font-semibold mb-3 text-foreground">Social Selling Process</h4>
                           <ol className="space-y-2 text-muted-foreground">
                             <li>1. <strong>Research:</strong> Identify prospects and their challenges</li>
-                            <li>2. <strong>Connect:</strong> Personalized connection requests</li>
+                            <li>2. <strong>Connect:</strong> personalised connection requests</li>
                             <li>3. <strong>Engage:</strong> Comment on posts, share valuable content</li>
                             <li>4. <strong>Value:</strong> Provide insights before pitching</li>
                             <li>5. <strong>Convert:</strong> Schedule demos through relationship building</li>
@@ -473,7 +473,7 @@ const NDISSoftwareSaaSMarketing = () => {
                       </div>
 
                       <div className="bg-background/50 border rounded-lg p-4">
-                        <h5 className="font-medium mb-2 text-foreground">Event ROI Maximization</h5>
+                        <h5 className="font-medium mb-2 text-foreground">Event ROI maximisation</h5>
                         <p className="text-sm text-muted-foreground">
                           <strong>Before:</strong> Pre-event outreach, meeting scheduling → <strong>During:</strong> Live demos, lead capture → 
                           <strong>After:</strong> Immediate follow-up, nurture sequences
@@ -575,10 +575,10 @@ const NDISSoftwareSaaSMarketing = () => {
 
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-4 text-foreground">Days 61-90: Optimization & Scale</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-foreground">Days 61-90: optimisation & Scale</h3>
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
-                        <h4 className="font-medium mb-2 text-foreground">Week 9-10: Analysis & Optimization</h4>
+                        <h4 className="font-medium mb-2 text-foreground">Week 9-10: Analysis & optimisation</h4>
                         <ul className="text-sm text-muted-foreground space-y-1">
                           <li>• Analyse campaign performance and ROI</li>
                           <li>• Optimise underperforming channels</li>

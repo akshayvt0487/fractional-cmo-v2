@@ -83,7 +83,7 @@ const LawyersLeadGeneration = () => {
 
   const faqs = [{
     question: "What are the most effective lead generation strategies for lawyers?",
-    answer: "The most effective strategies include content marketing (legal guides, blog posts), SEO optimization for legal keywords, Google Ads for high-intent searches, networking events, referral programs, and thought leadership through speaking engagements and media appearances."
+    answer: "The most effective strategies include content marketing (legal guides, blog posts), SEO optimisation for legal keywords, Google Ads for high-intent searches, networking events, referral programs, and thought leadership through speaking engagements and media appearances."
   }, {
     question: "Are there ethical restrictions on lawyer advertising?",
     answer: "Yes, lawyers must comply with professional conduct rules that vary by jurisdiction. Generally, advertising must be truthful, not misleading, not create unrealistic expectations, and maintain client confidentiality. Always check your local bar association guidelines."
@@ -151,7 +151,7 @@ const LawyersLeadGeneration = () => {
                   <span className="text-primary font-bold">1</span>
                 </div>
                 <h4 className="font-semibold mb-2">Problem Recognition</h4>
-                <p className="text-sm text-muted-foreground">Client realizes they need legal help</p>
+                <p className="text-sm text-muted-foreground">Client realises they need legal help</p>
               </div>
               <div className="text-center">
                 <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3">
@@ -202,7 +202,7 @@ const LawyersLeadGeneration = () => {
             </Card>
             <Card>
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-3 text-primary">Specialized Practice Areas</h4>
+                <h4 className="font-semibold mb-3 text-primary">specialised Practice Areas</h4>
                 <ul className="space-y-2 text-muted-foreground mb-4">
                   <li>• Corporate law</li>
                   <li>• Intellectual property</li>
@@ -223,7 +223,7 @@ const LawyersLeadGeneration = () => {
         <h2 className="text-3xl font-bold mb-8 text-foreground">Digital Marketing Strategies</h2>
         
         <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 text-foreground">Search Engine Optimization (SEO)</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-foreground">Search Engine optimisation (SEO)</h3>
           <p className="text-muted-foreground mb-6">
             SEO is crucial for law firms as most legal clients start their search online. Ranking well for relevant legal terms establishes credibility and drives qualified traffic.
           </p>
@@ -266,7 +266,7 @@ const LawyersLeadGeneration = () => {
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">On-Page SEO for Law Firms</h4>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Optimize title tags with practice area + location</li>
+                  <li>• optimise title tags with practice area + location</li>
                   <li>• Create dedicated practice area pages</li>
                   <li>• Include attorney bios with expertise details</li>
                   <li>• Add client testimonials and case results</li>
@@ -329,7 +329,7 @@ const LawyersLeadGeneration = () => {
                 <h4 className="font-semibold mb-3">Ad Copy Best Practices</h4>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Highlight years of experience</li>
-                  <li>• Mention specializations clearly</li>
+                  <li>• Mention specialisations clearly</li>
                   <li>• Include &quot;Free Consultation&quot; offers</li>
                   <li>• Use location-specific language</li>
                   <li>• Comply with ethical advertising rules</li>
@@ -338,7 +338,7 @@ const LawyersLeadGeneration = () => {
             </Card>
             <Card>
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-3">Landing Page Optimization</h4>
+                <h4 className="font-semibold mb-3">Landing Page optimisation</h4>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Match page content to ad promise</li>
                   <li>• Include clear contact forms</li>
@@ -430,7 +430,7 @@ const LawyersLeadGeneration = () => {
                   <li>• Legal continuing education</li>
                   <li>• Practice area committees</li>
                   <li>• Young lawyers associations</li>
-                  <li>• Legal aid organizations</li>
+                  <li>• Legal aid organisations</li>
                 </ul>
               </CardContent>
             </Card>
@@ -468,7 +468,7 @@ const LawyersLeadGeneration = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Schedule coffee meetings with potential referral sources</li>
                   <li>• Attend industry events and conferences</li>
-                  <li>• Join professional organizations</li>
+                  <li>• Join professional organisations</li>
                   <li>• Offer to speak at relevant events</li>
                 </ul>
               </div>
@@ -490,9 +490,9 @@ const LawyersLeadGeneration = () => {
         <h2 className="text-3xl font-bold mb-8 text-foreground">Lead Conversion and Client Experience</h2>
         
         <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 text-foreground">Optimizing the Initial Consultation</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-foreground">optimising the Initial Consultation</h3>
           <p className="text-muted-foreground mb-6">
-            The initial consultation is crucial for converting leads into clients. A professional, organized approach builds confidence and trust.
+            The initial consultation is crucial for converting leads into clients. A professional, organised approach builds confidence and trust.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">

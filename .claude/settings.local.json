@@ -20,7 +20,10 @@
       "Bash(git reset:*)",
       "Bash(ls:*)",
       "Bash(xargs -I {} bash -c \"echo ''=== {} ==='' && head -50 ''{}''\")",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File fix-spelling.ps1)",
+      "Bash(powershell -ExecutionPolicy Bypass -File fix-spelling2.ps1)"
     ]
   }
 }

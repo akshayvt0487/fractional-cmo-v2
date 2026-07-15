@@ -84,7 +84,7 @@ const CyberSecurityGrowthHacking = () => {
     answer: "The most effective tactics include threat intelligence content marketing, security assessment tools, breach simulation demos, compliance checklists, and leveraging security news cycles for thought leadership positioning."
   }, {
     question: "How can cyber security firms use automation for growth hacking?",
-    answer: "Automation can power security assessment tools, automated threat alerts, personalized security scorecards, drip campaigns based on security maturity, and intelligent lead scoring based on risk profiles."
+    answer: "Automation can power security assessment tools, automated threat alerts, personalised security scorecards, drip campaigns based on security maturity, and intelligent lead scoring based on risk profiles."
   }, {
     question: "What metrics should cyber security companies track for growth hacking success?",
     answer: "Key metrics include security assessment completion rates, threat alert engagement, compliance checklist downloads, demo-to-consultation conversion rates, and customer lifetime value based on security service tiers."
@@ -178,7 +178,7 @@ const CyberSecurityGrowthHacking = () => {
                 <h4 className="font-semibold text-green-700 mb-3">Security Maturity Scorecard</h4>
                 <ul className="text-sm space-y-2 text-green-600">
                   <li>• 10-question security readiness quiz</li>
-                  <li>• Instant personalized security score</li>
+                  <li>• Instant personalised security score</li>
                   <li>• Industry benchmark comparisons</li>
                   <li>• Specific improvement recommendations</li>
                   <li>• PDF report generation with contact capture</li>
@@ -213,7 +213,7 @@ const CyberSecurityGrowthHacking = () => {
                   <h4 className="font-medium mb-2 text-orange-600">Alert System Features</h4>
                   <ul className="text-sm space-y-1 text-gray-600">
                     <li>• Automated threat detection monitoring</li>
-                    <li>• Industry-specific threat categorization</li>
+                    <li>• Industry-specific threat categorisation</li>
                     <li>• Immediate email/SMS alert delivery</li>
                     <li>• Social media auto-posting</li>
                     <li>• Subscriber growth tracking</li>
@@ -311,10 +311,10 @@ const CyberSecurityGrowthHacking = () => {
           </CardContent>
         </Card>
 
-        <h2 className="text-3xl font-bold mb-6">Data-Driven Growth Optimization</h2>
+        <h2 className="text-3xl font-bold mb-6">Data-Driven Growth optimisation</h2>
         
         <p className="mb-6">
-          Successful cyber security growth hacking requires sophisticated tracking and optimization of security-specific metrics that go beyond traditional marketing KPIs to measure actual security engagement and value delivery.
+          Successful cyber security growth hacking requires sophisticated tracking and optimisation of security-specific metrics that go beyond traditional marketing KPIs to measure actual security engagement and value delivery.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -370,11 +370,11 @@ const CyberSecurityGrowthHacking = () => {
               <h3 className="text-xl font-semibold mb-4 text-foreground">Free Security Tools That Drive Growth</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold mb-3 text-foreground">Password Strength Analyzer</h4>
+                  <h4 className="font-semibold mb-3 text-foreground">Password Strength analyser</h4>
                   <ul className="text-sm text-muted-foreground space-y-2">
                     <li>• Real-time password testing and scoring</li>
                     <li>• Breach database cross-reference checking</li>
-                    <li>• Strong password generation with customization</li>
+                    <li>• Strong password generation with customisation</li>
                     <li>• Enterprise password policy recommendations</li>
                     <li>• Embed widget for viral distribution</li>
                   </ul>
@@ -619,7 +619,7 @@ const CyberSecurityGrowthHacking = () => {
                 <div>
                   <h4 className="font-semibold mb-3 text-foreground">Week 1-2: Tool Development</h4>
                   <ul className="text-sm text-muted-foreground space-y-2">
-                    <li>✓ Launch password strength analyzer</li>
+                    <li>✓ Launch password strength analyser</li>
                     <li>✓ Create security maturity scorecard</li>
                     <li>✓ Build breach detection checker</li>
                     <li>✓ Set up lead capture systems</li>
@@ -640,7 +640,7 @@ const CyberSecurityGrowthHacking = () => {
 
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Days 31-60: Scale & Optimize</h3>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Days 31-60: Scale & optimise</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold mb-3 text-foreground">Week 5-6: Automation</h4>
@@ -722,7 +722,7 @@ const CyberSecurityGrowthHacking = () => {
               <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                 <h4 className="font-medium text-green-800 mb-2">✅ Better Approach:</h4>
                 <p className="text-sm text-green-700">
-                  Develop distribution strategy before building: partner integrations, SEO optimization, social media campaigns, industry forum promotion, and paid advertising budget allocated
+                  Develop distribution strategy before building: partner integrations, SEO optimisation, social media campaigns, industry forum promotion, and paid advertising budget allocated
                 </p>
               </div>
             </CardContent>
@@ -881,7 +881,7 @@ const CyberSecurityGrowthHacking = () => {
               <div>
                 <h4 className="font-semibold mb-3 text-foreground">Strategy Overview</h4>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Create hundreds of SEO-optimized pages targeting specific security threats, vulnerabilities, and compliance topics using templated content and automation.
+                  Create hundreds of SEO-optimised pages targeting specific security threats, vulnerabilities, and compliance topics using templated content and automation.
                 </p>
                 <h4 className="font-semibold mb-3 text-foreground">Implementation Approach</h4>
                 <ul className="text-sm text-muted-foreground space-y-2">
@@ -889,7 +889,7 @@ const CyberSecurityGrowthHacking = () => {
                   <li>• Automated page generation for each threat</li>
                   <li>• Real-time threat data integration</li>
                   <li>• Industry-specific threat filtering</li>
-                  <li>• Internal linking optimization</li>
+                  <li>• Internal linking optimisation</li>
                 </ul>
               </div>
               <div>
@@ -971,7 +971,7 @@ const CyberSecurityGrowthHacking = () => {
         <h2 className="text-3xl font-bold mb-6">Measuring Growth Hacking Success</h2>
         
         <p className="mb-6">
-          Establish comprehensive tracking systems to measure growth hacking performance and optimize tactics based on data-driven insights.
+          Establish comprehensive tracking systems to measure growth hacking performance and optimise tactics based on data-driven insights.
         </p>
 
         <Card className="mb-8">

@@ -85,19 +85,19 @@ const LiquidatorsGoogleAds = () => {
 
   const faqs = [{
     question: "What should liquidators budget for Google Ads campaigns?",
-    answer: "Liquidators should budget $2,000-$8,000 per month for effective Google Ads campaigns, with higher budgets in competitive metropolitan markets. Start with $3,000-4,000/month to test campaigns across branded, high-intent service, and geographic targeting. Scale budget based on cost per appointment and appointment value, prioritizing campaigns that deliver quality leads at sustainable acquisition costs."
+    answer: "Liquidators should budget $2,000-$8,000 per month for effective Google Ads campaigns, with higher budgets in competitive metropolitan markets. Start with $3,000-4,000/month to test campaigns across branded, high-intent service, and geographic targeting. Scale budget based on cost per appointment and appointment value, prioritising campaigns that deliver quality leads at sustainable acquisition costs."
   }, {
     question: "What's a good conversion rate for liquidation Google Ads?",
-    answer: "Well-optimized liquidation campaigns typically achieve 5-15% landing page conversion rates with 2-4% click-through rates on search ads. Cost per consultation ranges from $150-400 depending on keyword competitiveness and geographic targeting. Track both form submissions and phone calls, as many liquidation inquiries come through direct phone contact, especially for urgent appointments."
+    answer: "Well-optimised liquidation campaigns typically achieve 5-15% landing page conversion rates with 2-4% click-through rates on search ads. Cost per consultation ranges from $150-400 depending on keyword competitiveness and geographic targeting. Track both form submissions and phone calls, as many liquidation inquiries come through direct phone contact, especially for urgent appointments."
   }, {
     question: "Should liquidators run Google Ads 24/7 or only during business hours?",
-    answer: "Run Google Ads 24/7 but adjust bids based on your response capability. Directors often search outside business hours when making difficult decisions. If you have after-hours response systems, maintain full bidding. Otherwise, reduce bids by 30-50% outside business hours while keeping ads active to capture urgent searches. Use dayparting to optimize spend during peak conversion hours while maintaining visibility."
+    answer: "Run Google Ads 24/7 but adjust bids based on your response capability. Directors often search outside business hours when making difficult decisions. If you have after-hours response systems, maintain full bidding. Otherwise, reduce bids by 30-50% outside business hours while keeping ads active to capture urgent searches. Use dayparting to optimise spend during peak conversion hours while maintaining visibility."
   }];
 
 
   const articleData = {
     headline: "Google Ads for Liquidators: Complete PPC Strategy Guide 2026",
-    description: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimize conversion rates, and maximize ROI for insolvency practitioners.",
+    description: "Master Google Ads for liquidation services. Proven PPC strategies to capture high-intent searches, optimise conversion rates, and maximise ROI for insolvency practitioners.",
     publishedDate: convertDateFormat(post.date),
     url: "/blog/liquidators-google-ads-ppc-strategy",
     imageUrl: "/images/blog/liquidators-google-ads-hero.jpg",
@@ -151,7 +151,7 @@ const LiquidatorsGoogleAds = () => {
             <h3 className="text-xl font-semibold mb-3">The Challenge</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>• Competitive keywords with high CPCs</li>
-              <li>• Quality Score optimization critical</li>
+              <li>• Quality Score optimisation critical</li>
               <li>• Conversion tracking complexity</li>
               <li>• Compliance with advertising standards</li>
               <li>• Budget efficiency requirements</li>
@@ -168,7 +168,7 @@ const LiquidatorsGoogleAds = () => {
         <h2 className="text-3xl font-bold mb-6">Account Structure and Campaign Architecture</h2>
         
         <p className="mb-6">
-          Proper account structure is fundamental to Google Ads success. Organize campaigns by intent level, service type, and geography for maximum control and optimization capability.
+          Proper account structure is fundamental to Google Ads success. organise campaigns by intent level, service type, and geography for maximum control and optimisation capability.
         </p>
 
         <div className="bg-muted/50 p-6 rounded-lg mb-6">
@@ -183,7 +183,7 @@ const LiquidatorsGoogleAds = () => {
                 <li><strong>Keywords:</strong> Firm name, practitioner names, variations and misspellings</li>
                 <li><strong>Match Type:</strong> Exact and Phrase match</li>
                 <li><strong>Budget Strategy:</strong> High budget priority—never lose these searches</li>
-                <li><strong>Ad Copy:</strong> Emphasize credentials, same-day consultations, 24/7 availability</li>
+                <li><strong>Ad Copy:</strong> emphasise credentials, same-day consultations, 24/7 availability</li>
               </ul>
             </div>
 
@@ -203,7 +203,7 @@ const LiquidatorsGoogleAds = () => {
             <div>
               <h4 className="font-semibold mb-3">3. Industry-Specific Campaigns</h4>
               <p className="text-muted-foreground mb-3">
-                If you specialize in particular industries:
+                If you specialise in particular industries:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>&quot;construction company liquidation&quot;</li>
@@ -235,7 +235,7 @@ const LiquidatorsGoogleAds = () => {
                 <li>Competitor firm names</li>
                 <li>Ad copy focuses on your differentiators</li>
                 <li>Never disparage competitors</li>
-                <li>Emphasize alternative options</li>
+                <li>emphasise alternative options</li>
               </ul>
             </div>
           </div>
@@ -309,7 +309,7 @@ const LiquidatorsGoogleAds = () => {
             <div>
               <h4 className="font-semibold mb-3">Problem-Aware Keywords</h4>
               <p className="text-muted-foreground text-sm mb-3">
-                Searches from directors recognizing they need help:
+                Searches from directors recognising they need help:
               </p>
               <div className="bg-muted/30 p-4 rounded">
                 <ul className="grid md:grid-cols-2 gap-2 text-sm text-muted-foreground">
@@ -378,7 +378,7 @@ const LiquidatorsGoogleAds = () => {
           <Card className="p-6">
             <h3 className="text-xl font-semibold mb-4">Responsive Search Ad Structure</h3>
             <p className="text-muted-foreground mb-4">
-              Google Ads allows up to 15 headlines and 4 descriptions. Create variations that emphasize different value propositions:
+              Google Ads allows up to 15 headlines and 4 descriptions. Create variations that emphasise different value propositions:
             </p>
             
             <div className="space-y-4">
@@ -397,7 +397,7 @@ const LiquidatorsGoogleAds = () => {
                     <li>&quot;25+ Years Liquidation Experience&quot;</li>
                     <li>&quot;ARITA Member | Licensed Practitioner&quot;</li>
                   </ul>
-                  <p className="mt-3"><strong>Specialization:</strong></p>
+                  <p className="mt-3"><strong>specialisation:</strong></p>
                   <ul className="list-disc pl-6 text-muted-foreground">
                     <li>&quot;Construction Liquidation Specialist&quot;</li>
                     <li>&quot;Sydney&apos;s Trusted Liquidator&quot;</li>
@@ -407,7 +407,7 @@ const LiquidatorsGoogleAds = () => {
                   <ul className="list-disc pl-6 text-muted-foreground">
                     <li>&quot;Free Initial Consultation&quot;</li>
                     <li>&quot;Transparent Fee Structure&quot;</li>
-                    <li>&quot;Maximize Creditor Returns&quot;</li>
+                    <li>&quot;maximise Creditor Returns&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -499,10 +499,10 @@ const LiquidatorsGoogleAds = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Landing Page Optimization</h2>
+        <h2 className="text-3xl font-bold mb-6">Landing Page optimisation</h2>
         
         <p className="mb-6">
-          Never send paid traffic to your homepage. Create dedicated landing pages optimized for conversion—matching ad message to page content for maximum relevance and Quality Score.
+          Never send paid traffic to your homepage. Create dedicated landing pages optimised for conversion—matching ad message to page content for maximum relevance and Quality Score.
         </p>
 
         <Card className="p-6 mb-6">
@@ -561,13 +561,13 @@ const LiquidatorsGoogleAds = () => {
           </div>
         </Card>
 
-        <h3 className="text-2xl font-semibold mb-4 mt-8">Mobile Landing Page Optimization</h3>
+        <h3 className="text-2xl font-semibold mb-4 mt-8">Mobile Landing Page optimisation</h3>
         <div className="bg-muted/50 p-6 rounded-lg mb-6">
           <p className="mb-4">Over 60% of liquidation searches occur on mobile devices:</p>
           <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
             <li><strong>Click-to-Call Prominence:</strong> Large, thumb-friendly phone button at top</li>
-            <li><strong>Fast Load Time:</strong> Under 3 seconds on 4G (compress images, minimize scripts)</li>
-            <li><strong>Simplified Forms:</strong> Mobile-optimized input fields with autocomplete</li>
+            <li><strong>Fast Load Time:</strong> Under 3 seconds on 4G (compress images, minimise scripts)</li>
+            <li><strong>Simplified Forms:</strong> Mobile-optimised input fields with autocomplete</li>
             <li><strong>Minimal Scrolling:</strong> Key information and CTA within 2-3 scrolls</li>
             <li><strong>Readable Text:</strong> Minimum 16px font size, high contrast</li>
           </ul>
@@ -594,12 +594,12 @@ const LiquidatorsGoogleAds = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-2">Maximize Conversions (With Sufficient Data)</h4>
+              <h4 className="font-semibold mb-2">maximise Conversions (With Sufficient Data)</h4>
               <p className="text-muted-foreground mb-2">
                 Once you have 15+ conversions per month:
               </p>
               <ul className="list-disc pl-6 space-y-1 text-muted-foreground text-sm">
-                <li>Google&apos;s AI optimizes bids for maximum conversion volume</li>
+                <li>Google&apos;s AI optimises bids for maximum conversion volume</li>
                 <li>Works within your daily budget constraints</li>
                 <li>Requires accurate conversion tracking setup</li>
                 <li>Continuously learns and improves</li>
@@ -613,7 +613,7 @@ const LiquidatorsGoogleAds = () => {
               </p>
               <ul className="list-disc pl-6 space-y-1 text-muted-foreground text-sm">
                 <li>Set target cost per acquisition (e.g., $200 per consultation)</li>
-                <li>Google optimizes bids to achieve this target</li>
+                <li>Google optimises bids to achieve this target</li>
                 <li>Requires 30+ conversions in past 30 days for best results</li>
                 <li>Balances volume with efficiency</li>
               </ul>
@@ -669,7 +669,7 @@ const LiquidatorsGoogleAds = () => {
         <h2 className="text-3xl font-bold mb-6">Conversion Tracking and Measurement</h2>
         
         <p className="mb-6">
-          Accurate conversion tracking is essential for optimization and ROI measurement. Track both online conversions and phone calls.
+          Accurate conversion tracking is essential for optimisation and ROI measurement. Track both online conversions and phone calls.
         </p>
 
         <Card className="p-6 mb-6">
@@ -731,7 +731,7 @@ const LiquidatorsGoogleAds = () => {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li>Build audiences of visitors to key pages (service pages, pricing, process)</li>
-              <li>Show tailored ads emphasizing urgency and availability</li>
+              <li>Show tailored ads emphasising urgency and availability</li>
               <li>Offer additional resources (free guide, consultation) as hook</li>
               <li>Exclude recent converters to avoid wasted spend</li>
               <li>Lower bids than search campaigns (lower intent)</li>
@@ -741,7 +741,7 @@ const LiquidatorsGoogleAds = () => {
           <Card className="p-6">
             <h3 className="text-xl font-semibold mb-4">Dayparting Strategy</h3>
             <p className="text-muted-foreground mb-4">
-              Optimize spend based on time-of-day performance:
+              optimise spend based on time-of-day performance:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li>Increase bids during business hours (9am-5pm) when you can answer calls</li>
@@ -786,7 +786,7 @@ const LiquidatorsGoogleAds = () => {
           <Card className="p-6">
             <h3 className="text-lg font-semibold mb-2 text-destructive">❌ Sending Traffic to Homepage</h3>
             <p className="text-muted-foreground">
-              Homepage isn&apos;t optimized for specific keywords or intent. Create dedicated landing pages matching ad message for better Quality Score and conversion rates.
+              Homepage isn&apos;t optimised for specific keywords or intent. Create dedicated landing pages matching ad message for better Quality Score and conversion rates.
             </p>
           </Card>
 
@@ -800,21 +800,21 @@ const LiquidatorsGoogleAds = () => {
           <Card className="p-6">
             <h3 className="text-lg font-semibold mb-2 text-destructive">❌ Single Generic Campaign</h3>
             <p className="text-muted-foreground">
-              Mixing all keywords in one campaign prevents proper budget allocation and bid optimization. Segment by service type and intent level.
+              Mixing all keywords in one campaign prevents proper budget allocation and bid optimisation. Segment by service type and intent level.
             </p>
           </Card>
 
           <Card className="p-6">
             <h3 className="text-lg font-semibold mb-2 text-destructive">❌ No Phone Call Tracking</h3>
             <p className="text-muted-foreground">
-              Many liquidation inquiries come via phone. Without call tracking, you&apos;re blind to a major conversion source and can&apos;t optimize effectively.
+              Many liquidation inquiries come via phone. Without call tracking, you&apos;re blind to a major conversion source and can&apos;t optimise effectively.
             </p>
           </Card>
 
           <Card className="p-6">
             <h3 className="text-lg font-semibold mb-2 text-destructive">❌ Set and Forget Approach</h3>
             <p className="text-muted-foreground">
-              Google Ads requires ongoing optimization. Review search terms weekly, adjust bids, test new ad copy, and refine targeting continuously.
+              Google Ads requires ongoing optimisation. Review search terms weekly, adjust bids, test new ad copy, and refine targeting continuously.
             </p>
           </Card>
         </div>
@@ -836,7 +836,7 @@ const LiquidatorsGoogleAds = () => {
           </Card>
 
           <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Week 2: Launch & Optimize</h3>
+            <h3 className="text-xl font-semibold mb-4">Week 2: Launch & optimise</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>✓ Launch branded campaign first (protect your name)</li>
               <li>✓ Launch high-intent service campaigns with conservative bids</li>
@@ -862,10 +862,10 @@ const LiquidatorsGoogleAds = () => {
       <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
         <h3 className="text-xl font-semibold mb-3">Ready to Drive High-Quality Appointments?</h3>
         <p className="mb-4">
-          Google Ads for liquidators requires specialized knowledge of both PPC best practices and the unique dynamics of insolvency services marketing. Our team has managed successful Google Ads campaigns for liquidation practices across Australia.
+          Google Ads for liquidators requires specialised knowledge of both PPC best practices and the unique dynamics of insolvency services marketing. Our team has managed successful Google Ads campaigns for liquidation practices across Australia.
         </p>
         <p className="mb-0">
-          Book a strategy call to discuss how we can help you generate consistent, high-value liquidation appointments through optimized Google Ads campaigns.
+          Book a strategy call to discuss how we can help you generate consistent, high-value liquidation appointments through optimised Google Ads campaigns.
         </p>
       </div>
 

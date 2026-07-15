@@ -90,7 +90,7 @@ const CriminalLawyersDigitalMarketing = () => {
     answer: "Build trust through transparent communication, showcasing credentials and experience, publishing educational content, collecting authentic client testimonials (with permission), and maintaining professional online presence across all platforms."
   }, {
     question: "What's the most effective marketing channel for criminal lawyers?",
-    answer: "Local SEO and Google My Business optimization are most effective, combined with targeted Google Ads for urgent legal needs, referral programs, and content marketing that demonstrates legal expertise and understanding of criminal law."
+    answer: "Local SEO and Google My Business optimisation are most effective, combined with targeted Google Ads for urgent legal needs, referral programs, and content marketing that demonstrates legal expertise and understanding of criminal law."
   }];
   return <>
     <script
@@ -122,7 +122,7 @@ const CriminalLawyersDigitalMarketing = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-red-700">Specialized defense for drunk driving and impaired driving charges, including license protection and penalty mitigation.</p>
+            <p className="text-red-700">specialised defense for drunk driving and impaired driving charges, including license protection and penalty mitigation.</p>
           </CardContent>
         </Card>
 
@@ -208,7 +208,7 @@ const CriminalLawyersDigitalMarketing = () => {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
-              <li>📋 <strong>Practice areas:</strong> Clear criminal defense specializations</li>
+              <li>📋 <strong>Practice areas:</strong> Clear criminal defense specialisations</li>
               <li>👨‍⚖️ <strong>Attorney profiles:</strong> Experience and credentials</li>
               <li>📞 <strong>Emergency contact:</strong> 24/7 consultation availability</li>
               <li>🔒 <strong>Secure forms:</strong> Confidential case evaluation</li>
@@ -236,9 +236,9 @@ const CriminalLawyersDigitalMarketing = () => {
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">
-              <li>📱 <strong>Mobile optimization:</strong> Responsive design</li>
+              <li>📱 <strong>Mobile optimisation:</strong> Responsive design</li>
               <li>⚡ <strong>Fast loading:</strong> Quick access to legal help</li>
-              <li>🔍 <strong>Easy navigation:</strong> Clear practice area organization</li>
+              <li>🔍 <strong>Easy navigation:</strong> Clear practice area organisation</li>
               <li>📍 <strong>Local presence:</strong> Service area prominence</li>
             </ul>
           </CardContent>
@@ -252,7 +252,7 @@ const CriminalLawyersDigitalMarketing = () => {
       </p>
 
       <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200 p-6 my-8">
-        <h3 className="text-xl font-semibold mb-4 text-blue-800">Google Business Profile Optimization</h3>
+        <h3 className="text-xl font-semibold mb-4 text-blue-800">Google Business Profile optimisation</h3>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <h4 className="font-medium mb-3 text-blue-700">Essential Information</h4>
@@ -336,7 +336,7 @@ const CriminalLawyersDigitalMarketing = () => {
               <li>📞 Emergency hotline with live answering</li>
               <li>💬 24/7 chat support for urgent questions</li>
               <li>📧 Priority email response for arrests</li>
-              <li>📱 Mobile-optimized contact forms</li>
+              <li>📱 Mobile-optimised contact forms</li>
             </ul>
           </div>
           <div>
@@ -400,7 +400,7 @@ const CriminalLawyersDigitalMarketing = () => {
 
       <h2>Advanced Digital Marketing Strategies</h2>
       
-      <h3>Search Engine Optimization for Criminal Defense</h3>
+      <h3>Search Engine optimisation for Criminal Defense</h3>
       <p>
         SEO for criminal defense requires balancing high-intent keywords with ethical marketing guidelines while building authority in legal expertise.
       </p>
@@ -413,7 +413,7 @@ const CriminalLawyersDigitalMarketing = () => {
             <ul className="space-y-2 text-sm">
               <li>• &quot;DUI lawyer [city]&quot; - Average CPC: $47.50</li>
               <li>• &quot;Criminal defense attorney near me&quot; - High intent</li>
-              <li>• &quot;Drug possession lawyer&quot; - Specialized defense</li>
+              <li>• &quot;Drug possession lawyer&quot; - specialised defense</li>
               <li>• &quot;Domestic violence attorney&quot; - Complex cases</li>
               <li>• &quot;Expungement lawyer [state]&quot; - Post-conviction relief</li>
             </ul>

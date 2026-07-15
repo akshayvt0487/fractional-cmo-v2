@@ -83,10 +83,10 @@ const NDISDigitalMarketing = () => {
 
   const faqs = [{
     question: "What are the most effective digital marketing strategies for NDIS providers?",
-    answer: "The most effective strategies include local SEO optimization, Google My Business management, participant-focused content marketing, accessible website design, and ethical social media engagement that prioritizes participant outcomes."
+    answer: "The most effective strategies include local SEO optimisation, Google My Business management, participant-focused content marketing, accessible website design, and ethical social media engagement that prioritises participant outcomes."
   }, {
     question: "How can NDIS providers ensure their marketing is ethical and participant-centered?",
-    answer: "Focus on transparent pricing, honest capability representation, participant success stories (with consent), outcome-based messaging, and always prioritizing participant dignity and choice in all marketing materials."
+    answer: "Focus on transparent pricing, honest capability representation, participant success stories (with consent), outcome-based messaging, and always prioritising participant dignity and choice in all marketing materials."
   }, {
     question: "What budget should NDIS providers allocate for digital marketing?",
     answer: "NDIS providers should typically allocate 3-5% of revenue to marketing, with digital channels representing 60-80% of that budget. Start with $2,000-5,000 monthly for effective local reach and scale based on results."
@@ -164,7 +164,7 @@ const NDISDigitalMarketing = () => {
 
         <h2>Building Your NDIS Digital Presence</h2>
         
-        <h3>Website Optimization for NDIS Providers</h3>
+        <h3>Website optimisation for NDIS Providers</h3>
         <p>
           Your website is often the first impression potential participants have of your services. 
           It needs to be accessible, informative, and trustworthy.
@@ -330,7 +330,7 @@ const NDISDigitalMarketing = () => {
             <div>
               <h4 className="font-semibold mb-2">Supplementary Module Expertise</h4>
               <ul className="space-y-1 text-sm text-yellow-700">
-                <li>• <strong>High Intensity Supports:</strong> Specialized capability demonstrations</li>
+                <li>• <strong>High Intensity Supports:</strong> specialised capability demonstrations</li>
                 <li>• <strong>Specialist Supports:</strong> Professional qualifications and training</li>
                 <li>• <strong>Early Childhood:</strong> Developmental approach showcases</li>
               </ul>
@@ -382,14 +382,14 @@ const NDISDigitalMarketing = () => {
           </Card>
         </div>
 
-        <h3>Conversion Optimization for NDIS Services</h3>
+        <h3>Conversion optimisation for NDIS Services</h3>
         <div className="space-y-6 mb-8">
           <Card>
             <CardContent className="p-6">
               <h4 className="text-lg font-semibold mb-3">Service Inquiry Process</h4>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h5 className="font-semibold mb-2">Initial Contact Optimization</h5>
+                  <h5 className="font-semibold mb-2">Initial Contact optimisation</h5>
                   <ul className="space-y-1 text-sm">
                     <li>• Multiple contact methods (phone, email, web forms)</li>
                     <li>• Accessible formats and communication options</li>
@@ -501,11 +501,11 @@ const NDISDigitalMarketing = () => {
             <div>
               <h4 className="font-semibold mb-2">Service Innovation</h4>
               <ul className="space-y-1 text-sm">
-                <li>• Micro-credential specialized services</li>
+                <li>• Micro-credential specialised services</li>
                 <li>• Peer support program expansion</li>
                 <li>• Community co-design approaches</li>
                 <li>• Outcome-based service models</li>
-                <li>• Cultural competency specialization</li>
+                <li>• Cultural competency specialisation</li>
               </ul>
             </div>
           </div>
@@ -524,7 +524,7 @@ const NDISDigitalMarketing = () => {
           Remember that every participant represents someone seeking to achieve their goals and live their best life. Your marketing should reflect this dignity and focus on empowerment rather than limitation. The NDIS providers who embrace this approach build sustainable businesses that make a meaningful difference in their communities.
         </p>
 
-        <Citation source="NDIS Quarterly Report Q3 2024" url="https://www.ndis.gov.au/about-us/publications/quarterly-reports" title="The NDIS now supports over 610,000 participants with a focus on choice and control, creating opportunities for providers who prioritize participant-centered services." />
+        <Citation source="NDIS Quarterly Report Q3 2024" url="https://www.ndis.gov.au/about-us/publications/quarterly-reports" title="The NDIS now supports over 610,000 participants with a focus on choice and control, creating opportunities for providers who prioritise participant-centered services." />
 
     </OptimizedBlogLayout>
     </>;

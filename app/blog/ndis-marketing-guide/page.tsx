@@ -84,13 +84,13 @@ const NDISMarketingGuide = () => {
 
   const faqs = [{
     question: "What are the key principles of ethical NDIS marketing?",
-    answer: "Ethical NDIS marketing focuses on transparent pricing, honest capability representation, participant dignity, outcome-focused messaging, and always prioritizing participant welfare over business growth."
+    answer: "Ethical NDIS marketing focuses on transparent pricing, honest capability representation, participant dignity, outcome-focused messaging, and always prioritising participant welfare over business growth."
   }, {
     question: "How can NDIS providers build trust through marketing?",
     answer: "Build trust by prominently displaying NDIS registration details, showcasing staff qualifications, sharing participant success stories (with consent), maintaining transparent pricing, and demonstrating compliance with quality standards."
   }, {
     question: "What marketing channels work best for NDIS providers?",
-    answer: "Most effective channels include local SEO, Google My Business optimization, content marketing focused on participant outcomes, targeted social media, and community engagement programs."
+    answer: "Most effective channels include local SEO, Google My Business optimisation, content marketing focused on participant outcomes, targeted social media, and community engagement programs."
   }];
   return <>
     <script
@@ -128,7 +128,7 @@ const NDISMarketingGuide = () => {
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Ethical Marketing</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    NDIS marketing must prioritize participant welfare and maintain the highest ethical standards.
+                    NDIS marketing must prioritise participant welfare and maintain the highest ethical standards.
                   </p>
                   <ul className="text-sm space-y-1">
                     <li>• Transparent pricing and services</li>
@@ -193,7 +193,7 @@ const NDISMarketingGuide = () => {
           Effective NDIS marketing requires a strong digital foundation that builds trust, demonstrates compliance, and clearly communicates your value proposition to participants and their support networks.
         </p>
 
-        <h3>Website Optimization for NDIS Providers</h3>
+        <h3>Website optimisation for NDIS Providers</h3>
         <div className="space-y-6 mb-8">
           <Card className="p-6 border-l-4 border-l-blue-500">
             <h4 className="text-lg font-semibold mb-3">Essential Website Elements</h4>
@@ -222,7 +222,7 @@ const NDISMarketingGuide = () => {
           </Card>
         </div>
 
-        <h3>Search Engine Optimization (SEO) for NDIS Services</h3>
+        <h3>Search Engine optimisation (SEO) for NDIS Services</h3>
         <p>
           Participants and their families actively search for NDIS services online. Effective SEO ensures your services are discoverable when people need them most.
         </p>
@@ -290,7 +290,7 @@ const NDISMarketingGuide = () => {
         
         <ul className="space-y-2 mb-8">
           <li><strong>Person-Centered Language:</strong> Focus on the person, not the disability</li>
-          <li><strong>Outcome-Oriented:</strong> Emphasize independence, choice, and control</li>
+          <li><strong>Outcome-Oriented:</strong> emphasise independence, choice, and control</li>
           <li><strong>Strength-Based:</strong> Highlight capabilities and potential</li>
           <li><strong>Respectful Representation:</strong> Ensure dignity and respect in all content</li>
           <li><strong>Privacy Protection:</strong> Obtain proper consent for testimonials and stories</li>
@@ -341,7 +341,7 @@ const NDISMarketingGuide = () => {
             <p className="text-sm mb-2">Participants become aware of their eligibility and options:</p>
             <ul className="text-sm space-y-1">
               <li>• Educational content about NDIS services</li>
-              <li>• SEO-optimized service pages</li>
+              <li>• SEO-optimised service pages</li>
               <li>• Community workshops and information sessions</li>
               <li>• Referral partner education</li>
               <li>• Social media awareness campaigns</li>
@@ -366,7 +366,7 @@ const NDISMarketingGuide = () => {
             <ul className="text-sm space-y-1">
               <li>• Clear onboarding process information</li>
               <li>• Service agreement transparency</li>
-              <li>• Personalized service planning</li>
+              <li>• personalised service planning</li>
               <li>• Family and support network involvement</li>
               <li>• Trial periods and satisfaction guarantees</li>
             </ul>
@@ -393,7 +393,7 @@ const NDISMarketingGuide = () => {
           </Card>
           
           <Card className="p-6">
-            <h4 className="text-lg font-semibold mb-3">Community Organizations</h4>
+            <h4 className="text-lg font-semibold mb-3">Community organisations</h4>
             <ul className="text-sm space-y-1">
               <li>• Disability advocacy groups</li>
               <li>• Community health centers</li>
@@ -417,7 +417,7 @@ const NDISMarketingGuide = () => {
 
         <h2>Performance Measurement and Analytics</h2>
         <p>
-          Track marketing performance to optimize strategies and demonstrate ROI on marketing investments.
+          Track marketing performance to optimise strategies and demonstrate ROI on marketing investments.
         </p>
 
         <h3>Key Performance Indicators</h3>
@@ -515,10 +515,10 @@ const NDISMarketingGuide = () => {
         <h3>Emerging Trends and Opportunities</h3>
         <ul className="space-y-2 mb-8">
           <li><strong>Technology Integration:</strong> Telehealth, assistive technology, and digital platforms</li>
-          <li><strong>Personalization:</strong> Customized service delivery and individual participant journeys</li>
+          <li><strong>personalisation:</strong> customised service delivery and individual participant journeys</li>
           <li><strong>Community Integration:</strong> Mainstream service inclusion and social participation</li>
           <li><strong>Outcome Measurement:</strong> Data-driven service improvement and impact demonstration</li>
-          <li><strong>Market Specialization:</strong> Niche services for specific conditions or age groups</li>
+          <li><strong>Market specialisation:</strong> Niche services for specific conditions or age groups</li>
           <li><strong>Partnership Models:</strong> Collaborative service delivery and integrated care</li>
         </ul>
 
@@ -536,10 +536,10 @@ const NDISMarketingGuide = () => {
         </p>
 
         <p>
-         Success in NDIS marketing comes from consistency, authenticity, and genuine commitment to participant wellbeing. Focus on building long-term relationships rather than short-term transactions, and always prioritize participant choice, control, and independence in all your marketing activities.  <Link href='/'> <strong>Fractional CMO </strong> </Link>works with disability service providers to implement these strategies ethically and effectively, helping them build sustainable marketing systems that attract the right participants while upholding the highest NDIS practice standards.
+         Success in NDIS marketing comes from consistency, authenticity, and genuine commitment to participant wellbeing. Focus on building long-term relationships rather than short-term transactions, and always prioritise participant choice, control, and independence in all your marketing activities.  <Link href='/'> <strong>Fractional CMO </strong> </Link>works with disability service providers to implement these strategies ethically and effectively, helping them build sustainable marketing systems that attract the right participants while upholding the highest NDIS practice standards.
         </p>
 
-        <Citation source="NDIS Quarterly Report Q3 2024" url="https://www.ndis.gov.au/about-us/publications/quarterly-reports" title="The NDIS now supports over 610,000 participants with market growth of 12% annually, creating opportunities for providers who prioritize participant-centered marketing and service delivery." />
+        <Citation source="NDIS Quarterly Report Q3 2024" url="https://www.ndis.gov.au/about-us/publications/quarterly-reports" title="The NDIS now supports over 610,000 participants with market growth of 12% annually, creating opportunities for providers who prioritise participant-centered marketing and service delivery." />
 
     </OptimizedBlogLayout>
     </>;

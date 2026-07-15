@@ -42,7 +42,7 @@ export const metadata = createMetadata({
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/blog/b2b-lead-generation-hero.jpg`,
       width: 1200,
       height: 630,
-      alt: "B2B lead generation strategies and funnel optimization"
+      alt: "B2B lead generation strategies and funnel optimisation"
     }],
     publishedTime: "2024-12-31T00:00:00.000Z",
     modifiedTime: "2026-10-31T11:10:04.304Z",
@@ -130,7 +130,7 @@ const B2BLeadGeneration = () => {
       relatedArticles={relatedArticles.digitalMarketing}
       faqs={faqs}
       heroImage={'/images/blog/b2b-lead-generation-hero.jpg'}
-      heroAlt="B2B lead generation strategies and funnel optimization"
+      heroAlt="B2B lead generation strategies and funnel optimisation"
     >
       <p className="text-xl text-muted-foreground leading-relaxed mb-8">
         Transform your business growth with proven B2B lead generation strategies. Learn how to attract, nurture,
@@ -233,7 +233,7 @@ const B2BLeadGeneration = () => {
               <li>Case studies and success stories</li>
               <li>Educational blog posts and guides</li>
               <li>Webinars and video content</li>
-              <li>Infographics and data visualizations</li>
+              <li>Infographics and data visualisations</li>
             </ul>
           </CardContent>
         </Card>
@@ -245,7 +245,7 @@ const B2BLeadGeneration = () => {
               Leverage LinkedIn's professional network to connect with decision-makers and build relationships.
             </p>
             <ul className="space-y-2 text-sm list-disc list-inside">
-              <li>Optimize company and personal profiles</li>
+              <li>optimise company and personal profiles</li>
               <li>Share valuable content regularly</li>
               <li>Engage with prospects' posts</li>
               <li>Use LinkedIn Sales Navigator</li>
@@ -263,9 +263,9 @@ const B2BLeadGeneration = () => {
             <ul className="space-y-2 text-sm list-disc list-inside">
               <li>Segmented email lists</li>
               <li>Drip campaigns and sequences</li>
-              <li>Personalized messaging</li>
+              <li>personalised messaging</li>
               <li>Lead scoring integration</li>
-              <li>A/B testing optimization</li>
+              <li>A/B testing optimisation</li>
             </ul>
           </CardContent>
         </Card>
@@ -274,12 +274,12 @@ const B2BLeadGeneration = () => {
           <CardContent className="p-6">
             <h3 className="text-xl font-semibold mb-4">4. Account-Based Marketing (ABM)</h3>
             <p className="mb-4">
-              Target specific high-value accounts with personalized marketing campaigns.
+              Target specific high-value accounts with personalised marketing campaigns.
             </p>
             <ul className="space-y-2 text-sm list-disc list-inside">
               <li>Identify target accounts</li>
               <li>Research decision-makers</li>
-              <li>Create personalized content</li>
+              <li>Create personalised content</li>
               <li>Multi-channel engagement</li>
               <li>Sales and marketing alignment</li>
             </ul>
@@ -298,7 +298,7 @@ const B2BLeadGeneration = () => {
         <CardContent className="p-6">
           <h3 className="text-xl font-semibold mb-4">Strategic ABM Framework</h3>
           <p className="mb-4">
-            Account-Based Marketing targets high-value accounts with personalized campaigns, delivering 208% higher marketing ROI than traditional approaches.
+            Account-Based Marketing targets high-value accounts with personalised campaigns, delivering 208% higher marketing ROI than traditional approaches.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div>
@@ -308,14 +308,14 @@ const B2BLeadGeneration = () => {
                 <li>Identify decision-makers</li>
                 <li>Research account needs</li>
                 <li>Score account fit and intent</li>
-                <li>Prioritize target accounts</li>
+                <li>prioritise target accounts</li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-3 text-red-900">Personalization</h4>
+              <h4 className="font-semibold mb-3 text-red-900">personalisation</h4>
               <ul className="space-y-2 text-sm list-disc list-inside">
                 <li>Custom content for each account</li>
-                <li>Personalized messaging</li>
+                <li>personalised messaging</li>
                 <li>Account-specific landing pages</li>
                 <li>Tailored email campaigns</li>
                 <li>Industry-relevant case studies</li>
@@ -373,7 +373,7 @@ const B2BLeadGeneration = () => {
           <CardContent className="p-6">
             <h3 className="text-xl font-semibold mb-4">Lead Scoring Models</h3>
             <p className="mb-4">
-              Implement data-driven lead scoring to prioritize sales efforts on the most qualified prospects.
+              Implement data-driven lead scoring to prioritise sales efforts on the most qualified prospects.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-blue-50 p-4 rounded">
@@ -470,7 +470,7 @@ const B2BLeadGeneration = () => {
               <div>
                 <h4 className="font-semibold mb-2 text-primary">Email Marketing</h4>
                 <ul className="space-y-1 text-sm list-disc list-inside">
-                  <li>Personalized cold outreach</li>
+                  <li>personalised cold outreach</li>
                   <li>Newsletter campaigns</li>
                   <li>Drip campaigns</li>
                   <li>Re-engagement sequences</li>
@@ -550,9 +550,9 @@ const B2BLeadGeneration = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-3 text-blue-900">Optimization Tools</h4>
+              <h4 className="font-semibold mb-3 text-blue-900">optimisation Tools</h4>
               <ul className="space-y-2 text-sm">
-                <li><strong>A/B Testing:</strong> Optimizely, VWO</li>
+                <li><strong>A/B Testing:</strong> optimisely, VWO</li>
                 <li><strong>Chat:</strong> Drift, Intercom</li>
                 <li><strong>Reporting:</strong> Databox, Tableau</li>
                 <li><strong>SEO:</strong> SEMrush, Ahrefs</li>
@@ -637,7 +637,7 @@ const B2BLeadGeneration = () => {
             </p>
             <ul className="space-y-2 text-sm list-disc list-inside">
               <li>Product-led growth strategies</li>
-              <li>Free trial optimization</li>
+              <li>Free trial optimisation</li>
               <li>In-app messaging and onboarding</li>
               <li>Technical content (documentation, APIs)</li>
               <li>Developer community building</li>
@@ -658,7 +658,7 @@ const B2BLeadGeneration = () => {
               <li>Speaking engagements</li>
               <li>Case study showcases</li>
               <li>Professional network building</li>
-              <li>Referral program optimization</li>
+              <li>Referral program optimisation</li>
             </ul>
           </CardContent>
         </Card>
@@ -713,10 +713,10 @@ const B2BLeadGeneration = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-2">Phase 2: Scale (Months 4-6)</h4>
-              <p className="text-sm">Launch multi-channel campaigns, implement lead scoring, start ABM program, optimize conversion paths</p>
+              <p className="text-sm">Launch multi-channel campaigns, implement lead scoring, start ABM program, optimise conversion paths</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">Phase 3: Optimize (Months 7-12)</h4>
+              <h4 className="font-semibold mb-2">Phase 3: optimise (Months 7-12)</h4>
               <p className="text-sm">Refine based on data, expand successful channels, implement advanced attribution, scale what works</p>
             </div>
             <div>

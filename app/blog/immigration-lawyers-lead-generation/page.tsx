@@ -48,7 +48,7 @@ const ImmigrationLawyersLeadGeneration = () => {
 
   const faqs = [{
     question: "What are the most effective lead generation channels for immigration lawyers?",
-    answer: "The most effective channels are Google Ads for immediate visibility, SEO for long-term organic traffic, and referral partnerships with accountants and community organizations. Content marketing through visa-specific guides and webinars also drives quality leads. A diversified approach combining paid search, organic content, and professional referrals typically delivers the best results for immigration practices."
+    answer: "The most effective channels are Google Ads for immediate visibility, SEO for long-term organic traffic, and referral partnerships with accountants and community organisations. Content marketing through visa-specific guides and webinars also drives quality leads. A diversified approach combining paid search, organic content, and professional referrals typically delivers the best results for immigration practices."
   }, {
     question: "How long does it take to see results from immigration lawyer lead generation?",
     answer: "Google Ads can generate leads within days of launching campaigns. SEO typically takes 3-6 months to build momentum and deliver consistent organic traffic. Referral partnerships require 6-12 months of relationship building to generate steady appointment flow. Most immigration practices see meaningful results within 90 days when implementing a comprehensive multi-channel strategy."

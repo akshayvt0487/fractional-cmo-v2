@@ -414,7 +414,7 @@ const ConveyancingSocialMedia = () => {
         </p>
 
         <p>
-          Remember that social media is about social connection first and business development second. By prioritizing value creation and authentic engagement, you&apos;ll naturally attract the right clients who appreciate your expertise and approach to conveyancing services.
+          Remember that social media is about social connection first and business development second. By prioritising value creation and authentic engagement, you&apos;ll naturally attract the right clients who appreciate your expertise and approach to conveyancing services.
         </p>
 
         <Citation source="Social Media Examiner Legal Industry Report 2024" url="https://www.socialmediaexaminer.com" title="Legal professionals using social media report 45% higher client satisfaction rates and 38% more referral business compared to those without social media presence." />

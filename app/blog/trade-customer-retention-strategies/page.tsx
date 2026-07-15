@@ -98,7 +98,7 @@ const TradeCustomerRetention = () => {
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           Acquiring new customers costs 5-25 times more than retaining existing ones. This comprehensive 
           guide reveals proven strategies for building lasting relationships with trade customers, 
-          maximizing lifetime value, and creating a loyal client base that drives sustainable growth.
+          maximising lifetime value, and creating a loyal client base that drives sustainable growth.
         </p>
 
         <div className="grid md:grid-cols-4 gap-6 mb-8">

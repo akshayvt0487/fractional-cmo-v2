@@ -172,7 +172,7 @@ const CarInspectionMarketing = () => {
               <div>
                 <h4 className="font-semibold mb-3 text-indigo-700">Conversion Features</h4>
                 <ul className="space-y-2 text-sm">
-                  <li>📱 <strong>Mobile optimization</strong> - Many clients search on phones</li>
+                  <li>📱 <strong>Mobile optimisation</strong> - Many clients search on phones</li>
                   <li>📞 <strong>Click-to-call buttons</strong> - Immediate contact option</li>
                   <li>📅 <strong>Online booking</strong> - Convenient scheduling</li>
                   <li>💬 <strong>Live chat</strong> - Instant question answering</li>
@@ -194,7 +194,7 @@ const CarInspectionMarketing = () => {
             <h3 className="text-xl font-semibold mb-4">Essential Local SEO Strategies</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold text-primary mb-3">Google Business Profile Optimization</h4>
+                <h4 className="font-semibold text-primary mb-3">Google Business Profile optimisation</h4>
                 <ul className="space-y-2 text-sm">
                   <li>• Complete all profile sections with accurate information</li>
                   <li>• Use high-quality photos of inspection process</li>
@@ -232,7 +232,7 @@ const CarInspectionMarketing = () => {
               <ul className="space-y-2 text-sm">
                 <li>🎓 <strong>Certifications:</strong> Display automotive inspection credentials</li>
                 <li>🏆 <strong>Experience:</strong> Years in automotive industry</li>
-                <li>🔧 <strong>Technical skills:</strong> Specialized equipment knowledge</li>
+                <li>🔧 <strong>Technical skills:</strong> specialised equipment knowledge</li>
                 <li>📜 <strong>Insurance:</strong> Professional liability coverage</li>
                 <li>🏢 <strong>Industry associations:</strong> Professional memberships</li>
               </ul>
@@ -258,7 +258,7 @@ const CarInspectionMarketing = () => {
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
           &quot;A comprehensive car inspection can save buyers thousands of dollars in unexpected repairs. 
-          Our marketing should emphasize the value of professional assessment in major purchase decisions.&quot;
+          Our marketing should emphasise the value of professional assessment in major purchase decisions.&quot;
           <footer className="text-sm mt-2">— Industry Best Practice</footer>
         </blockquote>
 

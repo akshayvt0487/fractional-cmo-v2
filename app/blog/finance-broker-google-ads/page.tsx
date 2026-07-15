@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   },
 
   title: "Finance Broker PPC Guide | Google Ads Strategy 2026",
-  description: "Step-by-step Google Ads blueprint for finance brokers: plan campaigns, target local and high-intent keywords, optimize ads, and maximize conversions.",
+  description: "Step-by-step Google Ads blueprint for finance brokers: plan campaigns, target local and high-intent keywords, optimise ads, and maximise conversions.",
   path: "/blog/finance-broker-google-ads",
   keywords: ["finance brokers", "Google Ads", "PPC", "mortgage advertising", "broker advertising", "paid search"],
   openGraph: {
@@ -197,7 +197,7 @@ const FinanceBrokerGoogleAds = () => {
 
       <Card className="mb-8">
         <CardHeader>
-          <CardTitle>Recommended Campaign Organization</CardTitle>
+          <CardTitle>Recommended Campaign organisation</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div>

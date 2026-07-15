@@ -56,7 +56,7 @@ const NDISWebDesign = () => {
 
   const articleData = {
     headline: "NDIS Website Design That Converts: Complete Guide for Disability Service Providers",
-    description: "Master NDIS website design with accessibility-first principles, conversion optimization, and participant-centered user experiences that build trust and drive inquiries.",
+    description: "Master NDIS website design with accessibility-first principles, conversion optimisation, and participant-centered user experiences that build trust and drive inquiries.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-03-20T00:00:00.000Z",
@@ -64,7 +64,7 @@ const NDISWebDesign = () => {
     imageUrl: "/images/blog/ndis-web-design-hero.jpg",
     category: "NDIS Marketing",
     readTime: "26 min read",
-    tags: ["NDIS", "Web Design", "Accessibility", "User Experience", "Conversion Optimization"]
+    tags: ["NDIS", "Web Design", "Accessibility", "User Experience", "Conversion optimisation"]
   };
 
   const blogPostingSchema = generateBlogPostingSchema({
@@ -268,7 +268,7 @@ const NDISWebDesign = () => {
         </CardContent>
       </Card>
 
-      <h2>Contact and Conversion Optimization</h2>
+      <h2>Contact and Conversion optimisation</h2>
       
       <div className="grid md:grid-cols-2 gap-8 mb-8">
         <Card>
@@ -332,13 +332,13 @@ const NDISWebDesign = () => {
       
       <Card className="mb-8 bg-blue-50 border-blue-200">
         <CardContent className="p-6">
-          <h3 className="font-semibold mb-3 text-blue-900">Mobile Optimization Checklist</h3>
+          <h3 className="font-semibold mb-3 text-blue-900">Mobile optimisation Checklist</h3>
           <div className="grid md:grid-cols-3 gap-4">
             <div>
               <h4 className="font-semibold text-blue-800 mb-2">Performance</h4>
               <ul className="space-y-1 text-sm text-blue-700">
                 <li>• Page load under 3 seconds</li>
-                <li>• Optimized images and videos</li>
+                <li>• optimised images and videos</li>
                 <li>• Minimal JavaScript loading</li>
                 <li>• Compressed file sizes</li>
               </ul>
@@ -357,7 +357,7 @@ const NDISWebDesign = () => {
               <ul className="space-y-1 text-sm text-blue-700">
                 <li>• Click-to-call phone numbers</li>
                 <li>• GPS-enabled location services</li>
-                <li>• Mobile form optimization</li>
+                <li>• Mobile form optimisation</li>
                 <li>• Offline content access</li>
               </ul>
             </div>
@@ -367,7 +367,7 @@ const NDISWebDesign = () => {
 
       <h2>SEO for NDIS Websites</h2>
       
-      <h3>Local Search Optimization</h3>
+      <h3>Local Search optimisation</h3>
       <ul>
         <li><strong>Google My Business:</strong> Complete profile with NDIS services listed</li>
         <li><strong>Local Keywords:</strong> &quot;NDIS provider [location]&quot;, &quot;disability services [suburb]&quot;</li>
@@ -395,7 +395,7 @@ const NDISWebDesign = () => {
               <li>• Mobile usability scores</li>
               <li>• Accessibility compliance rating</li>
               <li>• User engagement time</li>
-              <li>• Bounce rate optimization</li>
+              <li>• Bounce rate optimisation</li>
             </ul>
           </CardContent>
         </Card>

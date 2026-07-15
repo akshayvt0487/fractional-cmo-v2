@@ -27,7 +27,7 @@ export const metadata = createMetadata({
       url: "/images/blog/cyber-security-google-ads.jpg",
       width: 1200,
       height: 630,
-      alt: "Effective Google Ads strategy for cyber security companies - proven PPC tactics and optimization"
+      alt: "Effective Google Ads strategy for cyber security companies - proven PPC tactics and optimisation"
     }],
     publishedTime: "2024-01-15T00:00:00.000Z",
     modifiedTime: "2026-10-31T11:10:04.569Z",
@@ -54,7 +54,7 @@ const CyberSecurityGoogleAds = () => {
 
   const articleData = {
     headline: "Google Ads Strategy for Cyber Security Businesses: Complete Guide to High-Converting Campaigns",
-    description: "Master Google Ads for cyber security companies. Proven strategies, targeting techniques & optimization methods for quality leads.",
+    description: "Master Google Ads for cyber security companies. Proven strategies, targeting techniques & optimisation methods for quality leads.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-01-15T00:00:00.000Z",
@@ -96,7 +96,7 @@ const CyberSecurityGoogleAds = () => {
     />
     <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage="/images/blog/cyber-security-google-ads.jpg" heroAlt="Google Ads strategy for cyber security businesses">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-          🔒 Cyber security companies leveraging strategic Google Ads campaigns see 300% higher lead generation rates and 40% lower customer acquisition costs compared to traditional marketing methods. This comprehensive guide reveals the proven strategies, targeting techniques, and optimization methods that top cyber security firms use to dominate search results and capture high-value enterprise clients.
+          🔒 Cyber security companies leveraging strategic Google Ads campaigns see 300% higher lead generation rates and 40% lower customer acquisition costs compared to traditional marketing methods. This comprehensive guide reveals the proven strategies, targeting techniques, and optimisation methods that top cyber security firms use to dominate search results and capture high-value enterprise clients.
         </p>
 
         <Card className="p-6 mb-8 bg-gradient-to-r from-red-50 to-orange-50 border-red-200">
@@ -152,7 +152,7 @@ const CyberSecurityGoogleAds = () => {
         <h2 className="text-3xl font-bold mb-6">Campaign Structure for Maximum ROI</h2>
         
         <p className="mb-6">
-          Effective cyber security Google Ads require specialized campaign structures that separate urgent incident response from long-term security planning, enabling precise budget allocation and message targeting.
+          Effective cyber security Google Ads require specialised campaign structures that separate urgent incident response from long-term security planning, enabling precise budget allocation and message targeting.
         </p>
 
         <Card className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
@@ -164,7 +164,7 @@ const CyberSecurityGoogleAds = () => {
                 <ul className="text-sm space-y-2 text-blue-600">
                   <li>• High-urgency keywords</li>
                   <li>• 24/7 scheduling</li>
-                  <li>• Mobile-optimized ads</li>
+                  <li>• Mobile-optimised ads</li>
                   <li>• Immediate contact CTAs</li>
                   <li>• Higher bid strategies</li>
                 </ul>
@@ -305,7 +305,7 @@ const CyberSecurityGoogleAds = () => {
           </Card>
         </div>
 
-        <h2 className="text-3xl font-bold mb-6">Landing Page Optimization for Cyber Security</h2>
+        <h2 className="text-3xl font-bold mb-6">Landing Page optimisation for Cyber Security</h2>
         
         <p className="mb-6">
           Cyber security landing pages must balance technical credibility with clear value propositions. Your prospects are often stressed (if dealing with an incident) or overwhelmed (if researching preventive solutions).
@@ -398,7 +398,7 @@ const CyberSecurityGoogleAds = () => {
               <div>
                 <h4 className="font-semibold text-green-700 mb-3">Educational Keywords</h4>
                 <ul className="text-sm space-y-2 text-green-600">
-                  <li>• <strong>Strategy:</strong> Maximize conversions</li>
+                  <li>• <strong>Strategy:</strong> maximise conversions</li>
                   <li>• <strong>Budget:</strong> Lower allocation (20%)</li>
                   <li>• <strong>Schedule:</strong> Extended hours</li>
                   <li>• <strong>Devices:</strong> All device types</li>
@@ -506,12 +506,12 @@ const CyberSecurityGoogleAds = () => {
           </CardContent>
         </Card>
 
-        <h2 className="text-3xl font-bold mb-6">Performance Optimization Tactics</h2>
+        <h2 className="text-3xl font-bold mb-6">Performance optimisation Tactics</h2>
         
         <div className="space-y-6 mb-8">
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Daily Optimization Checklist</h3>
+              <h3 className="text-xl font-semibold mb-4">Daily optimisation Checklist</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold mb-2">Morning Reviews (High Priority)</h4>
@@ -547,7 +547,7 @@ const CyberSecurityGoogleAds = () => {
                     <li>• Campaign-level ROI analysis</li>
                     <li>• Keyword performance trends</li>
                     <li>• Ad copy A/B test results</li>
-                    <li>• Audience insights and optimization</li>
+                    <li>• Audience insights and optimisation</li>
                     <li>• Conversion path analysis</li>
                   </ul>
                 </div>
@@ -555,9 +555,9 @@ const CyberSecurityGoogleAds = () => {
                   <h4 className="font-semibold mb-2">Strategic Adjustments</h4>
                   <ul className="text-sm space-y-1">
                     <li>• Budget reallocation based on performance</li>
-                    <li>• Bid strategy optimization</li>
+                    <li>• Bid strategy optimisation</li>
                     <li>• New keyword expansion opportunities</li>
-                    <li>• Landing page optimization priorities</li>
+                    <li>• Landing page optimisation priorities</li>
                     <li>• Competitor analysis and responses</li>
                   </ul>
                 </div>

@@ -537,9 +537,9 @@ const ConstructionLeadGeneration = () => {
           </CardContent>
         </Card>
 
-        <h2>Measuring and Optimizing Lead Generation Results</h2>
+        <h2>Measuring and optimising Lead Generation Results</h2>
         <p>
-          Successful construction marketing requires continuous measurement and optimization. Track these key metrics to understand what&apos;s driving the best results for your business.
+          Successful construction marketing requires continuous measurement and optimisation. Track these key metrics to understand what&apos;s driving the best results for your business.
         </p>
 
         <h3>Essential Construction Marketing Metrics</h3>
@@ -598,7 +598,7 @@ const ConstructionLeadGeneration = () => {
             <div>
               <h4 className="font-semibold text-blue-700 mb-2">Months 1-2: Foundation</h4>
               <ul className="space-y-1 text-sm text-blue-600">
-                <li>• Optimize Google Business Profile and local citations</li>
+                <li>• optimise Google Business Profile and local citations</li>
                 <li>• Set up conversion tracking and analytics</li>
                 <li>• Create core service landing pages</li>
                 <li>• Implement review generation system</li>
@@ -613,14 +613,14 @@ const ConstructionLeadGeneration = () => {
                 <li>• Develop video content library</li>
                 <li>• Begin social media marketing</li>
                 <li>• Create email nurture sequences</li>
-                <li>• Optimize website for conversions</li>
+                <li>• optimise website for conversions</li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-semibold text-purple-700 mb-2">Months 5-6: Optimization</h4>
+              <h4 className="font-semibold text-purple-700 mb-2">Months 5-6: optimisation</h4>
               <ul className="space-y-1 text-sm text-purple-600">
-                <li>• Analyze performance data and optimize</li>
+                <li>• analyse performance data and optimise</li>
                 <li>• Expand highest-performing campaigns</li>
                 <li>• Develop strategic partnerships</li>
                 <li>• Create advanced content assets</li>

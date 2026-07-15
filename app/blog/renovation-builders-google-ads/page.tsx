@@ -17,12 +17,12 @@ export const metadata = createMetadata({
   },
 
   title: "Google Ads for Renovation Builders: Complete PPC Strategy Guide 2026",
-  description: "Master Google Ads for renovation builders: keyword research, campaign setup, ad copy optimization, and conversion tactics to attract homeowners ready to renovate.",
+  description: "Master Google Ads for renovation builders: keyword research, campaign setup, ad copy optimisation, and conversion tactics to attract homeowners ready to renovate.",
   path: "/blog/renovation-builders-google-ads",
   keywords: ["renovation builders google ads", "home renovation advertising", "google ads for builders", "renovation ppc", "renovation contractor advertising"],
   openGraph: {
     title: "Google Ads for Renovation Builders: Complete PPC Strategy Guide 2026",
-    description: "Master Google Ads for renovation builders: keyword research, campaign setup, ad copy optimization, and conversion tactics to attract homeowners ready to renovate.",
+    description: "Master Google Ads for renovation builders: keyword research, campaign setup, ad copy optimisation, and conversion tactics to attract homeowners ready to renovate.",
     url: "https://fractional-cmo.com.au/blog/renovation-builders-google-ads",
     siteName: "Fractional CMO",
     type: "article",
@@ -39,7 +39,7 @@ export const metadata = createMetadata({
   twitter: {
     card: "summary_large_image",
     title: "Renovation Builders Google Ads Strategy",
-    description: "Master Google Ads for renovation builders with proven PPC strategies and campaign optimization tactics.",
+    description: "Master Google Ads for renovation builders with proven PPC strategies and campaign optimisation tactics.",
     images: ["https://fractional-cmo.com.au/images/blog/renovation-builders-google-ads-hero.jpg"],
     site: "@FractionalCMO"
   }
@@ -58,7 +58,7 @@ const RenovationBuildersGoogleAds = () => {
 
   const articleData = {
     headline: "Google Ads for Renovation Builders: Complete PPC Strategy Guide 2026",
-    description: "Master Google Ads for renovation builders: keyword research, campaign setup, ad copy optimization, and conversion tactics to attract homeowners ready to renovate.",
+    description: "Master Google Ads for renovation builders: keyword research, campaign setup, ad copy optimisation, and conversion tactics to attract homeowners ready to renovate.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-02-11",
@@ -104,7 +104,7 @@ const RenovationBuildersGoogleAds = () => {
       relatedArticles={relatedArticles.tradies}
       faqs={faqs}
       heroImage={'/images/blog/renovation-builders-google-ads-hero.jpg'}
-      heroAlt="Renovation builders Google Ads strategies and campaign optimization"
+      heroAlt="Renovation builders Google Ads strategies and campaign optimisation"
     >
       <p className="text-xl text-muted-foreground leading-relaxed mb-8">
         Google Ads offers renovation builders the fastest path to connecting with homeowners actively planning kitchen renovations, bathroom remodels, home extensions, and complete property transformations. Unlike traditional marketing that casts wide nets, Google Ads puts your renovation business directly in front of motivated prospects precisely when they're searching for builders, comparing quotes, and ready to invest significant money into transforming their homes. This comprehensive guide reveals proven strategies Australian renovation builders use to generate consistent high-value project leads through strategic PPC campaigns.
@@ -309,7 +309,7 @@ const RenovationBuildersGoogleAds = () => {
                       <li>• "renovation contractor [city]" - Professional service search</li>
                       <li>• "licensed renovation builder" - Quality-focused prospects</li>
                       <li>• "renovation company [area]" - Business service seeking</li>
-                      <li>• "home renovation specialists" - Expertise prioritization</li>
+                      <li>• "home renovation specialists" - Expertise prioritisation</li>
                       <li>• "renovation builder reviews [suburb]" - Due diligence phase</li>
                       <li>• "best renovation builder [city]" - Quality comparison</li>
                     </ul>
@@ -331,7 +331,7 @@ const RenovationBuildersGoogleAds = () => {
                     </p>
                     <ul className="text-sm space-y-1 ml-4">
                       <li>• "victorian home renovation specialists" - Style-specific expertise</li>
-                      <li>• "heritage house renovation builder" - Specialized capabilities</li>
+                      <li>• "heritage house renovation builder" - specialised capabilities</li>
                       <li>• "eco friendly home renovation" - Values-aligned targeting</li>
                       <li>• "renovation builder payment plans" - Budget flexibility</li>
                       <li>• "renovation while living in house" - Specific constraint</li>
@@ -373,11 +373,11 @@ const RenovationBuildersGoogleAds = () => {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Campaign Structure and Organization</h2>
+          <h2 className="text-3xl font-bold mb-6">Campaign Structure and organisation</h2>
 
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
-              Well-organized campaign structures enable precise budget control, accurate performance tracking, and effective optimization across different renovation services and geographic areas:
+              Well-organised campaign structures enable precise budget control, accurate performance tracking, and effective optimisation across different renovation services and geographic areas:
             </p>
           </div>
 
@@ -385,7 +385,7 @@ const RenovationBuildersGoogleAds = () => {
             <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
               <CardHeader>
                 <CardTitle className="text-blue-700">Service-Based Campaign Segmentation</CardTitle>
-                <CardDescription>Organize campaigns by renovation type for granular control</CardDescription>
+                <CardDescription>organise campaigns by renovation type for granular control</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -450,7 +450,7 @@ const RenovationBuildersGoogleAds = () => {
                       <li>• Radius targeting: Circular service areas from office</li>
                       <li>• Postal code targeting: Specific suburb selection</li>
                       <li>• Exclude low-value areas outside profitable zones</li>
-                      <li>• Monitor performance by location for optimization</li>
+                      <li>• Monitor performance by location for optimisation</li>
                     </ul>
                   </div>
                 </div>
@@ -582,7 +582,7 @@ const RenovationBuildersGoogleAds = () => {
                     <p className="font-semibold text-emerald-600 mb-1">Bathroom Renovation Experts - [City]</p>
                     <p className="text-sm mb-2">Beautiful Bathrooms, Hassle-Free Process | Master Builders Association</p>
                     <p className="text-sm text-muted-foreground mb-2">
-                      Bathroom specialists since 2008. Complete project management, quality trades, stunning results. Free quote + 3D design visualization.
+                      Bathroom specialists since 2008. Complete project management, quality trades, stunning results. Free quote + 3D design visualisation.
                     </p>
                     <p className="text-xs text-green-700">✓ Design Service ✓ Fixed Pricing ✓ 200+ Projects Completed</p>
                   </div>
@@ -634,7 +634,7 @@ const RenovationBuildersGoogleAds = () => {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Landing Page Optimization for Maximum Conversions</h2>
+          <h2 className="text-3xl font-bold mb-6">Landing Page optimisation for Maximum Conversions</h2>
 
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
@@ -674,7 +674,7 @@ const RenovationBuildersGoogleAds = () => {
                     <h4 className="font-semibold mb-2 mt-4">Visual Portfolio Showcase</h4>
                     <ul className="text-sm space-y-1 ml-4">
                       <li>• High-quality before/after image sliders</li>
-                      <li>• Project galleries organized by room type</li>
+                      <li>• Project galleries organised by room type</li>
                       <li>• Video testimonials from satisfied clients</li>
                       <li>• Time-lapse renovation videos</li>
                       <li>• 3D rendering examples</li>
@@ -692,7 +692,7 @@ const RenovationBuildersGoogleAds = () => {
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold mb-2">Form Field Optimization</h4>
+                    <h4 className="font-semibold mb-2">Form Field optimisation</h4>
                     <ul className="text-sm space-y-1 ml-4">
                       <li>• Name and contact details (email, phone)</li>
                       <li>• Project type dropdown (kitchen, bathroom, extension)</li>
@@ -761,7 +761,7 @@ const RenovationBuildersGoogleAds = () => {
 
             <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200">
               <CardHeader>
-                <CardTitle className="text-purple-700">Mobile Landing Page Optimization</CardTitle>
+                <CardTitle className="text-purple-700">Mobile Landing Page optimisation</CardTitle>
                 <CardDescription>60%+ of traffic comes from mobile devices</CardDescription>
               </CardHeader>
               <CardContent>
@@ -773,12 +773,12 @@ const RenovationBuildersGoogleAds = () => {
                       <li>• Large, thumb-friendly tap targets</li>
                       <li>• Simplified forms with minimal fields</li>
                       <li>• Prominent click-to-call button</li>
-                      <li>• Vertical image galleries optimized for scrolling</li>
+                      <li>• Vertical image galleries optimised for scrolling</li>
                       <li>• Sticky contact bar at bottom of screen</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 mt-4">Mobile Conversion Optimization</h4>
+                    <h4 className="font-semibold mb-2 mt-4">Mobile Conversion optimisation</h4>
                     <ul className="text-sm space-y-1 ml-4">
                       <li>• Auto-fill contact fields when possible</li>
                       <li>• SMS option for quick communication</li>
@@ -798,7 +798,7 @@ const RenovationBuildersGoogleAds = () => {
 
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
-              Strategic bidding determines your campaign profitability. Balance visibility, lead volume, and cost-per-acquisition to maximize return on advertising investment:
+              Strategic bidding determines your campaign profitability. Balance visibility, lead volume, and cost-per-acquisition to maximise return on advertising investment:
             </p>
           </div>
 
@@ -823,12 +823,12 @@ const RenovationBuildersGoogleAds = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 mt-4">Maximize Conversions (Established Campaigns)</h4>
+                    <h4 className="font-semibold mb-2 mt-4">maximise Conversions (Established Campaigns)</h4>
                     <p className="text-sm text-muted-foreground mb-2">
                       Switch to automated bidding once campaigns have 30+ conversions monthly:
                     </p>
                     <ul className="text-sm space-y-1 ml-4">
-                      <li>• Google's AI optimizes bids for conversion volume</li>
+                      <li>• Google's AI optimises bids for conversion volume</li>
                       <li>• Works within your daily budget constraints</li>
                       <li>• Responds to real-time auction dynamics</li>
                       <li>• Best for campaigns with consistent conversion data</li>
@@ -841,7 +841,7 @@ const RenovationBuildersGoogleAds = () => {
                     </p>
                     <ul className="text-sm space-y-1 ml-4">
                       <li>• Set target cost per quote request</li>
-                      <li>• Google optimizes bids to hit CPA goal</li>
+                      <li>• Google optimises bids to hit CPA goal</li>
                       <li>• Requires 50+ conversions in 30 days</li>
                       <li>• Balances volume and efficiency</li>
                     </ul>
@@ -901,7 +901,7 @@ const RenovationBuildersGoogleAds = () => {
 
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
-              Accurate conversion tracking separates profitable campaigns from budget drains. Implement comprehensive tracking to understand true campaign performance and optimize for maximum ROI:
+              Accurate conversion tracking separates profitable campaigns from budget drains. Implement comprehensive tracking to understand true campaign performance and optimise for maximum ROI:
             </p>
           </div>
 
@@ -996,7 +996,7 @@ const RenovationBuildersGoogleAds = () => {
         <section className="my-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
           <h3 className="text-2xl font-bold mb-4">Ready to Scale Your Renovation Business with Google Ads?</h3>
           <p className="mb-6 text-muted-foreground">
-            Google Ads provides renovation builders with direct access to homeowners actively planning kitchen renovations, bathroom remodels, and home extensions. Whether you're launching your first campaign or optimizing existing efforts, our <Link href="/services/google-ads" className="text-blue-600 font-semibold hover:underline">Google Ads management services</Link> are designed specifically for Australian renovation builders.
+            Google Ads provides renovation builders with direct access to homeowners actively planning kitchen renovations, bathroom remodels, and home extensions. Whether you're launching your first campaign or optimising existing efforts, our <Link href="/services/google-ads" className="text-blue-600 font-semibold hover:underline">Google Ads management services</Link> are designed specifically for Australian renovation builders.
           </p>
           <p className="mb-6 text-muted-foreground">
             Explore our other renovation builder marketing services:

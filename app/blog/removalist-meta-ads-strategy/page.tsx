@@ -59,7 +59,7 @@ const faqs = [{
   answer: "Use both through automatic placements. Facebook performs better for lead generation, while Instagram works well for brand awareness and visual content showcasing your moving services."
 }, {
   question: "How long before seeing results from Meta ads?",
-  answer: "Initial data within 3-7 days, meaningful optimization after 2-3 weeks, and stable performance after 4-6 weeks of consistent running and optimization."
+  answer: "Initial data within 3-7 days, meaningful optimisation after 2-3 weeks, and stable performance after 4-6 weeks of consistent running and optimisation."
 }, {
   question: "What's the best campaign objective for removalist leads?",
   answer: "Use 'Lead Generation' for form fills, 'Conversions' for website bookings, and 'Traffic' for awareness campaigns. Lead Generation typically performs best for service businesses."
@@ -69,7 +69,7 @@ const RemovalistMetaAdsStrategy = () => {
   if (!post) throw new Error("Blog post not found: removalist-meta-ads-strategy");
   const articleData = {
       headline: "Meta Ads for Removalists: Complete Facebook Marketing Guide for Moving Companies",
-      description: "Master Facebook and Instagram advertising for your removalist business. Learn audience targeting, campaign optimization, conversion tracking, and retargeting strategies to generate quality moving leads.",
+      description: "Master Facebook and Instagram advertising for your removalist business. Learn audience targeting, campaign optimisation, conversion tracking, and retargeting strategies to generate quality moving leads.",
       author: "Basheer Padanna",
       publishedDate: convertDateFormat(post.date),
       modifiedDate: "2024-12-18",
@@ -590,7 +590,7 @@ fbq('track', 'PageView');
               </div>
               
               <div className="space-y-2">
-                <h5 className="font-medium">Specialized Services:</h5>
+                <h5 className="font-medium">specialised Services:</h5>
                 <ul className="text-sm space-y-1">
                   <li>• Office Relocations</li>
                   <li>• Piano Moving</li>
@@ -605,8 +605,8 @@ fbq('track', 'PageView');
               <ul className="text-sm space-y-1">
                 <li>• Show specific services viewed</li>
                 <li>• Include real-time pricing</li>
-                <li>• Personalized offers based on interest</li>
-                <li>• Automated creative optimization</li>
+                <li>• personalised offers based on interest</li>
+                <li>• Automated creative optimisation</li>
               </ul>
             </div>
           </CardContent>
@@ -615,7 +615,7 @@ fbq('track', 'PageView');
         <h3 className="text-2xl font-semibold mb-4">Email List Retargeting</h3>
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h4 className="font-semibold mb-3">Customer Data Utilization:</h4>
+            <h4 className="font-semibold mb-3">Customer Data utilisation:</h4>
             <div className="space-y-3">
               <div className="bg-muted/30 p-3 rounded">
                 <p><strong>Existing Customers:</strong> Cross-sell storage, packing, or future moves</p>
@@ -642,7 +642,7 @@ fbq('track', 'PageView');
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Performance Monitoring & Optimization</h2>
+        <h2 className="text-3xl font-bold mb-6">Performance Monitoring & optimisation</h2>
         
         <h3 className="text-2xl font-semibold mb-4">Key Performance Indicators (KPIs)</h3>
         <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -671,10 +671,10 @@ fbq('track', 'PageView');
           </Card>
         </div>
 
-        <h3 className="text-2xl font-semibold mb-4">Meta Ads Manager Optimization</h3>
+        <h3 className="text-2xl font-semibold mb-4">Meta Ads Manager optimisation</h3>
         <Card className="mb-6">
           <CardContent className="pt-6">
-            <h4 className="font-semibold mb-3">Weekly Optimization Checklist:</h4>
+            <h4 className="font-semibold mb-3">Weekly optimisation Checklist:</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-2">
                 <div className="w-4 h-4 border border-muted-foreground rounded mt-1"></div>
@@ -762,12 +762,12 @@ fbq('track', 'PageView');
 
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold mb-4">Days 31-60: Optimization & Scaling</h3>
+              <h3 className="text-xl font-semibold mb-4">Days 31-60: optimisation & Scaling</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <h4 className="font-medium mb-2">Week 5-6:</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Performance analysis and optimization</li>
+                    <li>• Performance analysis and optimisation</li>
                     <li>• Winning creative identification</li>
                     <li>• Audience refinement</li>
                     <li>• Budget reallocation</li>
@@ -802,7 +802,7 @@ fbq('track', 'PageView');
                 <div>
                   <h4 className="font-medium mb-2">Week 11-12:</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Full funnel optimization</li>
+                    <li>• Full funnel optimisation</li>
                     <li>• Seasonal campaign planning</li>
                     <li>• Performance reporting automation</li>
                     <li>• Scaling profitable campaigns</li>
@@ -819,20 +819,20 @@ fbq('track', 'PageView');
         <Card>
           <CardContent className="pt-6">
             <p className="text-lg mb-4">
-              Meta advertising for removalist businesses requires specialized knowledge of audience behavior, creative optimization, and conversion tracking. The strategies outlined above can generate consistent, high-quality leads when implemented correctly.
+              Meta advertising for removalist businesses requires specialised knowledge of audience behavior, creative optimisation, and conversion tracking. The strategies outlined above can generate consistent, high-quality leads when implemented correctly.
             </p>
             
             <div className="bg-primary/5 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-3">Get Professional Meta Ads Management</h3>
               <p className="mb-4">
-                Ready to implement these advanced Meta advertising strategies for your removalist business? Our team specializes in Facebook and Instagram advertising for moving companies, with proven experience generating high-quality leads at scale.
+                Ready to implement these advanced Meta advertising strategies for your removalist business? Our team specialises in Facebook and Instagram advertising for moving companies, with proven experience generating high-quality leads at scale.
               </p>
               
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <h4 className="font-semibold mb-2">Our Meta Ads Services:</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Complete campaign setup and optimization</li>
+                    <li>• Complete campaign setup and optimisation</li>
                     <li>• Professional creative development</li>
                     <li>• Advanced audience targeting strategies</li>
                     <li>• Conversion tracking and analytics</li>
@@ -844,7 +844,7 @@ fbq('track', 'PageView');
                     <li>• 40-60% reduction in cost per lead</li>
                     <li>• 2-3x increase in qualified leads</li>
                     <li>• Complete campaign transparency</li>
-                    <li>• Monthly strategy optimizations</li>
+                    <li>• Monthly strategy optimisations</li>
                   </ul>
                 </div>
               </div>

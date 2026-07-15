@@ -13,7 +13,7 @@ export const metadata = createMetadata({
   },
 
   title: "Lead Generation for Finance Brokers | Strategy Guide 2026",
-  description: "Complete guide for finance brokers to generate and qualify leads. Multi-channel tactics, follow-up sequences, and strategies to maximize client conversion.",
+  description: "Complete guide for finance brokers to generate and qualify leads. Multi-channel tactics, follow-up sequences, and strategies to maximise client conversion.",
   path: "/blog/finance-broker-lead-generation",
   keywords: ["finance brokers", "lead generation", "mortgage leads", "broker leads", "client acquisition"],
   openGraph: {

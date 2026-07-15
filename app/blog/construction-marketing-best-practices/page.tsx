@@ -133,7 +133,7 @@ const ConstructionMarketingBestPractices = () => {
 
           <Card className="border-l-4 border-l-purple-500">
             <CardHeader>
-              <CardTitle className="text-purple-700">Specialized Services</CardTitle>
+              <CardTitle className="text-purple-700">specialised Services</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
@@ -190,7 +190,7 @@ const ConstructionMarketingBestPractices = () => {
         
         <Card className="mb-8">
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Google Business Profile Optimization</h3>
+            <h3 className="text-xl font-semibold mb-4">Google Business Profile optimisation</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold text-primary mb-3">Profile Completeness</h4>

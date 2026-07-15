@@ -17,12 +17,12 @@ export const metadata = createMetadata({
   },
 
   title: "SEO for Renovation Builders: Complete Local Search Strategy 2026",
-  description: "Master SEO for renovation builders: local search optimization, keyword research, content strategies, and technical SEO tactics to dominate renovation searches in your area.",
+  description: "Master SEO for renovation builders: local search optimisation, keyword research, content strategies, and technical SEO tactics to dominate renovation searches in your area.",
   path: "/blog/renovation-builders-seo",
   keywords: ["renovation builder seo", "home renovation seo", "local seo builders", "renovation contractor marketing", "construction seo"],
   openGraph: {
     title: "SEO for Renovation Builders: Complete Local Search Strategy 2026",
-    description: "Master SEO for renovation builders: local search optimization, keyword research, content strategies, and technical SEO tactics to dominate renovation searches in your area.",
+    description: "Master SEO for renovation builders: local search optimisation, keyword research, content strategies, and technical SEO tactics to dominate renovation searches in your area.",
     url: "https://fractional-cmo.com.au/blog/renovation-builders-seo",
     siteName: "Fractional CMO",
     type: "article",
@@ -58,7 +58,7 @@ const RenovationBuildersSEO = () => {
 
   const articleData = {
     headline: "SEO for Renovation Builders: Complete Local Search Strategy 2026",
-    description: "Master SEO for renovation builders: local search optimization, keyword research, content strategies, and technical SEO tactics to dominate renovation searches in your area.",
+    description: "Master SEO for renovation builders: local search optimisation, keyword research, content strategies, and technical SEO tactics to dominate renovation searches in your area.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-02-11",
@@ -85,13 +85,13 @@ const RenovationBuildersSEO = () => {
 
   const faqs = [{
     question: "How long does SEO take to generate leads for renovation builders?",
-    answer: "Expect 3-6 months to see meaningful traffic increases and 6-12 months for consistent lead generation through SEO. Local SEO can show results faster (2-4 months) through Google My Business optimization and local citations. SEO is a long-term investment that compounds over time, eventually delivering leads without ongoing advertising costs."
+    answer: "Expect 3-6 months to see meaningful traffic increases and 6-12 months for consistent lead generation through SEO. Local SEO can show results faster (2-4 months) through Google My Business optimisation and local citations. SEO is a long-term investment that compounds over time, eventually delivering leads without ongoing advertising costs."
   }, {
     question: "What are the most important keywords for renovation builder SEO?",
     answer: "Focus on local + service combinations like 'kitchen renovation [suburb]', 'bathroom remodel [city]', and 'home extension builder [area]'. Include commercial intent keywords like 'renovation quotes', 'renovation cost', and 'renovation contractor'. Long-tail keywords such as 'heritage home renovation specialist' or 'eco-friendly renovation builder' attract highly qualified prospects with less competition."
   }, {
-    question: "Should renovation builders prioritize local SEO or broader organic SEO?",
-    answer: "Prioritize local SEO first for renovation builders since most projects come from specific geographic service areas. Focus on Google My Business, local citations, suburb-specific landing pages, and location-based content. Once local presence is strong, expand to broader informational content and industry authority building that supports overall domain strength."
+    question: "Should renovation builders prioritise local SEO or broader organic SEO?",
+    answer: "prioritise local SEO first for renovation builders since most projects come from specific geographic service areas. Focus on Google My Business, local citations, suburb-specific landing pages, and location-based content. Once local presence is strong, expand to broader informational content and industry authority building that supports overall domain strength."
   }];
 
   return <>
@@ -104,10 +104,10 @@ const RenovationBuildersSEO = () => {
       relatedArticles={relatedArticles.tradies}
       faqs={faqs}
       heroImage={'/images/blog/renovation-builders-seo-hero.jpg'}
-      heroAlt="Renovation builders SEO strategies and local search optimization"
+      heroAlt="Renovation builders SEO strategies and local search optimisation"
     >
       <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-        Search engine optimization delivers the highest long-term return on investment for renovation builders willing to invest in sustainable organic visibility. While paid advertising provides immediate leads at ongoing costs, strategic SEO builds compounding traffic that generates renovation project inquiries for years without continuous ad spend. This comprehensive guide reveals proven SEO strategies Australian renovation builders use to dominate local search results for kitchen renovations, bathroom remodels, home extensions, and complete property transformations, turning their websites into consistent lead generation machines.
+        Search engine optimisation delivers the highest long-term return on investment for renovation builders willing to invest in sustainable organic visibility. While paid advertising provides immediate leads at ongoing costs, strategic SEO builds compounding traffic that generates renovation project inquiries for years without continuous ad spend. This comprehensive guide reveals proven SEO strategies Australian renovation builders use to dominate local search results for kitchen renovations, bathroom remodels, home extensions, and complete property transformations, turning their websites into consistent lead generation machines.
       </p>
 
       <section className="mb-12">
@@ -188,7 +188,7 @@ const RenovationBuildersSEO = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Cost Efficiency</h4>
                   <p className="text-sm text-muted-foreground mb-2">
-                    While Google Ads may cost $50-150 per lead with ongoing expenses, organic leads generated through SEO cost only the initial investment in content and optimization, delivering returns for years.
+                    While Google Ads may cost $50-150 per lead with ongoing expenses, organic leads generated through SEO cost only the initial investment in content and optimisation, delivering returns for years.
                   </p>
                 </div>
 
@@ -397,7 +397,7 @@ const RenovationBuildersSEO = () => {
 
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
-            For renovation builders, local SEO delivers the highest ROI because homeowners prioritize nearby builders who can easily visit properties for quotes and manage projects without excessive travel. Dominating local search results ensures your business appears when ready-to-hire homeowners search in your service area:
+            For renovation builders, local SEO delivers the highest ROI because homeowners prioritise nearby builders who can easily visit properties for quotes and manage projects without excessive travel. Dominating local search results ensures your business appears when ready-to-hire homeowners search in your service area:
           </p>
         </div>
 
@@ -406,7 +406,7 @@ const RenovationBuildersSEO = () => {
             <CardHeader>
               <CardTitle className="text-blue-700 flex items-center gap-2">
                 <MapPin className="h-5 w-5" />
-                Google Business Profile Optimization
+                Google Business Profile optimisation
               </CardTitle>
               <CardDescription>The foundation of local renovation builder SEO</CardDescription>
             </CardHeader>
@@ -414,7 +414,7 @@ const RenovationBuildersSEO = () => {
               <div className="space-y-4">
                 <div>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Your Google Business Profile (formerly Google My Business) often appears before organic search results, making it the most valuable local SEO asset. Comprehensive optimization dramatically improves visibility for "near me" and local searches:
+                    Your Google Business Profile (formerly Google My Business) often appears before organic search results, making it the most valuable local SEO asset. Comprehensive optimisation dramatically improves visibility for "near me" and local searches:
                   </p>
 
                   <h4 className="font-semibold mb-2">Profile Completion Essentials</h4>
@@ -444,7 +444,7 @@ const RenovationBuildersSEO = () => {
                   <h4 className="font-semibold mb-2 mt-4">Review Generation and Management</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Request reviews within 7 days of project completion</li>
-                    <li>• Send personalized review requests via email</li>
+                    <li>• Send personalised review requests via email</li>
                     <li>• Provide direct Google review links in requests</li>
                     <li>• Target 4+ new reviews monthly for ranking signals</li>
                     <li>• Respond to all reviews within 24-48 hours</li>
@@ -564,7 +564,7 @@ const RenovationBuildersSEO = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">On-Page SEO Optimization</h2>
+        <h2 className="text-3xl font-bold mb-6">On-Page SEO optimisation</h2>
 
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
@@ -579,7 +579,7 @@ const RenovationBuildersSEO = () => {
                 <FileText className="h-5 w-5" />
                 Title Tags and Meta Descriptions
               </CardTitle>
-              <CardDescription>Optimize for clicks and keyword relevance</CardDescription>
+              <CardDescription>optimise for clicks and keyword relevance</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -670,7 +670,7 @@ const RenovationBuildersSEO = () => {
             <CardHeader>
               <CardTitle className="text-amber-700 flex items-center gap-2">
                 <Camera className="h-5 w-5" />
-                Image Optimization
+                Image optimisation
               </CardTitle>
               <CardDescription>Leverage visual content for SEO gains</CardDescription>
             </CardHeader>
@@ -679,7 +679,7 @@ const RenovationBuildersSEO = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Image SEO Essentials</h4>
                   <p className="text-sm text-muted-foreground mb-2">
-                    Renovation builders have abundant visual content—optimization turns project photos into ranking assets:
+                    Renovation builders have abundant visual content—optimisation turns project photos into ranking assets:
                   </p>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Descriptive file names: kitchen-renovation-toorak-before.jpg</li>
@@ -698,13 +698,13 @@ const RenovationBuildersSEO = () => {
                 </div>
 
                 <div className="mt-4">
-                  <h4 className="font-semibold mb-2">Image Organization</h4>
+                  <h4 className="font-semibold mb-2">Image organisation</h4>
                   <ul className="text-sm space-y-1 ml-4">
-                    <li>• Organized galleries by project type</li>
+                    <li>• organised galleries by project type</li>
                     <li>• Before/after comparison sliders</li>
                     <li>• Lazy loading for page speed</li>
                     <li>• Schema markup for image galleries</li>
-                    <li>• Google Images optimization potential</li>
+                    <li>• Google Images optimisation potential</li>
                   </ul>
                 </div>
               </div>
@@ -794,7 +794,7 @@ const RenovationBuildersSEO = () => {
                   <h4 className="font-semibold mb-2 mt-4">Design and Inspiration Content</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• "Modern Kitchen Design Trends 2026"</li>
-                    <li>• "Small Bathroom Renovation Ideas That Maximize Space"</li>
+                    <li>• "Small Bathroom Renovation Ideas That maximise Space"</li>
                     <li>• "Heritage Home Renovation: Preserving Character"</li>
                     <li>• "Eco-Friendly Renovation Materials and Practices"</li>
                   </ul>
@@ -827,7 +827,7 @@ const RenovationBuildersSEO = () => {
                     <li>• Project cost range (optional)</li>
                   </ul>
 
-                  <h4 className="font-semibold mb-2 mt-4">SEO Optimization</h4>
+                  <h4 className="font-semibold mb-2 mt-4">SEO optimisation</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Target: "[Project type] [Suburb]" keywords</li>
                     <li>• 1,000-1,500 words detailed content</li>
@@ -854,7 +854,7 @@ const RenovationBuildersSEO = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
             <CardHeader>
-              <CardTitle className="text-blue-700">Mobile Optimization</CardTitle>
+              <CardTitle className="text-blue-700">Mobile optimisation</CardTitle>
               <CardDescription>Critical for local search rankings</CardDescription>
             </CardHeader>
             <CardContent>
@@ -873,18 +873,18 @@ const RenovationBuildersSEO = () => {
 
           <Card className="bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-200">
             <CardHeader>
-              <CardTitle className="text-emerald-700">Page Speed Optimization</CardTitle>
+              <CardTitle className="text-emerald-700">Page Speed optimisation</CardTitle>
               <CardDescription>Faster sites rank higher and convert better</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <ul className="text-sm space-y-1 ml-4">
-                  <li>• Image compression and optimization</li>
+                  <li>• Image compression and optimisation</li>
                   <li>• Browser caching implementation</li>
                   <li>• Minify CSS, JavaScript, and HTML</li>
                   <li>• Content delivery network (CDN) usage</li>
                   <li>• Lazy loading for images and videos</li>
-                  <li>• Core Web Vitals optimization</li>
+                  <li>• Core Web Vitals optimisation</li>
                 </ul>
               </div>
             </CardContent>
@@ -902,7 +902,7 @@ const RenovationBuildersSEO = () => {
                   <li>• Service schema for renovation offerings</li>
                   <li>• Review schema for star ratings</li>
                   <li>• FAQ schema for question content</li>
-                  <li>• Organization schema for branding</li>
+                  <li>• organisation schema for branding</li>
                   <li>• Breadcrumb schema for navigation</li>
                 </ul>
               </div>
@@ -920,7 +920,7 @@ const RenovationBuildersSEO = () => {
                   <li>• Clear hierarchy: Home → Services → Projects</li>
                   <li>• Logical URL structure: /kitchen-renovation-[suburb]</li>
                   <li>• XML sitemap submission to search engines</li>
-                  <li>• Robots.txt optimization</li>
+                  <li>• Robots.txt optimisation</li>
                   <li>• Canonical tags for duplicate content</li>
                   <li>• 301 redirects for changed URLs</li>
                 </ul>
@@ -933,7 +933,7 @@ const RenovationBuildersSEO = () => {
       <section className="my-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
         <h3 className="text-2xl font-bold mb-4">Ready to Dominate Local Renovation Searches?</h3>
         <p className="mb-6 text-muted-foreground">
-          SEO provides renovation builders with sustainable, long-term lead generation that compounds over time without ongoing advertising costs. Whether you're starting from scratch or optimizing existing efforts, our <Link href="/services/seo" className="text-blue-600 font-semibold hover:underline">SEO services for builders</Link> are designed specifically for Australian renovation contractors.
+          SEO provides renovation builders with sustainable, long-term lead generation that compounds over time without ongoing advertising costs. Whether you're starting from scratch or optimising existing efforts, our <Link href="/services/seo" className="text-blue-600 font-semibold hover:underline">SEO services for builders</Link> are designed specifically for Australian renovation contractors.
         </p>
         <p className="mb-6 text-muted-foreground">
           Explore our complete renovation builder marketing suite:

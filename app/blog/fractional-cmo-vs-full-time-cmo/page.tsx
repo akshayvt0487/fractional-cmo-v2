@@ -243,7 +243,7 @@ const FractionalCMOVsFullTime = () => {
               
               <h3>Large-Scale Operations ($50M+ Revenue)</h3>
               <p>
-                Larger organizations with complex marketing needs, multiple teams, and extensive daily decisions benefit from dedicated full-time leadership.
+                Larger organisations with complex marketing needs, multiple teams, and extensive daily decisions benefit from dedicated full-time leadership.
               </p>
 
               <h3>Rapid Growth Phases</h3>
@@ -258,7 +258,7 @@ const FractionalCMOVsFullTime = () => {
 
               <h3>Team Management Intensive</h3>
               <p>
-                Organizations with large marketing teams (15+ people) benefit from full-time leadership for daily management, mentoring, and coordination.
+                organisations with large marketing teams (15+ people) benefit from full-time leadership for daily management, mentoring, and coordination.
               </p>
 
               <h2>The Hybrid Approach: Best of Both Worlds</h2>
@@ -319,7 +319,7 @@ const FractionalCMOVsFullTime = () => {
               <ul>
                 <li>Marketing team productivity and satisfaction</li>
                 <li>Campaign performance across channels</li>
-                <li>Technology stack optimization and ROI</li>
+                <li>Technology stack optimisation and ROI</li>
                 <li>Process efficiency and automation implementation</li>
               </ul>
 
@@ -332,7 +332,7 @@ const FractionalCMOVsFullTime = () => {
           For most startups and growing businesses ($1M+ targeted annual revenue), a Fractional CMO provides the optimal balance of expertise, flexibility, and cost-effectiveness. As you scale beyond $50M and develop complex marketing operations, transitioning to full-time leadership often makes strategic sense.
         </p>
          <p>
-         If you're evaluating marketing leadership options, <Link href="/"><strong>Fractional CMO</strong></Link> can help you determine the right model through a personalized assessment.
+         If you're evaluating marketing leadership options, <Link href="/"><strong>Fractional CMO</strong></Link> can help you determine the right model through a personalised assessment.
         </p>
     </OptimizedBlogLayout>
     </>;

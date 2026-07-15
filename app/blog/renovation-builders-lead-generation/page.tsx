@@ -85,7 +85,7 @@ const RenovationBuildersLeadGeneration = () => {
 
   const faqs = [{
     question: "What are the most effective lead generation channels for renovation builders?",
-    answer: "The most effective channels combine Google My Business optimization for local visibility, targeted Google Ads for high-intent searches, Instagram and Houzz for visual portfolio showcasing, strategic partnerships with real estate agents and interior designers, and referral programs that reward satisfied clients. Successful builders typically use 3-5 channels simultaneously for consistent lead flow."
+    answer: "The most effective channels combine Google My Business optimisation for local visibility, targeted Google Ads for high-intent searches, Instagram and Houzz for visual portfolio showcasing, strategic partnerships with real estate agents and interior designers, and referral programs that reward satisfied clients. Successful builders typically use 3-5 channels simultaneously for consistent lead flow."
   }, {
     question: "How can renovation builders qualify leads before investing time in quotes?",
     answer: "Implement a multi-stage qualification process: initial online forms capturing project type, budget range, timeline, and property location; follow-up phone calls to assess renovation readiness and decision-making authority; site visit scheduling only for qualified prospects with realistic budgets and timelines. Use automated email sequences to educate prospects and self-qualify based on their engagement level."
@@ -133,7 +133,7 @@ const RenovationBuildersLeadGeneration = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Owner-Occupiers (60% of Market)</h4>
                   <p className="text-sm text-muted-foreground mb-2">
-                    Homeowners renovating their primary residence prioritize quality, aesthetics, and lifestyle improvements over pure financial returns.
+                    Homeowners renovating their primary residence prioritise quality, aesthetics, and lifestyle improvements over pure financial returns.
                   </p>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Higher budgets for premium finishes and custom work</li>
@@ -147,21 +147,21 @@ const RenovationBuildersLeadGeneration = () => {
                 <div className="mt-4">
                   <h4 className="font-semibold mb-2">Property Investors (25% of Market)</h4>
                   <p className="text-sm text-muted-foreground mb-2">
-                    Investors focus on return on investment, rental appeal, and cost-effective improvements that maximize property value.
+                    Investors focus on return on investment, rental appeal, and cost-effective improvements that maximise property value.
                   </p>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• ROI-focused with clear budget constraints</li>
                     <li>• Faster decision-making (often 2-4 weeks)</li>
                     <li>• Multiple property portfolio potential</li>
                     <li>• Less interested in custom features</li>
-                    <li>• Timeline-sensitive for tenant turnover minimization</li>
+                    <li>• Timeline-sensitive for tenant turnover minimisation</li>
                   </ul>
                 </div>
 
                 <div className="mt-4">
                   <h4 className="font-semibold mb-2">Presale Renovators (15% of Market)</h4>
                   <p className="text-sm text-muted-foreground mb-2">
-                    Homeowners renovating before selling to maximize sale price and market appeal.
+                    Homeowners renovating before selling to maximise sale price and market appeal.
                   </p>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Strategic improvements focused on buyer appeal</li>
@@ -248,7 +248,7 @@ const RenovationBuildersLeadGeneration = () => {
             <CardHeader>
               <CardTitle className="text-blue-700 flex items-center gap-2">
                 <MapPin className="h-5 w-5" />
-                Google My Business Optimization
+                Google My Business optimisation
               </CardTitle>
               <CardDescription>Dominate local search results for renovation services</CardDescription>
             </CardHeader>
@@ -259,7 +259,7 @@ const RenovationBuildersLeadGeneration = () => {
                     Google My Business represents the single most important lead generation tool for local renovation builders. When homeowners search "renovation builder near me" or "kitchen renovation [suburb]," your GMB profile determines whether they discover your business or a competitor.
                   </p>
 
-                  <h4 className="font-semibold mb-2">Profile Optimization Essentials</h4>
+                  <h4 className="font-semibold mb-2">Profile optimisation Essentials</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Complete business name, address, phone, website</li>
                     <li>• Accurate service area definition (suburbs you serve)</li>
@@ -282,7 +282,7 @@ const RenovationBuildersLeadGeneration = () => {
                   <h4 className="font-semibold mb-2 mt-4">Review Generation System</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Request reviews within 1 week of project completion</li>
-                    <li>• Send personalized review request emails</li>
+                    <li>• Send personalised review request emails</li>
                     <li>• Make reviewing easy with direct Google review links</li>
                     <li>• Target 4+ new reviews monthly for active ranking</li>
                     <li>• Respond professionally to all reviews within 48 hours</li>
@@ -306,7 +306,7 @@ const RenovationBuildersLeadGeneration = () => {
             <CardHeader>
               <CardTitle className="text-emerald-700 flex items-center gap-2">
                 <Search className="h-5 w-5" />
-                Search Engine Optimization (SEO)
+                Search Engine optimisation (SEO)
               </CardTitle>
               <CardDescription>Build long-term organic visibility for renovation keywords</CardDescription>
             </CardHeader>
@@ -320,7 +320,7 @@ const RenovationBuildersLeadGeneration = () => {
                   <h4 className="font-semibold mb-2">Local SEO Foundation</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Location pages for each suburb you serve</li>
-                    <li>• "Kitchen Renovation [Suburb]" optimized pages</li>
+                    <li>• "Kitchen Renovation [Suburb]" optimised pages</li>
                     <li>• "Bathroom Remodel [Suburb]" targeted content</li>
                     <li>• Local business citations (directories, industry sites)</li>
                     <li>• NAP consistency (name, address, phone) across web</li>
@@ -342,7 +342,7 @@ const RenovationBuildersLeadGeneration = () => {
                     <li>• Mobile-responsive website design</li>
                     <li>• Fast page loading speeds (under 3 seconds)</li>
                     <li>• Schema markup for local business and reviews</li>
-                    <li>• Optimized image sizes with descriptive alt text</li>
+                    <li>• optimised image sizes with descriptive alt text</li>
                     <li>• Clear site structure with service pages</li>
                   </ul>
                 </div>
@@ -371,16 +371,16 @@ const RenovationBuildersLeadGeneration = () => {
                     <li>• Carousel posts showing renovation progression</li>
                     <li>• Before/after reels for maximum engagement</li>
                     <li>• Stories featuring daily project updates</li>
-                    <li>• Highlights organized by project type (kitchens, bathrooms)</li>
+                    <li>• Highlights organised by project type (kitchens, bathrooms)</li>
                     <li>• Location tags for each project suburb</li>
                     <li>• Hashtags: #[Suburb]Renovation #KitchenRenovation[City]</li>
                     <li>• Profile link to quote request landing page</li>
                   </ul>
 
-                  <h4 className="font-semibold mb-2 mt-4">Houzz Profile Optimization</h4>
+                  <h4 className="font-semibold mb-2 mt-4">Houzz Profile optimisation</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Professional profile with complete business information</li>
-                    <li>• Project galleries organized by renovation type</li>
+                    <li>• Project galleries organised by renovation type</li>
                     <li>• Detailed project descriptions with costs and timelines</li>
                     <li>• Encourage clients to post Houzz reviews</li>
                     <li>• Answer homeowner questions in community forums</li>
@@ -391,7 +391,7 @@ const RenovationBuildersLeadGeneration = () => {
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Pin all project photos to relevant boards</li>
                     <li>• Create boards: "Kitchen Renovations," "Bathroom Ideas"</li>
-                    <li>• Optimize pin descriptions with keywords</li>
+                    <li>• optimise pin descriptions with keywords</li>
                     <li>• Link pins to website project galleries</li>
                     <li>• Join group boards in home renovation niche</li>
                   </ul>
@@ -592,7 +592,7 @@ const RenovationBuildersLeadGeneration = () => {
 
                   <h4 className="font-semibold mb-2 mt-4">Value Exchange Framework</h4>
                   <ul className="text-sm space-y-1 ml-4">
-                    <li>• Refer clients for specialized services</li>
+                    <li>• Refer clients for specialised services</li>
                     <li>• Preferential pricing for referred customers</li>
                     <li>• Coordinated marketing efforts and events</li>
                     <li>• Joint showroom displays and portfolios</li>
@@ -726,7 +726,7 @@ const RenovationBuildersLeadGeneration = () => {
                   <h4 className="font-semibold mb-2 mt-4">CRM and Lead Management</h4>
                   <ul className="text-sm space-y-1 ml-4">
                     <li>• Implement CRM system for lead tracking</li>
-                    <li>• Categorize leads by stage and likelihood</li>
+                    <li>• categorise leads by stage and likelihood</li>
                     <li>• Set automated follow-up task reminders</li>
                     <li>• Track all communications and touchpoints</li>
                     <li>• Measure conversion rates by source</li>
@@ -742,14 +742,14 @@ const RenovationBuildersLeadGeneration = () => {
       <section className="my-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
         <h3 className="text-2xl font-bold mb-4">Ready to Build a Consistent Renovation Lead Pipeline?</h3>
         <p className="mb-6 text-muted-foreground">
-          Sustainable renovation business growth requires systematic lead generation across multiple channels. Whether you're launching new marketing initiatives or optimizing existing efforts, our comprehensive <Link href="/services/lead-generation" className="text-blue-600 font-semibold hover:underline">lead generation services</Link> are designed specifically for Australian renovation builders.
+          Sustainable renovation business growth requires systematic lead generation across multiple channels. Whether you're launching new marketing initiatives or optimising existing efforts, our comprehensive <Link href="/services/lead-generation" className="text-blue-600 font-semibold hover:underline">lead generation services</Link> are designed specifically for Australian renovation builders.
         </p>
         <p className="mb-6 text-muted-foreground">
           Explore our other renovation builder marketing resources:
         </p>
         <ul className="space-y-2 mb-6">
           <li>• <Link href="/blog/renovation-builders-google-ads" className="text-blue-600 font-semibold hover:underline">Google Ads for Renovation Builders</Link> - PPC advertising strategies</li>
-          <li>• <Link href="/blog/renovation-builders-seo" className="text-blue-600 font-semibold hover:underline">SEO for Renovation Builders</Link> - Organic search optimization</li>
+          <li>• <Link href="/blog/renovation-builders-seo" className="text-blue-600 font-semibold hover:underline">SEO for Renovation Builders</Link> - Organic search optimisation</li>
           <li>• <Link href="/blog/renovation-builders-digital-marketing" className="text-blue-600 font-semibold hover:underline">Digital Marketing for Renovation Builders</Link> - Complete strategy guide</li>
         </ul>
         <StrategyForm />

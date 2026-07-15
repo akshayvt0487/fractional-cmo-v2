@@ -92,8 +92,8 @@ const AccountingGrowthStrategy = () => {
       answer: "Initial improvements typically appear within 3-6 months for client acquisition efforts, while service expansion and team development initiatives usually show significant results after 6-12 months of consistent implementation."
     },
     {
-      question: "Should accounting practices specialize or offer diverse services?",
-      answer: "The most successful approach combines niche specialization with complementary advisory services. Focus on specific industries or client types while expanding service offerings that leverage your core expertise and client relationships."
+      question: "Should accounting practices specialise or offer diverse services?",
+      answer: "The most successful approach combines niche specialisation with complementary advisory services. Focus on specific industries or client types while expanding service offerings that leverage your core expertise and client relationships."
     }
   ];
 
@@ -209,7 +209,7 @@ const AccountingGrowthStrategy = () => {
           <h4 className="text-xl font-semibold mb-4">Financial Planning and Analysis (FP&A)</h4>
           <ul className="space-y-2 list-disc list-inside ml-4">
             <li>Budgeting and forecasting development</li>
-            <li>Cash flow modeling and optimization</li>
+            <li>Cash flow modeling and optimisation</li>
             <li>Key performance indicator (KPI) dashboards</li>
             <li>Financial scenario planning and analysis</li>
             <li>Investment and capital allocation guidance</li>
@@ -250,14 +250,14 @@ const AccountingGrowthStrategy = () => {
             <li><strong>Client Referral Rewards:</strong> Implement tiered referral bonuses ($500-$2000 based on client value)</li>
             <li><strong>Professional Network:</strong> Build relationships with attorneys, financial advisors, and business consultants</li>
             <li><strong>Strategic Partnerships:</strong> Partner with complementary service providers (HR, marketing agencies)</li>
-            <li><strong>Referral Tracking System:</strong> Monitor and measure referral sources for optimization</li>
+            <li><strong>Referral Tracking System:</strong> Monitor and measure referral sources for optimisation</li>
           </ul>
         </div>
 
         <div>
           <h4 className="text-xl font-semibold mb-4">Digital Marketing Foundation</h4>
           <ul className="space-y-2 list-disc list-inside ml-4">
-            <li><strong>Search Engine Optimization (SEO):</strong> Target local + industry-specific keywords</li>
+            <li><strong>Search Engine optimisation (SEO):</strong> Target local + industry-specific keywords</li>
             <li><strong>Content Marketing:</strong> Regular blog posts addressing client pain points</li>
             <li><strong>Social Media Presence:</strong> LinkedIn thought leadership and local business networking</li>
             <li><strong>Pay-Per-Click (PPC) Advertising:</strong> Google Ads for high-intent keywords</li>
@@ -287,7 +287,7 @@ const AccountingGrowthStrategy = () => {
               <h5 className="font-semibold mb-3">Days 31-60: Integration</h5>
               <ul className="text-sm space-y-2 list-disc list-inside">
                 <li>First monthly financial review</li>
-                <li>Process optimization</li>
+                <li>Process optimisation</li>
                 <li>Advisory opportunities assessment</li>
                 <li>Team introductions</li>
               </ul>
@@ -323,7 +323,7 @@ const AccountingGrowthStrategy = () => {
         <div>
           <h4 className="text-xl font-semibold mb-4">Automation and Workflow Tools</h4>
           <ul className="space-y-2 list-disc list-inside ml-4">
-            <li><strong>Receipt Processing:</strong> Automated data entry and categorization</li>
+            <li><strong>Receipt Processing:</strong> Automated data entry and categorisation</li>
             <li><strong>Bank Reconciliation:</strong> Streamlined matching and exception handling</li>
             <li><strong>Invoice Management:</strong> Automated approval workflows and payment processing</li>
             <li><strong>Tax Preparation:</strong> Integrated tax software with automated data population</li>
@@ -373,7 +373,7 @@ const AccountingGrowthStrategy = () => {
           <ul className="space-y-2 list-disc list-inside ml-4">
             <li><strong>Senior Accountant/Manager:</strong> Client relationship management and complex work</li>
             <li><strong>Business Advisor:</strong> Strategic consulting and advisory services delivery</li>
-            <li><strong>Operations Manager:</strong> Process optimization and technology implementation</li>
+            <li><strong>Operations Manager:</strong> Process optimisation and technology implementation</li>
             <li><strong>Client Success Manager:</strong> Retention, expansion, and satisfaction focus</li>
           </ul>
         </div>
@@ -389,7 +389,7 @@ const AccountingGrowthStrategy = () => {
         </div>
       </div>
 
-      <h2 className="text-3xl font-bold mb-8">Financial Management and Pricing Optimization</h2>
+      <h2 className="text-3xl font-bold mb-8">Financial Management and Pricing optimisation</h2>
 
       <h3 className="text-2xl font-semibold mb-6">Value-Based Pricing Models</h3>
 
@@ -405,7 +405,7 @@ const AccountingGrowthStrategy = () => {
         </div>
 
         <div>
-          <h4 className="text-xl font-semibold mb-4">Revenue Optimization Strategies</h4>
+          <h4 className="text-xl font-semibold mb-4">Revenue optimisation Strategies</h4>
           <ul className="space-y-2 list-disc list-inside ml-4">
             <li><strong>Annual Contracts:</strong> 10-15% discount for annual commitments</li>
             <li><strong>Service Bundling:</strong> Package complementary services for higher value</li>
@@ -415,7 +415,7 @@ const AccountingGrowthStrategy = () => {
         </div>
       </div>
 
-      <h2 className="text-3xl font-bold mb-8">Industry Specialization and Niche Development</h2>
+      <h2 className="text-3xl font-bold mb-8">Industry specialisation and Niche Development</h2>
 
       <h3 className="text-2xl font-semibold mb-6">High-Growth Industry Opportunities</h3>
 
@@ -442,7 +442,7 @@ const AccountingGrowthStrategy = () => {
             <ul className="space-y-2 list-disc list-inside">
               <li>Insurance billing complexities</li>
               <li>Regulatory compliance requirements</li>
-              <li>Practice management optimization</li>
+              <li>Practice management optimisation</li>
               <li>Acquisition and merger support</li>
             </ul>
           </CardContent>
@@ -490,7 +490,7 @@ const AccountingGrowthStrategy = () => {
           <ul className="space-y-2 list-disc list-inside ml-4">
             <li>Complete current client portfolio analysis and segmentation</li>
             <li>Implement core technology stack and automation tools</li>
-            <li>Develop standardized service offerings and pricing structure</li>
+            <li>Develop standardised service offerings and pricing structure</li>
             <li>Create client onboarding process and materials</li>
             <li>Establish key performance indicators and tracking systems</li>
           </ul>
@@ -513,11 +513,11 @@ const AccountingGrowthStrategy = () => {
         <div>
           <h4 className="text-xl font-semibold mb-4 flex items-center gap-2">
             <Users className="h-5 w-5 text-primary" />
-            Phase 3: Optimization (Days 61-90)
+            Phase 3: optimisation (Days 61-90)
           </h4>
           <ul className="space-y-2 list-disc list-inside ml-4">
-            <li>Analyze initial results and optimize underperforming areas</li>
-            <li>Expand into chosen industry specializations</li>
+            <li>analyse initial results and optimise underperforming areas</li>
+            <li>Expand into chosen industry specialisations</li>
             <li>Launch advanced service offerings and premium tiers</li>
             <li>Develop long-term strategic partnerships</li>
             <li>Plan for next quarter's growth initiatives</li>
@@ -555,7 +555,7 @@ const AccountingGrowthStrategy = () => {
 
       <h3 className="text-2xl font-semibold mb-6">Scaling Without Sacrificing Quality</h3>
       <ul className="space-y-2 list-disc list-inside ml-4 mb-8">
-        <li><strong>Standardized Processes:</strong> Create repeatable workflows and checklists</li>
+        <li><strong>standardised Processes:</strong> Create repeatable workflows and checklists</li>
         <li><strong>Quality Control Systems:</strong> Multi-level review processes for all deliverables</li>
         <li><strong>Client Communication Standards:</strong> Regular check-ins and proactive updates</li>
         <li><strong>Technology Integration:</strong> Leverage automation for consistency and accuracy</li>

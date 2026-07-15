@@ -53,7 +53,7 @@ const SaaSMarketingITSector = () => {
 
   const articleData = {
     headline: "SaaS Marketing in the IT Sector: Complete Growth Guide for Software Companies 2026",
-    description: "Master SaaS marketing strategies for IT companies. Learn customer acquisition, retention tactics, pricing optimization, and growth hacking techniques that drive sustainable revenue growth.",
+    description: "Master SaaS marketing strategies for IT companies. Learn customer acquisition, retention tactics, pricing optimisation, and growth hacking techniques that drive sustainable revenue growth.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2024-12-15T00:00:00.000Z",
@@ -107,7 +107,7 @@ const SaaSMarketingITSector = () => {
               <h2 className="text-3xl font-bold mt-12 mb-6">Understanding the SaaS Marketing Landscape</h2>
               
               <p>
-                Software as a Service (SaaS) marketing in the IT sector presents unique challenges and opportunities. Unlike traditional software sales, SaaS marketing focuses on subscription-based revenue models, customer lifetime value optimization, and reducing churn rates.
+                Software as a Service (SaaS) marketing in the IT sector presents unique challenges and opportunities. Unlike traditional software sales, SaaS marketing focuses on subscription-based revenue models, customer lifetime value optimisation, and reducing churn rates.
               </p>
 
               <Card className="p-6 my-8 bg-accent/20">
@@ -124,7 +124,7 @@ const SaaSMarketingITSector = () => {
               <h2 className="text-3xl font-bold mt-12 mb-6">Customer Acquisition Strategies</h2>
               
               <p>
-                Effective customer acquisition for SaaS companies requires a multi-channel approach that combines content marketing, search engine optimization, paid advertising, and product-led growth strategies.
+                Effective customer acquisition for SaaS companies requires a multi-channel approach that combines content marketing, search engine optimisation, paid advertising, and product-led growth strategies.
               </p>
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">Content Marketing Excellence</h3>
@@ -139,7 +139,7 @@ const SaaSMarketingITSector = () => {
                     
                     <div className="space-y-6">
                       <div>
-                        <h4 className="text-xl font-semibold mb-3">1. Awareness Stage Optimization</h4>
+                        <h4 className="text-xl font-semibold mb-3">1. Awareness Stage optimisation</h4>
                         <ul className="list-disc pl-6 space-y-2">
                           <li>Technical SEO for software-related keywords</li>
                           <li>Developer community engagement</li>
@@ -151,7 +151,7 @@ const SaaSMarketingITSector = () => {
                       <div>
                         <h4 className="text-xl font-semibold mb-3">2. Consideration Stage Tactics</h4>
                         <ul className="list-disc pl-6 space-y-2">
-                          <li>Free trial optimization with guided onboarding</li>
+                          <li>Free trial optimisation with guided onboarding</li>
                           <li>Interactive product demos and sandboxes</li>
                           <li>Case studies featuring similar IT companies</li>
                           <li>Technical documentation and API guides</li>
@@ -161,7 +161,7 @@ const SaaSMarketingITSector = () => {
                       <div>
                         <h4 className="text-xl font-semibold mb-3">3. Decision Stage Conversion</h4>
                         <ul className="list-disc pl-6 space-y-2">
-                          <li>Personalized sales demos with technical teams</li>
+                          <li>personalised sales demos with technical teams</li>
                           <li>Security and compliance documentation</li>
                           <li>ROI calculators and business case templates</li>
                           <li>Pilot program opportunities</li>
@@ -183,7 +183,7 @@ const SaaSMarketingITSector = () => {
                       <div>
                         <h4 className="font-semibold mb-2">Onboarding Excellence</h4>
                         <ul className="text-sm space-y-1">
-                          <li>• Personalized setup assistance</li>
+                          <li>• personalised setup assistance</li>
                           <li>• Progress tracking and milestones</li>
                           <li>• Integration support</li>
                           <li>• Success metrics definition</li>
@@ -202,10 +202,10 @@ const SaaSMarketingITSector = () => {
                     </div>
                   </Card>
 
-                  <h3 className="text-2xl font-semibold mt-8 mb-4">Pricing Strategy Optimization</h3>
+                  <h3 className="text-2xl font-semibold mt-8 mb-4">Pricing Strategy optimisation</h3>
                   
                   <p>
-                    SaaS pricing requires careful consideration of value perception, competitive positioning, and revenue optimization across different customer segments.
+                    SaaS pricing requires careful consideration of value perception, competitive positioning, and revenue optimisation across different customer segments.
                   </p>
 
                   <Card className="p-6 my-6 bg-accent/10">
@@ -256,7 +256,7 @@ const SaaSMarketingITSector = () => {
                   <h3 className="text-2xl font-semibold mt-8 mb-4">Measuring Success</h3>
                   
                   <p>
-                    Continuous measurement and optimization ensure your SaaS marketing strategies deliver sustainable growth and profitability.
+                    Continuous measurement and optimisation ensure your SaaS marketing strategies deliver sustainable growth and profitability.
                   </p>
 
                   <Card className="p-6 my-6">

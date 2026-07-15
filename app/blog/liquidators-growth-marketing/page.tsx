@@ -66,7 +66,7 @@ const LiquidatorsGrowthMarketing = () => {
     category: "Lead Generation"
   }, {
     title: "Measuring Digital Marketing ROI",
-    description: "Learn how to accurately track and optimize your digital marketing return on investment.",
+    description: "Learn how to accurately track and optimise your digital marketing return on investment.",
     url: "/blog/digital-marketing-roi-service-businesses",
     category: "Strategy"
   }, {
@@ -149,7 +149,7 @@ const LiquidatorsGrowthMarketing = () => {
           <Card className="p-6">
             <h3 className="text-xl font-semibold mb-3">Client Decision Factors</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>• Industry specialization</li>
+              <li>• Industry specialisation</li>
               <li>• Track record and outcomes</li>
               <li>• Fee structures and transparency</li>
               <li>• Response time and availability</li>
@@ -165,13 +165,13 @@ const LiquidatorsGrowthMarketing = () => {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Building a Growth Marketing Framework</h2>
         
-        <h3 className="text-2xl font-semibold mb-4 mt-8">1. Positioning and Specialization Strategy</h3>
+        <h3 className="text-2xl font-semibold mb-4 mt-8">1. Positioning and specialisation Strategy</h3>
         <p className="mb-4">
           The most successful liquidators position themselves as specialists rather than generalists:
         </p>
         
         <div className="bg-muted/50 p-6 rounded-lg mb-6">
-          <h4 className="font-semibold mb-3">Industry Specialization Options</h4>
+          <h4 className="font-semibold mb-3">Industry specialisation Options</h4>
           <ul className="space-y-3">
             <li><strong>Construction & Property Development:</strong> Complex stakeholder management and security arrangements</li>
             <li><strong>Retail & Hospitality:</strong> Rapid asset disposal and lease negotiations</li>
@@ -213,14 +213,14 @@ const LiquidatorsGrowthMarketing = () => {
         <h3 className="text-2xl font-semibold mb-4 mt-8">3. Multi-Channel Acquisition Strategy</h3>
         <div className="space-y-6 mb-6">
           <div>
-            <h4 className="font-semibold mb-3">Search Engine Optimization (SEO)</h4>
+            <h4 className="font-semibold mb-3">Search Engine optimisation (SEO)</h4>
             <p className="mb-3">
               Your SEO strategy must target both immediate crisis searches and early research queries:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li><strong>Crisis Intent Keywords:</strong> &quot;company liquidation urgent&quot;, &quot;liquidator today&quot;, &quot;emergency liquidation services&quot;</li>
               <li><strong>Research Intent Keywords:</strong> &quot;liquidation process Australia&quot;, &quot;choosing a liquidator&quot;, &quot;liquidation costs&quot;</li>
-              <li><strong>Local SEO:</strong> Dominate &quot;liquidator [city]&quot; searches with optimized Google Business Profile and local citations</li>
+              <li><strong>Local SEO:</strong> Dominate &quot;liquidator [city]&quot; searches with optimised Google Business Profile and local citations</li>
             </ul>
           </div>
 
@@ -253,7 +253,7 @@ const LiquidatorsGrowthMarketing = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Conversion Optimization for Liquidation Services</h2>
+        <h2 className="text-3xl font-bold mb-6">Conversion optimisation for Liquidation Services</h2>
         
         <p className="mb-6">
           Your website must convert distressed directors and worried creditors into consultations:
@@ -444,8 +444,8 @@ const LiquidatorsGrowthMarketing = () => {
             <h3 className="text-xl font-semibold mb-4">Month 1: Foundation</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>✓ Audit existing marketing and identify gaps</li>
-              <li>✓ Define target industry specializations</li>
-              <li>✓ Optimize website for conversion</li>
+              <li>✓ Define target industry specialisations</li>
+              <li>✓ optimise website for conversion</li>
               <li>✓ Set up Google Analytics and tracking</li>
               <li>✓ Launch Google Ads campaigns</li>
               <li>✓ Develop core content pieces</li>
@@ -460,14 +460,14 @@ const LiquidatorsGrowthMarketing = () => {
               <li>✓ Activate LinkedIn professional networking</li>
               <li>✓ Create referrer resources and toolkits</li>
               <li>✓ Launch case study development process</li>
-              <li>✓ Optimize Google Business Profile</li>
+              <li>✓ optimise Google Business Profile</li>
             </ul>
           </Card>
 
           <Card className="p-6">
-            <h3 className="text-xl font-semibold mb-4">Month 3: Optimization</h3>
+            <h3 className="text-xl font-semibold mb-4">Month 3: optimisation</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>✓ Analyze campaign performance data</li>
+              <li>✓ analyse campaign performance data</li>
               <li>✓ Refine paid advertising targeting</li>
               <li>✓ Expand content marketing reach</li>
               <li>✓ Host first referrer networking event</li>
@@ -523,8 +523,8 @@ const LiquidatorsGrowthMarketing = () => {
 
           <h3 className="text-xl font-semibold mb-4">The Strategy</h3>
           <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
-            <li>Specialized positioning for retail and hospitality liquidations</li>
-            <li>Comprehensive local SEO optimization</li>
+            <li>specialised positioning for retail and hospitality liquidations</li>
+            <li>Comprehensive local SEO optimisation</li>
             <li>Google Ads targeting regional searches</li>
             <li>Partnership development with regional accounting firms</li>
             <li>Quarterly workshops for local business advisors</li>
@@ -551,7 +551,7 @@ const LiquidatorsGrowthMarketing = () => {
       <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
         <h3 className="text-xl font-semibold mb-3">Ready to Scale Your Liquidation Practice?</h3>
         <p className="mb-4">
-          Growth marketing for liquidators requires specialized knowledge of both digital marketing and the insolvency sector. Our team has worked with liquidators across Australia to develop marketing strategies that generate quality appointments while maintaining professional standards.
+          Growth marketing for liquidators requires specialised knowledge of both digital marketing and the insolvency sector. Our team has worked with liquidators across Australia to develop marketing strategies that generate quality appointments while maintaining professional standards.
         </p>
         <p className="mb-0">
           Book a strategy call to discuss how we can help your liquidation practice capture more high-value appointments and build a sustainable referrer network.

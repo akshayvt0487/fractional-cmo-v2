@@ -72,7 +72,7 @@ const faqs = [
   {
     question: "What are the most effective lead generation strategies for NDIS providers?",
     answer:
-      "The most effective strategies include local SEO optimization, Google Ads targeting NDIS keywords, content marketing about disability services, referral programs, and community engagement. Focus on building trust through testimonials and compliance certifications.",
+      "The most effective strategies include local SEO optimisation, Google Ads targeting NDIS keywords, content marketing about disability services, referral programs, and community engagement. Focus on building trust through testimonials and compliance certifications.",
   },
   {
     question: "How much should I budget for NDIS lead generation?",
@@ -104,7 +104,7 @@ const faqs = [
       name: articleData.author,
     },
     publisher: {
-      "@type": "Organization",
+      "@type": "organisation",
       name: "Fractional CMO",
       logo: {
         "@type": "ImageObject",
@@ -241,7 +241,7 @@ const faqs = [
         <h2 className="text-3xl font-bold mb-8 text-foreground">Digital Lead Generation Strategies</h2>
         
         <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4 text-foreground">Search Engine Optimization (SEO)</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-foreground">Search Engine optimisation (SEO)</h3>
           <p className="text-muted-foreground mb-6">
             SEO is the foundation of sustainable NDIS lead generation. When participants search for services, you need to appear in results.
           </p>
@@ -284,10 +284,10 @@ const faqs = [
               <CardContent className="p-6">
                 <h4 className="font-semibold mb-3">On-Page SEO Essentials</h4>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Optimize title tags with location + service</li>
+                  <li>• optimise title tags with location + service</li>
                   <li>• Create dedicated service pages</li>
                   <li>• Use schema markup for NDIS providers</li>
-                  <li>• Optimize for mobile searches</li>
+                  <li>• optimise for mobile searches</li>
                   <li>• Include clear contact information</li>
                 </ul>
               </CardContent>
@@ -350,13 +350,13 @@ const faqs = [
                   <li>• Highlight specific services offered</li>
                   <li>• Include location coverage</li>
                   <li>• Use action-oriented language</li>
-                  <li>• Emphasize participant-centered care</li>
+                  <li>• emphasise participant-centered care</li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-3">Landing Page Optimization</h4>
+                <h4 className="font-semibold mb-3">Landing Page optimisation</h4>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Match ad promise to page content</li>
                   <li>• Include clear contact forms</li>
@@ -406,7 +406,7 @@ const faqs = [
             </Card>
             <Card>
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-3 text-primary">Community Organizations</h4>
+                <h4 className="font-semibold mb-3 text-primary">Community organisations</h4>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Disability advocacy groups</li>
                   <li>• Community centers</li>

@@ -84,10 +84,10 @@ const NDISLeadGeneration = () => {
 
   const faqs = [{
     question: "What are the most effective lead generation channels for NDIS providers?",
-    answer: "The most effective channels are Google Ads targeting NDIS-specific keywords, SEO-optimized website content, referral partnerships with healthcare professionals and support coordinators, and social media engagement. Focus on quality over quantity to attract participants who align with your services."
+    answer: "The most effective channels are Google Ads targeting NDIS-specific keywords, SEO-optimised website content, referral partnerships with healthcare professionals and support coordinators, and social media engagement. Focus on quality over quantity to attract participants who align with your services."
   }, {
     question: "How long does it take to see results from NDIS lead generation campaigns?",
-    answer: "Digital campaigns typically show initial results within 30-60 days, with significant improvements after 3-6 months of consistent optimization. Referral relationships take longer to develop but provide higher-quality leads once established."
+    answer: "Digital campaigns typically show initial results within 30-60 days, with significant improvements after 3-6 months of consistent optimisation. Referral relationships take longer to develop but provide higher-quality leads once established."
   }, {
     question: "What's the average cost per lead for NDIS providers?",
     answer: "NDIS lead costs vary by service type and location, typically ranging from $50-$200 per qualified lead. Higher-value services like SIL can justify higher acquisition costs, while core supports require more cost-effective approaches."
@@ -124,7 +124,7 @@ const NDISLeadGeneration = () => {
         <li><strong>Growing Market:</strong> Over 500,000 NDIS participants with plan values exceeding $30 billion annually</li>
         <li><strong>Increasing Choice:</strong> Participants have more provider options than ever before</li>
         <li><strong>Digital Shift:</strong> 78% of participants research providers online before making decisions</li>
-        <li><strong>Quality Focus:</strong> Participants prioritize quality, outcomes, and cultural fit over price alone</li>
+        <li><strong>Quality Focus:</strong> Participants prioritise quality, outcomes, and cultural fit over price alone</li>
       </ul>
 
       <h3>Lead Generation Fundamentals</h3>
@@ -158,7 +158,7 @@ const NDISLeadGeneration = () => {
 
       <h2>Digital Lead Generation Strategies</h2>
       
-      <h3>Search Engine Optimization (SEO)</h3>
+      <h3>Search Engine optimisation (SEO)</h3>
       <p>
         SEO forms the foundation of sustainable NDIS lead generation. Participants and their families actively search for services online.
       </p>
@@ -187,7 +187,7 @@ const NDISLeadGeneration = () => {
       <ul>
         <li><strong>Service-Specific Campaigns:</strong> Separate campaigns for each major service type</li>
         <li><strong>Location Targeting:</strong> Target specific geographical areas you serve</li>
-        <li><strong>Device Optimization:</strong> Optimize for mobile users (65% of searches)</li>
+        <li><strong>Device optimisation:</strong> optimise for mobile users (65% of searches)</li>
         <li><strong>Ad Extensions:</strong> Use location, callout, and structured snippets</li>
       </ul>
 
@@ -212,7 +212,7 @@ const NDISLeadGeneration = () => {
         <li><strong>Healthcare Professionals:</strong> GPs, specialists, allied health practitioners</li>
         <li><strong>Support Coordinators:</strong> NDIS support coordinators and plan managers</li>
         <li><strong>Other NDIS Providers:</strong> Complementary service providers</li>
-        <li><strong>Community Organizations:</strong> Disability advocacy groups and community centers</li>
+        <li><strong>Community organisations:</strong> Disability advocacy groups and community centers</li>
       </ul>
 
       <h4>Referral Relationship Strategy</h4>
@@ -232,7 +232,7 @@ const NDISLeadGeneration = () => {
       <ul>
         <li><strong>Initial Contact:</strong> Immediate response with relevant information</li>
         <li><strong>Discovery Call:</strong> Understand needs, goals, and current supports</li>
-        <li><strong>Service Proposal:</strong> Customized service proposal aligned with NDIS plan</li>
+        <li><strong>Service Proposal:</strong> customised service proposal aligned with NDIS plan</li>
         <li><strong>Trial Period:</strong> Offer trial services where appropriate</li>
         <li><strong>Regular Check-ins:</strong> Ongoing communication until decision is made</li>
       </ul>
@@ -245,17 +245,17 @@ const NDISLeadGeneration = () => {
         <li><strong>Cultural Competency:</strong> Demonstrate understanding of diverse needs</li>
       </ul>
 
-      <h2>Website Conversion Optimization</h2>
+      <h2>Website Conversion optimisation</h2>
       
       <h3>Landing Page Best Practices</h3>
-      <p>Convert website visitors into qualified leads with optimized landing pages:</p>
+      <p>Convert website visitors into qualified leads with optimised landing pages:</p>
 
       <Card className="p-6 my-8">
         <h4 className="font-semibold mb-4">High-Converting Landing Page Elements</h4>
         <ul className="space-y-2">
           <li><strong>Clear Value Proposition:</strong> Immediately communicate how you help participants</li>
           <li><strong>Trust Signals:</strong> NDIS registration number, certifications, accreditations</li>
-          <li><strong>Service Details:</strong> Specific support categories and specializations</li>
+          <li><strong>Service Details:</strong> Specific support categories and specialisations</li>
           <li><strong>Social Proof:</strong> Testimonials from participants and families</li>
           <li><strong>Simple Forms:</strong> Name, email, phone, service interest only</li>
           <li><strong>Multiple Contact Options:</strong> Phone, email, contact form, live chat</li>
@@ -264,8 +264,8 @@ const NDISLeadGeneration = () => {
         </ul>
       </Card>
 
-      <h3>Mobile Optimization</h3>
-      <p>With 65% of NDIS searches happening on mobile devices, mobile optimization is critical:</p>
+      <h3>Mobile optimisation</h3>
+      <p>With 65% of NDIS searches happening on mobile devices, mobile optimisation is critical:</p>
       <ul>
         <li><strong>Click-to-Call Buttons:</strong> Prominent phone number buttons throughout site</li>
         <li><strong>Fast Loading:</strong> Under 3 seconds page load time</li>
@@ -337,7 +337,7 @@ const NDISLeadGeneration = () => {
       <ul>
         <li><strong>Core Supports:</strong> Volume-based approach with cost-effective channels</li>
         <li><strong>Capacity Building:</strong> Education-focused content marketing</li>
-        <li><strong>Capital Supports:</strong> Specialized expertise demonstration</li>
+        <li><strong>Capital Supports:</strong> specialised expertise demonstration</li>
         <li><strong>SIL/SDA:</strong> High-touch relationship marketing</li>
       </ul>
 
@@ -375,7 +375,7 @@ const NDISLeadGeneration = () => {
       <h2>Measuring Lead Generation Success</h2>
       
       <h3>Key Performance Indicators</h3>
-      <p>Track these metrics to optimize your lead generation efforts:</p>
+      <p>Track these metrics to optimise your lead generation efforts:</p>
 
       <Card className="p-6 my-8">
         <h4 className="font-semibold mb-4">Essential KPIs by Category</h4>
@@ -436,7 +436,7 @@ const NDISLeadGeneration = () => {
           <strong className="text-primary">Solution Implemented:</strong>
           <ul className="mt-2 space-y-1">
             <li>• Launched targeted Google Ads campaign ($1,500/month budget)</li>
-            <li>• Created SEO-optimized service pages for each program type</li>
+            <li>• Created SEO-optimised service pages for each program type</li>
             <li>• Developed email nurture sequence for inquiries</li>
             <li>• Built referral program with support coordinators</li>
           </ul>
@@ -493,12 +493,12 @@ const NDISLeadGeneration = () => {
           <div>
             <h4 className="font-semibold text-primary mb-2">Month 1: Foundation</h4>
             <ul className="space-y-1">
-              <li>□ Website audit and optimization (mobile, speed, conversion)</li>
+              <li>□ Website audit and optimisation (mobile, speed, conversion)</li>
               <li>□ Create 3 service-specific landing pages</li>
               <li>□ Set up tracking (Google Analytics, call tracking)</li>
               <li>□ Implement CRM and marketing automation</li>
               <li>□ Build email nurture sequences</li>
-              <li>□ Optimize Google My Business profile</li>
+              <li>□ optimise Google My Business profile</li>
             </ul>
           </div>
 
@@ -506,7 +506,7 @@ const NDISLeadGeneration = () => {
             <h4 className="font-semibold text-primary mb-2">Month 2: Launch</h4>
             <ul className="space-y-1">
               <li>□ Launch Google Ads campaigns (start $1,500-2,500/month)</li>
-              <li>□ Publish 5 SEO-optimized blog articles</li>
+              <li>□ Publish 5 SEO-optimised blog articles</li>
               <li>□ Begin LinkedIn outreach to support coordinators</li>
               <li>□ Start monthly email newsletter</li>
               <li>□ Create first lead magnet (NDIS guide or checklist)</li>
@@ -515,9 +515,9 @@ const NDISLeadGeneration = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-primary mb-2">Month 3: Optimize & Scale</h4>
+            <h4 className="font-semibold text-primary mb-2">Month 3: optimise & Scale</h4>
             <ul className="space-y-1">
-              <li>□ Analyze performance data and optimize campaigns</li>
+              <li>□ analyse performance data and optimise campaigns</li>
               <li>□ A/B test landing pages and ad copy</li>
               <li>□ Expand keyword targeting based on performance</li>
               <li>□ Launch Facebook remarketing campaigns</li>
@@ -534,10 +534,10 @@ const NDISLeadGeneration = () => {
         <h4 className="font-semibold mb-4">NDIS Lead Generation Pitfalls</h4>
         <ul className="space-y-3">
           <li>
-            <strong className="text-primary">❌ Generic Messaging:</strong> Failing to highlight specific disability expertise and NDIS specialization
+            <strong className="text-primary">❌ Generic Messaging:</strong> Failing to highlight specific disability expertise and NDIS specialisation
           </li>
           <li>
-            <strong className="text-primary">❌ Poor Mobile Experience:</strong> Websites not optimized for mobile devices
+            <strong className="text-primary">❌ Poor Mobile Experience:</strong> Websites not optimised for mobile devices
           </li>
           <li>
             <strong className="text-primary">❌ Slow Follow-Up:</strong> Taking more than 24 hours to respond to inquiries
@@ -560,7 +560,7 @@ const NDISLeadGeneration = () => {
       <h2>Next Steps: Building Your Lead Generation System</h2>
       
       <p>
-        Successful NDIS lead generation requires a multi-channel approach combining digital marketing, referral relationships, and systematic nurturing processes. Start with the fundamentals, website optimization and Google Ads, then expand into SEO, content marketing, and professional networking as you build momentum. <Link href='/'> <strong>Fractional CMO </strong> </Link> partners with disability service providers to implement these systems end-to-end, helping them build predictable participant acquisition pipelines and scale sustainably while staying fully compliant with NDIS guidelines.
+        Successful NDIS lead generation requires a multi-channel approach combining digital marketing, referral relationships, and systematic nurturing processes. Start with the fundamentals, website optimisation and Google Ads, then expand into SEO, content marketing, and professional networking as you build momentum. <Link href='/'> <strong>Fractional CMO </strong> </Link> partners with disability service providers to implement these systems end-to-end, helping them build predictable participant acquisition pipelines and scale sustainably while staying fully compliant with NDIS guidelines.
       </p>
 
       <p className="text-lg font-semibold">

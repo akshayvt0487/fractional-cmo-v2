@@ -93,11 +93,11 @@ const AdvancedNDISLeadGeneration = () => {
   const faqs = [
     {
       question: "What's the most effective lead generation channel for NDIS providers?",
-      answer: "Multi-channel approaches work best, combining digital (SEO-optimized websites, targeted Google Ads) with relationship-based channels (support coordinator partnerships, referrals). The key is professional networks and trust-building rather than any single channel."
+      answer: "Multi-channel approaches work best, combining digital (SEO-optimised websites, targeted Google Ads) with relationship-based channels (support coordinator partnerships, referrals). The key is professional networks and trust-building rather than any single channel."
     },
     {
       question: "How can NDIS providers ethically attract participants without being pushy?",
-      answer: "Focus on education and value-first content, transparent communication about services, genuine participant success stories, and building trust through consistent quality delivery. Avoid aggressive sales tactics and prioritize participant choice and dignity."
+      answer: "Focus on education and value-first content, transparent communication about services, genuine participant success stories, and building trust through consistent quality delivery. Avoid aggressive sales tactics and prioritise participant choice and dignity."
     },
     {
       question: "What automation tools are compliant for NDIS lead generation?",
@@ -150,10 +150,10 @@ const AdvancedNDISLeadGeneration = () => {
             <CardContent>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">Website Optimization</h4>
+                  <h4 className="font-semibold mb-2">Website optimisation</h4>
                   <ul className="text-sm space-y-1 text-muted-foreground list-disc list-inside">
                     <li>Accessibility-compliant design (WCAG 2.1 AA)</li>
-                    <li>Local SEO optimization for service areas</li>
+                    <li>Local SEO optimisation for service areas</li>
                     <li>Conversion-focused landing pages</li>
                     <li>Live chat with qualified response team</li>
                     <li>Mobile-first responsive design</li>
@@ -197,7 +197,7 @@ const AdvancedNDISLeadGeneration = () => {
                   <ul className="text-sm space-y-1 text-muted-foreground list-disc list-inside">
                     <li>Disability support group presentations</li>
                     <li>Community event participation</li>
-                    <li>Advocacy organization partnerships</li>
+                    <li>Advocacy organisation partnerships</li>
                     <li>Parent and carer network building</li>
                     <li>Existing participant referral programs</li>
                   </ul>
@@ -216,7 +216,7 @@ const AdvancedNDISLeadGeneration = () => {
           <CardHeader>
             <CardTitle>Smart Lead Scoring Matrix</CardTitle>
             <CardDescription>
-              Automatically prioritize leads based on fit, readiness, and value potential while maintaining ethical standards.
+              Automatically prioritise leads based on fit, readiness, and value potential while maintaining ethical standards.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -384,15 +384,15 @@ const AdvancedNDISLeadGeneration = () => {
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card>
             <CardHeader>
-              <CardTitle>Search Engine Optimization</CardTitle>
+              <CardTitle>Search Engine optimisation</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold mb-2">Local SEO Dominance</h4>
                   <ul className="text-sm space-y-1 text-muted-foreground list-disc list-inside">
-                    <li>&quot;NDIS provider near me&quot; optimization</li>
-                    <li>Google Business Profile optimization</li>
+                    <li>&quot;NDIS provider near me&quot; optimisation</li>
+                    <li>Google Business Profile optimisation</li>
                     <li>Local directory listings management</li>
                     <li>Location-specific landing pages</li>
                     <li>Review management and response</li>
@@ -404,7 +404,7 @@ const AdvancedNDISLeadGeneration = () => {
                     <li>Service-specific keyword targeting</li>
                     <li>FAQ and resource content</li>
                     <li>Blog articles addressing pain points</li>
-                    <li>Video content optimization</li>
+                    <li>Video content optimisation</li>
                     <li>Schema markup implementation</li>
                   </ul>
                 </div>
@@ -419,11 +419,11 @@ const AdvancedNDISLeadGeneration = () => {
             <CardContent>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">Google Ads Optimization</h4>
+                  <h4 className="font-semibold mb-2">Google Ads optimisation</h4>
                   <ul className="text-sm space-y-1 text-muted-foreground list-disc list-inside">
                     <li>Service-specific ad groups</li>
                     <li>Geographic targeting refinement</li>
-                    <li>Ad scheduling optimization</li>
+                    <li>Ad scheduling optimisation</li>
                     <li>Negative keyword management</li>
                     <li>Landing page quality scoring</li>
                   </ul>
@@ -466,7 +466,7 @@ const AdvancedNDISLeadGeneration = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
-                    <span>Real-time lead scoring and prioritization</span>
+                    <span>Real-time lead scoring and prioritisation</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
@@ -534,21 +534,21 @@ const AdvancedNDISLeadGeneration = () => {
         </div>
       </section>
 
-      {/* Conversion Optimization */}
+      {/* Conversion optimisation */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Conversion Rate Optimization</h2>
+        <h2 className="text-3xl font-bold mb-6">Conversion Rate optimisation</h2>
 
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">Landing Page Optimization</CardTitle>
+              <CardTitle className="text-lg">Landing Page optimisation</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm list-disc list-inside">
                 <li>Clear value proposition messaging</li>
                 <li>Trust signals and certifications</li>
                 <li>Accessibility compliance features</li>
-                <li>Mobile-optimized design</li>
+                <li>Mobile-optimised design</li>
                 <li>Minimal form fields</li>
                 <li>Social proof integration</li>
                 <li>Clear call-to-action buttons</li>
@@ -562,7 +562,7 @@ const AdvancedNDISLeadGeneration = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm list-disc list-inside">
-                <li>&quot;NDIS Plan Maximization Guide&quot;</li>
+                <li>&quot;NDIS Plan maximisation Guide&quot;</li>
                 <li>&quot;Choosing Your Support Provider Checklist&quot;</li>
                 <li>&quot;Understanding Your Rights Handbook&quot;</li>
                 <li>&quot;Service Agreement Template&quot;</li>
@@ -575,13 +575,13 @@ const AdvancedNDISLeadGeneration = () => {
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">Follow-Up Optimization</CardTitle>
+              <CardTitle className="text-lg">Follow-Up optimisation</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm list-disc list-inside">
                 <li>5-minute initial response time</li>
                 <li>Multi-channel contact attempts</li>
-                <li>Personalized communication approach</li>
+                <li>personalised communication approach</li>
                 <li>Value-first conversation starters</li>
                 <li>Consultation booking automation</li>
                 <li>Follow-up sequence scheduling</li>

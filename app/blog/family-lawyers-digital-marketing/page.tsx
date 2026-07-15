@@ -81,10 +81,10 @@ const FamilyLawyersDigitalMarketing = () => {
 
   const faqs = [{
     question: "How do family lawyers ethically market their services?",
-    answer: "Family lawyers must follow bar association guidelines, prioritize client education over sales tactics, maintain confidentiality in all marketing materials, and focus on building trust through valuable content and testimonials."
+    answer: "Family lawyers must follow bar association guidelines, prioritise client education over sales tactics, maintain confidentiality in all marketing materials, and focus on building trust through valuable content and testimonials."
   }, {
     question: "What digital marketing channels work best for family law practices?",
-    answer: "Content marketing through blogs and educational resources, local SEO optimization, Google Ads for urgent legal needs, LinkedIn for professional networking, and careful social media presence work best for family lawyers."
+    answer: "Content marketing through blogs and educational resources, local SEO optimisation, Google Ads for urgent legal needs, LinkedIn for professional networking, and careful social media presence work best for family lawyers."
   }, {
     question: "How can family lawyers measure their marketing ROI?",
     answer: "Track consultation requests, case conversion rates, average case value, client lifetime value, and referral generation. Focus on quality metrics rather than just quantity, as family law clients represent significant long-term value."
@@ -189,7 +189,7 @@ const FamilyLawyersDigitalMarketing = () => {
       <h2>Building Trust Through Digital Marketing</h2>
       
       <p>
-        Family law clients need to trust their attorney completely during emotionally challenging times. Digital marketing for family lawyers must prioritize trust-building and demonstrate genuine care for client wellbeing.
+        Family law clients need to trust their attorney completely during emotionally challenging times. Digital marketing for family lawyers must prioritise trust-building and demonstrate genuine care for client wellbeing.
       </p>
 
       <Card className="p-6 my-8">
@@ -220,16 +220,16 @@ const FamilyLawyersDigitalMarketing = () => {
 
       <h2>Digital Marketing Channels for Family Law Practices</h2>
       
-      <h3>Search Engine Optimization Strategy</h3>
+      <h3>Search Engine optimisation Strategy</h3>
       <p>
         Family law SEO requires careful balance between visibility and sensitivity:
       </p>
       <ul>
         <li><strong>Local keyword targeting:</strong> &quot;family lawyer [city]&quot;, &quot;custody attorney near me&quot;</li>
         <li><strong>Practice area pages:</strong> Dedicated pages for each family law service</li>
-        <li><strong>FAQ optimization:</strong> Answer common family law questions</li>
-        <li><strong>Local directory optimization:</strong> Legal and general business directory listings</li>
-        <li><strong>Mobile optimization:</strong> Ensure easy access for clients in crisis situations</li>
+        <li><strong>FAQ optimisation:</strong> Answer common family law questions</li>
+        <li><strong>Local directory optimisation:</strong> Legal and general business directory listings</li>
+        <li><strong>Mobile optimisation:</strong> Ensure easy access for clients in crisis situations</li>
       </ul>
 
       <h3>Paid Advertising Considerations</h3>
@@ -237,9 +237,9 @@ const FamilyLawyersDigitalMarketing = () => {
         Google Ads and social media advertising require careful message crafting:
       </p>
       <ul>
-        <li><strong>Compassionate ad copy:</strong> Emphasize support and understanding</li>
+        <li><strong>Compassionate ad copy:</strong> emphasise support and understanding</li>
         <li><strong>Geographic targeting:</strong> Focus on local service areas</li>
-        <li><strong>Time-of-day optimization:</strong> Reach clients when they&apos;re searching for help</li>
+        <li><strong>Time-of-day optimisation:</strong> Reach clients when they&apos;re searching for help</li>
         <li><strong>Landing page alignment:</strong> Ensure ads match landing page messaging</li>
         <li><strong>Crisis-aware scheduling:</strong> Available for urgent legal matters</li>
       </ul>
@@ -293,7 +293,7 @@ const FamilyLawyersDigitalMarketing = () => {
         <li><strong>Financial advisors:</strong> Specialists in divorce financial planning</li>
         <li><strong>Real estate professionals:</strong> Agents familiar with family law matters</li>
         <li><strong>Other legal specialists:</strong> Estate planning and tax attorneys</li>
-        <li><strong>Community organizations:</strong> Support groups and advocacy organizations</li>
+        <li><strong>Community organisations:</strong> Support groups and advocacy organisations</li>
       </ul>
 
       <h2>Client Communication and Follow-up</h2>
@@ -310,7 +310,7 @@ const FamilyLawyersDigitalMarketing = () => {
         <li><strong>Referral request systems:</strong> Ethical approaches to referral generation</li>
       </ul>
 
-      <h2>Performance Measurement and Optimization</h2>
+      <h2>Performance Measurement and optimisation</h2>
       
       <h3>Family Law Practice KPIs</h3>
       <p>
@@ -343,7 +343,7 @@ const FamilyLawyersDigitalMarketing = () => {
       </p>
 
       <p>
-        Digital marketing for family lawyers requires balancing client acquisition goals with the emotional sensitivity required in family law practice. Prioritize trust-building, education, and ethical compliance in all marketing activities to build a sustainable and respected practice.
+        Digital marketing for family lawyers requires balancing client acquisition goals with the emotional sensitivity required in family law practice. prioritise trust-building, education, and ethical compliance in all marketing activities to build a sustainable and respected practice.
       </p>
     </OptimizedBlogLayout>
     </>;

@@ -432,7 +432,7 @@ const ConstructionCostEstimation = () => {
                 <h5 className="font-medium mb-3">Key Software Features</h5>
                 <ul className="space-y-2 text-sm">
                   <li>• Automated area and linear calculations</li>
-                  <li>• Layer-based organization and visibility control</li>
+                  <li>• Layer-based organisation and visibility control</li>
                   <li>• Integration with estimating databases</li>
                   <li>• Collaborative markup and review capabilities</li>
                   <li>• Version control and audit trails</li>
@@ -470,8 +470,8 @@ const ConstructionCostEstimation = () => {
               <div className="flex items-start gap-4">
                 <Calculator className="h-6 w-6 text-primary mt-1" />
                 <div>
-                  <h5 className="font-medium mb-2">Enhanced Visualization</h5>
-                  <p className="text-sm text-muted-foreground">3D visualization helps identify potential cost issues and constructability challenges before construction begins.</p>
+                  <h5 className="font-medium mb-2">Enhanced visualisation</h5>
+                  <p className="text-sm text-muted-foreground">3D visualisation helps identify potential cost issues and constructability challenges before construction begins.</p>
                 </div>
               </div>
             </div>
@@ -578,13 +578,13 @@ const ConstructionCostEstimation = () => {
                   <li>• Document all pricing sources and dates</li>
                   <li>• Record scope clarifications and exclusions</li>
                   <li>• Keep audit trail of estimate revisions</li>
-                  <li>• Standardize estimate presentation formats</li>
+                  <li>• standardise estimate presentation formats</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-medium mb-3">Quality Control Measures</h4>
                 <ul className="space-y-2 text-sm">
-                  <li>• Use standardized takeoff and pricing procedures</li>
+                  <li>• Use standardised takeoff and pricing procedures</li>
                   <li>• Implement estimate review checkpoints</li>
                   <li>• Maintain current cost databases</li>
                   <li>• Regular calibration with actual project costs</li>
@@ -613,7 +613,7 @@ const ConstructionCostEstimation = () => {
             <div className="space-y-4">
               <div>
                 <h4 className="font-medium mb-2">Artificial Intelligence and Machine Learning</h4>
-                <p className="text-sm text-muted-foreground mb-3">AI algorithms analyze vast amounts of historical data to predict costs more accurately and identify patterns that human estimators might miss.</p>
+                <p className="text-sm text-muted-foreground mb-3">AI algorithms analyse vast amounts of historical data to predict costs more accurately and identify patterns that human estimators might miss.</p>
               </div>
               
               <div>

@@ -130,7 +130,7 @@ const BuyersAgentsDigitalMarketing = () => {
       <h2 className="text-3xl font-bold mb-6">Understanding the Buyers Agent Market</h2>
       
       <p className="text-lg text-muted-foreground mb-6">
-        The buyers agent industry is rapidly growing as more property purchasers recognize the value of professional representation. However, increased awareness has also brought more competition, making digital marketing essential for practice growth.
+        The buyers agent industry is rapidly growing as more property purchasers recognise the value of professional representation. However, increased awareness has also brought more competition, making digital marketing essential for practice growth.
       </p>
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -168,7 +168,7 @@ const BuyersAgentsDigitalMarketing = () => {
       <div className="grid md:grid-cols-3 gap-6 mb-12">
         <Card>
           <CardHeader>
-            <CardTitle>Search Engine Optimization (SEO)</CardTitle>
+            <CardTitle>Search Engine optimisation (SEO)</CardTitle>
           </CardHeader>
           <CardContent className="text-sm space-y-2">
             <p className="font-semibold">Organic visibility for buyer searches</p>
@@ -258,7 +258,7 @@ const BuyersAgentsDigitalMarketing = () => {
           </div>
           <div>
             <h4 className="font-semibold mb-2">Long-term Growth (SEO & Content)</h4>
-            <p className="text-sm text-muted-foreground">Build authority and organic visibility through strategic content and optimization.</p>
+            <p className="text-sm text-muted-foreground">Build authority and organic visibility through strategic content and optimisation.</p>
           </div>
           <div>
             <h4 className="font-semibold mb-2">Relationship Building (Email & Social)</h4>

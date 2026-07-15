@@ -139,7 +139,7 @@ const ConveyancingLeadGeneration = () => {
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-4 w-4 text-green-600 mt-1 shrink-0" />
-                <span className="text-green-700 text-sm">Laser-focused targeting and personalized messaging</span>
+                <span className="text-green-700 text-sm">Laser-focused targeting and personalised messaging</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-4 w-4 text-green-600 mt-1 shrink-0" />
@@ -157,13 +157,13 @@ const ConveyancingLeadGeneration = () => {
         <h3 className="text-2xl font-semibold mb-4">Local SEO Strategy</h3>
         <p className="mb-6">
           Local SEO is crucial for conveyancing firms as most clients search for services in their area. 
-          Optimizing for local search ensures your firm appears when potential clients search for 
+          optimising for local search ensures your firm appears when potential clients search for 
           &quot;conveyancer near me&quot; or &quot;property lawyer [location]&quot;.
         </p>
 
         <Card className="mb-8">
           <CardContent className="p-6">
-            <h4 className="text-lg font-semibold mb-4">Google My Business Optimization</h4>
+            <h4 className="text-lg font-semibold mb-4">Google My Business optimisation</h4>
             <ul className="space-y-2">
               <li>• Complete business profile with accurate NAP (Name, Address, Phone)</li>
               <li>• Regular posting about property market updates and legal changes</li>
@@ -248,7 +248,7 @@ const ConveyancingLeadGeneration = () => {
               <div className="p-4 bg-muted/50 rounded-lg">
                 <h4 className="font-semibold mb-2 text-foreground">Property Investors</h4>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Investors prioritize speed, efficiency, and experience with investment properties.
+                  Investors prioritise speed, efficiency, and experience with investment properties.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• &quot;investment property conveyancing&quot;</li>
@@ -398,7 +398,7 @@ const ConveyancingLeadGeneration = () => {
                 <h4 className="font-semibold mb-2 text-foreground">Property Investor Sequence (8 emails over 3 months)</h4>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• Day 1: Investment property conveyancing overview</li>
-                  <li>• Day 3: Tax implications and optimization strategies</li>
+                  <li>• Day 3: Tax implications and optimisation strategies</li>
                   <li>• Day 7: Fast settlement strategies</li>
                   <li>• Day 14: Due diligence for investment properties</li>
                   <li>• Day 21: Building a property portfolio legally</li>
@@ -411,10 +411,10 @@ const ConveyancingLeadGeneration = () => {
           </CardContent>
         </Card>
 
-        <h2 className="text-3xl font-bold mb-6">Conversion Optimization</h2>
+        <h2 className="text-3xl font-bold mb-6">Conversion optimisation</h2>
         
         <p className="mb-6">
-          Generating leads is only half the battle. Converting those leads into paying clients requires optimized processes, 
+          Generating leads is only half the battle. Converting those leads into paying clients requires optimised processes, 
           compelling value propositions, and friction-free client onboarding.
         </p>
 
@@ -493,8 +493,8 @@ const ConveyancingLeadGeneration = () => {
         <h2 className="text-3xl font-bold mb-6">Measuring Lead Generation Success</h2>
         
         <p className="mb-6">
-          What gets measured gets improved. Tracking the right metrics allows you to optimize campaigns, 
-          allocate budget effectively, and maximize return on your marketing investment.
+          What gets measured gets improved. Tracking the right metrics allows you to optimise campaigns, 
+          allocate budget effectively, and maximise return on your marketing investment.
         </p>
 
         <Card className="mb-8">
@@ -565,7 +565,7 @@ const ConveyancingLeadGeneration = () => {
                 <h4 className="font-medium text-green-800 mb-2">✅ Better Approach:</h4>
                 <p className="text-sm text-green-700">
                   Compete on value, expertise, and service quality. Highlight your experience, client success rate, 
-                  settlement speed, and personalized attention. Transparent pricing with clear value justification.
+                  settlement speed, and personalised attention. Transparent pricing with clear value justification.
                 </p>
               </div>
             </CardContent>
@@ -581,7 +581,7 @@ const ConveyancingLeadGeneration = () => {
               <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                 <h4 className="font-medium text-green-800 mb-2">✅ Better Approach:</h4>
                 <p className="text-sm text-green-700">
-                  Optimize website for mobile-first with click-to-call buttons, mobile-friendly forms, fast loading, 
+                  optimise website for mobile-first with click-to-call buttons, mobile-friendly forms, fast loading, 
                   and easy navigation. Test on multiple devices regularly.
                 </p>
               </div>
@@ -612,7 +612,7 @@ const ConveyancingLeadGeneration = () => {
         </p>
         
         <p>
-          The key to success lies in consistent execution and continuous optimization. Start with the fundamentals - optimize your Google Business Profile, create valuable content for property buyers and sellers, and implement systems to nurture leads through their property journey. As you build momentum, expand into advanced strategies like automated marketing workflows and strategic partnerships.
+          The key to success lies in consistent execution and continuous optimisation. Start with the fundamentals - optimise your Google Business Profile, create valuable content for property buyers and sellers, and implement systems to nurture leads through their property journey. As you build momentum, expand into advanced strategies like automated marketing workflows and strategic partnerships.
         </p>
 
         <p>

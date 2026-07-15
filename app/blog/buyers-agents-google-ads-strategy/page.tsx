@@ -21,7 +21,7 @@ export const metadata = createMetadata({
   keywords: ["buyers agents google ads", "real estate ppc", "google ads for real estate agents", "property buyer advertising", "real estate lead ads"],
   openGraph: {
     title: "Google Ads Strategies for Buyers Agents | 2026 Guide",
-    description: "Master Google Ads: keyword research, buyer segment targeting, ad copy, landing pages, and optimization to attract buyers actively searching.",
+    description: "Master Google Ads: keyword research, buyer segment targeting, ad copy, landing pages, and optimisation to attract buyers actively searching.",
     url: "https://fractional-cmo.com.au/blog/buyers-agents-google-ads-strategy",
     siteName: "Fractional CMO",
     type: "article",
@@ -56,7 +56,7 @@ const BuyersAgentsGoogleAds = () => {
 
   const articleData = {
     headline: "Google Ads for Buyers Agents: Campaign Setup & Targeting Guide 2026",
-    description: "Master Google Ads: keyword research, buyer segment targeting, ad copy, landing pages, and optimization tactics for property buyer acquisition.",
+    description: "Master Google Ads: keyword research, buyer segment targeting, ad copy, landing pages, and optimisation tactics for property buyer acquisition.",
     author: "Basheer Padanna",
     publishedDate: convertDateFormat(post.date),
     modifiedDate: "2026-01-13T00:00:00.000Z",
@@ -96,7 +96,7 @@ const BuyersAgentsGoogleAds = () => {
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
     />
-    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/buyers-agents-google-ads-hero.jpg'} heroAlt="Buyers agents Google Ads strategies and campaign optimization">
+    <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.digitalMarketing} faqs={faqs} heroImage={'/images/blog/buyers-agents-google-ads-hero.jpg'} heroAlt="Buyers agents Google Ads strategies and campaign optimisation">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
           🏠 Google Ads can be a game-changer for buyers agents, connecting you with property buyers and investors actively searching for professional representation. This comprehensive guide reveals proven Google Ads strategies that successful buyers agents use to generate qualified leads, outrank competitors, and grow their client base consistently in competitive property markets.
         </p>
@@ -133,12 +133,12 @@ const BuyersAgentsGoogleAds = () => {
 
           <Card className="border-l-4 border-l-purple-500">
             <CardHeader>
-              <CardTitle className="text-purple-700">Specialized Markets</CardTitle>
+              <CardTitle className="text-purple-700">specialised Markets</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
                 <li>✈️ <strong>Interstate buyers:</strong> Purchasing in unfamiliar markets</li>
-                <li>🏡 <strong>Downsizers:</strong> Simplifying while maximizing proceeds</li>
+                <li>🏡 <strong>Downsizers:</strong> Simplifying while maximising proceeds</li>
               </ul>
             </CardContent>
           </Card>
@@ -154,9 +154,9 @@ const BuyersAgentsGoogleAds = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Target className="h-5 w-5 text-orange-600" />
-                Campaign Organization Best Practices
+                Campaign organisation Best Practices
               </CardTitle>
-              <CardDescription>Organize for maximum control and performance tracking</CardDescription>
+              <CardDescription>organise for maximum control and performance tracking</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
@@ -181,7 +181,7 @@ const BuyersAgentsGoogleAds = () => {
             <CardContent>
               <ul className="space-y-2 text-sm">
                 <li>✓ Separate campaigns by client type and intent level</li>
-                <li>✓ Ad groups organized by property types and locations</li>
+                <li>✓ Ad groups organised by property types and locations</li>
                 <li>✓ Keyword themes grouped for relevant messaging</li>
                 <li>✓ Landing pages aligned with campaign objectives</li>
                 <li>✓ Conversion tracking for lead quality measurement</li>
@@ -276,7 +276,7 @@ const BuyersAgentsGoogleAds = () => {
                     <h4 className="font-semibold mb-2">Key Elements:</h4>
                     <ul className="text-sm space-y-1">
                       <li>• Address fear and uncertainty</li>
-                      <li>• Emphasize guidance and support</li>
+                      <li>• emphasise guidance and support</li>
                       <li>• Mention first home buyer benefits</li>
                       <li>• Include social proof (success rates)</li>
                     </ul>
@@ -295,7 +295,7 @@ const BuyersAgentsGoogleAds = () => {
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-2">Example Ad:</h4>
                     <p className="text-sm font-medium mb-1">Investment Properties With 7%+ Yields</p>
-                    <p className="text-xs text-gray-600 mb-2">Buyers agent specializing in high-yield investment properties. Data-driven selection, off-market access.</p>
+                    <p className="text-xs text-gray-600 mb-2">Buyers agent specialising in high-yield investment properties. Data-driven selection, off-market access.</p>
                     <p className="text-xs text-green-600">✓ Market Analysis ✓ ROI Projections ✓ Off-Market Access</p>
                   </div>
                   <div>
@@ -358,7 +358,7 @@ const BuyersAgentsGoogleAds = () => {
           
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
-              Effective bidding strategy determines your ad visibility and cost efficiency. The buyers agent market is competitive, requiring strategic approach to maximize your budget impact:
+              Effective bidding strategy determines your ad visibility and cost efficiency. The buyers agent market is competitive, requiring strategic approach to maximise your budget impact:
             </p>
           </div>
 
@@ -366,7 +366,7 @@ const BuyersAgentsGoogleAds = () => {
             <Card className="border-l-4 border-l-indigo-500">
               <CardHeader>
                 <CardTitle className="text-indigo-700">Bidding Strategy by Campaign Type</CardTitle>
-                <CardDescription>Optimize for different business objectives</CardDescription>
+                <CardDescription>optimise for different business objectives</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -383,7 +383,7 @@ const BuyersAgentsGoogleAds = () => {
                     <ul className="text-sm space-y-1 ml-4">
                       <li>• Target CPA (Cost Per Acquisition)</li>
                       <li>• Start with manual CPC, transition to smart bidding</li>
-                      <li>• Focus on conversion optimization</li>
+                      <li>• Focus on conversion optimisation</li>
                     </ul>
                   </div>
                   <div>
@@ -432,7 +432,7 @@ const BuyersAgentsGoogleAds = () => {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Landing Page Optimization for Buyers Agent Leads</h2>
+          <h2 className="text-3xl font-bold mb-6">Landing Page optimisation for Buyers Agent Leads</h2>
           
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
@@ -510,8 +510,8 @@ const BuyersAgentsGoogleAds = () => {
 
           <Card className="bg-gradient-to-r from-slate-50 to-gray-50 border-slate-200">
             <CardHeader>
-              <CardTitle className="text-slate-700">Landing Page Conversion Optimization</CardTitle>
-              <CardDescription>Technical and design elements that maximize conversions</CardDescription>
+              <CardTitle className="text-slate-700">Landing Page Conversion optimisation</CardTitle>
+              <CardDescription>Technical and design elements that maximise conversions</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-6">
@@ -527,7 +527,7 @@ const BuyersAgentsGoogleAds = () => {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Form Optimization:</h4>
+                  <h4 className="font-semibold mb-2">Form optimisation:</h4>
                   <ul className="text-sm space-y-1">
                     <li>• Maximum 3-4 form fields initially</li>
                     <li>• Phone number for immediate contact</li>
@@ -555,7 +555,7 @@ const BuyersAgentsGoogleAds = () => {
             <Card className="border-l-4 border-l-teal-500">
               <CardHeader>
                 <CardTitle className="text-teal-700">Geographic Targeting Strategies</CardTitle>
-                <CardDescription>Optimize for location-based buyer behavior</CardDescription>
+                <CardDescription>optimise for location-based buyer behavior</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -617,7 +617,7 @@ const BuyersAgentsGoogleAds = () => {
                   <div>
                     <h4 className="font-semibold mb-2">📱 Device & Time Targeting</h4>
                     <ul className="text-sm space-y-1 ml-4">
-                      <li>• Mobile optimization (60%+ of searches)</li>
+                      <li>• Mobile optimisation (60%+ of searches)</li>
                       <li>• Evening and weekend bid increases</li>
                       <li>• Desktop for detailed research sessions</li>
                     </ul>
@@ -633,7 +633,7 @@ const BuyersAgentsGoogleAds = () => {
           
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
-              Proper tracking is essential for understanding campaign performance and optimizing for better results. Set up comprehensive tracking to measure lead quality, conversion rates, and return on ad spend:
+              Proper tracking is essential for understanding campaign performance and optimising for better results. Set up comprehensive tracking to measure lead quality, conversion rates, and return on ad spend:
             </p>
           </div>
 
@@ -708,18 +708,18 @@ const BuyersAgentsGoogleAds = () => {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Campaign Optimization & Scaling Strategies</h2>
+          <h2 className="text-3xl font-bold mb-6">Campaign optimisation & Scaling Strategies</h2>
           
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
-              Continuous optimization is key to improving performance and scaling successful campaigns. Use data-driven decisions to refine targeting, improve ad copy, and increase lead quality:
+              Continuous optimisation is key to improving performance and scaling successful campaigns. Use data-driven decisions to refine targeting, improve ad copy, and increase lead quality:
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <Card className="bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-200">
               <CardHeader>
-                <CardTitle className="text-emerald-700">Weekly Optimization Tasks</CardTitle>
+                <CardTitle className="text-emerald-700">Weekly optimisation Tasks</CardTitle>
                 <CardDescription>Systematic approach to campaign improvement</CardDescription>
               </CardHeader>
               <CardContent>
@@ -727,14 +727,14 @@ const BuyersAgentsGoogleAds = () => {
                   <div>
                     <h4 className="font-semibold mb-2">📊 Performance Review</h4>
                     <ul className="text-sm space-y-1 ml-4">
-                      <li>• Analyze lead quality and conversion rates</li>
+                      <li>• analyse lead quality and conversion rates</li>
                       <li>• Review search terms report for new keywords</li>
                       <li>• Identify underperforming keywords and ads</li>
                       <li>• Check geographic performance by location</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">⚡ Quick Optimizations</h4>
+                    <h4 className="font-semibold mb-2">⚡ Quick optimisations</h4>
                     <ul className="text-sm space-y-1 ml-4">
                       <li>• Pause low-performing keywords (CTR &lt; 2%)</li>
                       <li>• Increase bids on high-converting terms</li>
@@ -800,7 +800,7 @@ const BuyersAgentsGoogleAds = () => {
           
           <div className="mb-8">
             <p className="text-lg mb-6 leading-relaxed">
-              Understanding your competitive landscape helps you identify opportunities, refine positioning, and optimize your campaigns for better performance:
+              Understanding your competitive landscape helps you identify opportunities, refine positioning, and optimise your campaigns for better performance:
             </p>
           </div>
 
@@ -836,7 +836,7 @@ const BuyersAgentsGoogleAds = () => {
                       <li>• Identify gaps in competitor coverage</li>
                       <li>• Discover new keyword opportunities</li>
                       <li>• Refine value proposition messaging</li>
-                      <li>• Optimize bidding strategy adjustments</li>
+                      <li>• optimise bidding strategy adjustments</li>
                     </ul>
                   </div>
                 </div>
@@ -853,9 +853,9 @@ const BuyersAgentsGoogleAds = () => {
                   <div>
                     <h4 className="font-semibold mb-2">🎯 Differentiation Tactics</h4>
                     <ul className="text-sm space-y-1 ml-4">
-                      <li>• Specialize in specific property types or buyer segments</li>
+                      <li>• specialise in specific property types or buyer segments</li>
                       <li>• Highlight unique service features (e.g., off-market access)</li>
-                      <li>• Emphasize technology tools and data analytics</li>
+                      <li>• emphasise technology tools and data analytics</li>
                       <li>• Showcase superior track record and testimonials</li>
                     </ul>
                   </div>
@@ -886,7 +886,7 @@ const BuyersAgentsGoogleAds = () => {
         <section className="my-12 p-8 bg-blue-50 rounded-lg border border-blue-200">
           <h3 className="text-2xl font-bold mb-4">Ready to Scale Your Buyers Agency with Google Ads?</h3>
           <p className="mb-6 text-muted-foreground">
-            Google Ads is a powerful channel for buyers agents to attract qualified property buyers and investors. Whether you're looking to launch campaigns or optimize existing ones, our <Link href="/services/google-ads/buyers-agents" className="text-blue-600 font-semibold hover:underline">Google Ads for Buyers Agents service</Link> is designed specifically for real estate professionals like you.
+            Google Ads is a powerful channel for buyers agents to attract qualified property buyers and investors. Whether you're looking to launch campaigns or optimise existing ones, our <Link href="/services/google-ads/buyers-agents" className="text-blue-600 font-semibold hover:underline">Google Ads for Buyers Agents service</Link> is designed specifically for real estate professionals like you.
           </p>
           <p className="mb-6 text-muted-foreground">
             Explore our other real estate marketing services:

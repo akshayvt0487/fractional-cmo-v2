@@ -97,7 +97,7 @@ const FloorSandingDigitalMarketing = () => {
     />
     <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/floor-sanding-digital-marketing-hero.jpg'} heroAlt="Floor sanding specialists digital marketing and business growth strategies">
       <p className="text-xl text-muted-foreground mb-8">
-        Floor sanding and refinishing is a specialized trade that transforms worn, damaged timber floors into stunning home features. Digital marketing has become essential for floor sanding specialists to showcase their craftsmanship, attract homeowners with quality timber floors, and build a sustainable business with consistent project flow and premium pricing in competitive markets.
+        Floor sanding and refinishing is a specialised trade that transforms worn, damaged timber floors into stunning home features. Digital marketing has become essential for floor sanding specialists to showcase their craftsmanship, attract homeowners with quality timber floors, and build a sustainable business with consistent project flow and premium pricing in competitive markets.
       </p>
 
       <h2>Understanding Your Floor Sanding Market Segments</h2>
@@ -119,7 +119,7 @@ const FloorSandingDigitalMarketing = () => {
 
         <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-6 rounded-lg border border-green-200">
           <h3 className="text-xl font-semibold mb-4 text-green-800">Pre-Sale Property Preparation</h3>
-          <p className="text-green-700 text-sm mb-3">Property sellers maximizing sale prices through strategic floor restoration before listing.</p>
+          <p className="text-green-700 text-sm mb-3">Property sellers maximising sale prices through strategic floor restoration before listing.</p>
           <ul className="text-xs text-green-600 space-y-1">
             <li>• Project value: $2,000-8,000</li>
             <li>• Decision timeline: Urgent (2-4 weeks)</li>
@@ -141,7 +141,7 @@ const FloorSandingDigitalMarketing = () => {
 
         <div className="bg-gradient-to-br from-purple-50 to-violet-100 p-6 rounded-lg border border-purple-200">
           <h3 className="text-xl font-semibold mb-4 text-purple-800">Heritage and Specialty Restoration</h3>
-          <p className="text-purple-700 text-sm mb-3">Historical buildings and unique timber floors requiring specialized restoration techniques.</p>
+          <p className="text-purple-700 text-sm mb-3">Historical buildings and unique timber floors requiring specialised restoration techniques.</p>
           <ul className="text-xs text-purple-600 space-y-1">
             <li>• Project value: $8,000-25,000+</li>
             <li>• Decision timeline: Extended (6-18 months)</li>
@@ -164,7 +164,7 @@ const FloorSandingDigitalMarketing = () => {
           <div>
             <h5 className="font-medium text-amber-700 mb-3">Visual Portfolio Features</h5>
             <ul className="space-y-2 text-sm text-amber-600">
-              <li>• Dramatic before/after galleries organized by floor type and project scope</li>
+              <li>• Dramatic before/after galleries organised by floor type and project scope</li>
               <li>• High-resolution photos showing grain restoration and finish quality</li>
               <li>• Video testimonials from satisfied homeowners in beautifully restored spaces</li>
               <li>• Time-lapse videos demonstrating complete transformation process</li>
@@ -191,13 +191,13 @@ const FloorSandingDigitalMarketing = () => {
 
       <div className="space-y-6 mb-8">
         <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-          <h4 className="font-semibold text-green-800 mb-4">Google My Business Optimization</h4>
+          <h4 className="font-semibold text-green-800 mb-4">Google My Business optimisation</h4>
           <ul className="space-y-2 text-sm text-green-700">
             <li>• Weekly project photo updates showing current work and recent completions</li>
             <li>• Service area mapping for all suburbs and regions you cover</li>
             <li>• Regular posts about seasonal floor care tips and restoration advice</li>
             <li>• Customer review management with professional responses to all feedback</li>
-            <li>• Business hours optimization including emergency contact information</li>
+            <li>• Business hours optimisation including emergency contact information</li>
           </ul>
         </div>
 
@@ -244,7 +244,7 @@ const FloorSandingDigitalMarketing = () => {
         </div>
 
         <div className="bg-gradient-to-br from-green-50 to-teal-100 p-6 rounded-lg border border-green-200">
-          <h4 className="text-lg font-semibold mb-4 text-green-800">Specialized Documentation</h4>
+          <h4 className="text-lg font-semibold mb-4 text-green-800">specialised Documentation</h4>
           <ul className="space-y-2 text-sm text-green-700">
             <li>• Heritage restoration case studies</li>
             <li>• Custom stain and finish comparisons</li>
@@ -292,7 +292,7 @@ const FloorSandingDigitalMarketing = () => {
       
       <h3>Value-Based Pricing Models</h3>
       <p className="mb-6">
-        Floor sanding specialists must position themselves as premium service providers who deliver exceptional value rather than competing solely on price. Your pricing strategy should reflect the specialized skills and transformative results you provide.
+        Floor sanding specialists must position themselves as premium service providers who deliver exceptional value rather than competing solely on price. Your pricing strategy should reflect the specialised skills and transformative results you provide.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -409,7 +409,7 @@ const FloorSandingDigitalMarketing = () => {
         </div>
       </div>
 
-      <h2>Customer Journey Optimization</h2>
+      <h2>Customer Journey optimisation</h2>
       
       <h3>Lead Generation and Nurturing</h3>
       <p className="mb-6">
@@ -470,7 +470,7 @@ const FloorSandingDigitalMarketing = () => {
         </div>
       </div>
 
-      <h2>Performance Measurement and Optimization</h2>
+      <h2>Performance Measurement and optimisation</h2>
       
       <h3>Key Performance Indicators for Business Growth</h3>
       <p className="mb-6">
@@ -507,7 +507,7 @@ const FloorSandingDigitalMarketing = () => {
             <li>• Lifetime customer value calculations</li>
             <li>• Brand awareness and recognition metrics</li>
             <li>• Social media engagement and reach</li>
-            <li>• Website traffic and conversion optimization</li>
+            <li>• Website traffic and conversion optimisation</li>
           </ul>
         </div>
       </div>
@@ -516,7 +516,7 @@ const FloorSandingDigitalMarketing = () => {
       
       <h3>Year-Round Marketing Calendar</h3>
       <p className="mb-6">
-        Optimize marketing efforts for seasonal demand patterns while maintaining consistent brand presence and customer engagement throughout the year.
+        optimise marketing efforts for seasonal demand patterns while maintaining consistent brand presence and customer engagement throughout the year.
       </p>
 
       <div className="space-y-4 mb-8">
@@ -527,7 +527,7 @@ const FloorSandingDigitalMarketing = () => {
 
         <div className="bg-yellow-100 p-4 rounded-lg border border-yellow-300">
           <h4 className="font-semibold text-yellow-800 mb-2">Summer Peak (December-February)</h4>
-          <p className="text-sm text-yellow-700">Maximum capacity utilization with premium pricing for urgent projects and holiday season preparations.</p>
+          <p className="text-sm text-yellow-700">Maximum capacity utilisation with premium pricing for urgent projects and holiday season preparations.</p>
         </div>
 
         <div className="bg-orange-100 p-4 rounded-lg border border-orange-300">

@@ -91,7 +91,7 @@ const RemovalistDigitalMarketing = () => {
     answer: "Google My Business and local SEO are crucial as most people search for 'removalists near me'. However, a multi-channel approach including Google Ads, social media, and review management works best."
   }, {
     question: "How do I get more online reviews for my removalist business?",
-    answer: "Follow up with customers within 24 hours of job completion, send personalized review requests via email/SMS, make the review process easy, and consider small incentives for honest reviews."
+    answer: "Follow up with customers within 24 hours of job completion, send personalised review requests via email/SMS, make the review process easy, and consider small incentives for honest reviews."
   }, {
     question: "Should I use Google Ads for my removalist business?",
     answer: "Yes, Google Ads can be highly effective for removalists. Target emergency keywords like 'urgent movers' and local terms like 'removalists [city]' to capture high-intent customers actively searching for moving services."
@@ -169,7 +169,7 @@ const RemovalistDigitalMarketing = () => {
 
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Google My Business Optimization</h3>
+              <h3 className="text-xl font-semibold mb-4">Google My Business optimisation</h3>
               <p className="mb-4">
                 GMB is crucial for local visibility when people search for &quot;removalists near me.&quot;
               </p>
@@ -188,7 +188,7 @@ const RemovalistDigitalMarketing = () => {
 
   
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-6">Search Engine Optimization (SEO) for Removalists</h2>
+            <h2 className="text-3xl font-bold mb-6">Search Engine optimisation (SEO) for Removalists</h2>
         
         <div className="space-y-6">
           <Card className="border-l-4 border-l-primary">
@@ -227,16 +227,16 @@ const RemovalistDigitalMarketing = () => {
               <h3 className="text-xl font-semibold mb-4">Technical SEO Fundamentals</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold mb-2">Page Speed Optimization</h4>
+                  <h4 className="font-semibold mb-2">Page Speed optimisation</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• Compress images and videos</li>
                     <li>• Use fast, reliable hosting</li>
-                    <li>• Minimize plugins and scripts</li>
+                    <li>• minimise plugins and scripts</li>
                     <li>• Enable browser caching</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Mobile Optimization</h4>
+                  <h4 className="font-semibold mb-2">Mobile optimisation</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• Responsive design implementation</li>
                     <li>• Touch-friendly navigation</li>
@@ -274,7 +274,7 @@ const RemovalistDigitalMarketing = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Bidding Strategies</h4>
                   <ul className="space-y-2 text-sm">
-                    <li><strong>Maximize Conversions:</strong> Best for lead generation</li>
+                    <li><strong>maximise Conversions:</strong> Best for lead generation</li>
                     <li><strong>Target CPA:</strong> Control cost per acquisition</li>
                     <li><strong>Manual CPC:</strong> Full control over keyword bids</li>
                     <li><strong>Enhanced CPC:</strong> Automated bid adjustments</li>
@@ -372,7 +372,7 @@ const RemovalistDigitalMarketing = () => {
                   <h4 className="font-semibold mb-2">Timing & Approach</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• Request reviews within 24 hours of job completion</li>
-                    <li>• Send personalized follow-up emails</li>
+                    <li>• Send personalised follow-up emails</li>
                     <li>• Use SMS for immediate feedback requests</li>
                     <li>• Make the review process simple (direct links)</li>
                     <li>• Follow up on incomplete moves professionally</li>
@@ -527,7 +527,7 @@ const RemovalistDigitalMarketing = () => {
                   <ul className="space-y-1 text-sm">
                     <li>✓ Website traffic and conversion analysis</li>
                     <li>✓ Search ranking position changes</li>
-                    <li>✓ Advertising performance and optimization</li>
+                    <li>✓ Advertising performance and optimisation</li>
                     <li>✓ Review and reputation monitoring</li>
                     <li>✓ Social media engagement metrics</li>
                     <li>✓ Competitive analysis and market trends</li>
@@ -560,7 +560,7 @@ const RemovalistDigitalMarketing = () => {
                 <h4 className="font-semibold mb-2">Customer Experience Evolution</h4>
                 <ul className="space-y-1 text-sm">
                   <li>• Contactless service options</li>
-                  <li>• Personalized moving experiences</li>
+                  <li>• personalised moving experiences</li>
                   <li>• Sustainability messaging and practices</li>
                   <li>• Community-focused content marketing</li>
                   <li>• Multi-channel customer support</li>
@@ -572,11 +572,11 @@ const RemovalistDigitalMarketing = () => {
               <h4 className="font-semibold mb-2">Action Plan for 2024</h4>
               <ol className="space-y-1 text-sm">
                 <li>1. <strong>Audit Current Digital Presence:</strong> Assess website, listings, and social media</li>
-                <li>2. <strong>Implement Core SEO:</strong> Optimize for local search and mobile users</li>
+                <li>2. <strong>Implement Core SEO:</strong> optimise for local search and mobile users</li>
                 <li>3. <strong>Launch Google Ads:</strong> Start with search campaigns targeting high-intent keywords</li>
                 <li>4. <strong>Build Review System:</strong> Create automated follow-up sequences</li>
                 <li>5. <strong>Expand Content Marketing:</strong> Regular blog posts and social media updates</li>
-                <li>6. <strong>Monitor and Optimize:</strong> Monthly performance reviews and strategy adjustments</li>
+                <li>6. <strong>Monitor and optimise:</strong> Monthly performance reviews and strategy adjustments</li>
               </ol>
             </div>
 

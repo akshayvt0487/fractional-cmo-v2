@@ -71,7 +71,7 @@ const relatedArticles = [{
   readTime: "25 min read"
 }, {
   title: "Local SEO for Trade Businesses: Dominate Your Service Area",
-  description: "Master local search optimization for trade businesses",
+  description: "Master local search optimisation for trade businesses",
   url: "/blog/local-seo-trade-businesses",
   category: "Digital Marketing - SEO",
   readTime: "18 min read"
@@ -174,7 +174,7 @@ const PaintersLeadGeneration = () => {
                 <ul className="space-y-2">
                   <li><strong>Office Buildings:</strong> Large-scale, consistent projects</li>
                   <li><strong>Retail Spaces:</strong> Brand-focused, timeline-critical</li>
-                  <li><strong>Industrial Facilities:</strong> Specialized coatings, safety requirements</li>
+                  <li><strong>Industrial Facilities:</strong> specialised coatings, safety requirements</li>
                   <li><strong>Property Management:</strong> Ongoing maintenance contracts</li>
                 </ul>
               </CardContent>
@@ -218,7 +218,7 @@ const PaintersLeadGeneration = () => {
           
           <Card className="mb-6">
             <CardHeader>
-              <CardTitle>Google Business Profile Optimization</CardTitle>
+              <CardTitle>Google Business Profile optimisation</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -429,7 +429,7 @@ const PaintersLeadGeneration = () => {
                       <ul className="text-sm space-y-1">
                         <li>• Higher bids for urgent keywords</li>
                         <li>• Extended hours and weekend focus</li>
-                        <li>• Mobile-optimized landing pages</li>
+                        <li>• Mobile-optimised landing pages</li>
                         <li>• Fast response guarantees</li>
                       </ul>
                     </div>
@@ -438,7 +438,7 @@ const PaintersLeadGeneration = () => {
                       <ul className="text-sm space-y-1">
                         <li>• Competitive bidding for planning keywords</li>
                         <li>• Portfolio-focused landing pages</li>
-                        <li>• Quote request optimization</li>
+                        <li>• Quote request optimisation</li>
                         <li>• Consultation booking focus</li>
                       </ul>
                     </div>
@@ -450,7 +450,7 @@ const PaintersLeadGeneration = () => {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">Lead Conversion Optimization</h2>
+          <h2 className="text-2xl font-bold mb-6">Lead Conversion optimisation</h2>
           
           <div className="bg-primary/10 p-6 rounded-lg">
             <h3 className="text-lg font-semibold mb-4">The 5-Minute Response Rule</h3>
@@ -466,7 +466,7 @@ const PaintersLeadGeneration = () => {
               </ul>
               <ul className="space-y-1">
                 <li>• Follow-up sequence automation</li>
-                <li>• Lead scoring and prioritization</li>
+                <li>• Lead scoring and prioritisation</li>
                 <li>• CRM integration for tracking</li>
                 <li>• Performance analytics</li>
               </ul>

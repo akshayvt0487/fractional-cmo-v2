@@ -147,7 +147,7 @@ const CyberSecurityDigitalMarketing = () => {
                 <li>• SME cyber security solutions</li>
                 <li>• Enterprise security consulting</li>
                 <li>• Industry-specific compliance (healthcare, finance)</li>
-                <li>• Cloud security specialization</li>
+                <li>• Cloud security specialisation</li>
                 <li>• Incident response and forensics</li>
                 <li>• Security awareness training</li>
               </ul>
@@ -192,7 +192,7 @@ const CyberSecurityDigitalMarketing = () => {
 
           <Card>
             <CardContent className="p-6">
-              <h4 className="font-semibold mb-3">Enterprise Organizations</h4>
+              <h4 className="font-semibold mb-3">Enterprise organisations</h4>
               <ul className="space-y-2 text-sm">
                 <li>• Complex multi-site environments</li>
                 <li>• Advanced persistent threat concerns</li>
@@ -221,7 +221,7 @@ const CyberSecurityDigitalMarketing = () => {
         
         <Card className="mb-8 bg-gradient-to-r from-red-50 to-orange-50 border-red-200">
           <CardContent className="p-8">
-            <h3 className="text-2xl font-semibold mb-6">Website Strategy and Optimization</h3>
+            <h3 className="text-2xl font-semibold mb-6">Website Strategy and optimisation</h3>
             <p className="text-lg text-muted-foreground mb-6">
               Your website serves as the primary credibility assessment tool for cyber security prospects. 
               Every element must reinforce trust, expertise, and security professionalism.
@@ -266,7 +266,7 @@ const CyberSecurityDigitalMarketing = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <Zap className="h-4 w-4 text-orange-500 mt-1 shrink-0" />
-                    <span><strong>Security-focused UX:</strong> Clear navigation that emphasizes protection</span>
+                    <span><strong>Security-focused UX:</strong> Clear navigation that emphasises protection</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Zap className="h-4 w-4 text-orange-500 mt-1 shrink-0" />
@@ -354,12 +354,12 @@ const CyberSecurityDigitalMarketing = () => {
                 <li>• &quot;GDPR compliance consultant&quot; - 3,200 monthly searches</li>
               </ul>
               
-              <h4 className="font-semibold mb-3">Content Optimization Strategy</h4>
+              <h4 className="font-semibold mb-3">Content optimisation Strategy</h4>
               <ul className="space-y-2 text-sm">
                 <li>• Create comprehensive service pages for each security offering</li>
                 <li>• Develop industry-specific landing pages (healthcare, finance, etc.)</li>
                 <li>• Build topic clusters around security frameworks</li>
-                <li>• Optimize for voice search with FAQ-style content</li>
+                <li>• optimise for voice search with FAQ-style content</li>
               </ul>
             </CardContent>
           </Card>
@@ -443,7 +443,7 @@ const CyberSecurityDigitalMarketing = () => {
           </CardContent>
         </Card>
 
-        <h2 className="text-3xl font-bold mb-8">Sales Funnel Optimization for Long Sales Cycles</h2>
+        <h2 className="text-3xl font-bold mb-8">Sales Funnel optimisation for Long Sales Cycles</h2>
         
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <Card>
@@ -482,7 +482,7 @@ const CyberSecurityDigitalMarketing = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
-                <li>• Customized security proposals</li>
+                <li>• customised security proposals</li>
                 <li>• Pilot project opportunities</li>
                 <li>• Executive-level meetings and presentations</li>
                 <li>• Legal and compliance documentation</li>

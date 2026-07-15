@@ -85,7 +85,7 @@ const ConveyancingSEO = () => {
     answer: "Typically 3-6 months for local rankings and 6-12 months for competitive keywords. Local SEO often shows faster results due to less competition in specific geographic areas."
   }, {
     question: "What are the most important SEO factors for conveyancing firms?",
-    answer: "Local SEO optimization, quality content about property law topics, Google Business Profile management, positive client reviews, and technical website optimization are crucial factors."
+    answer: "Local SEO optimisation, quality content about property law topics, Google Business Profile management, positive client reviews, and technical website optimisation are crucial factors."
   }, {
     question: "Should conveyancing firms target national or local SEO?",
     answer: "Focus primarily on local SEO since conveyancing is location-specific. Target your service areas with geo-specific content while building authority through educational property law content."
@@ -153,8 +153,8 @@ const ConveyancingSEO = () => {
         
         <Card className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
           <CardHeader>
-            <CardTitle>Google Business Profile Optimization</CardTitle>
-            <CardDescription>Your local presence starts with a complete, optimized Google Business Profile</CardDescription>
+            <CardTitle>Google Business Profile optimisation</CardTitle>
+            <CardDescription>Your local presence starts with a complete, optimised Google Business Profile</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-6">
@@ -170,7 +170,7 @@ const ConveyancingSEO = () => {
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold mb-3 text-indigo-700">Optimization Strategy</h4>
+                <h4 className="font-semibold mb-3 text-indigo-700">optimisation Strategy</h4>
                 <ul className="space-y-2 text-sm">
                   <li>📸 <strong>Professional photos</strong> - Office, team, certificates</li>
                   <li>📝 <strong>Regular posts</strong> - Property law updates and tips</li>
@@ -289,7 +289,7 @@ const ConveyancingSEO = () => {
         </Card>
 
         <blockquote className="border-l-4 border-primary pl-6 italic text-lg text-muted-foreground mb-8">
-          &quot;Effective conveyancing SEO combines local optimization with educational content that addresses client concerns throughout their property journey.&quot;
+          &quot;Effective conveyancing SEO combines local optimisation with educational content that addresses client concerns throughout their property journey.&quot;
           <footer className="text-sm mt-2">— Legal Marketing Best Practice</footer>
         </blockquote>
 
@@ -304,7 +304,7 @@ const ConveyancingSEO = () => {
             <CardContent>
               <ul className="space-y-2 text-sm">
                 <li>⚡ <strong>Page speed:</strong> Target under 3 seconds load time</li>
-                <li>📱 <strong>Mobile optimization:</strong> Responsive design essential</li>
+                <li>📱 <strong>Mobile optimisation:</strong> Responsive design essential</li>
                 <li>🔒 <strong>SSL certificate:</strong> HTTPS for security and trust</li>
                 <li>🗂️ <strong>Site structure:</strong> Clear navigation and hierarchy</li>
                 <li>🔍 <strong>Internal linking:</strong> Connect related content</li>
@@ -331,11 +331,11 @@ const ConveyancingSEO = () => {
 
         <h2>Building Your SEO-Driven Conveyancing Practice</h2>
         <p>
-          SEO success for conveyancing firms requires a systematic approach that combines local search optimization, valuable content creation, and technical excellence. By implementing these proven strategies consistently over time, your practice will capture more qualified leads and establish authority in your local property market.
+          SEO success for conveyancing firms requires a systematic approach that combines local search optimisation, valuable content creation, and technical excellence. By implementing these proven strategies consistently over time, your practice will capture more qualified leads and establish authority in your local property market.
         </p>
         
         <p>
-          Start with the foundation - optimize your Google Business Profile and ensure your website provides an exceptional user experience. Then focus on creating helpful content that addresses the common concerns and questions of property buyers and sellers in your area. As your content library grows and your local search presence strengthens, you&apos;ll see sustainable increases in organic traffic and qualified inquiries.
+          Start with the foundation - optimise your Google Business Profile and ensure your website provides an exceptional user experience. Then focus on creating helpful content that addresses the common concerns and questions of property buyers and sellers in your area. As your content library grows and your local search presence strengthens, you&apos;ll see sustainable increases in organic traffic and qualified inquiries.
         </p>
 
         <p>

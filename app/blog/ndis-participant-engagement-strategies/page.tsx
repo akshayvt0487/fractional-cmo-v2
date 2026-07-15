@@ -83,7 +83,7 @@ const NDISParticipantEngagement = () => {
 
   const faqs = [{
     question: "What are the key principles of effective NDIS participant engagement?",
-    answer: "Effective engagement is based on person-centered approaches, choice and control, cultural competency, and strength-based planning. It involves recognizing each participant as unique, supporting their decision-making, and building on their existing capabilities."
+    answer: "Effective engagement is based on person-centered approaches, choice and control, cultural competency, and strength-based planning. It involves recognising each participant as unique, supporting their decision-making, and building on their existing capabilities."
   }, {
     question: "How can NDIS providers ensure culturally competent engagement?",
     answer: "Cultural competency involves understanding diversity, avoiding assumptions, using inclusive language, respecting traditional practices, and creating safe spaces for all participants. Providers should receive ongoing cultural awareness training and seek feedback from diverse communities."
@@ -142,7 +142,7 @@ const NDISParticipantEngagement = () => {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                 <div>
-                  <strong>Individual Focus:</strong> Recognizing each participant as unique with their own goals, preferences, and needs
+                  <strong>Individual Focus:</strong> recognising each participant as unique with their own goals, preferences, and needs
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -288,7 +288,7 @@ const NDISParticipantEngagement = () => {
             <div className="space-y-3">
               <div>
                 <h4 className="font-semibold text-primary">Understanding Diversity</h4>
-                <p className="text-sm text-muted-foreground">Recognizing the impact of culture, ethnicity, religion, and background on participant needs and preferences</p>
+                <p className="text-sm text-muted-foreground">recognising the impact of culture, ethnicity, religion, and background on participant needs and preferences</p>
               </div>
               <div>
                 <h4 className="font-semibold text-primary">Avoiding Assumptions</h4>
@@ -387,7 +387,7 @@ const NDISParticipantEngagement = () => {
             <ul className="text-sm space-y-2">
               <li>• Participant satisfaction scores</li>
               <li>• Goal achievement rates</li>
-              <li>• Service utilization rates</li>
+              <li>• Service utilisation rates</li>
               <li>• Complaint and compliment ratios</li>
               <li>• Retention rates</li>
             </ul>
