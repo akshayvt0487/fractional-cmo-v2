@@ -1,5 +1,6 @@
 import { createMetadata } from "@/lib/seo";
 import React from 'react';
+import Link from "next/link";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { relatedArticles, generateBlogPostingSchema } from '@/utils/seoUtils';
 import { blogPosts } from '@/data/blogPosts';
@@ -521,7 +522,7 @@ const BricklayersGrowthMarketing = () => {
 
         <div className="mb-8">
           <p className="text-lg mb-6 leading-relaxed">
-            Growth requires strategic thinking beyond just taking on more projects. Build systems that allow you to scale operations while maintaining quality and profitability:
+            Growth requires strategic thinking beyond just taking on more projects. <Link href="/services/digital-growth-strategy" className="text-primary font-semibold hover:underline">Hire a Growth Strategist</Link> to help you build systems that scale your operations while maintaining quality and profitability:
           </p>
         </div>
 
@@ -941,7 +942,7 @@ const BricklayersGrowthMarketing = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
-                <li>🎯 <strong>5-year business plan:</strong> Clear milestones and growth targets</li>
+                <li>🎯 <strong>5-year business plan:</strong> <Link href="/services/digital-growth-strategy">Strategic growth planning</Link> with clear milestones and growth targets keeps your business on a defined path to scale</li>
                 <li>📊 <strong>Market analysis:</strong> Regular competitive analysis and opportunity assessment</li>
                 <li>🤝 <strong>Exit strategy planning:</strong> Business value building for eventual sale</li>
                 <li>💼 <strong>Succession planning:</strong> Develop next-generation leadership</li>

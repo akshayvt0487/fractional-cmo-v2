@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
@@ -117,7 +118,7 @@ const BuyersAgentsLeadGeneration = () => {
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
-            Lead generation is the lifeblood of a successful buyers agent practice. Whether you're building your initial client base or scaling your business, having a systematic approach to generating quality leads ensures consistent growth and income.
+            Lead generation is the lifeblood of a successful buyers agent practice. Whether you're building your initial client base or scaling your business, having a systematic approach to <Link href="/services/lead-generation/buyers-agents" className="text-primary font-semibold hover:underline">generating quality leads</Link> ensures consistent growth and income.
           </p>
         </CardContent>
       </Card>

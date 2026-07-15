@@ -260,6 +260,7 @@ const AccountingGrowthStrategy = () => {
             <li><strong>Content Marketing:</strong> Regular blog posts addressing client pain points</li>
             <li><strong>Social Media Presence:</strong> LinkedIn thought leadership and local business networking</li>
             <li><strong>Pay-Per-Click (PPC) Advertising:</strong> Google Ads for high-intent keywords</li>
+            <li><strong>Strategic Marketing Leadership:</strong> Partner with a Fractional CMO Agency to build and oversee your full digital marketing strategy without the cost of a full-time hire.</li>
           </ul>
         </div>
       </div>
@@ -570,7 +571,7 @@ const AccountingGrowthStrategy = () => {
       <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-8 my-8">
         <h3 className="text-2xl font-semibold mb-4">Ready to Scale Your Accounting Practice?</h3>
         <p className="mb-6">
-          Implementing a comprehensive growth strategy requires expertise in both accounting operations and business development. Our specialized team helps accounting practices like yours achieve sustainable growth while maintaining service excellence.
+          Implementing a comprehensive growth strategy requires expertise in both accounting operations and business development. Working with a <Link href="/services/digital-growth-strategy">Growth Strategy Consultant</Link> gives your accounting practice the specialist guidance needed to achieve sustainable growth while maintaining service excellence.
         </p>
         <Button size="lg" className="gap-2">
           Get Your Custom Growth Strategy <ArrowRight className="h-4 w-4" />

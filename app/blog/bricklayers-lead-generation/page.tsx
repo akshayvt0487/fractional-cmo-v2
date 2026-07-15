@@ -1,5 +1,6 @@
 import { createMetadata } from "@/lib/seo";
 import React from 'react';
+import Link from "next/link";
 import OptimizedBlogLayout from '@/components/OptimizedBlogLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -162,7 +163,7 @@ const BricklayersLeadGeneration = () => {
         </Card>
 
         <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-          The construction industry offers excellent opportunities for skilled bricklayers, but finding consistent, well-paying work requires more than just technical skills. This guide reveals proven lead generation strategies that successful bricklayers use to build thriving businesses.
+          The construction industry offers excellent opportunities for skilled bricklayers, but finding consistent, well-paying work requires more than just technical skills. This guide reveals proven <Link href="/services/lead-generation" className="text-primary font-semibold hover:underline">lead generation strategies</Link> that successful bricklayers use to build thriving businesses.
         </p>
       </section>
 

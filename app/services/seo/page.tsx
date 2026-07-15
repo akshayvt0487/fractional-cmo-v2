@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SITE_URL } from '@/lib/seo';
-import { getMainServicePageData, generateFAQSchema } from '@/data/serviceData';
+import { getMainServicePageData } from '@/data/serviceData';
 import ServiceLayout from '@/components/ServicePageLayout.fixed';
 
 // `mainServicePages` uses the key `seo-services` (not `seo`). Use the canonical key so the
@@ -122,18 +122,14 @@ export default function SeoPage() {
       "areaServed": "AU"
     }
   };
-  const faqSchema = generateFAQSchema(data.faqs);
-  // Breadcrumb schema is handled by BreadcrumbNavigation component to avoid duplication
+  // Breadcrumb schema is handled by BreadcrumbNavigation component
+  // FAQ schema is kept on industry-specific sub-service pages only
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceLayout data={data} serviceSlug="seo" />
     </>

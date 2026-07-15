@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/seo";
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Car, Users, Target, AlertTriangle } from "lucide-react";
 import OptimizedBlogLayout from "@/components/OptimizedBlogLayout";
@@ -96,7 +97,7 @@ const CarInspectionMarketing = () => {
     />
     <OptimizedBlogLayout articleData={articleData} relatedArticles={relatedArticles.tradies} faqs={faqs} heroImage={'/images/blog/car-inspection-marketing.jpg'} heroAlt="Car inspection marketing strategies and business growth">
         <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-          🚗 The car inspection industry offers tremendous growth opportunities, but success depends on effective marketing to reach car buyers when they need professional assessment services. This comprehensive guide reveals proven strategies that successful car inspection businesses use to build credibility, attract clients, and generate consistent bookings in competitive automotive markets.
+          🚗 The car inspection industry offers tremendous growth opportunities, but success depends on effective <Link href="/services/digital-marketing" className="text-primary font-semibold hover:underline">digital marketing</Link> to reach car buyers when they need professional assessment services. This comprehensive guide reveals proven strategies that successful car inspection businesses use to build credibility, attract clients, and generate consistent bookings in competitive automotive markets.
         </p>
 
         <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">

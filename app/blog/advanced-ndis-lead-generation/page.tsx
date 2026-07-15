@@ -135,7 +135,7 @@ const AdvancedNDISLeadGeneration = () => {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Multi-Channel Lead Generation Framework</h2>
         <p className="text-lg text-muted-foreground mb-8">
-          Successful NDIS lead generation requires a sophisticated, multi-channel approach that builds trust, demonstrates value, and connects with participants through their preferred communication methods.
+          Successful <Link href="/services/lead-generation/ndis-providers">NDIS lead generation</Link> requires a sophisticated, multi-channel approach that builds trust, demonstrates value, and connects with participants through their preferred communication methods. A <Link href="/">Lead Generation Consultant</Link> with NDIS expertise can help you design and implement this framework from the ground up.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">

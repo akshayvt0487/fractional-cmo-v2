@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import { createMetadata } from "@/lib/seo";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
@@ -117,7 +118,7 @@ const BuyersAgentsSEO = () => {
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
-            SEO is one of the most cost-effective long-term strategies for buyers agents to generate consistent, qualified leads. By optimizing your online presence for search engines, you can appear in front of property buyers actively searching for representation in your area.
+            SEO is one of the most cost-effective long-term strategies for buyers agents to generate consistent, qualified leads. By optimizing your online presence with <Link href="/services/seo/buyers-agents" className="text-primary font-semibold hover:underline">professional SEO services</Link>, you can appear in front of property buyers actively searching for representation in your area.
           </p>
         </CardContent>
       </Card>

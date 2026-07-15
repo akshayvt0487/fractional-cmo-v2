@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import { createMetadata } from "@/lib/seo";
 import { generateBlogPostingSchema, generateFAQSchema, SchemaScript } from "@/lib/schemas";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -121,7 +122,7 @@ const BuyersAgentsDigitalMarketing = () => {
       <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="p-6">
           <p className="text-lg leading-relaxed">
-            Digital marketing has become essential for buyers agents in today's competitive property market. Whether you're building your practice or expanding your client base, a strategic digital presence can significantly increase your visibility and attract quality leads.
+            Digital marketing has become essential for buyers agents in today's competitive property market. Whether you're building your practice or expanding your client base, a strategic <Link href="/services/digital-marketing/buyers-agents" className="text-primary font-semibold hover:underline">digital marketing</Link> presence can significantly increase your visibility and attract quality leads.
           </p>
         </CardContent>
       </Card>

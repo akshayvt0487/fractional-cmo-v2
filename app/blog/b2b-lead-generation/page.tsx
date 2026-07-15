@@ -732,7 +732,7 @@ const B2BLeadGeneration = () => {
       </p>
 
       <p className="mb-8">
-        The strategies outlined in this guide provide a comprehensive roadmap for B2B lead generation success. Implement them systematically, measure your results, and continuously optimize based on data. Your investment in strategic lead generation will compound over time, creating a sustainable competitive advantage.
+        The strategies outlined in this guide provide a comprehensive roadmap for B2B lead generation success. Implement them systematically, measure your results, and continuously optimise based on data. Your investment in <Link href="/services/lead-generation">strategic lead generation</Link> will compound over time, creating a sustainable competitive advantage.
       </p>
 
       <p>

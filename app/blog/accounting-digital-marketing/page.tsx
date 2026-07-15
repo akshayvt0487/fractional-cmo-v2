@@ -86,7 +86,7 @@ const AccountingDigitalMarketing = () => {
     },
     {
       question: "What's the best digital marketing strategy for accounting firms?",
-      answer: "A combination of local SEO, content marketing, Google Ads, and LinkedIn marketing works best. Focus on building trust through testimonials, case studies, and educational content."
+      answer: "A combination of local SEO, content marketing, Google Ads, and LinkedIn marketing works best. Investing in the right digital marketing services ensures you build trust through testimonials, case studies, and educational content — while staying focused on client acquisition."
     },
     {
       question: "How long does it take to see results from accounting firm digital marketing?",
