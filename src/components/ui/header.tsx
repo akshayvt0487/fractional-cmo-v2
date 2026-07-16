@@ -150,7 +150,7 @@ const handleSectionClick = (sectionId: string) => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center justify-between py-3">
             <div className="flex items-center space-x-4">
-              <h2 className="text-white/60 text-xs font-medium tracking-wide uppercase">Today&apos;s Featured Articles:</h2>
+              <span className="text-white/60 text-xs font-medium tracking-wide uppercase">Today&apos;s Featured Articles:</span>
               <span className="text-white/40 text-xs">Click to read and explore more!</span>
             </div>
             <div className="flex-1 max-w-3xl mx-8 overflow-hidden h-8 relative">
@@ -182,7 +182,7 @@ const handleSectionClick = (sectionId: string) => {
           <div className="md:hidden py-3 px-2">
             <div className="flex flex-col space-y-3">
               <div className="flex items-center justify-between">
-                <h3 className="text-white/60 text-xs font-medium tracking-wide uppercase">Today&apos;s Featured Articles:</h3>
+                <span className="text-white/60 text-xs font-medium tracking-wide uppercase">Today&apos;s Featured Articles:</span>
                 <span className="text-white/40 text-xs">Click to read!</span>
               </div>
               <div className="overflow-hidden h-8 relative">

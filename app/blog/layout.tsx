@@ -9,7 +9,6 @@ export const metadata: Metadata = createMetadata({
   title: 'Blog - Digital Marketing & Growth Strategy Articles',
   description: 'Read our latest articles on digital marketing, SEO, Google Ads, lead generation, and growth strategies for service businesses.',
   path: '/blog',
-  canonical: `${SITE_URL}/blog`,
   robots: {
     index: true,
     follow: true,
