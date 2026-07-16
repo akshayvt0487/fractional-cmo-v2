@@ -45,7 +45,7 @@ export async function POST(req: Request) {
             service,
             message: messageOrChallenge,
             timeline,
-            submittedAt: new Date().toISOString()
+            submittedAt: new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' })
           }),
         });
 
