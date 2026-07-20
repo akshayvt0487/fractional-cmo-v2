@@ -123,7 +123,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="name">Name *</Label>
+                        <Label htmlFor="name">Name <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
                         <Input
                           id="name"
                           required
@@ -133,7 +133,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
 
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="email">Business Email *</Label>
+                        <Label htmlFor="email">Business Email <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
                         <Input
                           id="email"
                           type="email"
@@ -147,7 +147,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
 
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="company">Company Name *</Label>
+                        <Label htmlFor="company">Company Name <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
                         <Input
                           id="company"
                           required
@@ -157,7 +157,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
 
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="phone">Phone Number *</Label>
+                        <Label htmlFor="phone">Phone Number <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
                         <Input
                           id="phone"
                           type="tel"
@@ -188,7 +188,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="message">Tell me about your business and goals *</Label>
+                      <Label htmlFor="message">Tell me about your business and goals <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
                       <Textarea
                         id="message"
                         required
@@ -209,11 +209,11 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
 
                     </div>
 
-                    <div className="bg-accent/10 rounded-lg p-4 text-sm text-muted-foreground">
+                    <div className="border border-border/50 rounded-md px-3 py-2.5 text-xs text-muted-foreground/70">
                       <div className="flex items-start gap-2">
-                        <Shield className="h-4 w-4 mt-0.5 text-primary" />
-                        <p>
-                          <strong>Privacy:</strong> Your information is confidential and will never be shared.
+                        <Shield className="h-3.5 w-3.5 mt-0.5 text-muted-foreground/50 shrink-0" />
+                        <p className="leading-relaxed">
+                          <strong className="text-muted-foreground/80">Privacy:</strong> Your information is confidential and will never be shared.
                           I&apos;ll use it only to understand your business and provide relevant recommendations.
                         </p>
                       </div>

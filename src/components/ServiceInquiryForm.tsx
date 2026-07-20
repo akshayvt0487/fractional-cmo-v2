@@ -94,7 +94,7 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="name">Name *</Label>
+                <Label htmlFor="name">Name <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
                 <Input
                   id="name"
                   name="name"
@@ -105,7 +105,7 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="email">Email *</Label>
+                <Label htmlFor="email">Email <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
                 <Input
                   id="email"
                   name="email"
@@ -143,7 +143,7 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="challenge">What&apos;s your biggest {serviceName.toLowerCase()} challenge? *</Label>
+              <Label htmlFor="challenge">What&apos;s your biggest {serviceName.toLowerCase()} challenge? <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
               <Textarea
                 id="challenge"
                 name="challenge"
@@ -155,7 +155,7 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
               />
             </div>
 
-            <Button type="submit" className="w-full bg-[#0F172A] text-white hover:bg-[#1B2335] cursor-pointer" disabled={isSubmitting}>
+            <Button type="submit" className="w-full bg-[#0F172A] text-white hover:bg-[#1E293B] hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:shadow-md transition-all duration-300 cursor-pointer" disabled={isSubmitting}>
               {isSubmitting ? (
                 'Submitting...'
               ) : (
@@ -166,10 +166,10 @@ const ServiceInquiryForm = ({ serviceName }: ServiceInquiryFormProps) => {
               )}
             </Button>
 
-            <p className="text-sm text-muted-foreground text-center flex items-center justify-center gap-2">
-              <Shield className="w-4 h-4" />
-              Your information is secure and confidential
-            </p>
+            <div className="border border-border/50 rounded-md px-3 py-2 text-xs text-muted-foreground/70 flex items-center justify-center gap-2">
+              <Shield className="w-3.5 h-3.5 text-muted-foreground/50 shrink-0" />
+              <span>Your information is secure and confidential</span>
+            </div>
           </form>
         </CardContent>
       </Card>
