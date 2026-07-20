@@ -176,12 +176,17 @@
     background: linear-gradient(135deg, hsl(210, 100%, 26%) 0%, hsl(195, 100%, 48%) 50%, hsl(180, 100%, 60%) 100%);
     color: white; border: none;
     box-shadow: 0 12px 32px -12px hsl(210, 100%, 26%, 0.35);
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .btn-hero:hover {
-    filter: saturate(1.1);
-    transform: translateY(-1px);
-    box-shadow: 0 16px 40px -16px hsl(195, 100%, 48%, 0.45);
+    filter: brightness(1.12) saturate(1.15);
+    transform: translateY(-2px);
+    box-shadow: 0 20px 44px -16px hsl(195, 100%, 48%, 0.5);
+  }
+  .btn-hero:active {
+    transform: translateY(0px);
+    filter: brightness(0.95);
+    box-shadow: 0 8px 24px -8px hsl(210, 100%, 26%, 0.3);
   }
   .btn-hero:focus-visible {
     outline: none;
@@ -220,12 +225,27 @@
     border-style: solid !important;
     border-width: 1px !important;
     border-color: var(--border-hex) !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
     appearance: none !important;
     -webkit-appearance: none !important;
     background: hsl(var(--background) / 1) !important;
     color: inherit !important;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease !important;
+    cursor: text;
+  }
+
+  /* Placeholder text should be very light */
+  :where(form) input::placeholder,
+  :where(form) textarea::placeholder {
+    color: hsl(var(--muted-foreground) / 0.4) !important;
+  }
+
+  /* Select triggers should use pointer cursor */
+  :where(form) [data-radix-select-trigger],
+  :where(form) select,
+  :where(form) button[role="combobox"] {
+    cursor: pointer !important;
   }
 
   /* Also ensure Tailwind utility class `border-input` uses the same color */
@@ -233,11 +253,31 @@
     border-color: rgb(var(--border-rgb) / 1) !important;
   }
 
-  /* Focus states: subtle ring using the border RGB */
-  :where(form) input:focus, :where(form) textarea:focus, :where(form) select:focus {
+  /* Hover states: slightly darker border for feedback */
+  :where(form) input:hover, :where(form) textarea:hover, :where(form) select:hover,
+  :where(form) [data-radix-select-trigger]:hover {
+    border-color: #94A3B8 !important;
+  }
+
+  /* Focus states: crisp blue border outline + blue focus ring + subtle soft blue background tint */
+  :where(form) input:focus, :where(form) textarea:focus, :where(form) select:focus,
+  :where(form) [data-radix-select-trigger]:focus,
+  :where(form) [data-radix-select-trigger][data-state="open"],
+  input:focus, textarea:focus, select:focus,
+  [data-radix-select-trigger]:focus, [data-radix-select-trigger][data-state="open"] {
     outline: none !important;
-    box-shadow: 0 0 0 4px rgb(var(--border-rgb) / 0.12) !important;
-    border-color: var(--border-hex) !important;
+    border-color: #2563EB !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18) !important;
+    background-color: #F0F6FF !important;
+  }
+
+  /* Dropdown option hover / selected styling */
+  :where(form) select option:hover,
+  :where(form) select option:focus,
+  :where(form) select option:active,
+  :where(form) select option:checked {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
   }
 
   /* Autofill (WebKit): remove yellow bg and enforce border/color */

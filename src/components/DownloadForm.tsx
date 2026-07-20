@@ -258,7 +258,7 @@ const DownloadForm = ({ title, filename, variant = "outline", size = "lg" }: Dow
                 required
                 placeholder="Enter your phone number" />
             </div>
-            <div className="text-sm text-muted-foreground">
+            <div className="border border-border/50 rounded-md px-3 py-2 text-xs text-muted-foreground/70">
               By downloading this guide, you&apos;ll receive additional resources and insights via email.
             </div>
             <Button type="submit" disabled={isSubmitting} className="w-full cursor-pointer">

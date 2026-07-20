@@ -188,20 +188,20 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
               <SelectTrigger className="h-12 text-base">
                 <SelectValue placeholder="What do you need help with?" />
               </SelectTrigger>
-              <SelectContent className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2">
-                <SelectItem value="fractional-cmo" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Fractional CMO Services</SelectItem>
-                <SelectItem value="growth-strategy" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Growth Strategy & Planning</SelectItem>
-                <SelectItem value="performance-ads" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Google Ads & Meta Advertising</SelectItem>
-                <SelectItem value="seo-content" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">SEO & Content Marketing</SelectItem>
-                <SelectItem value="conversion-optimization" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Conversion Rate Optimisation</SelectItem>
-                <SelectItem value="marketing-automation" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Marketing Automation Setup</SelectItem>
-                <SelectItem value="consultation" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Strategy Consultation</SelectItem>
+              <SelectContent>
+                <SelectItem value="fractional-cmo">Fractional CMO Services</SelectItem>
+                <SelectItem value="growth-strategy">Growth Strategy & Planning</SelectItem>
+                <SelectItem value="performance-ads">Google Ads & Meta Advertising</SelectItem>
+                <SelectItem value="seo-content">SEO & Content Marketing</SelectItem>
+                <SelectItem value="conversion-optimization">Conversion Rate Optimisation</SelectItem>
+                <SelectItem value="marketing-automation">Marketing Automation Setup</SelectItem>
+                <SelectItem value="consultation">Strategy Consultation</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="challenge">Tell me about your business and main growth challenge *</Label>
+            <Label htmlFor="challenge">Tell me about your business and main growth challenge <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
             <Textarea
               id="challenge"
               required
@@ -233,7 +233,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
             </Select>
           </div>
 
-          <Button type="submit" className="w-full h-12 text-white cursor-pointer bg-[#1A2235] hover:bg-[#313C4E] duration-200 ease-in-out" disabled={isSubmitting}>
+          <Button type="submit" className="w-full h-12 text-white cursor-pointer bg-[#0F172A] hover:bg-[#1E293B] hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:shadow-md transition-all duration-300" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit Request"}
           </Button>
         </form>

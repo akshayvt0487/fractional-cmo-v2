@@ -94,7 +94,7 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Name *</Label>
+              <Label htmlFor="name">Name <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
               <Input
                 id="name"
                 name="name"
@@ -106,7 +106,7 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email *</Label>
+              <Label htmlFor="email">Email <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
               <Input
                 id="email"
                 name="email"
@@ -147,7 +147,7 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="challenge">What&apos;s your biggest {preSelectedService?.toLowerCase()} challenge? *</Label>
+            <Label htmlFor="challenge">What&apos;s your biggest {preSelectedService?.toLowerCase()} challenge? <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
             <Textarea
               id="challenge"
               name="challenge"
@@ -160,7 +160,7 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
             />
           </div>
 
-          <Button type="submit" className="w-full bg-[#0F172A] text-white hover:bg-[#1B2335] transition-colors duration-200 transform hover:-translate-y-0.5 cursor-pointer" disabled={isSubmitting}>
+          <Button type="submit" className="w-full bg-[#0F172A] text-white hover:bg-[#1E293B] hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:shadow-md transition-all duration-300 cursor-pointer" disabled={isSubmitting}>
             {isSubmitting ? (
               'Submitting...'
             ) : (
@@ -171,9 +171,9 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
             )}
           </Button>
 
-          <p className="text-xs text-muted-foreground text-center">
+          <div className="border border-border/50 rounded-md px-3 py-2 text-xs text-muted-foreground/70 text-center">
             No spam. We&apos;ll respond within 24 hours.
-          </p>
+          </div>
         </form>
       </CardContent>
     </Card>
