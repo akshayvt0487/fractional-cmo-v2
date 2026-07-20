@@ -198,23 +198,36 @@
     backdrop-filter: blur(10px);
   }
 
-  /* subtle hover for card-like components */
+  /* Universal Blue Hover Animation & Glow for all cards across the website */
   .card, .glass-card, .card-hoverable {
-    transition: transform 180ms ease, box-shadow 180ms ease;
-    will-change: transform, box-shadow;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease !important;
+    will-change: transform, box-shadow, border-color;
   }
   .card:hover, .glass-card:hover, .card-hoverable:hover,
   .card:focus-within, .glass-card:focus-within, .card-hoverable:focus-within {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    transform: translateY(-6px) !important;
+    border-color: #2563EB !important;
+    box-shadow: 0 20px 40px -12px rgba(37, 99, 235, 0.18), 0 8px 20px -6px rgba(37, 99, 235, 0.1) !important;
   }
 
   /* Slight border highlight on hover for cards and any element using .border-border */
-  .card:hover, .glass-card:hover, .card-hoverable:hover,
-  .card:focus-within, .glass-card:focus-within, .card-hoverable:focus-within,
   .border-border:hover, .border-border:focus {
-    border-color: hsl(var(--primary) / 0.12) !important;
+    border-color: #2563EB !important;
     border-width: 1px !important;
+  }
+
+  /* Inner icon container highlight when hovering cards */
+  .card:hover .rounded-lg, .card:hover .rounded-full,
+  .glass-card:hover .rounded-lg, .glass-card:hover .rounded-full {
+    background-color: #E0EDFF !important;
+    color: #2563EB !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .card:hover svg, .glass-card:hover svg {
+    color: #2563EB !important;
+    transform: scale(1.08);
+    transition: transform 0.3s ease, color 0.3s ease;
   }
 
   /* Form fields: force the same light border color for all inputs
@@ -278,6 +291,12 @@
   :where(form) select option:checked {
     background-color: #2563EB !important;
     color: #FFFFFF !important;
+  }
+
+  /* Ensure all close/cross buttons in modals have pointer cursor */
+  [data-radix-dialog-close],
+  button[aria-label="Close"] {
+    cursor: pointer !important;
   }
 
   /* Autofill (WebKit): remove yellow bg and enforce border/color */

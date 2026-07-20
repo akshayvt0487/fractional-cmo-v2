@@ -160,12 +160,17 @@ const StrategyFormInline = ({ preSelectedService }: StrategyFormInlineProps = {}
             />
           </div>
 
-          <Button type="submit" className="w-full bg-[#0F172A] text-white hover:bg-[#1E293B] hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:shadow-md transition-all duration-300 cursor-pointer" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            variant="hero"
+            className="w-full h-12 text-base font-semibold cursor-pointer group flex items-center justify-center gap-2 shadow-md hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-1 active:translate-y-0 transition-all duration-300"
+            disabled={isSubmitting}
+          >
             {isSubmitting ? (
               'Submitting...'
             ) : (
               <>
-                <Send className="w-4 h-4 mr-2" />
+                <Send className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5" />
                 Get Free Consultation
               </>
             )}

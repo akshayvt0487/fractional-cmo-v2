@@ -178,63 +178,76 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
   // Desktop Mega Menu
   return (
     <div className={cn("relative", className)} ref={dropdownRef}>
-      <div className="flex flex-wrap items-center gap-1 bg-gray-100 border border-gray-200 rounded-lg p-2">
-        {mainCategoryGroups.map((group) => (
-          <div
-            key={group.name}
-            className="relative bg-gray-100 cursor-pointer"
-            onMouseEnter={() => handleMouseEnter(group.name)}
-            onMouseLeave={handleMouseLeave}
-          >
-            <Button
-              variant={(selectedCategory === group.name || (group.name === "Trade/Tradies" && selectedCategory === "Tradies") || 
-                       selectedCategory.startsWith(`${group.name === "Trade/Tradies" ? "Tradies" : group.name} - `)) ? "default" : "ghost"}
-              onClick={() => handleCategoryClick(group.name, !!group.subcategories)}
-              className={cn(
-                "relative cursor-pointer",
-                (selectedCategory === group.name || (group.name === "Trade/Tradies" && selectedCategory === "Tradies")) && "bg-primary text-primary-foreground",
-                selectedCategory.startsWith(`${group.name === "Trade/Tradies" ? "Tradies" : group.name} - `) && "bg-primary/10 text-primary "
-              )}
-            >
-              {group.name}
-              {group.subcategories && (
-                <ChevronDown className="ml-1 h-3 w-3 " />
-              )}
-            </Button>
+      <div className="flex flex-wrap items-center gap-1.5 bg-gray-100/80 border border-gray-200/80 rounded-xl p-2 shadow-xs">
+        {mainCategoryGroups.map((group) => {
+          const isMainSelected = selectedCategory === group.name || (group.name === "Trade/Tradies" && selectedCategory === "Tradies");
+          const isSubSelected = selectedCategory.startsWith(`${group.name === "Trade/Tradies" ? "Tradies" : group.name} - `);
+          const isActive = isMainSelected || isSubSelected;
 
-            {/* Desktop Dropdown */}  
-            {group.subcategories && activeDropdown === group.name && (
-              <div 
-                className="absolute top-full left-0 z-60 mt-1  rounded-lg bg-white shadow-lg p-2 min-w-48 cursor-pointer "
-                onMouseEnter={() => {
-                  if (timeoutRef.current) clearTimeout(timeoutRef.current);
-                }}
-                onMouseLeave={handleMouseLeave}
+          return (
+            <div
+              key={group.name}
+              className="relative cursor-pointer"
+              onMouseEnter={() => handleMouseEnter(group.name)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <Button
+                variant={isActive ? "default" : "ghost"}
+                onClick={() => handleCategoryClick(group.name, !!group.subcategories)}
+                className={cn(
+                  "relative cursor-pointer text-sm font-medium transition-all duration-200 rounded-md px-3.5 py-2",
+                  isMainSelected && "bg-[#2563EB] text-white hover:bg-[#1D4ED8] shadow-xs",
+                  isSubSelected && "bg-blue-100 text-[#2563EB] font-semibold hover:bg-blue-200/80",
+                  !isActive && "text-gray-700 hover:bg-blue-50 hover:text-[#2563EB]"
+                )}
               >
-                <div className="space-y-1 ">
-                  {group.subcategories.map((subcategory) => {
-                    const categoryKey = `${group.name} - ${subcategory}`;
-                    return (
-                      <Button
-                        key={subcategory}
-                        onClick={() => handleSubcategoryClick(group.name, subcategory)}
-                        variant="ghost"
-                        className={cn(
-                          "w-full justify-start text-left text-sm py-2 h-auto",
-                          selectedCategory === categoryKey ? "text-black font-medium" : "text-gray-600 hover:text-black",
-                        )}
-                      >
-                        <span className="flex items-center">
-                          {subcategory}
-                        </span>
-                      </Button>
-                    );
-                  })}
+                {group.name}
+                {group.subcategories && (
+                  <ChevronDown className={cn(
+                    "ml-1.5 h-3.5 w-3.5 transition-transform duration-200",
+                    activeDropdown === group.name && "rotate-180 text-[#2563EB]"
+                  )} />
+                )}
+              </Button>
+
+              {/* Desktop Dropdown */}  
+              {group.subcategories && activeDropdown === group.name && (
+                <div 
+                  className="absolute top-full left-0 z-60 mt-1.5 rounded-xl bg-white shadow-xl border border-gray-100 p-1.5 min-w-52 cursor-pointer animate-in fade-in-0 slide-in-from-top-1 duration-150"
+                  onMouseEnter={() => {
+                    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+                  }}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="space-y-0.5">
+                    {group.subcategories.map((subcategory) => {
+                      const categoryKey = `${group.name} - ${subcategory}`;
+                      const isSelected = selectedCategory === categoryKey;
+
+                      return (
+                        <Button
+                          key={subcategory}
+                          onClick={() => handleSubcategoryClick(group.name, subcategory)}
+                          variant="ghost"
+                          className={cn(
+                            "w-full justify-start text-left text-sm py-2 px-3 h-auto rounded-lg transition-all duration-150 cursor-pointer font-normal",
+                            isSelected
+                              ? "bg-[#2563EB] text-white font-medium shadow-xs"
+                              : "text-gray-700 hover:bg-[#2563EB] hover:text-white"
+                          )}
+                        >
+                          <span className="flex items-center">
+                            {subcategory}
+                          </span>
+                        </Button>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
-        ))}
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

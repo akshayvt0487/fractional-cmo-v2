@@ -229,7 +229,7 @@ const DownloadForm = ({ title, filename, variant = "outline", size = "lg" }: Dow
           </DialogHeader>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Full Name</Label>
+              <Label htmlFor="name">Full Name <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
               <Input
                 id="name"
                 type="text"
@@ -239,7 +239,7 @@ const DownloadForm = ({ title, filename, variant = "outline", size = "lg" }: Dow
                 placeholder="Enter your full name" />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email Address</Label>
+              <Label htmlFor="email">Email Address <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
               <Input
                 id="email"
                 type="email"
@@ -249,7 +249,7 @@ const DownloadForm = ({ title, filename, variant = "outline", size = "lg" }: Dow
                 placeholder="Enter your email address" />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="phone">Phone Number</Label>
+              <Label htmlFor="phone">Phone Number <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
               <Input
                 id="phone"
                 type="tel"

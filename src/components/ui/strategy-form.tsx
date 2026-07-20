@@ -133,7 +133,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <Label htmlFor="name">Name *</Label>
+              <Label htmlFor="name">Name <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
               <Input
                 id="name"
                 required
@@ -144,7 +144,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Business Email *</Label>
+              <Label htmlFor="email">Business Email <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
               <Input
                 id="email"
                 type="email"
@@ -159,7 +159,7 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
 
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <Label htmlFor="company">Company Name *</Label>
+              <Label htmlFor="company">Company Name <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
               <Input
                 id="company"
                 required
@@ -223,18 +223,30 @@ const StrategyForm = ({ preSelectedService }: StrategyFormProps = {}) => {
               <SelectTrigger className="h-12 text-base">
                 <SelectValue placeholder="When would you like to begin?" />
               </SelectTrigger>
-              <SelectContent className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2">
-                <SelectItem value="asap" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Ready to start ASAP</SelectItem>
-                <SelectItem value="1-month" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Within the next month</SelectItem>
-                <SelectItem value="2-3-months" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">2-3 months out</SelectItem>
-                <SelectItem value="planning" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Still in planning phase</SelectItem>
-                <SelectItem value="2026" className="data-state:checked:bg-gray-200 data-highlighted:bg-gray-200 cursor-pointer transition-colors duration-200">Sometime in 2026</SelectItem>
+              <SelectContent>
+                <SelectItem value="asap">Ready to start ASAP</SelectItem>
+                <SelectItem value="1-month">Within the next month</SelectItem>
+                <SelectItem value="2-3-months">2-3 months out</SelectItem>
+                <SelectItem value="planning">Still in planning phase</SelectItem>
+                <SelectItem value="2026">Sometime in 2026</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
-          <Button type="submit" className="w-full h-12 text-white cursor-pointer bg-[#0F172A] hover:bg-[#1E293B] hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:shadow-md transition-all duration-300" disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Submit Request"}
+          <Button
+            type="submit"
+            variant="hero"
+            className="w-full h-12 text-base font-semibold cursor-pointer group flex items-center justify-center gap-2 shadow-md hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-1 active:translate-y-0 transition-all duration-300"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? (
+              "Submitting..."
+            ) : (
+              <>
+                Submit Request
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" />
+              </>
+            )}
           </Button>
         </form>
       </DialogContent>
