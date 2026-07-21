@@ -79,7 +79,7 @@ export default function ServicesPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service) => (
                 <Link key={service.slug} href={`/services/${service.slug}`}>
-                  <Card className="group hover:border-primary/30 hover:shadow-lg transition-all border-border/50 h-full">
+                  <Card className="group hover:shadow-lg transition-all border-border/50 h-full">
                     <CardContent className="p-6">
                       <Badge variant="secondary" className="mb-4">{service.name}</Badge>
                       <p className="text-muted-foreground mb-6 line-clamp-3">{service.description}</p>

@@ -23,7 +23,7 @@ const InternalLinks = ({ articles, title = "Related Articles" }: InternalLinksPr
           {articles.map((article, index) => (
             <div 
               key={index} 
-              className="bg-background/80 backdrop-blur-sm rounded-lg p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
+              className="bg-background/80 backdrop-blur-sm rounded-lg p-6 border border-border/50 transition-all duration-300 hover:shadow-lg"
             >
               <div className="mb-3">
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">
