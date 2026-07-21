@@ -72,7 +72,7 @@ const OtherServices: React.FC<OtherServicesProps> = ({ currentService }) => {
               href={`/services/${service.slug}`}
               className="group"
             >
-              <Card className="h-full border-border/50 hover:border-primary/50 transition-all hover:shadow-md cursor-pointer">
+              <Card className="h-full border-border/50 transition-all hover:shadow-md cursor-pointer">
                 <CardContent className="p-6 flex flex-col h-full">
                   <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
                     {service.name}
