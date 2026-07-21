@@ -196,16 +196,16 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
                 onClick={() => handleCategoryClick(group.name, !!group.subcategories)}
                 className={cn(
                   "relative cursor-pointer text-sm font-medium transition-all duration-200 rounded-md px-3.5 py-2",
-                  isMainSelected && "bg-[#2563EB] text-white hover:bg-[#1D4ED8] shadow-xs",
-                  isSubSelected && "bg-blue-100 text-[#2563EB] font-semibold hover:bg-blue-200/80",
-                  !isActive && "text-gray-700 hover:bg-blue-50 hover:text-[#2563EB]"
+                  isMainSelected && "bg-[#333E50] text-white hover:bg-[#333E50]/90 shadow-xs",
+                  isSubSelected && "bg-slate-100 text-[#333E50] font-semibold hover:bg-slate-200",
+                  !isActive && "text-gray-700 hover:bg-slate-100 hover:text-[#333E50]"
                 )}
               >
                 {group.name}
                 {group.subcategories && (
                   <ChevronDown className={cn(
                     "ml-1.5 h-3.5 w-3.5 transition-transform duration-200",
-                    activeDropdown === group.name && "rotate-180 text-[#2563EB]"
+                    activeDropdown === group.name && "rotate-180 text-[#333E50]"
                   )} />
                 )}
               </Button>
@@ -232,8 +232,8 @@ const BlogMegaMenu = ({ selectedCategory, onCategorySelect, className }: BlogMeg
                           className={cn(
                             "w-full justify-start text-left text-sm py-2 px-3 h-auto rounded-lg transition-all duration-150 cursor-pointer font-normal",
                             isSelected
-                              ? "bg-[#2563EB] text-white font-medium shadow-xs"
-                              : "text-gray-700 hover:bg-[#2563EB] hover:text-white"
+                              ? "bg-[#333E50] text-white font-medium shadow-xs"
+                              : "text-gray-700 hover:bg-[#333E50] hover:text-white"
                           )}
                         >
                           <span className="flex items-center">

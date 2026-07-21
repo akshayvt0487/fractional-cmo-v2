@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Send, Shield, Clock, Star, Users, CheckCircle, Award } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Shield, Clock, Star, Users, CheckCircle, Award, ArrowRight } from "lucide-react";
 
 import Header from "@/components/ui/header";
 import BreadcrumbNavigation from "@/components/BreadcrumbNavigation";
@@ -112,7 +112,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
 
             {/* Contact Form - Priority Position */}
             <div className="mb-16">
-              <Card className="max-w-4xl mx-auto">
+              <Card className="max-w-4xl mx-auto static-card cursor-default">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Send a Message</CardTitle>
                   <CardDescription>
@@ -123,7 +123,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="name">Name <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
+                        <Label htmlFor="name">Name <span className="text-slate-900 font-bold ml-0.5">*</span></Label>
                         <Input
                           id="name"
                           required
@@ -133,7 +133,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
 
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="email">Business Email <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
+                        <Label htmlFor="email">Business Email <span className="text-slate-900 font-bold ml-0.5">*</span></Label>
                         <Input
                           id="email"
                           type="email"
@@ -147,7 +147,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
 
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="company">Company Name <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
+                        <Label htmlFor="company">Company Name <span className="text-slate-900 font-bold ml-0.5">*</span></Label>
                         <Input
                           id="company"
                           required
@@ -157,7 +157,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
 
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="phone">Phone Number <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
+                        <Label htmlFor="phone">Phone Number <span className="text-slate-900 font-bold ml-0.5">*</span></Label>
                         <Input
                           id="phone"
                           type="tel"
@@ -188,7 +188,7 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="message">Tell me about your business and goals <span className="text-[#2563EB] font-bold ml-0.5">*</span></Label>
+                      <Label htmlFor="message">Tell me about your business and goals <span className="text-slate-900 font-bold ml-0.5">*</span></Label>
                       <Textarea
                         id="message"
                         required
@@ -200,11 +200,6 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
 • Current marketing efforts (if any)
 • What success looks like for your business
 • Any specific goals or targets you're aiming for`}
-
-
-
-
-
                         rows={6} />
 
                     </div>
@@ -238,145 +233,172 @@ const ContactClient = ({ initialService }: { initialService?: string; }) => {
               </Card>
             </div>
 
-            <div className="mb-16 grid md:grid-cols-2 gap-8  items-center border-1 border-gray-300 p-10 rounded-2xl bg-blue-100/10">
+            {/* Modern Executive Bento Grid - Post Form Section */}
+            <div className="space-y-12 mb-16">
 
+              {/* Bento Row 1: Contact Hub & Highlights */}
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
 
+                {/* Bento Card 1: Address & Location (7 Cols) */}
+                <div className="md:col-span-7 bg-white border border-slate-200/90 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:border-[#333E50]/40 transition-all duration-300 flex flex-col justify-between relative overflow-hidden group">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#333E50]/5 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform duration-500" />
+                  
+                  <div className="flex items-start gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-[#333E50] text-white flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform duration-300">
+                      <MapPin className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-extrabold text-[#333E50] tracking-tight">Fractional CMO</h4>
+                      <p className="text-sm font-medium text-slate-500 mt-0.5">Parramatta Executive Office</p>
+                    </div>
+                  </div>
 
-
-              <div className="flex gap-4 items-center">
-
-
-                <div>
-                  <MapPin />
-
-
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold">  Fractional CMO</h4>
-                  <p>
-                    Suite 611 </p>
-                  <p> Level 6</p>
-                  <p>150 George street Parramatta</p>
-                </div>
-
-              </div>
-
-              <div className="flex gap-4 items-start flex-col" >
-                <p className="flex gap-2 font-semibold hover:text-blue-950"><Mail /> <a href="mailto:Basheer@fractional-cmo.com.au">Basheer@fractional-cmo.com.au </a> </p>
-                <p className="flex  gap-2 font-semibold hover:text-blue-950"><Phone /> <a href="tel:0291918049"> 02 9191 8049</a></p>
-
-
-              </div>
-
-
-
-
-
-
-            </div>
-
-            {/* Trust Factors Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="text-center">
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <Users className="h-6 w-6 text-primary" />
+                  <div className="bg-slate-50/80 rounded-2xl p-5 border border-slate-200/60 text-slate-700 font-medium text-sm space-y-1">
+                    <p className="font-semibold text-[#333E50]">Suite 611, Level 6</p>
+                    <p>150 George street Parramatta NSW 2150</p>
                   </div>
                 </div>
-                <div className="text-2xl font-bold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">Businesses Helped</div>
-              </div>
 
-              <div className="text-center">
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <Award className="h-6 w-6 text-primary" />
-                  </div>
+                {/* Bento Card 2: Direct Contact Action Pills (5 Cols) */}
+                <div className="md:col-span-5 bg-white border border-slate-200/90 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:border-[#333E50]/40 transition-all duration-300 flex flex-col justify-between gap-4">
+                  <a 
+                    href="mailto:Basheer@fractional-cmo.com.au" 
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/70 hover:bg-[#333E50] hover:border-[#333E50] hover:text-white transition-all duration-300 group/mail cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-[#333E50] text-white flex items-center justify-center shrink-0 group-hover/mail:bg-white group-hover/mail:text-[#333E50] transition-colors shadow-xs">
+                      <Mail className="h-5 w-5" />
+                    </div>
+                    <div className="overflow-hidden">
+                      <span className="text-xs font-semibold text-slate-500 group-hover/mail:text-slate-300 block transition-colors">Email Us Directly</span>
+                      <span className="text-sm font-bold text-[#333E50] group-hover/mail:text-white truncate block transition-colors">
+                        Basheer@fractional-cmo.com.au
+                      </span>
+                    </div>
+                  </a>
+
+                  <a 
+                    href="tel:0291918049" 
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/70 hover:bg-[#333E50] hover:border-[#333E50] hover:text-white transition-all duration-300 group/phone cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-[#333E50] text-white flex items-center justify-center shrink-0 group-hover/phone:bg-white group-hover/phone:text-[#333E50] transition-colors shadow-xs">
+                      <Phone className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <span className="text-xs font-semibold text-slate-500 group-hover/phone:text-slate-300 block transition-colors">Call Directly</span>
+                      <span className="text-sm font-bold text-[#333E50] group-hover/phone:text-white block transition-colors">
+                        02 9191 8049
+                      </span>
+                    </div>
+                  </a>
                 </div>
-                <div className="text-2xl font-bold text-primary">15+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+
               </div>
 
-              <div className="text-center">
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <Clock className="h-6 w-6 text-primary" />
+              {/* Bento Row 2: 3 High-Impact Stat Metrics */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="p-8 bg-gradient-to-br from-slate-50 via-white to-slate-50 border border-slate-200/90 rounded-3xl shadow-sm hover:shadow-xl hover:border-[#333E50] transition-all duration-300 text-center group cursor-pointer relative overflow-hidden">
+                  <div className="w-12 h-12 rounded-2xl bg-[#333E50] text-white flex items-center justify-center mx-auto mb-4 shadow-md group-hover:scale-110 transition-transform duration-300">
+                    <Users className="h-6 w-6" />
                   </div>
+                  <div className="text-4xl font-black text-[#333E50] tracking-tight mb-1">50+</div>
+                  <div className="text-xs font-bold uppercase tracking-wider text-slate-500">Businesses Helped</div>
                 </div>
-                <div className="text-2xl font-bold text-primary">24hr</div>
-                <div className="text-sm text-muted-foreground">Response Time</div>
+
+                <div className="p-8 bg-gradient-to-br from-slate-50 via-white to-slate-50 border border-slate-200/90 rounded-3xl shadow-sm hover:shadow-xl hover:border-[#333E50] transition-all duration-300 text-center group cursor-pointer relative overflow-hidden">
+                  <div className="w-12 h-12 rounded-2xl bg-[#333E50] text-white flex items-center justify-center mx-auto mb-4 shadow-md group-hover:scale-110 transition-transform duration-300">
+                    <Award className="h-6 w-6" />
+                  </div>
+                  <div className="text-4xl font-black text-[#333E50] tracking-tight mb-1">15+</div>
+                  <div className="text-xs font-bold uppercase tracking-wider text-slate-500">Years Experience</div>
+                </div>
+
+                <div className="p-8 bg-gradient-to-br from-slate-50 via-white to-slate-50 border border-slate-200/90 rounded-3xl shadow-sm hover:shadow-xl hover:border-[#333E50] transition-all duration-300 text-center group cursor-pointer relative overflow-hidden">
+                  <div className="w-12 h-12 rounded-2xl bg-[#333E50] text-white flex items-center justify-center mx-auto mb-4 shadow-md group-hover:scale-110 transition-transform duration-300">
+                    <Clock className="h-6 w-6" />
+                  </div>
+                  <div className="text-4xl font-black text-[#333E50] tracking-tight mb-1">24hr</div>
+                  <div className="text-xs font-bold uppercase tracking-wider text-slate-500">Response Time</div>
+                </div>
               </div>
-            </div>
 
-            {/* Value Propositions */}
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <Card className="text-center p-6">
-                <Shield className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">Confidentiality Guaranteed</h3>
-                <p className="text-sm text-muted-foreground">
-                  Your business information is secure. All discussions are protected by strict confidentiality agreements.
-                </p>
-              </Card>
-
-              <Card className="text-center p-6">
-                <CheckCircle className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">No-Obligation Consultation</h3>
-                <p className="text-sm text-muted-foreground">
-                  Get valuable insights during our initial call, even if we don&apos;t work together. No pressure, just value.
-                </p>
-              </Card>
-
-              <Card className="text-center p-6">
-                <Award className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">Proven Track Record</h3>
-                <p className="text-sm text-muted-foreground">
-                  Successfully scaled service based businesses in Building/construction, Trade, Disability & Aged care across Australia, Middle East and India.
-                </p>
-              </Card>
-            </div>
-
-            {/* What to Expect Section - Moved below form */}
-            <div className="mb-16">
-              <Card className="p-8 max-w-4xl mx-auto">
-                <div className="text-center mb-8">
-                  <h2 className="text-2xl font-semibold mb-4">What Happens After You Send Your Message?</h2>
-                  <p className="text-muted-foreground max-w-2xl mx-auto">
-                    Here&apos;s exactly what you can expect from our communication process
+              {/* Bento Row 3: 3 Dynamic Assurance Cards */}
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="p-8 bg-white border border-slate-200/90 rounded-3xl shadow-sm hover:bg-[#333E50] hover:text-white hover:border-[#333E50] hover:shadow-xl transition-all duration-300 group cursor-pointer">
+                  <div className="w-12 h-12 rounded-2xl bg-slate-100 text-[#333E50] group-hover:bg-white/10 group-hover:text-white flex items-center justify-center mb-6 transition-colors duration-300">
+                    <Shield className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-extrabold text-lg text-[#333E50] group-hover:text-white mb-2.5 transition-colors">
+                    Confidentiality Guaranteed
+                  </h3>
+                  <p className="text-xs md:text-sm text-slate-600 group-hover:text-slate-200 leading-relaxed transition-colors">
+                    Your business information is secure. All discussions are protected by strict confidentiality agreements.
                   </p>
                 </div>
 
+                <div className="p-8 bg-white border border-slate-200/90 rounded-3xl shadow-sm hover:bg-[#333E50] hover:text-white hover:border-[#333E50] hover:shadow-xl transition-all duration-300 group cursor-pointer">
+                  <div className="w-12 h-12 rounded-2xl bg-slate-100 text-[#333E50] group-hover:bg-white/10 group-hover:text-white flex items-center justify-center mb-6 transition-colors duration-300">
+                    <CheckCircle className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-extrabold text-lg text-[#333E50] group-hover:text-white mb-2.5 transition-colors">
+                    No-Obligation Consultation
+                  </h3>
+                  <p className="text-xs md:text-sm text-slate-600 group-hover:text-slate-200 leading-relaxed transition-colors">
+                    Get valuable insights during our initial call, even if we don&apos;t work together. No pressure, just value.
+                  </p>
+                </div>
+
+                <div className="p-8 bg-white border border-slate-200/90 rounded-3xl shadow-sm hover:bg-[#333E50] hover:text-white hover:border-[#333E50] hover:shadow-xl transition-all duration-300 group cursor-pointer">
+                  <div className="w-12 h-12 rounded-2xl bg-slate-100 text-[#333E50] group-hover:bg-white/10 group-hover:text-white flex items-center justify-center mb-6 transition-colors duration-300">
+                    <Award className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-extrabold text-lg text-[#333E50] group-hover:text-white mb-2.5 transition-colors">
+                    Proven Track Record
+                  </h3>
+                  <p className="text-xs md:text-sm text-slate-600 group-hover:text-slate-200 leading-relaxed transition-colors">
+                    Successfully scaled service based businesses in Building/construction, Trade, Disability & Aged care across Australia, Middle East and India.
+                  </p>
+                </div>
+              </div>
+
+              {/* Bento Row 4: Connected Process Steps */}
+              <div className="bg-gradient-to-r from-slate-50 via-white to-slate-50 border border-slate-200/90 rounded-3xl p-8 md:p-12 shadow-sm">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-[#333E50] text-center mb-10 tracking-tight">
+                  What Happens After You Send Your Message?
+                </h2>
+
                 <div className="grid md:grid-cols-3 gap-8">
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                  <div className="p-6 bg-white border border-slate-200/80 rounded-2xl hover:border-[#333E50] hover:shadow-md transition-all duration-300 text-center group cursor-pointer">
+                    <div className="w-12 h-12 bg-[#333E50] text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
                       1
                     </div>
-                    <h3 className="font-semibold mb-2">Quick Response</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <h3 className="font-bold text-base text-[#333E50] mb-2">Quick Response</h3>
+                    <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
                       I&apos;ll personally review your message and respond within 24 hours with initial thoughts and next steps.
                     </p>
                   </div>
 
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                  <div className="p-6 bg-white border border-slate-200/80 rounded-2xl hover:border-[#333E50] hover:shadow-md transition-all duration-300 text-center group cursor-pointer">
+                    <div className="w-12 h-12 bg-[#333E50] text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
                       2
                     </div>
-                    <h3 className="font-semibold mb-2">Free Strategy Session</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <h3 className="font-bold text-base text-[#333E50] mb-2">Free Strategy Session</h3>
+                    <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
                       We&apos;ll schedule a 20-30 minute call to dive deeper into your business and discuss opportunities.
                     </p>
                   </div>
 
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                  <div className="p-6 bg-white border border-slate-200/80 rounded-2xl hover:border-[#333E50] hover:shadow-md transition-all duration-300 text-center group cursor-pointer">
+                    <div className="w-12 h-12 bg-[#333E50] text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
                       3
                     </div>
-                    <h3 className="font-semibold mb-2">Growth Strategy Deep Dive</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <h3 className="font-bold text-base text-[#333E50] mb-2">Growth Strategy Deep Dive</h3>
+                    <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
                       If we&apos;re a good fit, we&apos;ll dive deep into the details before setting up your custom growth map.
                     </p>
                   </div>
                 </div>
-              </Card>
+              </div>
+
             </div>
 
           </div>
