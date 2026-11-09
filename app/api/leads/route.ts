@@ -64,6 +64,34 @@ export async function POST(req: Request) {
       console.warn('GOOGLE_SHEETS_WEBHOOK_URL is not defined in environment variables.');
     }
 
+    // 1b. Copy the lead into the DSIGNS leads platform (optional; never blocks the response).
+    // LEADS_PLATFORM_WEBHOOK_URL is the full webhook URL from the platform's Integrations page.
+    const platformUrl = process.env.LEADS_PLATFORM_WEBHOOK_URL;
+    if (platformUrl) {
+      try {
+        const platformRes = await fetch(platformUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            source,
+            name,
+            email,
+            company,
+            phone,
+            service,
+            message: messageOrChallenge,
+            timeline,
+          }),
+          signal: AbortSignal.timeout(8000),
+        });
+        if (!platformRes.ok) {
+          console.error('Leads platform webhook HTTP error:', platformRes.status);
+        }
+      } catch (platformError) {
+        console.error('Error sending to leads platform webhook:', platformError);
+      }
+    }
+
     // 2. Send Email via Brevo API
     const brevoApiKey = process.env.BREVO_API_KEY;
     if (brevoApiKey) {
